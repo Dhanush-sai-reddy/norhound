@@ -43,6 +43,24 @@ def parse_brave_web_results(payload: dict[str, Any], *, query: str) -> list[dict
     return parsed
 
 
+def parse_firecrawl_search_results(payload: dict[str, Any], *, query: str) -> list[dict[str, Any]]:
+    results = payload.get("data") or []
+    parsed = []
+    for rank, result in enumerate(results, start=1):
+        if not isinstance(result, dict) or not result.get("url"):
+            continue
+        metadata = result.get("metadata") or {}
+        parsed.append({
+            "url": result.get("url"),
+            "title": result.get("title") or metadata.get("title") or "",
+            "snippet": result.get("description") or metadata.get("description") or "",
+            "rank": rank,
+            "provider": "firecrawl_search_api",
+            "query": query,
+        })
+    return parsed
+
+
 def _tokens(value: Any) -> list[str]:
     text = str(value or "").translate(str.maketrans({"ø": "o", "å": "a", "æ": "ae", "Ø": "O", "Å": "A", "Æ": "AE"}))
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().casefold()
