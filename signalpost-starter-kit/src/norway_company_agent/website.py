@@ -32,7 +32,8 @@ SOCIAL_HOSTS = {
 }
 PRIORITY_TERMS = (
     "om-oss", "om_oss", "about", "kontakt", "contact", "ledelse", "management",
-    "team", "people", "locations", "lokasjoner", "avdelinger", "butikker",
+    "team", "people", "karriere", "careers", "jobs", "stillinger", "ledige-stillinger", "join-us", "bli-en-av-oss",
+    "locations", "lokasjoner", "avdelinger", "butikker",
     "news", "press", "aktuelt", "nyheter",
 )
 
@@ -186,7 +187,7 @@ def normalize_social_url(url: str) -> dict[str, str] | None:
     return {"platform": platform, "url": f"https://{canonical_host}/{'/'.join(parts)}"}
 
 
-def _priority_links(base_url: str, soup: BeautifulSoup, limit: int = 4) -> list[str]:
+def _priority_links(base_url: str, soup: BeautifulSoup, limit: int = 6) -> list[str]:
     base = urllib.parse.urlparse(base_url)
     candidates: dict[str, int] = {}
     for anchor in soup.select("a[href]"):

@@ -506,6 +506,100 @@ class ExternalFootprintTests(unittest.TestCase):
         self.assertEqual(result["iterations"][0]["controller_action"], "replicate")
 
 
+class CompanySiteJobsConnectorTests(unittest.TestCase):
+    def profile(self, **changes):
+        base = {
+            "organisation_number": "923609016",
+            "name": "Example AS",
+            "evidence": {
+                "website": {
+                    "status": "available",
+                    "value": {
+                        "final_url": "https://example.no",
+                        "registered_domain": "example.no",
+                        "pages": [],
+                        "identity_assessment": {"publishable": True, "label": "exact", "method": "test"},
+                    },
+                },
+            },
+        }
+        return {**base, **changes}
+
+    def render(self, html: str, page_url: str, final_url: str = "https://example.no") -> list[dict]:
+        from scripts.extract_company_site_jobs import extract_jobs_from_page
+        return extract_jobs_from_page(self.profile(), page_url, html, b"\x00" * 64, final_url)
+
+    def test_true_positive_role_anchor_with_application_marker(self):
+        html = (
+            '<html><body>'
+            '<h1>Karriere</h1><p>Søknadsfrist 15. oktober. Send oss en søknad.</p>'
+            '<a href="/karriere/butikksjef-oslo">Butikksjef Oslo</a>'
+            '<a href="/karriere/barista">Barista (deltid)</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/karriere")
+        self.assertEqual(len(jobs), 2)
+        self.assertTrue(all(item["exact_entity"] for item in jobs))
+        self.assertTrue(all(item["acquisition_mode"] == "permitted_public_page" for item in jobs))
+        self.assertTrue(all(item["rights_status"] == "approved" for item in jobs))
+        self.assertTrue(all(item["signal_type"] == "job_posting" for item in jobs))
+        self.assertTrue(all(publishable_observation(item) for item in jobs))
+
+    def test_hr_services_page_is_not_a_job_posting(self):
+        # An HR consultancy reusing /karriere/ for its services catalog must not
+        # yield job_posting observations even when anchors read like roles.
+        html = (
+            '<html><body>'
+            '<h1>HR og karriere</h1><p>Vi hjelper bedrifter med omstilling.</p>'
+            '<a href="/hr-og-karriere/omstilling-og-nedbemanning">Omstilling og nedbemanning</a>'
+            '<a href="/hr-og-karriere/slik-hjelper-vi-deg-til-jobb">Slik hjelper vi deg til jobb</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/hr-og-karriere")
+        self.assertEqual(jobs, [])
+
+    def test_navigation_anchor_only_is_not_a_posting(self):
+        html = (
+            '<html><body><h1>Jobs</h1><p>Join our team</p>'
+            '<a href="/careers">Careers</a><a href="/jobs">See all jobs</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/careers")
+        self.assertEqual(jobs, [])
+
+    def test_external_ats_link_followed_from_careers_page_is_not_published(self):
+        html = (
+            '<html><body><h1>Karriere</h1><p>Søknadsfrist snarlig.</p>'
+            '<a href="https://example.easycruit.com/example-as">Ledige stillinger</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/karriere", final_url="https://example.no/karriere")
+        self.assertEqual(jobs, [])
+
+    def test_company_owned_careers_subdomain_is_published(self):
+        # A company ATS on its own registered domain (jobs.example.no) is a
+        # permitted company-owned page and keeps exact-entity identity.
+        html = (
+            '<html><body><h1>Karriere</h1><p>Vi søker nå nye kolleger. Apply via link below.</p>'
+            '<a href="https://jobs.example.no/stillinger/butikksjef-oslo">Butikksjef Oslo</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/karriere")
+        self.assertEqual(len(jobs), 1)
+        self.assertEqual(jobs[0]["source_url"], "https://jobs.example.no/stillinger/butikksjef-oslo")
+
+    def test_career_page_without_application_marker_abstains(self):
+        # No application cue anywhere: a generic "about our staff" page must
+        # abstain rather than guess that links are vacancies.
+        html = (
+            '<html><body><h1>Våre ansatte</h1><p>Vi er 12 medarbeidere.</p>'
+            '<a href="/ansatte/per-oss">Per Olsen</a><a href="/ansatte/kari">Kari Nilsen</a>'
+            '</body></html>'
+        )
+        jobs = self.render(html, "https://example.no/ansatte")
+        self.assertEqual(jobs, [])
+
+
 class CompletenessScoreTests(unittest.TestCase):
     def test_all_source_weights_sum_to_one_hundred(self):
         from scripts.score_company_completeness import ENRICHMENT_WEIGHTS, FOUNDATION_WEIGHTS
