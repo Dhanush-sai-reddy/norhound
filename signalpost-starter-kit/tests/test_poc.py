@@ -688,6 +688,37 @@ class ExternalObservationAssemblyTests(unittest.TestCase):
         self.assertEqual(evidence.get("external_rejected_observations"), [])
         self.assertNotIn("external_footprint", evidence)
 
+    def test_label_worksheet_emits_cued_template_for_each_observation(self):
+        import tempfile
+        from scripts.build_observation_labels import main as build_labels
+
+        observation = {
+            "id": "site-obs-1",
+            "organisation_number": "912345678",
+            "signal_type": "profile_metrics",
+            "platform": "company_site",
+            "source_url": "https://example.no/",
+            "retrieved_at": "2026-09-01T00:00:00Z",
+            "content_sha256": "b" * 64,
+            "exact_entity": True,
+            "identity_proof": [{"type": "exact_organisation_number_on_page", "value": "912345678"}],
+            "evidence_span": "2 bounded pages, 0 social links.",
+            "sentiment_label": None,
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            observations = root / "observations.jsonl"
+            observations.write_text(json.dumps(observation) + "\n", encoding="utf-8")
+            worksheet = root / "worksheet.md"
+            labels = root / "labels.jsonl"
+            with patch("sys.argv", ["build_observation_labels", "--observations", str(observations), "--worksheet", str(worksheet), "--labels", str(labels)]):
+                build_labels()
+            lines = worksheet.read_text(encoding="utf-8").splitlines()
+            self.assertTrue(any("exact_entity: [?]" in line for line in lines))
+            self.assertTrue(any("metric_correct: [?]" in line for line in lines))
+            rows = [json.loads(line) for line in labels.read_text(encoding="utf-8").splitlines() if line.strip()]
+            self.assertEqual([row["id"] for row in rows], ["site-obs-1"])
+
 
 class CompletenessScoreTests(unittest.TestCase):
     def test_all_source_weights_sum_to_one_hundred(self):
