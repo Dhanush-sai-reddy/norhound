@@ -36,6 +36,12 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
     temporary.replace(path)
 
 
+def _append_jsonl(path: Path, row: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
 def firecrawl_search(
     profile: dict,
     api_key: str,
@@ -43,6 +49,7 @@ def firecrawl_search(
     timeout: float,
     count: int,
     max_retries: int = 3,
+    max_429_backoff: float = 60.0,
 ) -> tuple[list[dict], dict]:
     query = build_company_search_query(profile)
     body = json.dumps({
@@ -91,7 +98,6 @@ def firecrawl_search(
             }
         except urllib.error.HTTPError as exc:
             elapsed_ms = int((time.monotonic() - started) * 1000)
-            retry_after = 2 ** attempt
             last_error = {
                 "status": exc.code,
                 "latency_ms": elapsed_ms,
@@ -102,9 +108,9 @@ def firecrawl_search(
             }
             if exc.code == 429 and attempt < max_retries - 1:
                 try:
-                    retry_after = max(retry_after, int(exc.headers.get("Retry-After", retry_after)))
+                    retry_after = min(max(2 ** attempt, int(exc.headers.get("Retry-After", 2 ** attempt))), max_429_backoff)
                 except Exception:
-                    pass
+                    retry_after = min(2 ** attempt, max_429_backoff)
                 time.sleep(retry_after)
                 continue
             return [], last_error
@@ -143,6 +149,7 @@ def main() -> None:
     parser.add_argument("--min-interval", type=float, default=0.1)
     parser.add_argument("--promote-verified", action="store_true", help="Copy exact-entity discovered sites into canonical website evidence")
     parser.add_argument("--api-key-env", default="FIRECRAWL_API_KEY")
+    parser.add_argument("--max-429-backoff", type=float, default=60.0, help="Cap on Retry-After honoring across retries")
     args = parser.parse_args()
 
     if args.limit < 1:
@@ -156,14 +163,21 @@ def main() -> None:
     provider_latencies: list[int] = []
     started_at = utc_now()
     queried = 0
+    output_path = Path(args.output)
+    existing = {str(row["organisation_number"]) for row in read_jsonl(output_path)} if output_path.exists() else set()
     for row in rows:
+        org_key = str(row.get("organisation_number"))
+        if org_key in existing:
+            counts["resumed_skipped"] += 1
+            continue
         if queried >= args.limit:
             break
         if row.get("website"):
             counts["registry_website_present_skipped"] += 1
+            existing.add(org_key)
             continue
         queried += 1
-        results, operation = firecrawl_search(row, api_key, timeout=args.timeout, count=args.count)
+        results, operation = firecrawl_search(row, api_key, timeout=args.timeout, count=args.count, max_429_backoff=args.max_429_backoff)
         provider_latencies.append(operation["latency_ms"])
         counts["provider_requests"] += 1
         counts["provider_bytes"] += operation["bytes"]
@@ -189,6 +203,8 @@ def main() -> None:
                 value=discovery_summary,
                 note="No result passed the deterministic crawl-candidate gate; raw search output was discarded.",
             )
+            _append_jsonl(output_path, row)
+            existing.add(org_key)
             time.sleep(args.min_interval)
             continue
 
@@ -218,9 +234,10 @@ def main() -> None:
                 counts["promoted_sites"] += 1
         else:
             counts["quarantined_sites"] += 1
+        _append_jsonl(output_path, row)
+        existing.add(org_key)
         time.sleep(args.min_interval)
 
-    write_jsonl(Path(args.output), rows)
     report = {
         "generated_at": utc_now(),
         "started_at": started_at,

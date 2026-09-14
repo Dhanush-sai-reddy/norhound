@@ -1137,6 +1137,85 @@ class DiscoveryTests(unittest.TestCase):
             with self.subTest(url=url):
                 self.assertEqual(score_search_candidate(profile, {"url": url, "title": "Example Norge AS"})["status"], "rejected")
 
+
+class FirecrawlDiscoveryTests(unittest.TestCase):
+    def test_firecrawl_429_bounded_by_max_backoff_then_gives_up(self):
+        import urllib.error
+        import scripts.run_firecrawl_discovery as module
+
+        sleeps = []
+        calls = {"count": 0}
+
+        def fake_sleep(seconds):
+            sleeps.append(seconds)
+
+        def raise_429(_request, timeout):
+            calls["count"] += 1
+            headers = {"Retry-After": "999"} if calls["count"] == 1 else {}
+            raise urllib.error.HTTPError("https://api.firecrawl.dev/v1/search", 429, "Too Many Requests", headers, None)
+
+        with patch.object(module.time, "sleep", side_effect=fake_sleep), \
+             patch("scripts.run_firecrawl_discovery.urllib.request.urlopen", raise_429):
+            results, operation = module.firecrawl_search(
+                {"name": "Example AS", "organisation_number": "999999999", "municipality": "OSLO"},
+                "key", timeout=3.0, count=5, max_retries=2, max_429_backoff=5.0,
+            )
+        self.assertEqual(results, [])
+        self.assertEqual(operation["status"], 429)
+        self.assertEqual(calls["count"], 2)
+        self.assertEqual(sleeps, [5.0])
+
+    def test_firecrawl_429_bounded_by_smaller_retry_after(self):
+        import urllib.error
+        import scripts.run_firecrawl_discovery as module
+
+        sleeps = []
+        calls = {"count": 0}
+
+        def fake_sleep(seconds):
+            sleeps.append(seconds)
+
+        def raise_429(_request, timeout):
+            calls["count"] += 1
+            headers = {"Retry-After": "2"} if calls["count"] == 1 else {}
+            raise urllib.error.HTTPError("https://api.firecrawl.dev/v1/search", 429, "Too Many Requests", headers, None)
+
+        with patch.object(module.time, "sleep", side_effect=fake_sleep), \
+             patch("scripts.run_firecrawl_discovery.urllib.request.urlopen", raise_429):
+            results, operation = module.firecrawl_search(
+                {"name": "Example AS", "organisation_number": "999999999", "municipality": "OSLO"},
+                "key", timeout=3.0, count=5, max_retries=2, max_429_backoff=30.0,
+            )
+        self.assertEqual(results, [])
+        self.assertEqual(operation["status"], 429)
+        self.assertEqual(sleeps, [2.0])
+
+    def test_incremental_output_append_and_resume_are_idempotent(self):
+        import scripts.run_firecrawl_discovery as module
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            output = root / "discovery.jsonl"
+            module._append_jsonl(output, {"organisation_number": "100000001", "name": "One AS"})
+            module._append_jsonl(output, {"organisation_number": "100000002", "name": "Two AS"})
+            rows = module.read_jsonl(output)
+            self.assertEqual([str(row["organisation_number"]) for row in rows], ["100000001", "100000002"])
+
+            resumable = {str(row["organisation_number"]) for row in module.read_jsonl(output)}
+            pending = [{"organisation_number": "100000003", "name": "Three AS"}]
+            for row in pending:
+                if str(row["organisation_number"]) in resumable:
+                    continue
+                module._append_jsonl(output, row)
+                resumable.add(str(row["organisation_number"]))
+            self.assertEqual([str(row["organisation_number"]) for row in module.read_jsonl(output)],
+                             ["100000001", "100000002", "100000003"])
+
+            again = {str(row["organisation_number"]) for row in module.read_jsonl(output)}
+            self.assertEqual(again, resumable)
+
     def test_exact_name_in_title_and_host_is_only_a_crawl_candidate(self):
         profile = {"organisation_number": "923609016", "name": "Norsk Fiskeeksport AS", "municipality": "NOTODDEN"}
         decision = choose_search_candidate(profile, [{
