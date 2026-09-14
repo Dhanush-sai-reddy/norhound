@@ -1247,6 +1247,55 @@ class FirecrawlDiscoveryTests(unittest.TestCase):
             again = {str(row["organisation_number"]) for row in module.read_jsonl(output)}
             self.assertEqual(again, resumable)
 
+    def test_discovery_handles_identity_gate_none_assessment(self):
+        import scripts.run_firecrawl_discovery as module
+
+        captured = {"fetch_calls": 0}
+
+        def fake_fetch_website(url, timeout):
+            captured["fetch_calls"] += 1
+            return {
+                "status": "not_available",
+                "source_url": url,
+                "value": {"final_url": url, "requested_url": url},
+            }, {"requests": 1, "bytes": 0, "latencies_ms": [10]}
+
+        def fake_search(profile, api_key, **kwargs):
+            return [{
+                "url": "https://example-firm.no/",
+                "title": "Example Firm AS",
+                "snippet": "Example Firm in Oslo",
+                "rank": 1,
+                "provider": "fixture",
+            }], {"latency_ms": 10, "bytes": 200, "query_sha256": "a" * 64, "status": 200}
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            output = root / "discovery.jsonl"
+            report = root / "report.json"
+            with patch.object(module, "fetch_website", side_effect=fake_fetch_website), \
+                 patch.object(module, "firecrawl_search", side_effect=fake_search), \
+                 patch("sys.argv", [
+                     "run_firecrawl_discovery",
+                     "--input", str(root / "input.jsonl"),
+                     "--output", str(output),
+                     "--report", str(report),
+                     "--limit", "1",
+                     "--count", "5",
+                     "--timeout", "20",
+                     "--min-interval", "0",
+                     "--api-key-env", "APIKEY",
+                 ]), \
+                 patch.dict("os.environ", {"APIKEY": "test-key"}):
+                (root / "input.jsonl").write_text(json.dumps({
+                    "organisation_number": "999999999", "name": "Example Firm AS", "municipality": "OSLO",
+                }) + "\n", encoding="utf-8")
+                module.main()
+            rows = module.read_jsonl(output)
+            self.assertEqual(len(rows), 1)
+            discovery = (rows[0].get("evidence") or {}).get("website_discovery") or {}
+            self.assertEqual(discovery["status"], "not_found")
+
     def test_exact_name_in_title_and_host_is_only_a_crawl_candidate(self):
         profile = {"organisation_number": "923609016", "name": "Norsk Fiskeeksport AS", "municipality": "NOTODDEN"}
         decision = choose_search_candidate(profile, [{

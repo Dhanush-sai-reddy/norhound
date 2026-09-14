@@ -211,23 +211,24 @@ def main() -> None:
         website, web_ops = fetch_website(selected["url"], timeout=args.timeout)
         gated = apply_website_identity_gate(row, website)
         website = gated["website"]
-        assessment = gated["assessment"]
+        assessment = gated["assessment"] or {}
+        publishable = bool(assessment.get("publishable"))
         value = website.get("value") or {}
         # Only independently fetched page evidence is retained. Firecrawl title/snippet/rank/query are discarded.
         website["source_type"] = "search_discovered_company_website"
         website["value"] = value
         row.setdefault("evidence", {})["website_discovery"] = evidence(
             "website_discovery",
-            "available" if assessment["publishable"] else "not_found",
+            "available" if publishable else "not_found",
             "transient_firecrawl_search_then_independent_crawl",
             FIRECRAWL_ENDPOINT,
-            value={**discovery_summary, "independent_page_url": website.get("source_url") if assessment["publishable"] else None},
+            value={**discovery_summary, "independent_page_url": website.get("source_url") if publishable else None},
             note="Search output was transient. Publication depends only on independently fetched exact-entity page evidence.",
         )
         row["evidence"]["website_discovered"] = website
         counts["independent_crawls"] += 1
         counts["crawl_requests"] += web_ops.get("requests", 0)
-        if assessment["publishable"] and website.get("status") == "available":
+        if publishable and website.get("status") == "available":
             counts["verified_sites"] += 1
             if args.promote_verified:
                 row["evidence"]["website"] = website
