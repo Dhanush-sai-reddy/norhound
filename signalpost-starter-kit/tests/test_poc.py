@@ -600,6 +600,95 @@ class CompanySiteJobsConnectorTests(unittest.TestCase):
         self.assertEqual(jobs, [])
 
 
+class ExternalObservationAssemblyTests(unittest.TestCase):
+    def test_assembly_attaches_only_publishable_observations_and_retains_rejections(self):
+        import tempfile
+        from scripts.attach_external_observations import main as attach
+        from scripts.extract_company_site_news import observation as news_observation
+
+        envelope = {
+            "run_id": "assembly-001",
+            "organisation_number": "923609016",
+            "state": "complete",
+            "profile": {
+                "organisation_number": "923609016",
+                "name": "Example AS",
+                "evidence": {
+                    "website": {
+                        "status": "available",
+                        "retrieved_at": "2026-09-01T00:00:00Z",
+                        "value": {
+                            "final_url": "https://example.no",
+                            "identity_assessment": {"publishable": True, "label": "exact", "method": "test"},
+                            "pages": [{"url": "https://example.no/nyheter/", "content_sha256": "b" * 64, "title": "Nyheter"}],
+                        },
+                    },
+                },
+            },
+        }
+        news = news_observation(envelope["profile"])
+        self.assertIsNotNone(news)
+        rejected = {
+            "id": "rejected-1",
+            "organisation_number": "923609016",
+            "platform": "company_site",
+            "signal_type": "profile_metrics",
+            "source_url": "https://example.no",
+            "retrieved_at": "2026-09-01T00:00:00Z",
+            "rights_status": "review_required",
+            "source_class": "company_site",
+            "exact_entity": True,
+            "content_sha256": "c" * 64,
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            envelopes = root / "envelopes.jsonl"
+            observations = root / "observations.jsonl"
+            output = root / "enriched.jsonl"
+            report = root / "report.json"
+            envelopes.write_text(json.dumps(envelope) + "\n", encoding="utf-8")
+            observations.write_text("".join(json.dumps(item) + "\n" for item in [news, rejected]), encoding="utf-8")
+            with patch("sys.argv", ["attach_external_observations", "--envelopes", str(envelopes), "--observations", str(observations), "--output", str(output), "--report", str(report)]):
+                attach()
+            enriched = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines() if line.strip()]
+        profile = enriched[0]["profile"]
+        evidence = profile["evidence"]
+        accepted = evidence["external_observations"]
+        rejected_rows = evidence["external_rejected_observations"]
+        self.assertEqual([item["id"] for item in accepted], [news["id"]])
+        self.assertEqual([item["id"] for item in rejected_rows], ["rejected-1"])
+        self.assertEqual(evidence["external_footprint"]["status"], "available")
+        self.assertEqual(evidence["external_footprint"]["accepted_observations"], 1)
+        self.assertIn("rejected_observations", evidence["external_footprint"])
+
+    def test_assembly_abstains_for_org_with_no_observations(self):
+        import tempfile
+        from scripts.attach_external_observations import main as attach
+
+        envelope = {
+            "run_id": "assembly-002",
+            "organisation_number": "912345678",
+            "state": "complete",
+            "profile": {"organisation_number": "912345678", "name": "No Signal AS", "evidence": {}},
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            envelopes = root / "envelopes.jsonl"
+            observations = root / "observations.jsonl"
+            output = root / "enriched.jsonl"
+            report = root / "report.json"
+            envelopes.write_text(json.dumps(envelope) + "\n", encoding="utf-8")
+            observations.write_text("", encoding="utf-8")
+            with patch("sys.argv", ["attach_external_observations", "--envelopes", str(envelopes), "--observations", str(observations), "--output", str(output), "--report", str(report)]):
+                attach()
+            enriched = [json.loads(line) for line in output.read_text(encoding="utf-8").splitlines() if line.strip()]
+        profile = enriched[0]["profile"]
+        evidence = profile["evidence"]
+        self.assertEqual(evidence.get("external_observations"), [])
+        self.assertEqual(evidence.get("external_rejected_observations"), [])
+        self.assertNotIn("external_footprint", evidence)
+
+
 class CompletenessScoreTests(unittest.TestCase):
     def test_all_source_weights_sum_to_one_hundred(self):
         from scripts.score_company_completeness import ENRICHMENT_WEIGHTS, FOUNDATION_WEIGHTS
