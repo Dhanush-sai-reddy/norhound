@@ -1,71 +1,115 @@
 # Signalpost reference agent
 
-This is a runnable starting point for the Signalpost company-research challenge. It is intentionally a solid baseline, not a winning submission.
+Runnable Signalpost company-research agent with a **complete, evaluated 1,000-company entry** (`out/SUBMISSION-REPORT.md`, commit `48c7928`).
 
-The public universe contains 411,160 eligible companies. A valid entry must process at least 1,000; you may process 10,000 or the full universe.
+The public universe contains 411,160 eligible companies. A valid entry must
+process at least 1,000; the repo ships a full 1,000-company run plus the
+exact commands to reproduce it. Exactly one terminal envelope is emitted per
+input organisation number — validated 1,000/1,000, no silent drops.
 
-## What it already does
+## What it does
 
 - reads a batch of Norwegian organisation numbers;
 - anchors identity in the Brønnøysund bulk registry;
 - fetches official financials, roles, group links and registered workplaces;
 - visits the registry-listed website and rejects weak entity matches;
-- emits one terminal JSONL envelope per input;
-- records sources, retrieval times, content hashes, request counts and latency;
-- supports checkpoint/resume and a deterministic refresh replay;
-- includes examples for external-footprint discovery and an evidence-bounded research agent.
+- runs external-footprint connectors (company-site activity/news/jobs,
+  Fagfolkguiden reviews, optional site discovery) and attaches only
+  publishable observations;
+- emits one terminal JSONL envelope per input with sources, retrieval times,
+  content hashes, request counts and latency;
+- re-verifies every observation against frozen evidence and labels it
+  `exact_entity` — only verified rows publish;
+- supports checkpoint/resume and a deterministic refresh replay.
 
-## First run: try one saved example
+## Reproduce the shipped submission
 
-Requires Python 3.12+. Open a terminal inside this extracted folder.
-
-Before downloading company data or running a full crawl, try the bundled public
-sample. It uses saved responses: no API key, registry download or live web requests.
-
-On Windows:
-
-```bash
-py first_run.py
-```
-
-On macOS or Linux:
-
-```bash
-python3 first_run.py
-```
-
-If the launcher does not work, run the same check directly:
-
-```bash
-python3 scripts/run_refresh_replay.py --manifest tests/fixtures/refresh-snapshots.json --output out/refresh-demo.json
-```
-
-Open `out/refresh-demo.json`. The `events` list shows what changed between two
-versions of one company profile and the source evidence for each change. The sample
-should find two expected changes, no false changes, and no extra changes when the
-same data is checked again.
-
-The report's `qualification_passed` field refers only to this public sample check.
-It does not qualify an entry for the competition or prove live information coverage.
-The printed request counts are reads from saved responses, not network calls.
-
-## Next: research live companies
-
-Requires Python 3.12+ and `uv`. This step downloads data and makes live requests.
-The manifest selector requires at least 1,000 companies for a full entry. You can
-use its first ten rows for a private smoke test before running the full batch.
+Requires Python 3.12+ and `uv`. Data: the official Brønnøysund bulk export and
+the Signalpost universe manifest.
 
 ```bash
 uv sync
+
 curl -L 'https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv' -o brreg-enheter.csv
 curl -L 'https://builderr.ai/signalpost-company-universe-2025.jsonl.gz' -o signalpost-universe.jsonl.gz
 
+# 1. Same 1,000-company manifest used for the submission (seed 20260823).
 uv run python select_entry_batch.py \
   --universe signalpost-universe.jsonl.gz \
   --count 1000 \
+  --seed 20260823 \
   --output entry-companies.jsonl
 
-# Start with ten companies before the full 1,000-company run.
+# 2. Base batch: registry enrichment + exact-identity website capture.
+uv run python scripts/run_competition_batch.py \
+  --organisations entry-companies.jsonl \
+  --bulk brreg-enheter.csv \
+  --profiles-output out/web1000-profiles.jsonl \
+  --output out/envelopes.jsonl \
+  --report out/run-report.json \
+  --run-id local-001 \
+  --expected-count 1000
+
+# 3. External-footprint enrichment: activity/news/jobs on verified sites,
+#    Fagfolkguiden reviews, optional Firecrawl site discovery.
+uv run python scripts/run_external_pipeline.py \
+  --profiles out/web1000-profiles.jsonl \
+  --envelopes out/envelopes.jsonl \
+  --prefix out/web1000batch \
+  --jobs --reviews --promote
+
+# 4. Re-verify every observation against frozen evidence (identity + digest
+#    + domain + exact-org directory proof). Unverified rows never publish.
+#    (Prefix may differ; the shipped audit re-verified 1,326 observations.)
+uv run python scripts/verify_and_label_observations.py \
+  --profiles out/web1000-profiles.jsonl \
+  --observations out/web1000batch.external.jsonl \
+  --labels out/web1000batch.labels.jsonl \
+  --report out/web1000batch.label-report.json
+
+# 5. Evaluate the labeled entry (publication requires verified exact_entity).
+uv run python scripts/evaluate_external_footprint.py \
+  --profiles out/web1000-profiles.jsonl \
+  --observations out/web1000batch.external.jsonl \
+  --labels out/web1000batch.labels.jsonl \
+  --output out/web1000batch.external-eval.json \
+  --minimum-audit 300
+
+# 6. Optional grounded summaries (requires NVIDIA_API_KEY for the NIM endpoint).
+NVIDIA_API_KEY=<key> uv run python scripts/run_nim_summary.py \
+  --envelopes out/envelopes.jsonl \
+  --output out/web1000batch.summaries.jsonl \
+  --report out/web1000batch.summaries-report.json \
+  --min-interval 0.15 --workers 8
+```
+
+Network-dependent stages (registry, live website crawl, Firecrawl discovery,
+NIM) reflect the live web at run time; the sealed results are frozen in `out/`.
+The verification/evaluation (`step 4–5`) is deterministic given frozen
+profiles and observations and can be re-run on any checkout.
+
+### Expected results (as shipped)
+
+- **879 published** observations, every one carrying the verified
+  `exact_entity` label (1,326 re-verified; unverified rows never publish).
+- entity precision **1.0**, metric precision **1.0**, unsupported
+  publications **0**, wrong-entity publications **0**.
+- Qualification gate **passed** (minimum audit 300).
+- Coverage: any_external 0.352, two_platforms 0.171, buzz_engagement 0.352,
+  ratings_reviews 0.015, workforce_jobs 0.026.
+- 999/1000 grounded summaries produced (1 transient NIM 503; optional block).
+- 142 tests pass by default (see below).
+
+Canonical shipped artifacts: `out/web1000batch.external-eval.json` (879/p1.0),
+`out/web1000batch.labels.jsonl` (audit labels), `out/SUBMISSION-REPORT.md`.
+Note `out/*-withfag.json` and `out/batch1000f.*` are intermediate runs left on
+disk; they are not the submitted numbers.
+
+### Fresh-batch check
+
+Start with ten companies before a full run.
+
+```bash
 head -n 10 entry-companies.jsonl > smoke-companies.jsonl
 
 uv run python scripts/run_competition_batch.py \
@@ -76,53 +120,81 @@ uv run python scripts/run_competition_batch.py \
   --report out/smoke-report.json \
   --run-id smoke-001 \
   --expected-count 10
-
-# When the smoke output looks right, run your full entry.
-uv run python scripts/run_competition_batch.py \
-  --organisations entry-companies.jsonl \
-  --bulk brreg-enheter.csv \
-  --profiles-output out/profiles.jsonl \
-  --output out/envelopes.jsonl \
-  --report out/run-report.json \
-  --run-id local-001 \
-  --expected-count 1000
-
-uv run --with pytest pytest -q
 ```
 
-The published archive was clean-room verified on August 24, 2026: 104 tests and 5 subtests passed, followed by a one-company live BRREG smoke run with one terminal envelope, five requests and zero silent drops.
+Increase `--count` and `--expected-count` together to scale beyond 1,000.
 
-Increase `--count` and `--expected-count` together if you want to publish more than the 1,000-company minimum. The ten-row smoke test above is practice only. Do not set `select_entry_batch.py --count 10`: the selector enforces the 1,000-company entry minimum.
+## Deterministic refresh replay (no network)
+
+```bash
+python3 scripts/run_refresh_replay.py \
+  --manifest tests/fixtures/refresh-snapshots.json \
+  --output out/refresh-demo.json
+```
+
+The `events` list shows what changed between two versions of one profile and
+the source evidence for each change. The sample finds exactly the two expected
+changes, no false changes, and no extra changes on re-check. The report's
+`qualification_passed` refers only to this public-sample check — it does not
+qualify a live entry.
+
+## Tests
+
+```bash
+uv run python3 -m unittest tests.test_poc
+# 142 tests pass
+```
 
 ## The improvement loop
 
 1. Treat the organisation number as the anchor.
-2. Generate site/profile candidates from official data, the company site, lawful search providers and named people.
+2. Generate site/profile candidates from official data, the company site,
+   lawful search providers and named people.
 3. Save every candidate and the evidence for or against it.
-4. Publish only exact-entity matches. Parent, brand, franchise and similarly named companies are not exact.
-5. Crawl static HTML first. Escalate to a browser only when a deterministic completeness check fails.
-6. Measure added supported coverage, wrong-company claims, runtime, requests and cost.
-7. Promote a strategy only when it improves coverage without weakening the accuracy gates.
+4. Publish only exact-entity matches. Parent, brand, franchise and similarly
+   named companies are not exact.
+5. Crawl static HTML first; escalate to a browser only when a deterministic
+   completeness check fails.
+6. Measure added supported coverage, wrong-company claims, runtime, requests
+   and cost.
+7. Promote a strategy only when it improves coverage without weakening the
+   accuracy gates.
 8. Freeze strategies and thresholds before the daily evaluation run.
 
-The strongest differentiator is external evidence that remains exact and auditable: official company pages, company-owned profiles, jobs, dated activity, ratings/reviews and permitted public signals. Do not trade accuracy for volume.
+The strongest differentiator is external evidence that remains exact and
+auditable: official company pages, company-owned profiles, jobs, dated
+activity, ratings/reviews and permitted public signals. Do not trade accuracy
+for volume.
 
-## Important source rule
+## Source rights
 
-Open-source code does not grant permission to scrape a platform. Follow each source's terms, robots policy, rate limits and licence. LinkedIn, Meta and Indeed are useful identity/discovery targets, but direct automated collection may be restricted. Use permitted APIs, licensed providers, company-owned outbound links, or return `blocked`/`not_available`.
+Official registry data: Brønnøysund bulk CSV + REST (public register). Website
+capture: direct HTTP, robots.txt honoured, bounded pages, content hashing.
+Company-site activity/news/jobs publish as `permitted_public_page` on
+company-domain pages only. Fagfolkguiden reviews publish only where the page
+carries the exact organisation number; only the aggregate Google rating is
+captured, never individual review text. Third-party buzz (Reddit, news) and
+external ATS postings abstain unless identity-verified on the company's own
+site. LinkedIn/Meta/Indeed direct collection is not used (terms); those
+platforms appear only as identity/discovery cross-links published by the
+company itself.
 
-Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and the public source policy before adding connectors.
+Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
+`OUTPUT_CONTRACT.md` for detail.
 
 ## Submission contract
 
 Submit a repository with:
 
-- at least 1,000 completed company profiles and the exact organisation-number manifest used;
+- at least 1,000 completed company profiles and the exact organisation-number
+  manifest used;
 - one documented command that accepts a JSONL batch of organisation numbers;
 - exactly one terminal envelope per input;
 - pinned dependencies and reproducible setup;
 - a previous-snapshot input and material-change output;
-- a machine-readable run report with runtime, request count and third-party cost;
+- a machine-readable run report with runtime, request count and third-party
+  cost;
 - declared models, APIs, licences and source-rights assumptions.
 
-Email the repository URL, run command, models/APIs and expected cost per 100-company run to `submit@builderr.ai`.
+Email the repository URL, run command, models/APIs and expected cost per
+100-company run to `submit@builderr.ai`.
