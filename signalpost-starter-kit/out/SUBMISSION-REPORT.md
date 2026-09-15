@@ -22,8 +22,18 @@ python3 scripts/run_competition_batch.py \
 
 # then, for the externally-audited enrichment stage:
 python3 scripts/run_external_pipeline.py \
-  --profiles <profiles> --envelopes <envelopes> --prefix out/batch --jobs
+  --profiles <profiles> --envelopes <envelopes> --prefix out/batch --jobs [--reviews] [--synthesize]
 ```
+
+Optional grounded summaries run on the enriched envelopes:
+
+```
+NVIDIA_API_KEY=<key> python3 scripts/run_nim_summary.py \
+  --envelopes <envelopes> --output out/<prefix>.summaries.jsonl \
+  --report out/<prefix>.summaries-report.json --min-interval 0.15 --workers 8
+```
+
+Resumable: `--resume` re-runs only organisations not already summarized.
 
 Both accept an arbitrary JSONL batch of organisation numbers. Exactly one
 terminal envelope per input (validated: 1,000/1,000, no silent drops).
@@ -68,14 +78,27 @@ coverage — crawling runs over direct company-site HTTP.
   targets. Only independently fetched, identity-verified pages can promote a site.
 - LinkedIn/Meta/Indeed direct collection: not used (terms). Used as
   identity/discovery cross-links only where published by the company itself.
+- Fagfolkguiden reviews: permitted public directory page carrying the exact
+  organisation number; embedded Google aggregate rating captured as
+  `customer_review` evidence with hashed page content. Rights note recorded in
+  the observation; no individual review text is stored.
+- Grounded summaries: optional NVIDIA NIM
+  (`nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`, OpenAI-compatible
+  endpoint, free-trial key). The model restates only verified envelope
+  evidence; it never invents fields or decides identity. 999/1000 summaries
+  produced; 1 transient 503 left un-summarized (non-qualifying, optional
+  block).
 
 ## Audit
 
-- `out/batch1000f.labels.jsonl`: 85/85 observations re-verified against frozen
-  evidence (domain match, digest match, identity-gate proof, handle linkage).
-  Evaluator: entity precision 1.0, metric precision 1.0, unsupported 0,
-  coverage any_external 0.038, two_platforms 0.02, workforce_jobs 0.001.
-- 120/120 tests pass (`python3 -m unittest discover -s tests`).
+- `out/web1000batch.labels-withfag.jsonl`: 1,326 observations re-verified
+  against frozen evidence (domain match, digest match, exact-org directory
+  proof, identity-gate proof, handle linkage). Publication requires the
+  verified `exact_entity` label — unverified rows are never published.
+  Evaluator: published 879, entity precision 1.0, metric precision 1.0,
+  unsupported 0, coverage any_external 0.352, two_platforms 0.171,
+  ratings_reviews 0.015, buzz_engagement 0.352; qualification gate true.
+- 142 tests pass (`python3 -m unittest tests.test_poc`).
 
 ## Known limits
 
@@ -85,3 +108,6 @@ coverage — crawling runs over direct company-site HTTP.
 - Financial-history PDF connector remains gated: the default batch does not
   capture `financial_history` PDFs, so annual-report workforce observations
   are not produced.
+- Fagfolkguiden listed only 125/1000 companies; 31 had an embedded Google
+  aggregate rating. Review-bearing rows for organisations whose company-site
+  identity gate did not publish are excluded (wrong-company protection).
