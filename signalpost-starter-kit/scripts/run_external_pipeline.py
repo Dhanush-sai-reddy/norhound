@@ -49,6 +49,9 @@ def main() -> None:
     parser.add_argument("--api-key-env", default="FIRECRAWL_API_KEY")
     parser.add_argument("--harvest-linkedin-local", action="store_true", help="Run local logged-out LinkedIn company-page harvest (no API key, experimental rights)")
     parser.add_argument("--harvest-reddit-free", action="store_true", help="Run free Reddit OAuth mention connector (requires REDDIT_CLIENT_ID/SECRET; abstains otherwise)")
+    parser.add_argument("--minimum-audit", default="300", help="Minimum published+audited observations for the qualification gate")
+    parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
+    parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
     args = parser.parse_args()
 
     prefix = Path(args.prefix)
@@ -151,7 +154,7 @@ def main() -> None:
             if line.strip():
                 consolidated.append(json.loads(line))
     external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")
-    external_out.write_text("".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n" for row in consolidated), encoding="utf-8")
+    external_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in consolidated), encoding="utf-8")
 
     run([
         "python", str(SCRIPTS / "attach_external_observations.py"),
@@ -161,17 +164,33 @@ def main() -> None:
         "--report", str(prefix.with_suffix(prefix.suffix + ".enrich-report.json")),
     ])
     labels_path = prefix.with_suffix(prefix.suffix + ".labels.jsonl")
-    if not labels_path.exists():
-        labels_path.write_text("", encoding="utf-8")
+    label_report_path = prefix.with_suffix(prefix.suffix + ".label-report.json")
+    run([
+        "python", str(SCRIPTS / "verify_and_label_observations.py"),
+        "--profiles", args.profiles,
+        "--observations", str(external_out),
+        "--labels", str(labels_path),
+        "--report", str(label_report_path),
+    ])
     run([
         "python", str(SCRIPTS / "evaluate_external_footprint.py"),
         "--profiles", args.profiles,
         "--observations", str(external_out),
         "--labels", str(labels_path),
         "--output", str(eval_out),
-        "--minimum-audit", "0",
+        "--minimum-audit", args.minimum_audit,
     ])
-    print(json.dumps({"stage": "external_pipeline", "prefix": str(prefix), "observation_files": existing, "consolidated_observations": str(external_out), "note": "labels file is optional; eval runs with minimum-audit 0."}, indent=2))
+    if args.synthesize:
+        summaries_out = prefix.with_suffix(prefix.suffix + ".summaries.jsonl")
+        summaries_report = prefix.with_suffix(prefix.suffix + ".summaries-report.json")
+        run([
+            "python", str(SCRIPTS / "run_nim_summary.py"),
+            "--envelopes", str(enriched_out),
+            "--output", str(summaries_out),
+            "--report", str(summaries_report),
+            "--min-interval", args.synthesize_interval,
+        ])
+    print(json.dumps({"stage": "external_pipeline", "prefix": str(prefix), "observation_files": existing, "consolidated_observations": str(external_out), "labels": str(labels_path), "eval": str(eval_out), "summaries": str(prefix.with_suffix(prefix.suffix + ".summaries.jsonl")) if args.synthesize else None, "note": "evidence-verified labels are generated in-pipeline; eval runs with the configured minimum-audit."}, indent=2))
 
 
 if __name__ == "__main__":

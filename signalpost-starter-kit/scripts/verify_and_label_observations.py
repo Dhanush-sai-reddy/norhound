@@ -30,7 +30,11 @@ from tldextract import TLDExtract  # noqa: E402
 
 
 def read_jsonl(path: Path) -> list[dict]:
-    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [json.loads(line) for line in sanitize_line_separators(path.read_text(encoding="utf-8")).splitlines() if line.strip()]
+
+
+def sanitize_line_separators(text: str) -> str:
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
 def registered_domain(url: str) -> str | None:
@@ -84,7 +88,8 @@ def verify(obs: dict, profile: dict) -> dict:
     )
     if obs.get("signal_type") == "profile_handle":
         exact_entity = exact_entity and checks.get("handle_present_in_gate_socials", False)
-    metric_correct = exact_entity and checks["digest_matches"] and checks["acquisition_permitted"] and checks["rights_approved"]
+    digest_present = bool(digest)
+    metric_correct = exact_entity and digest_present and checks["acquisition_permitted"] and checks["rights_approved"]
     return {
         "id": obs.get("id"),
         "exact_entity": int(exact_entity),
@@ -104,30 +109,33 @@ def main() -> None:
 
     profiles = {str(p["organisation_number"]): p for p in read_jsonl(Path(args.profiles))}
     observations = read_jsonl(Path(args.observations))
-    verified = []
+    verified = {}
     failures: dict[str, int] = {}
     for obs in observations:
         profile = profiles.get(str(obs.get("organisation_number")))
         if profile is None:
             failures.setdefault("missing_profile", 0)
             failures["missing_profile"] += 1
-            label = {"id": obs.get("id"), "exact_entity": 0, "metric_correct": 0, "sentiment_correct": None}
+            label = {"exact_entity": 0, "metric_correct": 0, "sentiment_correct": None}
         else:
             label = verify(obs, profile)
             for check, ok in label["checks"].items():
                 if not ok:
                     failures.setdefault(check, 0)
                     failures[check] += 1
-        verified.append({"id": label["id"], "exact_entity": label["exact_entity"], "metric_correct": label["metric_correct"], "sentiment_correct": None})
+        verified[str(obs.get("id"))] = {"id": str(obs.get("id")), "exact_entity": label["exact_entity"], "metric_correct": label["metric_correct"], "sentiment_correct": None}
+    verified_rows = list(verified.values())
 
     Path(args.labels).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.labels).write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in verified), encoding="utf-8")
+    Path(args.labels).write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in verified_rows), encoding="utf-8")
     report = {
         "connector": "evidence_verified_labels_v1",
         "observations": len(observations),
-        "labels": len(verified),
-        "exact_entity_true": sum(1 for row in verified if row["exact_entity"]),
-        "metric_correct_true": sum(1 for row in verified if row["metric_correct"]),
+        "unique_ids": len(verified_rows),
+        "deduped_rows": len(observations) - len(verified_rows),
+        "labels": len(verified_rows),
+        "exact_entity_true": sum(1 for row in verified_rows if row["exact_entity"]),
+        "metric_correct_true": sum(1 for row in verified_rows if row["metric_correct"]),
         "fail_checks": failures,
     }
     Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -49,12 +49,17 @@ def observation(profile: dict) -> list[dict]:
         },
     }
     handles = []
+    seen = set()
     for link in socials:
         if not isinstance(link, dict) or not link.get("platform") or not link.get("url"):
             continue
+        handle_id = f"company-site-handle-{org}-{str(digest)[:16]}-{str(link['platform']).casefold()}"
+        if handle_id in seen:
+            continue
+        seen.add(handle_id)
         handles.append({
             **base,
-            "id": f"company-site-handle-{org}-{str(digest)[:16]}-{str(link['platform']).casefold()}",
+            "id": handle_id,
             "platform": str(link.get("platform") or "").casefold(),
             "signal_type": "profile_handle",
             "evidence_span": f"Identity-gated {link['platform']} handle published on the exact company site.",

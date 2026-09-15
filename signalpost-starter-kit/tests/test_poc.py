@@ -39,6 +39,7 @@ from scripts.normalize_google_maps_results import candidate_score  # noqa: E402
 from scripts.run_scrapy_websites import terminal_events_for_run  # noqa: E402
 from scripts.run_sentiment_model import MODEL_REVISION, normalize_generated_label  # noqa: E402
 from scripts.score_company_completeness import score_rows, summarize  # noqa: E402
+from scripts.run_nim_summary import parse_summary, summarize_row  # noqa: E402
 from scripts.extract_company_site_activity import observation as site_activity_observation  # noqa: E402
 from scripts.extract_company_site_news import observation as site_news_observation  # noqa: E402
 from scripts.build_verified_observations import build as build_verified_observations  # noqa: E402
@@ -1922,6 +1923,45 @@ class VerifiedSiteSeedTests(unittest.TestCase):
             failed = subprocess.run(command, capture_output=True, text=True)
             self.assertNotEqual(failed.returncode, 0)
             self.assertIn("unknown organisations", failed.stderr)
+
+
+class NimSummaryTests(unittest.TestCase):
+    def test_parse_summary_recovers_last_json_object_from_prose(self):
+        blob = (
+            "We need to output JSON.\n"
+            "Let's craft:\n"
+            '{"company_name": "WEGGER AS", "what_it_does": "Advisory."}\n'
+            "done"
+        )
+        self.assertEqual(parse_summary(blob), {"company_name": "WEGGER AS", "what_it_does": "Advisory."})
+
+    def test_parse_summary_truncated_json_is_undetermined(self):
+        self.assertEqual(parse_summary('{"company_name": "WEGGER AS", "what_it_does": "unt'), {})
+
+    def test_parse_summary_clean_json(self):
+        self.assertEqual(parse_summary('{"company_name": "WEGGER AS"}'), {"company_name": "WEGGER AS"})
+
+    def test_summarize_row_abstains_without_api_key(self):
+        outcome = summarize_row({"profile": {"name": "WEGGER AS"}}, api_key="", model="test-model", timeout=5)
+        self.assertEqual(outcome["synthesis_state"], "abstained")
+        self.assertIn("NVIDIA_API_KEY not found", outcome["reason"])
+
+    @patch("scripts.run_nim_summary.call_nim")
+    def test_summarize_row_retries_then_fails(self, mock_call):
+        mock_call.side_effect = TimeoutError("boom")
+        outcome = summarize_row({"organisation_number": "996493660", "profile": {"name": "WEGGER AS"}},
+                                api_key="secret", model="test-model", timeout=5, retries=2)
+        self.assertEqual(mock_call.call_count, 2)
+        self.assertEqual(outcome["synthesis_state"], "failed")
+        self.assertIn("TimeoutError", outcome["reason"])
+
+    @patch("scripts.run_nim_summary.call_nim")
+    def test_summarize_row_available_after_transient_failure(self, mock_call):
+        mock_call.side_effect = [TimeoutError("boom"), '{"company_name": "WEGGER AS", "what_it_does": "Advisory."}']
+        outcome = summarize_row({"organisation_number": "996493660", "profile": {"name": "WEGGER AS"}},
+                                api_key="secret", model="test-model", timeout=5, retries=3)
+        self.assertEqual(outcome["synthesis_state"], "available")
+        self.assertEqual(outcome["summary"]["company_name"], "WEGGER AS")
 
 
 if __name__ == "__main__":
