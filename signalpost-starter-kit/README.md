@@ -188,14 +188,12 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 
 - All secrets are supplied through environment variables only; none are stored
   in the repository. Optional keys: `NVIDIA_API_KEY` (grounded summaries),
-  `FIRECRAWL_API_KEY` (site discovery), `REDDIT_CLIENT_ID` /
-  `REDDIT_CLIENT_SECRET` (comment mentions; connector abstains without them).
-  A missing key degrades cleanly — the corresponding connector is skipped or
+  `FIRECRAWL_API_KEY` (site discovery). A missing key degrades cleanly — the corresponding connector is skipped or
   abstains, never errors.
 - Third-party spend is **~$0 per 100 companies**. The core batch (registry +
   company-site capture) is free. Optional stages: NVIDIA NIM summaries (free
   trial endpoint), Firecrawl Search (used only for candidate discovery, inside
-  the $10 budget). Reddit uses the free public API tier.
+  the $10 budget).
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.

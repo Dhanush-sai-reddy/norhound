@@ -11,6 +11,14 @@ LEGAL_AND_GENERIC = {
     "nuf", "ab", "b", "v", "limited", "ltd", "inc", "plc", "the", "og", "and",
 }
 
+# A registered-style company name as it appears on a homepage ("XxX AS",
+# "Stiftelsen Y"), used to detect when a page belongs to a different operator
+# than the organisation under assessment.
+LEGAL_ENTITY_EXPR = re.compile(
+    r"(?<![A-Za-z0-9])(?:[A-Za-zÆÅØæåø0-9&'’.\- ]*?(?:AS|ASA|ANS|DA|SF|SA|NUF|Stiftelsen))\b",
+    re.UNICODE,
+)
+
 
 def _tokens(value: Any) -> list[str]:
     text = str(value or "").translate(str.maketrans({"ø": "o", "Ø": "O", "å": "a", "Å": "A", "æ": "ae", "Æ": "AE"}))
@@ -30,6 +38,39 @@ def _structured_names(value: Any) -> list[str]:
         for child in value:
             names.extend(_structured_names(child))
     return names
+
+
+def _distinct_operator(core: list[str], homepage_parts: list[Any], profile_name: str) -> tuple[str, bool]:
+    """Return (name, is_conflict) for a homepage that names a different operator.
+
+    A homepage that explicitly names a registered-style legal entity which shares
+    stem tokens with the profile but is not the profile itself is a strong signal
+    that the site belongs to a different company (e.g. an operating company vs the
+    legal entity under assessment). When the profile's own full legal name is not
+    present on the homepage, the page is withheld instead of being scored via
+    partial name overlap.
+    """
+    core_tokens = set(core)
+    if not core_tokens:
+        return "", False
+    for part in homepage_parts:
+        text = str(part or "")
+        if not text.strip():
+            continue
+        for match in LEGAL_ENTITY_EXPR.finditer(text):
+            candidate = " ".join(match.group(0).split()).strip()
+            if not any(char.isupper() for char in candidate):
+                continue
+            candidate_tokens = set(_tokens(candidate))
+            if not candidate_tokens:
+                continue
+            if candidate_tokens == core_tokens:
+                continue
+            shared = candidate_tokens & core_tokens
+            if not shared:
+                continue
+            return candidate, True
+    return "", False
 
 
 def assess_website_identity(profile: dict[str, Any]) -> dict[str, Any]:
@@ -68,6 +109,7 @@ def assess_website_identity(profile: dict[str, Any]) -> dict[str, Any]:
     normalized_raw = unicodedata.normalize("NFKD", candidate_text).encode("ascii", "ignore").decode().casefold()
     homepage_token_sets = [set(_tokens(part)) for part in homepage_identity_parts if part]
     exact_homepage_name = bool(core and any(set(core).issubset(tokens) for tokens in homepage_token_sets))
+    operator_name, operator_conflict = _distinct_operator(core, homepage_identity_parts, str(profile.get("name") or ""))
     substantive_homepage = len(str(value.get("main_text_excerpt") or "").strip()) >= 100
     is_business_sports_club = bool(re.search(r"(?:^|\s)B\.?\s*I\.?\s*L\.?(?:\s|$)", str(profile.get("name") or ""), re.I))
     if any(marker in normalized_raw for marker in parked_markers):
@@ -79,6 +121,9 @@ def assess_website_identity(profile: dict[str, Any]) -> dict[str, Any]:
     elif org_digits and org_digits in compact_homepage_candidate:
         score = 1.0
         reasons.append("exact organisation number appears in homepage identity evidence")
+    elif operator_conflict and not exact_homepage_name:
+        score = 0.3
+        reasons.append(f"homepage identity names a different registered operator ({operator_name}) without the assessable legal entity full name")
     elif len(core) >= 2 and exact_homepage_name:
         score = 0.95
         reasons.append("all normalized legal-name tokens appear together in homepage identity evidence")

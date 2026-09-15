@@ -4,9 +4,13 @@
 Each observation's exact_entity and metric_correct labels are derived by
 re-checking the frozen profile evidence that produced it, not assumed:
 
-- source_url must live on the company's verified registered domain
+- source_url must live on the company's verified registered domain (or, for
+  official-API rows, carry an organisation_number_on_official_api / directory
+  identity proof instead)
 - content_sha256 must match the stored website digest for that organisation
-- identity_proof must carry the website identity gate assessment
+- identity_proof must carry the website identity gate assessment (or an
+  authoritative official-API / directory organisation-number proof)
+- acquisition_mode must be permitted_public_page or official_api
 - publishable status must match at publication time
 - profile_handle rows must reference a social link that the identity gate
   actually observed in social_links (and stays quarantined otherwise)
@@ -44,11 +48,17 @@ def registered_domain(url: str) -> str | None:
         return None
 
 
-def _directory_proof(obs: dict) -> bool:
-    return any(
-        "organisation_number_on_directory_page" in str(p.get("type") or "")
-        for p in (obs.get("identity_proof") or [])
-    )
+def _identity_proof_kind(obs: dict) -> str:
+    """Classify the authoritative identity proof: 'directory', 'official_api', or '' (website-only)."""
+    for proof in (obs.get("identity_proof") or []):
+        proof_type = str(proof.get("type") or "")
+        if "organisation_number_on_official_api" in proof_type:
+            return "official_api"
+    for proof in (obs.get("identity_proof") or []):
+        proof_type = str(proof.get("type") or "")
+        if "organisation_number_on_directory_page" in proof_type:
+            return "directory"
+    return ""
 
 
 def _identity_gate(website: dict) -> dict:
@@ -67,9 +77,11 @@ def verify(obs: dict, profile: dict) -> dict:
     checks["gate_publishable"] = bool(gate.get("publishable"))
     checks["gate_label"] = gate.get("label") in ("exact", "quasi", "major_public") or bool(gate.get("status")) or bool(gate.get("score"))
     checks["source_domain_matches"] = registered_domain(source_url) == registered_domain(site_url) or source_url == site_url
-    directory_proof = _directory_proof(obs)
-    checks["directory_identity_proof"] = directory_proof
-    if not directory_proof:
+    identity_proof_kind = _identity_proof_kind(obs)
+    checks["directory_identity_proof"] = identity_proof_kind == "directory"
+    checks["official_api_identity_proof"] = identity_proof_kind == "official_api"
+    checks["identity_proof_present"] = bool(obs.get("identity_proof"))
+    if not identity_proof_kind:
         checks["proof_references_site"] = any(
             isinstance(p, dict) and ("website" in str(p.get("type") or "").lower() or "site" in str(p.get("type") or "").lower())
             for p in (obs.get("identity_proof") or [])
@@ -79,12 +91,11 @@ def verify(obs: dict, profile: dict) -> dict:
     page_digests = {str(p.get("content_sha256") or "") for p in (value.get("pages") or [])}
     digest_matches = (digest and digest == stored_digest) or (digest and digest in page_digests)
     checks["digest_matches"] = digest_matches
-    checks["identity_proof_present"] = bool(obs.get("identity_proof"))
     checks["proof_references_site"] = any(
         isinstance(p, dict) and ("website" in str(p.get("type") or "").lower() or "site" in str(p.get("type") or "").lower())
         for p in (obs.get("identity_proof") or [])
     )
-    checks["acquisition_permitted"] = obs.get("acquisition_mode") == "permitted_public_page"
+    checks["acquisition_permitted"] = obs.get("acquisition_mode") in ("permitted_public_page", "official_api")
     checks["rights_approved"] = obs.get("rights_status") == "approved"
 
     if obs.get("signal_type") == "profile_handle":
@@ -93,16 +104,17 @@ def verify(obs: dict, profile: dict) -> dict:
         checks["handle_present_in_gate_socials"] = handle in socials
         checks["platform_minor"] = bool(obs.get("platform"))
 
+    official_api_row = checks.get("official_api_identity_proof", False)
     exact_entity = bool(
         checks["organisation_match"]
         and checks["site_status_available"]
-        and checks["gate_publishable"]
-        and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False))
+        and (checks["gate_publishable"] or official_api_row)
+        and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False) or official_api_row)
         and checks["identity_proof_present"]
     )
     if obs.get("signal_type") == "profile_handle":
         exact_entity = exact_entity and checks.get("handle_present_in_gate_socials", False)
-    elif not checks.get("directory_identity_proof", False):
+    elif not (checks.get("directory_identity_proof", False) or official_api_row):
         exact_entity = exact_entity and bool(checks.get("proof_references_site", False))
     digest_present = bool(digest)
     metric_correct = exact_entity and digest_present and checks["acquisition_permitted"] and checks["rights_approved"]

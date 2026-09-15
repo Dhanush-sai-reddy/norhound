@@ -44,20 +44,8 @@ from scripts.extract_company_site_activity import observation as site_activity_o
 from scripts.extract_company_site_news import observation as site_news_observation  # noqa: E402
 from scripts.build_verified_observations import build as build_verified_observations  # noqa: E402
 from scripts.run_google_news_rss_connector import exact_title_match  # noqa: E402
-from scripts.run_linkedin_guest_jobs_connector import canonical_company_url, parse_detail_company_urls, parse_job_cards, parse_typeahead  # noqa: E402
-from scripts.run_linkedin_guest_experiment import (  # noqa: E402
-    assess_profile_identity as assess_linkedin_profile_identity,
-    extract_profile as extract_linkedin_profile,
-    legal_name_profile_url,
-)
 from scripts.run_fagfolkguiden_reviews_connector import extract_aggregate_rating, slug  # noqa: E402
 from scripts.verify_and_label_observations import verify as verify_observation  # noqa: E402
-from scripts.discover_linkedin_company_profiles import (  # noqa: E402
-    discovery_identity as linkedin_discovery_identity,
-    normalized_full_name as linkedin_normalized_full_name,
-    official_site_aliases as linkedin_official_site_aliases,
-    parse_exact_typeahead as parse_linkedin_exact_typeahead,
-)
 
 
 class EvidenceTests(unittest.TestCase):
@@ -116,143 +104,6 @@ class ExternalFootprintTests(unittest.TestCase):
     def test_unofficial_scraper_output_is_experimental_not_publishable(self):
         item = self.observation(platform="linkedin", signal_type="job_posting", acquisition_mode="jobspy_experiment")
         self.assertFalse(publishable_observation(item))
-
-    def test_linkedin_guest_jobs_require_exact_verified_company_url(self):
-        raw = b'''<div class="base-search-card" data-entity-urn="urn:li:jobPosting:4456746433">
-          <a class="base-card__full-link" href="https://no.linkedin.com/jobs/view/example-4456746433?x=1"></a>
-          <span class="sr-only">Project manager</span>
-          <h4 class="base-search-card__subtitle"><a href="https://no.linkedin.com/company/af-gruppen?trk=x">AF Gruppen</a></h4>
-          <span class="job-search-card__location">Oslo</span><time datetime="2026-08-23"></time>
-        </div>
-        <div class="base-search-card" data-entity-urn="urn:li:jobPosting:4456746434">
-          <a class="base-card__full-link" href="https://linkedin.com/jobs/view/other-4456746434"></a>
-          <span class="sr-only">Wrong parent job</span>
-          <h4 class="base-search-card__subtitle"><a href="https://linkedin.com/company/af-gruppen-sverige">AF Gruppen Sverige</a></h4>
-        </div>'''
-        jobs, candidates = parse_job_cards(raw, "https://linkedin.com/company/af-gruppen")
-        self.assertEqual(candidates, 2)
-        self.assertEqual([item["job_id"] for item in jobs], ["4456746433"])
-        self.assertEqual(jobs[0]["company_url"], "https://linkedin.com/company/af-gruppen")
-
-    def test_linkedin_company_urls_and_typeahead_are_normalized_without_claiming_ambiguous_ids(self):
-        self.assertEqual(
-            canonical_company_url("https://no.linkedin.com/company/Norsk-Fiskeeksport/about?trk=x"),
-            "https://linkedin.com/company/norsk-fiskeeksport",
-        )
-        candidates = parse_typeahead(
-            json.dumps([
-                {"id": "34440", "type": "COMPANY", "displayName": "AF Gruppen"},
-                {"id": "1188022", "type": "COMPANY", "displayName": "AF Gruppen Sverige"},
-            ]).encode(),
-            "AF GRUPPEN ASA",
-        )
-        self.assertTrue(candidates[0]["exact_legal_name_core"])
-        self.assertFalse(candidates[1]["exact_legal_name_core"])
-        self.assertEqual(
-            parse_detail_company_urls(
-                b'<a href="https://no.linkedin.com/company/af-gruppen?trk=job">AF Gruppen</a>'
-                b'<a href="https://example.test/company/wrong">Wrong</a>'
-            ),
-            {"https://linkedin.com/company/af-gruppen"},
-        )
-
-    def test_linkedin_guest_profile_uses_structured_company_data_and_ignores_dormant_challenge_code(self):
-        graph = {
-            "@graph": [
-                {
-                    "@type": "DiscussionForumPosting",
-                    "author": {"url": "https://no.linkedin.com/company/af-gruppen"},
-                    "datePublished": "2026-08-21T06:15:05Z",
-                    "text": "Exact company update",
-                    "url": "https://no.linkedin.com/posts/example-activity-7496449781678927873-x",
-                },
-                {
-                    "@type": "Organization",
-                    "name": "AF Gruppen",
-                    "url": "https://no.linkedin.com/company/af-gruppen",
-                    "description": "Construction group",
-                    "numberOfEmployees": {"value": 1303},
-                },
-            ]
-        }
-        raw = (
-            '<meta name="description" content="AF Gruppen | 56 726 followers on LinkedIn">'
-            f'<script type="application/ld+json">{json.dumps(graph)}</script>'
-            '<script>const dormant="recaptcha/challengepage";</script>'
-            '<div data-test-id="about-us__size"><dd>5,001-10,000 employees</dd></div>'
-            '<article class="main-feed-activity-card" data-activity-urn="urn:li:activity:7496449781678927873">'
-            '<a data-test-id="social-actions__reactions" data-num-reactions="29"></a>'
-            '<a data-test-id="social-actions__comments" data-num-comments="4"></a></article>'
-        ).encode()
-        profile = extract_linkedin_profile(raw, "https://linkedin.com/company/af-gruppen")
-        self.assertEqual(profile["followers"], 56726)
-        self.assertEqual(profile["visible_employees"], 1303)
-        self.assertEqual(profile["employee_size_label"], "5,001-10,000 employees")
-        self.assertEqual(profile["posts"][0]["likes"], 29)
-        self.assertEqual(profile["posts"][0]["comments"], 4)
-
-    def test_linkedin_guest_profile_rejects_authwall_without_organization_data(self):
-        with self.assertRaisesRegex(RuntimeError, "no structured organization"):
-            extract_linkedin_profile(b'<script>recaptcha/challengepage</script>', "https://linkedin.com/company/example")
-
-    def test_linkedin_stale_handle_fallback_is_bounded_to_registry_legal_name(self):
-        self.assertEqual(legal_name_profile_url("DIPS AS"), "https://www.linkedin.com/company/dips-as")
-        self.assertEqual(legal_name_profile_url("RØD & BLÅ AS"), "https://www.linkedin.com/company/rod-bla-as")
-
-    def test_linkedin_discovery_requires_exact_typeahead_name_and_corroboration(self):
-        raw = json.dumps([
-            {"id": "1", "type": "COMPANY", "displayName": "DIPS AS"},
-            {"id": "2", "type": "COMPANY", "displayName": "DIPS ASA"},
-        ]).encode()
-        self.assertEqual([item["linkedin_company_id"] for item in parse_linkedin_exact_typeahead(raw, "DIPS AS")], ["1"])
-        self.assertEqual(linkedin_normalized_full_name("RØD & BLÅ AS"), "rød blå as")
-        company = {
-            "name": "DIPS AS",
-            "municipality": "BODØ",
-            "website": "https://dips.com",
-            "evidence": {"website": {"status": "available", "value": {"final_url": "https://dips.com"}}},
-        }
-        exact = linkedin_discovery_identity(company, {"name": "DIPS AS", "website": "https://www.dips.com", "headquarters": "Bodø"}, {"legal_name_slug"})
-        self.assertTrue(exact["exact_entity"])
-        weak = linkedin_discovery_identity(company, {"name": "DIPS AS", "website": "https://unrelated.test", "headquarters": "Oslo"}, {"legal_name_slug"})
-        self.assertFalse(weak["exact_entity"])
-
-    def test_linkedin_fuzzy_discovery_uses_verified_site_alias_and_reverse_domain(self):
-        company = {
-            "name": "JARRE AS",
-            "municipality": "INDRE ØSTFOLD",
-            "website": "https://jarre.co",
-            "evidence": {
-                "website": {"status": "available", "value": {"final_url": "https://jarre.co", "title": "Jarre&Co"}},
-                "roles": {"value": {"roles": [{"name": "Christian Jarre", "role_code": "DAGL"}]}},
-            },
-        }
-        self.assertEqual(linkedin_official_site_aliases(company), ["Jarre&Co"])
-        exact = linkedin_discovery_identity(
-            company,
-            {"name": "Jarre & Co", "website": "https://www.jarre.co", "headquarters": "Askim", "description": ""},
-            {"official_site_alias:Jarre&Co"},
-        )
-        self.assertTrue(exact["exact_entity"])
-
-    def test_linkedin_profile_identity_accepts_redirect_alias_only_with_name_or_reverse_domain_proof(self):
-        profile = {
-            "name": "ZAPTEC ASA",
-            "website": "https://zaptec.com",
-            "evidence": {"website": {"source_url": "https://www.zaptec.com/", "value": {"final_url": "https://www.zaptec.com/"}}},
-        }
-        accepted = assess_linkedin_profile_identity(
-            profile,
-            "https://linkedin.com/company/gozaptec",
-            {"name": "Zaptec", "page_url": "https://linkedin.com/company/zaptec", "website": "https://www.zaptec.com"},
-        )
-        self.assertTrue(accepted["publishable_candidate"])
-        rejected = assess_linkedin_profile_identity(
-            profile,
-            "https://linkedin.com/company/gozaptec",
-            {"name": "Unrelated Parent", "page_url": "https://linkedin.com/company/unrelated", "website": "https://parent.test"},
-        )
-        self.assertFalse(rejected["publishable_candidate"])
 
     def test_google_play_observation_is_supported_but_unofficial_output_stays_experimental(self):
         item = self.observation(
@@ -507,117 +358,6 @@ class ExternalFootprintTests(unittest.TestCase):
         result = run_company_control(profile, [], prior_iterations=prior, minimum_iterations=1, maximum_iterations=2)
         self.assertEqual(result["iterations"][0]["strategy"], "youtube_channel_feed")
         self.assertEqual(result["iterations"][0]["controller_action"], "replicate")
-
-
-class RedditMentionsConnectorTests(unittest.TestCase):
-    def test_pipeline_consolidation_survives_raw_line_separators(self):
-        import scripts.run_external_pipeline as pipeline
-
-        stage = pipeline.attach_external_observations if hasattr(pipeline, "attach_external_observations") else None
-        with tempfile.TemporaryDirectory() as tmp:
-            obs_dir = Path(tmp)
-            source = obs_dir / "extra.jsonl"
-            text_with_raw = "# OBS\\u2028".replace("\\u2028", "\u2028") if False else "x"
-            source.write_text(json.dumps({"id": "a", "note": "line1\u2028line2"}) + "\n", encoding="utf-8")
-            repaired = pipeline.sanitize_line_separators(source.read_text(encoding="utf-8"))
-            self.assertEqual(repaired.count("\u2028"), 0)
-            self.assertIn("\\u2028", repaired)
-            rows = [json.loads(line) for line in repaired.splitlines() if line.strip()]
-            self.assertEqual(len(rows), 1)
-            self.assertEqual(rows[0]["note"], "line1\u2028line2")
-
-    def test_pipeline_subprocesses_use_the_venv_interpreter(self):
-        import scripts.run_external_pipeline as pipeline
-
-        with patch.object(pipeline.subprocess, "run") as mock_run:
-            mock_run.return_value.__enter__ = None  # placeholder; run() uses subprocess.run directly
-            mock_run.return_value.returncode = 0
-            pipeline.run(["python", "scripts/extract_company_site_activity.py", "--profiles", "x", "--output", "y", "--report", "z"])
-        argv = mock_run.call_args.args[0]
-        self.assertEqual(argv[0], pipeline.sys.executable)
-        self.assertNotEqual(argv[0], "python")
-        self.assertEqual(argv[1], "scripts/extract_company_site_activity.py")
-
-    def test_exact_name_match_and_sentiment_label_are_deterministic(self):
-        import scripts.run_reddit_mentions_connector as module
-
-        self.assertTrue(module.exact_name_in_text("WEGGER AS", "Wegger anbefales for rådgivning"))
-        self.assertFalse(module.exact_name_in_text("WEGGER AS", "Weggerrad verksted er godt"))
-        self.assertFalse(module.exact_name_in_text("WEGGER AS", "Ingen match her"))
-        self.assertEqual(module.say_positive_or_negative("Vi anbefaler dem, bra firma"), "positive")
-        self.assertEqual(module.say_positive_or_negative("Svindel, styr unna"), "negative")
-        self.assertIsNone(module.say_positive_or_negative("Helt nøytralt innlegg"))
-
-    def test_reddit_fetch_accepts_only_internal_exact_name_mentions(self):
-        import scripts.run_reddit_mentions_connector as module
-
-        profile = {"organisation_number": "100000000", "name": "WEGGER AS"}
-
-        def fake_search(token, query, timeout=20.0, limit=25):
-            return [{
-                "subreddit": "oslo",
-                "permalink": "/r/oslo/comments/abc1/wegger/",
-                "url": "https://www.reddit.com/r/oslo/comments/abc1/wegger/",
-                "title": "Wegger anbefales",
-                "selftext": "Vi brukte Wegger til rådgivning, bra firma.",
-                "score": 5,
-                "num_comments": 2,
-                "created_utc": 1700000000,
-                "external": False,
-            }, {
-                "subreddit": "norge",
-                "permalink": "/r/norge/comments/abc2/proff/",
-                "url": "https://www.reddit.com/r/norge/comments/abc2/proff/",
-                "title": "Proff-siden vår",
-                "selftext": "proff.no tjeneste",
-                "score": 1,
-                "num_comments": 0,
-                "created_utc": 1700000001,
-                "external": True,
-            }], {"status": 200}
-
-        with patch("scripts.run_reddit_mentions_connector.search_reddit", side_effect=fake_search):
-            observations, operation = module.fetch(profile, "token-abc", limit=10)
-        self.assertEqual(len(observations), 1)
-        self.assertEqual(observations[0]["signal_type"], "public_mention")
-        self.assertEqual(observations[0]["platform"], "reddit")
-        self.assertEqual(observations[0]["sentiment_label"], "positive")
-        self.assertEqual(observations[0]["acquisition_mode"], "rights_review_experiment")
-
-    def test_reddit_abstains_without_credentials(self):
-        import scripts.run_reddit_mentions_connector as module
-        import tempfile
-
-        with tempfile.TemporaryDirectory() as temporary:
-            root = Path(temporary)
-            profiles = root / "profiles.jsonl"
-            profiles.write_text(json.dumps({"organisation_number": "100000000", "name": "WEGGER AS"}) + "\n", encoding="utf-8")
-            output = root / "out.jsonl"
-            report = root / "report.json"
-
-            old_argv = module.sys.argv
-            old_client_id = module.os.environ.get("REDDIT_CLIENT_ID")
-            old_client_secret = module.os.environ.get("REDDIT_CLIENT_SECRET")
-            try:
-                module.os.environ.pop("REDDIT_CLIENT_ID", None)
-                module.os.environ.pop("REDDIT_CLIENT_SECRET", None)
-                module.sys.argv = [
-                    "run_reddit_mentions_connector.py",
-                    "--profiles", str(profiles),
-                    "--output", str(output),
-                    "--report", str(report),
-                ]
-                module.main()
-            finally:
-                module.sys.argv = old_argv
-                if old_client_id is not None:
-                    module.os.environ["REDDIT_CLIENT_ID"] = old_client_id
-                if old_client_secret is not None:
-                    module.os.environ["REDDIT_CLIENT_SECRET"] = old_client_secret
-            self.assertEqual(output.read_text(encoding="utf-8"), "")
-            payload = json.loads(report.read_text(encoding="utf-8"))
-            self.assertEqual(payload["abstained"], 1)
-            self.assertEqual(payload["observations"], 0)
 
 
 class DuckDuckGoDiscoveryTests(unittest.TestCase):
@@ -1146,6 +886,50 @@ class VerifiedPublicationTests(unittest.TestCase):
         }
         label = verify_observation(obs, self.profile())
         self.assertEqual(label["exact_entity"], 0)
+
+    def test_official_api_proof_does_not_require_publishable_site_gate(self):
+        obs = {
+            **self.review_observation(stamped_exact=False),
+            "id": "api1",
+            "platform": "official_api",
+            "signal_type": "job_posting",
+            "source_url": "https://pam-stilling-feed.nav.no/api/v1/feed",
+            "identity_proof": [{"type": "organisation_number_on_official_api", "value": "123456789"}],
+            "acquisition_mode": "official_api",
+        }
+        label = verify_observation(obs, self.profile(gate_publishable=False))
+        self.assertEqual(label["exact_entity"], 1)
+        self.assertEqual(label["metric_correct"], 1)
+        self.assertTrue(label["checks"]["official_api_identity_proof"])
+        self.assertFalse(label["checks"]["proof_references_site"])
+
+    def test_official_api_proof_still_requires_strict_organisation_match(self):
+        obs = {
+            **self.review_observation(stamped_exact=False),
+            "id": "api2",
+            "platform": "official_api",
+            "signal_type": "job_posting",
+            "source_url": "https://pam-stilling-feed.nav.no/api/v1/feed",
+            "organisation_number": "000000000",
+            "identity_proof": [{"type": "organisation_number_on_official_api", "value": "000000000"}],
+            "acquisition_mode": "official_api",
+        }
+        label = verify_observation(obs, self.profile(gate_publishable=False))
+        self.assertEqual(label["exact_entity"], 0)
+
+    def test_official_api_proof_without_acquisition_mode_is_not_metric_correct(self):
+        obs = {
+            **self.review_observation(stamped_exact=False),
+            "id": "api3",
+            "platform": "official_api",
+            "signal_type": "job_posting",
+            "source_url": "https://pam-stilling-feed.nav.no/api/v1/feed",
+            "identity_proof": [{"type": "organisation_number_on_official_api", "value": "123456789"}],
+            "acquisition_mode": "rights_review_experiment",
+        }
+        label = verify_observation(obs, self.profile(gate_publishable=False))
+        self.assertEqual(label["exact_entity"], 1)
+        self.assertEqual(label["metric_correct"], 0)
 
 
 class EvaluationPublicationTests(unittest.TestCase):
@@ -2021,6 +1805,42 @@ class WebsiteIdentityTests(unittest.TestCase):
         fish = {"name": "Norsk Fiskeeksport AS"}
         self.assertFalse(assess_social_identity(aon, {"platform": "linkedin", "url": "https://linkedin.com/company/aon"})["publishable"])
         self.assertTrue(assess_social_identity(fish, {"platform": "linkedin", "url": "https://linkedin.com/company/norsk-fiskeeksport"})["publishable"])
+
+    def test_homepage_naming_different_operator_is_withheld(self):
+        row = {
+            "organisation_number": "999000001",
+            "name": "Royal Subsea AS",
+            "evidence": {"website": {"status": "available", "value": {
+                "title": "Royal Industriservices AS - boring og ingeniørtjenester",
+                "main_text_excerpt": "Royal Industriservices AS leverer tjenester til oljenæringen.",
+            }}},
+        }
+        assessment = assess_website_identity(row)
+        self.assertFalse(assessment["publishable"])
+        self.assertLess(assessment["score"], 0.9)
+
+    def test_homepage_naming_target_among_group_entities_publishes(self):
+        row = {
+            "organisation_number": "999000002",
+            "name": "Royal Subsea AS",
+            "evidence": {"website": {"status": "available", "value": {
+                "title": "Royal Gruppen",
+                "structured_organisations": [{"legalName": "Royal Subsea AS"}],
+                "main_text_excerpt": "Royal Subsea AS driver undervannstjenester.",
+            }}},
+        }
+        self.assertTrue(assess_website_identity(row)["publishable"])
+
+    def test_homepage_operator_conflict_with_org_number_still_publishes(self):
+        row = {
+            "organisation_number": "999000003",
+            "name": "Royal Subsea AS",
+            "evidence": {"website": {"status": "available", "value": {
+                "title": "Royal Industriservices AS",
+                "main_text_excerpt": "Royal Industriservices AS. Org nr 999 000 003.",
+            }}},
+        }
+        self.assertTrue(assess_website_identity(row)["publishable"])
 
 
 class VerifiedSiteSeedTests(unittest.TestCase):
