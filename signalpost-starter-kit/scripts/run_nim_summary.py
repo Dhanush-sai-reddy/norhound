@@ -207,6 +207,15 @@ def main() -> None:
     args = parser.parse_args()
 
     api_key = os.environ.get(args.api_key_env) or ""
+    if not api_key:
+        try:
+            for line in Path(os.path.expanduser("~/creds")).read_text(encoding="utf-8").splitlines():
+                match = re.search(r"nvapi-[A-Za-z0-9_\-]+", line)
+                if match:
+                    api_key = match.group(0)
+                    break
+        except OSError:
+            pass
     rows = read_jsonl(Path(args.envelopes))
     if args.limit:
         rows = rows[: args.limit]
@@ -237,10 +246,20 @@ def main() -> None:
         return
 
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    summaries: list[dict[str, Any]] = []
+    summaries: list[dict[str, Any]] = list(carried)
     done = 0
     lock = threading.Lock()
     pace = threading.Lock()
+    def persist() -> None:
+        available = [item for item in summaries if item.get("synthesis_state") == "available"]
+        others = [item for item in summaries if item.get("synthesis_state") != "available"]
+        Path(args.output).write_text(
+            "".join(
+                sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n"
+                for item in (available + others)
+            ),
+            encoding="utf-8",
+        )
     def work(row: dict[str, Any]) -> dict[str, Any]:
         nonlocal done
         if args.min_interval:
@@ -248,8 +267,10 @@ def main() -> None:
                 time.sleep(args.min_interval)
         item = summarize_row(row, api_key=api_key, model=args.model, timeout=args.timeout, retries=args.retries)
         with lock:
+            summaries.append(item)
             done += 1
-            if done % 25 == 0:
+            if done % 5 == 0:
+                persist()
                 print(f"({done}/{len(rows)} rows)", flush=True)
         return item
     if args.workers <= 1:
@@ -257,14 +278,8 @@ def main() -> None:
     else:
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             results = list(pool.map(work, rows))
-    summaries = carried + results
-    output_handle = Path(args.output).open("w", encoding="utf-8")
-    try:
-        for item in summaries:
-            output_handle.write(sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n")
-        output_handle.flush()
-    finally:
-        output_handle.close()
+    with lock:
+        persist()
     states = {}
     for item in summaries:
         states.setdefault(item["synthesis_state"], 0)
