@@ -14,8 +14,8 @@ input organisation number — validated 1,000/1,000, no silent drops.
 - fetches official financials, roles, group links and registered workplaces;
 - visits the registry-listed website and rejects weak entity matches;
 - runs external-footprint connectors (company-site activity/news/jobs,
-  Fagfolkguiden reviews, optional site discovery) and attaches only
-  publishable observations;
+  Fagfolkguiden reviews, official NAV job-feed postings, optional site
+  discovery) and attaches only publishable observations;
 - emits one terminal JSONL envelope per input with sources, retrieval times,
   content hashes, request counts and latency;
 - re-verifies every observation against frozen evidence and labels it
@@ -60,7 +60,7 @@ uv run python scripts/run_external_pipeline.py \
 
 # 4. Re-verify every observation against frozen evidence (identity + digest
 #    + domain + exact-org directory proof). Unverified rows never publish.
-#    (Prefix may differ; the shipped audit re-verified 1,326 observations.)
+#    (Prefix may differ; the shipped audit re-verified 1,391 observations.)
 uv run python scripts/verify_and_label_observations.py \
   --profiles out/web1000-profiles.jsonl \
   --observations out/web1000batch.external-withfag.jsonl \
@@ -90,19 +90,22 @@ profiles and observations and can be re-run on any checkout.
 
 ### Expected results (as shipped)
 
-- **879 published** observations, every one carrying the verified
-  `exact_entity` label (1,326 re-verified; unverified rows never publish).
+- **944 published** observations, every one carrying the verified
+  `exact_entity` label (1,391 re-verified; unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
 - Qualification gate **passed** (minimum audit 300).
-- Coverage: any_external 0.352, two_platforms 0.171, buzz_engagement 0.352,
-  ratings_reviews 0.015, workforce_jobs 0.026.
+- Coverage: any_external 0.358, two_platforms 0.175, buzz_engagement 0.352,
+  ratings_reviews 0.015, workforce_jobs 0.036.
+- 65 NAV official-API job-posting observations merged into the audit
+  (`official_api` acquisition, resolved via the Brønnøysund `underenheter`
+  endpoint to each advertiser's parent legal entity).
 - 999/1000 grounded summaries produced (1 transient NIM 503; optional block).
-- 142 tests pass by default (see below).
+- 135 tests pass by default (see below).
 
-Canonical shipped artifacts: `out/web1000batch.external-eval.json` (879/p1.0),
+Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
 `out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
-(audit inputs, 1,326 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
+(audit inputs, 1,391 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
 and the seals in the report. Note `out/batch1000f.*` and the non-`withfag`
 `out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
 submitted numbers.
@@ -144,7 +147,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest tests.test_poc
-# 142 tests pass
+# 135 tests pass
 ```
 
 ## The improvement loop
