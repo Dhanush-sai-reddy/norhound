@@ -14,7 +14,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-UA = "SignalpostResearchPOC/1.0 (https://builderr.ai; bounded job-post discovery)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 SignalpostResearchPOC/1.0"
 CAREER_KEYWORDS = ("karriere", "careers", "career", "jobs", "jobb", "stillings", "stillinger", "ledige-stilling", "recruit", "ansettelse", "join", "vaare-ansatte", "vare-ansatte", "bli-en-av-oss", "bli_en_av_oss")
 CAREERS_PATH = re.compile(r"(?:^|[/_-])[^/_-]*?(?:%s)[^/_-]*?(?:$|[/_-])" % "|".join(re.escape(k) for k in CAREER_KEYWORDS), re.I)
 JOB_SLUG_HINTS = re.compile(r"(?:stilling|jobb|job|rekry|recruit|avdelingsleder|medarbeider|konsulent|ingeni[øo]r|l[æa]rer|sjef|direkt|utvikler|developer|selger|r[åa]dgiver)", re.I)
