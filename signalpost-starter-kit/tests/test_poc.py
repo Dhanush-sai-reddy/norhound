@@ -588,6 +588,37 @@ class CompanySiteJobsConnectorTests(unittest.TestCase):
         self.assertEqual(len(jobs), 1)
         self.assertEqual(jobs[0]["source_url"], "https://jobs.example.no/stillinger/butikksjef-oslo")
 
+    def test_duplicate_posting_across_careers_pages_dedupes_to_one_observation(self):
+        import scripts.extract_company_site_jobs as jobs_mod
+
+        html = (
+            '<html><body><h1>Karriere</h1><p>Vi søker nå nye kolleger. Apply via link below.</p>'
+            '<a href="https://jobs.example.no/stillinger/butikksjef-oslo">Butikksjef Oslo</a>'
+            '</body></html>'
+        ).encode("utf-8")
+        profile = {
+            "organisation_number": "923609016",
+            "name": "Example AS",
+            "evidence": {"website": {
+                "status": "available",
+                "value": {
+                    "final_url": "https://example.no",
+                    "registered_domain": "example.no",
+                    "pages": [
+                        {"url": "https://example.no/karriere", "content_sha256": None},
+                        {"url": "https://example.no/karriere/nye-stillinger", "content_sha256": None},
+                    ],
+                    "identity_assessment": {"publishable": True, "label": "exact", "method": "test"},
+                },
+            }},
+        }
+        with unittest.mock.patch("norway_company_agent.website._robots_allowed", return_value=True), \
+             unittest.mock.patch.object(jobs_mod, "fetch_page_html",
+                                        return_value=(html, html, "https://example.no/karriere")):
+            observations, status = jobs_mod.discover(profile, timeout=5, max_bytes=2_000_000, min_interval=0)
+        ids = [item["id"] for item in observations]
+        self.assertEqual(len(observations), 1, status.get("pages"))
+
     def test_career_page_without_application_marker_abstains(self):
         # No application cue anywhere: a generic "about our staff" page must
         # abstain rather than guess that links are vacancies.

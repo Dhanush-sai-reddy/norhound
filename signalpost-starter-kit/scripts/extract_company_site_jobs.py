@@ -224,6 +224,11 @@ def discover(profile: dict, *, timeout: float, max_bytes: int, min_interval: flo
         posts = extract_jobs_from_page(profile, page_url, html, raw, final_url)
         page_status[page_url] = f"jobs_found:{len(posts)}" if posts else "no_jobs_parsed"
         all_observations.extend(posts)
+    status = "no_jobs_parsed"
+    seen: dict[str, dict] = {}
+    for item in all_observations:
+        seen.setdefault(item["source_url"], item)
+    all_observations = list(seen.values())
     status = "jobs_found" if all_observations else "no_jobs_parsed"
     return all_observations, {"organisation_number": org, "status": status, "pages": page_status}
 
