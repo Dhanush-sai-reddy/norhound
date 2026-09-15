@@ -601,6 +601,62 @@ class CompanySiteJobsConnectorTests(unittest.TestCase):
 
 
 class ExternalObservationAssemblyTests(unittest.TestCase):
+    def test_activity_emits_gated_profile_handle_per_verified_social_link(self):
+        from scripts.extract_company_site_activity import observation as activity_observation
+
+        profile = {
+            "organisation_number": "923609016",
+            "name": "Example AS",
+            "evidence": {
+                "website": {
+                    "status": "available",
+                    "retrieved_at": "2026-09-01T00:00:00Z",
+                    "content_sha256": "c" * 64,
+                    "value": {
+                        "final_url": "https://example.no",
+                        "identity_assessment": {"publishable": True, "label": "exact", "method": "test", "score": 1.0},
+                        "pages": [{"url": "https://example.no/"}],
+                        "social_links": [
+                            {"platform": "facebook", "url": "https://facebook.com/exampleas"},
+                            {"platform": "linkedin", "url": "https://linkedin.com/company/example-as"},
+                        ],
+                        "structured_organisations": [],
+                        "extraction_state": "static_complete",
+                    },
+                },
+            },
+        }
+        items = activity_observation(profile)
+        publishes = [item for item in items if not validate_observation(item)]
+        self.assertGreaterEqual(len(items), 3)
+        self.assertEqual(len(publishes), len(items))
+        handles = [item for item in items if item["signal_type"] == "profile_handle"]
+        self.assertEqual(len(handles), 2)
+        self.assertEqual({h["metrics"]["platform"] for h in handles}, {"facebook", "linkedin"})
+        for item in publishes:
+            self.assertEqual(item["acquisition_mode"], "permitted_public_page")
+            self.assertEqual(item["rights_status"], "approved")
+
+    def test_activity_abstains_without_publishable_identity(self):
+        from scripts.extract_company_site_activity import observation as activity_observation
+
+        profile = {
+            "organisation_number": "923609016",
+            "name": "Example AS",
+            "evidence": {
+                "website": {
+                    "status": "available",
+                    "content_sha256": "c" * 64,
+                    "value": {
+                        "final_url": "https://example.no",
+                        "identity_assessment": {"publishable": False},
+                        "social_links": [],
+                    },
+                },
+            },
+        }
+        self.assertEqual(activity_observation(profile), [])
+
     def test_assembly_attaches_only_publishable_observations_and_retains_rejections(self):
         import tempfile
         from scripts.attach_external_observations import main as attach
@@ -771,11 +827,11 @@ class CompletenessScoreTests(unittest.TestCase):
             }},
         }
         item = site_activity_observation(profile)
-        self.assertIsNotNone(item)
-        self.assertEqual(item["strategy"], "company_site_activity")
-        self.assertTrue(publishable_observation(item))
+        self.assertTrue(item)
+        self.assertEqual(item[0]["strategy"], "company_site_activity")
+        self.assertTrue(publishable_observation(item[0]))
         profile["evidence"]["website"]["value"]["identity_assessment"]["publishable"] = False
-        self.assertIsNone(site_activity_observation(profile))
+        self.assertEqual(site_activity_observation(profile), [])
 
     def test_news_title_gate_requires_the_full_legal_name_core(self):
         self.assertTrue(exact_title_match("NORDIC DOOR AS", "Nordic Door AS åpner ny fabrikk - Lokalavisa"))

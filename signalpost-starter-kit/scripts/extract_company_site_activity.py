@@ -7,24 +7,22 @@ import json
 from pathlib import Path
 
 
-def observation(profile: dict) -> dict | None:
+def observation(profile: dict) -> list[dict]:
     website = (profile.get("evidence") or {}).get("website") or {}
     value = website.get("value") or {}
     identity = value.get("identity_assessment") or {}
     if website.get("status") != "available" or not identity.get("publishable"):
-        return None
+        return []
     source_url = value.get("final_url") or website.get("source_url")
     digest = value.get("content_sha256") or website.get("content_sha256")
     if not source_url or not digest or len(str(digest)) != 64:
-        return None
+        return []
     pages = value.get("pages") or []
     socials = value.get("social_links") or []
     org = str(profile["organisation_number"])
-    return {
-        "id": f"company-site-activity-{org}-{str(digest)[:16]}",
+    base = {
         "organisation_number": org,
         "platform": "company_site",
-        "signal_type": "profile_metrics",
         "source_url": source_url,
         "retrieved_at": website.get("retrieved_at"),
         "content_sha256": digest,
@@ -35,6 +33,12 @@ def observation(profile: dict) -> dict | None:
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
+        "strategy": "company_site_activity",
+    }
+    aggregator = {
+        **base,
+        "id": f"company-site-activity-{org}-{str(digest)[:16]}",
+        "signal_type": "profile_metrics",
         "evidence_span": f"Exact company site snapshot with {len(pages)} bounded pages and {len(socials)} verified social links.",
         "metrics": {
             "bounded_pages_captured": len(pages),
@@ -43,8 +47,20 @@ def observation(profile: dict) -> dict | None:
             "extraction_state": value.get("extraction_state"),
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity.",
         },
-        "strategy": "company_site_activity",
     }
+    handles = []
+    for link in socials:
+        if not isinstance(link, dict) or not link.get("platform") or not link.get("url"):
+            continue
+        handles.append({
+            **base,
+            "id": f"company-site-handle-{org}-{str(digest)[:16]}-{str(link['platform']).casefold()}",
+            "platform": str(link.get("platform") or "").casefold(),
+            "signal_type": "profile_handle",
+            "evidence_span": f"Identity-gated {link['platform']} handle published on the exact company site.",
+            "metrics": {"platform": link["platform"], "url": link["url"]},
+        })
+    return [aggregator, *handles]
 
 
 def main() -> None:
@@ -54,7 +70,7 @@ def main() -> None:
     parser.add_argument("--report", required=True)
     args = parser.parse_args()
     rows = [json.loads(line) for line in Path(args.profiles).read_text(encoding="utf-8").splitlines() if line.strip()]
-    observations = [item for profile in rows if (item := observation(profile))]
+    observations = [item for profile in rows for item in observation(profile)]
     Path(args.output).write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in observations), encoding="utf-8")
     report = {
         "connector": "exact_company_site_activity_v1",
