@@ -178,11 +178,14 @@ capture: direct HTTP, robots.txt honoured, bounded pages, content hashing.
 Company-site activity/news/jobs publish as `permitted_public_page` on
 company-domain pages only. Fagfolkguiden reviews publish only where the page
 carries the exact organisation number; only the aggregate Google rating is
-captured, never individual review text. Third-party buzz (Reddit, news) and
-external ATS postings abstain unless identity-verified on the company's own
-site. LinkedIn/Meta/Indeed direct collection is not used (terms); those
-platforms appear only as identity/discovery cross-links published by the
-company itself.
+captured, never individual review text. NAV job-postings publish as
+`official_api`: the feed is a public API operated by the Norwegian Labour and
+Welfare Administration, and each posting is matched by the advertiser's exact
+Brønnøysund organisation number (sub-unit resolved to its parent legal entity).
+Third-party buzz (Reddit, news) and unofficial/external ATS postings abstain
+unless identity-verified on the company's own site. LinkedIn/Meta/Indeed
+direct collection is not used (terms); those platforms appear only as
+identity/discovery cross-links published by the company itself.
 
 Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 `OUTPUT_CONTRACT.md` for detail.
