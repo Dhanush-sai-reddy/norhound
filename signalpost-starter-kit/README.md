@@ -63,15 +63,15 @@ uv run python scripts/run_external_pipeline.py \
 #    (Prefix may differ; the shipped audit re-verified 1,326 observations.)
 uv run python scripts/verify_and_label_observations.py \
   --profiles out/web1000-profiles.jsonl \
-  --observations out/web1000batch.external.jsonl \
-  --labels out/web1000batch.labels.jsonl \
-  --report out/web1000batch.label-report.json
+  --observations out/web1000batch.external-withfag.jsonl \
+  --labels out/web1000batch.labels-withfag.jsonl \
+  --report out/web1000batch.label-report-withfag.json
 
 # 5. Evaluate the labeled entry (publication requires verified exact_entity).
 uv run python scripts/evaluate_external_footprint.py \
   --profiles out/web1000-profiles.jsonl \
-  --observations out/web1000batch.external.jsonl \
-  --labels out/web1000batch.labels.jsonl \
+  --observations out/web1000batch.external-withfag.jsonl \
+  --labels out/web1000batch.labels-withfag.jsonl \
   --output out/web1000batch.external-eval.json \
   --minimum-audit 300
 
@@ -101,9 +101,11 @@ profiles and observations and can be re-run on any checkout.
 - 142 tests pass by default (see below).
 
 Canonical shipped artifacts: `out/web1000batch.external-eval.json` (879/p1.0),
-`out/web1000batch.labels.jsonl` (audit labels), `out/SUBMISSION-REPORT.md`.
-Note `out/*-withfag.json` and `out/batch1000f.*` are intermediate runs left on
-disk; they are not the submitted numbers.
+`out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
+(audit inputs, 1,326 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
+and the seals in the report. Note `out/batch1000f.*` and the non-`withfag`
+`out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
+submitted numbers.
 
 ### Fresh-batch check
 
