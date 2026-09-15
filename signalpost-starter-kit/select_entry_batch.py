@@ -16,6 +16,7 @@ def main() -> None:
     parser.add_argument("--output", required=True, help="Output JSONL manifest")
     parser.add_argument("--count", type=int, default=1000, help="At least 1000 for a valid entry")
     parser.add_argument("--seed", type=int, default=20260823)
+    parser.add_argument("--website-only", action="store_true", help="Sample only companies with a website field in the universe")
     args = parser.parse_args()
     if args.count < 1000:
         raise SystemExit("Signalpost entries must cover at least 1,000 companies")
@@ -24,8 +25,10 @@ def main() -> None:
     opener = gzip.open if path.suffix == ".gz" else open
     with opener(path, "rt", encoding="utf-8") as handle:
         rows = [json.loads(line) for line in handle if line.strip()]
+    if args.website_only:
+        rows = [row for row in rows if row.get("website") or row.get("nettside")]
     if args.count > len(rows):
-        raise SystemExit(f"Requested {args.count}; universe contains {len(rows)}")
+        raise SystemExit(f"Requested {args.count}; filtered universe contains {len(rows)}")
 
     chosen = random.Random(args.seed).sample(rows, args.count)
     output = Path(args.output)
