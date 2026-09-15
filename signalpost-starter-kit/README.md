@@ -1,6 +1,6 @@
 # Signalpost reference agent
 
-Runnable Signalpost company-research agent with a **complete, evaluated 1,000-company entry** (`out/SUBMISSION-REPORT.md`, commit `48c7928`).
+Runnable Signalpost company-research agent with a **complete, evaluated 1,000-company entry** (`out/SUBMISSION-REPORT.md`, commit `52ab54d`).
 
 The public universe contains 411,160 eligible companies. A valid entry must
 process at least 1,000; the repo ships a full 1,000-company run plus the
