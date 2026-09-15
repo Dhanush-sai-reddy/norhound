@@ -23,8 +23,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = Path(__file__).resolve().parent
 
 
+def sanitize_line_separators(text: str) -> str:
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
 def run(command: list[str]) -> None:
-    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+    argv = [sys.executable, *command[1:]] if command and command[0] == "python" else command
+    result = subprocess.run(argv, cwd=ROOT, capture_output=True, text=True)
     if result.returncode != 0:
         print(result.stdout)
         print(result.stderr, file=sys.stderr)
@@ -39,8 +44,11 @@ def main() -> None:
     parser.add_argument("--discovery-input", default=None, help="Optional discovery candidate JSONL (for missing-website orgs)")
     parser.add_argument("--discovery-limit", type=int, default=0, help="Max discovery queries (0 = auto all missing-website)")
     parser.add_argument("--jobs", action="store_true", help="Run the jobs extractor (network) ")
-    parser.add_argument("--promote", action="store_true", help="Promote Firecrawl-verified sites into canonical website evidence")
+    parser.add_argument("--promote", action="store_true", help="Promote discovered sites into canonical website evidence")
+    parser.add_argument("--discovery-provider", default="firecrawl", choices=["firecrawl", "duckduckgo"], help="Free keyless DuckDuckGo HTML discovery or Firecrawl Search API")
     parser.add_argument("--api-key-env", default="FIRECRAWL_API_KEY")
+    parser.add_argument("--harvest-linkedin-local", action="store_true", help="Run local logged-out LinkedIn company-page harvest (no API key, experimental rights)")
+    parser.add_argument("--harvest-reddit-free", action="store_true", help="Run free Reddit OAuth mention connector (requires REDDIT_CLIENT_ID/SECRET; abstains otherwise)")
     args = parser.parse_args()
 
     prefix = Path(args.prefix)
@@ -81,27 +89,65 @@ def main() -> None:
         discovery_candidates = [json.loads(line) for line in Path(args.discovery_input).read_text(encoding="utf-8").splitlines() if line.strip()]
         missing = sum(1 for row in discovery_candidates if not row.get("website"))
         limit = args.discovery_limit or missing
-        run([
-            "python", str(SCRIPTS / "run_firecrawl_discovery.py"),
+        discovery_script = "run_firecrawl_discovery.py" if args.discovery_provider == "firecrawl" else "run_duckduckgo_discovery.py"
+        discovery_command = [
+            "python", str(SCRIPTS / discovery_script),
             "--input", args.discovery_input,
             "--output", str(discovery_out),
             "--report", str(prefix.with_suffix(prefix.suffix + ".discovery-report.json")),
             "--limit", str(limit),
-            "--count", "5",
+            "--count", "5" if args.discovery_provider == "firecrawl" else "8",
             "--timeout", "20",
             "--min-interval", "2.0",
-            "--max-429-backoff", "45",
             "--promote-verified",
-        ])
+        ]
+        if args.discovery_provider == "firecrawl":
+            discovery_command += ["--max-429-backoff", "45"]
+        run(discovery_command)
 
     observation_files = [activity_out, news_out, jobs_out]
     if discovery_out.exists():
         observation_files.append(discovery_out)
+    linkedin_out = prefix.with_suffix(prefix.suffix + ".linkedin.jsonl")
+    reddit_out = prefix.with_suffix(prefix.suffix + ".reddit.jsonl")
+    handles_out = prefix.with_suffix(prefix.suffix + ".handles.jsonl")
+    if args.harvest_linkedin_local:
+        handles = [
+            item
+            for item in (json.loads(line) for line in activity_out.read_text(encoding="utf-8").splitlines() if line.strip())
+            if item.get("signal_type") == "profile_handle" and str(item.get("platform")).casefold() == "linkedin"
+        ]
+        for handle in handles:
+            handle["profile_url"] = (handle.get("metrics") or {}).get("url") or handle.pop("source_url", "") or ""
+        handles_out.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in handles), encoding="utf-8")
+        cache_dir = Path(args.envelopes).parent / f"{prefix.name}.linkedin-cache"
+        run([
+            "python", str(SCRIPTS / "run_linkedin_guest_experiment.py"),
+            "--profiles", args.profiles,
+            "--handles", str(handles_out),
+            "--output", str(linkedin_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".linkedin-report.json")),
+            "--cache-dir", str(cache_dir),
+            "--delay", "1.0",
+            "--timeout", "20",
+        ])
+        observation_files.append(linkedin_out)
+    if args.harvest_reddit_free:
+        run([
+            "python", str(SCRIPTS / "run_reddit_mentions_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(reddit_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".reddit-report.json")),
+            "--limit", "10",
+            "--min-interval", "0.8",
+            "--timeout", "20",
+        ])
+        observation_files.append(reddit_out)
     existing = [str(path) for path in observation_files if path.exists() and path.stat().st_size > 0]
 
     consolidated = []
     for path in existing:
-        for line in Path(path).read_text(encoding="utf-8").splitlines():
+        for line in sanitize_line_separators(Path(path).read_text(encoding="utf-8")).splitlines():
             if line.strip():
                 consolidated.append(json.loads(line))
     external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")

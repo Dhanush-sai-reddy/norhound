@@ -13,8 +13,12 @@ sys.path.insert(0, str(ROOT / "src"))
 from norway_company_agent.external_footprint import aggregate_footprint, publishable_observation, validate_observation  # noqa: E402
 
 
+def sanitize_line_separators(text: str) -> str:
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
 def read_jsonl(path: str | Path) -> list[dict]:
-    return [json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [json.loads(line) for line in sanitize_line_separators(Path(path).read_text(encoding="utf-8")).splitlines() if line.strip()]
 
 
 def write_jsonl(path: str | Path, rows: list[dict]) -> None:

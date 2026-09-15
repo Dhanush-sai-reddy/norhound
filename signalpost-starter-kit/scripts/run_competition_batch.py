@@ -22,8 +22,12 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
     with temporary.open("w", encoding="utf-8") as handle:
         for row in rows:
-            handle.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+            handle.write(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n")
     temporary.replace(path)
+
+
+def sanitize_line_separators(text: str) -> str:
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
 def main() -> None:

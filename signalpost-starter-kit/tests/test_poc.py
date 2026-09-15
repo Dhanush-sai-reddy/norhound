@@ -32,6 +32,7 @@ from norway_company_agent.batch import evidence_terminal_state, profile_complete
 from norway_company_agent.snapshots import SnapshotFetcher  # noqa: E402
 from bs4 import BeautifulSoup  # noqa: E402
 from scripts.build_prototype import compact as compact_prototype, qualification_copy  # noqa: E402
+from scripts.run_competition_batch import sanitize_line_separators, write_jsonl  # noqa: E402
 from scripts.run_brave_discovery import brave_search  # noqa: E402
 from scripts.run_annual_report_workforce_connector import extract_candidate, needs_ocr  # noqa: E402
 from scripts.normalize_google_maps_results import candidate_score  # noqa: E402
@@ -504,6 +505,150 @@ class ExternalFootprintTests(unittest.TestCase):
         result = run_company_control(profile, [], prior_iterations=prior, minimum_iterations=1, maximum_iterations=2)
         self.assertEqual(result["iterations"][0]["strategy"], "youtube_channel_feed")
         self.assertEqual(result["iterations"][0]["controller_action"], "replicate")
+
+
+class RedditMentionsConnectorTests(unittest.TestCase):
+    def test_pipeline_consolidation_survives_raw_line_separators(self):
+        import scripts.run_external_pipeline as pipeline
+
+        stage = pipeline.attach_external_observations if hasattr(pipeline, "attach_external_observations") else None
+        with tempfile.TemporaryDirectory() as tmp:
+            obs_dir = Path(tmp)
+            source = obs_dir / "extra.jsonl"
+            text_with_raw = "# OBS\\u2028".replace("\\u2028", "\u2028") if False else "x"
+            source.write_text(json.dumps({"id": "a", "note": "line1\u2028line2"}) + "\n", encoding="utf-8")
+            repaired = pipeline.sanitize_line_separators(source.read_text(encoding="utf-8"))
+            self.assertEqual(repaired.count("\u2028"), 0)
+            self.assertIn("\\u2028", repaired)
+            rows = [json.loads(line) for line in repaired.splitlines() if line.strip()]
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["note"], "line1\u2028line2")
+
+    def test_pipeline_subprocesses_use_the_venv_interpreter(self):
+        import scripts.run_external_pipeline as pipeline
+
+        with patch.object(pipeline.subprocess, "run") as mock_run:
+            mock_run.return_value.__enter__ = None  # placeholder; run() uses subprocess.run directly
+            mock_run.return_value.returncode = 0
+            pipeline.run(["python", "scripts/extract_company_site_activity.py", "--profiles", "x", "--output", "y", "--report", "z"])
+        argv = mock_run.call_args.args[0]
+        self.assertEqual(argv[0], pipeline.sys.executable)
+        self.assertNotEqual(argv[0], "python")
+        self.assertEqual(argv[1], "scripts/extract_company_site_activity.py")
+
+    def test_exact_name_match_and_sentiment_label_are_deterministic(self):
+        import scripts.run_reddit_mentions_connector as module
+
+        self.assertTrue(module.exact_name_in_text("WEGGER AS", "Wegger anbefales for rådgivning"))
+        self.assertFalse(module.exact_name_in_text("WEGGER AS", "Weggerrad verksted er godt"))
+        self.assertFalse(module.exact_name_in_text("WEGGER AS", "Ingen match her"))
+        self.assertEqual(module.say_positive_or_negative("Vi anbefaler dem, bra firma"), "positive")
+        self.assertEqual(module.say_positive_or_negative("Svindel, styr unna"), "negative")
+        self.assertIsNone(module.say_positive_or_negative("Helt nøytralt innlegg"))
+
+    def test_reddit_fetch_accepts_only_internal_exact_name_mentions(self):
+        import scripts.run_reddit_mentions_connector as module
+
+        profile = {"organisation_number": "100000000", "name": "WEGGER AS"}
+
+        def fake_search(token, query, timeout=20.0, limit=25):
+            return [{
+                "subreddit": "oslo",
+                "permalink": "/r/oslo/comments/abc1/wegger/",
+                "url": "https://www.reddit.com/r/oslo/comments/abc1/wegger/",
+                "title": "Wegger anbefales",
+                "selftext": "Vi brukte Wegger til rådgivning, bra firma.",
+                "score": 5,
+                "num_comments": 2,
+                "created_utc": 1700000000,
+                "external": False,
+            }, {
+                "subreddit": "norge",
+                "permalink": "/r/norge/comments/abc2/proff/",
+                "url": "https://www.reddit.com/r/norge/comments/abc2/proff/",
+                "title": "Proff-siden vår",
+                "selftext": "proff.no tjeneste",
+                "score": 1,
+                "num_comments": 0,
+                "created_utc": 1700000001,
+                "external": True,
+            }], {"status": 200}
+
+        with patch("scripts.run_reddit_mentions_connector.search_reddit", side_effect=fake_search):
+            observations, operation = module.fetch(profile, "token-abc", limit=10)
+        self.assertEqual(len(observations), 1)
+        self.assertEqual(observations[0]["signal_type"], "public_mention")
+        self.assertEqual(observations[0]["platform"], "reddit")
+        self.assertEqual(observations[0]["sentiment_label"], "positive")
+        self.assertEqual(observations[0]["acquisition_mode"], "rights_review_experiment")
+
+    def test_reddit_abstains_without_credentials(self):
+        import scripts.run_reddit_mentions_connector as module
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            profiles = root / "profiles.jsonl"
+            profiles.write_text(json.dumps({"organisation_number": "100000000", "name": "WEGGER AS"}) + "\n", encoding="utf-8")
+            output = root / "out.jsonl"
+            report = root / "report.json"
+
+            old_argv = module.sys.argv
+            old_client_id = module.os.environ.get("REDDIT_CLIENT_ID")
+            old_client_secret = module.os.environ.get("REDDIT_CLIENT_SECRET")
+            try:
+                module.os.environ.pop("REDDIT_CLIENT_ID", None)
+                module.os.environ.pop("REDDIT_CLIENT_SECRET", None)
+                module.sys.argv = [
+                    "run_reddit_mentions_connector.py",
+                    "--profiles", str(profiles),
+                    "--output", str(output),
+                    "--report", str(report),
+                ]
+                module.main()
+            finally:
+                module.sys.argv = old_argv
+                if old_client_id is not None:
+                    module.os.environ["REDDIT_CLIENT_ID"] = old_client_id
+                if old_client_secret is not None:
+                    module.os.environ["REDDIT_CLIENT_SECRET"] = old_client_secret
+            self.assertEqual(output.read_text(encoding="utf-8"), "")
+            payload = json.loads(report.read_text(encoding="utf-8"))
+            self.assertEqual(payload["abstained"], 1)
+            self.assertEqual(payload["observations"], 0)
+
+
+class DuckDuckGoDiscoveryTests(unittest.TestCase):
+    def test_parse_duckduckgo_html_unblocks_uddg_and_extracts_title_snippet(self):
+        import scripts.run_duckduckgo_discovery as module
+
+        html = (
+            '<html><body>'
+            '<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.no%2F&amp;rut=abc">Example AS</a>'
+            '<a class="result__snippet">Example AS is a firm in Oslo.</a>'
+            '<a class="result__a" href="https://proff.no/example-as">Proff mirror</a>'
+            '</body></html>'
+        )
+        results = module.parse_duckduckgo_html(html, query='"Example AS" 100000001')
+        self.assertEqual([result["url"] for result in results],
+                         ["https://example.no/", "https://proff.no/example-as"])
+        self.assertEqual(results[0]["title"], "Example AS")
+        self.assertIn("firm in Oslo", results[0]["snippet"])
+        self.assertEqual(results[0]["provider"], "duckduckgo_html_search")
+        self.assertEqual(results[0]["rank"], 1)
+        self.assertNotIn("uddg", results[0]["url"])
+
+    def test_parse_duckduckgo_html_drops_duckduckgo_relative_hrefs(self):
+        import scripts.run_duckduckgo_discovery as module
+
+        html = (
+            '<html><body>'
+            '<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fduckduckgo.com%2F">self</a>'
+            '<a class="result__a" href="/html/?q=x">relative</a>'
+            '</body></html>'
+        )
+        results = module.parse_duckduckgo_html(html, query="x")
+        self.assertEqual(results, [])
 
 
 class CompanySiteJobsConnectorTests(unittest.TestCase):
@@ -1039,6 +1184,25 @@ class OperationsTests(unittest.TestCase):
         self.assertEqual(envelope["modules"]["website"]["state"], "blocked_robots")
         self.assertTrue(validate_envelopes([envelope], 1)["passed"])
         self.assertFalse(validate_envelopes([envelope], 2)["passed"])
+
+    def test_batch_jsonl_line_separator_sanitization_preserves_round_trip(self):
+        decoded = sanitize_line_separators('"text with \u2028\u2029 separators"')
+        self.assertNotIn("\u2028", decoded)
+        self.assertNotIn("\u2029", decoded)
+        self.assertIn("\\u2028", decoded)
+        self.assertIn("\\u2029", decoded)
+        self.assertEqual(json.loads(decoded), "text with \u2028\u2029 separators")
+
+    def test_batch_write_jsonl_never_leaves_raw_line_separator_bytes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "profiles.jsonl"
+            write_jsonl(path, [{"organisation_number": "923609016", "note": "scraped U+2028\u2028 U+2029\u2029 content"}])
+            raw = path.read_bytes()
+            self.assertEqual(len([b for b in raw if b == 0x0A]), 1)
+            lines = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+            self.assertEqual(len(lines), 1)
+            self.assertEqual(lines[0]["note"], "scraped U+2028\u2028 U+2029\u2029 content")
+            self.assertIn("\u2028", lines[0]["note"])
 
     def test_unknown_evidence_state_is_submission_error(self):
         self.assertEqual(evidence_terminal_state({"status": "not_fetched"}), "submission_error")

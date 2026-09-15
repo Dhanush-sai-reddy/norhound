@@ -224,6 +224,10 @@ def assess_profile_identity(profile: dict, requested_url: str | None, metrics: d
     }
 
 
+def sanitize_line_separators(text: str) -> str:
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Experimental logged-out LinkedIn company-page extraction; never publish without accepted platform rights."
@@ -370,7 +374,7 @@ def main() -> None:
             )
         time.sleep(max(0, args.delay))
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.output).write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in observations), encoding="utf-8")
+    Path(args.output).write_text("".join(sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n" for item in observations), encoding="utf-8")
     report = {
         "connector": "linkedin_guest_structured_company_v2",
         "handles": len(linkedin),
