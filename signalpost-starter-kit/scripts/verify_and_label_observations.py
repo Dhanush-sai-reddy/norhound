@@ -44,6 +44,13 @@ def registered_domain(url: str) -> str | None:
         return None
 
 
+def _directory_proof(obs: dict) -> bool:
+    return any(
+        "organisation_number_on_directory_page" in str(p.get("type") or "")
+        for p in (obs.get("identity_proof") or [])
+    )
+
+
 def _identity_gate(website: dict) -> dict:
     return ((website.get("value") or {}).get("identity_assessment") or {})
 
@@ -60,6 +67,13 @@ def verify(obs: dict, profile: dict) -> dict:
     checks["gate_publishable"] = bool(gate.get("publishable"))
     checks["gate_label"] = gate.get("label") in ("exact", "quasi", "major_public") or bool(gate.get("status")) or bool(gate.get("score"))
     checks["source_domain_matches"] = registered_domain(source_url) == registered_domain(site_url) or source_url == site_url
+    directory_proof = _directory_proof(obs)
+    checks["directory_identity_proof"] = directory_proof
+    if not directory_proof:
+        checks["proof_references_site"] = any(
+            isinstance(p, dict) and ("website" in str(p.get("type") or "").lower() or "site" in str(p.get("type") or "").lower())
+            for p in (obs.get("identity_proof") or [])
+        )
     digest = obs.get("content_sha256")
     stored_digest = value.get("content_sha256") or website.get("content_sha256")
     page_digests = {str(p.get("content_sha256") or "") for p in (value.get("pages") or [])}
@@ -83,11 +97,13 @@ def verify(obs: dict, profile: dict) -> dict:
         checks["organisation_match"]
         and checks["site_status_available"]
         and checks["gate_publishable"]
-        and checks["source_domain_matches"]
+        and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False))
         and checks["identity_proof_present"]
     )
     if obs.get("signal_type") == "profile_handle":
         exact_entity = exact_entity and checks.get("handle_present_in_gate_socials", False)
+    elif not checks.get("directory_identity_proof", False):
+        exact_entity = exact_entity and bool(checks.get("proof_references_site", False))
     digest_present = bool(digest)
     metric_correct = exact_entity and digest_present and checks["acquisition_permitted"] and checks["rights_approved"]
     return {

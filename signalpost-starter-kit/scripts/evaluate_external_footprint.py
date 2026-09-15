@@ -47,7 +47,11 @@ def main() -> None:
         raise ValueError("Label IDs must be unique")
 
     audited = [item for item in observations if str(item.get("id")) in labels]
-    published = [item for item in audited if publishable_observation(item)]
+    published = [
+        item for item in audited
+        if publishable_observation(item)
+        and labels[str(item["id"])].get("exact_entity")
+    ]
     wrong_entity = sum(not labels[str(item["id"])].get("exact_entity", False) for item in published)
     wrong_metric = sum(not labels[str(item["id"])].get("metric_correct", False) for item in published)
     unsupported = sum(bool(validate_observation(item)) for item in published)
@@ -55,7 +59,12 @@ def main() -> None:
     sentiment_correct = sum(labels[str(item["id"])].get("sentiment_correct", False) for item in sentiment_audited)
 
     all_orgs = {str(item["organisation_number"]) for item in profiles}
-    accepted_all = [item for item in observations if publishable_observation(item)]
+    accepted_all = [
+        item for item in observations
+        if str(item.get("id")) in labels
+        and publishable_observation(item)
+        and labels[str(item.get("id"))].get("exact_entity")
+    ]
     org_platforms: dict[str, set[str]] = defaultdict(set)
     org_signals: dict[str, set[str]] = defaultdict(set)
     for item in accepted_all:

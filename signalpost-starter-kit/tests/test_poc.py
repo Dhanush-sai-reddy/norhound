@@ -51,6 +51,7 @@ from scripts.run_linkedin_guest_experiment import (  # noqa: E402
     legal_name_profile_url,
 )
 from scripts.run_fagfolkguiden_reviews_connector import extract_aggregate_rating, slug  # noqa: E402
+from scripts.verify_and_label_observations import verify as verify_observation  # noqa: E402
 from scripts.discover_linkedin_company_profiles import (  # noqa: E402
     discovery_identity as linkedin_discovery_identity,
     normalized_full_name as linkedin_normalized_full_name,
@@ -1061,6 +1062,142 @@ class CompletenessScoreTests(unittest.TestCase):
         raw = b'<script type="application/ld+json">{"aggregateRating":{"ratingValue":4.4,"ratingCount":25}}</script>'
         self.assertEqual(extract_aggregate_rating(raw)[:2], (4.4, 25))
         self.assertEqual(slug("NORDIC DØR AS"), "nordic-dor-as")
+
+
+class VerifiedPublicationTests(unittest.TestCase):
+    def profile(self, *, gate_publishable=True, site_status="available", site_url="https://acme.no/"):
+        return {
+            "organisation_number": "123456789",
+            "name": "ACME AS",
+            "evidence": {
+                "website": {
+                    "status": site_status,
+                    "source_url": site_url,
+                    "value": {
+                        "final_url": site_url,
+                        "content_sha256": "b" * 64,
+                        "identity_assessment": {"publishable": gate_publishable, "label": "exact", "score": 1.0},
+                    },
+                }
+            },
+        }
+
+    def review_observation(self, *, stamped_exact=True):
+        return {
+            "id": "r1",
+            "organisation_number": "123456789",
+            "platform": "company_directory",
+            "signal_type": "review_summary",
+            "source_url": "https://www.fagfolkguiden.no/bedrift/123456789",
+            "retrieved_at": "2026-08-20T00:00:00Z",
+            "content_sha256": "a" * 64,
+            "exact_entity": stamped_exact,
+            "identity_proof": [
+                {"type": "exact_organisation_number_on_directory_page", "value": "123456789"},
+                {"type": "exact_legal_name_on_directory_page", "value": "ACME AS"},
+            ],
+            "acquisition_mode": "permitted_public_page",
+            "rights_status": "approved",
+            "source_class": "customer_review",
+            "evidence_span": "Google rating 4.4/5 from 25 reviews",
+        }
+
+    def test_directory_proof_satisfies_source_domain_without_company_site_match(self):
+        label = verify_observation(self.review_observation(), self.profile())
+        self.assertEqual(label["exact_entity"], 1)
+        self.assertEqual(label["metric_correct"], 1)
+        self.assertFalse(label["checks"]["source_domain_matches"])
+        self.assertTrue(label["checks"]["directory_identity_proof"])
+
+    def test_directory_review_still_requires_verified_company_site_gate(self):
+        profile = self.profile(gate_publishable=False)
+        label = verify_observation(self.review_observation(), profile)
+        self.assertEqual(label["exact_entity"], 0)
+        self.assertEqual(label["metric_correct"], 0)
+
+    def test_broken_organization_match_never_labels_exact_entity(self):
+        obs = self.review_observation()
+        obs["organisation_number"] = "000000000"
+        label = verify_observation(obs, self.profile())
+        self.assertEqual(label["exact_entity"], 0)
+
+    def test_non_directory_observation_still_requires_site_domain_and_proof(self):
+        site_url = "https://acme.no/"
+        obs = {
+            **self.review_observation(stamped_exact=False),
+            "id": "w1",
+            "platform": "company_site",
+            "signal_type": "public_mention",
+            "source_url": site_url,
+            "identity_proof": [{"type": "website_identity_assessment", "value": "verified"}],
+        }
+        label = verify_observation(obs, self.profile())
+        self.assertEqual(label["exact_entity"], 1)
+
+    def test_non_directory_observation_with_unrelated_source_url_is_excluded(self):
+        site_url = "https://acme.no/"
+        obs = {
+            **self.review_observation(stamped_exact=False),
+            "id": "w2",
+            "platform": "company_site",
+            "signal_type": "public_mention",
+            "source_url": "https://unrelated.org/story",
+            "identity_proof": [{"type": "website_identity_assessment", "value": "verified"}],
+        }
+        label = verify_observation(obs, self.profile())
+        self.assertEqual(label["exact_entity"], 0)
+
+
+class EvaluationPublicationTests(unittest.TestCase):
+    @staticmethod
+    def write(path, rows):
+        path.write_text("".join(json.dumps(r, separators=(",", ":")) + "\n" for r in rows), encoding="utf-8")
+
+    def test_eval_does_not_publish_rows_the_verifier_rejected(self):
+        from scripts.evaluate_external_footprint import main
+        profile = {"organisation_number": "123456789", "name": "ACME AS", "evidence": {"website": {"status": "available", "source_url": "https://acme.no/", "value": {"final_url": "https://acme.no/", "identity_assessment": {"publishable": False}}}}}
+        obs = {
+            "id": "r1", "organisation_number": "123456789", "platform": "company_directory",
+            "signal_type": "review_summary", "source_url": "https://www.fagfolkguiden.no/bedrift/123456789",
+            "retrieved_at": "2026-08-20T00:00:00Z", "content_sha256": "a" * 64, "exact_entity": True,
+            "identity_proof": [{"type": "exact_organisation_number_on_directory_page", "value": "123456789"}],
+            "acquisition_mode": "permitted_public_page", "rights_status": "approved", "source_class": "customer_review",
+            "evidence_span": "Google rating 4.4/5 from 25 reviews",
+        }
+        label = {"id": "r1", "exact_entity": 0, "metric_correct": 0, "sentiment_correct": None}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            profiles_p, obs_p, labels_p, out_p = (root / (f + ext) for f, ext in [("profiles", ".jsonl"), ("obs", ".jsonl"), ("labels", ".jsonl"), ("eval", ".json")])
+            self.write(profiles_p, [profile])
+            self.write(obs_p, [obs])
+            self.write(labels_p, [label])
+            with patch.object(sys, "argv", ["eval", "--profiles", str(profiles_p), "--observations", str(obs_p), "--labels", str(labels_p), "--output", str(out_p), "--minimum-audit", "1"]):
+                main()
+            result = json.loads(out_p.read_text(encoding="utf-8"))
+        self.assertEqual(result["published_audited"], 0)
+
+    def test_eval_publishes_verified_directory_observations(self):
+        from scripts.evaluate_external_footprint import main
+        profile = {"organisation_number": "123456789", "name": "ACME AS", "evidence": {"website": {"status": "available", "source_url": "https://acme.no/", "value": {"final_url": "https://acme.no/", "identity_assessment": {"publishable": True}}}}}
+        obs = {
+            "id": "r1", "organisation_number": "123456789", "platform": "company_directory",
+            "signal_type": "review_summary", "source_url": "https://www.fagfolkguiden.no/bedrift/123456789",
+            "retrieved_at": "2026-08-20T00:00:00Z", "content_sha256": "a" * 64, "exact_entity": True,
+            "identity_proof": [{"type": "exact_organisation_number_on_directory_page", "value": "123456789"}],
+            "acquisition_mode": "permitted_public_page", "rights_status": "approved", "source_class": "customer_review",
+            "evidence_span": "Google rating 4.4/5 from 25 reviews",
+        }
+        label = {"id": "r1", "exact_entity": 1, "metric_correct": 1, "sentiment_correct": None}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            profiles_p, obs_p, labels_p, out_p = (root / (f + ext) for f, ext in [("profiles", ".jsonl"), ("obs", ".jsonl"), ("labels", ".jsonl"), ("eval", ".json")])
+            self.write(profiles_p, [profile])
+            self.write(obs_p, [obs])
+            self.write(labels_p, [label])
+            with patch.object(sys, "argv", ["eval", "--profiles", str(profiles_p), "--observations", str(obs_p), "--labels", str(labels_p), "--output", str(out_p), "--minimum-audit", "1"]):
+                main()
+            result = json.loads(out_p.read_text(encoding="utf-8"))
+        self.assertEqual(result["published_audited"], 1)
 
 
 class SamplingTests(unittest.TestCase):

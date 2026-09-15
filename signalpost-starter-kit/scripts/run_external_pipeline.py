@@ -44,6 +44,7 @@ def main() -> None:
     parser.add_argument("--discovery-input", default=None, help="Optional discovery candidate JSONL (for missing-website orgs)")
     parser.add_argument("--discovery-limit", type=int, default=0, help="Max discovery queries (0 = auto all missing-website)")
     parser.add_argument("--jobs", action="store_true", help="Run the jobs extractor (network) ")
+    parser.add_argument("--reviews", action="store_true", help="Run Fagfolkguiden public-directory reviews connector (keyless)")
     parser.add_argument("--promote", action="store_true", help="Promote discovered sites into canonical website evidence")
     parser.add_argument("--discovery-provider", default="firecrawl", choices=["firecrawl", "duckduckgo"], help="Free keyless DuckDuckGo HTML discovery or Firecrawl Search API")
     parser.add_argument("--api-key-env", default="FIRECRAWL_API_KEY")
@@ -77,6 +78,26 @@ def main() -> None:
         "--output", str(news_out),
         "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
     ])
+    reviews_out = prefix.with_suffix(prefix.suffix + ".fagfolk.jsonl")
+    if args.reviews:
+        orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
+        orgs_out.write_text(
+            "".join(
+                str(json.loads(line)["organisation_number"]) + "\n"
+                for line in Path(args.profiles).read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ),
+            encoding="utf-8",
+        )
+        run([
+            "python", str(SCRIPTS / "run_fagfolkguiden_reviews_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(reviews_out),
+            "--cache", str(prefix.with_suffix(prefix.suffix + ".fagfolk-cache")),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".fagfolk-report.json")),
+            "--workers", "4",
+        ])
     if args.jobs:
         run([
             "python", str(SCRIPTS / "extract_company_site_jobs.py"),
@@ -109,6 +130,8 @@ def main() -> None:
         run(discovery_command)
 
     observation_files = [activity_out, news_out, jobs_out]
+    if reviews_out.exists() and reviews_out.stat().st_size > 0:
+        observation_files.append(reviews_out)
     if discovery_out.exists():
         observation_files.append(discovery_out)
     linkedin_out = prefix.with_suffix(prefix.suffix + ".linkedin.jsonl")

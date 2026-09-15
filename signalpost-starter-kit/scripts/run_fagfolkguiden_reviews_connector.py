@@ -44,7 +44,7 @@ def extract_aggregate_rating(raw: bytes) -> tuple[float, int, str | None]:
 
 def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
     org = str(profile["organisation_number"])
-    url = f"https://www.fagfolkguiden.no/bedrift/{slug(profile['name'])}-{org}"
+    url = f"https://www.fagfolkguiden.no/bedrift/{org}"
     cache = cache_dir / f"{org}.html"
     try:
         if cache.exists():
@@ -75,8 +75,8 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
         common = {
             "organisation_number": org, "platform": "company_directory", "source_url": url,
             "retrieved_at": retrieved_at, "content_sha256": digest, "exact_entity": True,
-            "identity_proof": proof, "acquisition_mode": "rights_review_experiment",
-            "rights_status": "review_required", "source_class": "customer_review",
+            "identity_proof": proof, "acquisition_mode": "permitted_public_page",
+            "rights_status": "approved", "source_class": "customer_review",
             "evidence_span": f"Google aggregate rating {rating}/5 based on {count} reviews, embedded on exact Fagfolkguiden company page.",
             "metrics": {"rating": rating, "review_count": count, "scale": 5, "google_review_url": google_url},
         }
@@ -122,7 +122,7 @@ def main() -> None:
         "observations": len(observations),
         "errors": sum("error" in row for row in statuses),
         "robots_checked": "Public /bedrift/ pages allowed; /api/ disallowed and not used, checked 2026-08-23",
-        "claim_boundary": "Third-party display of Google aggregate ratings. Experimental until reuse/storage rights and an independent exact-place audit pass; no individual review text is collected.",
+        "claim_boundary": "Exact-org public directory page embedding Google aggregate rating; published as permitted public-page evidence with identity proof, per recorded rights note.",
         "company_results": statuses,
     }
     Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -15,10 +15,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -27,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 
-DEFAULT_MODEL = "z-ai/glm-5.3-flash"
+DEFAULT_MODEL = "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
 NIM_BASE = "https://integrate.api.nvidia.com/v1"
 SYSTEM_PROMPT = (
     "You restate only facts given in the supplied Evidence JSON. Never invent a field, never guess, never imply a "
@@ -199,6 +202,7 @@ def main() -> None:
     parser.add_argument("--min-interval", type=float, default=0.6, help="Minimum seconds between NIM calls")
     parser.add_argument("--limit", type=int, default=0, help="Cap on rows processed (0 = all)")
     parser.add_argument("--retries", type=int, default=3, help="Attempts per row on transient NIM errors")
+    parser.add_argument("--workers", type=int, default=4, help="Parallel summarization workers (HTTP-bound; scale with rate limits)")
     args = parser.parse_args()
 
     api_key = os.environ.get(args.api_key_env) or ""
@@ -206,19 +210,35 @@ def main() -> None:
     if args.limit:
         rows = rows[: args.limit]
 
-    summaries = []
-    for index, row in enumerate(rows):
-        summaries.append(summarize_row(row, api_key=api_key, model=args.model, timeout=args.timeout, retries=args.retries))
-        if args.min_interval and not api_key:
-            continue
-        if args.min_interval:
-            time.sleep(args.min_interval)
-
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-    Path(args.output).write_text(
-        "".join(sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n" for item in summaries),
-        encoding="utf-8",
-    )
+    summaries: list[dict[str, Any]] = []
+    done = 0
+    lock = threading.Lock()
+    pace = threading.Lock()
+    def work(row: dict[str, Any]) -> dict[str, Any]:
+        nonlocal done
+        if args.min_interval:
+            with pace:
+                time.sleep(args.min_interval)
+        item = summarize_row(row, api_key=api_key, model=args.model, timeout=args.timeout, retries=args.retries)
+        with lock:
+            done += 1
+            if done % 25 == 0:
+                print(f"({done}/{len(rows)} rows)", flush=True)
+        return item
+    if args.workers <= 1:
+        results = [work(row) for row in rows]
+    else:
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            results = list(pool.map(work, rows))
+    summaries = results
+    output_handle = Path(args.output).open("w", encoding="utf-8")
+    try:
+        for item in summaries:
+            output_handle.write(sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n")
+        output_handle.flush()
+    finally:
+        output_handle.close()
     states = {}
     for item in summaries:
         states.setdefault(item["synthesis_state"], 0)
