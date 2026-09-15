@@ -202,13 +202,39 @@ def main() -> None:
     parser.add_argument("--min-interval", type=float, default=0.6, help="Minimum seconds between NIM calls")
     parser.add_argument("--limit", type=int, default=0, help="Cap on rows processed (0 = all)")
     parser.add_argument("--retries", type=int, default=3, help="Attempts per row on transient NIM errors")
-    parser.add_argument("--workers", type=int, default=4, help="Parallel summarization workers (HTTP-bound; scale with rate limits)")
+    parser.add_argument("--workers", type=int, default=1, help="Parallel summarization workers (HTTP-bound; scale with rate limits)")
+    parser.add_argument("--resume", action="store_true", help="Skip organisations already summarized (avail) in the existing output file")
     args = parser.parse_args()
 
     api_key = os.environ.get(args.api_key_env) or ""
     rows = read_jsonl(Path(args.envelopes))
     if args.limit:
         rows = rows[: args.limit]
+    carried: list[dict[str, Any]] = []
+    if args.resume and Path(args.output).exists():
+        previous = read_jsonl(Path(args.output))
+        carried = [item for item in previous if item.get("synthesis_state") == "available" and isinstance(item.get("summary"), dict) and item.get("summary")]
+        done_orgs = {str(item.get("organisation_number")) for item in carried}
+        if done_orgs:
+            rows = [row for row in rows if str(row.get("organisation_number")) not in done_orgs]
+            print(f"Resuming: {len(done_orgs)} carried, {len(rows)} to summarize", flush=True)
+    if not rows:
+        print("Nothing to do: all rows are already summarized.", flush=True)
+        if carried:
+            states: dict[str, int] = {}
+            for item in carried:
+                states[item["synthesis_state"]] = states.get(item["synthesis_state"], 0) + 1
+            report = {
+                "connector": "nim_synthesis",
+                "model": args.model,
+                "envelopes": len(carried),
+                "states": states,
+                "license_note": "NVIDIA NIM free trial key; OpenAI-compatible endpoint; used only to restate verified envelope evidence.",
+            }
+            Path(args.output).write_text("".join(sanitize_line_separators(json.dumps(item, ensure_ascii=False)) + "\n" for item in carried), encoding="utf-8")
+            Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+        return
 
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     summaries: list[dict[str, Any]] = []
@@ -231,7 +257,7 @@ def main() -> None:
     else:
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             results = list(pool.map(work, rows))
-    summaries = results
+    summaries = carried + results
     output_handle = Path(args.output).open("w", encoding="utf-8")
     try:
         for item in summaries:
