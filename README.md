@@ -37,10 +37,13 @@ curl -L 'https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv' -o brre
 curl -L 'https://builderr.ai/signalpost-company-universe-2025.jsonl.gz' -o norhound-universe.jsonl.gz
 
 # 1. Same 1,000-company manifest used for the submission (seed 20260823).
+#    --bulk validates against the live registry and auto-replaces any org
+#    numbers that left the register since the universe snapshot.
 uv run python select_entry_batch.py \
   --universe norhound-universe.jsonl.gz \
   --count 1000 \
   --seed 20260823 \
+  --bulk brreg-enheter.csv \
   --output entry-companies.jsonl
 
 # 2. Base batch: registry enrichment + exact-identity website capture.
