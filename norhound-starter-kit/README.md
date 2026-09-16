@@ -1,9 +1,7 @@
 # NorHound company research agent
 
 Runnable company-research agent for Norwegian organisation numbers, with a
-**complete, evaluated 1,000-company run** (`norhound-starter-kit/out/SUBMISSION-REPORT.md`).
-
-> **Workdir:** all code and commands below live in `norhound-starter-kit/`. `cd norhound-starter-kit` before running anything. Entry point: `select_entry_batch.py` and `scripts/run_competition_batch.py`.
+**complete, evaluated 1,000-company run** (`out/SUBMISSION-REPORT.md`).
 
 The public universe contains 411,160 eligible companies. A valid entry must
 process at least 1,000; the repo ships a full 1,000-company run plus the
@@ -197,8 +195,7 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 
 - All secrets are supplied through environment variables only; none are stored
   in the repository. Optional keys: `NVIDIA_API_KEY` (grounded summaries),
-  `FIRECRAWL_API_KEY` (site discovery).
-  A missing key degrades cleanly — the corresponding connector is skipped or
+  `FIRECRAWL_API_KEY` (site discovery). A missing key degrades cleanly — the corresponding connector is skipped or
   abstains, never errors.
 - Third-party spend is **~$0 per 100 companies**. The core batch (registry +
   company-site capture) is free. Optional stages: NVIDIA NIM summaries (free
