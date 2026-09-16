@@ -35,14 +35,17 @@ curl -L 'https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv' -o brre
 curl -L 'https://builderr.ai/signalpost-company-universe-2025.jsonl.gz' -o norhound-universe.jsonl.gz
 
 # 1. Same 1,000-company manifest used for the submission (seed 20260823).
+#    --website-only reproduces the shipped entry-web1000.jsonl exactly; the
+#    shipped external-footprint eval ran on this website-bearing batch.
 #    --bulk validates against the live registry and auto-replaces any org
 #    numbers that left the register since the universe snapshot.
 uv run python select_entry_batch.py \
   --universe norhound-universe.jsonl.gz \
   --count 1000 \
   --seed 20260823 \
+  --website-only \
   --bulk brreg-enheter.csv \
-  --output entry-companies.jsonl
+  --output entry-web1000.jsonl
 
 # 2. Base batch: registry enrichment + exact-identity website capture.
 uv run python scripts/run_competition_batch.py \
@@ -119,7 +122,7 @@ submitted numbers.
 Start with ten companies before a full run.
 
 ```bash
-head -n 10 entry-companies.jsonl > smoke-companies.jsonl
+head -n 10 entry-web1000.jsonl > smoke-companies.jsonl
 
 uv run python scripts/run_competition_batch.py \
   --organisations smoke-companies.jsonl \
