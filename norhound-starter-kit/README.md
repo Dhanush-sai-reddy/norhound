@@ -48,8 +48,10 @@ uv run python select_entry_batch.py \
   --output entry-web1000.jsonl
 
 # 2. Base batch: registry enrichment + exact-identity website capture.
+#    Runs the website-bearing manifest produced in step 1 (this is the exact
+#    batch the shipped external-footprint eval ran on).
 uv run python scripts/run_competition_batch.py \
-  --organisations entry-companies.jsonl \
+  --organisations entry-web1000.jsonl \
   --bulk brreg-enheter.csv \
   --profiles-output out/web1000-profiles.jsonl \
   --output out/envelopes.jsonl \
