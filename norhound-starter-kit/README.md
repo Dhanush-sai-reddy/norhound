@@ -25,6 +25,31 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
+### Container (no local setup required)
+
+Everything (Python 3.12, `uv`, dependencies) is pinned inside the image, so the
+grader needs only Docker — nothing installed on the host. Run it from this
+folder:
+
+```bash
+docker compose up                 # offline saved-data proof (a few seconds)
+docker compose run --rm norhound  # same check, explicit
+```
+
+```bash
+docker compose build               # one-time image build
+docker compose run --rm norhound-full   # full live pipeline (registry download +
+                                        # 1000-company crawl + external pipeline)
+```
+
+`COUNT`/`EXPECTED` defaults to 1000 (the publicity guard rejects smaller
+manifests); scale is set via `docker compose run -e COUNT=... norhound-full`
+where supported. Downloaded data and crawl output stay on the host in the
+`norhound-data` / `norhound-out` volumes so a run survives container teardown.
+The same scripts/commands below run inside the container, unchanged.
+
+### Native (Python 3.12+ and `uv` installed)
+
 Requires Python 3.12+ and `uv`. Data: the official Brønnøysund bulk export and
 the company-universe manifest.
 

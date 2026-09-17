@@ -1,0 +1,43 @@
+# NorHound container -- zero local setup for the grader.
+#
+# Quick proof (offline, ~seconds, no network, nothing installed locally):
+#   docker compose up --build
+#   docker compose run --rm norhound
+#
+# Full live run (registry download + 1000-company crawl + external pipeline):
+#   docker compose run --rm norhound-full
+#
+# build context must be the norhound-starter-kit folder (this file's dir).
+
+services:
+  norhound:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: norhound:local
+    working_dir: /app
+    command: ["uv", "run", "python", "first_run.py"]
+    # Keep downloaded data + crawl output on the host so a full run survives
+    # container teardown and can be re-inspected without re-downloading.
+    volumes:
+      - norhound-data:/app/data
+      - norhound-out:/app/out
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY:-}
+
+  norhound-full:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: norhound:local
+    working_dir: /app
+    command: ["bash", "scripts/norhound_live.sh"]
+    volumes:
+      - norhound-data:/app/data
+      - norhound-out:/app/out
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY:-}
+
+volumes:
+  norhound-data:
+  norhound-out:
