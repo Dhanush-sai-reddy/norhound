@@ -4,6 +4,11 @@
 #   2) norhound-full: the full live pipeline via scripts/norhound_live.sh
 FROM python:3.12-slim
 
+# TLS roots: python:3.12-slim ships without ca-certificates, and every live
+# stage (brreg bulk download, NAV API, company sites) is HTTPS.
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl && \
+    rm -rf /var/lib/apt/lists/*
+
 ENV PYTHONUNBUFFERED=1 \
     UV_COMPILE_BYTECODE=1 \
     UV_LINK_MODE=copy \
@@ -11,8 +16,8 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
-# uv (pinned) needs no system package manager on python:3.12-slim.
-COPY --from=ghcr.io/astral-sh/uv:0.7.7 /uv /uvx /usr/local/bin/
+# uv pinned to the version that generated uv.lock.
+COPY --from=ghcr.io/astral-sh/uv:0.12.10 /uv /uvx /usr/local/bin/
 
 COPY pyproject.toml uv.lock ./
 COPY src ./src
