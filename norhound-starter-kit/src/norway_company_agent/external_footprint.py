@@ -42,6 +42,7 @@ SIGNAL_TYPES = {
     "website_description",
     "public_brand",
     "registry_update",
+    "sitemap_page",
     "workforce_snapshot",
     "public_post",
     "public_mention",
