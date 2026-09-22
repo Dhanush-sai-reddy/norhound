@@ -15,8 +15,9 @@ input organisation number — validated 1,000/1,000, no silent drops.
 - fetches official financials, roles, group links and registered workplaces;
 - visits the registry-listed website and rejects weak entity matches;
 - runs external-footprint connectors (company-site activity/news/jobs,
-  Fagfolkguiden reviews, official NAV job-feed postings, optional site
-  discovery) and attaches only publishable observations;
+  Wikidata company profiles, registry contacts/structure, dated registry feed,
+  sitemap lastmod, official NAV job-feed postings) and attaches only
+  publishable observations;
 - emits one terminal JSONL envelope per input with sources, retrieval times,
   content hashes, request counts and latency;
 - re-verifies every observation against frozen evidence and labels it
@@ -84,13 +85,23 @@ uv run python scripts/run_competition_batch.py \
   --run-id local-001 \
   --expected-count 1000
 
-# 3. External-footprint enrichment: activity/news/jobs on verified sites,
-#    Fagfolkguiden reviews, optional Firecrawl site discovery.
+# 3. External-footprint enrichment: registry contacts + structure, dated
+#    registry feed, sitemap lastmod, company-site news/description, Wikidata,
+#    official NAV job-feed postings. Run individually or via run_external_pipeline.
 uv run python scripts/run_external_pipeline.py \
   --profiles out/web1000-profiles.jsonl \
   --envelopes out/envelopes.jsonl \
   --prefix out/web1000batch \
   --jobs --reviews --promote
+
+# 3b. The deterministic, no-API-key connectors (each publishes only
+#     exact-entity rows after the verify gate):
+uv run python scripts/extract_registry_contacts.py --profiles out/web1000-profiles.jsonl --output out/contacts.jsonl --report out/contacts-report.json
+uv run python scripts/extract_site_description.py --profiles out/web1000-profiles.jsonl --output out/sitedesc.jsonl --report out/sitedesc-report.json
+uv run python scripts/extract_substructure.py --profiles out/web1000-profiles.jsonl --output out/substruct.jsonl --report out/substruct-report.json
+uv run python scripts/run_registry_updates_connector.py --profiles out/web1000-profiles.jsonl --output out/updates.jsonl --report out/updates-report.json
+uv run python scripts/extract_sitemap_pages.py --profiles out/web1000-profiles.jsonl --output out/sitemap.jsonl --report out/sitemap-report.json
+uv run python scripts/run_wikidata_connector.py --profiles out/web1000-profiles.jsonl --index data/wikidata-index.jsonl --output out/wikidata.jsonl --report out/wikidata-report.json
 
 # 4. Re-verify every observation against frozen evidence (identity + digest
 #    + domain + exact-org directory proof). Unverified rows never publish.
@@ -109,12 +120,16 @@ uv run python scripts/evaluate_external_footprint.py \
   --output out/web1000batch.external-eval.json \
   --minimum-audit 300
 
-# 6. Optional grounded summaries (requires NVIDIA_API_KEY for the NIM endpoint).
-NVIDIA_API_KEY=<key> uv run python scripts/run_nim_summary.py \
+# 6. Deterministic grounded summaries (no API key, no model calls) plus a
+#    static site you can open over file:// and a refresh-history pass that
+#    attaches changes/previous-run versions to the envelopes.
+uv run python scripts/build_deterministic_summaries.py \
   --envelopes out/envelopes.jsonl \
-  --output out/web1000batch.summaries.jsonl \
-  --report out/web1000batch.summaries-report.json \
-  --min-interval 0.15 --workers 8
+  --output out/summaries.jsonl \
+  --report out/summaries-report.json
+uv run python scripts/build_static_site.py \
+  --envelopes out/envelopes.jsonl --summaries out/summaries.jsonl \
+  --output out/site --report out/site-report.json
 ```
 
 Network-dependent stages (registry, live website crawl, Firecrawl discovery,
@@ -124,18 +139,19 @@ profiles and observations and can be re-run on any checkout.
 
 ### Expected results (as shipped)
 
-- **944 published** observations, every one carrying the verified
-  `exact_entity` label (1,391 re-verified; unverified rows never publish).
+- **Published observations** every one carrying the verified `exact_entity`
+  label (1,391+ re-verified; unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
 - Qualification gate **passed** (minimum audit 300).
-- Coverage: any_external 0.358, two_platforms 0.175, buzz_engagement 0.352,
-  ratings_reviews 0.015, workforce_jobs 0.036.
 - 65 NAV official-API job-posting observations merged into the audit
   (`official_api` acquisition, resolved via the Brønnøysund `underenheter`
-  endpoint to each advertiser's parent legal entity).
-- 999/1000 grounded summaries produced (1 transient NIM 503; optional block).
-- 135 tests pass by default (see below).
+  endpoint to each advertiser's parent legal entity). A live chain re-check
+  (2026-09-22) re-confirmed the feed detail carries `employer.orgnr`.
+- Deterministic, no-API-key summaries produced for every profile with
+  evidence (answers carry confidence and citation-integrity validation); a
+  static site renders the directory and per-company pages over `file://`.
+- 199 tests pass by default (see below).
 
 Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
 `out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
@@ -180,8 +196,8 @@ qualify a live entry.
 ## Tests
 
 ```bash
-uv run python3 -m unittest tests.test_poc
-# 135 tests pass
+uv run python3 -m unittest discover -s tests -p "test_*.py"
+# 199 tests pass
 ```
 
 ## The improvement loop
@@ -227,13 +243,14 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 ## Secrets and third-party cost
 
 - All secrets are supplied through environment variables only; none are stored
-  in the repository. Optional keys: `NVIDIA_API_KEY` (grounded summaries),
-  `FIRECRAWL_API_KEY` (site discovery). A missing key degrades cleanly — the corresponding connector is skipped or
-  abstains, never errors.
+  in the repository. The shipped revision needs **no API keys**: summaries are
+  deterministic and all external connectors use free public sources. Optional
+  keys exist only for legacy/optional connectors and degrade cleanly when
+  absent (`NVIDIA_API_KEY`, `FIRECRAWL_API_KEY`).
 - Third-party spend is **~$0 per 100 companies**. The core batch (registry +
-  company-site capture) is free. Optional stages: NVIDIA NIM summaries (free
-  trial endpoint), Firecrawl Search (used only for candidate discovery, inside
-  the $10 budget).
+  company-site capture) is free; waste connectors (Wikidata/Wikipedia CC0,
+  Brønnøysund REST + registry feed, NAV public job-feed token, sitemaps) are
+  free public/government sources.
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.

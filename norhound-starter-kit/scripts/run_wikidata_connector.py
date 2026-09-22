@@ -20,6 +20,7 @@ import argparse
 import hashlib
 import json
 import sys
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -94,8 +95,20 @@ def _claim_value(entity: dict[str, Any], prop: str) -> Any:
 
 def _http_get_json(url: str) -> dict[str, Any]:
     request = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "NorHound/1.0 (signalpost research)"})
-    with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
-        return json.loads(response.read().decode("utf-8"))
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code == 429:
+                time.sleep(2.0 * (attempt + 1))
+                continue
+            break
+        except TimeoutError as exc:
+            last_error = exc
+    raise last_error if last_error is not None else RuntimeError("wikidata fetch failed")
 
 
 def prime_index(
@@ -109,7 +122,9 @@ def prime_index(
         return {}
     stamped = retrieved_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     qids: list[str] = []
-    for chunk in _chunks(orgs, SEARCH_BATCH):
+    for index, chunk in enumerate(_chunks(orgs, SEARCH_BATCH)):
+        if index:
+            time.sleep(1.0)
         query = "haswbstatement:" + "|".join(f"{ORG_NUMBER_PROPERTY}={o}" for o in chunk)
         payload = fetch(
             f"{API}?action=query&list=search&srsearch={urllib.parse.quote(query)}"
@@ -120,7 +135,9 @@ def prime_index(
                 qids.append(str(hit["title"]))
     wanted = set(orgs)
     by_org: dict[str, dict[str, Any]] = {}
-    for chunk in _chunks(sorted(set(qids)), ENTITY_BATCH):
+    for index, chunk in enumerate(_chunks(sorted(set(qids)), ENTITY_BATCH)):
+        if index:
+            time.sleep(1.0)
         payload = fetch(
             f"{API}?action=wbgetentities&ids={'|'.join(chunk)}"
             f"&props=claims|labels|sitelinks&languages=nb|en"

@@ -50,6 +50,8 @@ def main() -> None:
     parser.add_argument("--api-key-env", default="FIRECRAWL_API_KEY")
     parser.add_argument("--harvest-linkedin-local", action="store_true", help="Run local logged-out LinkedIn company-page harvest (no API key, experimental rights)")
     parser.add_argument("--harvest-reddit-free", action="store_true", help="Run free Reddit OAuth mention connector (requires REDDIT_CLIENT_ID/SECRET; abstains otherwise)")
+    parser.add_argument("--keyless", action="store_true", help="Run the no-API-key connectors: registry contacts, site description, substructure, sitemap lastmod, registry-update feed, Wikidata")
+    parser.add_argument("--wikidata-index", default="data/wikidata-index.jsonl", help="Frozen Wikidata search index path (built once via run_wikidata_connector.py --build-index)")
     parser.add_argument("--minimum-audit", default="300", help="Minimum published+audited observations for the qualification gate")
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
     parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
@@ -78,6 +80,31 @@ def main() -> None:
         "--output", str(news_out),
         "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
     ])
+    keyless_out = prefix.with_suffix(prefix.suffix + ".keyless.jsonl")
+    if args.keyless:
+        keyless_steps = [
+            ("extract_registry_contacts.py", "contacts"),
+            ("extract_site_description.py", "sitedesc"),
+            ("extract_substructure.py", "substruct"),
+            ("extract_sitemap_pages.py", "sitemap"),
+            ("run_registry_updates_connector.py", "updates"),
+            ("run_wikidata_connector.py", "wikidata"),
+        ]
+        keyless_parts = []
+        for script, tag in keyless_steps:
+            step_out = prefix.with_suffix(prefix.suffix + f".{tag}.jsonl")
+            step_report = prefix.with_suffix(prefix.suffix + f".{tag}-report.json")
+            argv = ["python", str(SCRIPTS / script), "--profiles", args.profiles, "--output", str(step_out), "--report", str(step_report)]
+            if script == "run_wikidata_connector.py":
+                argv += ["--index", args.wikidata_index]
+            run(argv)
+            if step_out.exists() and step_out.stat().st_size > 0:
+                keyless_parts.append(str(step_out))
+        if keyless_parts:
+            rows = []
+            for path in keyless_parts:
+                rows.extend(json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip())
+            keyless_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in rows), encoding="utf-8")
     reviews_out = prefix.with_suffix(prefix.suffix + ".fagfolk.jsonl")
     if args.reviews:
         orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
@@ -130,6 +157,8 @@ def main() -> None:
         run(discovery_command)
 
     observation_files = [activity_out, news_out, jobs_out]
+    if keyless_out.exists() and keyless_out.stat().st_size > 0:
+        observation_files.append(keyless_out)
     if reviews_out.exists() and reviews_out.stat().st_size > 0:
         observation_files.append(reviews_out)
     if discovery_out.exists():
