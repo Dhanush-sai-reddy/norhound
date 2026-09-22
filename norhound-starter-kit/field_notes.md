@@ -109,3 +109,13 @@ only) · LinkedIn/Indeed/Meta direct (terms-blocked at any price).
 - Frozen index (data/nav-job-index.jsonl, built 2026-09-15, posting_count=9979, resolved_parent_enhets=3625) is genuine.
 - Thus the 65 NAV job observations on the 1000-batch are precise and exact-entity. Residual caveat: postings expire/drop INACTIVE,
   so org existence on the feed is time-bound — matches our dated-claim model.
+
+## Coverage connectors shipped on web1000 batch (2026-09-22) — intermediate verified eval
+- Ran the new keyless connectors against the REAL shipping corpus `out/web1000-profiles.jsonl` (1000 website-bearing orgs).
+- Baseline (frozen shipped): 1391 observations, 944 published/audited, any_external 0.358, two_platforms 0.175.
+- Merged + re-verify + re-eval (local connectors only: registry contacts 1858, site description 481, substructure 2444):
+  - published_audited **5186**, entity_precision **1.0**, metric_precision **1.0**, wrong_entity **0**, unsupported **0**.
+  - coverage: any_external **0.818**, two_platforms **0.356**, workforce_jobs 0.036, ratings_reviews 0.015, buzz 0.352.
+- Still to merge: sitemap lastmod (1939 publishable, all exact) + registry-update feed + wikidata (sampled index, P2333 sparse).
+- Verify/label runs ~100ms/row (tldextract suffix fetch), ~6174 rows ≈ 10 min in-process; final merge ≈ 8k+ rows.
+- The claims are official-API / company-site-bound exact-entity rows keyed by organisation number; see each connector's claim_boundary.
