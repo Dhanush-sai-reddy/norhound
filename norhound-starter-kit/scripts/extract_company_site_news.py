@@ -11,6 +11,26 @@ from urllib.parse import urlparse
 
 NEWS_PATH = re.compile(r"/(?:news|press|aktuelt|nyheter|artikler|blog)(?:/|$)", re.I)
 
+ISO_DATE = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")
+NO_MONTHS = {m: i + 1 for i, m in enumerate((
+    "januar", "februar", "mars", "april", "mai", "juni", "juli",
+    "august", "september", "oktober", "november", "desember"))}
+NO_DATE = re.compile(r"(\d{1,2})\.?\s+(" + "|".join(NO_MONTHS) + r")\s+(20\d{2})", re.I)
+NUMERIC_DATE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(20\d{2})")
+
+
+def find_dates(text: str) -> list[str]:
+    """Mine ISO, Norwegian-month and numeric dates from page text. Sorted, deduped."""
+    found = set()
+    for match in ISO_DATE.findall(text or ""):
+        found.add(f"{match[0]}-{match[1]}-{match[2]}")
+    for day, month, year in NO_DATE.findall(text or ""):
+        found.add(f"{year}-{NO_MONTHS[month.casefold()]:02d}-{int(day):02d}")
+    for day, month, year in NUMERIC_DATE.findall(text or ""):
+        if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
+            found.add(f"{year}-{int(month):02d}-{int(day):02d}")
+    return sorted(found)
+
 
 def observation(profile: dict) -> dict | None:
     website = (profile.get("evidence") or {}).get("website") or {}
@@ -35,7 +55,8 @@ def observation(profile: dict) -> dict | None:
         return None
     org = str(profile["organisation_number"])
     title = str(page.get("title") or "Company news/activity page").strip()
-    return {
+    dates = find_dates(title + "\n" + str(page.get("main_text_excerpt") or ""))
+    item = {
         "id": "company-site-news-" + hashlib.sha256(f"{org}|{url}".encode()).hexdigest()[:24],
         "organisation_number": org,
         "platform": "company_site",
@@ -52,6 +73,10 @@ def observation(profile: dict) -> dict | None:
         "metrics": {"captured_news_pages": len(pages), "interpretation": "Company-owned activity; not independent sentiment."},
         "strategy": "company_site_activity",
     }
+    if dates:
+        item["observed_at"] = dates[-1]
+        item["metrics"] = {**item["metrics"], "published": dates[-1]}
+    return item
 
 
 def main() -> None:
