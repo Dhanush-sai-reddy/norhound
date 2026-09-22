@@ -14,6 +14,7 @@ from norway_company_agent.batch import profile_complete_for_modules, profiles_fr
 from norway_company_agent.evidence import utc_now  # noqa: E402
 from norway_company_agent.identity import apply_website_identity_gate  # noqa: E402
 from norway_company_agent.official import fetch_official_modules  # noqa: E402
+from norway_company_agent.refresh import attach_refresh  # noqa: E402
 from norway_company_agent.website import fetch_website  # noqa: E402
 
 
@@ -43,6 +44,7 @@ def main() -> None:
     parser.add_argument("--checkpoint-every", type=int, default=25)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--modules", default="registry,accounting_obligation,registry_live,financials,roles,group,locations,website")
+    parser.add_argument("--previous-envelopes", default=None, help="Prior terminal envelopes JSONL for refresh changes (optional)")
     args = parser.parse_args()
 
     started_at = utc_now()
@@ -107,6 +109,11 @@ def main() -> None:
         terminal_envelope(profile, run_id=args.run_id, modules=requested_modules, started_at=started_at, completed_at=completed_at)
         for profile in ordered_profiles
     ]
+    if args.previous_envelopes:
+        previous = [json.loads(line) for line in Path(args.previous_envelopes).read_text(encoding="utf-8").splitlines() if line.strip()]
+        envelopes = attach_refresh(envelopes, previous, args.run_id)
+    else:
+        envelopes = attach_refresh(envelopes, [], args.run_id)
     validation = validate_envelopes(envelopes, args.expected_count)
     write_jsonl(profiles_output, ordered_profiles)
     write_jsonl(Path(args.output), envelopes)

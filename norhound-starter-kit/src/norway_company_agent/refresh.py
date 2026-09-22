@@ -75,3 +75,37 @@ def diff_datasets(previous: list[dict[str, Any]], current: list[dict[str, Any]])
         for org in sorted(old_by_org)
         for change in diff_profile(old_by_org[org], new_by_org[org])
     ]
+
+
+def attach_refresh(
+    current: list[dict[str, Any]],
+    previous: list[dict[str, Any]],
+    run_id: str,
+) -> list[dict[str, Any]]:
+    """Attach refresh history to shipping envelopes (Soham's 4 update points).
+
+    Each current envelope gains `changes` (typed old->new records with both
+    content hashes, so earlier versions are preserved) and `refresh`
+    (previous_run_id + baseline flag). Companies absent from the previous run
+    are baselines, never changes. Inputs are not mutated; idempotent reruns
+    yield empty changes.
+    """
+    import copy
+
+    old_by_org = {row.get("organisation_number"): row for row in previous}
+    previous_run_id = None
+    if previous:
+        previous_run_id = previous[0].get("run_id")
+    out = []
+    for env in current:
+        row = copy.deepcopy(env)
+        org = row.get("organisation_number")
+        old = old_by_org.get(org)
+        if old is None:
+            row["changes"] = []
+            row["refresh"] = {"previous_run_id": previous_run_id, "baseline": True}
+        else:
+            row["changes"] = diff_profile(old.get("profile") or {}, row.get("profile") or {})
+            row["refresh"] = {"previous_run_id": old.get("run_id", previous_run_id), "baseline": False}
+        out.append(row)
+    return out
