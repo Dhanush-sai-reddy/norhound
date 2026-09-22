@@ -43,6 +43,8 @@ SIGNAL_TYPES = {
     "public_brand",
     "registry_update",
     "sitemap_page",
+    "subunit",
+    "group_child",
     "workforce_snapshot",
     "public_post",
     "public_mention",
