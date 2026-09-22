@@ -32,6 +32,36 @@ def find_dates(text: str) -> list[str]:
     return sorted(found)
 
 
+def date_from_page_body(html: str) -> str | None:
+    """Strip markup, then mine machine-readable dates from the page body."""
+    text = re.sub(r"<[^>]+>", " ", html or "")
+    text = re.sub(r"\s+", " ", text)
+    dates = find_dates(text)
+    return dates[-1] if dates else None
+
+
+def fetch_dated_observation(profile: dict, *, body: str | None = None, url: str | None = None) -> dict | None:
+    """Refine a news-page observation with a real date mined from the page body.
+
+    The page belongs to the identity-gated official site, so its body is a
+    permitted_public_page. When no date can be mined, the existing undated
+    observation is returned unchanged rather than inventing one.
+    """
+    base = observation(profile)
+    if base is None:
+        return None
+    if body is None:
+        return base
+    date = date_from_page_body(body)
+    if not date:
+        return base
+    base["observed_at"] = date
+    base["metrics"] = {**base["metrics"], "published": date, "date_source": "page_body"}
+    if url:
+        base["metrics"] = {**base["metrics"], "page_url_fetched": url}
+    return base
+
+
 def observation(profile: dict) -> dict | None:
     website = (profile.get("evidence") or {}).get("website") or {}
     value = website.get("value") or {}
@@ -84,16 +114,39 @@ def main() -> None:
     parser.add_argument("--profiles", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--report", required=True)
+    parser.add_argument("--fetch-dates", action="store_true", help="Fetch the news page body to mine real publication dates")
+    parser.add_argument("--workers", type=int, default=8)
     args = parser.parse_args()
     profiles = [json.loads(line) for line in Path(args.profiles).read_text(encoding="utf-8").splitlines() if line.strip()]
-    rows = [item for profile in profiles if (item := observation(profile))]
+
+    def produce(profile: dict):
+        if not args.fetch_dates:
+            return observation(profile)
+        base = observation(profile)
+        if base is None or base.get("observed_at"):
+            return base
+        url = str(base.get("source_url") or "")
+        if not url.startswith(("http://", "https://")):
+            return base
+        try:
+            import urllib.request
+            request = urllib.request.Request(url, headers={"User-Agent": "NorHound/1.0 (signalpost research)", "Accept": "text/html,application/xhtml+xml"})
+            with urllib.request.urlopen(request, timeout=20) as response:
+                body = response.read(200000).decode("utf-8", "replace")
+        except Exception:
+            return base
+        return fetch_dated_observation(profile, body=body, url=url)
+
+    rows = [item for profile in profiles if (item := produce(profile))]
+    dated = sum(1 for r in rows if r.get("observed_at"))
     Path(args.output).write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
     report = {
         "connector": "exact_company_site_news_activity_v1",
         "profiles": len(profiles),
         "companies_with_activity": len(rows),
         "observations": len(rows),
-        "claim_boundary": "Company-owned activity only; never treated as independent sentiment.",
+        "dated_observations": dated,
+        "claim_boundary": "Company-owned activity only; dates come from the page body where footnote-free.",
     }
     Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
