@@ -41,6 +41,7 @@ SIGNAL_TYPES = {
     "contact_phone",
     "website_description",
     "public_brand",
+    "registry_update",
     "workforce_snapshot",
     "public_post",
     "public_mention",
