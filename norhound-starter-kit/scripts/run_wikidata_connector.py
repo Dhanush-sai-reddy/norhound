@@ -117,19 +117,28 @@ def prime_index(
     *,
     retrieved_at: str | None = None,
 ) -> dict[str, dict[str, Any]]:
+    global _LAST_SCAN_SKIPS
+    _LAST_SCAN_SKIPS = 0
     orgs = [str(o).strip() for o in organisations if str(o).strip().isdigit() and len(str(o).strip()) == 9]
     if not orgs:
         return {}
     stamped = retrieved_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     qids: list[str] = []
+    skipped_scan_chunks = 0
     for index, chunk in enumerate(_chunks(orgs, SEARCH_BATCH)):
         if index:
             time.sleep(1.0)
         query = "haswbstatement:" + "|".join(f"{ORG_NUMBER_PROPERTY}={o}" for o in chunk)
-        payload = fetch(
-            f"{API}?action=query&list=search&srsearch={urllib.parse.quote(query)}"
-            f"&srlimit={SEARCH_BATCH}&format=json"
-        )
+        try:
+            payload = fetch(
+                f"{API}?action=query&list=search&srsearch={urllib.parse.quote(query)}"
+                f"&srlimit={SEARCH_BATCH}&format=json"
+            )
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429:
+                raise
+            skipped_scan_chunks += 1
+            continue
         for hit in (payload.get("query") or {}).get("search", []) or []:
             if str(hit.get("title", "")).startswith("Q"):
                 qids.append(str(hit["title"]))
@@ -167,6 +176,7 @@ def prime_index(
                 "retrieved_at": stamped,
                 "content_sha256": digest,
             }
+    _LAST_SCAN_SKIPS = skipped_scan_chunks
     return by_org
 
 
@@ -264,6 +274,7 @@ def main() -> None:
         Path(args.report).write_text(json.dumps({
             "connector": "wikidata_p2333_v1", "mode": "index_build", "built_at": stamped,
             "organisations": len(orgs), "entities_matched": len(index), "index_path": str(args.index),
+            "scan_chunks_skipped_on_429": _LAST_SCAN_SKIPS,
         }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"indexed {len(index)}/{len(orgs)} organisations -> {args.index}")
         return
