@@ -39,6 +39,8 @@ SIGNAL_TYPES = {
     "careers_page",
     "contact_email",
     "contact_phone",
+    "website_description",
+    "public_brand",
     "workforce_snapshot",
     "public_post",
     "public_mention",
