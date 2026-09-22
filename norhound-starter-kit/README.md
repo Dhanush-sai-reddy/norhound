@@ -87,15 +87,16 @@ uv run python scripts/run_competition_batch.py \
 
 # 3. External-footprint enrichment: registry contacts + structure, dated
 #    registry feed, sitemap lastmod, company-site news/description, Wikidata,
-#    official NAV job-feed postings. Run individually or via run_external_pipeline.
+#    official NAV job-feed postings. The --keyless flag runs every no-API-key
+#    connector (contacts, site description, substructure, sitemap, registry
+#    feed, Wikidata) and folds their rows into the same verify/label/eval chain.
 uv run python scripts/run_external_pipeline.py \
   --profiles out/web1000-profiles.jsonl \
   --envelopes out/envelopes.jsonl \
   --prefix out/web1000batch \
-  --jobs --reviews --promote
+  --jobs --reviews --promote --keyless
 
-# 3b. The deterministic, no-API-key connectors (each publishes only
-#     exact-entity rows after the verify gate):
+# 3b. Same deterministic connectors, one at a time if you prefer:
 uv run python scripts/extract_registry_contacts.py --profiles out/web1000-profiles.jsonl --output out/contacts.jsonl --report out/contacts-report.json
 uv run python scripts/extract_site_description.py --profiles out/web1000-profiles.jsonl --output out/sitedesc.jsonl --report out/sitedesc-report.json
 uv run python scripts/extract_substructure.py --profiles out/web1000-profiles.jsonl --output out/substruct.jsonl --report out/substruct-report.json
