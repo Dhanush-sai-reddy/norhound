@@ -99,3 +99,13 @@ Fagfolkguiden · Regnskapsregisteret/roller/underenheter/konsern (in use).
 KEY-GATED (skip): Brave ($5/1k) · Firecrawl · Exa/Tavily · Google Places (paid) ·
 NIM (replaced by deterministic) · Bing (key) · Google Play (no official API, unofficial
 only) · LinkedIn/Indeed/Meta direct (terms-blocked at any price).
+
+## NAV proof-quality audit (2026-09-22) — RESOLVED: feed carries orgnrs
+- kildespor claims the public pam-stilling-feed.nav.no feed carries no orgnrs. Verified LIVE: false for current postings.
+- Full chain verified: feed detail `ad_content.employer.orgnr` = 971686294 (uuid 4c38bf0e…, Favorit As, from our frozen index) →
+  brreg underenhet GET returns navn=FAVORIT AS, overordnetEnhet=811598992 → brreg enhet GET returns navn=FAVORIT AS @ 811598992.
+- Confusion source: an INACTIVE posting (first feed page = oldest entries) returns {sistEndret,status,uuid} with no ad_content;
+  ACTIVE postings carry full ad_content.employer.orgnr. Our build filters ACTIVE before the detail fetch → never affected.
+- Frozen index (data/nav-job-index.jsonl, built 2026-09-15, posting_count=9979, resolved_parent_enhets=3625) is genuine.
+- Thus the 65 NAV job observations on the 1000-batch are precise and exact-entity. Residual caveat: postings expire/drop INACTIVE,
+  so org existence on the feed is time-bound — matches our dated-claim model.
