@@ -37,6 +37,8 @@ SIGNAL_TYPES = {
     "review_summary",
     "job_posting",
     "careers_page",
+    "contact_email",
+    "contact_phone",
     "workforce_snapshot",
     "public_post",
     "public_mention",
