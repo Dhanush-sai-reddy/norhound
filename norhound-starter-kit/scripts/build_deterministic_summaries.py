@@ -146,6 +146,27 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     else:
         staff_answer = _answer("staff", None, ids)
 
+    if len(records) >= 2:
+        rev_curr = records[0].get("revenue")
+        rev_prev = records[1].get("revenue")
+        if rev_curr is not None and rev_prev is not None and rev_prev != 0:
+            pct = ((rev_curr - rev_prev) / abs(rev_prev)) * 100
+            trend = "growing" if pct > 5 else "shrinking" if pct < -5 else "stable"
+            growth_answer = _answer("revenue_growth", f"Revenue {trend} ({pct:+.1f}% YoY).", ids, confidence=0.9)
+        else:
+            growth_answer = _answer("revenue_growth", None, ids)
+        emp_curr = records[0].get("employees")
+        emp_prev = records[1].get("employees")
+        if emp_curr is not None and emp_prev is not None and emp_prev != 0:
+            pct = ((emp_curr - emp_prev) / emp_prev) * 100
+            trend = "growing" if pct > 5 else "shrinking" if pct < -5 else "stable"
+            staff_growth_answer = _answer("staff_growth", f"Staff {trend} ({pct:+.1f}% YoY).", ids, confidence=0.9)
+        else:
+            staff_growth_answer = _answer("staff_growth", None, ids)
+    else:
+        growth_answer = _answer("revenue_growth", None, ids)
+        staff_growth_answer = _answer("staff_growth", None, ids)
+
     jobs = [o for o in _observations(profile) if o.get("signal_type") == "job_posting"]
     if jobs:
         job_urls = sorted({str(o.get("source_url")) for o in jobs if o.get("source_url")})
@@ -155,7 +176,7 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     else:
         hiring_answer = _answer("hiring", None, ids)
 
-    answers = [what_answer, fin_answer, staff_answer, hiring_answer]
+    answers = [what_answer, fin_answer, growth_answer, staff_answer, staff_growth_answer, hiring_answer]
     summary_bits = [a["answer"] for a in answers if a["answerable"]]
     available = _available_evidence(profile)
     unknowns = []
@@ -165,6 +186,11 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
         unknowns.append({"field": "employees", "state": "not_available", "reason": "registry returned no employee count"})
     if not latest:
         unknowns.append({"field": "financial_health", "state": "not_available", "reason": "no filed accounts found in checked sources"})
+        unknowns.append({"field": "revenue_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
+        unknowns.append({"field": "staff_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
+    elif len(records) < 2:
+        unknowns.append({"field": "revenue_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
+        unknowns.append({"field": "staff_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
     if not jobs and "external_observations" not in (profile.get("evidence") or {}):
         unknowns.append({"field": "hiring", "state": "not_available", "reason": "no job sources were checked"})
     return {
