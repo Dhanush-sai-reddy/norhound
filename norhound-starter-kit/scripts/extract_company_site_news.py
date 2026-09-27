@@ -50,6 +50,8 @@ def fetch_dated_observation(profile: dict, *, body: str | None = None, url: str 
     base = observation(profile)
     if base is None:
         return None
+    if body:
+        base["metrics"] = {**base["metrics"], "body_excerpt": body[:1000]}
     if body is None:
         return base
     date = date_from_page_body(body)
