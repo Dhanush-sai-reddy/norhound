@@ -140,6 +140,13 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     else:
         fin_answer = _answer("financial_health", None, ids)
 
+    finhist = (_available_evidence(profile).get("financial_history") or {}).get("value") or {}
+    hist_years = finhist.get("years") or []
+    if hist_years:
+        hist_answer = _answer("financial_history", f"Annual accounts available for {hist_years[0]}-{hist_years[-1]} ({len(hist_years)} years). Detailed records only available as PDFs.", ids, confidence=0.9)
+    else:
+        hist_answer = _answer("financial_history", None, ids)
+
     employees = profile.get("employees")
     if employees is not None:
         staff_answer = _answer("staff", f"Registered employees: {employees}.", ids, confidence=1.0)
@@ -176,7 +183,7 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     else:
         hiring_answer = _answer("hiring", None, ids)
 
-    answers = [what_answer, fin_answer, growth_answer, staff_answer, staff_growth_answer, hiring_answer]
+    answers = [what_answer, fin_answer, hist_answer, growth_answer, staff_answer, staff_growth_answer, hiring_answer]
     summary_bits = [a["answer"] for a in answers if a["answerable"]]
     available = _available_evidence(profile)
     unknowns = []
@@ -188,6 +195,8 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
         unknowns.append({"field": "financial_health", "state": "not_available", "reason": "no filed accounts found in checked sources"})
         unknowns.append({"field": "revenue_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
         unknowns.append({"field": "staff_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
+    if not hist_years:
+        unknowns.append({"field": "financial_history", "state": "not_available", "reason": "no financial history found"})
     elif len(records) < 2:
         unknowns.append({"field": "revenue_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
         unknowns.append({"field": "staff_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})

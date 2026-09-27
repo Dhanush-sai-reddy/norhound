@@ -51,6 +51,8 @@ def main() -> None:
     parser.add_argument("--harvest-linkedin-local", action="store_true", help="Run local logged-out LinkedIn company-page harvest (no API key, experimental rights)")
     parser.add_argument("--harvest-reddit-free", action="store_true", help="Run free Reddit OAuth mention connector (requires REDDIT_CLIENT_ID/SECRET; abstains otherwise)")
     parser.add_argument("--keyless", action="store_true", help="Run the no-API-key connectors: registry contacts, site description, substructure, sitemap lastmod, registry-update feed, Wikidata")
+    parser.add_argument("--nav", action="store_true", help="Run the official NAV job feed connector (requires pre-built index)")
+    parser.add_argument("--nav-index", default="data/nav-job-index.jsonl", help="Frozen NAV job feed index path (built via run_nav_job_feed_connector.py --build-index)")
     parser.add_argument("--wikidata-index", default="data/wikidata-index.jsonl", help="Frozen Wikidata search index path (built once via run_wikidata_connector.py --build-index)")
     parser.add_argument("--minimum-audit", default="300", help="Minimum published+audited observations for the qualification gate")
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
@@ -125,6 +127,16 @@ def main() -> None:
             "--report", str(prefix.with_suffix(prefix.suffix + ".fagfolk-report.json")),
             "--workers", "4",
         ])
+    nav_out = prefix.with_suffix(prefix.suffix + ".nav.jsonl")
+    if args.nav:
+        run([
+            "python", str(SCRIPTS / "run_nav_job_feed_connector.py"),
+            "--profiles", args.profiles,
+            "--index", args.nav_index,
+            "--output", str(nav_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".nav-report.json")),
+            "--poll-days", "3",
+        ])
     if args.jobs:
         run([
             "python", str(SCRIPTS / "extract_company_site_jobs.py"),
@@ -161,6 +173,8 @@ def main() -> None:
         observation_files.append(keyless_out)
     if reviews_out.exists() and reviews_out.stat().st_size > 0:
         observation_files.append(reviews_out)
+    if nav_out.exists() and nav_out.stat().st_size > 0:
+        observation_files.append(nav_out)
     if discovery_out.exists():
         observation_files.append(discovery_out)
     linkedin_out = prefix.with_suffix(prefix.suffix + ".linkedin.jsonl")

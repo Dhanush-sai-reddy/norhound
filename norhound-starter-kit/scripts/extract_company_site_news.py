@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
-NEWS_PATH = re.compile(r"/(?:news|press|aktuelt|nyheter|artikler|blog)(?:/|$)", re.I)
+NEWS_PATH = re.compile(r"/(?:news|press|aktuelt|nyheter|artikler|blog|media|medier|nyhetsarkiv|pressemeldinger|rapporter|publikasjoner|insights|case|cases|referanser|prosjekter)(?:/|$)", re.I)
 
 ISO_DATE = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")
 NO_MONTHS = {m: i + 1 for i, m in enumerate((

@@ -43,7 +43,7 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--checkpoint-every", type=int, default=25)
     parser.add_argument("--resume", action="store_true")
-    parser.add_argument("--modules", default="registry,accounting_obligation,registry_live,financials,roles,group,locations,website")
+    parser.add_argument("--modules", default="registry,accounting_obligation,registry_live,financials,financial_history,roles,group,locations,website")
     parser.add_argument("--previous-envelopes", default=None, help="Prior terminal envelopes JSONL for refresh changes (optional)")
     args = parser.parse_args()
 

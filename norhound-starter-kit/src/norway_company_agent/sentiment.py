@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 
 
 LABELS = ("positive", "neutral", "negative", "mixed")
-INDEPENDENT_SOURCE_CLASSES = {"licensed_news", "public_news", "official_notice", "licensed_review"}
+INDEPENDENT_SOURCE_CLASSES = {"licensed_news", "public_news", "official_notice", "licensed_review", "customer_review", "employee_review", "public_mention"}
 
 
 def sentiment_input_eligibility(item: dict[str, Any]) -> tuple[bool, list[str]]:

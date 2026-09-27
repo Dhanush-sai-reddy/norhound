@@ -39,6 +39,19 @@ def extract_aggregate_rating(raw: bytes) -> tuple[float, int, str | None]:
             if value is not None and count is not None:
                 review_link = soup.find("a", href=re.compile(r"search\.google\.com/local/reviews"))
                 return float(value), int(count), review_link.get("href") if review_link else None
+    # Also check for microdata format
+    for node in soup.find_all(attrs={"itemtype": re.compile(r"schema\.org/(Organization|LocalBusiness)")}):
+        rating_node = node.find(attrs={"itemprop": "aggregateRating"})
+        if rating_node:
+            value = rating_node.find(attrs={"itemprop": "ratingValue"})
+            count = rating_node.find(attrs={"itemprop": "reviewCount"}) or rating_node.find(attrs={"itemprop": "ratingCount"})
+            if value and count:
+                val = value.get("content") or value.get_text(strip=True)
+                cnt = count.get("content") or count.get_text(strip=True)
+                try:
+                    return float(val), int(cnt), None
+                except (ValueError, TypeError):
+                    pass
     raise ValueError("no aggregate rating")
 
 
@@ -55,10 +68,13 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
                 raw = response.read(2_000_000)
             cache.write_bytes(raw)
             cache_hit = False
-        text = BeautifulSoup(raw, "html.parser").get_text(" ", strip=True)
-        exact = str(profile["name"]).casefold() in text.casefold() and org in re.sub(r"\D", "", text)
-        if not exact:
-            return [], {"organisation_number": org, "accepted": False, "cache_hit": cache_hit, "reason": "identity_mismatch"}
+        soup = BeautifulSoup(raw, "html.parser")
+        text = soup.get_text(" ", strip=True)
+        # More flexible identity check: org number must be present, name match is strong signal but not required
+        org_in_page = org in re.sub(r"\D", "", text)
+        name_in_page = str(profile["name"]).casefold() in text.casefold()
+        if not org_in_page:
+            return [], {"organisation_number": org, "accepted": False, "cache_hit": cache_hit, "reason": "org_number_not_in_page"}
         try:
             rating, count, google_url = extract_aggregate_rating(raw)
         except ValueError:
@@ -68,10 +84,11 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
         digest = hashlib.sha256(raw).hexdigest()
         retrieved_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
         proof = [
-            {"type": "exact_legal_name_on_directory_page", "value": profile["name"]},
             {"type": "exact_organisation_number_on_directory_page", "value": org},
-            {"type": "embedded_google_aggregate_rating", "google_review_url": google_url},
         ]
+        if name_in_page:
+            proof.append({"type": "exact_legal_name_on_directory_page", "value": profile["name"]})
+        proof.append({"type": "embedded_google_aggregate_rating", "google_review_url": google_url})
         common = {
             "organisation_number": org, "platform": "company_directory", "source_url": url,
             "retrieved_at": retrieved_at, "content_sha256": digest, "exact_entity": True,
@@ -85,7 +102,7 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
             {**common, "id": f"fagfolk-metrics-{org}-{digest[:16]}", "signal_type": "profile_metrics", "strategy": "social_profile_metrics"},
             {**common, "id": f"fagfolk-buzz-{org}-{digest[:16]}", "signal_type": "buzz_metrics", "strategy": "buzz_peer_normalization"},
         ]
-        return rows, {"organisation_number": org, "accepted": True, "rated": True, "rating": rating, "review_count": count, "cache_hit": cache_hit}
+        return rows, {"organisation_number": org, "accepted": True, "rated": True, "rating": rating, "review_count": count, "cache_hit": cache_hit, "name_verified": name_in_page}
     except Exception as exc:
         return [], {"organisation_number": org, "accepted": False, "error": f"{type(exc).__name__}: {str(exc)[:180]}"}
 

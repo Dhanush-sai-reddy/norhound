@@ -24,9 +24,11 @@ PATTERNS = (
     (0, "full_time_equivalents", re.compile(rf"(?i)selskapet\s+har(?:\s+[i1]\s+\d{{4}})?\s+sysselsatt\s+({OCR_NUMBER})\s+(?:aarsverk|arsverk|årsverk)")),
     (0, "full_time_equivalents", re.compile(rf"(?i)selskapet\s+har\s+({OCR_NUMBER})\s+(?:aarsverk|arsverk|årsverk)")),
     (0, "full_time_equivalents", re.compile(rf"(?i)antall\s+(?:aarsverk|arsverk|årsverk)\s+(?:sysselsatt|syssetsatt)\s+i\s+regnskapsaret\s*(?:er|:|=)?\s*({OCR_NUMBER})")),
+    (0, "full_time_equivalents", re.compile(rf"(?i)(?:gjennomsnittlig|total)\s+(?:antall\s+)?(?:aarsverk|arsverk|årsverk)\s*(?:er|:|=)?\s*({OCR_NUMBER})")),
     (1, "employees", re.compile(rf"(?i)gjennomsnittlig(?:e)?\s+antall\s+ansatte(?:\s+i\s+regnskapsaret)?\s*(?:er|:|=)?\s*({OCR_NUMBER})")),
     (1, "employees", re.compile(rf"(?i)antall\s+ansatte\s*(?:er|:|=)?\s*({OCR_NUMBER})")),
-    (2, "employees", re.compile(rf"(?i)({OCR_NUMBER})\s+(?:heltids)?ansatte\b")),
+    (1, "employees", re.compile(rf"(?i)({OCR_NUMBER})\s+(?:heltids)?ansatte\b")),
+    (1, "employees", re.compile(rf"(?i)(?:total\s+antall|sum\s+antall)\s+ansatte\s*(?:er|:|=)?\s*({OCR_NUMBER})")),
 )
 WORD_COUNTS = {"ingen": 0, "en": 1, "ett": 1, "to": 2, "tre": 3, "fire": 4, "fem": 5}
 WORD_EMPLOYEE_PATTERN = re.compile(
