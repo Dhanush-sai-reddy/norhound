@@ -22,6 +22,9 @@ from typing import Any
 CSS = (
     "body{font:15px/1.45 system-ui,sans-serif;margin:0 auto;max-width:1100px;padding:12px}"
     "table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #ccc}"
+    "th,td{overflow-wrap:anywhere;word-break:break-word}"
+    ".tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}"
+    "@media (max-width:640px){th,td{font-size:13px;padding:5px 6px}input{font-size:16px}}"
     "input{font:inherit;padding:6px 10px;width:100%;box-sizing:border-box;margin:8px 0}"
     ".muted{color:#666}.card{background:#f3f4f6;padding:10px 12px;border-radius:8px;margin:8px 0}"
     "blockquote{border-left:3px solid #0b57d0;margin:6px 0;padding-left:8px;white-space:pre-wrap}"
@@ -99,9 +102,9 @@ def _index_page(rows: list[dict]) -> str:
         f"<h1>NorHound — company directory</h1><p class=muted>{len(rows)} companies. "
         "Every fact on a company page links to its source.</p>"
         '<input id=q type=search placeholder="Search name, org number, industry" aria-label="Search">'
-        "<table><thead><tr><th>Name</th><th>Org. number</th><th>Industry</th>"
+        '<div class=tblwrap><table><thead><tr><th>Name</th><th>Org. number</th><th>Industry</th>'
         "<th>Employees</th><th>Revenue</th><th>Hiring</th></tr></thead>"
-        f"<tbody id=tb>{''.join(trs)}</tbody></table>"
+        f"<tbody id=tb>{''.join(trs)}</tbody></table></div>"
     )
     return _page("NorHound — company directory", body, f"<script>{INDEX_JS}</script>")
 
