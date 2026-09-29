@@ -43,12 +43,27 @@ SMOKE=1 bash scripts/norhound_live.sh          # 10-company dry run of the same 
 COUNT=100 bash scripts/norhound_live.sh        # smaller full-fidelity run
 VERIFY_RECHECK=1 bash scripts/norhound_live.sh # re-run verify/eval independently
 SKIP_DOWNLOAD=1 bash scripts/norhound_live.sh   # reuse existing data/ inputs
+NORHOUND_STAGE_TIMEOUT_S=900 bash scripts/norhound_live.sh  # per-connector cap
 ```
 
 It prints a final scorecard (published observations, entity/metric precision,
 qualification gate, coverage) and writes the viewer to `out/norhound-site/`.
 Inside Docker the same script is the `norhound-full` entrypoint, so the grader
 needs only `docker compose run --rm norhound-full`.
+
+Re-running the same command is how refresh history is produced: before the run
+overwrites anything it copies the previous `<prefix>-envelopes.jsonl` to
+`<prefix>-envelopes.prev.jsonl` and passes it to `run_competition_batch.py
+--previous-envelopes`, so the emitted envelopes keep the earlier version of
+each profile and gain `refresh`/`changes` events. The first run records a
+baseline with no change events, which is the correct result for a first run.
+`scripts/run_refresh_replay.py` replays a frozen fixture for auditing this
+diff; it is a test harness, not a pipeline stage.
+
+Each connector subprocess is bounded by `NORHOUND_STAGE_TIMEOUT_S` (default
+3600) and is killed as a process group, so a stalled site can no longer block
+the pipeline indefinitely. Note the default exceeds the 45-minute per-100-company
+budget, so lower it for an official batch.
 
 **Note on steps 4–5 below:** `run_external_pipeline.py` already runs
 `verify_and_label_observations.py` and `evaluate_external_footprint.py`
@@ -138,7 +153,8 @@ uv run python scripts/run_wikidata_connector.py --profiles out/web1000-profiles.
 
 # 4. Re-verify every observation against frozen evidence (identity + digest
 #    + domain + exact-org directory proof). Unverified rows never publish.
-#    (Prefix may differ; the shipped audit re-verified 1,391 observations.)
+#    (Prefix may differ; the shipped audit re-verified 1,391 observations, and
+#    the full 1,000-company live run re-verified 24,887.)
 uv run python scripts/verify_and_label_observations.py \
   --profiles out/web1000-profiles.jsonl \
   --observations out/web1000batch.external-withfag.jsonl \
@@ -155,7 +171,10 @@ uv run python scripts/evaluate_external_footprint.py \
 
 # 6. Deterministic grounded summaries (no API key, no model calls) plus a
 #    static site you can open over file:// and a refresh-history pass that
-#    attaches changes/previous-run versions to the envelopes.
+#    attaches changes/previous-run versions to the envelopes. Each summary
+#    answers what the company does, its financial/staff/hiring position, what
+#    changed since the previous run, and what is unknown and why; every
+#    answerable sentence carries the evidence ids it rests on.
 uv run python scripts/build_deterministic_summaries.py \
   --envelopes out/envelopes.jsonl \
   --output out/summaries.jsonl \
@@ -165,8 +184,8 @@ uv run python scripts/build_static_site.py \
   --out out/site
 ```
 
-Network-dependent stages (registry, live website crawl, Firecrawl discovery,
-NIM) reflect the live web at run time; the sealed results are frozen in `out/`.
+Network-dependent stages (registry, live website crawl, Firecrawl discovery)
+reflect the live web at run time; the sealed results are frozen in `out/`.
 The verification/evaluation (`step 4–5`) is deterministic given frozen
 profiles and observations and can be re-run on any checkout.
 
