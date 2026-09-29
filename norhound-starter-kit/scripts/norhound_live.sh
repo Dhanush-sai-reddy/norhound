@@ -91,6 +91,20 @@ else
 fi
 
 # ------------------------------------------------------------ 3 base batch ----
+# Refresh/idempotency: if a prior run's envelopes exist, keep a copy and feed it
+# to the batch runner. run_competition_batch.py then calls attach_refresh(), which
+# diffs the new envelopes against the previous run and attaches a change event to
+# every changed field -- so a re-run preserves history and reports what actually
+# changed instead of silently overwriting. First run: no previous, no events.
+PREV_ARG=()
+if [ -s "$PFX-envelopes.jsonl" ]; then
+  cp "$PFX-envelopes.jsonl" "$PFX-envelopes.prev.jsonl"
+  say "step 3: prior envelopes found -> refresh diff enabled (changes will be recorded)"
+  PREV_ARG=(--previous-envelopes "$PFX-envelopes.prev.jsonl")
+else
+  say "step 3: no prior envelopes -> first run, no change events"
+fi
+
 say "step 3: base batch (registry + exact-identity website capture)"
 uv run python scripts/run_competition_batch.py \
   --organisations "$MANIFEST" \
@@ -99,7 +113,8 @@ uv run python scripts/run_competition_batch.py \
   --output "$PFX-envelopes.jsonl" \
   --report "$PFX-run-report.json" \
   --run-id norhound-one-command \
-  --expected-count "$EXPECTED"
+  --expected-count "$EXPECTED" \
+  "${PREV_ARG[@]}"
 
 # ------------------------------------------------------- 4 external pipeline ----
 say "step 4: external pipeline (NAV jobs + reviews + keyless all default-on)"
