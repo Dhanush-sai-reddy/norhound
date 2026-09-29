@@ -162,7 +162,7 @@ uv run python scripts/build_deterministic_summaries.py \
   --report out/summaries-report.json
 uv run python scripts/build_static_site.py \
   --envelopes out/envelopes.jsonl --summaries out/summaries.jsonl \
-  --out out/site --report out/site-report.json
+  --out out/site
 ```
 
 Network-dependent stages (registry, live website crawl, Firecrawl discovery,

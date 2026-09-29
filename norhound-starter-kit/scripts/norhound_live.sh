@@ -144,8 +144,7 @@ say "step 8: searchable static site"
 uv run python scripts/build_static_site.py \
   --envelopes "$PFX-envelopes.jsonl" \
   --summaries "$PFX.summaries.jsonl" \
-  --out "$PFX-site" \
-  --report "$PFX.site-report.json"
+  --out "$PFX-site"
 
 # -------------------------------------------------------------- scorecard ----
 say "DONE -- artifacts"
