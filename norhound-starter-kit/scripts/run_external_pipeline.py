@@ -15,6 +15,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import signal
 import subprocess
 import sys
 from pathlib import Path
@@ -22,17 +24,42 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = Path(__file__).resolve().parent
 
+# Bound every connector stage. Without this a connector that stalls (or leaves a
+# grandchild holding the stdout pipe) blocks subprocess.run() in communicate()
+# forever with zero CPU and no open sockets, which is how a 1,000-company run was
+# observed to die silently. Generous enough not to kill legitimate work.
+STAGE_TIMEOUT_S = int(os.environ.get("NORHOUND_STAGE_TIMEOUT_S", "3600"))
+
 
 def sanitize_line_separators(text: str) -> str:
     return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
-def run(command: list[str]) -> None:
+def run(command: list[str], timeout: int | None = None) -> None:
     argv = [sys.executable, *command[1:]] if command and command[0] == "python" else command
-    result = subprocess.run(argv, cwd=ROOT, capture_output=True, text=True)
-    if result.returncode != 0:
-        print(result.stdout)
-        print(result.stderr, file=sys.stderr)
+    limit = STAGE_TIMEOUT_S if timeout is None else timeout
+    popen = subprocess.Popen(
+        argv,
+        cwd=ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        start_new_session=True,
+    )
+    try:
+        stdout, stderr = popen.communicate(timeout=limit)
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(os.getpgid(popen.pid), signal.SIGKILL)
+        except (ProcessLookupError, PermissionError):
+            pass
+        stdout, stderr = popen.communicate()
+        print(stdout)
+        print(stderr, file=sys.stderr)
+        raise SystemExit(f"stage timed out after {limit}s: {' '.join(command)}")
+    if popen.returncode != 0:
+        print(stdout)
+        print(stderr, file=sys.stderr)
         raise SystemExit(f"stage failed: {' '.join(command)}")
 
 
