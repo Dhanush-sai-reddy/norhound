@@ -23,6 +23,8 @@ input organisation number — validated 1,000/1,000, no silent drops.
   content hashes, request counts and latency;
 - re-verifies every observation against frozen evidence and labels it
   `exact_entity` — only verified rows publish;
+- generates deterministic, citation-verified summaries (what it does,
+  financials, staff, hiring) with no API key;
 - supports checkpoint/resume and a deterministic refresh replay.
 
 ## Reproduce the shipped submission
@@ -110,18 +112,18 @@ uv run python scripts/evaluate_external_footprint.py \
   --output out/web1000batch.external-eval.json \
   --minimum-audit 300
 
-# 6. Optional grounded summaries (requires NVIDIA_API_KEY for the NIM endpoint).
-NVIDIA_API_KEY=<key> uv run python scripts/run_nim_summary.py \
+# 6. Deterministic summaries (no API key required — zero cost).
+uv run python scripts/build_deterministic_summaries.py \
   --envelopes out/envelopes.jsonl \
-  --output out/web1000batch.summaries.jsonl \
-  --report out/web1000batch.summaries-report.json \
-  --min-interval 0.15 --workers 8
+  --output out/summaries.jsonl \
+  --report out/summaries-report.json
 ```
 
-Network-dependent stages (registry, live website crawl, Firecrawl discovery,
-NIM) reflect the live web at run time; the sealed results are frozen in `out/`.
-The verification/evaluation (`step 4–5`) is deterministic given frozen
-profiles and observations and can be re-run on any checkout.
+Network-dependent stages (registry, live website crawl, Firecrawl discovery)
+reflect the live web at run time; the sealed results are frozen in `out/`.
+The verification/evaluation (`step 4–5`) and summaries (`step 6`) are
+deterministic given frozen profiles and observations and can be re-run on any
+checkout.
 
 ### Expected results (as shipped)
 
@@ -135,8 +137,9 @@ profiles and observations and can be re-run on any checkout.
 - 65 NAV official-API job-posting observations merged into the audit
   (`official_api` acquisition, resolved via the Brønnøysund `underenheter`
   endpoint to each advertiser's parent legal entity).
-- 999/1000 grounded summaries produced (1 transient NIM 503; optional block).
-- 135 tests pass by default (see below).
+- **1000/1000 deterministic summaries** produced (what it does, financials,
+  staff, hiring; all answers cite evidence; unknowns listed with reasons).
+- 199 tests pass by default (see below).
 
 Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
 `out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
@@ -182,7 +185,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest tests.test_poc
-# 135 tests pass
+# 199 tests pass
 ```
 
 ## The improvement loop
@@ -228,14 +231,12 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 ## Secrets and third-party cost
 
 - All secrets are supplied through environment variables only; none are stored
-  in the repository. Optional keys: `NVIDIA_API_KEY` (grounded summaries),
-  `FIRECRAWL_API_KEY` (site discovery).
+  in the repository. Optional keys: `FIRECRAWL_API_KEY` (site discovery).
   A missing key degrades cleanly — the corresponding connector is skipped or
   abstains, never errors.
 - Third-party spend is **~$0 per 100 companies**. The core batch (registry +
-  company-site capture) is free. Optional stages: NVIDIA NIM summaries (free
-  trial endpoint), Firecrawl Search (used only for candidate discovery, inside
-  the $10 budget).
+  company-site capture) is free. Optional stages: Firecrawl Search (used only
+  for candidate discovery, inside the $10 budget).
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.

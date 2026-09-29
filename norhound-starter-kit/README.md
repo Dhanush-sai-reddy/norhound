@@ -26,6 +26,38 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
+### One command (recommended)
+
+Everything the submission needs — manifest, base batch, external connectors,
+verification, evaluation, summaries and the searchable viewer — runs from a
+single command:
+
+```bash
+bash scripts/norhound_live.sh
+```
+
+Useful knobs:
+
+```bash
+SMOKE=1 bash scripts/norhound_live.sh          # 10-company dry run of the same chain
+COUNT=100 bash scripts/norhound_live.sh        # smaller full-fidelity run
+VERIFY_RECHECK=1 bash scripts/norhound_live.sh # re-run verify/eval independently
+SKIP_DOWNLOAD=1 bash scripts/norhound_live.sh   # reuse existing data/ inputs
+```
+
+It prints a final scorecard (published observations, entity/metric precision,
+qualification gate, coverage) and writes the viewer to `out/norhound-site/`.
+Inside Docker the same script is the `norhound-full` entrypoint, so the grader
+needs only `docker compose run --rm norhound-full`.
+
+**Note on steps 4–5 below:** `run_external_pipeline.py` already runs
+`verify_and_label_observations.py` and `evaluate_external_footprint.py`
+internally — that internal run is what makes publication conditional on a
+verified `exact_entity` label. The standalone commands are kept for inspection
+only, and read the pipeline's own `<prefix>.external.jsonl` /
+`<prefix>.labels.jsonl` (an earlier revision emitted `<prefix>.external-withfag.jsonl`,
+which the current pipeline no longer writes).
+
 ### Container (no local setup required)
 
 Everything (Python 3.12, `uv`, dependencies) is pinned inside the image, so the
@@ -130,7 +162,7 @@ uv run python scripts/build_deterministic_summaries.py \
   --report out/summaries-report.json
 uv run python scripts/build_static_site.py \
   --envelopes out/envelopes.jsonl --summaries out/summaries.jsonl \
-  --output out/site --report out/site-report.json
+  --out out/site --report out/site-report.json
 ```
 
 Network-dependent stages (registry, live website crawl, Firecrawl discovery,
