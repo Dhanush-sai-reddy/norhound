@@ -183,7 +183,38 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     else:
         hiring_answer = _answer("hiring", None, ids)
 
-    answers = [what_answer, fin_answer, hist_answer, growth_answer, staff_answer, staff_growth_answer, hiring_answer]
+    changes = row.get("changes") or []
+    refresh = row.get("refresh") or {}
+    if changes:
+        described = []
+        for change in changes[:5]:
+            field = str(change.get("field") or "field")
+            old = change.get("old")
+            new = change.get("new")
+            described.append(f"{field}: {old!r} -> {new!r}")
+        more = f" (+{len(changes) - 5} more)" if len(changes) > 5 else ""
+        # evidence_ids must resolve to this envelope's own evidence (validate_summary
+        # rejects anything else and aborts the run), so cite the profile evidence and
+        # keep per-change URLs in the text only.
+        changes_answer = _answer(
+            "changes",
+            f"{len(changes)} field(s) changed since run {refresh.get('previous_run_id') or 'previous'}: "
+            + "; ".join(described) + more + ".",
+            ids,
+            confidence=0.9,
+        )
+    elif refresh.get("baseline"):
+        changes_answer = _answer(
+            "changes",
+            f"Baseline run, no prior version to compare against (run {refresh.get('previous_run_id') or 'none'}).",
+            ids,
+            status="inferred",
+            confidence=0.8,
+        )
+    else:
+        changes_answer = _answer("changes", "No fields changed since the previous run.", ids, confidence=0.8)
+
+    answers = [what_answer, fin_answer, hist_answer, growth_answer, staff_answer, staff_growth_answer, hiring_answer, changes_answer]
     summary_bits = [a["answer"] for a in answers if a["answerable"]]
     available = _available_evidence(profile)
     unknowns = []
