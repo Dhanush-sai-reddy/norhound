@@ -25,12 +25,18 @@ import argparse
 import hashlib
 import json
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from tldextract import TLDExtract  # noqa: E402
+
+# One extractor for the whole process. Constructing a TLDExtract per call
+# re-reads the public-suffix list, and verify() resolves two domains per
+# observation -- that alone dominated runtime on a 24,887-row run.
+_EXTRACTOR = TLDExtract(cache_dir=str(Path(".cache/tldextract")))
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -41,9 +47,10 @@ def sanitize_line_separators(text: str) -> str:
     return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
 
 
+@lru_cache(maxsize=65536)
 def registered_domain(url: str) -> str | None:
     try:
-        return TLDExtract(cache_dir=str(Path(".cache/tldextract"))).extract_str(url).registered_domain.lower() or None
+        return _EXTRACTOR.extract_str(url).registered_domain.lower() or None
     except Exception:
         return None
 
