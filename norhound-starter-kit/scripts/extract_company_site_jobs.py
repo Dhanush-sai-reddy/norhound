@@ -37,7 +37,11 @@ APPLICATION_MARKERS_PAGE = re.compile(
     r"(?:søknadsfrist|søk(?:nads)? snerk|aktiv søknad|send oss en søknad|vi søker(?: nå| aktivt)?|"
     r"søker(?: vi)? (?:til )?(?:vår|din|en|ny)|ledig(?:e)?(?: stilling| jobb| stillinger)|"
     r"har vi ledig|er vi på jakt|bli en av oss|join our team|apply(?: now| here| via link| button)|"
-    r"send inn(?: din)? søknad|scroll down.*søk|har du lyst til å bli|we are hiring|we (?:are )?looking for)",
+    r"send inn(?: din)? søknad|scroll down.*søk|har du lyst til å bli|we are hiring|we (?:are )?looking for|"
+    r"karriere|careers|ledige stillinger|våre stillinger|jobber hos oss|stillinger|open positions|vacancies|"
+    r"stillinger vi har|jobbe hos|bli med|dine nye kolleger|utviklingsmuligheter|din karriere|"
+    r"stillingstype|heltid|deltid|startdato|start dato|ansvar|oppgaver|kvalifikasjoner|vi tilbyr|"
+    r"arbeidsgiver|arbeidssted|lønn|pensjon|feriepenger|avtale|kollektiv|fagforening)",
     re.I,
 )
 NAVIGATION_ANCHORS = {
@@ -49,6 +53,38 @@ NAVIGATION_ANCHORS = {
 BLOCKED_HOST_FRAGMENTS = (
     "linkedin.com", "mediabank.", "app.myscreenspace.com", "nettskjema", "webshop",
 )
+
+# --- Date extraction (copied from extract_company_site_news.py) ---
+
+ISO_DATE = re.compile(r"(20\d{2})-(\d{2})-(\d{2})")
+NO_MONTHS = {m: i + 1 for i, m in enumerate((
+    "januar", "februar", "mars", "april", "mai", "juni", "juli",
+    "august", "september", "oktober", "november", "desember"))}
+NO_DATE = re.compile(r"(\d{1,2})\.?\s+(" + "|".join(NO_MONTHS) + r")\s+(20\d{2})", re.I)
+NUMERIC_DATE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(20\d{2})")
+
+
+def find_dates(text: str) -> list[str]:
+    """Mine ISO, Norwegian-month and numeric dates from page text. Sorted, deduped."""
+    found = set()
+    for match in ISO_DATE.findall(text or ""):
+        found.add(f"{match[0]}-{match[1]}-{match[2]}")
+    for day, month, year in NO_DATE.findall(text or ""):
+        found.add(f"{year}-{NO_MONTHS[month.casefold()]:02d}-{int(day):02d}")
+    for day, month, year in NUMERIC_DATE.findall(text or ""):
+        if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
+            found.add(f"{year}-{int(month):02d}-{int(day):02d}")
+    return sorted(found)
+
+
+def date_from_page_body(html: str | bytes) -> str | None:
+    """Strip markup, then mine machine-readable dates from the page body."""
+    if isinstance(html, bytes):
+        html = html.decode("utf-8", errors="replace")
+    text = re.sub(r"<[^>]+>", " ", html or "")
+    text = re.sub(r"\s+", " ", text)
+    dates = find_dates(text)
+    return dates[-1] if dates else None
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -171,6 +207,23 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
             "same_registered_domain": True,
             "same_registered_domain_subdomain": posting["subdomain"],
         }
+        # Extract date from the posting page
+        page_html = None
+        for anchor in soup.select("a[href]"):
+            href = str(anchor.get("href") or "").strip()
+            if not href:
+                continue
+            check_url = urllib.parse.urljoin(base, href)
+            if check_url == url:
+                page_html = html
+                break
+
+        observed_at = None
+        if page_html:
+            observed_at = date_from_page_body(page_html)
+        if not observed_at:
+            observed_at = retrieved_at[:10]
+
         observations.append({
             "id": "company-site-job-" + hashlib.sha256(f"{org}|{url}".encode()).hexdigest()[:24],
             "organisation_number": org,
@@ -178,6 +231,7 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
             "signal_type": "job_posting",
             "source_url": url,
             "retrieved_at": retrieved_at,
+            "observed_at": observed_at,
             "content_sha256": digest,
             "exact_entity": True,
             "identity_proof": [identity_proof],

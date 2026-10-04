@@ -187,7 +187,7 @@ def normalize_social_url(url: str) -> dict[str, str] | None:
     return {"platform": platform, "url": f"https://{canonical_host}/{'/'.join(parts)}"}
 
 
-def _priority_links(base_url: str, soup: BeautifulSoup, limit: int = 6) -> list[str]:
+def _priority_links(base_url: str, soup: BeautifulSoup, limit: int = 24) -> list[str]:
     base = urllib.parse.urlparse(base_url)
     candidates: dict[str, int] = {}
     for anchor in soup.select("a[href]"):

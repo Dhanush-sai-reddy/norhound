@@ -85,9 +85,14 @@ def main() -> None:
     parser.add_argument("--no-nav", dest="nav", action="store_false", help="Disable the official NAV job feed connector")
     parser.add_argument("--nav", dest="nav", action="store_true", help="Deprecated no-op: NAV job feed now runs by default")
     parser.set_defaults(nav=True)
+    parser.add_argument("--no-workforce", dest="workforce", action="store_false", help="Disable the workforce connectors (registry employee count + official annual-report extraction)")
+    parser.add_argument("--workforce", dest="workforce", action="store_true", help="Deprecated no-op: workforce connectors now run by default")
+    parser.set_defaults(workforce=True)
+    parser.add_argument("--workforce-workers", default="3", help="Parallel workers for the official annual-report PDF extractor")
     parser.add_argument("--nav-index", default="data/nav-job-index.jsonl", help="Frozen NAV job feed index path (built via run_nav_job_feed_connector.py --build-index)")
     parser.add_argument("--wikidata-index", default="data/wikidata-index.jsonl", help="Frozen Wikidata search index path (built once via run_wikidata_connector.py --build-index)")
     parser.add_argument("--minimum-audit", default="300", help="Minimum published+audited observations for the qualification gate")
+    parser.add_argument("--external-data", default=None, help="Pre-computed observation JSONL(s) to merge into the consolidated output (comma-separated paths or glob pattern)")
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
     parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
     args = parser.parse_args()
@@ -99,7 +104,6 @@ def main() -> None:
     news_out = prefix.with_suffix(prefix.suffix + ".news.jsonl")
     jobs_out = prefix.with_suffix(prefix.suffix + ".jobs.jsonl")
     discovery_out = prefix.with_suffix(prefix.suffix + ".discovery.jsonl")
-    external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")
     enriched_out = prefix.with_suffix(prefix.suffix + ".enriched.jsonl")
     eval_out = prefix.with_suffix(prefix.suffix + ".external-eval.json")
 
@@ -140,17 +144,17 @@ def main() -> None:
             for path in keyless_parts:
                 rows.extend(json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip())
             keyless_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in rows), encoding="utf-8")
+    orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
+    orgs_out.write_text(
+        "".join(
+            str(json.loads(line)["organisation_number"]) + "\n"
+            for line in Path(args.profiles).read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ),
+        encoding="utf-8",
+    )
     reviews_out = prefix.with_suffix(prefix.suffix + ".fagfolk.jsonl")
     if args.reviews:
-        orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
-        orgs_out.write_text(
-            "".join(
-                str(json.loads(line)["organisation_number"]) + "\n"
-                for line in Path(args.profiles).read_text(encoding="utf-8").splitlines()
-                if line.strip()
-            ),
-            encoding="utf-8",
-        )
         run([
             "python", str(SCRIPTS / "run_fagfolkguiden_reviews_connector.py"),
             "--profiles", args.profiles,
@@ -159,6 +163,24 @@ def main() -> None:
             "--cache", str(prefix.with_suffix(prefix.suffix + ".fagfolk-cache")),
             "--report", str(prefix.with_suffix(prefix.suffix + ".fagfolk-report.json")),
             "--workers", "4",
+        ])
+    workforce_registry_out = prefix.with_suffix(prefix.suffix + ".workforce-registry.jsonl")
+    workforce_pdf_out = prefix.with_suffix(prefix.suffix + ".workforce-pdf.jsonl")
+    if args.workforce:
+        run([
+            "python", str(SCRIPTS / "extract_registry_workforce.py"),
+            "--profiles", args.profiles,
+            "--output", str(workforce_registry_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-registry-report.json")),
+        ])
+        run([
+            "python", str(SCRIPTS / "run_annual_report_workforce_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(workforce_pdf_out),
+            "--cache", str(prefix.with_suffix(prefix.suffix + ".workforce-cache")),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-pdf-report.json")),
+            "--workers", str(args.workforce_workers),
         ])
     nav_out = prefix.with_suffix(prefix.suffix + ".nav.jsonl")
     if args.nav:
@@ -202,6 +224,10 @@ def main() -> None:
         run(discovery_command)
 
     observation_files = [activity_out, news_out, jobs_out]
+    if workforce_registry_out.exists() and workforce_registry_out.stat().st_size > 0:
+        observation_files.append(workforce_registry_out)
+    if workforce_pdf_out.exists() and workforce_pdf_out.stat().st_size > 0:
+        observation_files.append(workforce_pdf_out)
     if keyless_out.exists() and keyless_out.stat().st_size > 0:
         observation_files.append(keyless_out)
     if reviews_out.exists() and reviews_out.stat().st_size > 0:
@@ -213,6 +239,16 @@ def main() -> None:
     linkedin_out = prefix.with_suffix(prefix.suffix + ".linkedin.jsonl")
     reddit_out = prefix.with_suffix(prefix.suffix + ".reddit.jsonl")
     handles_out = prefix.with_suffix(prefix.suffix + ".handles.jsonl")
+    # Pre-computed external data (Apify one-shot output) merged here
+    external_data_files: list[Path] = []
+    if args.external_data:
+        import glob as _glob
+        for pattern in args.external_data.split(","):
+            pattern = pattern.strip()
+            matched = [Path(p) for p in _glob.glob(str(pattern))]
+            external_data_files.extend(matched)
+    external_data_files = [p for p in external_data_files if p.exists() and p.stat().st_size > 0]
+    observation_files.extend(external_data_files)
     if args.harvest_linkedin_local:
         handles = [
             item
@@ -251,7 +287,14 @@ def main() -> None:
     for path in existing:
         for line in sanitize_line_separators(Path(path).read_text(encoding="utf-8")).splitlines():
             if line.strip():
-                consolidated.append(json.loads(line))
+                row = json.loads(line)
+                # Every published claim must carry an observation date. Rows whose
+                # source is a live page or an official snapshot are observed at
+                # retrieval time; rows that already carry a reporting date (registry
+                # updates, annual-report workforce) keep it untouched.
+                if not row.get("observed_at") and row.get("retrieved_at"):
+                    row["observed_at"] = str(row["retrieved_at"])[:10]
+                consolidated.append(row)
     external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")
     external_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in consolidated), encoding="utf-8")
 

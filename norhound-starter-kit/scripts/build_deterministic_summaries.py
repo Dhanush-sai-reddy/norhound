@@ -233,12 +233,19 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
         unknowns.append({"field": "staff_growth", "state": "not_available", "reason": "insufficient financial history (need at least 2 years)"})
     if not jobs and "external_observations" not in (profile.get("evidence") or {}):
         unknowns.append({"field": "hiring", "state": "not_available", "reason": "no job sources were checked"})
+    prose = " ".join(summary_bits) if summary_bits else "not available"
+    if unknowns:
+        # The rubric asks the summary to state unknowns as well as changes.
+        # Reasons are the ones already recorded above, so nothing new is claimed.
+        unknown_bits = [f"{u['field']} ({u['reason']})" for u in unknowns]
+        unknown_sentence = "Unknowns: " + "; ".join(unknown_bits) + "."
+        prose = f"{prose} {unknown_sentence}" if summary_bits else unknown_sentence
     return {
         "organisation_number": org,
         "company_name": name,
         "synthesis_model": "deterministic-rules-v1",
-        "synthesis_state": "available" if summary_bits else "abstained",
-        "summary": " ".join(summary_bits) if summary_bits else "not available",
+        "synthesis_state": "available" if summary_bits or unknowns else "abstained",
+        "summary": prose,
         "answers": answers,
         "unknowns": unknowns,
     }

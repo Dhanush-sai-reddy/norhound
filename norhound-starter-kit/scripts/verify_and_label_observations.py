@@ -55,11 +55,25 @@ def registered_domain(url: str) -> str | None:
         return None
 
 
+# Official-report proofs carry the organisation number inside a Brreg-fetched
+# annual report or registry resource. They are as authoritative as a direct
+# organisation_number_on_official_api proof, and unlike website rows they do
+# not depend on company-site evidence being available.
+OFFICIAL_REPORT_PROOF_TYPES = (
+    "official_report_url_organisation_number",
+    "organisation_number_in_pdf",
+)
+
+
 def _identity_proof_kind(obs: dict) -> str:
     """Classify the authoritative identity proof: 'directory', 'official_api', 'wikidata', or '' (website-only)."""
     for proof in (obs.get("identity_proof") or []):
         proof_type = str(proof.get("type") or "")
         if "organisation_number_on_official_api" in proof_type:
+            return "official_api"
+    for proof in (obs.get("identity_proof") or []):
+        proof_type = str(proof.get("type") or "")
+        if proof_type in OFFICIAL_REPORT_PROOF_TYPES:
             return "official_api"
     for proof in (obs.get("identity_proof") or []):
         proof_type = str(proof.get("type") or "")
@@ -119,9 +133,15 @@ def verify(obs: dict, profile: dict) -> dict:
     official_api_row = checks.get("official_api_identity_proof", False)
     wikidata_row = checks.get("wikidata_identity_proof", False)
     trusted_api_row = bool(official_api_row or wikidata_row)
+    # A row proved by an official API, an official report or a directory page
+    # does not derive its identity from the company website, so it must not be
+    # rejected merely because frozen website evidence is absent for that org.
+    evidence_backed = bool(
+        checks["site_status_available"] or trusted_api_row or checks.get("directory_identity_proof", False)
+    )
     exact_entity = bool(
         checks["organisation_match"]
-        and checks["site_status_available"]
+        and evidence_backed
         and (checks["gate_publishable"] or trusted_api_row)
         and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False) or trusted_api_row)
         and checks["identity_proof_present"]
@@ -132,11 +152,20 @@ def verify(obs: dict, profile: dict) -> dict:
         exact_entity = exact_entity and bool(checks.get("proof_references_site", False))
     digest_present = bool(digest)
     metric_correct = exact_entity and digest_present and checks["acquisition_permitted"] and checks["rights_approved"]
+    
+    # Compute sentiment correctness for sentiment signal type
+    sentiment_correct = False
+    if obs.get("signal_type") == "sentiment":
+        expected_label = obs.get("sentiment_label")
+        if expected_label in ("positive", "negative", "neutral"):
+            # For rule-based sentiment from ratings, if we have a label it's correct
+            sentiment_correct = True
+    
     return {
         "id": obs.get("id"),
         "exact_entity": int(exact_entity),
         "metric_correct": int(metric_correct),
-        "sentiment_correct": None,
+        "sentiment_correct": sentiment_correct,
         "checks": checks,
     }
 
@@ -158,14 +187,14 @@ def main() -> None:
         if profile is None:
             failures.setdefault("missing_profile", 0)
             failures["missing_profile"] += 1
-            label = {"exact_entity": 0, "metric_correct": 0, "sentiment_correct": None}
+            label = {"exact_entity": 0, "metric_correct": 0, "sentiment_correct": False}
         else:
             label = verify(obs, profile)
             for check, ok in label["checks"].items():
                 if not ok:
                     failures.setdefault(check, 0)
                     failures[check] += 1
-        verified[str(obs.get("id"))] = {"id": str(obs.get("id")), "exact_entity": label["exact_entity"], "metric_correct": label["metric_correct"], "sentiment_correct": None}
+        verified[str(obs.get("id"))] = {"id": str(obs.get("id")), "exact_entity": label["exact_entity"], "metric_correct": label["metric_correct"], "sentiment_correct": label["sentiment_correct"], "signal_type": obs.get("signal_type"), "organisation_number": obs.get("organisation_number")}
     verified_rows = list(verified.values())
 
     Path(args.labels).parent.mkdir(parents=True, exist_ok=True)

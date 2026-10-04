@@ -51,7 +51,7 @@ def fetch_dated_observation(profile: dict, *, body: str | None = None, url: str 
     if base is None:
         return None
     if body:
-        base["metrics"] = {**base["metrics"], "body_excerpt": body[:1000]}
+        base["metrics"] = {**base["metrics"], "body_excerpt": body[:5000]}
     if body is None:
         return base
     date = date_from_page_body(body)
@@ -87,7 +87,9 @@ def observation(profile: dict) -> dict | None:
         return None
     org = str(profile["organisation_number"])
     title = str(page.get("title") or "Company news/activity page").strip()
-    dates = find_dates(title + "\n" + str(page.get("main_text_excerpt") or ""))
+    excerpt = str(page.get("main_text_excerpt") or "").strip()
+    full_span = f"{title}\n\n{excerpt}" if excerpt else title
+    dates = find_dates(title + "\n" + excerpt)
     item = {
         "id": "company-site-news-" + hashlib.sha256(f"{org}|{url}".encode()).hexdigest()[:24],
         "organisation_number": org,
@@ -101,7 +103,7 @@ def observation(profile: dict) -> dict | None:
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": title[:1200],
+        "evidence_span": full_span[:8000],
         "metrics": {"captured_news_pages": len(pages), "interpretation": "Company-owned activity; not independent sentiment."},
         "strategy": "company_site_activity",
     }

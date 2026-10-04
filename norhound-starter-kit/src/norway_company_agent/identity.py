@@ -108,9 +108,18 @@ def assess_website_identity(profile: dict[str, Any]) -> dict[str, Any]:
     )
     normalized_raw = unicodedata.normalize("NFKD", candidate_text).encode("ascii", "ignore").decode().casefold()
     homepage_token_sets = [set(_tokens(part)) for part in homepage_identity_parts if part]
-    exact_homepage_name = bool(core and any(set(core).issubset(tokens) for tokens in homepage_token_sets))
+    single_part_exact_homepage_name = bool(core and any(set(core).issubset(tokens) for tokens in homepage_token_sets))
+    # A legal name is often split across the title and the hostname, so no single
+    # part contains every token. Matching the union of the homepage parts is
+    # weaker evidence than a single-part match, so it is scored separately below.
+    union_homepage_tokens = set().union(*homepage_token_sets) if homepage_token_sets else set()
+    exact_homepage_name_union = bool(core and len(core) >= 2 and set(core).issubset(union_homepage_tokens))
+    exact_homepage_name = single_part_exact_homepage_name or exact_homepage_name_union
     operator_name, operator_conflict = _distinct_operator(core, homepage_identity_parts, str(profile.get("name") or ""))
     substantive_homepage = len(str(value.get("main_text_excerpt") or "").strip()) >= 100
+    # A failed or blocked fetch leaves nothing but the URL itself, and a guessed
+    # hostname is a candidate, not evidence, so it can never raise the score.
+    captured_homepage = str(website.get("status") or "") == "available"
     is_business_sports_club = bool(re.search(r"(?:^|\s)B\.?\s*I\.?\s*L\.?(?:\s|$)", str(profile.get("name") or ""), re.I))
     if any(marker in normalized_raw for marker in parked_markers):
         score = 0.1
@@ -121,15 +130,24 @@ def assess_website_identity(profile: dict[str, Any]) -> dict[str, Any]:
     elif org_digits and org_digits in compact_homepage_candidate:
         score = 1.0
         reasons.append("exact organisation number appears in homepage identity evidence")
-    elif operator_conflict and not exact_homepage_name:
+    elif operator_conflict and not single_part_exact_homepage_name:
         score = 0.3
         reasons.append(f"homepage identity names a different registered operator ({operator_name}) without the assessable legal entity full name")
-    elif len(core) >= 2 and exact_homepage_name:
+    elif len(core) >= 2 and single_part_exact_homepage_name:
         score = 0.95
         reasons.append("all normalized legal-name tokens appear together in homepage identity evidence")
+    elif len(core) >= 2 and exact_homepage_name_union and captured_homepage:
+        score = 0.9
+        reasons.append("all normalized legal-name tokens appear across the homepage identity evidence")
     elif len(core) == 1 and exact_homepage_name and substantive_homepage:
         score = 0.95
         reasons.append("single distinctive legal-name token appears in homepage identity evidence with substantive content")
+    elif exact_homepage_name and captured_homepage:
+        # Title or hostname carries the full legal name, but the rendered body was
+        # short (common on JS-driven sites). The URL itself is registry-linked, so
+        # the name match resolves the entity even without a long text excerpt.
+        score = 0.9
+        reasons.append("legal-name tokens appear in homepage identity evidence")
     elif ratio >= 0.75 and len(overlap) >= 2:
         score = 0.85
         reasons.append("most legal-name tokens appear, but exact identity is incomplete")

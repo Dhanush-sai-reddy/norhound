@@ -89,6 +89,15 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
         if name_in_page:
             proof.append({"type": "exact_legal_name_on_directory_page", "value": profile["name"]})
         proof.append({"type": "embedded_google_aggregate_rating", "google_review_url": google_url})
+        def rating_to_label(r: float) -> str:
+            if r >= 4.0:
+                return "positive"
+            elif r >= 3.0:
+                return "neutral"
+            else:
+                return "negative"
+
+        label = rating_to_label(rating)
         common = {
             "organisation_number": org, "platform": "company_directory", "source_url": url,
             "retrieved_at": retrieved_at, "content_sha256": digest, "exact_entity": True,
@@ -96,11 +105,14 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
             "rights_status": "approved", "source_class": "customer_review",
             "evidence_span": f"Google aggregate rating {rating}/5 based on {count} reviews, embedded on exact Fagfolkguiden company page.",
             "metrics": {"rating": rating, "review_count": count, "scale": 5, "google_review_url": google_url},
+            "label": label,
         }
+        sentiment_common = {**common, "sentiment_label": label, "sentiment_model_version": "rule-based-v1"}
         rows = [
             {**common, "id": f"fagfolk-review-{org}-{digest[:16]}", "signal_type": "review_summary", "strategy": "places_rating_reviews"},
             {**common, "id": f"fagfolk-metrics-{org}-{digest[:16]}", "signal_type": "profile_metrics", "strategy": "social_profile_metrics"},
             {**common, "id": f"fagfolk-buzz-{org}-{digest[:16]}", "signal_type": "buzz_metrics", "strategy": "buzz_peer_normalization"},
+            {**sentiment_common, "id": f"fagfolk-sentiment-{org}-{digest[:16]}", "signal_type": "sentiment", "strategy": "customer_review_sentiment"},
         ]
         return rows, {"organisation_number": org, "accepted": True, "rated": True, "rating": rating, "review_count": count, "cache_hit": cache_hit, "name_verified": name_in_page}
     except Exception as exc:

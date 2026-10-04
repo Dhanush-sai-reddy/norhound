@@ -48,6 +48,7 @@ SIGNAL_TYPES = {
     "workforce_snapshot",
     "public_post",
     "public_mention",
+    "sentiment",
     "buzz_metrics",
 }
 

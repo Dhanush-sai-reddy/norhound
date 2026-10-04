@@ -96,14 +96,19 @@ def _claim_value(entity: dict[str, Any], prop: str) -> Any:
 def _http_get_json(url: str) -> dict[str, Any]:
     request = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "NorHound/1.0 (signalpost research)"})
     last_error: Exception | None = None
-    for attempt in range(3):
+    for attempt in range(8):
         try:
             with urllib.request.urlopen(request, timeout=HTTP_TIMEOUT) as response:
                 return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             last_error = exc
             if exc.code == 429:
-                time.sleep(2.0 * (attempt + 1))
+                # Wikidata throttles shared egress hard; honour Retry-After when
+                # sent and back off geometrically otherwise, or the index build
+                # loses whole chunks.
+                header = (exc.headers.get("Retry-After") or "").strip()
+                delay = float(header) if header.isdigit() else 5.0 * (attempt + 1)
+                time.sleep(min(delay, 90.0))
                 continue
             break
         except TimeoutError as exc:
@@ -127,7 +132,7 @@ def prime_index(
     skipped_scan_chunks = 0
     for index, chunk in enumerate(_chunks(orgs, SEARCH_BATCH)):
         if index:
-            time.sleep(1.0)
+            time.sleep(2.0)
         query = "haswbstatement:" + "|".join(f"{ORG_NUMBER_PROPERTY}={o}" for o in chunk)
         try:
             payload = fetch(
@@ -146,7 +151,7 @@ def prime_index(
     by_org: dict[str, dict[str, Any]] = {}
     for index, chunk in enumerate(_chunks(sorted(set(qids)), ENTITY_BATCH)):
         if index:
-            time.sleep(1.0)
+            time.sleep(3.0)
         payload = fetch(
             f"{API}?action=wbgetentities&ids={'|'.join(chunk)}"
             f"&props=claims|labels|sitelinks&languages=nb|en"

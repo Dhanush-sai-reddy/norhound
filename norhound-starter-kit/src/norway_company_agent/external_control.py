@@ -27,6 +27,9 @@ STRATEGIES = (
     "exact_entity_article_capture",
     "independent_sentiment",
     "buzz_peer_normalization",
+    "multi_source_job_api",
+    "gulesider_review_directory",
+    "customer_review_sentiment",
 )
 
 

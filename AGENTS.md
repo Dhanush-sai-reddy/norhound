@@ -20,6 +20,10 @@ Build an agent that, given a Norwegian company number (organisasjonsnummer), sea
 
 ## 📊 Scoring Breakdown (100 pts)
 
+> **⚠️ SUPERSEDED 1 Oct 2026** — the rubric changed to
+> **Recall 50 / Evidence 30 / Synthesis 12 / UX 8**. See
+> "🔄 CURRENT RUBRIC — Re-evaluation" below. Kept for the original review only.
+
 | Category | Points | What It Measures |
 |----------|--------|-----------------|
 | **Coverage** | 35 | How much information found (70% company coverage + 30% claim count, per field type) |
@@ -45,7 +49,70 @@ Build an agent that, given a Norwegian company number (organisasjonsnummer), sea
 
 ---
 
-## 📋 Official Review — Commit 97a43bf (17 Sep 2026)
+## 🔄 CURRENT RUBRIC — Re-evaluation after re-submission (as of 1 Oct 2026)
+
+**THE SCORING CHANGED. The 100-point split above (Coverage 35 / Correctness 30 /
+Updates 20 / Summary 10 / Usability 5) is SUPERSEDED. Use this instead.**
+
+| New category | Max | **Our score** | Position |
+|---|---|---|---|
+| **Recall** | 50 | **12.89** | THE bottleneck — 37 of our 57 missing pts |
+| **Evidence** | 30 | **18.92** | flat — all builders 18.92–18.93 |
+| **Synthesis** | 12 | **7.20** | flat — all six builders exactly 7.20 |
+| **UX** | 8 | **3.20** | **tied best** (Karthik only 1.60) |
+| **Total** | 100 | **42.21** | **6th — NOT QUALIFIED** |
+
+### Leaderboard (post re-evaluation)
+
+| # | Builder | Recall/50 | Evidence/30 | Synthesis/12 | UX/8 | Total |
+|---|---|---|---|---|---|---|
+| 1 | Karthik | 17.86 | 18.93 | 7.20 | 1.60 | 45.59 |
+| 2 | Hardik | 13.96 | 18.92 | 7.20 | 3.20 | 43.28 |
+| 3 | Ajai | 13.60 | 18.92 | 7.20 | 3.20 | 42.92 |
+| 4 | Vishwajit | 12.97 | 18.92 | 7.20 | 3.20 | 42.29 |
+| 5 | Devansh | 12.94 | 18.92 | 7.20 | 3.20 | 42.26 |
+| 6 | **Dhanush (us)** | **12.89** | **18.92** | **7.20** | **3.20** | **42.21** |
+
+**Nobody qualified.** Gap to 1st = 3.38 pts, almost entirely Recall (−4.97).
+
+### What this means strategically
+- **Recall is the only real battleground** — Evidence and Synthesis are *identical*
+  across all six builders (18.92 / 7.20), so whatever caps them is shared and
+  structural; we cannot differentiate there.
+- **UX we already lead** at 3.20 (mobile + search work paid off). Max left: 4.8.
+- Recall ≈ simple mean of our six field recalls: internal evaluator predicts
+  **13.27/50**, official gave **12.89/50** → our `coverage` dict is a valid
+  proxy for the official Recall metric. Diagnose with it.
+
+### Our field recalls (internal eval, 1,000-company run, commit `b9698de`)
+| field | recall | status |
+|---|---|---|
+| any_external | 0.823 | good — improved from 0.354 |
+| two_platforms | 0.361 | room |
+| buzz_engagement | 0.352 | room |
+| **workforce_jobs** | **0.041** | **DEAD** — only 41/1000 companies have jobs (219 postings: 152 company_site + 67 NAV); NAV index = 3,625 rows |
+| **ratings_reviews** | **0.015** | **DEAD** — only 32 of 1,000 companies have a Fagfolkguiden rating page |
+| **sentiment** | **0.000** | **HARD ZERO** — see below |
+
+### Root causes of the three dead fields (verified 1 Oct 2026)
+1. **`sentiment = 0.000`** — `sentiment_label` is only ever set by
+   `normalize_google_maps_results.py:284` (not run) and `run_nim_summary.py:91`
+   (deprecated, needs `NVIDIA_API_KEY`). Our Fagfolkguiden connector extracts
+   `metrics.rating` (e.g. 4.9/5) but **never sets `sentiment_label`**. Zero
+   published rows carry it → sentiment recall structurally 0.
+   *Fix:* derive deterministically from rating (4.9/5 → positive) — no model, no
+   API. **Caps at 0.032** (32 companies have ratings).
+2. **`ratings_reviews = 0.015`** — connector *attempted all 1,000* (all run by
+   default, `--reviews` is a no-op); the **source only covers 32 companies**.
+   Not a rate-limit. Needs a second directory source.
+3. **`workforce_jobs = 0.041`** — biggest single lever. NAV feed only reaches
+   41 companies. **Finn.no** (Norway's #1 job board) is the missing source.
+4. **Viewer has NO sentiment tab** — sections are Summary / Questions / Facts /
+   Observations / Evidence / Changes. Costs both Recall and UX.
+
+---
+
+## 📋 Official Review — Commit 97a43bf (17 Sep 2026) *(OLD rubric, superseded above)*
 
 **Score: 54.92 / 100 — NOT QUALIFIED** (qualification line = 65)
 

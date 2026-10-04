@@ -96,6 +96,21 @@ where supported. Downloaded data and crawl output stay on the host in the
 `norhound-data` / `norhound-out` volumes so a run survives container teardown.
 The same scripts/commands below run inside the container, unchanged.
 
+### Official run (evaluator-supplied batch)
+
+One command researches exactly the organisations in the file the evaluator
+supplies — the agent never substitutes a list of its own, and the expected
+envelope count is read from that file:
+
+```bash
+bash scripts/norhound_live.sh /path/to/official-batch.jsonl
+```
+
+The batch file may be JSONL, a JSON array, or plain text of organisation
+numbers; every format `read_organisation_inputs()` accepts is read the same
+way the batch runner reads it, so one terminal envelope is produced per input
+organisation and the count check is derived rather than declared.
+
 ### Native (Python 3.12+ and `uv` installed)
 
 Requires Python 3.12+ and `uv`. Data: the official Brønnøysund bulk export and
@@ -181,6 +196,7 @@ uv run python scripts/build_deterministic_summaries.py \
   --report out/summaries-report.json
 uv run python scripts/build_static_site.py \
   --envelopes out/envelopes.jsonl --summaries out/summaries.jsonl \
+  --labels out/norhound.labels.jsonl --observations out/norhound.external.jsonl \
   --out out/site
 ```
 
@@ -315,7 +331,9 @@ Submit a repository with:
 
 - at least 1,000 completed company profiles and the exact organisation-number
   manifest used;
-- one documented command that accepts a JSONL batch of organisation numbers;
+- one documented command that accepts a JSONL batch of organisation numbers:
+  `bash scripts/norhound_live.sh <batch.jsonl>` (the batch argument is the
+  evaluator's file; without it the script builds a self-contained manifest);
 - exactly one terminal envelope per input;
 - pinned dependencies and reproducible setup;
 - a previous-snapshot input and material-change output;

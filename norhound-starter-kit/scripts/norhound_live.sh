@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 # NorHound -- ONE command for the complete submission pipeline.
 #
-#   bash scripts/norhound_live.sh
+#   bash scripts/norhound_live.sh                       # self-contained run
+#   bash scripts/norhound_live.sh /path/to/batch.jsonl  # evaluator's batch
 #
+# With a batch argument the agent researches exactly the organisations in that
+# file (JSONL, JSON array or plain text of organisation numbers) and returns
+# one terminal envelope per entry. It never substitutes a list of its own.
 # Runs every stage that produces a submitted artifact, in order, and prints a
 # final scorecard:
 #
@@ -19,8 +23,8 @@
 #   8  static site     -> searchable viewer (file:// openable)
 #
 # Env knobs (all optional):
-#   COUNT=1000          companies in the manifest
-#   EXPECTED=$COUNT     terminal envelopes required
+#   COUNT=1000          companies in the manifest (self-contained mode only)
+#   EXPECTED=$COUNT     terminal envelopes required (default: one per input)
 #   SMOKE=1             10-company dry run of the same chain (fast, no guard)
 #   SKIP_DOWNLOAD=1     reuse existing data/ inputs
 #
@@ -31,7 +35,8 @@ cd "$(dirname "$0")/.."
 
 SMOKE="${SMOKE:-0}"
 COUNT="${COUNT:-1000}"
-EXPECTED="${EXPECTED:-$COUNT}"
+EXPECTED="${EXPECTED:-}"
+BATCH="${1:-${BATCH:-}}"
 PFX="${PFX:-out/norhound}"
 
 # The official Brregregistry bulk export may already sit at the repo root (as
@@ -70,12 +75,23 @@ if [ "$SMOKE" != "1" ] && [ "${SKIP_DOWNLOAD:-0}" != "1" ]; then
 fi
 
 # -------------------------------------------------------------- 2 manifest ----
-if [ "$SMOKE" = "1" ]; then
+if [ -n "$BATCH" ]; then
+  say "step 2: evaluator-supplied batch"
+  if [ ! -s "$BATCH" ]; then
+    echo "ERROR: batch file not found or empty: $BATCH" >&2
+    exit 1
+  fi
+  MANIFEST="$BATCH"
+  if [ -z "$EXPECTED" ]; then
+    EXPECTED="$(uv run python -c 'import sys; sys.path.insert(0, "src"); from norway_company_agent.batch import read_organisation_inputs; print(len(read_organisation_inputs(sys.argv[1])))' "$BATCH")"
+  fi
+  say "step 2: $EXPECTED organisations from the supplied batch (agent chooses none of its own)"
+elif [ "$SMOKE" = "1" ]; then
   say "step 2: 10-company smoke manifest (publicity guard bypassed)"
   mkdir -p out data
   head -n 10 entry-web1000.jsonl > out/smoke-manifest.jsonl
   MANIFEST=out/smoke-manifest.jsonl
-  EXPECTED=10
+  [ -n "$EXPECTED" ] || EXPECTED=10
   PFX=out/smoke
 else
   say "step 2: $COUNT-company manifest (seed 20260823, website-only)"
@@ -88,6 +104,7 @@ else
     --bulk "$BULK" \
     --output data/entry-manifest.jsonl
   MANIFEST=data/entry-manifest.jsonl
+  [ -n "$EXPECTED" ] || EXPECTED="$COUNT"
 fi
 
 # ------------------------------------------------------------ 3 base batch ----

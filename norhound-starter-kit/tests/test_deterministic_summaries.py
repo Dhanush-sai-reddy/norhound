@@ -108,6 +108,39 @@ class DeterministicSummariesTests(unittest.TestCase):
         self.assertIn("employees", fields)
         self.assertTrue(all(u["reason"] for u in out["unknowns"]))
 
+    def test_unknowns_stated_in_summary_prose(self):
+        row = _row()
+        row["profile"]["industry_label"] = None
+        del row["profile"]["evidence"]["website"]
+        row["profile"]["employees"] = None
+        out = summarize_row(row)
+        self.assertIn("Unknowns:", out["summary"])
+        self.assertIn("no verified company website", out["summary"])
+        self.assertIn("no employee count", out["summary"])
+        self.assertEqual(validate_summary(row, out), [])
+
+    def test_summary_states_changes_when_present(self):
+        row = _row(changes=[{"field": "employees", "old": 10, "new": 11}],
+                   refresh={"baseline": True, "previous_run_id": "run-1"})
+        out = summarize_row(row)
+        self.assertIn("changed since run run-1", out["summary"])
+        self.assertEqual(validate_summary(row, out), [])
+
+    def test_no_unknowns_sentence_when_everything_is_known(self):
+        row = _row()
+        row["profile"]["evidence"]["financial_history"] = {
+            "status": "available", "source_url": "https://example.test/hist",
+            "retrieved_at": "2026-09-14T00:00:00Z",
+            "value": {"years": ["2024", "2025"]},
+        }
+        row["profile"]["evidence"]["financials"]["value"]["records"] = [
+            {"year": "2025", "revenue": 5000000, "annual_result": 250000},
+            {"year": "2024", "revenue": 4000000, "annual_result": 100000},
+        ]
+        out = summarize_row(row)
+        self.assertNotIn("Unknowns:", out["summary"])
+        self.assertEqual(validate_summary(row, out), [])
+
 
 if __name__ == "__main__":
     unittest.main()
