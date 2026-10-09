@@ -93,6 +93,15 @@ def main() -> None:
     parser.add_argument("--wikidata-index", default="data/wikidata-index.jsonl", help="Frozen Wikidata search index path (built once via run_wikidata_connector.py --build-index)")
     parser.add_argument("--minimum-audit", default="300", help="Minimum published+audited observations for the qualification gate")
     parser.add_argument("--external-data", default=None, help="Pre-computed observation JSONL(s) to merge into the consolidated output (comma-separated paths or glob pattern)")
+    parser.add_argument("--google-news", action="store_true", help="Run the Google News RSS connector (free, keyless)")
+    parser.add_argument("--kunngjoring", action="store_true", help="Run the BRREG Kunngjoringer (official announcements) connector")
+    parser.add_argument("--google-places", action="store_true", help="Run the Google Places API (New) ratings/reviews/sentiment connector (requires GOOGLE_PLACES_KEY; abstains without it)")
+    parser.add_argument("--gleif", action="store_true", help="Run the GLEIF LEI connector for exact org-number identity (needs a built index; abstains without one)")
+    parser.add_argument("--gleif-index", type=Path, default=Path("data/gleif-index.jsonl"))
+    parser.set_defaults(kunngjoring=False)
+    parser.set_defaults(google_news=False)
+    parser.set_defaults(google_places=False)
+    parser.set_defaults(gleif=False)
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
     parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
     args = parser.parse_args()
@@ -158,11 +167,12 @@ def main() -> None:
         run([
             "python", str(SCRIPTS / "run_fagfolkguiden_reviews_connector.py"),
             "--profiles", args.profiles,
-            "--organisations", str(orgs_out),
+            
             "--output", str(reviews_out),
             "--cache", str(prefix.with_suffix(prefix.suffix + ".fagfolk-cache")),
             "--report", str(prefix.with_suffix(prefix.suffix + ".fagfolk-report.json")),
             "--workers", "4",
+            "--organisations", str(orgs_out),
         ])
     workforce_registry_out = prefix.with_suffix(prefix.suffix + ".workforce-registry.jsonl")
     workforce_pdf_out = prefix.with_suffix(prefix.suffix + ".workforce-pdf.jsonl")
@@ -182,6 +192,31 @@ def main() -> None:
             "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-pdf-report.json")),
             "--workers", str(args.workforce_workers),
         ])
+    gleif_out = prefix.with_suffix(prefix.suffix + ".gleif.jsonl")
+    if args.gleif:
+        run([
+            "python", str(SCRIPTS / "run_gleif_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--index", str(args.gleif_index),
+            "--output", str(gleif_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".gleif-report.json")),
+        ])
+    if gleif_out.exists() and gleif_out.stat().st_size > 0:
+        observation_files.append(gleif_out)
+    places_out = prefix.with_suffix(prefix.suffix + ".gplaces.jsonl")
+    if args.google_places:
+        run([
+            "python", str(SCRIPTS / "run_google_places_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(places_out),
+            "--cache", str(prefix.with_suffix(prefix.suffix + ".gplaces-cache")),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".gplaces-report.json")),
+            "--workers", "4",
+        ])
+    if places_out.exists() and places_out.stat().st_size > 0:
+        observation_files.append(places_out)
     nav_out = prefix.with_suffix(prefix.suffix + ".nav.jsonl")
     if args.nav:
         run([
@@ -224,6 +259,28 @@ def main() -> None:
         run(discovery_command)
 
     observation_files = [activity_out, news_out, jobs_out]
+    google_news_out = prefix.with_suffix(prefix.suffix + ".google-news.jsonl")
+    if args.google_news:
+        run([
+            "python", str(SCRIPTS / "run_google_news_rss_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(google_news_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".google-news-report.json")),
+        ])
+    if google_news_out.exists() and google_news_out.stat().st_size > 0:
+        observation_files.append(google_news_out)
+    kunngjoring_out = prefix.with_suffix(prefix.suffix + ".kunngjoring.jsonl")
+    if args.kunngjoring:
+        run([
+            "python", str(SCRIPTS / "run_kunngjoring_connector.py"),
+            "--profiles", args.profiles,
+            
+            "--output", str(kunngjoring_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".kunngjoring-report.json")),
+        ])
+    if kunngjoring_out.exists() and kunngjoring_out.stat().st_size > 0:
+        observation_files.append(kunngjoring_out)
     if workforce_registry_out.exists() and workforce_registry_out.stat().st_size > 0:
         observation_files.append(workforce_registry_out)
     if workforce_pdf_out.exists() and workforce_pdf_out.stat().st_size > 0:

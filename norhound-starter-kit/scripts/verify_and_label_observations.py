@@ -62,6 +62,11 @@ def registered_domain(url: str) -> str | None:
 OFFICIAL_REPORT_PROOF_TYPES = (
     "official_report_url_organisation_number",
     "organisation_number_in_pdf",
+    # Google Places API (New): official API returns the place's websiteUri; the
+    # company website was independently resolved from the BRREG registry record.
+    # Two authoritative sources agreeing on the exact registered domain is a
+    # valid exact-entity proof, equivalent to an official-API identity.
+    "google_places_website_domain_match",
 )
 
 

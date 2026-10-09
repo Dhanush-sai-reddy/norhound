@@ -381,6 +381,30 @@ def _company_page(env: dict, summary: dict | None) -> str:
     else:
         parts.append('<p class="muted">not available</p>')
 
+    parts.append("<h2>Sentiment & Reviews</h2>")
+    review_obs = [o for o in obs if o.get("signal_type") in ("review", "review_summary", "sentiment")]
+    if review_obs:
+        for o in review_obs[:15]:
+            dates = []
+            if o.get("observed_at"):
+                dates.append(f"observed {esc(str(o['observed_at']))}")
+            if o.get("retrieved_at"):
+                dates.append(f"retrieved {esc(str(o['retrieved_at'])[:10])}")
+            sentiment = o.get("sentiment_label") or ""
+            sentiment_badge = f'<span class="badge" style="background:{"#c8e6c9" if sentiment == "positive" else "#ffcdd2" if sentiment == "negative" else "#fff9c4"}">{esc(sentiment)}</span>' if sentiment else ""
+            rating = o.get("metrics", {}).get("rating") if isinstance(o.get("metrics"), dict) else None
+            rating_str = f" · {esc(str(rating))}/5" if rating else ""
+            parts.append(
+                f"<div class=card><b>{esc(o.get('signal_type'))}</b> "
+                f'<span class="badge">{esc(o.get("platform"))}</span> '
+                f"{sentiment_badge} "
+                f"{esc(o.get('evidence_span') or '')}{rating_str}<br>{_link(o.get('source_url') or '')}"
+                + (f'<br><span class="date">' + " · ".join(dates) + "</span>" if dates else "")
+                + "</div>"
+            )
+    else:
+        parts.append('<p class="muted">not available</p>')
+
     parts.append("<h2>Recent activity</h2>")
     activity_obs = [o for o in obs if o.get("signal_type") in ("news_item", "activity_event", "public_post", "public_mention")]
     if activity_obs:
@@ -485,20 +509,20 @@ def _download_page(rows: list[dict], envelopes: list[dict]) -> str:
     # CSV export
     csv_rows = ["org_number,name,industry,employees,revenue,municipality,legal_form,website,hiring,platforms,obs,completeness"]
     for r in rows:
-        platforms_str = ", ".join(r["platforms"]) if isinstance(r.get("platforms"), list) else str(r.get("platforms", ""))
+        platforms_str = ", ".join(r["platforms"]) if isinstance(r.get("platforms"), list) else str(r.get("platforms") or "")
         csv_rows.append(",".join([
-            f'"{r.get("org","")}"',
-            f'"{r.get("name","").replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("industry","").replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("employees","")}"',
-            f'"{r.get("revenue","")}"',
-            f'"{r.get("municipality","").replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("legal_form","").replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("website","").replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("hiring","")}"',
+            f'"{str(r.get("org") or "")}"',
+            f'"{str(r.get("name") or "").replace(chr(34), chr(34)*2)}"',
+            f'"{str(r.get("industry") or "").replace(chr(34), chr(34)*2)}"',
+            f'"{str(r.get("employees") or "")}"',
+            f'"{str(r.get("revenue") or "")}"',
+            f'"{str(r.get("municipality") or "").replace(chr(34), chr(34)*2)}"',
+            f'"{str(r.get("legal_form") or "").replace(chr(34), chr(34)*2)}"',
+            f'"{str(r.get("website") or "").replace(chr(34), chr(34)*2)}"',
+            f'"{str(r.get("hiring") or "")}"',
             f'"{platforms_str.replace(chr(34), chr(34)*2)}"',
-            f'"{r.get("obs","")}"',
-            f'"{r.get("completeness","")}"',
+            f'"{str(r.get("obs") or "")}"',
+            f'"{str(r.get("completeness") or "")}"',
         ]))
     csv_data = "\n".join(csv_rows)
     csv_b64 = base64.b64encode(csv_data.encode()).decode()
@@ -601,11 +625,10 @@ def build(
         org = str(env.get("organisation_number") or profile.get("organisation_number") or "")
         if not org:
             continue
-        if by_org is not None or keep is not None:
-            evidence = profile.get("evidence")
-            if not isinstance(evidence, dict):
-                evidence = {}
-                profile["evidence"] = evidence
+        evidence = profile.get("evidence")
+        if not isinstance(evidence, dict):
+            evidence = {}
+            profile["evidence"] = evidence
         if by_org is not None:
             evidence["external_observations"] = by_org.get(org, [])
         elif keep is not None:

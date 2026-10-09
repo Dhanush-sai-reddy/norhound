@@ -31,12 +31,15 @@ def convert_to_observations(company: dict) -> list[dict]:
     observations = []
     
     # Company profile observation - use profile_metrics for buzz_engagement coverage
+    # Financials are deliberately NOT published from this aggregator. Proff reports
+    # revenue/profit in thousands of NOK while presenting no unit metadata, so any
+    # figure copied through would be a 1000x overstatement labelled as NOK, which
+    # would contradict the official Brønnøysund figures we already hold and read as
+    # a fabricated financial value. Financials come from BRREG only.
     profile_payload = {
         "name": company.get('name', ''),
         "legal_name": company.get('legalName', ''),
-        "revenue_nok": company.get('revenue'),
-        "profit_nok": company.get('profit'),
-        "currency": company.get('currency', 'NOK'),
+        "financials_withheld_reason": "aggregator reports in thousands of NOK without unit metadata; official figures sourced from Brønnøysund instead",
         "employees": company.get('employees'),
         "industries": company.get('industries', []),
         "roles": company.get('details', {}).get('roles', []),
@@ -72,35 +75,37 @@ def convert_to_observations(company: dict) -> list[dict]:
     })
     
     # Financial metrics observation (if revenue/profit available)
-    if company.get('revenue') is not None or company.get('profit') is not None:
-        financial_payload = {
-            "revenue_nok": company.get('revenue'),
-            "profit_nok": company.get('profit'),
-            "currency": company.get('currency', 'NOK'),
-            "employees": company.get('employees'),
+    # Workforce observation from the directory's published headcount band. This is a
+    # real published attribute (not a derived financial figure), so it is safe to
+    # publish and it feeds workforce coverage.
+    if company.get('employees'):
+        workforce_payload = {
+            "employees_reported": company.get('employees'),
+            "employees_basis": "headcount band published by the company directory",
+            "revenue_withheld_reason": profile_payload["financials_withheld_reason"],
         }
-        financial_bytes = json.dumps(financial_payload, sort_keys=True, ensure_ascii=False).encode()
-        
+        workforce_bytes = json.dumps(workforce_payload, sort_keys=True, ensure_ascii=False).encode()
+
         observations.append({
-            "id": "proff-financial-" + hashlib.sha256((org_number + "|financial").encode()).hexdigest()[:24],
+            "id": "proff-workforce-" + hashlib.sha256((org_number + "|workforce").encode()).hexdigest()[:24],
             "organisation_number": org_number,
             "platform": "company_directory",
-            "signal_type": "profile_metrics",
+            "signal_type": "workforce_snapshot",
             "source_url": f"https://www.proff.no/bedrift/{org_number}",
             "retrieved_at": retrieved_at,
-            "content_sha256": hashlib.sha256(financial_bytes).hexdigest(),
+            "content_sha256": hashlib.sha256(workforce_bytes).hexdigest(),
             "exact_entity": True,
             "identity_proof": [{
                 "type": "organisation_number_on_directory_page",
                 "source": "proff.no",
                 "source_class": "company_directory",
                 "matched_organisation_number": org_number,
-                "explanation": "Proff.no financial data with exact organisation number match from BRREG data."
+                "explanation": "Proff.no headcount published against an exact organisation number match."
             }],
             "acquisition_mode": "permitted_public_page",
             "rights_status": "approved",
             "source_class": "company_directory",
-            "signal": financial_payload
+            "signal": workforce_payload
         })
     
     # Credit rating / review observation (if available) - use review_summary for ratings_reviews coverage
@@ -135,38 +140,11 @@ def convert_to_observations(company: dict) -> list[dict]:
             "signal": rating_payload
         })
     
-    # Also create review_summary for companies with financial data (creditworthiness signal)
-    if company.get('revenue') is not None or company.get('profit') is not None:
-        review_payload = {
-            "credit_indicator": "financial_data_available",
-            "revenue_nok": company.get('revenue'),
-            "profit_nok": company.get('profit'),
-            "employees": company.get('employees'),
-        }
-        review_bytes = json.dumps(review_payload, sort_keys=True, ensure_ascii=False).encode()
-        
-        observations.append({
-            "id": "proff-review-" + hashlib.sha256((org_number + "|review").encode()).hexdigest()[:24],
-            "organisation_number": org_number,
-            "platform": "company_directory",
-            "signal_type": "review_summary",  # This counts for ratings_reviews coverage
-            "source_url": f"https://www.proff.no/bedrift/{org_number}",
-            "retrieved_at": retrieved_at,
-            "content_sha256": hashlib.sha256(review_bytes).hexdigest(),
-            "exact_entity": True,
-            "identity_proof": [{
-                "type": "organisation_number_on_directory_page",
-                "source": "proff.no",
-                "source_class": "company_directory",
-                "matched_organisation_number": org_number,
-                "explanation": "Proff.no financial data as creditworthiness review with exact organisation number match."
-            }],
-            "acquisition_mode": "permitted_public_page",
-            "rights_status": "approved",
-            "source_class": "company_directory",
-            "signal": review_payload
-        })
-    
+# No review_summary is synthesised from financial availability. A review_summary
+    # asserts that reviews exist; deriving one from a revenue figure would publish a
+    # claim the source never made, purely to score under ratings_reviews coverage.
+    # The genuine review/rating path above emits review_summary only when the
+    # directory actually publishes a status or rating for the entity.
     return observations
 
 

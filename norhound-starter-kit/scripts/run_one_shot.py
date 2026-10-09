@@ -66,6 +66,8 @@ def main():
     p.add_argument("--external-data", default=None, help="Comma-separated pre-computed observation JSONL paths to merge")
     p.add_argument("--nav-index", type=Path, default=DATA / "nav-job-index.jsonl")
     p.add_argument("--wikidata-index", type=Path, default=DATA / "wikidata-index.jsonl")
+    p.add_argument("--gleif-index", type=Path, default=DATA / "gleif-index.jsonl")
+    p.add_argument("--skip-gleif-index", action="store_true", help="Do not build the GLEIF Brønnøysund LEI index if absent")
     p.add_argument("--skip-external", action="store_true", help="Skip external pipeline (use existing output)")
     p.add_argument("--skip-batch", action="store_true", help="Skip base batch (use existing profiles)")
     args = p.parse_args()
@@ -79,10 +81,16 @@ def main():
     # ── Phase 1: Base batch (always need fresh profiles if not exists)
     if not args.skip_batch:
         print("════ BASE BATCH ════")
+        bulk_file = DATA / "brreg-enheter.csv"
+        batch_report = out / "batch-report.json"
         run([
             "python", str(SCRIPTS / "run_competition_batch.py"),
-            "--batch-size", str(args.batch_size),
-            "--output-dir", str(out),
+            "--organisations", str(DATA / "entry-manifest-filtered.jsonl"),
+            "--bulk", str(bulk_file),
+            "--output", str(envelopes),
+            "--profiles-output", str(profiles),
+            "--report", str(batch_report),
+            "--run-id", "batch-001",
         ])
     else:
         print(f"Using cached profiles: {profiles}")
@@ -102,6 +110,15 @@ def main():
             "--output", str(proff_obs),
         ])
 
+    # ── Phase 1b: GLEIF LEI index (one-off; idempotent). Gives exact org-number -> LEI joins.
+    if not args.skip_gleif_index and not args.gleif_index.exists():
+        print("════ GLEIF INDEX BUILD ════")
+        run([
+            "python", str(SCRIPTS / "run_gleif_connector.py"),
+            "--build-index",
+            "--index", str(args.gleif_index),
+        ])
+
     # ── Phase 2: External pipeline
     external_out = batch_prefix.with_suffix(".external.jsonl")
     if not args.skip_external:
@@ -111,9 +128,10 @@ def main():
             "--profiles", str(profiles),
             "--envelopes", str(envelopes),
             "--prefix", str(batch_prefix),
-            "--jobs", "--reviews", "--keyless", "--nav",
+            "--jobs", "--reviews", "--keyless", "--nav", "--google-news", "--kunngjoring", "--gleif",
             "--nav-index", str(args.nav_index),
             "--wikidata-index", str(args.wikidata_index),
+            "--gleif-index", str(args.gleif_index),
         ]
         # Pass pre-computed + live-fetched data into the pipeline's consolidation step
         externals = []
@@ -121,6 +139,15 @@ def main():
             externals.append(args.external_data)
         if proff_obs.exists() and proff_obs.stat().st_size > 0:
             externals.append(str(proff_obs))
+        for extra in [
+            out / "gmaps-reviews.jsonl",
+            out / "proff-profiles.jsonl",
+            out / "instagram.jsonl",
+            DATA / "gulesider-ratings.jsonl",
+            DATA / "apify-jobs.jsonl",
+        ]:
+            if extra.exists() and extra.stat().st_size > 0:
+                externals.append(str(extra))
         if externals:
             cmd += ["--external-data", ",".join(externals)]
         run(cmd)
@@ -155,8 +182,8 @@ def main():
     run([
         "python", str(SCRIPTS / "build_deterministic_summaries.py"),
         "--envelopes", str(envelopes),
-        "--profiles", str(profiles),
         "--output", str(summaries),
+        "--report", str(out / "summaries-report.json"),
     ])
 
     # ── Phase 5: Viewer

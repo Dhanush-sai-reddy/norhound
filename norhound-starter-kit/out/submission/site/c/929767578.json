@@ -5,7 +5,7 @@
     "legal_form": "AS",
     "employees": null,
     "bankrupt": false,
-    "liquidating": false,
+    "liquidating": true,
     "municipality": "OSLO",
     "municipality_number": "0301",
     "industry_code": "70.200",
@@ -19,7 +19,7 @@
         "source_type": "official_registry_bulk",
         "source_class": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
           "organisasjonsnummer": "929767578",
           "navn": "ZEALTH NORWAY AS",
@@ -74,8 +74,8 @@
           "registreringsdatoPartiregisteret": "",
           "konkurs": "false",
           "konkursdato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
+          "underAvvikling": "true",
+          "underAvviklingDato": "2026-09-18",
           "underTvangsavviklingEllerTvangsopplosning": "false",
           "tvangsopplostPgaManglendeDagligLederDato": "",
           "tvangsopplostPgaManglendeRevisorDato": "",
@@ -114,7 +114,7 @@
         },
         "as_of": null,
         "note": null,
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "source_row_key": "929767578",
         "effective_at": null
       },
@@ -124,7 +124,7 @@
         "source_type": "official_rule_interpretation",
         "source_class": "official_rule_interpretation",
         "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-09-29T10:02:40.817215Z",
+        "retrieved_at": "2026-10-05T08:34:48.644385Z",
         "value": {
           "classification": "filing_observed",
           "legal_form": "AS",
@@ -144,7 +144,7 @@
         "source_type": "official_registry_live",
         "source_class": "official_registry_live",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:23:06.181436Z",
+        "retrieved_at": "2026-10-05T08:56:30.837963Z",
         "value": {
           "organisation_number": "929767578",
           "name": "ZEALTH NORWAY AS",
@@ -194,9 +194,41 @@
         "source_type": "official_annual_accounts",
         "source_class": "official_annual_accounts",
         "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
-        "retrieved_at": "2026-09-29T10:23:07.030210Z",
+        "retrieved_at": "2026-10-05T08:56:31.546803Z",
         "value": {
           "records": [
+            {
+              "record_id": 4778297,
+              "account_type": "SELSKAP",
+              "period": {
+                "fraDato": "2022-08-01",
+                "tilDato": "2023-12-31"
+              },
+              "currency": "NOK",
+              "revenue": 2270374.0,
+              "operating_result": 80062.0,
+              "profit_before_tax": 80471.0,
+              "annual_result": 67758.0,
+              "assets": 1967342.0,
+              "equity": 95061.0,
+              "debt": 1872280.0
+            },
+            {
+              "record_id": 5741447,
+              "account_type": "SELSKAP",
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "currency": "NOK",
+              "revenue": 1928273.0,
+              "operating_result": 91822.0,
+              "profit_before_tax": 96761.0,
+              "annual_result": 75412.0,
+              "assets": 507908.0,
+              "equity": 170473.0,
+              "debt": 337435.0
+            },
             {
               "record_id": 6368853,
               "account_type": "SELSKAP",
@@ -217,7 +249,7 @@
         },
         "as_of": null,
         "note": null,
-        "content_sha256": "780a300653a4bf225fcf3a5726ab053c2ea01a2f5264c92e438acac63d80b156",
+        "content_sha256": "4241546ab842e5fe7c22809d63567fb37f2220da2903150c3b5fce67c5251a74",
         "source_row_key": null,
         "effective_at": null
       },
@@ -227,7 +259,7 @@
         "source_type": "official_annual_account_copies",
         "source_class": "official_annual_account_copies",
         "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
-        "retrieved_at": "2026-09-29T10:23:13.156278Z",
+        "retrieved_at": "2026-10-05T08:56:36.622356Z",
         "value": {
           "years": [
             "2023",
@@ -261,7 +293,7 @@
         "source_type": "official_roles",
         "source_class": "official_roles",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578/roller",
-        "retrieved_at": "2026-09-29T10:23:14.010291Z",
+        "retrieved_at": "2026-10-05T08:56:37.360533Z",
         "value": {
           "roles": [
             {
@@ -300,7 +332,7 @@
         "source_type": "official_group_structure",
         "source_class": "official_group_structure",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929767578",
-        "retrieved_at": "2026-09-29T10:23:14.876695Z",
+        "retrieved_at": "2026-10-05T08:56:38.097983Z",
         "value": null,
         "as_of": null,
         "note": "HTTP 404",
@@ -314,7 +346,7 @@
         "source_type": "official_subunits",
         "source_class": "official_subunits",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
-        "retrieved_at": "2026-09-29T10:23:15.780009Z",
+        "retrieved_at": "2026-10-05T08:56:39.698032Z",
         "value": {
           "locations": [
             {
@@ -351,7 +383,7 @@
         "source_type": "registry_linked_company_website",
         "source_class": "registry_linked_company_website",
         "source_url": "https://www.zealthcon.com/",
-        "retrieved_at": "2026-09-29T10:23:21.637798Z",
+        "retrieved_at": "2026-10-05T08:56:44.023188Z",
         "value": {
           "requested_url": "https://www.zealthcon.com/",
           "final_url": "https://www.zealthcon.com/",
@@ -431,7 +463,7 @@
           "organisation_number": "929767578",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
-          "retrieved_at": "2026-09-29T10:23:15.780009Z",
+          "retrieved_at": "2026-10-05T08:56:39.698032Z",
           "content_sha256": "c06348c6ba1b405e53a92b53a8132cca017e2fc22df1ec53ae08d13413dc959b",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -453,7 +485,8 @@
             "subunit_organisation_number": "930010898",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          }
+          },
+          "observed_at": "2026-10-05"
         },
         {
           "id": "registry-update-964b54b4a3181dd84f25bd10",
@@ -461,7 +494,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "964b54b4a3181dd84f25bd10d31f604c62e50c19259170a9eafcabfc52499e96",
           "observed_at": "2026-09-18",
           "exact_entity": true,
@@ -491,7 +524,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "308f15fd74e3beb316376afa9d28b5d549d0baeefd7638414eb928d708d868e4",
           "observed_at": "2026-09-12",
           "exact_entity": true,
@@ -521,7 +554,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "f5e740b5b12cbe6cd58c439d9d1ad2509e608798d994c1476ae335803218e5f7",
           "observed_at": "2026-02-23",
           "exact_entity": true,
@@ -551,7 +584,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "ae352e151d1a3cce8f23dcc28e72b2bf3bd557d598cb225241ead841b2cfce9d",
           "observed_at": "2026-01-14",
           "exact_entity": true,
@@ -581,7 +614,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "98a930ed802656c7f0bf9980027fe81b37d960b8d0531a129e8c768137e7c777",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -611,7 +644,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "0c83f8291bd2080b54a4f22cb53ea48fa682afdd66a24bd0e2b5312a3b81575c",
           "observed_at": "2025-05-26",
           "exact_entity": true,
@@ -641,7 +674,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "18c8e15ce7b5add1dff5ae31fd2bbc0876c9e651c7f2a3c1c9f413e81aaea1f5",
           "observed_at": "2025-05-26",
           "exact_entity": true,
@@ -671,7 +704,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "20eddf74e23e78aa347a0cd1048f213699c36618f1e3ce360192b0a2126cfe99",
           "observed_at": "2024-09-23",
           "exact_entity": true,
@@ -701,7 +734,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "69e7e40568878c4faae4fcab000bd756c2af0133d2926170e7e270a48606a7a1",
           "observed_at": "2024-05-25",
           "exact_entity": true,
@@ -731,7 +764,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "68643ce9f7b297a5c6fc0c5d041ecfd333f8e4771f86eafb1f5f02425233c1ef",
           "observed_at": "2024-03-13",
           "exact_entity": true,
@@ -761,7 +794,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "000ac4b65a85d70752cff896adea259866997d19eb5852780d62fc7dc1d7cbb9",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -791,7 +824,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "addb32799a16941b152661cf56308f5f117c74ac07e204bc3aef2725a12bcfa0",
           "observed_at": "2022-12-14",
           "exact_entity": true,
@@ -821,7 +854,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "106784070fd1c960b76d621497c7260e8e8acec5c4a1b2b5c7d7915cf2d3684f",
           "observed_at": "2022-10-10",
           "exact_entity": true,
@@ -851,7 +884,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-10-05T11:02:12.779022Z",
           "content_sha256": "df1c1da07540e9252a9cddc22d6f9067563a3e9d328be821b945425766bf1ed2",
           "observed_at": "2022-10-05",
           "exact_entity": true,
@@ -874,109 +907,22 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "brreg-kunngjoring-34c3112911775ee2103cee5f",
-          "organisation_number": "929767578",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000750261&amp;sokeverdi=929767578&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "c018cd57e2a81fbde23cf1cbc1cd6cc8ae26ebda4b8c3278fe8b661571a392a1",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "929767578",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-09-18",
-          "signal": {
-            "title": "Oppløsning",
-            "date": "2026-09-18",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000750261&amp;sokeverdi=929767578&amp;spraak=nb"
-          },
-          "evidence_span": "Oppløsning — 2026-09-18 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-122bf091cce89c4f4d0ecad4",
-          "organisation_number": "929767578",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000075317&amp;sokeverdi=929767578&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "9c6f9edbdfbb883dfc5b360aecc47adbc899ba250c80782123a3104aa1967d59",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "929767578",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-02-23",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-02-23",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000075317&amp;sokeverdi=929767578&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-02-23 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-c62cccace09e4a93ecbdd36f",
-          "organisation_number": "929767578",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000013157&amp;sokeverdi=929767578&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "2c333b10e011cb1c29b20a4ed341ceca652a8f7498a4732d32ce2f9888d93055",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "929767578",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-01-14",
-          "signal": {
-            "title": "Forretningsadresse",
-            "date": "2026-01-14",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000013157&amp;sokeverdi=929767578&amp;spraak=nb"
-          },
-          "evidence_span": "Forretningsadresse — 2026-01-14 (BRREG official announcement)"
         }
       ]
     },
     "run_metrics": {
       "requests": 12,
-      "bytes": 240187,
+      "bytes": 243461,
       "latencies_ms": [
-        883,
-        848,
-        912,
-        853,
-        865,
-        902,
-        1180,
-        1194,
-        990
+        707,
+        708,
+        891,
+        737,
+        737,
+        1599,
+        870,
+        770,
+        794
       ]
     }
   },
@@ -985,7 +931,7 @@
     "company_name": "ZEALTH NORWAY AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "ZEALTH NORWAY AS is a private limited company operating in Bedriftsrådgivning og annen administrativ rådgivning. Latest accounts (2025): revenue NOK 1.9m, annual result NOK 68.8k. No open postings found in checked sources.",
+    "summary": "ZEALTH NORWAY AS is a private limited company operating in Bedriftsrådgivning og annen administrativ rådgivning. Latest accounts (2025): revenue NOK 2.3m, annual result NOK 67.8k. Annual accounts available for 2023-2025 (3 years). Detailed records only available as PDFs. Revenue growing (+17.7% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -999,13 +945,14 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.zealthcon.com/"
         ]
       },
       {
         "question": "financial_health",
-        "answer": "Latest accounts (2025): revenue NOK 1.9m, annual result NOK 68.8k.",
+        "answer": "Latest accounts (2025): revenue NOK 2.3m, annual result NOK 67.8k.",
         "answerable": true,
         "status": "confirmed",
         "confidence": 0.95,
@@ -1015,25 +962,44 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.zealthcon.com/"
         ]
       },
       {
         "question": "financial_history",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Annual accounts available for 2023-2025 (3 years). Detailed records only available as PDFs.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.9,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929767578/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.zealthcon.com/"
+        ]
       },
       {
         "question": "revenue_growth",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Revenue growing (+17.7% YoY).",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.9,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929767578/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.zealthcon.com/"
+        ]
       },
       {
         "question": "staff",
@@ -1053,16 +1019,25 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "changes",
+        "answer": "Baseline run, no prior version to compare against (run none).",
         "answerable": true,
         "status": "inferred",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
           "https://data.brreg.no/enhetsregisteret/api/enheter/929767578/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.zealthcon.com/"
         ]
@@ -1075,9 +1050,9 @@
         "reason": "registry returned no employee count"
       },
       {
-        "field": "financial_history",
+        "field": "hiring",
         "state": "not_available",
-        "reason": "no financial history found"
+        "reason": "no job sources were checked"
       }
     ]
   },
@@ -1088,7 +1063,7 @@
       "source_type": "official_registry_bulk",
       "source_class": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-09-29T10:02:25.550213Z",
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
         "organisasjonsnummer": "929767578",
         "navn": "ZEALTH NORWAY AS",
@@ -1143,8 +1118,8 @@
         "registreringsdatoPartiregisteret": "",
         "konkurs": "false",
         "konkursdato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
+        "underAvvikling": "true",
+        "underAvviklingDato": "2026-09-18",
         "underTvangsavviklingEllerTvangsopplosning": "false",
         "tvangsopplostPgaManglendeDagligLederDato": "",
         "tvangsopplostPgaManglendeRevisorDato": "",
@@ -1183,7 +1158,7 @@
       },
       "as_of": null,
       "note": null,
-      "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
       "source_row_key": "929767578",
       "effective_at": null
     },
@@ -1193,7 +1168,7 @@
       "source_type": "official_rule_interpretation",
       "source_class": "official_rule_interpretation",
       "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-09-29T10:02:40.817215Z",
+      "retrieved_at": "2026-10-05T08:34:48.644385Z",
       "value": {
         "classification": "filing_observed",
         "legal_form": "AS",
@@ -1213,7 +1188,7 @@
       "source_type": "official_registry_live",
       "source_class": "official_registry_live",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-      "retrieved_at": "2026-09-29T10:23:06.181436Z",
+      "retrieved_at": "2026-10-05T08:56:30.837963Z",
       "value": {
         "organisation_number": "929767578",
         "name": "ZEALTH NORWAY AS",
@@ -1263,9 +1238,41 @@
       "source_type": "official_annual_accounts",
       "source_class": "official_annual_accounts",
       "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929767578",
-      "retrieved_at": "2026-09-29T10:23:07.030210Z",
+      "retrieved_at": "2026-10-05T08:56:31.546803Z",
       "value": {
         "records": [
+          {
+            "record_id": 4778297,
+            "account_type": "SELSKAP",
+            "period": {
+              "fraDato": "2022-08-01",
+              "tilDato": "2023-12-31"
+            },
+            "currency": "NOK",
+            "revenue": 2270374.0,
+            "operating_result": 80062.0,
+            "profit_before_tax": 80471.0,
+            "annual_result": 67758.0,
+            "assets": 1967342.0,
+            "equity": 95061.0,
+            "debt": 1872280.0
+          },
+          {
+            "record_id": 5741447,
+            "account_type": "SELSKAP",
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "currency": "NOK",
+            "revenue": 1928273.0,
+            "operating_result": 91822.0,
+            "profit_before_tax": 96761.0,
+            "annual_result": 75412.0,
+            "assets": 507908.0,
+            "equity": 170473.0,
+            "debt": 337435.0
+          },
           {
             "record_id": 6368853,
             "account_type": "SELSKAP",
@@ -1286,7 +1293,7 @@
       },
       "as_of": null,
       "note": null,
-      "content_sha256": "780a300653a4bf225fcf3a5726ab053c2ea01a2f5264c92e438acac63d80b156",
+      "content_sha256": "4241546ab842e5fe7c22809d63567fb37f2220da2903150c3b5fce67c5251a74",
       "source_row_key": null,
       "effective_at": null
     },
@@ -1296,7 +1303,7 @@
       "source_type": "official_annual_account_copies",
       "source_class": "official_annual_account_copies",
       "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929767578/aar",
-      "retrieved_at": "2026-09-29T10:23:13.156278Z",
+      "retrieved_at": "2026-10-05T08:56:36.622356Z",
       "value": {
         "years": [
           "2023",
@@ -1330,7 +1337,7 @@
       "source_type": "official_roles",
       "source_class": "official_roles",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578/roller",
-      "retrieved_at": "2026-09-29T10:23:14.010291Z",
+      "retrieved_at": "2026-10-05T08:56:37.360533Z",
       "value": {
         "roles": [
           {
@@ -1369,7 +1376,7 @@
       "source_type": "official_group_structure",
       "source_class": "official_group_structure",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929767578",
-      "retrieved_at": "2026-09-29T10:23:14.876695Z",
+      "retrieved_at": "2026-10-05T08:56:38.097983Z",
       "value": null,
       "as_of": null,
       "note": "HTTP 404",
@@ -1383,7 +1390,7 @@
       "source_type": "official_subunits",
       "source_class": "official_subunits",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
-      "retrieved_at": "2026-09-29T10:23:15.780009Z",
+      "retrieved_at": "2026-10-05T08:56:39.698032Z",
       "value": {
         "locations": [
           {
@@ -1420,7 +1427,7 @@
       "source_type": "registry_linked_company_website",
       "source_class": "registry_linked_company_website",
       "source_url": "https://www.zealthcon.com/",
-      "retrieved_at": "2026-09-29T10:23:21.637798Z",
+      "retrieved_at": "2026-10-05T08:56:44.023188Z",
       "value": {
         "requested_url": "https://www.zealthcon.com/",
         "final_url": "https://www.zealthcon.com/",
@@ -1500,7 +1507,7 @@
         "organisation_number": "929767578",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929767578&size=1000",
-        "retrieved_at": "2026-09-29T10:23:15.780009Z",
+        "retrieved_at": "2026-10-05T08:56:39.698032Z",
         "content_sha256": "c06348c6ba1b405e53a92b53a8132cca017e2fc22df1ec53ae08d13413dc959b",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1522,7 +1529,8 @@
           "subunit_organisation_number": "930010898",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        }
+        },
+        "observed_at": "2026-10-05"
       },
       {
         "id": "registry-update-964b54b4a3181dd84f25bd10",
@@ -1530,7 +1538,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "964b54b4a3181dd84f25bd10d31f604c62e50c19259170a9eafcabfc52499e96",
         "observed_at": "2026-09-18",
         "exact_entity": true,
@@ -1560,7 +1568,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "308f15fd74e3beb316376afa9d28b5d549d0baeefd7638414eb928d708d868e4",
         "observed_at": "2026-09-12",
         "exact_entity": true,
@@ -1590,7 +1598,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "f5e740b5b12cbe6cd58c439d9d1ad2509e608798d994c1476ae335803218e5f7",
         "observed_at": "2026-02-23",
         "exact_entity": true,
@@ -1620,7 +1628,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "ae352e151d1a3cce8f23dcc28e72b2bf3bd557d598cb225241ead841b2cfce9d",
         "observed_at": "2026-01-14",
         "exact_entity": true,
@@ -1650,7 +1658,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "98a930ed802656c7f0bf9980027fe81b37d960b8d0531a129e8c768137e7c777",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -1680,7 +1688,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "0c83f8291bd2080b54a4f22cb53ea48fa682afdd66a24bd0e2b5312a3b81575c",
         "observed_at": "2025-05-26",
         "exact_entity": true,
@@ -1710,7 +1718,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "18c8e15ce7b5add1dff5ae31fd2bbc0876c9e651c7f2a3c1c9f413e81aaea1f5",
         "observed_at": "2025-05-26",
         "exact_entity": true,
@@ -1740,7 +1748,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "20eddf74e23e78aa347a0cd1048f213699c36618f1e3ce360192b0a2126cfe99",
         "observed_at": "2024-09-23",
         "exact_entity": true,
@@ -1770,7 +1778,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "69e7e40568878c4faae4fcab000bd756c2af0133d2926170e7e270a48606a7a1",
         "observed_at": "2024-05-25",
         "exact_entity": true,
@@ -1800,7 +1808,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "68643ce9f7b297a5c6fc0c5d041ecfd333f8e4771f86eafb1f5f02425233c1ef",
         "observed_at": "2024-03-13",
         "exact_entity": true,
@@ -1830,7 +1838,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "000ac4b65a85d70752cff896adea259866997d19eb5852780d62fc7dc1d7cbb9",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -1860,7 +1868,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "addb32799a16941b152661cf56308f5f117c74ac07e204bc3aef2725a12bcfa0",
         "observed_at": "2022-12-14",
         "exact_entity": true,
@@ -1890,7 +1898,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "106784070fd1c960b76d621497c7260e8e8acec5c4a1b2b5c7d7915cf2d3684f",
         "observed_at": "2022-10-10",
         "exact_entity": true,
@@ -1920,7 +1928,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929767578",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-10-05T11:02:12.779022Z",
         "content_sha256": "df1c1da07540e9252a9cddc22d6f9067563a3e9d328be821b945425766bf1ed2",
         "observed_at": "2022-10-05",
         "exact_entity": true,
@@ -1943,95 +1951,8 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "brreg-kunngjoring-34c3112911775ee2103cee5f",
-        "organisation_number": "929767578",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000750261&amp;sokeverdi=929767578&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "c018cd57e2a81fbde23cf1cbc1cd6cc8ae26ebda4b8c3278fe8b661571a392a1",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "929767578",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-09-18",
-        "signal": {
-          "title": "Oppløsning",
-          "date": "2026-09-18",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000750261&amp;sokeverdi=929767578&amp;spraak=nb"
-        },
-        "evidence_span": "Oppløsning — 2026-09-18 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-122bf091cce89c4f4d0ecad4",
-        "organisation_number": "929767578",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000075317&amp;sokeverdi=929767578&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "9c6f9edbdfbb883dfc5b360aecc47adbc899ba250c80782123a3104aa1967d59",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "929767578",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-02-23",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-02-23",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000075317&amp;sokeverdi=929767578&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-02-23 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-c62cccace09e4a93ecbdd36f",
-        "organisation_number": "929767578",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000013157&amp;sokeverdi=929767578&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "2c333b10e011cb1c29b20a4ed341ceca652a8f7498a4732d32ce2f9888d93055",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "929767578",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-01-14",
-        "signal": {
-          "title": "Forretningsadresse",
-          "date": "2026-01-14",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000013157&amp;sokeverdi=929767578&amp;spraak=nb"
-        },
-        "evidence_span": "Forretningsadresse — 2026-01-14 (BRREG official announcement)"
       }
     ]
   },
-  "generated_at": "2026-10-04T21:31:11.155482+00:00"
+  "generated_at": "2026-10-05T14:49:45.779187+00:00"
 }

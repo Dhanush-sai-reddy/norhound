@@ -50,6 +50,24 @@ NAVIGATION_ANCHORS = {
     "søk", "search", "omstilling og nedbemanning", "ekspertbistand", "slik hjelper vi deg til jobb",
     "se våre ledige stillinger", "våre ledige stillinger", "stillingsutlysninger", "åpne stillinger",
 }
+# Bare/generic link texts that are never a role: section headers, legal pages,
+# service links, CTAs. Ported from the measured junk spans in our own output.
+GENERIC_ANCHOR = re.compile(
+    r"^(ledige stillinger|ledelsen( og styret)?|styret|design|kontakt( oss)?|om oss|nyheter|"
+    r"personvern(erkl[æa]ring)?|informasjonskapsler|cookies?|"
+    r"salgs- og leveringsbetingelser|salgsbetingelser|leveringsbetingelser|betingelser|"
+    r"(salgs|kj?[øo]ps)?[ -]?vilk[åa]r(ene)?|les vilk[åa]rene|bestill \w+|"
+    r"handlekurv|logg inn|forsiden|"
+    r"hjem|home|meny|menu|tilbake|se mer)$|"
+    r"(want to see .*statistics|important reading|recruitment scam|workforce.*statistics|"
+    r"unngå svindel|svindelforsøk)",
+    re.I,
+)
+TITLE_SHAPE = re.compile(r"[A-Za-zÆØÅæøå]{3}")
+APPLY_TEXT = re.compile(
+    r"(søk her|send (inn )?søknad|apply now|apply online|apply here|apply for this)",
+    re.I,
+)
 BLOCKED_HOST_FRAGMENTS = (
     "linkedin.com", "mediabank.", "app.myscreenspace.com", "nettskjema", "webshop",
 )
@@ -176,11 +194,18 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
         compact_anchor = " ".join(text.split()).casefold()
         if compact_anchor in NAVIGATION_ANCHORS:
             continue
+        # Sunil-style title shape: a role reads 3-120 chars, <=14 words, with a
+        # real word in it. Bare section headers and legal-page links die here.
+        if GENERIC_ANCHOR.search(compact_anchor):
+            continue
+        if not (3 <= len(compact_anchor) <= 120 and len(compact_anchor.split()) <= 14 and TITLE_SHAPE.search(compact_anchor)):
+            continue
         # A posting anchor must read like a specific role/title ("Butikksjef
         # Viksund", "R&D Engineer") or the deep slug must carry an unambiguous
         # vacancy token together with either a role anchor or an application cue.
         role_anchor = bool(ROLE_TITLE_HINTS.search(text))
-        slug_role = bool(JOB_SLUG_HINTS.search(path.rsplit("/", 1)[-1])) and path.count("/") >= 2
+        last_seg = path.rsplit("/", 1)[-1]
+        slug_role = bool(JOB_SLUG_HINTS.search(last_seg)) and path.count("/") >= 2 and "-" in last_seg
         slug_vacancy = bool(re.search(r"(?:stilling|jobb|job|rekry|recruit|ledig)", path))
         if not role_anchor:
             if not (slug_vacancy and slug_role):
