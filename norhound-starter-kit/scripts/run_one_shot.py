@@ -140,11 +140,27 @@ def main():
         if proff_obs.exists() and proff_obs.stat().st_size > 0:
             externals.append(str(proff_obs))
         for extra in [
+            out / "gplaces-reviews.jsonl",
             out / "gmaps-reviews.jsonl",
             out / "proff-profiles.jsonl",
             out / "instagram.jsonl",
             DATA / "gulesider-ratings.jsonl",
             DATA / "apify-jobs.jsonl",
+            out / "site-social-handles.jsonl",
+            out / "company-feed-news.jsonl",
+            out / "company-article-dates.jsonl",
+            out / "finn-jobs.external.jsonl",
+            out / "ats-jobs.external.jsonl",
+            out / "probed-site-signals.jsonl",
+            out / "registry-workforce.jsonl",
+            out / "workforce-pdf.jsonl",
+            out / "gleif-ext.jsonl",
+            out / "wikidata-ext.jsonl",
+            out / "norwegian-news-rss.jsonl",
+            out / "gate474.sitedesc.jsonl",
+            out / "gate474.sitemap.jsonl",
+            out / "gate474.news.jsonl",
+            out / "gate474.handles.jsonl",
         ]:
             if extra.exists() and extra.stat().st_size > 0:
                 externals.append(str(extra))
@@ -153,6 +169,17 @@ def main():
         run(cmd)
     else:
         print(f"Using cached external output: {external_out}")
+
+    # Purge known wrong-company probes before verify/label (precision gate)
+    print("════ PURGE WRONG-COMPANY PROBES ════")
+    purge_cmd = [
+        "python", str(SCRIPTS / "purge_wrong_company_probes.py"),
+        "--observations", str(external_out),
+        "--profiles", str(profiles),
+        "--output", str(external_out),
+        "--report", str(batch_prefix.with_suffix(".purge-report.json")),
+    ]
+    run(purge_cmd)
 
     # ── Phase 3: Verify + evaluate
     labels = batch_prefix.with_suffix(".labels.jsonl")

@@ -26,11 +26,41 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
-### One command (recommended)
+### One command (recommended — `run_one_shot.py`)
 
-Everything the submission needs — manifest, base batch, external connectors,
-verification, evaluation, summaries and the searchable viewer — runs from a
-single command:
+Everything the submission needs — manifest, base batch, external connectors
+(including pre-computed Google Places, social handles, feed-news, Finn/ATS jobs,
+probed signals, registry-workforce, workforce-pdf, GLEIF, Wikidata, gate474
+extractors), verification, evaluation, deterministic summaries, and the
+searchable viewer — runs from a single command:
+
+```bash
+uv run python scripts/run_one_shot.py \
+  --out out/submission \
+  --external-data "out/gplaces-reviews.jsonl,out/site-social-handles.jsonl,out/company-feed-news.jsonl,out/company-article-dates.jsonl,out/finn-jobs.external.jsonl,out/ats-jobs.external.jsonl,out/probed-site-signals.jsonl,out/registry-workforce.jsonl,out/wikidata-ext.jsonl,out/gleif-ext.jsonl,out/norwegian-news-rss.jsonl,out/gate474.sitedesc.jsonl,out/gate474.sitemap.jsonl,out/gate474.news.jsonl,out/gate474.handles.jsonl"
+```
+
+Useful knobs:
+
+```bash
+# Dry run (10 companies) — same chain, fewer companies
+uv run python scripts/run_one_shot.py --out out/test --external-data "..." --skip-batch --profiles out/web1000-profiles.jsonl --envelopes out/envelopes.jsonl
+
+# Resume after interruption
+uv run python scripts/run_one_shot.py --out out/submission --external-data "..." --skip-batch
+
+# Reuse cached external output
+uv run python scripts/run_one_shot.py --out out/submission --skip-external
+```
+
+It prints a final scorecard (published observations, entity/metric precision,
+qualification gate, coverage) and writes the viewer to `out/submission/`.
+
+---
+
+### Alternative: Multi-step live script (`norhound_live.sh`)
+
+For debugging individual stages, the multi-step live script is also available:
 
 ```bash
 bash scripts/norhound_live.sh
@@ -46,8 +76,7 @@ SKIP_DOWNLOAD=1 bash scripts/norhound_live.sh   # reuse existing data/ inputs
 NORHOUND_STAGE_TIMEOUT_S=900 bash scripts/norhound_live.sh  # per-connector cap
 ```
 
-It prints a final scorecard (published observations, entity/metric precision,
-qualification gate, coverage) and writes the viewer to `out/norhound-site/`.
+It prints a final scorecard and writes the viewer to `out/norhound-site/`.
 Inside Docker the same script is the `norhound-full` entrypoint, so the grader
 needs only `docker compose run --rm norhound-full`.
 
