@@ -92,8 +92,7 @@ def domain_of(url: object) -> str:
 def post_json(url: str, body: dict, mask: str) -> dict | None:
     req = urllib.request.Request(
         url,
-        data=json.dumps(body).encode()
-,
+        data=json.dumps(body).encode(),
         headers={
             "Content-Type": "application/json",
             "X-Goog-Api-Key": API_KEY,
@@ -104,6 +103,10 @@ def post_json(url: str, body: dict, mask: str) -> dict | None:
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        if e.code in (429, 403, 503):
+            raise QuotaExhausted(f"Google Places quota exhausted: HTTP {e.code}")
+        return None
     except Exception:
         return None
 
@@ -119,8 +122,17 @@ def get_json(url: str, mask: str) -> dict | None:
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        if e.code in (429, 403, 503):
+            raise QuotaExhausted(f"Google Places quota exhausted: HTTP {e.code}")
+        return None
     except Exception:
         return None
+
+
+class QuotaExhausted(Exception):
+    """Raised when Google Places API quota is exhausted."""
+    pass
 
 
 def rating_label(r: float) -> str:
@@ -282,6 +294,30 @@ def main() -> None:
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 4))) as pool:
         futures = {pool.submit(process_company, org, profiles[org], cache_dir): org for org in wanted if org in profiles}
         for i, future in enumerate(as_completed(futures)):
+            try:
+                rows, status = future.result()
+            except QuotaExhausted as e:
+                print(f"⚠️  Google Places quota exhausted at {i+1}/{len(wanted)} — writing partial results and exiting", flush=True)
+                # Write partial results
+                order = {org: i for i, org in enumerate(wanted)}
+                observations.sort(key=lambda r: (order.get(r["organisation_number"], 99999), r["signal_type"]))
+                args.output.parent.mkdir(parents=True, exist_ok=True)
+                args.output.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in observations), encoding="utf-8")
+                rated = sum(1 for s in statuses if s.get("status") == "ok")
+                report = {
+                    "connector": "google_places_reviews_v1",
+                    "companies": len(wanted),
+                    "rated_companies": rated,
+                    "observations": len(observations),
+                    "status_counts": {s: sum(1 for x in statuses if x.get("status") == s) for s in {x.get("status") for x in statuses}},
+                    "retrieved_at": utc_now(),
+                    "quota_exhausted": True,
+                    "quota_exhausted_at": i + 1,
+                    "message": "Google Places quota exhausted — partial results written",
+                }
+                args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                print(json.dumps(report, indent=2))
+                sys.exit(0)  # Exit gracefully, not as error
             rows, status = future.result()
             observations.extend(rows)
             statuses.append(status)

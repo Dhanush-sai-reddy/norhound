@@ -81,6 +81,7 @@ def main() -> int:
     print(f"Fetching Proff.no data for {len(orgs)} orgs in batches of {args.batch_size}")
 
     all_items: list[dict] = []
+    quota_exhausted = False
     for i in range(0, len(orgs), args.batch_size):
         batch = orgs[i:i + args.batch_size]
         try:
@@ -88,6 +89,10 @@ def main() -> int:
             all_items.extend(items)
             print(f"  batch {i // args.batch_size + 1}: +{len(items)} (total {len(all_items)})")
         except urllib.error.HTTPError as exc:
+            if exc.code in (429, 403, 503):
+                print(f"  ⚠️  Apify quota exhausted at batch {i // args.batch_size + 1} — writing partial results and exiting", flush=True)
+                quota_exhausted = True
+                break
             print(f"  batch {i // args.batch_size + 1}: HTTP {exc.code} — skipped", file=sys.stderr)
         except Exception as exc:  # network hiccup etc.
             print(f"  batch {i // args.batch_size + 1}: {type(exc).__name__}: {exc} — skipped",
@@ -98,6 +103,8 @@ def main() -> int:
         for item in all_items:
             f.write(json.dumps(item, ensure_ascii=False) + "\n")
     print(f"Wrote {len(all_items)} company records to {args.output}")
+    if quota_exhausted:
+        print("⚠️  Apify quota exhausted — wrote partial results", flush=True)
     return 0
 
 

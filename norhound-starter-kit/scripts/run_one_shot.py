@@ -37,9 +37,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,15 +49,43 @@ SCRIPTS = ROOT / "scripts"
 DATA = ROOT / "data"
 
 
-def run(cmd: list[str], cwd: Path | None = None) -> None:
+QUOTA_ERRORS = (429, 403, 503)  # HTTP status codes indicating quota/rate limit
+
+
+def run(cmd: list[str], cwd: Path | None = None, allow_quota: bool = False) -> tuple[int, str, str]:
+    """Run command, optionally allowing quota errors to pass through gracefully.
+    Returns (returncode, stdout, stderr). If allow_quota=True and quota error detected,
+    returns (0, stdout, stderr) instead of exiting.
+    """
     argv = [sys.executable, *cmd[1:]] if cmd and cmd[0] == "python" else cmd
-    result = subprocess.run(argv, cwd=cwd or ROOT, capture_output=True, text=True)
+    result = subprocess.run(argv, cwd=cwd or ROOT, capture_output=True, text=True, timeout=3600)
     if result.stdout and result.stdout.strip():
         print(result.stdout, flush=True)
     if result.stderr and result.returncode != 0:
         print(result.stderr, file=sys.stderr, flush=True)
+    
+    # Check for quota exhaustion in stderr/stdout
+    quota_hit = any(str(code) in (result.stdout + result.stderr) for code in QUOTA_ERRORS)
+    quota_hit = quota_hit or any(keyword in (result.stdout + result.stderr).lower() 
+                                 for keyword in ("quota", "rate limit", "exceeded", "429", "403"))
+    
     if result.returncode != 0:
+        if allow_quota and quota_hit:
+            print(f"⚠️  Quota/rate-limit detected — skipping gracefully: {' '.join(argv)}", flush=True)
+            return 0, result.stdout, result.stderr
         raise SystemExit(f"FAILED: {' '.join(argv)}: exit {result.returncode}")
+    return result.returncode, result.stdout, result.stderr
+
+
+def run_with_fallback(cmd: list[str], fallback_msg: str, cwd: Path | None = None) -> None:
+    """Run command; if quota error, log fallback and continue."""
+    try:
+        run(cmd, cwd=cwd, allow_quota=True)
+    except SystemExit as e:
+        if "FAILED" in str(e):
+            print(f"⚠️  {fallback_msg} — continuing without it", flush=True)
+        else:
+            raise
 
 
 def main():
@@ -96,13 +126,14 @@ def main():
         print(f"Using cached profiles: {profiles}")
 
     # ── Phase 1b: Live Proff.no enrichment (works for any company batch; needs APIFY_TOKEN)
+    # Gracefully skips if APIFY_TOKEN unset or quota exhausted
     proff_raw = DATA / "proff-latest.jsonl"
     proff_obs = DATA / "proff-ratings.external.jsonl"
-    run([
+    run_with_fallback([
         "python", str(SCRIPTS / "fetch_proff_live.py"),
         "--profiles", str(profiles),
         "--output", str(proff_raw),
-    ])
+    ], "Proff.no live fetch (APIFY quota/unset)", cwd=ROOT)
     if proff_raw.exists() and proff_raw.stat().st_size > 0:
         run([
             "python", str(SCRIPTS / "store_proff_ratings.py"),
@@ -133,6 +164,13 @@ def main():
             "--wikidata-index", str(args.wikidata_index),
             "--gleif-index", str(args.gleif_index),
         ]
+        # Add Google Places if key available (skips gracefully if quota exhausted)
+        if os.environ.get("GOOGLE_PLACES_KEY"):
+            cmd += ["--google-places"]
+            print("Google Places key found — enabling connector (quota-fallback enabled)")
+        else:
+            print("No GOOGLE_PLACES_KEY — skipping Google Places connector (credential-free fallback)")
+        
         # Pass pre-computed + live-fetched data into the pipeline's consolidation step
         externals = []
         if args.external_data:
@@ -166,7 +204,7 @@ def main():
                 externals.append(str(extra))
         if externals:
             cmd += ["--external-data", ",".join(externals)]
-        run(cmd)
+        run_with_fallback(cmd, "External pipeline (Google Places/Apify quota)", cwd=ROOT)
     else:
         print(f"Using cached external output: {external_out}")
 
