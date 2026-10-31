@@ -55,6 +55,53 @@ def read_organisation_numbers(path: str | Path) -> list[str]:
     return [record["organisation_number"] for record in read_organisation_inputs(path)]
 
 
+REGISTRY_BULK_URL = "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv"
+
+
+def absent_registry_profile(
+    organisation_number: str,
+    *,
+    snapshot_sha256: str,
+    retrieved_at: str,
+) -> dict[str, Any]:
+    """Shape for a number the register no longer lists.
+
+    Deleted entities disappear from the bulk dump, but the batch contract still
+    demands one terminal envelope per input, so the absence is recorded as an
+    explicit state rather than dropped.
+    """
+    note = "organisation number is absent from the frozen registry snapshot"
+    profile = {
+        "organisation_number": organisation_number,
+        "name": None,
+        "legal_form": None,
+        "employees": None,
+        "bankrupt": None,
+        "liquidating": None,
+        "municipality": None,
+        "municipality_number": None,
+        "industry_code": None,
+        "industry_label": None,
+        "website": None,
+        "latest_submitted_accounts": None,
+        "absent_from_registry_snapshot": True,
+    }
+
+    def record(field: str) -> dict[str, Any]:
+        return evidence(
+            field,
+            "not_found",
+            "official_registry_bulk",
+            REGISTRY_BULK_URL,
+            retrieved_at=retrieved_at,
+            content_sha256=snapshot_sha256,
+            source_row_key=organisation_number,
+            note=note,
+        )
+    profile["evidence"] = {field: record(field) for field in ("registry", "accounting_obligation")}
+    return profile
+
+
 def profiles_from_bulk(path: str | Path, organisation_numbers: Iterable[str]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     requested = list(organisation_numbers)
     wanted = set(requested)
@@ -73,7 +120,7 @@ def profiles_from_bulk(path: str | Path, organisation_numbers: Iterable[str]) ->
                 "registry",
                 "available",
                 "official_registry_bulk",
-                "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+                REGISTRY_BULK_URL,
                 value=raw,
                 retrieved_at=retrieved_at,
                 content_sha256=snapshot_sha256,
@@ -85,13 +132,12 @@ def profiles_from_bulk(path: str | Path, organisation_numbers: Iterable[str]) ->
         if len(found) == len(wanted):
             break
     missing = [org for org in requested if org not in found]
-    if missing:
-        raise ValueError(f"Organisation numbers absent from registry snapshot: {missing[:10]}")
-    return [found[org] for org in requested], {
+    return [found.get(org) or absent_registry_profile(org, snapshot_sha256=snapshot_sha256, retrieved_at=retrieved_at) for org in requested], {
         "registry_snapshot_sha256": snapshot_sha256,
         "registry_rows_scanned": scanned,
         "requested": len(requested),
         "selected": len(found),
+        "absent_from_snapshot": missing,
     }
 
 
