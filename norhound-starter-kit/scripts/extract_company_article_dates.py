@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from norway_company_agent.website import USER_AGENT, _robots_allowed, assert_public_url  # noqa: E402
+from norway_company_agent.news_datetime import publication_timestamp  # noqa: E402
 
 NEWS_SECTION = re.compile(r"(nyhet|nyheter|aktuelt|aktuell|news|press|pressemelding|presse|media|blogg|artikel|artikkel|innsikt|insight|fag-og-forskning|siste|meld)", re.I)
 ARTICLE_LIKE = re.compile(r"(/20\d\d/|nyhet|artikkel|artikel|blogg|story|sak/|/p/|/nyheter/[^/]+/|/[a-z0-9-]{12,}/?$)", re.I)
@@ -67,21 +68,7 @@ def fetch(url: str, timeout: float = 8.0, max_bytes: int = 600_000) -> str | Non
 
 
 def parse_date(text: str | None) -> str | None:
-    if not text:
-        return None
-    text = text.strip()
-    try:
-        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except Exception:
-        try:
-            dt = parsedate_to_datetime(text)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    if dt.year < 2000 or dt > datetime.now(timezone.utc) + timedelta(days=2):
-        return None
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return publication_timestamp(text)
 
 
 def jsonld_articles(html: str) -> list[dict]:

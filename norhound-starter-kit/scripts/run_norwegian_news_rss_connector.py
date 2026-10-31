@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from norway_company_agent.identity import assess_social_identity  # noqa: E402
+from norway_company_agent.news_datetime import publication_timestamp  # noqa: E402
 
 # Norwegian news RSS feeds (no key, free)
 NEWS_FEEDS = [
@@ -45,81 +46,6 @@ def norm_name(s: str) -> str:
 
 
 def build_name_index(profiles: list[dict]) -> dict[str, list[str]]:
-    """Build normalized name -> orgnr mapping from profiles."""
-    idx = {}
-    for p in profiles:
-        name = p.get("name", "")
-        org = str(p["organisation_number"])
-        if not name:
-            continue
-        key = norm_name(name)
-        if key:
-            idx.setdefault(key, []).append(org)
-        # Also without legal suffix
-        for suffix in ("as", "asa", "ans", "da", "nuf", "ba", "flt", "sa"):
-            if name.lower().endswith(" " + suffix):
-                short = name[:-(len(suffix)+1)]
-                key = norm_name(short)
-                if key:
-                    idx.setdefault(key, []).append(p["organisation_number"])
-    return idx
-
-
-def read_jsonl(path: Path) -> list[dict]:
-    if not path.exists():
-        return []
-    return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
-
-
-def write_jsonl(path: Path, rows: list[dict]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    with tmp.open("w", encoding="utf-8") as fh:
-        for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
-    tmp.replace(path)
-
-
-def fetch_rss(url: str, timeout: float = 12.0) -> list[dict]:
-    """Fetch RSS/Atom feed, return list of {title, url, pub_date, source}."""
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "SignalpostNews/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            xml = resp.read().decode("utf-8", "replace")
-    except Exception as e:
-        print(f"  [fetch] {url}: {e}")
-        return []
-
-    items = []
-    try:
-        root = ET.fromstring(xml)
-        # RSS 2.0
-        for item in root.findall(".//item"):
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            pub = item.findtext("pubDate") or item.findtext("{http://purl.org/dc/elements/1.1/}date") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-        # Atom
-        for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-            title = (entry.findtext("{http://www.w3.org/2005/Atom}title") or "").strip()
-            link_el = entry.find("{http://www.w3.org/2005/Atom}link")
-            link = link_el.get("href") if link_el is not None else ""
-            pub = entry.findtext("{http://www.w3.org/2005/Atom}published") or entry.findtext("{http://www.w3.org/2005/Atom}updated") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-    except Exception as e:
-        print(f"  [parse] {url}: {e}")
-    return items
-
-
-def norm_name(s: str) -> str:
-    import unicodedata
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = re.sub(r"[^a-z0-9æøå ]", " ", s.lower())
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-
-def build_name_index(profiles: list[dict]) -> dict[str, list[str]]:
     idx = {}
     for p in profiles:
         name = p.get("name", "")
@@ -136,168 +62,14 @@ def build_name_index(profiles: list[dict]) -> dict[str, list[str]]:
                 if key:
                     idx.setdefault(key, []).append(p["organisation_number"])
     return idx
-
-
-def fetch_rss(url: str, timeout: float = 12.0) -> list[dict]:
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "SignalpostNews/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            xml = resp.read().decode("utf-8", "replace")
-    except Exception as e:
-        print(f"  [fetch] {url}: {e}")
-        return []
-
-    items = []
-    try:
-        root = ET.fromstring(xml)
-        # RSS 2.0
-        for item in root.findall(".//item"):
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            pub = item.findtext("pubDate") or item.findtext("{http://purl.org/dc/elements/1.1/}date") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-        # Atom
-        for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-            title = (entry.findtext("{http://www.w3.org/2005/Atom}title") or "").strip()
-            link_el = entry.find("{http://www.w3.org/2005/Atom}link")
-            link = link_el.get("href") if link_el is not None else ""
-            pub = entry.findtext("{http://www.w3.org/2005/Atom}published") or entry.findtext("{http://www.w3.org/2005/Atom}updated") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-    except Exception as e:
-        print(f"  [parse] {url}: {e}")
-    return items
-
-
-def norm_name(s: str) -> str:
-    import unicodedata
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = re.sub(r"[^a-z0-9æøå ]", " ", s.lower())
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-
-def build_name_index(profiles: list[dict]) -> dict[str, list[str]]:
-    idx = {}
-    for p in profiles:
-        name = p.get("name", "")
-        org = str(p["organisation_number"])
-        if not name:
-            continue
-        key = norm_name(name)
-        if key:
-            idx.setdefault(key, []).append(org)
-        for suffix in ("as", "asa", "ans", "da", "nuf", "ba", "flt", "sa"):
-            if name.lower().endswith(" " + suffix):
-                short = name[:-(len(suffix)+1)]
-                key = norm_name(short)
-                if key:
-                    idx.setdefault(key, []).append(p["organisation_number"])
-    return idx
-
-
-def fetch_rss(url: str, timeout: float = 12.0) -> list[dict]:
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "SignalpostNews/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            xml = resp.read().decode("utf-8", "replace")
-    except Exception as e:
-        print(f"  [fetch] {url}: {e}")
-        return []
-
-    items = []
-    try:
-        root = ET.fromstring(xml)
-        # RSS 2.0
-        for item in root.findall(".//item"):
-            title = (item.findtext("title") or "").strip()
-            link = (item.findtext("link") or "").strip()
-            pub = item.findtext("pubDate") or item.findtext("{http://purl.org/dc/elements/1.1/}date") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-        # Atom
-        for entry in root.findall("{http://www.w3.org/2005/Atom}entry"):
-            title = (entry.findtext("{http://www.w3.org/2005/Atom}title") or "").strip()
-            link_el = entry.find("{http://www.w3.org/2005/Atom}link")
-            link = link_el.get("href") if link_el is not None else ""
-            pub = entry.findtext("{http://www.w3.org/2005/Atom}published") or entry.findtext("{http://www.w3.org/2005/Atom}updated") or ""
-            items.append({"title": title.strip(), "url": link.strip(), "pub_date": pub.strip()})
-    except Exception as e:
-        print(f"  [parse] {url}: {e}")
-    return items
 
 
 def parse_date(text: str | None) -> str | None:
-    if not text:
-        return None
-    text = text.strip()
-    try:
-        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except Exception:
-        try:
-            dt = parsedate_to_datetime(text)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    if dt.year < 2000 or dt > datetime.now(timezone.utc) + timedelta(days=2):
-        return None
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-
-
-def parse_date(text: str | None) -> str | None:
-    if not text:
-        return None
-    text = text.strip()
-    try:
-        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except Exception:
-        try:
-            dt = parsedate_to_datetime(text)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    if dt.year < 2000 or dt > datetime.now(timezone.utc) + timedelta(days=2):
-        return None
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return publication_timestamp(text)
 
 
 def parse_rfc822_date(date_str: str | None) -> str | None:
-    if not date_str:
-        return None
-    text = date_str.strip()
-    try:
-        dt = parsedate_to_datetime(text)
-    except Exception:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-
-
-def parse_rfc822_date(date_str: str | None) -> str | None:
-    if not date_str:
-        return None
-    text = date_str.strip()
-    try:
-        dt = parsedate_to_datetime(text)
-    except Exception:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-
-
-def parse_rfc822_date(date_str: str | None) -> str | None:
-    if not date_str:
-        return None
-    text = date_str.strip()
-    try:
-        dt = parsedate_to_datetime(text)
-    except Exception:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return publication_timestamp(date_str)
 
 
 def fetch_rss(url: str, timeout: float = 12.0) -> list[dict]:
@@ -345,7 +117,7 @@ def process_feed(source_name: str, feed_url: str, profiles_index: dict) -> list[
         matched = match_company_in_title(title, PROFILE_INDEX)
         if not matched:
             continue
-        pub_date = parse_rfc822_date(item.get("pub_date", ""))
+        pub_date = parse_date(item.get("pub_date", "")) or parse_rfc822_date(item.get("pub_date", ""))
         if not pub_date:
             continue
         for org in matched:
@@ -389,15 +161,22 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
 
 
 def match_company_in_title(title: str, profiles_index: dict) -> list[str]:
-    title_norm = re.sub(r"[^a-z0-9æøå ]", " ", title.lower())
-    words = set(re.findall(r"[a-zæøå]{3,}", title_norm))
+    """Return org numbers whose indexed company name appears in the title.
+
+    The index is keyed by the normalized company name (with and without its
+    legal suffix), so a title matches when the whole name occurs as a phrase.
+    Matching single words against full-name keys could never succeed.
+    """
+    title_norm = norm_name(title)
+    if not title_norm:
+        return []
     matches = set()
-    for word in words:
-        if len(word) < 4:
+    for form, orgs in profiles_index.items():
+        if len(form) < 6:
             continue
-        if word in profiles_index:
-            matches.update(profiles_index[word])
-    return list(matches)
+        if re.search(r"(?<![a-z0-9æøå])" + re.escape(form) + r"(?![a-z0-9æøå])", title_norm):
+            matches.update(orgs)
+    return sorted(matches)
 
 
 def main():

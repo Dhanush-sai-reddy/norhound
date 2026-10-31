@@ -26,6 +26,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from norway_company_agent.news_datetime import publication_timestamp  # noqa: E402
+
 USER_AGENT = "Mozilla/5.0 (compatible; NorHound-Signalpost/0.1; +https://builderr.ai)"
 FEED_PATHS = ("/feed/", "/rss", "/feed.xml", "/nyheter/feed/", "/aktuelt/feed/")
 NEWS_PATH_RE = re.compile(r"/(?:nyheter|aktuelt|presse|blogg|blog|artikler|news|media)(?:/|$|\?)", re.I)
@@ -59,21 +61,7 @@ def fetch(url: str, timeout: float = 8.0, max_bytes: int = 500_000) -> str | Non
 
 
 def parse_date(text: str | None) -> str | None:
-    if not text:
-        return None
-    text = text.strip()
-    try:
-        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except Exception:
-        try:
-            dt = parsedate_to_datetime(text)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    if dt.year < 2000 or dt > datetime.now(timezone.utc).replace(microsecond=0) + __import__("datetime").timedelta(days=2):
-        return None
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return publication_timestamp(text)
 
 
 def discover_feed(home_html: str, base: str) -> list[str]:
@@ -137,6 +125,15 @@ def parse_feed(xml: str) -> list[dict]:
         if title and date:
             items.append({"title": title, "url": link, "date": date, "desc": re.sub(r"<[^>]+>", " ", desc)})
     return items
+
+
+def exact_entity_for_status(status: str) -> bool:
+    """Only a verified website identity may publish an exact-entity claim.
+
+    Feeds are also harvested from ``related_or_uncertain`` sites so candidates
+    are not lost, but those rows must be withheld from publication.
+    """
+    return str(status or "").lower() in {"exact", "verified"}
 
 
 def main() -> None:
@@ -203,7 +200,7 @@ def main() -> None:
                 "source_url": it["url"] or site,
                 "retrieved_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
                 "content_sha256": hashlib.sha256((it["title"] + it["date"]).encode()).hexdigest(),
-                "exact_entity": True,
+                "exact_entity": exact_entity_for_status(status),
                 "identity_proof": [{"type": "website_identity_gate", "status": status, "score": ident.get("score")}],
                 "acquisition_mode": "permitted_public_page",
                 "rights_status": "approved",

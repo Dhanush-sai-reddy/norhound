@@ -14,6 +14,12 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0, str(ROOT / "src"))
+
+from norway_company_agent.news_datetime import publication_timestamp  # noqa: E402
+
 
 LEGAL = {"as", "asa", "sa", "ba", "da", "ans", "enk", "nuf", "sti"}
 UA = "NorHound/1.0 (+https://github.com/Dhanush-sai-reddy/norhound)"
@@ -63,7 +69,7 @@ def fetch(profile: dict, limit: int, years: int) -> tuple[list[dict], dict]:
             seen.add(key)
             published = item.findtext("pubDate")
             try:
-                published_at = parsedate_to_datetime(published).astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+                published_at = publication_timestamp(published)
             except Exception:
                 published_at = None
             digest = hashlib.sha256(raw + title.encode("utf-8") + publisher.encode("utf-8")).hexdigest()
