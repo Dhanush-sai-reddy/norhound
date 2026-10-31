@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from norway_company_agent.batch import profile_complete_for_modules, profiles_from_bulk, read_organisation_inputs, terminal_envelope, validate_envelopes  # noqa: E402
-from norway_company_agent.evidence import utc_now  # noqa: E402
+from norway_company_agent.batch import REGISTRY_BULK_URL, profile_complete_for_modules, profiles_from_bulk, read_organisation_inputs, terminal_envelope, validate_envelopes  # noqa: E402
+from norway_company_agent.evidence import evidence, utc_now  # noqa: E402
 from norway_company_agent.identity import apply_website_identity_gate  # noqa: E402
 from norway_company_agent.official import fetch_official_modules  # noqa: E402
 from norway_company_agent.refresh import attach_refresh  # noqa: E402
@@ -65,6 +65,18 @@ def main() -> None:
     operations = {"requests": 0, "bytes": 0, "latencies_ms": []}
 
     def enrich(profile: dict) -> tuple[dict, dict]:
+        if profile.get("absent_from_registry_snapshot"):
+            # deleted entities are removed from the bulk dump; record the absence rather than
+            # spending requests on a number the frozen register no longer describes
+            zero = {"requests": 0, "bytes": 0, "latencies_ms": []}
+            for module in requested_modules:
+                profile["evidence"].setdefault(
+                    module,
+                    evidence(module, "not_found", "official_registry_bulk", REGISTRY_BULK_URL,
+                             note="absent from the frozen registry snapshot, so the register reports no current row for this number"),
+                )
+            profile["run_metrics"] = zero
+            return profile, zero
         records, metrics = fetch_official_modules(profile["organisation_number"], fetch_modules)
         profile["evidence"].update(records)
         website_metrics = {"requests": 0, "bytes": 0, "latencies_ms": []}
