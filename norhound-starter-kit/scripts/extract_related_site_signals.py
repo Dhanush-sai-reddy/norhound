@@ -26,6 +26,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from norway_company_agent.website import USER_AGENT, _robots_allowed, assert_public_url, _social_links  # noqa: E402
 from norway_company_agent.identity import assess_social_identity  # noqa: E402
+from norway_company_agent.news_datetime import publication_timestamp  # noqa: E402
 
 PAGES = ("/nyheter", "/aktuelt", "/news", "/om-oss", "/kontakt", "/about")
 COMPARE_RE = re.compile(r"(?<!\d)(\d{3}\s?\d{3}\s?\d{3})(?!\d)")
@@ -81,21 +82,7 @@ def exact_name_on_page(html: str, name: str, address: str | None) -> bool:
 
 
 def parse_date(text: str | None) -> str | None:
-    if not text:
-        return None
-    text = text.strip()
-    try:
-        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
-    except Exception:
-        try:
-            dt = parsedate_to_datetime(text)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    if dt.year < 2000 or dt > datetime.now(timezone.utc).replace(microsecond=0) + __import__("datetime").timedelta(days=2):
-        return None
-    return dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return publication_timestamp(text)
 
 
 def process(profile: dict, address: str | None) -> list[dict]:
