@@ -10,18 +10,27 @@ Definitions used here (stated once so the numbers are auditable):
 * A row is *published* when it is validator-accepted **and** its audit label
   says `exact_entity` is truthy. Unlabelled rows are never published.
 * `coverage` is computed with exactly the same rules and signal sets as
-  `scripts/evaluate_external_footprint.py`, so the two reports are comparable.
+  `scripts/evaluate_external_footprint.py`, so the numbers are comparable.
+* `entity_precision`, `metric_precision`, `wrong_entity_publications` and
+  `unsupported_publications` keep the canonical semantics of
+  `scripts/evaluate_external_footprint.py`, because downstream consumers
+  (`scripts/score_competition_v3.py`, `scripts/build_static_site.py`) read
+  those key names. The stricter, non-degenerate measures are published under
+  their own names: `withheld_wrong_entity_rows` (validator-accepted audited
+  rows the audit could not confirm as the exact legal entity) and
+  `accepted_entity_yield` (published / validator-accepted audited rows).
 * `direct_reviewer_gaps` counts organisations (not rows) that have at least one
   published row of the requested kind, so a row can only ever be counted once
   per organisation per gap.
-* `entity_precision` = published rows / validator-accepted audited rows, so a
-  wrong-company row that passed the validator lowers the score instead of
-  being hidden by the denominator (`wrong_entity_publications` counts those
-  rows). `metric_precision` = published rows the audit marked metric-correct /
-  published rows. `unsupported_publications` counts published rows that fail
-  `validate_observation`; with the current validator this is structurally zero.
+* `dated_news` counts only publication dates that a reader can verify on the
+  page itself: `metrics.published_at`, `metrics.published_date` or a top-level
+  `published_at`. BRREG registry announcements are dated in `signal.date`
+  instead; they are official registry events rather than news, so they are
+  deliberately **excluded** from `dated_news` and reported separately as
+  `dated_registry_announcements`.
 * The report contains no timestamp and no unordered iteration, so the same
-  inputs always produce a byte-identical report.
+  inputs always produce a byte-identical report. Every metric carries a
+  one-line definition in `metric_definitions`.
 """
 
 from __future__ import annotations
@@ -44,11 +53,14 @@ WORKFORCE_SIGNALS = {"job_posting", "workforce_snapshot"}
 REVIEW_SIGNALS = {"review", "review_summary", "place_summary"}
 BUZZ_SIGNALS = {"public_post", "public_mention", "profile_metrics"}
 
+# Gap order follows the brief: social_profile, dated_news, hiring.
 GAP_SIGNAL_TYPES = {
     "social_profile": "profile_handle",
     "dated_news": "public_post",
     "hiring": "job_posting",
 }
+
+REGISTRY_PLATFORM = "brreg"
 
 
 def sanitize_line_separators(text: str) -> str:
@@ -96,33 +108,64 @@ def is_machine_readable_date(value: Any) -> bool:
 
 
 def has_publication_date(item: dict[str, Any]) -> bool:
-    """A public_post only counts as dated news when it carries a machine-readable date."""
-    metrics = item.get("metrics") or {}
+    """A public_post counts as dated news only when it carries a publication date.
+
+    The accepted locations are `metrics.published_at`, `metrics.published_date`
+    and a top-level `published_at`. A date in `signal.date` (BRREG registry
+    announcements) is deliberately not accepted here.
+    """
+    metrics = item.get("metrics")
+    metrics = metrics if isinstance(metrics, dict) else {}
     for value in (metrics.get("published_at"), metrics.get("published_date"), item.get("published_at")):
         if is_machine_readable_date(value):
             return True
     return False
 
 
-def compute_coverage(published: list[dict[str, Any]], organisations: list[str]) -> dict[str, float]:
-    platforms: dict[str, set[str]] = {org: set() for org in organisations}
-    signals: dict[str, set[str]] = {org: set() for org in organisations}
-    sentiment_orgs: set[str] = set()
+def has_sentiment_label(item: dict[str, Any]) -> bool:
+    """A truthy sentiment label only: an empty or absent label is not evidence."""
+    return bool(item.get("sentiment_label"))
+
+
+def has_registry_announcement_date(item: dict[str, Any]) -> bool:
+    """True when a BRREG announcement row carries a date in `signal.date`."""
+    signal = item.get("signal")
+    signal = signal if isinstance(signal, dict) else {}
+    value = signal.get("date")
+    return isinstance(value, str) and bool(value.strip())
+
+
+def collect_organisation_signals(
+    published: list[dict[str, Any]], organisations: list[str]
+) -> tuple[dict[str, set[str]], dict[str, set[str]]]:
+    """Per-organisation platform and signal sets, restricted to profiled organisations."""
+    known = set(organisations)
+    platforms: dict[str, set[str]] = {}
+    signals: dict[str, set[str]] = {}
     for item in published:
         org = str(item.get("organisation_number"))
-        if org not in platforms:
+        if org not in known:
             continue
-        platforms[org].add(str(item.get("platform")))
-        signals[org].add(str(item.get("signal_type")))
-        if item.get("sentiment_label"):
-            sentiment_orgs.add(org)
+        platforms.setdefault(org, set()).add(str(item.get("platform")))
+        signals.setdefault(org, set()).add(str(item.get("signal_type")))
+    return platforms, signals
+
+
+def compute_coverage(published: list[dict[str, Any]], organisations: list[str]) -> dict[str, float]:
+    platforms, signals = collect_organisation_signals(published, organisations)
+    known = set(organisations)
+    sentiment_orgs = {
+        str(item.get("organisation_number"))
+        for item in published
+        if has_sentiment_label(item) and str(item.get("organisation_number")) in known
+    }
     total = len(organisations)
     return {
-        "any_external": ratio(sum(bool(platforms[org]) for org in organisations), total),
-        "two_platforms": ratio(sum(len(platforms[org]) >= 2 for org in organisations), total),
-        "workforce_jobs": ratio(sum(bool(signals[org] & WORKFORCE_SIGNALS) for org in organisations), total),
-        "ratings_reviews": ratio(sum(bool(signals[org] & REVIEW_SIGNALS) for org in organisations), total),
-        "buzz_engagement": ratio(sum(bool(signals[org] & BUZZ_SIGNALS) for org in organisations), total),
+        "any_external": ratio(sum(bool(platforms.get(org)) for org in organisations), total),
+        "two_platforms": ratio(sum(len(platforms.get(org, set())) >= 2 for org in organisations), total),
+        "workforce_jobs": ratio(sum(bool(signals.get(org, set()) & WORKFORCE_SIGNALS) for org in organisations), total),
+        "ratings_reviews": ratio(sum(bool(signals.get(org, set()) & REVIEW_SIGNALS) for org in organisations), total),
+        "buzz_engagement": ratio(sum(bool(signals.get(org, set()) & BUZZ_SIGNALS) for org in organisations), total),
         "sentiment": ratio(sum(org in sentiment_orgs for org in organisations), total),
     }
 
@@ -142,9 +185,56 @@ def compute_gaps(published: list[dict[str, Any]], organisations: list[str]) -> t
                 gap_orgs["dated_news"].add(org)
         elif signal_type == GAP_SIGNAL_TYPES["hiring"]:
             gap_orgs["hiring"].add(org)
-    counts = {name: len(gap_orgs[name]) for name in sorted(gap_orgs)}
+    counts = {name: len(gap_orgs[name]) for name in GAP_SIGNAL_TYPES}
     ratios = {name: ratio(counts[name], len(organisations)) for name in counts}
     return counts, ratios
+
+
+def registry_announcement_count(published: list[dict[str, Any]], organisations: list[str]) -> int:
+    """Organisations with a published BRREG public_post dated in signal.date."""
+    known = set(organisations)
+    return len({
+        str(item.get("organisation_number"))
+        for item in published
+        if str(item.get("organisation_number")) in known
+        and str(item.get("signal_type")) == GAP_SIGNAL_TYPES["dated_news"]
+        and str(item.get("platform")) == REGISTRY_PLATFORM
+        and has_registry_announcement_date(item)
+    })
+
+
+def metric_definitions() -> dict[str, str]:
+    """One line per published metric, so no consumer has to guess a denominator."""
+    return {
+        "profiles": "Profile rows read from --profiles.",
+        "profile_organisations": "Distinct organisations with a usable organisation_number; the denominator for every coverage ratio.",
+        "profiles_missing_organisation_number": "Profile rows skipped because their organisation_number is missing or not a digit string.",
+        "observations": "Observation rows read from --observations.",
+        "labelled_observations": "Distinct audit label ids read from --labels.",
+        "audited_observations": "Observation rows that have an audit label.",
+        "validator_accepted_audited": "Audited rows that pass validate_observation.",
+        "published_audited": "Validator-accepted audited rows whose label says exact_entity is truthy.",
+        "unlabelled_publishable_observations": "Validator-accepted rows with no audit label; they can never be published.",
+        "wrong_entity_publications": "Canonical definition: published rows whose audit label is not exact_entity (0 while publication is exact-entity gated).",
+        "unsupported_publications": "Canonical definition: published rows that fail validate_observation; structurally 0 because published rows are validator-accepted.",
+        "entity_precision": "Canonical definition: (published - wrong_entity_publications) / published.",
+        "metric_precision": "Canonical definition: published rows the audit marked metric_correct / published rows.",
+        "withheld_wrong_entity_rows": "Validator-accepted audited rows that are not published because the audit could not confirm the exact legal entity.",
+        "accepted_entity_yield": "published / validator-accepted audited rows: the share of publishable rows that survive the exact-entity audit.",
+        "sentiment_audited": "Published rows that carry a truthy sentiment label.",
+        "sentiment_accuracy": "sentiment_correct audited rows / sentiment_audited rows; null when no sentiment row was audited.",
+        "coverage": "Per-field organisation coverage over the profile organisation set, computed with the same rules and signal sets as scripts/evaluate_external_footprint.py.",
+        "recall_proxy_50": "Mean of the six coverage ratios multiplied by 50 (a proxy: the official Recall/50 field weights are not documented in this tree).",
+        "direct_reviewer_gaps": "Organisations with at least one published row per gap kind: social_profile=profile_handle, dated_news=public_post with a publication date, hiring=job_posting.",
+        "dated_news": "Organisations with a published public_post row whose date is in metrics.published_at, metrics.published_date or a top-level published_at; BRREG announcements dated only in signal.date are excluded because they are registry events, not news.",
+        "direct_reviewer_gap_ratios": "direct_reviewer_gaps divided by the profile organisation count.",
+        "direct_reviewer_gap_base_profiles": "Profile organisation count used as the gap denominator.",
+        "direct_reviewer_gap_score": "Mean of the three direct_reviewer_gap_ratios (0-1).",
+        "dated_registry_announcements": "Organisations with a published public_post row on the brreg platform that carries a date in signal.date.",
+        "dated_registry_announcements_ratio": "dated_registry_announcements divided by the profile organisation count.",
+        "minimum_audit": "Minimum number of audit labels requested on the command line.",
+        "audit_size_gate": "True when the number of audit labels reaches minimum_audit.",
+    }
 
 
 def build_report(
@@ -154,7 +244,17 @@ def build_report(
     minimum_audit: int = 100,
 ) -> dict[str, Any]:
     labels = label_map(label_rows)
-    organisations = sorted({str(item.get("organisation_number")) for item in profiles})
+
+    organisation_numbers: list[str] = []
+    profiles_missing_organisation_number = 0
+    for profile in profiles:
+        raw = profile.get("organisation_number")
+        text = str(raw).strip() if raw is not None else ""
+        if not text.isdigit():
+            profiles_missing_organisation_number += 1
+            continue
+        organisation_numbers.append(text)
+    organisations = sorted(set(organisation_numbers))
 
     audited = [item for item in observations if str(item.get("id")) in labels]
     accepted_audited = [item for item in audited if publishable_observation(item)]
@@ -163,20 +263,31 @@ def build_report(
         1 for item in observations if str(item.get("id")) not in labels and publishable_observation(item)
     )
 
-    wrong_entity = len(accepted_audited) - len(published)
+    # Canonical precision semantics (scripts/evaluate_external_footprint.py).
+    wrong_entity = sum(1 for item in published if not labels[str(item.get("id"))].get("exact_entity"))
     unsupported = sum(1 for item in published if validate_observation(item))
     wrong_metric = sum(1 for item in published if not labels[str(item.get("id"))].get("metric_correct", False))
+    sentiment_audited = [item for item in published if has_sentiment_label(item)]
+    sentiment_correct = sum(
+        1 for item in sentiment_audited if labels[str(item.get("id"))].get("sentiment_correct", False)
+    )
+
+    # The stricter measures that the canonical keys cannot express.
+    withheld_wrong_entity = len(accepted_audited) - len(published)
 
     coverage = compute_coverage(published, organisations)
     recall_proxy_50 = sum(coverage.values()) / len(coverage) * 50
     gap_counts, gap_ratios = compute_gaps(published, organisations)
     gap_score = sum(gap_ratios.values()) / len(gap_ratios)
+    registry_announcements = registry_announcement_count(published, organisations)
 
-    return {
+    report = {
         "scorer": "norhound_recall_measurement_v1",
         "claim_boundary": "Held-out observation audit plus full-corpus coverage; it does not validate an unlabelled connector.",
+        "metric_definitions": metric_definitions(),
         "profiles": len(profiles),
         "profile_organisations": len(organisations),
+        "profiles_missing_organisation_number": profiles_missing_organisation_number,
         "observations": len(observations),
         "labelled_observations": len(labels),
         "audited_observations": len(audited),
@@ -185,17 +296,24 @@ def build_report(
         "unlabelled_publishable_observations": unlabelled_publishable,
         "wrong_entity_publications": wrong_entity,
         "unsupported_publications": unsupported,
-        "entity_precision": ratio(len(published), len(accepted_audited)),
+        "entity_precision": ratio(len(published) - wrong_entity, len(published)),
         "metric_precision": ratio(len(published) - wrong_metric, len(published)),
+        "withheld_wrong_entity_rows": withheld_wrong_entity,
+        "accepted_entity_yield": ratio(len(published), len(accepted_audited)),
+        "sentiment_audited": len(sentiment_audited),
+        "sentiment_accuracy": ratio(sentiment_correct, len(sentiment_audited)) if sentiment_audited else None,
         "coverage": coverage,
         "recall_proxy_50": recall_proxy_50,
         "direct_reviewer_gaps": gap_counts,
         "direct_reviewer_gap_ratios": gap_ratios,
         "direct_reviewer_gap_base_profiles": len(organisations),
         "direct_reviewer_gap_score": gap_score,
+        "dated_registry_announcements": registry_announcements,
+        "dated_registry_announcements_ratio": ratio(registry_announcements, len(organisations)),
         "minimum_audit": minimum_audit,
         "audit_size_gate": len(labels) >= minimum_audit,
     }
+    return report
 
 
 def main() -> None:
