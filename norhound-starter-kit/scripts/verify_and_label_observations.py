@@ -33,6 +33,7 @@ import re
 import sys
 from functools import lru_cache
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -74,6 +75,91 @@ OFFICIAL_REPORT_PROOF_TYPES = (
     # valid exact-entity proof, equivalent to an official-API identity.
     "google_places_website_domain_match",
 )
+
+
+# BRREG — the official registry — states each company's website domain. When an
+# observation's source host is exactly that domain and the stored page text
+# corroborates the company (its organisation number, or a legal-name token), the
+# registry resolves the domain to the legal entity. The proof is re-derived from
+# the profile's own registry field and stored page, never from what the
+# observation claims about itself.
+REGISTRY_DOMAIN_PROOF_TYPE = "registry_declared_website_domain_match"
+LEGAL_FORM_TOKENS = {
+    "as", "asa", "a/s", "ans", "ba", "da", "enk", "kf", "sa", "aps", "ab", "oy", "oyj",
+    "gmbh", "ag", "bv", "nv", "sarl", "spa", "srl", "co", "corp", "plc", "lp", "llp",
+    "k/s", "i/s", "sp", "ug", "reg", "limited", "ltd", "inc", "llc", "p/s",
+}
+
+
+def _normalise_host(value: str) -> str:
+    """Host of a URL or bare domain, lowercased and without a leading www."""
+    text = str(value or "").strip().lower()
+    if not text:
+        return ""
+    if "://" not in text:
+        text = "https://" + text
+    try:
+        host = (urlparse(text).hostname or "").strip()
+    except ValueError:
+        return ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def _fold(text: str) -> str:
+    """Lowercase and transliterate the Norwegian letters pages may mangle."""
+    return (text or "").lower().replace("ø", "o").replace("å", "a").replace("æ", "ae")
+
+
+def _legal_name_tokens(name: str) -> list[str]:
+    """Distinctive tokens of the legal name (legal forms and short tokens dropped)."""
+    tokens = [token for token in re.split(r"[^0-9a-z]+", _fold(name)) if token]
+    return [token for token in tokens if token not in LEGAL_FORM_TOKENS and len(token) >= 4]
+
+
+def _site_text(value: dict) -> str:
+    """All stored text of the crawled page, folded for comparison."""
+    parts = [
+        str(value.get("title") or ""),
+        str(value.get("description") or ""),
+        str(value.get("main_text_excerpt") or ""),
+        json.dumps(value.get("structured_organisations") or [], ensure_ascii=False),
+    ]
+    return _fold(" ".join(parts))
+
+
+def _site_corroborates(profile: dict, value: dict) -> bool:
+    """True when the stored page text names the organisation number or a name token."""
+    org = str(profile.get("organisation_number") or "")
+    text = _site_text(value)
+    if org and org in re.sub(r"\D", "", text):
+        return True
+    return any(token in text for token in _legal_name_tokens(str(profile.get("name") or "")))
+
+
+def _registry_domain_proof(obs: dict) -> dict | None:
+    for proof in obs.get("identity_proof") or []:
+        if isinstance(proof, dict) and str(proof.get("type") or "") == REGISTRY_DOMAIN_PROOF_TYPE:
+            return proof
+    return None
+
+
+def _registry_domain_proof_consistent(obs: dict, profile: dict) -> bool:
+    """True when the proof, the profile's registry field and the stored page agree."""
+    proof = _registry_domain_proof(obs)
+    if not proof:
+        return False
+    org = str(proof.get("matched_organisation_number") or "").strip()
+    if org != str(profile.get("organisation_number") or "").strip():
+        return False
+    registry_host = _normalise_host(profile.get("website") or "")
+    if not registry_host:
+        return False
+    if _normalise_host(obs.get("source_url") or "") != registry_host:
+        return False
+    if not str(obs.get("content_sha256") or "").strip():
+        return False
+    website = ((profile.get("evidence") or {}).get("website") or {})
+    return _site_corroborates(profile, website.get("value") or {})
 
 
 def _identity_proof_kind(obs: dict) -> str:
@@ -175,6 +261,14 @@ def verify(obs: dict, profile: dict) -> dict:
     checks["wikidata_proof_consistent"] = (
         _wikidata_proof_consistent(obs, profile) if _has_wikidata_proof(obs) else True
     )
+    # A registry-declared website row is trusted only when the proof names this
+    # organisation, the source host is the domain BRREG declares for it, the
+    # stored page corroborates the company and the page body was hashed.
+    registry_domain_proof = _registry_domain_proof(obs)
+    checks["registry_domain_proof_present"] = registry_domain_proof is not None
+    checks["registry_domain_proof_consistent"] = (
+        _registry_domain_proof_consistent(obs, profile) if registry_domain_proof is not None else True
+    )
     checks["identity_proof_present"] = bool(obs.get("identity_proof"))
     if not identity_proof_kind:
         checks["proof_references_site"] = any(
@@ -203,7 +297,11 @@ def verify(obs: dict, profile: dict) -> dict:
     wikidata_row = checks.get("wikidata_identity_proof", False)
     # A Wikidata row is trusted only while its P2333 proof stays consistent;
     # an inconsistent one falls back to the ordinary rules and stays rejected.
-    trusted_api_row = bool(official_api_row or (wikidata_row and checks["wikidata_proof_consistent"]))
+    trusted_api_row = bool(
+        official_api_row
+        or (wikidata_row and checks["wikidata_proof_consistent"])
+        or (registry_domain_proof is not None and checks["registry_domain_proof_consistent"])
+    )
     # A row proved by an official API, an official report or a directory page
     # does not derive its identity from the company website, so it must not be
     # rejected merely because frozen website evidence is absent for that org.
