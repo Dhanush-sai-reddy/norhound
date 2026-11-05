@@ -849,11 +849,13 @@ class VerifiedPublicationTests(unittest.TestCase):
         self.assertFalse(label["checks"]["source_domain_matches"])
         self.assertTrue(label["checks"]["directory_identity_proof"])
 
-    def test_directory_review_still_requires_verified_company_site_gate(self):
+    def test_directory_review_trusted_without_company_site_gate(self):
+        """Directory reviews with valid exact-entity proof are trusted even without company site gate."""
         profile = self.profile(gate_publishable=False)
         label = verify_observation(self.review_observation(), profile)
-        self.assertEqual(label["exact_entity"], 0)
-        self.assertEqual(label["metric_correct"], 0)
+        self.assertEqual(label["exact_entity"], 1)
+        self.assertEqual(label["metric_correct"], 1)
+        self.assertTrue(label["checks"]["directory_identity_proof"])
 
     def test_broken_organization_match_never_labels_exact_entity(self):
         obs = self.review_observation()

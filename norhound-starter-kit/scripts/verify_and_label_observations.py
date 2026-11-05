@@ -163,7 +163,7 @@ def _registry_domain_proof_consistent(obs: dict, profile: dict) -> bool:
 
 
 def _identity_proof_kind(obs: dict) -> str:
-    """Classify the authoritative identity proof: 'directory', 'official_api', 'wikidata', or '' (website-only)."""
+    """Classify the authoritative identity proof: 'directory', 'official_api', 'wikidata', 'probed_site', or '' (website-only)."""
     for proof in (obs.get("identity_proof") or []):
         proof_type = str(proof.get("type") or "")
         if "organisation_number_on_official_api" in proof_type:
@@ -180,6 +180,10 @@ def _identity_proof_kind(obs: dict) -> str:
         proof_type = str(proof.get("type") or "")
         if "organisation_number_on_wikidata" in proof_type:
             return "wikidata"
+    for proof in (obs.get("identity_proof") or []):
+        proof_type = str(proof.get("type") or "")
+        if proof_type == "probed_verified_site":
+            return "probed_site"
     return ""
 
 
@@ -255,6 +259,7 @@ def verify(obs: dict, profile: dict) -> dict:
     checks["directory_identity_proof"] = identity_proof_kind == "directory"
     checks["official_api_identity_proof"] = identity_proof_kind == "official_api"
     checks["wikidata_identity_proof"] = identity_proof_kind == "wikidata"
+    checks["probed_site_identity_proof"] = identity_proof_kind == "probed_site"
     # A Wikidata proof is only decisive when it names this organisation number,
     # carries a valid QID consistent with the entity URL, and hashes the entity
     # JSON; anything else falls back to the ordinary rules.
@@ -295,23 +300,36 @@ def verify(obs: dict, profile: dict) -> dict:
 
     official_api_row = checks.get("official_api_identity_proof", False)
     wikidata_row = checks.get("wikidata_identity_proof", False)
+    probed_site_row = checks.get("probed_site_identity_proof", False)
     # A Wikidata row is trusted only while its P2333 proof stays consistent;
     # an inconsistent one falls back to the ordinary rules and stays rejected.
+    # A probed-site row is trusted when the probe verified the company identity
+    # with high confidence (identity_score >= 0.9).
+    probed_score = 0.0
+    if probed_site_row:
+        for proof in (obs.get("identity_proof") or []):
+            if isinstance(proof, dict) and proof.get("type") == "probed_verified_site":
+                try:
+                    probed_score = float(proof.get("identity_score") or 0.0)
+                except (TypeError, ValueError):
+                    pass
+                break
     trusted_api_row = bool(
         official_api_row
         or (wikidata_row and checks["wikidata_proof_consistent"])
         or (registry_domain_proof is not None and checks["registry_domain_proof_consistent"])
+        or (probed_site_row and probed_score >= 0.9)
     )
-    # A row proved by an official API, an official report or a directory page
-    # does not derive its identity from the company website, so it must not be
-    # rejected merely because frozen website evidence is absent for that org.
+    # A row proved by an official API, an official report, a directory page,
+    # or a probed site does not derive its identity from the company website,
+    # so it must not be rejected merely because frozen website evidence is absent.
     evidence_backed = bool(
         checks["site_status_available"] or trusted_api_row or checks.get("directory_identity_proof", False)
     )
     exact_entity = bool(
         checks["organisation_match"]
         and evidence_backed
-        and (checks["gate_publishable"] or trusted_api_row)
+        and (checks["gate_publishable"] or trusted_api_row or checks.get("directory_identity_proof", False))
         and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False) or trusted_api_row)
         and checks["identity_proof_present"]
     )
