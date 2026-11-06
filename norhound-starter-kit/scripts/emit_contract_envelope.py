@@ -81,6 +81,7 @@ def text_key(value: Any) -> str:
 
 
 ROLE_TRUSTED_STRATEGIES = {
+    "jobs_feed_discovery",
     "official_nav_job_feed_orgnr_match", "nav_job_feed", "ats_role_card",
     "finn_job_details", "nav_direct_api", "apify_nav_jobs",
 }
@@ -122,7 +123,14 @@ def _plausible_role(title: str) -> bool:
         return False
     if len(title.split()) > 12:
         return False
-    return not any(marker in low for marker in NAVIGATION_TEXT)
+    # Use word boundaries to avoid false positives on substrings like "søk" in "søker"
+    import re
+    for marker in NAVIGATION_TEXT:
+        # Escape regex special chars and add word boundaries
+        pattern = r'\b' + re.escape(marker) + r'\b'
+        if re.search(pattern, low):
+            return False
+    return True
 
 
 # --------------------------------------------------------------------------- #
