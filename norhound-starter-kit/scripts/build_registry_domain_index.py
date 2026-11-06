@@ -49,6 +49,69 @@ def open_maybe_gzip(path: Path):
     return open(path, "r", encoding="utf-8", errors="replace", newline="")
 
 
+def _json_dump_rows(path: Path) -> list[tuple[str, str]]:
+    """(organisation_number, hjemmeside) pairs from the official JSON bulk dump."""
+    opener = gzip.open if path.suffix == ".gz" else open
+    with opener(path, "rt", encoding="utf-8", errors="replace") as handle:
+        payload = json.load(handle)
+    rows = []
+    for record in payload if isinstance(payload, list) else payload.get("enheter", []):
+        if not isinstance(record, dict):
+            continue
+        rows.append((str(record.get("organisasjonsnummer") or ""), str(record.get("hjemmeside") or "")))
+    return rows
+
+
+def _csv_dump_rows(path: Path) -> list[tuple[str, str]]:
+    """(organisation_number, hjemmeside) pairs from a CSV dump with named columns."""
+    handle = open_maybe_gzip(path)
+    reader = csv.reader(handle)
+    header = next(reader, [])
+    lowered = [name.strip().lower() for name in header]
+    try:
+        index_org = lowered.index("organisasjonsnummer")
+        index_web = lowered.index("hjemmeside")
+    except ValueError:
+        handle.close()
+        raise SystemExit(f"expected organisasjonsnummer + hjemmeside columns, got: {header[:8]}")
+    rows = []
+    for record in reader:
+        if len(record) <= index_web:
+            continue
+        rows.append((record[index_org], record[index_web]))
+    handle.close()
+    return rows
+
+
+def build_index(path: Path) -> tuple[dict[str, str], dict[str, int]]:
+    """Map every uniquely-declared domain to the organisation number that declared it.
+
+    A domain declared by two or more organisation numbers is omitted entirely,
+    so absence always means "single ownership cannot be proven".
+    """
+    if path.suffix == ".json" or path.suffix == ".gz":
+        rows = _json_dump_rows(path)
+    else:
+        rows = _csv_dump_rows(path)
+    declarers: dict[str, set[str]] = defaultdict(set)
+    for raw_number, raw_website in rows:
+        domain = register_domain(raw_website)
+        if not domain or "." not in domain:
+            continue
+        number = re.sub(r"\D", "", raw_number)
+        if len(number) != 9:
+            continue
+        declarers[domain].add(number)
+    unique = {domain: next(iter(orgs)) for domain, orgs in declarers.items() if len(orgs) == 1}
+    report = {
+        "register_rows": len(rows),
+        "distinct_domains": len(declarers),
+        "unique_single_declarer_domains": len(unique),
+        "shared_domains_omitted": len(declarers) - len(unique),
+    }
+    return unique, report
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--register", required=True, help="Frozen BRREG enhance dump (CSV, gzip or plain)")
@@ -61,33 +124,7 @@ def main() -> None:
     if not source.exists():
         raise SystemExit(f"register dump not found: {source}")
 
-    handle = open_maybe_gzip(source)
-    reader = csv.reader(handle)
-    header = next(reader, [])
-    lowered = [name.strip().lower() for name in header]
-    try:
-        index_org = lowered.index("organisasjonsnummer")
-        index_web = lowered.index("hjemmeside")
-    except ValueError:
-        handle.close()
-        raise SystemExit(f"expected organisasjonsnummer + hjemmeside columns, got: {header[:8]}")
-
-    declarers: dict[str, set[str]] = defaultdict(set)
-    rows = 0
-    for record in reader:
-        if len(record) <= index_web:
-            continue
-        rows += 1
-        domain = register_domain(record[index_web])
-        if not domain or "." not in domain:
-            continue
-        number = re.sub(r"\D", "", record[index_org])
-        if len(number) != 9:
-            continue
-        declarers[domain].add(number)
-    handle.close()
-
-    unique = {domain: next(iter(orgs)) for domain, orgs in declarers.items() if len(orgs) == 1}
+    unique, report = build_index(source)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     body = "".join(json.dumps({"domain": domain, "organisation_number": unique[domain]},
@@ -98,10 +135,7 @@ def main() -> None:
     else:
         output.write_text(body, encoding="utf-8")
 
-    shared = len(declarers) - len(unique)
-    report = {"register_rows": rows, "distinct_domains": len(declarers),
-              "unique_single_declarer_domains": len(unique), "shared_domains_omitted": shared,
-              "output": str(output)}
+    report = {**report, "output": str(output)}
     if args.report:
         Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2), file=sys.stderr)

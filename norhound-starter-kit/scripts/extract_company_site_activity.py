@@ -7,6 +7,23 @@ import json
 from pathlib import Path
 
 
+def identity_proofs(identity: dict) -> list[dict]:
+    """The promotion proof as a list of proof objects.
+
+    `promotion_proof` is stored as a single dict. Spreading it with `list(...)`
+    would yield its *keys* instead of proof objects, and the verifier would
+    then raise `AttributeError: 'str' object has no attribute 'get'`.
+    """
+    proof = identity.get("promotion_proof")
+    proofs: list[dict] = []
+    if isinstance(proof, dict):
+        proofs.append(proof)
+    elif isinstance(proof, list):
+        proofs.extend(item for item in proof if isinstance(item, dict))
+    proofs.append({"type": "website_identity_gate", "status": identity.get("status"), "score": identity.get("score")})
+    return proofs
+
+
 def observation(profile: dict) -> list[dict]:
     website = (profile.get("evidence") or {}).get("website") or {}
     value = website.get("value") or {}
@@ -27,9 +44,7 @@ def observation(profile: dict) -> list[dict]:
         "retrieved_at": website.get("retrieved_at"),
         "content_sha256": digest,
         "exact_entity": True,
-        "identity_proof": list(identity.get("promotion_proof") or []) + [
-            {"type": "website_identity_gate", "status": identity.get("status"), "score": identity.get("score")}
-        ],
+        "identity_proof": identity_proofs(identity),
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",

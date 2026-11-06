@@ -114,6 +114,9 @@ def main() -> None:
     parser.add_argument("--no-keyless", dest="keyless", action="store_false", help="Disable the no-API-key connectors: registry contacts, site description, substructure, sitemap lastmod, registry-update feed, Wikidata")
     parser.add_argument("--keyless", dest="keyless", action="store_true", help="Deprecated no-op: keyless connectors now run by default")
     parser.set_defaults(keyless=True)
+    parser.add_argument("--no-registry-sites", dest="registry_sites", action="store_false", help="Disable the registry-proved website connector (BRREG-declared domain + page corroboration)")
+    parser.add_argument("--registry-sites", dest="registry_sites", action="store_true", help="Deprecated no-op: registry-proved website connector now runs by default")
+    parser.set_defaults(registry_sites=True)
     parser.add_argument("--no-nav", dest="nav", action="store_false", help="Disable the official NAV job feed connector")
     parser.add_argument("--nav", dest="nav", action="store_true", help="Deprecated no-op: NAV job feed now runs by default")
     parser.set_defaults(nav=True)
@@ -153,6 +156,8 @@ def main() -> None:
     discovery_out = prefix.with_suffix(prefix.suffix + ".discovery.jsonl")
     enriched_out = prefix.with_suffix(prefix.suffix + ".enriched.jsonl")
     eval_out = prefix.with_suffix(prefix.suffix + ".external-eval.json")
+    # The list must exist before the first optional stage appends to it.
+    observation_files = [activity_out, news_out, jobs_out]
 
     run([
         "python", str(SCRIPTS / "extract_company_site_activity.py"),
@@ -191,6 +196,16 @@ def main() -> None:
             for path in keyless_parts:
                 rows.extend(json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip())
             keyless_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in rows), encoding="utf-8")
+    registry_site_out = prefix.with_suffix(prefix.suffix + ".registry-site.jsonl")
+    if args.registry_sites:
+        run([
+            "python", str(SCRIPTS / "extract_registry_proved_site_observations.py"),
+            "--profiles", args.profiles,
+            "--output", str(registry_site_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".registry-site-report.json")),
+        ])
+    if registry_site_out.exists() and registry_site_out.stat().st_size > 0:
+        observation_files.append(registry_site_out)
     orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
     orgs_out.write_text(
         "".join(
@@ -296,7 +311,6 @@ def main() -> None:
             discovery_command += ["--max-429-backoff", "45"]
         run(discovery_command)
 
-    observation_files = [activity_out, news_out, jobs_out]
     google_news_out = prefix.with_suffix(prefix.suffix + ".google-news.jsonl")
     if args.google_news:
         run([

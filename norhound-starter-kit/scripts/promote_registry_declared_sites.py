@@ -33,6 +33,29 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_registry_domain_index import register_domain  # noqa: E402
 
 
+def sanitize_line_separators(text: str) -> str:
+    """Escape U+2028/U+2029 so a JSONL row survives `str.splitlines()`.
+
+    Python treats both characters as line breaks, so a raw one inside a legal
+    name would split a profile row into two unparsable fragments.
+    """
+    return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
+def write_profiles(output: Path, profiles: list[dict]) -> None:
+    """Write profiles as JSONL, one row per line, with separators escaped."""
+    output.parent.mkdir(parents=True, exist_ok=True)
+    temporary = output.with_suffix(output.suffix + ".tmp")
+    temporary.write_text(
+        "".join(
+            sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n"
+            for row in profiles
+        ),
+        encoding="utf-8",
+    )
+    temporary.replace(output)
+
+
 def load_index(path: Path) -> dict[str, str]:
     """domain -> sole declaring organisation number."""
     if not path.exists():
@@ -147,11 +170,7 @@ def main() -> None:
         stats[promote(profile, index, as_of) or "not_matched"] += 1
 
     output = Path(args.output)
-    output.parent.mkdir(parents=True, exist_ok=True)
-    temporary = output.with_suffix(output.suffix + ".tmp")
-    temporary.write_text("".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n"
-                                 for row in profiles), encoding="utf-8")
-    temporary.replace(output)
+    write_profiles(output, profiles)
 
     summary = {**stats, "output": str(output)}
     Path(args.report).write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
