@@ -118,7 +118,9 @@ the same company URL) are never collapsed.
 | measurement | `norhound-starter-kit/out/frozen/measure-all+purehelp+workforce.json` |
 | previous best measurement | `norhound-starter-kit/out/frozen/measure-all+purehelp.json` |
 | new workforce rows | `norhound-starter-kit/out/frozen/missing-workforce.external.jsonl` |
-| workforce run report | `/tmp/opencode/caches/missing-workforce-report.json` |
+| workforce run report | `norhound-starter-kit/.cache/run-2026-11-06/caches/missing-workforce-report.json` |
+| annual-report PDFs (official, re-downloadable) | `norhound-starter-kit/.cache/run-2026-11-06/ar-page1-cache/` |
+| run logs | `norhound-starter-kit/.cache/run-2026-11-06/logs/` |
 | submission observations / labels / eval | `norhound-starter-kit/out/submission/observations.jsonl`, `labels.jsonl`, `batch.eval.merged.json` |
 | submission published subset | `norhound-starter-kit/out/submission/published-observations.jsonl` |
 | rebuilt viewer | `norhound-starter-kit/out/submission/site/` (998 company pages + index + compare) |
@@ -163,8 +165,8 @@ The remaining 11 rows are the companies' own website text (source class
 Company-site review-widget probe (80 identity-gated sites, robots-aware):
 11 sites mention a review widget, only **1** exposes a machine-readable
 aggregate rating, so the route to more ratings is ~1 % of sites and was not
-pursued (`/tmp/opencode/caches/review-widget-probe.json`,
-`/tmp/opencode/logs/review_widget_probe.log`).
+pursued (`norhound-starter-kit/.cache/run-2026-11-06/caches/review-widget-probe.json`,
+`norhound-starter-kit/.cache/run-2026-11-06/logs/review_widget_probe.log`).
 
 ## 6. What is still open
 

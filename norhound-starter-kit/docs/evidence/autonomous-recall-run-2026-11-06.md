@@ -103,16 +103,22 @@ second one, see `docs/evidence/keyless-review-sources.md`).
 
 ## Caches produced this run
 
-- `/tmp/opencode/caches/brreg-accounts-3y.jsonl` — 1,000 orgs, 988 HTTP 200, 2-5 periods each
-- `/tmp/opencode/caches/1881-candidates.jsonl` — 1,000 rows, 656 leiCode hits
-- `/tmp/opencode/caches/1881-sites.jsonl` + `1881-sites/*.html` — 210 fetched, 191 corroborate
-- `/tmp/opencode/caches/rdap.jsonl` — 999 domains, 104 HTTP 200, 0 org-number matches (dead end)
-- `/tmp/opencode/caches/targets.json` — 971 orgs with at least one missing field
-- `/tmp/opencode/caches/deepcrawl.jsonl` — deep re-crawl result
-- `/tmp/opencode/caches/probe-repair.jsonl` — identity probe result
-- `/tmp/opencode/caches/missing-workforce.jsonl` — 16 official annual-report workforce rows
-- `/tmp/opencode/caches/review-widget-probe.json` — 80 identity-gated sites scanned for review widgets
-- `/tmp/opencode/caches/feeds/` — 272 publisher feeds fetched, 160 item matches, 17 orgs matched (low yield)
+All run caches live in the worktree (not in `/tmp`, which is a tmpfs that vanishes
+on reboot) under `norhound-starter-kit/.cache/run-2026-11-06/`:
+
+- `caches/brreg-accounts-3y.jsonl` — 1,000 orgs, 988 HTTP 200, 2-5 periods each
+- `caches/1881-candidates.jsonl` — 1,000 rows, 656 leiCode hits
+- `caches/1881-sites.jsonl` + `caches/1881-sites/*.html` — 210 fetched, 191 corroborate
+- `caches/rdap.jsonl` — 999 domains, 104 HTTP 200, 0 org-number matches (dead end)
+- `caches/targets.json` — 971 orgs with at least one missing field
+- `caches/deepcrawl.jsonl` + `caches/deepcrawl/` — deep re-crawl result
+- `caches/probe-repair.jsonl` — identity probe result
+- `caches/missing-workforce.jsonl` + `caches/missing-workforce-report.json` — 16 official annual-report workforce rows
+- `caches/review-widget-probe.json` — 80 identity-gated sites scanned for review widgets
+- `caches/feeds/` — 272 publisher feeds fetched, 160 item matches, 17 orgs matched (low yield)
+- `caches/ph/` + `caches/ph-pages.xml` — 1,000 cached Purehelp pages
+- `ar-page1-cache/` — 670 official annual-report PDFs (re-downloadable)
+- `logs/` — every background run log of this session
 
 ## Dead ends recorded
 
