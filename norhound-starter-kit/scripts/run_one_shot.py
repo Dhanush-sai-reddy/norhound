@@ -125,21 +125,13 @@ def main():
     else:
         print(f"Using cached profiles: {profiles}")
 
-    # ── Phase 1b: Live Proff.no enrichment (works for any company batch; needs APIFY_TOKEN)
-    # Gracefully skips if APIFY_TOKEN unset or quota exhausted
-    proff_raw = DATA / "proff-latest.jsonl"
-    proff_obs = DATA / "proff-ratings.external.jsonl"
-    run_with_fallback([
-        "python", str(SCRIPTS / "fetch_proff_live.py"),
-        "--profiles", str(profiles),
-        "--output", str(proff_raw),
-    ], "Proff.no live fetch (APIFY quota/unset)", cwd=ROOT)
-    if proff_raw.exists() and proff_raw.stat().st_size > 0:
-        run([
-            "python", str(SCRIPTS / "store_proff_ratings.py"),
-            "--input", str(proff_raw),
-            "--output", str(proff_obs),
-        ])
+    # ── Phase 1b: Proff.no is deliberately NOT collected.
+    # proff.no answers every request (robots.txt included) with a CloudFront
+    # 403 from this host, so its permission state can no longer be re-verified,
+    # and the rows it produced carried third-party revenue/profit figures that
+    # are not copied from an official register. Publishing them would put
+    # unsourced financial values into the output, so the source is excluded by
+    # the pipeline (see norway_company_agent.source_rights).
 
     # ── Phase 1b: GLEIF LEI index (one-off; idempotent). Gives exact org-number -> LEI joins.
     if not args.skip_gleif_index and not args.gleif_index.exists():
@@ -175,8 +167,6 @@ def main():
         externals = []
         if args.external_data:
             externals.append(args.external_data)
-        if proff_obs.exists() and proff_obs.stat().st_size > 0:
-            externals.append(str(proff_obs))
         for extra in [
             out / "gplaces-reviews.jsonl",
             out / "gmaps-reviews.jsonl",

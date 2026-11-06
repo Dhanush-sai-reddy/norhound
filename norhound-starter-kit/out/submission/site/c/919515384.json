@@ -477,45 +477,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-0861b7e5ada7aa70b76aba30",
-          "organisation_number": "919515384",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T09:01:17.477108Z",
-          "content_sha256": "7cc895a813eb854d7820f7ea241041217d6545722ff568bd35734da60f14e815",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "919515384",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 21",
-          "metrics": {
-            "workforce_value": 21,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-e6c56353c9f1872d95d74b84",
           "organisation_number": "919515384",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -534,8 +502,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-0f32aad7118c762a90fa02cf",
@@ -543,8 +510,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -563,14 +530,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "919515384",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
-          "retrieved_at": "2026-10-05T09:01:25.955155Z",
+          "retrieved_at": "2026-09-29T10:27:56.251481Z",
           "content_sha256": "ee049919e295ad5f0ce6edf945335d971b3a5740f1a37f972f32a4fa5267e889",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -592,14 +558,13 @@
             "subunit_organisation_number": "982429021",
             "municipality": "EIDSVOLL",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "919515384",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/919515384",
-          "retrieved_at": "2026-10-05T09:01:25.187729Z",
+          "retrieved_at": "2026-09-29T10:27:55.385983Z",
           "content_sha256": "b1a72a54189c564ddc45204e4d3dcbf8f5b01e60796a4c17d2ccd242f8502a9f",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -622,14 +587,13 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "919515384",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/919515384",
-          "retrieved_at": "2026-10-05T09:01:25.187729Z",
+          "retrieved_at": "2026-09-29T10:27:55.385983Z",
           "content_sha256": "b1a72a54189c564ddc45204e4d3dcbf8f5b01e60796a4c17d2ccd242f8502a9f",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -652,8 +616,7 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-13cd856eccb543a9221bbdb8",
@@ -661,7 +624,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "13cd856eccb543a9221bbdb879068a4b0e060ba6ccc66c03e3b13f361f1ca21f",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -691,7 +654,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2118774ab2444370d7eb6062cd779c013b797910b4416fe99f4d1bbfc52d1a4c",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -721,7 +684,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ca4b043aa734f36d47be2b7be0db052260cbf9d6a4582bda18b89e414aee6c3c",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -751,7 +714,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "24902edaf859ba6f7cc3efdfa21a3d58de02666c475de7661e5d01a0a788c29b",
           "observed_at": "2026-04-18",
           "exact_entity": true,
@@ -781,7 +744,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "274018d6df87cc10bc1a0b6e81f873f4d476ebbd1d148ccb87cede03d4d6f59a",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -811,7 +774,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e4c2edd2bc1c6c4896b3a67cf3f5fabdad1b8ea395dc011be31956edad9c6fd3",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -841,7 +804,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d434d90dacf5c5b4ab5d3a571621b2c06f96bdd9ea6603fafd113eb15110463a",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -871,38 +834,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "52e8fe191e568717b89a8b8dd5b37ecd73ff6f19c8113e7caf89faaffeaa70e3",
-          "observed_at": "2025-05-14",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "919515384",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-05-14: Endring",
-          "metrics": {
-            "date": "2025-05-14",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-2ae8730802be6802a55c2cc9",
-          "organisation_number": "919515384",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "2ae8730802be6802a55c2cc91f31be260c256be5a8724e4c5f1cd85a8cb98e4f",
           "observed_at": "2025-05-14",
           "exact_entity": true,
           "identity_proof": [
@@ -931,7 +864,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dccd2add22fe5c10f45a33a8b0342b1be191e5237afe669ab11eaad510449fab",
           "observed_at": "2025-03-13",
           "exact_entity": true,
@@ -961,7 +894,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2877c1548d46129fb4c592e6eb51557bccfb3a1556a5947e1d0ba9d3a0f9756b",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -991,7 +924,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "55c276831c27b835fcc9251d1ba49b5a46f3168b1a7cc62d77381a009c49f169",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -1021,7 +954,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "12238b8f748f3c1d03b0612d353c255064539afc81fa18a8648ebc71aa35b1ae",
           "observed_at": "2024-05-14",
           "exact_entity": true,
@@ -1051,7 +984,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1bf60e977a76e26c343bfba1edf3fb5b36ee9ea17611b5b3495742f3e13776f2",
           "observed_at": "2024-04-30",
           "exact_entity": true,
@@ -1081,7 +1014,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1c52d021df48bbc26723cdfc802703fab41930e2b34e60d08bc965611c433804",
           "observed_at": "2024-04-13",
           "exact_entity": true,
@@ -1111,7 +1044,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7c1b94645fe011e742e5cc1cadbdb07fa3c048ca78555318fae1ab9906d4690d",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1141,7 +1074,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "66cfe911b093fb445c07741406fae8efdc3df7ec25ad046b3e5580441561d747",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1171,7 +1104,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "afc5ffcf6f7ee99ca2f7e7326d8417dd6684a3cc4f1d827a3bc3cf147d3a92dd",
           "observed_at": "2023-12-12",
           "exact_entity": true,
@@ -1201,7 +1134,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2bb02518831d13ae989779efc5b26bcd411e447687e00307e4f443f18bad0de9",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1231,7 +1164,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "73b65add8e5719ffc6f4794459cee88ef3796dd4c1ac601337b5a878a335e26e",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -1254,6 +1187,719 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-969659f64513798363b0cb63",
+          "organisation_number": "919515384",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "6486d5f3262717773e04361130a081bd43122c3bd2648b543591d12766630ec4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "919515384",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-04-18",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-04-18",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-04-18 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-439f8d98c425dd37a3e2461c",
+          "organisation_number": "919515384",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "ea815fe17be835ded3316b2f4bb6835fffebd39f24471df6df39553051629b79",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "919515384",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-05-14",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-05-14",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-05-14 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-835adb627a3c210bdf017f25",
+          "organisation_number": "919515384",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "d0bf10109551fd93df22634ee1d9498183d47a4d3528c05e78950b14a496b206",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "919515384",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-04-30",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-04-30",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-04-30 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-0861b7e5ada7aa70b76aba30",
+          "organisation_number": "919515384",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
+          "retrieved_at": "2026-09-29T10:27:47.540458Z",
+          "content_sha256": "7cc895a813eb854d7820f7ea241041217d6545722ff568bd35734da60f14e815",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "919515384",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 21",
+          "metrics": {
+            "workforce_value": 21,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-08-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-08-12",
+          "effective_at": "2026-08-12"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-metrics-919515384-af414b92686d8222",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Norgeshus Jos Bygg Google profile: rating 4.2/5, 10 ratings.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-919515384-c63745f176cfdf32",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "SIST OPPDATERT 27.03.2026\nVi kjøpte bolig av JOS Bygg i 2020 og satt først igjen med inntrykk av en seriøs aktør. I ettertid har vi dessverre opplevd det motsatte.\n\nI vår egen bolig er det avdekket flere alvorlige forhold, blant annet luftlekkasjer rundt dører og vinduer, mangelfull isolasjon og skjulte feil i gulvkonstruksjon ved terrassedør. Ved inspeksjon fant vi blant annet uferdig gulv og manglende isolasjon/underlag direkte mot betong.\n\nDa dette ble tatt opp, ba vi om konkret vurdering, dokumentasjon og utbedring. I stedet har vi opplevd ansvarsfraskrivelse, henvisning til reklamasjonsfrister og manglende vilje til å gå inn i de tekniske forholdene som er dokumentert. Vi har også etterspurt dokumentasjon (bl.a. trykktest), uten å få innsyn.\n\nParallelt har vi som del av sameiet vært involvert i en større sak knyttet til VA-anlegget, hvor det er dokumentert feilkobling mellom taknedløp og spillvannssystem. Dette har ført til overbelastning av renseanlegget og vedvarende kloakklukt for flere boliger. Også her har oppfølgingen vært preget av ansvarsfraskrivelse og manglende fremdrift.\n\nTil slutt fikk vi beskjed om at:\n«Det foreligger ingen dokumentasjon om at det foreligger en ma",
+          "observed_at": "2026-03-27T09:06:32.752575587Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 0,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-919515384-3c4338e0770b67e5",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Helt topp. Fabelaktig, og veldig flinke. De tar ansvar og er veldig behjelpelig med alt.",
+          "observed_at": "2023-05-29T19:44:54.607604Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 1,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-919515384-738dbd13ffe93a6f",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Veldig proffe folk. Hyggelig samtaler. 😊",
+          "observed_at": "2020-07-06T13:50:57.990808Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 2,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-919515384-7ac79c5f26b6a8d9",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Jon Olav dette kan du...",
+          "observed_at": "2017-11-22T17:22:42.858Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 3,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-919515384-cc187190b19a5b49",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Seriøs og proff",
+          "observed_at": "2017-05-04T09:47:14.485Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 4,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-919515384-af414b92686d8222",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Norgeshus Jos Bygg is rated 4.2/5 from 10 Google reviews.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+          "retrieved_at": "2026-10-31T18:19:08.649153Z",
+          "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norgeshus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-sentiment-919515384-af414b92686d8222",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 4.2/5 from 10 reviews implies positive sentiment.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+          "retrieved_at": "2026-11-02T21:01:35.703315Z",
+          "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-buzz-919515384-324e707a096b54d9",
+          "signal_type": "buzz_metrics",
+          "strategy": "buzz_peer_normalization",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+          "retrieved_at": "2026-11-02T21:01:35.703315Z",
+          "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-metrics-919515384-324e707a096b54d9",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+          "retrieved_at": "2026-11-02T21:01:35.703315Z",
+          "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-review-919515384-324e707a096b54d9",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+          "retrieved_at": "2026-11-02T21:01:35.703315Z",
+          "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.2,
+            "review_count": 10,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-sentiment-919515384-324e707a096b54d9",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "retrieved_at": "2026-11-05T14:45:58.265363Z",
+          "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS",
+              "matched_organisation_number": "919515384"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.2,
+            "review_count": 10,
+            "website_domain": "jos-bygg.no",
+            "address": {
+              "street": "Vognvegen 1B",
+              "locality": "DAL",
+              "postal_code": "2072"
+            }
+          },
+          "id": "fagfolk-profile-919515384-6aac82c2ac262618",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "retrieved_at": "2026-11-05T14:45:58.265363Z",
+          "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS",
+              "matched_organisation_number": "919515384"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.2,
+            "review_count": 10,
+            "website_domain": "jos-bygg.no",
+            "address": {
+              "street": "Vognvegen 1B",
+              "locality": "DAL",
+              "postal_code": "2072"
+            }
+          },
+          "id": "fagfolk-review-919515384-6aac82c2ac262618",
+          "signal_type": "review_summary",
+          "strategy": "directory_rating_reviews",
+          "source_class": "customer_review",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "retrieved_at": "2026-11-05T14:45:58.265363Z",
+          "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS",
+              "matched_organisation_number": "919515384"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.2,
+            "review_count": 10,
+            "website_domain": "jos-bygg.no",
+            "address": {
+              "street": "Vognvegen 1B",
+              "locality": "DAL",
+              "postal_code": "2072"
+            }
+          },
+          "id": "fagfolk-sentiment-919515384-6aac82c2ac262618",
+          "signal_type": "sentiment",
+          "strategy": "directory_review_sentiment",
+          "source_class": "customer_review",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/919515384",
+          "retrieved_at": "2026-11-05T21:11:17.886641Z",
+          "content_sha256": "96a5f48eb130cbbb17d631d953d58aa10d66f130c7dd6063001249a3d29a315b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS",
+              "matched_organisation_number": "919515384"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-919515384.orgNumber=919515384;name=JOS BYGG AS",
+          "id": "purehelp-phone-919515384-ba87c1c2bbdb3d93",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "63967100",
+            "contact_as_of": ""
+          }
+        },
+        {
+          "organisation_number": "919515384",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/919515384",
+          "retrieved_at": "2026-11-05T21:11:17.886641Z",
+          "content_sha256": "96a5f48eb130cbbb17d631d953d58aa10d66f130c7dd6063001249a3d29a315b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "919515384"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "JOS BYGG AS",
+              "matched_organisation_number": "919515384"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-919515384.orgNumber=919515384;name=JOS BYGG AS",
+          "id": "purehelp-profile-919515384-ba87c1c2bbdb3d93",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "43.320",
+            "nace_description": "Snekkerarbeid",
+            "town": "DAL",
+            "zipcode": "2072",
+            "municipality": "Eidsvoll",
+            "municipality_number": null,
+            "county": null,
+            "registration_date": "2017-09-06",
+            "registry_status": null,
+            "registry_status_date": "",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": null
+          }
         }
       ]
     },
@@ -1275,7 +1921,7 @@
     "company_name": "JOS BYGG AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "JOS BYGG AS is a private limited company operating in Snekkerarbeid. Latest accounts (2025): revenue NOK 65.3m, annual result NOK 78.4k. Annual accounts available for 2017-2025 (9 years). Detailed records only available as PDFs. Revenue growing (+25.3% YoY). Registered employees: 21. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); hiring (no job sources were checked).",
+    "summary": "JOS BYGG AS is a private limited company operating in Snekkerarbeid. Latest accounts (2025): revenue NOK 65.3m, annual result NOK 78.4k. Annual accounts available for 2017-2025 (9 years). Detailed records only available as PDFs. Revenue growing (+25.3% YoY). Registered employees: 21. No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1291,7 +1937,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       },
       {
@@ -1308,7 +1961,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       },
       {
@@ -1325,7 +1985,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       },
       {
@@ -1342,7 +2009,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       },
       {
@@ -1359,7 +2033,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       },
       {
@@ -1372,11 +2053,27 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/919515384/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/919515384",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        ]
       },
       {
         "question": "changes",
@@ -1392,7 +2089,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/919515384",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/919515384/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/919515384",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/919515384",
+          "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+          "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE"
         ]
       }
     ],
@@ -1401,11 +2105,6 @@
         "field": "official_website",
         "state": "not_available",
         "reason": "no verified company website was established"
-      },
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
       }
     ]
   },
@@ -1874,45 +2573,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-0861b7e5ada7aa70b76aba30",
-        "organisation_number": "919515384",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T09:01:17.477108Z",
-        "content_sha256": "7cc895a813eb854d7820f7ea241041217d6545722ff568bd35734da60f14e815",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "919515384",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 21",
-        "metrics": {
-          "workforce_value": 21,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-e6c56353c9f1872d95d74b84",
         "organisation_number": "919515384",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1931,8 +2598,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-0f32aad7118c762a90fa02cf",
@@ -1940,8 +2606,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1960,14 +2626,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "919515384",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=919515384&size=1000",
-        "retrieved_at": "2026-10-05T09:01:25.955155Z",
+        "retrieved_at": "2026-09-29T10:27:56.251481Z",
         "content_sha256": "ee049919e295ad5f0ce6edf945335d971b3a5740f1a37f972f32a4fa5267e889",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1989,14 +2654,13 @@
           "subunit_organisation_number": "982429021",
           "municipality": "EIDSVOLL",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "919515384",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/919515384",
-        "retrieved_at": "2026-10-05T09:01:25.187729Z",
+        "retrieved_at": "2026-09-29T10:27:55.385983Z",
         "content_sha256": "b1a72a54189c564ddc45204e4d3dcbf8f5b01e60796a4c17d2ccd242f8502a9f",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2019,14 +2683,13 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "919515384",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/919515384",
-        "retrieved_at": "2026-10-05T09:01:25.187729Z",
+        "retrieved_at": "2026-09-29T10:27:55.385983Z",
         "content_sha256": "b1a72a54189c564ddc45204e4d3dcbf8f5b01e60796a4c17d2ccd242f8502a9f",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2049,8 +2712,7 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-13cd856eccb543a9221bbdb8",
@@ -2058,7 +2720,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "13cd856eccb543a9221bbdb879068a4b0e060ba6ccc66c03e3b13f361f1ca21f",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2088,7 +2750,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2118774ab2444370d7eb6062cd779c013b797910b4416fe99f4d1bbfc52d1a4c",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -2118,7 +2780,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ca4b043aa734f36d47be2b7be0db052260cbf9d6a4582bda18b89e414aee6c3c",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -2148,7 +2810,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "24902edaf859ba6f7cc3efdfa21a3d58de02666c475de7661e5d01a0a788c29b",
         "observed_at": "2026-04-18",
         "exact_entity": true,
@@ -2178,7 +2840,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "274018d6df87cc10bc1a0b6e81f873f4d476ebbd1d148ccb87cede03d4d6f59a",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2208,7 +2870,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e4c2edd2bc1c6c4896b3a67cf3f5fabdad1b8ea395dc011be31956edad9c6fd3",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2238,7 +2900,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d434d90dacf5c5b4ab5d3a571621b2c06f96bdd9ea6603fafd113eb15110463a",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -2268,38 +2930,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "52e8fe191e568717b89a8b8dd5b37ecd73ff6f19c8113e7caf89faaffeaa70e3",
-        "observed_at": "2025-05-14",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "919515384",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-05-14: Endring",
-        "metrics": {
-          "date": "2025-05-14",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-2ae8730802be6802a55c2cc9",
-        "organisation_number": "919515384",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "2ae8730802be6802a55c2cc91f31be260c256be5a8724e4c5f1cd85a8cb98e4f",
         "observed_at": "2025-05-14",
         "exact_entity": true,
         "identity_proof": [
@@ -2328,7 +2960,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dccd2add22fe5c10f45a33a8b0342b1be191e5237afe669ab11eaad510449fab",
         "observed_at": "2025-03-13",
         "exact_entity": true,
@@ -2358,7 +2990,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2877c1548d46129fb4c592e6eb51557bccfb3a1556a5947e1d0ba9d3a0f9756b",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -2388,7 +3020,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "55c276831c27b835fcc9251d1ba49b5a46f3168b1a7cc62d77381a009c49f169",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -2418,7 +3050,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "12238b8f748f3c1d03b0612d353c255064539afc81fa18a8648ebc71aa35b1ae",
         "observed_at": "2024-05-14",
         "exact_entity": true,
@@ -2448,7 +3080,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1bf60e977a76e26c343bfba1edf3fb5b36ee9ea17611b5b3495742f3e13776f2",
         "observed_at": "2024-04-30",
         "exact_entity": true,
@@ -2478,7 +3110,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1c52d021df48bbc26723cdfc802703fab41930e2b34e60d08bc965611c433804",
         "observed_at": "2024-04-13",
         "exact_entity": true,
@@ -2508,7 +3140,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7c1b94645fe011e742e5cc1cadbdb07fa3c048ca78555318fae1ab9906d4690d",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2538,7 +3170,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "66cfe911b093fb445c07741406fae8efdc3df7ec25ad046b3e5580441561d747",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2568,7 +3200,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "afc5ffcf6f7ee99ca2f7e7326d8417dd6684a3cc4f1d827a3bc3cf147d3a92dd",
         "observed_at": "2023-12-12",
         "exact_entity": true,
@@ -2598,7 +3230,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2bb02518831d13ae989779efc5b26bcd411e447687e00307e4f443f18bad0de9",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -2628,7 +3260,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "73b65add8e5719ffc6f4794459cee88ef3796dd4c1ac601337b5a878a335e26e",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2651,8 +3283,721 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-969659f64513798363b0cb63",
+        "organisation_number": "919515384",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "6486d5f3262717773e04361130a081bd43122c3bd2648b543591d12766630ec4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "919515384",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-04-18",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-04-18",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000184800&amp;sokeverdi=919515384&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-04-18 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-439f8d98c425dd37a3e2461c",
+        "organisation_number": "919515384",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "ea815fe17be835ded3316b2f4bb6835fffebd39f24471df6df39553051629b79",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "919515384",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-05-14",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-05-14",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000268332&amp;sokeverdi=919515384&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-05-14 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-835adb627a3c210bdf017f25",
+        "organisation_number": "919515384",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "d0bf10109551fd93df22634ee1d9498183d47a4d3528c05e78950b14a496b206",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "919515384",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-04-30",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-04-30",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000388224&amp;sokeverdi=919515384&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-04-30 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-0861b7e5ada7aa70b76aba30",
+        "organisation_number": "919515384",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/919515384",
+        "retrieved_at": "2026-09-29T10:27:47.540458Z",
+        "content_sha256": "7cc895a813eb854d7820f7ea241041217d6545722ff568bd35734da60f14e815",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "919515384",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 21",
+        "metrics": {
+          "workforce_value": 21,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-08-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-08-12",
+        "effective_at": "2026-08-12"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-metrics-919515384-af414b92686d8222",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Norgeshus Jos Bygg Google profile: rating 4.2/5, 10 ratings.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-919515384-c63745f176cfdf32",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "SIST OPPDATERT 27.03.2026\nVi kjøpte bolig av JOS Bygg i 2020 og satt først igjen med inntrykk av en seriøs aktør. I ettertid har vi dessverre opplevd det motsatte.\n\nI vår egen bolig er det avdekket flere alvorlige forhold, blant annet luftlekkasjer rundt dører og vinduer, mangelfull isolasjon og skjulte feil i gulvkonstruksjon ved terrassedør. Ved inspeksjon fant vi blant annet uferdig gulv og manglende isolasjon/underlag direkte mot betong.\n\nDa dette ble tatt opp, ba vi om konkret vurdering, dokumentasjon og utbedring. I stedet har vi opplevd ansvarsfraskrivelse, henvisning til reklamasjonsfrister og manglende vilje til å gå inn i de tekniske forholdene som er dokumentert. Vi har også etterspurt dokumentasjon (bl.a. trykktest), uten å få innsyn.\n\nParallelt har vi som del av sameiet vært involvert i en større sak knyttet til VA-anlegget, hvor det er dokumentert feilkobling mellom taknedløp og spillvannssystem. Dette har ført til overbelastning av renseanlegget og vedvarende kloakklukt for flere boliger. Også her har oppfølgingen vært preget av ansvarsfraskrivelse og manglende fremdrift.\n\nTil slutt fikk vi beskjed om at:\n«Det foreligger ingen dokumentasjon om at det foreligger en ma",
+        "observed_at": "2026-03-27T09:06:32.752575587Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 0,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-919515384-3c4338e0770b67e5",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Helt topp. Fabelaktig, og veldig flinke. De tar ansvar og er veldig behjelpelig med alt.",
+        "observed_at": "2023-05-29T19:44:54.607604Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 1,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-919515384-738dbd13ffe93a6f",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Veldig proffe folk. Hyggelig samtaler. 😊",
+        "observed_at": "2020-07-06T13:50:57.990808Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 2,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-919515384-7ac79c5f26b6a8d9",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Jon Olav dette kan du...",
+        "observed_at": "2017-11-22T17:22:42.858Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 3,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-919515384-cc187190b19a5b49",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Seriøs og proff",
+        "observed_at": "2017-05-04T09:47:14.485Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 4,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-919515384-af414b92686d8222",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Norgeshus Jos Bygg is rated 4.2/5 from 10 Google reviews.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "place_id": "ChIJl_fSen6GQUYRkyKjtYt_qcE"
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJl_fSen6GQUYRkyKjtYt_qcE",
+        "retrieved_at": "2026-10-31T18:19:08.649153Z",
+        "content_sha256": "af414b92686d8222af038e38f332b2dbcded215bde42f43bd4598221c2f28f64",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norgeshus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-sentiment-919515384-af414b92686d8222",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 4.2/5 from 10 reviews implies positive sentiment.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+        "retrieved_at": "2026-11-02T21:01:35.703315Z",
+        "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-buzz-919515384-324e707a096b54d9",
+        "signal_type": "buzz_metrics",
+        "strategy": "buzz_peer_normalization",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+        "retrieved_at": "2026-11-02T21:01:35.703315Z",
+        "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-metrics-919515384-324e707a096b54d9",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+        "retrieved_at": "2026-11-02T21:01:35.703315Z",
+        "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-review-919515384-324e707a096b54d9",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/919515384",
+        "retrieved_at": "2026-11-02T21:01:35.703315Z",
+        "content_sha256": "324e707a096b54d91b660f61b0891602e49a22a75c1fe05098bd47a7d1ed0739",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.2/5 based on 10 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.2,
+          "review_count": 10,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-sentiment-919515384-324e707a096b54d9",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+        "retrieved_at": "2026-11-05T14:45:58.265363Z",
+        "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS",
+            "matched_organisation_number": "919515384"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.2,
+          "review_count": 10,
+          "website_domain": "jos-bygg.no",
+          "address": {
+            "street": "Vognvegen 1B",
+            "locality": "DAL",
+            "postal_code": "2072"
+          }
+        },
+        "id": "fagfolk-profile-919515384-6aac82c2ac262618",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+        "retrieved_at": "2026-11-05T14:45:58.265363Z",
+        "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS",
+            "matched_organisation_number": "919515384"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.2,
+          "review_count": 10,
+          "website_domain": "jos-bygg.no",
+          "address": {
+            "street": "Vognvegen 1B",
+            "locality": "DAL",
+            "postal_code": "2072"
+          }
+        },
+        "id": "fagfolk-review-919515384-6aac82c2ac262618",
+        "signal_type": "review_summary",
+        "strategy": "directory_rating_reviews",
+        "source_class": "customer_review",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/jos-bygg-as-919515384",
+        "retrieved_at": "2026-11-05T14:45:58.265363Z",
+        "content_sha256": "b24ea5bf92daf0ddb7fe5017fc665030f6164ceeb8c19154bd67c4e9da7d8aac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS",
+            "matched_organisation_number": "919515384"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.2,
+          "review_count": 10,
+          "website_domain": "jos-bygg.no",
+          "address": {
+            "street": "Vognvegen 1B",
+            "locality": "DAL",
+            "postal_code": "2072"
+          }
+        },
+        "id": "fagfolk-sentiment-919515384-6aac82c2ac262618",
+        "signal_type": "sentiment",
+        "strategy": "directory_review_sentiment",
+        "source_class": "customer_review",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.2,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":10}"
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/919515384",
+        "retrieved_at": "2026-11-05T21:11:17.886641Z",
+        "content_sha256": "96a5f48eb130cbbb17d631d953d58aa10d66f130c7dd6063001249a3d29a315b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS",
+            "matched_organisation_number": "919515384"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-919515384.orgNumber=919515384;name=JOS BYGG AS",
+        "id": "purehelp-phone-919515384-ba87c1c2bbdb3d93",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "63967100",
+          "contact_as_of": ""
+        }
+      },
+      {
+        "organisation_number": "919515384",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/919515384",
+        "retrieved_at": "2026-11-05T21:11:17.886641Z",
+        "content_sha256": "96a5f48eb130cbbb17d631d953d58aa10d66f130c7dd6063001249a3d29a315b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "919515384"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "JOS BYGG AS",
+            "matched_organisation_number": "919515384"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-919515384.orgNumber=919515384;name=JOS BYGG AS",
+        "id": "purehelp-profile-919515384-ba87c1c2bbdb3d93",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "43.320",
+          "nace_description": "Snekkerarbeid",
+          "town": "DAL",
+          "zipcode": "2072",
+          "municipality": "Eidsvoll",
+          "municipality_number": null,
+          "county": null,
+          "registration_date": "2017-09-06",
+          "registry_status": null,
+          "registry_status_date": "",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": null
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:46.518520+00:00"
+  "generated_at": "2026-11-06T05:27:39.112100+00:00"
 }

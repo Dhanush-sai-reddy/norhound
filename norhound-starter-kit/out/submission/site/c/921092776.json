@@ -515,8 +515,8 @@
           "organisation_number": "921092776",
           "platform": "company_site",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -529,7 +529,7 @@
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-activity-921092776-3142a3f76f1e7970",
+          "id": "company-site-activity-921092776-cd0e2ee0f6946429",
           "signal_type": "profile_metrics",
           "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
           "metrics": {
@@ -538,69 +538,7 @@
             "structured_organisation_records": 1,
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "company-site-job-407181bdbdb8253aeac79576",
-          "organisation_number": "921092776",
-          "platform": "company_site",
-          "signal_type": "job_posting",
-          "source_url": "https://ergoseat.no/tjenester/produksjon/",
-          "retrieved_at": "2026-10-05T11:23:46.338540Z",
-          "observed_at": "2026-03-03",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "job_link_parsed_from_verified_company_site",
-              "company_site_url": "https://ergoseat.no/",
-              "stage": "careers_page_crawl",
-              "same_registered_domain": true,
-              "same_registered_domain_subdomain": false
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Produksjon",
-          "metrics": {
-            "anchor_text": "Produksjon",
-            "interpretation": "Job posting link discovered on the verified company careers page; not a confirmed application."
-          },
-          "strategy": "jobs_feed_discovery"
-        },
-        {
-          "id": "registry-workforce-c1ca48229794ff32b04c0f62",
-          "organisation_number": "921092776",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T09:03:04.023694Z",
-          "content_sha256": "fa6a76b9cde168a6f71ec928f826b4426b22f731ba803f1e2b1f59125a8ee5d0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "921092776",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 15",
-          "metrics": {
-            "workforce_value": 15,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2025-06-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2025-06-12",
-          "effective_at": "2025-06-12"
+          }
         },
         {
           "id": "registry-contact-78605e251fbfa2003de6e25a",
@@ -608,8 +546,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -628,8 +566,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-7712c48a173b57e7e16b7ac5",
@@ -637,8 +574,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -657,8 +594,7 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-c102164362f404d25292e0f3",
@@ -666,8 +602,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -686,15 +622,14 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "921092776",
           "platform": "company_site",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -712,15 +647,14 @@
           "evidence_span": "Forside - Ergoseat — Om du mener at du som bruker kan oppnå bedre sittekomfort eller økt livskvalitet ved utbedring av din rullestol, kan du ha krav på en formstøpt sitteenhet.",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "921092776",
           "platform": "company_site",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -739,14 +673,13 @@
           "metrics": {
             "declared_url": null,
             "interpretation": "Brand name from the site's own JSON-LD."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "921092776",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=921092776&size=1000",
-          "retrieved_at": "2026-10-05T09:03:08.264492Z",
+          "retrieved_at": "2026-09-29T10:29:40.497534Z",
           "content_sha256": "1541ec7dc9c4deed62fb1b6a1a55ef4e52f4c9575a986bd45204f017987a06cb",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -768,8 +701,7 @@
             "subunit_organisation_number": "988944793",
             "municipality": "BERGEN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "sitemap-page-566c310ddc6273fd252fa4bc",
@@ -777,8 +709,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-14",
           "exact_entity": true,
           "identity_proof": [
@@ -805,8 +737,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-14",
           "exact_entity": true,
           "identity_proof": [
@@ -833,8 +765,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-14",
           "exact_entity": true,
           "identity_proof": [
@@ -861,8 +793,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -889,8 +821,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -917,8 +849,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -945,8 +877,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -973,8 +905,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -1001,8 +933,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -1029,8 +961,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://ergoseat.no/",
-          "retrieved_at": "2026-10-05T09:03:17.581015Z",
-          "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+          "retrieved_at": "2026-09-29T10:29:57.869595Z",
+          "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
           "observed_at": "2026-04-07",
           "exact_entity": true,
           "identity_proof": [
@@ -1057,7 +989,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e4fc21460d13997f4ccebaf0c26103146d644c367603765f4e6f5e881573a21d",
           "observed_at": "2026-07-07",
           "exact_entity": true,
@@ -1087,7 +1019,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5500b80816506dfb47af280af5de0263b7d4b3f0af7c19336d59943667318b63",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1117,7 +1049,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b373a66bfc615a4bb450c943f91df4ce9e0324c5102a209cb3f435d3aab97ddd",
           "observed_at": "2025-07-09",
           "exact_entity": true,
@@ -1147,7 +1079,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "50c749ecd1d50ae0bab2a13e6fd6b8ffb6fe97d34b05c2306cfd538d2a9d7821",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1177,7 +1109,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cb82d48c103afe110ef95cec21489f06094e5d146fa802196b05d156bf73294d",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1207,7 +1139,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "84e7cef487303cfffb3abf7ad8a716e13c418f925722498d821246ed08d8d1b5",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1237,7 +1169,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "43de513be3fe36f8bff4c2dcaaad30b0330fe797df5b0f6d95de85e7d0c971c0",
           "observed_at": "2024-06-01",
           "exact_entity": true,
@@ -1267,7 +1199,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dec49ae776aca4499fec8e63947ca7e83177e7ca4fd71a7df6cbd30b19a248f9",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -1297,7 +1229,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7909007db22cac9e683fddcd1bc15229c8d1b6ace1cf7d1d2d2694235ebd6dda",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1327,7 +1259,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "65a108c6b3e6faa53de0a86865c8a0e607c6c773ae81f1d6551adda4d243fe41",
           "observed_at": "2023-07-12",
           "exact_entity": true,
@@ -1357,7 +1289,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a3474a161d34fb84c725d7454fa2f646fec9e2715178d62816cc45bcc5bb0944",
           "observed_at": "2023-06-26",
           "exact_entity": true,
@@ -1387,7 +1319,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5060e0998253b0f448b4781c5475ef0afe75cdcbcd76aefa727610fc2bba5c3b",
           "observed_at": "2023-03-21",
           "exact_entity": true,
@@ -1417,7 +1349,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2470b6efaadaba7bab8d498d5117ac0b49417a218eab0e2baa41447e3644a874",
           "observed_at": "2023-03-15",
           "exact_entity": true,
@@ -1447,7 +1379,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "efcfcfc5962d929c2ff548ce1948867af40d8b039c7337d3b56fd8efbc212643",
           "observed_at": "2023-02-14",
           "exact_entity": true,
@@ -1477,7 +1409,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b6b7f794a15ec647fac2a6c3966be69f2cd1f8b1b71ea0dcee4709d6bd4139dd",
           "observed_at": "2022-11-14",
           "exact_entity": true,
@@ -1507,7 +1439,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "07137316984256d136c7abc9bda55f8deaf8eb4aad4e4da3cd8f4408442f1efc",
           "observed_at": "2022-06-21",
           "exact_entity": true,
@@ -1537,7 +1469,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "07ca924924404edddaaafb7fb13699aeec8632eb4cea1ac575e42990c4b58635",
           "observed_at": "2022-03-16",
           "exact_entity": true,
@@ -1567,7 +1499,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cccb91f9b52a742a8ab674450c9abf730d8d4ca57519bae937f1d1851707bd3e",
           "observed_at": "2021-10-12",
           "exact_entity": true,
@@ -1597,7 +1529,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0d782091e275c69a8b0ef9df13375ff4ac9ed5b0f1f07211220f4576047fdf81",
           "observed_at": "2021-08-12",
           "exact_entity": true,
@@ -1627,7 +1559,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6ebafcd0edfa9d0accc7928271ccfdf2e1fd7259ff9b15b4ed667c502c92f05a",
           "observed_at": "2021-07-08",
           "exact_entity": true,
@@ -1652,11 +1584,277 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-8e655f551fcded991b710fe5",
+          "organisation_number": "921092776",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "b2e2561f64242f479aac1d81060df8275351003bd6a9637b1b9c9ae7c2dcb47a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "921092776",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-07",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-07",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-07 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-ee2d3b97f1bfd1aec2234066",
+          "organisation_number": "921092776",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "a1a9a7f882d66a2b2e31708c09294cd3b3022ad316016545c7297e2f1ce4f3de",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "921092776",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-03-10",
+          "signal": {
+            "title": "Daglig leder",
+            "date": "2026-03-10",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb"
+          },
+          "evidence_span": "Daglig leder — 2026-03-10 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-c7c1f8f5b4264160e6f36e90",
+          "organisation_number": "921092776",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "d51f8c0a15778fdb8662bf98560a8e5cc303e388d21ce0e8bdb8734c967a6159",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "921092776",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-09",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-09",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-09 (BRREG official announcement)"
+        },
+        {
+          "organisation_number": "921092776",
+          "platform": "company_site",
+          "source_url": "https://ergoseat.no/hello-world/",
+          "retrieved_at": "2026-10-07T18:15:04.679685Z",
+          "content_sha256": "f7817452aa4964f2e842faec5d5f77074abb9b13e91bf7d31c7d543d09379e3a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-921092776-b8dc79886f5aedf7",
+          "signal_type": "public_post",
+          "evidence_span": "Hello world!",
+          "metrics": {
+            "published_at": "2024-09-17T09:07:08Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!",
+            "feed_url": "https://ergoseat.no/feed/"
+          }
+        },
+        {
+          "id": "registry-workforce-c1ca48229794ff32b04c0f62",
+          "organisation_number": "921092776",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
+          "retrieved_at": "2026-09-29T10:29:33.088374Z",
+          "content_sha256": "fa6a76b9cde168a6f71ec928f826b4426b22f731ba803f1e2b1f59125a8ee5d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "921092776",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 15",
+          "metrics": {
+            "workforce_value": 15,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2025-06-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2025-06-12",
+          "effective_at": "2025-06-12"
+        },
+        {
+          "id": "company-site-job-407181bdbdb8253aeac79576",
+          "organisation_number": "921092776",
+          "platform": "company_site",
+          "signal_type": "job_posting",
+          "source_url": "https://ergoseat.no/tjenester/produksjon/",
+          "retrieved_at": "2026-10-28T06:33:57.077239Z",
+          "observed_at": "2026-03-03",
+          "content_sha256": "fa80aa82676c4e6896ba452c5735c93514133c826a4fad6552e1a98ad8d9b1ba",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "job_link_parsed_from_verified_company_site",
+              "company_site_url": "https://ergoseat.no/",
+              "stage": "careers_page_crawl",
+              "same_registered_domain": true,
+              "same_registered_domain_subdomain": false
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Produksjon",
+          "metrics": {
+            "anchor_text": "Produksjon",
+            "interpretation": "Job posting link discovered on the verified company careers page; not a confirmed application."
+          },
+          "strategy": "jobs_feed_discovery"
+        },
+        {
+          "id": "feed-news-3bb8f6f9b842cd03951e6be7",
+          "organisation_number": "921092776",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://ergoseat.no/hello-world/",
+          "retrieved_at": "2026-10-28T07:39:00.513486Z",
+          "content_sha256": "f0be1f4aee32833c4edb1f7be0eb99f90b848cba0efea46b06c711850a3b8a40",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://ergoseat.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "921092776",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Hello world! — Tue, 17 Sep 2024 09:07:08 +0000",
+          "effective_at": "2024-09-17",
+          "observed_at": "2024-09-17",
+          "metrics": {
+            "title": "Hello world!",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-055d2e385b60e453e7d67deb",
+          "organisation_number": "921092776",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://ergoseat.no/hello-world/#comment-1",
+          "retrieved_at": "2026-10-28T07:39:00.513486Z",
+          "content_sha256": "c0be6caa3c361c95f59bb04de4c9f35de208b0cd484f01156600b7bf78292b7b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://ergoseat.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "921092776",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Kommentar til Hello world! av A WordPress Commenter — Tue, 17 Sep 2024 09:07:08 +0000",
+          "effective_at": "2024-09-17",
+          "observed_at": "2024-09-17",
+          "metrics": {
+            "title": "Kommentar til Hello world! av A WordPress Commenter",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "registry-update-d6bc3355facd4e9c97d21242",
+          "organisation_number": "921092776",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
+          "retrieved_at": "2026-10-28T04:19:27.620683Z",
+          "content_sha256": "d6bc3355facd4e9c97d21242f8e8224155a71101e62fabe49ee2efc4667b03e8",
+          "observed_at": "2026-10-13",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "921092776",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-13: Endring",
+          "metrics": {
+            "date": "2026-10-13",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
           "organisation_number": "921092776",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-          "retrieved_at": "2026-10-05T14:31:31.230906Z",
-          "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+          "retrieved_at": "2026-10-31T18:19:22.427481Z",
+          "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1669,7 +1867,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-metrics-921092776-7b740fe9215896fb",
+          "id": "gplaces-metrics-921092776-7b8b7b8b983928da",
           "signal_type": "profile_metrics",
           "strategy": "social_profile_metrics",
           "evidence_span": "Ergoseat AS Google profile: rating 4.5/5, 2 ratings.",
@@ -1684,8 +1882,8 @@
           "organisation_number": "921092776",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-          "retrieved_at": "2026-10-05T14:31:31.230906Z",
-          "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+          "retrieved_at": "2026-10-31T18:19:22.427481Z",
+          "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1698,7 +1896,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-921092776-7b740fe9215896fb",
+          "id": "gplaces-review-summary-921092776-7b8b7b8b983928da",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Ergoseat AS is rated 4.5/5 from 2 Google reviews.",
@@ -1713,8 +1911,8 @@
           "organisation_number": "921092776",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-          "retrieved_at": "2026-10-05T14:31:31.230906Z",
-          "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+          "retrieved_at": "2026-10-31T18:19:22.427481Z",
+          "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1727,7 +1925,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-921092776-7b740fe9215896fb",
+          "id": "gplaces-sentiment-921092776-7b8b7b8b983928da",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1737,6 +1935,147 @@
             "rating": 4.5,
             "review_count": 2,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "921092776",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/921092776",
+          "retrieved_at": "2026-11-05T21:11:25.231409Z",
+          "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "921092776"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "ERGOSEAT AS",
+              "matched_organisation_number": "921092776"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+          "id": "purehelp-email-921092776-bb93447ff42ca1e0",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@ergoseat.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "921092776",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/921092776",
+          "retrieved_at": "2026-11-05T21:11:25.231409Z",
+          "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "921092776"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "ERGOSEAT AS",
+              "matched_organisation_number": "921092776"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+          "id": "purehelp-phone-921092776-bb93447ff42ca1e0",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "55 10 16 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "921092776",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/921092776",
+          "retrieved_at": "2026-11-05T21:11:25.231409Z",
+          "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "921092776"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "ERGOSEAT AS",
+              "matched_organisation_number": "921092776"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+          "id": "purehelp-profile-921092776-bb93447ff42ca1e0",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "22.250",
+            "nace_description": "Processing and finishing of plastic products",
+            "town": "BLOMSTERDALEN",
+            "zipcode": "5258",
+            "municipality": "BERGEN",
+            "municipality_number": "4601",
+            "county": "Vestland",
+            "registration_date": "2018-07-06",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2018-07-06",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.ergoseat.no"
+          }
+        },
+        {
+          "organisation_number": "921092776",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/921092776",
+          "retrieved_at": "2026-11-05T21:11:25.231409Z",
+          "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "921092776"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "ERGOSEAT AS",
+              "matched_organisation_number": "921092776"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+          "id": "purehelp-workforce-921092776-bb93447ff42ca1e0",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 16,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1762,7 +2101,7 @@
     "company_name": "ERGOSEAT AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "ERGOSEAT AS is a private limited company operating in Bearbeiding og etterbehandling av plastprodukter. Latest accounts (2025): revenue NOK 26.1m, annual result NOK 3.0m. Annual accounts available for 2018-2025 (8 years). Detailed records only available as PDFs. Revenue shrinking (-11.6% YoY). Registered employees: 15. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "ERGOSEAT AS is a private limited company operating in Bearbeiding og etterbehandling av plastprodukter. Latest accounts (2025): revenue NOK 26.1m, annual result NOK 3.0m. Annual accounts available for 2018-2025 (8 years). Detailed records only available as PDFs. Revenue shrinking (-11.6% YoY). Registered employees: 15. Yes, 1 open posting(s) found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1778,7 +2117,15 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       },
       {
@@ -1795,7 +2142,15 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       },
       {
@@ -1812,7 +2167,15 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       },
       {
@@ -1829,7 +2192,15 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       },
       {
@@ -1846,7 +2217,15 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       },
       {
@@ -1859,11 +2238,13 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Yes, 1 open posting(s) found in checked sources.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "https://ergoseat.no/tjenester/produksjon/"
+        ]
       },
       {
         "question": "changes",
@@ -1879,17 +2260,19 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/921092776",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/921092776/aar",
           "https://ergoseat.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://ergoseat.no/hello-world/",
+          "https://ergoseat.no/hello-world/#comment-1",
+          "https://ergoseat.no/tjenester/produksjon/",
+          "https://purehelp.no/company/NO/921092776",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2394,8 +2777,8 @@
         "organisation_number": "921092776",
         "platform": "company_site",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2408,7 +2791,7 @@
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-activity-921092776-3142a3f76f1e7970",
+        "id": "company-site-activity-921092776-cd0e2ee0f6946429",
         "signal_type": "profile_metrics",
         "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
         "metrics": {
@@ -2417,69 +2800,7 @@
           "structured_organisation_records": 1,
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "company-site-job-407181bdbdb8253aeac79576",
-        "organisation_number": "921092776",
-        "platform": "company_site",
-        "signal_type": "job_posting",
-        "source_url": "https://ergoseat.no/tjenester/produksjon/",
-        "retrieved_at": "2026-10-05T11:23:46.338540Z",
-        "observed_at": "2026-03-03",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "job_link_parsed_from_verified_company_site",
-            "company_site_url": "https://ergoseat.no/",
-            "stage": "careers_page_crawl",
-            "same_registered_domain": true,
-            "same_registered_domain_subdomain": false
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Produksjon",
-        "metrics": {
-          "anchor_text": "Produksjon",
-          "interpretation": "Job posting link discovered on the verified company careers page; not a confirmed application."
-        },
-        "strategy": "jobs_feed_discovery"
-      },
-      {
-        "id": "registry-workforce-c1ca48229794ff32b04c0f62",
-        "organisation_number": "921092776",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T09:03:04.023694Z",
-        "content_sha256": "fa6a76b9cde168a6f71ec928f826b4426b22f731ba803f1e2b1f59125a8ee5d0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "921092776",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 15",
-        "metrics": {
-          "workforce_value": 15,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2025-06-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2025-06-12",
-        "effective_at": "2025-06-12"
+        }
       },
       {
         "id": "registry-contact-78605e251fbfa2003de6e25a",
@@ -2487,8 +2808,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2507,8 +2828,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-7712c48a173b57e7e16b7ac5",
@@ -2516,8 +2836,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2536,8 +2856,7 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-c102164362f404d25292e0f3",
@@ -2545,8 +2864,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2565,15 +2884,14 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "921092776",
         "platform": "company_site",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2591,15 +2909,14 @@
         "evidence_span": "Forside - Ergoseat — Om du mener at du som bruker kan oppnå bedre sittekomfort eller økt livskvalitet ved utbedring av din rullestol, kan du ha krav på en formstøpt sitteenhet.",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "921092776",
         "platform": "company_site",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2618,14 +2935,13 @@
         "metrics": {
           "declared_url": null,
           "interpretation": "Brand name from the site's own JSON-LD."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "921092776",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=921092776&size=1000",
-        "retrieved_at": "2026-10-05T09:03:08.264492Z",
+        "retrieved_at": "2026-09-29T10:29:40.497534Z",
         "content_sha256": "1541ec7dc9c4deed62fb1b6a1a55ef4e52f4c9575a986bd45204f017987a06cb",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2647,8 +2963,7 @@
           "subunit_organisation_number": "988944793",
           "municipality": "BERGEN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "sitemap-page-566c310ddc6273fd252fa4bc",
@@ -2656,8 +2971,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-14",
         "exact_entity": true,
         "identity_proof": [
@@ -2684,8 +2999,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-14",
         "exact_entity": true,
         "identity_proof": [
@@ -2712,8 +3027,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-14",
         "exact_entity": true,
         "identity_proof": [
@@ -2740,8 +3055,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2768,8 +3083,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2796,8 +3111,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2824,8 +3139,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2852,8 +3167,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2880,8 +3195,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2908,8 +3223,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://ergoseat.no/",
-        "retrieved_at": "2026-10-05T09:03:17.581015Z",
-        "content_sha256": "3142a3f76f1e79706c8ecf2d64a46f20bac60a94c699788ce970aaa9b8d604f2",
+        "retrieved_at": "2026-09-29T10:29:57.869595Z",
+        "content_sha256": "cd0e2ee0f694642915a859af1ce7ded768e09e5b70438b49648d5c8ec060108c",
         "observed_at": "2026-04-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2936,7 +3251,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e4fc21460d13997f4ccebaf0c26103146d644c367603765f4e6f5e881573a21d",
         "observed_at": "2026-07-07",
         "exact_entity": true,
@@ -2966,7 +3281,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5500b80816506dfb47af280af5de0263b7d4b3f0af7c19336d59943667318b63",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2996,7 +3311,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b373a66bfc615a4bb450c943f91df4ce9e0324c5102a209cb3f435d3aab97ddd",
         "observed_at": "2025-07-09",
         "exact_entity": true,
@@ -3026,7 +3341,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "50c749ecd1d50ae0bab2a13e6fd6b8ffb6fe97d34b05c2306cfd538d2a9d7821",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -3056,7 +3371,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cb82d48c103afe110ef95cec21489f06094e5d146fa802196b05d156bf73294d",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3086,7 +3401,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "84e7cef487303cfffb3abf7ad8a716e13c418f925722498d821246ed08d8d1b5",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -3116,7 +3431,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "43de513be3fe36f8bff4c2dcaaad30b0330fe797df5b0f6d95de85e7d0c971c0",
         "observed_at": "2024-06-01",
         "exact_entity": true,
@@ -3146,7 +3461,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dec49ae776aca4499fec8e63947ca7e83177e7ca4fd71a7df6cbd30b19a248f9",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -3176,7 +3491,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7909007db22cac9e683fddcd1bc15229c8d1b6ace1cf7d1d2d2694235ebd6dda",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -3206,7 +3521,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "65a108c6b3e6faa53de0a86865c8a0e607c6c773ae81f1d6551adda4d243fe41",
         "observed_at": "2023-07-12",
         "exact_entity": true,
@@ -3236,7 +3551,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a3474a161d34fb84c725d7454fa2f646fec9e2715178d62816cc45bcc5bb0944",
         "observed_at": "2023-06-26",
         "exact_entity": true,
@@ -3266,7 +3581,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5060e0998253b0f448b4781c5475ef0afe75cdcbcd76aefa727610fc2bba5c3b",
         "observed_at": "2023-03-21",
         "exact_entity": true,
@@ -3296,7 +3611,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2470b6efaadaba7bab8d498d5117ac0b49417a218eab0e2baa41447e3644a874",
         "observed_at": "2023-03-15",
         "exact_entity": true,
@@ -3326,7 +3641,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "efcfcfc5962d929c2ff548ce1948867af40d8b039c7337d3b56fd8efbc212643",
         "observed_at": "2023-02-14",
         "exact_entity": true,
@@ -3356,7 +3671,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b6b7f794a15ec647fac2a6c3966be69f2cd1f8b1b71ea0dcee4709d6bd4139dd",
         "observed_at": "2022-11-14",
         "exact_entity": true,
@@ -3386,7 +3701,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "07137316984256d136c7abc9bda55f8deaf8eb4aad4e4da3cd8f4408442f1efc",
         "observed_at": "2022-06-21",
         "exact_entity": true,
@@ -3416,7 +3731,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "07ca924924404edddaaafb7fb13699aeec8632eb4cea1ac575e42990c4b58635",
         "observed_at": "2022-03-16",
         "exact_entity": true,
@@ -3446,7 +3761,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cccb91f9b52a742a8ab674450c9abf730d8d4ca57519bae937f1d1851707bd3e",
         "observed_at": "2021-10-12",
         "exact_entity": true,
@@ -3476,7 +3791,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0d782091e275c69a8b0ef9df13375ff4ac9ed5b0f1f07211220f4576047fdf81",
         "observed_at": "2021-08-12",
         "exact_entity": true,
@@ -3506,7 +3821,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6ebafcd0edfa9d0accc7928271ccfdf2e1fd7259ff9b15b4ed667c502c92f05a",
         "observed_at": "2021-07-08",
         "exact_entity": true,
@@ -3531,11 +3846,277 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-8e655f551fcded991b710fe5",
+        "organisation_number": "921092776",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "b2e2561f64242f479aac1d81060df8275351003bd6a9637b1b9c9ae7c2dcb47a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "921092776",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-07",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-07",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000510631&amp;sokeverdi=921092776&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-07 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-ee2d3b97f1bfd1aec2234066",
+        "organisation_number": "921092776",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "a1a9a7f882d66a2b2e31708c09294cd3b3022ad316016545c7297e2f1ce4f3de",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "921092776",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-03-10",
+        "signal": {
+          "title": "Daglig leder",
+          "date": "2026-03-10",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000105183&amp;sokeverdi=921092776&amp;spraak=nb"
+        },
+        "evidence_span": "Daglig leder — 2026-03-10 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-c7c1f8f5b4264160e6f36e90",
+        "organisation_number": "921092776",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "d51f8c0a15778fdb8662bf98560a8e5cc303e388d21ce0e8bdb8734c967a6159",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "921092776",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-09",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-09",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000562771&amp;sokeverdi=921092776&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-09 (BRREG official announcement)"
+      },
+      {
+        "organisation_number": "921092776",
+        "platform": "company_site",
+        "source_url": "https://ergoseat.no/hello-world/",
+        "retrieved_at": "2026-10-07T18:15:04.679685Z",
+        "content_sha256": "f7817452aa4964f2e842faec5d5f77074abb9b13e91bf7d31c7d543d09379e3a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-921092776-b8dc79886f5aedf7",
+        "signal_type": "public_post",
+        "evidence_span": "Hello world!",
+        "metrics": {
+          "published_at": "2024-09-17T09:07:08Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!",
+          "feed_url": "https://ergoseat.no/feed/"
+        }
+      },
+      {
+        "id": "registry-workforce-c1ca48229794ff32b04c0f62",
+        "organisation_number": "921092776",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
+        "retrieved_at": "2026-09-29T10:29:33.088374Z",
+        "content_sha256": "fa6a76b9cde168a6f71ec928f826b4426b22f731ba803f1e2b1f59125a8ee5d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "921092776",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 15",
+        "metrics": {
+          "workforce_value": 15,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2025-06-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2025-06-12",
+        "effective_at": "2025-06-12"
+      },
+      {
+        "id": "company-site-job-407181bdbdb8253aeac79576",
+        "organisation_number": "921092776",
+        "platform": "company_site",
+        "signal_type": "job_posting",
+        "source_url": "https://ergoseat.no/tjenester/produksjon/",
+        "retrieved_at": "2026-10-28T06:33:57.077239Z",
+        "observed_at": "2026-03-03",
+        "content_sha256": "fa80aa82676c4e6896ba452c5735c93514133c826a4fad6552e1a98ad8d9b1ba",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "job_link_parsed_from_verified_company_site",
+            "company_site_url": "https://ergoseat.no/",
+            "stage": "careers_page_crawl",
+            "same_registered_domain": true,
+            "same_registered_domain_subdomain": false
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Produksjon",
+        "metrics": {
+          "anchor_text": "Produksjon",
+          "interpretation": "Job posting link discovered on the verified company careers page; not a confirmed application."
+        },
+        "strategy": "jobs_feed_discovery"
+      },
+      {
+        "id": "feed-news-3bb8f6f9b842cd03951e6be7",
+        "organisation_number": "921092776",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://ergoseat.no/hello-world/",
+        "retrieved_at": "2026-10-28T07:39:00.513486Z",
+        "content_sha256": "f0be1f4aee32833c4edb1f7be0eb99f90b848cba0efea46b06c711850a3b8a40",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://ergoseat.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "921092776",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Hello world! — Tue, 17 Sep 2024 09:07:08 +0000",
+        "effective_at": "2024-09-17",
+        "observed_at": "2024-09-17",
+        "metrics": {
+          "title": "Hello world!",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-055d2e385b60e453e7d67deb",
+        "organisation_number": "921092776",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://ergoseat.no/hello-world/#comment-1",
+        "retrieved_at": "2026-10-28T07:39:00.513486Z",
+        "content_sha256": "c0be6caa3c361c95f59bb04de4c9f35de208b0cd484f01156600b7bf78292b7b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://ergoseat.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "921092776",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Kommentar til Hello world! av A WordPress Commenter — Tue, 17 Sep 2024 09:07:08 +0000",
+        "effective_at": "2024-09-17",
+        "observed_at": "2024-09-17",
+        "metrics": {
+          "title": "Kommentar til Hello world! av A WordPress Commenter",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "registry-update-d6bc3355facd4e9c97d21242",
+        "organisation_number": "921092776",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/921092776",
+        "retrieved_at": "2026-10-28T04:19:27.620683Z",
+        "content_sha256": "d6bc3355facd4e9c97d21242f8e8224155a71101e62fabe49ee2efc4667b03e8",
+        "observed_at": "2026-10-13",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "921092776",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-13: Endring",
+        "metrics": {
+          "date": "2026-10-13",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
         "organisation_number": "921092776",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-        "retrieved_at": "2026-10-05T14:31:31.230906Z",
-        "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+        "retrieved_at": "2026-10-31T18:19:22.427481Z",
+        "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3548,7 +4129,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-metrics-921092776-7b740fe9215896fb",
+        "id": "gplaces-metrics-921092776-7b8b7b8b983928da",
         "signal_type": "profile_metrics",
         "strategy": "social_profile_metrics",
         "evidence_span": "Ergoseat AS Google profile: rating 4.5/5, 2 ratings.",
@@ -3563,8 +4144,8 @@
         "organisation_number": "921092776",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-        "retrieved_at": "2026-10-05T14:31:31.230906Z",
-        "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+        "retrieved_at": "2026-10-31T18:19:22.427481Z",
+        "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3577,7 +4158,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-921092776-7b740fe9215896fb",
+        "id": "gplaces-review-summary-921092776-7b8b7b8b983928da",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Ergoseat AS is rated 4.5/5 from 2 Google reviews.",
@@ -3592,8 +4173,8 @@
         "organisation_number": "921092776",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJQcbooh7xPEYR94YvzAWb3lM",
-        "retrieved_at": "2026-10-05T14:31:31.230906Z",
-        "content_sha256": "7b740fe9215896fbd0054ff2f7f17fba6fc7dbf700d12bdfef7780e8d2260d90",
+        "retrieved_at": "2026-10-31T18:19:22.427481Z",
+        "content_sha256": "7b8b7b8b983928dae8f0b78738021bdf5db946b1af0f5e71c65339e6ce457de0",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3606,7 +4187,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-921092776-7b740fe9215896fb",
+        "id": "gplaces-sentiment-921092776-7b8b7b8b983928da",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3617,8 +4198,149 @@
           "review_count": 2,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "921092776",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/921092776",
+        "retrieved_at": "2026-11-05T21:11:25.231409Z",
+        "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "921092776"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "ERGOSEAT AS",
+            "matched_organisation_number": "921092776"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+        "id": "purehelp-email-921092776-bb93447ff42ca1e0",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@ergoseat.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "921092776",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/921092776",
+        "retrieved_at": "2026-11-05T21:11:25.231409Z",
+        "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "921092776"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "ERGOSEAT AS",
+            "matched_organisation_number": "921092776"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+        "id": "purehelp-phone-921092776-bb93447ff42ca1e0",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "55 10 16 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "921092776",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/921092776",
+        "retrieved_at": "2026-11-05T21:11:25.231409Z",
+        "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "921092776"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "ERGOSEAT AS",
+            "matched_organisation_number": "921092776"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+        "id": "purehelp-profile-921092776-bb93447ff42ca1e0",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "22.250",
+          "nace_description": "Processing and finishing of plastic products",
+          "town": "BLOMSTERDALEN",
+          "zipcode": "5258",
+          "municipality": "BERGEN",
+          "municipality_number": "4601",
+          "county": "Vestland",
+          "registration_date": "2018-07-06",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2018-07-06",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.ergoseat.no"
+        }
+      },
+      {
+        "organisation_number": "921092776",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/921092776",
+        "retrieved_at": "2026-11-05T21:11:25.231409Z",
+        "content_sha256": "c5c3bf0d72496afd6c573479df17167ac964ac9dc7819a55e946ea2d46ac4f08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "921092776"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "ERGOSEAT AS",
+            "matched_organisation_number": "921092776"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-921092776.orgNumber=921092776;name=ERGOSEAT AS",
+        "id": "purehelp-workforce-921092776-bb93447ff42ca1e0",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 16,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:46.812321+00:00"
+  "generated_at": "2026-11-06T05:27:39.758827+00:00"
 }

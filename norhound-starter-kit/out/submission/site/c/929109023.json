@@ -496,75 +496,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-929109023-f7de2510525effa3",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 1,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "js_fallback_candidate",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-6966469b70063f5144eccf2a",
-          "organisation_number": "929109023",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T09:08:06.697747Z",
-          "content_sha256": "bfc24feb003a2997eb838851ba7722cb97474e87ca3375b81ece8495c32d5b61",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "929109023",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 9",
-          "metrics": {
-            "workforce_value": 9,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-0a5fec061affcbd5e0aead6f",
           "organisation_number": "929109023",
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -583,14 +521,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "929109023",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
-          "retrieved_at": "2026-10-05T09:08:10.829791Z",
+          "retrieved_at": "2026-09-29T10:34:41.576304Z",
           "content_sha256": "2abea756b7f6e23d2727463815c28a503b7419a301fe2a2b698574a971b910e5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -612,288 +549,7 @@
             "subunit_organisation_number": "929129369",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "sitemap-page-27dc3d92e6f879187934b693",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f last modified 2026-05-09",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f",
-            "lastmod": "2026-05-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-d63e9bf1f2415048a4afd792",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-759777623da548d042e52c21",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-ab21374cc2b06ea25a5e4bb0",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-e428ebdd69a63032b5f98e3b",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-49c24474632395952a2ab545",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-cad73caf3b1dc904b95b0f33",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-e47175714eb7e952d1e3ab56",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-46bbf4bee17d4942adea2ffc",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-12d875a7a2f1402369064c0e",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-10-05T09:08:11.788284Z",
-          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-          "observed_at": "2026-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4 last modified 2026-05-08",
-          "metrics": {
-            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4",
-            "lastmod": "2026-05-08",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
+          }
         },
         {
           "id": "registry-update-b3ec47b10eb8600485cbf0b5",
@@ -901,7 +557,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b3ec47b10eb8600485cbf0b5b5980e6aa9b7d1e1b90bfae9cbaff3c4f665b487",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -931,7 +587,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2954a18f7e14ef55a121020acac655f2aad63ff003118e82d2d98325c5e2ebf6",
           "observed_at": "2026-07-29",
           "exact_entity": true,
@@ -961,7 +617,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "383de79ef1329ac0716e89e24c04d3354595d551f1b8ae6f8d980e7991c6dbad",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -991,7 +647,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7a2f19375eb7a63f57301e1c9f1f03b8ee1b118b7063e5ee7a9d3ab328b5deb8",
           "observed_at": "2026-05-11",
           "exact_entity": true,
@@ -1021,7 +677,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "283324e04ee057052b9620c1da0a2962170eaebc6b07674a763d9576f9951735",
           "observed_at": "2026-04-13",
           "exact_entity": true,
@@ -1051,7 +707,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b7c9a4178ac7190f8be3ef44f5ce5fdde880132c679ae084757058e2906d42c2",
           "observed_at": "2026-03-11",
           "exact_entity": true,
@@ -1081,7 +737,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d5d5da9a86e17517834dbace5ef8f432cdc5509a6d36387200e1b3ff5b54ad42",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1111,7 +767,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4cbf8bf3ac9ec00e4e75b4066b3068adb4cdfbfd1a7123e53725322d2ca629a2",
           "observed_at": "2026-01-15",
           "exact_entity": true,
@@ -1141,7 +797,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b5aae116eb7cf5859cb85d8249cba38d28ef898976402108b5c3bf9cad0d9201",
           "observed_at": "2025-12-11",
           "exact_entity": true,
@@ -1171,7 +827,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dd94acbb43f23c666aafc8199b58d022a5b9e5721d4b4eb0e489de15a75d28d8",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1201,7 +857,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "db8502f893731b8077d270d528b3d3fb43c5837c76582b991c110846dec6c140",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1231,7 +887,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "989f24c3e9296c192473217ae26b6d1fd692fea158c9bffae62251f9fbd06b50",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1261,7 +917,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "069719dc7b57b43843ae5c8f625d4abd6a0cb047b850fecf084349e013bb6c39",
           "observed_at": "2025-08-11",
           "exact_entity": true,
@@ -1291,38 +947,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "aaaaf14a31283cb2adb2c713e3738c7dc83f4ea5f3fdbe4eed08fc9e8c4b7f93",
-          "observed_at": "2025-05-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "929109023",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-05-08: Endring",
-          "metrics": {
-            "date": "2025-05-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-63051bcda64f3b178619225f",
-          "organisation_number": "929109023",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "63051bcda64f3b178619225f0280f31401b0dfd2f8241ec0a53c8a74b7271f94",
           "observed_at": "2025-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1351,7 +977,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ec12e427257449983246e2686c2f10c48999fec337aa674341eef1022ef6b08e",
           "observed_at": "2025-04-12",
           "exact_entity": true,
@@ -1381,7 +1007,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cb233b5f1977cd98304c57e329445a4bf3e40131f55978a05b77d30febe8b885",
           "observed_at": "2025-03-12",
           "exact_entity": true,
@@ -1411,7 +1037,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7df1abeb8feedeaf7b676a7675325d9754999875a633a3132938bec9b7850b04",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1441,7 +1067,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6ce9be0ad34286f1bee487c23b8a17aa31875dfa6036e5b0ccb288f171c93b70",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1471,7 +1097,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "01b1453b87f5eb66571739c484aae5746543741ee9926d37f9e67a2f3d55ebd8",
           "observed_at": "2024-11-17",
           "exact_entity": true,
@@ -1496,39 +1122,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-607c3794f2a4a9a542b46261",
           "organisation_number": "929109023",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
-          "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "2c525901ee3c53cc0d0d665533bf597e8a7c003cdc165021977fdb30addcadfd",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "ombygg.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "929109023",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-929109023-69d3bd2927950eb2",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Ombygg AS Google profile: rating 5/5, 6 ratings.",
-          "metrics": {
-            "rating": 5,
-            "review_count": 6,
-            "scale": 5,
-            "place_id": "ChIJYcrqeBlvQUYR2Nq2mbsP_pI"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-07-29",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-29",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-069b94b57c2f3e3cf3f4401a",
+          "organisation_number": "929109023",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "6d7018adaa6f798a46efea26bd9dd46ba07c84c1d5f040bbd7b0cad963747145",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "929109023",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-01-15",
+          "signal": {
+            "title": "Vedtektsfestet formål",
+            "date": "2026-01-15",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb"
+          },
+          "evidence_span": "Vedtektsfestet formål — 2026-01-15 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-f63c8484c0b01d302c3fb166",
+          "organisation_number": "929109023",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "141eda852d5b1ef2af2d3f018e7ae8275ee82f93ad6712e3885cd17925f0e0dd",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "929109023",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-09-13",
+          "signal": {
+            "title": "Signatur",
+            "date": "2025-09-13",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb"
+          },
+          "evidence_span": "Signatur — 2025-09-13 (BRREG official announcement)"
         },
         {
           "organisation_number": "929109023",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
+          "retrieved_at": "2026-10-06T15:53:43.029078Z",
           "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
           "exact_entity": true,
           "identity_proof": [
@@ -1560,7 +1244,7 @@
           "organisation_number": "929109023",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
+          "retrieved_at": "2026-10-06T15:53:43.029078Z",
           "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
           "exact_entity": true,
           "identity_proof": [
@@ -1592,7 +1276,7 @@
           "organisation_number": "929109023",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
+          "retrieved_at": "2026-10-06T15:53:43.029078Z",
           "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
           "exact_entity": true,
           "identity_proof": [
@@ -1621,11 +1305,353 @@
           }
         },
         {
+          "id": "registry-workforce-6966469b70063f5144eccf2a",
+          "organisation_number": "929109023",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
+          "retrieved_at": "2026-09-29T10:34:36.435669Z",
+          "content_sha256": "bfc24feb003a2997eb838851ba7722cb97474e87ca3375b81ece8495c32d5b61",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "929109023",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 9",
+          "metrics": {
+            "workforce_value": 9,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-13",
+          "effective_at": "2026-06-13"
+        },
+        {
+          "id": "sitemap-page-27dc3d92e6f879187934b693",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-09",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f last modified 2026-05-09",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f",
+            "lastmod": "2026-05-09",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-d63e9bf1f2415048a4afd792",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-759777623da548d042e52c21",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ab21374cc2b06ea25a5e4bb0",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e428ebdd69a63032b5f98e3b",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-49c24474632395952a2ab545",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-cad73caf3b1dc904b95b0f33",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e47175714eb7e952d1e3ab56",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-46bbf4bee17d4942adea2ffc",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-12d875a7a2f1402369064c0e",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-10-09T14:01:17.125036Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.9
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-929109023-f7de2510525effa3",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 1,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-10-09"
+        },
+        {
           "organisation_number": "929109023",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
-          "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+          "retrieved_at": "2026-10-31T18:19:57.802247Z",
+          "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1638,7 +1664,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-929109023-69d3bd2927950eb2",
+          "id": "gplaces-metrics-929109023-b7f46ddaff794464",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Ombygg AS Google profile: rating 5/5, 6 ratings.",
+          "metrics": {
+            "rating": 5,
+            "review_count": 6,
+            "scale": 5,
+            "place_id": "ChIJYcrqeBlvQUYR2Nq2mbsP_pI"
+          }
+        },
+        {
+          "organisation_number": "929109023",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
+          "retrieved_at": "2026-10-31T18:19:57.802247Z",
+          "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "ombygg.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-929109023-b7f46ddaff794464",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Ombygg AS is rated 5/5 from 6 Google reviews.",
@@ -1653,8 +1708,8 @@
           "organisation_number": "929109023",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-          "retrieved_at": "2026-10-05T14:31:32.410122Z",
-          "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+          "retrieved_at": "2026-10-31T18:19:57.802247Z",
+          "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1667,7 +1722,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-929109023-69d3bd2927950eb2",
+          "id": "gplaces-sentiment-929109023-b7f46ddaff794464",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1677,6 +1732,116 @@
             "rating": 5,
             "review_count": 6,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "929109023",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/929109023",
+          "retrieved_at": "2026-11-05T21:11:46.393721Z",
+          "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "929109023"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "OMBYGG AS",
+              "matched_organisation_number": "929109023"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+          "id": "purehelp-phone-929109023-86fd09ca47483498",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "22 12 02 84",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "929109023",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/929109023",
+          "retrieved_at": "2026-11-05T21:11:46.393721Z",
+          "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "929109023"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "OMBYGG AS",
+              "matched_organisation_number": "929109023"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+          "id": "purehelp-profile-929109023-86fd09ca47483498",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "47.790",
+            "nace_description": "Retail sale of second-hand goods",
+            "town": "OSLO",
+            "zipcode": "0580",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "2022-04-27",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2022-04-27",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.ombygg.no"
+          }
+        },
+        {
+          "organisation_number": "929109023",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/929109023",
+          "retrieved_at": "2026-11-05T21:11:46.393721Z",
+          "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "929109023"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "OMBYGG AS",
+              "matched_organisation_number": "929109023"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+          "id": "purehelp-workforce-929109023-86fd09ca47483498",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 9,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1700,7 +1865,7 @@
     "company_name": "OMBYGG AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "OMBYGG AS is a private limited company operating in Detaljhandel med brukte varer. Latest accounts (2025): revenue NOK 4.2m, annual result NOK -45.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue shrinking (-45.2% YoY). Registered employees: 9. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "OMBYGG AS is a private limited company operating in Detaljhandel med brukte varer. Latest accounts (2025): revenue NOK 4.2m, annual result NOK -45.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue shrinking (-45.2% YoY). Registered employees: 9. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1715,7 +1880,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       },
@@ -1732,7 +1902,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       },
@@ -1749,7 +1924,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       },
@@ -1766,7 +1946,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       },
@@ -1783,7 +1968,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       },
@@ -1797,11 +1987,25 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/929109023/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
+          "https://www.ombygg.no/"
+        ]
       },
       {
         "question": "changes",
@@ -1816,18 +2020,17 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929109023",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929109023/aar",
+          "https://purehelp.no/company/NO/929109023",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
           "https://www.ombygg.no/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2313,75 +2516,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-929109023-f7de2510525effa3",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 1,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "js_fallback_candidate",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-6966469b70063f5144eccf2a",
-        "organisation_number": "929109023",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T09:08:06.697747Z",
-        "content_sha256": "bfc24feb003a2997eb838851ba7722cb97474e87ca3375b81ece8495c32d5b61",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "929109023",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 9",
-        "metrics": {
-          "workforce_value": 9,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-0a5fec061affcbd5e0aead6f",
         "organisation_number": "929109023",
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2400,14 +2541,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "929109023",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
-        "retrieved_at": "2026-10-05T09:08:10.829791Z",
+        "retrieved_at": "2026-09-29T10:34:41.576304Z",
         "content_sha256": "2abea756b7f6e23d2727463815c28a503b7419a301fe2a2b698574a971b910e5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2429,288 +2569,7 @@
           "subunit_organisation_number": "929129369",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "sitemap-page-27dc3d92e6f879187934b693",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f last modified 2026-05-09",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f",
-          "lastmod": "2026-05-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-d63e9bf1f2415048a4afd792",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-759777623da548d042e52c21",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-ab21374cc2b06ea25a5e4bb0",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-e428ebdd69a63032b5f98e3b",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-49c24474632395952a2ab545",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-cad73caf3b1dc904b95b0f33",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-e47175714eb7e952d1e3ab56",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-46bbf4bee17d4942adea2ffc",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-12d875a7a2f1402369064c0e",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-10-05T09:08:11.788284Z",
-        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
-        "observed_at": "2026-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4 last modified 2026-05-08",
-        "metrics": {
-          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4",
-          "lastmod": "2026-05-08",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
+        }
       },
       {
         "id": "registry-update-b3ec47b10eb8600485cbf0b5",
@@ -2718,7 +2577,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b3ec47b10eb8600485cbf0b5b5980e6aa9b7d1e1b90bfae9cbaff3c4f665b487",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2748,7 +2607,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2954a18f7e14ef55a121020acac655f2aad63ff003118e82d2d98325c5e2ebf6",
         "observed_at": "2026-07-29",
         "exact_entity": true,
@@ -2778,7 +2637,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "383de79ef1329ac0716e89e24c04d3354595d551f1b8ae6f8d980e7991c6dbad",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2808,7 +2667,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7a2f19375eb7a63f57301e1c9f1f03b8ee1b118b7063e5ee7a9d3ab328b5deb8",
         "observed_at": "2026-05-11",
         "exact_entity": true,
@@ -2838,7 +2697,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "283324e04ee057052b9620c1da0a2962170eaebc6b07674a763d9576f9951735",
         "observed_at": "2026-04-13",
         "exact_entity": true,
@@ -2868,7 +2727,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b7c9a4178ac7190f8be3ef44f5ce5fdde880132c679ae084757058e2906d42c2",
         "observed_at": "2026-03-11",
         "exact_entity": true,
@@ -2898,7 +2757,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d5d5da9a86e17517834dbace5ef8f432cdc5509a6d36387200e1b3ff5b54ad42",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -2928,7 +2787,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4cbf8bf3ac9ec00e4e75b4066b3068adb4cdfbfd1a7123e53725322d2ca629a2",
         "observed_at": "2026-01-15",
         "exact_entity": true,
@@ -2958,7 +2817,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b5aae116eb7cf5859cb85d8249cba38d28ef898976402108b5c3bf9cad0d9201",
         "observed_at": "2025-12-11",
         "exact_entity": true,
@@ -2988,7 +2847,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dd94acbb43f23c666aafc8199b58d022a5b9e5721d4b4eb0e489de15a75d28d8",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3018,7 +2877,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "db8502f893731b8077d270d528b3d3fb43c5837c76582b991c110846dec6c140",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3048,7 +2907,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "989f24c3e9296c192473217ae26b6d1fd692fea158c9bffae62251f9fbd06b50",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3078,7 +2937,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "069719dc7b57b43843ae5c8f625d4abd6a0cb047b850fecf084349e013bb6c39",
         "observed_at": "2025-08-11",
         "exact_entity": true,
@@ -3108,38 +2967,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "aaaaf14a31283cb2adb2c713e3738c7dc83f4ea5f3fdbe4eed08fc9e8c4b7f93",
-        "observed_at": "2025-05-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "929109023",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-05-08: Endring",
-        "metrics": {
-          "date": "2025-05-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-63051bcda64f3b178619225f",
-        "organisation_number": "929109023",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "63051bcda64f3b178619225f0280f31401b0dfd2f8241ec0a53c8a74b7271f94",
         "observed_at": "2025-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3168,7 +2997,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ec12e427257449983246e2686c2f10c48999fec337aa674341eef1022ef6b08e",
         "observed_at": "2025-04-12",
         "exact_entity": true,
@@ -3198,7 +3027,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cb233b5f1977cd98304c57e329445a4bf3e40131f55978a05b77d30febe8b885",
         "observed_at": "2025-03-12",
         "exact_entity": true,
@@ -3228,7 +3057,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7df1abeb8feedeaf7b676a7675325d9754999875a633a3132938bec9b7850b04",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3258,7 +3087,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6ce9be0ad34286f1bee487c23b8a17aa31875dfa6036e5b0ccb288f171c93b70",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -3288,7 +3117,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "01b1453b87f5eb66571739c484aae5746543741ee9926d37f9e67a2f3d55ebd8",
         "observed_at": "2024-11-17",
         "exact_entity": true,
@@ -3313,39 +3142,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-607c3794f2a4a9a542b46261",
         "organisation_number": "929109023",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
-        "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "2c525901ee3c53cc0d0d665533bf597e8a7c003cdc165021977fdb30addcadfd",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "ombygg.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "929109023",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-929109023-69d3bd2927950eb2",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Ombygg AS Google profile: rating 5/5, 6 ratings.",
-        "metrics": {
-          "rating": 5,
-          "review_count": 6,
-          "scale": 5,
-          "place_id": "ChIJYcrqeBlvQUYR2Nq2mbsP_pI"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-07-29",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-29",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-069b94b57c2f3e3cf3f4401a",
+        "organisation_number": "929109023",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "6d7018adaa6f798a46efea26bd9dd46ba07c84c1d5f040bbd7b0cad963747145",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "929109023",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-01-15",
+        "signal": {
+          "title": "Vedtektsfestet formål",
+          "date": "2026-01-15",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb"
+        },
+        "evidence_span": "Vedtektsfestet formål — 2026-01-15 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-f63c8484c0b01d302c3fb166",
+        "organisation_number": "929109023",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "141eda852d5b1ef2af2d3f018e7ae8275ee82f93ad6712e3885cd17925f0e0dd",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "929109023",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-09-13",
+        "signal": {
+          "title": "Signatur",
+          "date": "2025-09-13",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb"
+        },
+        "evidence_span": "Signatur — 2025-09-13 (BRREG official announcement)"
       },
       {
         "organisation_number": "929109023",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
+        "retrieved_at": "2026-10-06T15:53:43.029078Z",
         "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
         "exact_entity": true,
         "identity_proof": [
@@ -3377,7 +3264,7 @@
         "organisation_number": "929109023",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
+        "retrieved_at": "2026-10-06T15:53:43.029078Z",
         "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
         "exact_entity": true,
         "identity_proof": [
@@ -3409,7 +3296,7 @@
         "organisation_number": "929109023",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
+        "retrieved_at": "2026-10-06T15:53:43.029078Z",
         "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
         "exact_entity": true,
         "identity_proof": [
@@ -3438,11 +3325,353 @@
         }
       },
       {
+        "id": "registry-workforce-6966469b70063f5144eccf2a",
+        "organisation_number": "929109023",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
+        "retrieved_at": "2026-09-29T10:34:36.435669Z",
+        "content_sha256": "bfc24feb003a2997eb838851ba7722cb97474e87ca3375b81ece8495c32d5b61",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "929109023",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 9",
+        "metrics": {
+          "workforce_value": 9,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-13",
+        "effective_at": "2026-06-13"
+      },
+      {
+        "id": "sitemap-page-27dc3d92e6f879187934b693",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-09",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f last modified 2026-05-09",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/innerdrer/glassdr-innerdr-ny-10x21/bf6bd76e245f",
+          "lastmod": "2026-05-09",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-d63e9bf1f2415048a4afd792",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/stalprofiler/ventilert-hatteprofil-stal-vfl-100-25-zm-1-0/3ea991014ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-759777623da548d042e52c21",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/stalprofiler/uef-skinne-bybar-euroflex-100-0-6-2800mm/3eabd8a94ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ab21374cc2b06ea25a5e4bb0",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/montasjefot-med-gummimatte-yeti335/3eace1224ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e428ebdd69a63032b5f98e3b",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/gipsplater/norgips-gu-x-gipsplate-9-5-mm-1200x3000/3ead7d534ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-49c24474632395952a2ab545",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/fasadeplater/fasadeplater-fibersement-1200x2700mm/3eafbd494ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-cad73caf3b1dc904b95b0f33",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-400x400/3eb062794ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e47175714eb7e952d1e3ab56",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspeksjonsluke-i-stal-norgrips-hvit-300x300/3eb298174ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-46bbf4bee17d4942adea2ffc",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/fastvindu/fastvindu-lian-hvit-1020x1518/3eb3a30f4ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-12d875a7a2f1402369064c0e",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/annet-byggevarer/inspesjonsluke-i-stal-flexit-hvit-600x600/3eb5a4aa4ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-10-09T14:01:17.125036Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.9
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-929109023-f7de2510525effa3",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 1,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-10-09"
+      },
+      {
         "organisation_number": "929109023",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
-        "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+        "retrieved_at": "2026-10-31T18:19:57.802247Z",
+        "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3455,7 +3684,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-929109023-69d3bd2927950eb2",
+        "id": "gplaces-metrics-929109023-b7f46ddaff794464",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Ombygg AS Google profile: rating 5/5, 6 ratings.",
+        "metrics": {
+          "rating": 5,
+          "review_count": 6,
+          "scale": 5,
+          "place_id": "ChIJYcrqeBlvQUYR2Nq2mbsP_pI"
+        }
+      },
+      {
+        "organisation_number": "929109023",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
+        "retrieved_at": "2026-10-31T18:19:57.802247Z",
+        "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "ombygg.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-929109023-b7f46ddaff794464",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Ombygg AS is rated 5/5 from 6 Google reviews.",
@@ -3470,8 +3728,8 @@
         "organisation_number": "929109023",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJYcrqeBlvQUYR2Nq2mbsP_pI",
-        "retrieved_at": "2026-10-05T14:31:32.410122Z",
-        "content_sha256": "69d3bd2927950eb250ccb2cb6c1c4ae7d021f6ce8a74f8cda2dffaf67e8b763c",
+        "retrieved_at": "2026-10-31T18:19:57.802247Z",
+        "content_sha256": "b7f46ddaff794464d94a0d93c9bf7d39542a1b7eba7dc6d91dfdd310e42a2258",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3484,7 +3742,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-929109023-69d3bd2927950eb2",
+        "id": "gplaces-sentiment-929109023-b7f46ddaff794464",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3495,8 +3753,118 @@
           "review_count": 6,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "929109023",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/929109023",
+        "retrieved_at": "2026-11-05T21:11:46.393721Z",
+        "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "929109023"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "OMBYGG AS",
+            "matched_organisation_number": "929109023"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+        "id": "purehelp-phone-929109023-86fd09ca47483498",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "22 12 02 84",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "929109023",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/929109023",
+        "retrieved_at": "2026-11-05T21:11:46.393721Z",
+        "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "929109023"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "OMBYGG AS",
+            "matched_organisation_number": "929109023"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+        "id": "purehelp-profile-929109023-86fd09ca47483498",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "47.790",
+          "nace_description": "Retail sale of second-hand goods",
+          "town": "OSLO",
+          "zipcode": "0580",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "2022-04-27",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2022-04-27",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.ombygg.no"
+        }
+      },
+      {
+        "organisation_number": "929109023",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/929109023",
+        "retrieved_at": "2026-11-05T21:11:46.393721Z",
+        "content_sha256": "d67be5a43c9f33f3b303fd1ee0fa61a50dea569451fe555a5f1c9cdbb6ee6b8a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "929109023"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "OMBYGG AS",
+            "matched_organisation_number": "929109023"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-929109023.orgNumber=929109023;name=OMBYGG AS",
+        "id": "purehelp-workforce-929109023-86fd09ca47483498",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 9,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:47.541035+00:00"
+  "generated_at": "2026-11-06T05:27:41.299251+00:00"
 }

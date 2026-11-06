@@ -571,45 +571,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-889b76658e90793c32ba571c",
-          "organisation_number": "986752900",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T08:48:38.576813Z",
-          "content_sha256": "91eee558e711ae13ef0d77f58e94daff16fc6e7a1c1d4915ef330d8a54617bc0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "986752900",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 13",
-          "metrics": {
-            "workforce_value": 13,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-05-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-05-12",
-          "effective_at": "2026-05-12"
-        },
-        {
           "id": "registry-contact-b458a472457640fc2d1b6252",
           "organisation_number": "986752900",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -628,8 +596,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-a886d280b62cb076822f8966",
@@ -637,8 +604,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -657,14 +624,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "986752900",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
-          "retrieved_at": "2026-10-05T08:48:43.993557Z",
+          "retrieved_at": "2026-09-29T10:15:40.236960Z",
           "content_sha256": "66bc0903ef06ae3182397cd1af7b794603aa3e5ed02c229c931b4b1a7f954a79",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -686,8 +652,7 @@
             "subunit_organisation_number": "986889051",
             "municipality": "TROMSØ",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-09a7aa642070e131d0d26c59",
@@ -695,7 +660,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "09a7aa642070e131d0d26c59994a55aff2b33ac6897060c0f1753ad8255dd279",
           "observed_at": "2026-07-29",
           "exact_entity": true,
@@ -725,7 +690,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "907ae15684d85bc85728b98083c84961ad56b13be695ddbb0a7d04fb3592bdda",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -755,7 +720,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9878201df320d75768786f607e4dea2307c67f44bb7a052cdc1a34bd5b391689",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -785,7 +750,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bd13fc99bbf53a6e90e8d126e7e27c52c5fcf1fc42c3e6f1682ca5285d85df7a",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -815,7 +780,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "347c7091a7dac71fc9c5a4c8315f93edec29b1e1cd1cf7b0a9791cb4b71a9f5f",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -845,7 +810,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e67383717b71955c6298dd362f080e7732e69f20308625e1bb4ca2c7f3d9db06",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -875,7 +840,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f1b67beae55ee2556d64b4ef8c0a592fb32ec98d750cff6dafbeabc6006a0752",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -905,7 +870,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "41549800aaf26d8e0872f12c2547f409fcfea1a3b5d9d5affbb24cff390cf591",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -935,7 +900,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "408fa5204a2c966ac75374400cc44a6a883ca4107b3f144ad215adeeb2674a80",
           "observed_at": "2025-05-14",
           "exact_entity": true,
@@ -965,7 +930,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9f70931ababae71477a1e788558dc4c2e9fcc7efba923d21ebb7f4b93fb988f2",
           "observed_at": "2024-11-17",
           "exact_entity": true,
@@ -995,7 +960,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bbab964c8b7aa7cf7bcf6a4102350826ef48e0a60a1a15d0406f060b8389a21f",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1025,7 +990,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0c810c54b6b539ed262a40133f39ee69d95dc455f95f62372a2f76f17169e332",
           "observed_at": "2024-07-03",
           "exact_entity": true,
@@ -1055,7 +1020,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a0c58071f6c7c18930864f11d8e40d77a8225fda5ec30076e76d56003fee0f1f",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1085,7 +1050,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dcd528da587da12d787e3d0de0170c92b5c11bf3893bb3ef97b37888d0f1b882",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1115,7 +1080,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "90067daa26a3031337db4885f7d000e73c435a147fcc5d4549a7bf74f7329467",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1145,7 +1110,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c98c830cd21cd6cd2cc3e6c5b2da5545d86afa6badaf7f26c9295ac8d897421d",
           "observed_at": "2023-12-12",
           "exact_entity": true,
@@ -1175,7 +1140,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0c99142495533392dec82f26278ab9617a78f0ae10df40fd73fe107ad9c28671",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -1205,7 +1170,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "17ebfe22578a6f52085af63e9254f23623108ad95233d59fc57416e843b05631",
           "observed_at": "2023-07-12",
           "exact_entity": true,
@@ -1235,7 +1200,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cac116f5375ada0fa1f50a4865ff7f39276dd108e532a2144257d5856dd2ae8c",
           "observed_at": "2023-07-05",
           "exact_entity": true,
@@ -1265,7 +1230,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c4ebd466281883906a82ef89878d7006a093ea59c48926dd409f8efb564f675b",
           "observed_at": "2023-05-11",
           "exact_entity": true,
@@ -1288,6 +1253,543 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-a699fca2392035aa2f51481a",
+          "organisation_number": "986752900",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "44e8caba14d4fb4f9b8892038722740d8e843af66e05ba7cd51ca7ae5b20661b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "986752900",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-08-13",
+          "signal": {
+            "title": "Revisor",
+            "date": "2026-08-13",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb"
+          },
+          "evidence_span": "Revisor — 2026-08-13 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-42a2e8e19897da75ccc38d93",
+          "organisation_number": "986752900",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "9af9941bae3a5f4e3311c6db3f73bf21868803b922f69202986bf392b22140f9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "986752900",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-29",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-29",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-04e575cdf4ee7ecd3b16ee47",
+          "organisation_number": "986752900",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "5b14207e9c229ce52bf71e7297dd103808cf562208d3f6906e979130b44f296b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "986752900",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-09-11",
+          "signal": {
+            "title": "Revisor",
+            "date": "2025-09-11",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb"
+          },
+          "evidence_span": "Revisor — 2025-09-11 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-889b76658e90793c32ba571c",
+          "organisation_number": "986752900",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
+          "retrieved_at": "2026-09-29T10:15:31.276619Z",
+          "content_sha256": "91eee558e711ae13ef0d77f58e94daff16fc6e7a1c1d4915ef330d8a54617bc0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "986752900",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 13",
+          "metrics": {
+            "workforce_value": 13,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-05-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-05-12",
+          "effective_at": "2026-05-12"
+        },
+        {
+          "id": "brreg-kunngjoring-85657a06147ca1c0aa775d2a",
+          "organisation_number": "986752900",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "519521d3e63e581842a2331d25a1a11868698c475d2f71a57759e7f79aaba363",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "986752900",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-10-05",
+          "signal": {
+            "title": "Revisor",
+            "date": "2026-10-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb"
+          },
+          "evidence_span": "Revisor — 2026-10-05 (BRREG official announcement)"
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-metrics-986752900-9d96a4a0d5ba066a",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Kaia legesenter Google profile: rating 2.1/5, 54 ratings.",
+          "metrics": {
+            "rating": 2.1,
+            "review_count": 54,
+            "scale": 5,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-986752900-bab06e83353ce46b",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Yes, the commenters are right that its impossible to reach them by phone, but over Helsenorge it worked quite well. Besides that, the most important thing is that I received good care and the doctor took her time for me in person.\n\nI waited about 2 weeks for a non-urgent in person appointment, and half a week for a non-urgent video consultation which is really okay. Overall I would recommend them because the doctor was very attentive and helped me well.",
+          "observed_at": "2025-06-10T20:28:37.475271Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 4,
+            "scale": 5,
+            "review_index": 0,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-986752900-e38ad012a9012c27",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "det er ikke mulig å komme gjennom når tidspunktet for mottak av samtaler er åpent. Det er forferdelig. Hvorfor slik uaktsomhet overfor pasienter?\nToday this clinic took away my nerves and half a day of time, and I also lost half a day of working time. My daughter had a docket appointment at 8:20 am. We arrived on time!! We sat in the waiting room. We spent an hour in the clinic. and no one invited us. Then I got tired of waiting and went to the reception to ask. To which the receptionist replied that the doctor called you twice! What ??? We sat there for an hour and didn’t even go to the toilet. I think that the receptionist who told me the time to make an appointment with the doctor simply forgot to put it in the calendar! Does this establishment even have managers? How it works? Or is this a “special” attitude towards foreigners?",
+          "observed_at": "2023-09-26T10:56:42.615988Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 1,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-986752900-cd49273fa030b84f",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "It looks like none of the doctors has knowledge of a real doctor there. They just want to wait until their shift is over with the littlest effort possible. Now these shorter hours of answering the phone - are you at work or on holidays? You all should be ashamed to treat your patients like that, if you're not there to help people maybe you shouldn't have established a doctor's office, but work as street cleaners - at least you wouldn't harm anyone.",
+          "observed_at": "2023-07-13T12:43:21.433754Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 2,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-986752900-8e7ae3c2db039ca7",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Doctor is fine but ALWAYS is problem to make an appointment because no one pick up the phone. Even when you are there and asking Receptionist about something they are not kind",
+          "observed_at": "2024-08-12T09:21:59.892003Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 3,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-986752900-2f98feac7e3fc897",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Terrible experience and terrible service, I recommend any other medical center in the city before this one.",
+          "observed_at": "2025-10-07T07:27:57.433728015Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 4,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-summary-986752900-9d96a4a0d5ba066a",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Kaia legesenter is rated 2.1/5 from 54 Google reviews.",
+          "metrics": {
+            "rating": 2.1,
+            "review_count": 54,
+            "scale": 5,
+            "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+          "retrieved_at": "2026-10-31T18:17:37.757995Z",
+          "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "kaialegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-sentiment-986752900-9d96a4a0d5ba066a",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 2.1/5 from 54 reviews implies negative sentiment.",
+          "metrics": {
+            "rating": 2.1,
+            "review_count": 54,
+            "scale": 5
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986752900",
+          "retrieved_at": "2026-11-05T21:10:22.319153Z",
+          "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986752900"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "KAIA LEGESENTER AS",
+              "matched_organisation_number": "986752900"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+          "id": "purehelp-email-986752900-6c15a70faefe14ca",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "kaigata@kaigata.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986752900",
+          "retrieved_at": "2026-11-05T21:10:22.319153Z",
+          "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986752900"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "KAIA LEGESENTER AS",
+              "matched_organisation_number": "986752900"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+          "id": "purehelp-phone-986752900-6c15a70faefe14ca",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "77 60 80 50",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986752900",
+          "retrieved_at": "2026-11-05T21:10:22.319153Z",
+          "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986752900"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "KAIA LEGESENTER AS",
+              "matched_organisation_number": "986752900"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+          "id": "purehelp-profile-986752900-6c15a70faefe14ca",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "86.210",
+            "nace_description": "General medical practice activities",
+            "town": "TROMS",
+            "zipcode": "9008",
+            "municipality": "TROMSØ",
+            "municipality_number": "5501",
+            "county": "Troms",
+            "registration_date": "2004-05-08",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2004-05-08",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.kaigata.no"
+          }
+        },
+        {
+          "organisation_number": "986752900",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986752900",
+          "retrieved_at": "2026-11-05T21:10:22.319153Z",
+          "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986752900"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "KAIA LEGESENTER AS",
+              "matched_organisation_number": "986752900"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+          "id": "purehelp-workforce-986752900-6c15a70faefe14ca",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 13,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1311,7 +1813,7 @@
     "company_name": "KAIA LEGESENTER AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "KAIA LEGESENTER AS is a private limited company operating in Allmennlegetjenester. Latest accounts (2025): revenue NOK 6.4m, annual result NOK 138.4k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.1% YoY). Registered employees: 13. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "KAIA LEGESENTER AS is a private limited company operating in Allmennlegetjenester. Latest accounts (2025): revenue NOK 6.4m, annual result NOK 138.4k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.1% YoY). Registered employees: 13. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1327,7 +1829,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       },
       {
@@ -1344,7 +1852,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       },
       {
@@ -1361,7 +1875,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       },
       {
@@ -1378,7 +1898,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       },
       {
@@ -1395,7 +1921,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       },
       {
@@ -1408,11 +1940,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "http://www.kaigata.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/986752900/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
+        ]
       },
       {
         "question": "changes",
@@ -1428,17 +1975,17 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986752900",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986752900/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/986752900",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -1999,45 +2546,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-889b76658e90793c32ba571c",
-        "organisation_number": "986752900",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T08:48:38.576813Z",
-        "content_sha256": "91eee558e711ae13ef0d77f58e94daff16fc6e7a1c1d4915ef330d8a54617bc0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "986752900",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 13",
-        "metrics": {
-          "workforce_value": 13,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-05-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-05-12",
-        "effective_at": "2026-05-12"
-      },
-      {
         "id": "registry-contact-b458a472457640fc2d1b6252",
         "organisation_number": "986752900",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2056,8 +2571,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-a886d280b62cb076822f8966",
@@ -2065,8 +2579,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2085,14 +2599,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "986752900",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986752900&size=1000",
-        "retrieved_at": "2026-10-05T08:48:43.993557Z",
+        "retrieved_at": "2026-09-29T10:15:40.236960Z",
         "content_sha256": "66bc0903ef06ae3182397cd1af7b794603aa3e5ed02c229c931b4b1a7f954a79",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2114,8 +2627,7 @@
           "subunit_organisation_number": "986889051",
           "municipality": "TROMSØ",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-09a7aa642070e131d0d26c59",
@@ -2123,7 +2635,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "09a7aa642070e131d0d26c59994a55aff2b33ac6897060c0f1753ad8255dd279",
         "observed_at": "2026-07-29",
         "exact_entity": true,
@@ -2153,7 +2665,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "907ae15684d85bc85728b98083c84961ad56b13be695ddbb0a7d04fb3592bdda",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -2183,7 +2695,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9878201df320d75768786f607e4dea2307c67f44bb7a052cdc1a34bd5b391689",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -2213,7 +2725,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bd13fc99bbf53a6e90e8d126e7e27c52c5fcf1fc42c3e6f1682ca5285d85df7a",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2243,7 +2755,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "347c7091a7dac71fc9c5a4c8315f93edec29b1e1cd1cf7b0a9791cb4b71a9f5f",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -2273,7 +2785,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e67383717b71955c6298dd362f080e7732e69f20308625e1bb4ca2c7f3d9db06",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -2303,7 +2815,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f1b67beae55ee2556d64b4ef8c0a592fb32ec98d750cff6dafbeabc6006a0752",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -2333,7 +2845,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "41549800aaf26d8e0872f12c2547f409fcfea1a3b5d9d5affbb24cff390cf591",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -2363,7 +2875,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "408fa5204a2c966ac75374400cc44a6a883ca4107b3f144ad215adeeb2674a80",
         "observed_at": "2025-05-14",
         "exact_entity": true,
@@ -2393,7 +2905,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9f70931ababae71477a1e788558dc4c2e9fcc7efba923d21ebb7f4b93fb988f2",
         "observed_at": "2024-11-17",
         "exact_entity": true,
@@ -2423,7 +2935,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bbab964c8b7aa7cf7bcf6a4102350826ef48e0a60a1a15d0406f060b8389a21f",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -2453,7 +2965,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0c810c54b6b539ed262a40133f39ee69d95dc455f95f62372a2f76f17169e332",
         "observed_at": "2024-07-03",
         "exact_entity": true,
@@ -2483,7 +2995,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a0c58071f6c7c18930864f11d8e40d77a8225fda5ec30076e76d56003fee0f1f",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2513,7 +3025,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dcd528da587da12d787e3d0de0170c92b5c11bf3893bb3ef97b37888d0f1b882",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -2543,7 +3055,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "90067daa26a3031337db4885f7d000e73c435a147fcc5d4549a7bf74f7329467",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2573,7 +3085,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c98c830cd21cd6cd2cc3e6c5b2da5545d86afa6badaf7f26c9295ac8d897421d",
         "observed_at": "2023-12-12",
         "exact_entity": true,
@@ -2603,7 +3115,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0c99142495533392dec82f26278ab9617a78f0ae10df40fd73fe107ad9c28671",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2633,7 +3145,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "17ebfe22578a6f52085af63e9254f23623108ad95233d59fc57416e843b05631",
         "observed_at": "2023-07-12",
         "exact_entity": true,
@@ -2663,7 +3175,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cac116f5375ada0fa1f50a4865ff7f39276dd108e532a2144257d5856dd2ae8c",
         "observed_at": "2023-07-05",
         "exact_entity": true,
@@ -2693,7 +3205,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c4ebd466281883906a82ef89878d7006a093ea59c48926dd409f8efb564f675b",
         "observed_at": "2023-05-11",
         "exact_entity": true,
@@ -2716,8 +3228,545 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-a699fca2392035aa2f51481a",
+        "organisation_number": "986752900",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "44e8caba14d4fb4f9b8892038722740d8e843af66e05ba7cd51ca7ae5b20661b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "986752900",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-08-13",
+        "signal": {
+          "title": "Revisor",
+          "date": "2026-08-13",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000688448&amp;sokeverdi=986752900&amp;spraak=nb"
+        },
+        "evidence_span": "Revisor — 2026-08-13 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-42a2e8e19897da75ccc38d93",
+        "organisation_number": "986752900",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "9af9941bae3a5f4e3311c6db3f73bf21868803b922f69202986bf392b22140f9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "986752900",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-29",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-29",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626763&amp;sokeverdi=986752900&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-04e575cdf4ee7ecd3b16ee47",
+        "organisation_number": "986752900",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "5b14207e9c229ce52bf71e7297dd103808cf562208d3f6906e979130b44f296b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "986752900",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-09-11",
+        "signal": {
+          "title": "Revisor",
+          "date": "2025-09-11",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000736493&amp;sokeverdi=986752900&amp;spraak=nb"
+        },
+        "evidence_span": "Revisor — 2025-09-11 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-889b76658e90793c32ba571c",
+        "organisation_number": "986752900",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986752900",
+        "retrieved_at": "2026-09-29T10:15:31.276619Z",
+        "content_sha256": "91eee558e711ae13ef0d77f58e94daff16fc6e7a1c1d4915ef330d8a54617bc0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "986752900",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 13",
+        "metrics": {
+          "workforce_value": 13,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-05-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-05-12",
+        "effective_at": "2026-05-12"
+      },
+      {
+        "id": "brreg-kunngjoring-85657a06147ca1c0aa775d2a",
+        "organisation_number": "986752900",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "519521d3e63e581842a2331d25a1a11868698c475d2f71a57759e7f79aaba363",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "986752900",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-10-05",
+        "signal": {
+          "title": "Revisor",
+          "date": "2026-10-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000777732&amp;sokeverdi=986752900&amp;spraak=nb"
+        },
+        "evidence_span": "Revisor — 2026-10-05 (BRREG official announcement)"
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-metrics-986752900-9d96a4a0d5ba066a",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Kaia legesenter Google profile: rating 2.1/5, 54 ratings.",
+        "metrics": {
+          "rating": 2.1,
+          "review_count": 54,
+          "scale": 5,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-986752900-bab06e83353ce46b",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Yes, the commenters are right that its impossible to reach them by phone, but over Helsenorge it worked quite well. Besides that, the most important thing is that I received good care and the doctor took her time for me in person.\n\nI waited about 2 weeks for a non-urgent in person appointment, and half a week for a non-urgent video consultation which is really okay. Overall I would recommend them because the doctor was very attentive and helped me well.",
+        "observed_at": "2025-06-10T20:28:37.475271Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 4,
+          "scale": 5,
+          "review_index": 0,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-986752900-e38ad012a9012c27",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "det er ikke mulig å komme gjennom når tidspunktet for mottak av samtaler er åpent. Det er forferdelig. Hvorfor slik uaktsomhet overfor pasienter?\nToday this clinic took away my nerves and half a day of time, and I also lost half a day of working time. My daughter had a docket appointment at 8:20 am. We arrived on time!! We sat in the waiting room. We spent an hour in the clinic. and no one invited us. Then I got tired of waiting and went to the reception to ask. To which the receptionist replied that the doctor called you twice! What ??? We sat there for an hour and didn’t even go to the toilet. I think that the receptionist who told me the time to make an appointment with the doctor simply forgot to put it in the calendar! Does this establishment even have managers? How it works? Or is this a “special” attitude towards foreigners?",
+        "observed_at": "2023-09-26T10:56:42.615988Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 1,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-986752900-cd49273fa030b84f",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "It looks like none of the doctors has knowledge of a real doctor there. They just want to wait until their shift is over with the littlest effort possible. Now these shorter hours of answering the phone - are you at work or on holidays? You all should be ashamed to treat your patients like that, if you're not there to help people maybe you shouldn't have established a doctor's office, but work as street cleaners - at least you wouldn't harm anyone.",
+        "observed_at": "2023-07-13T12:43:21.433754Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 2,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-986752900-8e7ae3c2db039ca7",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Doctor is fine but ALWAYS is problem to make an appointment because no one pick up the phone. Even when you are there and asking Receptionist about something they are not kind",
+        "observed_at": "2024-08-12T09:21:59.892003Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 3,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-986752900-2f98feac7e3fc897",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Terrible experience and terrible service, I recommend any other medical center in the city before this one.",
+        "observed_at": "2025-10-07T07:27:57.433728015Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 4,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-summary-986752900-9d96a4a0d5ba066a",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Kaia legesenter is rated 2.1/5 from 54 Google reviews.",
+        "metrics": {
+          "rating": 2.1,
+          "review_count": 54,
+          "scale": 5,
+          "place_id": "ChIJET7CrqzFxEUR4JcGB4d8QME"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJET7CrqzFxEUR4JcGB4d8QME",
+        "retrieved_at": "2026-10-31T18:17:37.757995Z",
+        "content_sha256": "9d96a4a0d5ba066a65b824b1902f5aea0aa32d30333046c8502b76a9c96359d0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "kaialegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-sentiment-986752900-9d96a4a0d5ba066a",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 2.1/5 from 54 reviews implies negative sentiment.",
+        "metrics": {
+          "rating": 2.1,
+          "review_count": 54,
+          "scale": 5
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986752900",
+        "retrieved_at": "2026-11-05T21:10:22.319153Z",
+        "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986752900"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "KAIA LEGESENTER AS",
+            "matched_organisation_number": "986752900"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+        "id": "purehelp-email-986752900-6c15a70faefe14ca",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "kaigata@kaigata.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986752900",
+        "retrieved_at": "2026-11-05T21:10:22.319153Z",
+        "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986752900"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "KAIA LEGESENTER AS",
+            "matched_organisation_number": "986752900"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+        "id": "purehelp-phone-986752900-6c15a70faefe14ca",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "77 60 80 50",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986752900",
+        "retrieved_at": "2026-11-05T21:10:22.319153Z",
+        "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986752900"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "KAIA LEGESENTER AS",
+            "matched_organisation_number": "986752900"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+        "id": "purehelp-profile-986752900-6c15a70faefe14ca",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "86.210",
+          "nace_description": "General medical practice activities",
+          "town": "TROMS",
+          "zipcode": "9008",
+          "municipality": "TROMSØ",
+          "municipality_number": "5501",
+          "county": "Troms",
+          "registration_date": "2004-05-08",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2004-05-08",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.kaigata.no"
+        }
+      },
+      {
+        "organisation_number": "986752900",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986752900",
+        "retrieved_at": "2026-11-05T21:10:22.319153Z",
+        "content_sha256": "51556a9a25b5ccf535b64770217fc6fb95fd077f65db5da33a72347d2379f310",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986752900"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "KAIA LEGESENTER AS",
+            "matched_organisation_number": "986752900"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986752900.orgNumber=986752900;name=KAIA LEGESENTER AS",
+        "id": "purehelp-workforce-986752900-6c15a70faefe14ca",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 13,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.641076+00:00"
+  "generated_at": "2026-11-06T05:27:35.074613+00:00"
 }

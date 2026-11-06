@@ -572,75 +572,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-997898222-54367cc1f7526705",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 3,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-069e758c18340648c4e5a948",
-          "organisation_number": "997898222",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T08:45:47.420432Z",
-          "content_sha256": "98864df3d913b0610b38c71b719cc69bcf84482030fc05764f6158a93fdc7cc9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "997898222",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 13",
-          "metrics": {
-            "workforce_value": 13,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-8050cac2ca5d0ddb126e846f",
           "organisation_number": "997898222",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -659,8 +597,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-3089c3fe0c4683d72417c68d",
@@ -668,8 +605,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -688,40 +625,13 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
-        },
-        {
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-2ce91e8ff7d993d6bef2eb10",
-          "signal_type": "website_description",
-          "evidence_span": "Bygg og Murpartner Bergen AS — BMP Bergen er en mesterbedrift i stadig positiv utvikling. Firmaet tar på seg store og små oppdrag innen bygg, anlegg, takst og eiendom.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "997898222",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
-          "retrieved_at": "2026-10-05T08:45:52.471099Z",
+          "retrieved_at": "2026-09-29T10:13:06.161386Z",
           "content_sha256": "be07a385ecb93dc19896719456af98dd4e68891347c48eae128442f4af8f666e",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -743,14 +653,13 @@
             "subunit_organisation_number": "996230813",
             "municipality": "BERGEN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "997898222",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/997898222",
-          "retrieved_at": "2026-10-05T08:45:51.733815Z",
+          "retrieved_at": "2026-09-29T10:13:05.294839Z",
           "content_sha256": "5edbd3efd9266b1e63d5aaee8c29afabb2839a7b7180a67f9b6d7f371ad0135e",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -773,288 +682,7 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "sitemap-page-77ac774064b01819ee114b71",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-05-31",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/ last modified 2023-05-31",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/",
-            "lastmod": "2023-05-31",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-568bf285f3666a453f68cd6c",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-05-31",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ last modified 2023-05-31",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/om-oss/",
-            "lastmod": "2023-05-31",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-6b659d0be571ddbf14a8e049",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-05-31",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/ last modified 2023-05-31",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/",
-            "lastmod": "2023-05-31",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-e61e6cbbae0d97f9b3f7847f",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-05-31",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/kontakt-oss/ last modified 2023-05-31",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/kontakt-oss/",
-            "lastmod": "2023-05-31",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-c9019dc98448434248733281",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-77a88dd57e9af3b090276e84",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/murertjenester/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-5f2f20575895c700cad26607",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-ab18b6c2e05af34a95c90447",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-a13cdce9c35a5632442d36d0",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-7d6a25bcb49e6b97ca2ad3c3",
-          "organisation_number": "997898222",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://bmpbergen.no/",
-          "retrieved_at": "2026-10-05T08:45:58.487563Z",
-          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-          "observed_at": "2023-03-15",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ledige-stillinger/ last modified 2023-03-15",
-          "metrics": {
-            "page_url": "https://bmpbergen.no/om-oss/ledige-stillinger/",
-            "lastmod": "2023-03-15",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
+          }
         },
         {
           "id": "registry-update-28d98928a4984ffc016ad04a",
@@ -1062,7 +690,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "28d98928a4984ffc016ad04a7b99a30c9377b5bfef33f2de49fadb914e39df99",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1092,7 +720,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d58e423229519ad4cbf80dce5878d8991b047a1acd77039e37b7d4c6ea943ad6",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1122,7 +750,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9fd507daae266e42c04767b71b10ecd631151df8e78d060733037415acf9ee76",
           "observed_at": "2026-07-04",
           "exact_entity": true,
@@ -1152,7 +780,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e88a6e7de8ace0a8c16a8ef65127311d2bf1303a3c2a1e152103ccb42d02670d",
           "observed_at": "2026-06-30",
           "exact_entity": true,
@@ -1182,7 +810,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cd105252112b2bace4fdf8c982a036b895afa113991ba74775c4b0cea0a308a0",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1212,7 +840,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a0e47065bafa2b2da46ef133c01003fe6b35b7381c45b1bd6329d92f07f09770",
           "observed_at": "2026-04-15",
           "exact_entity": true,
@@ -1242,7 +870,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ba859ee0803ee4ab885111b703866912b3b75392dd12c0a849fc32c53fa2a676",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1272,7 +900,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "802e362354e951026dba8a13c0534eb91392125b5dd6f2785d97dee42a681d28",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -1302,7 +930,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8ad8f20002804e3ede4aafcd6604ade9c3d3fd304812628c23c46bc8cef03acc",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1332,7 +960,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d9483b18f370b9469ff59e2583d2684c6fc77f45c2734f22532a7ad8b843e87f",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1362,38 +990,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9ff4bb28c4112f25185a51f1f24acf9c22e513ef9c10f3adb6cc9e979346ad61",
-          "observed_at": "2025-05-12",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "997898222",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-05-12: Endring",
-          "metrics": {
-            "date": "2025-05-12",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-a875686d76e50dc584c9bef4",
-          "organisation_number": "997898222",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "a875686d76e50dc584c9bef4ec7255931ec92b2257a2c0bc3e26e53a9314309c",
           "observed_at": "2025-05-12",
           "exact_entity": true,
           "identity_proof": [
@@ -1422,7 +1020,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8826bb49e6af9a8b71ac20c30210eddc620c973fa74dfeccc5e7d3c5aa5ce3fb",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1452,7 +1050,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d5f88ce332cace4b4048ac46630201edb120114a16f3c0557200c93687dda8c2",
           "observed_at": "2024-04-25",
           "exact_entity": true,
@@ -1482,7 +1080,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d6c4e36258caad2db15795418194f20e99b86083d2f7acd303207c050f407938",
           "observed_at": "2023-04-17",
           "exact_entity": true,
@@ -1512,7 +1110,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6ff7728e903f0d3447fa2580a0c57e57207ce97190ab248e95396b2e6bb7b087",
           "observed_at": "2022-09-05",
           "exact_entity": true,
@@ -1542,7 +1140,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8bca0fcd09981debd72c538a9090f7e0c67ef94c61acb28dbd7e4e6f20efc314",
           "observed_at": "2021-08-26",
           "exact_entity": true,
@@ -1572,7 +1170,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f3557128901fdf07b105a12a775f693ff3f5b2af4d4603bc954673c60e468a9e",
           "observed_at": "2020-06-13",
           "exact_entity": true,
@@ -1602,7 +1200,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9d000e0a8928039e99f2d476602b3641736d1157ec82891eb92ba82d66ae222c",
           "observed_at": "2020-01-01",
           "exact_entity": true,
@@ -1632,7 +1230,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3963b11edaf180cc702447fa763f2e9399ead5bacc2ee8ce3b74feafaee2a4f3",
           "observed_at": "2019-12-31",
           "exact_entity": true,
@@ -1657,161 +1255,130 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-cd53c1458bf17ce3d20b4e69",
           "organisation_number": "997898222",
-          "platform": "company_directory",
-          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-          "retrieved_at": "2026-10-05T11:15:19.205336Z",
-          "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "60f775e60c87b0935915a917a8eb3de2b407ee7d432ecc4b471714231ca5eb47",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "997898222"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BYGG OG MURPARTNER BERGEN AS"
-            },
-            {
-              "type": "embedded_google_aggregate_rating",
-              "google_review_url": null
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "997898222",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-          "metrics": {
-            "rating": 3.7,
-            "review_count": 3,
-            "scale": 5,
-            "google_review_url": null
+          "source_class": "official_api",
+          "observed_at": "2026-08-12",
+          "signal": {
+            "title": "Manglende roller",
+            "date": "2026-08-12",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb"
           },
-          "label": "neutral",
-          "id": "fagfolk-buzz-997898222-895e5929d50698f2",
-          "signal_type": "buzz_metrics",
-          "strategy": "buzz_peer_normalization",
-          "observed_at": "2026-10-05"
+          "evidence_span": "Manglende roller — 2026-08-12 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-f67207b69ac66b89889c1c94",
           "organisation_number": "997898222",
-          "platform": "company_directory",
-          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-          "retrieved_at": "2026-10-05T11:15:19.205336Z",
-          "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "6098df6b4a307eef63ec981b2e578fb3c40b2a8eb599bb9f43d50769ef59e021",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "997898222"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BYGG OG MURPARTNER BERGEN AS"
-            },
-            {
-              "type": "embedded_google_aggregate_rating",
-              "google_review_url": null
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "997898222",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-          "metrics": {
-            "rating": 3.7,
-            "review_count": 3,
-            "scale": 5,
-            "google_review_url": null
+          "source_class": "official_api",
+          "observed_at": "2026-06-30",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-06-30",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb"
           },
-          "label": "neutral",
-          "id": "fagfolk-metrics-997898222-895e5929d50698f2",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "observed_at": "2026-10-05"
+          "evidence_span": "Godkjente årsregnskap — 2026-06-30 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-961e3af09a0cc0a3daafce7d",
           "organisation_number": "997898222",
-          "platform": "company_directory",
-          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-          "retrieved_at": "2026-10-05T11:15:19.205336Z",
-          "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "9e30b922638618ca79d3e35e621ee3b873bd52f4bbe027b56554e12393fee4ba",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "997898222"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BYGG OG MURPARTNER BERGEN AS"
-            },
-            {
-              "type": "embedded_google_aggregate_rating",
-              "google_review_url": null
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "997898222",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-          "metrics": {
-            "rating": 3.7,
-            "review_count": 3,
-            "scale": 5,
-            "google_review_url": null
+          "source_class": "official_api",
+          "observed_at": "2026-04-15",
+          "signal": {
+            "title": "Forretningsadresse",
+            "date": "2026-04-15",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb"
           },
-          "label": "neutral",
-          "id": "fagfolk-review-997898222-895e5929d50698f2",
-          "signal_type": "review_summary",
-          "strategy": "places_rating_reviews",
-          "observed_at": "2026-10-05"
+          "evidence_span": "Forretningsadresse — 2026-04-15 (BRREG official announcement)"
         },
         {
+          "id": "registry-workforce-069e758c18340648c4e5a948",
           "organisation_number": "997898222",
-          "platform": "company_directory",
-          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-          "retrieved_at": "2026-10-05T11:15:19.205336Z",
-          "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
+          "retrieved_at": "2026-09-29T10:12:56.914447Z",
+          "content_sha256": "98864df3d913b0610b38c71b719cc69bcf84482030fc05764f6158a93fdc7cc9",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "997898222"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BYGG OG MURPARTNER BERGEN AS"
-            },
-            {
-              "type": "embedded_google_aggregate_rating",
-              "google_review_url": null
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "997898222",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 13",
           "metrics": {
-            "rating": 3.7,
-            "review_count": 3,
-            "scale": 5,
-            "google_review_url": null
+            "workforce_value": 13,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-08-12"
           },
-          "label": "neutral",
-          "sentiment_label": "neutral",
-          "sentiment_model_version": "rule-based-v1",
-          "id": "fagfolk-sentiment-997898222-895e5929d50698f2",
-          "signal_type": "sentiment",
-          "strategy": "customer_review_sentiment",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-08-12",
+          "effective_at": "2026-08-12"
         },
         {
           "organisation_number": "997898222",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-          "retrieved_at": "2026-10-05T14:31:26.534302Z",
-          "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+          "retrieved_at": "2026-10-31T18:17:18.645307Z",
+          "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1824,7 +1391,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "neutral",
-          "id": "gplaces-metrics-997898222-e66787a1aa0ff6f8",
+          "id": "gplaces-metrics-997898222-e27232a844e96fdd",
           "signal_type": "profile_metrics",
           "strategy": "social_profile_metrics",
           "evidence_span": "Bygg og Murpartner Bergen AS Google profile: rating 3.7/5, 3 ratings.",
@@ -1839,8 +1406,8 @@
           "organisation_number": "997898222",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-          "retrieved_at": "2026-10-05T14:31:26.534302Z",
-          "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+          "retrieved_at": "2026-10-31T18:17:18.645307Z",
+          "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1853,7 +1420,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "neutral",
-          "id": "gplaces-review-summary-997898222-e66787a1aa0ff6f8",
+          "id": "gplaces-review-summary-997898222-e27232a844e96fdd",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Bygg og Murpartner Bergen AS is rated 3.7/5 from 3 Google reviews.",
@@ -1868,8 +1435,8 @@
           "organisation_number": "997898222",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-          "retrieved_at": "2026-10-05T14:31:26.534302Z",
-          "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+          "retrieved_at": "2026-10-31T18:17:18.645307Z",
+          "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1882,7 +1449,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "neutral",
-          "id": "gplaces-sentiment-997898222-e66787a1aa0ff6f8",
+          "id": "gplaces-sentiment-997898222-e27232a844e96fdd",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "neutral",
@@ -1892,6 +1459,720 @@
             "rating": 3.7,
             "review_count": 3,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-2ce91e8ff7d993d6bef2eb10",
+          "signal_type": "website_description",
+          "evidence_span": "Bygg og Murpartner Bergen AS — BMP Bergen er en mesterbedrift i stadig positiv utvikling. Firmaet tar på seg store og små oppdrag innen bygg, anlegg, takst og eiendom.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "id": "sitemap-page-77ac774064b01819ee114b71",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-05-31",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/ last modified 2023-05-31",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/",
+            "lastmod": "2023-05-31",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-568bf285f3666a453f68cd6c",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-05-31",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ last modified 2023-05-31",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/om-oss/",
+            "lastmod": "2023-05-31",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6b659d0be571ddbf14a8e049",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-05-31",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/ last modified 2023-05-31",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/",
+            "lastmod": "2023-05-31",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e61e6cbbae0d97f9b3f7847f",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-05-31",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/kontakt-oss/ last modified 2023-05-31",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/kontakt-oss/",
+            "lastmod": "2023-05-31",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-c9019dc98448434248733281",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-77a88dd57e9af3b090276e84",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/murertjenester/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-5f2f20575895c700cad26607",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ab18b6c2e05af34a95c90447",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-a13cdce9c35a5632442d36d0",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-7d6a25bcb49e6b97ca2ad3c3",
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-15T01:26:37.106690Z",
+          "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+          "observed_at": "2023-03-15",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ledige-stillinger/ last modified 2023-03-15",
+          "metrics": {
+            "page_url": "https://bmpbergen.no/om-oss/ledige-stillinger/",
+            "lastmod": "2023-03-15",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_site",
+          "source_url": "https://bmpbergen.no/",
+          "retrieved_at": "2026-09-29T12:40:15.090749Z",
+          "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-997898222-54367cc1f7526705",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 3,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+          "retrieved_at": "2026-11-02T21:00:31.488751Z",
+          "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 3.7,
+            "review_count": 3,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "neutral",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-buzz-997898222-5dff91dd0490cca1",
+          "signal_type": "buzz_metrics",
+          "strategy": "buzz_peer_normalization",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+          "retrieved_at": "2026-11-02T21:00:31.488751Z",
+          "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 3.7,
+            "review_count": 3,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "neutral",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-metrics-997898222-5dff91dd0490cca1",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+          "retrieved_at": "2026-11-02T21:00:31.488751Z",
+          "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 3.7,
+            "review_count": 3,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "neutral",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-review-997898222-5dff91dd0490cca1",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+          "retrieved_at": "2026-11-02T21:00:31.488751Z",
+          "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 3.7,
+            "review_count": 3,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "neutral",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-sentiment-997898222-5dff91dd0490cca1",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "retrieved_at": "2026-11-05T14:44:17.964096Z",
+          "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 3.7,
+            "review_count": 3,
+            "website_domain": "bmpbergen.no",
+            "address": {
+              "street": "c/o Andre Holgersen, Sælenveien 131",
+              "locality": "FYLLINGSDALEN",
+              "postal_code": "5143"
+            }
+          },
+          "id": "fagfolk-profile-997898222-f046787aee5eeb64",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "retrieved_at": "2026-11-05T14:44:17.964096Z",
+          "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 3.7,
+            "review_count": 3,
+            "website_domain": "bmpbergen.no",
+            "address": {
+              "street": "c/o Andre Holgersen, Sælenveien 131",
+              "locality": "FYLLINGSDALEN",
+              "postal_code": "5143"
+            }
+          },
+          "id": "fagfolk-review-997898222-f046787aee5eeb64",
+          "signal_type": "review_summary",
+          "strategy": "directory_rating_reviews",
+          "source_class": "customer_review",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "retrieved_at": "2026-11-05T14:44:17.964096Z",
+          "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 3.7,
+            "review_count": 3,
+            "website_domain": "bmpbergen.no",
+            "address": {
+              "street": "c/o Andre Holgersen, Sælenveien 131",
+              "locality": "FYLLINGSDALEN",
+              "postal_code": "5143"
+            }
+          },
+          "id": "fagfolk-sentiment-997898222-f046787aee5eeb64",
+          "signal_type": "sentiment",
+          "strategy": "directory_review_sentiment",
+          "source_class": "customer_review",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/997898222",
+          "retrieved_at": "2026-11-05T21:10:10.948110Z",
+          "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+          "id": "purehelp-email-997898222-e105b881c0418a3d",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@bmpbergen.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/997898222",
+          "retrieved_at": "2026-11-05T21:10:10.948110Z",
+          "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+          "id": "purehelp-profile-997898222-e105b881c0418a3d",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "77.390",
+            "nace_description": "Rental and leasing of other machinery\\, equipment and tangible goods n.e.c.",
+            "town": "FYLLINGSDALEN",
+            "zipcode": "5143",
+            "municipality": "BERGEN",
+            "municipality_number": "4601",
+            "county": "Vestland",
+            "registration_date": "2012-01-30",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2012-01-30",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.bmpbergen.no"
+          }
+        },
+        {
+          "organisation_number": "997898222",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/997898222",
+          "retrieved_at": "2026-11-05T21:10:10.948110Z",
+          "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "997898222"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BYGG OG MURPARTNER BERGEN AS",
+              "matched_organisation_number": "997898222"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+          "id": "purehelp-workforce-997898222-e105b881c0418a3d",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 13,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1917,7 +2198,7 @@
     "company_name": "BYGG OG MURPARTNER BERGEN AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "BYGG OG MURPARTNER BERGEN AS is a private limited company operating in Utleie og leasing av andre maskiner og annet utstyr og materiell ikke nevnt annet sted. Latest accounts (2025): revenue NOK 3.2m, annual result NOK -324.0k. Annual accounts available for 2012-2025 (14 years). Detailed records only available as PDFs. Revenue growing (+20.0% YoY). Registered employees: 13. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "BYGG OG MURPARTNER BERGEN AS is a private limited company operating in Utleie og leasing av andre maskiner og annet utstyr og materiell ikke nevnt annet sted. Latest accounts (2025): revenue NOK 3.2m, annual result NOK -324.0k. Annual accounts available for 2012-2025 (14 years). Detailed records only available as PDFs. Revenue growing (+20.0% YoY). Registered employees: 13. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1934,7 +2215,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       },
       {
@@ -1952,7 +2240,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       },
       {
@@ -1970,7 +2265,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       },
       {
@@ -1988,7 +2290,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       },
       {
@@ -2006,7 +2315,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       },
       {
@@ -2019,11 +2335,28 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://bmpbergen.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/997898222/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/997898222",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
+        ]
       },
       {
         "question": "changes",
@@ -2040,17 +2373,18 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/997898222",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/997898222/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/997898222",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/997898222",
+          "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+          "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2612,75 +2946,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-997898222-54367cc1f7526705",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 3,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-069e758c18340648c4e5a948",
-        "organisation_number": "997898222",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T08:45:47.420432Z",
-        "content_sha256": "98864df3d913b0610b38c71b719cc69bcf84482030fc05764f6158a93fdc7cc9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "997898222",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 13",
-        "metrics": {
-          "workforce_value": 13,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-8050cac2ca5d0ddb126e846f",
         "organisation_number": "997898222",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2699,8 +2971,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-3089c3fe0c4683d72417c68d",
@@ -2708,8 +2979,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2728,40 +2999,13 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
-      },
-      {
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-2ce91e8ff7d993d6bef2eb10",
-        "signal_type": "website_description",
-        "evidence_span": "Bygg og Murpartner Bergen AS — BMP Bergen er en mesterbedrift i stadig positiv utvikling. Firmaet tar på seg store og små oppdrag innen bygg, anlegg, takst og eiendom.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "997898222",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=997898222&size=1000",
-        "retrieved_at": "2026-10-05T08:45:52.471099Z",
+        "retrieved_at": "2026-09-29T10:13:06.161386Z",
         "content_sha256": "be07a385ecb93dc19896719456af98dd4e68891347c48eae128442f4af8f666e",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2783,14 +3027,13 @@
           "subunit_organisation_number": "996230813",
           "municipality": "BERGEN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "997898222",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/997898222",
-        "retrieved_at": "2026-10-05T08:45:51.733815Z",
+        "retrieved_at": "2026-09-29T10:13:05.294839Z",
         "content_sha256": "5edbd3efd9266b1e63d5aaee8c29afabb2839a7b7180a67f9b6d7f371ad0135e",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2813,288 +3056,7 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "sitemap-page-77ac774064b01819ee114b71",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-05-31",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/ last modified 2023-05-31",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/",
-          "lastmod": "2023-05-31",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-568bf285f3666a453f68cd6c",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-05-31",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ last modified 2023-05-31",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/om-oss/",
-          "lastmod": "2023-05-31",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-6b659d0be571ddbf14a8e049",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-05-31",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/ last modified 2023-05-31",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/",
-          "lastmod": "2023-05-31",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-e61e6cbbae0d97f9b3f7847f",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-05-31",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/kontakt-oss/ last modified 2023-05-31",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/kontakt-oss/",
-          "lastmod": "2023-05-31",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-c9019dc98448434248733281",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-77a88dd57e9af3b090276e84",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/murertjenester/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-5f2f20575895c700cad26607",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-ab18b6c2e05af34a95c90447",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-a13cdce9c35a5632442d36d0",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-7d6a25bcb49e6b97ca2ad3c3",
-        "organisation_number": "997898222",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://bmpbergen.no/",
-        "retrieved_at": "2026-10-05T08:45:58.487563Z",
-        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
-        "observed_at": "2023-03-15",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ledige-stillinger/ last modified 2023-03-15",
-        "metrics": {
-          "page_url": "https://bmpbergen.no/om-oss/ledige-stillinger/",
-          "lastmod": "2023-03-15",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
+        }
       },
       {
         "id": "registry-update-28d98928a4984ffc016ad04a",
@@ -3102,7 +3064,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "28d98928a4984ffc016ad04a7b99a30c9377b5bfef33f2de49fadb914e39df99",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -3132,7 +3094,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d58e423229519ad4cbf80dce5878d8991b047a1acd77039e37b7d4c6ea943ad6",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -3162,7 +3124,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9fd507daae266e42c04767b71b10ecd631151df8e78d060733037415acf9ee76",
         "observed_at": "2026-07-04",
         "exact_entity": true,
@@ -3192,7 +3154,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e88a6e7de8ace0a8c16a8ef65127311d2bf1303a3c2a1e152103ccb42d02670d",
         "observed_at": "2026-06-30",
         "exact_entity": true,
@@ -3222,7 +3184,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cd105252112b2bace4fdf8c982a036b895afa113991ba74775c4b0cea0a308a0",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -3252,7 +3214,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a0e47065bafa2b2da46ef133c01003fe6b35b7381c45b1bd6329d92f07f09770",
         "observed_at": "2026-04-15",
         "exact_entity": true,
@@ -3282,7 +3244,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ba859ee0803ee4ab885111b703866912b3b75392dd12c0a849fc32c53fa2a676",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -3312,7 +3274,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "802e362354e951026dba8a13c0534eb91392125b5dd6f2785d97dee42a681d28",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -3342,7 +3304,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8ad8f20002804e3ede4aafcd6604ade9c3d3fd304812628c23c46bc8cef03acc",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3372,7 +3334,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d9483b18f370b9469ff59e2583d2684c6fc77f45c2734f22532a7ad8b843e87f",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3402,38 +3364,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9ff4bb28c4112f25185a51f1f24acf9c22e513ef9c10f3adb6cc9e979346ad61",
-        "observed_at": "2025-05-12",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "997898222",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-05-12: Endring",
-        "metrics": {
-          "date": "2025-05-12",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-a875686d76e50dc584c9bef4",
-        "organisation_number": "997898222",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "a875686d76e50dc584c9bef4ec7255931ec92b2257a2c0bc3e26e53a9314309c",
         "observed_at": "2025-05-12",
         "exact_entity": true,
         "identity_proof": [
@@ -3462,7 +3394,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8826bb49e6af9a8b71ac20c30210eddc620c973fa74dfeccc5e7d3c5aa5ce3fb",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3492,7 +3424,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d5f88ce332cace4b4048ac46630201edb120114a16f3c0557200c93687dda8c2",
         "observed_at": "2024-04-25",
         "exact_entity": true,
@@ -3522,7 +3454,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d6c4e36258caad2db15795418194f20e99b86083d2f7acd303207c050f407938",
         "observed_at": "2023-04-17",
         "exact_entity": true,
@@ -3552,7 +3484,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6ff7728e903f0d3447fa2580a0c57e57207ce97190ab248e95396b2e6bb7b087",
         "observed_at": "2022-09-05",
         "exact_entity": true,
@@ -3582,7 +3514,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8bca0fcd09981debd72c538a9090f7e0c67ef94c61acb28dbd7e4e6f20efc314",
         "observed_at": "2021-08-26",
         "exact_entity": true,
@@ -3612,7 +3544,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f3557128901fdf07b105a12a775f693ff3f5b2af4d4603bc954673c60e468a9e",
         "observed_at": "2020-06-13",
         "exact_entity": true,
@@ -3642,7 +3574,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9d000e0a8928039e99f2d476602b3641736d1157ec82891eb92ba82d66ae222c",
         "observed_at": "2020-01-01",
         "exact_entity": true,
@@ -3672,7 +3604,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3963b11edaf180cc702447fa763f2e9399ead5bacc2ee8ce3b74feafaee2a4f3",
         "observed_at": "2019-12-31",
         "exact_entity": true,
@@ -3697,161 +3629,130 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-cd53c1458bf17ce3d20b4e69",
         "organisation_number": "997898222",
-        "platform": "company_directory",
-        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-        "retrieved_at": "2026-10-05T11:15:19.205336Z",
-        "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "60f775e60c87b0935915a917a8eb3de2b407ee7d432ecc4b471714231ca5eb47",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "997898222"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BYGG OG MURPARTNER BERGEN AS"
-          },
-          {
-            "type": "embedded_google_aggregate_rating",
-            "google_review_url": null
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "997898222",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-        "metrics": {
-          "rating": 3.7,
-          "review_count": 3,
-          "scale": 5,
-          "google_review_url": null
+        "source_class": "official_api",
+        "observed_at": "2026-08-12",
+        "signal": {
+          "title": "Manglende roller",
+          "date": "2026-08-12",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000685308&amp;sokeverdi=997898222&amp;spraak=nb"
         },
-        "label": "neutral",
-        "id": "fagfolk-buzz-997898222-895e5929d50698f2",
-        "signal_type": "buzz_metrics",
-        "strategy": "buzz_peer_normalization",
-        "observed_at": "2026-10-05"
+        "evidence_span": "Manglende roller — 2026-08-12 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-f67207b69ac66b89889c1c94",
         "organisation_number": "997898222",
-        "platform": "company_directory",
-        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-        "retrieved_at": "2026-10-05T11:15:19.205336Z",
-        "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "6098df6b4a307eef63ec981b2e578fb3c40b2a8eb599bb9f43d50769ef59e021",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "997898222"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BYGG OG MURPARTNER BERGEN AS"
-          },
-          {
-            "type": "embedded_google_aggregate_rating",
-            "google_review_url": null
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "997898222",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-        "metrics": {
-          "rating": 3.7,
-          "review_count": 3,
-          "scale": 5,
-          "google_review_url": null
+        "source_class": "official_api",
+        "observed_at": "2026-06-30",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-06-30",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000462605&amp;sokeverdi=997898222&amp;spraak=nb"
         },
-        "label": "neutral",
-        "id": "fagfolk-metrics-997898222-895e5929d50698f2",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "observed_at": "2026-10-05"
+        "evidence_span": "Godkjente årsregnskap — 2026-06-30 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-961e3af09a0cc0a3daafce7d",
         "organisation_number": "997898222",
-        "platform": "company_directory",
-        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-        "retrieved_at": "2026-10-05T11:15:19.205336Z",
-        "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "9e30b922638618ca79d3e35e621ee3b873bd52f4bbe027b56554e12393fee4ba",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "997898222"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BYGG OG MURPARTNER BERGEN AS"
-          },
-          {
-            "type": "embedded_google_aggregate_rating",
-            "google_review_url": null
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "997898222",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
-        "metrics": {
-          "rating": 3.7,
-          "review_count": 3,
-          "scale": 5,
-          "google_review_url": null
+        "source_class": "official_api",
+        "observed_at": "2026-04-15",
+        "signal": {
+          "title": "Forretningsadresse",
+          "date": "2026-04-15",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000176662&amp;sokeverdi=997898222&amp;spraak=nb"
         },
-        "label": "neutral",
-        "id": "fagfolk-review-997898222-895e5929d50698f2",
-        "signal_type": "review_summary",
-        "strategy": "places_rating_reviews",
-        "observed_at": "2026-10-05"
+        "evidence_span": "Forretningsadresse — 2026-04-15 (BRREG official announcement)"
       },
       {
+        "id": "registry-workforce-069e758c18340648c4e5a948",
         "organisation_number": "997898222",
-        "platform": "company_directory",
-        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
-        "retrieved_at": "2026-10-05T11:15:19.205336Z",
-        "content_sha256": "895e5929d50698f2d0100655730e65a0808b18f758d952138c42473aa121cae8",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/997898222",
+        "retrieved_at": "2026-09-29T10:12:56.914447Z",
+        "content_sha256": "98864df3d913b0610b38c71b719cc69bcf84482030fc05764f6158a93fdc7cc9",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "997898222"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BYGG OG MURPARTNER BERGEN AS"
-          },
-          {
-            "type": "embedded_google_aggregate_rating",
-            "google_review_url": null
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "997898222",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 13",
         "metrics": {
-          "rating": 3.7,
-          "review_count": 3,
-          "scale": 5,
-          "google_review_url": null
+          "workforce_value": 13,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-08-12"
         },
-        "label": "neutral",
-        "sentiment_label": "neutral",
-        "sentiment_model_version": "rule-based-v1",
-        "id": "fagfolk-sentiment-997898222-895e5929d50698f2",
-        "signal_type": "sentiment",
-        "strategy": "customer_review_sentiment",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-08-12",
+        "effective_at": "2026-08-12"
       },
       {
         "organisation_number": "997898222",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-        "retrieved_at": "2026-10-05T14:31:26.534302Z",
-        "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+        "retrieved_at": "2026-10-31T18:17:18.645307Z",
+        "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3864,7 +3765,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "neutral",
-        "id": "gplaces-metrics-997898222-e66787a1aa0ff6f8",
+        "id": "gplaces-metrics-997898222-e27232a844e96fdd",
         "signal_type": "profile_metrics",
         "strategy": "social_profile_metrics",
         "evidence_span": "Bygg og Murpartner Bergen AS Google profile: rating 3.7/5, 3 ratings.",
@@ -3879,8 +3780,8 @@
         "organisation_number": "997898222",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-        "retrieved_at": "2026-10-05T14:31:26.534302Z",
-        "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+        "retrieved_at": "2026-10-31T18:17:18.645307Z",
+        "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3893,7 +3794,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "neutral",
-        "id": "gplaces-review-summary-997898222-e66787a1aa0ff6f8",
+        "id": "gplaces-review-summary-997898222-e27232a844e96fdd",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Bygg og Murpartner Bergen AS is rated 3.7/5 from 3 Google reviews.",
@@ -3908,8 +3809,8 @@
         "organisation_number": "997898222",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ9_FycXP8PEYRPww21bJQPBo",
-        "retrieved_at": "2026-10-05T14:31:26.534302Z",
-        "content_sha256": "e66787a1aa0ff6f8d275bc41c1a2f81c6cb32d477e692584486a97d9e5d92686",
+        "retrieved_at": "2026-10-31T18:17:18.645307Z",
+        "content_sha256": "e27232a844e96fddd0602e7a63adb6bc3c84d75c5bbc3597f76109b8dd70813f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3922,7 +3823,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "neutral",
-        "id": "gplaces-sentiment-997898222-e66787a1aa0ff6f8",
+        "id": "gplaces-sentiment-997898222-e27232a844e96fdd",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "neutral",
@@ -3933,8 +3834,722 @@
           "review_count": 3,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-2ce91e8ff7d993d6bef2eb10",
+        "signal_type": "website_description",
+        "evidence_span": "Bygg og Murpartner Bergen AS — BMP Bergen er en mesterbedrift i stadig positiv utvikling. Firmaet tar på seg store og små oppdrag innen bygg, anlegg, takst og eiendom.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "id": "sitemap-page-77ac774064b01819ee114b71",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-05-31",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/ last modified 2023-05-31",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/",
+          "lastmod": "2023-05-31",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-568bf285f3666a453f68cd6c",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-05-31",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ last modified 2023-05-31",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/om-oss/",
+          "lastmod": "2023-05-31",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6b659d0be571ddbf14a8e049",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-05-31",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/ last modified 2023-05-31",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/",
+          "lastmod": "2023-05-31",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e61e6cbbae0d97f9b3f7847f",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-05-31",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/kontakt-oss/ last modified 2023-05-31",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/kontakt-oss/",
+          "lastmod": "2023-05-31",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-c9019dc98448434248733281",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/murertjenester/rehabilitering-av-bad/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-77a88dd57e9af3b090276e84",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/murertjenester/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/murertjenester/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-5f2f20575895c700cad26607",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/nybygg-totalentreprise/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ab18b6c2e05af34a95c90447",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/rehabilitering-tilbygg-pabygg/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-a13cdce9c35a5632442d36d0",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/tjenester/tomrer-tjenester/energiradgivning/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-7d6a25bcb49e6b97ca2ad3c3",
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-15T01:26:37.106690Z",
+        "content_sha256": "a419835e5256e2f45cfb61b462f1e6df2f94e9756e2caf263dc725d1e1166be8",
+        "observed_at": "2023-03-15",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://bmpbergen.no/om-oss/ledige-stillinger/ last modified 2023-03-15",
+        "metrics": {
+          "page_url": "https://bmpbergen.no/om-oss/ledige-stillinger/",
+          "lastmod": "2023-03-15",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_site",
+        "source_url": "https://bmpbergen.no/",
+        "retrieved_at": "2026-09-29T12:40:15.090749Z",
+        "content_sha256": "54367cc1f75267059d9924cb3a51be1a1d0fa9106786caa714cd969db7bcde30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-997898222-54367cc1f7526705",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 3,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+        "retrieved_at": "2026-11-02T21:00:31.488751Z",
+        "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 3.7,
+          "review_count": 3,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "neutral",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-buzz-997898222-5dff91dd0490cca1",
+        "signal_type": "buzz_metrics",
+        "strategy": "buzz_peer_normalization",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+        "retrieved_at": "2026-11-02T21:00:31.488751Z",
+        "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 3.7,
+          "review_count": 3,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "neutral",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-metrics-997898222-5dff91dd0490cca1",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+        "retrieved_at": "2026-11-02T21:00:31.488751Z",
+        "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 3.7,
+          "review_count": 3,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "neutral",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-review-997898222-5dff91dd0490cca1",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/997898222",
+        "retrieved_at": "2026-11-02T21:00:31.488751Z",
+        "content_sha256": "5dff91dd0490cca1e63ad96da261e49cff335487e124b883324637f9f33a4574",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 3.7/5 based on 3 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 3.7,
+          "review_count": 3,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "neutral",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-sentiment-997898222-5dff91dd0490cca1",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+        "retrieved_at": "2026-11-05T14:44:17.964096Z",
+        "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 3.7,
+          "review_count": 3,
+          "website_domain": "bmpbergen.no",
+          "address": {
+            "street": "c/o Andre Holgersen, Sælenveien 131",
+            "locality": "FYLLINGSDALEN",
+            "postal_code": "5143"
+          }
+        },
+        "id": "fagfolk-profile-997898222-f046787aee5eeb64",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+        "retrieved_at": "2026-11-05T14:44:17.964096Z",
+        "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 3.7,
+          "review_count": 3,
+          "website_domain": "bmpbergen.no",
+          "address": {
+            "street": "c/o Andre Holgersen, Sælenveien 131",
+            "locality": "FYLLINGSDALEN",
+            "postal_code": "5143"
+          }
+        },
+        "id": "fagfolk-review-997898222-f046787aee5eeb64",
+        "signal_type": "review_summary",
+        "strategy": "directory_rating_reviews",
+        "source_class": "customer_review",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/bygg-og-murpartner-bergen-as-997898222",
+        "retrieved_at": "2026-11-05T14:44:17.964096Z",
+        "content_sha256": "1ab5a4df5adce5c56d34375f34fb47e85b21a34bb7849937e6b18364a11ff02f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 3.7,
+          "review_count": 3,
+          "website_domain": "bmpbergen.no",
+          "address": {
+            "street": "c/o Andre Holgersen, Sælenveien 131",
+            "locality": "FYLLINGSDALEN",
+            "postal_code": "5143"
+          }
+        },
+        "id": "fagfolk-sentiment-997898222-f046787aee5eeb64",
+        "signal_type": "sentiment",
+        "strategy": "directory_review_sentiment",
+        "source_class": "customer_review",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":3.7,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":3}"
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/997898222",
+        "retrieved_at": "2026-11-05T21:10:10.948110Z",
+        "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+        "id": "purehelp-email-997898222-e105b881c0418a3d",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@bmpbergen.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/997898222",
+        "retrieved_at": "2026-11-05T21:10:10.948110Z",
+        "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+        "id": "purehelp-profile-997898222-e105b881c0418a3d",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "77.390",
+          "nace_description": "Rental and leasing of other machinery\\, equipment and tangible goods n.e.c.",
+          "town": "FYLLINGSDALEN",
+          "zipcode": "5143",
+          "municipality": "BERGEN",
+          "municipality_number": "4601",
+          "county": "Vestland",
+          "registration_date": "2012-01-30",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2012-01-30",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.bmpbergen.no"
+        }
+      },
+      {
+        "organisation_number": "997898222",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/997898222",
+        "retrieved_at": "2026-11-05T21:10:10.948110Z",
+        "content_sha256": "a35cdb1e536188ee5e634aca1b43e881564051c833168f5f3826d5b1a07b92ea",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "997898222"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BYGG OG MURPARTNER BERGEN AS",
+            "matched_organisation_number": "997898222"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-997898222.orgNumber=997898222;name=BYGG OG MURPARTNER BERGEN AS",
+        "id": "purehelp-workforce-997898222-e105b881c0418a3d",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 13,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.264095+00:00"
+  "generated_at": "2026-11-06T05:27:34.085893+00:00"
 }

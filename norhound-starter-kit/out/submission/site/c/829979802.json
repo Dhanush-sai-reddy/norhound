@@ -452,43 +452,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "829979802",
-          "platform": "company_site",
-          "source_url": "https://www.patonomics.com/",
-          "retrieved_at": "2026-10-05T08:44:36.155692Z",
-          "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-829979802-5a3dd0e9f905fed7",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 4,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "js_fallback_candidate",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
           "id": "registry-contact-108d6e41e52e5646d0e578a3",
           "organisation_number": "829979802",
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -507,40 +477,13 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
-        },
-        {
-          "organisation_number": "829979802",
-          "platform": "company_site",
-          "source_url": "https://www.patonomics.com/",
-          "retrieved_at": "2026-10-05T08:44:36.155692Z",
-          "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-5d760131ad1cc9ff863fd323",
-          "signal_type": "website_description",
-          "evidence_span": "Patonomics",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "829979802",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
-          "retrieved_at": "2026-10-05T08:44:32.266422Z",
+          "retrieved_at": "2026-09-29T10:11:51.972516Z",
           "content_sha256": "dfcda9cdd8ed8dd7fac21743ba637994b8f24bbde42e7bb51d9582ff33060668",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -562,8 +505,7 @@
             "subunit_organisation_number": "929911628",
             "municipality": "SENJA",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-5f4fd1ceedd3e2f9553ff4a2",
@@ -571,7 +513,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5f4fd1ceedd3e2f9553ff4a2ecc7d8ff9e628759c7560d76452676b4ee3719cc",
           "observed_at": "2026-06-15",
           "exact_entity": true,
@@ -601,38 +543,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7b5b50c55d3c8a65af2048cb0906cc3e3f2bac316cad7c4a3b7d33f2cbba91b8",
-          "observed_at": "2026-05-20",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "829979802",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2026-05-20: Endring",
-          "metrics": {
-            "date": "2026-05-20",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-34228c384bf8392d50e315bf",
-          "organisation_number": "829979802",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "34228c384bf8392d50e315bf6a70d2cfdc88243ee7e79fe77dc1d3f203f5288f",
           "observed_at": "2026-05-20",
           "exact_entity": true,
           "identity_proof": [
@@ -661,7 +573,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b7e31c1c64841fb9656a6051e94d4b9a9fd684b6e7d2e10ecd113af837023011",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -691,7 +603,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5ab3763c194103db664b0dc9c23010ba45154478accf8a87dc4fda6c3324209e",
           "observed_at": "2025-07-16",
           "exact_entity": true,
@@ -721,7 +633,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4c56b0f72acf88c57c2a93f350297ae3cf9d0b33ec55a88a50d51f59f255c204",
           "observed_at": "2024-11-04",
           "exact_entity": true,
@@ -751,7 +663,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6c4d27ab8c87c635b3f395b8cc51f9325cb9a3be48e7960de0ad6d94bd41ba44",
           "observed_at": "2024-07-20",
           "exact_entity": true,
@@ -781,7 +693,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "de03cfbd35ec69aa4b34b74b78db9b4ef2616a7e103c8bc32e6c45376915e655",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -811,7 +723,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "be31745ff47a9249b42d8ca66bcb68439bf6828c0de84425b09d9bb56bf690e6",
           "observed_at": "2023-08-21",
           "exact_entity": true,
@@ -841,7 +753,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "18ecb3851c33e01858949dab8565d23ad0d7884713905a579d86e006fd7dea9e",
           "observed_at": "2023-06-01",
           "exact_entity": true,
@@ -871,7 +783,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3b3a61f1586b2c6a566418f8300951289aa2ce617764f453bd82e18fb95d904c",
           "observed_at": "2023-03-21",
           "exact_entity": true,
@@ -901,7 +813,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "837396e6e819027afa38c9c4b37e7c32c431cb5ec83e144bf3cf0fb81d25611f",
           "observed_at": "2023-03-15",
           "exact_entity": true,
@@ -931,7 +843,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "13331c91c41be80fc8e748299801382a5503f19937a1736959f204f67eda1087",
           "observed_at": "2023-01-02",
           "exact_entity": true,
@@ -961,7 +873,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "62b1f5c5567e126c35821259b3150828a7c489b9caed1c8e64998d11dbdc0921",
           "observed_at": "2022-11-19",
           "exact_entity": true,
@@ -991,7 +903,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e2ec7897b9125eb8561886662321e405c4b2dd2c1fd1bed9154d0996a81cc8cf",
           "observed_at": "2022-11-14",
           "exact_entity": true,
@@ -1014,6 +926,288 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-a79493176eae6faff3a58ee7",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "2f664184e7c27bd89a9fed0766969408dd91cc14df1e8e5e38c812b998af9e3a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "829979802",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-06-15",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-06-15",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-06-15 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-276ef4fe823fd4b0b812ab5d",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "965e42e2b8f86c0bb7ccd53f3ae0580a0ccbe63f80c55d2209a903c51d6becf9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "829979802",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-16",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-16",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-16 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-7133b85bafc949d878044393",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "7d7d7074597922af7db37f9f0d5ef7e219da7c7f3387365ba9df207d197ca8d3",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "829979802",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-07-18",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-07-18",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-07-18 (BRREG official announcement)"
+        },
+        {
+          "organisation_number": "829979802",
+          "platform": "company_site",
+          "source_url": "https://www.patonomics.com/",
+          "retrieved_at": "2026-10-09T13:53:31.791238Z",
+          "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-5d760131ad1cc9ff863fd323",
+          "signal_type": "website_description",
+          "evidence_span": "Patonomics",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "829979802",
+          "platform": "company_site",
+          "source_url": "https://www.patonomics.com/",
+          "retrieved_at": "2026-10-09T13:53:31.791238Z",
+          "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.9
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-829979802-5a3dd0e9f905fed7",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 4,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-10-09"
+        },
+        {
+          "id": "annual-workforce-7acdfafa7d3662986393123e",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
+          "retrieved_at": "2026-10-28T04:37:57.579034Z",
+          "content_sha256": "1d91c1dbea4d9695e69a4abf4ae1eae0956926e7473815caed549ad2669febaa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "829979802"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "829979802"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall arsverk: O",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot",
+          "observed_at": "2025"
+        },
+        {
+          "id": "ar-page1-829979802-annual_report_business_address-8eea20f6d6072030",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "annual_report_business_address",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/829979802-2025.pdf",
+          "retrieved_at": "2026-11-05T15:07:34.738429Z",
+          "content_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "829979802"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "829979802"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Forretningsadresse: Værnesveien 108",
+          "metrics": {
+            "business_address": "Værnesveien 108",
+            "ocr_text_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+            "ocr_chars": 1529
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-829979802-annual_report_org_number-8eea20f6d6072030",
+          "organisation_number": "829979802",
+          "platform": "brreg",
+          "signal_type": "annual_report_org_number",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/829979802-2025.pdf",
+          "retrieved_at": "2026-11-05T15:07:34.738429Z",
+          "content_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "829979802"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "829979802"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Organisasjonsnummer: 829 979 802",
+          "metrics": {
+            "org_number": "829979802",
+            "ocr_text_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+            "ocr_chars": 1529
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "organisation_number": "829979802",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/829979802",
+          "retrieved_at": "2026-11-05T21:10:05.265738Z",
+          "content_sha256": "b5a0fbef61e58fc7be6382fcd22dfc55abe84360e54e57d53c29002baaa5004d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "829979802"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "PATONOMICS AS",
+              "matched_organisation_number": "829979802"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-829979802.orgNumber=829979802;name=PATONOMICS AS",
+          "id": "purehelp-profile-829979802-26de2751d8ff079b",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "74.910",
+            "nace_description": "Patentmeglervirksomhet og markedsføringstjenester",
+            "town": "TORSKEN",
+            "zipcode": "9381",
+            "municipality": "Senja",
+            "municipality_number": null,
+            "county": null,
+            "registration_date": "2022-11-14",
+            "registry_status": null,
+            "registry_status_date": "",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": null
+          }
         }
       ]
     },
@@ -1039,7 +1233,7 @@
     "company_name": "PATONOMICS AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "PATONOMICS AS is a private limited company operating in Patentmeglervirksomhet og markedsføringstjenester. Latest accounts (2025): revenue NOK 456.9k, annual result NOK 7.4k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
+    "summary": "PATONOMICS AS is a private limited company operating in Patentmeglervirksomhet og markedsføringstjenester. Latest accounts (2025): revenue NOK 456.9k, annual result NOK 7.4k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1053,7 +1247,12 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/829979802",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/aar",
+          "https://purehelp.no/company/NO/829979802",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.patonomics.com/"
         ]
@@ -1070,7 +1269,12 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/829979802",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/aar",
+          "https://purehelp.no/company/NO/829979802",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.patonomics.com/"
         ]
@@ -1087,7 +1291,12 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/829979802",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/aar",
+          "https://purehelp.no/company/NO/829979802",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.patonomics.com/"
         ]
@@ -1118,11 +1327,25 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/829979802/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/829979802",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/aar",
+          "https://purehelp.no/company/NO/829979802",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.patonomics.com/"
+        ]
       },
       {
         "question": "changes",
@@ -1136,7 +1359,12 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/829979802",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/aar",
+          "https://purehelp.no/company/NO/829979802",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.patonomics.com/"
         ]
@@ -1147,11 +1375,6 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
-      },
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
       }
     ]
   },
@@ -1595,43 +1818,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "829979802",
-        "platform": "company_site",
-        "source_url": "https://www.patonomics.com/",
-        "retrieved_at": "2026-10-05T08:44:36.155692Z",
-        "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-829979802-5a3dd0e9f905fed7",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 4,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "js_fallback_candidate",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
         "id": "registry-contact-108d6e41e52e5646d0e578a3",
         "organisation_number": "829979802",
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1650,40 +1843,13 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
-      },
-      {
-        "organisation_number": "829979802",
-        "platform": "company_site",
-        "source_url": "https://www.patonomics.com/",
-        "retrieved_at": "2026-10-05T08:44:36.155692Z",
-        "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-5d760131ad1cc9ff863fd323",
-        "signal_type": "website_description",
-        "evidence_span": "Patonomics",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "829979802",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=829979802&size=1000",
-        "retrieved_at": "2026-10-05T08:44:32.266422Z",
+        "retrieved_at": "2026-09-29T10:11:51.972516Z",
         "content_sha256": "dfcda9cdd8ed8dd7fac21743ba637994b8f24bbde42e7bb51d9582ff33060668",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1705,8 +1871,7 @@
           "subunit_organisation_number": "929911628",
           "municipality": "SENJA",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-5f4fd1ceedd3e2f9553ff4a2",
@@ -1714,7 +1879,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5f4fd1ceedd3e2f9553ff4a2ecc7d8ff9e628759c7560d76452676b4ee3719cc",
         "observed_at": "2026-06-15",
         "exact_entity": true,
@@ -1744,38 +1909,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7b5b50c55d3c8a65af2048cb0906cc3e3f2bac316cad7c4a3b7d33f2cbba91b8",
-        "observed_at": "2026-05-20",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "829979802",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2026-05-20: Endring",
-        "metrics": {
-          "date": "2026-05-20",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-34228c384bf8392d50e315bf",
-        "organisation_number": "829979802",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "34228c384bf8392d50e315bf6a70d2cfdc88243ee7e79fe77dc1d3f203f5288f",
         "observed_at": "2026-05-20",
         "exact_entity": true,
         "identity_proof": [
@@ -1804,7 +1939,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b7e31c1c64841fb9656a6051e94d4b9a9fd684b6e7d2e10ecd113af837023011",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -1834,7 +1969,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5ab3763c194103db664b0dc9c23010ba45154478accf8a87dc4fda6c3324209e",
         "observed_at": "2025-07-16",
         "exact_entity": true,
@@ -1864,7 +1999,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4c56b0f72acf88c57c2a93f350297ae3cf9d0b33ec55a88a50d51f59f255c204",
         "observed_at": "2024-11-04",
         "exact_entity": true,
@@ -1894,7 +2029,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6c4d27ab8c87c635b3f395b8cc51f9325cb9a3be48e7960de0ad6d94bd41ba44",
         "observed_at": "2024-07-20",
         "exact_entity": true,
@@ -1924,7 +2059,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "de03cfbd35ec69aa4b34b74b78db9b4ef2616a7e103c8bc32e6c45376915e655",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -1954,7 +2089,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "be31745ff47a9249b42d8ca66bcb68439bf6828c0de84425b09d9bb56bf690e6",
         "observed_at": "2023-08-21",
         "exact_entity": true,
@@ -1984,7 +2119,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "18ecb3851c33e01858949dab8565d23ad0d7884713905a579d86e006fd7dea9e",
         "observed_at": "2023-06-01",
         "exact_entity": true,
@@ -2014,7 +2149,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3b3a61f1586b2c6a566418f8300951289aa2ce617764f453bd82e18fb95d904c",
         "observed_at": "2023-03-21",
         "exact_entity": true,
@@ -2044,7 +2179,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "837396e6e819027afa38c9c4b37e7c32c431cb5ec83e144bf3cf0fb81d25611f",
         "observed_at": "2023-03-15",
         "exact_entity": true,
@@ -2074,7 +2209,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "13331c91c41be80fc8e748299801382a5503f19937a1736959f204f67eda1087",
         "observed_at": "2023-01-02",
         "exact_entity": true,
@@ -2104,7 +2239,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "62b1f5c5567e126c35821259b3150828a7c489b9caed1c8e64998d11dbdc0921",
         "observed_at": "2022-11-19",
         "exact_entity": true,
@@ -2134,7 +2269,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/829979802",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e2ec7897b9125eb8561886662321e405c4b2dd2c1fd1bed9154d0996a81cc8cf",
         "observed_at": "2022-11-14",
         "exact_entity": true,
@@ -2157,8 +2292,290 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-a79493176eae6faff3a58ee7",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "2f664184e7c27bd89a9fed0766969408dd91cc14df1e8e5e38c812b998af9e3a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "829979802",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-06-15",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-06-15",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000380710&amp;sokeverdi=829979802&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-06-15 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-276ef4fe823fd4b0b812ab5d",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "965e42e2b8f86c0bb7ccd53f3ae0580a0ccbe63f80c55d2209a903c51d6becf9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "829979802",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-16",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-16",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000591210&amp;sokeverdi=829979802&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-16 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-7133b85bafc949d878044393",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "7d7d7074597922af7db37f9f0d5ef7e219da7c7f3387365ba9df207d197ca8d3",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "829979802",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-07-18",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-07-18",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000728638&amp;sokeverdi=829979802&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-07-18 (BRREG official announcement)"
+      },
+      {
+        "organisation_number": "829979802",
+        "platform": "company_site",
+        "source_url": "https://www.patonomics.com/",
+        "retrieved_at": "2026-10-09T13:53:31.791238Z",
+        "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-5d760131ad1cc9ff863fd323",
+        "signal_type": "website_description",
+        "evidence_span": "Patonomics",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "829979802",
+        "platform": "company_site",
+        "source_url": "https://www.patonomics.com/",
+        "retrieved_at": "2026-10-09T13:53:31.791238Z",
+        "content_sha256": "5a3dd0e9f905fed75be8bd9623e304587812e43e1ba7ed7a19390d6a7eee274f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.9
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-829979802-5a3dd0e9f905fed7",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 4,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-10-09"
+      },
+      {
+        "id": "annual-workforce-7acdfafa7d3662986393123e",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/829979802/2025",
+        "retrieved_at": "2026-10-28T04:37:57.579034Z",
+        "content_sha256": "1d91c1dbea4d9695e69a4abf4ae1eae0956926e7473815caed549ad2669febaa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "829979802"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "829979802"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall arsverk: O",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot",
+        "observed_at": "2025"
+      },
+      {
+        "id": "ar-page1-829979802-annual_report_business_address-8eea20f6d6072030",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "annual_report_business_address",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/829979802-2025.pdf",
+        "retrieved_at": "2026-11-05T15:07:34.738429Z",
+        "content_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "829979802"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "829979802"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Forretningsadresse: Værnesveien 108",
+        "metrics": {
+          "business_address": "Værnesveien 108",
+          "ocr_text_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+          "ocr_chars": 1529
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-829979802-annual_report_org_number-8eea20f6d6072030",
+        "organisation_number": "829979802",
+        "platform": "brreg",
+        "signal_type": "annual_report_org_number",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/829979802-2025.pdf",
+        "retrieved_at": "2026-11-05T15:07:34.738429Z",
+        "content_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "829979802"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "829979802"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Organisasjonsnummer: 829 979 802",
+        "metrics": {
+          "org_number": "829979802",
+          "ocr_text_sha256": "8eea20f6d6072030d912acab09e6f5209c470b3afb3a764740374b9f2c0cf5fc",
+          "ocr_chars": 1529
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "organisation_number": "829979802",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/829979802",
+        "retrieved_at": "2026-11-05T21:10:05.265738Z",
+        "content_sha256": "b5a0fbef61e58fc7be6382fcd22dfc55abe84360e54e57d53c29002baaa5004d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "829979802"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "PATONOMICS AS",
+            "matched_organisation_number": "829979802"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-829979802.orgNumber=829979802;name=PATONOMICS AS",
+        "id": "purehelp-profile-829979802-26de2751d8ff079b",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "74.910",
+          "nace_description": "Patentmeglervirksomhet og markedsføringstjenester",
+          "town": "TORSKEN",
+          "zipcode": "9381",
+          "municipality": "Senja",
+          "municipality_number": null,
+          "county": null,
+          "registration_date": "2022-11-14",
+          "registry_status": null,
+          "registry_status_date": "",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": null
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.089179+00:00"
+  "generated_at": "2026-11-06T05:27:33.715194+00:00"
 }

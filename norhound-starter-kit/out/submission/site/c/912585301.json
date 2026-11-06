@@ -551,8 +551,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -571,8 +571,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-b2b7ed8b9df96062a9455caa",
@@ -580,8 +579,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -600,38 +599,35 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
-          "id": "registry-update-1b96ca4c5601252f531636cd",
           "organisation_number": "912585301",
           "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "1b96ca4c5601252f531636cdb1aabed2bedfd0929826ed8da9e7be57060b3c30",
-          "observed_at": "2026-09-30",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
+          "retrieved_at": "2026-09-29T10:07:15.438300Z",
+          "content_sha256": "52d9b9f234cdd165b6df8a1559c6118ca86209bc5cc0e9c73a39b7facef2ce21",
           "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "id": "subunit-6f44fe2c8ac741b278762917",
+          "signal_type": "subunit",
+          "evidence_span": "MOLOVEIEN 12 AS",
           "identity_proof": [
             {
               "type": "organisation_number_on_official_api",
               "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
+              "source_class": "official_subunits",
               "matched_organisation_number": "912585301",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
+              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
             }
           ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2026-09-30: Sletting",
           "metrics": {
-            "date": "2026-09-30",
-            "change_type": "Sletting",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
+            "subunit_organisation_number": "912597105",
+            "municipality": "OSLO",
+            "interpretation": "Officially registered sub-unit of this organisation."
+          }
         },
         {
           "id": "registry-update-195ac5d8bff717ad168d4a23",
@@ -639,7 +635,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "195ac5d8bff717ad168d4a230fa0fc4a8458d3c25ce55f3067644a5cffe98ef7",
           "observed_at": "2026-07-30",
           "exact_entity": true,
@@ -669,7 +665,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9a119b9c85df5f10ec0a918ccece9102fea0c868cca095210d537198d0d29c09",
           "observed_at": "2026-02-06",
           "exact_entity": true,
@@ -699,7 +695,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "96d5d8630e31c8ea6ff8d3d351e674c561ce63e0f0cd73710f99fdccf0b10ac3",
           "observed_at": "2026-01-21",
           "exact_entity": true,
@@ -729,7 +725,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "77f0ecb66a92f64fa1accf8e0d8ac802dcf4e1fd17964fe4bb80c6e622c886f4",
           "observed_at": "2025-12-30",
           "exact_entity": true,
@@ -759,7 +755,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "385f1789dfdf51e4c4f72aed14e576b77e69da8985df5115b9d5b382674cc791",
           "observed_at": "2025-12-11",
           "exact_entity": true,
@@ -789,7 +785,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6047aaaee32846810ed58b89fb413907bf5aa8f02cb2dc47231df7610653bcab",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -819,7 +815,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d667e932eea498093599a47fa0f4d038b2622161cffed35829d90f3b1c33a106",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -849,7 +845,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e872e461a2cf78c0de255ca0cbd4743008ec62ea3c23fe72b5e99a0425d7d4df",
           "observed_at": "2025-07-12",
           "exact_entity": true,
@@ -879,7 +875,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3631a942f0003f1e4e26f006a946654045c5812295c080f2abc73f58f3986cdd",
           "observed_at": "2025-07-03",
           "exact_entity": true,
@@ -909,7 +905,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f9f00c84fc763dd938850a9656b2a75dcefdfb7631328ac320b99350cf7e437c",
           "observed_at": "2024-07-24",
           "exact_entity": true,
@@ -939,7 +935,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dd98e856c437619fe89a562cb883712c1197a720d171d33e6e146715d44e70c9",
           "observed_at": "2023-07-03",
           "exact_entity": true,
@@ -969,7 +965,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "fdf442dd33aa0c0771b5b03bdc7bc53c90041a7e46183ccc3dee057fe4038f34",
           "observed_at": "2022-11-12",
           "exact_entity": true,
@@ -999,7 +995,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "05eae954a7cc1ed71965cb6e1d133552ac969a9c69ab03ad414636b0f92edf04",
           "observed_at": "2022-07-12",
           "exact_entity": true,
@@ -1029,7 +1025,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "218477b928033ef3e7281b71512502f81c7324573c9351339a75261de5b2b945",
           "observed_at": "2022-01-11",
           "exact_entity": true,
@@ -1059,7 +1055,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "149320e37d72c3fac9d2d7d731ef34a0f076a5ecca97604b47cda6759da59a44",
           "observed_at": "2021-09-25",
           "exact_entity": true,
@@ -1089,7 +1085,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f7ee1fad200164213df14bcb0a967ef895c01e2f9c51b6beaccee2a384c4c2d1",
           "observed_at": "2020-09-19",
           "exact_entity": true,
@@ -1119,7 +1115,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f334702a3a17297667f13048693eadc5318cb35020489ddc88e5f2eb552ecfcf",
           "observed_at": "2020-01-07",
           "exact_entity": true,
@@ -1149,7 +1145,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "280d248364d9fd6b7d531be4c6f5f6225745ec86c5149c558ec99cd93f039080",
           "observed_at": "2019-07-18",
           "exact_entity": true,
@@ -1174,14 +1170,14 @@
           "strategy": "registry_updates_feed"
         },
         {
-          "id": "registry-update-53e70bd9ab366592d3e0e15f",
+          "id": "registry-update-5b4da8c2345aed502dc0f2c3",
           "organisation_number": "912585301",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "53e70bd9ab366592d3e0e15f747e3dd3c063ffb8d61e45a867208846b61a0c41",
-          "observed_at": "2019-07-18",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "content_sha256": "5b4da8c2345aed502dc0f2c3706712b287bb60637c0c80df64af50104119bb5a",
+          "observed_at": "2019-01-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1195,13 +1191,390 @@
           "acquisition_mode": "official_api",
           "rights_status": "approved",
           "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2019-07-18: Endring",
+          "evidence_span": "Registry update 2019-01-14: Ukjent",
           "metrics": {
-            "date": "2019-07-18",
-            "change_type": "Endring",
+            "date": "2019-01-14",
+            "change_type": "Ukjent",
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-85068292cbb3b84146be465e",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "2d247a79cf933f07a3a738c3ec62a90c90b2ea9d849ab77971785c47df5896b3",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912585301",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-09-30",
+          "signal": {
+            "title": "Sletting etter fusjon",
+            "date": "2026-09-30",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb"
+          },
+          "evidence_span": "Sletting etter fusjon — 2026-09-30 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-357184ba2d445664e72bf0a5",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "9bfb109ca21d32f334005ba5f96f6b621cf301b860de1ddf85ba4a313a9c1193",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912585301",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-08-03",
+          "signal": {
+            "title": "Fusjonsbeslutning",
+            "date": "2026-08-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb"
+          },
+          "evidence_span": "Fusjonsbeslutning — 2026-08-03 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-4d45e8c26d85770ccdd5db7b",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "3aaea1c902c2347b2127016ff5da07a42b9a3054ee3962ea9b0cd2422c7daa56",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912585301",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-30",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-30",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-30 (BRREG official announcement)"
+        },
+        {
+          "id": "annual-workforce-e856b5765ae1d0c790b1e046",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
+          "retrieved_at": "2026-10-28T04:37:55.327263Z",
+          "content_sha256": "fc15eb377a4ad6c3cde037c30b863c0a3a1f0d17ab33eba97addcc10e80ad629",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Selskapet har ingen ansatte, og er",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "employees",
+            "year": "2025",
+            "scope": "company_phrase",
+            "employees": 0
+          },
+          "strategy": "annual_report_workforce_snapshot",
+          "observed_at": "2025"
+        },
+        {
+          "id": "registry-update-1b96ca4c5601252f531636cd",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
+          "retrieved_at": "2026-10-28T04:19:27.620683Z",
+          "content_sha256": "1b96ca4c5601252f531636cdb1aabed2bedfd0929826ed8da9e7be57060b3c30",
+          "observed_at": "2026-09-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "912585301",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-09-30: Sletting",
+          "metrics": {
+            "date": "2026-09-30",
+            "change_type": "Sletting",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_approval_date-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_approval_date",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Dato for fastsettelse av årsregnskapet: 04.05.2026",
+          "metrics": {
+            "approval_date": "04.05.2026",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_auditor-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_auditor",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Bekreftet av: Hilde Kari Dahl",
+          "metrics": {
+            "auditor": "Hilde Kari Dahl",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_accounting_rules-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_accounting_rules",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Regler for små foretak benyttet: Ja",
+          "metrics": {
+            "accounting_rules": "benyttet: Ja",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_business_address-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_business_address",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Forretningsadresse: Stenersgata 2A",
+          "metrics": {
+            "business_address": "Stenersgata 2A",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_signing_officer-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_signing_officer",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
+          "metrics": {
+            "signing_officer": "t.",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "id": "ar-page1-912585301-annual_report_org_number-db50708465c5f548",
+          "organisation_number": "912585301",
+          "platform": "brreg",
+          "signal_type": "annual_report_org_number",
+          "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+          "retrieved_at": "2026-11-05T14:53:16.196100Z",
+          "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "912585301"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "912585301"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Organisasjonsnummer: 912 585 301",
+          "metrics": {
+            "org_number": "912585301",
+            "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+            "ocr_chars": 1489
+          },
+          "strategy": "annual_report_page1_ocr"
+        },
+        {
+          "organisation_number": "912585301",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/912585301",
+          "retrieved_at": "2026-11-05T21:09:42.222246Z",
+          "content_sha256": "72479d79f4fc6d9b4b95c5850ed9cabf20848bbe865d20ea51ee7782213d23c6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "912585301"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MOLOVEIEN 12 AS",
+              "matched_organisation_number": "912585301"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-912585301.orgNumber=912585301;name=MOLOVEIEN 12 AS",
+          "id": "purehelp-profile-912585301-202b7ad5df97c63c",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "68.320",
+            "nace_description": "Other real estate activities on a fee or contract basis",
+            "town": "OSLO",
+            "zipcode": "0184",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "2013-10-15",
+            "registry_status": "DISSOLVED",
+            "registry_status_date": "2026-09-30",
+            "deregistration_date": "2026-09-30",
+            "is_active": false,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": null
+          }
         }
       ]
     },
@@ -1244,7 +1617,7 @@
     "company_name": "MOLOVEIEN 12 AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "MOLOVEIEN 12 AS is a private limited company operating in Eiendomsforvaltning på oppdrag. Latest accounts (2025): revenue NOK 1.2m, annual result NOK -2.2m. Annual accounts available for 2013-2025 (13 years). Detailed records only available as PDFs. Revenue growing (+75.7% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
+    "summary": "MOLOVEIEN 12 AS is a private limited company operating in Eiendomsforvaltning på oppdrag. Latest accounts (2025): revenue NOK 1.2m, annual result NOK -2.2m. Annual accounts available for 2013-2025 (13 years). Detailed records only available as PDFs. Revenue growing (+75.7% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1257,8 +1630,13 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
           "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1273,8 +1651,13 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
           "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1289,8 +1672,13 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
           "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1305,8 +1693,13 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
           "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1328,11 +1721,24 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
+          "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "changes",
@@ -1345,8 +1751,13 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912585301",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/aar",
+          "https://purehelp.no/company/NO/912585301",
           "https://thon.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
@@ -1356,11 +1767,6 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
-      },
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
       }
     ]
   },
@@ -1903,8 +2309,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1923,8 +2329,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-b2b7ed8b9df96062a9455caa",
@@ -1932,8 +2337,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1952,38 +2357,35 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
-        "id": "registry-update-1b96ca4c5601252f531636cd",
         "organisation_number": "912585301",
         "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "1b96ca4c5601252f531636cdb1aabed2bedfd0929826ed8da9e7be57060b3c30",
-        "observed_at": "2026-09-30",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912585301&size=1000",
+        "retrieved_at": "2026-09-29T10:07:15.438300Z",
+        "content_sha256": "52d9b9f234cdd165b6df8a1559c6118ca86209bc5cc0e9c73a39b7facef2ce21",
         "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "id": "subunit-6f44fe2c8ac741b278762917",
+        "signal_type": "subunit",
+        "evidence_span": "MOLOVEIEN 12 AS",
         "identity_proof": [
           {
             "type": "organisation_number_on_official_api",
             "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
+            "source_class": "official_subunits",
             "matched_organisation_number": "912585301",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
+            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
           }
         ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2026-09-30: Sletting",
         "metrics": {
-          "date": "2026-09-30",
-          "change_type": "Sletting",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
+          "subunit_organisation_number": "912597105",
+          "municipality": "OSLO",
+          "interpretation": "Officially registered sub-unit of this organisation."
+        }
       },
       {
         "id": "registry-update-195ac5d8bff717ad168d4a23",
@@ -1991,7 +2393,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "195ac5d8bff717ad168d4a230fa0fc4a8458d3c25ce55f3067644a5cffe98ef7",
         "observed_at": "2026-07-30",
         "exact_entity": true,
@@ -2021,7 +2423,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9a119b9c85df5f10ec0a918ccece9102fea0c868cca095210d537198d0d29c09",
         "observed_at": "2026-02-06",
         "exact_entity": true,
@@ -2051,7 +2453,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "96d5d8630e31c8ea6ff8d3d351e674c561ce63e0f0cd73710f99fdccf0b10ac3",
         "observed_at": "2026-01-21",
         "exact_entity": true,
@@ -2081,7 +2483,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "77f0ecb66a92f64fa1accf8e0d8ac802dcf4e1fd17964fe4bb80c6e622c886f4",
         "observed_at": "2025-12-30",
         "exact_entity": true,
@@ -2111,7 +2513,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "385f1789dfdf51e4c4f72aed14e576b77e69da8985df5115b9d5b382674cc791",
         "observed_at": "2025-12-11",
         "exact_entity": true,
@@ -2141,7 +2543,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6047aaaee32846810ed58b89fb413907bf5aa8f02cb2dc47231df7610653bcab",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2171,7 +2573,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d667e932eea498093599a47fa0f4d038b2622161cffed35829d90f3b1c33a106",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -2201,7 +2603,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e872e461a2cf78c0de255ca0cbd4743008ec62ea3c23fe72b5e99a0425d7d4df",
         "observed_at": "2025-07-12",
         "exact_entity": true,
@@ -2231,7 +2633,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3631a942f0003f1e4e26f006a946654045c5812295c080f2abc73f58f3986cdd",
         "observed_at": "2025-07-03",
         "exact_entity": true,
@@ -2261,7 +2663,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f9f00c84fc763dd938850a9656b2a75dcefdfb7631328ac320b99350cf7e437c",
         "observed_at": "2024-07-24",
         "exact_entity": true,
@@ -2291,7 +2693,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dd98e856c437619fe89a562cb883712c1197a720d171d33e6e146715d44e70c9",
         "observed_at": "2023-07-03",
         "exact_entity": true,
@@ -2321,7 +2723,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "fdf442dd33aa0c0771b5b03bdc7bc53c90041a7e46183ccc3dee057fe4038f34",
         "observed_at": "2022-11-12",
         "exact_entity": true,
@@ -2351,7 +2753,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "05eae954a7cc1ed71965cb6e1d133552ac969a9c69ab03ad414636b0f92edf04",
         "observed_at": "2022-07-12",
         "exact_entity": true,
@@ -2381,7 +2783,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "218477b928033ef3e7281b71512502f81c7324573c9351339a75261de5b2b945",
         "observed_at": "2022-01-11",
         "exact_entity": true,
@@ -2411,7 +2813,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "149320e37d72c3fac9d2d7d731ef34a0f076a5ecca97604b47cda6759da59a44",
         "observed_at": "2021-09-25",
         "exact_entity": true,
@@ -2441,7 +2843,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f7ee1fad200164213df14bcb0a967ef895c01e2f9c51b6beaccee2a384c4c2d1",
         "observed_at": "2020-09-19",
         "exact_entity": true,
@@ -2471,7 +2873,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f334702a3a17297667f13048693eadc5318cb35020489ddc88e5f2eb552ecfcf",
         "observed_at": "2020-01-07",
         "exact_entity": true,
@@ -2501,7 +2903,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "280d248364d9fd6b7d531be4c6f5f6225745ec86c5149c558ec99cd93f039080",
         "observed_at": "2019-07-18",
         "exact_entity": true,
@@ -2526,14 +2928,14 @@
         "strategy": "registry_updates_feed"
       },
       {
-        "id": "registry-update-53e70bd9ab366592d3e0e15f",
+        "id": "registry-update-5b4da8c2345aed502dc0f2c3",
         "organisation_number": "912585301",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "53e70bd9ab366592d3e0e15f747e3dd3c063ffb8d61e45a867208846b61a0c41",
-        "observed_at": "2019-07-18",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "content_sha256": "5b4da8c2345aed502dc0f2c3706712b287bb60637c0c80df64af50104119bb5a",
+        "observed_at": "2019-01-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2547,15 +2949,392 @@
         "acquisition_mode": "official_api",
         "rights_status": "approved",
         "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2019-07-18: Endring",
+        "evidence_span": "Registry update 2019-01-14: Ukjent",
         "metrics": {
-          "date": "2019-07-18",
-          "change_type": "Endring",
+          "date": "2019-01-14",
+          "change_type": "Ukjent",
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-85068292cbb3b84146be465e",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "2d247a79cf933f07a3a738c3ec62a90c90b2ea9d849ab77971785c47df5896b3",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912585301",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-09-30",
+        "signal": {
+          "title": "Sletting etter fusjon",
+          "date": "2026-09-30",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000768305&amp;sokeverdi=912585301&amp;spraak=nb"
+        },
+        "evidence_span": "Sletting etter fusjon — 2026-09-30 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-357184ba2d445664e72bf0a5",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "9bfb109ca21d32f334005ba5f96f6b621cf301b860de1ddf85ba4a313a9c1193",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912585301",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-08-03",
+        "signal": {
+          "title": "Fusjonsbeslutning",
+          "date": "2026-08-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000645712&amp;sokeverdi=912585301&amp;spraak=nb"
+        },
+        "evidence_span": "Fusjonsbeslutning — 2026-08-03 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-4d45e8c26d85770ccdd5db7b",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "3aaea1c902c2347b2127016ff5da07a42b9a3054ee3962ea9b0cd2422c7daa56",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912585301",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-30",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-30",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000629670&amp;sokeverdi=912585301&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-30 (BRREG official announcement)"
+      },
+      {
+        "id": "annual-workforce-e856b5765ae1d0c790b1e046",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912585301/2025",
+        "retrieved_at": "2026-10-28T04:37:55.327263Z",
+        "content_sha256": "fc15eb377a4ad6c3cde037c30b863c0a3a1f0d17ab33eba97addcc10e80ad629",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Selskapet har ingen ansatte, og er",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "employees",
+          "year": "2025",
+          "scope": "company_phrase",
+          "employees": 0
+        },
+        "strategy": "annual_report_workforce_snapshot",
+        "observed_at": "2025"
+      },
+      {
+        "id": "registry-update-1b96ca4c5601252f531636cd",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912585301",
+        "retrieved_at": "2026-10-28T04:19:27.620683Z",
+        "content_sha256": "1b96ca4c5601252f531636cdb1aabed2bedfd0929826ed8da9e7be57060b3c30",
+        "observed_at": "2026-09-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "912585301",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-09-30: Sletting",
+        "metrics": {
+          "date": "2026-09-30",
+          "change_type": "Sletting",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_approval_date-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_approval_date",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Dato for fastsettelse av årsregnskapet: 04.05.2026",
+        "metrics": {
+          "approval_date": "04.05.2026",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_auditor-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_auditor",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Bekreftet av: Hilde Kari Dahl",
+        "metrics": {
+          "auditor": "Hilde Kari Dahl",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_accounting_rules-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_accounting_rules",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Regler for små foretak benyttet: Ja",
+        "metrics": {
+          "accounting_rules": "benyttet: Ja",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_business_address-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_business_address",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Forretningsadresse: Stenersgata 2A",
+        "metrics": {
+          "business_address": "Stenersgata 2A",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_signing_officer-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_signing_officer",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
+        "metrics": {
+          "signing_officer": "t.",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "id": "ar-page1-912585301-annual_report_org_number-db50708465c5f548",
+        "organisation_number": "912585301",
+        "platform": "brreg",
+        "signal_type": "annual_report_org_number",
+        "source_url": "file:///tmp/opencode/ar-page1-cache/912585301-2025.pdf",
+        "retrieved_at": "2026-11-05T14:53:16.196100Z",
+        "content_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "912585301"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "912585301"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Organisasjonsnummer: 912 585 301",
+        "metrics": {
+          "org_number": "912585301",
+          "ocr_text_sha256": "db50708465c5f54889561567d5fa290bdaa0c536de60b1b05b2fd59cf5c49ef2",
+          "ocr_chars": 1489
+        },
+        "strategy": "annual_report_page1_ocr"
+      },
+      {
+        "organisation_number": "912585301",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/912585301",
+        "retrieved_at": "2026-11-05T21:09:42.222246Z",
+        "content_sha256": "72479d79f4fc6d9b4b95c5850ed9cabf20848bbe865d20ea51ee7782213d23c6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "912585301"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MOLOVEIEN 12 AS",
+            "matched_organisation_number": "912585301"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-912585301.orgNumber=912585301;name=MOLOVEIEN 12 AS",
+        "id": "purehelp-profile-912585301-202b7ad5df97c63c",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "68.320",
+          "nace_description": "Other real estate activities on a fee or contract basis",
+          "town": "OSLO",
+          "zipcode": "0184",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "2013-10-15",
+          "registry_status": "DISSOLVED",
+          "registry_status_date": "2026-09-30",
+          "deregistration_date": "2026-09-30",
+          "is_active": false,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": null
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:43.269637+00:00"
+  "generated_at": "2026-11-06T05:27:32.206807+00:00"
 }

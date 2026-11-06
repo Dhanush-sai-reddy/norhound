@@ -557,75 +557,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "936361285",
-          "platform": "company_site",
-          "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-936361285-e7b36fcae5a59f45",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 7,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-bfee013f00452aba3218cfa8",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T08:37:08.292488Z",
-          "content_sha256": "1d6b22b4d4d78d4d4de12c5620d1cc0303ee5394c08de406941a2998523da67c",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "936361285",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 6",
-          "metrics": {
-            "workforce_value": 6,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2025-06-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2025-06-12",
-          "effective_at": "2025-06-12"
-        },
-        {
           "id": "registry-contact-094bf6c086ee31e16c5ecb34",
           "organisation_number": "936361285",
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -644,15 +582,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "936361285",
           "platform": "company_site",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -670,14 +607,13 @@
           "evidence_span": "nettec.no – Sikker og pålitelig datakommunikasjon til bedrifter",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "936361285",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=936361285&size=1000",
-          "retrieved_at": "2026-10-05T08:37:12.932177Z",
+          "retrieved_at": "2026-09-29T10:04:55.026376Z",
           "content_sha256": "68578cadb4e82eaae176f7b07a45f32b6180a30a7c392664ae5f6eeb3d837d08",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -699,36 +635,7 @@
             "subunit_organisation_number": "972028843",
             "municipality": "NORDRE FOLLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "sitemap-page-799a154f86e9c9b47d66f916",
-          "organisation_number": "936361285",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
-          "observed_at": "2026-09-29",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-09-29",
-          "metrics": {
-            "page_url": "https://nettec.no/",
-            "lastmod": "2026-09-29",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
+          }
         },
         {
           "id": "sitemap-page-5a9a20f8c60a00c9764fab72",
@@ -736,8 +643,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-09-29",
           "exact_entity": true,
           "identity_proof": [
@@ -764,8 +671,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-09-29",
           "exact_entity": true,
           "identity_proof": [
@@ -792,8 +699,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-09-15",
           "exact_entity": true,
           "identity_proof": [
@@ -820,8 +727,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-09-04",
           "exact_entity": true,
           "identity_proof": [
@@ -848,8 +755,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-09-03",
           "exact_entity": true,
           "identity_proof": [
@@ -871,13 +778,41 @@
           "strategy": "sitemap_lastmod"
         },
         {
+          "id": "sitemap-page-252d002269717073d5b6ce31",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+          "observed_at": "2026-08-17",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-08-17",
+          "metrics": {
+            "page_url": "https://nettec.no/",
+            "lastmod": "2026-08-17",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "id": "sitemap-page-61c2a5f0db85927ab194c68d",
           "organisation_number": "936361285",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-08-17",
           "exact_entity": true,
           "identity_proof": [
@@ -904,8 +839,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-08-11",
           "exact_entity": true,
           "identity_proof": [
@@ -932,8 +867,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-08-11",
           "exact_entity": true,
           "identity_proof": [
@@ -960,8 +895,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://nettec.no/",
-          "retrieved_at": "2026-10-05T08:37:39.564972Z",
-          "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
           "observed_at": "2026-08-07",
           "exact_entity": true,
           "identity_proof": [
@@ -988,7 +923,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f6c4812532fc1aaeb6c0385939e8ba340dccf0558c5ae390dc5c84ee9b402acc",
           "observed_at": "2026-07-28",
           "exact_entity": true,
@@ -1018,7 +953,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "622989033fb795540ab0ad713232d784adcfba447598d8b9f56666b743ffd58a",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1048,7 +983,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "616cb06e1e18b012fa416515cde1f28893a44d7f69c9685f54a113251e886ca8",
           "observed_at": "2025-07-21",
           "exact_entity": true,
@@ -1078,7 +1013,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "242c24e4fb7d5c2c360c32464b682cd444c63bd874be4ce7c3503a5f17e2f8c5",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1108,188 +1043,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a9882fa7b2355f45e5906c74c1e2d2c6a93fdb279b89838047c56c39a8a58060",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-f8cd7597e4fab6eaa84706ef",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "f8cd7597e4fab6eaa84706ef822347384dfd4cd353d6a6e23e377ab96d912d0a",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-0e84b4a523599e674473cbdf",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "0e84b4a523599e674473cbdfbb2ce64b8bfdb0cea6c1d816e924748e986c1a41",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-14460e6573f962baa7d35418",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "14460e6573f962baa7d354183e8625021454bd8ec8f766e79d9895d3130db32a",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-cb3e33262ad2ac08c2bc89dc",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "cb3e33262ad2ac08c2bc89dc9d2070f9f82100123548fb456af626a92b1597b6",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-8e3d57a1e2745cee5d80992c",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "8e3d57a1e2745cee5d80992cc57b715039059d9ec6d6f405199ca2066610b034",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "936361285",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-d21d76d7036a16d53e3315e0",
-          "organisation_number": "936361285",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "d21d76d7036a16d53e3315e0a47b65c061d6470066781d0568d694a89e742ee5",
           "observed_at": "2025-04-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1318,7 +1073,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bb13978592cd3f2c5d3b350462460c05ef4c51736028c589e58fa5cbd5b82b4e",
           "observed_at": "2024-07-24",
           "exact_entity": true,
@@ -1348,7 +1103,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0b581dcfb1a7dfe2de4416539d3b72cb478ed73a1b4e9608785961b29d93b5cd",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -1378,7 +1133,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4bf02ba6fea88b33a7e8eb67609d1a6c0893ef8951bc33c3bb74681e15dc6332",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1408,7 +1163,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "26ddf47ace43588c10d4d5ca5ea5df951039dd51212e93b06e481f699a47d28b",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1438,7 +1193,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f311f2de169b7c3862f29095baec772a4ca273567fcb4e8cc5c4b380ca6dabcf",
           "observed_at": "2023-08-05",
           "exact_entity": true,
@@ -1468,7 +1223,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dc12560c2873aea578ed6b1d88e899b85fa3c42faf3c0079f9b64ad9cb49f1f5",
           "observed_at": "2023-02-14",
           "exact_entity": true,
@@ -1498,7 +1253,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b00dd6211f97a7b229a1d0bde535362c50638b837903c2174e07f4f57611aabd",
           "observed_at": "2022-07-14",
           "exact_entity": true,
@@ -1528,7 +1283,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1eadf51b3c693bcd99c6583dd593d172d28a0865198574e5e214d140449a422b",
           "observed_at": "2021-12-13",
           "exact_entity": true,
@@ -1558,7 +1313,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "72c0f7b836e3c4498f826baae96a346a96fb644d14bc9c131e4424b9b5e55ffd",
           "observed_at": "2021-11-15",
           "exact_entity": true,
@@ -1583,11 +1338,158 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-9656be3b1afd19726447d0be",
+          "organisation_number": "936361285",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "e76b04a057b70115f2b42c46f3e96ea33fafd9f61097a277a76d40deff3c5764",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "936361285",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-28",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-28",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-28 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-ce7258b13b86bf10a720f78c",
+          "organisation_number": "936361285",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "539341e5d578486ea46f2f1cce5c219057ba5a84118f1be618b2e109c42bfd09",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "936361285",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-21",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-21",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-21 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-c981a4ec0f2f360e68c61dbf",
+          "organisation_number": "936361285",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "9157d46520b524799b2dd65f086c1d7d5b648e356ec6dbf8a87c14e20d6e53ce",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "936361285",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-23",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-06-23",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-06-23 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-bfee013f00452aba3218cfa8",
+          "organisation_number": "936361285",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
+          "retrieved_at": "2026-09-29T10:04:47.429524Z",
+          "content_sha256": "1d6b22b4d4d78d4d4de12c5620d1cc0303ee5394c08de406941a2998523da67c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "936361285",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 6",
+          "metrics": {
+            "workforce_value": 6,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2025-06-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2025-06-12",
+          "effective_at": "2025-06-12"
+        },
+        {
+          "id": "sitemap-page-799a154f86e9c9b47d66f916",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+          "observed_at": "2026-09-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-09-29",
+          "metrics": {
+            "page_url": "https://nettec.no/",
+            "lastmod": "2026-09-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "organisation_number": "936361285",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-          "retrieved_at": "2026-10-05T14:31:23.273232Z",
-          "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+          "retrieved_at": "2026-10-31T18:16:17.356158Z",
+          "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1600,7 +1502,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-metrics-936361285-2a921b909f79a37f",
+          "id": "gplaces-metrics-936361285-9bea8581da0db794",
           "signal_type": "profile_metrics",
           "strategy": "social_profile_metrics",
           "evidence_span": "Nettec AS Google profile: rating 5/5, 3 ratings.",
@@ -1615,8 +1517,8 @@
           "organisation_number": "936361285",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-          "retrieved_at": "2026-10-05T14:31:23.273232Z",
-          "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+          "retrieved_at": "2026-10-31T18:16:17.356158Z",
+          "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1629,7 +1531,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-936361285-2a921b909f79a37f",
+          "id": "gplaces-review-summary-936361285-9bea8581da0db794",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Nettec AS is rated 5/5 from 3 Google reviews.",
@@ -1644,8 +1546,8 @@
           "organisation_number": "936361285",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-          "retrieved_at": "2026-10-05T14:31:23.273232Z",
-          "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+          "retrieved_at": "2026-10-31T18:16:17.356158Z",
+          "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1658,7 +1560,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-936361285-2a921b909f79a37f",
+          "id": "gplaces-sentiment-936361285-9bea8581da0db794",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1668,6 +1570,286 @@
             "rating": 5,
             "review_count": 3,
             "scale": 5
+          }
+        },
+        {
+          "id": "sitemap-page-67d5bb70b4ebb475478115c2",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-15T01:20:57.056940Z",
+          "content_sha256": "f8c82040da71fbba6ad5ec3a913bfbf6f79c935f7b9644a36c3962ac78a03d5e",
+          "observed_at": "2026-07-22",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/miljoansvar/ last modified 2026-07-22",
+          "metrics": {
+            "page_url": "https://nettec.no/miljoansvar/",
+            "lastmod": "2026-07-22",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-deb013f7283a5ddafc35ade3",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-15T01:20:57.056940Z",
+          "content_sha256": "f8c82040da71fbba6ad5ec3a913bfbf6f79c935f7b9644a36c3962ac78a03d5e",
+          "observed_at": "2026-06-24",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/miljoansvar/miljo-og-baerekraft/ last modified 2026-06-24",
+          "metrics": {
+            "page_url": "https://nettec.no/miljoansvar/miljo-og-baerekraft/",
+            "lastmod": "2026-06-24",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T12:32:27.910001Z",
+          "content_sha256": "f3aa0b52156d5550e86e9360a58ccb3429c3f0093f546c5db94d78f860b023e1",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-936361285-f3aa0b52156d5550",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 7,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "id": "sitemap-page-a511fb146350b9dae281353d",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/mobil-datakommunikasjon/wifi-ladestasjon-sameie-borettslag/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://nettec.no/mobil-datakommunikasjon/wifi-ladestasjon-sameie-borettslag/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-8900da8d05d813e33c621ca5",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/vi-soker-nettverkskonsulent/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://nettec.no/vi-soker-nettverkskonsulent/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-c866b67ec39028febafa1dac",
+          "organisation_number": "936361285",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://nettec.no/",
+          "retrieved_at": "2026-09-29T10:05:29.446231Z",
+          "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://nettec.no/nettverk-til-spro/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://nettec.no/nettverk-til-spro/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "936361285",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/936361285",
+          "retrieved_at": "2026-11-05T21:09:30.704242Z",
+          "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "936361285"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NETTEC AS",
+              "matched_organisation_number": "936361285"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+          "id": "purehelp-phone-936361285-b58712d7adedbccf",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "66 81 06 40",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "936361285",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/936361285",
+          "retrieved_at": "2026-11-05T21:09:30.704242Z",
+          "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "936361285"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NETTEC AS",
+              "matched_organisation_number": "936361285"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+          "id": "purehelp-profile-936361285-b58712d7adedbccf",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "46.500",
+            "nace_description": "Wholesale of information and communication equipment",
+            "town": "KOLBOTN",
+            "zipcode": "1410",
+            "municipality": "NORDRE FOLLO",
+            "municipality_number": "3207",
+            "county": "Akershus",
+            "registration_date": "1995-02-19",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-02-19",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.nettec.no"
+          }
+        },
+        {
+          "organisation_number": "936361285",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/936361285",
+          "retrieved_at": "2026-11-05T21:09:30.704242Z",
+          "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "936361285"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NETTEC AS",
+              "matched_organisation_number": "936361285"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+          "id": "purehelp-workforce-936361285-b58712d7adedbccf",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 6,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1697,7 +1879,7 @@
     "company_name": "NETTEC AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "NETTEC AS is a private limited company operating in Engroshandel med informasjons- og kommunikasjonsteknologiutstyr. Latest accounts (2025): revenue NOK 40.0m, annual result NOK 7.2m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.0% YoY). Registered employees: 6. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "NETTEC AS is a private limited company operating in Engroshandel med informasjons- og kommunikasjonsteknologiutstyr. Latest accounts (2025): revenue NOK 40.0m, annual result NOK 7.2m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.0% YoY). Registered employees: 6. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1713,7 +1895,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       },
       {
@@ -1730,7 +1917,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       },
       {
@@ -1747,7 +1939,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       },
       {
@@ -1764,7 +1961,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       },
       {
@@ -1781,7 +1983,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       },
       {
@@ -1794,11 +2001,25 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/936361285/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=936361285&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
+          "https://nettec.no/",
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
+        ]
       },
       {
         "question": "changes",
@@ -1814,17 +2035,16 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/936361285",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/936361285/aar",
           "https://nettec.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/936361285",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2371,75 +2591,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "936361285",
-        "platform": "company_site",
-        "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-936361285-e7b36fcae5a59f45",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 7,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-bfee013f00452aba3218cfa8",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T08:37:08.292488Z",
-        "content_sha256": "1d6b22b4d4d78d4d4de12c5620d1cc0303ee5394c08de406941a2998523da67c",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "936361285",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 6",
-        "metrics": {
-          "workforce_value": 6,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2025-06-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2025-06-12",
-        "effective_at": "2025-06-12"
-      },
-      {
         "id": "registry-contact-094bf6c086ee31e16c5ecb34",
         "organisation_number": "936361285",
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2458,15 +2616,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "936361285",
         "platform": "company_site",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2484,14 +2641,13 @@
         "evidence_span": "nettec.no – Sikker og pålitelig datakommunikasjon til bedrifter",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "936361285",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=936361285&size=1000",
-        "retrieved_at": "2026-10-05T08:37:12.932177Z",
+        "retrieved_at": "2026-09-29T10:04:55.026376Z",
         "content_sha256": "68578cadb4e82eaae176f7b07a45f32b6180a30a7c392664ae5f6eeb3d837d08",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2513,36 +2669,7 @@
           "subunit_organisation_number": "972028843",
           "municipality": "NORDRE FOLLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "sitemap-page-799a154f86e9c9b47d66f916",
-        "organisation_number": "936361285",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
-        "observed_at": "2026-09-29",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-09-29",
-        "metrics": {
-          "page_url": "https://nettec.no/",
-          "lastmod": "2026-09-29",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
+        }
       },
       {
         "id": "sitemap-page-5a9a20f8c60a00c9764fab72",
@@ -2550,8 +2677,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-09-29",
         "exact_entity": true,
         "identity_proof": [
@@ -2578,8 +2705,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-09-29",
         "exact_entity": true,
         "identity_proof": [
@@ -2606,8 +2733,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-09-15",
         "exact_entity": true,
         "identity_proof": [
@@ -2634,8 +2761,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-09-04",
         "exact_entity": true,
         "identity_proof": [
@@ -2662,8 +2789,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-09-03",
         "exact_entity": true,
         "identity_proof": [
@@ -2685,13 +2812,41 @@
         "strategy": "sitemap_lastmod"
       },
       {
+        "id": "sitemap-page-252d002269717073d5b6ce31",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+        "observed_at": "2026-08-17",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-08-17",
+        "metrics": {
+          "page_url": "https://nettec.no/",
+          "lastmod": "2026-08-17",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "id": "sitemap-page-61c2a5f0db85927ab194c68d",
         "organisation_number": "936361285",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-08-17",
         "exact_entity": true,
         "identity_proof": [
@@ -2718,8 +2873,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-08-11",
         "exact_entity": true,
         "identity_proof": [
@@ -2746,8 +2901,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-08-11",
         "exact_entity": true,
         "identity_proof": [
@@ -2774,8 +2929,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://nettec.no/",
-        "retrieved_at": "2026-10-05T08:37:39.564972Z",
-        "content_sha256": "e7b36fcae5a59f45274e7b8591dfde1ec298c6b2218bda0a4fae26c886d309be",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
         "observed_at": "2026-08-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2802,7 +2957,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f6c4812532fc1aaeb6c0385939e8ba340dccf0558c5ae390dc5c84ee9b402acc",
         "observed_at": "2026-07-28",
         "exact_entity": true,
@@ -2832,7 +2987,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "622989033fb795540ab0ad713232d784adcfba447598d8b9f56666b743ffd58a",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2862,7 +3017,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "616cb06e1e18b012fa416515cde1f28893a44d7f69c9685f54a113251e886ca8",
         "observed_at": "2025-07-21",
         "exact_entity": true,
@@ -2892,7 +3047,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "242c24e4fb7d5c2c360c32464b682cd444c63bd874be4ce7c3503a5f17e2f8c5",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -2922,188 +3077,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a9882fa7b2355f45e5906c74c1e2d2c6a93fdb279b89838047c56c39a8a58060",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-f8cd7597e4fab6eaa84706ef",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "f8cd7597e4fab6eaa84706ef822347384dfd4cd353d6a6e23e377ab96d912d0a",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-0e84b4a523599e674473cbdf",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "0e84b4a523599e674473cbdfbb2ce64b8bfdb0cea6c1d816e924748e986c1a41",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-14460e6573f962baa7d35418",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "14460e6573f962baa7d354183e8625021454bd8ec8f766e79d9895d3130db32a",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-cb3e33262ad2ac08c2bc89dc",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "cb3e33262ad2ac08c2bc89dc9d2070f9f82100123548fb456af626a92b1597b6",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-8e3d57a1e2745cee5d80992c",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "8e3d57a1e2745cee5d80992cc57b715039059d9ec6d6f405199ca2066610b034",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "936361285",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-d21d76d7036a16d53e3315e0",
-        "organisation_number": "936361285",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "d21d76d7036a16d53e3315e0a47b65c061d6470066781d0568d694a89e742ee5",
         "observed_at": "2025-04-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3132,7 +3107,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bb13978592cd3f2c5d3b350462460c05ef4c51736028c589e58fa5cbd5b82b4e",
         "observed_at": "2024-07-24",
         "exact_entity": true,
@@ -3162,7 +3137,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0b581dcfb1a7dfe2de4416539d3b72cb478ed73a1b4e9608785961b29d93b5cd",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -3192,7 +3167,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4bf02ba6fea88b33a7e8eb67609d1a6c0893ef8951bc33c3bb74681e15dc6332",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3222,7 +3197,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "26ddf47ace43588c10d4d5ca5ea5df951039dd51212e93b06e481f699a47d28b",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -3252,7 +3227,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f311f2de169b7c3862f29095baec772a4ca273567fcb4e8cc5c4b380ca6dabcf",
         "observed_at": "2023-08-05",
         "exact_entity": true,
@@ -3282,7 +3257,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dc12560c2873aea578ed6b1d88e899b85fa3c42faf3c0079f9b64ad9cb49f1f5",
         "observed_at": "2023-02-14",
         "exact_entity": true,
@@ -3312,7 +3287,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b00dd6211f97a7b229a1d0bde535362c50638b837903c2174e07f4f57611aabd",
         "observed_at": "2022-07-14",
         "exact_entity": true,
@@ -3342,7 +3317,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1eadf51b3c693bcd99c6583dd593d172d28a0865198574e5e214d140449a422b",
         "observed_at": "2021-12-13",
         "exact_entity": true,
@@ -3372,7 +3347,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "72c0f7b836e3c4498f826baae96a346a96fb644d14bc9c131e4424b9b5e55ffd",
         "observed_at": "2021-11-15",
         "exact_entity": true,
@@ -3397,11 +3372,158 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-9656be3b1afd19726447d0be",
+        "organisation_number": "936361285",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "e76b04a057b70115f2b42c46f3e96ea33fafd9f61097a277a76d40deff3c5764",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "936361285",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-28",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-28",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000618507&amp;sokeverdi=936361285&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-28 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-ce7258b13b86bf10a720f78c",
+        "organisation_number": "936361285",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "539341e5d578486ea46f2f1cce5c219057ba5a84118f1be618b2e109c42bfd09",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "936361285",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-21",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-21",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000607522&amp;sokeverdi=936361285&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-21 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-c981a4ec0f2f360e68c61dbf",
+        "organisation_number": "936361285",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "9157d46520b524799b2dd65f086c1d7d5b648e356ec6dbf8a87c14e20d6e53ce",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "936361285",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-23",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-06-23",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000449609&amp;sokeverdi=936361285&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-06-23 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-bfee013f00452aba3218cfa8",
+        "organisation_number": "936361285",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/936361285",
+        "retrieved_at": "2026-09-29T10:04:47.429524Z",
+        "content_sha256": "1d6b22b4d4d78d4d4de12c5620d1cc0303ee5394c08de406941a2998523da67c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "936361285",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 6",
+        "metrics": {
+          "workforce_value": 6,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2025-06-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2025-06-12",
+        "effective_at": "2025-06-12"
+      },
+      {
+        "id": "sitemap-page-799a154f86e9c9b47d66f916",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+        "observed_at": "2026-09-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/ last modified 2026-09-29",
+        "metrics": {
+          "page_url": "https://nettec.no/",
+          "lastmod": "2026-09-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "organisation_number": "936361285",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-        "retrieved_at": "2026-10-05T14:31:23.273232Z",
-        "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+        "retrieved_at": "2026-10-31T18:16:17.356158Z",
+        "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3414,7 +3536,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-metrics-936361285-2a921b909f79a37f",
+        "id": "gplaces-metrics-936361285-9bea8581da0db794",
         "signal_type": "profile_metrics",
         "strategy": "social_profile_metrics",
         "evidence_span": "Nettec AS Google profile: rating 5/5, 3 ratings.",
@@ -3429,8 +3551,8 @@
         "organisation_number": "936361285",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-        "retrieved_at": "2026-10-05T14:31:23.273232Z",
-        "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+        "retrieved_at": "2026-10-31T18:16:17.356158Z",
+        "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3443,7 +3565,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-936361285-2a921b909f79a37f",
+        "id": "gplaces-review-summary-936361285-9bea8581da0db794",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Nettec AS is rated 5/5 from 3 Google reviews.",
@@ -3458,8 +3580,8 @@
         "organisation_number": "936361285",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJUWRr02NoQUYR4NiMFMgJqJI",
-        "retrieved_at": "2026-10-05T14:31:23.273232Z",
-        "content_sha256": "2a921b909f79a37ffc05870e4cf9d5c60b42a61f1b419a4c4a94d8cc97dc1763",
+        "retrieved_at": "2026-10-31T18:16:17.356158Z",
+        "content_sha256": "9bea8581da0db794f79e3de1fcde8d3a945b7696971363d1401576855c703211",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3472,7 +3594,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-936361285-2a921b909f79a37f",
+        "id": "gplaces-sentiment-936361285-9bea8581da0db794",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3483,8 +3605,288 @@
           "review_count": 3,
           "scale": 5
         }
+      },
+      {
+        "id": "sitemap-page-67d5bb70b4ebb475478115c2",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-15T01:20:57.056940Z",
+        "content_sha256": "f8c82040da71fbba6ad5ec3a913bfbf6f79c935f7b9644a36c3962ac78a03d5e",
+        "observed_at": "2026-07-22",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/miljoansvar/ last modified 2026-07-22",
+        "metrics": {
+          "page_url": "https://nettec.no/miljoansvar/",
+          "lastmod": "2026-07-22",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-deb013f7283a5ddafc35ade3",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-15T01:20:57.056940Z",
+        "content_sha256": "f8c82040da71fbba6ad5ec3a913bfbf6f79c935f7b9644a36c3962ac78a03d5e",
+        "observed_at": "2026-06-24",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/miljoansvar/miljo-og-baerekraft/ last modified 2026-06-24",
+        "metrics": {
+          "page_url": "https://nettec.no/miljoansvar/miljo-og-baerekraft/",
+          "lastmod": "2026-06-24",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T12:32:27.910001Z",
+        "content_sha256": "f3aa0b52156d5550e86e9360a58ccb3429c3f0093f546c5db94d78f860b023e1",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-936361285-f3aa0b52156d5550",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 7,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "id": "sitemap-page-a511fb146350b9dae281353d",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/mobil-datakommunikasjon/wifi-ladestasjon-sameie-borettslag/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://nettec.no/mobil-datakommunikasjon/wifi-ladestasjon-sameie-borettslag/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-8900da8d05d813e33c621ca5",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/vi-soker-nettverkskonsulent/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://nettec.no/vi-soker-nettverkskonsulent/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-c866b67ec39028febafa1dac",
+        "organisation_number": "936361285",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://nettec.no/",
+        "retrieved_at": "2026-09-29T10:05:29.446231Z",
+        "content_sha256": "e1077aee503f1c65855123c762716f44f1cd305af3f8fb52c373338349098eec",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://nettec.no/nettverk-til-spro/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://nettec.no/nettverk-til-spro/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "936361285",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/936361285",
+        "retrieved_at": "2026-11-05T21:09:30.704242Z",
+        "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "936361285"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NETTEC AS",
+            "matched_organisation_number": "936361285"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+        "id": "purehelp-phone-936361285-b58712d7adedbccf",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "66 81 06 40",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "936361285",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/936361285",
+        "retrieved_at": "2026-11-05T21:09:30.704242Z",
+        "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "936361285"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NETTEC AS",
+            "matched_organisation_number": "936361285"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+        "id": "purehelp-profile-936361285-b58712d7adedbccf",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "46.500",
+          "nace_description": "Wholesale of information and communication equipment",
+          "town": "KOLBOTN",
+          "zipcode": "1410",
+          "municipality": "NORDRE FOLLO",
+          "municipality_number": "3207",
+          "county": "Akershus",
+          "registration_date": "1995-02-19",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-02-19",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.nettec.no"
+        }
+      },
+      {
+        "organisation_number": "936361285",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/936361285",
+        "retrieved_at": "2026-11-05T21:09:30.704242Z",
+        "content_sha256": "c8077ababb9d11cb2bc51bf64e63c683c0337e3204a33ebdb606b125b3a9e63c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "936361285"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NETTEC AS",
+            "matched_organisation_number": "936361285"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-936361285.orgNumber=936361285;name=NETTEC AS",
+        "id": "purehelp-workforce-936361285-b58712d7adedbccf",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 6,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:42.851046+00:00"
+  "generated_at": "2026-11-06T05:27:31.478846+00:00"
 }

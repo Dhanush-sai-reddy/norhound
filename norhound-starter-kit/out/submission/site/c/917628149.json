@@ -550,45 +550,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-ab8deee05b53dd7b3d64a36d",
-          "organisation_number": "917628149",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T08:46:56.506724Z",
-          "content_sha256": "b83f6a9f29074a03a7700d945526c94e22ce08627b4a2c73428f2b5f43f4146b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "917628149",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 8",
-          "metrics": {
-            "workforce_value": 8,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-06-11"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-06-11",
-          "effective_at": "2026-06-11"
-        },
-        {
           "id": "registry-contact-dc720f018ca24cd36944979a",
           "organisation_number": "917628149",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -607,8 +575,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-694517b41c3759a662172d40",
@@ -616,8 +583,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -636,14 +603,13 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "917628149",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=917628149&size=1000",
-          "retrieved_at": "2026-10-05T08:47:02.353274Z",
+          "retrieved_at": "2026-09-29T10:13:55.916528Z",
           "content_sha256": "253779c3d2eb77323e62bd76f103f640c6b4fc38f53a9542e2a93718aab69990",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -665,8 +631,7 @@
             "subunit_organisation_number": "917797692",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-abc40461487af9665c6e4257",
@@ -674,7 +639,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "abc40461487af9665c6e425729f1e62267d2994f61e76c29bd19ca7d86813b9d",
           "observed_at": "2026-08-11",
           "exact_entity": true,
@@ -704,7 +669,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3479ecbe889ea70543438e7b76a6e0145ba7ebdc44d49ea01b61da46803707bc",
           "observed_at": "2026-06-11",
           "exact_entity": true,
@@ -734,7 +699,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "03f38ed484baefe8d56532f7c8c424ad4384c3d1d224e6df586211d939a78c4d",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -764,7 +729,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ddf3ca5aabc2544852b525662d717ee372253e1c4a0798ed081ca5bba29e72a5",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -794,7 +759,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "142f3e445acb5f12332dda013b6d165f5cfce0a5af38759cfe9f0b47e57f1c4e",
           "observed_at": "2025-07-30",
           "exact_entity": true,
@@ -824,7 +789,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c3641b410c81f0c13491860c98eab591d44ea953d6a69ad6cb112364e954597b",
           "observed_at": "2025-02-24",
           "exact_entity": true,
@@ -854,7 +819,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d0e1280def192c7155768fbd21dae5dca7893e4c44882717d8eef9419c01405d",
           "observed_at": "2024-06-03",
           "exact_entity": true,
@@ -884,7 +849,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "df5e9cd134cc1c93f9cad689b2125d4fc25bcbe197646b7136aecdd5e5a732fc",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -914,7 +879,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e067894b8ba5779716deffd3567c154d85e210fa1f552e3ff1c680ceed700bc9",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -944,7 +909,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8a2087ccacea6d60c8217ef21971b2dd6a00fcf3d939aa37cf0a02cf79145594",
           "observed_at": "2023-06-19",
           "exact_entity": true,
@@ -974,7 +939,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "24e4f6a69c2f350cfc9da848e9dd5d6d302fe0c328c7fa89220e56f7a12907fd",
           "observed_at": "2022-07-07",
           "exact_entity": true,
@@ -1004,7 +969,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6f30668503dc36e0a2340959fb7c24f7cc2aa2d17e9e60db5438a33b0d8ad0b5",
           "observed_at": "2022-05-11",
           "exact_entity": true,
@@ -1034,7 +999,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a7e1a7c4728943f43f407cf8d2063e2f6d8e0f22accb1ec68e5856b4ff5aceb2",
           "observed_at": "2022-04-16",
           "exact_entity": true,
@@ -1064,7 +1029,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d3049af60ca8514146f6c1d498bdaacc4fb3277700fb83cfaa1092b366014b0d",
           "observed_at": "2022-02-14",
           "exact_entity": true,
@@ -1094,7 +1059,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b2da490860bfeec3d87a6a0e6f98275f6d005c03dbfb2bb0f647a6101ab89a9f",
           "observed_at": "2021-07-10",
           "exact_entity": true,
@@ -1124,7 +1089,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b7f4dba73f691caa205294da810b92b17b049c2919ef4dcc91f86c614aa4a251",
           "observed_at": "2021-06-12",
           "exact_entity": true,
@@ -1154,7 +1119,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b4d20bec4dc2a1f0352f3b518c22732bf7b0ba61a4947a449128e9414d979294",
           "observed_at": "2021-02-16",
           "exact_entity": true,
@@ -1184,7 +1149,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "871407ce35545e3710b43b7d3e0072f01e12bd6f45ce353e8d087d0e1586d0ed",
           "observed_at": "2021-01-11",
           "exact_entity": true,
@@ -1214,7 +1179,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9f9119b71ba04bc3e2190792330c0dad0e78cca955bca84d62c508ca8415658c",
           "observed_at": "2020-09-14",
           "exact_entity": true,
@@ -1244,7 +1209,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "84c6e545d6c4a41b6eb50273fa98f57d0ad015025b79d74fbb7d6589aeaebad7",
           "observed_at": "2020-09-09",
           "exact_entity": true,
@@ -1269,39 +1234,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-ee69da4d8a8cf26bc2515cd1",
           "organisation_number": "917628149",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
-          "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "f929c6cd644cf11fa5171bb8ada891327e3548ae75848b376220a04aa67462fa",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "guttelus.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "917628149",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-917628149-d714c7a5e851b632",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Guttelus.no Google profile: rating 4.1/5, 25 ratings.",
-          "metrics": {
-            "rating": 4.1,
-            "review_count": 25,
-            "scale": 5,
-            "place_id": "ChIJb2gcca5tQUYRzgejIh8clMw"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-08-11",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-08-11",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-08-11 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-1f5aacb76f3439d38641d5c9",
+          "organisation_number": "917628149",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "19da86705629413ba0411ec8622a193b62a9532b8dcb2b6e46d57d936152d2be",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "917628149",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-30",
+          "signal": {
+            "title": "Forretningsadresse",
+            "date": "2025-07-30",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb"
+          },
+          "evidence_span": "Forretningsadresse — 2025-07-30 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-19354e1568e13ad215b10dfc",
+          "organisation_number": "917628149",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "7873bd9fd3597ac2cb36379f8e330450580a495b7441b113e52164ff0822cdf6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "917628149",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-02-24",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-02-24",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-02-24 (BRREG official announcement)"
         },
         {
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
+          "retrieved_at": "2026-10-06T15:53:37.000130Z",
           "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
           "exact_entity": true,
           "identity_proof": [
@@ -1333,7 +1356,7 @@
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
+          "retrieved_at": "2026-10-06T15:53:37.000130Z",
           "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
           "exact_entity": true,
           "identity_proof": [
@@ -1365,7 +1388,7 @@
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
+          "retrieved_at": "2026-10-06T15:53:37.000130Z",
           "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
           "exact_entity": true,
           "identity_proof": [
@@ -1397,7 +1420,7 @@
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
+          "retrieved_at": "2026-10-06T15:53:37.000130Z",
           "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
           "exact_entity": true,
           "identity_proof": [
@@ -1429,7 +1452,7 @@
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
+          "retrieved_at": "2026-10-06T15:53:37.000130Z",
           "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
           "exact_entity": true,
           "identity_proof": [
@@ -1458,11 +1481,43 @@
           }
         },
         {
+          "id": "registry-workforce-ab8deee05b53dd7b3d64a36d",
+          "organisation_number": "917628149",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
+          "retrieved_at": "2026-09-29T10:13:47.578693Z",
+          "content_sha256": "b83f6a9f29074a03a7700d945526c94e22ce08627b4a2c73428f2b5f43f4146b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "917628149",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 8",
+          "metrics": {
+            "workforce_value": 8,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-11"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-11",
+          "effective_at": "2026-06-11"
+        },
+        {
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
-          "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+          "retrieved_at": "2026-10-31T18:17:24.369891Z",
+          "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1475,7 +1530,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-917628149-d714c7a5e851b632",
+          "id": "gplaces-metrics-917628149-231e171964d0b40f",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Guttelus.no Google profile: rating 4.1/5, 25 ratings.",
+          "metrics": {
+            "rating": 4.1,
+            "review_count": 25,
+            "scale": 5,
+            "place_id": "ChIJb2gcca5tQUYRzgejIh8clMw"
+          }
+        },
+        {
+          "organisation_number": "917628149",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
+          "retrieved_at": "2026-10-31T18:17:24.369891Z",
+          "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "guttelus.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-917628149-231e171964d0b40f",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Guttelus.no is rated 4.1/5 from 25 Google reviews.",
@@ -1490,8 +1574,8 @@
           "organisation_number": "917628149",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-          "retrieved_at": "2026-10-05T14:31:26.865406Z",
-          "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+          "retrieved_at": "2026-10-31T18:17:24.369891Z",
+          "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1504,7 +1588,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-917628149-d714c7a5e851b632",
+          "id": "gplaces-sentiment-917628149-231e171964d0b40f",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1514,6 +1598,147 @@
             "rating": 4.1,
             "review_count": 25,
             "scale": 5
+          }
+        },
+        {
+          "id": "registry-site-917628149-180cc437d7edb0bb",
+          "organisation_number": "917628149",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://guttelus.no/",
+          "retrieved_at": "2026-10-09T13:54:35.426257Z",
+          "content_sha256": "180cc437d7edb0bb3b2cdea18bc40395618444aaeb933fc9fb1b6eac52c61a35",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "guttelus.no",
+              "matched_organisation_number": "917628149",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares guttelus.no as the website of organisation 917628149; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Guttelus.no | Nettbutikken for deg med barn — Norsk nettbutikk med barneklær fra nyfødt til 16 år, babyutstyr og mammaklær. Vi har kjente merker som Name It, Lillelam, Joha, Kivat og Kattnakken. Lynrask levering – ordrer før kl. 12 sendes samme dag. Bli Guttelus-venn og få superbillig frakt fra 39,-!",
+          "metrics": {
+            "title": "Guttelus.no | Nettbutikken for deg med barn",
+            "description": "Norsk nettbutikk med barneklær fra nyfødt til 16 år, babyutstyr og mammaklær. Vi har kjente merker som Name It, Lillelam, Joha, Kivat og Kattnakken. Lynrask levering – ordrer før kl. 12 sendes samme dag. Bli Guttelus-venn og få superbillig frakt fra 39,-!",
+            "registry_domain": "guttelus.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "917628149",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/917628149",
+          "retrieved_at": "2026-11-05T21:10:14.638407Z",
+          "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "917628149"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "GUTTELUS NETTDRIFT AS",
+              "matched_organisation_number": "917628149"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+          "id": "purehelp-email-917628149-63ccd6f0d6724c4f",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "susanne@guttelus.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "917628149",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/917628149",
+          "retrieved_at": "2026-11-05T21:10:14.638407Z",
+          "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "917628149"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "GUTTELUS NETTDRIFT AS",
+              "matched_organisation_number": "917628149"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+          "id": "purehelp-profile-917628149-63ccd6f0d6724c4f",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "47.710",
+            "nace_description": "Retail sale of clothing",
+            "town": "OSLO",
+            "zipcode": "0283",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "2016-09-14",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2016-09-14",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.guttelus.no"
+          }
+        },
+        {
+          "organisation_number": "917628149",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/917628149",
+          "retrieved_at": "2026-11-05T21:10:14.638407Z",
+          "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "917628149"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "GUTTELUS NETTDRIFT AS",
+              "matched_organisation_number": "917628149"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+          "id": "purehelp-workforce-917628149-63ccd6f0d6724c4f",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 8,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1540,7 +1765,7 @@
     "company_name": "GUTTELUS NETTDRIFT AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "GUTTELUS NETTDRIFT AS is a private limited company operating in Detaljhandel med klær. Latest accounts (2025): revenue NOK 32.5m, annual result NOK 3.0m. Annual accounts available for 2016-2025 (10 years). Detailed records only available as PDFs. Revenue shrinking (-11.5% YoY). Registered employees: 8. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "GUTTELUS NETTDRIFT AS is a private limited company operating in Detaljhandel med klær. Latest accounts (2025): revenue NOK 32.5m, annual result NOK 3.0m. Annual accounts available for 2016-2025 (10 years). Detailed records only available as PDFs. Revenue shrinking (-11.5% YoY). Registered employees: 8. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1556,7 +1781,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       },
       {
@@ -1573,7 +1803,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       },
       {
@@ -1590,7 +1825,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       },
       {
@@ -1607,7 +1847,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       },
       {
@@ -1624,7 +1869,12 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       },
       {
@@ -1637,11 +1887,25 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/917628149/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=917628149&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
+          "https://guttelus.no/",
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
+        ]
       },
       {
         "question": "changes",
@@ -1657,17 +1921,16 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/917628149",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/917628149/aar",
           "https://guttelus.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/917628149",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2207,45 +2470,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-ab8deee05b53dd7b3d64a36d",
-        "organisation_number": "917628149",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T08:46:56.506724Z",
-        "content_sha256": "b83f6a9f29074a03a7700d945526c94e22ce08627b4a2c73428f2b5f43f4146b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "917628149",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 8",
-        "metrics": {
-          "workforce_value": 8,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-06-11"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-06-11",
-        "effective_at": "2026-06-11"
-      },
-      {
         "id": "registry-contact-dc720f018ca24cd36944979a",
         "organisation_number": "917628149",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2264,8 +2495,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-694517b41c3759a662172d40",
@@ -2273,8 +2503,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2293,14 +2523,13 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "917628149",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=917628149&size=1000",
-        "retrieved_at": "2026-10-05T08:47:02.353274Z",
+        "retrieved_at": "2026-09-29T10:13:55.916528Z",
         "content_sha256": "253779c3d2eb77323e62bd76f103f640c6b4fc38f53a9542e2a93718aab69990",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2322,8 +2551,7 @@
           "subunit_organisation_number": "917797692",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-abc40461487af9665c6e4257",
@@ -2331,7 +2559,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "abc40461487af9665c6e425729f1e62267d2994f61e76c29bd19ca7d86813b9d",
         "observed_at": "2026-08-11",
         "exact_entity": true,
@@ -2361,7 +2589,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3479ecbe889ea70543438e7b76a6e0145ba7ebdc44d49ea01b61da46803707bc",
         "observed_at": "2026-06-11",
         "exact_entity": true,
@@ -2391,7 +2619,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "03f38ed484baefe8d56532f7c8c424ad4384c3d1d224e6df586211d939a78c4d",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2421,7 +2649,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ddf3ca5aabc2544852b525662d717ee372253e1c4a0798ed081ca5bba29e72a5",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2451,7 +2679,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "142f3e445acb5f12332dda013b6d165f5cfce0a5af38759cfe9f0b47e57f1c4e",
         "observed_at": "2025-07-30",
         "exact_entity": true,
@@ -2481,7 +2709,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c3641b410c81f0c13491860c98eab591d44ea953d6a69ad6cb112364e954597b",
         "observed_at": "2025-02-24",
         "exact_entity": true,
@@ -2511,7 +2739,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d0e1280def192c7155768fbd21dae5dca7893e4c44882717d8eef9419c01405d",
         "observed_at": "2024-06-03",
         "exact_entity": true,
@@ -2541,7 +2769,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "df5e9cd134cc1c93f9cad689b2125d4fc25bcbe197646b7136aecdd5e5a732fc",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2571,7 +2799,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e067894b8ba5779716deffd3567c154d85e210fa1f552e3ff1c680ceed700bc9",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2601,7 +2829,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8a2087ccacea6d60c8217ef21971b2dd6a00fcf3d939aa37cf0a02cf79145594",
         "observed_at": "2023-06-19",
         "exact_entity": true,
@@ -2631,7 +2859,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "24e4f6a69c2f350cfc9da848e9dd5d6d302fe0c328c7fa89220e56f7a12907fd",
         "observed_at": "2022-07-07",
         "exact_entity": true,
@@ -2661,7 +2889,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6f30668503dc36e0a2340959fb7c24f7cc2aa2d17e9e60db5438a33b0d8ad0b5",
         "observed_at": "2022-05-11",
         "exact_entity": true,
@@ -2691,7 +2919,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a7e1a7c4728943f43f407cf8d2063e2f6d8e0f22accb1ec68e5856b4ff5aceb2",
         "observed_at": "2022-04-16",
         "exact_entity": true,
@@ -2721,7 +2949,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d3049af60ca8514146f6c1d498bdaacc4fb3277700fb83cfaa1092b366014b0d",
         "observed_at": "2022-02-14",
         "exact_entity": true,
@@ -2751,7 +2979,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b2da490860bfeec3d87a6a0e6f98275f6d005c03dbfb2bb0f647a6101ab89a9f",
         "observed_at": "2021-07-10",
         "exact_entity": true,
@@ -2781,7 +3009,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b7f4dba73f691caa205294da810b92b17b049c2919ef4dcc91f86c614aa4a251",
         "observed_at": "2021-06-12",
         "exact_entity": true,
@@ -2811,7 +3039,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b4d20bec4dc2a1f0352f3b518c22732bf7b0ba61a4947a449128e9414d979294",
         "observed_at": "2021-02-16",
         "exact_entity": true,
@@ -2841,7 +3069,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "871407ce35545e3710b43b7d3e0072f01e12bd6f45ce353e8d087d0e1586d0ed",
         "observed_at": "2021-01-11",
         "exact_entity": true,
@@ -2871,7 +3099,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9f9119b71ba04bc3e2190792330c0dad0e78cca955bca84d62c508ca8415658c",
         "observed_at": "2020-09-14",
         "exact_entity": true,
@@ -2901,7 +3129,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "84c6e545d6c4a41b6eb50273fa98f57d0ad015025b79d74fbb7d6589aeaebad7",
         "observed_at": "2020-09-09",
         "exact_entity": true,
@@ -2926,39 +3154,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-ee69da4d8a8cf26bc2515cd1",
         "organisation_number": "917628149",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
-        "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "f929c6cd644cf11fa5171bb8ada891327e3548ae75848b376220a04aa67462fa",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "guttelus.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "917628149",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-917628149-d714c7a5e851b632",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Guttelus.no Google profile: rating 4.1/5, 25 ratings.",
-        "metrics": {
-          "rating": 4.1,
-          "review_count": 25,
-          "scale": 5,
-          "place_id": "ChIJb2gcca5tQUYRzgejIh8clMw"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-08-11",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-08-11",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000680335&amp;sokeverdi=917628149&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-08-11 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-1f5aacb76f3439d38641d5c9",
+        "organisation_number": "917628149",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "19da86705629413ba0411ec8622a193b62a9532b8dcb2b6e46d57d936152d2be",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "917628149",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-30",
+        "signal": {
+          "title": "Forretningsadresse",
+          "date": "2025-07-30",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000645623&amp;sokeverdi=917628149&amp;spraak=nb"
+        },
+        "evidence_span": "Forretningsadresse — 2025-07-30 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-19354e1568e13ad215b10dfc",
+        "organisation_number": "917628149",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "7873bd9fd3597ac2cb36379f8e330450580a495b7441b113e52164ff0822cdf6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "917628149",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-02-24",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-02-24",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000078053&amp;sokeverdi=917628149&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-02-24 (BRREG official announcement)"
       },
       {
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
+        "retrieved_at": "2026-10-06T15:53:37.000130Z",
         "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
         "exact_entity": true,
         "identity_proof": [
@@ -2990,7 +3276,7 @@
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
+        "retrieved_at": "2026-10-06T15:53:37.000130Z",
         "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
         "exact_entity": true,
         "identity_proof": [
@@ -3022,7 +3308,7 @@
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
+        "retrieved_at": "2026-10-06T15:53:37.000130Z",
         "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
         "exact_entity": true,
         "identity_proof": [
@@ -3054,7 +3340,7 @@
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
+        "retrieved_at": "2026-10-06T15:53:37.000130Z",
         "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
         "exact_entity": true,
         "identity_proof": [
@@ -3086,7 +3372,7 @@
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
+        "retrieved_at": "2026-10-06T15:53:37.000130Z",
         "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
         "exact_entity": true,
         "identity_proof": [
@@ -3115,11 +3401,43 @@
         }
       },
       {
+        "id": "registry-workforce-ab8deee05b53dd7b3d64a36d",
+        "organisation_number": "917628149",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/917628149",
+        "retrieved_at": "2026-09-29T10:13:47.578693Z",
+        "content_sha256": "b83f6a9f29074a03a7700d945526c94e22ce08627b4a2c73428f2b5f43f4146b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "917628149",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 8",
+        "metrics": {
+          "workforce_value": 8,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-11"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-11",
+        "effective_at": "2026-06-11"
+      },
+      {
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
-        "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+        "retrieved_at": "2026-10-31T18:17:24.369891Z",
+        "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3132,7 +3450,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-917628149-d714c7a5e851b632",
+        "id": "gplaces-metrics-917628149-231e171964d0b40f",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Guttelus.no Google profile: rating 4.1/5, 25 ratings.",
+        "metrics": {
+          "rating": 4.1,
+          "review_count": 25,
+          "scale": 5,
+          "place_id": "ChIJb2gcca5tQUYRzgejIh8clMw"
+        }
+      },
+      {
+        "organisation_number": "917628149",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
+        "retrieved_at": "2026-10-31T18:17:24.369891Z",
+        "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "guttelus.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-917628149-231e171964d0b40f",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Guttelus.no is rated 4.1/5 from 25 Google reviews.",
@@ -3147,8 +3494,8 @@
         "organisation_number": "917628149",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJb2gcca5tQUYRzgejIh8clMw",
-        "retrieved_at": "2026-10-05T14:31:26.865406Z",
-        "content_sha256": "d714c7a5e851b6323da635f89c1a51b2dc09a85f97803554630c4baf8ef0f7f0",
+        "retrieved_at": "2026-10-31T18:17:24.369891Z",
+        "content_sha256": "231e171964d0b40f258eed15e8b96315403222caa681702676915ed6914c68e3",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3161,7 +3508,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-917628149-d714c7a5e851b632",
+        "id": "gplaces-sentiment-917628149-231e171964d0b40f",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3172,8 +3519,149 @@
           "review_count": 25,
           "scale": 5
         }
+      },
+      {
+        "id": "registry-site-917628149-180cc437d7edb0bb",
+        "organisation_number": "917628149",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://guttelus.no/",
+        "retrieved_at": "2026-10-09T13:54:35.426257Z",
+        "content_sha256": "180cc437d7edb0bb3b2cdea18bc40395618444aaeb933fc9fb1b6eac52c61a35",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "guttelus.no",
+            "matched_organisation_number": "917628149",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares guttelus.no as the website of organisation 917628149; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Guttelus.no | Nettbutikken for deg med barn — Norsk nettbutikk med barneklær fra nyfødt til 16 år, babyutstyr og mammaklær. Vi har kjente merker som Name It, Lillelam, Joha, Kivat og Kattnakken. Lynrask levering – ordrer før kl. 12 sendes samme dag. Bli Guttelus-venn og få superbillig frakt fra 39,-!",
+        "metrics": {
+          "title": "Guttelus.no | Nettbutikken for deg med barn",
+          "description": "Norsk nettbutikk med barneklær fra nyfødt til 16 år, babyutstyr og mammaklær. Vi har kjente merker som Name It, Lillelam, Joha, Kivat og Kattnakken. Lynrask levering – ordrer før kl. 12 sendes samme dag. Bli Guttelus-venn og få superbillig frakt fra 39,-!",
+          "registry_domain": "guttelus.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "917628149",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/917628149",
+        "retrieved_at": "2026-11-05T21:10:14.638407Z",
+        "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "917628149"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "GUTTELUS NETTDRIFT AS",
+            "matched_organisation_number": "917628149"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+        "id": "purehelp-email-917628149-63ccd6f0d6724c4f",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "susanne@guttelus.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "917628149",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/917628149",
+        "retrieved_at": "2026-11-05T21:10:14.638407Z",
+        "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "917628149"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "GUTTELUS NETTDRIFT AS",
+            "matched_organisation_number": "917628149"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+        "id": "purehelp-profile-917628149-63ccd6f0d6724c4f",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "47.710",
+          "nace_description": "Retail sale of clothing",
+          "town": "OSLO",
+          "zipcode": "0283",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "2016-09-14",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2016-09-14",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.guttelus.no"
+        }
+      },
+      {
+        "organisation_number": "917628149",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/917628149",
+        "retrieved_at": "2026-11-05T21:10:14.638407Z",
+        "content_sha256": "c8603486cd7e3cfe4e8586c8c59588c694c107f19c4134d75fa3c2d8417308f9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "917628149"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "GUTTELUS NETTDRIFT AS",
+            "matched_organisation_number": "917628149"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-917628149.orgNumber=917628149;name=GUTTELUS NETTDRIFT AS",
+        "id": "purehelp-workforce-917628149-63ccd6f0d6724c4f",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 8,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.378151+00:00"
+  "generated_at": "2026-11-06T05:27:34.509362+00:00"
 }

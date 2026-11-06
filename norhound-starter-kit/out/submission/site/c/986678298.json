@@ -731,102 +731,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "986678298",
-          "platform": "company_site",
-          "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-986678298-98be9774dd058d31",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 14 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 14,
-            "verified_social_links": 0,
-            "structured_organisation_records": 1,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "company-site-news-946c534c390d8562ffc2bbf6",
-          "organisation_number": "986678298",
-          "platform": "company_site",
-          "signal_type": "public_post",
-          "source_url": "https://briskebyvgs.no/aktuelt/bli-med-til-london-pa-studietur/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "ba98d5c8afd57b99d003a40d98c5da91a031c9979f8c6f3dc12b39a24ee861c2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Bli med til London på studietur! – Briskeby videregående skole\n\nHvert år reiser VG2 til London for å oppleve storbyens puls og kultur. Vi besøker kjente steder og attraksjoner, og er på musical og kule restauranter.\nAlle utgifter under er dekket av Briskeby unntatt 3 stk. lunsjer.\nAkkurat nå planlegges turen for våren 2026.\nBli elev og opplev årets høydepunkt!",
-          "metrics": {
-            "captured_news_pages": 4,
-            "interpretation": "Company-owned activity; not independent sentiment."
-          },
-          "strategy": "company_site_activity",
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-2f9d70bd3e44a887e6d6f284",
-          "organisation_number": "986678298",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T08:35:11.520502Z",
-          "content_sha256": "4439446b83977816d2122412bf980cde05d2922e619cb190832e11864f56c492",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "986678298",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 47",
-          "metrics": {
-            "workforce_value": 47,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-0dead1f0afd1a53625b2aeb9",
           "organisation_number": "986678298",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -845,8 +756,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-b9d86c151c3bda2c6648b8ae",
@@ -854,8 +764,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -874,15 +784,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "986678298",
           "platform": "company_site",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -900,15 +809,14 @@
           "evidence_span": "Forside – Briskeby videregående skole — Videregående skole for ungdom med nedsatt hørsel. Tilrettelagt undervisning for deg med hørselsutfordringer i et unikt og godt skolemiljø.",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "986678298",
           "platform": "company_site",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -927,14 +835,13 @@
           "metrics": {
             "declared_url": "https://briskebyvgs.no/",
             "interpretation": "Brand name from the site's own JSON-LD."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "986678298",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
-          "retrieved_at": "2026-10-05T08:35:23.532027Z",
+          "retrieved_at": "2026-09-29T10:03:22.141870Z",
           "content_sha256": "dd966f12a910596355ba0db4b4ba98761fbd3d446faf218fa069cd03376868a7",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -956,64 +863,7 @@
             "subunit_organisation_number": "986737162",
             "municipality": "LIER",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "sitemap-page-1eb2b603b649bb1d62b7d64a",
-          "organisation_number": "986678298",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-          "observed_at": "2026-10-05",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://briskebyvgs.no/ last modified 2026-10-05",
-          "metrics": {
-            "page_url": "https://briskebyvgs.no/",
-            "lastmod": "2026-10-05",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-ed1dabac6e603323426710a8",
-          "organisation_number": "986678298",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-          "observed_at": "2026-10-05",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://briskebyvgs.no/portaler/ last modified 2026-10-05",
-          "metrics": {
-            "page_url": "https://briskebyvgs.no/portaler/",
-            "lastmod": "2026-10-05",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
+          }
         },
         {
           "id": "sitemap-page-a3f1b4f9fb8b4c5d85359e7c",
@@ -1021,8 +871,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-22",
           "exact_entity": true,
           "identity_proof": [
@@ -1049,8 +899,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-22",
           "exact_entity": true,
           "identity_proof": [
@@ -1077,8 +927,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-22",
           "exact_entity": true,
           "identity_proof": [
@@ -1105,8 +955,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-17",
           "exact_entity": true,
           "identity_proof": [
@@ -1133,8 +983,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-17",
           "exact_entity": true,
           "identity_proof": [
@@ -1161,8 +1011,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-17",
           "exact_entity": true,
           "identity_proof": [
@@ -1189,8 +1039,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1217,8 +1067,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://briskebyvgs.no/",
-          "retrieved_at": "2026-10-05T08:36:19.829632Z",
-          "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
           "observed_at": "2026-09-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1240,12 +1090,68 @@
           "strategy": "sitemap_lastmod"
         },
         {
+          "id": "sitemap-page-8704f414ac44745ff61778c9",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-09-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/kalender/skolerute/ last modified 2026-09-08",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/kalender/skolerute/",
+            "lastmod": "2026-09-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-9e1f88e6db14ee6d5cfc39f5",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-09-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/kalender/kalender/ last modified 2026-09-08",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/kalender/kalender/",
+            "lastmod": "2026-09-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "id": "registry-update-2e0f399cfc9652ec8a2a4225",
           "organisation_number": "986678298",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2e0f399cfc9652ec8a2a42258f3048841b6c0c0425178086a90026043bfb0c40",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1275,7 +1181,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d2aa05aa41a777a4647a8ea355a9c07cd215c19fa7403b6a22e7af6a2e1589f4",
           "observed_at": "2026-08-06",
           "exact_entity": true,
@@ -1305,7 +1211,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d45c5b9c33f7a08363f1ee4bf2c3755dcdf1fb9ec334eb6d4e52764c66fb43a1",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1335,7 +1241,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0eade326a3afcbebd1199a5ba6444c93f04fecc48908eda5eaf2fcc7a62874c5",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1365,7 +1271,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "aa84f30fccb8686f1a8c85d4b15c45f5187f498022892077b65a9d78c55b7131",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1395,7 +1301,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3b71659e773c9ae15db7e281f2ff0bc387c146d5293b3c7dbb9c615aaf85d45b",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -1425,7 +1331,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "75a346231550b905697cb314e2ebd5609e3c74a4eb1e21cdb35272004c581f04",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -1455,7 +1361,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a5d20b5e07a97096186d6ad11ecfd967b78cf9bdd36571c1d987785978631f7e",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1485,7 +1391,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1b3a6e3b21e986fd4c6badb4c8ef4c5974aa2bb6cd3dc81d114a6257874913fc",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1515,7 +1421,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "70b6d5c45169139e172db61303e7d329afab065dcffce81559e4449ee422e06e",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1545,7 +1451,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "237c84a3da7561fd6cc3f8d21aaaaafcbac280a77c09f6f060364149c675f304",
           "observed_at": "2025-06-28",
           "exact_entity": true,
@@ -1575,7 +1481,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "01936a9b63450ff1460cdd96b3e42dcc147aec005425fd5e7b9bf1fffae2e921",
           "observed_at": "2025-05-14",
           "exact_entity": true,
@@ -1605,7 +1511,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "adf1ff902668c420a6a7dd34431fb4c59c7bd3711a918e54c7fe6b60f947e5ce",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -1635,7 +1541,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9a03b318bffbae7988bc0604f94dfed4e1af2a72f2d20dfd43bac74242711783",
           "observed_at": "2025-03-13",
           "exact_entity": true,
@@ -1665,7 +1571,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "09a4f21e6e0370f3286d79d45ff1ad2bff2e30087bfa7daac54b0c7a508dd6e0",
           "observed_at": "2025-02-25",
           "exact_entity": true,
@@ -1695,7 +1601,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6111662bc38a8e00f820fcdb5cefd70be3f367c49cd924f08c22b9151676bd62",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1725,7 +1631,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ca21444df9d5fc83ef935ca81defdd4195252bb6316db553ff44a67365ea2956",
           "observed_at": "2024-12-12",
           "exact_entity": true,
@@ -1755,7 +1661,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0a3d165ee43e3a70941c2b8c90b93921f77170780261a67d3cdbbdd903a386f3",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -1785,7 +1691,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c214c1b8f493be1b29ab53b24cb6229b008503ef88a6e4a5a6b7f21f4b3cdf99",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1815,7 +1721,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "72fac1f19e05b8a8d876dd313cd06a83abb12cb3e10f7625385cba6261da0448",
           "observed_at": "2024-07-01",
           "exact_entity": true,
@@ -1840,101 +1746,492 @@
           "strategy": "registry_updates_feed"
         },
         {
-          "id": "proff-profile-08f6d0b5305eebdfa3058a60",
+          "id": "brreg-kunngjoring-1b1dbb1281c3b46459cd30af",
           "organisation_number": "986678298",
-          "platform": "company_directory",
-          "signal_type": "profile_metrics",
-          "source_url": "https://www.proff.no/bedrift/986678298",
-          "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-          "content_sha256": "64f12b03c60f89ac1912e90be18095efe52f2a08eaacd8c1bb2b18bdc72fddb4",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "fd6e40cdd8e21935600669afecc9fbe0c6afaaafab617d3118464f258b7d59bd",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_directory_page",
-              "source": "proff.no",
-              "source_class": "company_directory",
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "986678298",
-              "explanation": "Proff.no company profile with exact organisation number match from BRREG data."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_directory",
+          "source_class": "official_api",
+          "observed_at": "2026-08-06",
           "signal": {
-            "name": "BRISKEBY VIDEREGÅENDE SKOLE AS",
-            "legal_name": "Briskeby videregående skole AS",
-            "revenue_nok": "42039",
-            "profit_nok": "-3318",
-            "currency": "NOK",
-            "employees": "47",
-            "industries": [],
-            "roles": [],
-            "status": null,
-            "purpose": null,
-            "has_trademarks": null,
-            "related_companies_count": null,
-            "company_type": null,
-            "nace_industries": null
+            "title": "Godkjente årsregnskap",
+            "date": "2026-08-06",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb"
           },
-          "observed_at": "2026-10-04"
+          "evidence_span": "Godkjente årsregnskap — 2026-08-06 (BRREG official announcement)"
         },
         {
-          "id": "proff-financial-8dbc350f4ceadecf8247f440",
+          "id": "brreg-kunngjoring-bc6fde0f18776d0fc8a4d7da",
           "organisation_number": "986678298",
-          "platform": "company_directory",
-          "signal_type": "profile_metrics",
-          "source_url": "https://www.proff.no/bedrift/986678298",
-          "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-          "content_sha256": "0a362debabea57f62c573308c40541e7a818096618682fc71a4e79bc053ba764",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "2ff9414fab4209b60aab183291d97f3196eff3cd13048cfeb91a06598909a69b",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_directory_page",
-              "source": "proff.no",
-              "source_class": "company_directory",
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "986678298",
-              "explanation": "Proff.no financial data with exact organisation number match from BRREG data."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_directory",
+          "source_class": "official_api",
+          "observed_at": "2025-10-01",
           "signal": {
-            "revenue_nok": "42039",
-            "profit_nok": "-3318",
-            "currency": "NOK",
-            "employees": "47"
+            "title": "Revisor",
+            "date": "2025-10-01",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb"
           },
-          "observed_at": "2026-10-04"
+          "evidence_span": "Revisor — 2025-10-01 (BRREG official announcement)"
         },
         {
-          "id": "proff-review-2dc5b70343db9b054905664f",
+          "id": "brreg-kunngjoring-22a881804ad07d4e61f6b56a",
           "organisation_number": "986678298",
-          "platform": "company_directory",
-          "signal_type": "review_summary",
-          "source_url": "https://www.proff.no/bedrift/986678298",
-          "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-          "content_sha256": "ed56b78eae6c66e340a8df89f672dc4c915b17cbbdb6661ca4bc2f7b1d317728",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "22b9286116bf346d6fa68b1bb9056844ccc982c6d03de1ad146f419ac6f11ee4",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_directory_page",
-              "source": "proff.no",
-              "source_class": "company_directory",
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "986678298",
-              "explanation": "Proff.no financial data as creditworthiness review with exact organisation number match."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-28",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-06-28",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-2f9d70bd3e44a887e6d6f284",
+          "organisation_number": "986678298",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
+          "retrieved_at": "2026-09-29T10:03:05.168178Z",
+          "content_sha256": "4439446b83977816d2122412bf980cde05d2922e619cb190832e11864f56c492",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "986678298",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 47",
+          "metrics": {
+            "workforce_value": 47,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-05-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-05-12",
+          "effective_at": "2026-05-12"
+        },
+        {
+          "id": "sitemap-page-74966002527db2ef37e053f8",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-06",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/ last modified 2026-10-06",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/aktuelt/",
+            "lastmod": "2026-10-06",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-727dc3ff26e35e1832b39558",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-06",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/foreldremote/ last modified 2026-10-06",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/aktuelt/foreldremote/",
+            "lastmod": "2026-10-06",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-1eb2b603b649bb1d62b7d64a",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/ last modified 2026-10-05",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/",
+            "lastmod": "2026-10-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ed1dabac6e603323426710a8",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/portaler/ last modified 2026-10-05",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/portaler/",
+            "lastmod": "2026-10-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "registry-update-b7a5efce00813aa54113ce3d",
+          "organisation_number": "986678298",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
+          "retrieved_at": "2026-10-28T04:19:27.620683Z",
+          "content_sha256": "b7a5efce00813aa54113ce3d3d278fbf86b4bd04f2307f4e3ddbc91e6afb1c13",
+          "observed_at": "2026-10-13",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "986678298",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-13: Endring",
+          "metrics": {
+            "date": "2026-10-13",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T12:30:46.042150Z",
+          "content_sha256": "1db719295d020ccac06a0f2b3b2e0a741eaaa4b03b6fddc24568acb3b3bc3de6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-986678298-1db719295d020cca",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 7,
+            "verified_social_links": 0,
+            "structured_organisation_records": 1,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "id": "sitemap-page-1ce23586244656fc96646650",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/aktuelt/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-64fd3bdf5dc635c7eaff3508",
+          "organisation_number": "986678298",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://briskebyvgs.no/",
+          "retrieved_at": "2026-09-29T10:03:57.808865Z",
+          "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/frokostmote-for-fagpersoner/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://briskebyvgs.no/aktuelt/frokostmote-for-fagpersoner/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "986678298",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986678298",
+          "retrieved_at": "2026-11-05T21:09:22.329008Z",
+          "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986678298"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+              "matched_organisation_number": "986678298"
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_directory",
-          "signal": {
-            "credit_indicator": "financial_data_available",
-            "revenue_nok": "42039",
-            "profit_nok": "-3318",
-            "employees": "47"
-          },
-          "observed_at": "2026-10-04"
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+          "id": "purehelp-email-986678298-d66e8764610f19c8",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post.vgs@hlfbriskeby.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "986678298",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986678298",
+          "retrieved_at": "2026-11-05T21:09:22.329008Z",
+          "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986678298"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+              "matched_organisation_number": "986678298"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+          "id": "purehelp-phone-986678298-d66e8764610f19c8",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "32 22 65 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "986678298",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986678298",
+          "retrieved_at": "2026-11-05T21:09:22.329008Z",
+          "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986678298"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+              "matched_organisation_number": "986678298"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+          "id": "purehelp-profile-986678298-d66e8764610f19c8",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "85.310",
+            "nace_description": "General secondary education",
+            "town": "LIER",
+            "zipcode": "3402",
+            "municipality": "LIER",
+            "municipality_number": "3312",
+            "county": "Buskerud",
+            "registration_date": "2004-03-22",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2004-03-22",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "hlfbriskeby.no"
+          }
+        },
+        {
+          "organisation_number": "986678298",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/986678298",
+          "retrieved_at": "2026-11-05T21:09:22.329008Z",
+          "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "986678298"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+              "matched_organisation_number": "986678298"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+          "id": "purehelp-workforce-986678298-d66e8764610f19c8",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 49,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1970,7 +2267,7 @@
     "company_name": "BRISKEBY VIDEREGÅENDE SKOLE AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "BRISKEBY VIDEREGÅENDE SKOLE AS is a private limited company operating in Videregående opplæring innenfor studieforberedende utdanningsprogram. Latest accounts (2025): revenue NOK 36.6m, annual result NOK 1.0k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-7.0% YoY). Registered employees: 47. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "BRISKEBY VIDEREGÅENDE SKOLE AS is a private limited company operating in Videregående opplæring innenfor studieforberedende utdanningsprogram. Latest accounts (2025): revenue NOK 36.6m, annual result NOK 1.0k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-7.0% YoY). Registered employees: 47. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1986,6 +2283,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -2003,6 +2304,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -2020,6 +2325,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -2037,6 +2346,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -2054,6 +2367,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -2067,11 +2384,24 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://briskebyvgs.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/986678298/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "changes",
@@ -2087,17 +2417,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/986678298",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/986678298/aar",
+          "https://purehelp.no/company/NO/986678298",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2818,102 +3146,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "986678298",
-        "platform": "company_site",
-        "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-986678298-98be9774dd058d31",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 14 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 14,
-          "verified_social_links": 0,
-          "structured_organisation_records": 1,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "company-site-news-946c534c390d8562ffc2bbf6",
-        "organisation_number": "986678298",
-        "platform": "company_site",
-        "signal_type": "public_post",
-        "source_url": "https://briskebyvgs.no/aktuelt/bli-med-til-london-pa-studietur/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "ba98d5c8afd57b99d003a40d98c5da91a031c9979f8c6f3dc12b39a24ee861c2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Bli med til London på studietur! – Briskeby videregående skole\n\nHvert år reiser VG2 til London for å oppleve storbyens puls og kultur. Vi besøker kjente steder og attraksjoner, og er på musical og kule restauranter.\nAlle utgifter under er dekket av Briskeby unntatt 3 stk. lunsjer.\nAkkurat nå planlegges turen for våren 2026.\nBli elev og opplev årets høydepunkt!",
-        "metrics": {
-          "captured_news_pages": 4,
-          "interpretation": "Company-owned activity; not independent sentiment."
-        },
-        "strategy": "company_site_activity",
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-2f9d70bd3e44a887e6d6f284",
-        "organisation_number": "986678298",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T08:35:11.520502Z",
-        "content_sha256": "4439446b83977816d2122412bf980cde05d2922e619cb190832e11864f56c492",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "986678298",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 47",
-        "metrics": {
-          "workforce_value": 47,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-0dead1f0afd1a53625b2aeb9",
         "organisation_number": "986678298",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2932,8 +3171,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-b9d86c151c3bda2c6648b8ae",
@@ -2941,8 +3179,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2961,15 +3199,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "986678298",
         "platform": "company_site",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2987,15 +3224,14 @@
         "evidence_span": "Forside – Briskeby videregående skole — Videregående skole for ungdom med nedsatt hørsel. Tilrettelagt undervisning for deg med hørselsutfordringer i et unikt og godt skolemiljø.",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "986678298",
         "platform": "company_site",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3014,14 +3250,13 @@
         "metrics": {
           "declared_url": "https://briskebyvgs.no/",
           "interpretation": "Brand name from the site's own JSON-LD."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "986678298",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=986678298&size=1000",
-        "retrieved_at": "2026-10-05T08:35:23.532027Z",
+        "retrieved_at": "2026-09-29T10:03:22.141870Z",
         "content_sha256": "dd966f12a910596355ba0db4b4ba98761fbd3d446faf218fa069cd03376868a7",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3043,64 +3278,7 @@
           "subunit_organisation_number": "986737162",
           "municipality": "LIER",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "sitemap-page-1eb2b603b649bb1d62b7d64a",
-        "organisation_number": "986678298",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-        "observed_at": "2026-10-05",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://briskebyvgs.no/ last modified 2026-10-05",
-        "metrics": {
-          "page_url": "https://briskebyvgs.no/",
-          "lastmod": "2026-10-05",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-ed1dabac6e603323426710a8",
-        "organisation_number": "986678298",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
-        "observed_at": "2026-10-05",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://briskebyvgs.no/portaler/ last modified 2026-10-05",
-        "metrics": {
-          "page_url": "https://briskebyvgs.no/portaler/",
-          "lastmod": "2026-10-05",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
+        }
       },
       {
         "id": "sitemap-page-a3f1b4f9fb8b4c5d85359e7c",
@@ -3108,8 +3286,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-22",
         "exact_entity": true,
         "identity_proof": [
@@ -3136,8 +3314,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-22",
         "exact_entity": true,
         "identity_proof": [
@@ -3164,8 +3342,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-22",
         "exact_entity": true,
         "identity_proof": [
@@ -3192,8 +3370,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-17",
         "exact_entity": true,
         "identity_proof": [
@@ -3220,8 +3398,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-17",
         "exact_entity": true,
         "identity_proof": [
@@ -3248,8 +3426,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-17",
         "exact_entity": true,
         "identity_proof": [
@@ -3276,8 +3454,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3304,8 +3482,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://briskebyvgs.no/",
-        "retrieved_at": "2026-10-05T08:36:19.829632Z",
-        "content_sha256": "98be9774dd058d312bad01f9cc833980e43376ef678c72f0fd8cbe6c3dcabfe7",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
         "observed_at": "2026-09-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3327,12 +3505,68 @@
         "strategy": "sitemap_lastmod"
       },
       {
+        "id": "sitemap-page-8704f414ac44745ff61778c9",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-09-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/kalender/skolerute/ last modified 2026-09-08",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/kalender/skolerute/",
+          "lastmod": "2026-09-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-9e1f88e6db14ee6d5cfc39f5",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-09-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/kalender/kalender/ last modified 2026-09-08",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/kalender/kalender/",
+          "lastmod": "2026-09-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "id": "registry-update-2e0f399cfc9652ec8a2a4225",
         "organisation_number": "986678298",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2e0f399cfc9652ec8a2a42258f3048841b6c0c0425178086a90026043bfb0c40",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -3362,7 +3596,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d2aa05aa41a777a4647a8ea355a9c07cd215c19fa7403b6a22e7af6a2e1589f4",
         "observed_at": "2026-08-06",
         "exact_entity": true,
@@ -3392,7 +3626,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d45c5b9c33f7a08363f1ee4bf2c3755dcdf1fb9ec334eb6d4e52764c66fb43a1",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -3422,7 +3656,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0eade326a3afcbebd1199a5ba6444c93f04fecc48908eda5eaf2fcc7a62874c5",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -3452,7 +3686,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "aa84f30fccb8686f1a8c85d4b15c45f5187f498022892077b65a9d78c55b7131",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -3482,7 +3716,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3b71659e773c9ae15db7e281f2ff0bc387c146d5293b3c7dbb9c615aaf85d45b",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -3512,7 +3746,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "75a346231550b905697cb314e2ebd5609e3c74a4eb1e21cdb35272004c581f04",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -3542,7 +3776,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a5d20b5e07a97096186d6ad11ecfd967b78cf9bdd36571c1d987785978631f7e",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3572,7 +3806,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1b3a6e3b21e986fd4c6badb4c8ef4c5974aa2bb6cd3dc81d114a6257874913fc",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3602,7 +3836,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "70b6d5c45169139e172db61303e7d329afab065dcffce81559e4449ee422e06e",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3632,7 +3866,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "237c84a3da7561fd6cc3f8d21aaaaafcbac280a77c09f6f060364149c675f304",
         "observed_at": "2025-06-28",
         "exact_entity": true,
@@ -3662,7 +3896,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "01936a9b63450ff1460cdd96b3e42dcc147aec005425fd5e7b9bf1fffae2e921",
         "observed_at": "2025-05-14",
         "exact_entity": true,
@@ -3692,7 +3926,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "adf1ff902668c420a6a7dd34431fb4c59c7bd3711a918e54c7fe6b60f947e5ce",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -3722,7 +3956,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9a03b318bffbae7988bc0604f94dfed4e1af2a72f2d20dfd43bac74242711783",
         "observed_at": "2025-03-13",
         "exact_entity": true,
@@ -3752,7 +3986,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "09a4f21e6e0370f3286d79d45ff1ad2bff2e30087bfa7daac54b0c7a508dd6e0",
         "observed_at": "2025-02-25",
         "exact_entity": true,
@@ -3782,7 +4016,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6111662bc38a8e00f820fcdb5cefd70be3f367c49cd924f08c22b9151676bd62",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -3812,7 +4046,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ca21444df9d5fc83ef935ca81defdd4195252bb6316db553ff44a67365ea2956",
         "observed_at": "2024-12-12",
         "exact_entity": true,
@@ -3842,7 +4076,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0a3d165ee43e3a70941c2b8c90b93921f77170780261a67d3cdbbdd903a386f3",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -3872,7 +4106,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c214c1b8f493be1b29ab53b24cb6229b008503ef88a6e4a5a6b7f21f4b3cdf99",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -3902,7 +4136,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "72fac1f19e05b8a8d876dd313cd06a83abb12cb3e10f7625385cba6261da0448",
         "observed_at": "2024-07-01",
         "exact_entity": true,
@@ -3927,103 +4161,494 @@
         "strategy": "registry_updates_feed"
       },
       {
-        "id": "proff-profile-08f6d0b5305eebdfa3058a60",
+        "id": "brreg-kunngjoring-1b1dbb1281c3b46459cd30af",
         "organisation_number": "986678298",
-        "platform": "company_directory",
-        "signal_type": "profile_metrics",
-        "source_url": "https://www.proff.no/bedrift/986678298",
-        "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-        "content_sha256": "64f12b03c60f89ac1912e90be18095efe52f2a08eaacd8c1bb2b18bdc72fddb4",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "fd6e40cdd8e21935600669afecc9fbe0c6afaaafab617d3118464f258b7d59bd",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_directory_page",
-            "source": "proff.no",
-            "source_class": "company_directory",
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "986678298",
-            "explanation": "Proff.no company profile with exact organisation number match from BRREG data."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_directory",
+        "source_class": "official_api",
+        "observed_at": "2026-08-06",
         "signal": {
-          "name": "BRISKEBY VIDEREGÅENDE SKOLE AS",
-          "legal_name": "Briskeby videregående skole AS",
-          "revenue_nok": "42039",
-          "profit_nok": "-3318",
-          "currency": "NOK",
-          "employees": "47",
-          "industries": [],
-          "roles": [],
-          "status": null,
-          "purpose": null,
-          "has_trademarks": null,
-          "related_companies_count": null,
-          "company_type": null,
-          "nace_industries": null
+          "title": "Godkjente årsregnskap",
+          "date": "2026-08-06",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000669701&amp;sokeverdi=986678298&amp;spraak=nb"
         },
-        "observed_at": "2026-10-04"
+        "evidence_span": "Godkjente årsregnskap — 2026-08-06 (BRREG official announcement)"
       },
       {
-        "id": "proff-financial-8dbc350f4ceadecf8247f440",
+        "id": "brreg-kunngjoring-bc6fde0f18776d0fc8a4d7da",
         "organisation_number": "986678298",
-        "platform": "company_directory",
-        "signal_type": "profile_metrics",
-        "source_url": "https://www.proff.no/bedrift/986678298",
-        "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-        "content_sha256": "0a362debabea57f62c573308c40541e7a818096618682fc71a4e79bc053ba764",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "2ff9414fab4209b60aab183291d97f3196eff3cd13048cfeb91a06598909a69b",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_directory_page",
-            "source": "proff.no",
-            "source_class": "company_directory",
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "986678298",
-            "explanation": "Proff.no financial data with exact organisation number match from BRREG data."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_directory",
+        "source_class": "official_api",
+        "observed_at": "2025-10-01",
         "signal": {
-          "revenue_nok": "42039",
-          "profit_nok": "-3318",
-          "currency": "NOK",
-          "employees": "47"
+          "title": "Revisor",
+          "date": "2025-10-01",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000768342&amp;sokeverdi=986678298&amp;spraak=nb"
         },
-        "observed_at": "2026-10-04"
+        "evidence_span": "Revisor — 2025-10-01 (BRREG official announcement)"
       },
       {
-        "id": "proff-review-2dc5b70343db9b054905664f",
+        "id": "brreg-kunngjoring-22a881804ad07d4e61f6b56a",
         "organisation_number": "986678298",
-        "platform": "company_directory",
-        "signal_type": "review_summary",
-        "source_url": "https://www.proff.no/bedrift/986678298",
-        "retrieved_at": "2026-10-04T20:53:10.088149+00:00",
-        "content_sha256": "ed56b78eae6c66e340a8df89f672dc4c915b17cbbdb6661ca4bc2f7b1d317728",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "22b9286116bf346d6fa68b1bb9056844ccc982c6d03de1ad146f419ac6f11ee4",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_directory_page",
-            "source": "proff.no",
-            "source_class": "company_directory",
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "986678298",
-            "explanation": "Proff.no financial data as creditworthiness review with exact organisation number match."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-28",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-06-28",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489515&amp;sokeverdi=986678298&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-2f9d70bd3e44a887e6d6f284",
+        "organisation_number": "986678298",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
+        "retrieved_at": "2026-09-29T10:03:05.168178Z",
+        "content_sha256": "4439446b83977816d2122412bf980cde05d2922e619cb190832e11864f56c492",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "986678298",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 47",
+        "metrics": {
+          "workforce_value": 47,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-05-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-05-12",
+        "effective_at": "2026-05-12"
+      },
+      {
+        "id": "sitemap-page-74966002527db2ef37e053f8",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-06",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/ last modified 2026-10-06",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/aktuelt/",
+          "lastmod": "2026-10-06",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-727dc3ff26e35e1832b39558",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-06",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/foreldremote/ last modified 2026-10-06",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/aktuelt/foreldremote/",
+          "lastmod": "2026-10-06",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-1eb2b603b649bb1d62b7d64a",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/ last modified 2026-10-05",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/",
+          "lastmod": "2026-10-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ed1dabac6e603323426710a8",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/portaler/ last modified 2026-10-05",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/portaler/",
+          "lastmod": "2026-10-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "registry-update-b7a5efce00813aa54113ce3d",
+        "organisation_number": "986678298",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/986678298",
+        "retrieved_at": "2026-10-28T04:19:27.620683Z",
+        "content_sha256": "b7a5efce00813aa54113ce3d3d278fbf86b4bd04f2307f4e3ddbc91e6afb1c13",
+        "observed_at": "2026-10-13",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "986678298",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-13: Endring",
+        "metrics": {
+          "date": "2026-10-13",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T12:30:46.042150Z",
+        "content_sha256": "1db719295d020ccac06a0f2b3b2e0a741eaaa4b03b6fddc24568acb3b3bc3de6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-986678298-1db719295d020cca",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 7 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 7,
+          "verified_social_links": 0,
+          "structured_organisation_records": 1,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "id": "sitemap-page-1ce23586244656fc96646650",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/aktuelt/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-64fd3bdf5dc635c7eaff3508",
+        "organisation_number": "986678298",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://briskebyvgs.no/",
+        "retrieved_at": "2026-09-29T10:03:57.808865Z",
+        "content_sha256": "ca1e40753044839080e2d71b5de74a74792cf58b91d59cf2b6a24f307a0f9bc9",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://briskebyvgs.no/aktuelt/frokostmote-for-fagpersoner/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://briskebyvgs.no/aktuelt/frokostmote-for-fagpersoner/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "986678298",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986678298",
+        "retrieved_at": "2026-11-05T21:09:22.329008Z",
+        "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986678298"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+            "matched_organisation_number": "986678298"
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_directory",
-        "signal": {
-          "credit_indicator": "financial_data_available",
-          "revenue_nok": "42039",
-          "profit_nok": "-3318",
-          "employees": "47"
-        },
-        "observed_at": "2026-10-04"
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+        "id": "purehelp-email-986678298-d66e8764610f19c8",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post.vgs@hlfbriskeby.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "986678298",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986678298",
+        "retrieved_at": "2026-11-05T21:09:22.329008Z",
+        "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986678298"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+            "matched_organisation_number": "986678298"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+        "id": "purehelp-phone-986678298-d66e8764610f19c8",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "32 22 65 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "986678298",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986678298",
+        "retrieved_at": "2026-11-05T21:09:22.329008Z",
+        "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986678298"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+            "matched_organisation_number": "986678298"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+        "id": "purehelp-profile-986678298-d66e8764610f19c8",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "85.310",
+          "nace_description": "General secondary education",
+          "town": "LIER",
+          "zipcode": "3402",
+          "municipality": "LIER",
+          "municipality_number": "3312",
+          "county": "Buskerud",
+          "registration_date": "2004-03-22",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2004-03-22",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "hlfbriskeby.no"
+        }
+      },
+      {
+        "organisation_number": "986678298",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/986678298",
+        "retrieved_at": "2026-11-05T21:09:22.329008Z",
+        "content_sha256": "5f1f68e9936d4a6007f046dd43ee33d2913ecf0fe6dc7368254fbf6910fa8775",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "986678298"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "BRISKEBY VIDEREGÅENDE SKOLE AS",
+            "matched_organisation_number": "986678298"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-986678298.orgNumber=986678298;name=BRISKEBY VIDEREGÅENDE SKOLE AS",
+        "id": "purehelp-workforce-986678298-d66e8764610f19c8",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 49,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:42.368928+00:00"
+  "generated_at": "2026-11-06T05:27:30.927106+00:00"
 }

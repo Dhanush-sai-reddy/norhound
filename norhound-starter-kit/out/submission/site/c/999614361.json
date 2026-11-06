@@ -586,75 +586,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "999614361",
-          "platform": "company_site",
-          "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-999614361-b1a9f96d861e376a",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 1,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "js_fallback_candidate",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-79ce08a2511d31529e6d853b",
-          "organisation_number": "999614361",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T08:47:19.791580Z",
-          "content_sha256": "7d2f74e88a269c68ff74e5bf8fe97e3f3a5b7a06e33c853302851c8cae74ae21",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "999614361",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 8",
-          "metrics": {
-            "workforce_value": 8,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-06-13"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-06-13",
-          "effective_at": "2026-06-13"
-        },
-        {
           "id": "registry-contact-20ea1c1cde066a2371154e88",
           "organisation_number": "999614361",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -673,8 +611,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-a2b2d45ad50b1fe5f83f9db5",
@@ -682,8 +619,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -702,15 +639,14 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "999614361",
           "platform": "company_site",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -728,14 +664,13 @@
           "evidence_span": "Anleggsentreprenør med lang og bred erfaring - Morten Bruvold AS",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "999614361",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
-          "retrieved_at": "2026-10-05T08:47:28.086424Z",
+          "retrieved_at": "2026-09-29T10:14:21.395982Z",
           "content_sha256": "96457ef5fc958e8b8f97b68a195bd9799299deadf91fca8101bf1ec2d64e4d5a",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -757,14 +692,13 @@
             "subunit_organisation_number": "999642977",
             "municipality": "LUNNER",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "999614361",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999614361",
-          "retrieved_at": "2026-10-05T08:47:27.343636Z",
+          "retrieved_at": "2026-09-29T10:14:20.497517Z",
           "content_sha256": "af5973ebe31b4504f76fe3296684f0d98eb2182201948cbc3e9b69dec4b0654a",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -787,14 +721,13 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "999614361",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999614361",
-          "retrieved_at": "2026-10-05T08:47:27.343636Z",
+          "retrieved_at": "2026-09-29T10:14:20.497517Z",
           "content_sha256": "af5973ebe31b4504f76fe3296684f0d98eb2182201948cbc3e9b69dec4b0654a",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -817,8 +750,7 @@
             "ownership": "100 %",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "sitemap-page-3099c8180bdbe9bdca045758",
@@ -826,8 +758,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2025-04-25",
           "exact_entity": true,
           "identity_proof": [
@@ -854,8 +786,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2025-04-25",
           "exact_entity": true,
           "identity_proof": [
@@ -882,8 +814,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2025-04-25",
           "exact_entity": true,
           "identity_proof": [
@@ -910,8 +842,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2023-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -938,8 +870,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2023-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -966,8 +898,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2023-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -994,8 +926,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2023-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -1022,8 +954,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2023-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -1050,8 +982,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2022-12-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1078,8 +1010,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.morten-bruvold.no/",
-          "retrieved_at": "2026-10-05T08:47:29.815247Z",
-          "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+          "retrieved_at": "2026-09-29T10:14:25.438968Z",
+          "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
           "observed_at": "2022-12-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1106,7 +1038,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "eabe3a0679ef7b9b644bb53c01037681ef304d90dd9acdd9fbfbea0a0af133d7",
           "observed_at": "2026-07-01",
           "exact_entity": true,
@@ -1136,7 +1068,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "95bdbca2ed871abab0a620cb4515c21dad71a540343c3c45312b638430f9b88a",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1166,7 +1098,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "656f295ce2f377e89453a8fff7248cf5eee418bd615e39780424258e3bf455cc",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1196,7 +1128,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b0fef76840504c9f520d390e1ab6b6e660b4a0d539478b4da4cdc215b71a83b9",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1226,7 +1158,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6dd16e30a1838d6e90b87bf7e2139186197ebab26fc3707df04be07b2c23ce9f",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1256,7 +1188,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "427b79f55d2b079c8487e4814eca079674638058adcfd679bd6e3a53d3aed5b5",
           "observed_at": "2025-08-02",
           "exact_entity": true,
@@ -1286,7 +1218,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e3ce7291441b691791339fe78441e5d7e8f72171d6581f0c023370682d9ffd0c",
           "observed_at": "2024-11-17",
           "exact_entity": true,
@@ -1316,7 +1248,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f5016e11c8e8703ad426cca174c00655958fe75fcf87fc106ddc7ba69c41e568",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -1346,7 +1278,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e19443c21762f4fb4841bf2ac4ef8d0104077d0ea298ec19a8ae46950fdc2819",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1376,7 +1308,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "771cf048e313148251a70aa0aea87dc530267daafe07e723430d27a81a8951a9",
           "observed_at": "2024-06-20",
           "exact_entity": true,
@@ -1406,7 +1338,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f119c0ccf248080aee162c57ec9b2ee5a03e1c2264397b1cc4394a11c2fdbcef",
           "observed_at": "2024-06-11",
           "exact_entity": true,
@@ -1436,7 +1368,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "66264811524e9aaacbbd6a00d837d761fc05b4564f9e4aa6a26e06e072906313",
           "observed_at": "2024-04-13",
           "exact_entity": true,
@@ -1466,7 +1398,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f3cda5bb0818956548818f67e4f47e9400063973b91ee2c98bd076eefc76650b",
           "observed_at": "2024-01-13",
           "exact_entity": true,
@@ -1496,7 +1428,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0634f7cdb34f094a6aa37bdcc25df428112ac32af1f4d9a67d3b2a5a3cce0057",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1526,7 +1458,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3bb90ee91ec6a02d01149f1ade2bb55c22cfddd6bdf29d86fb80aa5e00182fb6",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1556,7 +1488,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "30d5b189aa87c5ce8adc014736199616a0195f35858c19cd97f1bfeaa9ca358a",
           "observed_at": "2023-08-10",
           "exact_entity": true,
@@ -1586,7 +1518,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6babbfef6d3510bc31b43096e46ed822c317fb583e66fdf410bc3db988438894",
           "observed_at": "2023-07-12",
           "exact_entity": true,
@@ -1616,38 +1548,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "48ccc68d1c728b7bd869863e4c0f65c5c7e9522f2743afc9acc4c75ecb25655a",
-          "observed_at": "2023-02-14",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "999614361",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2023-02-14: Endring",
-          "metrics": {
-            "date": "2023-02-14",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-bda94705afc2b3127a82b4ec",
-          "organisation_number": "999614361",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "bda94705afc2b3127a82b4ecc09683fd7772be9a190bc7c7a6f9b11c8ada68de",
           "observed_at": "2023-02-14",
           "exact_entity": true,
           "identity_proof": [
@@ -1676,7 +1578,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bdd9b75decb7cf922b70fba100501f96a6dd1c7dc1cee23e5e5e22e51f8ba9a4",
           "observed_at": "2022-07-18",
           "exact_entity": true,
@@ -1699,6 +1601,236 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-742c14ec394520b53d286c3f",
+          "organisation_number": "999614361",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "bf9157cf53fea90742b0a6c33a288eafcb209a63fc5738d6b5044d6b8c5a05a4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "999614361",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-01",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-01",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-01 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-d77163e5960ae5f9b97b79aa",
+          "organisation_number": "999614361",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "593cd37790aad815d3f983872fd9b2396b84841e7956682c3aa827525e762ee9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "999614361",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-08-02",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-08-02",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-08-02 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-60294cea1bbf72004f51f782",
+          "organisation_number": "999614361",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "da1ff1fc5d0b80caeeded1f2cc5817c5aefa7a8013551bade179d18fa8eb265b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "999614361",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-01-17",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-01-17",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-01-17 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-79ce08a2511d31529e6d853b",
+          "organisation_number": "999614361",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
+          "retrieved_at": "2026-09-29T10:14:11.458560Z",
+          "content_sha256": "7d2f74e88a269c68ff74e5bf8fe97e3f3a5b7a06e33c853302851c8cae74ae21",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "999614361",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 8",
+          "metrics": {
+            "workforce_value": 8,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-13",
+          "effective_at": "2026-06-13"
+        },
+        {
+          "organisation_number": "999614361",
+          "platform": "company_site",
+          "source_url": "https://www.morten-bruvold.no/",
+          "retrieved_at": "2026-09-29T12:41:22.506977Z",
+          "content_sha256": "c84d1ad4ee382c4a1e8c5889d8d9f87996e0d85e82fdfe3eba94efb25ff8b2ab",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-999614361-c84d1ad4ee382c4a",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 1,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "999614361",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
+          "retrieved_at": "2026-11-05T14:44:25.499403Z",
+          "content_sha256": "c75d7727f4efc7688e1e1f57e651cae3c0ce05c3533521def32da2e60cb8f70f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "999614361"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MORTEN BRUVOLD AS",
+              "matched_organisation_number": "999614361"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "website_domain": "morten-bruvold.no",
+            "address": {
+              "street": "Kvernhusvegen 13",
+              "locality": "HARESTUA",
+              "postal_code": "2743"
+            }
+          },
+          "id": "fagfolk-profile-999614361-79a5450687977318",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"999614361\"}"
+        },
+        {
+          "organisation_number": "999614361",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/999614361",
+          "retrieved_at": "2026-11-05T21:10:16.232367Z",
+          "content_sha256": "a557a2c2a8512d99c6902137f9013304b9a6623e8889258d87253cc39d5b7106",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "999614361"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MORTEN BRUVOLD AS",
+              "matched_organisation_number": "999614361"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-999614361.orgNumber=999614361;name=MORTEN BRUVOLD AS",
+          "id": "purehelp-profile-999614361-aff7787c4b065d1b",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "43.120",
+            "nace_description": "Grunnarbeid",
+            "town": "HARESTUA",
+            "zipcode": "2743",
+            "municipality": "Lunner",
+            "municipality_number": null,
+            "county": null,
+            "registration_date": "2013-01-30",
+            "registry_status": null,
+            "registry_status_date": "",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": null
+          }
         }
       ]
     },
@@ -1721,7 +1853,7 @@
     "company_name": "MORTEN BRUVOLD AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "MORTEN BRUVOLD AS is a private limited company operating in Grunnarbeid. Latest accounts (2025): revenue NOK 15.6m, annual result NOK -564.1k. Annual accounts available for 2013-2025 (13 years). Detailed records only available as PDFs. Revenue stable (-1.6% YoY). Registered employees: 8. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "MORTEN BRUVOLD AS is a private limited company operating in Grunnarbeid. Latest accounts (2025): revenue NOK 15.6m, annual result NOK -564.1k. Annual accounts available for 2013-2025 (13 years). Detailed records only available as PDFs. Revenue stable (-1.6% YoY). Registered employees: 8. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1737,7 +1869,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       },
@@ -1755,7 +1892,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       },
@@ -1773,7 +1915,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       },
@@ -1791,7 +1938,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       },
@@ -1809,7 +1961,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       },
@@ -1823,11 +1980,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/999614361/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999614361",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
+          "https://www.morten-bruvold.no/"
+        ]
       },
       {
         "question": "changes",
@@ -1843,18 +2015,17 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/999614361",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/999614361/aar",
+          "https://purehelp.no/company/NO/999614361",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
           "https://www.morten-bruvold.no/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2430,75 +2601,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "999614361",
-        "platform": "company_site",
-        "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-999614361-b1a9f96d861e376a",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 1,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "js_fallback_candidate",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-79ce08a2511d31529e6d853b",
-        "organisation_number": "999614361",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T08:47:19.791580Z",
-        "content_sha256": "7d2f74e88a269c68ff74e5bf8fe97e3f3a5b7a06e33c853302851c8cae74ae21",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "999614361",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 8",
-        "metrics": {
-          "workforce_value": 8,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-06-13"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-06-13",
-        "effective_at": "2026-06-13"
-      },
-      {
         "id": "registry-contact-20ea1c1cde066a2371154e88",
         "organisation_number": "999614361",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2517,8 +2626,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-a2b2d45ad50b1fe5f83f9db5",
@@ -2526,8 +2634,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2546,15 +2654,14 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "999614361",
         "platform": "company_site",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2572,14 +2679,13 @@
         "evidence_span": "Anleggsentreprenør med lang og bred erfaring - Morten Bruvold AS",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "999614361",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=999614361&size=1000",
-        "retrieved_at": "2026-10-05T08:47:28.086424Z",
+        "retrieved_at": "2026-09-29T10:14:21.395982Z",
         "content_sha256": "96457ef5fc958e8b8f97b68a195bd9799299deadf91fca8101bf1ec2d64e4d5a",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2601,14 +2707,13 @@
           "subunit_organisation_number": "999642977",
           "municipality": "LUNNER",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "999614361",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999614361",
-        "retrieved_at": "2026-10-05T08:47:27.343636Z",
+        "retrieved_at": "2026-09-29T10:14:20.497517Z",
         "content_sha256": "af5973ebe31b4504f76fe3296684f0d98eb2182201948cbc3e9b69dec4b0654a",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2631,14 +2736,13 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "999614361",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/999614361",
-        "retrieved_at": "2026-10-05T08:47:27.343636Z",
+        "retrieved_at": "2026-09-29T10:14:20.497517Z",
         "content_sha256": "af5973ebe31b4504f76fe3296684f0d98eb2182201948cbc3e9b69dec4b0654a",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2661,8 +2765,7 @@
           "ownership": "100 %",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "sitemap-page-3099c8180bdbe9bdca045758",
@@ -2670,8 +2773,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2025-04-25",
         "exact_entity": true,
         "identity_proof": [
@@ -2698,8 +2801,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2025-04-25",
         "exact_entity": true,
         "identity_proof": [
@@ -2726,8 +2829,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2025-04-25",
         "exact_entity": true,
         "identity_proof": [
@@ -2754,8 +2857,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2023-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2782,8 +2885,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2023-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2810,8 +2913,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2023-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2838,8 +2941,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2023-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2866,8 +2969,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2023-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2894,8 +2997,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2022-12-21",
         "exact_entity": true,
         "identity_proof": [
@@ -2922,8 +3025,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.morten-bruvold.no/",
-        "retrieved_at": "2026-10-05T08:47:29.815247Z",
-        "content_sha256": "b1a9f96d861e376a86eaa5b2bf8938fd7ee8262247007a57511668208a673d39",
+        "retrieved_at": "2026-09-29T10:14:25.438968Z",
+        "content_sha256": "11a71ad6bd8b050e469fb88651947b0f5d226af1a763b640a5f3bef0af575a04",
         "observed_at": "2022-12-21",
         "exact_entity": true,
         "identity_proof": [
@@ -2950,7 +3053,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "eabe3a0679ef7b9b644bb53c01037681ef304d90dd9acdd9fbfbea0a0af133d7",
         "observed_at": "2026-07-01",
         "exact_entity": true,
@@ -2980,7 +3083,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "95bdbca2ed871abab0a620cb4515c21dad71a540343c3c45312b638430f9b88a",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -3010,7 +3113,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "656f295ce2f377e89453a8fff7248cf5eee418bd615e39780424258e3bf455cc",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -3040,7 +3143,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b0fef76840504c9f520d390e1ab6b6e660b4a0d539478b4da4cdc215b71a83b9",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3070,7 +3173,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6dd16e30a1838d6e90b87bf7e2139186197ebab26fc3707df04be07b2c23ce9f",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3100,7 +3203,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "427b79f55d2b079c8487e4814eca079674638058adcfd679bd6e3a53d3aed5b5",
         "observed_at": "2025-08-02",
         "exact_entity": true,
@@ -3130,7 +3233,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e3ce7291441b691791339fe78441e5d7e8f72171d6581f0c023370682d9ffd0c",
         "observed_at": "2024-11-17",
         "exact_entity": true,
@@ -3160,7 +3263,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f5016e11c8e8703ad426cca174c00655958fe75fcf87fc106ddc7ba69c41e568",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -3190,7 +3293,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e19443c21762f4fb4841bf2ac4ef8d0104077d0ea298ec19a8ae46950fdc2819",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -3220,7 +3323,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "771cf048e313148251a70aa0aea87dc530267daafe07e723430d27a81a8951a9",
         "observed_at": "2024-06-20",
         "exact_entity": true,
@@ -3250,7 +3353,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f119c0ccf248080aee162c57ec9b2ee5a03e1c2264397b1cc4394a11c2fdbcef",
         "observed_at": "2024-06-11",
         "exact_entity": true,
@@ -3280,7 +3383,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "66264811524e9aaacbbd6a00d837d761fc05b4564f9e4aa6a26e06e072906313",
         "observed_at": "2024-04-13",
         "exact_entity": true,
@@ -3310,7 +3413,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f3cda5bb0818956548818f67e4f47e9400063973b91ee2c98bd076eefc76650b",
         "observed_at": "2024-01-13",
         "exact_entity": true,
@@ -3340,7 +3443,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0634f7cdb34f094a6aa37bdcc25df428112ac32af1f4d9a67d3b2a5a3cce0057",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3370,7 +3473,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3bb90ee91ec6a02d01149f1ade2bb55c22cfddd6bdf29d86fb80aa5e00182fb6",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -3400,7 +3503,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "30d5b189aa87c5ce8adc014736199616a0195f35858c19cd97f1bfeaa9ca358a",
         "observed_at": "2023-08-10",
         "exact_entity": true,
@@ -3430,7 +3533,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6babbfef6d3510bc31b43096e46ed822c317fb583e66fdf410bc3db988438894",
         "observed_at": "2023-07-12",
         "exact_entity": true,
@@ -3460,38 +3563,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "48ccc68d1c728b7bd869863e4c0f65c5c7e9522f2743afc9acc4c75ecb25655a",
-        "observed_at": "2023-02-14",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "999614361",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2023-02-14: Endring",
-        "metrics": {
-          "date": "2023-02-14",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-bda94705afc2b3127a82b4ec",
-        "organisation_number": "999614361",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "bda94705afc2b3127a82b4ecc09683fd7772be9a190bc7c7a6f9b11c8ada68de",
         "observed_at": "2023-02-14",
         "exact_entity": true,
         "identity_proof": [
@@ -3520,7 +3593,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bdd9b75decb7cf922b70fba100501f96a6dd1c7dc1cee23e5e5e22e51f8ba9a4",
         "observed_at": "2022-07-18",
         "exact_entity": true,
@@ -3543,8 +3616,238 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-742c14ec394520b53d286c3f",
+        "organisation_number": "999614361",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "bf9157cf53fea90742b0a6c33a288eafcb209a63fc5738d6b5044d6b8c5a05a4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "999614361",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-01",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-01",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000482394&amp;sokeverdi=999614361&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-01 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-d77163e5960ae5f9b97b79aa",
+        "organisation_number": "999614361",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "593cd37790aad815d3f983872fd9b2396b84841e7956682c3aa827525e762ee9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "999614361",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-08-02",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-08-02",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000664957&amp;sokeverdi=999614361&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-08-02 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-60294cea1bbf72004f51f782",
+        "organisation_number": "999614361",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "da1ff1fc5d0b80caeeded1f2cc5817c5aefa7a8013551bade179d18fa8eb265b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "999614361",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-01-17",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-01-17",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000021951&amp;sokeverdi=999614361&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-01-17 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-79ce08a2511d31529e6d853b",
+        "organisation_number": "999614361",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/999614361",
+        "retrieved_at": "2026-09-29T10:14:11.458560Z",
+        "content_sha256": "7d2f74e88a269c68ff74e5bf8fe97e3f3a5b7a06e33c853302851c8cae74ae21",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "999614361",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 8",
+        "metrics": {
+          "workforce_value": 8,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-13",
+        "effective_at": "2026-06-13"
+      },
+      {
+        "organisation_number": "999614361",
+        "platform": "company_site",
+        "source_url": "https://www.morten-bruvold.no/",
+        "retrieved_at": "2026-09-29T12:41:22.506977Z",
+        "content_sha256": "c84d1ad4ee382c4a1e8c5889d8d9f87996e0d85e82fdfe3eba94efb25ff8b2ab",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-999614361-c84d1ad4ee382c4a",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 1,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "999614361",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/morten-bruvold-as-999614361",
+        "retrieved_at": "2026-11-05T14:44:25.499403Z",
+        "content_sha256": "c75d7727f4efc7688e1e1f57e651cae3c0ce05c3533521def32da2e60cb8f70f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "999614361"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MORTEN BRUVOLD AS",
+            "matched_organisation_number": "999614361"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "website_domain": "morten-bruvold.no",
+          "address": {
+            "street": "Kvernhusvegen 13",
+            "locality": "HARESTUA",
+            "postal_code": "2743"
+          }
+        },
+        "id": "fagfolk-profile-999614361-79a5450687977318",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"999614361\"}"
+      },
+      {
+        "organisation_number": "999614361",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/999614361",
+        "retrieved_at": "2026-11-05T21:10:16.232367Z",
+        "content_sha256": "a557a2c2a8512d99c6902137f9013304b9a6623e8889258d87253cc39d5b7106",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "999614361"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MORTEN BRUVOLD AS",
+            "matched_organisation_number": "999614361"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-999614361.orgNumber=999614361;name=MORTEN BRUVOLD AS",
+        "id": "purehelp-profile-999614361-aff7787c4b065d1b",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "43.120",
+          "nace_description": "Grunnarbeid",
+          "town": "HARESTUA",
+          "zipcode": "2743",
+          "municipality": "Lunner",
+          "municipality_number": null,
+          "county": null,
+          "registration_date": "2013-01-30",
+          "registry_status": null,
+          "registry_status_date": "",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": null
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.440151+00:00"
+  "generated_at": "2026-11-06T05:27:34.640051+00:00"
 }

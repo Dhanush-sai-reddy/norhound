@@ -760,129 +760,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "995160099",
-          "platform": "company_site",
-          "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-995160099-77cebb810994aec7",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 4 bounded pages and 2 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 4,
-            "verified_social_links": 2,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "organisation_number": "995160099",
-          "platform": "facebook",
-          "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-995160099-77cebb810994aec7-facebook",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-          "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/clockworkbemanning"
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "organisation_number": "995160099",
-          "platform": "instagram",
-          "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-995160099-77cebb810994aec7-instagram",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/clockworkbemanning"
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-c4e50bd402ed34370fe95cf8",
-          "organisation_number": "995160099",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T09:04:30.262658Z",
-          "content_sha256": "f8c915e4a8fd518551dee8d28ad840ce2f378760fbddb5f2355157f5e1fd8c6e",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "995160099",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 91",
-          "metrics": {
-            "workforce_value": 91,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-0de52d0caa9b1e0a7502eb0c",
           "organisation_number": "995160099",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -901,8 +785,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-f8cfc4c6598b013cee79fe44",
@@ -910,8 +793,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -930,15 +813,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "995160099",
           "platform": "company_site",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -956,14 +838,13 @@
           "evidence_span": "ClockWork Bemanning AS - Vi er spesialisten på bemanning til bygg og anlegg",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -985,14 +866,13 @@
             "subunit_organisation_number": "933144453",
             "municipality": "VEFSN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1014,14 +894,13 @@
             "subunit_organisation_number": "995168146",
             "municipality": "BERGEN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1043,14 +922,13 @@
             "subunit_organisation_number": "926150375",
             "municipality": "ALTA",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1072,14 +950,13 @@
             "subunit_organisation_number": "827537942",
             "municipality": "INDRE ØSTFOLD",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1101,14 +978,13 @@
             "subunit_organisation_number": "925285676",
             "municipality": "VEFSN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1130,14 +1006,13 @@
             "subunit_organisation_number": "913313399",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1159,14 +1034,13 @@
             "subunit_organisation_number": "927537982",
             "municipality": "BERGEN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-          "retrieved_at": "2026-10-05T09:04:36.688813Z",
+          "retrieved_at": "2026-09-29T10:31:07.030266Z",
           "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1188,14 +1062,13 @@
             "subunit_organisation_number": "927537958",
             "municipality": "TROMSØ",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "995160099",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/995160099",
-          "retrieved_at": "2026-10-05T09:04:35.933303Z",
+          "retrieved_at": "2026-09-29T10:31:06.137717Z",
           "content_sha256": "13bb6619f521436fb4d62a1827306891d1287856e972c359eb7cd65bfb89d63d",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1218,8 +1091,7 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "sitemap-page-6f6662f6522663a9e67bc349",
@@ -1227,8 +1099,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-27",
           "exact_entity": true,
           "identity_proof": [
@@ -1255,8 +1127,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-27",
           "exact_entity": true,
           "identity_proof": [
@@ -1283,8 +1155,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-27",
           "exact_entity": true,
           "identity_proof": [
@@ -1311,8 +1183,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1339,8 +1211,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1367,8 +1239,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1395,8 +1267,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-20",
           "exact_entity": true,
           "identity_proof": [
@@ -1423,8 +1295,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-20",
           "exact_entity": true,
           "identity_proof": [
@@ -1451,8 +1323,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-20",
           "exact_entity": true,
           "identity_proof": [
@@ -1479,8 +1351,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://cwork.no/",
-          "retrieved_at": "2026-10-05T09:04:41.977200Z",
-          "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
           "observed_at": "2021-05-20",
           "exact_entity": true,
           "identity_proof": [
@@ -1507,7 +1379,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bf3552f0f9fdb61f07e702ebeb2eb62d1fbecea7782a56364d4d67694a6e34ef",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1537,7 +1409,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "26a172996b84c8ae3053590482d8a4e873361fff1cc1c315d321d4d74612a896",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1567,7 +1439,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c2f520f222f056cfb53d583dad9ee7e72456d92dd6c5d217a2fcb2c5d2a34330",
           "observed_at": "2026-08-03",
           "exact_entity": true,
@@ -1597,7 +1469,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "094595e1bd2b03cdf28996ba06c0bff2347189edd189862e83bafdc5dff3ef75",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1627,7 +1499,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4ca80c2878ac214379b13394f7caf4ba6b0ecc252dc20fffedb02ab9842c91df",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1657,7 +1529,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5f14aa84b5c0872dfa428e54d5413648ebf76976893a7b131887969e5851208a",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1687,7 +1559,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "08f09abb2dfd54e9c0b2e042f7ef4683123d9b195020cfe45c43b92fd007936e",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1717,7 +1589,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4782dd78177e6091665e8694591bac70c0c32c123677ee604b13197437708a6b",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1747,7 +1619,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0e0be7b81bb1c2d0b3d59ea99bfe39d40407dc99dc982ae901cdc550a9000c8e",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1777,7 +1649,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ac72ec2907a45c9390367789109d572bef3e0f199b1d6ace0abf04b55b44eb47",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -1807,7 +1679,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a6ea5561475c373866aed067bba394cb54707de7f4eb75791056b9189985ead0",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1837,7 +1709,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "15faad48a6aa76f1546143c87a12971ede5d2fc4dfa4f3e8a8816dd26a6ebf2e",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1867,7 +1739,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a7b2186c990b1625102d57722bf62903cfcca51b11c9ad2fd8e5d869f468f801",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1897,7 +1769,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "797170abd8fd95910337b13a3f7730f8c8abf91924bc9604e64d168ef30cda3c",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1927,7 +1799,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6cedcc274f7ba18ccfe059e6f5215742200f824d75d521522c511479e41440a5",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1957,7 +1829,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d19ae1efb706bc7a2750b7a58bdcaa77a3fd9a46db8d0e17b5c436e86a5e57c1",
           "observed_at": "2025-08-04",
           "exact_entity": true,
@@ -1987,7 +1859,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ec7658c639731135bbb11dae33f4087879e79b3c9283c902c2cfd6dff59dfbd4",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -2017,7 +1889,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "aa4a3449681b4cee418a1131a80149cf8152f2cb48f3b30dfaf722ad4106e98a",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -2047,7 +1919,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "301554d3782da1f226cbfdfc4a719804b7f43abc39fd58178df4b8c4de6a1640",
           "observed_at": "2025-05-14",
           "exact_entity": true,
@@ -2077,7 +1949,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e88119feb8c5643ec7b7bc8b1c2360cf053f146546c236175386a040d550839a",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -2102,39 +1974,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-dfecd0e5354bcacd244b6a1f",
           "organisation_number": "995160099",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
-          "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "d0b3934b0bf4df8d363d0775dbd25b55522b3b8efcc831ad957dbe176735f786",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "cwork.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "995160099",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "negative",
-          "id": "gplaces-metrics-995160099-e5369b1be39a28ac",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Clockwork Bemanning As Avd Bergen Google profile: rating 2.1/5, 7 ratings.",
-          "metrics": {
-            "rating": 2.1,
-            "review_count": 7,
-            "scale": 5,
-            "place_id": "ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-08-03",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-08-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-08-03 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-8bd755c8c18d864a300bf567",
+          "organisation_number": "995160099",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "534d5b1550ddaa9efed5513bb5dd490b54537b2e89e62a3a62f12d9271fca17f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "995160099",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-08-04",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-08-04",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-08-04 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-a59ffd35f7c593a59290388f",
+          "organisation_number": "995160099",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "4cc02368e76784240b022e1adc00587a3627577b65eb9988547ccdfb0ddd2607",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "995160099",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-07-29",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-07-29",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-07-29 (BRREG official announcement)"
         },
         {
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
+          "retrieved_at": "2026-10-06T15:53:42.004605Z",
           "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
           "exact_entity": true,
           "identity_proof": [
@@ -2166,7 +2096,7 @@
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
+          "retrieved_at": "2026-10-06T15:53:42.004605Z",
           "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
           "exact_entity": true,
           "identity_proof": [
@@ -2198,7 +2128,7 @@
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
+          "retrieved_at": "2026-10-06T15:53:42.004605Z",
           "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
           "exact_entity": true,
           "identity_proof": [
@@ -2230,7 +2160,7 @@
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
+          "retrieved_at": "2026-10-06T15:53:42.004605Z",
           "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
           "exact_entity": true,
           "identity_proof": [
@@ -2262,7 +2192,7 @@
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
+          "retrieved_at": "2026-10-06T15:53:42.004605Z",
           "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
           "exact_entity": true,
           "identity_proof": [
@@ -2292,10 +2222,254 @@
         },
         {
           "organisation_number": "995160099",
+          "platform": "facebook",
+          "source_url": "https://cwork.no/",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "company_site_url": "https://cwork.no/",
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "clockwork",
+                "bemanning"
+              ],
+              "name_token_gate": true,
+              "method": "linked_from_verified_site_v1"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "site_linked_social_handle",
+          "id": "site-social-995160099-facebook-e7f130ad500e10f7",
+          "signal_type": "profile_handle",
+          "evidence_span": "Social handle linked from the exact-identity-gated company website https://cwork.no/.",
+          "metrics": {
+            "platform": "facebook",
+            "url": "https://facebook.com/clockworkbemanning",
+            "identity_score": 0.98
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "instagram",
+          "source_url": "https://cwork.no/",
+          "retrieved_at": "2026-09-29T10:31:11.670544Z",
+          "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "company_site_url": "https://cwork.no/",
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "clockwork",
+                "bemanning"
+              ],
+              "name_token_gate": true,
+              "method": "linked_from_verified_site_v1"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "site_linked_social_handle",
+          "id": "site-social-995160099-instagram-85f4b823705471b2",
+          "signal_type": "profile_handle",
+          "evidence_span": "Social handle linked from the exact-identity-gated company website https://cwork.no/.",
+          "metrics": {
+            "platform": "instagram",
+            "url": "https://instagram.com/clockworkbemanning",
+            "identity_score": 0.98
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_site",
+          "source_url": "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "retrieved_at": "2026-10-07T18:15:03.734147Z",
+          "content_sha256": "8094458afdca193e0b365e2deef5ed15b0289335885e5ae60e7d03306958e860",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-995160099-301985c62b2bb41a",
+          "signal_type": "public_post",
+          "evidence_span": "Endring i lovverk gjeldende fra 2019",
+          "metrics": {
+            "published_at": "2019-01-01T09:44:00Z",
+            "date_source": "rss_atom",
+            "body_excerpt": " Fra 2019 trer det i kraft lovendringer som får betydning for bemanningsbransjen. \n The post  Endring i lovverk gjeldende fra 2019  appeared first on  ClockWork Bemanning AS . ",
+            "feed_url": "https://cwork.no/feed/"
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_site",
+          "source_url": "https://cwork.no/oppdatert-personvernerklaering/",
+          "retrieved_at": "2026-10-07T18:15:03.734167Z",
+          "content_sha256": "e4557147ddc52140d38f4bc65a14bb3275a544eda0944dd68be99690b8c507c0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-995160099-8625e15b210375d8",
+          "signal_type": "public_post",
+          "evidence_span": "Oppdatert personvernerklæring",
+          "metrics": {
+            "published_at": "2018-12-01T09:52:00Z",
+            "date_source": "rss_atom",
+            "body_excerpt": " Vi oppdaterer vår personvernerklæring med virkning fra 01.12.2018. Denne erstatter i sin helhet tidligere personvernerklæring. \n The post  Oppdatert personvernerklæring  appeared first on  ClockWork Bemanning AS . ",
+            "feed_url": "https://cwork.no/feed/"
+          }
+        },
+        {
+          "id": "feed-news-cbdccbd9fa1d508ccdaac2f5",
+          "organisation_number": "995160099",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "retrieved_at": "2026-10-25T00:35:18.582927Z",
+          "content_sha256": "79bc727a0157116024cae7f4df46a240d6c55e19a81f28b4cdec5a72fb087341",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://cwork.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "995160099",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Endring i lovverk gjeldende fra 2019 — Tue, 01 Jan 2019 09:44:00 +0000",
+          "effective_at": "2019-01-01",
+          "observed_at": "2019-01-01",
+          "metrics": {
+            "title": "Endring i lovverk gjeldende fra 2019",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-ea25854fe71337ed2b36011c",
+          "organisation_number": "995160099",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://cwork.no/oppdatert-personvernerklaering/",
+          "retrieved_at": "2026-10-25T00:35:18.582927Z",
+          "content_sha256": "7478d961e1fb9d44f4bc6cd59ecc324496f324780a89cac84e10bad301c24a80",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://cwork.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "995160099",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Oppdatert personvernerklæring — Sat, 01 Dec 2018 09:52:00 +0000",
+          "effective_at": "2018-12-01",
+          "observed_at": "2018-12-01",
+          "metrics": {
+            "title": "Oppdatert personvernerklæring",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "registry-workforce-c4e50bd402ed34370fe95cf8",
+          "organisation_number": "995160099",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
+          "retrieved_at": "2026-09-29T10:30:59.265969Z",
+          "content_sha256": "f8c915e4a8fd518551dee8d28ad840ce2f378760fbddb5f2355157f5e1fd8c6e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "995160099",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 91",
+          "metrics": {
+            "workforce_value": 91,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-08-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-08-12",
+          "effective_at": "2026-08-12"
+        },
+        {
+          "id": "registry-update-a03b4c14342ec8b0d2767c13",
+          "organisation_number": "995160099",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
+          "retrieved_at": "2026-10-28T04:19:27.620683Z",
+          "content_sha256": "a03b4c14342ec8b0d2767c1323ad23ed278afd2fa163b04671c7f4a5f9bc6a84",
+          "observed_at": "2026-10-13",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "995160099",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-13: Endring",
+          "metrics": {
+            "date": "2026-10-13",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
+          "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
-          "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+          "retrieved_at": "2026-10-31T18:19:32.070719Z",
+          "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -2308,7 +2482,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "negative",
-          "id": "gplaces-review-summary-995160099-e5369b1be39a28ac",
+          "id": "gplaces-metrics-995160099-ce04a381d030c073",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Clockwork Bemanning As Avd Bergen Google profile: rating 2.1/5, 7 ratings.",
+          "metrics": {
+            "rating": 2.1,
+            "review_count": 7,
+            "scale": 5,
+            "place_id": "ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
+          "retrieved_at": "2026-10-31T18:19:32.070719Z",
+          "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "cwork.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-summary-995160099-ce04a381d030c073",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Clockwork Bemanning As Avd Bergen is rated 2.1/5 from 7 Google reviews.",
@@ -2323,8 +2526,8 @@
           "organisation_number": "995160099",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-          "retrieved_at": "2026-10-05T14:31:31.697679Z",
-          "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+          "retrieved_at": "2026-10-31T18:19:32.070719Z",
+          "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -2337,7 +2540,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "negative",
-          "id": "gplaces-sentiment-995160099-e5369b1be39a28ac",
+          "id": "gplaces-sentiment-995160099-ce04a381d030c073",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "negative",
@@ -2347,6 +2550,231 @@
             "rating": 2.1,
             "review_count": 7,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_site",
+          "source_url": "https://cwork.no/",
+          "retrieved_at": "2026-09-29T12:58:27.436440Z",
+          "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-995160099-9d506f3ca3bfd4ed",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 4 bounded pages and 2 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 4,
+            "verified_social_links": 2,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "facebook",
+          "source_url": "https://cwork.no/",
+          "retrieved_at": "2026-09-29T12:58:27.436440Z",
+          "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-handle-995160099-9d506f3ca3bfd4ed-facebook",
+          "signal_type": "profile_handle",
+          "evidence_span": "Identity-gated facebook handle published on the exact company site.",
+          "metrics": {
+            "platform": "facebook",
+            "url": "https://facebook.com/clockworkbemanning"
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "instagram",
+          "source_url": "https://cwork.no/",
+          "retrieved_at": "2026-09-29T12:58:27.436440Z",
+          "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-handle-995160099-9d506f3ca3bfd4ed-instagram",
+          "signal_type": "profile_handle",
+          "evidence_span": "Identity-gated instagram handle published on the exact company site.",
+          "metrics": {
+            "platform": "instagram",
+            "url": "https://instagram.com/clockworkbemanning"
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/995160099",
+          "retrieved_at": "2026-11-05T21:11:31.370637Z",
+          "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "995160099"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "CLOCKWORK BEMANNING AS",
+              "matched_organisation_number": "995160099"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+          "id": "purehelp-email-995160099-e1ad89924468d154",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "firmapost@cwork.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/995160099",
+          "retrieved_at": "2026-11-05T21:11:31.370637Z",
+          "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "995160099"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "CLOCKWORK BEMANNING AS",
+              "matched_organisation_number": "995160099"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+          "id": "purehelp-phone-995160099-e1ad89924468d154",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "05314",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/995160099",
+          "retrieved_at": "2026-11-05T21:11:31.370637Z",
+          "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "995160099"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "CLOCKWORK BEMANNING AS",
+              "matched_organisation_number": "995160099"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+          "id": "purehelp-profile-995160099-e1ad89924468d154",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "78.200",
+            "nace_description": "Temporary employment agency activities and other human resource provisions",
+            "town": "BLOMSTERDALEN",
+            "zipcode": "5258",
+            "municipality": "BERGEN",
+            "municipality_number": "4601",
+            "county": "Vestland",
+            "registration_date": "2010-02-10",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2010-02-10",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.cwork.no"
+          }
+        },
+        {
+          "organisation_number": "995160099",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/995160099",
+          "retrieved_at": "2026-11-05T21:11:31.370637Z",
+          "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "995160099"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "CLOCKWORK BEMANNING AS",
+              "matched_organisation_number": "995160099"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+          "id": "purehelp-workforce-995160099-e1ad89924468d154",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 93,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -2373,7 +2801,7 @@
     "company_name": "CLOCKWORK BEMANNING AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "CLOCKWORK BEMANNING AS is a private limited company operating in Utleie av arbeidskraft og andre personaladministrative tjenester. Latest accounts (2025): revenue NOK 74.4m, annual result NOK 2.1m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+49.9% YoY). Registered employees: 91. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "CLOCKWORK BEMANNING AS is a private limited company operating in Utleie av arbeidskraft og andre personaladministrative tjenester. Latest accounts (2025): revenue NOK 74.4m, annual result NOK 2.1m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+49.9% YoY). Registered employees: 91. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2383,6 +2811,8 @@
         "confidence": 1.0,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2390,7 +2820,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       },
       {
@@ -2401,6 +2836,8 @@
         "confidence": 0.95,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2408,7 +2845,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       },
       {
@@ -2419,6 +2861,8 @@
         "confidence": 0.9,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2426,7 +2870,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       },
       {
@@ -2437,6 +2886,8 @@
         "confidence": 0.9,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2444,7 +2895,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       },
       {
@@ -2455,6 +2911,8 @@
         "confidence": 1.0,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2462,7 +2920,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       },
       {
@@ -2475,11 +2938,28 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/995160099",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
+        ]
       },
       {
         "question": "changes",
@@ -2489,6 +2969,8 @@
         "confidence": 0.8,
         "evidence_ids": [
           "https://cwork.no/",
+          "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+          "https://cwork.no/oppdatert-personvernerklaering/",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
           "https://data.brreg.no/enhetsregisteret/api/enheter/995160099/roller",
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
@@ -2496,17 +2978,16 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/995160099",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/995160099/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/995160099",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -3256,129 +3737,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "995160099",
-        "platform": "company_site",
-        "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-995160099-77cebb810994aec7",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 4 bounded pages and 2 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 4,
-          "verified_social_links": 2,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "organisation_number": "995160099",
-        "platform": "facebook",
-        "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-995160099-77cebb810994aec7-facebook",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-        "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/clockworkbemanning"
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "organisation_number": "995160099",
-        "platform": "instagram",
-        "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-995160099-77cebb810994aec7-instagram",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/clockworkbemanning"
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-c4e50bd402ed34370fe95cf8",
-        "organisation_number": "995160099",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T09:04:30.262658Z",
-        "content_sha256": "f8c915e4a8fd518551dee8d28ad840ce2f378760fbddb5f2355157f5e1fd8c6e",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "995160099",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 91",
-        "metrics": {
-          "workforce_value": 91,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-0de52d0caa9b1e0a7502eb0c",
         "organisation_number": "995160099",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3397,8 +3762,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-f8cfc4c6598b013cee79fe44",
@@ -3406,8 +3770,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3426,15 +3790,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "995160099",
         "platform": "company_site",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3452,14 +3815,13 @@
         "evidence_span": "ClockWork Bemanning AS - Vi er spesialisten på bemanning til bygg og anlegg",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3481,14 +3843,13 @@
           "subunit_organisation_number": "933144453",
           "municipality": "VEFSN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3510,14 +3871,13 @@
           "subunit_organisation_number": "995168146",
           "municipality": "BERGEN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3539,14 +3899,13 @@
           "subunit_organisation_number": "926150375",
           "municipality": "ALTA",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3568,14 +3927,13 @@
           "subunit_organisation_number": "827537942",
           "municipality": "INDRE ØSTFOLD",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3597,14 +3955,13 @@
           "subunit_organisation_number": "925285676",
           "municipality": "VEFSN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3626,14 +3983,13 @@
           "subunit_organisation_number": "913313399",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3655,14 +4011,13 @@
           "subunit_organisation_number": "927537982",
           "municipality": "BERGEN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=995160099&size=1000",
-        "retrieved_at": "2026-10-05T09:04:36.688813Z",
+        "retrieved_at": "2026-09-29T10:31:07.030266Z",
         "content_sha256": "72dd51d23c1b84c9942ab061094226f914d18183bed1c2719f5aec5789a47db5",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3684,14 +4039,13 @@
           "subunit_organisation_number": "927537958",
           "municipality": "TROMSØ",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "995160099",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/995160099",
-        "retrieved_at": "2026-10-05T09:04:35.933303Z",
+        "retrieved_at": "2026-09-29T10:31:06.137717Z",
         "content_sha256": "13bb6619f521436fb4d62a1827306891d1287856e972c359eb7cd65bfb89d63d",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3714,8 +4068,7 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "sitemap-page-6f6662f6522663a9e67bc349",
@@ -3723,8 +4076,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-27",
         "exact_entity": true,
         "identity_proof": [
@@ -3751,8 +4104,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-27",
         "exact_entity": true,
         "identity_proof": [
@@ -3779,8 +4132,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-27",
         "exact_entity": true,
         "identity_proof": [
@@ -3807,8 +4160,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-21",
         "exact_entity": true,
         "identity_proof": [
@@ -3835,8 +4188,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-21",
         "exact_entity": true,
         "identity_proof": [
@@ -3863,8 +4216,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-21",
         "exact_entity": true,
         "identity_proof": [
@@ -3891,8 +4244,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-20",
         "exact_entity": true,
         "identity_proof": [
@@ -3919,8 +4272,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-20",
         "exact_entity": true,
         "identity_proof": [
@@ -3947,8 +4300,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-20",
         "exact_entity": true,
         "identity_proof": [
@@ -3975,8 +4328,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://cwork.no/",
-        "retrieved_at": "2026-10-05T09:04:41.977200Z",
-        "content_sha256": "77cebb810994aec7b6a499520d6a9f4a300d259e4f8346797a919fd01bc5e066",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
         "observed_at": "2021-05-20",
         "exact_entity": true,
         "identity_proof": [
@@ -4003,7 +4356,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bf3552f0f9fdb61f07e702ebeb2eb62d1fbecea7782a56364d4d67694a6e34ef",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -4033,7 +4386,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "26a172996b84c8ae3053590482d8a4e873361fff1cc1c315d321d4d74612a896",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -4063,7 +4416,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c2f520f222f056cfb53d583dad9ee7e72456d92dd6c5d217a2fcb2c5d2a34330",
         "observed_at": "2026-08-03",
         "exact_entity": true,
@@ -4093,7 +4446,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "094595e1bd2b03cdf28996ba06c0bff2347189edd189862e83bafdc5dff3ef75",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -4123,7 +4476,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4ca80c2878ac214379b13394f7caf4ba6b0ecc252dc20fffedb02ab9842c91df",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -4153,7 +4506,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5f14aa84b5c0872dfa428e54d5413648ebf76976893a7b131887969e5851208a",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -4183,7 +4536,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "08f09abb2dfd54e9c0b2e042f7ef4683123d9b195020cfe45c43b92fd007936e",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -4213,7 +4566,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4782dd78177e6091665e8694591bac70c0c32c123677ee604b13197437708a6b",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -4243,7 +4596,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0e0be7b81bb1c2d0b3d59ea99bfe39d40407dc99dc982ae901cdc550a9000c8e",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -4273,7 +4626,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ac72ec2907a45c9390367789109d572bef3e0f199b1d6ace0abf04b55b44eb47",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -4303,7 +4656,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a6ea5561475c373866aed067bba394cb54707de7f4eb75791056b9189985ead0",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -4333,7 +4686,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "15faad48a6aa76f1546143c87a12971ede5d2fc4dfa4f3e8a8816dd26a6ebf2e",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -4363,7 +4716,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a7b2186c990b1625102d57722bf62903cfcca51b11c9ad2fd8e5d869f468f801",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -4393,7 +4746,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "797170abd8fd95910337b13a3f7730f8c8abf91924bc9604e64d168ef30cda3c",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -4423,7 +4776,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6cedcc274f7ba18ccfe059e6f5215742200f824d75d521522c511479e41440a5",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -4453,7 +4806,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d19ae1efb706bc7a2750b7a58bdcaa77a3fd9a46db8d0e17b5c436e86a5e57c1",
         "observed_at": "2025-08-04",
         "exact_entity": true,
@@ -4483,7 +4836,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ec7658c639731135bbb11dae33f4087879e79b3c9283c902c2cfd6dff59dfbd4",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -4513,7 +4866,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "aa4a3449681b4cee418a1131a80149cf8152f2cb48f3b30dfaf722ad4106e98a",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -4543,7 +4896,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "301554d3782da1f226cbfdfc4a719804b7f43abc39fd58178df4b8c4de6a1640",
         "observed_at": "2025-05-14",
         "exact_entity": true,
@@ -4573,7 +4926,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e88119feb8c5643ec7b7bc8b1c2360cf053f146546c236175386a040d550839a",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -4598,39 +4951,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-dfecd0e5354bcacd244b6a1f",
         "organisation_number": "995160099",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
-        "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "d0b3934b0bf4df8d363d0775dbd25b55522b3b8efcc831ad957dbe176735f786",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "cwork.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "995160099",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "negative",
-        "id": "gplaces-metrics-995160099-e5369b1be39a28ac",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Clockwork Bemanning As Avd Bergen Google profile: rating 2.1/5, 7 ratings.",
-        "metrics": {
-          "rating": 2.1,
-          "review_count": 7,
-          "scale": 5,
-          "place_id": "ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-08-03",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-08-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654517&amp;sokeverdi=995160099&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-08-03 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-8bd755c8c18d864a300bf567",
+        "organisation_number": "995160099",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "534d5b1550ddaa9efed5513bb5dd490b54537b2e89e62a3a62f12d9271fca17f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "995160099",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-08-04",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-08-04",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674056&amp;sokeverdi=995160099&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-08-04 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-a59ffd35f7c593a59290388f",
+        "organisation_number": "995160099",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "4cc02368e76784240b022e1adc00587a3627577b65eb9988547ccdfb0ddd2607",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "995160099",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-07-29",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-07-29",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000775085&amp;sokeverdi=995160099&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-07-29 (BRREG official announcement)"
       },
       {
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
+        "retrieved_at": "2026-10-06T15:53:42.004605Z",
         "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
         "exact_entity": true,
         "identity_proof": [
@@ -4662,7 +5073,7 @@
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
+        "retrieved_at": "2026-10-06T15:53:42.004605Z",
         "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
         "exact_entity": true,
         "identity_proof": [
@@ -4694,7 +5105,7 @@
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
+        "retrieved_at": "2026-10-06T15:53:42.004605Z",
         "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
         "exact_entity": true,
         "identity_proof": [
@@ -4726,7 +5137,7 @@
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
+        "retrieved_at": "2026-10-06T15:53:42.004605Z",
         "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
         "exact_entity": true,
         "identity_proof": [
@@ -4758,7 +5169,7 @@
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
+        "retrieved_at": "2026-10-06T15:53:42.004605Z",
         "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
         "exact_entity": true,
         "identity_proof": [
@@ -4788,10 +5199,254 @@
       },
       {
         "organisation_number": "995160099",
+        "platform": "facebook",
+        "source_url": "https://cwork.no/",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "company_site_url": "https://cwork.no/",
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "clockwork",
+              "bemanning"
+            ],
+            "name_token_gate": true,
+            "method": "linked_from_verified_site_v1"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "site_linked_social_handle",
+        "id": "site-social-995160099-facebook-e7f130ad500e10f7",
+        "signal_type": "profile_handle",
+        "evidence_span": "Social handle linked from the exact-identity-gated company website https://cwork.no/.",
+        "metrics": {
+          "platform": "facebook",
+          "url": "https://facebook.com/clockworkbemanning",
+          "identity_score": 0.98
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "instagram",
+        "source_url": "https://cwork.no/",
+        "retrieved_at": "2026-09-29T10:31:11.670544Z",
+        "content_sha256": "379fbc254fcee59151ff11cc7a1505ce7e972513dc6c2c68fcc66850640d8e63",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "company_site_url": "https://cwork.no/",
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "clockwork",
+              "bemanning"
+            ],
+            "name_token_gate": true,
+            "method": "linked_from_verified_site_v1"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "site_linked_social_handle",
+        "id": "site-social-995160099-instagram-85f4b823705471b2",
+        "signal_type": "profile_handle",
+        "evidence_span": "Social handle linked from the exact-identity-gated company website https://cwork.no/.",
+        "metrics": {
+          "platform": "instagram",
+          "url": "https://instagram.com/clockworkbemanning",
+          "identity_score": 0.98
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_site",
+        "source_url": "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+        "retrieved_at": "2026-10-07T18:15:03.734147Z",
+        "content_sha256": "8094458afdca193e0b365e2deef5ed15b0289335885e5ae60e7d03306958e860",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-995160099-301985c62b2bb41a",
+        "signal_type": "public_post",
+        "evidence_span": "Endring i lovverk gjeldende fra 2019",
+        "metrics": {
+          "published_at": "2019-01-01T09:44:00Z",
+          "date_source": "rss_atom",
+          "body_excerpt": " Fra 2019 trer det i kraft lovendringer som får betydning for bemanningsbransjen. \n The post  Endring i lovverk gjeldende fra 2019  appeared first on  ClockWork Bemanning AS . ",
+          "feed_url": "https://cwork.no/feed/"
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_site",
+        "source_url": "https://cwork.no/oppdatert-personvernerklaering/",
+        "retrieved_at": "2026-10-07T18:15:03.734167Z",
+        "content_sha256": "e4557147ddc52140d38f4bc65a14bb3275a544eda0944dd68be99690b8c507c0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-995160099-8625e15b210375d8",
+        "signal_type": "public_post",
+        "evidence_span": "Oppdatert personvernerklæring",
+        "metrics": {
+          "published_at": "2018-12-01T09:52:00Z",
+          "date_source": "rss_atom",
+          "body_excerpt": " Vi oppdaterer vår personvernerklæring med virkning fra 01.12.2018. Denne erstatter i sin helhet tidligere personvernerklæring. \n The post  Oppdatert personvernerklæring  appeared first on  ClockWork Bemanning AS . ",
+          "feed_url": "https://cwork.no/feed/"
+        }
+      },
+      {
+        "id": "feed-news-cbdccbd9fa1d508ccdaac2f5",
+        "organisation_number": "995160099",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://cwork.no/endring-i-lovverk-gjeldende-fra-2019/",
+        "retrieved_at": "2026-10-25T00:35:18.582927Z",
+        "content_sha256": "79bc727a0157116024cae7f4df46a240d6c55e19a81f28b4cdec5a72fb087341",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://cwork.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "995160099",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Endring i lovverk gjeldende fra 2019 — Tue, 01 Jan 2019 09:44:00 +0000",
+        "effective_at": "2019-01-01",
+        "observed_at": "2019-01-01",
+        "metrics": {
+          "title": "Endring i lovverk gjeldende fra 2019",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-ea25854fe71337ed2b36011c",
+        "organisation_number": "995160099",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://cwork.no/oppdatert-personvernerklaering/",
+        "retrieved_at": "2026-10-25T00:35:18.582927Z",
+        "content_sha256": "7478d961e1fb9d44f4bc6cd59ecc324496f324780a89cac84e10bad301c24a80",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://cwork.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "995160099",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Oppdatert personvernerklæring — Sat, 01 Dec 2018 09:52:00 +0000",
+        "effective_at": "2018-12-01",
+        "observed_at": "2018-12-01",
+        "metrics": {
+          "title": "Oppdatert personvernerklæring",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "registry-workforce-c4e50bd402ed34370fe95cf8",
+        "organisation_number": "995160099",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
+        "retrieved_at": "2026-09-29T10:30:59.265969Z",
+        "content_sha256": "f8c915e4a8fd518551dee8d28ad840ce2f378760fbddb5f2355157f5e1fd8c6e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "995160099",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 91",
+        "metrics": {
+          "workforce_value": 91,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-08-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-08-12",
+        "effective_at": "2026-08-12"
+      },
+      {
+        "id": "registry-update-a03b4c14342ec8b0d2767c13",
+        "organisation_number": "995160099",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/995160099",
+        "retrieved_at": "2026-10-28T04:19:27.620683Z",
+        "content_sha256": "a03b4c14342ec8b0d2767c1323ad23ed278afd2fa163b04671c7f4a5f9bc6a84",
+        "observed_at": "2026-10-13",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "995160099",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-13: Endring",
+        "metrics": {
+          "date": "2026-10-13",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
+        "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
-        "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+        "retrieved_at": "2026-10-31T18:19:32.070719Z",
+        "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -4804,7 +5459,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "negative",
-        "id": "gplaces-review-summary-995160099-e5369b1be39a28ac",
+        "id": "gplaces-metrics-995160099-ce04a381d030c073",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Clockwork Bemanning As Avd Bergen Google profile: rating 2.1/5, 7 ratings.",
+        "metrics": {
+          "rating": 2.1,
+          "review_count": 7,
+          "scale": 5,
+          "place_id": "ChIJs_OHf4_wPEYR4sAx5eF9Qgw"
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
+        "retrieved_at": "2026-10-31T18:19:32.070719Z",
+        "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "cwork.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-summary-995160099-ce04a381d030c073",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Clockwork Bemanning As Avd Bergen is rated 2.1/5 from 7 Google reviews.",
@@ -4819,8 +5503,8 @@
         "organisation_number": "995160099",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJs_OHf4_wPEYR4sAx5eF9Qgw",
-        "retrieved_at": "2026-10-05T14:31:31.697679Z",
-        "content_sha256": "e5369b1be39a28acb88ca2e7a15ae42cc5f46fcc89776e819a6c444732614cae",
+        "retrieved_at": "2026-10-31T18:19:32.070719Z",
+        "content_sha256": "ce04a381d030c0732dd980df4960c52074595bd2471fb2de3b00201794ff35b5",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -4833,7 +5517,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "negative",
-        "id": "gplaces-sentiment-995160099-e5369b1be39a28ac",
+        "id": "gplaces-sentiment-995160099-ce04a381d030c073",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "negative",
@@ -4844,8 +5528,233 @@
           "review_count": 7,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_site",
+        "source_url": "https://cwork.no/",
+        "retrieved_at": "2026-09-29T12:58:27.436440Z",
+        "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-995160099-9d506f3ca3bfd4ed",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 4 bounded pages and 2 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 4,
+          "verified_social_links": 2,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "facebook",
+        "source_url": "https://cwork.no/",
+        "retrieved_at": "2026-09-29T12:58:27.436440Z",
+        "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-handle-995160099-9d506f3ca3bfd4ed-facebook",
+        "signal_type": "profile_handle",
+        "evidence_span": "Identity-gated facebook handle published on the exact company site.",
+        "metrics": {
+          "platform": "facebook",
+          "url": "https://facebook.com/clockworkbemanning"
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "instagram",
+        "source_url": "https://cwork.no/",
+        "retrieved_at": "2026-09-29T12:58:27.436440Z",
+        "content_sha256": "9d506f3ca3bfd4ed289f5fd67f2b3bf7731ad3b2e8ea14ebd2283a41faa284a5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-handle-995160099-9d506f3ca3bfd4ed-instagram",
+        "signal_type": "profile_handle",
+        "evidence_span": "Identity-gated instagram handle published on the exact company site.",
+        "metrics": {
+          "platform": "instagram",
+          "url": "https://instagram.com/clockworkbemanning"
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/995160099",
+        "retrieved_at": "2026-11-05T21:11:31.370637Z",
+        "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "995160099"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "CLOCKWORK BEMANNING AS",
+            "matched_organisation_number": "995160099"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+        "id": "purehelp-email-995160099-e1ad89924468d154",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "firmapost@cwork.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/995160099",
+        "retrieved_at": "2026-11-05T21:11:31.370637Z",
+        "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "995160099"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "CLOCKWORK BEMANNING AS",
+            "matched_organisation_number": "995160099"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+        "id": "purehelp-phone-995160099-e1ad89924468d154",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "05314",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/995160099",
+        "retrieved_at": "2026-11-05T21:11:31.370637Z",
+        "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "995160099"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "CLOCKWORK BEMANNING AS",
+            "matched_organisation_number": "995160099"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+        "id": "purehelp-profile-995160099-e1ad89924468d154",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "78.200",
+          "nace_description": "Temporary employment agency activities and other human resource provisions",
+          "town": "BLOMSTERDALEN",
+          "zipcode": "5258",
+          "municipality": "BERGEN",
+          "municipality_number": "4601",
+          "county": "Vestland",
+          "registration_date": "2010-02-10",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2010-02-10",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.cwork.no"
+        }
+      },
+      {
+        "organisation_number": "995160099",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/995160099",
+        "retrieved_at": "2026-11-05T21:11:31.370637Z",
+        "content_sha256": "7c184ea41e3de60f06452ac12b70f69c51219b1da4ecf54c5b72416cf90ac17c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "995160099"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "CLOCKWORK BEMANNING AS",
+            "matched_organisation_number": "995160099"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-995160099.orgNumber=995160099;name=CLOCKWORK BEMANNING AS",
+        "id": "purehelp-workforce-995160099-e1ad89924468d154",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 93,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:47.021350+00:00"
+  "generated_at": "2026-11-06T05:27:40.186926+00:00"
 }

@@ -663,43 +663,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "980018725",
-          "platform": "company_site",
-          "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-980018725-1788f9ae1372da81",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 3,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
           "id": "company-site-news-49fbc1662aa741ba93b14bc2",
           "organisation_number": "980018725",
           "platform": "company_site",
           "signal_type": "public_post",
           "source_url": "https://renovest.no/aktuelt/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "16b9928d8a604984f3722aa19ea22d76fd04c325f23234d7cadd22c5506ae7a1",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4aef5f8983f02fb285d785c21fa8a02d5ce0c2523de319d28dc0d2062fb610c3",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -716,40 +686,7 @@
             "captured_news_pages": 1,
             "interpretation": "Company-owned activity; not independent sentiment."
           },
-          "strategy": "company_site_activity",
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-690ae83298a9ab44d076842d",
-          "organisation_number": "980018725",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T09:00:42.293906Z",
-          "content_sha256": "e65bf2e80ac09a1a9f36cf254eec6ba3ee3e70274c0f8ef5f1d25ce4bee60fac",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "980018725",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 19",
-          "metrics": {
-            "workforce_value": 19,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-07-15"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-07-15",
-          "effective_at": "2026-07-15"
+          "strategy": "company_site_activity"
         },
         {
           "id": "registry-contact-7d49e730b2415a63a0cee7ea",
@@ -757,8 +694,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -777,8 +714,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-902344b9ab839dea083839a6",
@@ -786,8 +722,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -806,15 +742,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "980018725",
           "platform": "company_site",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -832,14 +767,13 @@
           "evidence_span": "Renovest – Renovasjonsselskapet for alle i Vest-Telemark",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "980018725",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
-          "retrieved_at": "2026-10-05T09:00:49.110947Z",
+          "retrieved_at": "2026-09-29T10:27:19.902283Z",
           "content_sha256": "3fa2daa96d964c76aa699cf51de52e0ec6ae54624ffb69d57e3f1268e8f2c5af",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -861,8 +795,7 @@
             "subunit_organisation_number": "980298019",
             "municipality": "KVITESEID",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "sitemap-page-1a87ef5642459fcf9ed401a1",
@@ -870,8 +803,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-09-25",
           "exact_entity": true,
           "identity_proof": [
@@ -898,8 +831,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-09-10",
           "exact_entity": true,
           "identity_proof": [
@@ -926,8 +859,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-09-10",
           "exact_entity": true,
           "identity_proof": [
@@ -954,8 +887,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-09-10",
           "exact_entity": true,
           "identity_proof": [
@@ -982,8 +915,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-09-10",
           "exact_entity": true,
           "identity_proof": [
@@ -1010,8 +943,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-06-29",
           "exact_entity": true,
           "identity_proof": [
@@ -1038,8 +971,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-06-22",
           "exact_entity": true,
           "identity_proof": [
@@ -1066,8 +999,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-04-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1094,8 +1027,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-03-19",
           "exact_entity": true,
           "identity_proof": [
@@ -1122,8 +1055,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://renovest.no/",
-          "retrieved_at": "2026-10-05T09:00:59.747579Z",
-          "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
           "observed_at": "2026-03-19",
           "exact_entity": true,
           "identity_proof": [
@@ -1150,7 +1083,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6eb830bce41ecea0e806af37af73ed523e683ecd1cc7627b8a6e26c57f598003",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1180,7 +1113,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "683cbed9761ad0fd35e65c7cbe0e84f0701d562d2e493561acf63f729a87efad",
           "observed_at": "2026-07-01",
           "exact_entity": true,
@@ -1210,7 +1143,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1d518fdcf2e2d13fc13f660f96d6814506da3e3d4b89748c02feecc23cef0e82",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1240,7 +1173,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0adf0e6bea18fd23b601bcaabc483cf4cd653b318ea4b5f5d2f20ede5ffc1fe5",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1270,7 +1203,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ae81614e5eedb39e84caec381249501de590539e7c2116fc71fb2042dd81cc12",
           "observed_at": "2025-06-28",
           "exact_entity": true,
@@ -1300,7 +1233,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "db1a0b9ecd12d770201eb167efd0421500905486045b3c503662e150364aec51",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1330,7 +1263,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "629642b7bd6c87dfa442dcc628c836a352c83c67bc4d52b2ae043b07c4ded0ad",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -1360,7 +1293,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c199fa08db5e3cced1db375b0e2df742173c0bee1d4ebcd772bd37cd7d51953a",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1390,7 +1323,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c5f5fa7456c3a807f3d9d3c6b82d732c429c0fbee15dd20a4261df2adee2926a",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -1420,7 +1353,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b88528913dec2eaeb4121993b9ebc1016e556bb1842439f70000cacc786459bc",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1450,7 +1383,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9f45b6a5a1802d95a11c7aad2681931890fd3ae7156027fc17c677f3b597a7f5",
           "observed_at": "2024-07-01",
           "exact_entity": true,
@@ -1480,7 +1413,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1a18771f1b7e4c20c8c02e3bb0f1810209bed3e09f6b88f0b3f876c588da955d",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -1510,7 +1443,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8e63e915f8eebdb2485bb76edc8b85ed2502e33fc7e9ffb450d0fb9a6d843629",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1540,7 +1473,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ecdf6052a59ec3b3792329f1cd555cd1b7080e152da9b1befd0afb8874f40afe",
           "observed_at": "2023-08-14",
           "exact_entity": true,
@@ -1570,7 +1503,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d34bc88792334427ef1c3ebcb556a5ffee17c29b59c51e5c62c147e60f92f03e",
           "observed_at": "2023-06-07",
           "exact_entity": true,
@@ -1600,7 +1533,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0e362a248a646cd8499fc8d67cc3ab85645135c17e77e3a4e90391fdf928aba9",
           "observed_at": "2022-10-12",
           "exact_entity": true,
@@ -1630,7 +1563,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f6c1ed070f8b15a2e6a653bde8bd277428c653086dc7d24833fca7b5db8bd750",
           "observed_at": "2022-09-13",
           "exact_entity": true,
@@ -1660,7 +1593,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5df9f8d8e291554787436acd6516514c908bb30de188b00f288d161701a01996",
           "observed_at": "2022-08-16",
           "exact_entity": true,
@@ -1690,7 +1623,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2ca0edb29135fd89421da3c86327e1e4a0910fd12c0faa223b9733f3d8eb74cc",
           "observed_at": "2022-08-03",
           "exact_entity": true,
@@ -1720,7 +1653,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9ee4f95c6e28a277a0bf86bc71e98a5120f29e47ae9e206f9c805ae09f7e81b3",
           "observed_at": "2022-07-12",
           "exact_entity": true,
@@ -1745,39 +1678,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-8be09016cbfc5aacff26df41",
           "organisation_number": "980018725",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
-          "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "64fe16874a2a84d372221f7498021a75fbe2249d74d4016a2c0de9ad6c084bfb",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "renovest.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980018725",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-980018725-2a64666c0e9f1b64",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Renovest Iks Google profile: rating 4.5/5, 18 ratings.",
-          "metrics": {
-            "rating": 4.5,
-            "review_count": 18,
-            "scale": 5,
-            "place_id": "ChIJAbKWQD-pOEYR_uXdINy_jcg"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-07-01",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-01",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-01 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-3a4badb18344103a18e38a5e",
+          "organisation_number": "980018725",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "ab32cbe18fe5b37f7f3d5e374142e7e186e30b19890fc3d7a64651f9e2155f50",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980018725",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-28",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-06-28",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-18fd47a564186702b80811f5",
+          "organisation_number": "980018725",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "1eecd3c5bf75742e8acb19985fe3e7ce72565d8e4e4a5f807322e6667813537b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980018725",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-05",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-06-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-06-05 (BRREG official announcement)"
         },
         {
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
+          "retrieved_at": "2026-10-06T15:53:41.242863Z",
           "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
           "exact_entity": true,
           "identity_proof": [
@@ -1809,7 +1800,7 @@
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
+          "retrieved_at": "2026-10-06T15:53:41.242863Z",
           "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
           "exact_entity": true,
           "identity_proof": [
@@ -1841,7 +1832,7 @@
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
+          "retrieved_at": "2026-10-06T15:53:41.242863Z",
           "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
           "exact_entity": true,
           "identity_proof": [
@@ -1873,7 +1864,7 @@
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
+          "retrieved_at": "2026-10-06T15:53:41.242863Z",
           "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
           "exact_entity": true,
           "identity_proof": [
@@ -1905,7 +1896,7 @@
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
+          "retrieved_at": "2026-10-06T15:53:41.242863Z",
           "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
           "exact_entity": true,
           "identity_proof": [
@@ -1935,10 +1926,472 @@
         },
         {
           "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "retrieved_at": "2026-10-07T18:14:53.857369Z",
+          "content_sha256": "619e74431ceada2b5890cde8e35cecc3dd630249ed4aa3abe462da64530f01fb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-6c2227791a232a7e",
+          "signal_type": "public_post",
+          "evidence_span": "Vant 10 000 kroner på kjeldesortering!",
+          "metrics": {
+            "published_at": "2026-09-25T07:28:41Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Marit Haugland frå Kviteseid blei nyleg trekt ut som vinnar av Returkartonglotteriet!",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "retrieved_at": "2026-10-07T18:14:53.857407Z",
+          "content_sha256": "ed297f3889bafd73467150d1343d3b49a65b7c50368f0784e4c5711c4083be25",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-4f09762d5434efcc",
+          "signal_type": "public_post",
+          "evidence_span": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg",
+          "metrics": {
+            "published_at": "2026-06-22T10:00:52Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Renovest IKS skal utføre vedlikehaldsarbeid på vekta i veke 27",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "retrieved_at": "2026-10-07T18:14:53.857435Z",
+          "content_sha256": "0fd3b462f2c089a00b78f018e986979cc39f44a7711a02f7cf569d4ad0c28595",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-d364e1460d5fa8f0",
+          "signal_type": "public_post",
+          "evidence_span": "Ruskenaksjon 2026",
+          "metrics": {
+            "published_at": "2026-04-21T09:00:11Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Våroppryddinga er i full gang og vi vil sette ut containerar på ulike stadar den 4. og 5. mai.",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "retrieved_at": "2026-10-07T18:14:53.857459Z",
+          "content_sha256": "ad785ec3792bf0f6c9759a160156866c5e8693f8475320a1f158296480346ae4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-e0d521425b24de88",
+          "signal_type": "public_post",
+          "evidence_span": "Opningstider i påska 2026",
+          "metrics": {
+            "published_at": "2026-03-19T08:02:41Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Opningstider på avfallsmottaka og endring av køyreruter i forbindelse med påska 2026",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "retrieved_at": "2026-10-07T18:14:53.857483Z",
+          "content_sha256": "4fc94c142a6f7db6f3b2c0eb0946fe47353003d1b407080304d7dc3ca2ea2c36",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-e16367699b24be25",
+          "signal_type": "public_post",
+          "evidence_span": "Representantskapsmøte 20.04.2026",
+          "metrics": {
+            "published_at": "2026-03-19T08:01:21Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Innkalling til representantskapsmøte i Renovest IKS",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "retrieved_at": "2026-10-07T18:14:53.857506Z",
+          "content_sha256": "2fdd3589361789d82849d26165dad629e2237656b19a25851967e87d37d676cd",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-196bd91219c22759",
+          "signal_type": "public_post",
+          "evidence_span": "Best på sortering av plastemballasje!",
+          "metrics": {
+            "published_at": "2025-05-28T08:02:34Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "I 2024 vart det samla inn 18,7 kilo plastemballasje per innbyggar i Fyresdal, Kviteseid, Seljord, Tokke og Vinje. Dette er best i landet for andre år på rad!",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "retrieved_at": "2026-10-07T18:14:53.857541Z",
+          "content_sha256": "f0706ba072c24021570198af4038e33146dcab55be806ee0f62831ca80197485",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-35e6460fa31859f2",
+          "signal_type": "public_post",
+          "evidence_span": "Nå skal tekstilavfall sorterast som eigen avfallstype!",
+          "metrics": {
+            "published_at": "2024-12-17T12:32:06Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Nå kan du levere tekstilar, klede og sko på våre bemanna avfallsmottak i Brunkeberg, Fyresdal, Åmot og på Dalen.",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "retrieved_at": "2026-10-07T18:14:53.857565Z",
+          "content_sha256": "5e300b8c3d1c29987515ddae513ba1da815ef8f9a56402b7befe7b0701ce77c0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-c63967a8c6fc2715",
+          "signal_type": "public_post",
+          "evidence_span": "Oppgradering av hyttereturpunkt på Våmur i Fyresdal",
+          "metrics": {
+            "published_at": "2024-12-02T12:49:16Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Hyttereturpunktet ved Våmur Nord i Fyresdal kommune er nå rusta opp med nye botntømte containerar",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "retrieved_at": "2026-10-07T18:14:53.857588Z",
+          "content_sha256": "39adb29a9cc2405cc75f1351eb1c35a02cb5694939bf9c941ce4097e068ab570",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-6ae4e99515867d75",
+          "signal_type": "public_post",
+          "evidence_span": "Nytt hyttereturpunkt på Arbuvollen, Vågslid",
+          "metrics": {
+            "published_at": "2024-11-21T09:03:28Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Renovest har etablera eit nytt hyttereturpunkt med full kildesortering på Arbuvollen (Vågslid) i Vinje kommune.",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "retrieved_at": "2026-10-07T18:14:53.857611Z",
+          "content_sha256": "982c4df320eea2c72322efd67565909d56c23b97a5784d8fb94d0f4c95f21ed9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_feed_news",
+          "id": "site-feed-news-980018725-618cbdccc65d1ada",
+          "signal_type": "public_post",
+          "evidence_span": "Oppgradering av hyttereturpunkt på Botn",
+          "metrics": {
+            "published_at": "2024-11-21T08:56:18Z",
+            "date_source": "rss_atom",
+            "body_excerpt": "Hyttereturpunktet ved Botn Skysstasjon (Vågslid) i Vinje kommune er nå rusta opp med nye botntømte containerar",
+            "feed_url": "https://renovest.no/aktuelt/feed/"
+          }
+        },
+        {
+          "id": "feed-news-6411202ad6aed944e6679237",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "retrieved_at": "2026-10-25T00:31:07.228533Z",
+          "content_sha256": "1a87ef5642459fcf9ed401a159d3ccaae71db5c0ff29a45c0c25e78e30b0aa48",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://renovest.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "980018725",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Vant 10 000 kroner på kjeldesortering! — Fri, 25 Sep 2026 07:28:41 +0000",
+          "effective_at": "2026-09-25",
+          "observed_at": "2026-09-25",
+          "metrics": {
+            "title": "Vant 10 000 kroner på kjeldesortering!",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-a2cf8f01c5a9673715c0f282",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "retrieved_at": "2026-10-25T00:31:07.228533Z",
+          "content_sha256": "039918cafb298e87093f2cdfeecd8c3d8bde740d66ce0163980947369080c48d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://renovest.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "980018725",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg — Mon, 22 Jun 2026 10:00:52 +0000",
+          "effective_at": "2026-06-22",
+          "observed_at": "2026-06-22",
+          "metrics": {
+            "title": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-0c965b80fc427eb374ab6f39",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "retrieved_at": "2026-10-25T00:31:07.228533Z",
+          "content_sha256": "7794c3ca33fc590fc5d8d94ac0c4207c51745168a7a5b14c18bf99a0ba389232",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://renovest.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "980018725",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Ruskenaksjon 2026 — Tue, 21 Apr 2026 09:00:11 +0000",
+          "effective_at": "2026-04-21",
+          "observed_at": "2026-04-21",
+          "metrics": {
+            "title": "Ruskenaksjon 2026",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-a4e9b3b050da6fee600c34af",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "retrieved_at": "2026-10-25T00:31:07.228533Z",
+          "content_sha256": "7fc113bd2591e76485e00ca155b8f8670531a20c85c6378bfa752dd24ac0490a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://renovest.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "980018725",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Opningstider i påska 2026 — Thu, 19 Mar 2026 08:02:41 +0000",
+          "effective_at": "2026-03-19",
+          "observed_at": "2026-03-19",
+          "metrics": {
+            "title": "Opningstider i påska 2026",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "feed-news-a41947c82d7ad688b68311f4",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "retrieved_at": "2026-10-25T00:31:07.228533Z",
+          "content_sha256": "e4bfb2f6effbd0027ef6606c298da6a04e3235befbafc4c81bc1f7d7157ef56c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "source": "https://renovest.no/",
+              "source_class": "company_site",
+              "matched_organisation_number": "980018725",
+              "explanation": "Feed discovered from the identity-gated company website."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Representantskapsmøte 20.04.2026 — Thu, 19 Mar 2026 08:01:21 +0000",
+          "effective_at": "2026-03-19",
+          "observed_at": "2026-03-19",
+          "metrics": {
+            "title": "Representantskapsmøte 20.04.2026",
+            "source": "company website"
+          },
+          "strategy": "rss_atom_feed_discovery"
+        },
+        {
+          "id": "registry-workforce-690ae83298a9ab44d076842d",
+          "organisation_number": "980018725",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
+          "retrieved_at": "2026-09-29T10:27:10.992480Z",
+          "content_sha256": "e65bf2e80ac09a1a9f36cf254eec6ba3ee3e70274c0f8ef5f1d25ce4bee60fac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "980018725",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 19",
+          "metrics": {
+            "workforce_value": 19,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-07-15"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-07-15",
+          "effective_at": "2026-07-15"
+        },
+        {
+          "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
-          "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+          "retrieved_at": "2026-10-31T18:19:04.073339Z",
+          "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1951,7 +2404,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-980018725-2a64666c0e9f1b64",
+          "id": "gplaces-metrics-980018725-6622dfe23103e691",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Renovest Iks Google profile: rating 4.5/5, 18 ratings.",
+          "metrics": {
+            "rating": 4.5,
+            "review_count": 18,
+            "scale": 5,
+            "place_id": "ChIJAbKWQD-pOEYR_uXdINy_jcg"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
+          "retrieved_at": "2026-10-31T18:19:04.073339Z",
+          "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "renovest.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-980018725-6622dfe23103e691",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Renovest Iks is rated 4.5/5 from 18 Google reviews.",
@@ -1966,8 +2448,8 @@
           "organisation_number": "980018725",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-          "retrieved_at": "2026-10-05T14:31:30.829709Z",
-          "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+          "retrieved_at": "2026-10-31T18:19:04.073339Z",
+          "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1980,7 +2462,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-980018725-2a64666c0e9f1b64",
+          "id": "gplaces-sentiment-980018725-6622dfe23103e691",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1990,6 +2472,324 @@
             "rating": 4.5,
             "review_count": 18,
             "scale": 5
+          }
+        },
+        {
+          "id": "sitemap-page-a10df80bf653fe58378978c8",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://renovest.no/",
+          "retrieved_at": "2026-09-15T01:37:01.524152Z",
+          "content_sha256": "2bcf498f90983c3833dc7857b6025b72b1597ee78f6a2821f81944f08379295a",
+          "observed_at": "2026-03-11",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://renovest.no/nyheiter/tekstilar-klede-sko/ last modified 2026-03-11",
+          "metrics": {
+            "page_url": "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+            "lastmod": "2026-03-11",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "source_url": "https://renovest.no/",
+          "retrieved_at": "2026-09-29T12:54:44.681442Z",
+          "content_sha256": "2314e7c78d4e50793cc21f9fd0aab7e44058b61eecb75da508487a85f2a3b11a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-980018725-2314e7c78d4e5079",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 3,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "id": "sitemap-page-1e4b1078cd3a60df849e366a",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://renovest.no/",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-varland/ last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-varland/",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-58865e602bcd72b96aff1847",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://renovest.no/",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://renovest.no/nyheiter/representantskapsmote-24-11-2026/ last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://renovest.no/nyheiter/representantskapsmote-24-11-2026/",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e19b1d43e380a1521ca7388f",
+          "organisation_number": "980018725",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://renovest.no/",
+          "retrieved_at": "2026-09-29T10:27:30.679415Z",
+          "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+          "observed_at": "2026-10-26",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://renovest.no/avfallsmottak/hovdestadmoen-avfallsmottak/ last modified 2026-10-26",
+          "metrics": {
+            "page_url": "https://renovest.no/avfallsmottak/hovdestadmoen-avfallsmottak/",
+            "lastmod": "2026-10-26",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "retrieved_at": "2026-11-05T14:45:54.722834Z",
+          "content_sha256": "9dd694cbd7a63a70e1e756ad995d966341fee0e4c9ac89c277e0614f799ad51c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980018725"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RENOVEST IKS",
+              "matched_organisation_number": "980018725"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "website_domain": "renovest.no",
+            "address": {
+              "street": "Ordalsvegen 63",
+              "locality": "KVITESEID",
+              "postal_code": "3850"
+            }
+          },
+          "id": "fagfolk-profile-980018725-d036acb0def387a3",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"980018725\"}"
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980018725",
+          "retrieved_at": "2026-11-05T21:11:15.387204Z",
+          "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980018725"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RENOVEST IKS",
+              "matched_organisation_number": "980018725"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+          "id": "purehelp-email-980018725-f5313cfe9931ebd8",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@renovest.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980018725",
+          "retrieved_at": "2026-11-05T21:11:15.387204Z",
+          "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980018725"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RENOVEST IKS",
+              "matched_organisation_number": "980018725"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+          "id": "purehelp-phone-980018725-f5313cfe9931ebd8",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "35 06 80 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980018725",
+          "retrieved_at": "2026-11-05T21:11:15.387204Z",
+          "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980018725"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RENOVEST IKS",
+              "matched_organisation_number": "980018725"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+          "id": "purehelp-profile-980018725-f5313cfe9931ebd8",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "IKS",
+            "legal_form_description": "Inter-municipal company",
+            "nace_code": "38.110",
+            "nace_description": "Collection of non-hazardous waste",
+            "town": "KVITESEID",
+            "zipcode": "3850",
+            "municipality": "KVITESEID",
+            "municipality_number": "4028",
+            "county": "Telemark",
+            "registration_date": "1998-11-12",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1998-11-12",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.renovest.no"
+          }
+        },
+        {
+          "organisation_number": "980018725",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980018725",
+          "retrieved_at": "2026-11-05T21:11:15.387204Z",
+          "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980018725"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RENOVEST IKS",
+              "matched_organisation_number": "980018725"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+          "id": "purehelp-workforce-980018725-f5313cfe9931ebd8",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 19,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -2015,7 +2815,7 @@
     "company_name": "RENOVEST IKS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "RENOVEST IKS is an inter-municipal company operating in Innsamling av ikke-farlig avfall. Latest accounts (2025): revenue NOK 61.4m, annual result NOK 1.5m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-10.7% YoY). Registered employees: 19. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "RENOVEST IKS is an inter-municipal company operating in Innsamling av ikke-farlig avfall. Latest accounts (2025): revenue NOK 61.4m, annual result NOK 1.5m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-10.7% YoY). Registered employees: 19. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2030,8 +2830,25 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       },
       {
@@ -2047,8 +2864,25 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       },
       {
@@ -2064,8 +2898,25 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       },
       {
@@ -2081,8 +2932,25 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       },
       {
@@ -2098,8 +2966,25 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       },
       {
@@ -2112,11 +2997,37 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/980018725/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
+          "https://renovest.no/",
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
+        ]
       },
       {
         "question": "changes",
@@ -2131,18 +3042,29 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/980018725",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980018725/aar",
+          "https://purehelp.no/company/NO/980018725",
           "https://renovest.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://renovest.no/aktuelt/",
+          "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+          "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+          "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+          "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+          "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+          "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+          "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+          "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+          "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2795,43 +3717,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "980018725",
-        "platform": "company_site",
-        "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-980018725-1788f9ae1372da81",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 3,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
         "id": "company-site-news-49fbc1662aa741ba93b14bc2",
         "organisation_number": "980018725",
         "platform": "company_site",
         "signal_type": "public_post",
         "source_url": "https://renovest.no/aktuelt/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "16b9928d8a604984f3722aa19ea22d76fd04c325f23234d7cadd22c5506ae7a1",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4aef5f8983f02fb285d785c21fa8a02d5ce0c2523de319d28dc0d2062fb610c3",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2848,40 +3740,7 @@
           "captured_news_pages": 1,
           "interpretation": "Company-owned activity; not independent sentiment."
         },
-        "strategy": "company_site_activity",
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-690ae83298a9ab44d076842d",
-        "organisation_number": "980018725",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T09:00:42.293906Z",
-        "content_sha256": "e65bf2e80ac09a1a9f36cf254eec6ba3ee3e70274c0f8ef5f1d25ce4bee60fac",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "980018725",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 19",
-        "metrics": {
-          "workforce_value": 19,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-07-15"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-07-15",
-        "effective_at": "2026-07-15"
+        "strategy": "company_site_activity"
       },
       {
         "id": "registry-contact-7d49e730b2415a63a0cee7ea",
@@ -2889,8 +3748,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2909,8 +3768,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-902344b9ab839dea083839a6",
@@ -2918,8 +3776,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2938,15 +3796,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "980018725",
         "platform": "company_site",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2964,14 +3821,13 @@
         "evidence_span": "Renovest – Renovasjonsselskapet for alle i Vest-Telemark",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "980018725",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980018725&size=1000",
-        "retrieved_at": "2026-10-05T09:00:49.110947Z",
+        "retrieved_at": "2026-09-29T10:27:19.902283Z",
         "content_sha256": "3fa2daa96d964c76aa699cf51de52e0ec6ae54624ffb69d57e3f1268e8f2c5af",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2993,8 +3849,7 @@
           "subunit_organisation_number": "980298019",
           "municipality": "KVITESEID",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "sitemap-page-1a87ef5642459fcf9ed401a1",
@@ -3002,8 +3857,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-09-25",
         "exact_entity": true,
         "identity_proof": [
@@ -3030,8 +3885,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-09-10",
         "exact_entity": true,
         "identity_proof": [
@@ -3058,8 +3913,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-09-10",
         "exact_entity": true,
         "identity_proof": [
@@ -3086,8 +3941,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-09-10",
         "exact_entity": true,
         "identity_proof": [
@@ -3114,8 +3969,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-09-10",
         "exact_entity": true,
         "identity_proof": [
@@ -3142,8 +3997,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-06-29",
         "exact_entity": true,
         "identity_proof": [
@@ -3170,8 +4025,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-06-22",
         "exact_entity": true,
         "identity_proof": [
@@ -3198,8 +4053,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-04-21",
         "exact_entity": true,
         "identity_proof": [
@@ -3226,8 +4081,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-03-19",
         "exact_entity": true,
         "identity_proof": [
@@ -3254,8 +4109,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://renovest.no/",
-        "retrieved_at": "2026-10-05T09:00:59.747579Z",
-        "content_sha256": "1788f9ae1372da81ddb304a05c8a8c9fc4860a54f1791e3778fda3106d43b07f",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
         "observed_at": "2026-03-19",
         "exact_entity": true,
         "identity_proof": [
@@ -3282,7 +4137,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6eb830bce41ecea0e806af37af73ed523e683ecd1cc7627b8a6e26c57f598003",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -3312,7 +4167,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "683cbed9761ad0fd35e65c7cbe0e84f0701d562d2e493561acf63f729a87efad",
         "observed_at": "2026-07-01",
         "exact_entity": true,
@@ -3342,7 +4197,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1d518fdcf2e2d13fc13f660f96d6814506da3e3d4b89748c02feecc23cef0e82",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3372,7 +4227,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0adf0e6bea18fd23b601bcaabc483cf4cd653b318ea4b5f5d2f20ede5ffc1fe5",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3402,7 +4257,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ae81614e5eedb39e84caec381249501de590539e7c2116fc71fb2042dd81cc12",
         "observed_at": "2025-06-28",
         "exact_entity": true,
@@ -3432,7 +4287,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "db1a0b9ecd12d770201eb167efd0421500905486045b3c503662e150364aec51",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -3462,7 +4317,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "629642b7bd6c87dfa442dcc628c836a352c83c67bc4d52b2ae043b07c4ded0ad",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -3492,7 +4347,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c199fa08db5e3cced1db375b0e2df742173c0bee1d4ebcd772bd37cd7d51953a",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3522,7 +4377,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c5f5fa7456c3a807f3d9d3c6b82d732c429c0fbee15dd20a4261df2adee2926a",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -3552,7 +4407,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b88528913dec2eaeb4121993b9ebc1016e556bb1842439f70000cacc786459bc",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -3582,7 +4437,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9f45b6a5a1802d95a11c7aad2681931890fd3ae7156027fc17c677f3b597a7f5",
         "observed_at": "2024-07-01",
         "exact_entity": true,
@@ -3612,7 +4467,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1a18771f1b7e4c20c8c02e3bb0f1810209bed3e09f6b88f0b3f876c588da955d",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -3642,7 +4497,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8e63e915f8eebdb2485bb76edc8b85ed2502e33fc7e9ffb450d0fb9a6d843629",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3672,7 +4527,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ecdf6052a59ec3b3792329f1cd555cd1b7080e152da9b1befd0afb8874f40afe",
         "observed_at": "2023-08-14",
         "exact_entity": true,
@@ -3702,7 +4557,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d34bc88792334427ef1c3ebcb556a5ffee17c29b59c51e5c62c147e60f92f03e",
         "observed_at": "2023-06-07",
         "exact_entity": true,
@@ -3732,7 +4587,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0e362a248a646cd8499fc8d67cc3ab85645135c17e77e3a4e90391fdf928aba9",
         "observed_at": "2022-10-12",
         "exact_entity": true,
@@ -3762,7 +4617,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f6c1ed070f8b15a2e6a653bde8bd277428c653086dc7d24833fca7b5db8bd750",
         "observed_at": "2022-09-13",
         "exact_entity": true,
@@ -3792,7 +4647,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5df9f8d8e291554787436acd6516514c908bb30de188b00f288d161701a01996",
         "observed_at": "2022-08-16",
         "exact_entity": true,
@@ -3822,7 +4677,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2ca0edb29135fd89421da3c86327e1e4a0910fd12c0faa223b9733f3d8eb74cc",
         "observed_at": "2022-08-03",
         "exact_entity": true,
@@ -3852,7 +4707,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9ee4f95c6e28a277a0bf86bc71e98a5120f29e47ae9e206f9c805ae09f7e81b3",
         "observed_at": "2022-07-12",
         "exact_entity": true,
@@ -3877,39 +4732,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-8be09016cbfc5aacff26df41",
         "organisation_number": "980018725",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
-        "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "64fe16874a2a84d372221f7498021a75fbe2249d74d4016a2c0de9ad6c084bfb",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "renovest.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980018725",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-980018725-2a64666c0e9f1b64",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Renovest Iks Google profile: rating 4.5/5, 18 ratings.",
-        "metrics": {
-          "rating": 4.5,
-          "review_count": 18,
-          "scale": 5,
-          "place_id": "ChIJAbKWQD-pOEYR_uXdINy_jcg"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-07-01",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-01",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000473321&amp;sokeverdi=980018725&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-01 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-3a4badb18344103a18e38a5e",
+        "organisation_number": "980018725",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "ab32cbe18fe5b37f7f3d5e374142e7e186e30b19890fc3d7a64651f9e2155f50",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980018725",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-28",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-06-28",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000489091&amp;sokeverdi=980018725&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-18fd47a564186702b80811f5",
+        "organisation_number": "980018725",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "1eecd3c5bf75742e8acb19985fe3e7ce72565d8e4e4a5f807322e6667813537b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980018725",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-05",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-06-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000382428&amp;sokeverdi=980018725&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-06-05 (BRREG official announcement)"
       },
       {
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
+        "retrieved_at": "2026-10-06T15:53:41.242863Z",
         "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
         "exact_entity": true,
         "identity_proof": [
@@ -3941,7 +4854,7 @@
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
+        "retrieved_at": "2026-10-06T15:53:41.242863Z",
         "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
         "exact_entity": true,
         "identity_proof": [
@@ -3973,7 +4886,7 @@
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
+        "retrieved_at": "2026-10-06T15:53:41.242863Z",
         "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
         "exact_entity": true,
         "identity_proof": [
@@ -4005,7 +4918,7 @@
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
+        "retrieved_at": "2026-10-06T15:53:41.242863Z",
         "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
         "exact_entity": true,
         "identity_proof": [
@@ -4037,7 +4950,7 @@
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
+        "retrieved_at": "2026-10-06T15:53:41.242863Z",
         "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
         "exact_entity": true,
         "identity_proof": [
@@ -4067,10 +4980,472 @@
       },
       {
         "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+        "retrieved_at": "2026-10-07T18:14:53.857369Z",
+        "content_sha256": "619e74431ceada2b5890cde8e35cecc3dd630249ed4aa3abe462da64530f01fb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-6c2227791a232a7e",
+        "signal_type": "public_post",
+        "evidence_span": "Vant 10 000 kroner på kjeldesortering!",
+        "metrics": {
+          "published_at": "2026-09-25T07:28:41Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Marit Haugland frå Kviteseid blei nyleg trekt ut som vinnar av Returkartonglotteriet!",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+        "retrieved_at": "2026-10-07T18:14:53.857407Z",
+        "content_sha256": "ed297f3889bafd73467150d1343d3b49a65b7c50368f0784e4c5711c4083be25",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-4f09762d5434efcc",
+        "signal_type": "public_post",
+        "evidence_span": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg",
+        "metrics": {
+          "published_at": "2026-06-22T10:00:52Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Renovest IKS skal utføre vedlikehaldsarbeid på vekta i veke 27",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+        "retrieved_at": "2026-10-07T18:14:53.857435Z",
+        "content_sha256": "0fd3b462f2c089a00b78f018e986979cc39f44a7711a02f7cf569d4ad0c28595",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-d364e1460d5fa8f0",
+        "signal_type": "public_post",
+        "evidence_span": "Ruskenaksjon 2026",
+        "metrics": {
+          "published_at": "2026-04-21T09:00:11Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Våroppryddinga er i full gang og vi vil sette ut containerar på ulike stadar den 4. og 5. mai.",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+        "retrieved_at": "2026-10-07T18:14:53.857459Z",
+        "content_sha256": "ad785ec3792bf0f6c9759a160156866c5e8693f8475320a1f158296480346ae4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-e0d521425b24de88",
+        "signal_type": "public_post",
+        "evidence_span": "Opningstider i påska 2026",
+        "metrics": {
+          "published_at": "2026-03-19T08:02:41Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Opningstider på avfallsmottaka og endring av køyreruter i forbindelse med påska 2026",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+        "retrieved_at": "2026-10-07T18:14:53.857483Z",
+        "content_sha256": "4fc94c142a6f7db6f3b2c0eb0946fe47353003d1b407080304d7dc3ca2ea2c36",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-e16367699b24be25",
+        "signal_type": "public_post",
+        "evidence_span": "Representantskapsmøte 20.04.2026",
+        "metrics": {
+          "published_at": "2026-03-19T08:01:21Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Innkalling til representantskapsmøte i Renovest IKS",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/best-paa-sortering-igjen/",
+        "retrieved_at": "2026-10-07T18:14:53.857506Z",
+        "content_sha256": "2fdd3589361789d82849d26165dad629e2237656b19a25851967e87d37d676cd",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-196bd91219c22759",
+        "signal_type": "public_post",
+        "evidence_span": "Best på sortering av plastemballasje!",
+        "metrics": {
+          "published_at": "2025-05-28T08:02:34Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "I 2024 vart det samla inn 18,7 kilo plastemballasje per innbyggar i Fyresdal, Kviteseid, Seljord, Tokke og Vinje. Dette er best i landet for andre år på rad!",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+        "retrieved_at": "2026-10-07T18:14:53.857541Z",
+        "content_sha256": "f0706ba072c24021570198af4038e33146dcab55be806ee0f62831ca80197485",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-35e6460fa31859f2",
+        "signal_type": "public_post",
+        "evidence_span": "Nå skal tekstilavfall sorterast som eigen avfallstype!",
+        "metrics": {
+          "published_at": "2024-12-17T12:32:06Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Nå kan du levere tekstilar, klede og sko på våre bemanna avfallsmottak i Brunkeberg, Fyresdal, Åmot og på Dalen.",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-vamur/",
+        "retrieved_at": "2026-10-07T18:14:53.857565Z",
+        "content_sha256": "5e300b8c3d1c29987515ddae513ba1da815ef8f9a56402b7befe7b0701ce77c0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-c63967a8c6fc2715",
+        "signal_type": "public_post",
+        "evidence_span": "Oppgradering av hyttereturpunkt på Våmur i Fyresdal",
+        "metrics": {
+          "published_at": "2024-12-02T12:49:16Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Hyttereturpunktet ved Våmur Nord i Fyresdal kommune er nå rusta opp med nye botntømte containerar",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/nytt-hyttereturpunkt-arbuvollen/",
+        "retrieved_at": "2026-10-07T18:14:53.857588Z",
+        "content_sha256": "39adb29a9cc2405cc75f1351eb1c35a02cb5694939bf9c941ce4097e068ab570",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-6ae4e99515867d75",
+        "signal_type": "public_post",
+        "evidence_span": "Nytt hyttereturpunkt på Arbuvollen, Vågslid",
+        "metrics": {
+          "published_at": "2024-11-21T09:03:28Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Renovest har etablera eit nytt hyttereturpunkt med full kildesortering på Arbuvollen (Vågslid) i Vinje kommune.",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-botn/",
+        "retrieved_at": "2026-10-07T18:14:53.857611Z",
+        "content_sha256": "982c4df320eea2c72322efd67565909d56c23b97a5784d8fb94d0f4c95f21ed9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_feed_news",
+        "id": "site-feed-news-980018725-618cbdccc65d1ada",
+        "signal_type": "public_post",
+        "evidence_span": "Oppgradering av hyttereturpunkt på Botn",
+        "metrics": {
+          "published_at": "2024-11-21T08:56:18Z",
+          "date_source": "rss_atom",
+          "body_excerpt": "Hyttereturpunktet ved Botn Skysstasjon (Vågslid) i Vinje kommune er nå rusta opp med nye botntømte containerar",
+          "feed_url": "https://renovest.no/aktuelt/feed/"
+        }
+      },
+      {
+        "id": "feed-news-6411202ad6aed944e6679237",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://renovest.no/nyheiter/vant-10-000-kroner-pa-kjeldesortering-2/",
+        "retrieved_at": "2026-10-25T00:31:07.228533Z",
+        "content_sha256": "1a87ef5642459fcf9ed401a159d3ccaae71db5c0ff29a45c0c25e78e30b0aa48",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://renovest.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "980018725",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Vant 10 000 kroner på kjeldesortering! — Fri, 25 Sep 2026 07:28:41 +0000",
+        "effective_at": "2026-09-25",
+        "observed_at": "2026-09-25",
+        "metrics": {
+          "title": "Vant 10 000 kroner på kjeldesortering!",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-a2cf8f01c5a9673715c0f282",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://renovest.no/nyheiter/vedlikehaldsarbeid-pa-vekta-pa-renovest-i-brunkeberg/",
+        "retrieved_at": "2026-10-25T00:31:07.228533Z",
+        "content_sha256": "039918cafb298e87093f2cdfeecd8c3d8bde740d66ce0163980947369080c48d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://renovest.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "980018725",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg — Mon, 22 Jun 2026 10:00:52 +0000",
+        "effective_at": "2026-06-22",
+        "observed_at": "2026-06-22",
+        "metrics": {
+          "title": "Vedlikehaldsarbeid på vekta på Renovest i Brunkeberg",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-0c965b80fc427eb374ab6f39",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://renovest.no/nyheiter/ruskenaksjon-2026/",
+        "retrieved_at": "2026-10-25T00:31:07.228533Z",
+        "content_sha256": "7794c3ca33fc590fc5d8d94ac0c4207c51745168a7a5b14c18bf99a0ba389232",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://renovest.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "980018725",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Ruskenaksjon 2026 — Tue, 21 Apr 2026 09:00:11 +0000",
+        "effective_at": "2026-04-21",
+        "observed_at": "2026-04-21",
+        "metrics": {
+          "title": "Ruskenaksjon 2026",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-a4e9b3b050da6fee600c34af",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://renovest.no/nyheiter/opningstider-i-paska-2026/",
+        "retrieved_at": "2026-10-25T00:31:07.228533Z",
+        "content_sha256": "7fc113bd2591e76485e00ca155b8f8670531a20c85c6378bfa752dd24ac0490a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://renovest.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "980018725",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Opningstider i påska 2026 — Thu, 19 Mar 2026 08:02:41 +0000",
+        "effective_at": "2026-03-19",
+        "observed_at": "2026-03-19",
+        "metrics": {
+          "title": "Opningstider i påska 2026",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "feed-news-a41947c82d7ad688b68311f4",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://renovest.no/nyheiter/representantskapsmote-20-04-2026/",
+        "retrieved_at": "2026-10-25T00:31:07.228533Z",
+        "content_sha256": "e4bfb2f6effbd0027ef6606c298da6a04e3235befbafc4c81bc1f7d7157ef56c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "source": "https://renovest.no/",
+            "source_class": "company_site",
+            "matched_organisation_number": "980018725",
+            "explanation": "Feed discovered from the identity-gated company website."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Representantskapsmøte 20.04.2026 — Thu, 19 Mar 2026 08:01:21 +0000",
+        "effective_at": "2026-03-19",
+        "observed_at": "2026-03-19",
+        "metrics": {
+          "title": "Representantskapsmøte 20.04.2026",
+          "source": "company website"
+        },
+        "strategy": "rss_atom_feed_discovery"
+      },
+      {
+        "id": "registry-workforce-690ae83298a9ab44d076842d",
+        "organisation_number": "980018725",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980018725",
+        "retrieved_at": "2026-09-29T10:27:10.992480Z",
+        "content_sha256": "e65bf2e80ac09a1a9f36cf254eec6ba3ee3e70274c0f8ef5f1d25ce4bee60fac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "980018725",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 19",
+        "metrics": {
+          "workforce_value": 19,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-07-15"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-07-15",
+        "effective_at": "2026-07-15"
+      },
+      {
+        "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
-        "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+        "retrieved_at": "2026-10-31T18:19:04.073339Z",
+        "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -4083,7 +5458,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-980018725-2a64666c0e9f1b64",
+        "id": "gplaces-metrics-980018725-6622dfe23103e691",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Renovest Iks Google profile: rating 4.5/5, 18 ratings.",
+        "metrics": {
+          "rating": 4.5,
+          "review_count": 18,
+          "scale": 5,
+          "place_id": "ChIJAbKWQD-pOEYR_uXdINy_jcg"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
+        "retrieved_at": "2026-10-31T18:19:04.073339Z",
+        "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "renovest.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-980018725-6622dfe23103e691",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Renovest Iks is rated 4.5/5 from 18 Google reviews.",
@@ -4098,8 +5502,8 @@
         "organisation_number": "980018725",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJAbKWQD-pOEYR_uXdINy_jcg",
-        "retrieved_at": "2026-10-05T14:31:30.829709Z",
-        "content_sha256": "2a64666c0e9f1b64773f3d402cc08a514937af35eb789fdd0762c977625e0e0e",
+        "retrieved_at": "2026-10-31T18:19:04.073339Z",
+        "content_sha256": "6622dfe23103e691b34ae66e532ab6fda5c877332cecf7f3667d29a019080d5e",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -4112,7 +5516,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-980018725-2a64666c0e9f1b64",
+        "id": "gplaces-sentiment-980018725-6622dfe23103e691",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -4123,8 +5527,326 @@
           "review_count": 18,
           "scale": 5
         }
+      },
+      {
+        "id": "sitemap-page-a10df80bf653fe58378978c8",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://renovest.no/",
+        "retrieved_at": "2026-09-15T01:37:01.524152Z",
+        "content_sha256": "2bcf498f90983c3833dc7857b6025b72b1597ee78f6a2821f81944f08379295a",
+        "observed_at": "2026-03-11",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://renovest.no/nyheiter/tekstilar-klede-sko/ last modified 2026-03-11",
+        "metrics": {
+          "page_url": "https://renovest.no/nyheiter/tekstilar-klede-sko/",
+          "lastmod": "2026-03-11",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "source_url": "https://renovest.no/",
+        "retrieved_at": "2026-09-29T12:54:44.681442Z",
+        "content_sha256": "2314e7c78d4e50793cc21f9fd0aab7e44058b61eecb75da508487a85f2a3b11a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-980018725-2314e7c78d4e5079",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 3,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "id": "sitemap-page-1e4b1078cd3a60df849e366a",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://renovest.no/",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-varland/ last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://renovest.no/nyheiter/oppgradering-av-hyttereturpunkt-varland/",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-58865e602bcd72b96aff1847",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://renovest.no/",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://renovest.no/nyheiter/representantskapsmote-24-11-2026/ last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://renovest.no/nyheiter/representantskapsmote-24-11-2026/",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e19b1d43e380a1521ca7388f",
+        "organisation_number": "980018725",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://renovest.no/",
+        "retrieved_at": "2026-09-29T10:27:30.679415Z",
+        "content_sha256": "4c4051d9eb54defaef3d9e7b1c36c3a5d19879086844f8d9ea0d5d0c753231c5",
+        "observed_at": "2026-10-26",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://renovest.no/avfallsmottak/hovdestadmoen-avfallsmottak/ last modified 2026-10-26",
+        "metrics": {
+          "page_url": "https://renovest.no/avfallsmottak/hovdestadmoen-avfallsmottak/",
+          "lastmod": "2026-10-26",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/renovest-iks-980018725",
+        "retrieved_at": "2026-11-05T14:45:54.722834Z",
+        "content_sha256": "9dd694cbd7a63a70e1e756ad995d966341fee0e4c9ac89c277e0614f799ad51c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980018725"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RENOVEST IKS",
+            "matched_organisation_number": "980018725"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "website_domain": "renovest.no",
+          "address": {
+            "street": "Ordalsvegen 63",
+            "locality": "KVITESEID",
+            "postal_code": "3850"
+          }
+        },
+        "id": "fagfolk-profile-980018725-d036acb0def387a3",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"980018725\"}"
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980018725",
+        "retrieved_at": "2026-11-05T21:11:15.387204Z",
+        "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980018725"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RENOVEST IKS",
+            "matched_organisation_number": "980018725"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+        "id": "purehelp-email-980018725-f5313cfe9931ebd8",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@renovest.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980018725",
+        "retrieved_at": "2026-11-05T21:11:15.387204Z",
+        "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980018725"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RENOVEST IKS",
+            "matched_organisation_number": "980018725"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+        "id": "purehelp-phone-980018725-f5313cfe9931ebd8",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "35 06 80 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980018725",
+        "retrieved_at": "2026-11-05T21:11:15.387204Z",
+        "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980018725"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RENOVEST IKS",
+            "matched_organisation_number": "980018725"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+        "id": "purehelp-profile-980018725-f5313cfe9931ebd8",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "IKS",
+          "legal_form_description": "Inter-municipal company",
+          "nace_code": "38.110",
+          "nace_description": "Collection of non-hazardous waste",
+          "town": "KVITESEID",
+          "zipcode": "3850",
+          "municipality": "KVITESEID",
+          "municipality_number": "4028",
+          "county": "Telemark",
+          "registration_date": "1998-11-12",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1998-11-12",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.renovest.no"
+        }
+      },
+      {
+        "organisation_number": "980018725",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980018725",
+        "retrieved_at": "2026-11-05T21:11:15.387204Z",
+        "content_sha256": "8f893cc832429d22cfc4db660ab7fff4246e206a4796f9675dfa3cbae2954b27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980018725"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RENOVEST IKS",
+            "matched_organisation_number": "980018725"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980018725.orgNumber=980018725;name=RENOVEST IKS",
+        "id": "purehelp-workforce-980018725-f5313cfe9931ebd8",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 19,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:46.420129+00:00"
+  "generated_at": "2026-11-06T05:27:38.878215+00:00"
 }

@@ -552,45 +552,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-de6bab0e62b70c4c6f72baa2",
-          "organisation_number": "979691904",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T08:53:55.921660Z",
-          "content_sha256": "b3e119c1bf571aea0c637d2ce7105eb479c470adff39701349330ea0c241fdf6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "979691904",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 9",
-          "metrics": {
-            "workforce_value": 9,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2025-05-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2025-05-12",
-          "effective_at": "2025-05-12"
-        },
-        {
           "id": "registry-contact-f278f404a49764b7eb472db1",
           "organisation_number": "979691904",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -609,8 +577,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-f70d6ad3fad3c6a25c9d8a1a",
@@ -618,8 +585,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -638,14 +605,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "979691904",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
-          "retrieved_at": "2026-10-05T08:54:06.863633Z",
+          "retrieved_at": "2026-09-29T10:20:43.708414Z",
           "content_sha256": "72afaa1eddf5356737dc27679d889351f86223305f59e9460b6a8a2c44531850",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -667,8 +633,7 @@
             "subunit_organisation_number": "972159883",
             "municipality": "STAVANGER",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-ed31a3f491496819f19da2af",
@@ -676,7 +641,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ed31a3f491496819f19da2af9592e86058157a99205058bc40559349911c58b0",
           "observed_at": "2026-03-02",
           "exact_entity": true,
@@ -706,7 +671,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "067990d469591d066afb926d8521f1c0ead0b46b97265ea88846cb797ca88586",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -736,38 +701,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d28c882ebb513b469ae56fa77bb11c396021206724b239ebb024141e5a5b6858",
-          "observed_at": "2025-05-24",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "979691904",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-05-24: Endring",
-          "metrics": {
-            "date": "2025-05-24",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-826e5187cf0805a14a1f71e0",
-          "organisation_number": "979691904",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "826e5187cf0805a14a1f71e038762ef927bd9ae9533df111a0fdd8c90e2f0e3d",
           "observed_at": "2025-05-24",
           "exact_entity": true,
           "identity_proof": [
@@ -796,7 +731,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7fa77db255fa126fbcb3129d13461c3b6eadd94ce074e932422ff05aecc60bf2",
           "observed_at": "2025-05-12",
           "exact_entity": true,
@@ -826,38 +761,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5e1895cf5c30ceedd6c92f135c9836691a624d5af4473936f80596f3fc5580dd",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "979691904",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-a5e6dd5b07e6fa9e810b030e",
-          "organisation_number": "979691904",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "a5e6dd5b07e6fa9e810b030e679fc5cab428fe28d377251f52d44db2af247c31",
           "observed_at": "2025-04-08",
           "exact_entity": true,
           "identity_proof": [
@@ -886,7 +791,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "09c3bf67ff417526262a12a391416c00438dff8a6aaf5d033c53701f7ad47709",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -916,7 +821,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f56e8673f42db231974bdc43b081640c97050732555a7bdb99f01962719a84eb",
           "observed_at": "2024-09-12",
           "exact_entity": true,
@@ -946,7 +851,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "70fe517aa6921a82950986ff8db03991927293279e19dbe81824055bf5fddb2b",
           "observed_at": "2024-04-13",
           "exact_entity": true,
@@ -976,7 +881,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1f0abe0c0ddf7bc2afef6d5904e4b54616ff4c384882eff177bd736b9089ac2d",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1006,7 +911,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "446af1da8150142705c116745c4bcdc823fda7ea9f623337fa960ab811dbbb11",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1036,7 +941,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "41019bd69fd4981071e81e41a5fde3ed7712f64bf6960e20f2163b5ca4ba9ece",
           "observed_at": "2023-02-21",
           "exact_entity": true,
@@ -1066,7 +971,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "57ef077fbbf9e22c1fecbaf9ed6ca5dfa6699a47b55452b341f1cde3f1b85b4c",
           "observed_at": "2022-05-12",
           "exact_entity": true,
@@ -1096,7 +1001,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "95ddc55da595efc54f5c66612437329b45a511a2097228bfe7497ce7e1ace93d",
           "observed_at": "2022-03-30",
           "exact_entity": true,
@@ -1126,7 +1031,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f11f5f36e7523b0dd3e86daaa3b298d42df10aa6511f98da0e142cf4b68a7c53",
           "observed_at": "2021-06-28",
           "exact_entity": true,
@@ -1156,7 +1061,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6544b719a4c80fba202961b749811bbd2bafa4286ddf5e40f601dfeafdb5316a",
           "observed_at": "2021-06-07",
           "exact_entity": true,
@@ -1186,7 +1091,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cde8b255e758bc446b84d1efa38c8a34280a893da66e3fca673ceaf13c873cea",
           "observed_at": "2020-10-14",
           "exact_entity": true,
@@ -1216,7 +1121,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e1991317acd8e44175432af10e340b01ab92120e73b376427f4cf7b0c2dadf27",
           "observed_at": "2020-03-09",
           "exact_entity": true,
@@ -1246,7 +1151,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8ca47800675cb43b07cb753194d1d3f2467b5e4e576eb039c5204c9361bc5788",
           "observed_at": "2020-03-02",
           "exact_entity": true,
@@ -1271,39 +1176,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-d51cf1aff89c1d51b92d1130",
           "organisation_number": "979691904",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
-          "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "36f3058f5c4f096e467ba78ccb8f01fe8c645c9d0920130c92d74a378d9d6e8f",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "hoines.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "979691904",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-979691904-dad5d4a98279a17e",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Høines Skilt Stempel Etiketter AS Google profile: rating 4.7/5, 11 ratings.",
-          "metrics": {
-            "rating": 4.7,
-            "review_count": 11,
-            "scale": 5,
-            "place_id": "ChIJEWYxiPo1OkYRECNjGc1ruP0"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-03-02",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-03-02",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-befe831d0b5ac5844f7386eb",
+          "organisation_number": "979691904",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "f22e5e6fd304a52e28f8c88b59e1ba6ae2b94c84cae5d1c496aa40d7eb2b08c5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "979691904",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-05-24",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-05-24",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-05-24 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-541dcbe9a8b4ff2c8d665a0d",
+          "organisation_number": "979691904",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "c1fdfdc5dbcc8a1c13120cc0246b3bf0c6efe22f34de86d8b0b71aa3bf00357a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "979691904",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-04-13",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-04-13",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-04-13 (BRREG official announcement)"
         },
         {
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
+          "retrieved_at": "2026-10-06T15:53:38.954376Z",
           "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
           "exact_entity": true,
           "identity_proof": [
@@ -1335,7 +1298,7 @@
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
+          "retrieved_at": "2026-10-06T15:53:38.954376Z",
           "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
           "exact_entity": true,
           "identity_proof": [
@@ -1367,7 +1330,7 @@
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
+          "retrieved_at": "2026-10-06T15:53:38.954376Z",
           "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
           "exact_entity": true,
           "identity_proof": [
@@ -1399,7 +1362,7 @@
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
+          "retrieved_at": "2026-10-06T15:53:38.954376Z",
           "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
           "exact_entity": true,
           "identity_proof": [
@@ -1428,11 +1391,72 @@
           }
         },
         {
+          "id": "registry-workforce-de6bab0e62b70c4c6f72baa2",
+          "organisation_number": "979691904",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
+          "retrieved_at": "2026-09-29T10:20:34.295177Z",
+          "content_sha256": "b3e119c1bf571aea0c637d2ce7105eb479c470adff39701349330ea0c241fdf6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "979691904",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 9",
+          "metrics": {
+            "workforce_value": 9,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2025-05-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2025-05-12",
+          "effective_at": "2025-05-12"
+        },
+        {
+          "id": "brreg-kunngjoring-c3ba3d663c6f5f6b92378bac",
+          "organisation_number": "979691904",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "a273c9ef2e3ffcf90561b429b848c576d7c5b33ae1125720fc70fca3cde0c97c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "979691904",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-10-10",
+          "signal": {
+            "title": "Signatur",
+            "date": "2026-10-10",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb"
+          },
+          "evidence_span": "Signatur — 2026-10-10 (BRREG official announcement)"
+        },
+        {
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
-          "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+          "retrieved_at": "2026-10-31T18:18:15.155112Z",
+          "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1445,7 +1469,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-979691904-dad5d4a98279a17e",
+          "id": "gplaces-metrics-979691904-5c04d750ae9b4f54",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Høines Skilt Stempel Etiketter AS Google profile: rating 4.7/5, 11 ratings.",
+          "metrics": {
+            "rating": 4.7,
+            "review_count": 11,
+            "scale": 5,
+            "place_id": "ChIJEWYxiPo1OkYRECNjGc1ruP0"
+          }
+        },
+        {
+          "organisation_number": "979691904",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
+          "retrieved_at": "2026-10-31T18:18:15.155112Z",
+          "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "hoines.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-979691904-5c04d750ae9b4f54",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Høines Skilt Stempel Etiketter AS is rated 4.7/5 from 11 Google reviews.",
@@ -1460,8 +1513,8 @@
           "organisation_number": "979691904",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-          "retrieved_at": "2026-10-05T14:31:29.022711Z",
-          "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+          "retrieved_at": "2026-10-31T18:18:15.155112Z",
+          "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1474,7 +1527,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-979691904-dad5d4a98279a17e",
+          "id": "gplaces-sentiment-979691904-5c04d750ae9b4f54",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1484,6 +1537,178 @@
             "rating": 4.7,
             "review_count": 11,
             "scale": 5
+          }
+        },
+        {
+          "id": "registry-site-979691904-99cd01d1dedc8b63",
+          "organisation_number": "979691904",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://www.hoines.no/",
+          "retrieved_at": "2026-10-09T13:56:59.414650Z",
+          "content_sha256": "99cd01d1dedc8b63dd218328c1af20af154fcdc25387496a84b7050a0c241e9f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "hoines.no",
+              "matched_organisation_number": "979691904",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares hoines.no as the website of organisation 979691904; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Velkommen til www.hoines.no - Best verdi online trykkeri. Trykk av høy kvalitet levert! — Høykvalitets skriverutskrift av visittkort, flygeblader, brosjyrer, brevhoder, plakater og mer. Design online gratis! Bestill trykk online i dag!",
+          "metrics": {
+            "title": "Velkommen til www.hoines.no - Best verdi online trykkeri. Trykk av høy kvalitet levert!",
+            "description": "Høykvalitets skriverutskrift av visittkort, flygeblader, brosjyrer, brevhoder, plakater og mer. Design online gratis! Bestill trykk online i dag!",
+            "registry_domain": "hoines.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "979691904",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/979691904",
+          "retrieved_at": "2026-11-05T21:10:45.622655Z",
+          "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "979691904"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+              "matched_organisation_number": "979691904"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+          "id": "purehelp-email-979691904-ed0acd8e20246fff",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "op@hoines.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "979691904",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/979691904",
+          "retrieved_at": "2026-11-05T21:10:45.622655Z",
+          "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "979691904"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+              "matched_organisation_number": "979691904"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+          "id": "purehelp-phone-979691904-ed0acd8e20246fff",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "51 81 15 70",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "979691904",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/979691904",
+          "retrieved_at": "2026-11-05T21:10:45.622655Z",
+          "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "979691904"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+              "matched_organisation_number": "979691904"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+          "id": "purehelp-profile-979691904-ed0acd8e20246fff",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "25.990",
+            "nace_description": "Manufacture of other fabricated metal products n.e.c.",
+            "town": "STAVANGER",
+            "zipcode": "4033",
+            "municipality": "STAVANGER",
+            "municipality_number": "1103",
+            "county": "Rogaland",
+            "registration_date": "1998-04-06",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1998-04-06",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.hoines.no"
+          }
+        },
+        {
+          "organisation_number": "979691904",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/979691904",
+          "retrieved_at": "2026-11-05T21:10:45.622655Z",
+          "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "979691904"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+              "matched_organisation_number": "979691904"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+          "id": "purehelp-workforce-979691904-ed0acd8e20246fff",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 9,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1510,7 +1735,7 @@
     "company_name": "HØINES SKILT STEMPEL ETIKETTER AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "HØINES SKILT STEMPEL ETIKETTER AS is a private limited company operating in Produksjon av andre metallvarer ikke nevnt annet sted. Latest accounts (2025): revenue NOK 12.2m, annual result NOK 149.0k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-14.9% YoY). Registered employees: 9. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "HØINES SKILT STEMPEL ETIKETTER AS is a private limited company operating in Produksjon av andre metallvarer ikke nevnt annet sted. Latest accounts (2025): revenue NOK 12.2m, annual result NOK 149.0k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-14.9% YoY). Registered employees: 9. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1525,7 +1750,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       },
@@ -1542,7 +1773,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       },
@@ -1559,7 +1796,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       },
@@ -1576,7 +1819,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       },
@@ -1593,7 +1842,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       },
@@ -1607,11 +1862,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/979691904/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
+          "https://www.hoines.no/"
+        ]
       },
       {
         "question": "changes",
@@ -1626,18 +1896,18 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/979691904",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/979691904/aar",
+          "https://purehelp.no/company/NO/979691904",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
           "https://www.hoines.no/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2179,45 +2449,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-de6bab0e62b70c4c6f72baa2",
-        "organisation_number": "979691904",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T08:53:55.921660Z",
-        "content_sha256": "b3e119c1bf571aea0c637d2ce7105eb479c470adff39701349330ea0c241fdf6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "979691904",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 9",
-        "metrics": {
-          "workforce_value": 9,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2025-05-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2025-05-12",
-        "effective_at": "2025-05-12"
-      },
-      {
         "id": "registry-contact-f278f404a49764b7eb472db1",
         "organisation_number": "979691904",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2236,8 +2474,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-f70d6ad3fad3c6a25c9d8a1a",
@@ -2245,8 +2482,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2265,14 +2502,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "979691904",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=979691904&size=1000",
-        "retrieved_at": "2026-10-05T08:54:06.863633Z",
+        "retrieved_at": "2026-09-29T10:20:43.708414Z",
         "content_sha256": "72afaa1eddf5356737dc27679d889351f86223305f59e9460b6a8a2c44531850",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2294,8 +2530,7 @@
           "subunit_organisation_number": "972159883",
           "municipality": "STAVANGER",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-ed31a3f491496819f19da2af",
@@ -2303,7 +2538,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ed31a3f491496819f19da2af9592e86058157a99205058bc40559349911c58b0",
         "observed_at": "2026-03-02",
         "exact_entity": true,
@@ -2333,7 +2568,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "067990d469591d066afb926d8521f1c0ead0b46b97265ea88846cb797ca88586",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2363,38 +2598,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d28c882ebb513b469ae56fa77bb11c396021206724b239ebb024141e5a5b6858",
-        "observed_at": "2025-05-24",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "979691904",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-05-24: Endring",
-        "metrics": {
-          "date": "2025-05-24",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-826e5187cf0805a14a1f71e0",
-        "organisation_number": "979691904",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "826e5187cf0805a14a1f71e038762ef927bd9ae9533df111a0fdd8c90e2f0e3d",
         "observed_at": "2025-05-24",
         "exact_entity": true,
         "identity_proof": [
@@ -2423,7 +2628,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7fa77db255fa126fbcb3129d13461c3b6eadd94ce074e932422ff05aecc60bf2",
         "observed_at": "2025-05-12",
         "exact_entity": true,
@@ -2453,38 +2658,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5e1895cf5c30ceedd6c92f135c9836691a624d5af4473936f80596f3fc5580dd",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "979691904",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-a5e6dd5b07e6fa9e810b030e",
-        "organisation_number": "979691904",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "a5e6dd5b07e6fa9e810b030e679fc5cab428fe28d377251f52d44db2af247c31",
         "observed_at": "2025-04-08",
         "exact_entity": true,
         "identity_proof": [
@@ -2513,7 +2688,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "09c3bf67ff417526262a12a391416c00438dff8a6aaf5d033c53701f7ad47709",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -2543,7 +2718,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f56e8673f42db231974bdc43b081640c97050732555a7bdb99f01962719a84eb",
         "observed_at": "2024-09-12",
         "exact_entity": true,
@@ -2573,7 +2748,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "70fe517aa6921a82950986ff8db03991927293279e19dbe81824055bf5fddb2b",
         "observed_at": "2024-04-13",
         "exact_entity": true,
@@ -2603,7 +2778,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1f0abe0c0ddf7bc2afef6d5904e4b54616ff4c384882eff177bd736b9089ac2d",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -2633,7 +2808,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "446af1da8150142705c116745c4bcdc823fda7ea9f623337fa960ab811dbbb11",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2663,7 +2838,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "41019bd69fd4981071e81e41a5fde3ed7712f64bf6960e20f2163b5ca4ba9ece",
         "observed_at": "2023-02-21",
         "exact_entity": true,
@@ -2693,7 +2868,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "57ef077fbbf9e22c1fecbaf9ed6ca5dfa6699a47b55452b341f1cde3f1b85b4c",
         "observed_at": "2022-05-12",
         "exact_entity": true,
@@ -2723,7 +2898,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "95ddc55da595efc54f5c66612437329b45a511a2097228bfe7497ce7e1ace93d",
         "observed_at": "2022-03-30",
         "exact_entity": true,
@@ -2753,7 +2928,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f11f5f36e7523b0dd3e86daaa3b298d42df10aa6511f98da0e142cf4b68a7c53",
         "observed_at": "2021-06-28",
         "exact_entity": true,
@@ -2783,7 +2958,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6544b719a4c80fba202961b749811bbd2bafa4286ddf5e40f601dfeafdb5316a",
         "observed_at": "2021-06-07",
         "exact_entity": true,
@@ -2813,7 +2988,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cde8b255e758bc446b84d1efa38c8a34280a893da66e3fca673ceaf13c873cea",
         "observed_at": "2020-10-14",
         "exact_entity": true,
@@ -2843,7 +3018,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e1991317acd8e44175432af10e340b01ab92120e73b376427f4cf7b0c2dadf27",
         "observed_at": "2020-03-09",
         "exact_entity": true,
@@ -2873,7 +3048,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8ca47800675cb43b07cb753194d1d3f2467b5e4e576eb039c5204c9361bc5788",
         "observed_at": "2020-03-02",
         "exact_entity": true,
@@ -2898,39 +3073,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-d51cf1aff89c1d51b92d1130",
         "organisation_number": "979691904",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
-        "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "36f3058f5c4f096e467ba78ccb8f01fe8c645c9d0920130c92d74a378d9d6e8f",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "hoines.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "979691904",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-979691904-dad5d4a98279a17e",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Høines Skilt Stempel Etiketter AS Google profile: rating 4.7/5, 11 ratings.",
-        "metrics": {
-          "rating": 4.7,
-          "review_count": 11,
-          "scale": 5,
-          "place_id": "ChIJEWYxiPo1OkYRECNjGc1ruP0"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-03-02",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-03-02",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089395&amp;sokeverdi=979691904&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-befe831d0b5ac5844f7386eb",
+        "organisation_number": "979691904",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "f22e5e6fd304a52e28f8c88b59e1ba6ae2b94c84cae5d1c496aa40d7eb2b08c5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "979691904",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-05-24",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-05-24",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000319303&amp;sokeverdi=979691904&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-05-24 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-541dcbe9a8b4ff2c8d665a0d",
+        "organisation_number": "979691904",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "c1fdfdc5dbcc8a1c13120cc0246b3bf0c6efe22f34de86d8b0b71aa3bf00357a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "979691904",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-04-13",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-04-13",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000348985&amp;sokeverdi=979691904&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-04-13 (BRREG official announcement)"
       },
       {
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
+        "retrieved_at": "2026-10-06T15:53:38.954376Z",
         "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
         "exact_entity": true,
         "identity_proof": [
@@ -2962,7 +3195,7 @@
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
+        "retrieved_at": "2026-10-06T15:53:38.954376Z",
         "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
         "exact_entity": true,
         "identity_proof": [
@@ -2994,7 +3227,7 @@
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
+        "retrieved_at": "2026-10-06T15:53:38.954376Z",
         "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
         "exact_entity": true,
         "identity_proof": [
@@ -3026,7 +3259,7 @@
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
+        "retrieved_at": "2026-10-06T15:53:38.954376Z",
         "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
         "exact_entity": true,
         "identity_proof": [
@@ -3055,11 +3288,72 @@
         }
       },
       {
+        "id": "registry-workforce-de6bab0e62b70c4c6f72baa2",
+        "organisation_number": "979691904",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/979691904",
+        "retrieved_at": "2026-09-29T10:20:34.295177Z",
+        "content_sha256": "b3e119c1bf571aea0c637d2ce7105eb479c470adff39701349330ea0c241fdf6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "979691904",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 9",
+        "metrics": {
+          "workforce_value": 9,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2025-05-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2025-05-12",
+        "effective_at": "2025-05-12"
+      },
+      {
+        "id": "brreg-kunngjoring-c3ba3d663c6f5f6b92378bac",
+        "organisation_number": "979691904",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "a273c9ef2e3ffcf90561b429b848c576d7c5b33ae1125720fc70fca3cde0c97c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "979691904",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-10-10",
+        "signal": {
+          "title": "Signatur",
+          "date": "2026-10-10",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000792765&amp;sokeverdi=979691904&amp;spraak=nb"
+        },
+        "evidence_span": "Signatur — 2026-10-10 (BRREG official announcement)"
+      },
+      {
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
-        "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+        "retrieved_at": "2026-10-31T18:18:15.155112Z",
+        "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3072,7 +3366,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-979691904-dad5d4a98279a17e",
+        "id": "gplaces-metrics-979691904-5c04d750ae9b4f54",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Høines Skilt Stempel Etiketter AS Google profile: rating 4.7/5, 11 ratings.",
+        "metrics": {
+          "rating": 4.7,
+          "review_count": 11,
+          "scale": 5,
+          "place_id": "ChIJEWYxiPo1OkYRECNjGc1ruP0"
+        }
+      },
+      {
+        "organisation_number": "979691904",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
+        "retrieved_at": "2026-10-31T18:18:15.155112Z",
+        "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "hoines.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-979691904-5c04d750ae9b4f54",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Høines Skilt Stempel Etiketter AS is rated 4.7/5 from 11 Google reviews.",
@@ -3087,8 +3410,8 @@
         "organisation_number": "979691904",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJEWYxiPo1OkYRECNjGc1ruP0",
-        "retrieved_at": "2026-10-05T14:31:29.022711Z",
-        "content_sha256": "dad5d4a98279a17e13ab2fe2c9226a417dd3cf8a5fd354eddd9f94b1aee930fa",
+        "retrieved_at": "2026-10-31T18:18:15.155112Z",
+        "content_sha256": "5c04d750ae9b4f54d20feb292f1ecfa19a3e3f07845d150de8aaf264b5551f29",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3101,7 +3424,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-979691904-dad5d4a98279a17e",
+        "id": "gplaces-sentiment-979691904-5c04d750ae9b4f54",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3112,8 +3435,180 @@
           "review_count": 11,
           "scale": 5
         }
+      },
+      {
+        "id": "registry-site-979691904-99cd01d1dedc8b63",
+        "organisation_number": "979691904",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://www.hoines.no/",
+        "retrieved_at": "2026-10-09T13:56:59.414650Z",
+        "content_sha256": "99cd01d1dedc8b63dd218328c1af20af154fcdc25387496a84b7050a0c241e9f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "hoines.no",
+            "matched_organisation_number": "979691904",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares hoines.no as the website of organisation 979691904; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Velkommen til www.hoines.no - Best verdi online trykkeri. Trykk av høy kvalitet levert! — Høykvalitets skriverutskrift av visittkort, flygeblader, brosjyrer, brevhoder, plakater og mer. Design online gratis! Bestill trykk online i dag!",
+        "metrics": {
+          "title": "Velkommen til www.hoines.no - Best verdi online trykkeri. Trykk av høy kvalitet levert!",
+          "description": "Høykvalitets skriverutskrift av visittkort, flygeblader, brosjyrer, brevhoder, plakater og mer. Design online gratis! Bestill trykk online i dag!",
+          "registry_domain": "hoines.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "979691904",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/979691904",
+        "retrieved_at": "2026-11-05T21:10:45.622655Z",
+        "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "979691904"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+            "matched_organisation_number": "979691904"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+        "id": "purehelp-email-979691904-ed0acd8e20246fff",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "op@hoines.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "979691904",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/979691904",
+        "retrieved_at": "2026-11-05T21:10:45.622655Z",
+        "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "979691904"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+            "matched_organisation_number": "979691904"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+        "id": "purehelp-phone-979691904-ed0acd8e20246fff",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "51 81 15 70",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "979691904",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/979691904",
+        "retrieved_at": "2026-11-05T21:10:45.622655Z",
+        "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "979691904"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+            "matched_organisation_number": "979691904"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+        "id": "purehelp-profile-979691904-ed0acd8e20246fff",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "25.990",
+          "nace_description": "Manufacture of other fabricated metal products n.e.c.",
+          "town": "STAVANGER",
+          "zipcode": "4033",
+          "municipality": "STAVANGER",
+          "municipality_number": "1103",
+          "county": "Rogaland",
+          "registration_date": "1998-04-06",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1998-04-06",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.hoines.no"
+        }
+      },
+      {
+        "organisation_number": "979691904",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/979691904",
+        "retrieved_at": "2026-11-05T21:10:45.622655Z",
+        "content_sha256": "88cda2117a805713c2e1c1da5d85f1d2e34701aaa16e020ca48f57bd4d39b8e8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "979691904"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HØINES SKILT STEMPEL ETIKETTER AS",
+            "matched_organisation_number": "979691904"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-979691904.orgNumber=979691904;name=HØINES SKILT STEMPEL ETIKETTER AS",
+        "id": "purehelp-workforce-979691904-ed0acd8e20246fff",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 9,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:45.360489+00:00"
+  "generated_at": "2026-11-06T05:27:36.634199+00:00"
 }

@@ -813,45 +813,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-3cc6aa89f2a29fac937f8012",
-          "organisation_number": "983048056",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T08:57:02.318672Z",
-          "content_sha256": "98d667b3f3da8b8c76555f83efd5119f4d74ebae1646426bbe25f384e2928377",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "983048056",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 5",
-          "metrics": {
-            "workforce_value": 5,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-01-13"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-01-13",
-          "effective_at": "2026-01-13"
-        },
-        {
           "id": "registry-contact-3f5bcd3092f82e4e701d25fe",
           "organisation_number": "983048056",
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -870,14 +838,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "983048056",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
-          "retrieved_at": "2026-10-05T08:57:06.480442Z",
+          "retrieved_at": "2026-09-29T10:23:38.915126Z",
           "content_sha256": "7026108c350727a551c876d05876d4adbab7dc8b79f90282020595a8846740af",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -899,14 +866,13 @@
             "subunit_organisation_number": "983146511",
             "municipality": "LILLESTRØM",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "983048056",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/983048056",
-          "retrieved_at": "2026-10-05T08:57:05.773872Z",
+          "retrieved_at": "2026-09-29T10:23:38.026385Z",
           "content_sha256": "e2e650877a01c72b086f0dc8e21007f563144392209817c986653b83d65825ee",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -929,8 +895,7 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-976e403ed600f547fb26ea76",
@@ -938,7 +903,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "976e403ed600f547fb26ea76cb45f3228077c98c49e084ff3980247df14eab64",
           "observed_at": "2026-09-15",
           "exact_entity": true,
@@ -968,7 +933,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "99e828cce82355fdc6bb5c817d30321b5fd2ffc77574842de35ca0c6a8399346",
           "observed_at": "2026-07-29",
           "exact_entity": true,
@@ -998,7 +963,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a9bd7174de7705acbc8998a41a6b96f87750fe71f90d14ba5801fe2472404055",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -1028,7 +993,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bca3d33497c2c6de5b770d86c9ac6fb88fe569fb37e825ab3728fa4d3df0011c",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1058,7 +1023,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9f7333948ccede9b181f651630eaf9eca7113c49c3c2d8be1a1a8b96979e0755",
           "observed_at": "2025-07-23",
           "exact_entity": true,
@@ -1088,7 +1053,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b006319e92c4a73f04de88d65a1a61e4e8c42bb3e6fc6f96b54c102efec3bc1c",
           "observed_at": "2024-09-05",
           "exact_entity": true,
@@ -1118,7 +1083,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8cf01138363ae5c199536479c9eaabb3af934aca7641e6a7c63da017fab779b0",
           "observed_at": "2024-07-09",
           "exact_entity": true,
@@ -1148,7 +1113,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "deeea05496d81e9926bef7b0a082bebb22bcb6e2efbc3193f044a1484db3bc38",
           "observed_at": "2024-01-18",
           "exact_entity": true,
@@ -1178,7 +1143,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8059f989c6f43afade96d6a75a406009499bd963e6f87779968b1e6b173e5872",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1208,7 +1173,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0b4190dbb4ca2b6da40f16709d3215f830753065aa14a4d93c80180d01abcea8",
           "observed_at": "2023-06-26",
           "exact_entity": true,
@@ -1238,7 +1203,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "502ea07792e15e33a9a874a2c4099ce246da88b8017fc5a39fa3d3a561ed09da",
           "observed_at": "2022-08-16",
           "exact_entity": true,
@@ -1268,7 +1233,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "63d3490e8ee9beb15dbd83a12af043224a8e8606bec19c2c39211d91e2ec5942",
           "observed_at": "2022-07-09",
           "exact_entity": true,
@@ -1298,7 +1263,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c4fc4f6f6116e98efeea85286b5f922fa80de81e320566f9e661293b5200c6a6",
           "observed_at": "2022-03-16",
           "exact_entity": true,
@@ -1328,7 +1293,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1aa718ab5583459f40dd0d9954f700224dfe07f8d605091158ba678ead28ed2b",
           "observed_at": "2022-02-14",
           "exact_entity": true,
@@ -1358,7 +1323,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5352b5272647e82a89c96eef8854063dc753da291d25f3840dbdfb35472329d4",
           "observed_at": "2022-01-12",
           "exact_entity": true,
@@ -1388,7 +1353,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5d095a97a18de94c84a5c168f8d7c8f4f73291c0e9049a3dd95b7114a37e82a4",
           "observed_at": "2021-12-27",
           "exact_entity": true,
@@ -1418,7 +1383,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "09828a7375311412bd67b75ec9bedaf21e19e826811fba30abfb05267ea89782",
           "observed_at": "2021-06-19",
           "exact_entity": true,
@@ -1448,7 +1413,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cc2e9664133173e87dbd663f93d4a4952418e67b4ff650b9fe75975deb2a0dbf",
           "observed_at": "2020-12-21",
           "exact_entity": true,
@@ -1478,7 +1443,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bbb3fbf43a7d8d8029637cbf0dbe21c038d20248ebe73802163832765f2525d1",
           "observed_at": "2020-06-25",
           "exact_entity": true,
@@ -1508,7 +1473,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "420a669fffae06b17abc746fe28f76ae027f239274ed931613c3b059ba97c6c3",
           "observed_at": "2020-01-01",
           "exact_entity": true,
@@ -1531,6 +1496,354 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-b61d94e821925ff45ecb71f5",
+          "organisation_number": "983048056",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "6379eb155936c0d16e779b6c5416e6a3cdec1bbe24deba6b669764d2d49c6c20",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "983048056",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-29",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-29",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-3a2d80bae2d5298754117515",
+          "organisation_number": "983048056",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "0284a5a38601d19201b7fa0341e236d1ad7b0cca1ff2fa95d46b9f5f690e048a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "983048056",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-23",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-23",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-23 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-81d5c072ab1481131c40e79b",
+          "organisation_number": "983048056",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "8f46d74adc423f675ba173bbbc2c97058b43843cde0e335357377d3cdc4c6c40",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "983048056",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-04-05",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-04-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-04-05 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-3cc6aa89f2a29fac937f8012",
+          "organisation_number": "983048056",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
+          "retrieved_at": "2026-09-29T10:23:32.595937Z",
+          "content_sha256": "98d667b3f3da8b8c76555f83efd5119f4d74ebae1646426bbe25f384e2928377",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "983048056",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 5",
+          "metrics": {
+            "workforce_value": 5,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-01-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-01-13",
+          "effective_at": "2026-01-13"
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+          "retrieved_at": "2026-10-31T18:18:36.927589Z",
+          "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-metrics-983048056-6b5284484d48e1d3",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Freudenberg Home And Cleaning solutions AS Google profile: rating 2/5, 1 ratings.",
+          "metrics": {
+            "rating": 2,
+            "review_count": 1,
+            "scale": 5,
+            "place_id": "ChIJGZJqomp7QUYRRfg-xN8cGLc"
+          }
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+          "retrieved_at": "2026-10-31T18:18:36.927589Z",
+          "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-review-summary-983048056-6b5284484d48e1d3",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Freudenberg Home And Cleaning solutions AS is rated 2/5 from 1 Google reviews.",
+          "metrics": {
+            "rating": 2,
+            "review_count": 1,
+            "scale": 5,
+            "place_id": "ChIJGZJqomp7QUYRRfg-xN8cGLc"
+          }
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+          "retrieved_at": "2026-10-31T18:18:36.927589Z",
+          "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "negative",
+          "id": "gplaces-sentiment-983048056-6b5284484d48e1d3",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 2/5 from 1 reviews implies negative sentiment.",
+          "metrics": {
+            "rating": 2,
+            "review_count": 1,
+            "scale": 5
+          }
+        },
+        {
+          "id": "registry-site-983048056-7f69d2dc4afcc43a",
+          "organisation_number": "983048056",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://www.vileda-professional.no/",
+          "retrieved_at": "2026-10-09T13:58:09.790399Z",
+          "content_sha256": "7f69d2dc4afcc43ad70d296315fedaccc8b1aae320686dacce98e9249612f95c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "vileda-professional.no",
+              "matched_organisation_number": "983048056",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares vileda-professional.no as the website of organisation 983048056; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Vileda Professional Norway Site | Homepage",
+          "metrics": {
+            "title": "Vileda Professional Norway Site | Homepage",
+            "description": "",
+            "registry_domain": "vileda-professional.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/983048056",
+          "retrieved_at": "2026-11-05T21:10:58.971193Z",
+          "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "983048056"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+              "matched_organisation_number": "983048056"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+          "id": "purehelp-phone-983048056-a376bf1e430cf9ad",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "63 87 26 66",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/983048056",
+          "retrieved_at": "2026-11-05T21:10:58.971193Z",
+          "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "983048056"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+              "matched_organisation_number": "983048056"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+          "id": "purehelp-profile-983048056-a376bf1e430cf9ad",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "46.490",
+            "nace_description": "Wholesale of other household goods",
+            "town": "GARDERMOEN",
+            "zipcode": "2060",
+            "municipality": "ULLENSAKER",
+            "municipality_number": "3209",
+            "county": "Akershus",
+            "registration_date": "2001-03-14",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2001-03-14",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.vileda-professional.no"
+          }
+        },
+        {
+          "organisation_number": "983048056",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/983048056",
+          "retrieved_at": "2026-11-05T21:10:58.971193Z",
+          "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "983048056"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+              "matched_organisation_number": "983048056"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+          "id": "purehelp-workforce-983048056-a376bf1e430cf9ad",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 5,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1560,7 +1873,7 @@
     "company_name": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS is a private limited company operating in Engroshandel med andre husholdningsvarer. Latest accounts (2025): revenue NOK 38.7m, annual result NOK -1.7m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-15.4% YoY). Registered employees: 5. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS is a private limited company operating in Engroshandel med andre husholdningsvarer. Latest accounts (2025): revenue NOK 38.7m, annual result NOK -1.7m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-15.4% YoY). Registered employees: 5. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1576,7 +1889,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       },
@@ -1594,7 +1912,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       },
@@ -1612,7 +1935,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       },
@@ -1630,7 +1958,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       },
@@ -1648,7 +1981,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       },
@@ -1662,11 +2000,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/983048056/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/983048056",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+          "https://www.vileda-professional.no/"
+        ]
       },
       {
         "question": "changes",
@@ -1682,18 +2035,17 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/983048056",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/983048056/aar",
+          "https://purehelp.no/company/NO/983048056",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
           "https://www.vileda-professional.no/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2496,45 +2848,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-3cc6aa89f2a29fac937f8012",
-        "organisation_number": "983048056",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T08:57:02.318672Z",
-        "content_sha256": "98d667b3f3da8b8c76555f83efd5119f4d74ebae1646426bbe25f384e2928377",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "983048056",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 5",
-        "metrics": {
-          "workforce_value": 5,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-01-13"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-01-13",
-        "effective_at": "2026-01-13"
-      },
-      {
         "id": "registry-contact-3f5bcd3092f82e4e701d25fe",
         "organisation_number": "983048056",
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2553,14 +2873,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "983048056",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=983048056&size=1000",
-        "retrieved_at": "2026-10-05T08:57:06.480442Z",
+        "retrieved_at": "2026-09-29T10:23:38.915126Z",
         "content_sha256": "7026108c350727a551c876d05876d4adbab7dc8b79f90282020595a8846740af",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2582,14 +2901,13 @@
           "subunit_organisation_number": "983146511",
           "municipality": "LILLESTRØM",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "983048056",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/983048056",
-        "retrieved_at": "2026-10-05T08:57:05.773872Z",
+        "retrieved_at": "2026-09-29T10:23:38.026385Z",
         "content_sha256": "e2e650877a01c72b086f0dc8e21007f563144392209817c986653b83d65825ee",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2612,8 +2930,7 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-976e403ed600f547fb26ea76",
@@ -2621,7 +2938,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "976e403ed600f547fb26ea76cb45f3228077c98c49e084ff3980247df14eab64",
         "observed_at": "2026-09-15",
         "exact_entity": true,
@@ -2651,7 +2968,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "99e828cce82355fdc6bb5c817d30321b5fd2ffc77574842de35ca0c6a8399346",
         "observed_at": "2026-07-29",
         "exact_entity": true,
@@ -2681,7 +2998,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a9bd7174de7705acbc8998a41a6b96f87750fe71f90d14ba5801fe2472404055",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -2711,7 +3028,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bca3d33497c2c6de5b770d86c9ac6fb88fe569fb37e825ab3728fa4d3df0011c",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2741,7 +3058,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9f7333948ccede9b181f651630eaf9eca7113c49c3c2d8be1a1a8b96979e0755",
         "observed_at": "2025-07-23",
         "exact_entity": true,
@@ -2771,7 +3088,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b006319e92c4a73f04de88d65a1a61e4e8c42bb3e6fc6f96b54c102efec3bc1c",
         "observed_at": "2024-09-05",
         "exact_entity": true,
@@ -2801,7 +3118,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8cf01138363ae5c199536479c9eaabb3af934aca7641e6a7c63da017fab779b0",
         "observed_at": "2024-07-09",
         "exact_entity": true,
@@ -2831,7 +3148,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "deeea05496d81e9926bef7b0a082bebb22bcb6e2efbc3193f044a1484db3bc38",
         "observed_at": "2024-01-18",
         "exact_entity": true,
@@ -2861,7 +3178,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8059f989c6f43afade96d6a75a406009499bd963e6f87779968b1e6b173e5872",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2891,7 +3208,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0b4190dbb4ca2b6da40f16709d3215f830753065aa14a4d93c80180d01abcea8",
         "observed_at": "2023-06-26",
         "exact_entity": true,
@@ -2921,7 +3238,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "502ea07792e15e33a9a874a2c4099ce246da88b8017fc5a39fa3d3a561ed09da",
         "observed_at": "2022-08-16",
         "exact_entity": true,
@@ -2951,7 +3268,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "63d3490e8ee9beb15dbd83a12af043224a8e8606bec19c2c39211d91e2ec5942",
         "observed_at": "2022-07-09",
         "exact_entity": true,
@@ -2981,7 +3298,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c4fc4f6f6116e98efeea85286b5f922fa80de81e320566f9e661293b5200c6a6",
         "observed_at": "2022-03-16",
         "exact_entity": true,
@@ -3011,7 +3328,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1aa718ab5583459f40dd0d9954f700224dfe07f8d605091158ba678ead28ed2b",
         "observed_at": "2022-02-14",
         "exact_entity": true,
@@ -3041,7 +3358,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5352b5272647e82a89c96eef8854063dc753da291d25f3840dbdfb35472329d4",
         "observed_at": "2022-01-12",
         "exact_entity": true,
@@ -3071,7 +3388,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5d095a97a18de94c84a5c168f8d7c8f4f73291c0e9049a3dd95b7114a37e82a4",
         "observed_at": "2021-12-27",
         "exact_entity": true,
@@ -3101,7 +3418,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "09828a7375311412bd67b75ec9bedaf21e19e826811fba30abfb05267ea89782",
         "observed_at": "2021-06-19",
         "exact_entity": true,
@@ -3131,7 +3448,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cc2e9664133173e87dbd663f93d4a4952418e67b4ff650b9fe75975deb2a0dbf",
         "observed_at": "2020-12-21",
         "exact_entity": true,
@@ -3161,7 +3478,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bbb3fbf43a7d8d8029637cbf0dbe21c038d20248ebe73802163832765f2525d1",
         "observed_at": "2020-06-25",
         "exact_entity": true,
@@ -3191,7 +3508,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "420a669fffae06b17abc746fe28f76ae027f239274ed931613c3b059ba97c6c3",
         "observed_at": "2020-01-01",
         "exact_entity": true,
@@ -3214,8 +3531,356 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-b61d94e821925ff45ecb71f5",
+        "organisation_number": "983048056",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "6379eb155936c0d16e779b6c5416e6a3cdec1bbe24deba6b669764d2d49c6c20",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "983048056",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-29",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-29",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000626578&amp;sokeverdi=983048056&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-29 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-3a2d80bae2d5298754117515",
+        "organisation_number": "983048056",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "0284a5a38601d19201b7fa0341e236d1ad7b0cca1ff2fa95d46b9f5f690e048a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "983048056",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-23",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-23",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000618586&amp;sokeverdi=983048056&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-23 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-81d5c072ab1481131c40e79b",
+        "organisation_number": "983048056",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "8f46d74adc423f675ba173bbbc2c97058b43843cde0e335357377d3cdc4c6c40",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "983048056",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-04-05",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-04-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000168434&amp;sokeverdi=983048056&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-04-05 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-3cc6aa89f2a29fac937f8012",
+        "organisation_number": "983048056",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/983048056",
+        "retrieved_at": "2026-09-29T10:23:32.595937Z",
+        "content_sha256": "98d667b3f3da8b8c76555f83efd5119f4d74ebae1646426bbe25f384e2928377",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "983048056",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 5",
+        "metrics": {
+          "workforce_value": 5,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-01-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-01-13",
+        "effective_at": "2026-01-13"
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+        "retrieved_at": "2026-10-31T18:18:36.927589Z",
+        "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-metrics-983048056-6b5284484d48e1d3",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Freudenberg Home And Cleaning solutions AS Google profile: rating 2/5, 1 ratings.",
+        "metrics": {
+          "rating": 2,
+          "review_count": 1,
+          "scale": 5,
+          "place_id": "ChIJGZJqomp7QUYRRfg-xN8cGLc"
+        }
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+        "retrieved_at": "2026-10-31T18:18:36.927589Z",
+        "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-review-summary-983048056-6b5284484d48e1d3",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Freudenberg Home And Cleaning solutions AS is rated 2/5 from 1 Google reviews.",
+        "metrics": {
+          "rating": 2,
+          "review_count": 1,
+          "scale": 5,
+          "place_id": "ChIJGZJqomp7QUYRRfg-xN8cGLc"
+        }
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJGZJqomp7QUYRRfg-xN8cGLc",
+        "retrieved_at": "2026-10-31T18:18:36.927589Z",
+        "content_sha256": "6b5284484d48e1d3f9845bcca502a0accaf8038feb2e1dec0d72fab94b8b9efa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "negative",
+        "id": "gplaces-sentiment-983048056-6b5284484d48e1d3",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 2/5 from 1 reviews implies negative sentiment.",
+        "metrics": {
+          "rating": 2,
+          "review_count": 1,
+          "scale": 5
+        }
+      },
+      {
+        "id": "registry-site-983048056-7f69d2dc4afcc43a",
+        "organisation_number": "983048056",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://www.vileda-professional.no/",
+        "retrieved_at": "2026-10-09T13:58:09.790399Z",
+        "content_sha256": "7f69d2dc4afcc43ad70d296315fedaccc8b1aae320686dacce98e9249612f95c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "vileda-professional.no",
+            "matched_organisation_number": "983048056",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares vileda-professional.no as the website of organisation 983048056; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Vileda Professional Norway Site | Homepage",
+        "metrics": {
+          "title": "Vileda Professional Norway Site | Homepage",
+          "description": "",
+          "registry_domain": "vileda-professional.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/983048056",
+        "retrieved_at": "2026-11-05T21:10:58.971193Z",
+        "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "983048056"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+            "matched_organisation_number": "983048056"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+        "id": "purehelp-phone-983048056-a376bf1e430cf9ad",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "63 87 26 66",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/983048056",
+        "retrieved_at": "2026-11-05T21:10:58.971193Z",
+        "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "983048056"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+            "matched_organisation_number": "983048056"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+        "id": "purehelp-profile-983048056-a376bf1e430cf9ad",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "46.490",
+          "nace_description": "Wholesale of other household goods",
+          "town": "GARDERMOEN",
+          "zipcode": "2060",
+          "municipality": "ULLENSAKER",
+          "municipality_number": "3209",
+          "county": "Akershus",
+          "registration_date": "2001-03-14",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2001-03-14",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.vileda-professional.no"
+        }
+      },
+      {
+        "organisation_number": "983048056",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/983048056",
+        "retrieved_at": "2026-11-05T21:10:58.971193Z",
+        "content_sha256": "697a8822cf9f475dbe10ea227e17a7ccdb831db50ea2c8278f3ca601d6746a0e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "983048056"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+            "matched_organisation_number": "983048056"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-983048056.orgNumber=983048056;name=FREUDENBERG HOME AND CLEANING SOLUTIONS AS",
+        "id": "purehelp-workforce-983048056-a376bf1e430cf9ad",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 5,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:45.834842+00:00"
+  "generated_at": "2026-11-06T05:27:37.690824+00:00"
 }

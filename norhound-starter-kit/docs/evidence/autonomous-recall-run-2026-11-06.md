@@ -38,6 +38,27 @@ Open gaps (organisations): social_profile 199, dated_news 129, hiring 59.
 | 12 | Evidence docs + commits on `autoresearch/narrow/signalpost` | docs | running |
 | 13 | New review/directory candidates: nabonytt.no, gullkantet.no, omtal.no, orgn.no, norskeanmeldelser.no | research+network | probing (robots all allow `/`; `Content-Signal: search=yes, ai-train=no, use=reference`) |
 | 14 | OpenStreetMap social handles via `ref:NO:orgnr` | network | probing (overpass instance unstable) |
+| 15 | **proff.no compliance purge** (403 from this host, ToS forbids systematic retrieval, rows carried third-party revenue/profit) | code+docs | **done — see `docs/evidence/compliance-purge-and-workforce-2026-11-06.md`** |
+| 16 | **Official annual-report workforce, deeper OCR** for the 41 companies with no workforce signal | code+network | **done — 16 accepted, 22 no phrase, 3 conflicts abstained** |
+| 17 | Dedupe repeated claims (588 annual-report workforce rows fetched twice) | code | **done — `--dedupe-latest` in the merge step** |
+| 18 | Company-site review-widget probe (are there more keyless ratings?) | network | **done — 11/80 sites mention a widget, 1/80 has a machine-readable rating; route closed** |
+
+## Result of tracks 15-17 (compliance purge + workforce + dedupe)
+
+| metric | after track 1 | after tracks 15-17 |
+|---|---|---|
+| recall_proxy_50 | 40.3333 | **40.2583** |
+| workforce_jobs | 0.959 | **0.975** |
+| ratings_reviews | 0.453 | 0.428 |
+| entity_precision | 1.0 | **1.0** |
+| wrong_entity_publications | 0 | **0** |
+| published observations | 42,781 | 42,683 |
+
+The small proxy drop is deliberate: the 25 companies that lose a `review_summary`
+row never had a customer review, only a proff.no credit assessment carrying
+third-party revenue/profit figures. See
+`docs/evidence/compliance-purge-and-workforce-2026-11-06.md`.
+
 
 ## Result of track 1 (Purehelp)
 
@@ -56,18 +77,29 @@ Evidence: `docs/evidence/purehelp-directory-source-2026-11-06.md`,
 
 With the official Recall = mean of the six field recalls, only three fields are still
 below 1.0: `workforce_jobs` 0.959 (41 orgs left, all without any employee count in
-the register, the directory or the filed accounts), `ratings_reviews` 0.453 and
+the register, the directory or the filed accounts), `ratings_reviews` 0.428 and
 `sentiment` 0.428. A second independent ratings source is the only lever worth
 more than one proxy point, so the remaining search is aimed there.
+
+After tracks 15-17 the remaining proxy points are: `workforce_jobs` 0.975 (25
+orgs left, none of them states an employee count in the register, the annual
+reports or on their site), `ratings_reviews` 0.428 and `sentiment` 0.428 — both
+at the keyless ceiling (Fagfolkguiden is the only reachable keyless rating
+source, with 32 rated companies; two independent research passes found no
+second one, see `docs/evidence/keyless-review-sources.md`).
 
 ## Rights guardrails applied
 
 - Search results and directories are candidate discovery only; published evidence must
   come from the company's own site or an official API.
 - Robots-disallowed hosts are never published (Trustpilot excluded).
+- Hosts whose permission state can no longer be re-verified are never published
+  (proff.no answers every path, robots.txt included, with a CloudFront 403, and its
+  terms forbid systematic retrieval).
 - Every observation needs: exact org number, source URL, retrieval time, reporting /
   effective date, content hash, extraction method.
-- Financial values are copied verbatim from BRREG; nothing is estimated.
+- Financial values are copied verbatim from BRREG; nothing is estimated, and no
+  third-party revenue/profit figure is published.
 
 ## Caches produced this run
 
@@ -78,6 +110,9 @@ more than one proxy point, so the remaining search is aimed there.
 - `/tmp/opencode/caches/targets.json` — 971 orgs with at least one missing field
 - `/tmp/opencode/caches/deepcrawl.jsonl` — deep re-crawl result
 - `/tmp/opencode/caches/probe-repair.jsonl` — identity probe result
+- `/tmp/opencode/caches/missing-workforce.jsonl` — 16 official annual-report workforce rows
+- `/tmp/opencode/caches/review-widget-probe.json` — 80 identity-gated sites scanned for review widgets
+- `/tmp/opencode/caches/feeds/` — 272 publisher feeds fetched, 160 item matches, 17 orgs matched (low yield)
 
 ## Dead ends recorded
 
@@ -86,3 +121,9 @@ more than one proxy point, so the remaining search is aimed there.
 - 1881.no: candidate-only (ToS forbids extraction); own-site candidates only added
   ~10 orgs. Weak lever.
 - Finn.no: user decision — documented, not integrated (`docs/evidence/whyfinndoesntwork.md`).
+- Company-site review widgets: 11 of 80 gated sites mention a widget, only 1 exposes a
+  machine-readable aggregate rating — not a route to more ratings.
+- Publisher RSS discovery over 188 Norwegian news domains: 272 feeds fetched, 160 item
+  matches, 17 orgs matched, mostly generic-name false positives.
+- proff.no: unreachable (403) and ToS-forbidden for systematic retrieval; excluded.
+

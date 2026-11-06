@@ -549,75 +549,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "957523730",
-          "platform": "company_site",
-          "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-957523730-dc3ec80cc0a4575d",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 2,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "js_fallback_candidate",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-ef27630925fbd5b79804d0a5",
-          "organisation_number": "957523730",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T08:50:36.792157Z",
-          "content_sha256": "7c8694511f1aa98d23a6dfbd1eb08acb79fcf3d62f71a083fa68abfd91e0ed4f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "957523730",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 5",
-          "metrics": {
-            "workforce_value": 5,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2024-08-13"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2024-08-13",
-          "effective_at": "2024-08-13"
-        },
-        {
           "id": "registry-contact-1dee7e8dbc484ad36bb26ca1",
           "organisation_number": "957523730",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -636,8 +574,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-b505a318c55adc9257872fc5",
@@ -645,8 +582,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -665,15 +602,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "957523730",
           "platform": "company_site",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -691,14 +627,13 @@
           "evidence_span": "Salangen Boligstiftelse - HJEM — Salangen Boligstiftelse leier ut leiligheter, hybler og omsorgsboliger i Salangen.",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "957523730",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
-          "retrieved_at": "2026-10-05T08:50:40.838593Z",
+          "retrieved_at": "2026-09-29T10:17:42.365227Z",
           "content_sha256": "ca376a108c338326b3f0a7ab618c45f32bd108154db9e295db14e482104a10e7",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -720,18 +655,17 @@
             "subunit_organisation_number": "985193517",
             "municipality": "SALANGEN",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
-          "id": "sitemap-page-2147365b1a41f9c7a4b80474",
+          "id": "sitemap-page-a4a079dfe5aceaa139820ef7",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -743,23 +677,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/ledige.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-b3ff306f26f5a4f706806765",
+          "id": "sitemap-page-165e34cd0aa81598f485336a",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -771,23 +705,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/husleieloven.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-3a202c485a3da1d508859563",
+          "id": "sitemap-page-a84ba20102a3c5626f7161d4",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -799,23 +733,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-08f478a4f658f09e50f568b7",
+          "id": "sitemap-page-6aafa4e73ba815e5b1deb8c8",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -827,23 +761,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/alle.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-ade3caab39a10306e0729272",
+          "id": "sitemap-page-33d77076365ac3735d1391b8",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -855,23 +789,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/adresseendring.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-a7084e6a970aa25a3b027768",
+          "id": "sitemap-page-608291792927daa956f2de10",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -883,23 +817,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/partenes-ansvar.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-ffbb9a6c01d85f66ba82e568",
+          "id": "sitemap-page-af00830e205bb606a7ea19a6",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -911,23 +845,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-3b18f20b3937b30a243ed16c",
+          "id": "sitemap-page-d00deff0515131462b87cc8a",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -939,23 +873,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/kontakt.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-b9c1de80c7c7157bcfa7a4c5",
+          "id": "sitemap-page-a8f5025b0386f8004e8e9add",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -967,23 +901,23 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/index.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-c926d84a6e6abf7379cb2f72",
+          "id": "sitemap-page-a9b24c932301ec07125c2adc",
           "organisation_number": "957523730",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.salbos.no/",
-          "retrieved_at": "2026-10-05T08:50:42.619713Z",
-          "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-          "observed_at": "2026-10-05",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-09-14",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -995,10 +929,10 @@
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-10-05",
+          "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-09-14",
           "metrics": {
             "page_url": "https://www.salbos.no/salangen-kommune.html",
-            "lastmod": "2026-10-05",
+            "lastmod": "2026-09-14",
             "interpretation": "Dated official-site page from the site's own sitemap."
           },
           "strategy": "sitemap_lastmod"
@@ -1009,7 +943,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "694ebef78b60fa054943e4bab5e71fe4ed2b635caf2bf5261a0b723d49a82801",
           "observed_at": "2026-07-21",
           "exact_entity": true,
@@ -1039,7 +973,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c1142126feb1d7f82ffddb6fb2c78d5751422bca792e7e321de37af41b2a2764",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1069,7 +1003,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c35e9e912f493d520e4d5fc7000e44b070553cc7549591a9cf53677d51c0b921",
           "observed_at": "2025-07-12",
           "exact_entity": true,
@@ -1099,7 +1033,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "439cf928081e86767f9fe59691b672e159a491a1787f54d3a3a57c1a48ce0844",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -1129,7 +1063,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "718b118cdcb0aafb72cd697eeb58c6e0d328c501753bad1ace5b3a55bbbf5f59",
           "observed_at": "2024-08-03",
           "exact_entity": true,
@@ -1159,7 +1093,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5d1d2d87caf61d0ae4743fa46c99a67eadfd3e031284253fb104d36a53411a50",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -1189,7 +1123,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "303efde750d3809fe8ef8304c9f34e0b21eb34eb408835903150a6c260382572",
           "observed_at": "2024-01-13",
           "exact_entity": true,
@@ -1219,7 +1153,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1f223c126d751043fb448e369dee76ae3866d3aa61ad929378dc17e408c59663",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1249,7 +1183,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7fae4ba9aba495cea5ae76be0a6c592ec9221950f4f61456b7198ad8ba61d9d3",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1279,7 +1213,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bf426fb96b3e79fa382403fa048b33e9861eb7d03c9c26f5f67994ad4b780a39",
           "observed_at": "2023-08-14",
           "exact_entity": true,
@@ -1309,7 +1243,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "04f162bf34552bbe9a9963fa2abe48c0a56045786b765cfd77d3a70a6f93390e",
           "observed_at": "2023-08-05",
           "exact_entity": true,
@@ -1339,7 +1273,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9f6576948b946c840a87026bb901b57fcd9e77b94dd68a8a9950c89c9a7068ff",
           "observed_at": "2022-08-04",
           "exact_entity": true,
@@ -1369,7 +1303,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4af1561900d27cf941c19f8877f7f210ecf2d6c275caeb37675558a498bd7e24",
           "observed_at": "2022-07-12",
           "exact_entity": true,
@@ -1399,7 +1333,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8be1b712fcda0a5e0531167733107196b133e4065e15f182929cfa989cfb4aed",
           "observed_at": "2022-01-12",
           "exact_entity": true,
@@ -1429,7 +1363,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8d15563048ddd6f3167a2ba74e21af4c84424a012e577f8827ae44570e56f50b",
           "observed_at": "2021-10-05",
           "exact_entity": true,
@@ -1459,7 +1393,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "33141a873c2e5eb35b88ef8fdf6ac3c1a1f8b9b3acb9fc9d6459b97bd99d96ed",
           "observed_at": "2021-09-14",
           "exact_entity": true,
@@ -1489,7 +1423,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "74148a9e56e503b83470b3549cc8ac7d05cf94e34e648e11cabbc75b539fd352",
           "observed_at": "2021-08-12",
           "exact_entity": true,
@@ -1519,7 +1453,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4b9977126f517fc52990736c0289949d1161ddcf75c76b6ae9471d730ead8c9a",
           "observed_at": "2021-07-13",
           "exact_entity": true,
@@ -1549,7 +1483,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7ffdf2a507971a35631d278480b8cd580bfbd9c10c475a2b268773efbab9d67d",
           "observed_at": "2021-06-14",
           "exact_entity": true,
@@ -1579,7 +1513,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0c46a6ef9062902995955ef6577beadbef7103cbabaef11ba46c93435caf81f4",
           "observed_at": "2020-09-28",
           "exact_entity": true,
@@ -1604,8 +1538,95 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-74998a14027103b17c776c35",
           "organisation_number": "957523730",
-          "retrieved_at": "2026-10-02T19:17:05.994104Z",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "d12f680734d6d029194ef661d6b28877d4dfb99301b96256c336ecece76c8c87",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "957523730",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-21",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-21",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-21 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-562af48ec56651a228d02c18",
+          "organisation_number": "957523730",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "aec8412849314a387171b0d9eac23cf3438df46ff5c2394cc1156f61c8297be4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "957523730",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-06-24",
+          "signal": {
+            "title": "Styre",
+            "date": "2026-06-24",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2026-06-24 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-39604fa8da29b34917de2059",
+          "organisation_number": "957523730",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "fd5695f6f8f102a12d5647e96a2e5dcb2517c51344e1c0d265997573fe044280",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "957523730",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-12",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-12",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-12 (BRREG official announcement)"
+        },
+        {
+          "organisation_number": "957523730",
+          "retrieved_at": "2026-10-24T19:08:33.250900Z",
           "content_sha256": "bd33a588857d052aac428f1e02b9c9470a08c9ecc7d04e6f01ab37b9f7e35f83",
           "exact_entity": true,
           "identity_proof": [
@@ -1634,15 +1655,356 @@
               "wikidata.inception": "2007-02-20",
               "wikidata.employees": "5"
             }
+          }
+        },
+        {
+          "id": "registry-workforce-ef27630925fbd5b79804d0a5",
+          "organisation_number": "957523730",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
+          "retrieved_at": "2026-09-29T10:17:25.375784Z",
+          "content_sha256": "7c8694511f1aa98d23a6dfbd1eb08acb79fcf3d62f71a083fa68abfd91e0ed4f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "957523730",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 5",
+          "metrics": {
+            "workforce_value": 5,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2024-08-13"
           },
-          "observed_at": "2026-10-02"
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2024-08-13",
+          "effective_at": "2024-08-13"
+        },
+        {
+          "id": "sitemap-page-63ee138bac70d6dfb4439ce9",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/ledige.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-b1224e704a0517cbcab10ab6",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/husleieloven.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-27d204c480a993faab8bcceb",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-df64590b4f019d2526e88c9f",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/alle.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-d3965424a0840e2f476bd39c",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/adresseendring.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-1b8d2526a4bf932c214d0f3e",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/partenes-ansvar.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-2dd57c303680a23273662cb3",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-3733804192cf95e1ada4f107",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/kontakt.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-db0d62c5043097520eb45f0c",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/index.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-37c8c0cf81f1aa49db762dd5",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-10-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-10-19",
+          "metrics": {
+            "page_url": "https://www.salbos.no/salangen-kommune.html",
+            "lastmod": "2026-10-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "registry-update-4985d55afe7ae2916cc8c4e9",
+          "organisation_number": "957523730",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
+          "retrieved_at": "2026-10-28T04:19:27.620683Z",
+          "content_sha256": "4985d55afe7ae2916cc8c4e90e78357a23e45dd27b1a7ade174f209cecbe4a1f",
+          "observed_at": "2026-10-13",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "957523730",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-13: Endring",
+          "metrics": {
+            "date": "2026-10-13",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
         },
         {
           "organisation_number": "957523730",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-          "retrieved_at": "2026-10-05T14:31:28.113724Z",
-          "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+          "retrieved_at": "2026-10-31T18:17:49.829829Z",
+          "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1655,7 +2017,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-metrics-957523730-2c7ab1e58159b5d1",
+          "id": "gplaces-metrics-957523730-93f9f408cae1a496",
           "signal_type": "profile_metrics",
           "strategy": "social_profile_metrics",
           "evidence_span": "Salangen Boligstiftelse Google profile: rating 5/5, 1 ratings.",
@@ -1670,8 +2032,8 @@
           "organisation_number": "957523730",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-          "retrieved_at": "2026-10-05T14:31:28.113724Z",
-          "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+          "retrieved_at": "2026-10-31T18:17:49.829829Z",
+          "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1684,7 +2046,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-957523730-2c7ab1e58159b5d1",
+          "id": "gplaces-review-summary-957523730-93f9f408cae1a496",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Salangen Boligstiftelse is rated 5/5 from 1 Google reviews.",
@@ -1699,8 +2061,8 @@
           "organisation_number": "957523730",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-          "retrieved_at": "2026-10-05T14:31:28.113724Z",
-          "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+          "retrieved_at": "2026-10-31T18:17:49.829829Z",
+          "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1713,7 +2075,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-957523730-2c7ab1e58159b5d1",
+          "id": "gplaces-sentiment-957523730-93f9f408cae1a496",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1723,6 +2085,457 @@
             "rating": 5,
             "review_count": 1,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T12:44:35.324037Z",
+          "content_sha256": "5b350e6f8dd0333314c22b7094b48d6ed069a24246350970056bd58e24d7023c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-957523730-5b350e6f8dd03333",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 2,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "id": "sitemap-page-54e6a5efe658d175c8240688",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/ledige.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-b433520e64bdd77247dd9d5f",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/husleieloven.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-798ba2812fab11ff3b9c6b42",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-622dfeddac0fc26b60123624",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/alle.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-f74926ef1c0ab1e5cb674898",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/adresseendring.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-d2400f0c74e7e8476be995a8",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/partenes-ansvar.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-2447c59ae6e0824d858bc660",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ff9fddf73a2f6e90e080a77b",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/kontakt.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-f92bb9993f3883877b1da928",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/index.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-62b7ae18ba1062f675f1723a",
+          "organisation_number": "957523730",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.salbos.no/",
+          "retrieved_at": "2026-09-29T10:17:44.346697Z",
+          "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+          "observed_at": "2026-11-02",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-11-02",
+          "metrics": {
+            "page_url": "https://www.salbos.no/salangen-kommune.html",
+            "lastmod": "2026-11-02",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "957523730",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/957523730",
+          "retrieved_at": "2026-11-05T21:10:30.264044Z",
+          "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "957523730"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "SALANGEN BOLIGSTIFTELSE",
+              "matched_organisation_number": "957523730"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+          "id": "purehelp-email-957523730-41f260ca54879278",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@salbos.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "957523730",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/957523730",
+          "retrieved_at": "2026-11-05T21:10:30.264044Z",
+          "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "957523730"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "SALANGEN BOLIGSTIFTELSE",
+              "matched_organisation_number": "957523730"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+          "id": "purehelp-phone-957523730-41f260ca54879278",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "77 17 11 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "957523730",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/957523730",
+          "retrieved_at": "2026-11-05T21:10:30.264044Z",
+          "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "957523730"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "SALANGEN BOLIGSTIFTELSE",
+              "matched_organisation_number": "957523730"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+          "id": "purehelp-profile-957523730-41f260ca54879278",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "STI",
+            "legal_form_description": "Foundation",
+            "nace_code": "68.200",
+            "nace_description": "Renting and operating of own or leased real estate",
+            "town": "SJØVEGAN",
+            "zipcode": "9350",
+            "municipality": "SALANGEN",
+            "municipality_number": "5522",
+            "county": "Troms",
+            "registration_date": "1995-02-19",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-02-19",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.salbos.no"
+          }
+        },
+        {
+          "organisation_number": "957523730",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/957523730",
+          "retrieved_at": "2026-11-05T21:10:30.264044Z",
+          "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "957523730"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "SALANGEN BOLIGSTIFTELSE",
+              "matched_organisation_number": "957523730"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+          "id": "purehelp-workforce-957523730-41f260ca54879278",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 6,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1747,7 +2560,7 @@
     "company_name": "SALANGEN BOLIGSTIFTELSE",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "SALANGEN BOLIGSTIFTELSE is a foundation operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): revenue NOK 9.7m, annual result NOK 866.3k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.1% YoY). Registered employees: 5. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "SALANGEN BOLIGSTIFTELSE is a foundation operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): revenue NOK 9.7m, annual result NOK 866.3k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-11.1% YoY). Registered employees: 5. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1762,8 +2575,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       },
       {
@@ -1779,8 +2598,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       },
       {
@@ -1796,8 +2621,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       },
       {
@@ -1813,8 +2644,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       },
       {
@@ -1830,8 +2667,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       },
       {
@@ -1844,11 +2687,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/957523730/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
+        ]
       },
       {
         "question": "changes",
@@ -1863,18 +2721,18 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/957523730",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/957523730/aar",
+          "https://purehelp.no/company/NO/957523730",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.salbos.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
+          "https://www.salbos.no/",
+          "https://www.wikidata.org/wiki/Q127059879"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2413,75 +3271,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "957523730",
-        "platform": "company_site",
-        "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-957523730-dc3ec80cc0a4575d",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 2,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "js_fallback_candidate",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-ef27630925fbd5b79804d0a5",
-        "organisation_number": "957523730",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T08:50:36.792157Z",
-        "content_sha256": "7c8694511f1aa98d23a6dfbd1eb08acb79fcf3d62f71a083fa68abfd91e0ed4f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "957523730",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 5",
-        "metrics": {
-          "workforce_value": 5,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2024-08-13"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2024-08-13",
-        "effective_at": "2024-08-13"
-      },
-      {
         "id": "registry-contact-1dee7e8dbc484ad36bb26ca1",
         "organisation_number": "957523730",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2500,8 +3296,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-b505a318c55adc9257872fc5",
@@ -2509,8 +3304,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2529,15 +3324,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "957523730",
         "platform": "company_site",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2555,14 +3349,13 @@
         "evidence_span": "Salangen Boligstiftelse - HJEM — Salangen Boligstiftelse leier ut leiligheter, hybler og omsorgsboliger i Salangen.",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "957523730",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957523730&size=1000",
-        "retrieved_at": "2026-10-05T08:50:40.838593Z",
+        "retrieved_at": "2026-09-29T10:17:42.365227Z",
         "content_sha256": "ca376a108c338326b3f0a7ab618c45f32bd108154db9e295db14e482104a10e7",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2584,18 +3377,17 @@
           "subunit_organisation_number": "985193517",
           "municipality": "SALANGEN",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
-        "id": "sitemap-page-2147365b1a41f9c7a4b80474",
+        "id": "sitemap-page-a4a079dfe5aceaa139820ef7",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2607,23 +3399,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/ledige.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-b3ff306f26f5a4f706806765",
+        "id": "sitemap-page-165e34cd0aa81598f485336a",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2635,23 +3427,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/husleieloven.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-3a202c485a3da1d508859563",
+        "id": "sitemap-page-a84ba20102a3c5626f7161d4",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2663,23 +3455,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-08f478a4f658f09e50f568b7",
+        "id": "sitemap-page-6aafa4e73ba815e5b1deb8c8",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2691,23 +3483,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/alle.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-ade3caab39a10306e0729272",
+        "id": "sitemap-page-33d77076365ac3735d1391b8",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2719,23 +3511,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/adresseendring.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-a7084e6a970aa25a3b027768",
+        "id": "sitemap-page-608291792927daa956f2de10",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2747,23 +3539,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/partenes-ansvar.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-ffbb9a6c01d85f66ba82e568",
+        "id": "sitemap-page-af00830e205bb606a7ea19a6",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2775,23 +3567,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-3b18f20b3937b30a243ed16c",
+        "id": "sitemap-page-d00deff0515131462b87cc8a",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2803,23 +3595,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/kontakt.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-b9c1de80c7c7157bcfa7a4c5",
+        "id": "sitemap-page-a8f5025b0386f8004e8e9add",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2831,23 +3623,23 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/index.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-c926d84a6e6abf7379cb2f72",
+        "id": "sitemap-page-a9b24c932301ec07125c2adc",
         "organisation_number": "957523730",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.salbos.no/",
-        "retrieved_at": "2026-10-05T08:50:42.619713Z",
-        "content_sha256": "dc3ec80cc0a4575d3d1cc6500e78847c3c564b04e9ef1dca2e14f3bd69a15462",
-        "observed_at": "2026-10-05",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-09-14",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2859,10 +3651,10 @@
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-10-05",
+        "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-09-14",
         "metrics": {
           "page_url": "https://www.salbos.no/salangen-kommune.html",
-          "lastmod": "2026-10-05",
+          "lastmod": "2026-09-14",
           "interpretation": "Dated official-site page from the site's own sitemap."
         },
         "strategy": "sitemap_lastmod"
@@ -2873,7 +3665,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "694ebef78b60fa054943e4bab5e71fe4ed2b635caf2bf5261a0b723d49a82801",
         "observed_at": "2026-07-21",
         "exact_entity": true,
@@ -2903,7 +3695,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c1142126feb1d7f82ffddb6fb2c78d5751422bca792e7e321de37af41b2a2764",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2933,7 +3725,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c35e9e912f493d520e4d5fc7000e44b070553cc7549591a9cf53677d51c0b921",
         "observed_at": "2025-07-12",
         "exact_entity": true,
@@ -2963,7 +3755,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "439cf928081e86767f9fe59691b672e159a491a1787f54d3a3a57c1a48ce0844",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -2993,7 +3785,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "718b118cdcb0aafb72cd697eeb58c6e0d328c501753bad1ace5b3a55bbbf5f59",
         "observed_at": "2024-08-03",
         "exact_entity": true,
@@ -3023,7 +3815,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5d1d2d87caf61d0ae4743fa46c99a67eadfd3e031284253fb104d36a53411a50",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -3053,7 +3845,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "303efde750d3809fe8ef8304c9f34e0b21eb34eb408835903150a6c260382572",
         "observed_at": "2024-01-13",
         "exact_entity": true,
@@ -3083,7 +3875,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1f223c126d751043fb448e369dee76ae3866d3aa61ad929378dc17e408c59663",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3113,7 +3905,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7fae4ba9aba495cea5ae76be0a6c592ec9221950f4f61456b7198ad8ba61d9d3",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -3143,7 +3935,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bf426fb96b3e79fa382403fa048b33e9861eb7d03c9c26f5f67994ad4b780a39",
         "observed_at": "2023-08-14",
         "exact_entity": true,
@@ -3173,7 +3965,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "04f162bf34552bbe9a9963fa2abe48c0a56045786b765cfd77d3a70a6f93390e",
         "observed_at": "2023-08-05",
         "exact_entity": true,
@@ -3203,7 +3995,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9f6576948b946c840a87026bb901b57fcd9e77b94dd68a8a9950c89c9a7068ff",
         "observed_at": "2022-08-04",
         "exact_entity": true,
@@ -3233,7 +4025,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4af1561900d27cf941c19f8877f7f210ecf2d6c275caeb37675558a498bd7e24",
         "observed_at": "2022-07-12",
         "exact_entity": true,
@@ -3263,7 +4055,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8be1b712fcda0a5e0531167733107196b133e4065e15f182929cfa989cfb4aed",
         "observed_at": "2022-01-12",
         "exact_entity": true,
@@ -3293,7 +4085,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8d15563048ddd6f3167a2ba74e21af4c84424a012e577f8827ae44570e56f50b",
         "observed_at": "2021-10-05",
         "exact_entity": true,
@@ -3323,7 +4115,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "33141a873c2e5eb35b88ef8fdf6ac3c1a1f8b9b3acb9fc9d6459b97bd99d96ed",
         "observed_at": "2021-09-14",
         "exact_entity": true,
@@ -3353,7 +4145,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "74148a9e56e503b83470b3549cc8ac7d05cf94e34e648e11cabbc75b539fd352",
         "observed_at": "2021-08-12",
         "exact_entity": true,
@@ -3383,7 +4175,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4b9977126f517fc52990736c0289949d1161ddcf75c76b6ae9471d730ead8c9a",
         "observed_at": "2021-07-13",
         "exact_entity": true,
@@ -3413,7 +4205,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7ffdf2a507971a35631d278480b8cd580bfbd9c10c475a2b268773efbab9d67d",
         "observed_at": "2021-06-14",
         "exact_entity": true,
@@ -3443,7 +4235,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0c46a6ef9062902995955ef6577beadbef7103cbabaef11ba46c93435caf81f4",
         "observed_at": "2020-09-28",
         "exact_entity": true,
@@ -3468,8 +4260,95 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-74998a14027103b17c776c35",
         "organisation_number": "957523730",
-        "retrieved_at": "2026-10-02T19:17:05.994104Z",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "d12f680734d6d029194ef661d6b28877d4dfb99301b96256c336ecece76c8c87",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "957523730",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-21",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-21",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000580028&amp;sokeverdi=957523730&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-21 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-562af48ec56651a228d02c18",
+        "organisation_number": "957523730",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "aec8412849314a387171b0d9eac23cf3438df46ff5c2394cc1156f61c8297be4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "957523730",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-06-24",
+        "signal": {
+          "title": "Styre",
+          "date": "2026-06-24",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000421352&amp;sokeverdi=957523730&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2026-06-24 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-39604fa8da29b34917de2059",
+        "organisation_number": "957523730",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "fd5695f6f8f102a12d5647e96a2e5dcb2517c51344e1c0d265997573fe044280",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "957523730",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-12",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-12",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000576674&amp;sokeverdi=957523730&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-12 (BRREG official announcement)"
+      },
+      {
+        "organisation_number": "957523730",
+        "retrieved_at": "2026-10-24T19:08:33.250900Z",
         "content_sha256": "bd33a588857d052aac428f1e02b9c9470a08c9ecc7d04e6f01ab37b9f7e35f83",
         "exact_entity": true,
         "identity_proof": [
@@ -3498,15 +4377,356 @@
             "wikidata.inception": "2007-02-20",
             "wikidata.employees": "5"
           }
+        }
+      },
+      {
+        "id": "registry-workforce-ef27630925fbd5b79804d0a5",
+        "organisation_number": "957523730",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
+        "retrieved_at": "2026-09-29T10:17:25.375784Z",
+        "content_sha256": "7c8694511f1aa98d23a6dfbd1eb08acb79fcf3d62f71a083fa68abfd91e0ed4f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "957523730",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 5",
+        "metrics": {
+          "workforce_value": 5,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2024-08-13"
         },
-        "observed_at": "2026-10-02"
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2024-08-13",
+        "effective_at": "2024-08-13"
+      },
+      {
+        "id": "sitemap-page-63ee138bac70d6dfb4439ce9",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/ledige.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-b1224e704a0517cbcab10ab6",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/husleieloven.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-27d204c480a993faab8bcceb",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-df64590b4f019d2526e88c9f",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/alle.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-d3965424a0840e2f476bd39c",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/adresseendring.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-1b8d2526a4bf932c214d0f3e",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/partenes-ansvar.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-2dd57c303680a23273662cb3",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-3733804192cf95e1ada4f107",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/kontakt.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-db0d62c5043097520eb45f0c",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/index.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-37c8c0cf81f1aa49db762dd5",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-10-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-10-19",
+        "metrics": {
+          "page_url": "https://www.salbos.no/salangen-kommune.html",
+          "lastmod": "2026-10-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "registry-update-4985d55afe7ae2916cc8c4e9",
+        "organisation_number": "957523730",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957523730",
+        "retrieved_at": "2026-10-28T04:19:27.620683Z",
+        "content_sha256": "4985d55afe7ae2916cc8c4e90e78357a23e45dd27b1a7ade174f209cecbe4a1f",
+        "observed_at": "2026-10-13",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "957523730",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-13: Endring",
+        "metrics": {
+          "date": "2026-10-13",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
       },
       {
         "organisation_number": "957523730",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-        "retrieved_at": "2026-10-05T14:31:28.113724Z",
-        "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+        "retrieved_at": "2026-10-31T18:17:49.829829Z",
+        "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3519,7 +4739,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-metrics-957523730-2c7ab1e58159b5d1",
+        "id": "gplaces-metrics-957523730-93f9f408cae1a496",
         "signal_type": "profile_metrics",
         "strategy": "social_profile_metrics",
         "evidence_span": "Salangen Boligstiftelse Google profile: rating 5/5, 1 ratings.",
@@ -3534,8 +4754,8 @@
         "organisation_number": "957523730",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-        "retrieved_at": "2026-10-05T14:31:28.113724Z",
-        "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+        "retrieved_at": "2026-10-31T18:17:49.829829Z",
+        "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3548,7 +4768,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-957523730-2c7ab1e58159b5d1",
+        "id": "gplaces-review-summary-957523730-93f9f408cae1a496",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Salangen Boligstiftelse is rated 5/5 from 1 Google reviews.",
@@ -3563,8 +4783,8 @@
         "organisation_number": "957523730",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJy4yHurBz20URooYX6yrF0wI",
-        "retrieved_at": "2026-10-05T14:31:28.113724Z",
-        "content_sha256": "2c7ab1e58159b5d1938c8cc8f251588c2fb6945d84936771b5a80a40bcee9b11",
+        "retrieved_at": "2026-10-31T18:17:49.829829Z",
+        "content_sha256": "93f9f408cae1a4961dc2c255130156180ef8b3116681bdfc638671c09bbbf7d7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3577,7 +4797,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-957523730-2c7ab1e58159b5d1",
+        "id": "gplaces-sentiment-957523730-93f9f408cae1a496",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3588,8 +4808,459 @@
           "review_count": 1,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T12:44:35.324037Z",
+        "content_sha256": "5b350e6f8dd0333314c22b7094b48d6ed069a24246350970056bd58e24d7023c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-957523730-5b350e6f8dd03333",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 2,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "id": "sitemap-page-54e6a5efe658d175c8240688",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/ledige.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/ledige.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-b433520e64bdd77247dd9d5f",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/husleieloven.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/husleieloven.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-798ba2812fab11ff3b9c6b42",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/standard-leiekontrakt.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/standard-leiekontrakt.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-622dfeddac0fc26b60123624",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/alle.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/alle.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-f74926ef1c0ab1e5cb674898",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/adresseendring.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/adresseendring.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-d2400f0c74e7e8476be995a8",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/partenes-ansvar.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/partenes-ansvar.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-2447c59ae6e0824d858bc660",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/fra-leie-til-eie.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/fra-leie-til-eie.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ff9fddf73a2f6e90e080a77b",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/kontakt.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/kontakt.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-f92bb9993f3883877b1da928",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/index.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/index.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-62b7ae18ba1062f675f1723a",
+        "organisation_number": "957523730",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.salbos.no/",
+        "retrieved_at": "2026-09-29T10:17:44.346697Z",
+        "content_sha256": "5f61149448284cef2c2cc30508fde0d0703b4ce6e1791e5a681d372754059477",
+        "observed_at": "2026-11-02",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.salbos.no/salangen-kommune.html last modified 2026-11-02",
+        "metrics": {
+          "page_url": "https://www.salbos.no/salangen-kommune.html",
+          "lastmod": "2026-11-02",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "957523730",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/957523730",
+        "retrieved_at": "2026-11-05T21:10:30.264044Z",
+        "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "957523730"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "SALANGEN BOLIGSTIFTELSE",
+            "matched_organisation_number": "957523730"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+        "id": "purehelp-email-957523730-41f260ca54879278",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@salbos.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "957523730",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/957523730",
+        "retrieved_at": "2026-11-05T21:10:30.264044Z",
+        "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "957523730"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "SALANGEN BOLIGSTIFTELSE",
+            "matched_organisation_number": "957523730"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+        "id": "purehelp-phone-957523730-41f260ca54879278",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "77 17 11 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "957523730",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/957523730",
+        "retrieved_at": "2026-11-05T21:10:30.264044Z",
+        "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "957523730"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "SALANGEN BOLIGSTIFTELSE",
+            "matched_organisation_number": "957523730"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+        "id": "purehelp-profile-957523730-41f260ca54879278",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "STI",
+          "legal_form_description": "Foundation",
+          "nace_code": "68.200",
+          "nace_description": "Renting and operating of own or leased real estate",
+          "town": "SJØVEGAN",
+          "zipcode": "9350",
+          "municipality": "SALANGEN",
+          "municipality_number": "5522",
+          "county": "Troms",
+          "registration_date": "1995-02-19",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-02-19",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.salbos.no"
+        }
+      },
+      {
+        "organisation_number": "957523730",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/957523730",
+        "retrieved_at": "2026-11-05T21:10:30.264044Z",
+        "content_sha256": "a5514e0630300f2122e17d39835d50c72ac9c42e8a9f792cae6b243503650135",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "957523730"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "SALANGEN BOLIGSTIFTELSE",
+            "matched_organisation_number": "957523730"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-957523730.orgNumber=957523730;name=SALANGEN BOLIGSTIFTELSE",
+        "id": "purehelp-workforce-957523730-41f260ca54879278",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 6,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:44.893252+00:00"
+  "generated_at": "2026-11-06T05:27:35.594771+00:00"
 }

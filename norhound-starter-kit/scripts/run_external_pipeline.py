@@ -23,6 +23,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "src"))
+
+from norway_company_agent.source_rights import DEFAULT_EXCLUDED_HOSTS, excluded_host_for  # noqa: E402
 
 # Bound every connector stage. Without this a connector that stalls (or leaves a
 # grandchild holding the stdout pipe) blocks subprocess.run() in communicate()
@@ -61,6 +64,35 @@ def run(command: list[str], timeout: int | None = None) -> None:
         print(stdout)
         print(stderr, file=sys.stderr)
         raise SystemExit(f"stage failed: {' '.join(command)}")
+
+
+def consolidate_observations(
+    files: list[str | Path],
+    exclude_hosts: list[str] | tuple[str, ...] | set[str],
+) -> tuple[list[dict], dict[str, int]]:
+    """Read every connector output into one publishable observation list.
+
+    Rows from hosts whose permission state cannot be re-verified (proff.no now
+    answers every request with a 403) are dropped, and every kept row gets an
+    observation date: rows that already carry a reporting date keep it, live
+    pages are observed at retrieval time.
+    """
+    consolidated: list[dict] = []
+    excluded_counts: dict[str, int] = {}
+    for path in files:
+        text = Path(path).read_text(encoding="utf-8")
+        for line in sanitize_line_separators(text).splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            blocked = excluded_host_for(row.get("source_url") or "", exclude_hosts)
+            if blocked:
+                excluded_counts[blocked] = excluded_counts.get(blocked, 0) + 1
+                continue
+            if not row.get("observed_at") and row.get("retrieved_at"):
+                row["observed_at"] = str(row["retrieved_at"])[:10]
+            consolidated.append(row)
+    return consolidated, excluded_counts
 
 
 def main() -> None:
@@ -104,6 +136,12 @@ def main() -> None:
     parser.set_defaults(gleif=False)
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
     parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
+    parser.add_argument(
+        "--exclude-hosts",
+        nargs="*",
+        default=list(DEFAULT_EXCLUDED_HOSTS),
+        help="Source hosts whose observations are never published (default: proff.no, whose permission state can no longer be re-verified).",
+    )
     args = parser.parse_args()
 
     prefix = Path(args.prefix)
@@ -340,18 +378,7 @@ def main() -> None:
         observation_files.append(reddit_out)
     existing = [str(path) for path in observation_files if path.exists() and path.stat().st_size > 0]
 
-    consolidated = []
-    for path in existing:
-        for line in sanitize_line_separators(Path(path).read_text(encoding="utf-8")).splitlines():
-            if line.strip():
-                row = json.loads(line)
-                # Every published claim must carry an observation date. Rows whose
-                # source is a live page or an official snapshot are observed at
-                # retrieval time; rows that already carry a reporting date (registry
-                # updates, annual-report workforce) keep it untouched.
-                if not row.get("observed_at") and row.get("retrieved_at"):
-                    row["observed_at"] = str(row["retrieved_at"])[:10]
-                consolidated.append(row)
+    consolidated, excluded_counts = consolidate_observations(existing, args.exclude_hosts)
     external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")
     external_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in consolidated), encoding="utf-8")
 
@@ -389,7 +416,7 @@ def main() -> None:
             "--report", str(summaries_report),
             "--min-interval", args.synthesize_interval,
         ])
-    print(json.dumps({"stage": "external_pipeline", "prefix": str(prefix), "observation_files": existing, "consolidated_observations": str(external_out), "labels": str(labels_path), "eval": str(eval_out), "summaries": str(prefix.with_suffix(prefix.suffix + ".summaries.jsonl")) if args.synthesize else None, "note": "evidence-verified labels are generated in-pipeline; eval runs with the configured minimum-audit."}, indent=2))
+    print(json.dumps({"stage": "external_pipeline", "prefix": str(prefix), "observation_files": existing, "consolidated_observations": str(external_out), "labels": str(labels_path), "eval": str(eval_out), "summaries": str(prefix.with_suffix(prefix.suffix + ".summaries.jsonl")) if args.synthesize else None, "excluded_hosts": excluded_counts, "rows_excluded": sum(excluded_counts.values()), "note": "evidence-verified labels are generated in-pipeline; eval runs with the configured minimum-audit."}, indent=2))
 
 
 if __name__ == "__main__":

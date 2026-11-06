@@ -771,45 +771,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-475582ce77bf12977c0e06cc",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T08:57:28.229095Z",
-          "content_sha256": "ce7414b7d82386109556997d35ae73a31a31777aa87ea7a39f694823a45c5126",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "954231046",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 12",
-          "metrics": {
-            "workforce_value": 12,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-05-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-05-12",
-          "effective_at": "2026-05-12"
-        },
-        {
           "id": "registry-contact-3187d43b07096524028cd847",
           "organisation_number": "954231046",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -828,8 +796,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-74f4868c12a4182f0763c198",
@@ -837,8 +804,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -857,14 +824,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "954231046",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
-          "retrieved_at": "2026-10-05T08:57:31.750130Z",
+          "retrieved_at": "2026-09-29T10:24:09.636358Z",
           "content_sha256": "959ae177cb2c30d26b0d6eef15bf8a4f60ea66a27cfa60573400049e55ec58a9",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -886,14 +852,13 @@
             "subunit_organisation_number": "973478567",
             "municipality": "FREDRIKSTAD",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "954231046",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/954231046",
-          "retrieved_at": "2026-10-05T08:57:31.049746Z",
+          "retrieved_at": "2026-09-29T10:24:08.777565Z",
           "content_sha256": "93e0a3db71113fee7f9d44af9e1c1ced9dfe78e042aabcdc9d8859a0eb827307",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -916,14 +881,13 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "954231046",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/954231046",
-          "retrieved_at": "2026-10-05T08:57:31.049746Z",
+          "retrieved_at": "2026-09-29T10:24:08.777565Z",
           "content_sha256": "93e0a3db71113fee7f9d44af9e1c1ced9dfe78e042aabcdc9d8859a0eb827307",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -946,8 +910,7 @@
             "ownership": "100%",
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-1fff4cfe33be1b19c8435378",
@@ -955,7 +918,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1fff4cfe33be1b19c843537865628fe0f538a79eeaddc488adf7913f2b0fd91a",
           "observed_at": "2026-08-05",
           "exact_entity": true,
@@ -985,7 +948,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6d0df31cd7ba2afe7306d75cbe321f4cb88e43737349299fc478cfab50b7b0b9",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1015,7 +978,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e7d86e7b31371df928d29489f522369724cc6a31823179e7dee400c7564498ba",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1045,7 +1008,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9d0e4698eeff9b472076b3ed34e786170a1fb5df411f16a17da70ba2bea4fe81",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1075,38 +1038,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "53ee2dc6812d63782720a7568970529a89b06a224311ebcf4749a6fa25dd5328",
-          "observed_at": "2025-06-05",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-06-05: Endring",
-          "metrics": {
-            "date": "2025-06-05",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-b4728975abf33382bc782278",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "b4728975abf33382bc782278e6f0deac21ee6459aed92738b6d662a3c8629446",
           "observed_at": "2025-06-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1135,158 +1068,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f59fabe3abb9ca77358081814dd01791cbc82944093dcf9c719fda503edbcd60",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-03d74e507482143d9a48ec04",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "03d74e507482143d9a48ec049eeb6108ab1f6604a845384d779746e9cb94968f",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-52759625beab7a7015d8bf5d",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "52759625beab7a7015d8bf5d24d170b487d1c2177d903265bb4eec0d592bd728",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-b7764c6f9fdc1587e855b1de",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "b7764c6f9fdc1587e855b1de124fd2654dcea5363ea93e44a13cb0149679116d",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-0eb4f63431ec9b3f5bd1781a",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "0eb4f63431ec9b3f5bd1781a456e525c2590cd2847570247051aaca99ba256b4",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "954231046",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-9610e7ecf86103909ffa6282",
-          "organisation_number": "954231046",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "9610e7ecf86103909ffa62821e92ab388d1b235d4b5cb121fb79517b70692f1e",
           "observed_at": "2025-04-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1315,7 +1098,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e45bc1c8a2202037023598edf616d16c6778a1a2e85a06d66573b8085ac7fa4a",
           "observed_at": "2024-11-17",
           "exact_entity": true,
@@ -1345,7 +1128,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "01c4fe8ac9cbf471311533d7ab0507762e41cf2f1ae839064f447bf0244cd89b",
           "observed_at": "2024-06-10",
           "exact_entity": true,
@@ -1375,7 +1158,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1744240b0505891af2ea01c8468737295e499a0afd684144a59b7ee81c80f541",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1405,7 +1188,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "fcc5272957743591af0d5064a3625d28afd2ab16211ef8b77ef3e5a9f7cc7a07",
           "observed_at": "2023-08-18",
           "exact_entity": true,
@@ -1435,7 +1218,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3e1c8676c91b01b01394a25254719152221e74b70edea47efacbb1af115da520",
           "observed_at": "2023-06-21",
           "exact_entity": true,
@@ -1465,7 +1248,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ab27811bf47ff68955d7cba94df3eca37f99585807459ece7e95481134a7fbd6",
           "observed_at": "2023-02-14",
           "exact_entity": true,
@@ -1495,7 +1278,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "69d26759cf0db18ca745ee4c93242179126979073e192380cae98cdafcb82f5d",
           "observed_at": "2022-08-22",
           "exact_entity": true,
@@ -1525,7 +1308,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "595bf81b8fa594076e9dffa41d44ddb26451f1dde48c3bc03d9879764ce343cd",
           "observed_at": "2022-08-18",
           "exact_entity": true,
@@ -1548,6 +1331,814 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-3df4ea1bb20e43a2efb4dbae",
+          "organisation_number": "954231046",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "19eb5adb6a4624647bfcde3cba3ede0aebfe0dafd5f13ffd3063d8326cbae25d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "954231046",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-08-05",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-08-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-08-05 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-058b7b5323dc99a8e7f2ab1d",
+          "organisation_number": "954231046",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "fc7ed70296fc6ee5aba5995e10813b059a54978ecb4a58cbc43a9bdee7ca6a73",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "954231046",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-10-31",
+          "signal": {
+            "title": "Revisor",
+            "date": "2025-10-31",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb"
+          },
+          "evidence_span": "Revisor — 2025-10-31 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-73f7520925c9952ad2cdde05",
+          "organisation_number": "954231046",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "2b651984aa0335a2bd5546bf9ec38fc610d77f9ab4e2a72d30a2e64ad54b288a",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "954231046",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-05",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-06-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-06-05 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-475582ce77bf12977c0e06cc",
+          "organisation_number": "954231046",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
+          "retrieved_at": "2026-09-29T10:24:03.255814Z",
+          "content_sha256": "ce7414b7d82386109556997d35ae73a31a31777aa87ea7a39f694823a45c5126",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "954231046",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 12",
+          "metrics": {
+            "workforce_value": 12,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-05-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-05-12",
+          "effective_at": "2026-05-12"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-metrics-954231046-776035b6d9756fe6",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Dahles Auto Råbekken (Mekonomen) Google profile: rating 4.5/5, 24 ratings.",
+          "metrics": {
+            "rating": 4.5,
+            "review_count": 24,
+            "scale": 5,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-954231046-fe6e855544cfa415",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Jeg kjøpte en Audi e-tron hos denne forhandleren. Hele prosessen var veldig god, fra start til slutt ble jeg tatt godt vare på av selger. Bilen ble kjøpt i september.\n\nLitt etter kjøpet oppdaget jeg vann og dugg under høyre baklykt. Jeg tok dette opp med selger og ansatte, men det ble ikke ansett som en garantisak, fordi vannet ikke lenger var synlig da jeg kjørte bilen til dem dagen etter for å vise det. For å få dekket noe på garanti, måtte vannet være synlig på tidspunktet. Jeg hadde bilder av vannet, men det var ikke nok for dem.\n\nEn måned senere tok jeg en tilstandsrapport hos NAF, som fortsatt viste null feil på bilen. Den var i veldig god stand, men høyre baklykt hadde fortsatt synlig vann – faktisk ganske mye. Jeg sendte e-post til forhandleren og spurte om dette kunne dekkes på garanti, men fikk beskjed om at dette var vanlig for E-tron-modellene, at det ikke skader funksjonaliteten, og at det ikke ville påvirke bilen. Jeg tenkte greit, forhandleren vet bedre og har mye erfaring med disse bilene.\n\nTre dager etter at garantien gikk ut, sluttet høyre baklykt å fungere helt. Jeg endte opp med å kjøpe en pen, brukt baklykt for 4000 kroner, som var veldig enkel å bytte selv. De",
+          "observed_at": "2025-12-25T03:07:50.275070116Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 0,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-954231046-d42ba4b38a199362",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Potensielle kjøpere må være obs. på denne bilforhandleren. Selv om de skriver at biler har kanskje flere feil de aldri opplyser feil som er åpenbart synlige (f.eks. hvitt røyk fra eksosen som tyder på at turboen lever sine siste dager).\n\nIkke kjøp fra dem selv om de gir deg en del rabatter.\nUærlige mennesker og uærlig butikk sjef.\n\nKan og skal ikke anbefales!\nUnngås!",
+          "observed_at": "2025-07-09T05:15:32.765028635Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 1,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-954231046-6ca2fc406a0b4433",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Bestilte time for å få på skvettlapper bak til en Juniper. 1 1/2 time og nesten 900 kr fattigere for et svar at de ikke passet til bilen. Sendte skvettlappene i retur og der fikk jeg til svar at de så ikke ut som var pakket ut av esken. Passet til samme bil som min. Kanskje jeg var \"uheldig\", uansett bruker ikke dette verkstedet noe mer....",
+          "observed_at": "2025-06-05T18:00:44.011978175Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 2,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-954231046-99a87078fc35e183",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "For litt under en måned siden kjøpte jeg en E-tron, og jeg må si at jeg er svært fornøyd med opplevelsen hos dette bilselskapet. Servicen har vært helt topp! Jeg fikk hentet bilen raskt etter at jeg tok avgjørelsen om kjøpet. Hver gang jeg har hatt kontakt, har de vært blide og imøtekommende, og de gir alltid det lille ekstra.\n\nSpesielt vil jeg rose selgeren, Tor Arne, som alltid har vært tilgjengelig på telefon og har ryddet opp i alt som måtte dukke opp. Jeg gir dem derfor en solid 5 av 5! Anbefales på sterkeste!",
+          "observed_at": "2024-10-12T14:41:28.808027Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 3,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-954231046-26f76e2bcdd2721e",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Kjøpte oss en Peugeot 5008 hos Dahles Auto, og fikk beskjed om å hente bilen når den var ferdig EU-godkjent. Før vi fikk hentet den så oppstod det en del greier på hjemmebane, som gjorde at vi ikke hentet bilen før to uker etter vi skrev kontrakt. Men Dahles var bare hjelpsomme, og maste aldri på oss. Så vi er veldig fornøyde, og kan virkelig anbefale Dahles Auto! Veldig fornøyde med bilen også.",
+          "observed_at": "2025-03-27T13:39:54.641662Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 4,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-954231046-776035b6d9756fe6",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Dahles Auto Råbekken (Mekonomen) is rated 4.5/5 from 24 Google reviews.",
+          "metrics": {
+            "rating": 4.5,
+            "review_count": 24,
+            "scale": 5,
+            "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+          "retrieved_at": "2026-10-31T18:18:40.686181Z",
+          "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "dahlesautobruktbilsenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-sentiment-954231046-776035b6d9756fe6",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 4.5/5 from 24 reviews implies positive sentiment.",
+          "metrics": {
+            "rating": 4.5,
+            "review_count": 24,
+            "scale": 5
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+          "retrieved_at": "2026-11-02T21:01:20.122127Z",
+          "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.4,
+            "review_count": 22,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-buzz-954231046-b33090dedd53e90f",
+          "signal_type": "buzz_metrics",
+          "strategy": "buzz_peer_normalization",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+          "retrieved_at": "2026-11-02T21:01:20.122127Z",
+          "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.4,
+            "review_count": 22,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-metrics-954231046-b33090dedd53e90f",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+          "retrieved_at": "2026-11-02T21:01:20.122127Z",
+          "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.4,
+            "review_count": 22,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-review-954231046-b33090dedd53e90f",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+          "retrieved_at": "2026-11-02T21:01:20.122127Z",
+          "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS"
+            },
+            {
+              "type": "embedded_google_aggregate_rating",
+              "google_review_url": null
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+          "metrics": {
+            "rating": 4.4,
+            "review_count": 22,
+            "scale": 5,
+            "google_review_url": null
+          },
+          "label": "positive",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "id": "fagfolk-sentiment-954231046-b33090dedd53e90f",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "observed_at": "2026-11-02"
+        },
+        {
+          "id": "registry-site-954231046-17b013b76799ee5c",
+          "organisation_number": "954231046",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://dahles-auto.no/",
+          "retrieved_at": "2026-10-09T13:58:14.909949Z",
+          "content_sha256": "17b013b76799ee5c9521eca39cd8c617249ca7abc06c47ab77a7964b1312e13f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "dahles-auto.no",
+              "matched_organisation_number": "954231046",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares dahles-auto.no as the website of organisation 954231046; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Dahles Auto - Først med det siste siden 1920 — Dahles Auto hjelper deg når du skal velge ny bil eller brukt bil, ta service eller gjennomføre EU-kontroll. Velkommen til oss!",
+          "metrics": {
+            "title": "Dahles Auto - Først med det siste siden 1920",
+            "description": "Dahles Auto hjelper deg når du skal velge ny bil eller brukt bil, ta service eller gjennomføre EU-kontroll. Velkommen til oss!",
+            "registry_domain": "dahles-auto.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "retrieved_at": "2026-11-05T14:45:35.722778Z",
+          "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.4,
+            "review_count": 22,
+            "website_domain": "dahles-auto.no",
+            "address": {
+              "street": "Smørbøttaveien 9",
+              "locality": "FREDRIKSTAD",
+              "postal_code": "1617"
+            }
+          },
+          "id": "fagfolk-profile-954231046-48487dff5fc8678f",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "retrieved_at": "2026-11-05T14:45:35.722778Z",
+          "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.4,
+            "review_count": 22,
+            "website_domain": "dahles-auto.no",
+            "address": {
+              "street": "Smørbøttaveien 9",
+              "locality": "FREDRIKSTAD",
+              "postal_code": "1617"
+            }
+          },
+          "id": "fagfolk-review-954231046-48487dff5fc8678f",
+          "signal_type": "review_summary",
+          "strategy": "directory_rating_reviews",
+          "source_class": "customer_review",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "retrieved_at": "2026-11-05T14:45:35.722778Z",
+          "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "rating": 4.4,
+            "review_count": 22,
+            "website_domain": "dahles-auto.no",
+            "address": {
+              "street": "Smørbøttaveien 9",
+              "locality": "FREDRIKSTAD",
+              "postal_code": "1617"
+            }
+          },
+          "id": "fagfolk-sentiment-954231046-48487dff5fc8678f",
+          "signal_type": "sentiment",
+          "strategy": "directory_review_sentiment",
+          "source_class": "customer_review",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/954231046",
+          "retrieved_at": "2026-11-05T21:11:01.300754Z",
+          "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+          "id": "purehelp-email-954231046-f2fb3135d764cd2a",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "raabekken@dahles-auto.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/954231046",
+          "retrieved_at": "2026-11-05T21:11:01.300754Z",
+          "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+          "id": "purehelp-phone-954231046-f2fb3135d764cd2a",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "69 35 14 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/954231046",
+          "retrieved_at": "2026-11-05T21:11:01.300754Z",
+          "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+          "id": "purehelp-profile-954231046-f2fb3135d764cd2a",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "47.810",
+            "nace_description": "Retail sale of motor vehicles",
+            "town": "FREDRIKSTAD",
+            "zipcode": "1617",
+            "municipality": "FREDRIKSTAD",
+            "municipality_number": "3107",
+            "county": "Østfold",
+            "registration_date": "1995-03-12",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-03-12",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.dahles-auto.no"
+          }
+        },
+        {
+          "organisation_number": "954231046",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/954231046",
+          "retrieved_at": "2026-11-05T21:11:01.300754Z",
+          "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "954231046"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "DAHLES AUTO RÅBEKKEN AS",
+              "matched_organisation_number": "954231046"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+          "id": "purehelp-workforce-954231046-f2fb3135d764cd2a",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 12,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1571,7 +2162,7 @@
     "company_name": "DAHLES AUTO RÅBEKKEN AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "DAHLES AUTO RÅBEKKEN AS is a private limited company operating in Detaljhandel med motorvogner. Latest accounts (2025): revenue NOK 171.0m, annual result NOK -1.5m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+18.7% YoY). Registered employees: 12. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "DAHLES AUTO RÅBEKKEN AS is a private limited company operating in Detaljhandel med motorvogner. Latest accounts (2025): revenue NOK 171.0m, annual result NOK -1.5m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+18.7% YoY). Registered employees: 12. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1588,7 +2179,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       },
       {
@@ -1606,7 +2204,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       },
       {
@@ -1624,7 +2229,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       },
       {
@@ -1642,7 +2254,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       },
       {
@@ -1660,7 +2279,14 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       },
       {
@@ -1673,11 +2299,28 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://dahles-auto.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/954231046/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/954231046",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        ]
       },
       {
         "question": "changes",
@@ -1694,17 +2337,18 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/954231046",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/954231046/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/954231046",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/954231046",
+          "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+          "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2465,45 +3109,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-475582ce77bf12977c0e06cc",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T08:57:28.229095Z",
-        "content_sha256": "ce7414b7d82386109556997d35ae73a31a31777aa87ea7a39f694823a45c5126",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "954231046",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 12",
-        "metrics": {
-          "workforce_value": 12,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-05-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-05-12",
-        "effective_at": "2026-05-12"
-      },
-      {
         "id": "registry-contact-3187d43b07096524028cd847",
         "organisation_number": "954231046",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2522,8 +3134,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-74f4868c12a4182f0763c198",
@@ -2531,8 +3142,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2551,14 +3162,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "954231046",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=954231046&size=1000",
-        "retrieved_at": "2026-10-05T08:57:31.750130Z",
+        "retrieved_at": "2026-09-29T10:24:09.636358Z",
         "content_sha256": "959ae177cb2c30d26b0d6eef15bf8a4f60ea66a27cfa60573400049e55ec58a9",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2580,14 +3190,13 @@
           "subunit_organisation_number": "973478567",
           "municipality": "FREDRIKSTAD",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "954231046",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/954231046",
-        "retrieved_at": "2026-10-05T08:57:31.049746Z",
+        "retrieved_at": "2026-09-29T10:24:08.777565Z",
         "content_sha256": "93e0a3db71113fee7f9d44af9e1c1ced9dfe78e042aabcdc9d8859a0eb827307",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2610,14 +3219,13 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "954231046",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/954231046",
-        "retrieved_at": "2026-10-05T08:57:31.049746Z",
+        "retrieved_at": "2026-09-29T10:24:08.777565Z",
         "content_sha256": "93e0a3db71113fee7f9d44af9e1c1ced9dfe78e042aabcdc9d8859a0eb827307",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2640,8 +3248,7 @@
           "ownership": "100%",
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-1fff4cfe33be1b19c8435378",
@@ -2649,7 +3256,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1fff4cfe33be1b19c843537865628fe0f538a79eeaddc488adf7913f2b0fd91a",
         "observed_at": "2026-08-05",
         "exact_entity": true,
@@ -2679,7 +3286,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6d0df31cd7ba2afe7306d75cbe321f4cb88e43737349299fc478cfab50b7b0b9",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -2709,7 +3316,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e7d86e7b31371df928d29489f522369724cc6a31823179e7dee400c7564498ba",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2739,7 +3346,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9d0e4698eeff9b472076b3ed34e786170a1fb5df411f16a17da70ba2bea4fe81",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -2769,38 +3376,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "53ee2dc6812d63782720a7568970529a89b06a224311ebcf4749a6fa25dd5328",
-        "observed_at": "2025-06-05",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-06-05: Endring",
-        "metrics": {
-          "date": "2025-06-05",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-b4728975abf33382bc782278",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "b4728975abf33382bc782278e6f0deac21ee6459aed92738b6d662a3c8629446",
         "observed_at": "2025-06-05",
         "exact_entity": true,
         "identity_proof": [
@@ -2829,158 +3406,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f59fabe3abb9ca77358081814dd01791cbc82944093dcf9c719fda503edbcd60",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-03d74e507482143d9a48ec04",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "03d74e507482143d9a48ec049eeb6108ab1f6604a845384d779746e9cb94968f",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-52759625beab7a7015d8bf5d",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "52759625beab7a7015d8bf5d24d170b487d1c2177d903265bb4eec0d592bd728",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-b7764c6f9fdc1587e855b1de",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "b7764c6f9fdc1587e855b1de124fd2654dcea5363ea93e44a13cb0149679116d",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-0eb4f63431ec9b3f5bd1781a",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "0eb4f63431ec9b3f5bd1781a456e525c2590cd2847570247051aaca99ba256b4",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "954231046",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-9610e7ecf86103909ffa6282",
-        "organisation_number": "954231046",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "9610e7ecf86103909ffa62821e92ab388d1b235d4b5cb121fb79517b70692f1e",
         "observed_at": "2025-04-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3009,7 +3436,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e45bc1c8a2202037023598edf616d16c6778a1a2e85a06d66573b8085ac7fa4a",
         "observed_at": "2024-11-17",
         "exact_entity": true,
@@ -3039,7 +3466,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "01c4fe8ac9cbf471311533d7ab0507762e41cf2f1ae839064f447bf0244cd89b",
         "observed_at": "2024-06-10",
         "exact_entity": true,
@@ -3069,7 +3496,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1744240b0505891af2ea01c8468737295e499a0afd684144a59b7ee81c80f541",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3099,7 +3526,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "fcc5272957743591af0d5064a3625d28afd2ab16211ef8b77ef3e5a9f7cc7a07",
         "observed_at": "2023-08-18",
         "exact_entity": true,
@@ -3129,7 +3556,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3e1c8676c91b01b01394a25254719152221e74b70edea47efacbb1af115da520",
         "observed_at": "2023-06-21",
         "exact_entity": true,
@@ -3159,7 +3586,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ab27811bf47ff68955d7cba94df3eca37f99585807459ece7e95481134a7fbd6",
         "observed_at": "2023-02-14",
         "exact_entity": true,
@@ -3189,7 +3616,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "69d26759cf0db18ca745ee4c93242179126979073e192380cae98cdafcb82f5d",
         "observed_at": "2022-08-22",
         "exact_entity": true,
@@ -3219,7 +3646,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "595bf81b8fa594076e9dffa41d44ddb26451f1dde48c3bc03d9879764ce343cd",
         "observed_at": "2022-08-18",
         "exact_entity": true,
@@ -3242,8 +3669,816 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-3df4ea1bb20e43a2efb4dbae",
+        "organisation_number": "954231046",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "19eb5adb6a4624647bfcde3cba3ede0aebfe0dafd5f13ffd3063d8326cbae25d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "954231046",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-08-05",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-08-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000664333&amp;sokeverdi=954231046&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-08-05 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-058b7b5323dc99a8e7f2ab1d",
+        "organisation_number": "954231046",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "fc7ed70296fc6ee5aba5995e10813b059a54978ecb4a58cbc43a9bdee7ca6a73",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "954231046",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-10-31",
+        "signal": {
+          "title": "Revisor",
+          "date": "2025-10-31",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000812510&amp;sokeverdi=954231046&amp;spraak=nb"
+        },
+        "evidence_span": "Revisor — 2025-10-31 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-73f7520925c9952ad2cdde05",
+        "organisation_number": "954231046",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "2b651984aa0335a2bd5546bf9ec38fc610d77f9ab4e2a72d30a2e64ad54b288a",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "954231046",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-05",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-06-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000386072&amp;sokeverdi=954231046&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-06-05 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-475582ce77bf12977c0e06cc",
+        "organisation_number": "954231046",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/954231046",
+        "retrieved_at": "2026-09-29T10:24:03.255814Z",
+        "content_sha256": "ce7414b7d82386109556997d35ae73a31a31777aa87ea7a39f694823a45c5126",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "954231046",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 12",
+        "metrics": {
+          "workforce_value": 12,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-05-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-05-12",
+        "effective_at": "2026-05-12"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-metrics-954231046-776035b6d9756fe6",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Dahles Auto Råbekken (Mekonomen) Google profile: rating 4.5/5, 24 ratings.",
+        "metrics": {
+          "rating": 4.5,
+          "review_count": 24,
+          "scale": 5,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-954231046-fe6e855544cfa415",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Jeg kjøpte en Audi e-tron hos denne forhandleren. Hele prosessen var veldig god, fra start til slutt ble jeg tatt godt vare på av selger. Bilen ble kjøpt i september.\n\nLitt etter kjøpet oppdaget jeg vann og dugg under høyre baklykt. Jeg tok dette opp med selger og ansatte, men det ble ikke ansett som en garantisak, fordi vannet ikke lenger var synlig da jeg kjørte bilen til dem dagen etter for å vise det. For å få dekket noe på garanti, måtte vannet være synlig på tidspunktet. Jeg hadde bilder av vannet, men det var ikke nok for dem.\n\nEn måned senere tok jeg en tilstandsrapport hos NAF, som fortsatt viste null feil på bilen. Den var i veldig god stand, men høyre baklykt hadde fortsatt synlig vann – faktisk ganske mye. Jeg sendte e-post til forhandleren og spurte om dette kunne dekkes på garanti, men fikk beskjed om at dette var vanlig for E-tron-modellene, at det ikke skader funksjonaliteten, og at det ikke ville påvirke bilen. Jeg tenkte greit, forhandleren vet bedre og har mye erfaring med disse bilene.\n\nTre dager etter at garantien gikk ut, sluttet høyre baklykt å fungere helt. Jeg endte opp med å kjøpe en pen, brukt baklykt for 4000 kroner, som var veldig enkel å bytte selv. De",
+        "observed_at": "2025-12-25T03:07:50.275070116Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 0,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-954231046-d42ba4b38a199362",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Potensielle kjøpere må være obs. på denne bilforhandleren. Selv om de skriver at biler har kanskje flere feil de aldri opplyser feil som er åpenbart synlige (f.eks. hvitt røyk fra eksosen som tyder på at turboen lever sine siste dager).\n\nIkke kjøp fra dem selv om de gir deg en del rabatter.\nUærlige mennesker og uærlig butikk sjef.\n\nKan og skal ikke anbefales!\nUnngås!",
+        "observed_at": "2025-07-09T05:15:32.765028635Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 1,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-954231046-6ca2fc406a0b4433",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Bestilte time for å få på skvettlapper bak til en Juniper. 1 1/2 time og nesten 900 kr fattigere for et svar at de ikke passet til bilen. Sendte skvettlappene i retur og der fikk jeg til svar at de så ikke ut som var pakket ut av esken. Passet til samme bil som min. Kanskje jeg var \"uheldig\", uansett bruker ikke dette verkstedet noe mer....",
+        "observed_at": "2025-06-05T18:00:44.011978175Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 2,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-954231046-99a87078fc35e183",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "For litt under en måned siden kjøpte jeg en E-tron, og jeg må si at jeg er svært fornøyd med opplevelsen hos dette bilselskapet. Servicen har vært helt topp! Jeg fikk hentet bilen raskt etter at jeg tok avgjørelsen om kjøpet. Hver gang jeg har hatt kontakt, har de vært blide og imøtekommende, og de gir alltid det lille ekstra.\n\nSpesielt vil jeg rose selgeren, Tor Arne, som alltid har vært tilgjengelig på telefon og har ryddet opp i alt som måtte dukke opp. Jeg gir dem derfor en solid 5 av 5! Anbefales på sterkeste!",
+        "observed_at": "2024-10-12T14:41:28.808027Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 3,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-954231046-26f76e2bcdd2721e",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Kjøpte oss en Peugeot 5008 hos Dahles Auto, og fikk beskjed om å hente bilen når den var ferdig EU-godkjent. Før vi fikk hentet den så oppstod det en del greier på hjemmebane, som gjorde at vi ikke hentet bilen før to uker etter vi skrev kontrakt. Men Dahles var bare hjelpsomme, og maste aldri på oss. Så vi er veldig fornøyde, og kan virkelig anbefale Dahles Auto! Veldig fornøyde med bilen også.",
+        "observed_at": "2025-03-27T13:39:54.641662Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 4,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-954231046-776035b6d9756fe6",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Dahles Auto Råbekken (Mekonomen) is rated 4.5/5 from 24 Google reviews.",
+        "metrics": {
+          "rating": 4.5,
+          "review_count": 24,
+          "scale": 5,
+          "place_id": "ChIJo_qhYIIDREYRZTZw59yj6Fc"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJo_qhYIIDREYRZTZw59yj6Fc",
+        "retrieved_at": "2026-10-31T18:18:40.686181Z",
+        "content_sha256": "776035b6d9756fe649de6536d7474811f87e69b6cab914e53264b1ee4578befb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "dahlesautobruktbilsenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-sentiment-954231046-776035b6d9756fe6",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 4.5/5 from 24 reviews implies positive sentiment.",
+        "metrics": {
+          "rating": 4.5,
+          "review_count": 24,
+          "scale": 5
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+        "retrieved_at": "2026-11-02T21:01:20.122127Z",
+        "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.4,
+          "review_count": 22,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-buzz-954231046-b33090dedd53e90f",
+        "signal_type": "buzz_metrics",
+        "strategy": "buzz_peer_normalization",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+        "retrieved_at": "2026-11-02T21:01:20.122127Z",
+        "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.4,
+          "review_count": 22,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-metrics-954231046-b33090dedd53e90f",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+        "retrieved_at": "2026-11-02T21:01:20.122127Z",
+        "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.4,
+          "review_count": 22,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-review-954231046-b33090dedd53e90f",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/954231046",
+        "retrieved_at": "2026-11-02T21:01:20.122127Z",
+        "content_sha256": "b33090dedd53e90f77026af2fc22cbb6df97df8afee000d88fc335d1dcb06903",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS"
+          },
+          {
+            "type": "embedded_google_aggregate_rating",
+            "google_review_url": null
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "evidence_span": "Google aggregate rating 4.4/5 based on 22 reviews, embedded on exact Fagfolkguiden company page.",
+        "metrics": {
+          "rating": 4.4,
+          "review_count": 22,
+          "scale": 5,
+          "google_review_url": null
+        },
+        "label": "positive",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "id": "fagfolk-sentiment-954231046-b33090dedd53e90f",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "observed_at": "2026-11-02"
+      },
+      {
+        "id": "registry-site-954231046-17b013b76799ee5c",
+        "organisation_number": "954231046",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://dahles-auto.no/",
+        "retrieved_at": "2026-10-09T13:58:14.909949Z",
+        "content_sha256": "17b013b76799ee5c9521eca39cd8c617249ca7abc06c47ab77a7964b1312e13f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "dahles-auto.no",
+            "matched_organisation_number": "954231046",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares dahles-auto.no as the website of organisation 954231046; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Dahles Auto - Først med det siste siden 1920 — Dahles Auto hjelper deg når du skal velge ny bil eller brukt bil, ta service eller gjennomføre EU-kontroll. Velkommen til oss!",
+        "metrics": {
+          "title": "Dahles Auto - Først med det siste siden 1920",
+          "description": "Dahles Auto hjelper deg når du skal velge ny bil eller brukt bil, ta service eller gjennomføre EU-kontroll. Velkommen til oss!",
+          "registry_domain": "dahles-auto.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+        "retrieved_at": "2026-11-05T14:45:35.722778Z",
+        "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.4,
+          "review_count": 22,
+          "website_domain": "dahles-auto.no",
+          "address": {
+            "street": "Smørbøttaveien 9",
+            "locality": "FREDRIKSTAD",
+            "postal_code": "1617"
+          }
+        },
+        "id": "fagfolk-profile-954231046-48487dff5fc8678f",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+        "retrieved_at": "2026-11-05T14:45:35.722778Z",
+        "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.4,
+          "review_count": 22,
+          "website_domain": "dahles-auto.no",
+          "address": {
+            "street": "Smørbøttaveien 9",
+            "locality": "FREDRIKSTAD",
+            "postal_code": "1617"
+          }
+        },
+        "id": "fagfolk-review-954231046-48487dff5fc8678f",
+        "signal_type": "review_summary",
+        "strategy": "directory_rating_reviews",
+        "source_class": "customer_review",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/dahles-auto-rabekken-as-954231046",
+        "retrieved_at": "2026-11-05T14:45:35.722778Z",
+        "content_sha256": "7207199fc4c083bdb8607dfef256472da42705e85ea1dcddb67ec37aa0b64dc5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "rating": 4.4,
+          "review_count": 22,
+          "website_domain": "dahles-auto.no",
+          "address": {
+            "street": "Smørbøttaveien 9",
+            "locality": "FREDRIKSTAD",
+            "postal_code": "1617"
+          }
+        },
+        "id": "fagfolk-sentiment-954231046-48487dff5fc8678f",
+        "signal_type": "sentiment",
+        "strategy": "directory_review_sentiment",
+        "source_class": "customer_review",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.4,\"bestRating\":5,\"worstRating\":1,\"ratingCount\":22}"
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/954231046",
+        "retrieved_at": "2026-11-05T21:11:01.300754Z",
+        "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+        "id": "purehelp-email-954231046-f2fb3135d764cd2a",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "raabekken@dahles-auto.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/954231046",
+        "retrieved_at": "2026-11-05T21:11:01.300754Z",
+        "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+        "id": "purehelp-phone-954231046-f2fb3135d764cd2a",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "69 35 14 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/954231046",
+        "retrieved_at": "2026-11-05T21:11:01.300754Z",
+        "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+        "id": "purehelp-profile-954231046-f2fb3135d764cd2a",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "47.810",
+          "nace_description": "Retail sale of motor vehicles",
+          "town": "FREDRIKSTAD",
+          "zipcode": "1617",
+          "municipality": "FREDRIKSTAD",
+          "municipality_number": "3107",
+          "county": "Østfold",
+          "registration_date": "1995-03-12",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-03-12",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.dahles-auto.no"
+        }
+      },
+      {
+        "organisation_number": "954231046",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/954231046",
+        "retrieved_at": "2026-11-05T21:11:01.300754Z",
+        "content_sha256": "5f27ae3b3672f91e8fc26fa860bea766db724aebfe66efe90041f402e43eecd4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "954231046"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "DAHLES AUTO RÅBEKKEN AS",
+            "matched_organisation_number": "954231046"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-954231046.orgNumber=954231046;name=DAHLES AUTO RÅBEKKEN AS",
+        "id": "purehelp-workforce-954231046-f2fb3135d764cd2a",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 12,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:45.897617+00:00"
+  "generated_at": "2026-11-06T05:27:37.819919+00:00"
 }

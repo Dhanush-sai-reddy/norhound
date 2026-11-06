@@ -529,75 +529,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "994140868",
-          "platform": "company_site",
-          "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-994140868-9d82edc51a7e8ae5",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 4,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-36859d347d1ccf4afaf40c7d",
-          "organisation_number": "994140868",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T08:37:36.672697Z",
-          "content_sha256": "7da89a28f7c2dde73a5273ead53ea5358ed94e95df79e446e8aef828e06010c5",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "994140868",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 10",
-          "metrics": {
-            "workforce_value": 10,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-06-13"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-06-13",
-          "effective_at": "2026-06-13"
-        },
-        {
           "id": "registry-contact-a2281f7e4557043258535ece",
           "organisation_number": "994140868",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -616,8 +554,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-3b93012047bb7bd4cf1ac38a",
@@ -625,8 +562,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -645,15 +582,14 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "994140868",
           "platform": "company_site",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -671,14 +607,13 @@
           "evidence_span": "Mechman Homepage - Mechman AS",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "994140868",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
-          "retrieved_at": "2026-10-05T08:37:41.437315Z",
+          "retrieved_at": "2026-09-29T10:05:17.610115Z",
           "content_sha256": "b1c192ef7a5ebce60485abc2022055e3b13de595cfc1957779f5b7b3f39ed0c3",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -700,8 +635,7 @@
             "subunit_organisation_number": "990052611",
             "municipality": "STRAND",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "sitemap-page-d082fcfee1eabc4194e7a091",
@@ -709,8 +643,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2026-08-11",
           "exact_entity": true,
           "identity_proof": [
@@ -737,8 +671,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2025-04-28",
           "exact_entity": true,
           "identity_proof": [
@@ -765,8 +699,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2025-02-18",
           "exact_entity": true,
           "identity_proof": [
@@ -793,8 +727,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2024-06-14",
           "exact_entity": true,
           "identity_proof": [
@@ -821,8 +755,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2024-05-31",
           "exact_entity": true,
           "identity_proof": [
@@ -849,8 +783,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2019-06-07",
           "exact_entity": true,
           "identity_proof": [
@@ -877,8 +811,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2019-06-07",
           "exact_entity": true,
           "identity_proof": [
@@ -905,8 +839,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2019-06-07",
           "exact_entity": true,
           "identity_proof": [
@@ -933,8 +867,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2019-06-07",
           "exact_entity": true,
           "identity_proof": [
@@ -961,8 +895,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.mechman.no/",
-          "retrieved_at": "2026-10-05T08:37:53.800297Z",
-          "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
           "observed_at": "2019-06-07",
           "exact_entity": true,
           "identity_proof": [
@@ -989,7 +923,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "342b6f1b3f408518c6bc4fb024446384b2c282d91333472c8ee9c5c9ac33867f",
           "observed_at": "2026-07-13",
           "exact_entity": true,
@@ -1019,7 +953,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9cb3a97577b9a34f3817e8fe099633fa7e59b5707c24d26274784a0bf2caf079",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1049,7 +983,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ac33a4e1fc0b9b0a425989afe9cc58e9c7f846bba00fea931205845fa13358c1",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1079,7 +1013,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ff05a0612d95d6aaf97c12348b83317c94377531b19eeda98b15dab2fde47013",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1109,7 +1043,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b9bf13c024b570260f3a6a47a58b0645c83457aea1c96e53f0c89d3486d76166",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -1139,7 +1073,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a470abd00cd196b993a0a9b6fc7c7ebe36484835a49e75109d3a9d50db00aeb4",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1169,7 +1103,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3dc936ffc286a552551d3ba957cdfbc75d79b5fee38785244b60f811b68b2b8e",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1199,7 +1133,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6cdb747b36804ed9d16658dff2399284b1acc0e078691be65ea64bfbae9e4872",
           "observed_at": "2025-06-28",
           "exact_entity": true,
@@ -1229,7 +1163,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "453109915bd5787e94cf595c384b814bbd3f6932f87daf7e32a3f4d9568de32f",
           "observed_at": "2025-03-13",
           "exact_entity": true,
@@ -1259,7 +1193,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "181a1d96fab5988db6a826d78d91d82a78417aa0c6358db4d4279c741409c55f",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -1289,7 +1223,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "97f6bae930a9ceb5db765eaa023a050ab6bb1a6d6722bb384b16cea92025ca48",
           "observed_at": "2024-06-26",
           "exact_entity": true,
@@ -1319,7 +1253,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d8636c294bc26dc762a878455477963f5b45144a66b6c0a6fe82b70d21bd8ec6",
           "observed_at": "2024-04-13",
           "exact_entity": true,
@@ -1349,7 +1283,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1441c89206a33a1d21016c8bfdb184b75d9f76eedee8f13950a114f45a51dcd3",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1379,7 +1313,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e41d012f5e1d2a27dd38c8bd1fbc78178cee4a97717daa8862abea2a51eb03b7",
           "observed_at": "2023-12-12",
           "exact_entity": true,
@@ -1409,7 +1343,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c7eaf4ec5974e935b5d7839e5c591ad49ae96ad115205d43fec68dc65f12f3d2",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1439,7 +1373,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "041ed14a694502e582d5a7bb941e98d5642e75f4ca0ce628aa2bf902ac9e6d7e",
           "observed_at": "2023-07-12",
           "exact_entity": true,
@@ -1469,7 +1403,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ea4e36c23ba70bec6ba3f431e1b66a429d004aab35f4abc1fa034a293ee588b8",
           "observed_at": "2023-06-15",
           "exact_entity": true,
@@ -1499,7 +1433,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e2b02e71323e10767fa580a71eea815ef75521b2ae312e63ad65fddae22714d6",
           "observed_at": "2023-02-14",
           "exact_entity": true,
@@ -1529,7 +1463,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "959dba890ed64d49b9118bf4b704fb1e93b1a9d2d6e157771045463addacd24c",
           "observed_at": "2023-01-12",
           "exact_entity": true,
@@ -1559,7 +1493,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b8f7a38651ee32b6edb96ff280bff765a8b9350b88be5d83eef4b7fdce6d5d6b",
           "observed_at": "2022-11-14",
           "exact_entity": true,
@@ -1582,6 +1516,293 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-9a660fcd8ee2c8c148c03ef2",
+          "organisation_number": "994140868",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "249cec27989f9f4a019d6fcdab0c80247cbb37cefdedefb4794f98c768048be3",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "994140868",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-13",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-13",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-13 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-ac7814f0c0b1631eae4b3675",
+          "organisation_number": "994140868",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "082f90d1b01fb2b0f5a5d276dd9b45408591bdace4d51a24c79105bf98c76886",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "994140868",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-28",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-06-28",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-a2153e10f2133506ed4fe40e",
+          "organisation_number": "994140868",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "59edeeea089d87b371f2929e9851ab49a1e72e1812953f27fbe5ac151e261c55",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "994140868",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-06-25",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-06-25",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-06-25 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-36859d347d1ccf4afaf40c7d",
+          "organisation_number": "994140868",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
+          "retrieved_at": "2026-09-29T10:05:09.344464Z",
+          "content_sha256": "7da89a28f7c2dde73a5273ead53ea5358ed94e95df79e446e8aef828e06010c5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "994140868",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 10",
+          "metrics": {
+            "workforce_value": 10,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-13",
+          "effective_at": "2026-06-13"
+        },
+        {
+          "id": "sitemap-page-8a8aac86b2aeafbcb3e1a5a0",
+          "organisation_number": "994140868",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.mechman.no/",
+          "retrieved_at": "2026-09-29T10:05:32.185672Z",
+          "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
+          "observed_at": "2026-10-06",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.mechman.no/buoyancy-material-guide/ last modified 2026-10-06",
+          "metrics": {
+            "page_url": "https://www.mechman.no/buoyancy-material-guide/",
+            "lastmod": "2026-10-06",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "organisation_number": "994140868",
+          "platform": "company_site",
+          "source_url": "https://www.mechman.no/",
+          "retrieved_at": "2026-09-29T12:32:31.186892Z",
+          "content_sha256": "890046337fc9d2c0d4b78a34b08e27132fe5d0a61613e1d3eef4c1b17d9f2465",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-994140868-890046337fc9d2c0",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 4,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "994140868",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/994140868",
+          "retrieved_at": "2026-11-05T21:09:32.862797Z",
+          "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "994140868"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MECHMAN AS",
+              "matched_organisation_number": "994140868"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+          "id": "purehelp-email-994140868-781f80db592bfb92",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@mechman.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "994140868",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/994140868",
+          "retrieved_at": "2026-11-05T21:09:32.862797Z",
+          "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "994140868"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MECHMAN AS",
+              "matched_organisation_number": "994140868"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+          "id": "purehelp-profile-994140868-781f80db592bfb92",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "71.129",
+            "nace_description": "Other technical consultancy",
+            "town": "TAU",
+            "zipcode": "4121",
+            "municipality": "STRAND",
+            "municipality_number": "1130",
+            "county": "Rogaland",
+            "registration_date": "2009-05-26",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2009-05-26",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.mechman.no"
+          }
+        },
+        {
+          "organisation_number": "994140868",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/994140868",
+          "retrieved_at": "2026-11-05T21:09:32.862797Z",
+          "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "994140868"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "MECHMAN AS",
+              "matched_organisation_number": "994140868"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+          "id": "purehelp-workforce-994140868-781f80db592bfb92",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 10,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1607,7 +1828,7 @@
     "company_name": "MECHMAN AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "MECHMAN AS is a private limited company operating in Annen teknisk konsulentvirksomhet. Latest accounts (2025): revenue NOK 13.5m, annual result NOK 1.2m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+26.9% YoY). Registered employees: 10. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "MECHMAN AS is a private limited company operating in Annen teknisk konsulentvirksomhet. Latest accounts (2025): revenue NOK 13.5m, annual result NOK 1.2m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+26.9% YoY). Registered employees: 10. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1622,6 +1843,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
@@ -1639,6 +1864,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
@@ -1656,6 +1885,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
@@ -1673,6 +1906,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
@@ -1690,6 +1927,10 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
@@ -1704,11 +1945,24 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/994140868/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.mechman.no/"
+        ]
       },
       {
         "question": "changes",
@@ -1723,18 +1977,16 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/994140868",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/994140868/aar",
+          "https://purehelp.no/company/NO/994140868",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.mechman.no/"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2253,75 +2505,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "994140868",
-        "platform": "company_site",
-        "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-994140868-9d82edc51a7e8ae5",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 4,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-36859d347d1ccf4afaf40c7d",
-        "organisation_number": "994140868",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T08:37:36.672697Z",
-        "content_sha256": "7da89a28f7c2dde73a5273ead53ea5358ed94e95df79e446e8aef828e06010c5",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "994140868",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 10",
-        "metrics": {
-          "workforce_value": 10,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-06-13"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-06-13",
-        "effective_at": "2026-06-13"
-      },
-      {
         "id": "registry-contact-a2281f7e4557043258535ece",
         "organisation_number": "994140868",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2340,8 +2530,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-3b93012047bb7bd4cf1ac38a",
@@ -2349,8 +2538,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2369,15 +2558,14 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "994140868",
         "platform": "company_site",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2395,14 +2583,13 @@
         "evidence_span": "Mechman Homepage - Mechman AS",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "994140868",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=994140868&size=1000",
-        "retrieved_at": "2026-10-05T08:37:41.437315Z",
+        "retrieved_at": "2026-09-29T10:05:17.610115Z",
         "content_sha256": "b1c192ef7a5ebce60485abc2022055e3b13de595cfc1957779f5b7b3f39ed0c3",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2424,8 +2611,7 @@
           "subunit_organisation_number": "990052611",
           "municipality": "STRAND",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "sitemap-page-d082fcfee1eabc4194e7a091",
@@ -2433,8 +2619,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2026-08-11",
         "exact_entity": true,
         "identity_proof": [
@@ -2461,8 +2647,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2025-04-28",
         "exact_entity": true,
         "identity_proof": [
@@ -2489,8 +2675,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2025-02-18",
         "exact_entity": true,
         "identity_proof": [
@@ -2517,8 +2703,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2024-06-14",
         "exact_entity": true,
         "identity_proof": [
@@ -2545,8 +2731,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2024-05-31",
         "exact_entity": true,
         "identity_proof": [
@@ -2573,8 +2759,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2019-06-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2601,8 +2787,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2019-06-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2629,8 +2815,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2019-06-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2657,8 +2843,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2019-06-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2685,8 +2871,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.mechman.no/",
-        "retrieved_at": "2026-10-05T08:37:53.800297Z",
-        "content_sha256": "9d82edc51a7e8ae572e451cec1284a5e3a22ab21dd7e819e3b0434d7b456df90",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
         "observed_at": "2019-06-07",
         "exact_entity": true,
         "identity_proof": [
@@ -2713,7 +2899,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "342b6f1b3f408518c6bc4fb024446384b2c282d91333472c8ee9c5c9ac33867f",
         "observed_at": "2026-07-13",
         "exact_entity": true,
@@ -2743,7 +2929,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9cb3a97577b9a34f3817e8fe099633fa7e59b5707c24d26274784a0bf2caf079",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2773,7 +2959,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ac33a4e1fc0b9b0a425989afe9cc58e9c7f846bba00fea931205845fa13358c1",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -2803,7 +2989,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ff05a0612d95d6aaf97c12348b83317c94377531b19eeda98b15dab2fde47013",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -2833,7 +3019,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b9bf13c024b570260f3a6a47a58b0645c83457aea1c96e53f0c89d3486d76166",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -2863,7 +3049,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a470abd00cd196b993a0a9b6fc7c7ebe36484835a49e75109d3a9d50db00aeb4",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2893,7 +3079,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3dc936ffc286a552551d3ba957cdfbc75d79b5fee38785244b60f811b68b2b8e",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -2923,7 +3109,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6cdb747b36804ed9d16658dff2399284b1acc0e078691be65ea64bfbae9e4872",
         "observed_at": "2025-06-28",
         "exact_entity": true,
@@ -2953,7 +3139,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "453109915bd5787e94cf595c384b814bbd3f6932f87daf7e32a3f4d9568de32f",
         "observed_at": "2025-03-13",
         "exact_entity": true,
@@ -2983,7 +3169,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "181a1d96fab5988db6a826d78d91d82a78417aa0c6358db4d4279c741409c55f",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -3013,7 +3199,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "97f6bae930a9ceb5db765eaa023a050ab6bb1a6d6722bb384b16cea92025ca48",
         "observed_at": "2024-06-26",
         "exact_entity": true,
@@ -3043,7 +3229,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d8636c294bc26dc762a878455477963f5b45144a66b6c0a6fe82b70d21bd8ec6",
         "observed_at": "2024-04-13",
         "exact_entity": true,
@@ -3073,7 +3259,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1441c89206a33a1d21016c8bfdb184b75d9f76eedee8f13950a114f45a51dcd3",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -3103,7 +3289,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e41d012f5e1d2a27dd38c8bd1fbc78178cee4a97717daa8862abea2a51eb03b7",
         "observed_at": "2023-12-12",
         "exact_entity": true,
@@ -3133,7 +3319,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c7eaf4ec5974e935b5d7839e5c591ad49ae96ad115205d43fec68dc65f12f3d2",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -3163,7 +3349,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "041ed14a694502e582d5a7bb941e98d5642e75f4ca0ce628aa2bf902ac9e6d7e",
         "observed_at": "2023-07-12",
         "exact_entity": true,
@@ -3193,7 +3379,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ea4e36c23ba70bec6ba3f431e1b66a429d004aab35f4abc1fa034a293ee588b8",
         "observed_at": "2023-06-15",
         "exact_entity": true,
@@ -3223,7 +3409,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e2b02e71323e10767fa580a71eea815ef75521b2ae312e63ad65fddae22714d6",
         "observed_at": "2023-02-14",
         "exact_entity": true,
@@ -3253,7 +3439,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "959dba890ed64d49b9118bf4b704fb1e93b1a9d2d6e157771045463addacd24c",
         "observed_at": "2023-01-12",
         "exact_entity": true,
@@ -3283,7 +3469,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b8f7a38651ee32b6edb96ff280bff765a8b9350b88be5d83eef4b7fdce6d5d6b",
         "observed_at": "2022-11-14",
         "exact_entity": true,
@@ -3306,8 +3492,295 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-9a660fcd8ee2c8c148c03ef2",
+        "organisation_number": "994140868",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "249cec27989f9f4a019d6fcdab0c80247cbb37cefdedefb4794f98c768048be3",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "994140868",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-13",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-13",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000542703&amp;sokeverdi=994140868&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-13 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-ac7814f0c0b1631eae4b3675",
+        "organisation_number": "994140868",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "082f90d1b01fb2b0f5a5d276dd9b45408591bdace4d51a24c79105bf98c76886",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "994140868",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-28",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-06-28",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000490475&amp;sokeverdi=994140868&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-06-28 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-a2153e10f2133506ed4fe40e",
+        "organisation_number": "994140868",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "59edeeea089d87b371f2929e9851ab49a1e72e1812953f27fbe5ac151e261c55",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "994140868",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-06-25",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-06-25",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000599595&amp;sokeverdi=994140868&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-06-25 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-36859d347d1ccf4afaf40c7d",
+        "organisation_number": "994140868",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/994140868",
+        "retrieved_at": "2026-09-29T10:05:09.344464Z",
+        "content_sha256": "7da89a28f7c2dde73a5273ead53ea5358ed94e95df79e446e8aef828e06010c5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "994140868",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 10",
+        "metrics": {
+          "workforce_value": 10,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-13",
+        "effective_at": "2026-06-13"
+      },
+      {
+        "id": "sitemap-page-8a8aac86b2aeafbcb3e1a5a0",
+        "organisation_number": "994140868",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.mechman.no/",
+        "retrieved_at": "2026-09-29T10:05:32.185672Z",
+        "content_sha256": "1ae4321aea7094507635682882fc87d74efc4cabd8553bdfe3676a9ef5bb731a",
+        "observed_at": "2026-10-06",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.mechman.no/buoyancy-material-guide/ last modified 2026-10-06",
+        "metrics": {
+          "page_url": "https://www.mechman.no/buoyancy-material-guide/",
+          "lastmod": "2026-10-06",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "organisation_number": "994140868",
+        "platform": "company_site",
+        "source_url": "https://www.mechman.no/",
+        "retrieved_at": "2026-09-29T12:32:31.186892Z",
+        "content_sha256": "890046337fc9d2c0d4b78a34b08e27132fe5d0a61613e1d3eef4c1b17d9f2465",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-994140868-890046337fc9d2c0",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 4 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 4,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "994140868",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/994140868",
+        "retrieved_at": "2026-11-05T21:09:32.862797Z",
+        "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "994140868"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MECHMAN AS",
+            "matched_organisation_number": "994140868"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+        "id": "purehelp-email-994140868-781f80db592bfb92",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@mechman.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "994140868",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/994140868",
+        "retrieved_at": "2026-11-05T21:09:32.862797Z",
+        "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "994140868"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MECHMAN AS",
+            "matched_organisation_number": "994140868"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+        "id": "purehelp-profile-994140868-781f80db592bfb92",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "71.129",
+          "nace_description": "Other technical consultancy",
+          "town": "TAU",
+          "zipcode": "4121",
+          "municipality": "STRAND",
+          "municipality_number": "1130",
+          "county": "Rogaland",
+          "registration_date": "2009-05-26",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2009-05-26",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.mechman.no"
+        }
+      },
+      {
+        "organisation_number": "994140868",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/994140868",
+        "retrieved_at": "2026-11-05T21:09:32.862797Z",
+        "content_sha256": "5de0d12db1cbe276692f2f4b5e9211c2dd82e960b15c8765b96bc2f7af2d78f6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "994140868"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "MECHMAN AS",
+            "matched_organisation_number": "994140868"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-994140868.orgNumber=994140868;name=MECHMAN AS",
+        "id": "purehelp-workforce-994140868-781f80db592bfb92",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 10,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:42.941437+00:00"
+  "generated_at": "2026-11-06T05:27:31.613147+00:00"
 }

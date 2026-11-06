@@ -517,75 +517,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "993378496",
-          "platform": "company_site",
-          "source_url": "https://strindalegesenter.no/",
-          "retrieved_at": "2026-10-05T08:58:00.260277Z",
-          "content_sha256": "cf7469b390402ccb2e3083a3a9041aad5f865bea8ff9a41dbf136247ae4a6ed3",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-993378496-cf7469b390402ccb",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 2,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-9e6700801975e80045a11eb0",
-          "organisation_number": "993378496",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T08:57:50.443993Z",
-          "content_sha256": "18a59766b41d00ef6db5a88a1697fa6ab139f74bc8a38bd7f4eef3390290b949",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "993378496",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 13",
-          "metrics": {
-            "workforce_value": 13,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-9b44324aea4b55febc480f11",
           "organisation_number": "993378496",
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -604,15 +542,14 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "993378496",
           "platform": "company_site",
           "source_url": "https://strindalegesenter.no/",
-          "retrieved_at": "2026-10-05T08:58:00.260277Z",
-          "content_sha256": "cf7469b390402ccb2e3083a3a9041aad5f865bea8ff9a41dbf136247ae4a6ed3",
+          "retrieved_at": "2026-09-29T10:24:37.328108Z",
+          "content_sha256": "9fb92778f1d4cf5a408d8ed6a54ffc3a52cf4e6187a33a05ad0212e95f78e3d6",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -630,14 +567,13 @@
           "evidence_span": "Hjem - Strinda Legesenter — Hjem - Strinda Legesenter",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "organisation_number": "993378496",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
-          "retrieved_at": "2026-10-05T08:57:55.987277Z",
+          "retrieved_at": "2026-09-29T10:24:33.986248Z",
           "content_sha256": "d2db2cb0320e000567f983a09f0c047a0b100c0b699bf45ca29da490710a6b30",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -659,8 +595,7 @@
             "subunit_organisation_number": "993419958",
             "municipality": "TRONDHEIM",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-cc0d140dec9e03959ab71279",
@@ -668,7 +603,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cc0d140dec9e03959ab7127965a0b61552f45ca92c82703297620f15161b8b37",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -698,7 +633,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bce5b5ba963671bbe58b7bf21dd7ceeaae39b38331f862b7ee9f3d766a087e98",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -728,7 +663,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "636b61bd367aa6cfff564e8b6dc87596edad567f0ccc7f2056968b396c420652",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -758,7 +693,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "64add09d528550bd5197592b2edf4450d82ed7e88ddd9ce9871dbf884295db54",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -788,7 +723,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d2abff12a13e4e18da8f13985ef6352c35dcaaa66861cdd7db177573a6783eae",
           "observed_at": "2026-05-26",
           "exact_entity": true,
@@ -818,7 +753,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f5db5aba779de1b86623ffcc4b5db1856bed3d00096e70f8bbe5da2132d69db1",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -848,7 +783,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5e876b08990cc85d4a188ef055c23d75a7741537cb412cd15fa83b7758373730",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -878,7 +813,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "fd0cfc1737a8617c633848df4baf0c3d4c02da7f7f77ba7dee9bca6f9d5ea756",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -908,38 +843,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "eba48b069752c32d44656d62695818538aa10f7a432681e6608c716c341bf53a",
-          "observed_at": "2025-04-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "993378496",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-09: Endring",
-          "metrics": {
-            "date": "2025-04-09",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-1f27d9bf3ca5136bfd32bb52",
-          "organisation_number": "993378496",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "1f27d9bf3ca5136bfd32bb52f5e0243f2c8c6ab867d2cb42a0881eca49e53f0d",
           "observed_at": "2025-04-09",
           "exact_entity": true,
           "identity_proof": [
@@ -968,7 +873,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "30b509ce23f4c6477c3a53f493c73cf6eed3c2bbbabb4e535bc1a91bbbd112d2",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -998,7 +903,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "366a00e0545b2665674c40d10818e712f410df6036f59fac4314c3c755663da4",
           "observed_at": "2024-12-12",
           "exact_entity": true,
@@ -1028,7 +933,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "10e363cf509a5d883033c1dcde28553283d729acf538bf756ae929c09a043aa4",
           "observed_at": "2024-09-12",
           "exact_entity": true,
@@ -1058,7 +963,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "66b8eca764164eeae65a8c0942b4eda68354b625179ab243b6e40be9099d171b",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -1088,7 +993,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "1e17136520da012580eae796b9fa333c76c49cf5ba538daa9d42336e0e73f2bf",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1118,7 +1023,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "14893980500ba564956384964a789bf5ba2ab9e22e12caf1b927167d45f00540",
           "observed_at": "2024-05-29",
           "exact_entity": true,
@@ -1148,7 +1053,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b50ba7a783bc74d10ddd3eef4e76c70db5542ef7784a9a640ce6634312f1452a",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1178,7 +1083,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b4eb484418b7ce13ca6e71dde1b5d598e27cfe1039f7e01ee31c069ec8288ccf",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1208,7 +1113,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "81c72dcbaa95ab996eadb7353622e26d1bd8a152e4685943ea7238ab8cedaa45",
           "observed_at": "2023-12-12",
           "exact_entity": true,
@@ -1238,7 +1143,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4ceb93628fa695560e7f965e514560d8e092ae3776dbe0a8e33afa11ca1b63fe",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -1263,10 +1168,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-11c12b23dfc2aa91e2dbac34",
+          "organisation_number": "993378496",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "0d58d744798646f83bfae8c9df9b342c557b4c88e5d1ba98b3fff4ea0199a1bf",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "993378496",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-05-26",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-05-26",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-05-26 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-89acbbbb03dd18b8f18589aa",
+          "organisation_number": "993378496",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "38ef368a6021387cfe161941e59b495cb4483a4f5822f77f7b9c58fafe10f907",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "993378496",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-05-19",
+          "signal": {
+            "title": "Styre",
+            "date": "2026-05-19",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2026-05-19 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-037e4002ecce4f87d9e945dd",
+          "organisation_number": "993378496",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "6b073e85a4da33a18d80a551d46b41a502c13d0703509581f0b6260b2235bd07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "993378496",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-01",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-07-01",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-07-01 (BRREG official announcement)"
+        },
+        {
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1295,7 +1287,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1327,7 +1319,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1359,7 +1351,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1391,7 +1383,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1423,7 +1415,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1455,7 +1447,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1484,7 +1476,7 @@
           "organisation_number": "993378496",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-          "retrieved_at": "2026-10-05T14:31:29.651531Z",
+          "retrieved_at": "2026-10-06T15:53:39.795879Z",
           "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
           "exact_entity": true,
           "identity_proof": [
@@ -1509,6 +1501,298 @@
             "review_count": 35,
             "scale": 5
           }
+        },
+        {
+          "id": "registry-workforce-9e6700801975e80045a11eb0",
+          "organisation_number": "993378496",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
+          "retrieved_at": "2026-09-29T10:24:26.166163Z",
+          "content_sha256": "18a59766b41d00ef6db5a88a1697fa6ab139f74bc8a38bd7f4eef3390290b949",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "993378496",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 13",
+          "metrics": {
+            "workforce_value": 13,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-08-12"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-08-12",
+          "effective_at": "2026-08-12"
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+          "retrieved_at": "2026-10-31T18:18:43.629437Z",
+          "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "strindalegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "neutral",
+          "id": "gplaces-metrics-993378496-a50179de875306a6",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Strinda legesenter AS Google profile: rating 3.1/5, 37 ratings.",
+          "metrics": {
+            "rating": 3.1,
+            "review_count": 37,
+            "scale": 5,
+            "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+          "retrieved_at": "2026-10-31T18:18:43.629437Z",
+          "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "strindalegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "neutral",
+          "id": "gplaces-review-993378496-2100c4c05fc064b7",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Ужасный опыт с этой клиникой, долго ждать пока вызовут,так еще и врач никогда не идёт на встречу и только унижает и сравнивает ,агресируя и давя ,не советую врача ELISABETH HETLE,ужасная женщина",
+          "observed_at": "2026-10-12T15:38:45.833250602Z",
+          "sentiment_label": "negative",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 1,
+            "scale": 5,
+            "review_index": 2,
+            "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+          "retrieved_at": "2026-10-31T18:18:43.629437Z",
+          "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "strindalegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "neutral",
+          "id": "gplaces-review-summary-993378496-a50179de875306a6",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Strinda legesenter AS is rated 3.1/5 from 37 Google reviews.",
+          "metrics": {
+            "rating": 3.1,
+            "review_count": 37,
+            "scale": 5,
+            "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+          "retrieved_at": "2026-10-31T18:18:43.629437Z",
+          "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "strindalegesenter.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "neutral",
+          "id": "gplaces-sentiment-993378496-a50179de875306a6",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "neutral",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 3.1/5 from 37 reviews implies neutral sentiment.",
+          "metrics": {
+            "rating": 3.1,
+            "review_count": 37,
+            "scale": 5
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "company_site",
+          "source_url": "https://strindalegesenter.no/",
+          "retrieved_at": "2026-09-29T12:51:52.649962Z",
+          "content_sha256": "0e3ce599b9cbee8096f608dd161cf56ad8ae86217e7e5ae400032e214c051a16",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-993378496-0e3ce599b9cbee80",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 2,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-09-29"
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/993378496",
+          "retrieved_at": "2026-11-05T21:11:02.949380Z",
+          "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "993378496"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STRINDA LEGESENTER AS",
+              "matched_organisation_number": "993378496"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+          "id": "purehelp-phone-993378496-6ecdb3d434e597d2",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "73 98 40 10",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/993378496",
+          "retrieved_at": "2026-11-05T21:11:02.949380Z",
+          "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "993378496"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STRINDA LEGESENTER AS",
+              "matched_organisation_number": "993378496"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+          "id": "purehelp-profile-993378496-6ecdb3d434e597d2",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "86.210",
+            "nace_description": "General medical practice activities",
+            "town": "TRONDHEIM",
+            "zipcode": "7049",
+            "municipality": "TRONDHEIM",
+            "municipality_number": "5001",
+            "county": "Trøndelag",
+            "registration_date": "2008-12-10",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2008-12-10",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.strindalegesenter.no"
+          }
+        },
+        {
+          "organisation_number": "993378496",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/993378496",
+          "retrieved_at": "2026-11-05T21:11:02.949380Z",
+          "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "993378496"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STRINDA LEGESENTER AS",
+              "matched_organisation_number": "993378496"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+          "id": "purehelp-workforce-993378496-6ecdb3d434e597d2",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 13,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1532,7 +1816,7 @@
     "company_name": "STRINDA LEGESENTER AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "STRINDA LEGESENTER AS is a private limited company operating in Allmennlegetjenester. Latest accounts (2025): revenue NOK 6.4m, annual result NOK 953.3k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+8.0% YoY). Registered employees: 13. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "STRINDA LEGESENTER AS is a private limited company operating in Allmennlegetjenester. Latest accounts (2025): revenue NOK 6.4m, annual result NOK 953.3k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+8.0% YoY). Registered employees: 13. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1547,8 +1831,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       },
       {
@@ -1564,8 +1853,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       },
       {
@@ -1581,8 +1875,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       },
       {
@@ -1598,8 +1897,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       },
       {
@@ -1615,8 +1919,13 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       },
       {
@@ -1629,11 +1938,25 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/993378496/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
+          "https://strindalegesenter.no/",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
+        ]
       },
       {
         "question": "changes",
@@ -1648,18 +1971,17 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/993378496",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/993378496/aar",
+          "https://purehelp.no/company/NO/993378496",
           "https://strindalegesenter.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2166,75 +2488,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "993378496",
-        "platform": "company_site",
-        "source_url": "https://strindalegesenter.no/",
-        "retrieved_at": "2026-10-05T08:58:00.260277Z",
-        "content_sha256": "cf7469b390402ccb2e3083a3a9041aad5f865bea8ff9a41dbf136247ae4a6ed3",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-993378496-cf7469b390402ccb",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 2,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-9e6700801975e80045a11eb0",
-        "organisation_number": "993378496",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T08:57:50.443993Z",
-        "content_sha256": "18a59766b41d00ef6db5a88a1697fa6ab139f74bc8a38bd7f4eef3390290b949",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "993378496",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 13",
-        "metrics": {
-          "workforce_value": 13,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-9b44324aea4b55febc480f11",
         "organisation_number": "993378496",
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2253,15 +2513,14 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "993378496",
         "platform": "company_site",
         "source_url": "https://strindalegesenter.no/",
-        "retrieved_at": "2026-10-05T08:58:00.260277Z",
-        "content_sha256": "cf7469b390402ccb2e3083a3a9041aad5f865bea8ff9a41dbf136247ae4a6ed3",
+        "retrieved_at": "2026-09-29T10:24:37.328108Z",
+        "content_sha256": "9fb92778f1d4cf5a408d8ed6a54ffc3a52cf4e6187a33a05ad0212e95f78e3d6",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2279,14 +2538,13 @@
         "evidence_span": "Hjem - Strinda Legesenter — Hjem - Strinda Legesenter",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "organisation_number": "993378496",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=993378496&size=1000",
-        "retrieved_at": "2026-10-05T08:57:55.987277Z",
+        "retrieved_at": "2026-09-29T10:24:33.986248Z",
         "content_sha256": "d2db2cb0320e000567f983a09f0c047a0b100c0b699bf45ca29da490710a6b30",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2308,8 +2566,7 @@
           "subunit_organisation_number": "993419958",
           "municipality": "TRONDHEIM",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-cc0d140dec9e03959ab71279",
@@ -2317,7 +2574,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cc0d140dec9e03959ab7127965a0b61552f45ca92c82703297620f15161b8b37",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2347,7 +2604,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bce5b5ba963671bbe58b7bf21dd7ceeaae39b38331f862b7ee9f3d766a087e98",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -2377,7 +2634,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "636b61bd367aa6cfff564e8b6dc87596edad567f0ccc7f2056968b396c420652",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -2407,7 +2664,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "64add09d528550bd5197592b2edf4450d82ed7e88ddd9ce9871dbf884295db54",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2437,7 +2694,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d2abff12a13e4e18da8f13985ef6352c35dcaaa66861cdd7db177573a6783eae",
         "observed_at": "2026-05-26",
         "exact_entity": true,
@@ -2467,7 +2724,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f5db5aba779de1b86623ffcc4b5db1856bed3d00096e70f8bbe5da2132d69db1",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2497,7 +2754,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5e876b08990cc85d4a188ef055c23d75a7741537cb412cd15fa83b7758373730",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2527,7 +2784,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "fd0cfc1737a8617c633848df4baf0c3d4c02da7f7f77ba7dee9bca6f9d5ea756",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -2557,38 +2814,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "eba48b069752c32d44656d62695818538aa10f7a432681e6608c716c341bf53a",
-        "observed_at": "2025-04-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "993378496",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-09: Endring",
-        "metrics": {
-          "date": "2025-04-09",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-1f27d9bf3ca5136bfd32bb52",
-        "organisation_number": "993378496",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "1f27d9bf3ca5136bfd32bb52f5e0243f2c8c6ab867d2cb42a0881eca49e53f0d",
         "observed_at": "2025-04-09",
         "exact_entity": true,
         "identity_proof": [
@@ -2617,7 +2844,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "30b509ce23f4c6477c3a53f493c73cf6eed3c2bbbabb4e535bc1a91bbbd112d2",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -2647,7 +2874,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "366a00e0545b2665674c40d10818e712f410df6036f59fac4314c3c755663da4",
         "observed_at": "2024-12-12",
         "exact_entity": true,
@@ -2677,7 +2904,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "10e363cf509a5d883033c1dcde28553283d729acf538bf756ae929c09a043aa4",
         "observed_at": "2024-09-12",
         "exact_entity": true,
@@ -2707,7 +2934,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "66b8eca764164eeae65a8c0942b4eda68354b625179ab243b6e40be9099d171b",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -2737,7 +2964,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "1e17136520da012580eae796b9fa333c76c49cf5ba538daa9d42336e0e73f2bf",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -2767,7 +2994,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "14893980500ba564956384964a789bf5ba2ab9e22e12caf1b927167d45f00540",
         "observed_at": "2024-05-29",
         "exact_entity": true,
@@ -2797,7 +3024,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b50ba7a783bc74d10ddd3eef4e76c70db5542ef7784a9a640ce6634312f1452a",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2827,7 +3054,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b4eb484418b7ce13ca6e71dde1b5d598e27cfe1039f7e01ee31c069ec8288ccf",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -2857,7 +3084,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "81c72dcbaa95ab996eadb7353622e26d1bd8a152e4685943ea7238ab8cedaa45",
         "observed_at": "2023-12-12",
         "exact_entity": true,
@@ -2887,7 +3114,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4ceb93628fa695560e7f965e514560d8e092ae3776dbe0a8e33afa11ca1b63fe",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2912,10 +3139,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-11c12b23dfc2aa91e2dbac34",
+        "organisation_number": "993378496",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "0d58d744798646f83bfae8c9df9b342c557b4c88e5d1ba98b3fff4ea0199a1bf",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "993378496",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-05-26",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-05-26",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000302029&amp;sokeverdi=993378496&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-05-26 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-89acbbbb03dd18b8f18589aa",
+        "organisation_number": "993378496",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "38ef368a6021387cfe161941e59b495cb4483a4f5822f77f7b9c58fafe10f907",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "993378496",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-05-19",
+        "signal": {
+          "title": "Styre",
+          "date": "2026-05-19",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000276475&amp;sokeverdi=993378496&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2026-05-19 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-037e4002ecce4f87d9e945dd",
+        "organisation_number": "993378496",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "6b073e85a4da33a18d80a551d46b41a502c13d0703509581f0b6260b2235bd07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "993378496",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-01",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-07-01",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000504651&amp;sokeverdi=993378496&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-07-01 (BRREG official announcement)"
+      },
+      {
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -2944,7 +3258,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -2976,7 +3290,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3008,7 +3322,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3040,7 +3354,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3072,7 +3386,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3104,7 +3418,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3133,7 +3447,7 @@
         "organisation_number": "993378496",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
-        "retrieved_at": "2026-10-05T14:31:29.651531Z",
+        "retrieved_at": "2026-10-06T15:53:39.795879Z",
         "content_sha256": "0617df6f2b7a49d524bad60ee9fb2cd56cd6529c0d71a35539af5c26a2931420",
         "exact_entity": true,
         "identity_proof": [
@@ -3158,8 +3472,300 @@
           "review_count": 35,
           "scale": 5
         }
+      },
+      {
+        "id": "registry-workforce-9e6700801975e80045a11eb0",
+        "organisation_number": "993378496",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/993378496",
+        "retrieved_at": "2026-09-29T10:24:26.166163Z",
+        "content_sha256": "18a59766b41d00ef6db5a88a1697fa6ab139f74bc8a38bd7f4eef3390290b949",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "993378496",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 13",
+        "metrics": {
+          "workforce_value": 13,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-08-12"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-08-12",
+        "effective_at": "2026-08-12"
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+        "retrieved_at": "2026-10-31T18:18:43.629437Z",
+        "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "strindalegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "neutral",
+        "id": "gplaces-metrics-993378496-a50179de875306a6",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Strinda legesenter AS Google profile: rating 3.1/5, 37 ratings.",
+        "metrics": {
+          "rating": 3.1,
+          "review_count": 37,
+          "scale": 5,
+          "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+        "retrieved_at": "2026-10-31T18:18:43.629437Z",
+        "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "strindalegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "neutral",
+        "id": "gplaces-review-993378496-2100c4c05fc064b7",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Ужасный опыт с этой клиникой, долго ждать пока вызовут,так еще и врач никогда не идёт на встречу и только унижает и сравнивает ,агресируя и давя ,не советую врача ELISABETH HETLE,ужасная женщина",
+        "observed_at": "2026-10-12T15:38:45.833250602Z",
+        "sentiment_label": "negative",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 1,
+          "scale": 5,
+          "review_index": 2,
+          "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+        "retrieved_at": "2026-10-31T18:18:43.629437Z",
+        "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "strindalegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "neutral",
+        "id": "gplaces-review-summary-993378496-a50179de875306a6",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Strinda legesenter AS is rated 3.1/5 from 37 Google reviews.",
+        "metrics": {
+          "rating": 3.1,
+          "review_count": 37,
+          "scale": 5,
+          "place_id": "ChIJkyeE0MoxbUYRxmP2s5BKc74"
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJkyeE0MoxbUYRxmP2s5BKc74",
+        "retrieved_at": "2026-10-31T18:18:43.629437Z",
+        "content_sha256": "a50179de875306a603c7929b320b2a66200955f771ecf9679a9a8f2e51101aa0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "strindalegesenter.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "neutral",
+        "id": "gplaces-sentiment-993378496-a50179de875306a6",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "neutral",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 3.1/5 from 37 reviews implies neutral sentiment.",
+        "metrics": {
+          "rating": 3.1,
+          "review_count": 37,
+          "scale": 5
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "company_site",
+        "source_url": "https://strindalegesenter.no/",
+        "retrieved_at": "2026-09-29T12:51:52.649962Z",
+        "content_sha256": "0e3ce599b9cbee8096f608dd161cf56ad8ae86217e7e5ae400032e214c051a16",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-993378496-0e3ce599b9cbee80",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 2,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-09-29"
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/993378496",
+        "retrieved_at": "2026-11-05T21:11:02.949380Z",
+        "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "993378496"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STRINDA LEGESENTER AS",
+            "matched_organisation_number": "993378496"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+        "id": "purehelp-phone-993378496-6ecdb3d434e597d2",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "73 98 40 10",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/993378496",
+        "retrieved_at": "2026-11-05T21:11:02.949380Z",
+        "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "993378496"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STRINDA LEGESENTER AS",
+            "matched_organisation_number": "993378496"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+        "id": "purehelp-profile-993378496-6ecdb3d434e597d2",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "86.210",
+          "nace_description": "General medical practice activities",
+          "town": "TRONDHEIM",
+          "zipcode": "7049",
+          "municipality": "TRONDHEIM",
+          "municipality_number": "5001",
+          "county": "Trøndelag",
+          "registration_date": "2008-12-10",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2008-12-10",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.strindalegesenter.no"
+        }
+      },
+      {
+        "organisation_number": "993378496",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/993378496",
+        "retrieved_at": "2026-11-05T21:11:02.949380Z",
+        "content_sha256": "9913e3f660bbc749006d188b376e9932191ef12dcff9585e6cff5a9b1df0f3fa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "993378496"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STRINDA LEGESENTER AS",
+            "matched_organisation_number": "993378496"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-993378496.orgNumber=993378496;name=STRINDA LEGESENTER AS",
+        "id": "purehelp-workforce-993378496-6ecdb3d434e597d2",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 13,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:45.949664+00:00"
+  "generated_at": "2026-11-06T05:27:37.922218+00:00"
 }

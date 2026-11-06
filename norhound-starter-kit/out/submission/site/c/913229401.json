@@ -539,45 +539,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-1a8fe106670779fc17548391",
-          "organisation_number": "913229401",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T08:58:49.910336Z",
-          "content_sha256": "688522fea7d391f0f460145ea3bf7f3ae63f65853a70e7a5aeb14e79939411a1",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "913229401",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 7",
-          "metrics": {
-            "workforce_value": 7,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-08-11"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-08-11",
-          "effective_at": "2026-08-11"
-        },
-        {
           "id": "registry-contact-578e7d47a0a5f7b39f9fbdf4",
           "organisation_number": "913229401",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -596,8 +564,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-331f67fba11291a87f3dbd44",
@@ -605,8 +572,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -625,14 +592,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "913229401",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=913229401&size=1000",
-          "retrieved_at": "2026-10-05T08:58:57.409292Z",
+          "retrieved_at": "2026-09-29T10:25:34.302433Z",
           "content_sha256": "3fc72ccfeabaff5f5ca92d7a8bd969c6940b9e8749317d0691b1c2b59f91d82f",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -654,8 +620,7 @@
             "subunit_organisation_number": "813250012",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-76c6c702936e20eee8d76561",
@@ -663,7 +628,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "76c6c702936e20eee8d76561f7f7d47fe083361b2cf9dc40ce5c868746f27de8",
           "observed_at": "2026-08-11",
           "exact_entity": true,
@@ -693,7 +658,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "eab2c664d34a7ecde3ca76c49c736919d13a65a557eb0a9fa9e68af3a381b7f3",
           "observed_at": "2026-05-13",
           "exact_entity": true,
@@ -723,7 +688,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5750874060aff3cf260c73600cbf29ec33bb52d0651a2d121298a59d19eb1588",
           "observed_at": "2025-12-11",
           "exact_entity": true,
@@ -753,7 +718,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "cd4c00fe5dd2120bfbdb3978aefc4bba94c2cf1cf77d17c2ad39654d1007b952",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -783,7 +748,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "79e52b65ba9d96e5af805f1be6dc333eb2cd1c9d97b9a5423221eae0ddaae441",
           "observed_at": "2025-05-07",
           "exact_entity": true,
@@ -813,7 +778,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "3ab2648f19134a9833090afa47ad5e92dff44d01fa3f2375d9b8e5841e8c950f",
           "observed_at": "2025-05-06",
           "exact_entity": true,
@@ -843,7 +808,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bf0afdfb5a300d7c7ee5718ef10cdd063f787335aa42146934ff586b81f3adbf",
           "observed_at": "2024-12-11",
           "exact_entity": true,
@@ -873,7 +838,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "fcb4a2d46846e6cb326c4ab1a200ba2232dcf92bdaec4e417b312f33e29eac7f",
           "observed_at": "2024-11-14",
           "exact_entity": true,
@@ -903,7 +868,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8b2fbb968f59c6cfd5144ab23becf41f5dbf3334654eafe86f5ea74cbcf01c00",
           "observed_at": "2024-10-12",
           "exact_entity": true,
@@ -933,7 +898,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "87529c504e9e29d60c2447237a02360d0f790c8ce54d5e5682959659192d0647",
           "observed_at": "2024-09-12",
           "exact_entity": true,
@@ -963,7 +928,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a093ff06e0bb895f70e604d2afc7457bc9f42fabb796e9298b2658eaafbdd16a",
           "observed_at": "2024-05-04",
           "exact_entity": true,
@@ -993,7 +958,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "ccb5ace2dbead2c563276c0678a15655a19c5c1d709324721ac9bc65ed4d7b6e",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1023,7 +988,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "8b4f17f52b2a64aaf9a9f1f73432fec866cf5b649d51b3de11bc8b93aca1bd7b",
           "observed_at": "2023-07-11",
           "exact_entity": true,
@@ -1053,7 +1018,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6d5c8c55ed4a2092d22c77697b05e0580efdb29eaa9e4e1bc167d52c691ca26b",
           "observed_at": "2023-05-06",
           "exact_entity": true,
@@ -1083,38 +1048,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "a8180894a932f195c26e2771f867d337e5f4740516656f87fd5443fc287f49b9",
-          "observed_at": "2023-03-13",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "913229401",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2023-03-13: Endring",
-          "metrics": {
-            "date": "2023-03-13",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-395d4350330afb352a9b6008",
-          "organisation_number": "913229401",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "395d4350330afb352a9b6008359b2e5368437183511114dcb359a21009703c21",
           "observed_at": "2023-03-13",
           "exact_entity": true,
           "identity_proof": [
@@ -1143,7 +1078,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "73b685d30a487446e6693562b49a5b5ee3ee22acb7dc89e4304b867d38fa2ca8",
           "observed_at": "2022-11-12",
           "exact_entity": true,
@@ -1173,7 +1108,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b57ae0ea69f1e37d69879dae968ca8422ee7a009a2ad173f6b3b7ec9c2772ff9",
           "observed_at": "2022-10-11",
           "exact_entity": true,
@@ -1203,7 +1138,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "457788032c92e51536e3ecc90a36347bcf7d19fafeb443961268d2d05895357d",
           "observed_at": "2022-08-01",
           "exact_entity": true,
@@ -1233,7 +1168,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d0c5ffb4d51bc1e037b1c8495715afc0d1bac47da544ce69888bd250838ee794",
           "observed_at": "2022-06-14",
           "exact_entity": true,
@@ -1258,39 +1193,97 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-c33068e4776fbd6eaddef65c",
           "organisation_number": "913229401",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
-          "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "beb7fa758a398cfd3c1d4aa2cb8260850bff953d6e8d2696d8f634aae8839956",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "google_places_website_domain_match",
-              "value": "norus-regnskap.no",
-              "source": "google_places"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "913229401",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-913229401-4c54cb1fc3ded387",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Norus Regnskapsbyrå AS Google profile: rating 4.4/5, 31 ratings.",
-          "metrics": {
-            "rating": 4.4,
-            "review_count": 31,
-            "scale": 5,
-            "place_id": "ChIJK9lF4qVvQUYRvVOHafQe86o"
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-05-13",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-05-13",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-05-13 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-ace57192d682f92ea26c142a",
+          "organisation_number": "913229401",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "b42f00f481044bbeb2d31d831264b398b50c7749524962927b678ae62cf28434",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "913229401",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-09-16",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-09-16",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-09-16 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-cda041563b131e87355d5052",
+          "organisation_number": "913229401",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "ce419705032c0ee9fc5a873df5b329aaddacf9510999760099b697995cfba206",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "913229401",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-05-06",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-05-06",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-05-06 (BRREG official announcement)"
         },
         {
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
+          "retrieved_at": "2026-10-06T15:53:40.658876Z",
           "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
           "exact_entity": true,
           "identity_proof": [
@@ -1322,7 +1315,7 @@
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
+          "retrieved_at": "2026-10-06T15:53:40.658876Z",
           "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
           "exact_entity": true,
           "identity_proof": [
@@ -1354,7 +1347,7 @@
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
+          "retrieved_at": "2026-10-06T15:53:40.658876Z",
           "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
           "exact_entity": true,
           "identity_proof": [
@@ -1386,7 +1379,7 @@
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
+          "retrieved_at": "2026-10-06T15:53:40.658876Z",
           "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
           "exact_entity": true,
           "identity_proof": [
@@ -1418,7 +1411,7 @@
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
+          "retrieved_at": "2026-10-06T15:53:40.658876Z",
           "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
           "exact_entity": true,
           "identity_proof": [
@@ -1447,11 +1440,43 @@
           }
         },
         {
+          "id": "registry-workforce-1a8fe106670779fc17548391",
+          "organisation_number": "913229401",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
+          "retrieved_at": "2026-09-29T10:25:27.341472Z",
+          "content_sha256": "688522fea7d391f0f460145ea3bf7f3ae63f65853a70e7a5aeb14e79939411a1",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "913229401",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 7",
+          "metrics": {
+            "workforce_value": 7,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-08-11"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-08-11",
+          "effective_at": "2026-08-11"
+        },
+        {
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
-          "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+          "retrieved_at": "2026-10-31T18:18:50.459924Z",
+          "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1464,7 +1489,36 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-913229401-4c54cb1fc3ded387",
+          "id": "gplaces-metrics-913229401-1f94f78b6e2fb2c4",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Norus Regnskapsbyrå AS Google profile: rating 4.4/5, 31 ratings.",
+          "metrics": {
+            "rating": 4.4,
+            "review_count": 31,
+            "scale": 5,
+            "place_id": "ChIJK9lF4qVvQUYRvVOHafQe86o"
+          }
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
+          "retrieved_at": "2026-10-31T18:18:50.459924Z",
+          "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "norus-regnskap.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-913229401-1f94f78b6e2fb2c4",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Norus Regnskapsbyrå AS is rated 4.4/5 from 31 Google reviews.",
@@ -1479,8 +1533,8 @@
           "organisation_number": "913229401",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-          "retrieved_at": "2026-10-05T14:31:30.323170Z",
-          "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+          "retrieved_at": "2026-10-31T18:18:50.459924Z",
+          "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1493,7 +1547,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-913229401-4c54cb1fc3ded387",
+          "id": "gplaces-sentiment-913229401-1f94f78b6e2fb2c4",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1503,6 +1557,213 @@
             "rating": 4.4,
             "review_count": 31,
             "scale": 5
+          }
+        },
+        {
+          "id": "registry-site-913229401-39085927da05c9a2",
+          "organisation_number": "913229401",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://norus-regnskap.no/",
+          "retrieved_at": "2026-10-09T13:58:48.349594Z",
+          "content_sha256": "39085927da05c9a235383f015d302ecb419c1386a64df667bf7520212d60c55e",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "norus-regnskap.no",
+              "matched_organisation_number": "913229401",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares norus-regnskap.no as the website of organisation 913229401; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Norus Regnskapsbyrå AS – Regnskapstjenester fra A til Å",
+          "metrics": {
+            "title": "Norus Regnskapsbyrå AS – Regnskapstjenester fra A til Å",
+            "description": "",
+            "registry_domain": "norus-regnskap.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "company_directory",
+          "source_url": "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "retrieved_at": "2026-11-05T14:45:43.762388Z",
+          "content_sha256": "40ec301d8633f309cce076fad959492c9198b1377afa64067f39f0c9b7d7f70d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "913229401"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NORUS ACCOUNTING AS",
+              "matched_organisation_number": "913229401"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "metrics": {
+            "scale": 5,
+            "website_domain": "norus-regnskap.no",
+            "address": {
+              "street": "Hasleveien 28A",
+              "locality": "OSLO",
+              "postal_code": "0571"
+            }
+          },
+          "id": "fagfolk-profile-913229401-3c3b6f1d41aa4442",
+          "signal_type": "profile_metrics",
+          "strategy": "directory_profile_metrics",
+          "source_class": "company_directory",
+          "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"913229401\"}"
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/913229401",
+          "retrieved_at": "2026-11-05T21:11:07.591923Z",
+          "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "913229401"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NORUS ACCOUNTING AS",
+              "matched_organisation_number": "913229401"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+          "id": "purehelp-email-913229401-05904bcbd681e2ec",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@norus-regnskap.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/913229401",
+          "retrieved_at": "2026-11-05T21:11:07.591923Z",
+          "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "913229401"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NORUS ACCOUNTING AS",
+              "matched_organisation_number": "913229401"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+          "id": "purehelp-phone-913229401-05904bcbd681e2ec",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "46 78 23 69",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/913229401",
+          "retrieved_at": "2026-11-05T21:11:07.591923Z",
+          "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "913229401"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NORUS ACCOUNTING AS",
+              "matched_organisation_number": "913229401"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+          "id": "purehelp-profile-913229401-05904bcbd681e2ec",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "69.202",
+            "nace_description": "Accounting and bookkeeping",
+            "town": "OSLO",
+            "zipcode": "0571",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "2014-02-13",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2014-02-13",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.norus-regnskap.no"
+          }
+        },
+        {
+          "organisation_number": "913229401",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/913229401",
+          "retrieved_at": "2026-11-05T21:11:07.591923Z",
+          "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "913229401"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NORUS ACCOUNTING AS",
+              "matched_organisation_number": "913229401"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+          "id": "purehelp-workforce-913229401-05904bcbd681e2ec",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 7,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1528,7 +1789,7 @@
     "company_name": "NORUS ACCOUNTING AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "NORUS ACCOUNTING AS is a private limited company operating in Regnskapsføring og bokføring. Latest accounts (2025): revenue NOK 9.3m, annual result NOK 22.7k. Annual accounts available for 2014-2025 (12 years). Detailed records only available as PDFs. Revenue growing (+7.0% YoY). Registered employees: 7. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "NORUS ACCOUNTING AS is a private limited company operating in Regnskapsføring og bokføring. Latest accounts (2025): revenue NOK 9.3m, annual result NOK 22.7k. Annual accounts available for 2014-2025 (12 years). Detailed records only available as PDFs. Revenue growing (+7.0% YoY). Registered employees: 7. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1544,7 +1805,13 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       },
       {
@@ -1561,7 +1828,13 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       },
       {
@@ -1578,7 +1851,13 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       },
       {
@@ -1595,7 +1874,13 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       },
       {
@@ -1612,7 +1897,13 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       },
       {
@@ -1625,11 +1916,26 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/913229401/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=913229401&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
+          "https://norus-regnskap.no/",
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
+        ]
       },
       {
         "question": "changes",
@@ -1645,17 +1951,17 @@
           "https://data.brreg.no/regnskapsregisteret/regnskap/913229401",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/913229401/aar",
           "https://norus-regnskap.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/913229401",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+          "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2184,45 +2490,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-1a8fe106670779fc17548391",
-        "organisation_number": "913229401",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T08:58:49.910336Z",
-        "content_sha256": "688522fea7d391f0f460145ea3bf7f3ae63f65853a70e7a5aeb14e79939411a1",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "913229401",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 7",
-        "metrics": {
-          "workforce_value": 7,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-08-11"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-08-11",
-        "effective_at": "2026-08-11"
-      },
-      {
         "id": "registry-contact-578e7d47a0a5f7b39f9fbdf4",
         "organisation_number": "913229401",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2241,8 +2515,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-331f67fba11291a87f3dbd44",
@@ -2250,8 +2523,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2270,14 +2543,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "913229401",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=913229401&size=1000",
-        "retrieved_at": "2026-10-05T08:58:57.409292Z",
+        "retrieved_at": "2026-09-29T10:25:34.302433Z",
         "content_sha256": "3fc72ccfeabaff5f5ca92d7a8bd969c6940b9e8749317d0691b1c2b59f91d82f",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2299,8 +2571,7 @@
           "subunit_organisation_number": "813250012",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-76c6c702936e20eee8d76561",
@@ -2308,7 +2579,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "76c6c702936e20eee8d76561f7f7d47fe083361b2cf9dc40ce5c868746f27de8",
         "observed_at": "2026-08-11",
         "exact_entity": true,
@@ -2338,7 +2609,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "eab2c664d34a7ecde3ca76c49c736919d13a65a557eb0a9fa9e68af3a381b7f3",
         "observed_at": "2026-05-13",
         "exact_entity": true,
@@ -2368,7 +2639,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5750874060aff3cf260c73600cbf29ec33bb52d0651a2d121298a59d19eb1588",
         "observed_at": "2025-12-11",
         "exact_entity": true,
@@ -2398,7 +2669,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "cd4c00fe5dd2120bfbdb3978aefc4bba94c2cf1cf77d17c2ad39654d1007b952",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2428,7 +2699,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "79e52b65ba9d96e5af805f1be6dc333eb2cd1c9d97b9a5423221eae0ddaae441",
         "observed_at": "2025-05-07",
         "exact_entity": true,
@@ -2458,7 +2729,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "3ab2648f19134a9833090afa47ad5e92dff44d01fa3f2375d9b8e5841e8c950f",
         "observed_at": "2025-05-06",
         "exact_entity": true,
@@ -2488,7 +2759,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bf0afdfb5a300d7c7ee5718ef10cdd063f787335aa42146934ff586b81f3adbf",
         "observed_at": "2024-12-11",
         "exact_entity": true,
@@ -2518,7 +2789,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "fcb4a2d46846e6cb326c4ab1a200ba2232dcf92bdaec4e417b312f33e29eac7f",
         "observed_at": "2024-11-14",
         "exact_entity": true,
@@ -2548,7 +2819,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8b2fbb968f59c6cfd5144ab23becf41f5dbf3334654eafe86f5ea74cbcf01c00",
         "observed_at": "2024-10-12",
         "exact_entity": true,
@@ -2578,7 +2849,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "87529c504e9e29d60c2447237a02360d0f790c8ce54d5e5682959659192d0647",
         "observed_at": "2024-09-12",
         "exact_entity": true,
@@ -2608,7 +2879,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a093ff06e0bb895f70e604d2afc7457bc9f42fabb796e9298b2658eaafbdd16a",
         "observed_at": "2024-05-04",
         "exact_entity": true,
@@ -2638,7 +2909,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "ccb5ace2dbead2c563276c0678a15655a19c5c1d709324721ac9bc65ed4d7b6e",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2668,7 +2939,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "8b4f17f52b2a64aaf9a9f1f73432fec866cf5b649d51b3de11bc8b93aca1bd7b",
         "observed_at": "2023-07-11",
         "exact_entity": true,
@@ -2698,7 +2969,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6d5c8c55ed4a2092d22c77697b05e0580efdb29eaa9e4e1bc167d52c691ca26b",
         "observed_at": "2023-05-06",
         "exact_entity": true,
@@ -2728,38 +2999,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "a8180894a932f195c26e2771f867d337e5f4740516656f87fd5443fc287f49b9",
-        "observed_at": "2023-03-13",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "913229401",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2023-03-13: Endring",
-        "metrics": {
-          "date": "2023-03-13",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-395d4350330afb352a9b6008",
-        "organisation_number": "913229401",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "395d4350330afb352a9b6008359b2e5368437183511114dcb359a21009703c21",
         "observed_at": "2023-03-13",
         "exact_entity": true,
         "identity_proof": [
@@ -2788,7 +3029,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "73b685d30a487446e6693562b49a5b5ee3ee22acb7dc89e4304b867d38fa2ca8",
         "observed_at": "2022-11-12",
         "exact_entity": true,
@@ -2818,7 +3059,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b57ae0ea69f1e37d69879dae968ca8422ee7a009a2ad173f6b3b7ec9c2772ff9",
         "observed_at": "2022-10-11",
         "exact_entity": true,
@@ -2848,7 +3089,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "457788032c92e51536e3ecc90a36347bcf7d19fafeb443961268d2d05895357d",
         "observed_at": "2022-08-01",
         "exact_entity": true,
@@ -2878,7 +3119,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d0c5ffb4d51bc1e037b1c8495715afc0d1bac47da544ce69888bd250838ee794",
         "observed_at": "2022-06-14",
         "exact_entity": true,
@@ -2903,39 +3144,97 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-c33068e4776fbd6eaddef65c",
         "organisation_number": "913229401",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
-        "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "beb7fa758a398cfd3c1d4aa2cb8260850bff953d6e8d2696d8f634aae8839956",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "google_places_website_domain_match",
-            "value": "norus-regnskap.no",
-            "source": "google_places"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "913229401",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-913229401-4c54cb1fc3ded387",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Norus Regnskapsbyrå AS Google profile: rating 4.4/5, 31 ratings.",
-        "metrics": {
-          "rating": 4.4,
-          "review_count": 31,
-          "scale": 5,
-          "place_id": "ChIJK9lF4qVvQUYRvVOHafQe86o"
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-05-13",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-05-13",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000265527&amp;sokeverdi=913229401&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-05-13 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-ace57192d682f92ea26c142a",
+        "organisation_number": "913229401",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "b42f00f481044bbeb2d31d831264b398b50c7749524962927b678ae62cf28434",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "913229401",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-09-16",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-09-16",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000743847&amp;sokeverdi=913229401&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-09-16 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-cda041563b131e87355d5052",
+        "organisation_number": "913229401",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "ce419705032c0ee9fc5a873df5b329aaddacf9510999760099b697995cfba206",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "913229401",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-05-06",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-05-06",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000230160&amp;sokeverdi=913229401&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-05-06 (BRREG official announcement)"
       },
       {
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
+        "retrieved_at": "2026-10-06T15:53:40.658876Z",
         "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
         "exact_entity": true,
         "identity_proof": [
@@ -2967,7 +3266,7 @@
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
+        "retrieved_at": "2026-10-06T15:53:40.658876Z",
         "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
         "exact_entity": true,
         "identity_proof": [
@@ -2999,7 +3298,7 @@
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
+        "retrieved_at": "2026-10-06T15:53:40.658876Z",
         "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
         "exact_entity": true,
         "identity_proof": [
@@ -3031,7 +3330,7 @@
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
+        "retrieved_at": "2026-10-06T15:53:40.658876Z",
         "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
         "exact_entity": true,
         "identity_proof": [
@@ -3063,7 +3362,7 @@
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
+        "retrieved_at": "2026-10-06T15:53:40.658876Z",
         "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
         "exact_entity": true,
         "identity_proof": [
@@ -3092,11 +3391,43 @@
         }
       },
       {
+        "id": "registry-workforce-1a8fe106670779fc17548391",
+        "organisation_number": "913229401",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/913229401",
+        "retrieved_at": "2026-09-29T10:25:27.341472Z",
+        "content_sha256": "688522fea7d391f0f460145ea3bf7f3ae63f65853a70e7a5aeb14e79939411a1",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "913229401",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 7",
+        "metrics": {
+          "workforce_value": 7,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-08-11"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-08-11",
+        "effective_at": "2026-08-11"
+      },
+      {
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
-        "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+        "retrieved_at": "2026-10-31T18:18:50.459924Z",
+        "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3109,7 +3440,36 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-913229401-4c54cb1fc3ded387",
+        "id": "gplaces-metrics-913229401-1f94f78b6e2fb2c4",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Norus Regnskapsbyrå AS Google profile: rating 4.4/5, 31 ratings.",
+        "metrics": {
+          "rating": 4.4,
+          "review_count": 31,
+          "scale": 5,
+          "place_id": "ChIJK9lF4qVvQUYRvVOHafQe86o"
+        }
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
+        "retrieved_at": "2026-10-31T18:18:50.459924Z",
+        "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "norus-regnskap.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-913229401-1f94f78b6e2fb2c4",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Norus Regnskapsbyrå AS is rated 4.4/5 from 31 Google reviews.",
@@ -3124,8 +3484,8 @@
         "organisation_number": "913229401",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJK9lF4qVvQUYRvVOHafQe86o",
-        "retrieved_at": "2026-10-05T14:31:30.323170Z",
-        "content_sha256": "4c54cb1fc3ded387390b4a576a07a0d912b292f6a5aeaf406d50a1d1aa19d92c",
+        "retrieved_at": "2026-10-31T18:18:50.459924Z",
+        "content_sha256": "1f94f78b6e2fb2c4b561854268a8f34a84648e9ccc14363cbc1db7bf374ca32e",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3138,7 +3498,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-913229401-4c54cb1fc3ded387",
+        "id": "gplaces-sentiment-913229401-1f94f78b6e2fb2c4",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3149,8 +3509,215 @@
           "review_count": 31,
           "scale": 5
         }
+      },
+      {
+        "id": "registry-site-913229401-39085927da05c9a2",
+        "organisation_number": "913229401",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://norus-regnskap.no/",
+        "retrieved_at": "2026-10-09T13:58:48.349594Z",
+        "content_sha256": "39085927da05c9a235383f015d302ecb419c1386a64df667bf7520212d60c55e",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "norus-regnskap.no",
+            "matched_organisation_number": "913229401",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares norus-regnskap.no as the website of organisation 913229401; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Norus Regnskapsbyrå AS – Regnskapstjenester fra A til Å",
+        "metrics": {
+          "title": "Norus Regnskapsbyrå AS – Regnskapstjenester fra A til Å",
+          "description": "",
+          "registry_domain": "norus-regnskap.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "company_directory",
+        "source_url": "https://www.fagfolkguiden.no/bedrift/norus-accounting-as-913229401",
+        "retrieved_at": "2026-11-05T14:45:43.762388Z",
+        "content_sha256": "40ec301d8633f309cce076fad959492c9198b1377afa64067f39f0c9b7d7f70d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "913229401"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NORUS ACCOUNTING AS",
+            "matched_organisation_number": "913229401"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "metrics": {
+          "scale": 5,
+          "website_domain": "norus-regnskap.no",
+          "address": {
+            "street": "Hasleveien 28A",
+            "locality": "OSLO",
+            "postal_code": "0571"
+          }
+        },
+        "id": "fagfolk-profile-913229401-3c3b6f1d41aa4442",
+        "signal_type": "profile_metrics",
+        "strategy": "directory_profile_metrics",
+        "source_class": "company_directory",
+        "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"913229401\"}"
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/913229401",
+        "retrieved_at": "2026-11-05T21:11:07.591923Z",
+        "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "913229401"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NORUS ACCOUNTING AS",
+            "matched_organisation_number": "913229401"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+        "id": "purehelp-email-913229401-05904bcbd681e2ec",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@norus-regnskap.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/913229401",
+        "retrieved_at": "2026-11-05T21:11:07.591923Z",
+        "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "913229401"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NORUS ACCOUNTING AS",
+            "matched_organisation_number": "913229401"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+        "id": "purehelp-phone-913229401-05904bcbd681e2ec",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "46 78 23 69",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/913229401",
+        "retrieved_at": "2026-11-05T21:11:07.591923Z",
+        "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "913229401"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NORUS ACCOUNTING AS",
+            "matched_organisation_number": "913229401"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+        "id": "purehelp-profile-913229401-05904bcbd681e2ec",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "69.202",
+          "nace_description": "Accounting and bookkeeping",
+          "town": "OSLO",
+          "zipcode": "0571",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "2014-02-13",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2014-02-13",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.norus-regnskap.no"
+        }
+      },
+      {
+        "organisation_number": "913229401",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/913229401",
+        "retrieved_at": "2026-11-05T21:11:07.591923Z",
+        "content_sha256": "02ce322d2eeb47cf214775d3a33f384f72b241a1cbadd7ead4f30a6bff18cfac",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "913229401"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NORUS ACCOUNTING AS",
+            "matched_organisation_number": "913229401"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-913229401.orgNumber=913229401;name=NORUS ACCOUNTING AS",
+        "id": "purehelp-workforce-913229401-05904bcbd681e2ec",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 7,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:46.110518+00:00"
+  "generated_at": "2026-11-06T05:27:38.223546+00:00"
 }

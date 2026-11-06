@@ -576,75 +576,13 @@
       },
       "external_observations": [
         {
-          "organisation_number": "960508939",
-          "platform": "company_site",
-          "source_url": "https://www.lyskultur.no/",
-          "retrieved_at": "2026-10-05T09:05:01.367667Z",
-          "content_sha256": "a9889510ee4ac5582a10fa9bfa10aefe6f69ef2b55dd412ff77d7b51069f2936",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-960508939-a9889510ee4ac558",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 1,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-05"
-        },
-        {
-          "id": "registry-workforce-cfa8511d20e609a95af1f603",
-          "organisation_number": "960508939",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T09:04:49.116078Z",
-          "content_sha256": "93f43f5dac2bbcd36b3f5e72dd748161addc6f9f4662eee3cea2db5608c97f72",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "960508939",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 6",
-          "metrics": {
-            "workforce_value": 6,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-09-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-09-14",
-          "effective_at": "2026-09-14"
-        },
-        {
           "id": "registry-contact-3fe457041a2cba0c161a6bd5",
           "organisation_number": "960508939",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -663,8 +601,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-36dcd527acb3e992d936b88a",
@@ -672,8 +609,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -692,14 +629,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "960508939",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
-          "retrieved_at": "2026-10-05T09:04:57.560784Z",
+          "retrieved_at": "2026-09-29T10:31:28.869218Z",
           "content_sha256": "13226b476a6dec0ab33cb3bcb40a87abf999ae8e8b3b82dbd17e294da8c40a08",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -721,8 +657,7 @@
             "subunit_organisation_number": "971845627",
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-f2152f0830894f20724a7d4d",
@@ -730,7 +665,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f2152f0830894f20724a7d4d1f26dc0d7144f9a172d50e559569bc568e587634",
           "observed_at": "2026-09-22",
           "exact_entity": true,
@@ -760,7 +695,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "90f3b7d2d84fcb8380035bca18d165866cfce3f98f7934071c42b4824a0d8520",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -790,7 +725,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "db782cad35bfd7d7a01a105721fe17061d9abb782ab8c4e21ba94ace1c9af130",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -820,7 +755,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "35a70253ca6a5fa28634f74d004bb9e54b1e77cdd43a0e48d87988b5eef27d4b",
           "observed_at": "2026-06-10",
           "exact_entity": true,
@@ -850,7 +785,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9ec93911fec7fcc5977e38131470fa6a66fc0fd85e3dadf364dbad3771bff98a",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -880,7 +815,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e987e385b1982152af714d11e70ea8bba98a9a2b02edfbf5bb2aba5b974c1aef",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -910,38 +845,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e4ac7044d3766d6cad2d0bd709a4a2878cecc283aa38f5c6a175bb8a51e10729",
-          "observed_at": "2025-05-03",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "960508939",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-05-03: Endring",
-          "metrics": {
-            "date": "2025-05-03",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-7a7daff7cbf7448bdda93851",
-          "organisation_number": "960508939",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "7a7daff7cbf7448bdda938515edacbd304ad33369be180ef573579aea369d616",
           "observed_at": "2025-05-03",
           "exact_entity": true,
           "identity_proof": [
@@ -970,7 +875,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "0f10199e2471df5c2cb622d8f2fc5368300dad5c77540a27b670f3c83f0ce390",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -1000,7 +905,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "e1af7e47b4a1c4e0c5dbb3a12dec94470f5d17b7366ec28d66459adb5da368c1",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1030,7 +935,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "5612ac6e832280d5401aac67aeccbeb297bc1bdce28a39d38f6b1d356c85e8c4",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1060,7 +965,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c097903edf73148c9aabfd4d2ba0f01d72254831815e59151a8cd83be21697b8",
           "observed_at": "2024-05-22",
           "exact_entity": true,
@@ -1090,7 +995,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "c9a44b362a473c754a74eba90e773efe5584b0bd7bdc2c5f672ca23713731a53",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1120,7 +1025,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "dd2aaca00cb74f6afcde4f17989ce7d384c9a4160b77feacae40b6730fd8b672",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1150,7 +1055,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "bfac974b6c4fe0d18deb26c7ab970214889105721b4ff050fa81402763c58026",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1180,7 +1085,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "da1821c2dadc232162daffba0d328cab4e74a31c31312550d5e10e48f67a29d1",
           "observed_at": "2023-12-01",
           "exact_entity": true,
@@ -1210,7 +1115,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "62c5097dc6fe52382849ed838f2d4174fb793884fd6546da6a6619a7ae2d0cd7",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1240,7 +1145,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "07e2c7c7f942fb4f2cc0d87d0b4a80b2393c07865913bfaceeac0aa8b32b7823",
           "observed_at": "2023-08-14",
           "exact_entity": true,
@@ -1270,7 +1175,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "fed6bf1dc014e842d15b19111f20f12df32d4612d529653c4f591c218e55ee01",
           "observed_at": "2023-06-03",
           "exact_entity": true,
@@ -1300,7 +1205,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9649ef19bf59903e2f9b4911202f4ec27621169393ba60343eba0ed0737562f5",
           "observed_at": "2023-02-14",
           "exact_entity": true,
@@ -1325,8 +1230,95 @@
           "strategy": "registry_updates_feed"
         },
         {
+          "id": "brreg-kunngjoring-2f97a8247839c43261e65863",
           "organisation_number": "960508939",
-          "retrieved_at": "2026-10-02T19:17:05.994104Z",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "ed56abde03c4bea06aaa9bd5a318fa45c3001064aab6ef01cb560b5011e36401",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "960508939",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-06-10",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-06-10",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-06-10 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-13624aceb04a219efdaf6a64",
+          "organisation_number": "960508939",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "7f53e625908de4f5f28f416f081f23c3e4ef219318160f0ff1b52e0a2b6606a5",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "960508939",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-05-03",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-05-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-05-03 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-fef2ac6c54952f7d7810601a",
+          "organisation_number": "960508939",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "9ddd4b923e5691f03954f47a03fe386d656b030cef234e41f62f76cb34304845",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "960508939",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-05-21",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-05-21",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-05-21 (BRREG official announcement)"
+        },
+        {
+          "organisation_number": "960508939",
+          "retrieved_at": "2026-10-24T19:08:33.250900Z",
           "content_sha256": "1f189f5c60b644a0afef4cccff4972fa62c68c01c15239c138facb9dda9382a2",
           "exact_entity": true,
           "identity_proof": [
@@ -1355,12 +1347,11 @@
               "wikidata.inception": "1936-01-01",
               "wikidata.employees": null
             }
-          },
-          "observed_at": "2026-10-02"
+          }
         },
         {
           "organisation_number": "960508939",
-          "retrieved_at": "2026-10-02T19:17:05.994104Z",
+          "retrieved_at": "2026-10-24T19:08:33.250900Z",
           "content_sha256": "1f189f5c60b644a0afef4cccff4972fa62c68c01c15239c138facb9dda9382a2",
           "exact_entity": true,
           "identity_proof": [
@@ -1384,15 +1375,76 @@
           "metrics": {
             "language": "no",
             "qid": "Q30259471"
+          }
+        },
+        {
+          "id": "registry-workforce-cfa8511d20e609a95af1f603",
+          "organisation_number": "960508939",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
+          "retrieved_at": "2026-09-29T10:31:20.144151Z",
+          "content_sha256": "93f43f5dac2bbcd36b3f5e72dd748161addc6f9f4662eee3cea2db5608c97f72",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "960508939",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 6",
+          "metrics": {
+            "workforce_value": 6,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-13"
           },
-          "observed_at": "2026-10-02"
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-13",
+          "effective_at": "2026-06-13"
+        },
+        {
+          "organisation_number": "960508939",
+          "platform": "company_site",
+          "source_url": "https://www.lyskultur.no/",
+          "retrieved_at": "2026-10-09T14:00:29.224913Z",
+          "content_sha256": "3a60369f6a0ce762b5aa77e4d443249a14c10a203ef881db1ce85e8d98b6e85d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.9
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-960508939-3a60369f6a0ce762",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 1,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          },
+          "observed_at": "2026-10-09"
         },
         {
           "organisation_number": "960508939",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-          "retrieved_at": "2026-10-05T14:31:31.699687Z",
-          "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+          "retrieved_at": "2026-10-31T18:19:35.027456Z",
+          "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1405,7 +1457,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-metrics-960508939-037caddd86a5cc99",
+          "id": "gplaces-metrics-960508939-69a2ed5f83cce7ef",
           "signal_type": "profile_metrics",
           "strategy": "social_profile_metrics",
           "evidence_span": "Lyskultur Google profile: rating 4.7/5, 3 ratings.",
@@ -1420,8 +1472,8 @@
           "organisation_number": "960508939",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-          "retrieved_at": "2026-10-05T14:31:31.699687Z",
-          "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+          "retrieved_at": "2026-10-31T18:19:35.027456Z",
+          "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1434,7 +1486,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-review-summary-960508939-037caddd86a5cc99",
+          "id": "gplaces-review-summary-960508939-69a2ed5f83cce7ef",
           "signal_type": "review_summary",
           "strategy": "places_rating_reviews",
           "evidence_span": "Lyskultur is rated 4.7/5 from 3 Google reviews.",
@@ -1449,8 +1501,8 @@
           "organisation_number": "960508939",
           "platform": "google_places",
           "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-          "retrieved_at": "2026-10-05T14:31:31.699687Z",
-          "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+          "retrieved_at": "2026-10-31T18:19:35.027456Z",
+          "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1463,7 +1515,7 @@
           "rights_status": "approved",
           "source_class": "customer_review",
           "label": "positive",
-          "id": "gplaces-sentiment-960508939-037caddd86a5cc99",
+          "id": "gplaces-sentiment-960508939-69a2ed5f83cce7ef",
           "signal_type": "sentiment",
           "strategy": "customer_review_sentiment",
           "sentiment_label": "positive",
@@ -1473,6 +1525,147 @@
             "rating": 4.7,
             "review_count": 3,
             "scale": 5
+          }
+        },
+        {
+          "organisation_number": "960508939",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/960508939",
+          "retrieved_at": "2026-11-05T21:11:33.161691Z",
+          "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "960508939"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "LYSKULTUR",
+              "matched_organisation_number": "960508939"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+          "id": "purehelp-email-960508939-f51eb7838ca5d8ad",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@lyskultur.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "960508939",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/960508939",
+          "retrieved_at": "2026-11-05T21:11:33.161691Z",
+          "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "960508939"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "LYSKULTUR",
+              "matched_organisation_number": "960508939"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+          "id": "purehelp-phone-960508939-f51eb7838ca5d8ad",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "67 10 28 40",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "960508939",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/960508939",
+          "retrieved_at": "2026-11-05T21:11:33.161691Z",
+          "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "960508939"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "LYSKULTUR",
+              "matched_organisation_number": "960508939"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+          "id": "purehelp-profile-960508939-f51eb7838ca5d8ad",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "FLI",
+            "legal_form_description": "Association/club/organisation",
+            "nace_code": "94.992",
+            "nace_description": "Other activities of other membership organisations",
+            "town": "OSLO",
+            "zipcode": "0152",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "1995-02-20",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-02-20",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.lyskultur.no"
+          }
+        },
+        {
+          "organisation_number": "960508939",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/960508939",
+          "retrieved_at": "2026-11-05T21:11:33.161691Z",
+          "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "960508939"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "LYSKULTUR",
+              "matched_organisation_number": "960508939"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+          "id": "purehelp-workforce-960508939-f51eb7838ca5d8ad",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 6,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
           }
         }
       ]
@@ -1496,7 +1689,7 @@
     "company_name": "LYSKULTUR",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "LYSKULTUR operates in Aktiviteter i andre medlemsorganisasjoner ellers. Latest accounts (2025): revenue NOK 7.5m, annual result NOK 328.1k. Annual accounts available for 2011-2025 (14 years). Detailed records only available as PDFs. Revenue stable (+2.0% YoY). Registered employees: 6. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "LYSKULTUR operates in Aktiviteter i andre medlemsorganisasjoner ellers. Latest accounts (2025): revenue NOK 7.5m, annual result NOK 328.1k. Annual accounts available for 2011-2025 (14 years). Detailed records only available as PDFs. Revenue stable (+2.0% YoY). Registered employees: 6. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1511,8 +1704,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       },
       {
@@ -1528,8 +1728,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       },
       {
@@ -1545,8 +1752,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       },
       {
@@ -1562,8 +1776,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       },
       {
@@ -1579,8 +1800,15 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       },
       {
@@ -1593,11 +1821,27 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/960508939/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
+        ]
       },
       {
         "question": "changes",
@@ -1612,18 +1856,19 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/960508939",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/960508939/aar",
+          "https://no.wikipedia.org/wiki/Lyskultur_(interesseorganisasjon)",
+          "https://purehelp.no/company/NO/960508939",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.lyskultur.no/"
+          "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
+          "https://www.lyskultur.no/",
+          "https://www.wikidata.org/wiki/Q30259471"
         ]
       }
     ],
-    "unknowns": [
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
-      }
-    ]
+    "unknowns": []
   },
   "evidence": {
     "registry": {
@@ -2189,75 +2434,13 @@
     },
     "external_observations": [
       {
-        "organisation_number": "960508939",
-        "platform": "company_site",
-        "source_url": "https://www.lyskultur.no/",
-        "retrieved_at": "2026-10-05T09:05:01.367667Z",
-        "content_sha256": "a9889510ee4ac5582a10fa9bfa10aefe6f69ef2b55dd412ff77d7b51069f2936",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-960508939-a9889510ee4ac558",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 1,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-05"
-      },
-      {
-        "id": "registry-workforce-cfa8511d20e609a95af1f603",
-        "organisation_number": "960508939",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T09:04:49.116078Z",
-        "content_sha256": "93f43f5dac2bbcd36b3f5e72dd748161addc6f9f4662eee3cea2db5608c97f72",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "960508939",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 6",
-        "metrics": {
-          "workforce_value": 6,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-09-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-09-14",
-        "effective_at": "2026-09-14"
-      },
-      {
         "id": "registry-contact-3fe457041a2cba0c161a6bd5",
         "organisation_number": "960508939",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2276,8 +2459,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-36dcd527acb3e992d936b88a",
@@ -2285,8 +2467,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2305,14 +2487,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "960508939",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=960508939&size=1000",
-        "retrieved_at": "2026-10-05T09:04:57.560784Z",
+        "retrieved_at": "2026-09-29T10:31:28.869218Z",
         "content_sha256": "13226b476a6dec0ab33cb3bcb40a87abf999ae8e8b3b82dbd17e294da8c40a08",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2334,8 +2515,7 @@
           "subunit_organisation_number": "971845627",
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-f2152f0830894f20724a7d4d",
@@ -2343,7 +2523,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f2152f0830894f20724a7d4d1f26dc0d7144f9a172d50e559569bc568e587634",
         "observed_at": "2026-09-22",
         "exact_entity": true,
@@ -2373,7 +2553,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "90f3b7d2d84fcb8380035bca18d165866cfce3f98f7934071c42b4824a0d8520",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2403,7 +2583,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "db782cad35bfd7d7a01a105721fe17061d9abb782ab8c4e21ba94ace1c9af130",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2433,7 +2613,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "35a70253ca6a5fa28634f74d004bb9e54b1e77cdd43a0e48d87988b5eef27d4b",
         "observed_at": "2026-06-10",
         "exact_entity": true,
@@ -2463,7 +2643,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9ec93911fec7fcc5977e38131470fa6a66fc0fd85e3dadf364dbad3771bff98a",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2493,7 +2673,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e987e385b1982152af714d11e70ea8bba98a9a2b02edfbf5bb2aba5b974c1aef",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -2523,38 +2703,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e4ac7044d3766d6cad2d0bd709a4a2878cecc283aa38f5c6a175bb8a51e10729",
-        "observed_at": "2025-05-03",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "960508939",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-05-03: Endring",
-        "metrics": {
-          "date": "2025-05-03",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-7a7daff7cbf7448bdda93851",
-        "organisation_number": "960508939",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "7a7daff7cbf7448bdda938515edacbd304ad33369be180ef573579aea369d616",
         "observed_at": "2025-05-03",
         "exact_entity": true,
         "identity_proof": [
@@ -2583,7 +2733,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "0f10199e2471df5c2cb622d8f2fc5368300dad5c77540a27b670f3c83f0ce390",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -2613,7 +2763,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "e1af7e47b4a1c4e0c5dbb3a12dec94470f5d17b7366ec28d66459adb5da368c1",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -2643,7 +2793,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "5612ac6e832280d5401aac67aeccbeb297bc1bdce28a39d38f6b1d356c85e8c4",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -2673,7 +2823,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c097903edf73148c9aabfd4d2ba0f01d72254831815e59151a8cd83be21697b8",
         "observed_at": "2024-05-22",
         "exact_entity": true,
@@ -2703,7 +2853,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "c9a44b362a473c754a74eba90e773efe5584b0bd7bdc2c5f672ca23713731a53",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2733,7 +2883,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "dd2aaca00cb74f6afcde4f17989ce7d384c9a4160b77feacae40b6730fd8b672",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -2763,7 +2913,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "bfac974b6c4fe0d18deb26c7ab970214889105721b4ff050fa81402763c58026",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2793,7 +2943,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "da1821c2dadc232162daffba0d328cab4e74a31c31312550d5e10e48f67a29d1",
         "observed_at": "2023-12-01",
         "exact_entity": true,
@@ -2823,7 +2973,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "62c5097dc6fe52382849ed838f2d4174fb793884fd6546da6a6619a7ae2d0cd7",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2853,7 +3003,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "07e2c7c7f942fb4f2cc0d87d0b4a80b2393c07865913bfaceeac0aa8b32b7823",
         "observed_at": "2023-08-14",
         "exact_entity": true,
@@ -2883,7 +3033,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "fed6bf1dc014e842d15b19111f20f12df32d4612d529653c4f591c218e55ee01",
         "observed_at": "2023-06-03",
         "exact_entity": true,
@@ -2913,7 +3063,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9649ef19bf59903e2f9b4911202f4ec27621169393ba60343eba0ed0737562f5",
         "observed_at": "2023-02-14",
         "exact_entity": true,
@@ -2938,8 +3088,95 @@
         "strategy": "registry_updates_feed"
       },
       {
+        "id": "brreg-kunngjoring-2f97a8247839c43261e65863",
         "organisation_number": "960508939",
-        "retrieved_at": "2026-10-02T19:17:05.994104Z",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "ed56abde03c4bea06aaa9bd5a318fa45c3001064aab6ef01cb560b5011e36401",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "960508939",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-06-10",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-06-10",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000367473&amp;sokeverdi=960508939&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-06-10 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-13624aceb04a219efdaf6a64",
+        "organisation_number": "960508939",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "7f53e625908de4f5f28f416f081f23c3e4ef219318160f0ff1b52e0a2b6606a5",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "960508939",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-05-03",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-05-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000222472&amp;sokeverdi=960508939&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-05-03 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-fef2ac6c54952f7d7810601a",
+        "organisation_number": "960508939",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "9ddd4b923e5691f03954f47a03fe386d656b030cef234e41f62f76cb34304845",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "960508939",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-05-21",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-05-21",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000431887&amp;sokeverdi=960508939&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-05-21 (BRREG official announcement)"
+      },
+      {
+        "organisation_number": "960508939",
+        "retrieved_at": "2026-10-24T19:08:33.250900Z",
         "content_sha256": "1f189f5c60b644a0afef4cccff4972fa62c68c01c15239c138facb9dda9382a2",
         "exact_entity": true,
         "identity_proof": [
@@ -2968,12 +3205,11 @@
             "wikidata.inception": "1936-01-01",
             "wikidata.employees": null
           }
-        },
-        "observed_at": "2026-10-02"
+        }
       },
       {
         "organisation_number": "960508939",
-        "retrieved_at": "2026-10-02T19:17:05.994104Z",
+        "retrieved_at": "2026-10-24T19:08:33.250900Z",
         "content_sha256": "1f189f5c60b644a0afef4cccff4972fa62c68c01c15239c138facb9dda9382a2",
         "exact_entity": true,
         "identity_proof": [
@@ -2997,15 +3233,76 @@
         "metrics": {
           "language": "no",
           "qid": "Q30259471"
+        }
+      },
+      {
+        "id": "registry-workforce-cfa8511d20e609a95af1f603",
+        "organisation_number": "960508939",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/960508939",
+        "retrieved_at": "2026-09-29T10:31:20.144151Z",
+        "content_sha256": "93f43f5dac2bbcd36b3f5e72dd748161addc6f9f4662eee3cea2db5608c97f72",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "960508939",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 6",
+        "metrics": {
+          "workforce_value": 6,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-13"
         },
-        "observed_at": "2026-10-02"
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-13",
+        "effective_at": "2026-06-13"
+      },
+      {
+        "organisation_number": "960508939",
+        "platform": "company_site",
+        "source_url": "https://www.lyskultur.no/",
+        "retrieved_at": "2026-10-09T14:00:29.224913Z",
+        "content_sha256": "3a60369f6a0ce762b5aa77e4d443249a14c10a203ef881db1ce85e8d98b6e85d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.9
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-960508939-3a60369f6a0ce762",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 1,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        },
+        "observed_at": "2026-10-09"
       },
       {
         "organisation_number": "960508939",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-        "retrieved_at": "2026-10-05T14:31:31.699687Z",
-        "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+        "retrieved_at": "2026-10-31T18:19:35.027456Z",
+        "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3018,7 +3315,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-metrics-960508939-037caddd86a5cc99",
+        "id": "gplaces-metrics-960508939-69a2ed5f83cce7ef",
         "signal_type": "profile_metrics",
         "strategy": "social_profile_metrics",
         "evidence_span": "Lyskultur Google profile: rating 4.7/5, 3 ratings.",
@@ -3033,8 +3330,8 @@
         "organisation_number": "960508939",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-        "retrieved_at": "2026-10-05T14:31:31.699687Z",
-        "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+        "retrieved_at": "2026-10-31T18:19:35.027456Z",
+        "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3047,7 +3344,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-review-summary-960508939-037caddd86a5cc99",
+        "id": "gplaces-review-summary-960508939-69a2ed5f83cce7ef",
         "signal_type": "review_summary",
         "strategy": "places_rating_reviews",
         "evidence_span": "Lyskultur is rated 4.7/5 from 3 Google reviews.",
@@ -3062,8 +3359,8 @@
         "organisation_number": "960508939",
         "platform": "google_places",
         "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJLTiEZ_dsQUYRXKGLLHfIBaY",
-        "retrieved_at": "2026-10-05T14:31:31.699687Z",
-        "content_sha256": "037caddd86a5cc99bf94b1f41fb4b6393634b404a1f673e82bd16ad2c4893e47",
+        "retrieved_at": "2026-10-31T18:19:35.027456Z",
+        "content_sha256": "69a2ed5f83cce7efd668cdf8b0f92e9ab61264dd1ed6d25716466b89a9a43845",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3076,7 +3373,7 @@
         "rights_status": "approved",
         "source_class": "customer_review",
         "label": "positive",
-        "id": "gplaces-sentiment-960508939-037caddd86a5cc99",
+        "id": "gplaces-sentiment-960508939-69a2ed5f83cce7ef",
         "signal_type": "sentiment",
         "strategy": "customer_review_sentiment",
         "sentiment_label": "positive",
@@ -3087,8 +3384,149 @@
           "review_count": 3,
           "scale": 5
         }
+      },
+      {
+        "organisation_number": "960508939",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/960508939",
+        "retrieved_at": "2026-11-05T21:11:33.161691Z",
+        "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "960508939"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "LYSKULTUR",
+            "matched_organisation_number": "960508939"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+        "id": "purehelp-email-960508939-f51eb7838ca5d8ad",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@lyskultur.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "960508939",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/960508939",
+        "retrieved_at": "2026-11-05T21:11:33.161691Z",
+        "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "960508939"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "LYSKULTUR",
+            "matched_organisation_number": "960508939"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+        "id": "purehelp-phone-960508939-f51eb7838ca5d8ad",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "67 10 28 40",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "960508939",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/960508939",
+        "retrieved_at": "2026-11-05T21:11:33.161691Z",
+        "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "960508939"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "LYSKULTUR",
+            "matched_organisation_number": "960508939"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+        "id": "purehelp-profile-960508939-f51eb7838ca5d8ad",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "FLI",
+          "legal_form_description": "Association/club/organisation",
+          "nace_code": "94.992",
+          "nace_description": "Other activities of other membership organisations",
+          "town": "OSLO",
+          "zipcode": "0152",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "1995-02-20",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-02-20",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.lyskultur.no"
+        }
+      },
+      {
+        "organisation_number": "960508939",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/960508939",
+        "retrieved_at": "2026-11-05T21:11:33.161691Z",
+        "content_sha256": "5bf2c7c3a27951ab425f4ed625a2d3ce8cdcec656748d4810089dc37d5324121",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "960508939"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "LYSKULTUR",
+            "matched_organisation_number": "960508939"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-960508939.orgNumber=960508939;name=LYSKULTUR",
+        "id": "purehelp-workforce-960508939-f51eb7838ca5d8ad",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 6,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:47.079592+00:00"
+  "generated_at": "2026-11-06T05:27:40.314793+00:00"
 }

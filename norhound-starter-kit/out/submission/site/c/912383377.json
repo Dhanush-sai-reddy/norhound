@@ -452,45 +452,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-6283d0871ac0757aadf6ce1f",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T08:43:18.147460Z",
-          "content_sha256": "2a2c441d73b25cf73f4e314136dba20c4255cd89212c40a197fe675e4e16a788",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "912383377",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 7",
-          "metrics": {
-            "workforce_value": 7,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2025-04-14"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2025-04-14",
-          "effective_at": "2025-04-14"
-        },
-        {
           "id": "registry-contact-7cc280fe2feefc265fb39eb1",
           "organisation_number": "912383377",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -509,8 +477,7 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "id": "registry-contact-cdec7edeeaa9bc5cd06a67b2",
@@ -518,8 +485,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-09-29T10:02:25.550213Z",
+          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -538,14 +505,13 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact",
-          "observed_at": "2026-10-05"
+          "strategy": "registry_contact_exact"
         },
         {
           "organisation_number": "912383377",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
-          "retrieved_at": "2026-10-05T08:43:25.692376Z",
+          "retrieved_at": "2026-09-29T10:10:50.791977Z",
           "content_sha256": "6149aba4b475553039b2c5070f908b2993b784267c69a75122e63ad0dcb94133",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -567,8 +533,7 @@
             "subunit_organisation_number": "971700815",
             "municipality": "BAMBLE",
             "interpretation": "Officially registered sub-unit of this organisation."
-          },
-          "observed_at": "2026-10-05"
+          }
         },
         {
           "id": "registry-update-f794b91293f74e35df9a9855",
@@ -576,7 +541,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "f794b91293f74e35df9a9855a9ba28d9b52ae45d0e4d3cd330c9bee680bd41d0",
           "observed_at": "2026-07-21",
           "exact_entity": true,
@@ -606,7 +571,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "39d4acd377ec068d50c4c4cc846ae5727a01e6f6ab6f46a87da908c4b2e938ec",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -636,7 +601,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "74b55707b4835157ee49d9e7032e913fe7d6c220ebc9fc08533bc0db29ad13a1",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -666,7 +631,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "821444935844e7973ff12dae0c466a93b10365c95306fb1f3c99190821480db9",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -696,158 +661,8 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "d87f768a3f2f2f448b1d99dbcf32cda2f7229f177461e4c3a4eff0a0a6ff2a9e",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "912383377",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-ecf7991597a1e2b0d85243df",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "ecf7991597a1e2b0d85243df71d860a4da49ebb5e427613b0146129ffb88f922",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "912383377",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-7c3b237d8228f7d00cd0ec76",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "7c3b237d8228f7d00cd0ec768bb34f4ff6a63f4b1d2d121452abec46e411424a",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "912383377",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-ebae362a37e547503ab14040",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "ebae362a37e547503ab14040033e20d6357e8f00b0d0b19ac3837905fe78258c",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "912383377",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-0118364f945be6139de43795",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "0118364f945be6139de43795f5418e258ea2139af60bb0bd9424bc654cd2f490",
-          "observed_at": "2025-04-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "912383377",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2025-04-08: Endring",
-          "metrics": {
-            "date": "2025-04-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-fe5a71a83b7172c7191c8f29",
-          "organisation_number": "912383377",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
-          "content_sha256": "fe5a71a83b7172c7191c8f29f860662eeac9ab9cd1a146bc5e4a0ac241d3ab0b",
           "observed_at": "2025-04-08",
           "exact_entity": true,
           "identity_proof": [
@@ -876,7 +691,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "7821c388aec7e76434e86854f00945523d88b01f1aa7a50e32314ceaa2b170de",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -906,7 +721,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4bb0aea976ab14a904711e3364b06f3a0e5d87378ce6c3404f75aee4fd68270b",
           "observed_at": "2024-04-15",
           "exact_entity": true,
@@ -936,7 +751,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2edcdaa83e34cbfd3693694079ae5d0a6aa1038a2c87ff69257df44b4ca76995",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -966,7 +781,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "2055c4ec38cda1eee7fb0d3d13a9adbcaefd189f5793aaaffaab6a6c8534f159",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -996,7 +811,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "9b97b9950d1ea82c7c6b14cbdf745b7bd8982370858aed644c9e9617fcbbbcb8",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -1026,7 +841,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "b1a5d4788baf8829eb39770bcf437e94e9071ab46fc2835c4a3929e832b549e1",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1056,7 +871,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "6a186cb2a27ca961900fcbb618d873eca06561b7fae25c25efe3cef02fad26e9",
           "observed_at": "2023-08-14",
           "exact_entity": true,
@@ -1086,7 +901,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "17f99545aa9be7c201788a8568bd0796624fc5446bdbc523372b63b3c20a8c40",
           "observed_at": "2023-05-13",
           "exact_entity": true,
@@ -1116,7 +931,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "13df1f43c0397fb204fff86904ee79bdd7df64250a08adaa19ecc75aa6cdbf36",
           "observed_at": "2023-05-09",
           "exact_entity": true,
@@ -1146,7 +961,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-          "retrieved_at": "2026-10-05T11:02:12.779022Z",
+          "retrieved_at": "2026-09-29T10:44:00.020607Z",
           "content_sha256": "4b236754a3642f87ee8b5a2979512e522209e6b614502bdcca686b9e767994f9",
           "observed_at": "2022-05-21",
           "exact_entity": true,
@@ -1169,6 +984,386 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "brreg-kunngjoring-fca24500d8f345d82f3f918e",
+          "organisation_number": "912383377",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "b761009c52990104a26a041ab78d80af387c4f0fcae90a244e36ed36c0b15b98",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912383377",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-21",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-21",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-21 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-8129f3ea684210994708def0",
+          "organisation_number": "912383377",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "97f1263fcdf98def997f81250b620565027c06a3da8633b0c6100aec43502442",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912383377",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-06-12",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-06-12",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-06-12 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-14e329ccebfc22ddc032f713",
+          "organisation_number": "912383377",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "25dd1f9a674ed6898df36922aa8bc19ec7cafc5ae206e4884c017145a5d48465",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "912383377",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-04-15",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-04-15",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-04-15 (BRREG official announcement)"
+        },
+        {
+          "id": "registry-workforce-6283d0871ac0757aadf6ce1f",
+          "organisation_number": "912383377",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
+          "retrieved_at": "2026-09-29T10:10:41.214182Z",
+          "content_sha256": "2a2c441d73b25cf73f4e314136dba20c4255cd89212c40a197fe675e4e16a788",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "912383377",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 7",
+          "metrics": {
+            "workforce_value": 7,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2025-04-14"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2025-04-14",
+          "effective_at": "2025-04-14"
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+          "retrieved_at": "2026-10-31T18:17:02.354134Z",
+          "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "hacoas.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-metrics-912383377-461cbb673f892dc2",
+          "signal_type": "profile_metrics",
+          "strategy": "social_profile_metrics",
+          "evidence_span": "Hansen & Arntzen Co AS Google profile: rating 5/5, 1 ratings.",
+          "metrics": {
+            "rating": 5,
+            "review_count": 1,
+            "scale": 5,
+            "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+          "retrieved_at": "2026-10-31T18:17:02.354134Z",
+          "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "hacoas.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-912383377-2dd00aa67448849a",
+          "signal_type": "review",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Thundershield",
+          "observed_at": "2020-04-08T16:03:49.787180Z",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "metrics": {
+            "rating": 5,
+            "scale": 5,
+            "review_index": 0,
+            "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+          "retrieved_at": "2026-10-31T18:17:02.354134Z",
+          "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "hacoas.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-review-summary-912383377-461cbb673f892dc2",
+          "signal_type": "review_summary",
+          "strategy": "places_rating_reviews",
+          "evidence_span": "Hansen & Arntzen Co AS is rated 5/5 from 1 Google reviews.",
+          "metrics": {
+            "rating": 5,
+            "review_count": 1,
+            "scale": 5,
+            "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "google_places",
+          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+          "retrieved_at": "2026-10-31T18:17:02.354134Z",
+          "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "google_places_website_domain_match",
+              "value": "hacoas.no",
+              "source": "google_places"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "customer_review",
+          "label": "positive",
+          "id": "gplaces-sentiment-912383377-461cbb673f892dc2",
+          "signal_type": "sentiment",
+          "strategy": "customer_review_sentiment",
+          "sentiment_label": "positive",
+          "sentiment_model_version": "rule-based-v1",
+          "evidence_span": "Aggregate rating 5/5 from 1 reviews implies positive sentiment.",
+          "metrics": {
+            "rating": 5,
+            "review_count": 1,
+            "scale": 5
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/912383377",
+          "retrieved_at": "2026-11-05T21:10:00.520647Z",
+          "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "912383377"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HANSEN & ARNTZEN CO AS",
+              "matched_organisation_number": "912383377"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+          "id": "purehelp-email-912383377-fdd5b1926d851a73",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@hacoas.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/912383377",
+          "retrieved_at": "2026-11-05T21:10:00.520647Z",
+          "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "912383377"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HANSEN & ARNTZEN CO AS",
+              "matched_organisation_number": "912383377"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+          "id": "purehelp-phone-912383377-fdd5b1926d851a73",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "35 96 78 80",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/912383377",
+          "retrieved_at": "2026-11-05T21:10:00.520647Z",
+          "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "912383377"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HANSEN & ARNTZEN CO AS",
+              "matched_organisation_number": "912383377"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+          "id": "purehelp-profile-912383377-fdd5b1926d851a73",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "33.150",
+            "nace_description": "Repair and maintenance of civilian ships and boats",
+            "town": "STATHELLE",
+            "zipcode": "3961",
+            "municipality": "BAMBLE",
+            "municipality_number": "4012",
+            "county": "Telemark",
+            "registration_date": "1995-03-12",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-03-12",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.hansen-og-arntzen.no"
+          }
+        },
+        {
+          "organisation_number": "912383377",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/912383377",
+          "retrieved_at": "2026-11-05T21:10:00.520647Z",
+          "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "912383377"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "HANSEN & ARNTZEN CO AS",
+              "matched_organisation_number": "912383377"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+          "id": "purehelp-workforce-912383377-fdd5b1926d851a73",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 7,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
         }
       ]
     },
@@ -1190,7 +1385,7 @@
     "company_name": "HANSEN & ARNTZEN CO AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "HANSEN & ARNTZEN CO AS is a private limited company operating in Reparasjon og vedlikehold av sivile skip og båter. Latest accounts (2025): revenue NOK 8.9m, annual result NOK 738.7k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-18.0% YoY). Registered employees: 7. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); hiring (no job sources were checked).",
+    "summary": "HANSEN & ARNTZEN CO AS is a private limited company operating in Reparasjon og vedlikehold av sivile skip og båter. Latest accounts (2025): revenue NOK 8.9m, annual result NOK 738.7k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-18.0% YoY). Registered employees: 7. No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1205,7 +1400,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       },
       {
@@ -1221,7 +1421,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       },
       {
@@ -1237,7 +1442,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       },
       {
@@ -1253,7 +1463,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       },
       {
@@ -1269,7 +1484,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       },
       {
@@ -1282,11 +1502,24 @@
       },
       {
         "question": "hiring",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "No open postings found in checked sources.",
+        "answerable": true,
+        "status": "inferred",
+        "confidence": 0.6,
+        "evidence_ids": [
+          "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/912383377/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
+        ]
       },
       {
         "question": "changes",
@@ -1301,7 +1534,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/912383377",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/912383377/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://purehelp.no/company/NO/912383377",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY"
         ]
       }
     ],
@@ -1310,11 +1548,6 @@
         "field": "official_website",
         "state": "not_available",
         "reason": "no verified company website was established"
-      },
-      {
-        "field": "hiring",
-        "state": "not_available",
-        "reason": "no job sources were checked"
       }
     ]
   },
@@ -1758,45 +1991,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-6283d0871ac0757aadf6ce1f",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T08:43:18.147460Z",
-        "content_sha256": "2a2c441d73b25cf73f4e314136dba20c4255cd89212c40a197fe675e4e16a788",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "912383377",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 7",
-        "metrics": {
-          "workforce_value": 7,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2025-04-14"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2025-04-14",
-        "effective_at": "2025-04-14"
-      },
-      {
         "id": "registry-contact-7cc280fe2feefc265fb39eb1",
         "organisation_number": "912383377",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1815,8 +2016,7 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "id": "registry-contact-cdec7edeeaa9bc5cd06a67b2",
@@ -1824,8 +2024,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-09-29T10:02:25.550213Z",
+        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1844,14 +2044,13 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact",
-        "observed_at": "2026-10-05"
+        "strategy": "registry_contact_exact"
       },
       {
         "organisation_number": "912383377",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=912383377&size=1000",
-        "retrieved_at": "2026-10-05T08:43:25.692376Z",
+        "retrieved_at": "2026-09-29T10:10:50.791977Z",
         "content_sha256": "6149aba4b475553039b2c5070f908b2993b784267c69a75122e63ad0dcb94133",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1873,8 +2072,7 @@
           "subunit_organisation_number": "971700815",
           "municipality": "BAMBLE",
           "interpretation": "Officially registered sub-unit of this organisation."
-        },
-        "observed_at": "2026-10-05"
+        }
       },
       {
         "id": "registry-update-f794b91293f74e35df9a9855",
@@ -1882,7 +2080,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "f794b91293f74e35df9a9855a9ba28d9b52ae45d0e4d3cd330c9bee680bd41d0",
         "observed_at": "2026-07-21",
         "exact_entity": true,
@@ -1912,7 +2110,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "39d4acd377ec068d50c4c4cc846ae5727a01e6f6ab6f46a87da908c4b2e938ec",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -1942,7 +2140,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "74b55707b4835157ee49d9e7032e913fe7d6c220ebc9fc08533bc0db29ad13a1",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -1972,7 +2170,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "821444935844e7973ff12dae0c466a93b10365c95306fb1f3c99190821480db9",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -2002,158 +2200,8 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "d87f768a3f2f2f448b1d99dbcf32cda2f7229f177461e4c3a4eff0a0a6ff2a9e",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "912383377",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-ecf7991597a1e2b0d85243df",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "ecf7991597a1e2b0d85243df71d860a4da49ebb5e427613b0146129ffb88f922",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "912383377",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-7c3b237d8228f7d00cd0ec76",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "7c3b237d8228f7d00cd0ec768bb34f4ff6a63f4b1d2d121452abec46e411424a",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "912383377",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-ebae362a37e547503ab14040",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "ebae362a37e547503ab14040033e20d6357e8f00b0d0b19ac3837905fe78258c",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "912383377",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-0118364f945be6139de43795",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "0118364f945be6139de43795f5418e258ea2139af60bb0bd9424bc654cd2f490",
-        "observed_at": "2025-04-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "912383377",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2025-04-08: Endring",
-        "metrics": {
-          "date": "2025-04-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-fe5a71a83b7172c7191c8f29",
-        "organisation_number": "912383377",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
-        "content_sha256": "fe5a71a83b7172c7191c8f29f860662eeac9ab9cd1a146bc5e4a0ac241d3ab0b",
         "observed_at": "2025-04-08",
         "exact_entity": true,
         "identity_proof": [
@@ -2182,7 +2230,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "7821c388aec7e76434e86854f00945523d88b01f1aa7a50e32314ceaa2b170de",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -2212,7 +2260,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4bb0aea976ab14a904711e3364b06f3a0e5d87378ce6c3404f75aee4fd68270b",
         "observed_at": "2024-04-15",
         "exact_entity": true,
@@ -2242,7 +2290,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2edcdaa83e34cbfd3693694079ae5d0a6aa1038a2c87ff69257df44b4ca76995",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2272,7 +2320,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "2055c4ec38cda1eee7fb0d3d13a9adbcaefd189f5793aaaffaab6a6c8534f159",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2302,7 +2350,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "9b97b9950d1ea82c7c6b14cbdf745b7bd8982370858aed644c9e9617fcbbbcb8",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2332,7 +2380,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "b1a5d4788baf8829eb39770bcf437e94e9071ab46fc2835c4a3929e832b549e1",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2362,7 +2410,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "6a186cb2a27ca961900fcbb618d873eca06561b7fae25c25efe3cef02fad26e9",
         "observed_at": "2023-08-14",
         "exact_entity": true,
@@ -2392,7 +2440,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "17f99545aa9be7c201788a8568bd0796624fc5446bdbc523372b63b3c20a8c40",
         "observed_at": "2023-05-13",
         "exact_entity": true,
@@ -2422,7 +2470,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "13df1f43c0397fb204fff86904ee79bdd7df64250a08adaa19ecc75aa6cdbf36",
         "observed_at": "2023-05-09",
         "exact_entity": true,
@@ -2452,7 +2500,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
-        "retrieved_at": "2026-10-05T11:02:12.779022Z",
+        "retrieved_at": "2026-09-29T10:44:00.020607Z",
         "content_sha256": "4b236754a3642f87ee8b5a2979512e522209e6b614502bdcca686b9e767994f9",
         "observed_at": "2022-05-21",
         "exact_entity": true,
@@ -2475,8 +2523,388 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "brreg-kunngjoring-fca24500d8f345d82f3f918e",
+        "organisation_number": "912383377",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "b761009c52990104a26a041ab78d80af387c4f0fcae90a244e36ed36c0b15b98",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912383377",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-21",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-21",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000575552&amp;sokeverdi=912383377&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-21 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-8129f3ea684210994708def0",
+        "organisation_number": "912383377",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "97f1263fcdf98def997f81250b620565027c06a3da8633b0c6100aec43502442",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912383377",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-06-12",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-06-12",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000405165&amp;sokeverdi=912383377&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-06-12 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-14e329ccebfc22ddc032f713",
+        "organisation_number": "912383377",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "25dd1f9a674ed6898df36922aa8bc19ec7cafc5ae206e4884c017145a5d48465",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "912383377",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-04-15",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-04-15",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000351659&amp;sokeverdi=912383377&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-04-15 (BRREG official announcement)"
+      },
+      {
+        "id": "registry-workforce-6283d0871ac0757aadf6ce1f",
+        "organisation_number": "912383377",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/912383377",
+        "retrieved_at": "2026-09-29T10:10:41.214182Z",
+        "content_sha256": "2a2c441d73b25cf73f4e314136dba20c4255cd89212c40a197fe675e4e16a788",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "912383377",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 7",
+        "metrics": {
+          "workforce_value": 7,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2025-04-14"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2025-04-14",
+        "effective_at": "2025-04-14"
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+        "retrieved_at": "2026-10-31T18:17:02.354134Z",
+        "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "hacoas.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-metrics-912383377-461cbb673f892dc2",
+        "signal_type": "profile_metrics",
+        "strategy": "social_profile_metrics",
+        "evidence_span": "Hansen & Arntzen Co AS Google profile: rating 5/5, 1 ratings.",
+        "metrics": {
+          "rating": 5,
+          "review_count": 1,
+          "scale": 5,
+          "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+        "retrieved_at": "2026-10-31T18:17:02.354134Z",
+        "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "hacoas.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-912383377-2dd00aa67448849a",
+        "signal_type": "review",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Thundershield",
+        "observed_at": "2020-04-08T16:03:49.787180Z",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "metrics": {
+          "rating": 5,
+          "scale": 5,
+          "review_index": 0,
+          "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+        "retrieved_at": "2026-10-31T18:17:02.354134Z",
+        "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "hacoas.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-review-summary-912383377-461cbb673f892dc2",
+        "signal_type": "review_summary",
+        "strategy": "places_rating_reviews",
+        "evidence_span": "Hansen & Arntzen Co AS is rated 5/5 from 1 Google reviews.",
+        "metrics": {
+          "rating": 5,
+          "review_count": 1,
+          "scale": 5,
+          "place_id": "ChIJlw79V3LhRkYRf1O3atY5cYY"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "google_places",
+        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJlw79V3LhRkYRf1O3atY5cYY",
+        "retrieved_at": "2026-10-31T18:17:02.354134Z",
+        "content_sha256": "461cbb673f892dc221885c5f565f23252c879223e886d3b242c58ef6ade67c51",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "google_places_website_domain_match",
+            "value": "hacoas.no",
+            "source": "google_places"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "customer_review",
+        "label": "positive",
+        "id": "gplaces-sentiment-912383377-461cbb673f892dc2",
+        "signal_type": "sentiment",
+        "strategy": "customer_review_sentiment",
+        "sentiment_label": "positive",
+        "sentiment_model_version": "rule-based-v1",
+        "evidence_span": "Aggregate rating 5/5 from 1 reviews implies positive sentiment.",
+        "metrics": {
+          "rating": 5,
+          "review_count": 1,
+          "scale": 5
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/912383377",
+        "retrieved_at": "2026-11-05T21:10:00.520647Z",
+        "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "912383377"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HANSEN & ARNTZEN CO AS",
+            "matched_organisation_number": "912383377"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+        "id": "purehelp-email-912383377-fdd5b1926d851a73",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@hacoas.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/912383377",
+        "retrieved_at": "2026-11-05T21:10:00.520647Z",
+        "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "912383377"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HANSEN & ARNTZEN CO AS",
+            "matched_organisation_number": "912383377"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+        "id": "purehelp-phone-912383377-fdd5b1926d851a73",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "35 96 78 80",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/912383377",
+        "retrieved_at": "2026-11-05T21:10:00.520647Z",
+        "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "912383377"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HANSEN & ARNTZEN CO AS",
+            "matched_organisation_number": "912383377"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+        "id": "purehelp-profile-912383377-fdd5b1926d851a73",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "33.150",
+          "nace_description": "Repair and maintenance of civilian ships and boats",
+          "town": "STATHELLE",
+          "zipcode": "3961",
+          "municipality": "BAMBLE",
+          "municipality_number": "4012",
+          "county": "Telemark",
+          "registration_date": "1995-03-12",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-03-12",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.hansen-og-arntzen.no"
+        }
+      },
+      {
+        "organisation_number": "912383377",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/912383377",
+        "retrieved_at": "2026-11-05T21:10:00.520647Z",
+        "content_sha256": "ccacbdde71bef9f0c155ff2d063d0115b0f90c55e44bc659aa3d2e470ef7e023",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "912383377"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "HANSEN & ARNTZEN CO AS",
+            "matched_organisation_number": "912383377"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-912383377.orgNumber=912383377;name=HANSEN & ARNTZEN CO AS",
+        "id": "purehelp-workforce-912383377-fdd5b1926d851a73",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 7,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
       }
     ]
   },
-  "generated_at": "2026-10-05T14:49:43.935692+00:00"
+  "generated_at": "2026-11-06T05:27:33.409071+00:00"
 }

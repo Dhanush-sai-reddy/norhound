@@ -40,7 +40,9 @@ done
 uv run python scripts/merge_external_outputs.py \
   --inputs "${PRESENT[@]}" \
   --output out/web1000batch.external-merged.jsonl \
-  --report out/web1000batch.merge-report.json
+  --report out/web1000batch.merge-report.json \
+  --exclude-hosts proff.no \
+  --dedupe-latest
 
 # Drop known brand-collision probe rows (precision gate: exact-entity only).
 uv run python scripts/purge_wrong_company_probes.py \
