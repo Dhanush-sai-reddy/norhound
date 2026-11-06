@@ -293,7 +293,7 @@ def discover(profile: dict, *, timeout: float, max_bytes: int, min_interval: flo
         pass
     all_observations = []
     page_status = {}
-    for page_url in urls[:6]:
+    for page_url in urls[:12]:
         if min_interval:
             time.sleep(min_interval)
         html, raw, final_url = fetch_page_html(page_url, timeout=timeout, max_bytes=max_bytes)
