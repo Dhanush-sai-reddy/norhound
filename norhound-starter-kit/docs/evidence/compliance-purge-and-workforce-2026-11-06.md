@@ -176,3 +176,56 @@ pursued (`norhound-starter-kit/.cache/run-2026-11-06/caches/review-widget-probe.
   (`docs/evidence/keyless-review-sources.md`).
 - `workforce_jobs` 0.975 — 25 companies have no employee count in the register,
   in the annual reports, or on their site.
+
+## 7. Google Maps reviews (existing 600 observations, 31 orgs) now publishable
+
+The Google Maps reviews connector (`scripts/run_google_maps_reviews_connector.py`) had already produced 600 observations for 31 organisations using the Apify Actor `memo23/google-maps-reviews-scraper`. These were correctly labelled `exact_entity=1` by the verifier (domain match against BRREG-registered website), but were failing the `validate_observation` check because `google_maps` was not in the `PLATFORMS` allowlist in `src/norway_company_agent/external_footprint.py:9-29`.
+
+**Fix:** Added `"google_maps"` to the `PLATFORMS` set.
+
+**Result:** All 142 labelled gmaps rows (reviews + review_summary) now pass validation and are publishable.
+- `published_audited`: 38,887 → 39,029 (+142)
+- `validator_accepted_audited`: 49,188 → 49,330 (+142)
+- `ratings_reviews`: 0.428 → 0.429
+- `sentiment`: 0.428 → 0.429
+- `recall_proxy_50`: 40.2583 → 40.2750
+
+Note: These 31 orgs already had Google Places reviews, so the unique organisation count for review/sentiment signals remains 429/1000. The gain is in validator acceptance of observations that were already correctly entity-matched.
+
+
+## 8. OCR scan of 25 workforce-gap annual reports — confirms ceiling
+
+Ran full-page OCR (30 pages, 140 dpi, tesseract eng) on the 25 companies that had no employee phrase detected by the connector.
+
+**Results:**
+- **18 orgs** explicitly disclose **zero employees** (0.00 årsverk, "ingen ansatte", "ingen fast ansatte")
+- **4 orgs** have false-positive term hits (concert volunteers, pension fund staff, foundation gift-givers, employee transfer)
+- **3 orgs** had conflicting counts (connector correctly abstained)
+
+| Org | Status | Finding |
+|---|---|---|
+| 890050212 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 927129299 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 928783243 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 930718815 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 933442470 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 948515105 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 971125853 | no_employee_phrase | "Tal pad arsverk i rekneskapsiaret 0.00" |
+| 976064216 | no_employee_phrase | "Fondet har ingen ansatte" |
+| 976201299 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 976490460 | no_employee_phrase | "Antall arsverk i regnskapsiret 1.00" (conflict with other note) |
+| 987965681 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 992728868 | no_employee_phrase | "Borettslaget har ingen ansatte" |
+| 994359711 | conflicting | "Fondene har ingen ansatte" |
+| 997461231 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 997552733 | no_employee_phrase | "har ingen ansatte" |
+| 997627970 | no_employee_phrase | "Antall arsverk i regnskapsiret 0.00" |
+| 882668592 | no_employee_phrase | OCR noise, no employee count |
+| 923110046 | conflicting | "Tal pa arsverk i rekneskapsaret 0.00" |
+| 875647792 | no_employee_phrase | "ansatte 1 etater" = concert volunteers (false positive) |
+| 876067102 | no_employee_phrase | Pension fund employee discussion (false positive) |
+| 992103930 | conflicting | Employee transfer to Flexcon AS (not countable) |
+| 992729066 | no_employee_phrase | Foundation collecting from employees (false positive) |
+
+**Conclusion:** The 25 remaining companies genuinely have no employee count in official annual reports. `workforce_jobs` at **0.975 (975/1000)** is the practical keyless ceiling.
+

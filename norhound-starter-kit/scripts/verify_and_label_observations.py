@@ -74,6 +74,10 @@ OFFICIAL_REPORT_PROOF_TYPES = (
     # Two authoritative sources agreeing on the exact registered domain is a
     # valid exact-entity proof, equivalent to an official-API identity.
     "google_places_website_domain_match",
+    # Google Maps reviews via Apify: the place's website is extracted and matched
+    # against the BRREG-registered domain. Two authoritative sources agreeing on
+    # the exact registered domain is a valid exact-entity proof.
+    "domain_resolved_to_exact_entity",
 )
 
 

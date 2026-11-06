@@ -26,6 +26,7 @@ PLATFORMS = {
     "wikidata",
     "wikipedia",
     "company_directory",
+    "google_maps",
 }
 
 SIGNAL_TYPES = {
