@@ -139,7 +139,10 @@ uv run python scripts/run_external_pipeline.py \
   --profiles "$PFX-profiles.jsonl" \
   --envelopes "$PFX-envelopes.jsonl" \
   --prefix "$PFX" \
-  --jobs --reviews --keyless --nav
+  --jobs --reviews --keyless --nav --google-news --kunngjoring --gleif \
+  --nav-direct --brave-discovery --ats-jobs --smilefjes --feed-news \
+  --nav-index data/nav-job-index.jsonl \
+  --wikidata-index data/wikidata-index.jsonl
 
 # --------------------------------------------------------- 5 verify + label ----
 # NOTE: steps 4 already ran verify_and_label_observations.py and

@@ -40,6 +40,33 @@ def _structured_names(value: Any) -> list[str]:
     return names
 
 
+def site_scope(url: str) -> str | None:
+    """Path prefix a company's pages live under when its 'website' is a section of a larger
+    site (venstre.no/lokal/telemark/midt-telemark/); None when the site is the whole domain."""
+    path = urllib.parse.urlparse(url or "").path or "/"
+    segments = [segment for segment in path.split("/") if segment]
+    if len(segments) < 2:
+        return None
+    return path if path.endswith("/") else path.rsplit("/", 1)[0] + "/"
+
+
+def within_site_scope(url: str, website_url: str, scope: str | None) -> bool:
+    """True when url belongs to the company's part of the site (always true without a scope)."""
+    if not scope:
+        return True
+    target, site = urllib.parse.urlparse(url or ""), urllib.parse.urlparse(website_url or "")
+    same_host = (target.hostname or "").removeprefix("www.") == (site.hostname or "").removeprefix("www.")
+    return same_host and (target.path or "/").startswith(scope)
+
+
+def specific_name_tokens(name: Any, host: str) -> list[str]:
+    """Name words not already in the site's domain: what distinguishes this company from the
+    organisation the domain belongs to ("sandnes" in Naturvernforbundet i Sandnes on
+    naturvernforbundet.no). Empty when the domain carries the whole name."""
+    root = re.sub(r"[^a-z0-9]", "", (host or "").casefold().removeprefix("www.").split(".")[0])
+    return [token for token in _tokens(name) if token not in root]
+
+
 def _distinct_operator(core: list[str], homepage_parts: list[Any], profile_name: str) -> tuple[str, bool]:
     """Return (name, is_conflict) for a homepage that names a different operator.
 

@@ -50,6 +50,27 @@ class SiteNewsDatesTests(unittest.TestCase):
         self.assertIsNotNone(obs)
         self.assertNotIn("observed_at", obs)
 
+    def test_uncertain_site_is_never_published(self):
+        profile = _profile([_page("https://example.test/nyheter", "Nyheter", "Sak fra 2026-08-14")])
+        profile["evidence"]["website"]["value"]["identity_assessment"] = {
+            "status": "related_or_uncertain",
+            "publishable": False,
+            "score": 0.65,
+            "method": "deterministic_name_org_evidence_v2",
+        }
+        self.assertIsNone(observation(profile))
+
+    def test_exact_site_is_published_as_exact(self):
+        profile = _profile([_page("https://example.test/nyheter", "Nyheter", "Sak fra 2026-08-14")])
+        profile["evidence"]["website"]["value"]["identity_assessment"] = {
+            "status": "exact",
+            "publishable": True,
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2",
+        }
+        obs = observation(profile)
+        self.assertTrue(obs["exact_entity"])
+
 
 if __name__ == "__main__":
     unittest.main()

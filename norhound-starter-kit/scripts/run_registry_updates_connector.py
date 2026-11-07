@@ -13,6 +13,7 @@ import hashlib
 import json
 import sys
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -26,6 +27,7 @@ UPDATES_API = "https://data.brreg.no/enhetsregisteret/api/oppdateringer/enheter"
 PAGE_SIZE = 200
 MAX_EVENTS = 20
 HTTP_TIMEOUT = 45
+MAX_WORKERS = 12
 
 
 def sanitize_line_separators(text: str) -> str:
@@ -102,6 +104,7 @@ def main() -> None:
     parser.add_argument("--output", required=True)
     parser.add_argument("--report", required=True)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--workers", type=int, default=MAX_WORKERS)
     args = parser.parse_args()
     profiles = read_jsonl(Path(args.profiles))
     if args.limit:
@@ -109,18 +112,25 @@ def main() -> None:
     stamped = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     observations: list[dict[str, Any]] = []
     matched = 0
-    for profile in profiles:
+
+    def process_profile(profile: dict) -> tuple[int, list[dict]]:
         org = str(profile.get("organisation_number") or "")
         if not org.isdigit():
-            continue
+            return 0, []
         try:
             payload = _fetch_events(org)
         except Exception:
-            continue
+            return 0, []
         items = [item for item in collect(org, payload, retrieved_at=stamped) if publishable_observation(item)]
-        if items:
-            matched += 1
-        observations.extend(items)
+        return (1 if items else 0, items)
+
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
+        futures = {pool.submit(process_profile, p): p for p in profiles}
+        for fut in as_completed(futures):
+            m, items = fut.result()
+            matched += m
+            observations.extend(items)
+
     write_jsonl(Path(args.output), observations)
     report = {
         "connector": "registry_updates_v1",

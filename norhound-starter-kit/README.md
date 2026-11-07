@@ -26,59 +26,49 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
-### One command (recommended — `run_one_shot.py`)
+### One command (recommended — `norhound_live.sh`)
 
 Everything the submission needs — manifest, base batch, external connectors
-(including pre-computed Google Places, social handles, feed-news, Finn/ATS jobs,
-probed signals, registry-workforce, workforce-pdf, GLEIF, Wikidata, gate474
-extractors), verification, evaluation, deterministic summaries, and the
-searchable viewer — runs from a single command:
-
-```bash
-uv run python scripts/run_one_shot.py \
-  --out out/submission \
-  --external-data "out/gplaces-reviews.jsonl,out/site-social-handles.jsonl,out/company-feed-news.jsonl,out/company-article-dates.jsonl,out/finn-jobs.external.jsonl,out/ats-jobs.external.jsonl,out/probed-site-signals.jsonl,out/registry-workforce.jsonl,out/wikidata-ext.jsonl,out/gleif-ext.jsonl,out/norwegian-news-rss.jsonl,out/gate474.sitedesc.jsonl,out/gate474.sitemap.jsonl,out/gate474.news.jsonl,out/gate474.handles.jsonl"
-```
-
-Useful knobs:
-
-```bash
-# Dry run (10 companies) — same chain, fewer companies
-uv run python scripts/run_one_shot.py --out out/test --external-data "..." --skip-batch --profiles out/web1000-profiles.jsonl --envelopes out/envelopes.jsonl
-
-# Resume after interruption
-uv run python scripts/run_one_shot.py --out out/submission --external-data "..." --skip-batch
-
-# Reuse cached external output
-uv run python scripts/run_one_shot.py --out out/submission --skip-external
-```
-
-It prints a final scorecard (published observations, entity/metric precision,
-qualification gate, coverage) and writes the viewer to `out/submission/`.
-
----
-
-### Alternative: Multi-step live script (`norhound_live.sh`)
-
-For debugging individual stages, the multi-step live script is also available:
+(company-site activity/news/jobs, Wikidata, registry contacts/structure/updates,
+sitemap lastmod, dated registry feed, Fagfolkguiden reviews, official NAV job
+feed, GLEIF, Google News RSS, Kunngjoringer), verification, evaluation,
+deterministic summaries, and the searchable viewer — runs from a single
+command. It is fully live and credential-free: no pre-built files, no API
+keys, no Apify, no Google Places. Collects everything from public sources
+within the 45-minute / 2,000-request per 100-company budget.
 
 ```bash
 bash scripts/norhound_live.sh
 ```
 
-Useful knobs:
+With an evaluator-supplied batch file:
 
 ```bash
-SMOKE=1 bash scripts/norhound_live.sh          # 10-company dry run of the same chain
-COUNT=100 bash scripts/norhound_live.sh        # smaller full-fidelity run
-VERIFY_RECHECK=1 bash scripts/norhound_live.sh # re-run verify/eval independently
-SKIP_DOWNLOAD=1 bash scripts/norhound_live.sh   # reuse existing data/ inputs
-NORHOUND_STAGE_TIMEOUT_S=900 bash scripts/norhound_live.sh  # per-connector cap
+bash scripts/norhound_live.sh /path/to/official-batch.jsonl
 ```
 
 It prints a final scorecard and writes the viewer to `out/norhound-site/`.
 Inside Docker the same script is the `norhound-full` entrypoint, so the grader
 needs only `docker compose run --rm norhound-full`.
+
+Useful knobs:
+
+```bash
+# Dry run (10 companies) — same chain, fewer companies
+SMOKE=1 bash scripts/norhound_live.sh
+
+# Smaller full-fidelity run
+COUNT=100 bash scripts/norhound_live.sh
+
+# Re-run verify/eval independently
+VERIFY_RECHECK=1 bash scripts/norhound_live.sh
+
+# Reuse cached data/ inputs
+SKIP_DOWNLOAD=1 bash scripts/norhound_live.sh
+
+# Per-connector timeout cap (default 3600s exceeds the 45-min budget)
+NORHOUND_STAGE_TIMEOUT_S=900 bash scripts/norhound_live.sh
+```
 
 Re-running the same command is how refresh history is produced: before the run
 overwrites anything it copies the previous `<prefix>-envelopes.jsonl` to
@@ -94,13 +84,32 @@ Each connector subprocess is bounded by `NORHOUND_STAGE_TIMEOUT_S` (default
 the pipeline indefinitely. Note the default exceeds the 45-minute per-100-company
 budget, so lower it for an official batch.
 
-**Note on steps 4–5 below:** `run_external_pipeline.py` already runs
-`verify_and_label_observations.py` and `evaluate_external_footprint.py`
-internally — that internal run is what makes publication conditional on a
-verified `exact_entity` label. The standalone commands are kept for inspection
-only, and read the pipeline's own `<prefix>.external.jsonl` /
-`<prefix>.labels.jsonl` (an earlier revision emitted `<prefix>.external-withfag.jsonl`,
-which the current pipeline no longer writes).
+### Alternative: One-shot Python runner (`run_one_shot.py`)
+
+The same pipeline is available as a single Python command, also fully live
+and credential-free:
+
+```bash
+uv run python scripts/run_one_shot.py --out out/submission
+```
+
+One-time index builds (free, run once before the first submission):
+
+```bash
+uv run python scripts/run_wikidata_connector.py --build-index --organisations data/entry-manifest.jsonl --index data/wikidata-index.jsonl --workers 24
+uv run python scripts/run_nav_job_feed_connector.py --build-index --index data/nav-job-index.jsonl --days 183 --workers 24
+uv run python scripts/run_nav_job_feed_connector.py --resolve-parents --index data/nav-job-index.jsonl --workers 24
+```
+
+It prints a final scorecard and writes the viewer to `out/submission/`.
+
+---
+
+### Alternative: Multi-step live script (deprecated in favor of `norhound_live.sh`)
+
+The multi-step commands below are kept for debugging individual stages. The
+single `bash scripts/norhound_live.sh` command above runs the same chain and
+is the recommended entry point.
 
 ### Container (no local setup required)
 
@@ -143,7 +152,9 @@ organisation and the count check is derived rather than declared.
 ### Native (Python 3.12+ and `uv` installed)
 
 Requires Python 3.12+ and `uv`. Data: the official Brønnøysund bulk export and
-the company-universe manifest.
+the company-universe manifest. The single `bash scripts/norhound_live.sh`
+command above runs the same chain; the multi-step commands below are kept for
+debugging individual stages.
 
 ```bash
 uv sync
@@ -152,8 +163,7 @@ curl -L 'https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv' -o brre
 curl -L 'https://builderr.ai/signalpost-company-universe-2025.jsonl.gz' -o norhound-universe.jsonl.gz
 
 # 1. Same 1,000-company manifest used for the submission (seed 20260823).
-#    --website-only reproduces the shipped entry-web1000.jsonl exactly; the
-#    shipped external-footprint eval ran on this website-bearing batch.
+#    --website-only reproduces the shipped entry-web1000.jsonl exactly.
 #    --bulk validates against the live registry and auto-replaces any org
 #    numbers that left the register since the universe snapshot.
 uv run python select_entry_batch.py \
@@ -165,8 +175,6 @@ uv run python select_entry_batch.py \
   --output entry-web1000.jsonl
 
 # 2. Base batch: registry enrichment + exact-identity website capture.
-#    Runs the website-bearing manifest produced in step 1 (this is the exact
-#    batch the shipped external-footprint eval ran on).
 uv run python scripts/run_competition_batch.py \
   --organisations entry-web1000.jsonl \
   --bulk brreg-enheter.csv \
@@ -176,56 +184,44 @@ uv run python scripts/run_competition_batch.py \
   --run-id local-001 \
   --expected-count 1000
 
-# 3. External-footprint enrichment: registry contacts + structure, dated
-#    registry feed, sitemap lastmod, company-site news/description, Wikidata,
-#    official NAV job-feed postings. The --keyless flag runs every no-API-key
-#    connector (contacts, site description, substructure, sitemap, registry
-#    feed, Wikidata) and folds their rows into the same verify/label/eval chain.
+# 3. External-footprint enrichment: all free, keyless connectors (live, no API keys).
+#    --keyless runs contacts, site description, substructure, sitemap, registry
+#    feed, Wikidata; --nav runs the official NAV job feed; --reviews runs
+#    Fagfolkguiden; --jobs runs company-site job extraction;
+#    --google-news and --kunngjoring add dated official activity.
 uv run python scripts/run_external_pipeline.py \
   --profiles out/web1000-profiles.jsonl \
   --envelopes out/envelopes.jsonl \
   --prefix out/web1000batch \
-  --jobs --reviews --promote --keyless
-
-# 3b. Same deterministic connectors, one at a time if you prefer:
-uv run python scripts/extract_registry_contacts.py --profiles out/web1000-profiles.jsonl --output out/contacts.jsonl --report out/contacts-report.json
-uv run python scripts/extract_site_description.py --profiles out/web1000-profiles.jsonl --output out/sitedesc.jsonl --report out/sitedesc-report.json
-uv run python scripts/extract_substructure.py --profiles out/web1000-profiles.jsonl --output out/substruct.jsonl --report out/substruct-report.json
-uv run python scripts/run_registry_updates_connector.py --profiles out/web1000-profiles.jsonl --output out/updates.jsonl --report out/updates-report.json
-uv run python scripts/extract_sitemap_pages.py --profiles out/web1000-profiles.jsonl --output out/sitemap.jsonl --report out/sitemap-report.json
-uv run python scripts/run_wikidata_connector.py --profiles out/web1000-profiles.jsonl --index data/wikidata-index.jsonl --output out/wikidata.jsonl --report out/wikidata-report.json
+  --jobs --reviews --keyless --nav --google-news --kunngjoring --gleif \
+  --nav-index data/nav-job-index.jsonl \
+  --wikidata-index data/wikidata-index.jsonl
 
 # 4. Re-verify every observation against frozen evidence (identity + digest
 #    + domain + exact-org directory proof). Unverified rows never publish.
-#    (Prefix may differ; the shipped audit re-verified 1,391 observations, and
-#    the full 1,000-company live run re-verified 24,887.)
 uv run python scripts/verify_and_label_observations.py \
   --profiles out/web1000-profiles.jsonl \
-  --observations out/web1000batch.external-withfag.jsonl \
-  --labels out/web1000batch.labels-withfag.jsonl \
-  --report out/web1000batch.label-report-withfag.json
+  --observations out/web1000batch.external.jsonl \
+  --labels out/web1000batch.labels.jsonl \
+  --report out/web1000batch.label-report.json
 
 # 5. Evaluate the labeled entry (publication requires verified exact_entity).
 uv run python scripts/evaluate_external_footprint.py \
   --profiles out/web1000-profiles.jsonl \
-  --observations out/web1000batch.external-withfag.jsonl \
-  --labels out/web1000batch.labels-withfag.jsonl \
+  --observations out/web1000batch.external.jsonl \
+  --labels out/web1000batch.labels.jsonl \
   --output out/web1000batch.external-eval.json \
   --minimum-audit 300
 
 # 6. Deterministic grounded summaries (no API key, no model calls) plus a
-#    static site you can open over file:// and a refresh-history pass that
-#    attaches changes/previous-run versions to the envelopes. Each summary
-#    answers what the company does, its financial/staff/hiring position, what
-#    changed since the previous run, and what is unknown and why; every
-#    answerable sentence carries the evidence ids it rests on.
+#    static site you can open over file://.
 uv run python scripts/build_deterministic_summaries.py \
   --envelopes out/envelopes.jsonl \
   --output out/summaries.jsonl \
   --report out/summaries-report.json
 uv run python scripts/build_static_site.py \
   --envelopes out/envelopes.jsonl --summaries out/summaries.jsonl \
-  --labels out/norhound.labels.jsonl --observations out/norhound.external.jsonl \
+  --labels out/web1000batch.labels.jsonl --observations out/web1000batch.external.jsonl \
   --out out/site
 ```
 
@@ -251,11 +247,9 @@ profiles and observations and can be re-run on any checkout.
 - 199 tests pass by default (see below).
 
 Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
-`out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
-(audit inputs, 1,391 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
-and the seals in the report. Note `out/batch1000f.*` and the non-`withfag`
-`out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
-submitted numbers.
+`out/web1000batch.labels.jsonl` + `out/web1000batch.external.jsonl`
+(audit inputs), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
+and the seals in the report.
 
 ### Fresh-batch check
 

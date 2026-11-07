@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 PLATFORMS = {
     "company_site",
     "google_places",
+    "google_maps",
     "linkedin",
     "facebook",
     "instagram",

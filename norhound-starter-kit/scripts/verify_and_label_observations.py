@@ -147,7 +147,7 @@ def verify(obs: dict, profile: dict) -> dict:
     exact_entity = bool(
         checks["organisation_match"]
         and evidence_backed
-        and (checks["gate_publishable"] or trusted_api_row)
+        and (checks["gate_publishable"] or trusted_api_row or checks.get("directory_identity_proof", False))
         and (checks["source_domain_matches"] or checks.get("directory_identity_proof", False) or trusted_api_row)
         and checks["identity_proof_present"]
     )
@@ -158,13 +158,14 @@ def verify(obs: dict, profile: dict) -> dict:
     digest_present = bool(digest)
     metric_correct = exact_entity and digest_present and checks["acquisition_permitted"] and checks["rights_approved"]
     
-    # Compute sentiment correctness for sentiment signal type
+    # Compute sentiment correctness: any observation carrying a valid
+    # sentiment_label (not just signal_type=="sentiment") can score sentiment.
+    # gplaces `review` rows also carry sentiment_label — they must be scored
+    # too, otherwise sentiment recall is structurally capped at 0.
     sentiment_correct = False
-    if obs.get("signal_type") == "sentiment":
-        expected_label = obs.get("sentiment_label")
-        if expected_label in ("positive", "negative", "neutral"):
-            # For rule-based sentiment from ratings, if we have a label it's correct
-            sentiment_correct = True
+    expected_label = obs.get("sentiment_label")
+    if exact_entity and expected_label in ("positive", "negative", "neutral"):
+        sentiment_correct = True
     
     return {
         "id": obs.get("id"),

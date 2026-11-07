@@ -109,9 +109,9 @@ def fetch(profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
         }
         sentiment_common = {**common, "sentiment_label": label, "sentiment_model_version": "rule-based-v1"}
         rows = [
-            {**common, "id": f"fagfolk-review-{org}-{digest[:16]}", "signal_type": "review_summary", "strategy": "places_rating_reviews"},
-            {**common, "id": f"fagfolk-metrics-{org}-{digest[:16]}", "signal_type": "profile_metrics", "strategy": "social_profile_metrics"},
-            {**common, "id": f"fagfolk-buzz-{org}-{digest[:16]}", "signal_type": "buzz_metrics", "strategy": "buzz_peer_normalization"},
+            {**common, "sentiment_label": label, "sentiment_model_version": "rule-based-v1", "id": f"fagfolk-review-{org}-{digest[:16]}", "signal_type": "review_summary", "strategy": "places_rating_reviews"},
+            {**common, "sentiment_label": label, "sentiment_model_version": "rule-based-v1", "id": f"fagfolk-metrics-{org}-{digest[:16]}", "signal_type": "profile_metrics", "strategy": "social_profile_metrics"},
+            {**common, "sentiment_label": label, "sentiment_model_version": "rule-based-v1", "id": f"fagfolk-buzz-{org}-{digest[:16]}", "signal_type": "buzz_metrics", "strategy": "buzz_peer_normalization"},
             {**sentiment_common, "id": f"fagfolk-sentiment-{org}-{digest[:16]}", "signal_type": "sentiment", "strategy": "customer_review_sentiment"},
         ]
         return rows, {"organisation_number": org, "accepted": True, "rated": True, "rating": rating, "review_count": count, "cache_hit": cache_hit, "name_verified": name_in_page}

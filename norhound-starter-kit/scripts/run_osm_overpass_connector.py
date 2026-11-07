@@ -95,7 +95,7 @@ def process(profile: dict) -> list[dict]:
                     "rights_status": "approved",
                     "source_class": "company_directory",
                     "strategy": "osm_overpass_ref_orgnr",
-                    "id": f"osm-social-{profile['organisation_number']}-{plat}-{hashlib.sha256(f'{url}|{profile[\"organisation_number\"]}'.encode()).hexdigest()[:16]}",
+                    "id": f"osm-social-{profile['organisation_number']}-{plat}-{digest}",
                     "signal_type": "profile_handle",
                     "evidence_span": f"OSM tag ref:NO:orgnr={profile['organisation_number']} on {tags.get('name', 'unknown')}",
                     "metrics": {"platform": "openstreetmap", "url": url},
@@ -126,17 +126,23 @@ def main():
     stats = {"profiles": 0, "companies": 0, "handles": 0}
     
     with ThreadPoolExecutor(max_workers=max(1, 8)) as pool:
-        futures = {pool.submit(fetch_osm, p): p for p in (profiles[:args.limit] if args.limit else profiles)}
+        futures = {pool.submit(fetch, p): p for p in (profiles[:args.limit] if args.limit else profiles)}
         for fut in as_completed(futures):
             try:
                 rows = fut.result() or []
-                for r in rows:
-                    out.append(r)
+            except Exception:
+                rows = []
+            for r in rows:
+                out.append(r)
             if len(out) % 100 == 0:
                 print(f"  collected {len(out)} handles...")
     
     write_jsonl(Path(args.output), out)
-    print(json.dumps({"companies": len(set(r["organisation_number"] for r in out)), "handles": len(out)}, ensure_ascii=False, indent=2))
+    stats["profiles"] = len(profiles)
+    stats["companies"] = len(set(r["organisation_number"] for r in out))
+    stats["handles"] = len(out)
+    Path(args.report).write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"companies": stats["companies"], "handles": stats["handles"]}, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
     main()

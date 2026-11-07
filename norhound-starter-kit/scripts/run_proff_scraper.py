@@ -30,7 +30,7 @@ from bs4 import BeautifulSoup
 
 
 UA = "NorHound/1.0 (+https://github.com/Dhanush-sai-reddy/norhound)"
-APIFY_TOKEN = os.environ.get("APIFY_TOKEN", """")
+APIFY_TOKEN = os.environ.get("APIFY_TOKEN", "")
 
 
 def utc_now() -> str:
@@ -139,7 +139,7 @@ def fetch_profile(url: str, use_browser: bool = True) -> dict | None:
     # Extract org number from page
     org_match = re.search(r"Org\.nr[.:]\s*(\d{9})", html)
     if org_match:
-        data["org_number"] = org_match(1)
+        data["org_number"] = org_match.group(1)
 
     # Extract company name
     name_tag = soup.find("h1")
@@ -149,22 +149,22 @@ def fetch_profile(url: str, use_browser: bool = True) -> dict | None:
     # Extract revenue
     revenue_match = re.search(r"Driftsinntekter[.:]?\s*([\d\s]+)", html)
     if revenue_match:
-        data["revenue"] = revenue_match(1).strip()
+        data["revenue"] = revenue_match.group(1).strip()
 
     # Extract employees
     emp_match = re.search(r"Ansatte[.:]?\s*(\d+)", html)
     if emp_match:
-        data["employees"] = int(emp_match(1))
+        data["employees"] = int(emp_match.group(1).replace(" ", ""))
 
     # Extract CEO
     ceo_match = re.search(r"Administrerende direktør[.:]?\s*([^<\n]+)", html)
     if ceo_match:
-        data["ceo"] = ceo_match(1).strip()
+        data["ceo"] = ceo_match.group(1).strip()
 
     # Extract industry
     ind_match = re.search(r"Næring[.:]?\s*([^<\n]+)", html)
     if ind_match:
-        data["industry"] = ind_match(1).strip()
+        data["industry"] = ind_match.group(1).strip()
 
     return data
 

@@ -273,6 +273,23 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
     return observations
 
 
+def discover_careers_links(homepage: str, html: str, *, limit: int = 5) -> list[str]:
+    """Extract careers-page links from already-fetched homepage HTML."""
+    if not html:
+        return []
+    try:
+        from run_ats_jobs_connector import collect_careers_page_links
+    except ImportError:
+        try:
+            from scripts.run_ats_jobs_connector import collect_careers_page_links
+        except ImportError:
+            return []
+    try:
+        return collect_careers_page_links(html, homepage)[:limit]
+    except Exception:
+        return []
+
+
 def discover(profile: dict, *, timeout: float, max_bytes: int, min_interval: float = 0.0) -> tuple[list[dict], dict]:
     org = str(profile["organisation_number"])
     if not verified(profile):
@@ -293,6 +310,17 @@ def discover(profile: dict, *, timeout: float, max_bytes: int, min_interval: flo
         pass
     all_observations = []
     page_status = {}
+    if not pages:
+        # Discover the careers link from the verified homepage instead of
+        # guessing paths; fall back to the guessed paths only when the
+        # homepage exposes no careers link.
+        site_home = str((((profile.get("evidence") or {}).get("website") or {}).get("value") or {}).get("final_url") or homepage)
+        home_html, home_raw, _ = fetch_page_html(site_home, timeout=timeout, max_bytes=max_bytes)
+        if home_raw:
+            links = discover_careers_links(site_home, home_html)
+            if links:
+                urls = list(dict.fromkeys(links))
+                page_status[site_home] = f"careers_links_discovered:{len(links)}"
     for page_url in urls[:6]:
         if min_interval:
             time.sleep(min_interval)

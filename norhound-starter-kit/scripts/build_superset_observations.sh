@@ -22,8 +22,10 @@ INPUTS=(
   out/batch.external.jsonl
   # dated news with true publication timestamps
   out/company-feed-news.jsonl
+  out/company-feed-news.offsets.jsonl
   out/company-article-dates.jsonl
   out/web1000batch.feed-news.jsonl
+  out/web1000batch_newconnectors.feed-news.jsonl
   out/web1000batch.news.jsonl
   out/gate474.news.jsonl
   out/norwegian-news-rss.jsonl
@@ -65,6 +67,11 @@ INPUTS=(
   out/web1000batch.updates.jsonl
   out/web1000batch.workforce-pdf.jsonl
   out/web1000batch.workforce-registry.jsonl
+  # keyless public-sector connectors (TED EU procurement, research grants,
+  # Brønnøysund state-aid register) - official APIs, no keys required
+  out/submission/batch.ted.jsonl
+  out/submission/batch.forskningsradet.jsonl
+  out/submission/batch.stotte.jsonl
 )
 
 PRESENT=()

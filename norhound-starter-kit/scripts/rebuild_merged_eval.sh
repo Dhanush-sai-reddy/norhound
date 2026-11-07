@@ -17,9 +17,12 @@ INPUTS=(
   out/instagram.jsonl
   out/site-social-handles.jsonl
   out/company-feed-news.jsonl
+  out/web1000batch.feed-news.jsonl
+  out/web1000batch.wikidata.jsonl
   out/company-article-dates.jsonl
   out/finn-jobs.external.jsonl
   out/ats-jobs.external.jsonl
+  out/web1000batch.ats-jobs.jsonl
   out/probed-site-signals.jsonl
   out/registry-workforce.jsonl
   out/workforce-pdf.jsonl
@@ -95,4 +98,4 @@ uv run python scripts/evaluate_external_footprint.py \
   --observations out/web1000batch.external-merged.jsonl \
   --labels out/web1000batch.labels-merged.jsonl \
   --output out/web1000batch.eval-merged.json \
-  --minimum-audit 100
+  --minimum-audit 300

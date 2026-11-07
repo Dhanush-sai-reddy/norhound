@@ -116,6 +116,11 @@ class ExternalFootprintTests(unittest.TestCase):
         self.assertNotIn("unsupported platform", reasons)
         self.assertFalse(publishable_observation(item))
 
+    def test_google_maps_place_reviews_are_a_supported_platform(self):
+        item = self.observation(platform="google_maps", signal_type="review_summary")
+        self.assertNotIn("unsupported platform", validate_observation(item))
+        self.assertTrue(publishable_observation(item))
+
     def test_company_directory_is_not_a_website_discovery_candidate(self):
         profile = {"name": "OBLOMOV AS", "organisation_number": "991167315", "municipality": "SOLA"}
         result = {"url": "https://www.northdata.com/Oblomov-AS/BR-991167315", "title": "Oblomov AS", "snippet": "991167315", "rank": 1}

@@ -8,6 +8,15 @@ from urllib.parse import urlparse
 LABELS = ("positive", "neutral", "negative", "mixed")
 INDEPENDENT_SOURCE_CLASSES = {"licensed_news", "public_news", "official_notice", "licensed_review", "customer_review", "employee_review", "public_mention"}
 
+def rating_to_label(r: float) -> str:
+    """Derive sentiment label from 1-5 rating scale."""
+    if r >= 4.0:
+        return "positive"
+    elif r >= 3.0:
+        return "neutral"
+    else:
+        return "negative"
+
 
 def sentiment_input_eligibility(item: dict[str, Any]) -> tuple[bool, list[str]]:
     reasons = []

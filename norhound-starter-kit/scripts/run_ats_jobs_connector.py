@@ -80,9 +80,12 @@ def http(url: str, *, data: bytes | None = None, timeout: float = 12.0, max_byte
 
 
 def fetch_html(url: str) -> str | None:
-    if not _robots_allowed(url, 8.0):
+    try:
+        if not _robots_allowed(url, 8.0):
+            return None
+        raw = http(url, max_bytes=500_000)
+    except Exception:
         return None
-    raw = http(url, max_bytes=500_000)
     return raw.decode("utf-8", "replace") if raw else None
 
 
@@ -279,7 +282,7 @@ def process(profile: dict) -> list[dict]:
         return []
     val = ev.get("value") or {}
     ident = val.get("identity_assessment") or {}
-    if str(ident.get("status") or "").lower() not in {"exact", "related_or_uncertain"}:
+    if str(ident.get("status") or "").lower() != "exact" or ident.get("publishable") is False:
         return []
     site = ev.get("source_url") or val.get("final_url") or ""
     if not site:
@@ -379,7 +382,10 @@ def main() -> None:
         futures = {pool.submit(process, p): p for p in profiles}
         for fut in as_completed(futures):
             stats["profiles"] += 1
-            rows = fut.result() or []
+            try:
+                rows = fut.result() or []
+            except Exception:
+                continue
             out.extend(rows)
             for r in rows:
                 a = (r.get("metrics") or {}).get("ats")

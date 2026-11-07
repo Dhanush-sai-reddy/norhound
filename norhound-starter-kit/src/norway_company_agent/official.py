@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import threading
 import time
 from typing import Any, Callable
@@ -71,16 +72,34 @@ def _get(value: Any, *path: str) -> Any:
     return value
 
 
+def _period_length_days(period: Any) -> int | None:
+    if not isinstance(period, dict):
+        return None
+    from_dato = str(period.get("fraDato") or "").strip()
+    to_dato = str(period.get("tilDato") or "").strip()
+    if not from_dato or not to_dato:
+        return None
+    try:
+        from datetime import date
+        f = date.fromisoformat(from_dato[:10])
+        t = date.fromisoformat(to_dato[:10])
+        return (t - f).days
+    except ValueError:
+        return None
+
+
 def normalize_financials(body: Any) -> dict[str, Any]:
     records = body if isinstance(body, list) else []
     if not records:
         return {"records": []}
     normalized = []
     for item in records[:3]:
+        period = item.get("regnskapsperiode")
         normalized.append({
             "record_id": item.get("id"),
             "account_type": item.get("regnskapstype"),
-            "period": item.get("regnskapsperiode"),
+            "period": period,
+            "period_length_days": _period_length_days(period),
             "currency": item.get("valuta"),
             "revenue": _get(item, "resultatregnskapResultat", "driftsresultat", "driftsinntekter", "sumDriftsinntekter"),
             "operating_result": _get(item, "resultatregnskapResultat", "driftsresultat", "driftsresultat"),
@@ -172,7 +191,13 @@ def normalize_entity(body: Any) -> dict[str, Any]:
 
 def _classified(field: str, source_type: str, result: FetchResult, value: Any = None) -> dict[str, Any]:
     if result.status == 200:
-        return evidence(field, "available", source_type, result.url, value=result.body if value is None else value, content_sha256=result.content_sha256, retrieved_at=result.retrieved_at, effective_at=result.effective_at)
+        span = None
+        if value is not None:
+            try:
+                span = json.dumps(value, ensure_ascii=False)[:500]
+            except (TypeError, ValueError):
+                span = str(value)[:500]
+        return evidence(field, "available", source_type, result.url, value=result.body if value is None else value, content_sha256=result.content_sha256, retrieved_at=result.retrieved_at, effective_at=result.effective_at, evidence_span=span)
     if result.status in {404, 410}:
         return evidence(field, "not_found", source_type, result.url, note=result.error, content_sha256=result.content_sha256, retrieved_at=result.retrieved_at, effective_at=result.effective_at)
     return evidence(field, "source_error", source_type, result.url, note=result.error, content_sha256=result.content_sha256, retrieved_at=result.retrieved_at, effective_at=result.effective_at)
@@ -198,4 +223,20 @@ def fetch_official_modules(org: str, modules: set[str], fetcher: Callable[[str],
         if result.status == 200:
             normalized = normalize_entity(result.body) if module == "registry_live" else normalize_financials(result.body) if module == "financials" else normalize_financial_history(result.body, org) if module == "financial_history" else normalize_roles(result.body) if module == "roles" else normalize_locations(result.body) if module == "locations" else result.body
         records[module] = _classified(module, source_type, result, value=normalized)
+    # latest_submitted_accounts must reflect the newest year actually filed
+    # (from the financial-history endpoint), not merely the registry snapshot's
+    # sisteInnsendteAarsregnskap. When financial_history returns years, the max
+    # year is authoritative; compare periods of the same length when trending.
+    if "registry_live" in records and "financial_history" in records:
+        reg_live = records["registry_live"]
+        fhist = records["financial_history"]
+        if (reg_live.get("status") == "available" and fhist.get("status") == "available"
+                and isinstance(fhist.get("value"), dict)):
+            years = fhist["value"].get("years") or []
+            if years:
+                newest = max(years)
+                current = (reg_live.get("value") or {}).get("latest_submitted_accounts")
+                if current != newest:
+                    reg_live["value"] = dict(reg_live["value"] or {})
+                    reg_live["value"]["latest_submitted_accounts"] = newest
     return records, metrics

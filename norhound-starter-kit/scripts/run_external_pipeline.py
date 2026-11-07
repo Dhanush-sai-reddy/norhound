@@ -98,12 +98,29 @@ def main() -> None:
     parser.add_argument("--google-places", action="store_true", help="Run the Google Places API (New) ratings/reviews/sentiment connector (requires GOOGLE_PLACES_KEY; abstains without it)")
     parser.add_argument("--gleif", action="store_true", help="Run the GLEIF LEI connector for exact org-number identity (needs a built index; abstains without one)")
     parser.add_argument("--gleif-index", type=Path, default=Path("data/gleif-index.jsonl"))
-    parser.set_defaults(kunngjoring=False)
-    parser.set_defaults(google_news=False)
+    parser.set_defaults(kunngjoring=True)
+    parser.set_defaults(google_news=True)
     parser.set_defaults(google_places=False)
-    parser.set_defaults(gleif=False)
+    parser.set_defaults(gleif=True)
     parser.add_argument("--synthesize", action="store_true", help="Run grounded NIM synthesis summaries on enriched envelopes (requires NVIDIA_API_KEY)")
     parser.add_argument("--synthesize-interval", default="0.9", help="Seconds between NIM summary calls")
+    parser.add_argument("--nav-direct", action="store_true", help="Run NAV direct public-feed API (no index build, Karthik's pattern)")
+    parser.set_defaults(nav_direct=True)
+    parser.add_argument("--brave-discovery", action="store_true", help="Run Brave Search discovery for missing-website companies (requires BRAVE_SEARCH_API_KEY)")
+    parser.set_defaults(brave_discovery=False)
+    parser.add_argument("--ats-jobs", action="store_true", help="Run ATS direct JSON API connector (Lever/Greenhouse/Teamtailor/SmartRecruiters)")
+    parser.set_defaults(ats_jobs=True)
+    parser.add_argument("--finn-jobs", action="store_true", help="Run Finn.no job board connector (real role cards, exact-org match)")
+    parser.set_defaults(finn_jobs=True)
+    parser.add_argument("--smilefjes", action="store_true", help="Run Mattilsynet smilefjes food-hygiene ratings connector")
+    parser.set_defaults(smilefjes=True)
+    parser.add_argument("--feed-news", action="store_true", help="Run RSS/Atom + WordPress REST feed discovery for dated news")
+    parser.set_defaults(feed_news=True)
+    parser.add_argument("--no-news-fetch", dest="news_fetch_dates", action="store_false", default=True,
+                        help="Skip the one-request-per-news-page body fetch used for real publication dates")
+    parser.add_argument("--news-fetch-dates", dest="news_fetch_dates", action="store_true", default=True,
+                        help="Deprecated no-op: news page bodies are fetched for dates by default")
+    parser.add_argument("--news-fetch-workers", default="6", help="Parallel workers for the news body fetch")
     args = parser.parse_args()
 
     prefix = Path(args.prefix)
@@ -115,18 +132,19 @@ def main() -> None:
     discovery_out = prefix.with_suffix(prefix.suffix + ".discovery.jsonl")
     enriched_out = prefix.with_suffix(prefix.suffix + ".enriched.jsonl")
     eval_out = prefix.with_suffix(prefix.suffix + ".external-eval.json")
+    observation_files = [activity_out, news_out, jobs_out]
 
     run([
-        "python", str(SCRIPTS / "extract_company_site_activity.py"),
+        "python", str(SCRIPTS / "run_activity_extractor.py"),
         "--profiles", args.profiles,
         "--output", str(activity_out),
         "--report", str(prefix.with_suffix(prefix.suffix + ".activity-report.json")),
     ])
     run([
-        "python", str(SCRIPTS / "extract_company_site_news.py"),
+        "python", str(SCRIPTS / "run_jobs_extractor.py"),
         "--profiles", args.profiles,
-        "--output", str(news_out),
-        "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
+        "--output", str(jobs_out),
+        "--report", str(prefix.with_suffix(prefix.suffix + ".jobs-report.json")),
     ])
     keyless_out = prefix.with_suffix(prefix.suffix + ".keyless.jsonl")
     if args.keyless:
@@ -137,7 +155,28 @@ def main() -> None:
             ("extract_sitemap_pages.py", "sitemap"),
             ("run_registry_updates_connector.py", "updates"),
             ("run_wikidata_connector.py", "wikidata"),
+            # both project the already-frozen website evidence, so they add the
+            # hiring and social fact families at zero request cost
+            ("extract_company_site_careers.py", "careers"),
+            ("publish_site_social_handles.py", "site-handles"),
         ]
+        # Add new production-grade job extractor (replaces extract_company_site_jobs.py)
+        run([
+            "python", "-c", f"""
+import sys, json
+sys.path.insert(0, 'src')
+from norway_company_agent.jobs_extractor import extract_job_observations
+from pathlib import Path
+
+profiles = [json.loads(line) for line in Path('{args.profiles}').read_text().splitlines() if line.strip()]
+all_obs = []
+for p in profiles:
+    all_obs.extend(extract_job_observations(p))
+Path('{prefix.with_suffix(prefix.suffix + ".jobs-extracted.jsonl")}').write_text(''.join(json.dumps(o, ensure_ascii=False) + '\\n' for o in all_obs))
+print(json.dumps({{'observations': len(all_obs), 'companies': len(set(o['organisation_number'] for o in all_obs))}}))
+""",
+            "--report", str(prefix.with_suffix(prefix.suffix + ".jobs-extracted-report.json")),
+        ])
         keyless_parts = []
         for script, tag in keyless_steps:
             step_out = prefix.with_suffix(prefix.suffix + f".{tag}.jsonl")
@@ -229,14 +268,133 @@ def main() -> None:
         ])
     if args.jobs:
         run([
-            "python", str(SCRIPTS / "extract_company_site_jobs.py"),
+            "python", str(SCRIPTS / "run_jobs_extractor.py"),
             "--profiles", args.profiles,
             "--output", str(jobs_out),
             "--report", str(prefix.with_suffix(prefix.suffix + ".jobs-report.json")),
-            "--workers", "8",
-            "--timeout", "20",
-            "--min-interval", "0.5",
         ])
+
+    nav_direct_out = prefix.with_suffix(prefix.suffix + ".nav-direct.jsonl")
+    if args.nav_direct:
+        run([
+            "python", "-c", f"""
+import sys, json
+sys.path.insert(0, 'src')
+from norway_company_agent.connectors.nav_direct import run_nav_direct_connector
+from pathlib import Path
+
+profiles = [json.loads(line) for line in Path('{args.profiles}').read_text().splitlines() if line.strip()]
+obs = run_nav_direct_connector(profiles)
+Path('{nav_direct_out}').write_text(''.join(json.dumps(o, ensure_ascii=False) + '\\n' for o in obs))
+print(json.dumps({{'observations': len(obs), 'companies': len(set(o['organisation_number'] for o in obs))}}))
+""",
+            "--report", str(prefix.with_suffix(prefix.suffix + ".nav-direct-report.json")),
+        ])
+    if nav_direct_out.exists() and nav_direct_out.stat().st_size > 0:
+        observation_files.append(nav_direct_out)
+
+    # LinkedIn Guest Jobs (free, no API key)
+    linkedin_out = prefix.with_suffix(prefix.suffix + ".linkedin-jobs.jsonl")
+    if args.ats_jobs:  # reuse flag
+        run([
+            "python", "-c", f"""
+import sys, json
+sys.path.insert(0, 'src')
+from norway_company_agent.connectors.linkedin_jobs import run_linkedin_jobs_connector
+from pathlib import Path
+
+profiles = [json.loads(line) for line in Path('{args.profiles}').read_text().splitlines() if line.strip()]
+obs = run_linkedin_jobs_connector(profiles)
+Path('{linkedin_out}').write_text(''.join(json.dumps(o, ensure_ascii=False) + '\\n' for o in obs))
+print(json.dumps({{'observations': len(obs), 'companies': len(set(o['organisation_number'] for o in obs))}}))
+""",
+            "--report", str(prefix.with_suffix(prefix.suffix + ".linkedin-jobs-report.json")),
+        ])
+    if linkedin_out.exists() and linkedin_out.stat().st_size > 0:
+        observation_files.append(linkedin_out)
+
+    # Google News RSS (free, no API key)
+    gnews_out = prefix.with_suffix(prefix.suffix + ".google-news-rss.jsonl")
+    if args.google_news:
+        run([
+            "python", "-c", f"""
+import sys, json
+sys.path.insert(0, 'src')
+from norway_company_agent.connectors.google_news import run_google_news_connector
+from pathlib import Path
+
+profiles = [json.loads(line) for line in Path('{args.profiles}').read_text().splitlines() if line.strip()]
+obs = run_google_news_connector(profiles)
+Path('{gnews_out}').write_text(''.join(json.dumps(o, ensure_ascii=False) + '\\n' for o in obs))
+print(json.dumps({{'observations': len(obs), 'companies': len(set(o['organisation_number'] for o in obs))}}))
+""",
+            "--report", str(prefix.with_suffix(prefix.suffix + ".google-news-rss-report.json")),
+        ])
+    if gnews_out.exists() and gnews_out.stat().st_size > 0:
+        observation_files.append(gnews_out)
+
+    brave_out = prefix.with_suffix(prefix.suffix + ".brave.jsonl")
+    if args.brave_discovery:
+        run([
+            "python", str(SCRIPTS / "run_brave_discovery.py"),
+            "--profiles", args.profiles,
+            "--output", str(brave_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".brave-report.json")),
+            "--limit", "50",
+            "--count", "10",
+            "--timeout", "15",
+        ])
+    if brave_out.exists() and brave_out.stat().st_size > 0:
+        observation_files.append(brave_out)
+
+    ats_out = prefix.with_suffix(prefix.suffix + ".ats-jobs.jsonl")
+    if args.ats_jobs:
+        run([
+            "python", str(SCRIPTS / "run_ats_jobs_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(ats_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".ats-jobs-report.json")),
+            "--workers", "8",
+        ])
+    if ats_out.exists() and ats_out.stat().st_size > 0:
+        observation_files.append(ats_out)
+
+    finn_out = prefix.with_suffix(prefix.suffix + ".finn-jobs.jsonl")
+    if args.finn_jobs:
+        run([
+            "python", str(SCRIPTS / "run_finn_jobs_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(finn_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".finn-jobs-report.json")),
+            "--limit", "200",
+            "--timeout", "20",
+        ])
+    if finn_out.exists() and finn_out.stat().st_size > 0:
+        observation_files.append(finn_out)
+
+    smilefjes_out = prefix.with_suffix(prefix.suffix + ".smilefjes.jsonl")
+    if args.smilefjes:
+        run([
+            "python", str(SCRIPTS / "run_smilefjes_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(smilefjes_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".smilefjes-report.json")),
+            "--timeout", "15",
+        ])
+    if smilefjes_out.exists() and smilefjes_out.stat().st_size > 0:
+        observation_files.append(smilefjes_out)
+
+    feednews_out = prefix.with_suffix(prefix.suffix + ".feed-news.jsonl")
+    if args.feed_news:
+        run([
+            "python", str(SCRIPTS / "run_feed_news_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(feednews_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".feed-news-report.json")),
+            "--timeout", "15",
+        ])
+    if feednews_out.exists() and feednews_out.stat().st_size > 0:
+        observation_files.append(feednews_out)
 
     if args.discovery_input and args.promote:
         discovery_candidates = [json.loads(line) for line in Path(args.discovery_input).read_text(encoding="utf-8").splitlines() if line.strip()]
@@ -258,7 +416,6 @@ def main() -> None:
             discovery_command += ["--max-429-backoff", "45"]
         run(discovery_command)
 
-    observation_files = [activity_out, news_out, jobs_out]
     google_news_out = prefix.with_suffix(prefix.suffix + ".google-news.jsonl")
     if args.google_news:
         run([
@@ -348,9 +505,12 @@ def main() -> None:
                 # Every published claim must carry an observation date. Rows whose
                 # source is a live page or an official snapshot are observed at
                 # retrieval time; rows that already carry a reporting date (registry
-                # updates, annual-report workforce) keep it untouched.
-                if not row.get("observed_at") and row.get("retrieved_at"):
-                    row["observed_at"] = str(row["retrieved_at"])[:10]
+                # updates, annual-report workforce) keep it untouched. A reporting
+                # date in effective_at is preferred over the retrieval date.
+                if not row.get("observed_at"):
+                    row["observed_at"] = row.get("effective_at") or (
+                        str(row["retrieved_at"])[:10] if row.get("retrieved_at") else None
+                    )
                 consolidated.append(row)
     external_out = prefix.with_suffix(prefix.suffix + ".external.jsonl")
     external_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in consolidated), encoding="utf-8")

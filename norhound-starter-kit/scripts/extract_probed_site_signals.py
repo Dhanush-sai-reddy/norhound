@@ -18,6 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
 from norway_company_agent.website import (  # noqa: E402
     _social_links,
@@ -25,6 +26,11 @@ from norway_company_agent.website import (  # noqa: E402
     structured_social_links,
 )
 from norway_company_agent.identity import assess_social_identity  # noqa: E402
+from scripts.extract_company_site_news import (  # noqa: E402
+    fetch_dated_observation,
+    fetch_page_body,
+    observation as site_news_observation,
+)
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -90,7 +96,55 @@ def process(row: dict, profiles: dict) -> list[dict]:
             "evidence_span": f"Social handle linked from the probed verified company website {url}."[:1200],
             "metrics": {"platform": plat, "url": u},
         })
+    out.extend(news_observations(row, profile, rec))
     return out
+
+
+def news_observations(row: dict, profile: dict, rec: dict) -> list[dict]:
+    """Emit dated news from a probed site whose identity the probe already gated.
+
+    The probe verified the site against the organisation number, so the same
+    site-news extraction used for registry-linked websites applies unchanged.
+    """
+    value = rec.get("value") or {}
+    if not value.get("pages"):
+        return []
+    synthetic = {
+        "organisation_number": str(row["organisation_number"]),
+        "name": profile.get("name") or "",
+        "evidence": {
+            "website": {
+                **rec,
+                "value": {
+                    **value,
+                    "identity_assessment": {
+                        "status": "exact",
+                        "publishable": True,
+                        "score": row.get("identity_score"),
+                        "method": row.get("method"),
+                    },
+                },
+            }
+        },
+    }
+    observation = site_news_observation(synthetic)
+    if not observation:
+        return []
+    url = str(observation.get("source_url") or "")
+    body = fetch_page_body(url) if url else None
+    refined = fetch_dated_observation(synthetic, body=body, url=url) or observation
+    observation = dict(refined)
+    observation["strategy"] = "probed_site_news"
+    observation["id"] = "probed-news-" + observation["id"].split("company-site-news-", 1)[-1]
+    observation["identity_proof"] = [
+        {
+            "type": "probed_verified_site",
+            "company_site_url": row.get("website") or "",
+            "identity_score": row.get("identity_score"),
+            "probe_method": row.get("method"),
+        }
+    ]
+    return [observation]
 
 
 def main() -> None:

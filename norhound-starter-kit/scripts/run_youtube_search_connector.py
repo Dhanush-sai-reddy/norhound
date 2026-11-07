@@ -40,7 +40,7 @@ def utc_now() -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Find exact-name public YouTube channels with bounded yt-dlp search.")
     parser.add_argument("--profiles", required=True)
-    parser.add_argument("--handles", nargs="+", required=True)
+    parser.add_argument("--handles", nargs="+", default=[], required=False)
     parser.add_argument("--output", required=True)
     parser.add_argument("--report", required=True)
     parser.add_argument("--organisations")
