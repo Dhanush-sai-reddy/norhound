@@ -293,6 +293,21 @@ def main() -> None:
             "--workers", "4",
             "--organisations", str(orgs_out),
         ], timeout=stage_timeout("fagfolk"))
+    purehelp_out = prefix.with_suffix(prefix.suffix + ".purehelp.jsonl")
+    if args.keyless:
+        run([
+            "python", str(SCRIPTS / "run_purehelp_directory_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(purehelp_out),
+            "--cache", str(prefix.with_suffix(prefix.suffix + ".purehelp-cache")),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".purehelp-report.json")),
+            "--workers", "8",
+            "--min-interval", "0.2",
+        ])
+    if purehelp_out.exists() and purehelp_out.stat().st_size > 0:
+        observation_files.append(purehelp_out)
+
     workforce_registry_out = prefix.with_suffix(prefix.suffix + ".workforce-registry.jsonl")
     workforce_pdf_out = prefix.with_suffix(prefix.suffix + ".workforce-pdf.jsonl")
     if args.workforce:
