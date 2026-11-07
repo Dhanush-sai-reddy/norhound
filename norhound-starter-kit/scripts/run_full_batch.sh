@@ -76,11 +76,16 @@ if [[ -n "$ENTRY_MANIFEST" ]]; then
   expected_count="$(wc -l < "$OUT/entry.jsonl" | tr -d ' ')"
   echo "using supplied manifest $ENTRY_MANIFEST ($expected_count organisations)"
 else
+  SMOKE_FLAG=""
+  if [[ "$COUNT" -lt 1000 ]]; then
+    SMOKE_FLAG="--allow-smoke"
+  fi
   run uv run python select_entry_batch.py \
     --universe "$UNIVERSE" \
     --count "$COUNT" \
     --seed "$SEED" \
     --website-only \
+    $SMOKE_FLAG \
     --output "$OUT/entry.jsonl"
   expected_count="$COUNT"
 fi

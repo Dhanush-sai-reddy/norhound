@@ -34,9 +34,10 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=20260823)
     parser.add_argument("--bulk", default=None, help="Frozen Brreg bulk CSV; when supplied, organisations absent from the registry are auto-replaced")
     parser.add_argument("--website-only", action="store_true", help="Sample only companies with a website field in the universe")
+    parser.add_argument("--allow-smoke", action="store_true", help="Allow counts below 1,000 for local smoke testing")
     args = parser.parse_args()
-    if args.count < 1000:
-        raise SystemExit("NorHound entries must cover at least 1,000 companies")
+    if args.count < 1000 and not args.allow_smoke:
+        raise SystemExit("NorHound entries must cover at least 1,000 companies (use --allow-smoke to override)")
 
     path = Path(args.universe)
     opener = gzip.open if path.suffix == ".gz" else open
