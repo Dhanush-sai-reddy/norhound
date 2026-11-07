@@ -659,6 +659,29 @@ def build_envelope(profile: dict, observations: list[dict], *, started_at: str,
     }
 
 
+def merge_envelope(existing: dict, built: dict) -> dict:
+    """Merge the freshly built contract sections into a base-batch envelope.
+
+    The claims and the evidence are replaced — they are re-derived from the
+    frozen profiles and the gated observations, so the merge is the point of
+    this stage. Everything else the base batch produced (the profile, the
+    modules, the refresh marker, the run timestamps) is kept.
+
+    The built envelope is deliberately NOT nested under a second key. A copy
+    of every claim and every evidence record would double the file: for the
+    1,000-company submission that pushed ``envelopes.jsonl`` to 118 MB, past
+    the 100 MiB per-file limit of the Git host.
+    """
+    merged = dict(existing)
+    merged["claims"] = built.get("claims", [])
+    merged["evidence"] = built.get("evidence", [])
+    merged["run"] = built.get("run", merged.get("run"))
+    merged["errors"] = built.get("errors", [])
+    merged["operations"] = built.get("operations", merged.get("operations"))
+    merged["changes"] = existing.get("changes", built.get("changes", []))
+    return merged
+
+
 def read_jsonl(path: str | None) -> list[dict]:
     if not path:
         return []
@@ -730,11 +753,7 @@ def main() -> None:
             for claim in envelope["claims"]:
                 families[claim.get("family") or "other"] += 1
             if org in existing:
-                merged = dict(existing[org])
-                merged["claims"] = envelope["claims"]
-                merged["evidence"] = envelope["evidence"]
-                merged["contract"] = envelope
-                envelope = merged
+                envelope = merge_envelope(existing[org], envelope)
             handle.write(json.dumps(envelope, ensure_ascii=False, sort_keys=True) + "\n")
 
     summary = {"companies": stats["companies"], "claims": stats["claims"], "evidence": stats["evidence"],

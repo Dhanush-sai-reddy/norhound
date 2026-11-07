@@ -249,6 +249,55 @@ class EnvelopeIntegrityTests(unittest.TestCase):
         self.assertEqual(envelope["operations"]["claims"], len(envelope["claims"]))
 
 
+class EnvelopeMergeTests(unittest.TestCase):
+    """The merged envelope must not carry a second copy of itself.
+
+    The merge used to nest the freshly built envelope under a ``contract``
+    key, so every claim and every evidence record was written twice. For the
+    1,000-company submission that doubled ``envelopes.jsonl`` to 118 MB,
+    past the 100 MiB per-file limit of the Git host.
+    """
+
+    def build(self):
+        return emit.build_envelope(registry_profile(), [], started_at="t")
+
+    def test_merge_does_not_duplicate_the_claims_under_a_contract_key(self):
+        existing = {"organisation_number": "912345678", "state": "complete",
+                    "profile": {"name": "TEST AS"}, "modules": {"roles": {}},
+                    "refresh": {"baseline": True}}
+        built = self.build()
+        merged = emit.merge_envelope(existing, built)
+        self.assertNotIn("contract", merged)
+        self.assertEqual(merged["claims"], built["claims"])
+        self.assertEqual(merged["evidence"], built["evidence"])
+
+    def test_merge_keeps_the_base_batch_sections(self):
+        existing = {"organisation_number": "912345678", "state": "complete",
+                    "profile": {"name": "TEST AS"}, "modules": {"roles": {}},
+                    "refresh": {"baseline": True}}
+        merged = emit.merge_envelope(existing, self.build())
+        self.assertEqual(merged["profile"], {"name": "TEST AS"})
+        self.assertEqual(merged["modules"], {"roles": {}})
+        self.assertEqual(merged["refresh"], {"baseline": True})
+        self.assertEqual(merged["state"], "complete")
+
+    def test_merge_promotes_the_contract_sections_to_the_top_level(self):
+        existing = {"organisation_number": "912345678", "state": "complete"}
+        built = self.build()
+        merged = emit.merge_envelope(existing, built)
+        for key in ("run", "claims", "evidence", "changes", "errors", "operations"):
+            self.assertIn(key, merged)
+        self.assertEqual(merged["run"]["terminal_status"], "completed")
+
+    def test_merged_envelope_is_not_larger_than_the_sum_of_its_parts(self):
+        existing = {"organisation_number": "912345678", "state": "complete",
+                    "profile": {"name": "TEST AS"}}
+        built = self.build()
+        merged = emit.merge_envelope(existing, built)
+        self.assertLess(len(json.dumps(merged)),
+                        len(json.dumps(existing)) + len(json.dumps(built)) + 200)
+
+
 class SnapshotTests(unittest.TestCase):
     def test_snapshots_are_only_written_when_bytes_were_retained(self):
         with tempfile.TemporaryDirectory() as tmp:

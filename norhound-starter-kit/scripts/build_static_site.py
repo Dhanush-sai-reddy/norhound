@@ -14,7 +14,6 @@ facts render as "not available", never blank.
 from __future__ import annotations
 
 import argparse
-import base64
 import html
 import json
 from datetime import datetime, timezone
@@ -496,21 +495,13 @@ def _compare_page(rows: list[dict]) -> str:
     return _page("Compare — NorHound", body, f"<script>{script}</script>")
 
 
-def _download_page(rows: list[dict], envelopes: list[dict]) -> str:
-    # Prepare bulk data
-    all_data = {
-        "companies": rows,
-        "envelopes": envelopes,
-        "generated_at": datetime.now(timezone.utc).isoformat()
-    }
-    json_data = json.dumps(all_data, ensure_ascii=False, indent=2)
-    json_b64 = base64.b64encode(json_data.encode()).decode()
-    
-    # CSV export
-    csv_rows = ["org_number,name,industry,employees,revenue,municipality,legal_form,website,hiring,platforms,obs,completeness"]
+def _csv_lines(rows: list[dict]) -> list[str]:
+    """The company index as CSV lines (one header line, one line per company)."""
+    lines = ["org_number,name,industry,employees,revenue,municipality,legal_form,website,hiring,platforms,obs,completeness"]
     for r in rows:
-        platforms_str = ", ".join(r["platforms"]) if isinstance(r.get("platforms"), list) else str(r.get("platforms") or "")
-        csv_rows.append(",".join([
+        platforms = r.get("platforms")
+        platforms_str = ", ".join(platforms) if isinstance(platforms, list) else str(platforms or "")
+        lines.append(",".join([
             f'"{str(r.get("org") or "")}"',
             f'"{str(r.get("name") or "").replace(chr(34), chr(34)*2)}"',
             f'"{str(r.get("industry") or "").replace(chr(34), chr(34)*2)}"',
@@ -524,70 +515,42 @@ def _download_page(rows: list[dict], envelopes: list[dict]) -> str:
             f'"{str(r.get("obs") or "")}"',
             f'"{str(r.get("completeness") or "")}"',
         ]))
-    csv_data = "\n".join(csv_rows)
-    csv_b64 = base64.b64encode(csv_data.encode()).decode()
-    
+    return lines
+
+
+def _download_page(rows: list[dict]) -> str:
+    """The bulk page links the files that sit beside it.
+
+    Inlining the whole dataset as one base64 blob made this page 285 MB for
+    the 1,000-company batch, and the Git host refuses to store a file over
+    100 MiB. The page now points at the CSV index, the per-company JSON files
+    and the envelope JSONL instead of carrying a copy of the corpus.
+    """
+    example = str(rows[0].get("org") or "ORG_NUMBER") if rows else "ORG_NUMBER"
     body = (
         '<p><a href="index.html">← Directory</a></p><h1>Bulk Download</h1>'
-        '<p class=muted>Download all company data as JSON or CSV. '
-        'Each company profile is also available as JSON at <code>c/<org>.json</code>.</p>'
+        '<p class=muted>Everything below is a plain file in this folder — no server, '
+        'no key, no account.</p>'
         '<div class=card>'
-        '<h2>Full Dataset (JSON)</h2>'
-        '<p>All 1,000 companies with envelopes, summaries, and evidence.</p>'
-        '<button onclick="download(\'norhound_full.json\', \'' + json_b64 + '\')">⬇️ Download JSON (~15MB)</button>'
+        '<h2>Company index (CSV)</h2>'
+        '<p>One row per company: org number, name, industry, employees, revenue, '
+        'municipality, legal form, website, hiring, platforms, observations and '
+        'five-area completeness.</p>'
+        '<p><a href="companies.csv" download>⬇️ Download companies.csv</a></p>'
         '</div>'
         '<div class=card>'
-        '<h2>Company Index (CSV)</h2>'
-        '<p>Lightweight index with key fields for analysis.</p>'
-        '<button onclick="download(\'norhound_index.csv\', \'' + csv_b64 + '\')">⬇️ Download CSV (~500KB)</button>'
+        '<h2>Full dataset (JSONL)</h2>'
+        '<p>Every published claim and the evidence behind it, one envelope per line: '
+        '<code>../envelopes.jsonl</code> in the submission folder. The same file is '
+        'attached to the repository release.</p>'
         '</div>'
         '<div class=card>'
-        '<h2>Individual Company JSON</h2>'
+        '<h2>Individual company JSON</h2>'
         '<p>Each company has its own JSON file: <code>c/ORG_NUMBER.json</code></p>'
-        '<p>Example: <a href="c/996493660.json">c/996493660.json</a></p>'
+        f'<p>Example: <a href="c/{example}.json">c/{example}.json</a></p>'
         '</div>'
     )
-    script = (
-        "function download(filename, b64){"
-        "  var binary=atob(b64);"
-        "  var len=binary.length;"
-        "  var buffer=new ArrayBuffer(len);"
-        "  var view=new Uint8Array(buffer);"
-        "  for(var i=0;i<len;i++)view[i]=binary.charCodeAt(i);"
-        "  var blob=new Blob([buffer],{type:'application/octet-stream'});"
-        "  var url=URL.createObjectURL(blob);"
-        "  var a=document.createElement('a');"
-        "  a.href=url;a.download=filename;a.click();"
-        "  URL.revokeObjectURL(url);"
-        "}"
-    )
-    return _page("Bulk Download — NorHound", body, f"<script>{script}</script>")
-    data = {
-        r["org"]: {
-            "name": r["name"],
-            "industry": r["industry"],
-            "employees": r["employees"],
-            "revenue": r["revenue"],
-            "municipality": r["municipality"],
-            "legal_form": r["legal_form"],
-            "website": r["website"],
-            "hiring": r["hiring"],
-            "obs": r["obs"],
-            "platforms": ", ".join(r["platforms"]),
-            "state": r["state"],
-            "summary": r["summary"],
-        }
-        for r in rows
-    }
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    body = (
-        '<p><a href="index.html">← Directory</a></p><h1>Compare companies</h1>'
-        "<p class=muted>Pick two to four companies. Only published, source-linked facts are compared; "
-        "anything missing shows as <i>not available</i> rather than zero.</p>"
-        '<div id=pick class=bar></div><div id=tbl></div>'
-    )
-    script = COMPARE_JS.replace("__DATA__", payload)
-    return _page("Compare — NorHound", body, f"<script>{script}</script>")
+    return _page("Bulk Download — NorHound", body)
 
 
 def build(
@@ -651,7 +614,8 @@ def build(
         eval_json = json.loads(Path(eval_data).read_text(encoding="utf-8"))
     (out / "index.html").write_text(_index_page(rows, eval_json), encoding="utf-8")
     (out / "compare.html").write_text(_compare_page(rows), encoding="utf-8")
-    (out / "download.html").write_text(_download_page(rows, envs), encoding="utf-8")
+    (out / "companies.csv").write_text("\n".join(_csv_lines(rows)) + "\n", encoding="utf-8")
+    (out / "download.html").write_text(_download_page(rows), encoding="utf-8")
     # Drop pages left over from an earlier batch, otherwise the shipped site
     # serves companies that are not in this run.
     wanted = {f"{r['org']}.html" for r in rows} | {f"{r['org']}.json" for r in rows}

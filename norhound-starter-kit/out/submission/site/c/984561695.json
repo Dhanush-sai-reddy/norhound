@@ -1,0 +1,245 @@
+{
+  "profile": {
+    "evidence": {
+      "external_observations": [
+        {
+          "id": "annual-workforce-db8224a95fa5a4a708be7a9e",
+          "organisation_number": "984561695",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984561695/2025",
+          "retrieved_at": "2026-10-08T17:32:55.072530Z",
+          "content_sha256": "eea2959f8acf60ee9d58f8fbae08472580e3ff3257a4b7ed1b41eb58963bdc71",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "984561695"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "984561695"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
+        {
+          "organisation_number": "984561695",
+          "platform": "brreg",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984561695&size=1000",
+          "retrieved_at": "2026-09-29T10:05:55.151499Z",
+          "content_sha256": "7651f6ef7b2da65e3977d5c3b6b60d4f8faa134a4a08677a43778594c943ae7f",
+          "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "id": "subunit-4a1d1cf3e27929df0aa847f8",
+          "signal_type": "subunit",
+          "evidence_span": "GEVELT GRUSTAK AS",
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_subunits",
+              "matched_organisation_number": "984561695",
+              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+            }
+          ],
+          "metrics": {
+            "subunit_organisation_number": "971816619",
+            "municipality": "DRAMMEN",
+            "interpretation": "Officially registered sub-unit of this organisation."
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "organisation_number": "984561695",
+    "company_name": "984561695",
+    "synthesis_model": "deterministic-rules-v1",
+    "synthesis_state": "available",
+    "summary": "No fields changed since the previous run. Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); financial_health (no filed accounts found in checked sources); revenue_growth (insufficient financial history (need at least 2 years)); staff_growth (insufficient financial history (need at least 2 years)); financial_history (no financial history found); hiring (no job sources were checked).",
+    "answers": [
+      {
+        "question": "what_it_does",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "financial_health",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "financial_history",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "revenue_growth",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "staff",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "staff_growth",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "hiring",
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
+      },
+      {
+        "question": "changes",
+        "answer": "No fields changed since the previous run.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.8,
+        "evidence_ids": []
+      }
+    ],
+    "unknowns": [
+      {
+        "field": "official_website",
+        "state": "not_available",
+        "reason": "no verified company website was established"
+      },
+      {
+        "field": "employees",
+        "state": "not_available",
+        "reason": "registry returned no employee count"
+      },
+      {
+        "field": "financial_health",
+        "state": "not_available",
+        "reason": "no filed accounts found in checked sources"
+      },
+      {
+        "field": "revenue_growth",
+        "state": "not_available",
+        "reason": "insufficient financial history (need at least 2 years)"
+      },
+      {
+        "field": "staff_growth",
+        "state": "not_available",
+        "reason": "insufficient financial history (need at least 2 years)"
+      },
+      {
+        "field": "financial_history",
+        "state": "not_available",
+        "reason": "no financial history found"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
+      }
+    ]
+  },
+  "evidence": {
+    "external_observations": [
+      {
+        "id": "annual-workforce-db8224a95fa5a4a708be7a9e",
+        "organisation_number": "984561695",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984561695/2025",
+        "retrieved_at": "2026-10-08T17:32:55.072530Z",
+        "content_sha256": "eea2959f8acf60ee9d58f8fbae08472580e3ff3257a4b7ed1b41eb58963bdc71",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "984561695"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "984561695"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
+      {
+        "organisation_number": "984561695",
+        "platform": "brreg",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984561695&size=1000",
+        "retrieved_at": "2026-09-29T10:05:55.151499Z",
+        "content_sha256": "7651f6ef7b2da65e3977d5c3b6b60d4f8faa134a4a08677a43778594c943ae7f",
+        "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "id": "subunit-4a1d1cf3e27929df0aa847f8",
+        "signal_type": "subunit",
+        "evidence_span": "GEVELT GRUSTAK AS",
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_subunits",
+            "matched_organisation_number": "984561695",
+            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+          }
+        ],
+        "metrics": {
+          "subunit_organisation_number": "971816619",
+          "municipality": "DRAMMEN",
+          "interpretation": "Officially registered sub-unit of this organisation."
+        }
+      }
+    ]
+  },
+  "generated_at": "2026-11-07T10:54:49.868820+00:00"
+}

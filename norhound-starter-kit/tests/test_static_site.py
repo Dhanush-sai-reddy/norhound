@@ -98,6 +98,37 @@ def _envelope_with_obs():
     return env
 
 
+class BulkDownloadTests(unittest.TestCase):
+    """The bulk page must link to files, not embed the dataset in the page.
+
+    Inlining every company and envelope as one base64 blob made
+    ``download.html`` 285 MB, which the Git host refuses to store (100 MiB
+    per-file limit). The page now links to the files it ships beside.
+    """
+
+    def test_download_page_embeds_no_base64_dataset_blob(self):
+        env = _envelope()
+        env["claims"] = [{"field": "legal_name", "value": "x" * 20000}]
+        _, out = _run_tmp([env])
+        page = (out / "download.html").read_text(encoding="utf-8")
+        self.assertNotIn("atob(", page)
+        self.assertNotIn("base64", page.lower())
+        self.assertLess(len(page), 200_000)
+
+    def test_download_page_links_the_csv_and_the_company_json(self):
+        _, out = _run_tmp([_envelope()])
+        page = (out / "download.html").read_text(encoding="utf-8")
+        self.assertIn("companies.csv", page)
+        self.assertIn("c/810034882.json", page)
+
+    def test_build_writes_the_csv_file_the_page_links_to(self):
+        _, out = _run_tmp([_envelope()])
+        csv_text = (out / "companies.csv").read_text(encoding="utf-8")
+        self.assertIn("org_number,name", csv_text.splitlines()[0])
+        self.assertIn("810034882", csv_text)
+        self.assertIn("SANDNES ELEKTRISKE AS", csv_text)
+
+
 class StaticSiteObservationTests(unittest.TestCase):
     def test_observations_render_with_source_and_dates(self):
         _, out = _run_tmp([_envelope_with_obs()])
