@@ -292,7 +292,7 @@ def main() -> None:
             "--report", str(prefix.with_suffix(prefix.suffix + ".fagfolk-report.json")),
             "--workers", "4",
             "--organisations", str(orgs_out),
-        ])
+        ], timeout=stage_timeout("fagfolk"))
     workforce_registry_out = prefix.with_suffix(prefix.suffix + ".workforce-registry.jsonl")
     workforce_pdf_out = prefix.with_suffix(prefix.suffix + ".workforce-pdf.jsonl")
     if args.workforce:
