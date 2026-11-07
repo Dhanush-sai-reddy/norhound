@@ -481,9 +481,15 @@ async def _run_with_browser(
     limit: int,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     global _BROWSER
-    from playwright.async_api import async_playwright  # imported lazily so tests need no browser
 
+    # The import is inside the try on purpose. `playwright` is a declared
+    # dependency, but the browser binary is a separate one-time download
+    # (`playwright install chromium`), and this stage runs inside a fail-fast
+    # pipeline: an exception here would take the whole 1,000-company run down
+    # instead of losing one optional enrichment.
     try:
+        from playwright.async_api import async_playwright
+
         playwright = await async_playwright().start()
         browser = await playwright.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
     except Exception as exc:

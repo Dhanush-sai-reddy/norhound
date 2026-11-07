@@ -23,7 +23,11 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
 
-from scripts.rescue_website_pages import rescue_selected, select_rescue_targets  # noqa: E402
+from scripts.rescue_website_pages import (  # noqa: E402
+    _run_with_browser,
+    rescue_selected,
+    select_rescue_targets,
+)
 
 ORG = "123456789"
 TARGET_URL = "https://example.no/"
@@ -341,6 +345,35 @@ class FailedRescueTests(unittest.TestCase):
             )
 
         self.assertEqual(report["skip_reasons"], {"browser_launch_failed": 1})
+        self.assertEqual(rows[0]["evidence"]["website"]["status"], "source_error")
+
+    def test_a_missing_playwright_package_does_not_crash_the_stage(self) -> None:
+        """The rescue must degrade, never kill the run.
+
+        `playwright` is a declared dependency, but the browser binary is a
+        separate one-time download (`playwright install chromium`). If either
+        is absent the stage has to record the failure and exit cleanly: the
+        external pipeline is fail-fast, so an exception here would take the
+        whole 1,000-company run down with it.
+        """
+        import builtins
+
+        real_import = builtins.__import__
+
+        def fake_import(name, *args, **kwargs):
+            if name.startswith("playwright"):
+                raise ImportError("No module named 'playwright'")
+            return real_import(name, *args, **kwargs)
+
+        with mock.patch.dict("sys.modules", {"playwright": None}), mock.patch(
+            "builtins.__import__", side_effect=fake_import
+        ):
+            rows, report = asyncio.run(
+                _run_with_browser([_profile()], workers=1, timeout=5.0, limit=0)
+            )
+
+        self.assertEqual(report["skip_reasons"], {"browser_launch_failed": 1})
+        self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["evidence"]["website"]["status"], "source_error")
 
     def test_certificate_error_falls_back_to_http_for_a_scheme_less_registry_value(self) -> None:

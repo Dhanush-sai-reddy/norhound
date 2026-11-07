@@ -29,6 +29,31 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
+**One command, no API key, no login, no paid account:**
+
+```bash
+cd norhound-starter-kit
+uv sync
+uv run playwright install chromium     # one-time, for the browser rescue stage
+scripts/run_full_batch.sh
+```
+
+`scripts/run_full_batch.sh` runs all 14 stages in order: select the
+1,000-company manifest (seed 20260823, identical to the shipped one), registry
+enrichment with exact-identity website capture, the headless-browser rescue of
+unreadable homepages, every keyless connector (NAV job feed, Wikidata,
+Fagfolkguiden, Brønnøysund announcements, public ATS feeds), the wrong-company
+purge, re-verification against frozen evidence, evaluation, terminal contract
+envelopes, deterministic summaries, the static viewer and the recall
+measurement.
+
+Optional overrides: `COUNT=1000`, `RUN_ID=...`, `WORKERS=8`,
+`WORKFORCE_WORKERS=8`, `MIN_AUDIT=300`, `ENTRY_MANIFEST=entry-web1000.jsonl`
+(run on an existing manifest instead of selecting one).
+
+The stages that read the live web reflect the live web at run time; the sealed
+results are frozen in `out/submission/` and can be re-verified on any checkout.
+
 ### Container (no local setup required)
 
 Everything (Python 3.12, `uv`, dependencies) is pinned inside the image, so the
@@ -127,26 +152,29 @@ checkout.
 
 ### Expected results (as shipped)
 
-- **944 published** observations, every one carrying the verified
-  `exact_entity` label (1,391 re-verified; unverified rows never publish).
+- **32,035 published** observations out of 32,713 re-verified, every one
+  carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
 - Qualification gate **passed** (minimum audit 300).
-- Coverage: any_external 0.358, two_platforms 0.175, buzz_engagement 0.352,
-  ratings_reviews 0.015, workforce_jobs 0.036.
-- 65 NAV official-API job-posting observations merged into the audit
-  (`official_api` acquisition, resolved via the Brønnøysund `underenheter`
-  endpoint to each advertiser's parent legal entity).
+- Coverage: any_external 1.0, two_platforms 0.639, buzz_engagement 0.998,
+  workforce_jobs 0.915, ratings_reviews 0.032, sentiment 0.032.
+- Company recall per official fact family
+  (`scripts/measure_family_recall.py`): website **576/577**, hiring
+  **84/84**, social **177/177**, news **998/998**. The baseline corpus
+  reached 388/577 and 65/84 on those two families.
 - **1000/1000 deterministic summaries** produced (what it does, financials,
   staff, hiring; all answers cite evidence; unknowns listed with reasons).
-- 199 tests pass by default (see below).
+- 505 tests pass by default (see below).
 
-Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
-`out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
-(audit inputs, 1,391 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
-and the seals in the report. Note `out/batch1000f.*` and the non-`withfag`
-`out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
-submitted numbers.
+Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
+envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
+(the 32,713-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+`out/submission/manifest.jsonl` (the organisation-number manifest),
+`out/submission/summaries.jsonl`, `out/submission/eval.json`,
+`out/submission/site/` (the viewer) and `out/measure-family-submitted.json`
+(the recall report). The measurement behind these numbers is written up in
+`docs/evidence/family-recall-measurement-2026-11-07.md`.
 
 ### Fresh-batch check
 
@@ -184,8 +212,8 @@ qualify a live entry.
 ## Tests
 
 ```bash
-uv run python3 -m unittest tests.test_poc
-# 199 tests pass
+uv run python -m unittest discover -s tests -p 'test_*.py'
+# 505 tests pass
 ```
 
 ## The improvement loop
@@ -231,12 +259,13 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
 ## Secrets and third-party cost
 
 - All secrets are supplied through environment variables only; none are stored
-  in the repository. Optional keys: `FIRECRAWL_API_KEY` (site discovery).
-  A missing key degrades cleanly — the corresponding connector is skipped or
-  abstains, never errors.
-- Third-party spend is **~$0 per 100 companies**. The core batch (registry +
-  company-site capture) is free. Optional stages: Firecrawl Search (used only
-  for candidate discovery, inside the $10 budget).
+  in the repository. The shipped pipeline needs **no key at all**; the optional
+  key `FIRECRAWL_API_KEY` (site discovery) is not used by
+  `scripts/run_full_batch.sh`. A missing key degrades cleanly — the
+  corresponding connector is skipped or abstains, never errors.
+- Third-party spend is **$0 per 100 companies**. Every source is a public
+  registry, a public feed or a public page: Brønnøysund, NAV, Wikidata, GLEIF,
+  Fagfolkguiden and the companies' own websites.
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.
