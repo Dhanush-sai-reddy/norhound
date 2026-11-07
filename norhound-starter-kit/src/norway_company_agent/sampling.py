@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import gzip
 import hashlib
+import json
 import random
 import heapq
 import urllib.parse
@@ -12,10 +13,16 @@ from typing import Any, Iterable
 
 
 def _first(row: dict[str, str], *names: str) -> str:
+    """The first non-empty value among `names`, as text.
+
+    The CSV dump carries every value as a string; the official JSON dump
+    carries native types (booleans for `konkurs`, integers for
+    `antallAnsatte`). Coercing here keeps one normalisation path for both.
+    """
     for name in names:
         value = row.get(name)
         if value not in (None, ""):
-            return value
+            return str(value)
     return ""
 
 
@@ -141,10 +148,57 @@ def deterministic_financial_filer_sample(
     return selected, metadata
 
 
+def _flatten_json_record(record: dict[str, Any]) -> dict[str, Any]:
+    """Flatten one official JSON registry record into the CSV column shape.
+
+    The CSV dump writes nested values as dotted columns (`organisasjonsform.kode`,
+    `forretningsadresse.kommune`, `naeringskode1.beskrivelse`). The JSON dump
+    nests them as objects, so the same flattening keeps `normalize_row` — and
+    every downstream reader of `record["raw"]` — working unchanged.
+    """
+    flat: dict[str, Any] = {}
+    for key, value in record.items():
+        if isinstance(value, dict):
+            for child_key, child_value in value.items():
+                flat[f"{key}.{child_key}"] = child_value
+        else:
+            flat[key] = value
+    return flat
+
+
+def _iter_json_bulk(path: str | Path) -> Iterable[dict[str, Any]]:
+    """Yield normalised rows from the official gzipped JSON bulk dump."""
+    opener = gzip.open if str(path).endswith(".gz") else open
+    with opener(path, "rt", encoding="utf-8-sig") as handle:
+        payload = json.load(handle)
+    records = payload if isinstance(payload, list) else payload.get("enheter", [])
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        normalised = normalize_row(_flatten_json_record(record))
+        if len(normalised["organisation_number"]) == 9:
+            yield normalised
+
+
+def _is_gzip(path: str | Path) -> bool:
+    with open(path, "rb") as probe:
+        return probe.read(2) == b"\x1f\x8b"
+
+
+def _open_text(path: str | Path, newline: str | None = ""):
+    if _is_gzip(path):
+        return gzip.open(path, "rt", encoding="utf-8-sig", newline=newline)
+    return open(path, "rt", encoding="utf-8-sig", newline=newline)
+
+
 def iter_bulk(path: str | Path) -> Iterable[dict[str, Any]]:
-    with gzip.open(path, "rt", encoding="utf-8-sig", newline="") as handle:
+    """Read the official register dump, in either the JSON or the CSV shape."""
+    with _open_text(path) as handle:
         sample = handle.read(8192)
-        handle.seek(0)
+    if sample.lstrip().startswith(("[", "{")):
+        yield from _iter_json_bulk(path)
+        return
+    with _open_text(path, newline="") as handle:
         dialect = csv.Sniffer().sniff(sample, delimiters=";,\t")
         for row in csv.DictReader(handle, dialect=dialect):
             record = normalize_row(row)

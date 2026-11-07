@@ -102,6 +102,31 @@ def corroborated_by_page(value: dict, assessment: dict, organisation_number: str
     return organisation_number in text or grouped in text
 
 
+def restore_social_links(value: dict) -> int:
+    """Republish the social handles the identity gate withheld.
+
+    `apply_website_identity_gate` empties `social_links` when the site is not
+    publishable, but it keeps each link's own verdict in
+    `social_link_assessments`. A handle whose own assessment says it is exact
+    is still exact after the site is promoted, so it is restored here.
+    """
+    assessments = value.get("social_link_assessments")
+    if not isinstance(assessments, list):
+        return 0
+    restored = []
+    for item in assessments:
+        if not isinstance(item, dict) or not item.get("publishable"):
+            continue
+        platform = str(item.get("platform") or "").strip()
+        url = str(item.get("url") or "").strip()
+        if not platform or not url:
+            continue
+        restored.append({"platform": platform, "url": url})
+    if restored:
+        value["social_links"] = restored
+    return len(restored)
+
+
 def promote(profile: dict, index: dict[str, str], as_of: str) -> str:
     """Apply the registry-domain proof in place; returns the outcome for the report."""
     evidence = profile.get("evidence") or {}
@@ -142,6 +167,7 @@ def promote(profile: dict, index: dict[str, str], as_of: str) -> str:
         "prior_assessment": {key: prior.get(key) for key in ("status", "score", "publishable", "label")},
     })
     value["identity_assessment"] = assessment
+    restore_social_links(value)
     website["value"] = value
     evidence["website"] = website
     profile["evidence"] = evidence

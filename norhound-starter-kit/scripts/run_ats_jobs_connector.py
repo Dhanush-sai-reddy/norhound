@@ -24,8 +24,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
 from norway_company_agent.website import USER_AGENT, _robots_allowed, assert_public_url  # noqa: E402
+from scripts.extract_registry_proved_site_observations import legal_name_tokens  # noqa: E402
 
 CAREER_PATHS = ("/careers", "/karriere", "/job", "/jobb", "/jobs", "/ledige-stillinger", "/om-oss/jobb-hos-oss/", "/about/careers")
 ATS_PATTERN = re.compile(
@@ -42,10 +44,16 @@ ATS_PATTERN = re.compile(
     r"|(?P<reachmee>[A-Za-z0-9-]+\.reachmee\.com)"
     r"|(?P<hrmanager>[A-Za-z0-9-]+\.hr-manager\.net)"
     r"|(?P<recman>[A-Za-z0-9-]+\.recman\.no)"
+    r"|(?P<recruitee>[A-Za-z0-9-]+)\.recruitee\.com"
     r"|(?P<easycruit>[A-Za-z0-9-]+\.easycruit\.com)"
     r"|(?P<jobbnorge>www\.jobbnorge\.no)"
     r")", re.I)
-LINKED_ATS_PROVIDERS = ("workable", "webcruiter", "jobylon", "reachmee", "hrmanager", "recman", "easycruit", "jobbnorge")
+LINKED_ATS_PROVIDERS = ("workable", "webcruiter", "jobylon", "reachmee", "hrmanager", "recman", "jobbnorge")
+
+# These platforms host many unrelated companies' boards under one tenant, so a
+# link alone does not prove the roles belong to the company that published it.
+# Their feed names its own company, and that name must corroborate the entity.
+MULTI_TENANT_PLATFORMS = {"teamtailor", "recruitee", "easycruit"}
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -273,13 +281,179 @@ def teamtailor_jobs(slug: str) -> list[dict]:
     return out
 
 
+# --------------------------------------------------------------------------- #
+# Keyless public ATS feeds. No API key, no login, no paid account.
+# --------------------------------------------------------------------------- #
+
+
+def _normalise_posted(value: object) -> str | None:
+    """A role's publication date, normalised but never widened or invented.
+
+    A date the source published is kept as published (offset included). A date
+    in a machine format is converted to the same instant in UTC. A missing date
+    stays missing: the crawl date is not a publication date.
+    """
+    text = str(value or "").strip()
+    if not text:
+        return None
+    from email.utils import parsedate_to_datetime
+    try:
+        parsed = parsedate_to_datetime(text)
+    except (TypeError, ValueError):
+        parsed = None
+    if parsed is not None:
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    candidate = text.replace(" UTC", "").replace("Z", "").strip()
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
+        try:
+            moment = datetime.strptime(candidate, fmt).replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        return moment.isoformat().replace("+00:00", "Z")
+    return text
+
+
+def parse_teamtailor_feed(raw: str) -> list[dict]:
+    """Role cards from a Teamtailor JSON Feed (`https://<tenant>.teamtailor.com/jobs.json`)."""
+    try:
+        payload = json.loads(raw)
+    except (TypeError, ValueError):
+        return []
+    if not isinstance(payload, dict):
+        return []
+    feed_company = str(payload.get("title") or "")
+    out = []
+    for item in payload.get("items") or []:
+        if not isinstance(item, dict):
+            continue
+        title = str(item.get("title") or "").strip()
+        if not title:
+            continue
+        out.append({
+            "title": title,
+            "url": item.get("url"),
+            "posted": _normalise_posted(item.get("date_published")),
+            "description": str(item.get("content_html") or item.get("content_text") or ""),
+            "feed_company": feed_company,
+        })
+    return out
+
+
+def parse_recruitee_feed(raw: str) -> list[dict]:
+    """Role cards from a Recruitee careers-site feed (`https://<tenant>.recruitee.com/api/offers/`)."""
+    try:
+        payload = json.loads(raw)
+    except (TypeError, ValueError):
+        return []
+    if not isinstance(payload, dict):
+        return []
+    out = []
+    for offer in payload.get("offers") or []:
+        if not isinstance(offer, dict):
+            continue
+        title = str(offer.get("title") or "").strip()
+        if not title:
+            continue
+        url = offer.get("careers_apply_url") or offer.get("careers_url")
+        if not url and offer.get("slug"):
+            url = f"https://{offer.get('tenant') or ''}/o/{offer['slug']}".replace("//o/", "//o/")
+        description = str(offer.get("requirements") or offer.get("description") or "")
+        out.append({
+            "title": title,
+            "url": url,
+            "posted": _normalise_posted(offer.get("published_at")),
+            "description": description,
+            "feed_company": str(offer.get("company_name") or ""),
+        })
+    return out
+
+
+def parse_easycruit_feed(raw: str) -> list[dict]:
+    """Role cards from an Easycruit RSS feed (`https://<tenant>.easycruit.com/rss/jobs`)."""
+    from xml.etree import ElementTree
+    try:
+        root = ElementTree.fromstring(raw)
+    except Exception:
+        return []
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    feed_company = str((channel.findtext("title") or "").strip())
+    out = []
+    for item in channel.findall("item"):
+        title = str(item.findtext("title") or "").strip()
+        if not title:
+            continue
+        out.append({
+            "title": title,
+            "url": str(item.findtext("link") or "").strip() or None,
+            "posted": _normalise_posted(item.findtext("pubDate")),
+            "description": str(item.findtext("description") or ""),
+            "feed_company": feed_company,
+        })
+    return out
+
+
+def _feed_bytes(url: str, *, max_bytes: int = 1_500_000) -> str | None:
+    """Fetch a public feed, honouring robots.txt and the public-URL rule."""
+    try:
+        assert_public_url(url)
+    except ValueError:
+        return None
+    if not _robots_allowed(url, 8.0):
+        return None
+    raw = http(url, max_bytes=max_bytes)
+    return raw.decode("utf-8", "replace") if raw else None
+
+
+def teamtailor_json_jobs(slug: str) -> list[dict]:
+    raw = _feed_bytes(f"https://{slug}.teamtailor.com/jobs.json")
+    return parse_teamtailor_feed(raw) if raw else []
+
+
+def recruitee_jobs(slug: str) -> list[dict]:
+    raw = _feed_bytes(f"https://{slug}.recruitee.com/api/offers/")
+    return parse_recruitee_feed(raw) if raw else []
+
+
+def easycruit_jobs(slug: str) -> list[dict]:
+    raw = _feed_bytes(f"https://{slug}.easycruit.com/rss/jobs")
+    return parse_easycruit_feed(raw) if raw else []
+
+
+def feed_company_matches(profile: dict, feed_company: str) -> bool:
+    """True when the feed's own company name corroborates the legal entity.
+
+    A multi-tenant board may carry roles for companies other than the one that
+    linked to it. The feed names its own company, so a distinctive legal-name
+    token (or the organisation number itself) must appear in it.
+    """
+    text = str(feed_company or "")
+    org = str(profile.get("organisation_number") or "")
+    if org and org in re.sub(r"\D", "", text):
+        return True
+    legal = set(legal_name_tokens(str(profile.get("name") or "")))
+    if not legal:
+        return False
+    return bool(legal & set(legal_name_tokens(text)))
+
+
 def process(profile: dict) -> list[dict]:
     ev = (profile.get("evidence") or {}).get("website") or {}
     if ev.get("status") != "available":
         return []
     val = ev.get("value") or {}
     ident = val.get("identity_assessment") or {}
-    if str(ident.get("status") or "").lower() not in {"exact", "related_or_uncertain"}:
+    # The identity basis is "linked_from_verified_site": the ATS link is
+    # published by the company site, so the postings belong to that entity.
+    # That basis only holds for an *exact* site. A `related_or_uncertain` site
+    # is a group page, an affiliate or a property manager's site, and its job
+    # cards belong to someone else: measured on the shipped corpus, 41 of 48
+    # ATS rows came from such sites (a Texas card on a Norwegian NUF, a
+    # Lithuanian bank's roles on AVARDA BANK AB NUF).
+    if str(ident.get("status") or "").lower() != "exact":
         return []
     site = ev.get("source_url") or val.get("final_url") or ""
     if not site:
@@ -316,7 +490,12 @@ def process(profile: dict) -> list[dict]:
         elif gd.get("smart"):
             jobs = smartrecruiters_jobs(gd["smart"]); ats = "smartrecruiters"
         elif gd.get("teamtailor"):
-            jobs = teamtailor_jobs(gd["teamtailor"]); ats = "teamtailor"
+            jobs = teamtailor_json_jobs(gd["teamtailor"]) or teamtailor_jobs(gd["teamtailor"])
+            ats = "teamtailor"
+        elif gd.get("recruitee"):
+            jobs = recruitee_jobs(gd["recruitee"]); ats = "recruitee"
+        elif gd.get("easycruit"):
+            jobs = easycruit_jobs(gd["easycruit"]); ats = "easycruit"
         else:
             provider = next((k for k in LINKED_ATS_PROVIDERS if gd.get(k)), None)
             if not provider:
@@ -336,17 +515,35 @@ def process(profile: dict) -> list[dict]:
     except Exception:
         return []
     org = str(profile["organisation_number"])
+    multi_tenant = ats in MULTI_TENANT_PLATFORMS
     rows = []
     for j in jobs[:20]:
         if not j.get("title"):
             continue
-        digest = hashlib.sha256(f"{org}|{j.get('url') or j['title']}".encode()).hexdigest()[:16]
+        if multi_tenant and not feed_company_matches(profile, j.get("feed_company") or ""):
+            # The board hosts other companies' roles too; without a name match
+            # the role cannot be attributed to this legal entity.
+            continue
+        posted = j.get("posted")
+        description = str(j.get("description") or "")
+        digest = hashlib.sha256(
+            f"{org}|{j.get('url') or j['title']}|{posted}|{description}".encode()
+        ).hexdigest()[:16]
+        signal = {
+            "title": j["title"],
+            "job_title": j["title"],
+            "application_url": j.get("url"),
+            "description": description[:2000],
+        }
+        if posted:
+            # A real publication date, or nothing: the crawl date is not one.
+            signal["published"] = posted
         rows.append({
             "organisation_number": org,
             "platform": "job_board",
             "source_url": j.get("url") or ats_page,
             "retrieved_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-            "content_sha256": hashlib.sha256((j["title"] + str(j.get("posted"))).encode()).hexdigest(),
+            "content_sha256": hashlib.sha256((j["title"] + str(posted) + description).encode()).hexdigest(),
             "exact_entity": True,
             "identity_proof": [{"type": "linked_from_verified_site", "ats": ats, "ats_link_page": ats_page, "company_site": site}],
             "acquisition_mode": "permitted_public_page",
@@ -355,8 +552,10 @@ def process(profile: dict) -> list[dict]:
             "strategy": "ats_role_card",
             "id": f"ats-job-{org}-{ats}-{digest}",
             "signal_type": "job_posting",
-            "evidence_span": f"{j['title']} ({ats} role card via {site})"[:1200],
-            "metrics": {"ats": ats, "posted": j.get("posted"), "role_card": True},
+            "signal": signal,
+            "evidence_span": (j["title"] + "\n" + description)[:1200],
+            "metrics": {"ats": ats, "posted": posted, "role_card": True,
+                        "feed_company": j.get("feed_company")},
         })
     return rows
 

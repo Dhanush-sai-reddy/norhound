@@ -65,5 +65,27 @@ class ObservationListOrderTests(unittest.TestCase):
             self.assertIn(f"observation_files.append({stage})", source)
 
 
+class AtsStageTests(unittest.TestCase):
+    """The ATS connector must run inside the pipeline, not as a side script.
+
+    `run_ats_jobs_connector.py` existed and produced rows, but the pipeline
+    never called it, so every applicant-tracking system the corpus could reach
+    was silently dropped from the shipped corpus. The connector reaches only
+    public ATS feeds (no key), and only through a link published on the
+    company's own exact-identity site.
+    """
+
+    def test_pipeline_runs_the_ats_connector(self) -> None:
+        self.assertIn("run_ats_jobs_connector.py", PIPELINE.read_text(encoding="utf-8"))
+
+    def test_pipeline_collects_the_ats_output(self) -> None:
+        self.assertIn("observation_files.append(ats_out)", PIPELINE.read_text(encoding="utf-8"))
+
+    def test_ats_stage_is_enabled_by_default(self) -> None:
+        source = PIPELINE.read_text(encoding="utf-8")
+        self.assertIn('parser.set_defaults(ats=True)', source)
+        self.assertIn('"--no-ats", dest="ats", action="store_false"', source)
+
+
 if __name__ == "__main__":
     unittest.main()

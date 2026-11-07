@@ -117,6 +117,9 @@ def main() -> None:
     parser.add_argument("--no-registry-sites", dest="registry_sites", action="store_false", help="Disable the registry-proved website connector (BRREG-declared domain + page corroboration)")
     parser.add_argument("--registry-sites", dest="registry_sites", action="store_true", help="Deprecated no-op: registry-proved website connector now runs by default")
     parser.set_defaults(registry_sites=True)
+    parser.add_argument("--no-ats", dest="ats", action="store_false", help="Disable the public ATS connector (Teamtailor/Recruitee/Easycruit/Workday/Lever/Greenhouse/SmartRecruiters feeds, no key)")
+    parser.add_argument("--ats", dest="ats", action="store_true", help="Deprecated no-op: the public ATS connector now runs by default")
+    parser.set_defaults(ats=True)
     parser.add_argument("--no-nav", dest="nav", action="store_false", help="Disable the official NAV job feed connector")
     parser.add_argument("--nav", dest="nav", action="store_true", help="Deprecated no-op: NAV job feed now runs by default")
     parser.set_defaults(nav=True)
@@ -290,6 +293,20 @@ def main() -> None:
             "--timeout", "20",
             "--min-interval", "0.5",
         ])
+    # The ATS connector only reaches a board through a link published on the
+    # company's own exact-identity site, and only publishes role cards from
+    # public feeds. It is keyless: no API key, no login, no paid account.
+    ats_out = prefix.with_suffix(prefix.suffix + ".ats.jsonl")
+    if args.ats:
+        run([
+            "python", str(SCRIPTS / "run_ats_jobs_connector.py"),
+            "--profiles", args.profiles,
+            "--output", str(ats_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".ats-report.json")),
+            "--workers", "8",
+        ])
+    if ats_out.exists() and ats_out.stat().st_size > 0:
+        observation_files.append(ats_out)
 
     if args.discovery_input and args.promote:
         discovery_candidates = [json.loads(line) for line in Path(args.discovery_input).read_text(encoding="utf-8").splitlines() if line.strip()]
