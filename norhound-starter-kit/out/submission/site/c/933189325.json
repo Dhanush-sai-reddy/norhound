@@ -1,162 +1,276 @@
 {
   "profile": {
-    "organisation_number": "933189325",
-    "name": "KIOSKDRIFT WASEEM SAEL AS",
-    "legal_form": "AS",
-    "employees": 8,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "STAVANGER",
-    "municipality_number": "1103",
-    "industry_code": "47.110",
-    "industry_label": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-    "website": "www.7-eleven.no",
-    "latest_submitted_accounts": "2025",
+    "employees": 8,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:51.695608Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "933189325",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "933189325",
-          "navn": "KIOSKDRIFT WASEEM SAEL AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "47.110",
-          "naeringskode1.beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "true",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "f3058a1afdebedda3802652b2e8c662edf4e41f056e3cddf2d075e66183b2a58",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:46.498930Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2024",
+              "year": "2024"
+            }
+          ],
+          "years": [
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "4a82bfc7aea072cd3fce568efba137a70ce5e513b709dfed4655920b0995ae5d",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:43.048492Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 649889.0,
+              "assets": 3189320.0,
+              "currency": "NOK",
+              "debt": 3015215.0,
+              "equity": 174105.0,
+              "operating_result": 803799.0,
+              "period": {
+                "fraDato": "2024-01-16",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": 835325.0,
+              "record_id": 5866287,
+              "revenue": 15872381.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 733564.0,
+              "assets": 3579094.0,
+              "currency": "NOK",
+              "debt": 2671425.0,
+              "equity": 907669.0,
+              "operating_result": 920522.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": 957132.0,
+              "record_id": 6924058,
+              "revenue": 22023436.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:38:47.887851Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/933189325",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:48.597970Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Skagen 4"
+                ],
+                "kommune": "STAVANGER",
+                "kommunenummer": "1103",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "4006",
+                "poststed": "STAVANGER"
+              },
+              "employees": 8,
+              "industry": {
+                "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+                "kode": "47.110"
+              },
+              "name": "7-ELEVEN 7114 SJØHUSET STAVANGER",
+              "organisation_number": "992040041"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "933189325",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Butikkdrift med spill i kioskhandel med bredt vareutvalg med hovedvekt på nærings og nytelsesmidler.",
           "antallAnsatte": "8",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
-          "hjemmeside": "www.7-eleven.no",
           "epostadresse": "sjohuset.711no7114@7-eleven.no",
-          "telefon": "51 59 58 22",
-          "mobil": "",
-          "postadresse.adresse": "c/o Waseem Sael\nHordaveien 9A",
-          "postadresse.poststed": "STAVANGER",
-          "postadresse.postnummer": "4020",
-          "postadresse.kommune": "STAVANGER",
-          "postadresse.kommunenummer": "1103",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Skagen 4",
-          "forretningsadresse.poststed": "STAVANGER",
-          "forretningsadresse.postnummer": "4006",
           "forretningsadresse.kommune": "STAVANGER",
           "forretningsadresse.kommunenummer": "1103",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2024-03-19",
-          "stiftelsesdato": "2024-01-16",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2024-05-01",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-07-06",
+          "forretningsadresse.postnummer": "4006",
+          "forretningsadresse.poststed": "STAVANGER",
+          "fravalgRevisjonBeslutningsDato": "",
+          "fravalgRevisjonDato": "",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2024-03-19",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "true",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.7-eleven.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "100",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2024-03-19",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "",
+          "naeringskode1.beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+          "naeringskode1.kode": "47.110",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "KIOSKDRIFT WASEEM SAEL AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "933189325",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "c/o Waseem Sael\nHordaveien 9A",
+          "postadresse.kommune": "STAVANGER",
+          "postadresse.kommunenummer": "1103",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "4020",
+          "postadresse.poststed": "STAVANGER",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
+          "registreringsdatoForetaksregisteret": "2024-03-19",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "2024-05-01",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-07-06",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
+          "registreringsdatoenhetsregisteret": "2024-03-19",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2024-01-16",
+          "telefon": "51 59 58 22",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2024-01-16",
-          "vedtektsfestetFormaal": "Drive virksomhet, herunder spill i kioskhandel med bredt vareutvalg med hovedvekt på næring- og nytelsesmidler.",
-          "aktivitet": "Butikkdrift med spill i kioskhandel med bredt vareutvalg med hovedvekt på nærings og nytelsesmidler.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "",
-          "fravalgRevisjonBeslutningsDato": "",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "100",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2024-03-19",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "933189325",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:51.695608Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "933189325",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2024-01-16",
+          "vedtektsfestetFormaal": "Drive virksomhet, herunder spill i kioskhandel med bredt vareutvalg med hovedvekt på næring- og nytelsesmidler."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+        "note": null,
         "retrieved_at": "2026-10-05T08:38:42.370232Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+        "status": "available",
         "value": {
-          "organisation_number": "933189325",
-          "name": "KIOSKDRIFT WASEEM SAEL AS",
-          "legal_form": "AS",
-          "employees": 8,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.7-eleven.no",
-          "industry": {
-            "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-            "kode": "47.110"
-          },
           "business_address": {
             "adresse": [
               "Skagen 4"
@@ -168,6 +282,16 @@
             "postnummer": "4006",
             "poststed": "STAVANGER"
           },
+          "employees": 8,
+          "industry": {
+            "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+            "kode": "47.110"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "KIOSKDRIFT WASEEM SAEL AS",
+          "organisation_number": "933189325",
           "postal_address": {
             "adresse": [
               "c/o Waseem Sael",
@@ -180,269 +304,91 @@
             "postnummer": "4020",
             "poststed": "STAVANGER"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
-        "retrieved_at": "2026-10-05T08:38:43.048492Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 5866287,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-16",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 15872381.0,
-              "operating_result": 803799.0,
-              "profit_before_tax": 835325.0,
-              "annual_result": 649889.0,
-              "assets": 3189320.0,
-              "equity": 174105.0,
-              "debt": 3015215.0
-            },
-            {
-              "record_id": 6924058,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 22023436.0,
-              "operating_result": 920522.0,
-              "profit_before_tax": 957132.0,
-              "annual_result": 733564.0,
-              "assets": 3579094.0,
-              "equity": 907669.0,
-              "debt": 2671425.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "4a82bfc7aea072cd3fce568efba137a70ce5e513b709dfed4655920b0995ae5d",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-        "retrieved_at": "2026-10-05T08:38:46.498930Z",
-        "value": {
-          "years": [
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2024"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f3058a1afdebedda3802652b2e8c662edf4e41f056e3cddf2d075e66183b2a58",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.7-eleven.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "0c294e93cac68b4a48c5ac61b99b9bc09b67d70dac20f977b2eca2cd6d314cad",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:38:47.181809Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
-              "name": "Waseem Sael",
-              "organisation_number": null,
-              "role_code": "DAGL",
-              "role": "Daglig leder",
-              "group_code": "DAGL",
               "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
               "last_changed": "2024-03-19",
-              "inactive": false
-            },
-            {
               "name": "Waseem Sael",
               "organisation_number": null,
-              "role_code": "LEDE",
-              "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2024-03-19",
-              "inactive": false
+              "role": "Daglig leder",
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2024-03-19",
+              "name": "Waseem Sael",
+              "organisation_number": null,
+              "role": "Styrets leder",
+              "role_code": "LEDE"
+            },
+            {
+              "group": "Revisor",
+              "group_code": "REVI",
+              "inactive": false,
+              "last_changed": "2025-09-02",
               "name": [
                 "PRICEWATERHOUSECOOPERS AS"
               ],
               "organisation_number": "987009713",
-              "role_code": "REVI",
               "role": "Revisor",
-              "group_code": "REVI",
-              "group": "Revisor",
-              "last_changed": "2025-09-02",
-              "inactive": false
+              "role_code": "REVI"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2024-03-19",
               "name": [
                 "REITAN CONVENIENCE NORWAY AS"
               ],
               "organisation_number": "983415660",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2024-03-19",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "0c294e93cac68b4a48c5ac61b99b9bc09b67d70dac20f977b2eca2cd6d314cad",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/933189325",
-        "retrieved_at": "2026-10-05T08:38:47.887851Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
-        "retrieved_at": "2026-10-05T08:38:48.597970Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "992040041",
-              "name": "7-ELEVEN 7114 SJØHUSET STAVANGER",
-              "address": {
-                "adresse": [
-                  "Skagen 4"
-                ],
-                "kommune": "STAVANGER",
-                "kommunenummer": "1103",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "4006",
-                "poststed": "STAVANGER"
-              },
-              "industry": {
-                "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-                "kode": "47.110"
-              },
-              "employees": 8
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://7-eleven.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:38:54.788329Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://7-eleven.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.7-eleven.no/",
-          "final_url": "https://7-eleven.no/",
-          "registered_domain": "7-eleven.no",
-          "title": "7-Eleven - Hjem",
-          "description": "",
-          "main_text_excerpt": "",
-          "social_links": [],
-          "structured_organisations": [],
           "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
-          "extraction_state": "js_fallback_candidate",
-          "pages": [
-            {
-              "url": "https://7-eleven.no/",
-              "title": "7-Eleven - Hjem",
-              "main_text_excerpt": "",
-              "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454"
-            },
-            {
-              "url": "https://7-eleven.no/om-7-eleven/kontakt",
-              "title": "7-Eleven - Kontakt",
-              "main_text_excerpt": "Finn svar på ofte stilte spørsmål, eller ta kontakt med oss:\n \nVarslingskanal\nVarsling er å gi beskjed om ulovlige eller andre kritikkverdige forhold i virksomheten uten å benytte ordinære rapporteringskanaler. 7-Eleven oppfordrer alle til å varsle om forhold som kan true selskapets personell, drift, økonomi eller omdømme.\nDersom ansatte eller leverandører opplever kritikkverdige forhold i 7-Eleven, kan du gi oss beskjed gjennom varslingskanalen slik at vi får muligheten til å følge opp saken og rette opp.\nFor kunder: Dersom du har tilbakemeldinger angående kundeservice eller produkter, vennligst kontakt butikk eller bruk vårt kontaktskjema.",
-              "content_sha256": "71995b829eda9bce7c46ee65fa91499b930ebba3eeed10b4f228e01ad5612fde"
-            },
-            {
-              "url": "https://7-eleven.no/om-7-eleven/kontakt/spenn-faq",
-              "title": "7-Eleven - Spenn FAQ",
-              "main_text_excerpt": "Spenn er et fleksibelt poengsystem der du kan tjene, samle og bruke poeng på tvers av ulike merkevarer i Norden. Du kan bruke poengene dine både på små hverdagskjøp hos 7-Eleven og Narvesen eller på større opplevelser som hotell og flyreiser hos samarbeidspartnere.",
-              "content_sha256": "d30fe1c2c5edba30cf0a2b172d4c1cb9cdebd1fdc5aed6bd517d4519772b9278"
-            },
-            {
-              "url": "https://7-eleven.no/butikker",
-              "title": "7-Eleven - Butikker",
-              "main_text_excerpt": "No matches",
-              "content_sha256": "01ba71d44059e7d6b6892e938a109c041033bd9fb1dd035e2889567022c98101"
-            }
-          ],
           "crawl_errors": [
             {
-              "url": "https://7-eleven.no/om-7-eleven/kontakt/spørsmål-og-svar",
-              "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xf8' in position 27: ordinal not in range(128)"
+              "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xf8' in position 27: ordinal not in range(128)",
+              "url": "https://7-eleven.no/om-7-eleven/kontakt/spørsmål-og-svar"
             }
           ],
-          "identity_assessment": {
-            "status": "related_or_uncertain",
-            "score": 0.3,
-            "publishable": false,
-            "legal_name_tokens": [
-              "kioskdrift",
-              "waseem",
-              "sael"
-            ],
-            "matched_tokens": [],
-            "reasons": [
-              "registry-linked URL lacks strong exact-entity identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "",
           "discovered_social_links": [
             {
               "platform": "facebook",
@@ -457,51 +403,127 @@
               "url": "https://youtube.com/user/7ElevenNorge"
             }
           ],
+          "extraction_state": "js_fallback_candidate",
+          "final_url": "https://7-eleven.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "kioskdrift",
+              "waseem",
+              "sael"
+            ],
+            "matched_tokens": [],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "registry-linked URL lacks strong exact-entity identity evidence"
+            ],
+            "score": 0.3,
+            "status": "related_or_uncertain"
+          },
+          "main_text_excerpt": "",
+          "pages": [
+            {
+              "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
+              "main_text_excerpt": "",
+              "title": "7-Eleven - Hjem",
+              "url": "https://7-eleven.no/"
+            },
+            {
+              "content_sha256": "71995b829eda9bce7c46ee65fa91499b930ebba3eeed10b4f228e01ad5612fde",
+              "main_text_excerpt": "Finn svar på ofte stilte spørsmål, eller ta kontakt med oss:\n \nVarslingskanal\nVarsling er å gi beskjed om ulovlige eller andre kritikkverdige forhold i virksomheten uten å benytte ordinære rapporteringskanaler. 7-Eleven oppfordrer alle til å varsle om forhold som kan true selskapets personell, drift, økonomi eller omdømme.\nDersom ansatte eller leverandører opplever kritikkverdige forhold i 7-Eleven, kan du gi oss beskjed gjennom varslingskanalen slik at vi får muligheten til å følge opp saken og rette opp.\nFor kunder: Dersom du har tilbakemeldinger angående kundeservice eller produkter, vennligst kontakt butikk eller bruk vårt kontaktskjema.",
+              "title": "7-Eleven - Kontakt",
+              "url": "https://7-eleven.no/om-7-eleven/kontakt"
+            },
+            {
+              "content_sha256": "d30fe1c2c5edba30cf0a2b172d4c1cb9cdebd1fdc5aed6bd517d4519772b9278",
+              "main_text_excerpt": "Spenn er et fleksibelt poengsystem der du kan tjene, samle og bruke poeng på tvers av ulike merkevarer i Norden. Du kan bruke poengene dine både på små hverdagskjøp hos 7-Eleven og Narvesen eller på større opplevelser som hotell og flyreiser hos samarbeidspartnere.",
+              "title": "7-Eleven - Spenn FAQ",
+              "url": "https://7-eleven.no/om-7-eleven/kontakt/spenn-faq"
+            },
+            {
+              "content_sha256": "01ba71d44059e7d6b6892e938a109c041033bd9fb1dd035e2889567022c98101",
+              "main_text_excerpt": "No matches",
+              "title": "7-Eleven - Butikker",
+              "url": "https://7-eleven.no/butikker"
+            }
+          ],
+          "registered_domain": "7-eleven.no",
+          "requested_url": "https://www.7-eleven.no/",
           "social_link_assessments": [
             {
+              "identity_score": 0.3,
+              "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "facebook",
-              "url": "https://facebook.com/7ElevenNorge",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/7ElevenNorge"
             },
             {
+              "identity_score": 0.3,
+              "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "instagram",
-              "url": "https://instagram.com/7ElevenNorge",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://instagram.com/7ElevenNorge"
             },
             {
-              "platform": "youtube",
-              "url": "https://youtube.com/user/7ElevenNorge",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "youtube",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://youtube.com/user/7ElevenNorge"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [],
+          "structured_organisations": [],
+          "title": "7-Eleven - Hjem"
+        }
       },
       "external_observations": [
+        {
+          "id": "registry-workforce-aa6347b1f8ddbeb042abd6d2",
+          "organisation_number": "933189325",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+          "retrieved_at": "2026-09-29T10:06:12.862095Z",
+          "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "933189325",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 8",
+          "metrics": {
+            "workforce_value": 8,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-06-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-06-13",
+          "effective_at": "2026-06-13"
+        },
         {
           "id": "registry-contact-84dd74a65ba9af5a764c8e31",
           "organisation_number": "933189325",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -528,8 +550,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -554,7 +576,7 @@
           "organisation_number": "933189325",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
-          "retrieved_at": "2026-09-29T10:06:20.289526Z",
+          "retrieved_at": "2026-10-05T08:38:48.597970Z",
           "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -579,12 +601,42 @@
           }
         },
         {
+          "id": "registry-update-7c2a703dde82de6e6c82ce2e",
+          "organisation_number": "933189325",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "content_sha256": "7c2a703dde82de6e6c82ce2e66959023f591ead87d2a5d33b70c96a652939589",
+          "observed_at": "2026-10-13",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "933189325",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-13: Endring",
+          "metrics": {
+            "date": "2026-10-13",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
           "id": "registry-update-78fce84d35004fed2177290c",
           "organisation_number": "933189325",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "78fce84d35004fed2177290c43d316d959ddec6100e2b6113be50b04339394e3",
           "observed_at": "2026-07-08",
           "exact_entity": true,
@@ -614,7 +666,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e9dcc99547e081b06e856dff28e0c24467b2b5ad342a309ea36416259829c2b4",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -644,7 +696,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c9342ea725523a0dff6c924405cce25fe1f3229e967772de318bfbd65401574f",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -674,7 +726,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "eaef949613f6338852beea20a5f2f24041890ceb5c4184ecd3af25ce0fb5f8b2",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -704,7 +756,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "631c1cdbee7149929377c9aae071cfdd5fce897a583933ee8d732c4f0731389b",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -734,7 +786,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "58676222e08dd1e8b1cf64e48fd2bb7046d1c8ef40e915d18f3d936fc23e0afc",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -764,7 +816,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c2682b2c5e0cfea6bf93829ac9ac392bd06ab7dfaf0b84bb08d574c82bdb3d82",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -794,7 +846,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2baa0d53c11265dd9df780bb1ad6be38eeb06fbad6cc101bfba9cf2752da2a8a",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -824,7 +876,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ea9e33667fbb8aec312c1227cb72b264c08866b602072ea461316b39667978a6",
           "observed_at": "2025-03-13",
           "exact_entity": true,
@@ -854,7 +906,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "69a25347dec8ed2f1d83801cc1874d5496512edc301abf403848ef1e9a069b59",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -884,7 +936,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "db52e00c83f64fc0c50378d2a92e2d85d313e791f9d1a1e671ec21e6e959bb1b",
           "observed_at": "2024-11-17",
           "exact_entity": true,
@@ -914,7 +966,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "09d04f12cd2efab25fadeb504491ff4c7399a5fb488547e90ee77859876b596e",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -944,7 +996,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "b45a014a4b26af573752bbca398ec3424acb4c3925b056a3dd69310f2cb6508c",
           "observed_at": "2024-08-13",
           "exact_entity": true,
@@ -974,7 +1026,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "cf823a790e686d2415d07ec63d519004f24727b62fd376053cfa9ae2c2cfb3f9",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1004,7 +1056,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "778c6df5549568ebbf39a00f88dc23cf82e1ed624056bb06f99c20017cf2237a",
           "observed_at": "2024-07-06",
           "exact_entity": true,
@@ -1034,7 +1086,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "b2beaecfb6fb0a4ec5fd0f147f2776edd73c1c519315b20c0009c0cf5dec8fe7",
           "observed_at": "2024-05-30",
           "exact_entity": true,
@@ -1064,7 +1116,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9aaa469c23a6b0d3faf74fecf7b54fede6a382559da8efcf96386ad5e39beb23",
           "observed_at": "2024-03-19",
           "exact_entity": true,
@@ -1174,214 +1226,19 @@
             "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb"
           },
           "evidence_span": "Manglende roller — 2025-08-20 (BRREG official announcement)"
-        },
-        {
-          "id": "registry-workforce-aa6347b1f8ddbeb042abd6d2",
-          "organisation_number": "933189325",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-09-29T10:06:12.862095Z",
-          "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "933189325",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 8",
-          "metrics": {
-            "workforce_value": 8,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-06-13"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-06-13",
-          "effective_at": "2026-06-13"
-        },
-        {
-          "id": "registry-update-7c2a703dde82de6e6c82ce2e",
-          "organisation_number": "933189325",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "retrieved_at": "2026-10-28T04:19:27.620683Z",
-          "content_sha256": "7c2a703dde82de6e6c82ce2e66959023f591ead87d2a5d33b70c96a652939589",
-          "observed_at": "2026-10-13",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "933189325",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2026-10-13: Endring",
-          "metrics": {
-            "date": "2026-10-13",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "organisation_number": "933189325",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/933189325",
-          "retrieved_at": "2026-11-05T21:09:37.733122Z",
-          "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "933189325"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "KIOSKDRIFT WASEEM SAEL AS",
-              "matched_organisation_number": "933189325"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-          "id": "purehelp-email-933189325-f4971ab2f3784183",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "sjohuset.711no7114@7-eleven.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "933189325",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/933189325",
-          "retrieved_at": "2026-11-05T21:09:37.733122Z",
-          "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "933189325"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "KIOSKDRIFT WASEEM SAEL AS",
-              "matched_organisation_number": "933189325"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-          "id": "purehelp-phone-933189325-f4971ab2f3784183",
-          "signal_type": "contact_phone",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "phone": "51 59 58 22",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "933189325",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/933189325",
-          "retrieved_at": "2026-11-05T21:09:37.733122Z",
-          "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "933189325"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "KIOSKDRIFT WASEEM SAEL AS",
-              "matched_organisation_number": "933189325"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-          "id": "purehelp-profile-933189325-f4971ab2f3784183",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "47.110",
-            "nace_description": "Non-specialised retail sale of predominately food\\, beverages or tobacco",
-            "town": "STAVANGER",
-            "zipcode": "4006",
-            "municipality": "STAVANGER",
-            "municipality_number": "1103",
-            "county": "Rogaland",
-            "registration_date": "2024-03-19",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2024-03-19",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.7-eleven.no"
-          }
-        },
-        {
-          "organisation_number": "933189325",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/933189325",
-          "retrieved_at": "2026-11-05T21:09:37.733122Z",
-          "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "933189325"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "KIOSKDRIFT WASEEM SAEL AS",
-              "matched_organisation_number": "933189325"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-          "id": "purehelp-workforce-933189325-f4971ab2f3784183",
-          "signal_type": "workforce_snapshot",
-          "strategy": "purehelp_directory_workforce",
-          "metrics": {
-            "employees": 7,
-            "as_of": "2026-10-19",
-            "employees_source": "enhetsregisteret",
-            "interpretation": "Employee count published by the directory; no value is inferred."
-          }
         }
       ]
     },
+    "industry_code": "47.110",
+    "industry_label": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "STAVANGER",
+    "municipality_number": "1103",
+    "name": "KIOSKDRIFT WASEEM SAEL AS",
+    "organisation_number": "933189325",
     "run_metrics": {
-      "requests": 16,
       "bytes": 166418,
       "latencies_ms": [
         685,
@@ -1394,15 +1251,17 @@
         464,
         505,
         1032
-      ]
-    }
+      ],
+      "requests": 16
+    },
+    "website": "www.7-eleven.no"
   },
   "summary": {
     "organisation_number": "933189325",
     "company_name": "KIOSKDRIFT WASEEM SAEL AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "KIOSKDRIFT WASEEM SAEL AS is a private limited company operating in Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler. Latest accounts (2025): revenue NOK 15.9m, annual result NOK 649.9k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. Revenue shrinking (-27.9% YoY). Registered employees: 8. No open postings found in checked sources. Baseline run, no prior version to compare against (run none).",
+    "summary": "KIOSKDRIFT WASEEM SAEL AS is a private limited company operating in Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler. Latest accounts (2025): revenue NOK 15.9m, annual result NOK 649.9k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. Revenue shrinking (-27.9% YoY). Registered employees: 8. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1418,10 +1277,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1439,10 +1294,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1460,10 +1311,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1481,10 +1328,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1502,10 +1345,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1519,24 +1358,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://7-eleven.no/",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/933189325/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1552,161 +1378,287 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-          "https://purehelp.no/company/NO/933189325",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000723332&amp;sokeverdi=933189325&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000519477&amp;sokeverdi=933189325&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
     ],
-    "unknowns": []
+    "unknowns": [
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
+      }
+    ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:51.695608Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "933189325",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "933189325",
-        "navn": "KIOSKDRIFT WASEEM SAEL AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "47.110",
-        "naeringskode1.beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "true",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "f3058a1afdebedda3802652b2e8c662edf4e41f056e3cddf2d075e66183b2a58",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:46.498930Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2024",
+            "year": "2024"
+          }
+        ],
+        "years": [
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "4a82bfc7aea072cd3fce568efba137a70ce5e513b709dfed4655920b0995ae5d",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:43.048492Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 649889.0,
+            "assets": 3189320.0,
+            "currency": "NOK",
+            "debt": 3015215.0,
+            "equity": 174105.0,
+            "operating_result": 803799.0,
+            "period": {
+              "fraDato": "2024-01-16",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": 835325.0,
+            "record_id": 5866287,
+            "revenue": 15872381.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 733564.0,
+            "assets": 3579094.0,
+            "currency": "NOK",
+            "debt": 2671425.0,
+            "equity": 907669.0,
+            "operating_result": 920522.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": 957132.0,
+            "record_id": 6924058,
+            "revenue": 22023436.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:38:47.887851Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/933189325",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:48.597970Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Skagen 4"
+              ],
+              "kommune": "STAVANGER",
+              "kommunenummer": "1103",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "4006",
+              "poststed": "STAVANGER"
+            },
+            "employees": 8,
+            "industry": {
+              "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+              "kode": "47.110"
+            },
+            "name": "7-ELEVEN 7114 SJØHUSET STAVANGER",
+            "organisation_number": "992040041"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "933189325",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Butikkdrift med spill i kioskhandel med bredt vareutvalg med hovedvekt på nærings og nytelsesmidler.",
         "antallAnsatte": "8",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
-        "hjemmeside": "www.7-eleven.no",
         "epostadresse": "sjohuset.711no7114@7-eleven.no",
-        "telefon": "51 59 58 22",
-        "mobil": "",
-        "postadresse.adresse": "c/o Waseem Sael\nHordaveien 9A",
-        "postadresse.poststed": "STAVANGER",
-        "postadresse.postnummer": "4020",
-        "postadresse.kommune": "STAVANGER",
-        "postadresse.kommunenummer": "1103",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Skagen 4",
-        "forretningsadresse.poststed": "STAVANGER",
-        "forretningsadresse.postnummer": "4006",
         "forretningsadresse.kommune": "STAVANGER",
         "forretningsadresse.kommunenummer": "1103",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2024-03-19",
-        "stiftelsesdato": "2024-01-16",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2024-05-01",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-07-06",
+        "forretningsadresse.postnummer": "4006",
+        "forretningsadresse.poststed": "STAVANGER",
+        "fravalgRevisjonBeslutningsDato": "",
+        "fravalgRevisjonDato": "",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2024-03-19",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "true",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.7-eleven.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "100",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2024-03-19",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "",
+        "naeringskode1.beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+        "naeringskode1.kode": "47.110",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "KIOSKDRIFT WASEEM SAEL AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "933189325",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "c/o Waseem Sael\nHordaveien 9A",
+        "postadresse.kommune": "STAVANGER",
+        "postadresse.kommunenummer": "1103",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "4020",
+        "postadresse.poststed": "STAVANGER",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
+        "registreringsdatoForetaksregisteret": "2024-03-19",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "2024-05-01",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-07-06",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
+        "registreringsdatoenhetsregisteret": "2024-03-19",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2024-01-16",
+        "telefon": "51 59 58 22",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2024-01-16",
-        "vedtektsfestetFormaal": "Drive virksomhet, herunder spill i kioskhandel med bredt vareutvalg med hovedvekt på næring- og nytelsesmidler.",
-        "aktivitet": "Butikkdrift med spill i kioskhandel med bredt vareutvalg med hovedvekt på nærings og nytelsesmidler.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "",
-        "fravalgRevisjonBeslutningsDato": "",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "100",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2024-03-19",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "933189325",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:51.695608Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "933189325",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2024-01-16",
+        "vedtektsfestetFormaal": "Drive virksomhet, herunder spill i kioskhandel med bredt vareutvalg med hovedvekt på næring- og nytelsesmidler."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+      "note": null,
       "retrieved_at": "2026-10-05T08:38:42.370232Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+      "status": "available",
       "value": {
-        "organisation_number": "933189325",
-        "name": "KIOSKDRIFT WASEEM SAEL AS",
-        "legal_form": "AS",
-        "employees": 8,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.7-eleven.no",
-        "industry": {
-          "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-          "kode": "47.110"
-        },
         "business_address": {
           "adresse": [
             "Skagen 4"
@@ -1718,6 +1670,16 @@
           "postnummer": "4006",
           "poststed": "STAVANGER"
         },
+        "employees": 8,
+        "industry": {
+          "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
+          "kode": "47.110"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "KIOSKDRIFT WASEEM SAEL AS",
+        "organisation_number": "933189325",
         "postal_address": {
           "adresse": [
             "c/o Waseem Sael",
@@ -1730,269 +1692,91 @@
           "postnummer": "4020",
           "poststed": "STAVANGER"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/933189325",
-      "retrieved_at": "2026-10-05T08:38:43.048492Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 5866287,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-16",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 15872381.0,
-            "operating_result": 803799.0,
-            "profit_before_tax": 835325.0,
-            "annual_result": 649889.0,
-            "assets": 3189320.0,
-            "equity": 174105.0,
-            "debt": 3015215.0
-          },
-          {
-            "record_id": 6924058,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 22023436.0,
-            "operating_result": 920522.0,
-            "profit_before_tax": 957132.0,
-            "annual_result": 733564.0,
-            "assets": 3579094.0,
-            "equity": 907669.0,
-            "debt": 2671425.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "4a82bfc7aea072cd3fce568efba137a70ce5e513b709dfed4655920b0995ae5d",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/aar",
-      "retrieved_at": "2026-10-05T08:38:46.498930Z",
-      "value": {
-        "years": [
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/933189325/2024"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f3058a1afdebedda3802652b2e8c662edf4e41f056e3cddf2d075e66183b2a58",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.7-eleven.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "0c294e93cac68b4a48c5ac61b99b9bc09b67d70dac20f977b2eca2cd6d314cad",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:38:47.181809Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
-            "name": "Waseem Sael",
-            "organisation_number": null,
-            "role_code": "DAGL",
-            "role": "Daglig leder",
-            "group_code": "DAGL",
             "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
             "last_changed": "2024-03-19",
-            "inactive": false
-          },
-          {
             "name": "Waseem Sael",
             "organisation_number": null,
-            "role_code": "LEDE",
-            "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2024-03-19",
-            "inactive": false
+            "role": "Daglig leder",
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2024-03-19",
+            "name": "Waseem Sael",
+            "organisation_number": null,
+            "role": "Styrets leder",
+            "role_code": "LEDE"
+          },
+          {
+            "group": "Revisor",
+            "group_code": "REVI",
+            "inactive": false,
+            "last_changed": "2025-09-02",
             "name": [
               "PRICEWATERHOUSECOOPERS AS"
             ],
             "organisation_number": "987009713",
-            "role_code": "REVI",
             "role": "Revisor",
-            "group_code": "REVI",
-            "group": "Revisor",
-            "last_changed": "2025-09-02",
-            "inactive": false
+            "role_code": "REVI"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2024-03-19",
             "name": [
               "REITAN CONVENIENCE NORWAY AS"
             ],
             "organisation_number": "983415660",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2024-03-19",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "0c294e93cac68b4a48c5ac61b99b9bc09b67d70dac20f977b2eca2cd6d314cad",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/933189325",
-      "retrieved_at": "2026-10-05T08:38:47.887851Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
-      "retrieved_at": "2026-10-05T08:38:48.597970Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "992040041",
-            "name": "7-ELEVEN 7114 SJØHUSET STAVANGER",
-            "address": {
-              "adresse": [
-                "Skagen 4"
-              ],
-              "kommune": "STAVANGER",
-              "kommunenummer": "1103",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "4006",
-              "poststed": "STAVANGER"
-            },
-            "industry": {
-              "beskrivelse": "Detaljhandel med bredt vareutvalg med hovedvekt på nærings- og nytelsesmidler",
-              "kode": "47.110"
-            },
-            "employees": 8
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://7-eleven.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:38:54.788329Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://7-eleven.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.7-eleven.no/",
-        "final_url": "https://7-eleven.no/",
-        "registered_domain": "7-eleven.no",
-        "title": "7-Eleven - Hjem",
-        "description": "",
-        "main_text_excerpt": "",
-        "social_links": [],
-        "structured_organisations": [],
         "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
-        "extraction_state": "js_fallback_candidate",
-        "pages": [
-          {
-            "url": "https://7-eleven.no/",
-            "title": "7-Eleven - Hjem",
-            "main_text_excerpt": "",
-            "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454"
-          },
-          {
-            "url": "https://7-eleven.no/om-7-eleven/kontakt",
-            "title": "7-Eleven - Kontakt",
-            "main_text_excerpt": "Finn svar på ofte stilte spørsmål, eller ta kontakt med oss:\n \nVarslingskanal\nVarsling er å gi beskjed om ulovlige eller andre kritikkverdige forhold i virksomheten uten å benytte ordinære rapporteringskanaler. 7-Eleven oppfordrer alle til å varsle om forhold som kan true selskapets personell, drift, økonomi eller omdømme.\nDersom ansatte eller leverandører opplever kritikkverdige forhold i 7-Eleven, kan du gi oss beskjed gjennom varslingskanalen slik at vi får muligheten til å følge opp saken og rette opp.\nFor kunder: Dersom du har tilbakemeldinger angående kundeservice eller produkter, vennligst kontakt butikk eller bruk vårt kontaktskjema.",
-            "content_sha256": "71995b829eda9bce7c46ee65fa91499b930ebba3eeed10b4f228e01ad5612fde"
-          },
-          {
-            "url": "https://7-eleven.no/om-7-eleven/kontakt/spenn-faq",
-            "title": "7-Eleven - Spenn FAQ",
-            "main_text_excerpt": "Spenn er et fleksibelt poengsystem der du kan tjene, samle og bruke poeng på tvers av ulike merkevarer i Norden. Du kan bruke poengene dine både på små hverdagskjøp hos 7-Eleven og Narvesen eller på større opplevelser som hotell og flyreiser hos samarbeidspartnere.",
-            "content_sha256": "d30fe1c2c5edba30cf0a2b172d4c1cb9cdebd1fdc5aed6bd517d4519772b9278"
-          },
-          {
-            "url": "https://7-eleven.no/butikker",
-            "title": "7-Eleven - Butikker",
-            "main_text_excerpt": "No matches",
-            "content_sha256": "01ba71d44059e7d6b6892e938a109c041033bd9fb1dd035e2889567022c98101"
-          }
-        ],
         "crawl_errors": [
           {
-            "url": "https://7-eleven.no/om-7-eleven/kontakt/spørsmål-og-svar",
-            "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xf8' in position 27: ordinal not in range(128)"
+            "error": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xf8' in position 27: ordinal not in range(128)",
+            "url": "https://7-eleven.no/om-7-eleven/kontakt/spørsmål-og-svar"
           }
         ],
-        "identity_assessment": {
-          "status": "related_or_uncertain",
-          "score": 0.3,
-          "publishable": false,
-          "legal_name_tokens": [
-            "kioskdrift",
-            "waseem",
-            "sael"
-          ],
-          "matched_tokens": [],
-          "reasons": [
-            "registry-linked URL lacks strong exact-entity identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "",
         "discovered_social_links": [
           {
             "platform": "facebook",
@@ -2007,51 +1791,127 @@
             "url": "https://youtube.com/user/7ElevenNorge"
           }
         ],
+        "extraction_state": "js_fallback_candidate",
+        "final_url": "https://7-eleven.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "kioskdrift",
+            "waseem",
+            "sael"
+          ],
+          "matched_tokens": [],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "registry-linked URL lacks strong exact-entity identity evidence"
+          ],
+          "score": 0.3,
+          "status": "related_or_uncertain"
+        },
+        "main_text_excerpt": "",
+        "pages": [
+          {
+            "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
+            "main_text_excerpt": "",
+            "title": "7-Eleven - Hjem",
+            "url": "https://7-eleven.no/"
+          },
+          {
+            "content_sha256": "71995b829eda9bce7c46ee65fa91499b930ebba3eeed10b4f228e01ad5612fde",
+            "main_text_excerpt": "Finn svar på ofte stilte spørsmål, eller ta kontakt med oss:\n \nVarslingskanal\nVarsling er å gi beskjed om ulovlige eller andre kritikkverdige forhold i virksomheten uten å benytte ordinære rapporteringskanaler. 7-Eleven oppfordrer alle til å varsle om forhold som kan true selskapets personell, drift, økonomi eller omdømme.\nDersom ansatte eller leverandører opplever kritikkverdige forhold i 7-Eleven, kan du gi oss beskjed gjennom varslingskanalen slik at vi får muligheten til å følge opp saken og rette opp.\nFor kunder: Dersom du har tilbakemeldinger angående kundeservice eller produkter, vennligst kontakt butikk eller bruk vårt kontaktskjema.",
+            "title": "7-Eleven - Kontakt",
+            "url": "https://7-eleven.no/om-7-eleven/kontakt"
+          },
+          {
+            "content_sha256": "d30fe1c2c5edba30cf0a2b172d4c1cb9cdebd1fdc5aed6bd517d4519772b9278",
+            "main_text_excerpt": "Spenn er et fleksibelt poengsystem der du kan tjene, samle og bruke poeng på tvers av ulike merkevarer i Norden. Du kan bruke poengene dine både på små hverdagskjøp hos 7-Eleven og Narvesen eller på større opplevelser som hotell og flyreiser hos samarbeidspartnere.",
+            "title": "7-Eleven - Spenn FAQ",
+            "url": "https://7-eleven.no/om-7-eleven/kontakt/spenn-faq"
+          },
+          {
+            "content_sha256": "01ba71d44059e7d6b6892e938a109c041033bd9fb1dd035e2889567022c98101",
+            "main_text_excerpt": "No matches",
+            "title": "7-Eleven - Butikker",
+            "url": "https://7-eleven.no/butikker"
+          }
+        ],
+        "registered_domain": "7-eleven.no",
+        "requested_url": "https://www.7-eleven.no/",
         "social_link_assessments": [
           {
+            "identity_score": 0.3,
+            "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "facebook",
-            "url": "https://facebook.com/7ElevenNorge",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/7ElevenNorge"
           },
           {
+            "identity_score": 0.3,
+            "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "instagram",
-            "url": "https://instagram.com/7ElevenNorge",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://instagram.com/7ElevenNorge"
           },
           {
-            "platform": "youtube",
-            "url": "https://youtube.com/user/7ElevenNorge",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "youtube",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://youtube.com/user/7ElevenNorge"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "72c3fb24908bb8d6695bb4b86052ddbfe72e16c602578055e4240830b9507454",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [],
+        "structured_organisations": [],
+        "title": "7-Eleven - Hjem"
+      }
     },
     "external_observations": [
+      {
+        "id": "registry-workforce-aa6347b1f8ddbeb042abd6d2",
+        "organisation_number": "933189325",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+        "retrieved_at": "2026-09-29T10:06:12.862095Z",
+        "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "933189325",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 8",
+        "metrics": {
+          "workforce_value": 8,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-06-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-06-13",
+        "effective_at": "2026-06-13"
+      },
       {
         "id": "registry-contact-84dd74a65ba9af5a764c8e31",
         "organisation_number": "933189325",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2078,8 +1938,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2104,7 +1964,7 @@
         "organisation_number": "933189325",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933189325&size=1000",
-        "retrieved_at": "2026-09-29T10:06:20.289526Z",
+        "retrieved_at": "2026-10-05T08:38:48.597970Z",
         "content_sha256": "0b8fe0d698279bf7de7ebbd3fa6e0b082cd9d79720ca42cf96ddc67fbbb9b391",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2129,12 +1989,42 @@
         }
       },
       {
+        "id": "registry-update-7c2a703dde82de6e6c82ce2e",
+        "organisation_number": "933189325",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "content_sha256": "7c2a703dde82de6e6c82ce2e66959023f591ead87d2a5d33b70c96a652939589",
+        "observed_at": "2026-10-13",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "933189325",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-13: Endring",
+        "metrics": {
+          "date": "2026-10-13",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
         "id": "registry-update-78fce84d35004fed2177290c",
         "organisation_number": "933189325",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "78fce84d35004fed2177290c43d316d959ddec6100e2b6113be50b04339394e3",
         "observed_at": "2026-07-08",
         "exact_entity": true,
@@ -2164,7 +2054,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e9dcc99547e081b06e856dff28e0c24467b2b5ad342a309ea36416259829c2b4",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2194,7 +2084,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c9342ea725523a0dff6c924405cce25fe1f3229e967772de318bfbd65401574f",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -2224,7 +2114,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "eaef949613f6338852beea20a5f2f24041890ceb5c4184ecd3af25ce0fb5f8b2",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -2254,7 +2144,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "631c1cdbee7149929377c9aae071cfdd5fce897a583933ee8d732c4f0731389b",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2284,7 +2174,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "58676222e08dd1e8b1cf64e48fd2bb7046d1c8ef40e915d18f3d936fc23e0afc",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -2314,7 +2204,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c2682b2c5e0cfea6bf93829ac9ac392bd06ab7dfaf0b84bb08d574c82bdb3d82",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -2344,7 +2234,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2baa0d53c11265dd9df780bb1ad6be38eeb06fbad6cc101bfba9cf2752da2a8a",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -2374,7 +2264,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ea9e33667fbb8aec312c1227cb72b264c08866b602072ea461316b39667978a6",
         "observed_at": "2025-03-13",
         "exact_entity": true,
@@ -2404,7 +2294,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "69a25347dec8ed2f1d83801cc1874d5496512edc301abf403848ef1e9a069b59",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -2434,7 +2324,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "db52e00c83f64fc0c50378d2a92e2d85d313e791f9d1a1e671ec21e6e959bb1b",
         "observed_at": "2024-11-17",
         "exact_entity": true,
@@ -2464,7 +2354,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "09d04f12cd2efab25fadeb504491ff4c7399a5fb488547e90ee77859876b596e",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -2494,7 +2384,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "b45a014a4b26af573752bbca398ec3424acb4c3925b056a3dd69310f2cb6508c",
         "observed_at": "2024-08-13",
         "exact_entity": true,
@@ -2524,7 +2414,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "cf823a790e686d2415d07ec63d519004f24727b62fd376053cfa9ae2c2cfb3f9",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -2554,7 +2444,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "778c6df5549568ebbf39a00f88dc23cf82e1ed624056bb06f99c20017cf2237a",
         "observed_at": "2024-07-06",
         "exact_entity": true,
@@ -2584,7 +2474,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "b2beaecfb6fb0a4ec5fd0f147f2776edd73c1c519315b20c0009c0cf5dec8fe7",
         "observed_at": "2024-05-30",
         "exact_entity": true,
@@ -2614,7 +2504,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9aaa469c23a6b0d3faf74fecf7b54fede6a382559da8efcf96386ad5e39beb23",
         "observed_at": "2024-03-19",
         "exact_entity": true,
@@ -2724,211 +2614,8 @@
           "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000707305&amp;sokeverdi=933189325&amp;spraak=nb"
         },
         "evidence_span": "Manglende roller — 2025-08-20 (BRREG official announcement)"
-      },
-      {
-        "id": "registry-workforce-aa6347b1f8ddbeb042abd6d2",
-        "organisation_number": "933189325",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-09-29T10:06:12.862095Z",
-        "content_sha256": "4585aff1a6829f0233bd6e2b7bae5a43fdcda656da3e77546bc3bea1b6b3ee34",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "933189325",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 8",
-        "metrics": {
-          "workforce_value": 8,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-06-13"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-06-13",
-        "effective_at": "2026-06-13"
-      },
-      {
-        "id": "registry-update-7c2a703dde82de6e6c82ce2e",
-        "organisation_number": "933189325",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933189325",
-        "retrieved_at": "2026-10-28T04:19:27.620683Z",
-        "content_sha256": "7c2a703dde82de6e6c82ce2e66959023f591ead87d2a5d33b70c96a652939589",
-        "observed_at": "2026-10-13",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "933189325",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2026-10-13: Endring",
-        "metrics": {
-          "date": "2026-10-13",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "organisation_number": "933189325",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/933189325",
-        "retrieved_at": "2026-11-05T21:09:37.733122Z",
-        "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "933189325"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "KIOSKDRIFT WASEEM SAEL AS",
-            "matched_organisation_number": "933189325"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-        "id": "purehelp-email-933189325-f4971ab2f3784183",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "sjohuset.711no7114@7-eleven.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "933189325",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/933189325",
-        "retrieved_at": "2026-11-05T21:09:37.733122Z",
-        "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "933189325"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "KIOSKDRIFT WASEEM SAEL AS",
-            "matched_organisation_number": "933189325"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-        "id": "purehelp-phone-933189325-f4971ab2f3784183",
-        "signal_type": "contact_phone",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "phone": "51 59 58 22",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "933189325",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/933189325",
-        "retrieved_at": "2026-11-05T21:09:37.733122Z",
-        "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "933189325"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "KIOSKDRIFT WASEEM SAEL AS",
-            "matched_organisation_number": "933189325"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-        "id": "purehelp-profile-933189325-f4971ab2f3784183",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "47.110",
-          "nace_description": "Non-specialised retail sale of predominately food\\, beverages or tobacco",
-          "town": "STAVANGER",
-          "zipcode": "4006",
-          "municipality": "STAVANGER",
-          "municipality_number": "1103",
-          "county": "Rogaland",
-          "registration_date": "2024-03-19",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2024-03-19",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.7-eleven.no"
-        }
-      },
-      {
-        "organisation_number": "933189325",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/933189325",
-        "retrieved_at": "2026-11-05T21:09:37.733122Z",
-        "content_sha256": "22df240a8a965d75ea6dfffeeaefe86105684ae98ccfdaa160e69c9c44e69d7d",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "933189325"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "KIOSKDRIFT WASEEM SAEL AS",
-            "matched_organisation_number": "933189325"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-933189325.orgNumber=933189325;name=KIOSKDRIFT WASEEM SAEL AS",
-        "id": "purehelp-workforce-933189325-f4971ab2f3784183",
-        "signal_type": "workforce_snapshot",
-        "strategy": "purehelp_directory_workforce",
-        "metrics": {
-          "employees": 7,
-          "as_of": "2026-10-19",
-          "employees_source": "enhetsregisteret",
-          "interpretation": "Employee count published by the directory; no value is inferred."
-        }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:31.928514+00:00"
+  "generated_at": "2026-11-07T07:28:26.111672+00:00"
 }

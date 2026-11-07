@@ -29,6 +29,9 @@ COUNT="${COUNT:-1000}"
 SEED="${SEED:-20260823}"
 RUN_ID="${RUN_ID:-local-$(date -u +%Y%m%dT%H%M%SZ)}"
 WORKERS="${WORKERS:-8}"
+# The annual-report workforce stage downloads and OCRs a full annual report per
+# company. It is the run's longest stage, so its worker count is tunable.
+WORKFORCE_WORKERS="${WORKFORCE_WORKERS:-8}"
 MIN_AUDIT="${MIN_AUDIT:-300}"
 ENTRY_MANIFEST="${ENTRY_MANIFEST:-}"
 
@@ -100,6 +103,13 @@ run uv run python scripts/promote_registry_declared_sites.py \
   --report "$OUT/promote-report.json" \
   --index "$DOMAIN_INDEX"
 
+# The stages from here on read the profiles the external pipeline worked on.
+# The browser rescue inside that pipeline rewrites the website evidence of the
+# homepages it recovers, and the verifier re-derives identity from the frozen
+# profile: a stage that still read the pre-rescue file would verify every
+# recovered observation against a profile that no longer exists and drop it.
+PROFILES="$OUT/profiles-promoted.jsonl"
+
 say "5. external footprint: every keyless connector"
 run uv run python scripts/run_external_pipeline.py \
   --profiles "$OUT/profiles-promoted.jsonl" \
@@ -108,33 +118,42 @@ run uv run python scripts/run_external_pipeline.py \
   --jobs --reviews --keyless --nav --workforce --kunngjoring --google-news \
   --nav-index data/nav-job-index.jsonl \
   --wikidata-index data/wikidata-index.jsonl \
+  --workforce-workers "$WORKFORCE_WORKERS" \
   --minimum-audit "$MIN_AUDIT"
 
+if [[ -s "$OUT/batch-rescued-profiles.jsonl" ]]; then
+  PROFILES="$OUT/batch-rescued-profiles.jsonl"
+  echo "using browser-rescued profiles: $PROFILES"
+fi
+
 say "6. merge every connector output into one observation corpus"
+# proff.no cannot be re-verified and carries third-party financial figures;
+# google.com is excluded because the Places API needs a key and the Maps rows
+# were scraped against Google's Terms of Service.
 run uv run python scripts/merge_external_outputs.py \
   --inputs "$OUT"/batch.*.jsonl \
   --output "$OUT/external-merged.jsonl" \
   --report "$OUT/merge-report.json" \
-  --exclude-hosts proff.no \
+  --exclude-hosts proff.no google.com \
   --dedupe-latest
 
 say "7. purge wrong-company probes"
 run uv run python scripts/purge_wrong_company_probes.py \
   --observations "$OUT/external-merged.jsonl" \
-  --profiles "$OUT/profiles-promoted.jsonl" \
+  --profiles "$PROFILES" \
   --output "$OUT/external-merged.jsonl" \
   --report "$OUT/purge-report.json"
 
 say "8. re-verify every observation against frozen evidence"
 run uv run python scripts/verify_and_label_observations.py \
-  --profiles "$OUT/profiles-promoted.jsonl" \
+  --profiles "$PROFILES" \
   --observations "$OUT/external-merged.jsonl" \
   --labels "$OUT/labels.jsonl" \
   --report "$OUT/verify-report.json"
 
 say "9. evaluate the labeled corpus"
 run uv run python scripts/evaluate_external_footprint.py \
-  --profiles "$OUT/profiles-promoted.jsonl" \
+  --profiles "$PROFILES" \
   --observations "$OUT/external-merged.jsonl" \
   --labels "$OUT/labels.jsonl" \
   --output "$OUT/eval.json" \
@@ -142,7 +161,7 @@ run uv run python scripts/evaluate_external_footprint.py \
 
 say "10. emit the terminal contract envelopes"
 run uv run python scripts/emit_contract_envelope.py \
-  --profiles "$OUT/profiles-promoted.jsonl" \
+  --profiles "$PROFILES" \
   --envelopes "$OUT/envelopes.jsonl" \
   --observations "$OUT/external-merged.jsonl" \
   --labels "$OUT/labels.jsonl" \
@@ -166,7 +185,7 @@ run uv run python scripts/build_static_site.py \
 
 say "13. measure the recall proxy"
 run uv run python scripts/measure_recall.py \
-  --profiles "$OUT/profiles-promoted.jsonl" \
+  --profiles "$PROFILES" \
   --observations "$OUT/external-merged.jsonl" \
   --labels "$OUT/labels.jsonl" \
   --output "$OUT/measure.json" \

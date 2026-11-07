@@ -33,6 +33,42 @@ from norway_company_agent.source_rights import DEFAULT_EXCLUDED_HOSTS, excluded_
 # observed to die silently. Generous enough not to kill legitimate work.
 STAGE_TIMEOUT_S = int(os.environ.get("NORHOUND_STAGE_TIMEOUT_S", "3600"))
 
+# Stages whose real cost is far above the default budget get their own.
+#
+# `workforce_pdf` downloads and OCRs a full annual report for every company:
+# the 1,000-company run was killed by the default one-hour budget after 276
+# cached PDFs, and because the pipeline is fail-fast, stages 6-14 never ran.
+# `rescue` drives a headless browser over every unrecovered homepage.
+STAGE_TIMEOUTS_S = {
+    "rescue": 5400,
+    "workforce_pdf": 10800,
+}
+
+
+def stage_timeout(stage: str) -> int:
+    """The budget for one connector stage, overridable per stage by env var."""
+    default = STAGE_TIMEOUTS_S.get(stage, STAGE_TIMEOUT_S)
+    raw = os.environ.get(f"NORHOUND_{stage.upper()}_TIMEOUT_S")
+    if not raw:
+        return int(default)
+    try:
+        return int(raw)
+    except ValueError:
+        return int(default)
+
+
+def resolve_profiles_path(rescue_out: Path, profiles: str) -> str:
+    """The profiles every later stage must read.
+
+    The browser rescue rewrites the website evidence of the profiles it
+    recovers. The verifier re-derives identity from the frozen profile, so a
+    later stage that still read the pre-rescue file would verify every
+    recovered observation against a profile that no longer exists and drop it.
+    """
+    if rescue_out.exists() and rescue_out.stat().st_size > 0:
+        return str(rescue_out)
+    return profiles
+
 
 def sanitize_line_separators(text: str) -> str:
     return text.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
@@ -120,6 +156,11 @@ def main() -> None:
     parser.add_argument("--no-ats", dest="ats", action="store_false", help="Disable the public ATS connector (Teamtailor/Recruitee/Easycruit/Workday/Lever/Greenhouse/SmartRecruiters feeds, no key)")
     parser.add_argument("--ats", dest="ats", action="store_true", help="Deprecated no-op: the public ATS connector now runs by default")
     parser.set_defaults(ats=True)
+    parser.add_argument("--no-rescue", dest="rescue", action="store_false", help="Disable the headless-browser rescue of unreadable company homepages")
+    parser.add_argument("--rescue", dest="rescue", action="store_true", help="Deprecated no-op: the browser rescue now runs by default")
+    parser.set_defaults(rescue=True)
+    parser.add_argument("--rescue-workers", default="4", help="Concurrent browser contexts for the homepage rescue")
+    parser.add_argument("--rescue-timeout", default="45", help="Seconds per browser navigation in the homepage rescue")
     parser.add_argument("--no-nav", dest="nav", action="store_false", help="Disable the official NAV job feed connector")
     parser.add_argument("--nav", dest="nav", action="store_true", help="Deprecated no-op: NAV job feed now runs by default")
     parser.set_defaults(nav=True)
@@ -161,6 +202,28 @@ def main() -> None:
     eval_out = prefix.with_suffix(prefix.suffix + ".external-eval.json")
     # The list must exist before the first optional stage appends to it.
     observation_files = [activity_out, news_out, jobs_out]
+
+    # 0. Browser rescue. 167 of the shipped 1,000 companies had no usable page:
+    # 68 never produced one (source_error) and 99 were rendered by client-side
+    # JavaScript, so the static HTML was almost empty. A headless Chromium
+    # recovers a measurable share of them. It must run FIRST: every stage below
+    # reads the website evidence, so a rescue that ran later would recover text
+    # that nothing downstream ever sees.
+    #
+    # The output is named with a dash, not a dot, so the run script's
+    # `batch.*.jsonl` observation glob never mistakes a profile file for an
+    # observation file.
+    rescue_out = prefix.parent / f"{prefix.name}-rescued-profiles.jsonl"
+    if args.rescue:
+        run([
+            "python", str(SCRIPTS / "rescue_website_pages.py"),
+            "--profiles", args.profiles,
+            "--output", str(rescue_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".rescue-report.json")),
+            "--workers", str(args.rescue_workers),
+            "--timeout", str(args.rescue_timeout),
+        ], timeout=stage_timeout("rescue"))
+    args.profiles = resolve_profiles_path(rescue_out, args.profiles)
 
     run([
         "python", str(SCRIPTS / "extract_company_site_activity.py"),
@@ -247,7 +310,7 @@ def main() -> None:
             "--cache", str(prefix.with_suffix(prefix.suffix + ".workforce-cache")),
             "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-pdf-report.json")),
             "--workers", str(args.workforce_workers),
-        ])
+        ], timeout=stage_timeout("workforce_pdf"))
     gleif_out = prefix.with_suffix(prefix.suffix + ".gleif.jsonl")
     if args.gleif:
         run([

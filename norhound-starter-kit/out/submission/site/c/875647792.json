@@ -1,162 +1,265 @@
 {
   "profile": {
-    "organisation_number": "875647792",
-    "name": "NOTODDEN RØDE KORS",
-    "legal_form": "FLI",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "NOTODDEN",
-    "municipality_number": "4005",
-    "industry_code": "88.996",
-    "industry_label": "Andre sosialtjenester uten botilbud ellers",
-    "website": "www.rodekors.no/notodden",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:34.371924Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "875647792",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "875647792",
-          "navn": "NOTODDEN RØDE KORS",
-          "organisasjonsform.kode": "FLI",
-          "organisasjonsform.beskrivelse": "Forening/lag/innretning",
-          "naeringskode1.kode": "88.996",
-          "naeringskode1.beskrivelse": "Andre sosialtjenester uten botilbud ellers",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "FLI",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "23a99940d762eccdcc3c1c071f5c6c78001ad9985d8d01da9e947a2081b47770",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:07:25.713968Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2021",
+              "year": "2021"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2019",
+              "year": "2019"
+            }
+          ],
+          "years": [
+            "2019",
+            "2021",
+            "2023",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "845133f5ec21caf6a82d4fc1eafd31f64af15ae9f68c948137451bdf8d5d5f97",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:07:17.591343Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 381912.0,
+              "assets": 4287107.0,
+              "currency": "NOK",
+              "debt": 1063678.0,
+              "equity": 0.0,
+              "operating_result": 372310.0,
+              "period": {
+                "fraDato": "2021-01-01",
+                "tilDato": "2021-12-31"
+              },
+              "profit_before_tax": 381912.0,
+              "record_id": 3191161,
+              "revenue": 1985254.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 308628.0,
+              "assets": 3987113.0,
+              "currency": "NOK",
+              "debt": 362893.0,
+              "equity": 3624220.0,
+              "operating_result": 254520.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": 308628.0,
+              "record_id": 4622233,
+              "revenue": 2078970.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T09:07:27.196773Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/875647792",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "9f998c5b3e34d721eb824ab78fba29468d8cb80c0bd64d0cc8870838c8083ba8",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:07:27.935499Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
+        "status": "available",
+        "value": {
+          "locations": []
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "875647792",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Avdekke, hindre og lindre mennesklig nød og lidelse nasjonalt og internasjonalt.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.rodekors.no/notodden",
           "epostadresse": "rode.kors.notodden@nenett.no",
-          "telefon": "35 01 11 93",
-          "mobil": "913 16 944",
-          "postadresse.adresse": "Postboks 12",
-          "postadresse.poststed": "NOTODDEN",
-          "postadresse.postnummer": "3671",
-          "postadresse.kommune": "NOTODDEN",
-          "postadresse.kommunenummer": "4005",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Professor Tronstads gate 10",
-          "forretningsadresse.poststed": "NOTODDEN",
-          "forretningsadresse.postnummer": "3675",
           "forretningsadresse.kommune": "NOTODDEN",
           "forretningsadresse.kommunenummer": "4005",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "7000",
-          "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "1996-03-05",
-          "stiftelsesdato": "1945-05-03",
-          "registrertIMvaRegisteret": "false",
-          "registreringsdatoMerverdiavgiftsregisteret": "",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "forretningsadresse.postnummer": "3675",
+          "forretningsadresse.poststed": "NOTODDEN",
+          "fravalgRevisjonBeslutningsDato": "",
+          "fravalgRevisjonDato": "",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "true",
-          "registreringsdatoFrivillighetsregisteret": "2009-02-21",
-          "registrertIForetaksregisteret": "false",
-          "registreringsdatoForetaksregisteret": "",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.rodekors.no/notodden",
+          "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
+          "institusjonellSektorkode.kode": "7000",
+          "kapital.antallAksjer": "",
+          "kapital.belop": "",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "",
+          "kapital.type": "",
+          "kapital.valuta": "",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "913 16 944",
+          "naeringskode1.beskrivelse": "Andre sosialtjenester uten botilbud ellers",
+          "naeringskode1.kode": "88.996",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "NOTODDEN RØDE KORS",
+          "organisasjonsform.beskrivelse": "Forening/lag/innretning",
+          "organisasjonsform.kode": "FLI",
+          "organisasjonsnummer": "875647792",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "Postboks 12",
+          "postadresse.kommune": "NOTODDEN",
+          "postadresse.kommunenummer": "4005",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "3671",
+          "postadresse.poststed": "NOTODDEN",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "2009-02-21",
+          "registreringsdatoMerverdiavgiftsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "1996-03-05",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "false",
+          "registrertIFrivillighetsregisteret": "true",
+          "registrertIMvaRegisteret": "false",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "1945-05-03",
+          "telefon": "35 01 11 93",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "",
-          "vedtektsfestetFormaal": "",
-          "aktivitet": "Avdekke, hindre og lindre mennesklig nød og lidelse nasjonalt og internasjonalt.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "",
-          "fravalgRevisjonBeslutningsDato": "",
-          "erIKonsern": "false",
-          "kapital.belop": "",
-          "kapital.antallAksjer": "",
-          "kapital.type": "",
-          "kapital.bundet": "",
-          "kapital.valuta": "",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "875647792",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:34.371924Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "FLI",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "875647792",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "",
+          "vedtektsfestetFormaal": ""
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "71237a3a3a78fb783984998b098f8ec1806509e37311ac83a649f1c5de434d4c",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
+        "note": null,
         "retrieved_at": "2026-10-05T09:07:16.887041Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
+        "status": "available",
         "value": {
-          "organisation_number": "875647792",
-          "name": "NOTODDEN RØDE KORS",
-          "legal_form": "FLI",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.rodekors.no/notodden",
-          "industry": {
-            "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
-            "kode": "88.996"
-          },
           "business_address": {
             "adresse": [
               "Professor Tronstads gate 10"
@@ -168,6 +271,16 @@
             "postnummer": "3675",
             "poststed": "NOTODDEN"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
+            "kode": "88.996"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "FLI",
+          "liquidating": false,
+          "name": "NOTODDEN RØDE KORS",
+          "organisation_number": "875647792",
           "postal_address": {
             "adresse": [
               "Postboks 12"
@@ -179,317 +292,122 @@
             "postnummer": "3671",
             "poststed": "NOTODDEN"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "71237a3a3a78fb783984998b098f8ec1806509e37311ac83a649f1c5de434d4c",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
-        "retrieved_at": "2026-10-05T09:07:17.591343Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 3191161,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2021-01-01",
-                "tilDato": "2021-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 1985254.0,
-              "operating_result": 372310.0,
-              "profit_before_tax": 381912.0,
-              "annual_result": 381912.0,
-              "assets": 4287107.0,
-              "equity": 0.0,
-              "debt": 1063678.0
-            },
-            {
-              "record_id": 4622233,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 2078970.0,
-              "operating_result": 254520.0,
-              "profit_before_tax": 308628.0,
-              "annual_result": 308628.0,
-              "assets": 3987113.0,
-              "equity": 3624220.0,
-              "debt": 362893.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "845133f5ec21caf6a82d4fc1eafd31f64af15ae9f68c948137451bdf8d5d5f97",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-        "retrieved_at": "2026-10-05T09:07:25.713968Z",
-        "value": {
-          "years": [
-            "2019",
-            "2021",
-            "2023",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2025"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2023"
-            },
-            {
-              "year": "2021",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2021"
-            },
-            {
-              "year": "2019",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2019"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "23a99940d762eccdcc3c1c071f5c6c78001ad9985d8d01da9e947a2081b47770",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.rodekors.no/notodden"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "bb15bacc60eb96885cae31c4667b571338963c0253d485856b5d1aa011d75fbd",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T09:07:26.496631Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Anita Milekåsa Hagen",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Einar Steinmoen",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Elisabeth Giørtz Tønsberg",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Adrian Eliassen",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Rita Jonassen",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Espen Østvedt Skjellaug",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Borgny Elisabet Berglie",
               "organisation_number": null,
-              "role_code": "VARA",
               "role": "Varamedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "VARA"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-03-07",
               "name": "Eli Småkasin Natadal",
               "organisation_number": null,
-              "role_code": "VARA",
               "role": "Varamedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-03-07",
-              "inactive": false
+              "role_code": "VARA"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "bb15bacc60eb96885cae31c4667b571338963c0253d485856b5d1aa011d75fbd",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/875647792",
-        "retrieved_at": "2026-10-05T09:07:27.196773Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
-        "retrieved_at": "2026-10-05T09:07:27.935499Z",
-        "value": {
-          "locations": []
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "9f998c5b3e34d721eb824ab78fba29468d8cb80c0bd64d0cc8870838c8083ba8",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.rodekors.no/notodden",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T09:07:36.479695Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.rodekors.no/notodden",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.rodekors.no/notodden",
-          "final_url": "https://www.rodekors.no/notodden",
-          "registered_domain": "rodekors.no",
-          "title": "Notodden Røde Kors - Røde Kors",
-          "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
-          "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
-          "social_links": [
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
-            },
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
-            }
-          ],
-          "structured_organisations": [
-            {
-              "@type": "Organization",
-              "name": "Røde Kors",
-              "email": "post@redcross.no",
-              "logo": "https://www.rodekors.no/UI/logo.svg",
-              "telephone": "22 05 40 00"
-            },
-            {
-              "@type": "Organization",
-              "name": "Røde Kors",
-              "email": "post@redcross.no",
-              "logo": "https://www.rodekors.no/UI/logo.svg",
-              "telephone": "22 05 40 00"
-            }
-          ],
           "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-          "extraction_state": "static_complete",
-          "pages": [
-            {
-              "url": "https://www.rodekors.no/notodden",
-              "title": "Notodden Røde Kors - Røde Kors",
-              "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
-              "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191"
-            },
-            {
-              "url": "https://www.rodekors.no/kontakt/",
-              "title": "Kontaktinformasjon - Røde Kors",
-              "main_text_excerpt": "Kontakt oss\nHer finner du kontaktinformasjon til Norges Røde Kors.\nSentralbord: (+47) 22 05 40 00\n- Åpent kl. 08 – 14.45 (alle ukedager)\n- Ring 113 – ved fare for liv og helse\n- E-post: post@redcross.no \nUnngå personsensitive opplysninger\nPostadresse: Pb. 1, Grønland 0133 Oslo\nHva kan vi hjelpe deg med?\nNasjonalkontoret i Oslo\nDu finner oss i Røde Kors-huset sentralt i Oslo sentrum. I samme bygg finner du også vårt kurs- og konferansesenter.\n- Besøksadresse: Hausmanns gate 7, 0186 Oslo\n- Åpningstider resepsjon: kl. 08:00 - 16:00 (alle ukedager)\nSkal du gi blod? Blodbanken har flyttet til Stortingsgata 10.\nNorges Røde Kors: 864 139 442 (org.nummer / VAT-nummer)\nInnkjøp og anskaffelser\nRøde Kors bruker innkjøpsplattformen Marcell til alle større innkjøp og anskaffelser. Her kan du se alle pågående anbud.\nVarsle om kritikkverdige forhold\nI Røde Kors har vi nulltoleranse for korrupsjon, misbruk, mobbing og trakassering. Her kan du varsle oss om kritikkverdige forhold.\nAndre tjenester:\n- Mitt Røde Kors (innlogging)\n- Korsveien (innlogging)\n- Røde Kors-sentrene\n- Kors på halsen Gratis og anonymt samtaletilbud for deg under 18 år\n- Røde Kors-telefonen Samtaletilbud om negativ sosial kontroll og æresrelatert vold",
-              "content_sha256": "8c0a2d90ee3c48f2f6873b36513e279bf1f4942fcf28c58b75c9f89029f62b8d"
-            },
-            {
-              "url": "https://www.rodekors.no/kontakt/varsling/",
-              "title": "Varsle om kritikkverdige forhold i Røde Kors - Røde Kors",
-              "main_text_excerpt": "Varsle om kritikkverdige forhold i Røde Kors\nRøde Kors er en humanitær organisasjon med nulltoleranse for korrupsjon, misbruk, mobbing og trakassering.\nRøde Kors oppfordrer alle til å rapportere mistanker om uetisk eller ulovlig atferd.\nDet tillates ikke sanksjoner eller represalier mot dem som rapporterer slike mistanker. Det er viktig at ulovlige eller uetiske forhold avdekkes raskt. Røde Kors har egne kanaler og rutiner for varsling av slike forhold.\nVarsling er en måte å rapportere atferd som kan være uetisk, ulovlig, ressurssløsende eller som er i strid med Røde Kors' regelverk.\nReporting miscondut: English pages\nSlik varsler du om donasjon eller e-post-svindel\nHvis du har mistanker om eller bekymringer angående falske appeller/e-post om donasjon mottatt fra Røde Kors, meld fra her!\nDersom du opplever eller er vitne til annen type misbruk; falske innsamlinger, misbruk av Røde Kors logo kan dette også meldes fra om her!\nKorrupsjon\nRøde Kors har nulltoleranse for korrupsjon. Les Bestemmelser mot korrupsjon.pdf\nFull konfidensialitet\nAlle forhold som blir varslet vil bli behandlet konfidensielt. Den som varsler har rett til å være anonym. Identiteten til varsleren vil bli holdt konfidensielt. Det vil imidlertid gjøre vår undersøkelse og utredning av forholdene enklere hvis vedkommende oppgir navn og kontaktinformasjon.",
-              "content_sha256": "fe16f2a712702815ab41383350596a749b9fb213f897a64e54895ea74198b8c8"
-            },
-            {
-              "url": "https://www.rodekors.no/om/presse/",
-              "title": "Presse  - Røde Kors",
-              "main_text_excerpt": "Presse\nAlle pressehenvendelser til Røde Kors registreres i våre interne systemer. Vi behandler alle personopplysninger i tråd med personopplysningsloven.\nPressetelefon (ikke SMS): +47 94 87 29 99\nE-post: pressevakt@redcross.no\nPressevakt besvarer kun henvendelser fra media. For andre henvendelser, bruk: post@redcross.no.",
-              "content_sha256": "626bd291a8e344bf0c34f9ded9868900eb2d51985433495acdcf940c90f1bc84"
-            }
-          ],
           "crawl_errors": [],
-          "identity_assessment": {
-            "status": "exact",
-            "score": 0.95,
-            "publishable": true,
-            "legal_name_tokens": [
-              "notodden",
-              "rode",
-              "kors"
-            ],
-            "matched_tokens": [
-              "kors",
-              "notodden",
-              "rode"
-            ],
-            "reasons": [
-              "all normalized legal-name tokens appear together in homepage identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
           "discovered_social_links": [
             {
               "platform": "facebook",
@@ -520,104 +438,288 @@
               "url": "https://youtube.com/user/rodekorsnorge"
             }
           ],
+          "extraction_state": "static_complete",
+          "final_url": "https://www.rodekors.no/notodden",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "notodden",
+              "rode",
+              "kors"
+            ],
+            "matched_tokens": [
+              "kors",
+              "notodden",
+              "rode"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
+            "reasons": [
+              "all normalized legal-name tokens appear together in homepage identity evidence"
+            ],
+            "score": 0.95,
+            "status": "exact"
+          },
+          "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
+          "pages": [
+            {
+              "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+              "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
+              "title": "Notodden Røde Kors - Røde Kors",
+              "url": "https://www.rodekors.no/notodden"
+            },
+            {
+              "content_sha256": "8c0a2d90ee3c48f2f6873b36513e279bf1f4942fcf28c58b75c9f89029f62b8d",
+              "main_text_excerpt": "Kontakt oss\nHer finner du kontaktinformasjon til Norges Røde Kors.\nSentralbord: (+47) 22 05 40 00\n- Åpent kl. 08 – 14.45 (alle ukedager)\n- Ring 113 – ved fare for liv og helse\n- E-post: post@redcross.no \nUnngå personsensitive opplysninger\nPostadresse: Pb. 1, Grønland 0133 Oslo\nHva kan vi hjelpe deg med?\nNasjonalkontoret i Oslo\nDu finner oss i Røde Kors-huset sentralt i Oslo sentrum. I samme bygg finner du også vårt kurs- og konferansesenter.\n- Besøksadresse: Hausmanns gate 7, 0186 Oslo\n- Åpningstider resepsjon: kl. 08:00 - 16:00 (alle ukedager)\nSkal du gi blod? Blodbanken har flyttet til Stortingsgata 10.\nNorges Røde Kors: 864 139 442 (org.nummer / VAT-nummer)\nInnkjøp og anskaffelser\nRøde Kors bruker innkjøpsplattformen Marcell til alle større innkjøp og anskaffelser. Her kan du se alle pågående anbud.\nVarsle om kritikkverdige forhold\nI Røde Kors har vi nulltoleranse for korrupsjon, misbruk, mobbing og trakassering. Her kan du varsle oss om kritikkverdige forhold.\nAndre tjenester:\n- Mitt Røde Kors (innlogging)\n- Korsveien (innlogging)\n- Røde Kors-sentrene\n- Kors på halsen Gratis og anonymt samtaletilbud for deg under 18 år\n- Røde Kors-telefonen Samtaletilbud om negativ sosial kontroll og æresrelatert vold",
+              "title": "Kontaktinformasjon - Røde Kors",
+              "url": "https://www.rodekors.no/kontakt/"
+            },
+            {
+              "content_sha256": "fe16f2a712702815ab41383350596a749b9fb213f897a64e54895ea74198b8c8",
+              "main_text_excerpt": "Varsle om kritikkverdige forhold i Røde Kors\nRøde Kors er en humanitær organisasjon med nulltoleranse for korrupsjon, misbruk, mobbing og trakassering.\nRøde Kors oppfordrer alle til å rapportere mistanker om uetisk eller ulovlig atferd.\nDet tillates ikke sanksjoner eller represalier mot dem som rapporterer slike mistanker. Det er viktig at ulovlige eller uetiske forhold avdekkes raskt. Røde Kors har egne kanaler og rutiner for varsling av slike forhold.\nVarsling er en måte å rapportere atferd som kan være uetisk, ulovlig, ressurssløsende eller som er i strid med Røde Kors' regelverk.\nReporting miscondut: English pages\nSlik varsler du om donasjon eller e-post-svindel\nHvis du har mistanker om eller bekymringer angående falske appeller/e-post om donasjon mottatt fra Røde Kors, meld fra her!\nDersom du opplever eller er vitne til annen type misbruk; falske innsamlinger, misbruk av Røde Kors logo kan dette også meldes fra om her!\nKorrupsjon\nRøde Kors har nulltoleranse for korrupsjon. Les Bestemmelser mot korrupsjon.pdf\nFull konfidensialitet\nAlle forhold som blir varslet vil bli behandlet konfidensielt. Den som varsler har rett til å være anonym. Identiteten til varsleren vil bli holdt konfidensielt. Det vil imidlertid gjøre vår undersøkelse og utredning av forholdene enklere hvis vedkommende oppgir navn og kontaktinformasjon.",
+              "title": "Varsle om kritikkverdige forhold i Røde Kors - Røde Kors",
+              "url": "https://www.rodekors.no/kontakt/varsling/"
+            },
+            {
+              "content_sha256": "626bd291a8e344bf0c34f9ded9868900eb2d51985433495acdcf940c90f1bc84",
+              "main_text_excerpt": "Presse\nAlle pressehenvendelser til Røde Kors registreres i våre interne systemer. Vi behandler alle personopplysninger i tråd med personopplysningsloven.\nPressetelefon (ikke SMS): +47 94 87 29 99\nE-post: pressevakt@redcross.no\nPressevakt besvarer kun henvendelser fra media. For andre henvendelser, bruk: post@redcross.no.",
+              "title": "Presse  - Røde Kors",
+              "url": "https://www.rodekors.no/om/presse/"
+            }
+          ],
+          "registered_domain": "rodekors.no",
+          "requested_url": "https://www.rodekors.no/notodden",
           "social_link_assessments": [
             {
-              "platform": "facebook",
-              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
               "identity_score": 0.98,
-              "publishable": true,
               "matched_tokens": [
                 "notodden",
                 "rode",
                 "kors"
               ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": true,
               "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
             },
             {
-              "platform": "facebook",
-              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494",
               "identity_score": 0.98,
-              "publishable": true,
               "matched_tokens": [
                 "notodden",
                 "rode",
                 "kors"
               ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": true,
               "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
             },
             {
-              "platform": "facebook",
-              "url": "https://facebook.com/rodekors",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [
                 "rode",
                 "kors"
               ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/rodekors"
             },
             {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "rode",
+                "kors"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "instagram",
-              "url": "https://instagram.com/rodekorsnorge",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [
-                "rode",
-                "kors"
-              ],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://instagram.com/rodekorsnorge"
             },
             {
-              "platform": "linkedin",
-              "url": "https://linkedin.com/company/715852",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "linkedin",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://linkedin.com/company/715852"
             },
             {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "rode",
+                "kors"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "x",
-              "url": "https://x.com/rodekorsnorge",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [
-                "rode",
-                "kors"
-              ],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://x.com/rodekorsnorge"
             },
             {
-              "platform": "youtube",
-              "url": "https://youtube.com/user/rodekorsnorge",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [
                 "rode",
                 "kors"
               ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "youtube",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://youtube.com/user/rodekorsnorge"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [
+            {
+              "platform": "facebook",
+              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
+            },
+            {
+              "platform": "facebook",
+              "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
+            }
+          ],
+          "structured_organisations": [
+            {
+              "@type": "Organization",
+              "email": "post@redcross.no",
+              "logo": "https://www.rodekors.no/UI/logo.svg",
+              "name": "Røde Kors",
+              "telephone": "22 05 40 00"
+            },
+            {
+              "@type": "Organization",
+              "email": "post@redcross.no",
+              "logo": "https://www.rodekors.no/UI/logo.svg",
+              "name": "Røde Kors",
+              "telephone": "22 05 40 00"
+            }
+          ],
+          "title": "Notodden Røde Kors - Røde Kors"
+        }
       },
       "external_observations": [
         {
           "organisation_number": "875647792",
-          "platform": "company_site",
+          "platform": "facebook",
           "source_url": "https://www.rodekors.no/notodden",
           "retrieved_at": "2026-09-29T10:34:07.076363Z",
+          "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "company_site_url": "https://www.rodekors.no/notodden",
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "notodden",
+                "rode",
+                "kors"
+              ],
+              "name_token_gate": true,
+              "method": "linked_from_verified_site_v1"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "site_linked_social_handle",
+          "id": "site-social-875647792-facebook-3623f33efe4401f4",
+          "signal_type": "profile_handle",
+          "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.rodekors.no/notodden.",
+          "metrics": {
+            "platform": "facebook",
+            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
+            "identity_score": 0.98
+          }
+        },
+        {
+          "organisation_number": "875647792",
+          "platform": "company_site",
+          "source_url": "https://www.rodekors.no/om/presse/generalsekretar/",
+          "retrieved_at": "2026-10-06T15:23:56.167790Z",
+          "content_sha256": "fe977b859224446bec38805ef686611e34851bc4cbc948745f3328c67bfab86b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_article_date",
+          "id": "site-article-news-875647792-88b0b4409c3c229b",
+          "signal_type": "public_post",
+          "evidence_span": "Generalsekretær",
+          "metrics": {
+            "published_at": "2017-03-01T00:00:00Z",
+            "date_source": "jsonld_or_meta",
+            "body_excerpt": ""
+          }
+        },
+        {
+          "organisation_number": "875647792",
+          "platform": "company_site",
+          "source_url": "https://www.rodekors.no/notodden",
+          "retrieved_at": "2026-10-05T09:07:36.479695Z",
+          "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-5358ab29fff30de5d75531f1",
+          "signal_type": "website_description",
+          "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "875647792",
+          "platform": "company_site",
+          "source_url": "https://www.rodekors.no/notodden",
+          "retrieved_at": "2026-10-05T09:07:36.479695Z",
+          "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-brand-9c126b35402ad7f50efb93f8",
+          "signal_type": "public_brand",
+          "evidence_span": "Røde Kors",
+          "metrics": {
+            "declared_url": null,
+            "interpretation": "Brand name from the site's own JSON-LD."
+          }
+        },
+        {
+          "organisation_number": "875647792",
+          "platform": "company_site",
+          "source_url": "https://www.rodekors.no/notodden",
+          "retrieved_at": "2026-10-05T09:07:36.479695Z",
           "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
           "exact_entity": true,
           "identity_proof": [
@@ -646,7 +748,7 @@
           "organisation_number": "875647792",
           "platform": "facebook",
           "source_url": "https://www.rodekors.no/notodden",
-          "retrieved_at": "2026-09-29T10:34:07.076363Z",
+          "retrieved_at": "2026-10-05T09:07:36.479695Z",
           "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
           "exact_entity": true,
           "identity_proof": [
@@ -674,8 +776,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -702,8 +804,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -730,8 +832,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -753,63 +855,12 @@
           "strategy": "registry_contact_exact"
         },
         {
-          "organisation_number": "875647792",
-          "platform": "company_site",
-          "source_url": "https://www.rodekors.no/notodden",
-          "retrieved_at": "2026-09-29T10:34:07.076363Z",
-          "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-5358ab29fff30de5d75531f1",
-          "signal_type": "website_description",
-          "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "company_site",
-          "source_url": "https://www.rodekors.no/notodden",
-          "retrieved_at": "2026-09-29T10:34:07.076363Z",
-          "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-brand-9c126b35402ad7f50efb93f8",
-          "signal_type": "public_brand",
-          "evidence_span": "Røde Kors",
-          "metrics": {
-            "declared_url": null,
-            "interpretation": "Brand name from the site's own JSON-LD."
-          }
-        },
-        {
           "id": "registry-update-c2d408f0736e9186b315450c",
           "organisation_number": "875647792",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c2d408f0736e9186b315450c3adcf52476ff3cc25862f35257a854fc7f939116",
           "observed_at": "2026-03-24",
           "exact_entity": true,
@@ -839,7 +890,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9c193f8d5a1a5356893d55f3d4f35a314c4989aabcd3b0f556db74fcace899ba",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -869,7 +920,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "d174fcaec8cf8833eb2245d05b76709ff4f297624e86915af209124d5727e118",
           "observed_at": "2024-03-19",
           "exact_entity": true,
@@ -899,7 +950,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "cc1fd5198a88cdec9b3f8fea3da50baa0825a660c0f16d184603f8d3b09524ba",
           "observed_at": "2024-01-13",
           "exact_entity": true,
@@ -929,7 +980,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "b86c8394e171fb1880f08a5fe740519607af05bcf3f5a3291e09079136017c41",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -959,7 +1010,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "7f6b8b3368425e773659caea1117bf18b5fc5d4db2f0f81a590bc43f82beccaa",
           "observed_at": "2023-03-21",
           "exact_entity": true,
@@ -989,7 +1040,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "5bdfef7e1c6ece15d639eb53524f84d3d6b69f6191682d311eb142c722e2b1fa",
           "observed_at": "2023-03-15",
           "exact_entity": true,
@@ -1019,7 +1070,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "16e7e09ceeffbf50bf012306408ccd23dfef73b8746026578329de37283a7d74",
           "observed_at": "2023-02-28",
           "exact_entity": true,
@@ -1049,7 +1100,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ecd1de9fcf6fa1730385d91beca3461f0843f05d30cd9b5dc7ca2cbe14a0b076",
           "observed_at": "2023-01-11",
           "exact_entity": true,
@@ -1079,7 +1130,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e303d5bb49c9fd01737ef95f0a6ba5830a0d92cb3b20732891d9f7580a9737b0",
           "observed_at": "2022-12-14",
           "exact_entity": true,
@@ -1109,7 +1160,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ca86f0ddf19609fd8103d5b5eae57729527763a5a58f91366d5620fd59dce100",
           "observed_at": "2022-11-12",
           "exact_entity": true,
@@ -1139,7 +1190,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "601f82e98fcd2b8f9f826086faa5fe45dddc5e59929665afaece5d806c6957be",
           "observed_at": "2022-10-12",
           "exact_entity": true,
@@ -1169,7 +1220,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "3ae74626a8d6db325e43f2a2523b2db46f92d7ab2c59d76dca1521009b07028a",
           "observed_at": "2022-09-22",
           "exact_entity": true,
@@ -1199,7 +1250,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "a9d6f2acd8e344689a8d6535608876530bb53872565214d0604b4223b48b5869",
           "observed_at": "2022-06-11",
           "exact_entity": true,
@@ -1229,7 +1280,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2ece53b13f057bf9d1d9ec9afca00efdbd4d2aeac5738a8140460b076ea75e13",
           "observed_at": "2022-05-25",
           "exact_entity": true,
@@ -1259,7 +1310,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "0c704a803f2469146566b3384cb6dbd421620eb8474f53d3706450333a3aba77",
           "observed_at": "2020-03-23",
           "exact_entity": true,
@@ -1289,7 +1340,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9269ba067af5994e4043f201a36ac241e932a4f319d38ba1c6b8940dd6f8f334",
           "observed_at": "2020-01-01",
           "exact_entity": true,
@@ -1319,7 +1370,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ecedf185158ef315593c7baf2cf47e5661f9b58ec50d2982a53c347a57581fc0",
           "observed_at": "2019-12-31",
           "exact_entity": true,
@@ -1349,7 +1400,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "58bed6c63e31765f5d22034f1de4090328437f012770ff56059e380fdb50de92",
           "observed_at": "2019-06-11",
           "exact_entity": true,
@@ -1461,576 +1512,48 @@
           "evidence_span": "Godkjente årsregnskap — 2022-06-11 (BRREG official announcement)"
         },
         {
+          "id": "registry-site-875647792-fe641ac434e3adb0",
           "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-06T15:53:42.970367Z",
-          "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-875647792-0861c0c44c4ea2c7",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Exelent",
-          "observed_at": "2015-05-05T09:21:21.939Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 0,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-06T15:53:42.970367Z",
-          "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-875647792-1222a6cbb0006d0d",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Hvem liker ikke frivillighet?",
-          "observed_at": "2019-08-27T20:12:15.582772Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 1,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-06T15:53:42.970367Z",
-          "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-875647792-34455e297215e722",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Helt topp ungdoms ordningen",
-          "observed_at": "2017-12-07T16:34:31.158Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 2,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-06T15:53:42.970367Z",
-          "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-875647792-6c7815b980ee5a03",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "جيد جدا",
-          "observed_at": "2019-05-16T11:14:50.930593Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 3,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-06T15:53:42.970367Z",
-          "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-875647792-5dc15a3f5c391f18",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Nays",
-          "observed_at": "2024-08-09T22:30:26.387032Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 4,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "facebook",
+          "platform": "company_site",
+          "signal_type": "website_description",
           "source_url": "https://www.rodekors.no/notodden",
           "retrieved_at": "2026-09-29T10:34:07.076363Z",
           "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://www.rodekors.no/notodden",
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "notodden",
-                "rode",
-                "kors"
-              ],
-              "name_token_gate": true,
-              "method": "linked_from_verified_site_v1"
+              "type": "registry_declared_website_domain_match",
+              "value": "rodekors.no",
+              "matched_organisation_number": "875647792",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares rodekors.no as the website of organisation 875647792; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "strategy": "site_linked_social_handle",
-          "id": "site-social-875647792-facebook-3623f33efe4401f4",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.rodekors.no/notodden.",
+          "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
           "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
-            "identity_score": 0.98
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "company_site",
-          "source_url": "https://www.rodekors.no/om/presse/generalsekretar/",
-          "retrieved_at": "2026-10-06T15:23:56.167790Z",
-          "content_sha256": "fe977b859224446bec38805ef686611e34851bc4cbc948745f3328c67bfab86b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_article_date",
-          "id": "site-article-news-875647792-88b0b4409c3c229b",
-          "signal_type": "public_post",
-          "evidence_span": "Generalsekretær",
-          "metrics": {
-            "published_at": "2017-03-01T00:00:00Z",
-            "date_source": "jsonld_or_meta",
-            "body_excerpt": ""
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-31T18:19:53.197182Z",
-          "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-875647792-401e5fe40bc3f1a9",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Notodden Red Cross Google profile: rating 5/5, 10 ratings.",
-          "metrics": {
-            "rating": 5,
-            "review_count": 10,
-            "scale": 5,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-31T18:19:53.197182Z",
-          "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-summary-875647792-401e5fe40bc3f1a9",
-          "signal_type": "review_summary",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Notodden Red Cross is rated 5/5 from 10 Google reviews.",
-          "metrics": {
-            "rating": 5,
-            "review_count": 10,
-            "scale": 5,
-            "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "retrieved_at": "2026-10-31T18:19:53.197182Z",
-          "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "rodekors.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-sentiment-875647792-401e5fe40bc3f1a9",
-          "signal_type": "sentiment",
-          "strategy": "customer_review_sentiment",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "evidence_span": "Aggregate rating 5/5 from 10 reviews implies positive sentiment.",
-          "metrics": {
-            "rating": 5,
-            "review_count": 10,
-            "scale": 5
-          }
-        },
-        {
-          "id": "ar-page1-875647792-annual_report_approval_date-2bec19c9dabf5290",
-          "organisation_number": "875647792",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-          "retrieved_at": "2026-11-05T16:11:27.903186Z",
-          "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "875647792"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "875647792"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 24.02.2026",
-          "metrics": {
-            "approval_date": "24.02.2026",
-            "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-            "ocr_chars": 1306
+            "title": "Notodden Røde Kors - Røde Kors",
+            "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
+            "registry_domain": "rodekors.no"
           },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-875647792-annual_report_auditor-2bec19c9dabf5290",
-          "organisation_number": "875647792",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-          "retrieved_at": "2026-11-05T16:11:27.903186Z",
-          "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "875647792"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "875647792"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Anita Milekåsa hagen",
-          "metrics": {
-            "auditor": "Anita Milekåsa hagen",
-            "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-            "ocr_chars": 1306
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-875647792-annual_report_business_address-2bec19c9dabf5290",
-          "organisation_number": "875647792",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-          "retrieved_at": "2026-11-05T16:11:27.903186Z",
-          "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "875647792"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "875647792"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Professor Tronstads gate 10",
-          "metrics": {
-            "business_address": "Professor Tronstads gate 10",
-            "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-            "ocr_chars": 1306
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-875647792-annual_report_signing_officer-2bec19c9dabf5290",
-          "organisation_number": "875647792",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-          "retrieved_at": "2026-11-05T16:11:27.903186Z",
-          "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "875647792"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "875647792"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-            "ocr_chars": 1306
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-875647792-annual_report_org_number-2bec19c9dabf5290",
-          "organisation_number": "875647792",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-          "retrieved_at": "2026-11-05T16:11:27.903186Z",
-          "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "875647792"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "875647792"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 875 647 792",
-          "metrics": {
-            "org_number": "875647792",
-            "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-            "ocr_chars": 1306
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/875647792",
-          "retrieved_at": "2026-11-05T21:11:44.130044Z",
-          "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "875647792"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NOTODDEN RØDE KORS",
-              "matched_organisation_number": "875647792"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-          "id": "purehelp-email-875647792-85dedc6332337d21",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "rode.kors.notodden@nenett.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/875647792",
-          "retrieved_at": "2026-11-05T21:11:44.130044Z",
-          "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "875647792"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NOTODDEN RØDE KORS",
-              "matched_organisation_number": "875647792"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-          "id": "purehelp-phone-875647792-85dedc6332337d21",
-          "signal_type": "contact_phone",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "phone": "35 01 11 93",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "875647792",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/875647792",
-          "retrieved_at": "2026-11-05T21:11:44.130044Z",
-          "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "875647792"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NOTODDEN RØDE KORS",
-              "matched_organisation_number": "875647792"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-          "id": "purehelp-profile-875647792-85dedc6332337d21",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "FLI",
-            "legal_form_description": "Association/club/organisation",
-            "nace_code": "88.996",
-            "nace_description": "Other unspesified social services without accommodation",
-            "town": "NOTODDEN",
-            "zipcode": "3675",
-            "municipality": "NOTODDEN",
-            "municipality_number": "4005",
-            "county": "Telemark",
-            "registration_date": "1996-03-05",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "1996-03-05",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.rodekors.no/notodden"
-          }
+          "strategy": "registry_declared_website_description"
         }
       ]
     },
+    "industry_code": "88.996",
+    "industry_label": "Andre sosialtjenester uten botilbud ellers",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "FLI",
+    "liquidating": false,
+    "municipality": "NOTODDEN",
+    "municipality_number": "4005",
+    "name": "NOTODDEN RØDE KORS",
+    "organisation_number": "875647792",
     "run_metrics": {
-      "requests": 14,
       "bytes": 117624,
       "latencies_ms": [
         702,
@@ -2043,15 +1566,17 @@
         932,
         815,
         830
-      ]
-    }
+      ],
+      "requests": 14
+    },
+    "website": "www.rodekors.no/notodden"
   },
   "summary": {
     "organisation_number": "875647792",
     "company_name": "NOTODDEN RØDE KORS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "NOTODDEN RØDE KORS operates in Andre sosialtjenester uten botilbud ellers. Latest accounts (2025): revenue NOK 2.0m, annual result NOK 381.9k. Annual accounts available for 2019-2025 (4 years). Detailed records only available as PDFs. Revenue stable (-4.5% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "NOTODDEN RØDE KORS operates in Andre sosialtjenester uten botilbud ellers. Latest accounts (2025): revenue NOK 2.0m, annual result NOK 381.9k. Annual accounts available for 2019-2025 (4 years). Detailed records only available as PDFs. Revenue stable (-4.5% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2066,14 +1591,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
+          "https://www.rodekors.no/notodden"
         ]
       },
       {
@@ -2089,14 +1608,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
+          "https://www.rodekors.no/notodden"
         ]
       },
       {
@@ -2112,14 +1625,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
+          "https://www.rodekors.no/notodden"
         ]
       },
       {
@@ -2135,14 +1642,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
+          "https://www.rodekors.no/notodden"
         ]
       },
       {
@@ -2163,26 +1664,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/875647792/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -2197,14 +1683,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-          "https://purehelp.no/company/NO/875647792",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20220000306012&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000305736&amp;sokeverdi=875647792&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000138045&amp;sokeverdi=875647792&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-          "https://www.rodekors.no/notodden",
-          "https://www.rodekors.no/om/presse/generalsekretar/"
+          "https://www.rodekors.no/notodden"
         ]
       }
     ],
@@ -2213,154 +1693,272 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:34.371924Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "875647792",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "875647792",
-        "navn": "NOTODDEN RØDE KORS",
-        "organisasjonsform.kode": "FLI",
-        "organisasjonsform.beskrivelse": "Forening/lag/innretning",
-        "naeringskode1.kode": "88.996",
-        "naeringskode1.beskrivelse": "Andre sosialtjenester uten botilbud ellers",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "FLI",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "23a99940d762eccdcc3c1c071f5c6c78001ad9985d8d01da9e947a2081b47770",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:07:25.713968Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2021",
+            "year": "2021"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2019",
+            "year": "2019"
+          }
+        ],
+        "years": [
+          "2019",
+          "2021",
+          "2023",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "845133f5ec21caf6a82d4fc1eafd31f64af15ae9f68c948137451bdf8d5d5f97",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:07:17.591343Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 381912.0,
+            "assets": 4287107.0,
+            "currency": "NOK",
+            "debt": 1063678.0,
+            "equity": 0.0,
+            "operating_result": 372310.0,
+            "period": {
+              "fraDato": "2021-01-01",
+              "tilDato": "2021-12-31"
+            },
+            "profit_before_tax": 381912.0,
+            "record_id": 3191161,
+            "revenue": 1985254.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 308628.0,
+            "assets": 3987113.0,
+            "currency": "NOK",
+            "debt": 362893.0,
+            "equity": 3624220.0,
+            "operating_result": 254520.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": 308628.0,
+            "record_id": 4622233,
+            "revenue": 2078970.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T09:07:27.196773Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/875647792",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "9f998c5b3e34d721eb824ab78fba29468d8cb80c0bd64d0cc8870838c8083ba8",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:07:27.935499Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
+      "status": "available",
+      "value": {
+        "locations": []
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "875647792",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Avdekke, hindre og lindre mennesklig nød og lidelse nasjonalt og internasjonalt.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.rodekors.no/notodden",
         "epostadresse": "rode.kors.notodden@nenett.no",
-        "telefon": "35 01 11 93",
-        "mobil": "913 16 944",
-        "postadresse.adresse": "Postboks 12",
-        "postadresse.poststed": "NOTODDEN",
-        "postadresse.postnummer": "3671",
-        "postadresse.kommune": "NOTODDEN",
-        "postadresse.kommunenummer": "4005",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Professor Tronstads gate 10",
-        "forretningsadresse.poststed": "NOTODDEN",
-        "forretningsadresse.postnummer": "3675",
         "forretningsadresse.kommune": "NOTODDEN",
         "forretningsadresse.kommunenummer": "4005",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "7000",
-        "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "1996-03-05",
-        "stiftelsesdato": "1945-05-03",
-        "registrertIMvaRegisteret": "false",
-        "registreringsdatoMerverdiavgiftsregisteret": "",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "forretningsadresse.postnummer": "3675",
+        "forretningsadresse.poststed": "NOTODDEN",
+        "fravalgRevisjonBeslutningsDato": "",
+        "fravalgRevisjonDato": "",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "true",
-        "registreringsdatoFrivillighetsregisteret": "2009-02-21",
-        "registrertIForetaksregisteret": "false",
-        "registreringsdatoForetaksregisteret": "",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.rodekors.no/notodden",
+        "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
+        "institusjonellSektorkode.kode": "7000",
+        "kapital.antallAksjer": "",
+        "kapital.belop": "",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "",
+        "kapital.type": "",
+        "kapital.valuta": "",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "913 16 944",
+        "naeringskode1.beskrivelse": "Andre sosialtjenester uten botilbud ellers",
+        "naeringskode1.kode": "88.996",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "NOTODDEN RØDE KORS",
+        "organisasjonsform.beskrivelse": "Forening/lag/innretning",
+        "organisasjonsform.kode": "FLI",
+        "organisasjonsnummer": "875647792",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "Postboks 12",
+        "postadresse.kommune": "NOTODDEN",
+        "postadresse.kommunenummer": "4005",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "3671",
+        "postadresse.poststed": "NOTODDEN",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "2009-02-21",
+        "registreringsdatoMerverdiavgiftsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "1996-03-05",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "false",
+        "registrertIFrivillighetsregisteret": "true",
+        "registrertIMvaRegisteret": "false",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "1945-05-03",
+        "telefon": "35 01 11 93",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "",
-        "vedtektsfestetFormaal": "",
-        "aktivitet": "Avdekke, hindre og lindre mennesklig nød og lidelse nasjonalt og internasjonalt.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "",
-        "fravalgRevisjonBeslutningsDato": "",
-        "erIKonsern": "false",
-        "kapital.belop": "",
-        "kapital.antallAksjer": "",
-        "kapital.type": "",
-        "kapital.bundet": "",
-        "kapital.valuta": "",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "875647792",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:34.371924Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "FLI",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "875647792",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "",
+        "vedtektsfestetFormaal": ""
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "71237a3a3a78fb783984998b098f8ec1806509e37311ac83a649f1c5de434d4c",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
+      "note": null,
       "retrieved_at": "2026-10-05T09:07:16.887041Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
+      "status": "available",
       "value": {
-        "organisation_number": "875647792",
-        "name": "NOTODDEN RØDE KORS",
-        "legal_form": "FLI",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.rodekors.no/notodden",
-        "industry": {
-          "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
-          "kode": "88.996"
-        },
         "business_address": {
           "adresse": [
             "Professor Tronstads gate 10"
@@ -2372,6 +1970,16 @@
           "postnummer": "3675",
           "poststed": "NOTODDEN"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Andre sosialtjenester uten botilbud ellers",
+          "kode": "88.996"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "FLI",
+        "liquidating": false,
+        "name": "NOTODDEN RØDE KORS",
+        "organisation_number": "875647792",
         "postal_address": {
           "adresse": [
             "Postboks 12"
@@ -2383,317 +1991,122 @@
           "postnummer": "3671",
           "poststed": "NOTODDEN"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "71237a3a3a78fb783984998b098f8ec1806509e37311ac83a649f1c5de434d4c",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/875647792",
-      "retrieved_at": "2026-10-05T09:07:17.591343Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 3191161,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2021-01-01",
-              "tilDato": "2021-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 1985254.0,
-            "operating_result": 372310.0,
-            "profit_before_tax": 381912.0,
-            "annual_result": 381912.0,
-            "assets": 4287107.0,
-            "equity": 0.0,
-            "debt": 1063678.0
-          },
-          {
-            "record_id": 4622233,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 2078970.0,
-            "operating_result": 254520.0,
-            "profit_before_tax": 308628.0,
-            "annual_result": 308628.0,
-            "assets": 3987113.0,
-            "equity": 3624220.0,
-            "debt": 362893.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "845133f5ec21caf6a82d4fc1eafd31f64af15ae9f68c948137451bdf8d5d5f97",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/aar",
-      "retrieved_at": "2026-10-05T09:07:25.713968Z",
-      "value": {
-        "years": [
-          "2019",
-          "2021",
-          "2023",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2025"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2023"
-          },
-          {
-            "year": "2021",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2021"
-          },
-          {
-            "year": "2019",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/875647792/2019"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "23a99940d762eccdcc3c1c071f5c6c78001ad9985d8d01da9e947a2081b47770",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.rodekors.no/notodden"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "bb15bacc60eb96885cae31c4667b571338963c0253d485856b5d1aa011d75fbd",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T09:07:26.496631Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Anita Milekåsa Hagen",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Einar Steinmoen",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Elisabeth Giørtz Tønsberg",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Adrian Eliassen",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Rita Jonassen",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Espen Østvedt Skjellaug",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Borgny Elisabet Berglie",
             "organisation_number": null,
-            "role_code": "VARA",
             "role": "Varamedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "VARA"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-03-07",
             "name": "Eli Småkasin Natadal",
             "organisation_number": null,
-            "role_code": "VARA",
             "role": "Varamedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-03-07",
-            "inactive": false
+            "role_code": "VARA"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "bb15bacc60eb96885cae31c4667b571338963c0253d485856b5d1aa011d75fbd",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/875647792",
-      "retrieved_at": "2026-10-05T09:07:27.196773Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=875647792&size=1000",
-      "retrieved_at": "2026-10-05T09:07:27.935499Z",
-      "value": {
-        "locations": []
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "9f998c5b3e34d721eb824ab78fba29468d8cb80c0bd64d0cc8870838c8083ba8",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.rodekors.no/notodden",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T09:07:36.479695Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.rodekors.no/notodden",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.rodekors.no/notodden",
-        "final_url": "https://www.rodekors.no/notodden",
-        "registered_domain": "rodekors.no",
-        "title": "Notodden Røde Kors - Røde Kors",
-        "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
-        "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
-        "social_links": [
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
-          },
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
-          }
-        ],
-        "structured_organisations": [
-          {
-            "@type": "Organization",
-            "name": "Røde Kors",
-            "email": "post@redcross.no",
-            "logo": "https://www.rodekors.no/UI/logo.svg",
-            "telephone": "22 05 40 00"
-          },
-          {
-            "@type": "Organization",
-            "name": "Røde Kors",
-            "email": "post@redcross.no",
-            "logo": "https://www.rodekors.no/UI/logo.svg",
-            "telephone": "22 05 40 00"
-          }
-        ],
         "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-        "extraction_state": "static_complete",
-        "pages": [
-          {
-            "url": "https://www.rodekors.no/notodden",
-            "title": "Notodden Røde Kors - Røde Kors",
-            "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
-            "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191"
-          },
-          {
-            "url": "https://www.rodekors.no/kontakt/",
-            "title": "Kontaktinformasjon - Røde Kors",
-            "main_text_excerpt": "Kontakt oss\nHer finner du kontaktinformasjon til Norges Røde Kors.\nSentralbord: (+47) 22 05 40 00\n- Åpent kl. 08 – 14.45 (alle ukedager)\n- Ring 113 – ved fare for liv og helse\n- E-post: post@redcross.no \nUnngå personsensitive opplysninger\nPostadresse: Pb. 1, Grønland 0133 Oslo\nHva kan vi hjelpe deg med?\nNasjonalkontoret i Oslo\nDu finner oss i Røde Kors-huset sentralt i Oslo sentrum. I samme bygg finner du også vårt kurs- og konferansesenter.\n- Besøksadresse: Hausmanns gate 7, 0186 Oslo\n- Åpningstider resepsjon: kl. 08:00 - 16:00 (alle ukedager)\nSkal du gi blod? Blodbanken har flyttet til Stortingsgata 10.\nNorges Røde Kors: 864 139 442 (org.nummer / VAT-nummer)\nInnkjøp og anskaffelser\nRøde Kors bruker innkjøpsplattformen Marcell til alle større innkjøp og anskaffelser. Her kan du se alle pågående anbud.\nVarsle om kritikkverdige forhold\nI Røde Kors har vi nulltoleranse for korrupsjon, misbruk, mobbing og trakassering. Her kan du varsle oss om kritikkverdige forhold.\nAndre tjenester:\n- Mitt Røde Kors (innlogging)\n- Korsveien (innlogging)\n- Røde Kors-sentrene\n- Kors på halsen Gratis og anonymt samtaletilbud for deg under 18 år\n- Røde Kors-telefonen Samtaletilbud om negativ sosial kontroll og æresrelatert vold",
-            "content_sha256": "8c0a2d90ee3c48f2f6873b36513e279bf1f4942fcf28c58b75c9f89029f62b8d"
-          },
-          {
-            "url": "https://www.rodekors.no/kontakt/varsling/",
-            "title": "Varsle om kritikkverdige forhold i Røde Kors - Røde Kors",
-            "main_text_excerpt": "Varsle om kritikkverdige forhold i Røde Kors\nRøde Kors er en humanitær organisasjon med nulltoleranse for korrupsjon, misbruk, mobbing og trakassering.\nRøde Kors oppfordrer alle til å rapportere mistanker om uetisk eller ulovlig atferd.\nDet tillates ikke sanksjoner eller represalier mot dem som rapporterer slike mistanker. Det er viktig at ulovlige eller uetiske forhold avdekkes raskt. Røde Kors har egne kanaler og rutiner for varsling av slike forhold.\nVarsling er en måte å rapportere atferd som kan være uetisk, ulovlig, ressurssløsende eller som er i strid med Røde Kors' regelverk.\nReporting miscondut: English pages\nSlik varsler du om donasjon eller e-post-svindel\nHvis du har mistanker om eller bekymringer angående falske appeller/e-post om donasjon mottatt fra Røde Kors, meld fra her!\nDersom du opplever eller er vitne til annen type misbruk; falske innsamlinger, misbruk av Røde Kors logo kan dette også meldes fra om her!\nKorrupsjon\nRøde Kors har nulltoleranse for korrupsjon. Les Bestemmelser mot korrupsjon.pdf\nFull konfidensialitet\nAlle forhold som blir varslet vil bli behandlet konfidensielt. Den som varsler har rett til å være anonym. Identiteten til varsleren vil bli holdt konfidensielt. Det vil imidlertid gjøre vår undersøkelse og utredning av forholdene enklere hvis vedkommende oppgir navn og kontaktinformasjon.",
-            "content_sha256": "fe16f2a712702815ab41383350596a749b9fb213f897a64e54895ea74198b8c8"
-          },
-          {
-            "url": "https://www.rodekors.no/om/presse/",
-            "title": "Presse  - Røde Kors",
-            "main_text_excerpt": "Presse\nAlle pressehenvendelser til Røde Kors registreres i våre interne systemer. Vi behandler alle personopplysninger i tråd med personopplysningsloven.\nPressetelefon (ikke SMS): +47 94 87 29 99\nE-post: pressevakt@redcross.no\nPressevakt besvarer kun henvendelser fra media. For andre henvendelser, bruk: post@redcross.no.",
-            "content_sha256": "626bd291a8e344bf0c34f9ded9868900eb2d51985433495acdcf940c90f1bc84"
-          }
-        ],
         "crawl_errors": [],
-        "identity_assessment": {
-          "status": "exact",
-          "score": 0.95,
-          "publishable": true,
-          "legal_name_tokens": [
-            "notodden",
-            "rode",
-            "kors"
-          ],
-          "matched_tokens": [
-            "kors",
-            "notodden",
-            "rode"
-          ],
-          "reasons": [
-            "all normalized legal-name tokens appear together in homepage identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
         "discovered_social_links": [
           {
             "platform": "facebook",
@@ -2724,104 +2137,288 @@
             "url": "https://youtube.com/user/rodekorsnorge"
           }
         ],
+        "extraction_state": "static_complete",
+        "final_url": "https://www.rodekors.no/notodden",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "notodden",
+            "rode",
+            "kors"
+          ],
+          "matched_tokens": [
+            "kors",
+            "notodden",
+            "rode"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
+          "reasons": [
+            "all normalized legal-name tokens appear together in homepage identity evidence"
+          ],
+          "score": 0.95,
+          "status": "exact"
+        },
+        "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
+        "pages": [
+          {
+            "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+            "main_text_excerpt": "Notodden Røde Kors\nNotodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.\n \nBli frivillig Som frivillig i Røde Kors bidrar du med din tid og kompetanse og gjør en viktig humanitær innsats i ditt nærmiljø.\n \nBli medlem Som medlem støtter du vårt humanitære arbeid gjennom medlemskontingenten. Du får også stemmerett på lokalforeningens årsmøte og kan være med å sette retning for det humanitære arbeidet.\n \nBli grasrotgiver Gi grasrotandelen din fra Norsk Tipping til  Notodden Røde Kors. Som grasrotgiver er du en viktig bidragsyter til å opprettholde lokal frivillighet.\n                \n            Her finner du oss på vår Facebook-side\nHer finner du Notodden Røde Kors Hjelpekorps Facebook-side",
+            "title": "Notodden Røde Kors - Røde Kors",
+            "url": "https://www.rodekors.no/notodden"
+          },
+          {
+            "content_sha256": "8c0a2d90ee3c48f2f6873b36513e279bf1f4942fcf28c58b75c9f89029f62b8d",
+            "main_text_excerpt": "Kontakt oss\nHer finner du kontaktinformasjon til Norges Røde Kors.\nSentralbord: (+47) 22 05 40 00\n- Åpent kl. 08 – 14.45 (alle ukedager)\n- Ring 113 – ved fare for liv og helse\n- E-post: post@redcross.no \nUnngå personsensitive opplysninger\nPostadresse: Pb. 1, Grønland 0133 Oslo\nHva kan vi hjelpe deg med?\nNasjonalkontoret i Oslo\nDu finner oss i Røde Kors-huset sentralt i Oslo sentrum. I samme bygg finner du også vårt kurs- og konferansesenter.\n- Besøksadresse: Hausmanns gate 7, 0186 Oslo\n- Åpningstider resepsjon: kl. 08:00 - 16:00 (alle ukedager)\nSkal du gi blod? Blodbanken har flyttet til Stortingsgata 10.\nNorges Røde Kors: 864 139 442 (org.nummer / VAT-nummer)\nInnkjøp og anskaffelser\nRøde Kors bruker innkjøpsplattformen Marcell til alle større innkjøp og anskaffelser. Her kan du se alle pågående anbud.\nVarsle om kritikkverdige forhold\nI Røde Kors har vi nulltoleranse for korrupsjon, misbruk, mobbing og trakassering. Her kan du varsle oss om kritikkverdige forhold.\nAndre tjenester:\n- Mitt Røde Kors (innlogging)\n- Korsveien (innlogging)\n- Røde Kors-sentrene\n- Kors på halsen Gratis og anonymt samtaletilbud for deg under 18 år\n- Røde Kors-telefonen Samtaletilbud om negativ sosial kontroll og æresrelatert vold",
+            "title": "Kontaktinformasjon - Røde Kors",
+            "url": "https://www.rodekors.no/kontakt/"
+          },
+          {
+            "content_sha256": "fe16f2a712702815ab41383350596a749b9fb213f897a64e54895ea74198b8c8",
+            "main_text_excerpt": "Varsle om kritikkverdige forhold i Røde Kors\nRøde Kors er en humanitær organisasjon med nulltoleranse for korrupsjon, misbruk, mobbing og trakassering.\nRøde Kors oppfordrer alle til å rapportere mistanker om uetisk eller ulovlig atferd.\nDet tillates ikke sanksjoner eller represalier mot dem som rapporterer slike mistanker. Det er viktig at ulovlige eller uetiske forhold avdekkes raskt. Røde Kors har egne kanaler og rutiner for varsling av slike forhold.\nVarsling er en måte å rapportere atferd som kan være uetisk, ulovlig, ressurssløsende eller som er i strid med Røde Kors' regelverk.\nReporting miscondut: English pages\nSlik varsler du om donasjon eller e-post-svindel\nHvis du har mistanker om eller bekymringer angående falske appeller/e-post om donasjon mottatt fra Røde Kors, meld fra her!\nDersom du opplever eller er vitne til annen type misbruk; falske innsamlinger, misbruk av Røde Kors logo kan dette også meldes fra om her!\nKorrupsjon\nRøde Kors har nulltoleranse for korrupsjon. Les Bestemmelser mot korrupsjon.pdf\nFull konfidensialitet\nAlle forhold som blir varslet vil bli behandlet konfidensielt. Den som varsler har rett til å være anonym. Identiteten til varsleren vil bli holdt konfidensielt. Det vil imidlertid gjøre vår undersøkelse og utredning av forholdene enklere hvis vedkommende oppgir navn og kontaktinformasjon.",
+            "title": "Varsle om kritikkverdige forhold i Røde Kors - Røde Kors",
+            "url": "https://www.rodekors.no/kontakt/varsling/"
+          },
+          {
+            "content_sha256": "626bd291a8e344bf0c34f9ded9868900eb2d51985433495acdcf940c90f1bc84",
+            "main_text_excerpt": "Presse\nAlle pressehenvendelser til Røde Kors registreres i våre interne systemer. Vi behandler alle personopplysninger i tråd med personopplysningsloven.\nPressetelefon (ikke SMS): +47 94 87 29 99\nE-post: pressevakt@redcross.no\nPressevakt besvarer kun henvendelser fra media. For andre henvendelser, bruk: post@redcross.no.",
+            "title": "Presse  - Røde Kors",
+            "url": "https://www.rodekors.no/om/presse/"
+          }
+        ],
+        "registered_domain": "rodekors.no",
+        "requested_url": "https://www.rodekors.no/notodden",
         "social_link_assessments": [
           {
-            "platform": "facebook",
-            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
             "identity_score": 0.98,
-            "publishable": true,
             "matched_tokens": [
               "notodden",
               "rode",
               "kors"
             ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": true,
             "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
           },
           {
-            "platform": "facebook",
-            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494",
             "identity_score": 0.98,
-            "publishable": true,
             "matched_tokens": [
               "notodden",
               "rode",
               "kors"
             ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": true,
             "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
           },
           {
-            "platform": "facebook",
-            "url": "https://facebook.com/rodekors",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [
               "rode",
               "kors"
             ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/rodekors"
           },
           {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "rode",
+              "kors"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "instagram",
-            "url": "https://instagram.com/rodekorsnorge",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [
-              "rode",
-              "kors"
-            ],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://instagram.com/rodekorsnorge"
           },
           {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/715852",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "linkedin",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://linkedin.com/company/715852"
           },
           {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "rode",
+              "kors"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "x",
-            "url": "https://x.com/rodekorsnorge",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [
-              "rode",
-              "kors"
-            ],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://x.com/rodekorsnorge"
           },
           {
-            "platform": "youtube",
-            "url": "https://youtube.com/user/rodekorsnorge",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [
               "rode",
               "kors"
             ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "youtube",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://youtube.com/user/rodekorsnorge"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [
+          {
+            "platform": "facebook",
+            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746"
+          },
+          {
+            "platform": "facebook",
+            "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-Hjelpekorps-479730222150494"
+          }
+        ],
+        "structured_organisations": [
+          {
+            "@type": "Organization",
+            "email": "post@redcross.no",
+            "logo": "https://www.rodekors.no/UI/logo.svg",
+            "name": "Røde Kors",
+            "telephone": "22 05 40 00"
+          },
+          {
+            "@type": "Organization",
+            "email": "post@redcross.no",
+            "logo": "https://www.rodekors.no/UI/logo.svg",
+            "name": "Røde Kors",
+            "telephone": "22 05 40 00"
+          }
+        ],
+        "title": "Notodden Røde Kors - Røde Kors"
+      }
     },
     "external_observations": [
       {
         "organisation_number": "875647792",
-        "platform": "company_site",
+        "platform": "facebook",
         "source_url": "https://www.rodekors.no/notodden",
         "retrieved_at": "2026-09-29T10:34:07.076363Z",
+        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "company_site_url": "https://www.rodekors.no/notodden",
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "notodden",
+              "rode",
+              "kors"
+            ],
+            "name_token_gate": true,
+            "method": "linked_from_verified_site_v1"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "site_linked_social_handle",
+        "id": "site-social-875647792-facebook-3623f33efe4401f4",
+        "signal_type": "profile_handle",
+        "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.rodekors.no/notodden.",
+        "metrics": {
+          "platform": "facebook",
+          "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
+          "identity_score": 0.98
+        }
+      },
+      {
+        "organisation_number": "875647792",
+        "platform": "company_site",
+        "source_url": "https://www.rodekors.no/om/presse/generalsekretar/",
+        "retrieved_at": "2026-10-06T15:23:56.167790Z",
+        "content_sha256": "fe977b859224446bec38805ef686611e34851bc4cbc948745f3328c67bfab86b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_article_date",
+        "id": "site-article-news-875647792-88b0b4409c3c229b",
+        "signal_type": "public_post",
+        "evidence_span": "Generalsekretær",
+        "metrics": {
+          "published_at": "2017-03-01T00:00:00Z",
+          "date_source": "jsonld_or_meta",
+          "body_excerpt": ""
+        }
+      },
+      {
+        "organisation_number": "875647792",
+        "platform": "company_site",
+        "source_url": "https://www.rodekors.no/notodden",
+        "retrieved_at": "2026-10-05T09:07:36.479695Z",
+        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-5358ab29fff30de5d75531f1",
+        "signal_type": "website_description",
+        "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "875647792",
+        "platform": "company_site",
+        "source_url": "https://www.rodekors.no/notodden",
+        "retrieved_at": "2026-10-05T09:07:36.479695Z",
+        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-brand-9c126b35402ad7f50efb93f8",
+        "signal_type": "public_brand",
+        "evidence_span": "Røde Kors",
+        "metrics": {
+          "declared_url": null,
+          "interpretation": "Brand name from the site's own JSON-LD."
+        }
+      },
+      {
+        "organisation_number": "875647792",
+        "platform": "company_site",
+        "source_url": "https://www.rodekors.no/notodden",
+        "retrieved_at": "2026-10-05T09:07:36.479695Z",
         "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
         "exact_entity": true,
         "identity_proof": [
@@ -2850,7 +2447,7 @@
         "organisation_number": "875647792",
         "platform": "facebook",
         "source_url": "https://www.rodekors.no/notodden",
-        "retrieved_at": "2026-09-29T10:34:07.076363Z",
+        "retrieved_at": "2026-10-05T09:07:36.479695Z",
         "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
         "exact_entity": true,
         "identity_proof": [
@@ -2878,8 +2475,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2906,8 +2503,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2934,8 +2531,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2957,63 +2554,12 @@
         "strategy": "registry_contact_exact"
       },
       {
-        "organisation_number": "875647792",
-        "platform": "company_site",
-        "source_url": "https://www.rodekors.no/notodden",
-        "retrieved_at": "2026-09-29T10:34:07.076363Z",
-        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-5358ab29fff30de5d75531f1",
-        "signal_type": "website_description",
-        "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "company_site",
-        "source_url": "https://www.rodekors.no/notodden",
-        "retrieved_at": "2026-09-29T10:34:07.076363Z",
-        "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-brand-9c126b35402ad7f50efb93f8",
-        "signal_type": "public_brand",
-        "evidence_span": "Røde Kors",
-        "metrics": {
-          "declared_url": null,
-          "interpretation": "Brand name from the site's own JSON-LD."
-        }
-      },
-      {
         "id": "registry-update-c2d408f0736e9186b315450c",
         "organisation_number": "875647792",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c2d408f0736e9186b315450c3adcf52476ff3cc25862f35257a854fc7f939116",
         "observed_at": "2026-03-24",
         "exact_entity": true,
@@ -3043,7 +2589,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9c193f8d5a1a5356893d55f3d4f35a314c4989aabcd3b0f556db74fcace899ba",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3073,7 +2619,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "d174fcaec8cf8833eb2245d05b76709ff4f297624e86915af209124d5727e118",
         "observed_at": "2024-03-19",
         "exact_entity": true,
@@ -3103,7 +2649,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "cc1fd5198a88cdec9b3f8fea3da50baa0825a660c0f16d184603f8d3b09524ba",
         "observed_at": "2024-01-13",
         "exact_entity": true,
@@ -3133,7 +2679,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "b86c8394e171fb1880f08a5fe740519607af05bcf3f5a3291e09079136017c41",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3163,7 +2709,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "7f6b8b3368425e773659caea1117bf18b5fc5d4db2f0f81a590bc43f82beccaa",
         "observed_at": "2023-03-21",
         "exact_entity": true,
@@ -3193,7 +2739,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "5bdfef7e1c6ece15d639eb53524f84d3d6b69f6191682d311eb142c722e2b1fa",
         "observed_at": "2023-03-15",
         "exact_entity": true,
@@ -3223,7 +2769,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "16e7e09ceeffbf50bf012306408ccd23dfef73b8746026578329de37283a7d74",
         "observed_at": "2023-02-28",
         "exact_entity": true,
@@ -3253,7 +2799,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ecd1de9fcf6fa1730385d91beca3461f0843f05d30cd9b5dc7ca2cbe14a0b076",
         "observed_at": "2023-01-11",
         "exact_entity": true,
@@ -3283,7 +2829,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e303d5bb49c9fd01737ef95f0a6ba5830a0d92cb3b20732891d9f7580a9737b0",
         "observed_at": "2022-12-14",
         "exact_entity": true,
@@ -3313,7 +2859,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ca86f0ddf19609fd8103d5b5eae57729527763a5a58f91366d5620fd59dce100",
         "observed_at": "2022-11-12",
         "exact_entity": true,
@@ -3343,7 +2889,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "601f82e98fcd2b8f9f826086faa5fe45dddc5e59929665afaece5d806c6957be",
         "observed_at": "2022-10-12",
         "exact_entity": true,
@@ -3373,7 +2919,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "3ae74626a8d6db325e43f2a2523b2db46f92d7ab2c59d76dca1521009b07028a",
         "observed_at": "2022-09-22",
         "exact_entity": true,
@@ -3403,7 +2949,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "a9d6f2acd8e344689a8d6535608876530bb53872565214d0604b4223b48b5869",
         "observed_at": "2022-06-11",
         "exact_entity": true,
@@ -3433,7 +2979,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2ece53b13f057bf9d1d9ec9afca00efdbd4d2aeac5738a8140460b076ea75e13",
         "observed_at": "2022-05-25",
         "exact_entity": true,
@@ -3463,7 +3009,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "0c704a803f2469146566b3384cb6dbd421620eb8474f53d3706450333a3aba77",
         "observed_at": "2020-03-23",
         "exact_entity": true,
@@ -3493,7 +3039,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9269ba067af5994e4043f201a36ac241e932a4f319d38ba1c6b8940dd6f8f334",
         "observed_at": "2020-01-01",
         "exact_entity": true,
@@ -3523,7 +3069,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ecedf185158ef315593c7baf2cf47e5661f9b58ec50d2982a53c347a57581fc0",
         "observed_at": "2019-12-31",
         "exact_entity": true,
@@ -3553,7 +3099,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/875647792",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "58bed6c63e31765f5d22034f1de4090328437f012770ff56059e380fdb50de92",
         "observed_at": "2019-06-11",
         "exact_entity": true,
@@ -3665,573 +3211,37 @@
         "evidence_span": "Godkjente årsregnskap — 2022-06-11 (BRREG official announcement)"
       },
       {
+        "id": "registry-site-875647792-fe641ac434e3adb0",
         "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-06T15:53:42.970367Z",
-        "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-875647792-0861c0c44c4ea2c7",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Exelent",
-        "observed_at": "2015-05-05T09:21:21.939Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 0,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-06T15:53:42.970367Z",
-        "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-875647792-1222a6cbb0006d0d",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Hvem liker ikke frivillighet?",
-        "observed_at": "2019-08-27T20:12:15.582772Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 1,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-06T15:53:42.970367Z",
-        "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-875647792-34455e297215e722",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Helt topp ungdoms ordningen",
-        "observed_at": "2017-12-07T16:34:31.158Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 2,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-06T15:53:42.970367Z",
-        "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-875647792-6c7815b980ee5a03",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "جيد جدا",
-        "observed_at": "2019-05-16T11:14:50.930593Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 3,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-06T15:53:42.970367Z",
-        "content_sha256": "574040059a2bd7fc9746fa5b74adeb3206382ef3dc36067b6810bc42cd7a48b4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-875647792-5dc15a3f5c391f18",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Nays",
-        "observed_at": "2024-08-09T22:30:26.387032Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 4,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "facebook",
+        "platform": "company_site",
+        "signal_type": "website_description",
         "source_url": "https://www.rodekors.no/notodden",
         "retrieved_at": "2026-09-29T10:34:07.076363Z",
         "content_sha256": "fe641ac434e3adb0c55983d93422fb56b6a5b1598e8107206832ad1a45651191",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://www.rodekors.no/notodden",
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "notodden",
-              "rode",
-              "kors"
-            ],
-            "name_token_gate": true,
-            "method": "linked_from_verified_site_v1"
+            "type": "registry_declared_website_domain_match",
+            "value": "rodekors.no",
+            "matched_organisation_number": "875647792",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares rodekors.no as the website of organisation 875647792; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "strategy": "site_linked_social_handle",
-        "id": "site-social-875647792-facebook-3623f33efe4401f4",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.rodekors.no/notodden.",
+        "evidence_span": "Notodden Røde Kors - Røde Kors — Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
         "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/Notodden-R%C3%B8de-Kors-162355813851746",
-          "identity_score": 0.98
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "company_site",
-        "source_url": "https://www.rodekors.no/om/presse/generalsekretar/",
-        "retrieved_at": "2026-10-06T15:23:56.167790Z",
-        "content_sha256": "fe977b859224446bec38805ef686611e34851bc4cbc948745f3328c67bfab86b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_article_date",
-        "id": "site-article-news-875647792-88b0b4409c3c229b",
-        "signal_type": "public_post",
-        "evidence_span": "Generalsekretær",
-        "metrics": {
-          "published_at": "2017-03-01T00:00:00Z",
-          "date_source": "jsonld_or_meta",
-          "body_excerpt": ""
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-31T18:19:53.197182Z",
-        "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-875647792-401e5fe40bc3f1a9",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Notodden Red Cross Google profile: rating 5/5, 10 ratings.",
-        "metrics": {
-          "rating": 5,
-          "review_count": 10,
-          "scale": 5,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-31T18:19:53.197182Z",
-        "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-summary-875647792-401e5fe40bc3f1a9",
-        "signal_type": "review_summary",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Notodden Red Cross is rated 5/5 from 10 Google reviews.",
-        "metrics": {
-          "rating": 5,
-          "review_count": 10,
-          "scale": 5,
-          "place_id": "ChIJtUXUun7KQEYRIZt3obW9rsE"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJtUXUun7KQEYRIZt3obW9rsE",
-        "retrieved_at": "2026-10-31T18:19:53.197182Z",
-        "content_sha256": "401e5fe40bc3f1a9487ef37b2b0a362a0ed763346d8f0a5015fb13e069c804f8",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "rodekors.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-sentiment-875647792-401e5fe40bc3f1a9",
-        "signal_type": "sentiment",
-        "strategy": "customer_review_sentiment",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "evidence_span": "Aggregate rating 5/5 from 10 reviews implies positive sentiment.",
-        "metrics": {
-          "rating": 5,
-          "review_count": 10,
-          "scale": 5
-        }
-      },
-      {
-        "id": "ar-page1-875647792-annual_report_approval_date-2bec19c9dabf5290",
-        "organisation_number": "875647792",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-        "retrieved_at": "2026-11-05T16:11:27.903186Z",
-        "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "875647792"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "875647792"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 24.02.2026",
-        "metrics": {
-          "approval_date": "24.02.2026",
-          "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "ocr_chars": 1306
+          "title": "Notodden Røde Kors - Røde Kors",
+          "description": "Notodden Røde Kors mobiliserer frivillighet gjennom rednings- og beredskapsarbeid og omsorgsaktiviteter.",
+          "registry_domain": "rodekors.no"
         },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-875647792-annual_report_auditor-2bec19c9dabf5290",
-        "organisation_number": "875647792",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-        "retrieved_at": "2026-11-05T16:11:27.903186Z",
-        "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "875647792"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "875647792"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Anita Milekåsa hagen",
-        "metrics": {
-          "auditor": "Anita Milekåsa hagen",
-          "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "ocr_chars": 1306
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-875647792-annual_report_business_address-2bec19c9dabf5290",
-        "organisation_number": "875647792",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-        "retrieved_at": "2026-11-05T16:11:27.903186Z",
-        "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "875647792"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "875647792"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Professor Tronstads gate 10",
-        "metrics": {
-          "business_address": "Professor Tronstads gate 10",
-          "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "ocr_chars": 1306
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-875647792-annual_report_signing_officer-2bec19c9dabf5290",
-        "organisation_number": "875647792",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-        "retrieved_at": "2026-11-05T16:11:27.903186Z",
-        "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "875647792"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "875647792"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "ocr_chars": 1306
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-875647792-annual_report_org_number-2bec19c9dabf5290",
-        "organisation_number": "875647792",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/875647792-2025.pdf",
-        "retrieved_at": "2026-11-05T16:11:27.903186Z",
-        "content_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "875647792"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "875647792"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 875 647 792",
-        "metrics": {
-          "org_number": "875647792",
-          "ocr_text_sha256": "2bec19c9dabf52906c998d451b35d9fee0aa7b3e87cabb8363dfc0a8473cd22a",
-          "ocr_chars": 1306
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/875647792",
-        "retrieved_at": "2026-11-05T21:11:44.130044Z",
-        "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "875647792"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NOTODDEN RØDE KORS",
-            "matched_organisation_number": "875647792"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-        "id": "purehelp-email-875647792-85dedc6332337d21",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "rode.kors.notodden@nenett.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/875647792",
-        "retrieved_at": "2026-11-05T21:11:44.130044Z",
-        "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "875647792"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NOTODDEN RØDE KORS",
-            "matched_organisation_number": "875647792"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-        "id": "purehelp-phone-875647792-85dedc6332337d21",
-        "signal_type": "contact_phone",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "phone": "35 01 11 93",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "875647792",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/875647792",
-        "retrieved_at": "2026-11-05T21:11:44.130044Z",
-        "content_sha256": "861f4ee593762c5c96e832e5a068c92614ed6666522e49161004956e67e349c7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "875647792"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NOTODDEN RØDE KORS",
-            "matched_organisation_number": "875647792"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-875647792.orgNumber=875647792;name=NOTODDEN RØDE KORS",
-        "id": "purehelp-profile-875647792-85dedc6332337d21",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "FLI",
-          "legal_form_description": "Association/club/organisation",
-          "nace_code": "88.996",
-          "nace_description": "Other unspesified social services without accommodation",
-          "town": "NOTODDEN",
-          "zipcode": "3675",
-          "municipality": "NOTODDEN",
-          "municipality_number": "4005",
-          "county": "Telemark",
-          "registration_date": "1996-03-05",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "1996-03-05",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.rodekors.no/notodden"
-        }
+        "strategy": "registry_declared_website_description"
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:41.075696+00:00"
+  "generated_at": "2026-11-07T07:28:38.693827+00:00"
 }

@@ -1,162 +1,234 @@
 {
   "profile": {
-    "organisation_number": "984828802",
-    "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-    "legal_form": "FLI",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "DRAMMEN",
-    "municipality_number": "3301",
-    "industry_code": "94.992",
-    "industry_label": "Aktiviteter i andre medlemsorganisasjoner ellers",
-    "website": "www.njff.no/buskerud",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:35:03.214519Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "984828802",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "984828802",
-          "navn": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-          "organisasjonsform.kode": "FLI",
-          "organisasjonsform.beskrivelse": "Forening/lag/innretning",
-          "naeringskode1.kode": "94.992",
-          "naeringskode1.beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "FLI",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "4ef65c5c6a787fba52f4422cea215ef239f29d493e45ae1f8534dc39ebcca33b",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:11:13.991748Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
+              "year": "2025"
+            }
+          ],
+          "years": [
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "ace05ad1cc2a6bdc947725a7857f29d0aa2c949ddcff8cf37ea628ff4903fe4a",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:11:09.665254Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 324200.0,
+              "assets": 2089432.0,
+              "currency": "NOK",
+              "debt": 228369.0,
+              "equity": 1861064.0,
+              "operating_result": 296688.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": 324200.0,
+              "record_id": 6466807,
+              "revenue": 1760022.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T09:11:15.386079Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/984828802",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "aaff512f6c66a88d0f13c7fa0f7d507f3a7a33722cadc8e26bacad7a9cb87cf3",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:11:16.150515Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
+        "status": "available",
+        "value": {
+          "locations": []
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "984828802",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Paraplyorganisasjon for lokale jeger- og fiskeforeninger i Buskerud fylke. Arrangerer blant annet kurs og forskjellige aktiviteter.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.njff.no/buskerud",
           "epostadresse": "buskerud@njff.no",
-          "telefon": "32 84 59 22",
-          "mobil": "95774511",
-          "postadresse.adresse": "",
-          "postadresse.poststed": "",
-          "postadresse.postnummer": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Gråterudveien 39",
-          "forretningsadresse.poststed": "DRAMMEN",
-          "forretningsadresse.postnummer": "3036",
           "forretningsadresse.kommune": "DRAMMEN",
           "forretningsadresse.kommunenummer": "3301",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "7000",
-          "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2002-11-20",
-          "stiftelsesdato": "1965-11-15",
-          "registrertIMvaRegisteret": "false",
-          "registreringsdatoMerverdiavgiftsregisteret": "",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "forretningsadresse.postnummer": "3036",
+          "forretningsadresse.poststed": "DRAMMEN",
+          "fravalgRevisjonBeslutningsDato": "",
+          "fravalgRevisjonDato": "",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "true",
-          "registreringsdatoFrivillighetsregisteret": "2009-11-12",
-          "registrertIForetaksregisteret": "false",
-          "registreringsdatoForetaksregisteret": "",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.njff.no/buskerud",
+          "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
+          "institusjonellSektorkode.kode": "7000",
+          "kapital.antallAksjer": "",
+          "kapital.belop": "",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "",
+          "kapital.type": "",
+          "kapital.valuta": "",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "95774511",
+          "naeringskode1.beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
+          "naeringskode1.kode": "94.992",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
+          "organisasjonsform.beskrivelse": "Forening/lag/innretning",
+          "organisasjonsform.kode": "FLI",
+          "organisasjonsnummer": "984828802",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "",
+          "postadresse.kommune": "",
+          "postadresse.kommunenummer": "",
+          "postadresse.land": "",
+          "postadresse.landkode": "",
+          "postadresse.postnummer": "",
+          "postadresse.poststed": "",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "2009-11-12",
+          "registreringsdatoMerverdiavgiftsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2002-11-20",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "false",
+          "registrertIFrivillighetsregisteret": "true",
+          "registrertIMvaRegisteret": "false",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "1965-11-15",
+          "telefon": "32 84 59 22",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "",
-          "vedtektsfestetFormaal": "",
-          "aktivitet": "Paraplyorganisasjon for lokale jeger- og fiskeforeninger i Buskerud fylke. Arrangerer blant annet kurs og forskjellige aktiviteter.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "",
-          "fravalgRevisjonBeslutningsDato": "",
-          "erIKonsern": "false",
-          "kapital.belop": "",
-          "kapital.antallAksjer": "",
-          "kapital.type": "",
-          "kapital.bundet": "",
-          "kapital.valuta": "",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "984828802",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:35:03.214519Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "FLI",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "984828802",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "",
+          "vedtektsfestetFormaal": ""
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "197b4758d9f2aea47f3afa12d7a31f4b5985bed676b7510187bbb3d7c9ba6778",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
+        "note": null,
         "retrieved_at": "2026-10-05T09:11:08.922744Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
+        "status": "available",
         "value": {
-          "organisation_number": "984828802",
-          "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-          "legal_form": "FLI",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.njff.no/buskerud",
-          "industry": {
-            "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
-            "kode": "94.992"
-          },
           "business_address": {
             "adresse": [
               "Gråterudveien 39"
@@ -168,317 +240,150 @@
             "postnummer": "3036",
             "poststed": "DRAMMEN"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
+            "kode": "94.992"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "FLI",
+          "liquidating": false,
+          "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
+          "organisation_number": "984828802",
           "postal_address": null,
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "197b4758d9f2aea47f3afa12d7a31f4b5985bed676b7510187bbb3d7c9ba6778",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-        "retrieved_at": "2026-10-05T09:11:09.665254Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 6466807,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 1760022.0,
-              "operating_result": 296688.0,
-              "profit_before_tax": 324200.0,
-              "annual_result": 324200.0,
-              "assets": 2089432.0,
-              "equity": 1861064.0,
-              "debt": 228369.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "ace05ad1cc2a6bdc947725a7857f29d0aa2c949ddcff8cf37ea628ff4903fe4a",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-        "retrieved_at": "2026-10-05T09:11:13.991748Z",
-        "value": {
-          "years": [
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "4ef65c5c6a787fba52f4422cea215ef239f29d493e45ae1f8534dc39ebcca33b",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.njff.no/buskerud"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "2aa98881633c7d5013aca7aebc7f3649c0249dcf203bfb6d765f3b21c1ba9c77",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T09:11:14.679611Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
+              "last_changed": "2024-03-06",
               "name": "Knut Johan Ruud",
               "organisation_number": null,
-              "role_code": "DAGL",
               "role": "Daglig leder",
-              "group_code": "DAGL",
-              "group": "Daglig leder",
-              "last_changed": "2024-03-06",
-              "inactive": false
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-04-23",
               "name": "Tor Asbjørn Stensrud",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-04-23",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-04-23",
               "name": "Carl Arne Peter Bengtsson",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-04-23",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-04-23",
               "name": "Stian Berg Thorsrud",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-04-23",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-04-23",
               "name": "Solveig Smestad",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-04-23",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-04-23",
               "name": "Steinar Paulsen",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-04-23",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Revisor",
+              "group_code": "REVI",
+              "inactive": false,
+              "last_changed": "2019-04-08",
               "name": [
                 "IRENE LANDFALD"
               ],
               "organisation_number": "912541789",
-              "role_code": "REVI",
               "role": "Revisor",
-              "group_code": "REVI",
-              "group": "Revisor",
-              "last_changed": "2019-04-08",
-              "inactive": false
+              "role_code": "REVI"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2019-06-06",
               "name": [
                 "EFFEKT REGNSKAP AS"
               ],
               "organisation_number": "913173600",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2019-06-06",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "2aa98881633c7d5013aca7aebc7f3649c0249dcf203bfb6d765f3b21c1ba9c77",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/984828802",
-        "retrieved_at": "2026-10-05T09:11:15.386079Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
-        "retrieved_at": "2026-10-05T09:11:16.150515Z",
-        "value": {
-          "locations": []
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "aaff512f6c66a88d0f13c7fa0f7d507f3a7a33722cadc8e26bacad7a9cb87cf3",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.njff.no/buskerud",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T09:12:14.596836Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.njff.no/buskerud",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.njff.no/buskerud",
-          "final_url": "https://www.njff.no/buskerud",
-          "registered_domain": "njff.no",
-          "title": "NJFF Buskerud",
-          "description": "",
-          "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
-          "social_links": [],
-          "structured_organisations": [],
           "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
-          "extraction_state": "static_complete",
-          "pages": [
-            {
-              "url": "https://www.njff.no/buskerud",
-              "title": "NJFF Buskerud",
-              "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
-              "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/om-oss",
-              "title": "Kontakt oss - NJFF Buskerud",
-              "main_text_excerpt": "Regionsslaget koordinerer arbeidet til lokallagene, og er et bindeledd mellom disse og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser. \nRegionsslaget har et valgt styre, relevante utvalg, engasjerte regionsinstruktører innen ulike fagfelt, samt to fulltidsansatte. \nAnsatte:\nFylkessekretær Knut Johan Ruud\nbuskerud@njff.no, 90955921\n \n \nLeder: Tor A. Stensrud\nMobil: 466 62050 \nPoststed: Hønefoss\nLokallag: Ringerike JFF\n \nNestleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nKasserer: Arne Bengtsson\nMobil: 412 51610 \nPoststed: Sætre\nLokallag: Søndre Hurum JFF\n \nStyremedlem Ungdomskontakt: Sara Hansson\nMobil: 99368724\nPoststed: Vikersund\nLokallag: Krødsherad JFF\n \nStyremedlem: Solveig Smestad\nMobil: 41902961\nPoststed: Kongsberg\nLokallag: Kongsberg JFF\n \nStyremedlem: Stian Thorsrud\nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nStyremedlem kvinnekontakt: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \nVaramedlem styret: \nPer Hjalmar Nilsen\nMobil: 481 21 351\nPoststed: Svelvik\nLokallag: Svelvik og Drammen JFF\n \nVaramedlem styret:\nMarius Øia\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal\n \nUtvalg\n \nJaktskytterutvalg\nUtvalgsleder: Stian Thorsrud\nPoststed: Sokna\nMobil:\nLokallag: Sokna JFF\n \nMedlem: Kristian I Raaen \nPoststed:\nMobil:\nLokallag: Ål JFF\n \nMedlem: Jan Fredrik Ørmen\nPoststed:\nMobil:\nLokallag: Buskeruds JFF\n \nMedlem: Ann Merethe Bakken\nPoststed:\nMobil\nLokallag: Krødsherad JFF\n \n \n \n \n \nKvinneutvalg\nUtvalgsleder: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \n \nFiskeutvalg\n \nUtvalgsleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nMedlem: Marius Øia\nMarius Øie\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal JFF\n \nMedlem:  Bjørnar Skår\nMobil: 95902528\nPoststed: Nesbyen\nLokallag: Nes JFF\n \n \n \nValgkomite\n \n \nLeder: Martine Iversen\nPoststed: Hønefoss\nMobil: 482 74 601\nLokallag: Ringerike JFF\n \nMedlem: Espen Hansen Aspås\nPoststed: Røyken\nMobil: 41546942\nLokallag Røyken og Åros JFF\n \n \n \n \nRegionsinstruktører\n \nEttersøk: Rune Borgersen\nPoststed: Mjøndalen\nMobil: 9064 508\nLokallag: Vestsiden JFF\n \nHagle: Stian Thorsrud\n \nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nRifle: Greg Schneider\nPoststed: Kongsberg\nMobil: 48279238\nLokallag: Kongsberg JFF\n \n \nAversjonsdressur: Pål Berge\nPoststed: Drammen\nMobil: 97547160\nLokallag: Konnerud JFF",
-              "content_sha256": "8c039b5e98f261bb67eb99df10bbedec24cc2e842dd211f8a90df08ba4537f15"
-            },
-            {
-              "url": "https://www.njff.no/om-oss",
-              "title": "Norges jeger- og fiskerforbund - hva gjør vi - NJFF",
-              "main_text_excerpt": "Om oss\nNorges Jeger- og Fiskerforbund (NJFF) er landets eneste riksdekkende organisasjon for jegere og sportsfiskere, og et av de viktigste miljøene for formidling av kunnskap om jakt og fiske i Norge. Vi har rundt 120.000 medlemmer, fordelt på 500 lokalforeninger og 19 regionlag.\nNJFF er en av landets største friluftsorganisasjoner, og også en av de eldste. Vi sysselsetter rundt 80 personer, hvor 40 jobber i sentraladministrasjonen og 40 jobber på regionskontorene.\nVi jobber for å sikre jakt og fiskes sterke posisjon i Norge\nForbundets primæroppgave er å sikre allmennhetens tilgang til jakt- og fiskemuligheter i framtiden. Derfor har organisasjonen et sterkt engasjement innen naturforvaltning og ulike jakt- og fiskepolitiske spørsmål. Forbundets visjon er «jakt- og fiskeglede til alle - for alltid»\nNorges Jeger- og Fiskerforbund er demokratisk organisert på alle tre organisasjonsnivåer; lokalt, regionalt og nasjonalt. Alle nivåer velger egne styremedlemmer, og all drift er basert på frivillig og ideell innsats.\nVi er lokale: Det er i våre mange lokalforeninger medlemmer finner de fleste medlemstilbud og aktiviteter. Her finnes aktiviteter som jakt, fiske, skyting, trening av jakthunder og jegerprøvekurs og mye mer.\nVi er regionale: Regionlagene fungerer som et bindeledd mellom sentraladministrasjonen og lokalforeningene i sin region. De hjelper lokalforeningene med ulike saker, fra økonomiske spørsmål, opplæring og kurs og politisk påvirkning.\nVi er nasjonale: Hvert tredje år velger landsmøtet nytt forbundsstyre og vedtar Handlingsprogrammet, som legger rammene for organisasjonens arbeid i de neste årene. Landsmøtet er det øverste organet i hele organisasjonen. Beslutninger som tas her gjelder alle nivåer.\nVi er internasjonale: Norges Jeger- og Fiskerforbund er medlem av Federation of Associations for Hunting and Conservation of the EU - FACE og European Anglers Alliance (EAA).",
-              "content_sha256": "c2b626c170f277d8fc5852fd71a970b1a5c0e47f4e483d6146238cad88c315f0"
-            },
-            {
-              "url": "https://www.njff.no/om-oss/kontakt-oss",
-              "title": "Kontakt NJFF - NJFF",
-              "main_text_excerpt": "Kontakt oss\nTa kontakt med NJFFs medlemsservice for spørsmål vedrørende ditt medlemskap. Andre henvendelser kan rettes til administrasjonen eller våre foreninger.\nVeibeskrivelse:\nVårt hovedkontor er på Hvalstad i Asker, rett utenfor Oslo. Det er 200 meter å gå fra Hvalstad togstasjon (Tog L1 Spikkestad - Lillestrøm) eller Hvalstad busstopp (Buss 707 Asker - Sandvika). Med bil følger du E18 og tar av på Holmen.",
-              "content_sha256": "cf3ea9bc6498c7b04eefe700e4e28fa677b73ef2184d0a66fcaf6747615cde43"
-            },
-            {
-              "url": "https://www.njff.no/aktuelt",
-              "title": "Aktuelt - NJFF",
-              "main_text_excerpt": "Aktuelt fra Norges Jeger- og Fiskerforbund\n       \n \n\t\n\t \n \n    \n        Følg NJFF sitt politiske og faglige arbeid - meld deg på under",
-              "content_sha256": "ba06cec7c9c1105a77ae84673d342491e65e714147f168a027be658c655d92ac"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/aktuelt/2023-2024",
-              "title": "2023 -> 2024 - NJFF Buskerud",
-              "main_text_excerpt": "Håper du har hatt et flott år så langt med mange opplevelser i norsk natur.\nVi har to høringer som  skal svares på ganske raskt. Det ene er: Høring av forslag til forskrift om fiske ved utløp av vassdrag med anadrome laksefisk i Oslo, Akershus, Buskerud og Østfold samt høring av forskrift om fiske av innlandsfisk i anadrome vassdrag i Østfold. Frist for innspill er 19.01.2024\nHer er link: https://www.statsforvalteren.no/nb/oslo-og-viken/horinger/2024/01/horing-av-forslag-til-forskrift-om-fiske-ved-utlop-av-vassdrag-med-anadrome-laksefisk/\n \nDen andre handler om: Regelverket for jaktskyting, som  skal revideres i løpet av 2024, og NJFF åpner prosessen med en innspillsrunde. \nFrist for å sende innspill inn til regionslaget er 31.12.2023. \n \nI 2024 er det landsmøte for NJFF. Har du eller lokallaget en sak dere vil ta opp eller en sak dere har innspill på? Ta en snakk med regionslaget og husk fristen for saker som skal inn.\nLes mer om LM her: \n \nRegionslaget i Buskerud har årsmøte og tillitsvalgtsamling helgen 15-17 mars 2024. \nDenne gangen samles vi på Jakt og fiskesenteret på Flå. Viktig å sende inn saker som skal drøftes på årsmøte innen fristen. Husk å velge deltagere på deres eget årsmøte. \n \nHar dere en eller flere i foreningen som fortjener en ekstra takk for de siste års innsats? Husk å sende inn utfylt skjema til regionslaget i god tid før heder og ære skal deles ut.",
-              "content_sha256": "663b857063e5166d2402ee48b7b6d65290447c41c23c14362c476a656bd2c763"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2023-er-gjennomfort",
-              "title": "Årsmøte 2023 er gjennomført - NJFF Buskerud",
-              "main_text_excerpt": "På tross av skader på kjernepersoner i 22, ble ett innholdsrikt år oppsummert av Regionslaget og innsatsmedalje ble delt ut.\nPublisert: 15. april 2023 kl. 23.48\nSist oppdatert: 15. juni 2023 kl. 12.11\n• Annet\nTEKST\nTAS\nFOTO\nTS\nDEL\nJohan Carsten Thiis hold ett godt grep om årsmøtet som er hans siste som\nleder i denne omgang. For mange oppgaver på jobb og tid til familie gjorde at Carsten gikk av ett år for tidlig. Han vil bli savnet for sin iver, kunnskap og struktur som har driftet Regionslaget godt i sin periode. Han etterlater store sko som ny leder skal fylle. Tor Stensrud overtok etter årsmøtet og skal lede sammen med Linda Iren Sørvig som nestleder.\nTo nye i lederstolen ble resultatet av en god søknad om ekstra midler fra kontorets side. Nestleder Roger Reinslo, gikk fra nestleder til ansatt friluftsveileder sammen med Knut Johan.\nKasserer er fortsatt Arne Bengtsson.\nNy ungdomskontakt ble Stian Thorsrud, som også er regionslagets hagleinstruktør. Jan-Erik Bråthen og nyvalgt Solveig Smestad er styremedlemmer. Martine Iversen fortsetter som kvinnekontakt. Som varamedlem i styret fortsetter Hans Støvern og får med seg Veronica Opperud Berg som vara 2.\nKnut Johan guidet oss godt gjennom møtet, uten store anmerkninger på regnskap eller saker. Vi vedtok en resolasjon som kommer ut senere til alle lokalforeninger.\nÅrets store overraskelse for en av deltagerne var innsatsmedalje.\nHans store innsats for Ringerike JFF og Ringerike Skytesenter er høyt verdsatt. Leder av skytebaner, leder av mesterskap, instruktør på jegerprøve, hagle og rifle, aktiv på introjakter og ungdomsarbeid.\nOg stort sett aldri ett NEI når han blir spurt om ting, gjør at vi deler ut denne med glede og stor akklamasjon fra alle fremmøtte.\nTusen takk for fremmøte, neste år møtes vi på Flå 16-17 mars 2024.",
-              "content_sha256": "3e7b8f595785c26e0670bcb0577c2c53b62bd6033a908c3e944cfa741ca4db1a"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2026",
-              "title": "Årsmøte 2026 - NJFF Buskerud",
-              "main_text_excerpt": "Årsmøtet hadde 37 deltakere hvorav 26 var stemmeberettigede ved valg. 10 lokalforeninger var representert. \nSignert protokoll fra årsmøtet finner du her\nÅrsmøtedokumenter finner du her\n \nSaksliste til årsmøtet\n1. Konstituering av møtet.\n• Godkjenning av representanter\n• Godkjenning av innkalling\n• Godkjenning av dagsorden\n• Godkjenning av forretningsorden\n• Valg av ordstyrer\n• Valg av sekretær\n• Valg av tellekorps\n• Valg av to delegater til å underskrive protokollen\n2. Årsberetning fra siste kalenderår\n3. Revidert regnskap fra siste kalenderår\n4. Innkomne saker med styrets forslag til vedtak\n5. Andre saker som styret har ført opp på dagsorden\n6. Styrets forslag til årsplan og budsjett\n7. Valg av styre i henhold til punkt 6, Regionlagets styre\n8. Valg av ledere til årsmøteoppnevnte utvalg\n9. Valg av valgkomité på tre medlemmer inklusive leder, så vidt mulig geografisk\nfordelt. Medlemmene velges for tre år, rullerende slik at én person er på valg hvert år.\n10. Valg av revisor(er) og vararevisor for ett år.\n11. Etter innstilling fra valgkomiteen valg av delegater til landsmøtet. Delegatene skal ha et gyldig medlemskap i en av regionens lokalforeninger.",
-              "content_sha256": "7b253fb20ae1da104e077efad67854cff286967d924fb24e8d31db62f29b12b4"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/aktuelt/nm-jaktfelt-2026",
-              "title": "NM jaktfelt 2026 - NJFF Buskerud",
-              "main_text_excerpt": "Jaktfelt NM 2026 er den ultimate konkurransen for skarpskyttere som ønsker å teste sine ferdigheter og konkurrere på høyt nivå.\nMed spennende utfordringer og enestående beliggenhet, er dette arrangementet en unik opplevelse for alle deltakere.\nBli med oss for å skape minner for livet!\n \nDette skriver foreningene bak Buttentjern Jaktskytesenter og årets NM på Ringerike Skytesenter. Veldig gøy at vi har NM jaktfelt for 3. året på rad i Buskerud og antall påmeldingene når den stengte var veldig høyt. Over 1100 deltagere er påmeldt og det er veldig bra. \nNJFF Buskerud ønsker foreningene lykke til og håper alle skyttere, funksjonærer, utstillere, publikum og været lager ett fantastisk NM på Ringerike\n \nLes mer på: www.nmjaktfelt2026.no",
-              "content_sha256": "ec56f75423c6621dd82b9c9eec2f240310d9c1878c98c4c83dd6a39b2880de1b"
-            },
-            {
-              "url": "https://www.njff.no/buskerud/aktuelt/vellykket-fiskeseminar-pa-lampeland",
-              "title": "Vellykket fiskeseminar på Lampeland! - NJFF Buskerud",
-              "main_text_excerpt": "\"Endelig et skikkelig fiskeseminar\" var en av de mange gode tilbakemeldinger fra fagdagen under årsmøtehelgen til NJFF-Buskerud.\nPublisert: 26. mars 2026 kl. 11.59\nSist oppdatert: 27. mars 2026 kl. 14.33\nTEKST\nSteinar Paulsen\nDEL\nDeltakere og foredragsholdere har kommet med gode tilbakemeldinger på seminaret. Det gjelder både det faglige og det sosiale påfyllet vi fikk nå like før sesongstart. Ikke minst gjelder det også «inspirasjonstimen» med Håvard Stubø på kvelden! Vi takker for meget gode foredrag, gode spørsmål og diskusjoner og kommer tilbake med mer påfyll etter hvert. Her kan du laste ned noen foredragene:",
-              "content_sha256": "07a1ed4809090dbe3f8a57d14d5bd3acaaa0d701f8e48444d60d741e5f209908"
-            }
-          ],
           "crawl_errors": [
             {
-              "url": "https://www.njff.no/om-oss/betingelser-for-medlemskap-i-njff",
-              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+              "url": "https://www.njff.no/om-oss/betingelser-for-medlemskap-i-njff"
             },
             {
-              "url": "https://www.njff.no/om-oss/personvern",
-              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+              "url": "https://www.njff.no/om-oss/personvern"
             },
             {
-              "url": "https://www.njff.no/finn-ditt-lokallag-eller-regionlag",
-              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+              "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+              "url": "https://www.njff.no/finn-ditt-lokallag-eller-regionlag"
             }
           ],
-          "identity_assessment": {
-            "status": "review",
-            "score": 0.85,
-            "publishable": false,
-            "legal_name_tokens": [
-              "norges",
-              "jeger",
-              "fiskeforbund",
-              "buskerud"
-            ],
-            "matched_tokens": [
-              "buskerud",
-              "jeger",
-              "norges"
-            ],
-            "reasons": [
-              "most legal-name tokens appear, but exact identity is incomplete"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "",
           "discovered_social_links": [
             {
               "platform": "facebook",
@@ -497,64 +402,182 @@
               "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ"
             }
           ],
+          "extraction_state": "static_complete",
+          "final_url": "https://www.njff.no/buskerud",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "norges",
+              "jeger",
+              "fiskeforbund",
+              "buskerud"
+            ],
+            "matched_tokens": [
+              "buskerud",
+              "jeger",
+              "norges"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "most legal-name tokens appear, but exact identity is incomplete"
+            ],
+            "score": 0.85,
+            "status": "review"
+          },
+          "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
+          "pages": [
+            {
+              "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
+              "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
+              "title": "NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud"
+            },
+            {
+              "content_sha256": "8c039b5e98f261bb67eb99df10bbedec24cc2e842dd211f8a90df08ba4537f15",
+              "main_text_excerpt": "Regionsslaget koordinerer arbeidet til lokallagene, og er et bindeledd mellom disse og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser. \nRegionsslaget har et valgt styre, relevante utvalg, engasjerte regionsinstruktører innen ulike fagfelt, samt to fulltidsansatte. \nAnsatte:\nFylkessekretær Knut Johan Ruud\nbuskerud@njff.no, 90955921\n \n \nLeder: Tor A. Stensrud\nMobil: 466 62050 \nPoststed: Hønefoss\nLokallag: Ringerike JFF\n \nNestleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nKasserer: Arne Bengtsson\nMobil: 412 51610 \nPoststed: Sætre\nLokallag: Søndre Hurum JFF\n \nStyremedlem Ungdomskontakt: Sara Hansson\nMobil: 99368724\nPoststed: Vikersund\nLokallag: Krødsherad JFF\n \nStyremedlem: Solveig Smestad\nMobil: 41902961\nPoststed: Kongsberg\nLokallag: Kongsberg JFF\n \nStyremedlem: Stian Thorsrud\nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nStyremedlem kvinnekontakt: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \nVaramedlem styret: \nPer Hjalmar Nilsen\nMobil: 481 21 351\nPoststed: Svelvik\nLokallag: Svelvik og Drammen JFF\n \nVaramedlem styret:\nMarius Øia\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal\n \nUtvalg\n \nJaktskytterutvalg\nUtvalgsleder: Stian Thorsrud\nPoststed: Sokna\nMobil:\nLokallag: Sokna JFF\n \nMedlem: Kristian I Raaen \nPoststed:\nMobil:\nLokallag: Ål JFF\n \nMedlem: Jan Fredrik Ørmen\nPoststed:\nMobil:\nLokallag: Buskeruds JFF\n \nMedlem: Ann Merethe Bakken\nPoststed:\nMobil\nLokallag: Krødsherad JFF\n \n \n \n \n \nKvinneutvalg\nUtvalgsleder: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \n \nFiskeutvalg\n \nUtvalgsleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nMedlem: Marius Øia\nMarius Øie\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal JFF\n \nMedlem:  Bjørnar Skår\nMobil: 95902528\nPoststed: Nesbyen\nLokallag: Nes JFF\n \n \n \nValgkomite\n \n \nLeder: Martine Iversen\nPoststed: Hønefoss\nMobil: 482 74 601\nLokallag: Ringerike JFF\n \nMedlem: Espen Hansen Aspås\nPoststed: Røyken\nMobil: 41546942\nLokallag Røyken og Åros JFF\n \n \n \n \nRegionsinstruktører\n \nEttersøk: Rune Borgersen\nPoststed: Mjøndalen\nMobil: 9064 508\nLokallag: Vestsiden JFF\n \nHagle: Stian Thorsrud\n \nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nRifle: Greg Schneider\nPoststed: Kongsberg\nMobil: 48279238\nLokallag: Kongsberg JFF\n \n \nAversjonsdressur: Pål Berge\nPoststed: Drammen\nMobil: 97547160\nLokallag: Konnerud JFF",
+              "title": "Kontakt oss - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/om-oss"
+            },
+            {
+              "content_sha256": "c2b626c170f277d8fc5852fd71a970b1a5c0e47f4e483d6146238cad88c315f0",
+              "main_text_excerpt": "Om oss\nNorges Jeger- og Fiskerforbund (NJFF) er landets eneste riksdekkende organisasjon for jegere og sportsfiskere, og et av de viktigste miljøene for formidling av kunnskap om jakt og fiske i Norge. Vi har rundt 120.000 medlemmer, fordelt på 500 lokalforeninger og 19 regionlag.\nNJFF er en av landets største friluftsorganisasjoner, og også en av de eldste. Vi sysselsetter rundt 80 personer, hvor 40 jobber i sentraladministrasjonen og 40 jobber på regionskontorene.\nVi jobber for å sikre jakt og fiskes sterke posisjon i Norge\nForbundets primæroppgave er å sikre allmennhetens tilgang til jakt- og fiskemuligheter i framtiden. Derfor har organisasjonen et sterkt engasjement innen naturforvaltning og ulike jakt- og fiskepolitiske spørsmål. Forbundets visjon er «jakt- og fiskeglede til alle - for alltid»\nNorges Jeger- og Fiskerforbund er demokratisk organisert på alle tre organisasjonsnivåer; lokalt, regionalt og nasjonalt. Alle nivåer velger egne styremedlemmer, og all drift er basert på frivillig og ideell innsats.\nVi er lokale: Det er i våre mange lokalforeninger medlemmer finner de fleste medlemstilbud og aktiviteter. Her finnes aktiviteter som jakt, fiske, skyting, trening av jakthunder og jegerprøvekurs og mye mer.\nVi er regionale: Regionlagene fungerer som et bindeledd mellom sentraladministrasjonen og lokalforeningene i sin region. De hjelper lokalforeningene med ulike saker, fra økonomiske spørsmål, opplæring og kurs og politisk påvirkning.\nVi er nasjonale: Hvert tredje år velger landsmøtet nytt forbundsstyre og vedtar Handlingsprogrammet, som legger rammene for organisasjonens arbeid i de neste årene. Landsmøtet er det øverste organet i hele organisasjonen. Beslutninger som tas her gjelder alle nivåer.\nVi er internasjonale: Norges Jeger- og Fiskerforbund er medlem av Federation of Associations for Hunting and Conservation of the EU - FACE og European Anglers Alliance (EAA).",
+              "title": "Norges jeger- og fiskerforbund - hva gjør vi - NJFF",
+              "url": "https://www.njff.no/om-oss"
+            },
+            {
+              "content_sha256": "cf3ea9bc6498c7b04eefe700e4e28fa677b73ef2184d0a66fcaf6747615cde43",
+              "main_text_excerpt": "Kontakt oss\nTa kontakt med NJFFs medlemsservice for spørsmål vedrørende ditt medlemskap. Andre henvendelser kan rettes til administrasjonen eller våre foreninger.\nVeibeskrivelse:\nVårt hovedkontor er på Hvalstad i Asker, rett utenfor Oslo. Det er 200 meter å gå fra Hvalstad togstasjon (Tog L1 Spikkestad - Lillestrøm) eller Hvalstad busstopp (Buss 707 Asker - Sandvika). Med bil følger du E18 og tar av på Holmen.",
+              "title": "Kontakt NJFF - NJFF",
+              "url": "https://www.njff.no/om-oss/kontakt-oss"
+            },
+            {
+              "content_sha256": "ba06cec7c9c1105a77ae84673d342491e65e714147f168a027be658c655d92ac",
+              "main_text_excerpt": "Aktuelt fra Norges Jeger- og Fiskerforbund\n       \n \n\t\n\t \n \n    \n        Følg NJFF sitt politiske og faglige arbeid - meld deg på under",
+              "title": "Aktuelt - NJFF",
+              "url": "https://www.njff.no/aktuelt"
+            },
+            {
+              "content_sha256": "663b857063e5166d2402ee48b7b6d65290447c41c23c14362c476a656bd2c763",
+              "main_text_excerpt": "Håper du har hatt et flott år så langt med mange opplevelser i norsk natur.\nVi har to høringer som  skal svares på ganske raskt. Det ene er: Høring av forslag til forskrift om fiske ved utløp av vassdrag med anadrome laksefisk i Oslo, Akershus, Buskerud og Østfold samt høring av forskrift om fiske av innlandsfisk i anadrome vassdrag i Østfold. Frist for innspill er 19.01.2024\nHer er link: https://www.statsforvalteren.no/nb/oslo-og-viken/horinger/2024/01/horing-av-forslag-til-forskrift-om-fiske-ved-utlop-av-vassdrag-med-anadrome-laksefisk/\n \nDen andre handler om: Regelverket for jaktskyting, som  skal revideres i løpet av 2024, og NJFF åpner prosessen med en innspillsrunde. \nFrist for å sende innspill inn til regionslaget er 31.12.2023. \n \nI 2024 er det landsmøte for NJFF. Har du eller lokallaget en sak dere vil ta opp eller en sak dere har innspill på? Ta en snakk med regionslaget og husk fristen for saker som skal inn.\nLes mer om LM her: \n \nRegionslaget i Buskerud har årsmøte og tillitsvalgtsamling helgen 15-17 mars 2024. \nDenne gangen samles vi på Jakt og fiskesenteret på Flå. Viktig å sende inn saker som skal drøftes på årsmøte innen fristen. Husk å velge deltagere på deres eget årsmøte. \n \nHar dere en eller flere i foreningen som fortjener en ekstra takk for de siste års innsats? Husk å sende inn utfylt skjema til regionslaget i god tid før heder og ære skal deles ut.",
+              "title": "2023 -> 2024 - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/aktuelt/2023-2024"
+            },
+            {
+              "content_sha256": "3e7b8f595785c26e0670bcb0577c2c53b62bd6033a908c3e944cfa741ca4db1a",
+              "main_text_excerpt": "På tross av skader på kjernepersoner i 22, ble ett innholdsrikt år oppsummert av Regionslaget og innsatsmedalje ble delt ut.\nPublisert: 15. april 2023 kl. 23.48\nSist oppdatert: 15. juni 2023 kl. 12.11\n• Annet\nTEKST\nTAS\nFOTO\nTS\nDEL\nJohan Carsten Thiis hold ett godt grep om årsmøtet som er hans siste som\nleder i denne omgang. For mange oppgaver på jobb og tid til familie gjorde at Carsten gikk av ett år for tidlig. Han vil bli savnet for sin iver, kunnskap og struktur som har driftet Regionslaget godt i sin periode. Han etterlater store sko som ny leder skal fylle. Tor Stensrud overtok etter årsmøtet og skal lede sammen med Linda Iren Sørvig som nestleder.\nTo nye i lederstolen ble resultatet av en god søknad om ekstra midler fra kontorets side. Nestleder Roger Reinslo, gikk fra nestleder til ansatt friluftsveileder sammen med Knut Johan.\nKasserer er fortsatt Arne Bengtsson.\nNy ungdomskontakt ble Stian Thorsrud, som også er regionslagets hagleinstruktør. Jan-Erik Bråthen og nyvalgt Solveig Smestad er styremedlemmer. Martine Iversen fortsetter som kvinnekontakt. Som varamedlem i styret fortsetter Hans Støvern og får med seg Veronica Opperud Berg som vara 2.\nKnut Johan guidet oss godt gjennom møtet, uten store anmerkninger på regnskap eller saker. Vi vedtok en resolasjon som kommer ut senere til alle lokalforeninger.\nÅrets store overraskelse for en av deltagerne var innsatsmedalje.\nHans store innsats for Ringerike JFF og Ringerike Skytesenter er høyt verdsatt. Leder av skytebaner, leder av mesterskap, instruktør på jegerprøve, hagle og rifle, aktiv på introjakter og ungdomsarbeid.\nOg stort sett aldri ett NEI når han blir spurt om ting, gjør at vi deler ut denne med glede og stor akklamasjon fra alle fremmøtte.\nTusen takk for fremmøte, neste år møtes vi på Flå 16-17 mars 2024.",
+              "title": "Årsmøte 2023 er gjennomført - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2023-er-gjennomfort"
+            },
+            {
+              "content_sha256": "7b253fb20ae1da104e077efad67854cff286967d924fb24e8d31db62f29b12b4",
+              "main_text_excerpt": "Årsmøtet hadde 37 deltakere hvorav 26 var stemmeberettigede ved valg. 10 lokalforeninger var representert. \nSignert protokoll fra årsmøtet finner du her\nÅrsmøtedokumenter finner du her\n \nSaksliste til årsmøtet\n1. Konstituering av møtet.\n• Godkjenning av representanter\n• Godkjenning av innkalling\n• Godkjenning av dagsorden\n• Godkjenning av forretningsorden\n• Valg av ordstyrer\n• Valg av sekretær\n• Valg av tellekorps\n• Valg av to delegater til å underskrive protokollen\n2. Årsberetning fra siste kalenderår\n3. Revidert regnskap fra siste kalenderår\n4. Innkomne saker med styrets forslag til vedtak\n5. Andre saker som styret har ført opp på dagsorden\n6. Styrets forslag til årsplan og budsjett\n7. Valg av styre i henhold til punkt 6, Regionlagets styre\n8. Valg av ledere til årsmøteoppnevnte utvalg\n9. Valg av valgkomité på tre medlemmer inklusive leder, så vidt mulig geografisk\nfordelt. Medlemmene velges for tre år, rullerende slik at én person er på valg hvert år.\n10. Valg av revisor(er) og vararevisor for ett år.\n11. Etter innstilling fra valgkomiteen valg av delegater til landsmøtet. Delegatene skal ha et gyldig medlemskap i en av regionens lokalforeninger.",
+              "title": "Årsmøte 2026 - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2026"
+            },
+            {
+              "content_sha256": "ec56f75423c6621dd82b9c9eec2f240310d9c1878c98c4c83dd6a39b2880de1b",
+              "main_text_excerpt": "Jaktfelt NM 2026 er den ultimate konkurransen for skarpskyttere som ønsker å teste sine ferdigheter og konkurrere på høyt nivå.\nMed spennende utfordringer og enestående beliggenhet, er dette arrangementet en unik opplevelse for alle deltakere.\nBli med oss for å skape minner for livet!\n \nDette skriver foreningene bak Buttentjern Jaktskytesenter og årets NM på Ringerike Skytesenter. Veldig gøy at vi har NM jaktfelt for 3. året på rad i Buskerud og antall påmeldingene når den stengte var veldig høyt. Over 1100 deltagere er påmeldt og det er veldig bra. \nNJFF Buskerud ønsker foreningene lykke til og håper alle skyttere, funksjonærer, utstillere, publikum og været lager ett fantastisk NM på Ringerike\n \nLes mer på: www.nmjaktfelt2026.no",
+              "title": "NM jaktfelt 2026 - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/aktuelt/nm-jaktfelt-2026"
+            },
+            {
+              "content_sha256": "07a1ed4809090dbe3f8a57d14d5bd3acaaa0d701f8e48444d60d741e5f209908",
+              "main_text_excerpt": "\"Endelig et skikkelig fiskeseminar\" var en av de mange gode tilbakemeldinger fra fagdagen under årsmøtehelgen til NJFF-Buskerud.\nPublisert: 26. mars 2026 kl. 11.59\nSist oppdatert: 27. mars 2026 kl. 14.33\nTEKST\nSteinar Paulsen\nDEL\nDeltakere og foredragsholdere har kommet med gode tilbakemeldinger på seminaret. Det gjelder både det faglige og det sosiale påfyllet vi fikk nå like før sesongstart. Ikke minst gjelder det også «inspirasjonstimen» med Håvard Stubø på kvelden! Vi takker for meget gode foredrag, gode spørsmål og diskusjoner og kommer tilbake med mer påfyll etter hvert. Her kan du laste ned noen foredragene:",
+              "title": "Vellykket fiskeseminar på Lampeland! - NJFF Buskerud",
+              "url": "https://www.njff.no/buskerud/aktuelt/vellykket-fiskeseminar-pa-lampeland"
+            }
+          ],
+          "registered_domain": "njff.no",
+          "requested_url": "https://www.njff.no/buskerud",
           "social_link_assessments": [
             {
+              "identity_score": 0.3,
+              "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "facebook",
-              "url": "https://facebook.com/NJFF.no",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/NJFF.no"
             },
             {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "jeger"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "instagram",
-              "url": "https://instagram.com/jegerogfisk",
-              "identity_score": 0.3,
               "publishable": false,
+              "reason": "social handle lacks strong exact-entity name evidence",
+              "url": "https://instagram.com/jegerogfisk"
+            },
+            {
+              "identity_score": 0.3,
               "matched_tokens": [
                 "jeger"
               ],
-              "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
-            },
-            {
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "tiktok",
-              "url": "https://tiktok.com/@jegerogfisk",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [
-                "jeger"
-              ],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://tiktok.com/@jegerogfisk"
             },
             {
-              "platform": "youtube",
-              "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "youtube",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [],
+          "structured_organisations": [],
+          "title": "NJFF Buskerud"
+        }
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-69c32ab3662f3d4d7dd7c0cc",
+          "organisation_number": "984828802",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
+          "retrieved_at": "2026-10-08T21:31:26.833953Z",
+          "content_sha256": "911b120db33de1d71bb8c8daaa3c8f3ad3b02566d82f042bfc17a7f772f7ed68",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "984828802"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "984828802"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
         {
           "id": "registry-contact-9c0d0809b401d1ea2f464968",
           "organisation_number": "984828802",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -581,8 +604,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -609,8 +632,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -637,7 +660,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "54df8e69c4dafc030a3980dd0d913d0227eb48b03c73b0235266938275e73c1b",
           "observed_at": "2026-04-21",
           "exact_entity": true,
@@ -667,7 +690,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "fa10f0f6cb8320126cc89b6eb233e791a08b48ba7f389f561841435ee515632e",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -697,7 +720,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "220544dc2338d24d97fdf6a9a53014925b7a505820d6efa82af863d0cb637318",
           "observed_at": "2025-10-31",
           "exact_entity": true,
@@ -727,7 +750,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "678534d0380d3987e7381c8b038f4fa82189a25cba8b8ef08016bc27865f02d0",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -757,7 +780,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "f83f4a3f115538b21243855f107973aaa25aaa4bb7b60e798491a1c92fe16e07",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -787,7 +810,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "35d78b8e60e69522420f89e2ab728bd4193135c288fd208f2fce1fa61cd7c181",
           "observed_at": "2020-01-01",
           "exact_entity": true,
@@ -817,7 +840,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2ae8573d0bc5c9768d16b2846a31c23e0fe88215b40f1cbd95ea0c3b585e1494",
           "observed_at": "2019-12-31",
           "exact_entity": true,
@@ -871,199 +894,13 @@
           "evidence_span": "Godkjente årsregnskap — 2026-04-21 (BRREG official announcement)"
         },
         {
-          "organisation_number": "984828802",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "retrieved_at": "2026-10-06T15:53:44.128069Z",
-          "content_sha256": "821dfcb797d35b0a75c5b54b14f0dc0e0c0769b4e03da7ea9fda29dbb0196a45",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "njff.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-984828802-053f76830539ae93",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Spydspissen av organisasjonen, Her finner en fagfolkene og alle andre som er med å gjøre NJFF til den beste organisasjonen som ivaretar Fiskere, Jegere og alle andre som tar del i vår felles kulturarv hvor vi kan drive et høsting basert friluftsliv",
-          "observed_at": "2023-01-21T19:13:56.856478Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 0,
-            "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-          }
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "retrieved_at": "2026-10-06T15:53:44.128069Z",
-          "content_sha256": "821dfcb797d35b0a75c5b54b14f0dc0e0c0769b4e03da7ea9fda29dbb0196a45",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "njff.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-984828802-5814c66047c52228",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Moderskipet for norske jegere og fiskere",
-          "observed_at": "2017-12-27T14:28:05.496Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 1,
-            "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-          }
-        },
-        {
-          "id": "annual-workforce-06da8969a9dab3ae4cb7b07b",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
-          "retrieved_at": "2026-10-28T06:01:57.485566Z",
-          "content_sha256": "b5da6ae5e0e606d54455f2ca3cce44f0732fd2d743d5c621ed02a9551eed3155",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 0
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "retrieved_at": "2026-10-31T18:20:18.977892Z",
-          "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "njff.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-984828802-188b56d569719726",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "Norges Jeger- og Fiskerforbund (NJFF) Google profile: rating 4.6/5, 7 ratings.",
-          "metrics": {
-            "rating": 4.6,
-            "review_count": 7,
-            "scale": 5,
-            "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-          }
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "retrieved_at": "2026-10-31T18:20:18.977892Z",
-          "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "njff.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-summary-984828802-188b56d569719726",
-          "signal_type": "review_summary",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Norges Jeger- og Fiskerforbund (NJFF) is rated 4.6/5 from 7 Google reviews.",
-          "metrics": {
-            "rating": 4.6,
-            "review_count": 7,
-            "scale": 5,
-            "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-          }
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "retrieved_at": "2026-10-31T18:20:18.977892Z",
-          "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "njff.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-sentiment-984828802-188b56d569719726",
-          "signal_type": "sentiment",
-          "strategy": "customer_review_sentiment",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "evidence_span": "Aggregate rating 4.6/5 from 7 reviews implies positive sentiment.",
-          "metrics": {
-            "rating": 4.6,
-            "review_count": 7,
-            "scale": 5
-          }
-        },
-        {
-          "id": "registry-site-984828802-0feeaa3156e9cdd7",
+          "id": "registry-site-984828802-cc12c65f87e6b92f",
           "organisation_number": "984828802",
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.njff.no/buskerud",
-          "retrieved_at": "2026-10-09T14:03:23.159446Z",
-          "content_sha256": "0feeaa3156e9cdd72f9e3dab08f5e7e8126c1f0fc87637d0487f9c84c651264a",
+          "retrieved_at": "2026-09-29T10:38:14.263364Z",
+          "content_sha256": "cc12c65f87e6b92ffe7e7c08eac4dd4ee748c8163414ae68a5bb1a0dbd7fe7b2",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1086,299 +923,19 @@
             "registry_domain": "njff.no"
           },
           "strategy": "registry_declared_website_description"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_approval_date-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 12.03.2026",
-          "metrics": {
-            "approval_date": "12.03.2026",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_auditor-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Knut Johan Ruud",
-          "metrics": {
-            "auditor": "Knut Johan Ruud",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_accounting_rules-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_business_address-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Gråterudveien 39",
-          "metrics": {
-            "business_address": "Gråterudveien 39",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_signing_officer-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-984828802-annual_report_org_number-c6920d258dd7bc73",
-          "organisation_number": "984828802",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-          "retrieved_at": "2026-11-05T16:21:35.428077Z",
-          "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "984828802"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "984828802"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 984 828 802",
-          "metrics": {
-            "org_number": "984828802",
-            "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-            "ocr_chars": 1337
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/984828802",
-          "retrieved_at": "2026-11-05T21:12:00.834083Z",
-          "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "984828802"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-              "matched_organisation_number": "984828802"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-          "id": "purehelp-email-984828802-661c8717ee1139bb",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "buskerud@njff.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/984828802",
-          "retrieved_at": "2026-11-05T21:12:00.834083Z",
-          "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "984828802"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-              "matched_organisation_number": "984828802"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-          "id": "purehelp-phone-984828802-661c8717ee1139bb",
-          "signal_type": "contact_phone",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "phone": "32 84 59 22",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "984828802",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/984828802",
-          "retrieved_at": "2026-11-05T21:12:00.834083Z",
-          "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "984828802"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-              "matched_organisation_number": "984828802"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-          "id": "purehelp-profile-984828802-661c8717ee1139bb",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "FLI",
-            "legal_form_description": "Association/club/organisation",
-            "nace_code": "94.992",
-            "nace_description": "Other activities of other membership organisations",
-            "town": "DRAMMEN",
-            "zipcode": "3036",
-            "municipality": "DRAMMEN",
-            "municipality_number": "3301",
-            "county": "Buskerud",
-            "registration_date": "2002-11-20",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2002-11-20",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.njff.no/buskerud"
-          }
         }
       ]
     },
+    "industry_code": "94.992",
+    "industry_label": "Aktiviteter i andre medlemsorganisasjoner ellers",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "FLI",
+    "liquidating": false,
+    "municipality": "DRAMMEN",
+    "municipality_number": "3301",
+    "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
+    "organisation_number": "984828802",
     "run_metrics": {
-      "requests": 32,
       "bytes": 307243,
       "latencies_ms": [
         700,
@@ -1400,15 +957,17 @@
         3470,
         2775,
         3441
-      ]
-    }
+      ],
+      "requests": 32
+    },
+    "website": "www.njff.no/buskerud"
   },
   "summary": {
     "organisation_number": "984828802",
     "company_name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "NORGES JEGER- OG FISKEFORBUND BUSKERUD operates in Aktiviteter i andre medlemsorganisasjoner ellers. Latest accounts (2025): revenue NOK 1.8m, annual result NOK 324.2k. Annual accounts available for 2025-2025 (1 years). Detailed records only available as PDFs. No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); revenue_growth (insufficient financial history (need at least 2 years)); staff_growth (insufficient financial history (need at least 2 years)).",
+    "summary": "NORGES JEGER- OG FISKEFORBUND BUSKERUD operates in Aktiviteter i andre medlemsorganisasjoner ellers. Latest accounts (2025): revenue NOK 1.8m, annual result NOK 324.2k. Annual accounts available for 2025-2025 (1 years). Detailed records only available as PDFs. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); revenue_growth (insufficient financial history (need at least 2 years)); staff_growth (insufficient financial history (need at least 2 years)); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1422,12 +981,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-          "https://purehelp.no/company/NO/984828802",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000194270&amp;sokeverdi=984828802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
           "https://www.njff.no/buskerud"
         ]
       },
@@ -1443,12 +998,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-          "https://purehelp.no/company/NO/984828802",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000194270&amp;sokeverdi=984828802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
           "https://www.njff.no/buskerud"
         ]
       },
@@ -1464,12 +1015,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-          "https://purehelp.no/company/NO/984828802",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000194270&amp;sokeverdi=984828802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
           "https://www.njff.no/buskerud"
         ]
       },
@@ -1499,24 +1046,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/984828802/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-          "https://purehelp.no/company/NO/984828802",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000194270&amp;sokeverdi=984828802&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-          "https://www.njff.no/buskerud"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1530,12 +1064,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-          "https://purehelp.no/company/NO/984828802",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000194270&amp;sokeverdi=984828802&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
           "https://www.njff.no/buskerud"
         ]
       }
@@ -1555,154 +1085,241 @@
         "field": "staff_growth",
         "state": "not_available",
         "reason": "insufficient financial history (need at least 2 years)"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:35:03.214519Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "984828802",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "984828802",
-        "navn": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-        "organisasjonsform.kode": "FLI",
-        "organisasjonsform.beskrivelse": "Forening/lag/innretning",
-        "naeringskode1.kode": "94.992",
-        "naeringskode1.beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "FLI",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "4ef65c5c6a787fba52f4422cea215ef239f29d493e45ae1f8534dc39ebcca33b",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:11:13.991748Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
+            "year": "2025"
+          }
+        ],
+        "years": [
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "ace05ad1cc2a6bdc947725a7857f29d0aa2c949ddcff8cf37ea628ff4903fe4a",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:11:09.665254Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 324200.0,
+            "assets": 2089432.0,
+            "currency": "NOK",
+            "debt": 228369.0,
+            "equity": 1861064.0,
+            "operating_result": 296688.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": 324200.0,
+            "record_id": 6466807,
+            "revenue": 1760022.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T09:11:15.386079Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/984828802",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "aaff512f6c66a88d0f13c7fa0f7d507f3a7a33722cadc8e26bacad7a9cb87cf3",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:11:16.150515Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
+      "status": "available",
+      "value": {
+        "locations": []
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "984828802",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Paraplyorganisasjon for lokale jeger- og fiskeforeninger i Buskerud fylke. Arrangerer blant annet kurs og forskjellige aktiviteter.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.njff.no/buskerud",
         "epostadresse": "buskerud@njff.no",
-        "telefon": "32 84 59 22",
-        "mobil": "95774511",
-        "postadresse.adresse": "",
-        "postadresse.poststed": "",
-        "postadresse.postnummer": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Gråterudveien 39",
-        "forretningsadresse.poststed": "DRAMMEN",
-        "forretningsadresse.postnummer": "3036",
         "forretningsadresse.kommune": "DRAMMEN",
         "forretningsadresse.kommunenummer": "3301",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "7000",
-        "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2002-11-20",
-        "stiftelsesdato": "1965-11-15",
-        "registrertIMvaRegisteret": "false",
-        "registreringsdatoMerverdiavgiftsregisteret": "",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "forretningsadresse.postnummer": "3036",
+        "forretningsadresse.poststed": "DRAMMEN",
+        "fravalgRevisjonBeslutningsDato": "",
+        "fravalgRevisjonDato": "",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "true",
-        "registreringsdatoFrivillighetsregisteret": "2009-11-12",
-        "registrertIForetaksregisteret": "false",
-        "registreringsdatoForetaksregisteret": "",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.njff.no/buskerud",
+        "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
+        "institusjonellSektorkode.kode": "7000",
+        "kapital.antallAksjer": "",
+        "kapital.belop": "",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "",
+        "kapital.type": "",
+        "kapital.valuta": "",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "95774511",
+        "naeringskode1.beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
+        "naeringskode1.kode": "94.992",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
+        "organisasjonsform.beskrivelse": "Forening/lag/innretning",
+        "organisasjonsform.kode": "FLI",
+        "organisasjonsnummer": "984828802",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "",
+        "postadresse.kommune": "",
+        "postadresse.kommunenummer": "",
+        "postadresse.land": "",
+        "postadresse.landkode": "",
+        "postadresse.postnummer": "",
+        "postadresse.poststed": "",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "2009-11-12",
+        "registreringsdatoMerverdiavgiftsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2002-11-20",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "false",
+        "registrertIFrivillighetsregisteret": "true",
+        "registrertIMvaRegisteret": "false",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "1965-11-15",
+        "telefon": "32 84 59 22",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "",
-        "vedtektsfestetFormaal": "",
-        "aktivitet": "Paraplyorganisasjon for lokale jeger- og fiskeforeninger i Buskerud fylke. Arrangerer blant annet kurs og forskjellige aktiviteter.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "",
-        "fravalgRevisjonBeslutningsDato": "",
-        "erIKonsern": "false",
-        "kapital.belop": "",
-        "kapital.antallAksjer": "",
-        "kapital.type": "",
-        "kapital.bundet": "",
-        "kapital.valuta": "",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "984828802",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:35:03.214519Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "FLI",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "984828802",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "",
+        "vedtektsfestetFormaal": ""
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "197b4758d9f2aea47f3afa12d7a31f4b5985bed676b7510187bbb3d7c9ba6778",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
+      "note": null,
       "retrieved_at": "2026-10-05T09:11:08.922744Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
+      "status": "available",
       "value": {
-        "organisation_number": "984828802",
-        "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-        "legal_form": "FLI",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.njff.no/buskerud",
-        "industry": {
-          "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
-          "kode": "94.992"
-        },
         "business_address": {
           "adresse": [
             "Gråterudveien 39"
@@ -1714,317 +1331,150 @@
           "postnummer": "3036",
           "poststed": "DRAMMEN"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Aktiviteter i andre medlemsorganisasjoner ellers",
+          "kode": "94.992"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "FLI",
+        "liquidating": false,
+        "name": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
+        "organisation_number": "984828802",
         "postal_address": null,
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "197b4758d9f2aea47f3afa12d7a31f4b5985bed676b7510187bbb3d7c9ba6778",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/984828802",
-      "retrieved_at": "2026-10-05T09:11:09.665254Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 6466807,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 1760022.0,
-            "operating_result": 296688.0,
-            "profit_before_tax": 324200.0,
-            "annual_result": 324200.0,
-            "assets": 2089432.0,
-            "equity": 1861064.0,
-            "debt": 228369.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "ace05ad1cc2a6bdc947725a7857f29d0aa2c949ddcff8cf37ea628ff4903fe4a",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/aar",
-      "retrieved_at": "2026-10-05T09:11:13.991748Z",
-      "value": {
-        "years": [
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "4ef65c5c6a787fba52f4422cea215ef239f29d493e45ae1f8534dc39ebcca33b",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.njff.no/buskerud"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "2aa98881633c7d5013aca7aebc7f3649c0249dcf203bfb6d765f3b21c1ba9c77",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T09:11:14.679611Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
+            "last_changed": "2024-03-06",
             "name": "Knut Johan Ruud",
             "organisation_number": null,
-            "role_code": "DAGL",
             "role": "Daglig leder",
-            "group_code": "DAGL",
-            "group": "Daglig leder",
-            "last_changed": "2024-03-06",
-            "inactive": false
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-04-23",
             "name": "Tor Asbjørn Stensrud",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-04-23",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-04-23",
             "name": "Carl Arne Peter Bengtsson",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-04-23",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-04-23",
             "name": "Stian Berg Thorsrud",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-04-23",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-04-23",
             "name": "Solveig Smestad",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-04-23",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-04-23",
             "name": "Steinar Paulsen",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-04-23",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Revisor",
+            "group_code": "REVI",
+            "inactive": false,
+            "last_changed": "2019-04-08",
             "name": [
               "IRENE LANDFALD"
             ],
             "organisation_number": "912541789",
-            "role_code": "REVI",
             "role": "Revisor",
-            "group_code": "REVI",
-            "group": "Revisor",
-            "last_changed": "2019-04-08",
-            "inactive": false
+            "role_code": "REVI"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2019-06-06",
             "name": [
               "EFFEKT REGNSKAP AS"
             ],
             "organisation_number": "913173600",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2019-06-06",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "2aa98881633c7d5013aca7aebc7f3649c0249dcf203bfb6d765f3b21c1ba9c77",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/984828802",
-      "retrieved_at": "2026-10-05T09:11:15.386079Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=984828802&size=1000",
-      "retrieved_at": "2026-10-05T09:11:16.150515Z",
-      "value": {
-        "locations": []
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "aaff512f6c66a88d0f13c7fa0f7d507f3a7a33722cadc8e26bacad7a9cb87cf3",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.njff.no/buskerud",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T09:12:14.596836Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.njff.no/buskerud",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.njff.no/buskerud",
-        "final_url": "https://www.njff.no/buskerud",
-        "registered_domain": "njff.no",
-        "title": "NJFF Buskerud",
-        "description": "",
-        "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
-        "social_links": [],
-        "structured_organisations": [],
         "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
-        "extraction_state": "static_complete",
-        "pages": [
-          {
-            "url": "https://www.njff.no/buskerud",
-            "title": "NJFF Buskerud",
-            "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
-            "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/om-oss",
-            "title": "Kontakt oss - NJFF Buskerud",
-            "main_text_excerpt": "Regionsslaget koordinerer arbeidet til lokallagene, og er et bindeledd mellom disse og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser. \nRegionsslaget har et valgt styre, relevante utvalg, engasjerte regionsinstruktører innen ulike fagfelt, samt to fulltidsansatte. \nAnsatte:\nFylkessekretær Knut Johan Ruud\nbuskerud@njff.no, 90955921\n \n \nLeder: Tor A. Stensrud\nMobil: 466 62050 \nPoststed: Hønefoss\nLokallag: Ringerike JFF\n \nNestleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nKasserer: Arne Bengtsson\nMobil: 412 51610 \nPoststed: Sætre\nLokallag: Søndre Hurum JFF\n \nStyremedlem Ungdomskontakt: Sara Hansson\nMobil: 99368724\nPoststed: Vikersund\nLokallag: Krødsherad JFF\n \nStyremedlem: Solveig Smestad\nMobil: 41902961\nPoststed: Kongsberg\nLokallag: Kongsberg JFF\n \nStyremedlem: Stian Thorsrud\nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nStyremedlem kvinnekontakt: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \nVaramedlem styret: \nPer Hjalmar Nilsen\nMobil: 481 21 351\nPoststed: Svelvik\nLokallag: Svelvik og Drammen JFF\n \nVaramedlem styret:\nMarius Øia\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal\n \nUtvalg\n \nJaktskytterutvalg\nUtvalgsleder: Stian Thorsrud\nPoststed: Sokna\nMobil:\nLokallag: Sokna JFF\n \nMedlem: Kristian I Raaen \nPoststed:\nMobil:\nLokallag: Ål JFF\n \nMedlem: Jan Fredrik Ørmen\nPoststed:\nMobil:\nLokallag: Buskeruds JFF\n \nMedlem: Ann Merethe Bakken\nPoststed:\nMobil\nLokallag: Krødsherad JFF\n \n \n \n \n \nKvinneutvalg\nUtvalgsleder: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \n \nFiskeutvalg\n \nUtvalgsleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nMedlem: Marius Øia\nMarius Øie\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal JFF\n \nMedlem:  Bjørnar Skår\nMobil: 95902528\nPoststed: Nesbyen\nLokallag: Nes JFF\n \n \n \nValgkomite\n \n \nLeder: Martine Iversen\nPoststed: Hønefoss\nMobil: 482 74 601\nLokallag: Ringerike JFF\n \nMedlem: Espen Hansen Aspås\nPoststed: Røyken\nMobil: 41546942\nLokallag Røyken og Åros JFF\n \n \n \n \nRegionsinstruktører\n \nEttersøk: Rune Borgersen\nPoststed: Mjøndalen\nMobil: 9064 508\nLokallag: Vestsiden JFF\n \nHagle: Stian Thorsrud\n \nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nRifle: Greg Schneider\nPoststed: Kongsberg\nMobil: 48279238\nLokallag: Kongsberg JFF\n \n \nAversjonsdressur: Pål Berge\nPoststed: Drammen\nMobil: 97547160\nLokallag: Konnerud JFF",
-            "content_sha256": "8c039b5e98f261bb67eb99df10bbedec24cc2e842dd211f8a90df08ba4537f15"
-          },
-          {
-            "url": "https://www.njff.no/om-oss",
-            "title": "Norges jeger- og fiskerforbund - hva gjør vi - NJFF",
-            "main_text_excerpt": "Om oss\nNorges Jeger- og Fiskerforbund (NJFF) er landets eneste riksdekkende organisasjon for jegere og sportsfiskere, og et av de viktigste miljøene for formidling av kunnskap om jakt og fiske i Norge. Vi har rundt 120.000 medlemmer, fordelt på 500 lokalforeninger og 19 regionlag.\nNJFF er en av landets største friluftsorganisasjoner, og også en av de eldste. Vi sysselsetter rundt 80 personer, hvor 40 jobber i sentraladministrasjonen og 40 jobber på regionskontorene.\nVi jobber for å sikre jakt og fiskes sterke posisjon i Norge\nForbundets primæroppgave er å sikre allmennhetens tilgang til jakt- og fiskemuligheter i framtiden. Derfor har organisasjonen et sterkt engasjement innen naturforvaltning og ulike jakt- og fiskepolitiske spørsmål. Forbundets visjon er «jakt- og fiskeglede til alle - for alltid»\nNorges Jeger- og Fiskerforbund er demokratisk organisert på alle tre organisasjonsnivåer; lokalt, regionalt og nasjonalt. Alle nivåer velger egne styremedlemmer, og all drift er basert på frivillig og ideell innsats.\nVi er lokale: Det er i våre mange lokalforeninger medlemmer finner de fleste medlemstilbud og aktiviteter. Her finnes aktiviteter som jakt, fiske, skyting, trening av jakthunder og jegerprøvekurs og mye mer.\nVi er regionale: Regionlagene fungerer som et bindeledd mellom sentraladministrasjonen og lokalforeningene i sin region. De hjelper lokalforeningene med ulike saker, fra økonomiske spørsmål, opplæring og kurs og politisk påvirkning.\nVi er nasjonale: Hvert tredje år velger landsmøtet nytt forbundsstyre og vedtar Handlingsprogrammet, som legger rammene for organisasjonens arbeid i de neste årene. Landsmøtet er det øverste organet i hele organisasjonen. Beslutninger som tas her gjelder alle nivåer.\nVi er internasjonale: Norges Jeger- og Fiskerforbund er medlem av Federation of Associations for Hunting and Conservation of the EU - FACE og European Anglers Alliance (EAA).",
-            "content_sha256": "c2b626c170f277d8fc5852fd71a970b1a5c0e47f4e483d6146238cad88c315f0"
-          },
-          {
-            "url": "https://www.njff.no/om-oss/kontakt-oss",
-            "title": "Kontakt NJFF - NJFF",
-            "main_text_excerpt": "Kontakt oss\nTa kontakt med NJFFs medlemsservice for spørsmål vedrørende ditt medlemskap. Andre henvendelser kan rettes til administrasjonen eller våre foreninger.\nVeibeskrivelse:\nVårt hovedkontor er på Hvalstad i Asker, rett utenfor Oslo. Det er 200 meter å gå fra Hvalstad togstasjon (Tog L1 Spikkestad - Lillestrøm) eller Hvalstad busstopp (Buss 707 Asker - Sandvika). Med bil følger du E18 og tar av på Holmen.",
-            "content_sha256": "cf3ea9bc6498c7b04eefe700e4e28fa677b73ef2184d0a66fcaf6747615cde43"
-          },
-          {
-            "url": "https://www.njff.no/aktuelt",
-            "title": "Aktuelt - NJFF",
-            "main_text_excerpt": "Aktuelt fra Norges Jeger- og Fiskerforbund\n       \n \n\t\n\t \n \n    \n        Følg NJFF sitt politiske og faglige arbeid - meld deg på under",
-            "content_sha256": "ba06cec7c9c1105a77ae84673d342491e65e714147f168a027be658c655d92ac"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/aktuelt/2023-2024",
-            "title": "2023 -> 2024 - NJFF Buskerud",
-            "main_text_excerpt": "Håper du har hatt et flott år så langt med mange opplevelser i norsk natur.\nVi har to høringer som  skal svares på ganske raskt. Det ene er: Høring av forslag til forskrift om fiske ved utløp av vassdrag med anadrome laksefisk i Oslo, Akershus, Buskerud og Østfold samt høring av forskrift om fiske av innlandsfisk i anadrome vassdrag i Østfold. Frist for innspill er 19.01.2024\nHer er link: https://www.statsforvalteren.no/nb/oslo-og-viken/horinger/2024/01/horing-av-forslag-til-forskrift-om-fiske-ved-utlop-av-vassdrag-med-anadrome-laksefisk/\n \nDen andre handler om: Regelverket for jaktskyting, som  skal revideres i løpet av 2024, og NJFF åpner prosessen med en innspillsrunde. \nFrist for å sende innspill inn til regionslaget er 31.12.2023. \n \nI 2024 er det landsmøte for NJFF. Har du eller lokallaget en sak dere vil ta opp eller en sak dere har innspill på? Ta en snakk med regionslaget og husk fristen for saker som skal inn.\nLes mer om LM her: \n \nRegionslaget i Buskerud har årsmøte og tillitsvalgtsamling helgen 15-17 mars 2024. \nDenne gangen samles vi på Jakt og fiskesenteret på Flå. Viktig å sende inn saker som skal drøftes på årsmøte innen fristen. Husk å velge deltagere på deres eget årsmøte. \n \nHar dere en eller flere i foreningen som fortjener en ekstra takk for de siste års innsats? Husk å sende inn utfylt skjema til regionslaget i god tid før heder og ære skal deles ut.",
-            "content_sha256": "663b857063e5166d2402ee48b7b6d65290447c41c23c14362c476a656bd2c763"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2023-er-gjennomfort",
-            "title": "Årsmøte 2023 er gjennomført - NJFF Buskerud",
-            "main_text_excerpt": "På tross av skader på kjernepersoner i 22, ble ett innholdsrikt år oppsummert av Regionslaget og innsatsmedalje ble delt ut.\nPublisert: 15. april 2023 kl. 23.48\nSist oppdatert: 15. juni 2023 kl. 12.11\n• Annet\nTEKST\nTAS\nFOTO\nTS\nDEL\nJohan Carsten Thiis hold ett godt grep om årsmøtet som er hans siste som\nleder i denne omgang. For mange oppgaver på jobb og tid til familie gjorde at Carsten gikk av ett år for tidlig. Han vil bli savnet for sin iver, kunnskap og struktur som har driftet Regionslaget godt i sin periode. Han etterlater store sko som ny leder skal fylle. Tor Stensrud overtok etter årsmøtet og skal lede sammen med Linda Iren Sørvig som nestleder.\nTo nye i lederstolen ble resultatet av en god søknad om ekstra midler fra kontorets side. Nestleder Roger Reinslo, gikk fra nestleder til ansatt friluftsveileder sammen med Knut Johan.\nKasserer er fortsatt Arne Bengtsson.\nNy ungdomskontakt ble Stian Thorsrud, som også er regionslagets hagleinstruktør. Jan-Erik Bråthen og nyvalgt Solveig Smestad er styremedlemmer. Martine Iversen fortsetter som kvinnekontakt. Som varamedlem i styret fortsetter Hans Støvern og får med seg Veronica Opperud Berg som vara 2.\nKnut Johan guidet oss godt gjennom møtet, uten store anmerkninger på regnskap eller saker. Vi vedtok en resolasjon som kommer ut senere til alle lokalforeninger.\nÅrets store overraskelse for en av deltagerne var innsatsmedalje.\nHans store innsats for Ringerike JFF og Ringerike Skytesenter er høyt verdsatt. Leder av skytebaner, leder av mesterskap, instruktør på jegerprøve, hagle og rifle, aktiv på introjakter og ungdomsarbeid.\nOg stort sett aldri ett NEI når han blir spurt om ting, gjør at vi deler ut denne med glede og stor akklamasjon fra alle fremmøtte.\nTusen takk for fremmøte, neste år møtes vi på Flå 16-17 mars 2024.",
-            "content_sha256": "3e7b8f595785c26e0670bcb0577c2c53b62bd6033a908c3e944cfa741ca4db1a"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2026",
-            "title": "Årsmøte 2026 - NJFF Buskerud",
-            "main_text_excerpt": "Årsmøtet hadde 37 deltakere hvorav 26 var stemmeberettigede ved valg. 10 lokalforeninger var representert. \nSignert protokoll fra årsmøtet finner du her\nÅrsmøtedokumenter finner du her\n \nSaksliste til årsmøtet\n1. Konstituering av møtet.\n• Godkjenning av representanter\n• Godkjenning av innkalling\n• Godkjenning av dagsorden\n• Godkjenning av forretningsorden\n• Valg av ordstyrer\n• Valg av sekretær\n• Valg av tellekorps\n• Valg av to delegater til å underskrive protokollen\n2. Årsberetning fra siste kalenderår\n3. Revidert regnskap fra siste kalenderår\n4. Innkomne saker med styrets forslag til vedtak\n5. Andre saker som styret har ført opp på dagsorden\n6. Styrets forslag til årsplan og budsjett\n7. Valg av styre i henhold til punkt 6, Regionlagets styre\n8. Valg av ledere til årsmøteoppnevnte utvalg\n9. Valg av valgkomité på tre medlemmer inklusive leder, så vidt mulig geografisk\nfordelt. Medlemmene velges for tre år, rullerende slik at én person er på valg hvert år.\n10. Valg av revisor(er) og vararevisor for ett år.\n11. Etter innstilling fra valgkomiteen valg av delegater til landsmøtet. Delegatene skal ha et gyldig medlemskap i en av regionens lokalforeninger.",
-            "content_sha256": "7b253fb20ae1da104e077efad67854cff286967d924fb24e8d31db62f29b12b4"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/aktuelt/nm-jaktfelt-2026",
-            "title": "NM jaktfelt 2026 - NJFF Buskerud",
-            "main_text_excerpt": "Jaktfelt NM 2026 er den ultimate konkurransen for skarpskyttere som ønsker å teste sine ferdigheter og konkurrere på høyt nivå.\nMed spennende utfordringer og enestående beliggenhet, er dette arrangementet en unik opplevelse for alle deltakere.\nBli med oss for å skape minner for livet!\n \nDette skriver foreningene bak Buttentjern Jaktskytesenter og årets NM på Ringerike Skytesenter. Veldig gøy at vi har NM jaktfelt for 3. året på rad i Buskerud og antall påmeldingene når den stengte var veldig høyt. Over 1100 deltagere er påmeldt og det er veldig bra. \nNJFF Buskerud ønsker foreningene lykke til og håper alle skyttere, funksjonærer, utstillere, publikum og været lager ett fantastisk NM på Ringerike\n \nLes mer på: www.nmjaktfelt2026.no",
-            "content_sha256": "ec56f75423c6621dd82b9c9eec2f240310d9c1878c98c4c83dd6a39b2880de1b"
-          },
-          {
-            "url": "https://www.njff.no/buskerud/aktuelt/vellykket-fiskeseminar-pa-lampeland",
-            "title": "Vellykket fiskeseminar på Lampeland! - NJFF Buskerud",
-            "main_text_excerpt": "\"Endelig et skikkelig fiskeseminar\" var en av de mange gode tilbakemeldinger fra fagdagen under årsmøtehelgen til NJFF-Buskerud.\nPublisert: 26. mars 2026 kl. 11.59\nSist oppdatert: 27. mars 2026 kl. 14.33\nTEKST\nSteinar Paulsen\nDEL\nDeltakere og foredragsholdere har kommet med gode tilbakemeldinger på seminaret. Det gjelder både det faglige og det sosiale påfyllet vi fikk nå like før sesongstart. Ikke minst gjelder det også «inspirasjonstimen» med Håvard Stubø på kvelden! Vi takker for meget gode foredrag, gode spørsmål og diskusjoner og kommer tilbake med mer påfyll etter hvert. Her kan du laste ned noen foredragene:",
-            "content_sha256": "07a1ed4809090dbe3f8a57d14d5bd3acaaa0d701f8e48444d60d741e5f209908"
-          }
-        ],
         "crawl_errors": [
           {
-            "url": "https://www.njff.no/om-oss/betingelser-for-medlemskap-i-njff",
-            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+            "url": "https://www.njff.no/om-oss/betingelser-for-medlemskap-i-njff"
           },
           {
-            "url": "https://www.njff.no/om-oss/personvern",
-            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+            "url": "https://www.njff.no/om-oss/personvern"
           },
           {
-            "url": "https://www.njff.no/finn-ditt-lokallag-eller-regionlag",
-            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend"
+            "error": "HTTPError: HTTP Error 503: No healthy IP available for the backend",
+            "url": "https://www.njff.no/finn-ditt-lokallag-eller-regionlag"
           }
         ],
-        "identity_assessment": {
-          "status": "review",
-          "score": 0.85,
-          "publishable": false,
-          "legal_name_tokens": [
-            "norges",
-            "jeger",
-            "fiskeforbund",
-            "buskerud"
-          ],
-          "matched_tokens": [
-            "buskerud",
-            "jeger",
-            "norges"
-          ],
-          "reasons": [
-            "most legal-name tokens appear, but exact identity is incomplete"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "",
         "discovered_social_links": [
           {
             "platform": "facebook",
@@ -2043,64 +1493,182 @@
             "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ"
           }
         ],
+        "extraction_state": "static_complete",
+        "final_url": "https://www.njff.no/buskerud",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "norges",
+            "jeger",
+            "fiskeforbund",
+            "buskerud"
+          ],
+          "matched_tokens": [
+            "buskerud",
+            "jeger",
+            "norges"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "most legal-name tokens appear, but exact identity is incomplete"
+          ],
+          "score": 0.85,
+          "status": "review"
+        },
+        "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
+        "pages": [
+          {
+            "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
+            "main_text_excerpt": "Velkommen\nNJFF Buskerud er et regionslag under Norges Jeger- og Fiskerforbund. Regionslaget representerer 29 lokale Jeger- og Fiskerforeninger i Buskerud, med til sammen ca 5900 medlemmer.\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\n \n\t\t\t\nVi i regionslaget er et bindeledd mellom lokallagene og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser.\nRegionslaget har et valgt styre, samt to ansatte. Våre lokallag disponerer fiskevann, elvestrekninger, jaktterreng, lerduebaner og storviltbaner. I tillegg har det enkelte lag en rekke varierte aktivitetstilbud. Se vår aktivitetskalender for ulike tilbud.\nTrenger din forening instruktører?\nVed å bli instruktør i NJFF bidrar du til å lære opp nye jegere og fiskere i din forening. Her finner du mer informasjon og kan melde interesse hvis du vil bli instruktør, eller hvis foreningen har behov for instruktører.",
+            "title": "NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud"
+          },
+          {
+            "content_sha256": "8c039b5e98f261bb67eb99df10bbedec24cc2e842dd211f8a90df08ba4537f15",
+            "main_text_excerpt": "Regionsslaget koordinerer arbeidet til lokallagene, og er et bindeledd mellom disse og NJFF sentralt, i tillegg til offentlige myndigheter og andre instanser. \nRegionsslaget har et valgt styre, relevante utvalg, engasjerte regionsinstruktører innen ulike fagfelt, samt to fulltidsansatte. \nAnsatte:\nFylkessekretær Knut Johan Ruud\nbuskerud@njff.no, 90955921\n \n \nLeder: Tor A. Stensrud\nMobil: 466 62050 \nPoststed: Hønefoss\nLokallag: Ringerike JFF\n \nNestleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nKasserer: Arne Bengtsson\nMobil: 412 51610 \nPoststed: Sætre\nLokallag: Søndre Hurum JFF\n \nStyremedlem Ungdomskontakt: Sara Hansson\nMobil: 99368724\nPoststed: Vikersund\nLokallag: Krødsherad JFF\n \nStyremedlem: Solveig Smestad\nMobil: 41902961\nPoststed: Kongsberg\nLokallag: Kongsberg JFF\n \nStyremedlem: Stian Thorsrud\nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nStyremedlem kvinnekontakt: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \nVaramedlem styret: \nPer Hjalmar Nilsen\nMobil: 481 21 351\nPoststed: Svelvik\nLokallag: Svelvik og Drammen JFF\n \nVaramedlem styret:\nMarius Øia\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal\n \nUtvalg\n \nJaktskytterutvalg\nUtvalgsleder: Stian Thorsrud\nPoststed: Sokna\nMobil:\nLokallag: Sokna JFF\n \nMedlem: Kristian I Raaen \nPoststed:\nMobil:\nLokallag: Ål JFF\n \nMedlem: Jan Fredrik Ørmen\nPoststed:\nMobil:\nLokallag: Buskeruds JFF\n \nMedlem: Ann Merethe Bakken\nPoststed:\nMobil\nLokallag: Krødsherad JFF\n \n \n \n \n \nKvinneutvalg\nUtvalgsleder: Heidemarie Nordahl\nMobil: 91195220\nPoststed: Båtstø\nLokallag: Røyken og Åros JFF\n \n \nFiskeutvalg\n \nUtvalgsleder: Steinar Paulsen\nMobil: 90544697\nPoststed: Åros\nLokallag: RÅJFF\n \nMedlem: Marius Øia\nMarius Øie\nMobil: 41265323\nPoststed: Flesberg\nLokallag: Numedal JFF\n \nMedlem:  Bjørnar Skår\nMobil: 95902528\nPoststed: Nesbyen\nLokallag: Nes JFF\n \n \n \nValgkomite\n \n \nLeder: Martine Iversen\nPoststed: Hønefoss\nMobil: 482 74 601\nLokallag: Ringerike JFF\n \nMedlem: Espen Hansen Aspås\nPoststed: Røyken\nMobil: 41546942\nLokallag Røyken og Åros JFF\n \n \n \n \nRegionsinstruktører\n \nEttersøk: Rune Borgersen\nPoststed: Mjøndalen\nMobil: 9064 508\nLokallag: Vestsiden JFF\n \nHagle: Stian Thorsrud\n \nMobil: 47832721\nPoststed: Sokna\nLokallag: Sokna JFF\n \nRifle: Greg Schneider\nPoststed: Kongsberg\nMobil: 48279238\nLokallag: Kongsberg JFF\n \n \nAversjonsdressur: Pål Berge\nPoststed: Drammen\nMobil: 97547160\nLokallag: Konnerud JFF",
+            "title": "Kontakt oss - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/om-oss"
+          },
+          {
+            "content_sha256": "c2b626c170f277d8fc5852fd71a970b1a5c0e47f4e483d6146238cad88c315f0",
+            "main_text_excerpt": "Om oss\nNorges Jeger- og Fiskerforbund (NJFF) er landets eneste riksdekkende organisasjon for jegere og sportsfiskere, og et av de viktigste miljøene for formidling av kunnskap om jakt og fiske i Norge. Vi har rundt 120.000 medlemmer, fordelt på 500 lokalforeninger og 19 regionlag.\nNJFF er en av landets største friluftsorganisasjoner, og også en av de eldste. Vi sysselsetter rundt 80 personer, hvor 40 jobber i sentraladministrasjonen og 40 jobber på regionskontorene.\nVi jobber for å sikre jakt og fiskes sterke posisjon i Norge\nForbundets primæroppgave er å sikre allmennhetens tilgang til jakt- og fiskemuligheter i framtiden. Derfor har organisasjonen et sterkt engasjement innen naturforvaltning og ulike jakt- og fiskepolitiske spørsmål. Forbundets visjon er «jakt- og fiskeglede til alle - for alltid»\nNorges Jeger- og Fiskerforbund er demokratisk organisert på alle tre organisasjonsnivåer; lokalt, regionalt og nasjonalt. Alle nivåer velger egne styremedlemmer, og all drift er basert på frivillig og ideell innsats.\nVi er lokale: Det er i våre mange lokalforeninger medlemmer finner de fleste medlemstilbud og aktiviteter. Her finnes aktiviteter som jakt, fiske, skyting, trening av jakthunder og jegerprøvekurs og mye mer.\nVi er regionale: Regionlagene fungerer som et bindeledd mellom sentraladministrasjonen og lokalforeningene i sin region. De hjelper lokalforeningene med ulike saker, fra økonomiske spørsmål, opplæring og kurs og politisk påvirkning.\nVi er nasjonale: Hvert tredje år velger landsmøtet nytt forbundsstyre og vedtar Handlingsprogrammet, som legger rammene for organisasjonens arbeid i de neste årene. Landsmøtet er det øverste organet i hele organisasjonen. Beslutninger som tas her gjelder alle nivåer.\nVi er internasjonale: Norges Jeger- og Fiskerforbund er medlem av Federation of Associations for Hunting and Conservation of the EU - FACE og European Anglers Alliance (EAA).",
+            "title": "Norges jeger- og fiskerforbund - hva gjør vi - NJFF",
+            "url": "https://www.njff.no/om-oss"
+          },
+          {
+            "content_sha256": "cf3ea9bc6498c7b04eefe700e4e28fa677b73ef2184d0a66fcaf6747615cde43",
+            "main_text_excerpt": "Kontakt oss\nTa kontakt med NJFFs medlemsservice for spørsmål vedrørende ditt medlemskap. Andre henvendelser kan rettes til administrasjonen eller våre foreninger.\nVeibeskrivelse:\nVårt hovedkontor er på Hvalstad i Asker, rett utenfor Oslo. Det er 200 meter å gå fra Hvalstad togstasjon (Tog L1 Spikkestad - Lillestrøm) eller Hvalstad busstopp (Buss 707 Asker - Sandvika). Med bil følger du E18 og tar av på Holmen.",
+            "title": "Kontakt NJFF - NJFF",
+            "url": "https://www.njff.no/om-oss/kontakt-oss"
+          },
+          {
+            "content_sha256": "ba06cec7c9c1105a77ae84673d342491e65e714147f168a027be658c655d92ac",
+            "main_text_excerpt": "Aktuelt fra Norges Jeger- og Fiskerforbund\n       \n \n\t\n\t \n \n    \n        Følg NJFF sitt politiske og faglige arbeid - meld deg på under",
+            "title": "Aktuelt - NJFF",
+            "url": "https://www.njff.no/aktuelt"
+          },
+          {
+            "content_sha256": "663b857063e5166d2402ee48b7b6d65290447c41c23c14362c476a656bd2c763",
+            "main_text_excerpt": "Håper du har hatt et flott år så langt med mange opplevelser i norsk natur.\nVi har to høringer som  skal svares på ganske raskt. Det ene er: Høring av forslag til forskrift om fiske ved utløp av vassdrag med anadrome laksefisk i Oslo, Akershus, Buskerud og Østfold samt høring av forskrift om fiske av innlandsfisk i anadrome vassdrag i Østfold. Frist for innspill er 19.01.2024\nHer er link: https://www.statsforvalteren.no/nb/oslo-og-viken/horinger/2024/01/horing-av-forslag-til-forskrift-om-fiske-ved-utlop-av-vassdrag-med-anadrome-laksefisk/\n \nDen andre handler om: Regelverket for jaktskyting, som  skal revideres i løpet av 2024, og NJFF åpner prosessen med en innspillsrunde. \nFrist for å sende innspill inn til regionslaget er 31.12.2023. \n \nI 2024 er det landsmøte for NJFF. Har du eller lokallaget en sak dere vil ta opp eller en sak dere har innspill på? Ta en snakk med regionslaget og husk fristen for saker som skal inn.\nLes mer om LM her: \n \nRegionslaget i Buskerud har årsmøte og tillitsvalgtsamling helgen 15-17 mars 2024. \nDenne gangen samles vi på Jakt og fiskesenteret på Flå. Viktig å sende inn saker som skal drøftes på årsmøte innen fristen. Husk å velge deltagere på deres eget årsmøte. \n \nHar dere en eller flere i foreningen som fortjener en ekstra takk for de siste års innsats? Husk å sende inn utfylt skjema til regionslaget i god tid før heder og ære skal deles ut.",
+            "title": "2023 -> 2024 - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/aktuelt/2023-2024"
+          },
+          {
+            "content_sha256": "3e7b8f595785c26e0670bcb0577c2c53b62bd6033a908c3e944cfa741ca4db1a",
+            "main_text_excerpt": "På tross av skader på kjernepersoner i 22, ble ett innholdsrikt år oppsummert av Regionslaget og innsatsmedalje ble delt ut.\nPublisert: 15. april 2023 kl. 23.48\nSist oppdatert: 15. juni 2023 kl. 12.11\n• Annet\nTEKST\nTAS\nFOTO\nTS\nDEL\nJohan Carsten Thiis hold ett godt grep om årsmøtet som er hans siste som\nleder i denne omgang. For mange oppgaver på jobb og tid til familie gjorde at Carsten gikk av ett år for tidlig. Han vil bli savnet for sin iver, kunnskap og struktur som har driftet Regionslaget godt i sin periode. Han etterlater store sko som ny leder skal fylle. Tor Stensrud overtok etter årsmøtet og skal lede sammen med Linda Iren Sørvig som nestleder.\nTo nye i lederstolen ble resultatet av en god søknad om ekstra midler fra kontorets side. Nestleder Roger Reinslo, gikk fra nestleder til ansatt friluftsveileder sammen med Knut Johan.\nKasserer er fortsatt Arne Bengtsson.\nNy ungdomskontakt ble Stian Thorsrud, som også er regionslagets hagleinstruktør. Jan-Erik Bråthen og nyvalgt Solveig Smestad er styremedlemmer. Martine Iversen fortsetter som kvinnekontakt. Som varamedlem i styret fortsetter Hans Støvern og får med seg Veronica Opperud Berg som vara 2.\nKnut Johan guidet oss godt gjennom møtet, uten store anmerkninger på regnskap eller saker. Vi vedtok en resolasjon som kommer ut senere til alle lokalforeninger.\nÅrets store overraskelse for en av deltagerne var innsatsmedalje.\nHans store innsats for Ringerike JFF og Ringerike Skytesenter er høyt verdsatt. Leder av skytebaner, leder av mesterskap, instruktør på jegerprøve, hagle og rifle, aktiv på introjakter og ungdomsarbeid.\nOg stort sett aldri ett NEI når han blir spurt om ting, gjør at vi deler ut denne med glede og stor akklamasjon fra alle fremmøtte.\nTusen takk for fremmøte, neste år møtes vi på Flå 16-17 mars 2024.",
+            "title": "Årsmøte 2023 er gjennomført - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2023-er-gjennomfort"
+          },
+          {
+            "content_sha256": "7b253fb20ae1da104e077efad67854cff286967d924fb24e8d31db62f29b12b4",
+            "main_text_excerpt": "Årsmøtet hadde 37 deltakere hvorav 26 var stemmeberettigede ved valg. 10 lokalforeninger var representert. \nSignert protokoll fra årsmøtet finner du her\nÅrsmøtedokumenter finner du her\n \nSaksliste til årsmøtet\n1. Konstituering av møtet.\n• Godkjenning av representanter\n• Godkjenning av innkalling\n• Godkjenning av dagsorden\n• Godkjenning av forretningsorden\n• Valg av ordstyrer\n• Valg av sekretær\n• Valg av tellekorps\n• Valg av to delegater til å underskrive protokollen\n2. Årsberetning fra siste kalenderår\n3. Revidert regnskap fra siste kalenderår\n4. Innkomne saker med styrets forslag til vedtak\n5. Andre saker som styret har ført opp på dagsorden\n6. Styrets forslag til årsplan og budsjett\n7. Valg av styre i henhold til punkt 6, Regionlagets styre\n8. Valg av ledere til årsmøteoppnevnte utvalg\n9. Valg av valgkomité på tre medlemmer inklusive leder, så vidt mulig geografisk\nfordelt. Medlemmene velges for tre år, rullerende slik at én person er på valg hvert år.\n10. Valg av revisor(er) og vararevisor for ett år.\n11. Etter innstilling fra valgkomiteen valg av delegater til landsmøtet. Delegatene skal ha et gyldig medlemskap i en av regionens lokalforeninger.",
+            "title": "Årsmøte 2026 - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/aktuelt/arsmote-2026"
+          },
+          {
+            "content_sha256": "ec56f75423c6621dd82b9c9eec2f240310d9c1878c98c4c83dd6a39b2880de1b",
+            "main_text_excerpt": "Jaktfelt NM 2026 er den ultimate konkurransen for skarpskyttere som ønsker å teste sine ferdigheter og konkurrere på høyt nivå.\nMed spennende utfordringer og enestående beliggenhet, er dette arrangementet en unik opplevelse for alle deltakere.\nBli med oss for å skape minner for livet!\n \nDette skriver foreningene bak Buttentjern Jaktskytesenter og årets NM på Ringerike Skytesenter. Veldig gøy at vi har NM jaktfelt for 3. året på rad i Buskerud og antall påmeldingene når den stengte var veldig høyt. Over 1100 deltagere er påmeldt og det er veldig bra. \nNJFF Buskerud ønsker foreningene lykke til og håper alle skyttere, funksjonærer, utstillere, publikum og været lager ett fantastisk NM på Ringerike\n \nLes mer på: www.nmjaktfelt2026.no",
+            "title": "NM jaktfelt 2026 - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/aktuelt/nm-jaktfelt-2026"
+          },
+          {
+            "content_sha256": "07a1ed4809090dbe3f8a57d14d5bd3acaaa0d701f8e48444d60d741e5f209908",
+            "main_text_excerpt": "\"Endelig et skikkelig fiskeseminar\" var en av de mange gode tilbakemeldinger fra fagdagen under årsmøtehelgen til NJFF-Buskerud.\nPublisert: 26. mars 2026 kl. 11.59\nSist oppdatert: 27. mars 2026 kl. 14.33\nTEKST\nSteinar Paulsen\nDEL\nDeltakere og foredragsholdere har kommet med gode tilbakemeldinger på seminaret. Det gjelder både det faglige og det sosiale påfyllet vi fikk nå like før sesongstart. Ikke minst gjelder det også «inspirasjonstimen» med Håvard Stubø på kvelden! Vi takker for meget gode foredrag, gode spørsmål og diskusjoner og kommer tilbake med mer påfyll etter hvert. Her kan du laste ned noen foredragene:",
+            "title": "Vellykket fiskeseminar på Lampeland! - NJFF Buskerud",
+            "url": "https://www.njff.no/buskerud/aktuelt/vellykket-fiskeseminar-pa-lampeland"
+          }
+        ],
+        "registered_domain": "njff.no",
+        "requested_url": "https://www.njff.no/buskerud",
         "social_link_assessments": [
           {
+            "identity_score": 0.3,
+            "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "facebook",
-            "url": "https://facebook.com/NJFF.no",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/NJFF.no"
           },
           {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "jeger"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "instagram",
-            "url": "https://instagram.com/jegerogfisk",
-            "identity_score": 0.3,
             "publishable": false,
+            "reason": "social handle lacks strong exact-entity name evidence",
+            "url": "https://instagram.com/jegerogfisk"
+          },
+          {
+            "identity_score": 0.3,
             "matched_tokens": [
               "jeger"
             ],
-            "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
-          },
-          {
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "tiktok",
-            "url": "https://tiktok.com/@jegerogfisk",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [
-              "jeger"
-            ],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://tiktok.com/@jegerogfisk"
           },
           {
-            "platform": "youtube",
-            "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "youtube",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://youtube.com/channel/UCOSkBF-QUV_nCkDNA2HRUOQ"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "53a1b62dcecd6e88f08115ece42e80b6b4ec46290ff7c20a7816ed49f46fcee8",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [],
+        "structured_organisations": [],
+        "title": "NJFF Buskerud"
+      }
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-69c32ab3662f3d4d7dd7c0cc",
+        "organisation_number": "984828802",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
+        "retrieved_at": "2026-10-08T21:31:26.833953Z",
+        "content_sha256": "911b120db33de1d71bb8c8daaa3c8f3ad3b02566d82f042bfc17a7f772f7ed68",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "984828802"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "984828802"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
       {
         "id": "registry-contact-9c0d0809b401d1ea2f464968",
         "organisation_number": "984828802",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2127,8 +1695,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2155,8 +1723,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2183,7 +1751,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "54df8e69c4dafc030a3980dd0d913d0227eb48b03c73b0235266938275e73c1b",
         "observed_at": "2026-04-21",
         "exact_entity": true,
@@ -2213,7 +1781,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "fa10f0f6cb8320126cc89b6eb233e791a08b48ba7f389f561841435ee515632e",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2243,7 +1811,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "220544dc2338d24d97fdf6a9a53014925b7a505820d6efa82af863d0cb637318",
         "observed_at": "2025-10-31",
         "exact_entity": true,
@@ -2273,7 +1841,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "678534d0380d3987e7381c8b038f4fa82189a25cba8b8ef08016bc27865f02d0",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2303,7 +1871,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "f83f4a3f115538b21243855f107973aaa25aaa4bb7b60e798491a1c92fe16e07",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2333,7 +1901,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "35d78b8e60e69522420f89e2ab728bd4193135c288fd208f2fce1fa61cd7c181",
         "observed_at": "2020-01-01",
         "exact_entity": true,
@@ -2363,7 +1931,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/984828802",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2ae8573d0bc5c9768d16b2846a31c23e0fe88215b40f1cbd95ea0c3b585e1494",
         "observed_at": "2019-12-31",
         "exact_entity": true,
@@ -2417,199 +1985,13 @@
         "evidence_span": "Godkjente årsregnskap — 2026-04-21 (BRREG official announcement)"
       },
       {
-        "organisation_number": "984828802",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-        "retrieved_at": "2026-10-06T15:53:44.128069Z",
-        "content_sha256": "821dfcb797d35b0a75c5b54b14f0dc0e0c0769b4e03da7ea9fda29dbb0196a45",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "njff.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-984828802-053f76830539ae93",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Spydspissen av organisasjonen, Her finner en fagfolkene og alle andre som er med å gjøre NJFF til den beste organisasjonen som ivaretar Fiskere, Jegere og alle andre som tar del i vår felles kulturarv hvor vi kan drive et høsting basert friluftsliv",
-        "observed_at": "2023-01-21T19:13:56.856478Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 0,
-          "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-        }
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-        "retrieved_at": "2026-10-06T15:53:44.128069Z",
-        "content_sha256": "821dfcb797d35b0a75c5b54b14f0dc0e0c0769b4e03da7ea9fda29dbb0196a45",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "njff.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-984828802-5814c66047c52228",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Moderskipet for norske jegere og fiskere",
-        "observed_at": "2017-12-27T14:28:05.496Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 1,
-          "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-        }
-      },
-      {
-        "id": "annual-workforce-06da8969a9dab3ae4cb7b07b",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/984828802/2025",
-        "retrieved_at": "2026-10-28T06:01:57.485566Z",
-        "content_sha256": "b5da6ae5e0e606d54455f2ca3cce44f0732fd2d743d5c621ed02a9551eed3155",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 0
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-        "retrieved_at": "2026-10-31T18:20:18.977892Z",
-        "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "njff.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-984828802-188b56d569719726",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "Norges Jeger- og Fiskerforbund (NJFF) Google profile: rating 4.6/5, 7 ratings.",
-        "metrics": {
-          "rating": 4.6,
-          "review_count": 7,
-          "scale": 5,
-          "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-        }
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-        "retrieved_at": "2026-10-31T18:20:18.977892Z",
-        "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "njff.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-summary-984828802-188b56d569719726",
-        "signal_type": "review_summary",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Norges Jeger- og Fiskerforbund (NJFF) is rated 4.6/5 from 7 Google reviews.",
-        "metrics": {
-          "rating": 4.6,
-          "review_count": 7,
-          "scale": 5,
-          "place_id": "ChIJWadOt1sUQUYREVr1g8Bz8Qo"
-        }
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJWadOt1sUQUYREVr1g8Bz8Qo",
-        "retrieved_at": "2026-10-31T18:20:18.977892Z",
-        "content_sha256": "188b56d5697197266e42ed0e47eac98c3d2da04ee40dea45af142e2748f347cd",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "njff.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-sentiment-984828802-188b56d569719726",
-        "signal_type": "sentiment",
-        "strategy": "customer_review_sentiment",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "evidence_span": "Aggregate rating 4.6/5 from 7 reviews implies positive sentiment.",
-        "metrics": {
-          "rating": 4.6,
-          "review_count": 7,
-          "scale": 5
-        }
-      },
-      {
-        "id": "registry-site-984828802-0feeaa3156e9cdd7",
+        "id": "registry-site-984828802-cc12c65f87e6b92f",
         "organisation_number": "984828802",
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.njff.no/buskerud",
-        "retrieved_at": "2026-10-09T14:03:23.159446Z",
-        "content_sha256": "0feeaa3156e9cdd72f9e3dab08f5e7e8126c1f0fc87637d0487f9c84c651264a",
+        "retrieved_at": "2026-09-29T10:38:14.263364Z",
+        "content_sha256": "cc12c65f87e6b92ffe7e7c08eac4dd4ee748c8163414ae68a5bb1a0dbd7fe7b2",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2632,296 +2014,8 @@
           "registry_domain": "njff.no"
         },
         "strategy": "registry_declared_website_description"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_approval_date-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 12.03.2026",
-        "metrics": {
-          "approval_date": "12.03.2026",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_auditor-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Knut Johan Ruud",
-        "metrics": {
-          "auditor": "Knut Johan Ruud",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_accounting_rules-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_business_address-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Gråterudveien 39",
-        "metrics": {
-          "business_address": "Gråterudveien 39",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_signing_officer-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-984828802-annual_report_org_number-c6920d258dd7bc73",
-        "organisation_number": "984828802",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/984828802-2025.pdf",
-        "retrieved_at": "2026-11-05T16:21:35.428077Z",
-        "content_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "984828802"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "984828802"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 984 828 802",
-        "metrics": {
-          "org_number": "984828802",
-          "ocr_text_sha256": "c6920d258dd7bc73bb7ea387c06bb6e9314631752c2a5b74deae530959945abf",
-          "ocr_chars": 1337
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/984828802",
-        "retrieved_at": "2026-11-05T21:12:00.834083Z",
-        "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "984828802"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-            "matched_organisation_number": "984828802"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-        "id": "purehelp-email-984828802-661c8717ee1139bb",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "buskerud@njff.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/984828802",
-        "retrieved_at": "2026-11-05T21:12:00.834083Z",
-        "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "984828802"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-            "matched_organisation_number": "984828802"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-        "id": "purehelp-phone-984828802-661c8717ee1139bb",
-        "signal_type": "contact_phone",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "phone": "32 84 59 22",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "984828802",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/984828802",
-        "retrieved_at": "2026-11-05T21:12:00.834083Z",
-        "content_sha256": "1e399c366abb887aca5923f97dc96409a4141836c250b4ae474c0ce1c2283cdb",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "984828802"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-            "matched_organisation_number": "984828802"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-984828802.orgNumber=984828802;name=NORGES JEGER- OG FISKEFORBUND BUSKERUD",
-        "id": "purehelp-profile-984828802-661c8717ee1139bb",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "FLI",
-          "legal_form_description": "Association/club/organisation",
-          "nace_code": "94.992",
-          "nace_description": "Other activities of other membership organisations",
-          "town": "DRAMMEN",
-          "zipcode": "3036",
-          "municipality": "DRAMMEN",
-          "municipality_number": "3301",
-          "county": "Buskerud",
-          "registration_date": "2002-11-20",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2002-11-20",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.njff.no/buskerud"
-        }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:42.290294+00:00"
+  "generated_at": "2026-11-07T07:28:40.197076+00:00"
 }

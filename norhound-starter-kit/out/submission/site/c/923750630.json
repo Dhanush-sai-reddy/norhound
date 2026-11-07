@@ -1,162 +1,317 @@
 {
   "profile": {
-    "organisation_number": "923750630",
-    "name": "TESTHUB TECHNOLOGIES AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "OSLO",
-    "municipality_number": "0301",
-    "industry_code": "62.100",
-    "industry_label": "Dataprogrammeringstjenester",
-    "website": "www.testhub.tech",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:43.423995Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "923750630",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "923750630",
-          "navn": "TESTHUB TECHNOLOGIES AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "62.100",
-          "naeringskode1.beskrivelse": "Dataprogrammeringstjenester",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "d3cd03cd90fcf8ead9d634ead2451dfcb1810423727ef3e30655374948250f3e",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:14.071858Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2022",
+              "year": "2022"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2021",
+              "year": "2021"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2020",
+              "year": "2020"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2019",
+              "year": "2019"
+            }
+          ],
+          "years": [
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "d6b0072b8da67173aad3661dfbbee0560298e722602070bb93768d53e8dd7ffe",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:12.536274Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -2317665.0,
+              "assets": 1693994.0,
+              "currency": "NOK",
+              "debt": 438562.0,
+              "equity": 1255433.0,
+              "operating_result": -2317416.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": -2317665.0,
+              "record_id": 4851637,
+              "revenue": 462569.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -882752.0,
+              "assets": 948445.0,
+              "currency": "NOK",
+              "debt": 575764.0,
+              "equity": 372681.0,
+              "operating_result": -823435.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": -882752.0,
+              "record_id": 5969429,
+              "revenue": 1126526.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -769824.0,
+              "assets": 28901.0,
+              "currency": "NOK",
+              "debt": 422750.0,
+              "equity": -393850.0,
+              "operating_result": -766965.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": -769824.0,
+              "record_id": 7083962,
+              "revenue": 569081.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T09:06:15.487730Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/923750630",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:16.265574Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Trondheimsveien 2"
+                ],
+                "kommune": "OSLO",
+                "kommunenummer": "0301",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "0560",
+                "poststed": "OSLO"
+              },
+              "employees": null,
+              "industry": {
+                "beskrivelse": "Dataprogrammeringstjenester",
+                "kode": "62.100"
+              },
+              "name": "TESTHUB TECHNOLOGIES AS",
+              "organisation_number": "923793267"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "923750630",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Salg av programvare for rekruttering.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.testhub.tech",
           "epostadresse": "jens@testhub.tech",
-          "telefon": "",
-          "mobil": "467 84 707",
-          "postadresse.adresse": "c/o Silje Fladmoe\nPer Kvibergs gate 14A",
-          "postadresse.poststed": "OSLO",
-          "postadresse.postnummer": "0478",
-          "postadresse.kommune": "OSLO",
-          "postadresse.kommunenummer": "0301",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Trondheimsveien 2",
-          "forretningsadresse.poststed": "OSLO",
-          "forretningsadresse.postnummer": "0560",
           "forretningsadresse.kommune": "OSLO",
           "forretningsadresse.kommunenummer": "0301",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2019-11-04",
-          "stiftelsesdato": "2019-08-30",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2021-01-01",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2021-01-06",
+          "forretningsadresse.postnummer": "0560",
+          "forretningsadresse.poststed": "OSLO",
+          "fravalgRevisjonBeslutningsDato": "2019-08-30",
+          "fravalgRevisjonDato": "2019-11-04",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2019-11-04",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.testhub.tech",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "41529",
+          "kapital.belop": "41529.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2024-07-29",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "467 84 707",
+          "naeringskode1.beskrivelse": "Dataprogrammeringstjenester",
+          "naeringskode1.kode": "62.100",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "TESTHUB TECHNOLOGIES AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "923750630",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "c/o Silje Fladmoe\nPer Kvibergs gate 14A",
+          "postadresse.kommune": "OSLO",
+          "postadresse.kommunenummer": "0301",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "0478",
+          "postadresse.poststed": "OSLO",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2019-11-04",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "2021-01-01",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2021-01-06",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2019-11-04",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2019-08-30",
+          "telefon": "",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2024-07-03",
-          "vedtektsfestetFormaal": "Lage og selge programvare for rekruttering.",
-          "aktivitet": "Salg av programvare for rekruttering.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "2019-11-04",
-          "fravalgRevisjonBeslutningsDato": "2019-08-30",
-          "erIKonsern": "false",
-          "kapital.belop": "41529.00",
-          "kapital.antallAksjer": "41529",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2024-07-29",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "923750630",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:43.423995Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "923750630",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2024-07-03",
+          "vedtektsfestetFormaal": "Lage og selge programvare for rekruttering."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "7524ea1c99c69c14f3fa31caa86ac91c968e566985b2c5807160de0c77becd27",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+        "note": null,
         "retrieved_at": "2026-10-05T09:06:11.768153Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+        "status": "available",
         "value": {
-          "organisation_number": "923750630",
-          "name": "TESTHUB TECHNOLOGIES AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.testhub.tech",
-          "industry": {
-            "beskrivelse": "Dataprogrammeringstjenester",
-            "kode": "62.100"
-          },
           "business_address": {
             "adresse": [
               "Trondheimsveien 2"
@@ -168,6 +323,16 @@
             "postnummer": "0560",
             "poststed": "OSLO"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Dataprogrammeringstjenester",
+            "kode": "62.100"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "TESTHUB TECHNOLOGIES AS",
+          "organisation_number": "923750630",
           "postal_address": {
             "adresse": [
               "c/o Silje Fladmoe",
@@ -180,313 +345,99 @@
             "postnummer": "0478",
             "poststed": "OSLO"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "7524ea1c99c69c14f3fa31caa86ac91c968e566985b2c5807160de0c77becd27",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-        "retrieved_at": "2026-10-05T09:06:12.536274Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4851637,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 462569.0,
-              "operating_result": -2317416.0,
-              "profit_before_tax": -2317665.0,
-              "annual_result": -2317665.0,
-              "assets": 1693994.0,
-              "equity": 1255433.0,
-              "debt": 438562.0
-            },
-            {
-              "record_id": 5969429,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 1126526.0,
-              "operating_result": -823435.0,
-              "profit_before_tax": -882752.0,
-              "annual_result": -882752.0,
-              "assets": 948445.0,
-              "equity": 372681.0,
-              "debt": 575764.0
-            },
-            {
-              "record_id": 7083962,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 569081.0,
-              "operating_result": -766965.0,
-              "profit_before_tax": -769824.0,
-              "annual_result": -769824.0,
-              "assets": 28901.0,
-              "equity": -393850.0,
-              "debt": 422750.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "d6b0072b8da67173aad3661dfbbee0560298e722602070bb93768d53e8dd7ffe",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-        "retrieved_at": "2026-10-05T09:06:14.071858Z",
-        "value": {
-          "years": [
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2022"
-            },
-            {
-              "year": "2021",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2021"
-            },
-            {
-              "year": "2020",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2020"
-            },
-            {
-              "year": "2019",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2019"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "d3cd03cd90fcf8ead9d634ead2451dfcb1810423727ef3e30655374948250f3e",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.testhub.tech"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "662e8cd4a4ff8dfe6e2d6a0b1672e244c5c3fd144b7acaf910698d80b56f29db",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T09:06:14.764050Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
-              "name": "Jens Amdahl Martinsen",
-              "organisation_number": null,
-              "role_code": "DAGL",
-              "role": "Daglig leder",
-              "group_code": "DAGL",
               "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
               "last_changed": "2026-01-13",
-              "inactive": false
-            },
-            {
               "name": "Jens Amdahl Martinsen",
               "organisation_number": null,
-              "role_code": "LEDE",
-              "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2025-07-09",
-              "inactive": false
+              "role": "Daglig leder",
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2025-07-09",
+              "name": "Jens Amdahl Martinsen",
+              "organisation_number": null,
+              "role": "Styrets leder",
+              "role_code": "LEDE"
+            },
+            {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2025-07-09",
               "name": "Nora Skabo Rieber-Mohn",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2025-07-09",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2025-07-09",
               "name": "Louise Helene London",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2025-07-09",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2019-12-02",
               "name": [
                 "DIALOG REGNSKAP AS"
               ],
               "organisation_number": "923401946",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2019-12-02",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "662e8cd4a4ff8dfe6e2d6a0b1672e244c5c3fd144b7acaf910698d80b56f29db",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/923750630",
-        "retrieved_at": "2026-10-05T09:06:15.487730Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
-        "retrieved_at": "2026-10-05T09:06:16.265574Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "923793267",
-              "name": "TESTHUB TECHNOLOGIES AS",
-              "address": {
-                "adresse": [
-                  "Trondheimsveien 2"
-                ],
-                "kommune": "OSLO",
-                "kommunenummer": "0301",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "0560",
-                "poststed": "OSLO"
-              },
-              "industry": {
-                "beskrivelse": "Dataprogrammeringstjenester",
-                "kode": "62.100"
-              },
-              "employees": null
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://testhub.tech:443/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T09:06:24.165011Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://testhub.tech:443/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.testhub.tech/",
-          "final_url": "https://testhub.tech:443/",
-          "registered_domain": "testhub.tech",
-          "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
-          "description": "Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
-          "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
-          "social_links": [],
-          "structured_organisations": [],
           "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
-          "extraction_state": "static_complete",
-          "pages": [
-            {
-              "url": "https://testhub.tech:443/",
-              "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
-              "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
-              "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9"
-            },
-            {
-              "url": "https://testhub.tech:443/contact",
-              "title": "Contact Us | TestHub Support and Inquiries",
-              "main_text_excerpt": "Don't hesitate to say hi, we'd love to get to know you.",
-              "content_sha256": "05b5715c27adce7306951902e549f48e671af0f3bdf25c98133b172a8928f242"
-            },
-            {
-              "url": "https://testhub.tech:443/team",
-              "title": "Meet Our Team | TestHub",
-              "main_text_excerpt": "Meet the team behind Testhub.\nThe Testhub team is dedicated to ensure equal hiring practices and inclusive organizations\nThe team behind Testhub embody the core value of the product to a tee. We believe that equality should be a standard and everyone should deserve a fair chance.\nExpert in human decision making and holds a master of science in Organizational Psychology and Leadership. DNV certified recruiter and bachelor’s in Marketing and Internalization Strategy.\nHe has been a key stakeholder in four tech startups and is a seasoned leader and business developer.\nTesthubs technology is his brainchild based on his 15 year obsession with the research on human decision making.\nBjarte has over 13 years of experience in building software companies and driving product innovation. \nHaving led startups as both CEO and product manager, he combines deep technical expertise with a keen understanding of market needs.\nHe brings expertise in identifying top technical talent and assessing candidates’ real-world problem-solving abilities. His technical insights ensure that organizations secure the best candidates for specialized roles.\nSilje has a background in business and holds a double master of science degree in Business Analysis & Performance Management and a CEMS Masters’s in International Management. She has previously researched how large organisations can keep their innovative power.\nFor five years she has been working with recruitment at Testhub and has supported several companies in their recruitment processes.\nShe thrives in connecting the right people with the right opportunities, ensuring both individuals and organizations succeed. She is passionate about building diverse and high-performing teams.",
-              "content_sha256": "76f931f73e037b2fe12e18abc86434bce6d205ec70592432665136ec6990ddab"
-            }
-          ],
           "crawl_errors": [
             {
-              "url": "https://testhub.tech:443/press",
-              "error": "HTTPError: HTTP Error 404: Not Found"
+              "error": "HTTPError: HTTP Error 404: Not Found",
+              "url": "https://testhub.tech:443/press"
             }
           ],
-          "identity_assessment": {
-            "status": "related_or_uncertain",
-            "score": 0.3,
-            "publishable": false,
-            "legal_name_tokens": [
-              "testhub",
-              "technologies"
-            ],
-            "matched_tokens": [
-              "testhub"
-            ],
-            "reasons": [
-              "registry-linked URL lacks strong exact-entity identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
           "discovered_social_links": [
             {
               "platform": "facebook",
@@ -501,57 +452,129 @@
               "url": "https://linkedin.com/company/testhub-as"
             }
           ],
+          "extraction_state": "static_complete",
+          "final_url": "https://testhub.tech:443/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "testhub",
+              "technologies"
+            ],
+            "matched_tokens": [
+              "testhub"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "registry-linked URL lacks strong exact-entity identity evidence"
+            ],
+            "score": 0.3,
+            "status": "related_or_uncertain"
+          },
+          "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
+          "pages": [
+            {
+              "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
+              "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
+              "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
+              "url": "https://testhub.tech:443/"
+            },
+            {
+              "content_sha256": "05b5715c27adce7306951902e549f48e671af0f3bdf25c98133b172a8928f242",
+              "main_text_excerpt": "Don't hesitate to say hi, we'd love to get to know you.",
+              "title": "Contact Us | TestHub Support and Inquiries",
+              "url": "https://testhub.tech:443/contact"
+            },
+            {
+              "content_sha256": "76f931f73e037b2fe12e18abc86434bce6d205ec70592432665136ec6990ddab",
+              "main_text_excerpt": "Meet the team behind Testhub.\nThe Testhub team is dedicated to ensure equal hiring practices and inclusive organizations\nThe team behind Testhub embody the core value of the product to a tee. We believe that equality should be a standard and everyone should deserve a fair chance.\nExpert in human decision making and holds a master of science in Organizational Psychology and Leadership. DNV certified recruiter and bachelor’s in Marketing and Internalization Strategy.\nHe has been a key stakeholder in four tech startups and is a seasoned leader and business developer.\nTesthubs technology is his brainchild based on his 15 year obsession with the research on human decision making.\nBjarte has over 13 years of experience in building software companies and driving product innovation. \nHaving led startups as both CEO and product manager, he combines deep technical expertise with a keen understanding of market needs.\nHe brings expertise in identifying top technical talent and assessing candidates’ real-world problem-solving abilities. His technical insights ensure that organizations secure the best candidates for specialized roles.\nSilje has a background in business and holds a double master of science degree in Business Analysis & Performance Management and a CEMS Masters’s in International Management. She has previously researched how large organisations can keep their innovative power.\nFor five years she has been working with recruitment at Testhub and has supported several companies in their recruitment processes.\nShe thrives in connecting the right people with the right opportunities, ensuring both individuals and organizations succeed. She is passionate about building diverse and high-performing teams.",
+              "title": "Meet Our Team | TestHub",
+              "url": "https://testhub.tech:443/team"
+            }
+          ],
+          "registered_domain": "testhub.tech",
+          "requested_url": "https://www.testhub.tech/",
           "social_link_assessments": [
             {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "testhub"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "facebook",
-              "url": "https://facebook.com/TestHub.tech",
-              "identity_score": 0.3,
               "publishable": false,
+              "reason": "social handle lacks strong exact-entity name evidence",
+              "url": "https://facebook.com/TestHub.tech"
+            },
+            {
+              "identity_score": 0.3,
               "matched_tokens": [
                 "testhub"
               ],
-              "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
-            },
-            {
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "instagram",
-              "url": "https://instagram.com/testhub",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [
-                "testhub"
-              ],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://instagram.com/testhub"
             },
             {
-              "platform": "linkedin",
-              "url": "https://linkedin.com/company/testhub-as",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [
                 "testhub"
               ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "linkedin",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://linkedin.com/company/testhub-as"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [],
+          "structured_organisations": [],
+          "title": "TestHub Blog | Revolutionizing Recruitment with Equality"
+        }
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-f9d329bebecaa2dfdbcdbe4f",
+          "organisation_number": "923750630",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
+          "retrieved_at": "2026-10-08T20:59:33.126256Z",
+          "content_sha256": "3eb736f530ccff39ccc7047c59a35eb924787918947c4fb1f429421b376b84fb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "923750630"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "923750630"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall arsverk i regnskapsaret\n\n3.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 3,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 3
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
         {
           "id": "registry-contact-bb0c2c301e4457de233dcfec",
           "organisation_number": "923750630",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -578,8 +601,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -604,7 +627,7 @@
           "organisation_number": "923750630",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
-          "retrieved_at": "2026-09-29T10:32:49.407343Z",
+          "retrieved_at": "2026-10-05T09:06:16.265574Z",
           "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -629,12 +652,72 @@
           }
         },
         {
+          "id": "registry-update-8f4b056bf521d496dc24309e",
+          "organisation_number": "923750630",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "content_sha256": "8f4b056bf521d496dc24309e2fbb9eec3dff3dc81eb4f6ec70dcf43bd160b633",
+          "observed_at": "2026-10-10",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "923750630",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-10: Endring",
+          "metrics": {
+            "date": "2026-10-10",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
+          "id": "registry-update-79b20356fdaa92349c04c1be",
+          "organisation_number": "923750630",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "content_sha256": "79b20356fdaa92349c04c1bed59e50f67242b86e710510a30c018982a347d1f9",
+          "observed_at": "2026-10-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "923750630",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-10-08: Endring",
+          "metrics": {
+            "date": "2026-10-08",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
           "id": "registry-update-260c8b96d6130d0e41ba2520",
           "organisation_number": "923750630",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "260c8b96d6130d0e41ba2520790163aedf00dcccd6a722ae6a81999c383f5a0b",
           "observed_at": "2026-07-28",
           "exact_entity": true,
@@ -664,7 +747,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "dc087fdb9908f2981702645ba7ff01144bb3b5e3d1b2a2b4fe5fec03140f6cf2",
           "observed_at": "2026-05-11",
           "exact_entity": true,
@@ -694,7 +777,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2057ced3eeffcd904e1fa6dabeaaeb96dc0712401aa65268becdb0ab372368a9",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -724,7 +807,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9208cb49f036535983eb0ce0e3500681da2183e611c9d6cf66852c5020d4dc48",
           "observed_at": "2025-06-26",
           "exact_entity": true,
@@ -754,7 +837,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "8fc45703fbc932c04769ecf98b6a708ab200a1af239dc2a5b6fe47c54e260bd2",
           "observed_at": "2025-05-13",
           "exact_entity": true,
@@ -784,7 +867,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "5974f58561349c839e201e8feafcb7cbb58d61ab02888aee9bfd48fda0798c0b",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -814,7 +897,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "53031ad9f3a4d3da4d4c91c307399c81ce9c64bac52861e00292632bbdfc14c2",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -844,7 +927,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "560d79563d8d97b9778f2c8716ffd865b42d1ba19c91ffaa6d24e72f0edba56d",
           "observed_at": "2024-07-29",
           "exact_entity": true,
@@ -874,7 +957,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "7432cc1be91b1c0313b3da01ce9fb9af33cd264129da89da5271b47b85c71a4a",
           "observed_at": "2024-06-04",
           "exact_entity": true,
@@ -904,7 +987,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "d6ae6fa2505ed2ed53d400f9f2a35b529b014f2f56e2b1c8e82efc7ffcf3128c",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -934,7 +1017,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "01c870d69f7279c5bbcc183438193bc6e96efe400673c57a15ceef88885c4ee5",
           "observed_at": "2023-07-17",
           "exact_entity": true,
@@ -964,7 +1047,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e5ba75530e49afa3b8f9b21325ef6faa9745b7f45f72ddf21cec1beb61f16299",
           "observed_at": "2023-05-08",
           "exact_entity": true,
@@ -994,7 +1077,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "33bc62aaac08a5163c3efc463c00e8dbacc86c17c797447b8a2dd5efee0bcbd0",
           "observed_at": "2023-01-18",
           "exact_entity": true,
@@ -1024,7 +1107,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "52de73ec5b3a21c274b596ae3c6e867b37d3565449e63dad2b8ba878b5884ae3",
           "observed_at": "2022-06-29",
           "exact_entity": true,
@@ -1054,7 +1137,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "948bfcc0b8749d6c6bc4f5b492ef2b475a5dc93cd5157c58cab35f85c481f60d",
           "observed_at": "2022-05-11",
           "exact_entity": true,
@@ -1084,7 +1167,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "1e96531dd50e9df5a86fd333eba3b5245ce9e7b1b8768ec896df6b54f362a1e4",
           "observed_at": "2021-08-26",
           "exact_entity": true,
@@ -1114,7 +1197,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c88f9d2826cfb1fbb7e83fa663c9e6e5a3dce9712f8e843747ce74d49d294495",
           "observed_at": "2021-03-09",
           "exact_entity": true,
@@ -1144,7 +1227,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "17b918a147c30175abaaaa50037da385b8a9fa9be97736b5e653fe184861eb7d",
           "observed_at": "2021-01-06",
           "exact_entity": true,
@@ -1169,64 +1252,33 @@
           "strategy": "registry_updates_feed"
         },
         {
-          "id": "registry-update-8c3d960ed4b8946a4322b94c",
+          "id": "brreg-kunngjoring-180664b2135afe5480307229",
           "organisation_number": "923750630",
           "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
-          "content_sha256": "8c3d960ed4b8946a4322b94ca1637cf5e0cf88758dc1239c3730d740b31eb2c6",
-          "observed_at": "2020-10-13",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
+          "retrieved_at": "2026-10-05T00:00:00Z",
+          "content_sha256": "31291bf9a8dc3e46b192e473e3240c5196b72470609deeaf7873144bdd90f385",
           "exact_entity": true,
           "identity_proof": [
             {
               "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "923750630",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2020-10-13: Endring",
-          "metrics": {
-            "date": "2020-10-13",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
+          "source_class": "official_api",
+          "observed_at": "2026-10-08",
+          "signal": {
+            "title": "Konkursåpning",
+            "date": "2026-10-08",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb"
           },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-7ba9e0630dc5183deff3272c",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
-          "content_sha256": "7ba9e0630dc5183deff3272c1da1da9112ecc916a34baba0ebf8227f6b1f825b",
-          "observed_at": "2020-06-25",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "923750630",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2020-06-25: Endring",
-          "metrics": {
-            "date": "2020-06-25",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
+          "evidence_span": "Konkursåpning — 2026-10-08 (BRREG official announcement)"
         },
         {
           "id": "brreg-kunngjoring-0ef27c77c6d5cb86ab825956",
@@ -1287,164 +1339,12 @@
           "evidence_span": "Daglig leder — 2026-01-13 (BRREG official announcement)"
         },
         {
-          "id": "brreg-kunngjoring-758bc545092e03db02dba02a",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "6c5bb1fee11b09bdb827318c92e577b5d2ac0005b5e396d59ef8702768731652",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "923750630",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-07-09",
-          "signal": {
-            "title": "Styre",
-            "date": "2025-07-09",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb"
-          },
-          "evidence_span": "Styre — 2025-07-09 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-180664b2135afe5480307229",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "31291bf9a8dc3e46b192e473e3240c5196b72470609deeaf7873144bdd90f385",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "923750630",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-10-08",
-          "signal": {
-            "title": "Konkursåpning",
-            "date": "2026-10-08",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb"
-          },
-          "evidence_span": "Konkursåpning — 2026-10-08 (BRREG official announcement)"
-        },
-        {
-          "id": "annual-workforce-bd93d6acb7226813ae38562b",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
-          "retrieved_at": "2026-10-28T05:19:07.738675Z",
-          "content_sha256": "564b3b90f05605653973b12f12ac7cdf7728ae33c5e4c88b467ef5e973abbab0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall arsverk i regnskapsaret\n\n3.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 3,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 3
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "id": "registry-update-8f4b056bf521d496dc24309e",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-10-28T04:19:27.620683Z",
-          "content_sha256": "8f4b056bf521d496dc24309e2fbb9eec3dff3dc81eb4f6ec70dcf43bd160b633",
-          "observed_at": "2026-10-10",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "923750630",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2026-10-10: Endring",
-          "metrics": {
-            "date": "2026-10-10",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-79b20356fdaa92349c04c1be",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "retrieved_at": "2026-10-28T04:19:27.620683Z",
-          "content_sha256": "79b20356fdaa92349c04c1bed59e50f67242b86e710510a30c018982a347d1f9",
-          "observed_at": "2026-10-08",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "923750630",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2026-10-08: Endring",
-          "metrics": {
-            "date": "2026-10-08",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
           "id": "registry-site-923750630-2dde808ef0d836a7",
           "organisation_number": "923750630",
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://testhub.tech:443/",
-          "retrieved_at": "2026-10-09T14:00:55.019577Z",
+          "retrieved_at": "2026-09-29T10:32:57.622776Z",
           "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
           "exact_entity": true,
           "identity_proof": [
@@ -1470,266 +1370,79 @@
           "strategy": "registry_declared_website_description"
         },
         {
-          "id": "ar-page1-923750630-annual_report_approval_date-73cb0122129b8d52",
           "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
+          "platform": "company_site",
+          "source_url": "https://testhub.tech:443/",
+          "retrieved_at": "2026-09-29T10:32:57.622776Z",
+          "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
+              "type": "registry_declared_domain_unique",
+              "domain": "testhub.tech",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-06",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
             },
             {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 05.07.2026",
-          "metrics": {
-            "approval_date": "05.07.2026",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-923750630-annual_report_auditor-73cb0122129b8d52",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Jens Amdahl Martinsen",
-          "metrics": {
-            "auditor": "Jens Amdahl Martinsen",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-923750630-annual_report_accounting_rules-73cb0122129b8d52",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-923750630-annual_report_business_address-73cb0122129b8d52",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Trondheimsveien 2",
-          "metrics": {
-            "business_address": "Trondheimsveien 2",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-923750630-annual_report_signing_officer-73cb0122129b8d52",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-923750630-annual_report_org_number-73cb0122129b8d52",
-          "organisation_number": "923750630",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-          "retrieved_at": "2026-11-05T16:07:26.415344Z",
-          "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "923750630"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "923750630"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 923 750 630",
-          "metrics": {
-            "org_number": "923750630",
-            "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-            "ocr_chars": 1670
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "923750630",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/923750630",
-          "retrieved_at": "2026-11-05T21:11:38.718260Z",
-          "content_sha256": "d90cef5c463d83ba6f79a202f28630403d6cc06c774a480b46de0986d3b531d3",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "923750630"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "TESTHUB TECHNOLOGIES AS",
-              "matched_organisation_number": "923750630"
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-923750630.orgNumber=923750630;name=TESTHUB TECHNOLOGIES AS",
-          "id": "purehelp-email-923750630-9593f9740320d54a",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-923750630-2dde808ef0d836a7",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
           "metrics": {
-            "email": "jens@testhub.tech",
-            "contact_as_of": "2026-10-26"
+            "bounded_pages_captured": 3,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           }
         },
         {
           "organisation_number": "923750630",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/923750630",
-          "retrieved_at": "2026-11-05T21:11:38.718260Z",
-          "content_sha256": "d90cef5c463d83ba6f79a202f28630403d6cc06c774a480b46de0986d3b531d3",
+          "platform": "company_site",
+          "source_url": "https://testhub.tech:443/",
+          "retrieved_at": "2026-09-29T10:32:57.622776Z",
+          "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "923750630"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "TESTHUB TECHNOLOGIES AS",
-              "matched_organisation_number": "923750630"
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-923750630.orgNumber=923750630;name=TESTHUB TECHNOLOGIES AS",
-          "id": "purehelp-profile-923750630-9593f9740320d54a",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-729ab3c19ed42338e87bf0a5",
+          "signal_type": "website_description",
+          "evidence_span": "TestHub Blog | Revolutionizing Recruitment with Equality — Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
           "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "62.100",
-            "nace_description": "Computer programming services",
-            "town": "OSLO",
-            "zipcode": "0560",
-            "municipality": "OSLO",
-            "municipality_number": "0301",
-            "county": "Oslo",
-            "registration_date": "2019-11-04",
-            "registry_status": "BANKRUPT",
-            "registry_status_date": "2026-10-08",
-            "deregistration_date": "",
-            "is_active": false,
-            "is_bankrupt": true,
-            "bankruptcy_date": "2026-10-08",
-            "website_domain": "www.testhub.tech"
+            "interpretation": "Company-owned description; the company's own words."
           }
         }
       ]
     },
+    "industry_code": "62.100",
+    "industry_label": "Dataprogrammeringstjenester",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "OSLO",
+    "municipality_number": "0301",
+    "name": "TESTHUB TECHNOLOGIES AS",
+    "organisation_number": "923750630",
     "run_metrics": {
-      "requests": 14,
       "bytes": 87131,
       "latencies_ms": [
         722,
@@ -1742,15 +1455,17 @@
         727,
         781,
         1201
-      ]
-    }
+      ],
+      "requests": 14
+    },
+    "website": "www.testhub.tech"
   },
   "summary": {
     "organisation_number": "923750630",
     "company_name": "TESTHUB TECHNOLOGIES AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "TESTHUB TECHNOLOGIES AS is a private limited company operating in Dataprogrammeringstjenester. Latest accounts (2025): revenue NOK 462.6k, annual result NOK -2.3m. Annual accounts available for 2019-2025 (7 years). Detailed records only available as PDFs. Revenue shrinking (-58.9% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "TESTHUB TECHNOLOGIES AS is a private limited company operating in Dataprogrammeringstjenester. Latest accounts (2025): revenue NOK 462.6k, annual result NOK -2.3m. Annual accounts available for 2019-2025 (7 years). Detailed records only available as PDFs. Revenue shrinking (-58.9% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1764,14 +1479,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
           "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1787,14 +1496,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
           "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1810,14 +1513,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
           "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1833,14 +1530,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
           "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1862,26 +1553,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/923750630/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
-          "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1895,14 +1571,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-          "https://purehelp.no/company/NO/923750630",
           "https://testhub.tech:443/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000011619&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000616190&amp;sokeverdi=923750630&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
@@ -1912,154 +1582,324 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:43.423995Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "923750630",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "923750630",
-        "navn": "TESTHUB TECHNOLOGIES AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "62.100",
-        "naeringskode1.beskrivelse": "Dataprogrammeringstjenester",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "d3cd03cd90fcf8ead9d634ead2451dfcb1810423727ef3e30655374948250f3e",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:14.071858Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2022",
+            "year": "2022"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2021",
+            "year": "2021"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2020",
+            "year": "2020"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2019",
+            "year": "2019"
+          }
+        ],
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "d6b0072b8da67173aad3661dfbbee0560298e722602070bb93768d53e8dd7ffe",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:12.536274Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -2317665.0,
+            "assets": 1693994.0,
+            "currency": "NOK",
+            "debt": 438562.0,
+            "equity": 1255433.0,
+            "operating_result": -2317416.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": -2317665.0,
+            "record_id": 4851637,
+            "revenue": 462569.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -882752.0,
+            "assets": 948445.0,
+            "currency": "NOK",
+            "debt": 575764.0,
+            "equity": 372681.0,
+            "operating_result": -823435.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": -882752.0,
+            "record_id": 5969429,
+            "revenue": 1126526.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -769824.0,
+            "assets": 28901.0,
+            "currency": "NOK",
+            "debt": 422750.0,
+            "equity": -393850.0,
+            "operating_result": -766965.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": -769824.0,
+            "record_id": 7083962,
+            "revenue": 569081.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T09:06:15.487730Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/923750630",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:16.265574Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Trondheimsveien 2"
+              ],
+              "kommune": "OSLO",
+              "kommunenummer": "0301",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "0560",
+              "poststed": "OSLO"
+            },
+            "employees": null,
+            "industry": {
+              "beskrivelse": "Dataprogrammeringstjenester",
+              "kode": "62.100"
+            },
+            "name": "TESTHUB TECHNOLOGIES AS",
+            "organisation_number": "923793267"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "923750630",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Salg av programvare for rekruttering.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.testhub.tech",
         "epostadresse": "jens@testhub.tech",
-        "telefon": "",
-        "mobil": "467 84 707",
-        "postadresse.adresse": "c/o Silje Fladmoe\nPer Kvibergs gate 14A",
-        "postadresse.poststed": "OSLO",
-        "postadresse.postnummer": "0478",
-        "postadresse.kommune": "OSLO",
-        "postadresse.kommunenummer": "0301",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Trondheimsveien 2",
-        "forretningsadresse.poststed": "OSLO",
-        "forretningsadresse.postnummer": "0560",
         "forretningsadresse.kommune": "OSLO",
         "forretningsadresse.kommunenummer": "0301",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2019-11-04",
-        "stiftelsesdato": "2019-08-30",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2021-01-01",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2021-01-06",
+        "forretningsadresse.postnummer": "0560",
+        "forretningsadresse.poststed": "OSLO",
+        "fravalgRevisjonBeslutningsDato": "2019-08-30",
+        "fravalgRevisjonDato": "2019-11-04",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2019-11-04",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.testhub.tech",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "41529",
+        "kapital.belop": "41529.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2024-07-29",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "467 84 707",
+        "naeringskode1.beskrivelse": "Dataprogrammeringstjenester",
+        "naeringskode1.kode": "62.100",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "TESTHUB TECHNOLOGIES AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "923750630",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "c/o Silje Fladmoe\nPer Kvibergs gate 14A",
+        "postadresse.kommune": "OSLO",
+        "postadresse.kommunenummer": "0301",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "0478",
+        "postadresse.poststed": "OSLO",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2019-11-04",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "2021-01-01",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2021-01-06",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2019-11-04",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2019-08-30",
+        "telefon": "",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2024-07-03",
-        "vedtektsfestetFormaal": "Lage og selge programvare for rekruttering.",
-        "aktivitet": "Salg av programvare for rekruttering.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "2019-11-04",
-        "fravalgRevisjonBeslutningsDato": "2019-08-30",
-        "erIKonsern": "false",
-        "kapital.belop": "41529.00",
-        "kapital.antallAksjer": "41529",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2024-07-29",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "923750630",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:43.423995Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "923750630",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2024-07-03",
+        "vedtektsfestetFormaal": "Lage og selge programvare for rekruttering."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "7524ea1c99c69c14f3fa31caa86ac91c968e566985b2c5807160de0c77becd27",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+      "note": null,
       "retrieved_at": "2026-10-05T09:06:11.768153Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+      "status": "available",
       "value": {
-        "organisation_number": "923750630",
-        "name": "TESTHUB TECHNOLOGIES AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.testhub.tech",
-        "industry": {
-          "beskrivelse": "Dataprogrammeringstjenester",
-          "kode": "62.100"
-        },
         "business_address": {
           "adresse": [
             "Trondheimsveien 2"
@@ -2071,6 +1911,16 @@
           "postnummer": "0560",
           "poststed": "OSLO"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Dataprogrammeringstjenester",
+          "kode": "62.100"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "TESTHUB TECHNOLOGIES AS",
+        "organisation_number": "923750630",
         "postal_address": {
           "adresse": [
             "c/o Silje Fladmoe",
@@ -2083,313 +1933,99 @@
           "postnummer": "0478",
           "poststed": "OSLO"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "7524ea1c99c69c14f3fa31caa86ac91c968e566985b2c5807160de0c77becd27",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/923750630",
-      "retrieved_at": "2026-10-05T09:06:12.536274Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4851637,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 462569.0,
-            "operating_result": -2317416.0,
-            "profit_before_tax": -2317665.0,
-            "annual_result": -2317665.0,
-            "assets": 1693994.0,
-            "equity": 1255433.0,
-            "debt": 438562.0
-          },
-          {
-            "record_id": 5969429,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 1126526.0,
-            "operating_result": -823435.0,
-            "profit_before_tax": -882752.0,
-            "annual_result": -882752.0,
-            "assets": 948445.0,
-            "equity": 372681.0,
-            "debt": 575764.0
-          },
-          {
-            "record_id": 7083962,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 569081.0,
-            "operating_result": -766965.0,
-            "profit_before_tax": -769824.0,
-            "annual_result": -769824.0,
-            "assets": 28901.0,
-            "equity": -393850.0,
-            "debt": 422750.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "d6b0072b8da67173aad3661dfbbee0560298e722602070bb93768d53e8dd7ffe",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/aar",
-      "retrieved_at": "2026-10-05T09:06:14.071858Z",
-      "value": {
-        "years": [
-          "2019",
-          "2020",
-          "2021",
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2022"
-          },
-          {
-            "year": "2021",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2021"
-          },
-          {
-            "year": "2020",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2020"
-          },
-          {
-            "year": "2019",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2019"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "d3cd03cd90fcf8ead9d634ead2451dfcb1810423727ef3e30655374948250f3e",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.testhub.tech"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "662e8cd4a4ff8dfe6e2d6a0b1672e244c5c3fd144b7acaf910698d80b56f29db",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T09:06:14.764050Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
-            "name": "Jens Amdahl Martinsen",
-            "organisation_number": null,
-            "role_code": "DAGL",
-            "role": "Daglig leder",
-            "group_code": "DAGL",
             "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
             "last_changed": "2026-01-13",
-            "inactive": false
-          },
-          {
             "name": "Jens Amdahl Martinsen",
             "organisation_number": null,
-            "role_code": "LEDE",
-            "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2025-07-09",
-            "inactive": false
+            "role": "Daglig leder",
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2025-07-09",
+            "name": "Jens Amdahl Martinsen",
+            "organisation_number": null,
+            "role": "Styrets leder",
+            "role_code": "LEDE"
+          },
+          {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2025-07-09",
             "name": "Nora Skabo Rieber-Mohn",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2025-07-09",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2025-07-09",
             "name": "Louise Helene London",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2025-07-09",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2019-12-02",
             "name": [
               "DIALOG REGNSKAP AS"
             ],
             "organisation_number": "923401946",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2019-12-02",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "662e8cd4a4ff8dfe6e2d6a0b1672e244c5c3fd144b7acaf910698d80b56f29db",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/923750630",
-      "retrieved_at": "2026-10-05T09:06:15.487730Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
-      "retrieved_at": "2026-10-05T09:06:16.265574Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "923793267",
-            "name": "TESTHUB TECHNOLOGIES AS",
-            "address": {
-              "adresse": [
-                "Trondheimsveien 2"
-              ],
-              "kommune": "OSLO",
-              "kommunenummer": "0301",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "0560",
-              "poststed": "OSLO"
-            },
-            "industry": {
-              "beskrivelse": "Dataprogrammeringstjenester",
-              "kode": "62.100"
-            },
-            "employees": null
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://testhub.tech:443/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T09:06:24.165011Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://testhub.tech:443/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.testhub.tech/",
-        "final_url": "https://testhub.tech:443/",
-        "registered_domain": "testhub.tech",
-        "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
-        "description": "Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
-        "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
-        "social_links": [],
-        "structured_organisations": [],
         "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
-        "extraction_state": "static_complete",
-        "pages": [
-          {
-            "url": "https://testhub.tech:443/",
-            "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
-            "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
-            "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9"
-          },
-          {
-            "url": "https://testhub.tech:443/contact",
-            "title": "Contact Us | TestHub Support and Inquiries",
-            "main_text_excerpt": "Don't hesitate to say hi, we'd love to get to know you.",
-            "content_sha256": "05b5715c27adce7306951902e549f48e671af0f3bdf25c98133b172a8928f242"
-          },
-          {
-            "url": "https://testhub.tech:443/team",
-            "title": "Meet Our Team | TestHub",
-            "main_text_excerpt": "Meet the team behind Testhub.\nThe Testhub team is dedicated to ensure equal hiring practices and inclusive organizations\nThe team behind Testhub embody the core value of the product to a tee. We believe that equality should be a standard and everyone should deserve a fair chance.\nExpert in human decision making and holds a master of science in Organizational Psychology and Leadership. DNV certified recruiter and bachelor’s in Marketing and Internalization Strategy.\nHe has been a key stakeholder in four tech startups and is a seasoned leader and business developer.\nTesthubs technology is his brainchild based on his 15 year obsession with the research on human decision making.\nBjarte has over 13 years of experience in building software companies and driving product innovation. \nHaving led startups as both CEO and product manager, he combines deep technical expertise with a keen understanding of market needs.\nHe brings expertise in identifying top technical talent and assessing candidates’ real-world problem-solving abilities. His technical insights ensure that organizations secure the best candidates for specialized roles.\nSilje has a background in business and holds a double master of science degree in Business Analysis & Performance Management and a CEMS Masters’s in International Management. She has previously researched how large organisations can keep their innovative power.\nFor five years she has been working with recruitment at Testhub and has supported several companies in their recruitment processes.\nShe thrives in connecting the right people with the right opportunities, ensuring both individuals and organizations succeed. She is passionate about building diverse and high-performing teams.",
-            "content_sha256": "76f931f73e037b2fe12e18abc86434bce6d205ec70592432665136ec6990ddab"
-          }
-        ],
         "crawl_errors": [
           {
-            "url": "https://testhub.tech:443/press",
-            "error": "HTTPError: HTTP Error 404: Not Found"
+            "error": "HTTPError: HTTP Error 404: Not Found",
+            "url": "https://testhub.tech:443/press"
           }
         ],
-        "identity_assessment": {
-          "status": "related_or_uncertain",
-          "score": 0.3,
-          "publishable": false,
-          "legal_name_tokens": [
-            "testhub",
-            "technologies"
-          ],
-          "matched_tokens": [
-            "testhub"
-          ],
-          "reasons": [
-            "registry-linked URL lacks strong exact-entity identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
         "discovered_social_links": [
           {
             "platform": "facebook",
@@ -2404,57 +2040,129 @@
             "url": "https://linkedin.com/company/testhub-as"
           }
         ],
+        "extraction_state": "static_complete",
+        "final_url": "https://testhub.tech:443/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "testhub",
+            "technologies"
+          ],
+          "matched_tokens": [
+            "testhub"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "registry-linked URL lacks strong exact-entity identity evidence"
+          ],
+          "score": 0.3,
+          "status": "related_or_uncertain"
+        },
+        "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
+        "pages": [
+          {
+            "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
+            "main_text_excerpt": "Equality As A Standard.\nMinimise hiring errors, secure top talent, and enhance diversity for organizational success.\nSelected for the Katapult accelerator for impact startups.\nExtreme tech challenge finalist in 2022\nTesthub has assisted Malling & Co Forvaltning AS with several hires of Operations Managers. Testhub ensures that all candidates are treated equally and given equal opportunities in the hiring process. Testhub is an important contributor to our work to comply with the anti-discrimination legislation in Norway.– Albregt Moltumyr, Technical Director\nA do it yourself recruitment tool based on 100 years of science.\nGet an automated rating of all candidates based on their likelihood of success. Test candidates for traits that matter for work performance, and ensure everyone gets fair treatment with blind screening.\nEasily integrate to your standard recruitment tool. Available in SAP Success Factors and TeamTailor.\nSpeed up your recruitment and reduce repetitive tasks.\nEnsure fair treatment of all candidates\nEnsure your recruitment process is up to date with local equal opportunity laws\nWe will email you only about this product.",
+            "title": "TestHub Blog | Revolutionizing Recruitment with Equality",
+            "url": "https://testhub.tech:443/"
+          },
+          {
+            "content_sha256": "05b5715c27adce7306951902e549f48e671af0f3bdf25c98133b172a8928f242",
+            "main_text_excerpt": "Don't hesitate to say hi, we'd love to get to know you.",
+            "title": "Contact Us | TestHub Support and Inquiries",
+            "url": "https://testhub.tech:443/contact"
+          },
+          {
+            "content_sha256": "76f931f73e037b2fe12e18abc86434bce6d205ec70592432665136ec6990ddab",
+            "main_text_excerpt": "Meet the team behind Testhub.\nThe Testhub team is dedicated to ensure equal hiring practices and inclusive organizations\nThe team behind Testhub embody the core value of the product to a tee. We believe that equality should be a standard and everyone should deserve a fair chance.\nExpert in human decision making and holds a master of science in Organizational Psychology and Leadership. DNV certified recruiter and bachelor’s in Marketing and Internalization Strategy.\nHe has been a key stakeholder in four tech startups and is a seasoned leader and business developer.\nTesthubs technology is his brainchild based on his 15 year obsession with the research on human decision making.\nBjarte has over 13 years of experience in building software companies and driving product innovation. \nHaving led startups as both CEO and product manager, he combines deep technical expertise with a keen understanding of market needs.\nHe brings expertise in identifying top technical talent and assessing candidates’ real-world problem-solving abilities. His technical insights ensure that organizations secure the best candidates for specialized roles.\nSilje has a background in business and holds a double master of science degree in Business Analysis & Performance Management and a CEMS Masters’s in International Management. She has previously researched how large organisations can keep their innovative power.\nFor five years she has been working with recruitment at Testhub and has supported several companies in their recruitment processes.\nShe thrives in connecting the right people with the right opportunities, ensuring both individuals and organizations succeed. She is passionate about building diverse and high-performing teams.",
+            "title": "Meet Our Team | TestHub",
+            "url": "https://testhub.tech:443/team"
+          }
+        ],
+        "registered_domain": "testhub.tech",
+        "requested_url": "https://www.testhub.tech/",
         "social_link_assessments": [
           {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "testhub"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "facebook",
-            "url": "https://facebook.com/TestHub.tech",
-            "identity_score": 0.3,
             "publishable": false,
+            "reason": "social handle lacks strong exact-entity name evidence",
+            "url": "https://facebook.com/TestHub.tech"
+          },
+          {
+            "identity_score": 0.3,
             "matched_tokens": [
               "testhub"
             ],
-            "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
-          },
-          {
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "instagram",
-            "url": "https://instagram.com/testhub",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [
-              "testhub"
-            ],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://instagram.com/testhub"
           },
           {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/testhub-as",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [
               "testhub"
             ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "linkedin",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://linkedin.com/company/testhub-as"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [],
+        "structured_organisations": [],
+        "title": "TestHub Blog | Revolutionizing Recruitment with Equality"
+      }
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-f9d329bebecaa2dfdbcdbe4f",
+        "organisation_number": "923750630",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
+        "retrieved_at": "2026-10-08T20:59:33.126256Z",
+        "content_sha256": "3eb736f530ccff39ccc7047c59a35eb924787918947c4fb1f429421b376b84fb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "923750630"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "923750630"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall arsverk i regnskapsaret\n\n3.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 3,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 3
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
       {
         "id": "registry-contact-bb0c2c301e4457de233dcfec",
         "organisation_number": "923750630",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2481,8 +2189,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2507,7 +2215,7 @@
         "organisation_number": "923750630",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=923750630&size=1000",
-        "retrieved_at": "2026-09-29T10:32:49.407343Z",
+        "retrieved_at": "2026-10-05T09:06:16.265574Z",
         "content_sha256": "f1de4ee83c2fee74bb6bad649dd6e7b651e2822504a9c6ef218ed894cb71431d",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2532,12 +2240,72 @@
         }
       },
       {
+        "id": "registry-update-8f4b056bf521d496dc24309e",
+        "organisation_number": "923750630",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "content_sha256": "8f4b056bf521d496dc24309e2fbb9eec3dff3dc81eb4f6ec70dcf43bd160b633",
+        "observed_at": "2026-10-10",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "923750630",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-10: Endring",
+        "metrics": {
+          "date": "2026-10-10",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
+        "id": "registry-update-79b20356fdaa92349c04c1be",
+        "organisation_number": "923750630",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "content_sha256": "79b20356fdaa92349c04c1bed59e50f67242b86e710510a30c018982a347d1f9",
+        "observed_at": "2026-10-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "923750630",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-10-08: Endring",
+        "metrics": {
+          "date": "2026-10-08",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
         "id": "registry-update-260c8b96d6130d0e41ba2520",
         "organisation_number": "923750630",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "260c8b96d6130d0e41ba2520790163aedf00dcccd6a722ae6a81999c383f5a0b",
         "observed_at": "2026-07-28",
         "exact_entity": true,
@@ -2567,7 +2335,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "dc087fdb9908f2981702645ba7ff01144bb3b5e3d1b2a2b4fe5fec03140f6cf2",
         "observed_at": "2026-05-11",
         "exact_entity": true,
@@ -2597,7 +2365,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2057ced3eeffcd904e1fa6dabeaaeb96dc0712401aa65268becdb0ab372368a9",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2627,7 +2395,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9208cb49f036535983eb0ce0e3500681da2183e611c9d6cf66852c5020d4dc48",
         "observed_at": "2025-06-26",
         "exact_entity": true,
@@ -2657,7 +2425,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "8fc45703fbc932c04769ecf98b6a708ab200a1af239dc2a5b6fe47c54e260bd2",
         "observed_at": "2025-05-13",
         "exact_entity": true,
@@ -2687,7 +2455,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "5974f58561349c839e201e8feafcb7cbb58d61ab02888aee9bfd48fda0798c0b",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -2717,7 +2485,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "53031ad9f3a4d3da4d4c91c307399c81ce9c64bac52861e00292632bbdfc14c2",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -2747,7 +2515,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "560d79563d8d97b9778f2c8716ffd865b42d1ba19c91ffaa6d24e72f0edba56d",
         "observed_at": "2024-07-29",
         "exact_entity": true,
@@ -2777,7 +2545,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "7432cc1be91b1c0313b3da01ce9fb9af33cd264129da89da5271b47b85c71a4a",
         "observed_at": "2024-06-04",
         "exact_entity": true,
@@ -2807,7 +2575,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "d6ae6fa2505ed2ed53d400f9f2a35b529b014f2f56e2b1c8e82efc7ffcf3128c",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -2837,7 +2605,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "01c870d69f7279c5bbcc183438193bc6e96efe400673c57a15ceef88885c4ee5",
         "observed_at": "2023-07-17",
         "exact_entity": true,
@@ -2867,7 +2635,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e5ba75530e49afa3b8f9b21325ef6faa9745b7f45f72ddf21cec1beb61f16299",
         "observed_at": "2023-05-08",
         "exact_entity": true,
@@ -2897,7 +2665,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "33bc62aaac08a5163c3efc463c00e8dbacc86c17c797447b8a2dd5efee0bcbd0",
         "observed_at": "2023-01-18",
         "exact_entity": true,
@@ -2927,7 +2695,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "52de73ec5b3a21c274b596ae3c6e867b37d3565449e63dad2b8ba878b5884ae3",
         "observed_at": "2022-06-29",
         "exact_entity": true,
@@ -2957,7 +2725,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "948bfcc0b8749d6c6bc4f5b492ef2b475a5dc93cd5157c58cab35f85c481f60d",
         "observed_at": "2022-05-11",
         "exact_entity": true,
@@ -2987,7 +2755,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "1e96531dd50e9df5a86fd333eba3b5245ce9e7b1b8768ec896df6b54f362a1e4",
         "observed_at": "2021-08-26",
         "exact_entity": true,
@@ -3017,7 +2785,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c88f9d2826cfb1fbb7e83fa663c9e6e5a3dce9712f8e843747ce74d49d294495",
         "observed_at": "2021-03-09",
         "exact_entity": true,
@@ -3047,7 +2815,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "17b918a147c30175abaaaa50037da385b8a9fa9be97736b5e653fe184861eb7d",
         "observed_at": "2021-01-06",
         "exact_entity": true,
@@ -3072,64 +2840,33 @@
         "strategy": "registry_updates_feed"
       },
       {
-        "id": "registry-update-8c3d960ed4b8946a4322b94c",
+        "id": "brreg-kunngjoring-180664b2135afe5480307229",
         "organisation_number": "923750630",
         "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
-        "content_sha256": "8c3d960ed4b8946a4322b94ca1637cf5e0cf88758dc1239c3730d740b31eb2c6",
-        "observed_at": "2020-10-13",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
+        "retrieved_at": "2026-10-05T00:00:00Z",
+        "content_sha256": "31291bf9a8dc3e46b192e473e3240c5196b72470609deeaf7873144bdd90f385",
         "exact_entity": true,
         "identity_proof": [
           {
             "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "923750630",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2020-10-13: Endring",
-        "metrics": {
-          "date": "2020-10-13",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
+        "source_class": "official_api",
+        "observed_at": "2026-10-08",
+        "signal": {
+          "title": "Konkursåpning",
+          "date": "2026-10-08",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb"
         },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-7ba9e0630dc5183deff3272c",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
-        "content_sha256": "7ba9e0630dc5183deff3272c1da1da9112ecc916a34baba0ebf8227f6b1f825b",
-        "observed_at": "2020-06-25",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "923750630",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2020-06-25: Endring",
-        "metrics": {
-          "date": "2020-06-25",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
+        "evidence_span": "Konkursåpning — 2026-10-08 (BRREG official announcement)"
       },
       {
         "id": "brreg-kunngjoring-0ef27c77c6d5cb86ab825956",
@@ -3190,164 +2927,12 @@
         "evidence_span": "Daglig leder — 2026-01-13 (BRREG official announcement)"
       },
       {
-        "id": "brreg-kunngjoring-758bc545092e03db02dba02a",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "6c5bb1fee11b09bdb827318c92e577b5d2ac0005b5e396d59ef8702768731652",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "923750630",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-07-09",
-        "signal": {
-          "title": "Styre",
-          "date": "2025-07-09",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000560499&amp;sokeverdi=923750630&amp;spraak=nb"
-        },
-        "evidence_span": "Styre — 2025-07-09 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-180664b2135afe5480307229",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "31291bf9a8dc3e46b192e473e3240c5196b72470609deeaf7873144bdd90f385",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "923750630",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-10-08",
-        "signal": {
-          "title": "Konkursåpning",
-          "date": "2026-10-08",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000790142&amp;sokeverdi=923750630&amp;spraak=nb"
-        },
-        "evidence_span": "Konkursåpning — 2026-10-08 (BRREG official announcement)"
-      },
-      {
-        "id": "annual-workforce-bd93d6acb7226813ae38562b",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/923750630/2025",
-        "retrieved_at": "2026-10-28T05:19:07.738675Z",
-        "content_sha256": "564b3b90f05605653973b12f12ac7cdf7728ae33c5e4c88b467ef5e973abbab0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall arsverk i regnskapsaret\n\n3.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 3,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 3
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "id": "registry-update-8f4b056bf521d496dc24309e",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-10-28T04:19:27.620683Z",
-        "content_sha256": "8f4b056bf521d496dc24309e2fbb9eec3dff3dc81eb4f6ec70dcf43bd160b633",
-        "observed_at": "2026-10-10",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "923750630",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2026-10-10: Endring",
-        "metrics": {
-          "date": "2026-10-10",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-79b20356fdaa92349c04c1be",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/923750630",
-        "retrieved_at": "2026-10-28T04:19:27.620683Z",
-        "content_sha256": "79b20356fdaa92349c04c1bed59e50f67242b86e710510a30c018982a347d1f9",
-        "observed_at": "2026-10-08",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "923750630",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2026-10-08: Endring",
-        "metrics": {
-          "date": "2026-10-08",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
         "id": "registry-site-923750630-2dde808ef0d836a7",
         "organisation_number": "923750630",
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://testhub.tech:443/",
-        "retrieved_at": "2026-10-09T14:00:55.019577Z",
+        "retrieved_at": "2026-09-29T10:32:57.622776Z",
         "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
         "exact_entity": true,
         "identity_proof": [
@@ -3373,263 +2958,68 @@
         "strategy": "registry_declared_website_description"
       },
       {
-        "id": "ar-page1-923750630-annual_report_approval_date-73cb0122129b8d52",
         "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
+        "platform": "company_site",
+        "source_url": "https://testhub.tech:443/",
+        "retrieved_at": "2026-09-29T10:32:57.622776Z",
+        "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
+            "type": "registry_declared_domain_unique",
+            "domain": "testhub.tech",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-06",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
           },
           {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 05.07.2026",
-        "metrics": {
-          "approval_date": "05.07.2026",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-923750630-annual_report_auditor-73cb0122129b8d52",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Jens Amdahl Martinsen",
-        "metrics": {
-          "auditor": "Jens Amdahl Martinsen",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-923750630-annual_report_accounting_rules-73cb0122129b8d52",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-923750630-annual_report_business_address-73cb0122129b8d52",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Trondheimsveien 2",
-        "metrics": {
-          "business_address": "Trondheimsveien 2",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-923750630-annual_report_signing_officer-73cb0122129b8d52",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-923750630-annual_report_org_number-73cb0122129b8d52",
-        "organisation_number": "923750630",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/923750630-2025.pdf",
-        "retrieved_at": "2026-11-05T16:07:26.415344Z",
-        "content_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "923750630"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "923750630"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 923 750 630",
-        "metrics": {
-          "org_number": "923750630",
-          "ocr_text_sha256": "73cb0122129b8d520381a1d613fc9097640e3aa078c3edf543fad9f1acb63336",
-          "ocr_chars": 1670
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "923750630",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/923750630",
-        "retrieved_at": "2026-11-05T21:11:38.718260Z",
-        "content_sha256": "d90cef5c463d83ba6f79a202f28630403d6cc06c774a480b46de0986d3b531d3",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "923750630"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "TESTHUB TECHNOLOGIES AS",
-            "matched_organisation_number": "923750630"
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-923750630.orgNumber=923750630;name=TESTHUB TECHNOLOGIES AS",
-        "id": "purehelp-email-923750630-9593f9740320d54a",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-923750630-2dde808ef0d836a7",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
         "metrics": {
-          "email": "jens@testhub.tech",
-          "contact_as_of": "2026-10-26"
+          "bounded_pages_captured": 3,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         }
       },
       {
         "organisation_number": "923750630",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/923750630",
-        "retrieved_at": "2026-11-05T21:11:38.718260Z",
-        "content_sha256": "d90cef5c463d83ba6f79a202f28630403d6cc06c774a480b46de0986d3b531d3",
+        "platform": "company_site",
+        "source_url": "https://testhub.tech:443/",
+        "retrieved_at": "2026-09-29T10:32:57.622776Z",
+        "content_sha256": "2dde808ef0d836a72465ca85f8810765be5892aaae322158fff8038fce242df9",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "923750630"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "TESTHUB TECHNOLOGIES AS",
-            "matched_organisation_number": "923750630"
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-923750630.orgNumber=923750630;name=TESTHUB TECHNOLOGIES AS",
-        "id": "purehelp-profile-923750630-9593f9740320d54a",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-729ab3c19ed42338e87bf0a5",
+        "signal_type": "website_description",
+        "evidence_span": "TestHub Blog | Revolutionizing Recruitment with Equality — Explore how TestHub is changing the game in recruitment with insights on minimizing hiring errors, securing top talent, and enhancing diversity. Read the latest on our blog.",
         "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "62.100",
-          "nace_description": "Computer programming services",
-          "town": "OSLO",
-          "zipcode": "0560",
-          "municipality": "OSLO",
-          "municipality_number": "0301",
-          "county": "Oslo",
-          "registration_date": "2019-11-04",
-          "registry_status": "BANKRUPT",
-          "registry_status_date": "2026-10-08",
-          "deregistration_date": "",
-          "is_active": false,
-          "is_bankrupt": true,
-          "bankruptcy_date": "2026-10-08",
-          "website_domain": "www.testhub.tech"
+          "interpretation": "Company-owned description; the company's own words."
         }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:40.704126+00:00"
+  "generated_at": "2026-11-07T07:28:38.231103+00:00"
 }

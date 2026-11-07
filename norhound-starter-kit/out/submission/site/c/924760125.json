@@ -1,162 +1,312 @@
 {
   "profile": {
-    "organisation_number": "924760125",
-    "name": "COREBAR AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "HAMAR",
-    "municipality_number": "3403",
-    "industry_code": "85.510",
-    "industry_label": "Undervisning innenfor idrett og rekreasjon",
-    "website": "www.thecorebar.no",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:44.093498Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "924760125",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "924760125",
-          "navn": "COREBAR AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "85.510",
-          "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "2940c150224dcd0d11ed70309319e5144f64f8186f9f7daa4c91b040524b52b0",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:53:45.764332Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2022",
+              "year": "2022"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2021",
+              "year": "2021"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2020",
+              "year": "2020"
+            }
+          ],
+          "years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "5bccf0691dab0e26af09dfd8d0733a627e53a3c91b4851d4bad03abd1f834a3d",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:53:43.306954Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 8013.0,
+              "assets": 174451.0,
+              "currency": "NOK",
+              "debt": 462660.0,
+              "equity": -288209.0,
+              "operating_result": 24657.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": 8013.0,
+              "record_id": 4862309,
+              "revenue": 233763.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 27975.0,
+              "assets": 105800.0,
+              "currency": "NOK",
+              "debt": 366035.0,
+              "equity": -260234.0,
+              "operating_result": 39745.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": 27975.0,
+              "record_id": 5783047,
+              "revenue": 186592.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -14574.0,
+              "assets": 177777.0,
+              "currency": "NOK",
+              "debt": 452584.0,
+              "equity": -274808.0,
+              "operating_result": -14573.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": -14574.0,
+              "record_id": 6636291,
+              "revenue": 147766.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:53:47.120034Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/924760125",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:53:47.853751Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Stangevegen 111G"
+                ],
+                "kommune": "HAMAR",
+                "kommunenummer": "3403",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "2321",
+                "poststed": "HAMAR"
+              },
+              "employees": null,
+              "industry": {
+                "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+                "kode": "85.510"
+              },
+              "name": "COREBAR AS",
+              "organisation_number": "924773391"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "924760125",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Agentur for konseptet og treningsformen corebar, samt tilby trening, aktivitet og kurs innen corebar og annen trening. Selskapet skal i tillegg selge treningsutstyr og treningsklær.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.thecorebar.no",
           "epostadresse": "mona@thecorebar.no",
-          "telefon": "41 74 83 34",
-          "mobil": "452 74 289",
-          "postadresse.adresse": "c/o Mona N Kristoffersen\nStensbakkvegen 33",
-          "postadresse.poststed": "OTTESTAD",
-          "postadresse.postnummer": "2312",
-          "postadresse.kommune": "STANGE",
-          "postadresse.kommunenummer": "3413",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Stangevegen 111G",
-          "forretningsadresse.poststed": "HAMAR",
-          "forretningsadresse.postnummer": "2321",
           "forretningsadresse.kommune": "HAMAR",
           "forretningsadresse.kommunenummer": "3403",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2020-03-13",
-          "stiftelsesdato": "2020-03-01",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2020-05-01",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2020-07-20",
+          "forretningsadresse.postnummer": "2321",
+          "forretningsadresse.poststed": "HAMAR",
+          "fravalgRevisjonBeslutningsDato": "2020-03-01",
+          "fravalgRevisjonDato": "2020-03-13",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2020-03-13",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.thecorebar.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "30",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2020-03-13",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "452 74 289",
+          "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+          "naeringskode1.kode": "85.510",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "COREBAR AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "924760125",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "c/o Mona N Kristoffersen\nStensbakkvegen 33",
+          "postadresse.kommune": "STANGE",
+          "postadresse.kommunenummer": "3413",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "2312",
+          "postadresse.poststed": "OTTESTAD",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2020-03-13",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "2020-05-01",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2020-07-20",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2020-03-13",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2020-03-01",
+          "telefon": "41 74 83 34",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2020-03-01",
-          "vedtektsfestetFormaal": "Tilby konsepter/produkter for trening/aktivitet og sunt kosthold, samt holde kurs treningsaktivitet. Selskapet kan i tillegg selge utstyr og treningsklær.",
-          "aktivitet": "Agentur for konseptet og treningsformen corebar, samt tilby trening, aktivitet og kurs innen corebar og annen trening. Selskapet skal i tillegg selge treningsutstyr og treningsklær.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "2020-03-13",
-          "fravalgRevisjonBeslutningsDato": "2020-03-01",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "30",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2020-03-13",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "924760125",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:44.093498Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "924760125",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2020-03-01",
+          "vedtektsfestetFormaal": "Tilby konsepter/produkter for trening/aktivitet og sunt kosthold, samt holde kurs treningsaktivitet. Selskapet kan i tillegg selge utstyr og treningsklær."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "0c1e1dfe2a15fe794f35f4d93a6edefe4c4a1c5419f872a3852d23e9b64a06b4",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
+        "note": null,
         "retrieved_at": "2026-10-05T08:53:42.574582Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
+        "status": "available",
         "value": {
-          "organisation_number": "924760125",
-          "name": "COREBAR AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.thecorebar.no",
-          "industry": {
-            "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-            "kode": "85.510"
-          },
           "business_address": {
             "adresse": [
               "Stangevegen 111G"
@@ -168,6 +318,16 @@
             "postnummer": "2321",
             "poststed": "HAMAR"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+            "kode": "85.510"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "COREBAR AS",
+          "organisation_number": "924760125",
           "postal_address": {
             "adresse": [
               "c/o Mona N Kristoffersen",
@@ -180,240 +340,134 @@
             "postnummer": "2312",
             "poststed": "OTTESTAD"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "0c1e1dfe2a15fe794f35f4d93a6edefe4c4a1c5419f872a3852d23e9b64a06b4",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-        "retrieved_at": "2026-10-05T08:53:43.306954Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4862309,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 233763.0,
-              "operating_result": 24657.0,
-              "profit_before_tax": 8013.0,
-              "annual_result": 8013.0,
-              "assets": 174451.0,
-              "equity": -288209.0,
-              "debt": 462660.0
-            },
-            {
-              "record_id": 5783047,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 186592.0,
-              "operating_result": 39745.0,
-              "profit_before_tax": 27975.0,
-              "annual_result": 27975.0,
-              "assets": 105800.0,
-              "equity": -260234.0,
-              "debt": 366035.0
-            },
-            {
-              "record_id": 6636291,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 147766.0,
-              "operating_result": -14573.0,
-              "profit_before_tax": -14574.0,
-              "annual_result": -14574.0,
-              "assets": 177777.0,
-              "equity": -274808.0,
-              "debt": 452584.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "5bccf0691dab0e26af09dfd8d0733a627e53a3c91b4851d4bad03abd1f834a3d",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-        "retrieved_at": "2026-10-05T08:53:45.764332Z",
-        "value": {
-          "years": [
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2022"
-            },
-            {
-              "year": "2021",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2021"
-            },
-            {
-              "year": "2020",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2020"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "2940c150224dcd0d11ed70309319e5144f64f8186f9f7daa4c91b040524b52b0",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.thecorebar.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "52f2a5438d3cfc390f20de54e7f7c35f9b33b995ad7cf8a3f262368beda7b8a6",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:53:46.441358Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
+              "last_changed": "2020-03-13",
               "name": "Mona Nyhagen Kristoffersen",
               "organisation_number": null,
-              "role_code": "DAGL",
               "role": "Daglig leder",
-              "group_code": "DAGL",
-              "group": "Daglig leder",
-              "last_changed": "2020-03-13",
-              "inactive": false
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Glenn Bjørnar Garcia Kristoffersen",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Mona Nyhagen Kristoffersen",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "MEDL"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "52f2a5438d3cfc390f20de54e7f7c35f9b33b995ad7cf8a3f262368beda7b8a6",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/924760125",
-        "retrieved_at": "2026-10-05T08:53:47.120034Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
-        "retrieved_at": "2026-10-05T08:53:47.853751Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "924773391",
-              "name": "COREBAR AS",
-              "address": {
-                "adresse": [
-                  "Stangevegen 111G"
-                ],
-                "kommune": "HAMAR",
-                "kommunenummer": "3403",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "2321",
-                "poststed": "HAMAR"
-              },
-              "industry": {
-                "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-                "kode": "85.510"
-              },
-              "employees": null
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://thecorebar.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:53:51.750569Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://thecorebar.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.thecorebar.no/",
-          "final_url": "https://thecorebar.no/",
-          "registered_domain": "thecorebar.no",
-          "title": "The Corebar",
+          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+          "crawl_errors": [],
           "description": "",
+          "discovered_social_links": [
+            {
+              "platform": "facebook",
+              "url": "https://facebook.com/TheCoreBarNorway"
+            },
+            {
+              "platform": "instagram",
+              "url": "https://instagram.com/thecorebar"
+            }
+          ],
+          "extraction_state": "static_complete",
+          "final_url": "https://thecorebar.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "corebar"
+            ],
+            "matched_tokens": [
+              "corebar"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
+            "reasons": [
+              "single distinctive legal-name token appears in homepage identity evidence with substantive content"
+            ],
+            "score": 0.95,
+            "status": "exact"
+          },
           "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
+          "pages": [
+            {
+              "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+              "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
+              "title": "The Corebar",
+              "url": "https://thecorebar.no/"
+            }
+          ],
+          "registered_domain": "thecorebar.no",
+          "requested_url": "https://www.thecorebar.no/",
+          "social_link_assessments": [
+            {
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "corebar"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": true,
+              "reason": "normalized legal-name sequence appears in the social handle",
+              "url": "https://facebook.com/TheCoreBarNorway"
+            },
+            {
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "corebar"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "instagram",
+              "publishable": true,
+              "reason": "normalized legal-name sequence appears in the social handle",
+              "url": "https://instagram.com/thecorebar"
+            }
+          ],
           "social_links": [
             {
               "platform": "facebook",
@@ -425,79 +479,137 @@
             }
           ],
           "structured_organisations": [],
-          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-          "extraction_state": "static_complete",
-          "pages": [
-            {
-              "url": "https://thecorebar.no/",
-              "title": "The Corebar",
-              "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
-              "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7"
-            }
-          ],
-          "crawl_errors": [],
-          "identity_assessment": {
-            "status": "exact",
-            "score": 0.95,
-            "publishable": true,
-            "legal_name_tokens": [
-              "corebar"
-            ],
-            "matched_tokens": [
-              "corebar"
-            ],
-            "reasons": [
-              "single distinctive legal-name token appears in homepage identity evidence with substantive content"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
-          "discovered_social_links": [
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/TheCoreBarNorway"
-            },
-            {
-              "platform": "instagram",
-              "url": "https://instagram.com/thecorebar"
-            }
-          ],
-          "social_link_assessments": [
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/TheCoreBarNorway",
-              "identity_score": 0.98,
-              "publishable": true,
-              "matched_tokens": [
-                "corebar"
-              ],
-              "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
-            },
-            {
-              "platform": "instagram",
-              "url": "https://instagram.com/thecorebar",
-              "identity_score": 0.98,
-              "publishable": true,
-              "matched_tokens": [
-                "corebar"
-              ],
-              "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-        "source_row_key": null,
-        "effective_at": null
+          "title": "The Corebar"
+        }
       },
       "external_observations": [
         {
           "organisation_number": "924760125",
-          "platform": "company_site",
+          "platform": "facebook",
           "source_url": "https://thecorebar.no/",
           "retrieved_at": "2026-09-29T10:20:27.673956Z",
+          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "company_site_url": "https://thecorebar.no/",
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "corebar"
+              ],
+              "name_token_gate": true,
+              "method": "linked_from_verified_site_v1"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "site_linked_social_handle",
+          "id": "site-social-924760125-facebook-072d2a1df28a7105",
+          "signal_type": "profile_handle",
+          "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+          "metrics": {
+            "platform": "facebook",
+            "url": "https://facebook.com/TheCoreBarNorway",
+            "identity_score": 0.98
+          }
+        },
+        {
+          "organisation_number": "924760125",
+          "platform": "instagram",
+          "source_url": "https://thecorebar.no/",
+          "retrieved_at": "2026-09-29T10:20:27.673956Z",
+          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "linked_from_verified_site",
+              "company_site_url": "https://thecorebar.no/",
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "corebar"
+              ],
+              "name_token_gate": true,
+              "method": "linked_from_verified_site_v1"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "site_linked_social_handle",
+          "id": "site-social-924760125-instagram-c73427a66d9a253c",
+          "signal_type": "profile_handle",
+          "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+          "metrics": {
+            "platform": "instagram",
+            "url": "https://instagram.com/thecorebar",
+            "identity_score": 0.98
+          }
+        },
+        {
+          "id": "annual-workforce-0e75afe25cb203d17a5021ab",
+          "organisation_number": "924760125",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
+          "retrieved_at": "2026-10-08T19:38:35.818796Z",
+          "content_sha256": "2641b2676f8bbfbfff1df263247f74dc288ff6d4c3d7e2ea3b2b62544784a88c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "924760125"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "924760125"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
+        {
+          "organisation_number": "924760125",
+          "platform": "company_site",
+          "source_url": "https://thecorebar.no/",
+          "retrieved_at": "2026-10-05T08:53:51.750569Z",
+          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-74b56603980cb5423ed84b7d",
+          "signal_type": "website_description",
+          "evidence_span": "The Corebar",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "924760125",
+          "platform": "company_site",
+          "source_url": "https://thecorebar.no/",
+          "retrieved_at": "2026-10-05T08:53:51.750569Z",
           "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
           "exact_entity": true,
           "identity_proof": [
@@ -526,7 +638,7 @@
           "organisation_number": "924760125",
           "platform": "facebook",
           "source_url": "https://thecorebar.no/",
-          "retrieved_at": "2026-09-29T10:20:27.673956Z",
+          "retrieved_at": "2026-10-05T08:53:51.750569Z",
           "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
           "exact_entity": true,
           "identity_proof": [
@@ -552,7 +664,7 @@
           "organisation_number": "924760125",
           "platform": "instagram",
           "source_url": "https://thecorebar.no/",
-          "retrieved_at": "2026-09-29T10:20:27.673956Z",
+          "retrieved_at": "2026-10-05T08:53:51.750569Z",
           "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
           "exact_entity": true,
           "identity_proof": [
@@ -580,8 +692,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -608,8 +720,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -636,8 +748,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -660,34 +772,9 @@
         },
         {
           "organisation_number": "924760125",
-          "platform": "company_site",
-          "source_url": "https://thecorebar.no/",
-          "retrieved_at": "2026-09-29T10:20:27.673956Z",
-          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-74b56603980cb5423ed84b7d",
-          "signal_type": "website_description",
-          "evidence_span": "The Corebar",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
-        },
-        {
-          "organisation_number": "924760125",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
-          "retrieved_at": "2026-09-29T10:20:24.888123Z",
+          "retrieved_at": "2026-10-05T08:53:47.853751Z",
           "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -717,7 +804,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "5752908a02182ceed79a2f5c6604dea6a9a0c8aaeb957018f1c3211b26b9e36e",
           "observed_at": "2026-05-30",
           "exact_entity": true,
@@ -747,7 +834,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "6eab9f8316441f6d059a1da6137759e571c321cde8e60b6887a6e74e451006e6",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -777,7 +864,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "d57b6c092c1e66c70917ef32be735d2b9b06f2d98b6eb5858aad4433925d7898",
           "observed_at": "2025-05-31",
           "exact_entity": true,
@@ -807,7 +894,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e00d6e5d5a322905cead7d062064e4036787d121d424a091c7c9b2ff77a4133a",
           "observed_at": "2024-06-04",
           "exact_entity": true,
@@ -837,7 +924,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ebd62dc672832e3fa7c5702147dfbdec849ac7fa2605923588ccb88b8137b29a",
           "observed_at": "2023-11-15",
           "exact_entity": true,
@@ -867,7 +954,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "3016e14d293f18fe6a71b620a36a3520e559e8ab652448731c5995e21adcf748",
           "observed_at": "2023-05-15",
           "exact_entity": true,
@@ -897,7 +984,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e9c8e9985c8c9c10c19e34b0e14af3d88658c789fa4d2b55c4e10a586789aaf8",
           "observed_at": "2022-05-14",
           "exact_entity": true,
@@ -927,7 +1014,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "99fcd2867a4bfb00f30f3bfbc667a6b027a7d9f62293f89a8127425f152f3187",
           "observed_at": "2021-05-10",
           "exact_entity": true,
@@ -957,7 +1044,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "1f8304547710167cfd454b986e69fa064bf3f506ebc15ff082a27043a5d9f586",
           "observed_at": "2020-07-20",
           "exact_entity": true,
@@ -987,7 +1074,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "bdcf8a1e284dce33e03181329694e5e4109229939b934a721ab29fd454a86cd6",
           "observed_at": "2020-05-06",
           "exact_entity": true,
@@ -1017,7 +1104,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e02300527bf0e14ab1dd90d28389f61cc8df6a28e963d2b8ff0bbcac3e5d0e87",
           "observed_at": "2020-03-17",
           "exact_entity": true,
@@ -1047,7 +1134,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2d793c6e590a331f25c1b40ebbd070be81413817d67de0524f6b4ee09fa43dc5",
           "observed_at": "2020-03-13",
           "exact_entity": true,
@@ -1159,395 +1246,48 @@
           "evidence_span": "Godkjente årsregnskap — 2024-06-03 (BRREG official announcement)"
         },
         {
+          "id": "registry-site-924760125-f7e956ac4886abc2",
           "organisation_number": "924760125",
-          "platform": "facebook",
+          "platform": "company_site",
+          "signal_type": "website_description",
           "source_url": "https://thecorebar.no/",
           "retrieved_at": "2026-09-29T10:20:27.673956Z",
           "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://thecorebar.no/",
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "corebar"
-              ],
-              "name_token_gate": true,
-              "method": "linked_from_verified_site_v1"
+              "type": "registry_declared_website_domain_match",
+              "value": "thecorebar.no",
+              "matched_organisation_number": "924760125",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares thecorebar.no as the website of organisation 924760125; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "strategy": "site_linked_social_handle",
-          "id": "site-social-924760125-facebook-072d2a1df28a7105",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+          "evidence_span": "The Corebar",
           "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/TheCoreBarNorway",
-            "identity_score": 0.98
-          }
-        },
-        {
-          "organisation_number": "924760125",
-          "platform": "instagram",
-          "source_url": "https://thecorebar.no/",
-          "retrieved_at": "2026-09-29T10:20:27.673956Z",
-          "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://thecorebar.no/",
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "corebar"
-              ],
-              "name_token_gate": true,
-              "method": "linked_from_verified_site_v1"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "site_linked_social_handle",
-          "id": "site-social-924760125-instagram-c73427a66d9a253c",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/thecorebar",
-            "identity_score": 0.98
-          }
-        },
-        {
-          "id": "annual-workforce-dd0810ba90e53601e0a44f62",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
-          "retrieved_at": "2026-10-28T04:38:01.512472Z",
-          "content_sha256": "6385f76ca07e0122a0ba78516b036355f3032b1911eabedfce2da9cd0a3b0798",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 0
+            "title": "The Corebar",
+            "description": "",
+            "registry_domain": "thecorebar.no"
           },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_approval_date-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 27.05.2026",
-          "metrics": {
-            "approval_date": "27.05.2026",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_auditor-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Glenn Bjørnar G Kristoffersen",
-          "metrics": {
-            "auditor": "Glenn Bjørnar G Kristoffersen",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_accounting_rules-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_business_address-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Stangevegen 1116",
-          "metrics": {
-            "business_address": "Stangevegen 1116",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_signing_officer-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-924760125-annual_report_org_number-6062beb3c32a3870",
-          "organisation_number": "924760125",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-          "retrieved_at": "2026-11-05T15:34:32.516850Z",
-          "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "924760125"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "924760125"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 924 760 125",
-          "metrics": {
-            "org_number": "924760125",
-            "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-            "ocr_chars": 1384
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "924760125",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/924760125",
-          "retrieved_at": "2026-11-05T21:10:44.047715Z",
-          "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "924760125"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "COREBAR AS",
-              "matched_organisation_number": "924760125"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-          "id": "purehelp-email-924760125-7081551c60e49149",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "mona@thecorebar.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "924760125",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/924760125",
-          "retrieved_at": "2026-11-05T21:10:44.047715Z",
-          "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "924760125"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "COREBAR AS",
-              "matched_organisation_number": "924760125"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-          "id": "purehelp-phone-924760125-7081551c60e49149",
-          "signal_type": "contact_phone",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "phone": "41 74 83 34",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "924760125",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/924760125",
-          "retrieved_at": "2026-11-05T21:10:44.047715Z",
-          "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "924760125"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "COREBAR AS",
-              "matched_organisation_number": "924760125"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-          "id": "purehelp-profile-924760125-7081551c60e49149",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "85.510",
-            "nace_description": "Sports and recreation education",
-            "town": "HAMAR",
-            "zipcode": "2321",
-            "municipality": "HAMAR",
-            "municipality_number": "3403",
-            "county": "Innlandet",
-            "registration_date": "2020-03-13",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2020-03-13",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.thecorebar.no"
-          }
+          "strategy": "registry_declared_website_description"
         }
       ]
     },
+    "industry_code": "85.510",
+    "industry_label": "Undervisning innenfor idrett og rekreasjon",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "HAMAR",
+    "municipality_number": "3403",
+    "name": "COREBAR AS",
+    "organisation_number": "924760125",
     "run_metrics": {
-      "requests": 8,
       "bytes": 31801,
       "latencies_ms": [
         680,
@@ -1557,15 +1297,17 @@
         678,
         733,
         2877
-      ]
-    }
+      ],
+      "requests": 8
+    },
+    "website": "www.thecorebar.no"
   },
   "summary": {
     "organisation_number": "924760125",
     "company_name": "COREBAR AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "COREBAR AS is a private limited company operating in Undervisning innenfor idrett og rekreasjon. Latest accounts (2025): revenue NOK 233.8k, annual result NOK 8.0k. Annual accounts available for 2020-2025 (6 years). Detailed records only available as PDFs. Revenue growing (+25.3% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "COREBAR AS is a private limited company operating in Undervisning innenfor idrett og rekreasjon. Latest accounts (2025): revenue NOK 233.8k, annual result NOK 8.0k. Annual accounts available for 2020-2025 (6 years). Detailed records only available as PDFs. Revenue growing (+25.3% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1579,13 +1321,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
           "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1601,13 +1338,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
           "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1623,13 +1355,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
           "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1645,13 +1372,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
           "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1673,25 +1395,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/924760125/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
-          "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1705,13 +1413,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-          "https://purehelp.no/company/NO/924760125",
           "https://thecorebar.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000494509&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000349169&amp;sokeverdi=924760125&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000319459&amp;sokeverdi=924760125&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
@@ -1721,154 +1424,319 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:44.093498Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "924760125",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "924760125",
-        "navn": "COREBAR AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "85.510",
-        "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "2940c150224dcd0d11ed70309319e5144f64f8186f9f7daa4c91b040524b52b0",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:53:45.764332Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2022",
+            "year": "2022"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2021",
+            "year": "2021"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2020",
+            "year": "2020"
+          }
+        ],
+        "years": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "5bccf0691dab0e26af09dfd8d0733a627e53a3c91b4851d4bad03abd1f834a3d",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:53:43.306954Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 8013.0,
+            "assets": 174451.0,
+            "currency": "NOK",
+            "debt": 462660.0,
+            "equity": -288209.0,
+            "operating_result": 24657.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": 8013.0,
+            "record_id": 4862309,
+            "revenue": 233763.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 27975.0,
+            "assets": 105800.0,
+            "currency": "NOK",
+            "debt": 366035.0,
+            "equity": -260234.0,
+            "operating_result": 39745.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": 27975.0,
+            "record_id": 5783047,
+            "revenue": 186592.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -14574.0,
+            "assets": 177777.0,
+            "currency": "NOK",
+            "debt": 452584.0,
+            "equity": -274808.0,
+            "operating_result": -14573.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": -14574.0,
+            "record_id": 6636291,
+            "revenue": 147766.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:53:47.120034Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/924760125",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:53:47.853751Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Stangevegen 111G"
+              ],
+              "kommune": "HAMAR",
+              "kommunenummer": "3403",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "2321",
+              "poststed": "HAMAR"
+            },
+            "employees": null,
+            "industry": {
+              "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+              "kode": "85.510"
+            },
+            "name": "COREBAR AS",
+            "organisation_number": "924773391"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "924760125",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Agentur for konseptet og treningsformen corebar, samt tilby trening, aktivitet og kurs innen corebar og annen trening. Selskapet skal i tillegg selge treningsutstyr og treningsklær.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.thecorebar.no",
         "epostadresse": "mona@thecorebar.no",
-        "telefon": "41 74 83 34",
-        "mobil": "452 74 289",
-        "postadresse.adresse": "c/o Mona N Kristoffersen\nStensbakkvegen 33",
-        "postadresse.poststed": "OTTESTAD",
-        "postadresse.postnummer": "2312",
-        "postadresse.kommune": "STANGE",
-        "postadresse.kommunenummer": "3413",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Stangevegen 111G",
-        "forretningsadresse.poststed": "HAMAR",
-        "forretningsadresse.postnummer": "2321",
         "forretningsadresse.kommune": "HAMAR",
         "forretningsadresse.kommunenummer": "3403",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2020-03-13",
-        "stiftelsesdato": "2020-03-01",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2020-05-01",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2020-07-20",
+        "forretningsadresse.postnummer": "2321",
+        "forretningsadresse.poststed": "HAMAR",
+        "fravalgRevisjonBeslutningsDato": "2020-03-01",
+        "fravalgRevisjonDato": "2020-03-13",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2020-03-13",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.thecorebar.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "30",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2020-03-13",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "452 74 289",
+        "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+        "naeringskode1.kode": "85.510",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "COREBAR AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "924760125",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "c/o Mona N Kristoffersen\nStensbakkvegen 33",
+        "postadresse.kommune": "STANGE",
+        "postadresse.kommunenummer": "3413",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "2312",
+        "postadresse.poststed": "OTTESTAD",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2020-03-13",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "2020-05-01",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2020-07-20",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2020-03-13",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2020-03-01",
+        "telefon": "41 74 83 34",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2020-03-01",
-        "vedtektsfestetFormaal": "Tilby konsepter/produkter for trening/aktivitet og sunt kosthold, samt holde kurs treningsaktivitet. Selskapet kan i tillegg selge utstyr og treningsklær.",
-        "aktivitet": "Agentur for konseptet og treningsformen corebar, samt tilby trening, aktivitet og kurs innen corebar og annen trening. Selskapet skal i tillegg selge treningsutstyr og treningsklær.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "2020-03-13",
-        "fravalgRevisjonBeslutningsDato": "2020-03-01",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "30",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2020-03-13",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "924760125",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:44.093498Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "924760125",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2020-03-01",
+        "vedtektsfestetFormaal": "Tilby konsepter/produkter for trening/aktivitet og sunt kosthold, samt holde kurs treningsaktivitet. Selskapet kan i tillegg selge utstyr og treningsklær."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "0c1e1dfe2a15fe794f35f4d93a6edefe4c4a1c5419f872a3852d23e9b64a06b4",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
+      "note": null,
       "retrieved_at": "2026-10-05T08:53:42.574582Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
+      "status": "available",
       "value": {
-        "organisation_number": "924760125",
-        "name": "COREBAR AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.thecorebar.no",
-        "industry": {
-          "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-          "kode": "85.510"
-        },
         "business_address": {
           "adresse": [
             "Stangevegen 111G"
@@ -1880,6 +1748,16 @@
           "postnummer": "2321",
           "poststed": "HAMAR"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+          "kode": "85.510"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "COREBAR AS",
+        "organisation_number": "924760125",
         "postal_address": {
           "adresse": [
             "c/o Mona N Kristoffersen",
@@ -1892,240 +1770,134 @@
           "postnummer": "2312",
           "poststed": "OTTESTAD"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "0c1e1dfe2a15fe794f35f4d93a6edefe4c4a1c5419f872a3852d23e9b64a06b4",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/924760125",
-      "retrieved_at": "2026-10-05T08:53:43.306954Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4862309,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 233763.0,
-            "operating_result": 24657.0,
-            "profit_before_tax": 8013.0,
-            "annual_result": 8013.0,
-            "assets": 174451.0,
-            "equity": -288209.0,
-            "debt": 462660.0
-          },
-          {
-            "record_id": 5783047,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 186592.0,
-            "operating_result": 39745.0,
-            "profit_before_tax": 27975.0,
-            "annual_result": 27975.0,
-            "assets": 105800.0,
-            "equity": -260234.0,
-            "debt": 366035.0
-          },
-          {
-            "record_id": 6636291,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 147766.0,
-            "operating_result": -14573.0,
-            "profit_before_tax": -14574.0,
-            "annual_result": -14574.0,
-            "assets": 177777.0,
-            "equity": -274808.0,
-            "debt": 452584.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "5bccf0691dab0e26af09dfd8d0733a627e53a3c91b4851d4bad03abd1f834a3d",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/aar",
-      "retrieved_at": "2026-10-05T08:53:45.764332Z",
-      "value": {
-        "years": [
-          "2020",
-          "2021",
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2022"
-          },
-          {
-            "year": "2021",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2021"
-          },
-          {
-            "year": "2020",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2020"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "2940c150224dcd0d11ed70309319e5144f64f8186f9f7daa4c91b040524b52b0",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.thecorebar.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "52f2a5438d3cfc390f20de54e7f7c35f9b33b995ad7cf8a3f262368beda7b8a6",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:53:46.441358Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
+            "last_changed": "2020-03-13",
             "name": "Mona Nyhagen Kristoffersen",
             "organisation_number": null,
-            "role_code": "DAGL",
             "role": "Daglig leder",
-            "group_code": "DAGL",
-            "group": "Daglig leder",
-            "last_changed": "2020-03-13",
-            "inactive": false
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Glenn Bjørnar Garcia Kristoffersen",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Mona Nyhagen Kristoffersen",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "MEDL"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "52f2a5438d3cfc390f20de54e7f7c35f9b33b995ad7cf8a3f262368beda7b8a6",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/924760125",
-      "retrieved_at": "2026-10-05T08:53:47.120034Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
-      "retrieved_at": "2026-10-05T08:53:47.853751Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "924773391",
-            "name": "COREBAR AS",
-            "address": {
-              "adresse": [
-                "Stangevegen 111G"
-              ],
-              "kommune": "HAMAR",
-              "kommunenummer": "3403",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "2321",
-              "poststed": "HAMAR"
-            },
-            "industry": {
-              "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-              "kode": "85.510"
-            },
-            "employees": null
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://thecorebar.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:53:51.750569Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://thecorebar.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.thecorebar.no/",
-        "final_url": "https://thecorebar.no/",
-        "registered_domain": "thecorebar.no",
-        "title": "The Corebar",
+        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+        "crawl_errors": [],
         "description": "",
+        "discovered_social_links": [
+          {
+            "platform": "facebook",
+            "url": "https://facebook.com/TheCoreBarNorway"
+          },
+          {
+            "platform": "instagram",
+            "url": "https://instagram.com/thecorebar"
+          }
+        ],
+        "extraction_state": "static_complete",
+        "final_url": "https://thecorebar.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "corebar"
+          ],
+          "matched_tokens": [
+            "corebar"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
+          "reasons": [
+            "single distinctive legal-name token appears in homepage identity evidence with substantive content"
+          ],
+          "score": 0.95,
+          "status": "exact"
+        },
         "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
+        "pages": [
+          {
+            "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+            "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
+            "title": "The Corebar",
+            "url": "https://thecorebar.no/"
+          }
+        ],
+        "registered_domain": "thecorebar.no",
+        "requested_url": "https://www.thecorebar.no/",
+        "social_link_assessments": [
+          {
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "corebar"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": true,
+            "reason": "normalized legal-name sequence appears in the social handle",
+            "url": "https://facebook.com/TheCoreBarNorway"
+          },
+          {
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "corebar"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "instagram",
+            "publishable": true,
+            "reason": "normalized legal-name sequence appears in the social handle",
+            "url": "https://instagram.com/thecorebar"
+          }
+        ],
         "social_links": [
           {
             "platform": "facebook",
@@ -2137,79 +1909,137 @@
           }
         ],
         "structured_organisations": [],
-        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-        "extraction_state": "static_complete",
-        "pages": [
-          {
-            "url": "https://thecorebar.no/",
-            "title": "The Corebar",
-            "main_text_excerpt": "Kort historie\n                Metoden og konseptet ble utviklet av den norske gruppetreningsinstruktøren og personlige treneren Anita Tonne i 2006.\n                I februar 2020 tok Mona N. Kristoffersen over rollen som eier og daglig leder sammen med markedsleder Glenn B. Kristoffersen som driver konseptet videre.\n                \nAllerede i mars så de behov for en videreutvikling av konseptet og i den forbindelse med Coretube født. Med dette ble hele Corebar treningskonseptet tilgjengelig for de der hjemme med deres egen platform for å streame treningsvideoer fra konseptet.\n                Corebarer får man selvfølgelig kjøpt gjennom vår helt egen Webstore!\n                \nMed et team bestående av Mona selv og hennes mastertrainere har de nå allerede fylt opp Coretube med mange videoer gjennom 4 releaser,\n                \nDe har sammen utviklet konseptet QuickFix som er 10-minutters vaianter av Coretube programmer for de som vil utnytte tiden for en kjapp treningsøkt.",
-            "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7"
-          }
-        ],
-        "crawl_errors": [],
-        "identity_assessment": {
-          "status": "exact",
-          "score": 0.95,
-          "publishable": true,
-          "legal_name_tokens": [
-            "corebar"
-          ],
-          "matched_tokens": [
-            "corebar"
-          ],
-          "reasons": [
-            "single distinctive legal-name token appears in homepage identity evidence with substantive content"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
-        "discovered_social_links": [
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/TheCoreBarNorway"
-          },
-          {
-            "platform": "instagram",
-            "url": "https://instagram.com/thecorebar"
-          }
-        ],
-        "social_link_assessments": [
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/TheCoreBarNorway",
-            "identity_score": 0.98,
-            "publishable": true,
-            "matched_tokens": [
-              "corebar"
-            ],
-            "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
-          },
-          {
-            "platform": "instagram",
-            "url": "https://instagram.com/thecorebar",
-            "identity_score": 0.98,
-            "publishable": true,
-            "matched_tokens": [
-              "corebar"
-            ],
-            "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-      "source_row_key": null,
-      "effective_at": null
+        "title": "The Corebar"
+      }
     },
     "external_observations": [
       {
         "organisation_number": "924760125",
-        "platform": "company_site",
+        "platform": "facebook",
         "source_url": "https://thecorebar.no/",
         "retrieved_at": "2026-09-29T10:20:27.673956Z",
+        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "company_site_url": "https://thecorebar.no/",
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "corebar"
+            ],
+            "name_token_gate": true,
+            "method": "linked_from_verified_site_v1"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "site_linked_social_handle",
+        "id": "site-social-924760125-facebook-072d2a1df28a7105",
+        "signal_type": "profile_handle",
+        "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+        "metrics": {
+          "platform": "facebook",
+          "url": "https://facebook.com/TheCoreBarNorway",
+          "identity_score": 0.98
+        }
+      },
+      {
+        "organisation_number": "924760125",
+        "platform": "instagram",
+        "source_url": "https://thecorebar.no/",
+        "retrieved_at": "2026-09-29T10:20:27.673956Z",
+        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "linked_from_verified_site",
+            "company_site_url": "https://thecorebar.no/",
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "corebar"
+            ],
+            "name_token_gate": true,
+            "method": "linked_from_verified_site_v1"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "site_linked_social_handle",
+        "id": "site-social-924760125-instagram-c73427a66d9a253c",
+        "signal_type": "profile_handle",
+        "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+        "metrics": {
+          "platform": "instagram",
+          "url": "https://instagram.com/thecorebar",
+          "identity_score": 0.98
+        }
+      },
+      {
+        "id": "annual-workforce-0e75afe25cb203d17a5021ab",
+        "organisation_number": "924760125",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
+        "retrieved_at": "2026-10-08T19:38:35.818796Z",
+        "content_sha256": "2641b2676f8bbfbfff1df263247f74dc288ff6d4c3d7e2ea3b2b62544784a88c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "924760125"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "924760125"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
+      {
+        "organisation_number": "924760125",
+        "platform": "company_site",
+        "source_url": "https://thecorebar.no/",
+        "retrieved_at": "2026-10-05T08:53:51.750569Z",
+        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-74b56603980cb5423ed84b7d",
+        "signal_type": "website_description",
+        "evidence_span": "The Corebar",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "924760125",
+        "platform": "company_site",
+        "source_url": "https://thecorebar.no/",
+        "retrieved_at": "2026-10-05T08:53:51.750569Z",
         "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
         "exact_entity": true,
         "identity_proof": [
@@ -2238,7 +2068,7 @@
         "organisation_number": "924760125",
         "platform": "facebook",
         "source_url": "https://thecorebar.no/",
-        "retrieved_at": "2026-09-29T10:20:27.673956Z",
+        "retrieved_at": "2026-10-05T08:53:51.750569Z",
         "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
         "exact_entity": true,
         "identity_proof": [
@@ -2264,7 +2094,7 @@
         "organisation_number": "924760125",
         "platform": "instagram",
         "source_url": "https://thecorebar.no/",
-        "retrieved_at": "2026-09-29T10:20:27.673956Z",
+        "retrieved_at": "2026-10-05T08:53:51.750569Z",
         "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
         "exact_entity": true,
         "identity_proof": [
@@ -2292,8 +2122,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2320,8 +2150,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2348,8 +2178,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2372,34 +2202,9 @@
       },
       {
         "organisation_number": "924760125",
-        "platform": "company_site",
-        "source_url": "https://thecorebar.no/",
-        "retrieved_at": "2026-09-29T10:20:27.673956Z",
-        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-74b56603980cb5423ed84b7d",
-        "signal_type": "website_description",
-        "evidence_span": "The Corebar",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
-      },
-      {
-        "organisation_number": "924760125",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=924760125&size=1000",
-        "retrieved_at": "2026-09-29T10:20:24.888123Z",
+        "retrieved_at": "2026-10-05T08:53:47.853751Z",
         "content_sha256": "1c2ddfc3f7885e6579d49d52924c2e62fcaef4710bd6ebe2019593cd2b7d4781",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2429,7 +2234,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "5752908a02182ceed79a2f5c6604dea6a9a0c8aaeb957018f1c3211b26b9e36e",
         "observed_at": "2026-05-30",
         "exact_entity": true,
@@ -2459,7 +2264,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "6eab9f8316441f6d059a1da6137759e571c321cde8e60b6887a6e74e451006e6",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2489,7 +2294,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "d57b6c092c1e66c70917ef32be735d2b9b06f2d98b6eb5858aad4433925d7898",
         "observed_at": "2025-05-31",
         "exact_entity": true,
@@ -2519,7 +2324,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e00d6e5d5a322905cead7d062064e4036787d121d424a091c7c9b2ff77a4133a",
         "observed_at": "2024-06-04",
         "exact_entity": true,
@@ -2549,7 +2354,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ebd62dc672832e3fa7c5702147dfbdec849ac7fa2605923588ccb88b8137b29a",
         "observed_at": "2023-11-15",
         "exact_entity": true,
@@ -2579,7 +2384,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "3016e14d293f18fe6a71b620a36a3520e559e8ab652448731c5995e21adcf748",
         "observed_at": "2023-05-15",
         "exact_entity": true,
@@ -2609,7 +2414,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e9c8e9985c8c9c10c19e34b0e14af3d88658c789fa4d2b55c4e10a586789aaf8",
         "observed_at": "2022-05-14",
         "exact_entity": true,
@@ -2639,7 +2444,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "99fcd2867a4bfb00f30f3bfbc667a6b027a7d9f62293f89a8127425f152f3187",
         "observed_at": "2021-05-10",
         "exact_entity": true,
@@ -2669,7 +2474,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "1f8304547710167cfd454b986e69fa064bf3f506ebc15ff082a27043a5d9f586",
         "observed_at": "2020-07-20",
         "exact_entity": true,
@@ -2699,7 +2504,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "bdcf8a1e284dce33e03181329694e5e4109229939b934a721ab29fd454a86cd6",
         "observed_at": "2020-05-06",
         "exact_entity": true,
@@ -2729,7 +2534,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e02300527bf0e14ab1dd90d28389f61cc8df6a28e963d2b8ff0bbcac3e5d0e87",
         "observed_at": "2020-03-17",
         "exact_entity": true,
@@ -2759,7 +2564,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/924760125",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2d793c6e590a331f25c1b40ebbd070be81413817d67de0524f6b4ee09fa43dc5",
         "observed_at": "2020-03-13",
         "exact_entity": true,
@@ -2871,392 +2676,37 @@
         "evidence_span": "Godkjente årsregnskap — 2024-06-03 (BRREG official announcement)"
       },
       {
+        "id": "registry-site-924760125-f7e956ac4886abc2",
         "organisation_number": "924760125",
-        "platform": "facebook",
+        "platform": "company_site",
+        "signal_type": "website_description",
         "source_url": "https://thecorebar.no/",
         "retrieved_at": "2026-09-29T10:20:27.673956Z",
         "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://thecorebar.no/",
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "corebar"
-            ],
-            "name_token_gate": true,
-            "method": "linked_from_verified_site_v1"
+            "type": "registry_declared_website_domain_match",
+            "value": "thecorebar.no",
+            "matched_organisation_number": "924760125",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares thecorebar.no as the website of organisation 924760125; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "strategy": "site_linked_social_handle",
-        "id": "site-social-924760125-facebook-072d2a1df28a7105",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
+        "evidence_span": "The Corebar",
         "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/TheCoreBarNorway",
-          "identity_score": 0.98
-        }
-      },
-      {
-        "organisation_number": "924760125",
-        "platform": "instagram",
-        "source_url": "https://thecorebar.no/",
-        "retrieved_at": "2026-09-29T10:20:27.673956Z",
-        "content_sha256": "f7e956ac4886abc26ef1173906c7a7f60d78e4e783eb7a0ee6e0a6fd0a5698e7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://thecorebar.no/",
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "corebar"
-            ],
-            "name_token_gate": true,
-            "method": "linked_from_verified_site_v1"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "site_linked_social_handle",
-        "id": "site-social-924760125-instagram-c73427a66d9a253c",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the exact-identity-gated company website https://thecorebar.no/.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/thecorebar",
-          "identity_score": 0.98
-        }
-      },
-      {
-        "id": "annual-workforce-dd0810ba90e53601e0a44f62",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/924760125/2025",
-        "retrieved_at": "2026-10-28T04:38:01.512472Z",
-        "content_sha256": "6385f76ca07e0122a0ba78516b036355f3032b1911eabedfce2da9cd0a3b0798",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 0
+          "title": "The Corebar",
+          "description": "",
+          "registry_domain": "thecorebar.no"
         },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_approval_date-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 27.05.2026",
-        "metrics": {
-          "approval_date": "27.05.2026",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_auditor-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Glenn Bjørnar G Kristoffersen",
-        "metrics": {
-          "auditor": "Glenn Bjørnar G Kristoffersen",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_accounting_rules-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_business_address-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Stangevegen 1116",
-        "metrics": {
-          "business_address": "Stangevegen 1116",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_signing_officer-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-924760125-annual_report_org_number-6062beb3c32a3870",
-        "organisation_number": "924760125",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/924760125-2025.pdf",
-        "retrieved_at": "2026-11-05T15:34:32.516850Z",
-        "content_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "924760125"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "924760125"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 924 760 125",
-        "metrics": {
-          "org_number": "924760125",
-          "ocr_text_sha256": "6062beb3c32a3870cbbb63fd6a859bd6fc87665305d680c242d897a2409020e2",
-          "ocr_chars": 1384
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "924760125",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/924760125",
-        "retrieved_at": "2026-11-05T21:10:44.047715Z",
-        "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "924760125"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "COREBAR AS",
-            "matched_organisation_number": "924760125"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-        "id": "purehelp-email-924760125-7081551c60e49149",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "mona@thecorebar.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "924760125",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/924760125",
-        "retrieved_at": "2026-11-05T21:10:44.047715Z",
-        "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "924760125"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "COREBAR AS",
-            "matched_organisation_number": "924760125"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-        "id": "purehelp-phone-924760125-7081551c60e49149",
-        "signal_type": "contact_phone",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "phone": "41 74 83 34",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "924760125",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/924760125",
-        "retrieved_at": "2026-11-05T21:10:44.047715Z",
-        "content_sha256": "862693e237135f6ce28eaf8bacfd0017bf4608d679bc8888eae110fe8c97b00a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "924760125"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "COREBAR AS",
-            "matched_organisation_number": "924760125"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-924760125.orgNumber=924760125;name=COREBAR AS",
-        "id": "purehelp-profile-924760125-7081551c60e49149",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "85.510",
-          "nace_description": "Sports and recreation education",
-          "town": "HAMAR",
-          "zipcode": "2321",
-          "municipality": "HAMAR",
-          "municipality_number": "3403",
-          "county": "Innlandet",
-          "registration_date": "2020-03-13",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2020-03-13",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.thecorebar.no"
-        }
+        "strategy": "registry_declared_website_description"
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:36.539077+00:00"
+  "generated_at": "2026-11-07T07:28:31.986915+00:00"
 }

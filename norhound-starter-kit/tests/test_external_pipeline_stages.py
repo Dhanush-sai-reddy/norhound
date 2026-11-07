@@ -12,15 +12,43 @@ append to it, and every optional stage contributes to the consolidated output.
 from __future__ import annotations
 
 import ast
+import os
+import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE = ROOT / "scripts" / "run_external_pipeline.py"
+sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
+
+from scripts import run_external_pipeline as pipeline  # noqa: E402
 
 
 def _tree() -> ast.Module:
     return ast.parse(PIPELINE.read_text(encoding="utf-8"))
+
+
+def _stage_line(tree: ast.Module, script_name: str) -> int:
+    """Line number of the `run([...])` call that invokes `script_name`."""
+    lines = []
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Call):
+            continue
+        if not (isinstance(node.func, ast.Name) and node.func.id == "run"):
+            continue
+        for child in ast.walk(node):
+            if (
+                isinstance(child, ast.Constant)
+                and isinstance(child.value, str)
+                and child.value.endswith(script_name)
+            ):
+                lines.append(node.lineno)
+                break
+    if not lines:
+        raise AssertionError(f"no run([...]) call invokes {script_name}")
+    return min(lines)
 
 
 def _first_append_line(tree: ast.Module) -> int:
@@ -85,6 +113,82 @@ class AtsStageTests(unittest.TestCase):
         source = PIPELINE.read_text(encoding="utf-8")
         self.assertIn('parser.set_defaults(ats=True)', source)
         self.assertIn('"--no-ats", dest="ats", action="store_false"', source)
+
+
+class RescueStageTests(unittest.TestCase):
+    """The browser rescue must run inside the pipeline, before the site stages.
+
+    Measured on the shipped 1,000-company corpus, 167 companies had no usable
+    page: 68 were `source_error` (the urllib fetch never produced a page) and
+    99 were `js_fallback_candidate` (the page exists but its text is rendered
+    by client-side JavaScript, so the static HTML was almost empty — 90 of the
+    99 carried no social link at all).
+
+    `scripts/rescue_website_pages.py` re-fetches exactly those homepages with
+    a headless Chromium and rebuilds the website evidence with the same shape
+    `fetch_website` produces. It only helps if it runs BEFORE the activity,
+    news, jobs, description, registry-site and ATS stages: those stages read
+    the website evidence, so a rescue that runs afterwards would recover text
+    that nothing downstream ever sees.
+    """
+
+    def test_the_pipeline_runs_the_rescue_connector(self) -> None:
+        self.assertIn("rescue_website_pages.py", PIPELINE.read_text(encoding="utf-8"))
+
+    def test_the_rescue_stage_is_enabled_by_default(self) -> None:
+        source = PIPELINE.read_text(encoding="utf-8")
+        self.assertIn("parser.set_defaults(rescue=True)", source)
+        self.assertIn('"--no-rescue", dest="rescue", action="store_false"', source)
+
+    def test_the_rescue_stage_runs_before_the_site_stages(self) -> None:
+        tree = _tree()
+        self.assertLess(
+            _stage_line(tree, "rescue_website_pages.py"),
+            _stage_line(tree, "extract_company_site_activity.py"),
+            "the rescue must run before the site stages, or the recovered page text is discarded",
+        )
+
+    def test_the_rescued_profiles_replace_the_input_profiles(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            rescue = Path(tmp) / "batch-rescued-profiles.jsonl"
+            rescue.write_text("{}\n", encoding="utf-8")
+            self.assertEqual(pipeline.resolve_profiles_path(rescue, "profiles.jsonl"), str(rescue))
+
+    def test_a_missing_or_empty_rescue_output_keeps_the_input_profiles(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            empty = Path(tmp) / "empty.jsonl"
+            empty.write_text("", encoding="utf-8")
+            self.assertEqual(pipeline.resolve_profiles_path(empty, "profiles.jsonl"), "profiles.jsonl")
+            missing = Path(tmp) / "missing.jsonl"
+            self.assertEqual(pipeline.resolve_profiles_path(missing, "profiles.jsonl"), "profiles.jsonl")
+
+
+class StageBudgetTests(unittest.TestCase):
+    """A stage that needs more than an hour must get more than an hour.
+
+    The 1,000-company run died at the annual-report workforce stage: it
+    downloads and OCRs a full annual report per company, and the default
+    one-hour budget killed it after 276 cached PDFs, which took the whole run
+    with it (the pipeline is fail-fast, so stages 6-14 never ran).
+    """
+
+    def test_the_workforce_pdf_stage_gets_more_than_an_hour(self) -> None:
+        self.assertGreaterEqual(pipeline.stage_timeout("workforce_pdf"), 10800)
+
+    def test_the_rescue_stage_gets_more_than_an_hour(self) -> None:
+        self.assertGreaterEqual(pipeline.stage_timeout("rescue"), 5400)
+
+    def test_a_stage_budget_can_be_overridden_by_the_environment(self) -> None:
+        os.environ["NORHOUND_WORKFORCE_PDF_TIMEOUT_S"] = "42"
+        try:
+            self.assertEqual(pipeline.stage_timeout("workforce_pdf"), 42)
+        finally:
+            del os.environ["NORHOUND_WORKFORCE_PDF_TIMEOUT_S"]
+
+    def test_the_pipeline_uses_the_per_stage_budget(self) -> None:
+        source = PIPELINE.read_text(encoding="utf-8")
+        self.assertIn('timeout=stage_timeout("rescue")', source)
+        self.assertIn('timeout=stage_timeout("workforce_pdf")', source)
 
 
 if __name__ == "__main__":

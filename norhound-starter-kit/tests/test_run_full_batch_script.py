@@ -91,6 +91,35 @@ class FullBatchScriptTests(unittest.TestCase):
         self.assertIn("ENTRY_MANIFEST", text)
         self.assertIn("expected_count", text)
 
+    def test_the_verification_stages_use_the_rescued_profiles(self) -> None:
+        """A rescued homepage must survive the verification stages.
+
+        The browser rescue rewrites the website evidence of the profiles it
+        recovers. The verifier re-derives identity from the frozen profile, so
+        if the later stages still read the pre-rescue profiles, every rescued
+        observation is verified against a profile that no longer exists and is
+        dropped. The stages must therefore read `$PROFILES`, which points at
+        the rescued file whenever the rescue produced one.
+        """
+        text = _script_text()
+        # Only the external pipeline itself is handed the pre-rescue file.
+        self.assertEqual(text.count('--profiles "$OUT/profiles-promoted.jsonl"'), 1)
+        # purge, verify, evaluate, envelopes and the recall measurement read $PROFILES.
+        self.assertGreaterEqual(text.count('--profiles "$PROFILES"'), 5)
+        self.assertIn("batch-rescued-profiles.jsonl", text)
+
+    def test_the_annual_report_worker_count_is_configurable(self) -> None:
+        """The annual-report stage is the run's longest stage.
+
+        It downloads and OCRs a full annual report per company. The default
+        one-hour stage budget killed the 1,000-company run after 276 cached
+        PDFs, so the worker count must be tunable from the environment instead
+        of being hard-coded to three.
+        """
+        text = _script_text()
+        self.assertIn('WORKFORCE_WORKERS="${WORKFORCE_WORKERS:-8}"', text)
+        self.assertIn('--workforce-workers "$WORKFORCE_WORKERS"', text)
+
 
 if __name__ == "__main__":
     unittest.main()

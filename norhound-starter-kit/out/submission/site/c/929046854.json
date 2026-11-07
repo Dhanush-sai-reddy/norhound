@@ -1,162 +1,281 @@
 {
   "profile": {
-    "organisation_number": "929046854",
-    "name": "STRANDGATEN 4 AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "BERGEN",
-    "municipality_number": "4601",
-    "industry_code": "68.200",
-    "industry_label": "Utleie av egen eller leid fast eiendom",
-    "website": "www.fremre.no",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:47.922287Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "929046854",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "929046854",
-          "navn": "STRANDGATEN 4 AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "68.200",
-          "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:39:25.917849Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2022",
+              "year": "2022"
+            }
+          ],
+          "years": [
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "0f92af2fc5545eb6f67c6e1452733d0245a7e5a95e8ac4d1b396ec2fcf4c067d",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:39:17.938001Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 0.0,
+              "assets": 25655.0,
+              "currency": "NOK",
+              "debt": 0.0,
+              "equity": 25655.0,
+              "operating_result": null,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": 0.0,
+              "record_id": 4794907,
+              "revenue": null
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 0.0,
+              "assets": 25655.0,
+              "currency": "NOK",
+              "debt": 0.0,
+              "equity": 25655.0,
+              "operating_result": null,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": 0.0,
+              "record_id": 5731431,
+              "revenue": null
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -682471.0,
+              "assets": 175450027.0,
+              "currency": "NOK",
+              "debt": 134079636.0,
+              "equity": 41370391.0,
+              "operating_result": 2487588.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": -873393.0,
+              "record_id": 7170159,
+              "revenue": 5502182.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:39:27.368475Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929046854",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "3fa64781c292f8852477cc56eb02a46c20c685ee0ef89f300c04767b349d1d2c",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:39:28.060729Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
+        "status": "available",
+        "value": {
+          "locations": []
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "929046854",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Investeringer i eiendom direkte og indirekte og annen virksomhet i denne forbindelse.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.fremre.no",
           "epostadresse": "",
-          "telefon": "",
-          "mobil": "",
-          "postadresse.adresse": "Postboks 531 Sentrum",
-          "postadresse.poststed": "BERGEN",
-          "postadresse.postnummer": "5806",
-          "postadresse.kommune": "BERGEN",
-          "postadresse.kommunenummer": "4601",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Strandgaten 7",
-          "forretningsadresse.poststed": "BERGEN",
-          "forretningsadresse.postnummer": "5013",
           "forretningsadresse.kommune": "BERGEN",
           "forretningsadresse.kommunenummer": "4601",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2022-04-07",
-          "stiftelsesdato": "2022-03-01",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2025-12-10",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-12-17",
+          "forretningsadresse.postnummer": "5013",
+          "forretningsadresse.poststed": "BERGEN",
+          "fravalgRevisjonBeslutningsDato": "",
+          "fravalgRevisjonDato": "",
           "frivilligMvaRegistrertBeskrivelser": "Utleier av bygg eller anlegg",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2025-12-17",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2022-04-07",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.fremre.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "3000",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2022-04-07",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "",
+          "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
+          "naeringskode1.kode": "68.200",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "STRANDGATEN 4 AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "929046854",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "Postboks 531 Sentrum",
+          "postadresse.kommune": "BERGEN",
+          "postadresse.kommunenummer": "4601",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "5806",
+          "postadresse.poststed": "BERGEN",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2022-04-07",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2025-12-17",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "2025-12-10",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-12-17",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2022-04-07",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2022-03-01",
+          "telefon": "",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2025-10-08",
-          "vedtektsfestetFormaal": "Å investere i fast eiendom eller selskaper som eier fast eiendom, og alt som dermed står i forbindelse.",
-          "aktivitet": "Investeringer i eiendom direkte og indirekte og annen virksomhet i denne forbindelse.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "",
-          "fravalgRevisjonBeslutningsDato": "",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "3000",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2022-04-07",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "929046854",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:47.922287Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "929046854",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2025-10-08",
+          "vedtektsfestetFormaal": "Å investere i fast eiendom eller selskaper som eier fast eiendom, og alt som dermed står i forbindelse."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "e4f79f6bf9f18f088552a31262c2e6fa7d0127fbbce341f7d60e72b0baedacda",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
+        "note": null,
         "retrieved_at": "2026-10-05T08:39:17.225296Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
+        "status": "available",
         "value": {
-          "organisation_number": "929046854",
-          "name": "STRANDGATEN 4 AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.fremre.no",
-          "industry": {
-            "beskrivelse": "Utleie av egen eller leid fast eiendom",
-            "kode": "68.200"
-          },
           "business_address": {
             "adresse": [
               "Strandgaten 7"
@@ -168,6 +287,16 @@
             "postnummer": "5013",
             "poststed": "BERGEN"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Utleie av egen eller leid fast eiendom",
+            "kode": "68.200"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "STRANDGATEN 4 AS",
+          "organisation_number": "929046854",
           "postal_address": {
             "adresse": [
               "Postboks 531 Sentrum"
@@ -179,263 +308,86 @@
             "postnummer": "5806",
             "poststed": "BERGEN"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "e4f79f6bf9f18f088552a31262c2e6fa7d0127fbbce341f7d60e72b0baedacda",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-        "retrieved_at": "2026-10-05T08:39:17.938001Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4794907,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": null,
-              "operating_result": null,
-              "profit_before_tax": 0.0,
-              "annual_result": 0.0,
-              "assets": 25655.0,
-              "equity": 25655.0,
-              "debt": 0.0
-            },
-            {
-              "record_id": 5731431,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": null,
-              "operating_result": null,
-              "profit_before_tax": 0.0,
-              "annual_result": 0.0,
-              "assets": 25655.0,
-              "equity": 25655.0,
-              "debt": 0.0
-            },
-            {
-              "record_id": 7170159,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 5502182.0,
-              "operating_result": 2487588.0,
-              "profit_before_tax": -873393.0,
-              "annual_result": -682471.0,
-              "assets": 175450027.0,
-              "equity": 41370391.0,
-              "debt": 134079636.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "0f92af2fc5545eb6f67c6e1452733d0245a7e5a95e8ac4d1b396ec2fcf4c067d",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-        "retrieved_at": "2026-10-05T08:39:25.917849Z",
-        "value": {
-          "years": [
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2022"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.fremre.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "b2209ffdc025e7756ecc6ef09fb7d4cedabc8d84f406b048fb748a5be04912c9",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:39:26.656119Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2025-07-02",
               "name": "Sindre Øvrebø",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2025-07-02",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2025-07-02",
               "name": "Aleksander Dimitri Langeset Olsbø Rye",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2025-07-02",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Revisor",
+              "group_code": "REVI",
+              "inactive": false,
+              "last_changed": "2026-06-01",
               "name": [
                 "FORUM REVISJON AS"
               ],
               "organisation_number": "989648667",
-              "role_code": "REVI",
               "role": "Revisor",
-              "group_code": "REVI",
-              "group": "Revisor",
-              "last_changed": "2026-06-01",
-              "inactive": false
+              "role_code": "REVI"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2025-10-01",
               "name": [
                 "AIDER AS"
               ],
               "organisation_number": "922633452",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2025-10-01",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b2209ffdc025e7756ecc6ef09fb7d4cedabc8d84f406b048fb748a5be04912c9",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929046854",
-        "retrieved_at": "2026-10-05T08:39:27.368475Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
-        "retrieved_at": "2026-10-05T08:39:28.060729Z",
-        "value": {
-          "locations": []
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "3fa64781c292f8852477cc56eb02a46c20c685ee0ef89f300c04767b349d1d2c",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.fremre.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:39:28.488191Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.fremre.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.fremre.no/",
-          "final_url": "https://www.fremre.no/",
-          "registered_domain": "fremre.no",
-          "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
-          "description": "Fremre Eiendom har ledige lokaler til leie som passer din bedrift!",
-          "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
-          "social_links": [],
-          "structured_organisations": [
-            {
-              "@context": "https://schema.org/",
-              "@type": "LocalBusiness",
-              "name": "Fremre Eiendom",
-              "url": "https://www.fremre.no",
-              "image": "https://static.wixstatic.com/media/ec5b98_cb44c3eb58524051af2bf5e4802a8511~mv2.png",
-              "address": {
-                "@type": "PostalAddress"
-              },
-              "telephone": "+ 47 473 54 709"
-            }
-          ],
           "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
-          "extraction_state": "static_complete",
-          "pages": [
-            {
-              "url": "https://www.fremre.no/",
-              "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
-              "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
-              "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615"
-            }
-          ],
           "crawl_errors": [],
-          "identity_assessment": {
-            "status": "related_or_uncertain",
-            "score": 0.3,
-            "publishable": false,
-            "legal_name_tokens": [
-              "strandgaten"
-            ],
-            "matched_tokens": [
-              "strandgaten"
-            ],
-            "reasons": [
-              "registry-linked URL lacks strong exact-entity identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "Fremre Eiendom har ledige lokaler til leie som passer din bedrift!",
           "discovered_social_links": [
             {
               "platform": "instagram",
@@ -446,41 +398,112 @@
               "url": "https://linkedin.com/company/fremre-eiendom"
             }
           ],
+          "extraction_state": "static_complete",
+          "final_url": "https://www.fremre.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "strandgaten"
+            ],
+            "matched_tokens": [
+              "strandgaten"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "registry-linked URL lacks strong exact-entity identity evidence"
+            ],
+            "score": 0.3,
+            "status": "related_or_uncertain"
+          },
+          "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
+          "pages": [
+            {
+              "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
+              "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
+              "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
+              "url": "https://www.fremre.no/"
+            }
+          ],
+          "registered_domain": "fremre.no",
+          "requested_url": "https://www.fremre.no/",
           "social_link_assessments": [
             {
-              "platform": "instagram",
-              "url": "https://instagram.com/fremre_eiendom",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "instagram",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://instagram.com/fremre_eiendom"
             },
             {
-              "platform": "linkedin",
-              "url": "https://linkedin.com/company/fremre-eiendom",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "linkedin",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://linkedin.com/company/fremre-eiendom"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [],
+          "structured_organisations": [
+            {
+              "@context": "https://schema.org/",
+              "@type": "LocalBusiness",
+              "address": {
+                "@type": "PostalAddress"
+              },
+              "image": "https://static.wixstatic.com/media/ec5b98_cb44c3eb58524051af2bf5e4802a8511~mv2.png",
+              "name": "Fremre Eiendom",
+              "telephone": "+ 47 473 54 709",
+              "url": "https://www.fremre.no"
+            }
+          ],
+          "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom"
+        }
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-a6fddf843cad66ca756302ce",
+          "organisation_number": "929046854",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
+          "retrieved_at": "2026-10-08T17:40:24.583148Z",
+          "content_sha256": "458a7c862ffb8c1f21058f84cd4c6051759c23158c37d976014dac4a370aacc0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "929046854"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "929046854"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
         {
           "id": "registry-update-31c7407ecacc9a5f316ef6cb",
           "organisation_number": "929046854",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "31c7407ecacc9a5f316ef6cb15e2715aa55f17f5fccfb70fa4d0b6a18446bcfa",
           "observed_at": "2026-09-23",
           "exact_entity": true,
@@ -510,7 +533,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "6718940ab72f8fd1c62f89f61dc09e2c1436b40fa25b65985c3e2034a393a995",
           "observed_at": "2026-08-11",
           "exact_entity": true,
@@ -540,7 +563,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "defdf00e4c16b99fa449109b10cc379f8a61ccfd0dc73c4ecd5a15aad7554ed2",
           "observed_at": "2026-06-01",
           "exact_entity": true,
@@ -570,7 +593,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e11a752f98af694c4397f8000141d6ab8839bd2f2703544f268797ac471f08cf",
           "observed_at": "2025-12-17",
           "exact_entity": true,
@@ -600,7 +623,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "844601d0ff734e5b0400ad04236003f5166f6f4dad4dd39feefa2742d3088c41",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -630,7 +653,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "8e32a3bbe65852ca96f400ca53a43809f2df4cc13108912d79a019596df7a0ef",
           "observed_at": "2025-10-25",
           "exact_entity": true,
@@ -660,7 +683,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "3ade19c8df3c1357a9218693d8caf1ec5d87dc027815de6e6d94210954cde70c",
           "observed_at": "2025-07-02",
           "exact_entity": true,
@@ -690,7 +713,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "89c25e22a6a2e89af36bfa64590b016581f1a7c69b7b6b12f4bd6e047c3755bc",
           "observed_at": "2025-05-24",
           "exact_entity": true,
@@ -720,7 +743,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c2c9e1f59550c3e97bed97b31680eeeb62bf0d8979653a235936ffa7177f0790",
           "observed_at": "2024-05-28",
           "exact_entity": true,
@@ -750,7 +773,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "18c7495392af784f4ed03f2226ab51fb694a293d820dbe45322699b3e0d85a59",
           "observed_at": "2023-06-29",
           "exact_entity": true,
@@ -780,7 +803,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "d267d89157502f196bdf8bd1ea08f3a69e677b18da22fe96122dbfb5612c30dd",
           "observed_at": "2022-06-13",
           "exact_entity": true,
@@ -810,7 +833,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "72e0269d7fe03bb223fed5b9dddc66199241b801d7c56cfe688c1fb02d4d544a",
           "observed_at": "2022-05-14",
           "exact_entity": true,
@@ -840,7 +863,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "8b2ee55d50f022fc60b45840f3e0a971c07c27ab47cc144d9610714ce824be5a",
           "observed_at": "2022-04-07",
           "exact_entity": true,
@@ -952,295 +975,13 @@
           "evidence_span": "Gjennomføring av fusjon — 2025-12-10 (BRREG official announcement)"
         },
         {
-          "id": "annual-workforce-b08c28aeda827cd55b8da9c0",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
-          "retrieved_at": "2026-10-28T04:37:55.271507Z",
-          "content_sha256": "c586b248b9e202be40240a0167f2670ee69fc2ba37799c5c25601f482a601a1a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 0
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-metrics-929046854-305a4b4cbf883c9f",
-          "signal_type": "profile_metrics",
-          "strategy": "social_profile_metrics",
-          "evidence_span": "ARK Beyer Strandgaten Bergen Google profile: rating 4.1/5, 234 ratings.",
-          "metrics": {
-            "rating": 4.1,
-            "review_count": 234,
-            "scale": 5,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-929046854-e5f7d443b2340b93",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "The lady cashier was super nice, even recommended me some other knitting books like the one I was buying that weren't as expensive in case I hadn't seen them. Even gave me a members discount. Her kindness definitely made my day.",
-          "observed_at": "2026-02-19T09:39:20.130968356Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 0,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-929046854-75520143ef7ffd7d",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Amazing great! Great selection of American books in Norwegian and English, special editions, and a whole floor for kids.",
-          "observed_at": "2026-07-18T11:07:21.600407569Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 1,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-929046854-1b6f9926b08bd8af",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "This store has an impressive collection of English books. The person who attended to me was nice and came across as a huge book lover. I was offered the option of becoming a member to get the three books at the cost of two. Pretty sweet deal.",
-          "observed_at": "2021-04-28T07:09:38.723574Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 2,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-929046854-6263e4c1f21cbb42",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Great book shop and also for few stationary.\n\nI had reserved few books online in their site and opted to pick it out in the store. It is the better way to know what are all the books are in stock here. There is another ARK store nearby also, but the book I needed was available only here. Staff are very friendly and will help us. Plenty of English novels and books are available. Price will be, you know of Norway standards 😅.",
-          "observed_at": "2024-04-21T21:54:55.207969Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 3,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-929046854-8253b0661cbb5f88",
-          "signal_type": "review",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "Very happening place on the sea front...lots of place to eat and drink as per your preference and budget. Lots of ice cream kiosks... very nice views...lots of people swimming in the sea and sun bathing...good for eating and taking a stroll",
-          "observed_at": "2018-07-30T10:32:29.217Z",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "metrics": {
-            "rating": 5,
-            "scale": 5,
-            "review_index": 4,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-review-summary-929046854-305a4b4cbf883c9f",
-          "signal_type": "review_summary",
-          "strategy": "places_rating_reviews",
-          "evidence_span": "ARK Beyer Strandgaten Bergen is rated 4.1/5 from 234 Google reviews.",
-          "metrics": {
-            "rating": 4.1,
-            "review_count": 234,
-            "scale": 5,
-            "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-          }
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "google_places",
-          "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-          "retrieved_at": "2026-10-31T18:16:33.498564Z",
-          "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "google_places_website_domain_match",
-              "value": "ark.no",
-              "source": "google_places"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "customer_review",
-          "label": "positive",
-          "id": "gplaces-sentiment-929046854-305a4b4cbf883c9f",
-          "signal_type": "sentiment",
-          "strategy": "customer_review_sentiment",
-          "sentiment_label": "positive",
-          "sentiment_model_version": "rule-based-v1",
-          "evidence_span": "Aggregate rating 4.1/5 from 234 reviews implies positive sentiment.",
-          "metrics": {
-            "rating": 4.1,
-            "review_count": 234,
-            "scale": 5
-          }
-        },
-        {
-          "id": "registry-site-929046854-b6c8626314ae2804",
+          "id": "registry-site-929046854-97b34900f2ea78e6",
           "organisation_number": "929046854",
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.fremre.no/",
-          "retrieved_at": "2026-10-09T13:51:28.113237Z",
-          "content_sha256": "b6c8626314ae28040629595e709e3d2cc1f2ffc5ff514ac6c7f4768ce5a60832",
+          "retrieved_at": "2026-09-29T10:07:03.691029Z",
+          "content_sha256": "97b34900f2ea78e673e4f3e7cc042790b42b778a86970cdee8e838de4f654852",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1263,237 +1004,19 @@
             "registry_domain": "fremre.no"
           },
           "strategy": "registry_declared_website_description"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_approval_date-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 10.04.2026",
-          "metrics": {
-            "approval_date": "10.04.2026",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_auditor-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Sindre Øvrebø",
-          "metrics": {
-            "auditor": "Sindre Øvrebø",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_accounting_rules-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_business_address-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Strandgaten 7",
-          "metrics": {
-            "business_address": "Strandgaten 7",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_signing_officer-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-929046854-annual_report_org_number-2032d7a8731eedd5",
-          "organisation_number": "929046854",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-          "retrieved_at": "2026-11-05T14:52:34.146710Z",
-          "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "929046854"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "929046854"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 929 046 854",
-          "metrics": {
-            "org_number": "929046854",
-            "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-            "ocr_chars": 1298
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "929046854",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/929046854",
-          "retrieved_at": "2026-11-05T21:09:41.384773Z",
-          "content_sha256": "88f5ad538a952beceea5b1f9c7b3119c92c5907733cb0389dec83de990ca2b94",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "929046854"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "STRANDGATEN 4 AS",
-              "matched_organisation_number": "929046854"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-929046854.orgNumber=929046854;name=STRANDGATEN 4 AS",
-          "id": "purehelp-profile-929046854-291c830a73e4d464",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "68.200",
-            "nace_description": "Renting and operating of own or leased real estate",
-            "town": "BERGEN",
-            "zipcode": "5013",
-            "municipality": "BERGEN",
-            "municipality_number": "4601",
-            "county": "Vestland",
-            "registration_date": "2022-04-07",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2022-04-07",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.fremre.no"
-          }
         }
       ]
     },
+    "industry_code": "68.200",
+    "industry_label": "Utleie av egen eller leid fast eiendom",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "BERGEN",
+    "municipality_number": "4601",
+    "name": "STRANDGATEN 4 AS",
+    "organisation_number": "929046854",
     "run_metrics": {
-      "requests": 8,
       "bytes": 658887,
       "latencies_ms": [
         743,
@@ -1503,15 +1026,17 @@
         711,
         691,
         116
-      ]
-    }
+      ],
+      "requests": 8
+    },
+    "website": "www.fremre.no"
   },
   "summary": {
     "organisation_number": "929046854",
     "company_name": "STRANDGATEN 4 AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "STRANDGATEN 4 AS is a private limited company operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): annual result NOK 0. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "STRANDGATEN 4 AS is a private limited company operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): annual result NOK 0. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1525,15 +1050,9 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-          "https://purehelp.no/company/NO/929046854",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000873927&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000323856&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000681204&amp;sokeverdi=929046854&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.fremre.no/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4"
+          "https://www.fremre.no/"
         ]
       },
       {
@@ -1548,15 +1067,9 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-          "https://purehelp.no/company/NO/929046854",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000873927&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000323856&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000681204&amp;sokeverdi=929046854&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.fremre.no/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4"
+          "https://www.fremre.no/"
         ]
       },
       {
@@ -1571,15 +1084,9 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-          "https://purehelp.no/company/NO/929046854",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000873927&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000323856&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000681204&amp;sokeverdi=929046854&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.fremre.no/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4"
+          "https://www.fremre.no/"
         ]
       },
       {
@@ -1608,26 +1115,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/929046854/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-          "https://purehelp.no/company/NO/929046854",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000873927&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000323856&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000681204&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.fremre.no/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1641,15 +1133,9 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-          "https://purehelp.no/company/NO/929046854",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000873927&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000323856&amp;sokeverdi=929046854&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000681204&amp;sokeverdi=929046854&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.fremre.no/",
-          "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4"
+          "https://www.fremre.no/"
         ]
       }
     ],
@@ -1658,154 +1144,288 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:47.922287Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "929046854",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "929046854",
-        "navn": "STRANDGATEN 4 AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "68.200",
-        "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:39:25.917849Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2022",
+            "year": "2022"
+          }
+        ],
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "0f92af2fc5545eb6f67c6e1452733d0245a7e5a95e8ac4d1b396ec2fcf4c067d",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:39:17.938001Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 0.0,
+            "assets": 25655.0,
+            "currency": "NOK",
+            "debt": 0.0,
+            "equity": 25655.0,
+            "operating_result": null,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": 0.0,
+            "record_id": 4794907,
+            "revenue": null
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 0.0,
+            "assets": 25655.0,
+            "currency": "NOK",
+            "debt": 0.0,
+            "equity": 25655.0,
+            "operating_result": null,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": 0.0,
+            "record_id": 5731431,
+            "revenue": null
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -682471.0,
+            "assets": 175450027.0,
+            "currency": "NOK",
+            "debt": 134079636.0,
+            "equity": 41370391.0,
+            "operating_result": 2487588.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": -873393.0,
+            "record_id": 7170159,
+            "revenue": 5502182.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:39:27.368475Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929046854",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "3fa64781c292f8852477cc56eb02a46c20c685ee0ef89f300c04767b349d1d2c",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:39:28.060729Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
+      "status": "available",
+      "value": {
+        "locations": []
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "929046854",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Investeringer i eiendom direkte og indirekte og annen virksomhet i denne forbindelse.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.fremre.no",
         "epostadresse": "",
-        "telefon": "",
-        "mobil": "",
-        "postadresse.adresse": "Postboks 531 Sentrum",
-        "postadresse.poststed": "BERGEN",
-        "postadresse.postnummer": "5806",
-        "postadresse.kommune": "BERGEN",
-        "postadresse.kommunenummer": "4601",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Strandgaten 7",
-        "forretningsadresse.poststed": "BERGEN",
-        "forretningsadresse.postnummer": "5013",
         "forretningsadresse.kommune": "BERGEN",
         "forretningsadresse.kommunenummer": "4601",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2022-04-07",
-        "stiftelsesdato": "2022-03-01",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2025-12-10",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-12-17",
+        "forretningsadresse.postnummer": "5013",
+        "forretningsadresse.poststed": "BERGEN",
+        "fravalgRevisjonBeslutningsDato": "",
+        "fravalgRevisjonDato": "",
         "frivilligMvaRegistrertBeskrivelser": "Utleier av bygg eller anlegg",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2025-12-17",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2022-04-07",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.fremre.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "3000",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2022-04-07",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "",
+        "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
+        "naeringskode1.kode": "68.200",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "STRANDGATEN 4 AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "929046854",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "Postboks 531 Sentrum",
+        "postadresse.kommune": "BERGEN",
+        "postadresse.kommunenummer": "4601",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "5806",
+        "postadresse.poststed": "BERGEN",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2022-04-07",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2025-12-17",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "2025-12-10",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2025-12-17",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2022-04-07",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2022-03-01",
+        "telefon": "",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2025-10-08",
-        "vedtektsfestetFormaal": "Å investere i fast eiendom eller selskaper som eier fast eiendom, og alt som dermed står i forbindelse.",
-        "aktivitet": "Investeringer i eiendom direkte og indirekte og annen virksomhet i denne forbindelse.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "",
-        "fravalgRevisjonBeslutningsDato": "",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "3000",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2022-04-07",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "929046854",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:47.922287Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "929046854",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2025-10-08",
+        "vedtektsfestetFormaal": "Å investere i fast eiendom eller selskaper som eier fast eiendom, og alt som dermed står i forbindelse."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "e4f79f6bf9f18f088552a31262c2e6fa7d0127fbbce341f7d60e72b0baedacda",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
+      "note": null,
       "retrieved_at": "2026-10-05T08:39:17.225296Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
+      "status": "available",
       "value": {
-        "organisation_number": "929046854",
-        "name": "STRANDGATEN 4 AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.fremre.no",
-        "industry": {
-          "beskrivelse": "Utleie av egen eller leid fast eiendom",
-          "kode": "68.200"
-        },
         "business_address": {
           "adresse": [
             "Strandgaten 7"
@@ -1817,6 +1437,16 @@
           "postnummer": "5013",
           "poststed": "BERGEN"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Utleie av egen eller leid fast eiendom",
+          "kode": "68.200"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "STRANDGATEN 4 AS",
+        "organisation_number": "929046854",
         "postal_address": {
           "adresse": [
             "Postboks 531 Sentrum"
@@ -1828,263 +1458,86 @@
           "postnummer": "5806",
           "poststed": "BERGEN"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "e4f79f6bf9f18f088552a31262c2e6fa7d0127fbbce341f7d60e72b0baedacda",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/929046854",
-      "retrieved_at": "2026-10-05T08:39:17.938001Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4794907,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": null,
-            "operating_result": null,
-            "profit_before_tax": 0.0,
-            "annual_result": 0.0,
-            "assets": 25655.0,
-            "equity": 25655.0,
-            "debt": 0.0
-          },
-          {
-            "record_id": 5731431,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": null,
-            "operating_result": null,
-            "profit_before_tax": 0.0,
-            "annual_result": 0.0,
-            "assets": 25655.0,
-            "equity": 25655.0,
-            "debt": 0.0
-          },
-          {
-            "record_id": 7170159,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 5502182.0,
-            "operating_result": 2487588.0,
-            "profit_before_tax": -873393.0,
-            "annual_result": -682471.0,
-            "assets": 175450027.0,
-            "equity": 41370391.0,
-            "debt": 134079636.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "0f92af2fc5545eb6f67c6e1452733d0245a7e5a95e8ac4d1b396ec2fcf4c067d",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/aar",
-      "retrieved_at": "2026-10-05T08:39:25.917849Z",
-      "value": {
-        "years": [
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2022"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.fremre.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "b2209ffdc025e7756ecc6ef09fb7d4cedabc8d84f406b048fb748a5be04912c9",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:39:26.656119Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2025-07-02",
             "name": "Sindre Øvrebø",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2025-07-02",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2025-07-02",
             "name": "Aleksander Dimitri Langeset Olsbø Rye",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2025-07-02",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Revisor",
+            "group_code": "REVI",
+            "inactive": false,
+            "last_changed": "2026-06-01",
             "name": [
               "FORUM REVISJON AS"
             ],
             "organisation_number": "989648667",
-            "role_code": "REVI",
             "role": "Revisor",
-            "group_code": "REVI",
-            "group": "Revisor",
-            "last_changed": "2026-06-01",
-            "inactive": false
+            "role_code": "REVI"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2025-10-01",
             "name": [
               "AIDER AS"
             ],
             "organisation_number": "922633452",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2025-10-01",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b2209ffdc025e7756ecc6ef09fb7d4cedabc8d84f406b048fb748a5be04912c9",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/929046854",
-      "retrieved_at": "2026-10-05T08:39:27.368475Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929046854&size=1000",
-      "retrieved_at": "2026-10-05T08:39:28.060729Z",
-      "value": {
-        "locations": []
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "3fa64781c292f8852477cc56eb02a46c20c685ee0ef89f300c04767b349d1d2c",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.fremre.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:39:28.488191Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.fremre.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.fremre.no/",
-        "final_url": "https://www.fremre.no/",
-        "registered_domain": "fremre.no",
-        "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
-        "description": "Fremre Eiendom har ledige lokaler til leie som passer din bedrift!",
-        "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
-        "social_links": [],
-        "structured_organisations": [
-          {
-            "@context": "https://schema.org/",
-            "@type": "LocalBusiness",
-            "name": "Fremre Eiendom",
-            "url": "https://www.fremre.no",
-            "image": "https://static.wixstatic.com/media/ec5b98_cb44c3eb58524051af2bf5e4802a8511~mv2.png",
-            "address": {
-              "@type": "PostalAddress"
-            },
-            "telephone": "+ 47 473 54 709"
-          }
-        ],
         "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
-        "extraction_state": "static_complete",
-        "pages": [
-          {
-            "url": "https://www.fremre.no/",
-            "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
-            "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
-            "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615"
-          }
-        ],
         "crawl_errors": [],
-        "identity_assessment": {
-          "status": "related_or_uncertain",
-          "score": 0.3,
-          "publishable": false,
-          "legal_name_tokens": [
-            "strandgaten"
-          ],
-          "matched_tokens": [
-            "strandgaten"
-          ],
-          "reasons": [
-            "registry-linked URL lacks strong exact-entity identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "Fremre Eiendom har ledige lokaler til leie som passer din bedrift!",
         "discovered_social_links": [
           {
             "platform": "instagram",
@@ -2095,41 +1548,112 @@
             "url": "https://linkedin.com/company/fremre-eiendom"
           }
         ],
+        "extraction_state": "static_complete",
+        "final_url": "https://www.fremre.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "strandgaten"
+          ],
+          "matched_tokens": [
+            "strandgaten"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "registry-linked URL lacks strong exact-entity identity evidence"
+          ],
+          "score": 0.3,
+          "status": "related_or_uncertain"
+        },
+        "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
+        "pages": [
+          {
+            "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
+            "main_text_excerpt": "top of page\nVELKOMMEN TIL FREMRE EIENDOM\nNæringslokaler til leie i Bergen tilpasset din bedrift sine behov\nOM OSS\n- Proaktiv forvaltning og eierskap -\nFremre Eiendom tilbyr attraktive lokaler  kombinert med proaktiv forvaltning for å sikre at din bedrift trives!\n \nFremre Eiendom er et fremoverlent eiendomsselskap som eier, forvalter og utvikler næringseiendom med et tydelig og langsiktig perspektiv.  \nVi skal være den naturlige og foretrukne samarbeidspartneren for bedrifter som trenger moderne, fleksible og funksjonelle næringslokaler. Vi legger til rette for at våre leietakere trives og kan fokusere på vekst og lønnsomhet.\nMed en stor og variert eiendomsportefølje på rundt 30 000 m² kan vi tilby lokaler som passer alt fra små gründermiljøer til større, etablerte virksomheter.\nEnten du trenger kontor, handelslokaler, lager eller kombinasjonslokaler, hjelper vi deg med å finne en løsning som er skreddersydd for din bedrifts behov. \nPlanlegger bedriften din å flytte?\nTa gjerne kontakt for en uforpliktende prat – vi hjelper deg gjerne med å finne riktig lokale som passer for din bedrift!\nSe hva vi har til leie her: https://www.fremre.no/ledigelokaler\n \nVÅRE EIENDOMMER\nVi har næringslokaler som passer for de fleste selskap! Kontor, handel, lager og logistikk\nLEIRVIKFLATEN 3\nCARL KONOWSGATE 34\nSTRANDGATEN 7\nSTRANDGATEN 4\nSANDVIKSVEIEN 163\nTOMT I DAMSGÅRDSVEIEN GNR. 157 BNR. 11\nTORGGATEN 7\nTORGGATEN 5\nVETRILDSALLMENNINGEN 4\nVETRILDSALLMENNINGEN 6\nHANS HOLMBOESGATE 22\nHANS HOLMBOESGATE 24\nSTØLEGATEN 19\nVETRILDSALLMENNINGEN 21\nHARALD HÅRFAGRES GATE 29-31\nFINNEGÅRDSGATEN 7\nKONTAKT OSS\nTa gjerne kontakt med oss på fremre@fremre.no!\nHvis det gjelder bolig så ta kontakt på bolig@fremre.no\nSe våre boliger for utleie på www.fremre.no/bolig\nHovedkontor: Strandgaten 7, 5013 Bergen, Norge\nbottom of page",
+            "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom",
+            "url": "https://www.fremre.no/"
+          }
+        ],
+        "registered_domain": "fremre.no",
+        "requested_url": "https://www.fremre.no/",
         "social_link_assessments": [
           {
-            "platform": "instagram",
-            "url": "https://instagram.com/fremre_eiendom",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "instagram",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://instagram.com/fremre_eiendom"
           },
           {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/fremre-eiendom",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "linkedin",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://linkedin.com/company/fremre-eiendom"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "37a3b6e0dbb3dea266311a88e074afd8d978331928e42ac7b3d577f0cac3f615",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [],
+        "structured_organisations": [
+          {
+            "@context": "https://schema.org/",
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress"
+            },
+            "image": "https://static.wixstatic.com/media/ec5b98_cb44c3eb58524051af2bf5e4802a8511~mv2.png",
+            "name": "Fremre Eiendom",
+            "telephone": "+ 47 473 54 709",
+            "url": "https://www.fremre.no"
+          }
+        ],
+        "title": "Ledige lokaler til leie | Bergen | Fremre Eiendom"
+      }
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-a6fddf843cad66ca756302ce",
+        "organisation_number": "929046854",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
+        "retrieved_at": "2026-10-08T17:40:24.583148Z",
+        "content_sha256": "458a7c862ffb8c1f21058f84cd4c6051759c23158c37d976014dac4a370aacc0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "929046854"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "929046854"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
       {
         "id": "registry-update-31c7407ecacc9a5f316ef6cb",
         "organisation_number": "929046854",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "31c7407ecacc9a5f316ef6cb15e2715aa55f17f5fccfb70fa4d0b6a18446bcfa",
         "observed_at": "2026-09-23",
         "exact_entity": true,
@@ -2159,7 +1683,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "6718940ab72f8fd1c62f89f61dc09e2c1436b40fa25b65985c3e2034a393a995",
         "observed_at": "2026-08-11",
         "exact_entity": true,
@@ -2189,7 +1713,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "defdf00e4c16b99fa449109b10cc379f8a61ccfd0dc73c4ecd5a15aad7554ed2",
         "observed_at": "2026-06-01",
         "exact_entity": true,
@@ -2219,7 +1743,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e11a752f98af694c4397f8000141d6ab8839bd2f2703544f268797ac471f08cf",
         "observed_at": "2025-12-17",
         "exact_entity": true,
@@ -2249,7 +1773,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "844601d0ff734e5b0400ad04236003f5166f6f4dad4dd39feefa2742d3088c41",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2279,7 +1803,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "8e32a3bbe65852ca96f400ca53a43809f2df4cc13108912d79a019596df7a0ef",
         "observed_at": "2025-10-25",
         "exact_entity": true,
@@ -2309,7 +1833,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "3ade19c8df3c1357a9218693d8caf1ec5d87dc027815de6e6d94210954cde70c",
         "observed_at": "2025-07-02",
         "exact_entity": true,
@@ -2339,7 +1863,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "89c25e22a6a2e89af36bfa64590b016581f1a7c69b7b6b12f4bd6e047c3755bc",
         "observed_at": "2025-05-24",
         "exact_entity": true,
@@ -2369,7 +1893,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c2c9e1f59550c3e97bed97b31680eeeb62bf0d8979653a235936ffa7177f0790",
         "observed_at": "2024-05-28",
         "exact_entity": true,
@@ -2399,7 +1923,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "18c7495392af784f4ed03f2226ab51fb694a293d820dbe45322699b3e0d85a59",
         "observed_at": "2023-06-29",
         "exact_entity": true,
@@ -2429,7 +1953,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "d267d89157502f196bdf8bd1ea08f3a69e677b18da22fe96122dbfb5612c30dd",
         "observed_at": "2022-06-13",
         "exact_entity": true,
@@ -2459,7 +1983,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "72e0269d7fe03bb223fed5b9dddc66199241b801d7c56cfe688c1fb02d4d544a",
         "observed_at": "2022-05-14",
         "exact_entity": true,
@@ -2489,7 +2013,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929046854",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "8b2ee55d50f022fc60b45840f3e0a971c07c27ab47cc144d9610714ce824be5a",
         "observed_at": "2022-04-07",
         "exact_entity": true,
@@ -2601,295 +2125,13 @@
         "evidence_span": "Gjennomføring av fusjon — 2025-12-10 (BRREG official announcement)"
       },
       {
-        "id": "annual-workforce-b08c28aeda827cd55b8da9c0",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/929046854/2025",
-        "retrieved_at": "2026-10-28T04:37:55.271507Z",
-        "content_sha256": "c586b248b9e202be40240a0167f2670ee69fc2ba37799c5c25601f482a601a1a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall arsverk i regnskapsaret\n\n0.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 0
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-metrics-929046854-305a4b4cbf883c9f",
-        "signal_type": "profile_metrics",
-        "strategy": "social_profile_metrics",
-        "evidence_span": "ARK Beyer Strandgaten Bergen Google profile: rating 4.1/5, 234 ratings.",
-        "metrics": {
-          "rating": 4.1,
-          "review_count": 234,
-          "scale": 5,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-929046854-e5f7d443b2340b93",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "The lady cashier was super nice, even recommended me some other knitting books like the one I was buying that weren't as expensive in case I hadn't seen them. Even gave me a members discount. Her kindness definitely made my day.",
-        "observed_at": "2026-02-19T09:39:20.130968356Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 0,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-929046854-75520143ef7ffd7d",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Amazing great! Great selection of American books in Norwegian and English, special editions, and a whole floor for kids.",
-        "observed_at": "2026-07-18T11:07:21.600407569Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 1,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-929046854-1b6f9926b08bd8af",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "This store has an impressive collection of English books. The person who attended to me was nice and came across as a huge book lover. I was offered the option of becoming a member to get the three books at the cost of two. Pretty sweet deal.",
-        "observed_at": "2021-04-28T07:09:38.723574Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 2,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-929046854-6263e4c1f21cbb42",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Great book shop and also for few stationary.\n\nI had reserved few books online in their site and opted to pick it out in the store. It is the better way to know what are all the books are in stock here. There is another ARK store nearby also, but the book I needed was available only here. Staff are very friendly and will help us. Plenty of English novels and books are available. Price will be, you know of Norway standards 😅.",
-        "observed_at": "2024-04-21T21:54:55.207969Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 3,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-929046854-8253b0661cbb5f88",
-        "signal_type": "review",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "Very happening place on the sea front...lots of place to eat and drink as per your preference and budget. Lots of ice cream kiosks... very nice views...lots of people swimming in the sea and sun bathing...good for eating and taking a stroll",
-        "observed_at": "2018-07-30T10:32:29.217Z",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "metrics": {
-          "rating": 5,
-          "scale": 5,
-          "review_index": 4,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-review-summary-929046854-305a4b4cbf883c9f",
-        "signal_type": "review_summary",
-        "strategy": "places_rating_reviews",
-        "evidence_span": "ARK Beyer Strandgaten Bergen is rated 4.1/5 from 234 Google reviews.",
-        "metrics": {
-          "rating": 4.1,
-          "review_count": 234,
-          "scale": 5,
-          "place_id": "ChIJ8x6nG6j-PEYROyE-lyGfRA4"
-        }
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "google_places",
-        "source_url": "https://www.google.com/maps/place/?q=place_id:ChIJ8x6nG6j-PEYROyE-lyGfRA4",
-        "retrieved_at": "2026-10-31T18:16:33.498564Z",
-        "content_sha256": "305a4b4cbf883c9ff4143ac02f275d6e1b0d519ef47927926f82287c934bbade",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "google_places_website_domain_match",
-            "value": "ark.no",
-            "source": "google_places"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "customer_review",
-        "label": "positive",
-        "id": "gplaces-sentiment-929046854-305a4b4cbf883c9f",
-        "signal_type": "sentiment",
-        "strategy": "customer_review_sentiment",
-        "sentiment_label": "positive",
-        "sentiment_model_version": "rule-based-v1",
-        "evidence_span": "Aggregate rating 4.1/5 from 234 reviews implies positive sentiment.",
-        "metrics": {
-          "rating": 4.1,
-          "review_count": 234,
-          "scale": 5
-        }
-      },
-      {
-        "id": "registry-site-929046854-b6c8626314ae2804",
+        "id": "registry-site-929046854-97b34900f2ea78e6",
         "organisation_number": "929046854",
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.fremre.no/",
-        "retrieved_at": "2026-10-09T13:51:28.113237Z",
-        "content_sha256": "b6c8626314ae28040629595e709e3d2cc1f2ffc5ff514ac6c7f4768ce5a60832",
+        "retrieved_at": "2026-09-29T10:07:03.691029Z",
+        "content_sha256": "97b34900f2ea78e673e4f3e7cc042790b42b778a86970cdee8e838de4f654852",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2912,234 +2154,8 @@
           "registry_domain": "fremre.no"
         },
         "strategy": "registry_declared_website_description"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_approval_date-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 10.04.2026",
-        "metrics": {
-          "approval_date": "10.04.2026",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_auditor-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Sindre Øvrebø",
-        "metrics": {
-          "auditor": "Sindre Øvrebø",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_accounting_rules-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_business_address-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Strandgaten 7",
-        "metrics": {
-          "business_address": "Strandgaten 7",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_signing_officer-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-929046854-annual_report_org_number-2032d7a8731eedd5",
-        "organisation_number": "929046854",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/929046854-2025.pdf",
-        "retrieved_at": "2026-11-05T14:52:34.146710Z",
-        "content_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "929046854"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "929046854"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 929 046 854",
-        "metrics": {
-          "org_number": "929046854",
-          "ocr_text_sha256": "2032d7a8731eedd5d96bfa645632e92fcc3460cb540277ace05c23785591edda",
-          "ocr_chars": 1298
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "929046854",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/929046854",
-        "retrieved_at": "2026-11-05T21:09:41.384773Z",
-        "content_sha256": "88f5ad538a952beceea5b1f9c7b3119c92c5907733cb0389dec83de990ca2b94",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "929046854"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "STRANDGATEN 4 AS",
-            "matched_organisation_number": "929046854"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-929046854.orgNumber=929046854;name=STRANDGATEN 4 AS",
-        "id": "purehelp-profile-929046854-291c830a73e4d464",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "68.200",
-          "nace_description": "Renting and operating of own or leased real estate",
-          "town": "BERGEN",
-          "zipcode": "5013",
-          "municipality": "BERGEN",
-          "municipality_number": "4601",
-          "county": "Vestland",
-          "registration_date": "2022-04-07",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2022-04-07",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.fremre.no"
-        }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:32.121520+00:00"
+  "generated_at": "2026-11-07T07:28:26.357411+00:00"
 }

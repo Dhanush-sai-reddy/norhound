@@ -1,162 +1,307 @@
 {
   "profile": {
-    "organisation_number": "925999210",
-    "name": "LITLATUNET SAMEIE",
-    "legal_form": "ESEK",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "BERGEN",
-    "municipality_number": "4601",
-    "industry_code": "97.001",
-    "industry_label": "Aktiviteter i borettslag og boligsameier",
-    "website": "www.vestbo.no",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:45.144882Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "925999210",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "925999210",
-          "navn": "LITLATUNET SAMEIE",
-          "organisasjonsform.kode": "ESEK",
-          "organisasjonsform.beskrivelse": "Eierseksjonssameie",
-          "naeringskode1.kode": "97.001",
-          "naeringskode1.beskrivelse": "Aktiviteter i borettslag og boligsameier",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "ESEK",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "3224f0706bd3ffc731997668057588188a2f2ceb01a45d0d434e8929f7100c8e",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:41:44.266262Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2022",
+              "year": "2022"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2021",
+              "year": "2021"
+            }
+          ],
+          "years": [
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "7ebb771d2ef58e06302bbccdcf3ccdadb8e30f0b272191972c1555e6cece81a4",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:41:36.956919Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -523626.0,
+              "assets": 45995.0,
+              "currency": "NOK",
+              "debt": 492414.0,
+              "equity": -446419.0,
+              "operating_result": -515295.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": -523626.0,
+              "record_id": 4779517,
+              "revenue": 591585.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 296166.0,
+              "assets": 153755.0,
+              "currency": "NOK",
+              "debt": 304008.0,
+              "equity": -150253.0,
+              "operating_result": 318496.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": 296166.0,
+              "record_id": 5975093,
+              "revenue": 681973.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 283345.0,
+              "assets": 179629.0,
+              "currency": "NOK",
+              "debt": 46537.0,
+              "equity": 133092.0,
+              "operating_result": 288845.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": null,
+              "record_id": 6953026,
+              "revenue": 708922.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:41:45.669608Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/925999210",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:41:46.392267Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Strandgaten 196"
+                ],
+                "kommune": "BERGEN",
+                "kommunenummer": "4601",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "5004",
+                "poststed": "BERGEN"
+              },
+              "employees": null,
+              "industry": {
+                "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+                "kode": "97.001"
+              },
+              "name": "LITLATUNET SAMEIE",
+              "organisation_number": "926001604"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "925999210",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Eierseksjonssameie.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.vestbo.no",
           "epostadresse": "post@vestbo.no",
-          "telefon": "55 30 96 00",
-          "mobil": "",
-          "postadresse.adresse": "c/o Vestbo BBL\nPostboks 1947, Nordnes",
-          "postadresse.poststed": "BERGEN",
-          "postadresse.postnummer": "5817",
-          "postadresse.kommune": "BERGEN",
-          "postadresse.kommunenummer": "4601",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Strandgaten 196",
-          "forretningsadresse.poststed": "BERGEN",
-          "forretningsadresse.postnummer": "5004",
           "forretningsadresse.kommune": "BERGEN",
           "forretningsadresse.kommunenummer": "4601",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "",
-          "institusjonellSektorkode.beskrivelse": "",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2020-11-19",
-          "stiftelsesdato": "2019-10-17",
-          "registrertIMvaRegisteret": "false",
-          "registreringsdatoMerverdiavgiftsregisteret": "",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "forretningsadresse.postnummer": "5004",
+          "forretningsadresse.poststed": "BERGEN",
+          "fravalgRevisjonBeslutningsDato": "",
+          "fravalgRevisjonDato": "",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2020-11-19",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.vestbo.no",
+          "institusjonellSektorkode.beskrivelse": "",
+          "institusjonellSektorkode.kode": "",
+          "kapital.antallAksjer": "",
+          "kapital.belop": "",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "",
+          "kapital.type": "",
+          "kapital.valuta": "",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "",
+          "naeringskode1.beskrivelse": "Aktiviteter i borettslag og boligsameier",
+          "naeringskode1.kode": "97.001",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "LITLATUNET SAMEIE",
+          "organisasjonsform.beskrivelse": "Eierseksjonssameie",
+          "organisasjonsform.kode": "ESEK",
+          "organisasjonsnummer": "925999210",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "c/o Vestbo BBL\nPostboks 1947, Nordnes",
+          "postadresse.kommune": "BERGEN",
+          "postadresse.kommunenummer": "4601",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "5817",
+          "postadresse.poststed": "BERGEN",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2020-11-19",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2020-11-19",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "false",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2019-10-17",
+          "telefon": "55 30 96 00",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2019-10-17",
-          "vedtektsfestetFormaal": "Eierseksjonssameie.",
-          "aktivitet": "Eierseksjonssameie.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "",
-          "fravalgRevisjonBeslutningsDato": "",
-          "erIKonsern": "false",
-          "kapital.belop": "",
-          "kapital.antallAksjer": "",
-          "kapital.type": "",
-          "kapital.bundet": "",
-          "kapital.valuta": "",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "925999210",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:45.144882Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "ESEK",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "925999210",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2019-10-17",
+          "vedtektsfestetFormaal": "Eierseksjonssameie."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "78de101436ab88a82acddb234378dcf266501f074cd1c7910c36bbe7fa1f4dd5",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
+        "note": null,
         "retrieved_at": "2026-10-05T08:41:36.229203Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
+        "status": "available",
         "value": {
-          "organisation_number": "925999210",
-          "name": "LITLATUNET SAMEIE",
-          "legal_form": "ESEK",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.vestbo.no",
-          "industry": {
-            "beskrivelse": "Aktiviteter i borettslag og boligsameier",
-            "kode": "97.001"
-          },
           "business_address": {
             "adresse": [
               "Strandgaten 196"
@@ -168,6 +313,16 @@
             "postnummer": "5004",
             "poststed": "BERGEN"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+            "kode": "97.001"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "ESEK",
+          "liquidating": false,
+          "name": "LITLATUNET SAMEIE",
+          "organisation_number": "925999210",
           "postal_address": {
             "adresse": [
               "c/o Vestbo BBL",
@@ -180,373 +335,106 @@
             "postnummer": "5817",
             "poststed": "BERGEN"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "78de101436ab88a82acddb234378dcf266501f074cd1c7910c36bbe7fa1f4dd5",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-        "retrieved_at": "2026-10-05T08:41:36.956919Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4779517,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 591585.0,
-              "operating_result": -515295.0,
-              "profit_before_tax": -523626.0,
-              "annual_result": -523626.0,
-              "assets": 45995.0,
-              "equity": -446419.0,
-              "debt": 492414.0
-            },
-            {
-              "record_id": 5975093,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 681973.0,
-              "operating_result": 318496.0,
-              "profit_before_tax": 296166.0,
-              "annual_result": 296166.0,
-              "assets": 153755.0,
-              "equity": -150253.0,
-              "debt": 304008.0
-            },
-            {
-              "record_id": 6953026,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 708922.0,
-              "operating_result": 288845.0,
-              "profit_before_tax": null,
-              "annual_result": 283345.0,
-              "assets": 179629.0,
-              "equity": 133092.0,
-              "debt": 46537.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "7ebb771d2ef58e06302bbccdcf3ccdadb8e30f0b272191972c1555e6cece81a4",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-        "retrieved_at": "2026-10-05T08:41:44.266262Z",
-        "value": {
-          "years": [
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2022"
-            },
-            {
-              "year": "2021",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2021"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "3224f0706bd3ffc731997668057588188a2f2ceb01a45d0d434e8929f7100c8e",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.vestbo.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "4cc15f7f9ec0a7d0a2c67b3cdd49f4321a368110c316b29f53d1d39b48ef39c1",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:41:44.962028Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Forretningsfører",
+              "group_code": "FFØR",
+              "inactive": false,
+              "last_changed": "2020-11-19",
               "name": [
                 "VESTBO BBL"
               ],
               "organisation_number": "946450197",
-              "role_code": "FFØR",
               "role": "Forretningsfører",
-              "group_code": "FFØR",
-              "group": "Forretningsfører",
-              "last_changed": "2020-11-19",
-              "inactive": false
+              "role_code": "FFØR"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-08-26",
               "name": "Per Marcus Daae Johannessen",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-08-26",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-08-26",
               "name": "Rebekka Mjånes Nordland",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-08-26",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-08-26",
               "name": "Simon Elias Jorn",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-08-26",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-08-26",
               "name": "Hugo Rodolpho Alves Pereira",
               "organisation_number": null,
-              "role_code": "VARA",
               "role": "Varamedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-08-26",
-              "inactive": false
+              "role_code": "VARA"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2020-11-19",
               "name": [
                 "VESTBO BBL"
               ],
               "organisation_number": "946450197",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2020-11-19",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "4cc15f7f9ec0a7d0a2c67b3cdd49f4321a368110c316b29f53d1d39b48ef39c1",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/925999210",
-        "retrieved_at": "2026-10-05T08:41:45.669608Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
-        "retrieved_at": "2026-10-05T08:41:46.392267Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "926001604",
-              "name": "LITLATUNET SAMEIE",
-              "address": {
-                "adresse": [
-                  "Strandgaten 196"
-                ],
-                "kommune": "BERGEN",
-                "kommunenummer": "4601",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "5004",
-                "poststed": "BERGEN"
-              },
-              "industry": {
-                "beskrivelse": "Aktiviteter i borettslag og boligsameier",
-                "kode": "97.001"
-              },
-              "employees": null
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://vestbo.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:42:04.054713Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://vestbo.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.vestbo.no/",
-          "final_url": "https://vestbo.no/",
-          "registered_domain": "vestbo.no",
-          "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
-          "description": "Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Velkommen hjem!",
-          "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
-          "social_links": [],
-          "structured_organisations": [
-            {
-              "@type": "Organization",
-              "@id": "https://vestbo.no/#organization",
-              "name": "Vestbo BBL",
-              "url": "https://vestbo.wpengine.com",
-              "sameAs": [
-                "https://www.facebook.com/vestbo.no/"
-              ],
-              "email": "post@vestbo.no",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Strandgaten 196",
-                "addressLocality": "Bergen",
-                "addressRegion": "Vestland",
-                "postalCode": "5004",
-                "addressCountry": "Norge"
-              },
-              "logo": {
-                "@type": "ImageObject",
-                "@id": "https://vestbo.no/#logo",
-                "url": "https://vestbo.no/wp-content/uploads/favicon.png",
-                "contentUrl": "https://vestbo.no/wp-content/uploads/favicon.png",
-                "caption": "Vestbo BBL",
-                "inLanguage": "nb-NO",
-                "width": "1464",
-                "height": "1464"
-              },
-              "contactPoint": [
-                {
-                  "@type": "ContactPoint",
-                  "telephone": "55 30 96 00",
-                  "contactType": "customer support"
-                }
-              ],
-              "location": {
-                "@id": "https://vestbo.no/#place"
-              }
-            }
-          ],
           "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
-          "extraction_state": "js_fallback_candidate",
-          "pages": [
-            {
-              "url": "https://vestbo.no/",
-              "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
-              "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
-              "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c"
-            },
-            {
-              "url": "https://vestbo.no/om-oss/",
-              "title": "Om oss - Vestbo BBL",
-              "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
-              "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6"
-            },
-            {
-              "url": "https://vestbo.no/om-oss//",
-              "title": "Om oss - Vestbo BBL",
-              "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
-              "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6"
-            },
-            {
-              "url": "https://vestbo.no/om-oss/samfunnsansvar-og-baerekraft/",
-              "title": "Samfunnsansvar og bærekraft - Vestbo BBL",
-              "main_text_excerpt": "Samfunnsansvar og bærekraft\nHos Vestbo er alle velkommen. Vi vil ha alle med, fordi modellen vår inviterer til noe større enn oss selv – vårt overskudd reinvesteres i fremtidens løsninger.\nBærekraft handler ikke bare om miljø og økonomi. Det handler om mennesker. Om hvordan vi bor, hvem vi bor med – og hva som skjer når noen blir stående alene.\nEnsomhet er en av vår tids største samfunnsutfordringer. Gode boligsamfunn utgjør en forskjell. Derfor gjør vi mer enn å bygge og forvalte – vi skaper møteplasser, vi styrker fellesskap, og vi legger til rette for at flere kan bo godt, lengre.\nVi går foran, vi utfordrer for å skape positiv endring, og vi jobber hver dag for å gjøre nabolag tryggere og mer inkluderende – slik at færre står utenfor.\nDette er vårt løfte.\nVestbo er et samvirkeforetak som bryr seg, og derfor er bærekraft en integrert del av vår strategi. Dette gjør vi gjennom å ta en offensiv rolle som samfunnsbygger, samt at vi legger til rette for et godt og trivelig bomiljø med fokus på bærekraftige løsninger gjennom teknologi og innovasjon. Vestbo skal være en lokal pådriver for kvalitet og nytenking innen byutvikling. Vi tar ansvar for det vi leverer og følger våre byggeprosjekter fra planlegging til resirkulering.\nVi skal skape framtidsrettete og bærekraftige bomiljø-hvor alle generasjoner kan trives og møtes- «ut av ensomheten og inn i et aktivt sosialt liv». Vi ønsker at du skal få bo hele livet i samme bomiljø-om du vil!\nVi samarbeider blant annet aktivt med andre lokale aktører i næringslivet for å etterleve vårt felles menneskerettighetsansvar gjennom FUTURE-PROOF. Vi bryr oss, og vi vil bruke styrken i merkevaren til å skape endring.\nVestbo kombinerer omsorg og engasjement med troverdighet og soliditet. Vi bygger ikke bare boliger – vi skaper sterke fellesskap, former fremtidens nabolag, og morgendagens hjem.\nVi er opptatt av inkluderende og levende nabolag.\nFor barn spesielt er tilhørighet og samhold viktig for utviklingen, og noe man kan oppleve sammen med venner innenfor idretten. Vestbo ønsker derfor å bidra til fellesskapet og støtter barneidrett i vår region med like treningsjakker. Vi deler ut nærmere kr. 500.000,- årlig til glede for barn og unge på Vestlandet.\nVåre støtteordninger kan du lese mer om her.\nFoto: Anita Vedå\nVestbo og Stiftelsen Betanien Bergen planlegger helsefremmende, bærekraftige boliger og nabolag. Med selskapenes motto “Boliger for alle” og “I tjeneste for mennesker” er det allerede dannet et godt grunnlag for samarbeidet.\nPilotprosjektet er Vestlundveien i Fyllingsdalen, og skal romme blant annet boliger, helseklynge, barnehage og ha et bredt utvalg av tilbud i nærmiljøet.\nBolig for alle\nMålet er fremtidsrettede boliger hvor innovative løsninger, helse- og omsorgsteknologi innlemmes naturlig. Dette vil medføre at flere kan bo hjemme selv om helsesituasjon endres. Alternative boformer som kollektiv, leie til eie, deleie og utleie gjør boligene tilgjengelig gjennom alle livets faser.\nEt inkluderende nabolag\nVi ønsker å fremme involvering, styrke tilhørighet og begrense ensomhet. Nabolaget tilrettelegges for samhandling uavhengig av alder, interesser, kjønn og funksjonsnivå. Her planlegges alt fra barnehage, helseklynge med blant annet fastleger, fysioterapi, tannlege og apotek, til klatrevegg og atelier. Grønne pusterom, arealer for trening, rehabilitering og lek blir en naturlig del av nabolaget.\nDelekultur & bærekraft\nDelekultur går som en rød tråd gjennom prosjektet med tilbud som bil- og sykkeldeling, gjesteleilighet, gjenbruksstasjon, verksted og drivhus. Det vil også tilrettelegges for deling av menneskelige ressurser som hjelp til enkle arbeidsoppgaver og sosial tilstedeværelse.\nFrivilligheten – en viktig brikke\nFrivillighetsarbeid er en vinn-vinn-situasjon, hvor mennesker kan glede andre og få tilbake ny kunnskap og venner i inkluderende og trygge omgivelser. Her legges det til rette for frivillighet og samhandling ikke bare naboer imellom, men også mellom naboer i Fyllingsdalen generelt.\nVestbo vektlegger særlig bærekraftmålene 11 og 13, samt 9 og 17 fordi de utgjør et viktig grunnlag for å nå våre mål.",
-              "content_sha256": "d6ff1a181463e36251cc3621b709d1ca502fb92dfd6b7a006950b9fcb701200a"
-            },
-            {
-              "url": "https://vestbo.no/kontakt/",
-              "title": "Kontakt oss - Vestbo BBL",
-              "main_text_excerpt": "Kontakt oss\nHar du spørsmål til oss? Ta kontakt, så hjelper vi deg gjerne.\nSe gjerne over «ofte stilte spørsmål», så finner du kanskje svaret du leter etter raskt og effektivt.\nFra 1.1.2024 er det ikke lenger mulig å betale felleskostnader uten KID-nummer. Vi anbefaler å benytte elektroniske avtaler, som e-faktura eller avtalegiro. Dersom innbetalingen gjøres manuelt må den inneholde et KID-nummer, ellers vil den ikke registreres i vårt system og man risikerer purregebyrer.\nPå Min Side finner du oversikt over din faktura.\nLogg deg inn på Min side for å finne oversikt over alle faktura.\nEr du beboer i ett borettslag eller sameie vil du får en månedlig kostnad du må betale. Felleskostnader kalles ofte for «husleie», vi bruker disse uttrykkene litt om hverandre.\nFaktura for felleskostnader finner du på MinSide\nFelleskostnader er kostnader alle deler på. Det kan være stor forskjell og variasjon på hva som er inkludert i felleskostnadene, eksempel kan være:\n– Vaktmestertjenester\n– Vedlikehold og drift av felles eiendom\n– TV og Internett. For informasjon om fordeling mellom TV og internett, kontakt styret i boligselskapet der du bor. Kontaktinformasjon finner du på MinSide.\n– Felles strøm\n– Nedbetaling av felles lån\nFor borettslag vil felleskostnader også dekke kommunale avgifter, mens i sameier vil det faktureres hver enkelt fra kommunen.\nFelleskostnadene betales forskuddsvis. For eksempel faktura som forfaller 01.05 gjelder for mai måned (perioden 01.05 – 31.05).\nDu kan betale medlemskontingenten og felleskostnader med AvtaleGiro eller eFaktura, som er avtaler du selv kan opprette i nettbanken din. Dersom du nylig har opprettet AvtaleGiro eller eFaktura, kan det skje at Vestbo ikke mottar informasjon om avtalen før faktura blir sendt ut, og at du må betale fakturaen manuelt for denne perioden. Husk at det er ditt ansvar å påse at felleskostnadene blir betalt selv om AvtaleGiro eller eFaktura ikke fungerer.\nHusk å avslutte AvtaleGiro når du flytter ut fra en bolig og ikke skal betale felleskostnader lenger.\nDersom din AvtaleGiro eller eFaktura har sluttet å fungere bør du ta kontakt med banken. Les mer om AvtaleGiro og om eFaktura.\nI forbindelse med eierskifter kan det ta opp til en måned før du mottar din første giro for felleskostnadene.\nFor at prosesser skal gå best mulig og uten unødvendige forsinkelser må du vente med å betale felleskostnadene til du får faktura i ditt navn\nNei, det er dessverre ikke mulig for Vestbo å endre forfallsdato på felleskostnadene.\nStyret i boligselskapet der du bor kan vedta endringer i felleskostnadene to ganger i året. Dersom endringer blir vedtatt, kan dette føre til at Vestbo fakturerer noe senere enn vanlig.\nTredjepartsopplysningene (eller årsoppgaven som den også kalles) blir sendt ut i slutten av januar.\nDu finner denne også inne på Min Side.\nEtter at du har logget deg inn klikker du på den lille konvolutten øverst i høyre hjørne og velger «Dokumenter»\nDen som står som eier per 31. desember får gjelds- og formuesposten. Andel andre inntekter og utgifter blir fordelt etter antall hele måneder som du har eid boligen\nAlle, uansett alder, kan bli medlem i Vestbo. Medlemskap er gratis til og med det året du fyller 18 år.\nBli medlem i dag og invester i fremtiden ved å få en plass først i køen når du skal kjøpe bolig!\nHovedeier og medeier(e) må være medlem i Vestbo.\nHovedeier betaler en andelsavgift på kr 300,- ved innmelding. Hovedeier betaler ikke årskontingent. Denne betales av boligselskapet.\nMedeier(e) betaler en andelsavgift på kr 300,- ved innmelding. Deretter betaler medeier(e) en årlig kontingent på kr 300,-.\nMedlemskap/årskontingent må innbetales før overtagelsesdato, sammen med øvrige gebyrer.\n* I boligaksjeselskap (AS) er det eierskiftegebyr både for selger og kjøper.\nDet tas forbehold om trykkfeil og endringer i pris- og avgiftsnivå.\nMin side, også kalt Portalen, er en nettløsning for medlemmer, beboere og styrerepresentanter som viser informasjon registrert hos Vestbo med eksempelvis navn og adresse, medlemskap, bolig og forkjøpsrett.\nPortalen er også koblet opp mot Fordelskortet, og viser oppspart bonus.\nHvis du er eller har vært styremedlem i et av våre borettslag eller sameier har du kanskje opprettet en bruker tidligere, dersom du har vært logget inn i Portalen. Dette er samme innlogging som du nå kan bruke for å administrere medlemskapet ditt.\nDu logger deg inn på Min side via Vestbo-appen eller via forsiden på www.vestbo.no\nTast inn mobilnummeret ditt eller e-postadressen din i det hvite feltet og trykk på «Send meg en kode».\nDu vil da få tilsendt en firesifret kode på SMS dersom du taster inn mobilnummeret ditt eller på e-post dersom du bruker e-postadressen din.\nDenne fremgangsmåten bruker du hver gang du skal logge deg inn og du får ny kode hver gang.\nDin e-postadresse og ditt mobilnummer må være registrert i vårt system før du kan logge deg inn.\nDin ansiennitet som medlem i Vestbo løper fra det øyeblikket din innmelding er registrert betalt hos oss. Du kan",
-              "content_sha256": "132ce97d763d445f139256d1d7c54af5f0ce4749121986116ea7f3d83e89d84d"
-            },
-            {
-              "url": "https://vestbo.no/aktuelt/",
-              "title": "Aktuelt - Vestbo BBL",
-              "main_text_excerpt": "Aktuelt\nSiste nytt og aktuell informasjon.",
-              "content_sha256": "496b7bd2a1b30837b37e9cad392d5570b9c1190fd55f383090fc6b632744918f"
-            },
-            {
-              "url": "https://vestbo.no/vestboseminaret-2026-aktuelt/",
-              "title": "Velkommen til historiens siste Vestboseminar - Vestbo BBL",
-              "main_text_excerpt": "Etter mange år med faglig påfyll, gode samtaler, nye bekjentskaper, gamle kjente og tradisjoner som har blitt en viktig del av Vestbo-fellesskapet, er vi kommet til historiens siste seminar i regi av Vestbo.\nDenne gangen byr vi på et humoristisk og fremtidsrettet program som forhåpentligvis både engasjerer, utfordrer og gir oss noe å ta med videre. Men når dette nå er siste gang vi samles på denne måten, håper vi også at vi kan tillate oss å nyte det litt ekstra – både det faglige programmet, samtalene mellom slagene og ikke minst fellesskapet som har gjort Vestboseminaret til det det har vært.\nMer informasjon, program, priser og påmeldingsskjema finner du her",
-              "content_sha256": "803c9b704dc018814188da61a39144baa321859a6a861fb2b8e58bea786a81c5"
-            }
-          ],
           "crawl_errors": [],
-          "identity_assessment": {
-            "status": "related_or_uncertain",
-            "score": 0.3,
-            "publishable": false,
-            "legal_name_tokens": [
-              "litlatunet",
-              "sameie"
-            ],
-            "matched_tokens": [
-              "sameie"
-            ],
-            "reasons": [
-              "registry-linked URL lacks strong exact-entity identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
+          "description": "Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Velkommen hjem!",
           "discovered_social_links": [
             {
               "platform": "facebook",
@@ -561,51 +449,186 @@
               "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA"
             }
           ],
+          "extraction_state": "js_fallback_candidate",
+          "final_url": "https://vestbo.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "litlatunet",
+              "sameie"
+            ],
+            "matched_tokens": [
+              "sameie"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "registry-linked URL lacks strong exact-entity identity evidence"
+            ],
+            "score": 0.3,
+            "status": "related_or_uncertain"
+          },
+          "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
+          "pages": [
+            {
+              "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
+              "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
+              "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
+              "url": "https://vestbo.no/"
+            },
+            {
+              "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6",
+              "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
+              "title": "Om oss - Vestbo BBL",
+              "url": "https://vestbo.no/om-oss/"
+            },
+            {
+              "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6",
+              "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
+              "title": "Om oss - Vestbo BBL",
+              "url": "https://vestbo.no/om-oss//"
+            },
+            {
+              "content_sha256": "d6ff1a181463e36251cc3621b709d1ca502fb92dfd6b7a006950b9fcb701200a",
+              "main_text_excerpt": "Samfunnsansvar og bærekraft\nHos Vestbo er alle velkommen. Vi vil ha alle med, fordi modellen vår inviterer til noe større enn oss selv – vårt overskudd reinvesteres i fremtidens løsninger.\nBærekraft handler ikke bare om miljø og økonomi. Det handler om mennesker. Om hvordan vi bor, hvem vi bor med – og hva som skjer når noen blir stående alene.\nEnsomhet er en av vår tids største samfunnsutfordringer. Gode boligsamfunn utgjør en forskjell. Derfor gjør vi mer enn å bygge og forvalte – vi skaper møteplasser, vi styrker fellesskap, og vi legger til rette for at flere kan bo godt, lengre.\nVi går foran, vi utfordrer for å skape positiv endring, og vi jobber hver dag for å gjøre nabolag tryggere og mer inkluderende – slik at færre står utenfor.\nDette er vårt løfte.\nVestbo er et samvirkeforetak som bryr seg, og derfor er bærekraft en integrert del av vår strategi. Dette gjør vi gjennom å ta en offensiv rolle som samfunnsbygger, samt at vi legger til rette for et godt og trivelig bomiljø med fokus på bærekraftige løsninger gjennom teknologi og innovasjon. Vestbo skal være en lokal pådriver for kvalitet og nytenking innen byutvikling. Vi tar ansvar for det vi leverer og følger våre byggeprosjekter fra planlegging til resirkulering.\nVi skal skape framtidsrettete og bærekraftige bomiljø-hvor alle generasjoner kan trives og møtes- «ut av ensomheten og inn i et aktivt sosialt liv». Vi ønsker at du skal få bo hele livet i samme bomiljø-om du vil!\nVi samarbeider blant annet aktivt med andre lokale aktører i næringslivet for å etterleve vårt felles menneskerettighetsansvar gjennom FUTURE-PROOF. Vi bryr oss, og vi vil bruke styrken i merkevaren til å skape endring.\nVestbo kombinerer omsorg og engasjement med troverdighet og soliditet. Vi bygger ikke bare boliger – vi skaper sterke fellesskap, former fremtidens nabolag, og morgendagens hjem.\nVi er opptatt av inkluderende og levende nabolag.\nFor barn spesielt er tilhørighet og samhold viktig for utviklingen, og noe man kan oppleve sammen med venner innenfor idretten. Vestbo ønsker derfor å bidra til fellesskapet og støtter barneidrett i vår region med like treningsjakker. Vi deler ut nærmere kr. 500.000,- årlig til glede for barn og unge på Vestlandet.\nVåre støtteordninger kan du lese mer om her.\nFoto: Anita Vedå\nVestbo og Stiftelsen Betanien Bergen planlegger helsefremmende, bærekraftige boliger og nabolag. Med selskapenes motto “Boliger for alle” og “I tjeneste for mennesker” er det allerede dannet et godt grunnlag for samarbeidet.\nPilotprosjektet er Vestlundveien i Fyllingsdalen, og skal romme blant annet boliger, helseklynge, barnehage og ha et bredt utvalg av tilbud i nærmiljøet.\nBolig for alle\nMålet er fremtidsrettede boliger hvor innovative løsninger, helse- og omsorgsteknologi innlemmes naturlig. Dette vil medføre at flere kan bo hjemme selv om helsesituasjon endres. Alternative boformer som kollektiv, leie til eie, deleie og utleie gjør boligene tilgjengelig gjennom alle livets faser.\nEt inkluderende nabolag\nVi ønsker å fremme involvering, styrke tilhørighet og begrense ensomhet. Nabolaget tilrettelegges for samhandling uavhengig av alder, interesser, kjønn og funksjonsnivå. Her planlegges alt fra barnehage, helseklynge med blant annet fastleger, fysioterapi, tannlege og apotek, til klatrevegg og atelier. Grønne pusterom, arealer for trening, rehabilitering og lek blir en naturlig del av nabolaget.\nDelekultur & bærekraft\nDelekultur går som en rød tråd gjennom prosjektet med tilbud som bil- og sykkeldeling, gjesteleilighet, gjenbruksstasjon, verksted og drivhus. Det vil også tilrettelegges for deling av menneskelige ressurser som hjelp til enkle arbeidsoppgaver og sosial tilstedeværelse.\nFrivilligheten – en viktig brikke\nFrivillighetsarbeid er en vinn-vinn-situasjon, hvor mennesker kan glede andre og få tilbake ny kunnskap og venner i inkluderende og trygge omgivelser. Her legges det til rette for frivillighet og samhandling ikke bare naboer imellom, men også mellom naboer i Fyllingsdalen generelt.\nVestbo vektlegger særlig bærekraftmålene 11 og 13, samt 9 og 17 fordi de utgjør et viktig grunnlag for å nå våre mål.",
+              "title": "Samfunnsansvar og bærekraft - Vestbo BBL",
+              "url": "https://vestbo.no/om-oss/samfunnsansvar-og-baerekraft/"
+            },
+            {
+              "content_sha256": "132ce97d763d445f139256d1d7c54af5f0ce4749121986116ea7f3d83e89d84d",
+              "main_text_excerpt": "Kontakt oss\nHar du spørsmål til oss? Ta kontakt, så hjelper vi deg gjerne.\nSe gjerne over «ofte stilte spørsmål», så finner du kanskje svaret du leter etter raskt og effektivt.\nFra 1.1.2024 er det ikke lenger mulig å betale felleskostnader uten KID-nummer. Vi anbefaler å benytte elektroniske avtaler, som e-faktura eller avtalegiro. Dersom innbetalingen gjøres manuelt må den inneholde et KID-nummer, ellers vil den ikke registreres i vårt system og man risikerer purregebyrer.\nPå Min Side finner du oversikt over din faktura.\nLogg deg inn på Min side for å finne oversikt over alle faktura.\nEr du beboer i ett borettslag eller sameie vil du får en månedlig kostnad du må betale. Felleskostnader kalles ofte for «husleie», vi bruker disse uttrykkene litt om hverandre.\nFaktura for felleskostnader finner du på MinSide\nFelleskostnader er kostnader alle deler på. Det kan være stor forskjell og variasjon på hva som er inkludert i felleskostnadene, eksempel kan være:\n– Vaktmestertjenester\n– Vedlikehold og drift av felles eiendom\n– TV og Internett. For informasjon om fordeling mellom TV og internett, kontakt styret i boligselskapet der du bor. Kontaktinformasjon finner du på MinSide.\n– Felles strøm\n– Nedbetaling av felles lån\nFor borettslag vil felleskostnader også dekke kommunale avgifter, mens i sameier vil det faktureres hver enkelt fra kommunen.\nFelleskostnadene betales forskuddsvis. For eksempel faktura som forfaller 01.05 gjelder for mai måned (perioden 01.05 – 31.05).\nDu kan betale medlemskontingenten og felleskostnader med AvtaleGiro eller eFaktura, som er avtaler du selv kan opprette i nettbanken din. Dersom du nylig har opprettet AvtaleGiro eller eFaktura, kan det skje at Vestbo ikke mottar informasjon om avtalen før faktura blir sendt ut, og at du må betale fakturaen manuelt for denne perioden. Husk at det er ditt ansvar å påse at felleskostnadene blir betalt selv om AvtaleGiro eller eFaktura ikke fungerer.\nHusk å avslutte AvtaleGiro når du flytter ut fra en bolig og ikke skal betale felleskostnader lenger.\nDersom din AvtaleGiro eller eFaktura har sluttet å fungere bør du ta kontakt med banken. Les mer om AvtaleGiro og om eFaktura.\nI forbindelse med eierskifter kan det ta opp til en måned før du mottar din første giro for felleskostnadene.\nFor at prosesser skal gå best mulig og uten unødvendige forsinkelser må du vente med å betale felleskostnadene til du får faktura i ditt navn\nNei, det er dessverre ikke mulig for Vestbo å endre forfallsdato på felleskostnadene.\nStyret i boligselskapet der du bor kan vedta endringer i felleskostnadene to ganger i året. Dersom endringer blir vedtatt, kan dette føre til at Vestbo fakturerer noe senere enn vanlig.\nTredjepartsopplysningene (eller årsoppgaven som den også kalles) blir sendt ut i slutten av januar.\nDu finner denne også inne på Min Side.\nEtter at du har logget deg inn klikker du på den lille konvolutten øverst i høyre hjørne og velger «Dokumenter»\nDen som står som eier per 31. desember får gjelds- og formuesposten. Andel andre inntekter og utgifter blir fordelt etter antall hele måneder som du har eid boligen\nAlle, uansett alder, kan bli medlem i Vestbo. Medlemskap er gratis til og med det året du fyller 18 år.\nBli medlem i dag og invester i fremtiden ved å få en plass først i køen når du skal kjøpe bolig!\nHovedeier og medeier(e) må være medlem i Vestbo.\nHovedeier betaler en andelsavgift på kr 300,- ved innmelding. Hovedeier betaler ikke årskontingent. Denne betales av boligselskapet.\nMedeier(e) betaler en andelsavgift på kr 300,- ved innmelding. Deretter betaler medeier(e) en årlig kontingent på kr 300,-.\nMedlemskap/årskontingent må innbetales før overtagelsesdato, sammen med øvrige gebyrer.\n* I boligaksjeselskap (AS) er det eierskiftegebyr både for selger og kjøper.\nDet tas forbehold om trykkfeil og endringer i pris- og avgiftsnivå.\nMin side, også kalt Portalen, er en nettløsning for medlemmer, beboere og styrerepresentanter som viser informasjon registrert hos Vestbo med eksempelvis navn og adresse, medlemskap, bolig og forkjøpsrett.\nPortalen er også koblet opp mot Fordelskortet, og viser oppspart bonus.\nHvis du er eller har vært styremedlem i et av våre borettslag eller sameier har du kanskje opprettet en bruker tidligere, dersom du har vært logget inn i Portalen. Dette er samme innlogging som du nå kan bruke for å administrere medlemskapet ditt.\nDu logger deg inn på Min side via Vestbo-appen eller via forsiden på www.vestbo.no\nTast inn mobilnummeret ditt eller e-postadressen din i det hvite feltet og trykk på «Send meg en kode».\nDu vil da få tilsendt en firesifret kode på SMS dersom du taster inn mobilnummeret ditt eller på e-post dersom du bruker e-postadressen din.\nDenne fremgangsmåten bruker du hver gang du skal logge deg inn og du får ny kode hver gang.\nDin e-postadresse og ditt mobilnummer må være registrert i vårt system før du kan logge deg inn.\nDin ansiennitet som medlem i Vestbo løper fra det øyeblikket din innmelding er registrert betalt hos oss. Du kan",
+              "title": "Kontakt oss - Vestbo BBL",
+              "url": "https://vestbo.no/kontakt/"
+            },
+            {
+              "content_sha256": "496b7bd2a1b30837b37e9cad392d5570b9c1190fd55f383090fc6b632744918f",
+              "main_text_excerpt": "Aktuelt\nSiste nytt og aktuell informasjon.",
+              "title": "Aktuelt - Vestbo BBL",
+              "url": "https://vestbo.no/aktuelt/"
+            },
+            {
+              "content_sha256": "803c9b704dc018814188da61a39144baa321859a6a861fb2b8e58bea786a81c5",
+              "main_text_excerpt": "Etter mange år med faglig påfyll, gode samtaler, nye bekjentskaper, gamle kjente og tradisjoner som har blitt en viktig del av Vestbo-fellesskapet, er vi kommet til historiens siste seminar i regi av Vestbo.\nDenne gangen byr vi på et humoristisk og fremtidsrettet program som forhåpentligvis både engasjerer, utfordrer og gir oss noe å ta med videre. Men når dette nå er siste gang vi samles på denne måten, håper vi også at vi kan tillate oss å nyte det litt ekstra – både det faglige programmet, samtalene mellom slagene og ikke minst fellesskapet som har gjort Vestboseminaret til det det har vært.\nMer informasjon, program, priser og påmeldingsskjema finner du her",
+              "title": "Velkommen til historiens siste Vestboseminar - Vestbo BBL",
+              "url": "https://vestbo.no/vestboseminaret-2026-aktuelt/"
+            }
+          ],
+          "registered_domain": "vestbo.no",
+          "requested_url": "https://www.vestbo.no/",
           "social_link_assessments": [
             {
+              "identity_score": 0.3,
+              "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "facebook",
-              "url": "https://facebook.com/vestbo.no",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://facebook.com/vestbo.no"
             },
             {
+              "identity_score": 0.3,
+              "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
               "platform": "instagram",
-              "url": "https://instagram.com/vestbo.no",
-              "identity_score": 0.3,
               "publishable": false,
-              "matched_tokens": [],
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://instagram.com/vestbo.no"
             },
             {
-              "platform": "youtube",
-              "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA",
               "identity_score": 0.3,
-              "publishable": false,
               "matched_tokens": [],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "youtube",
+              "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
-              "method": "deterministic_social_handle_identity_v1"
+              "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA"
             }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
-        "source_row_key": null,
-        "effective_at": null
+          ],
+          "social_links": [],
+          "structured_organisations": [
+            {
+              "@id": "https://vestbo.no/#organization",
+              "@type": "Organization",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Norge",
+                "addressLocality": "Bergen",
+                "addressRegion": "Vestland",
+                "postalCode": "5004",
+                "streetAddress": "Strandgaten 196"
+              },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "customer support",
+                  "telephone": "55 30 96 00"
+                }
+              ],
+              "email": "post@vestbo.no",
+              "location": {
+                "@id": "https://vestbo.no/#place"
+              },
+              "logo": {
+                "@id": "https://vestbo.no/#logo",
+                "@type": "ImageObject",
+                "caption": "Vestbo BBL",
+                "contentUrl": "https://vestbo.no/wp-content/uploads/favicon.png",
+                "height": "1464",
+                "inLanguage": "nb-NO",
+                "url": "https://vestbo.no/wp-content/uploads/favicon.png",
+                "width": "1464"
+              },
+              "name": "Vestbo BBL",
+              "sameAs": [
+                "https://www.facebook.com/vestbo.no/"
+              ],
+              "url": "https://vestbo.wpengine.com"
+            }
+          ],
+          "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL"
+        }
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-5e0d15de076f37867d53d104",
+          "organisation_number": "925999210",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
+          "retrieved_at": "2026-10-08T18:01:24.845268Z",
+          "content_sha256": "cfd6c31dc7d04f1881543ae28cfc895d1977e9ef6beaeae4810e6559b0a051e9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "925999210"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "925999210"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
         {
           "id": "registry-contact-38a440be2ebee1d804d6ffc2",
           "organisation_number": "925999210",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -632,8 +655,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -658,7 +681,7 @@
           "organisation_number": "925999210",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
-          "retrieved_at": "2026-09-29T10:09:11.199745Z",
+          "retrieved_at": "2026-10-05T08:41:46.392267Z",
           "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -688,7 +711,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c227b7ebe675c88feca91a152d83cf28028cbbbfce212cbafea0c1bad376a0b1",
           "observed_at": "2026-07-13",
           "exact_entity": true,
@@ -718,7 +741,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "efb0d485ace6ccc089fccf15a19c1f3b48fabf32b655db1a2c2e506d65ee06cc",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -748,7 +771,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c62d37b031624259e9224b9ac7c14fba8c49f72a4a565eda5639d285704c5a98",
           "observed_at": "2025-06-28",
           "exact_entity": true,
@@ -778,7 +801,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c67df5b5efe6bc8dc18cf94e7b44b6c42ac2cfe1bd3ea98c87deba497506ab4d",
           "observed_at": "2024-05-27",
           "exact_entity": true,
@@ -808,7 +831,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "f7cead7f29ec4ce13227016271635755117121b9d0c6bb64bb95d1e168f3bf2d",
           "observed_at": "2023-08-01",
           "exact_entity": true,
@@ -838,7 +861,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "21ad4aa9e06b1108745ff2bbef18d10f0eb64458cc3bd06e4296eca958e30380",
           "observed_at": "2022-07-12",
           "exact_entity": true,
@@ -868,7 +891,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "28a374d691b2b706d579a8c364950e57327cae4eb75e5ea1b9abfbf80040d7b9",
           "observed_at": "2020-11-19",
           "exact_entity": true,
@@ -898,7 +921,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "f45ba0f3c74de5c7f4003d25b3c7e8ec9896883d7c3a381aacac54e62555a16c",
           "observed_at": "2020-11-19",
           "exact_entity": true,
@@ -1008,333 +1031,19 @@
             "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb"
           },
           "evidence_span": "Styre — 2025-09-04 (BRREG official announcement)"
-        },
-        {
-          "id": "annual-workforce-a773f5c9ade0bf4363f6eb14",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
-          "retrieved_at": "2026-10-28T04:37:56.251880Z",
-          "content_sha256": "5ba2241f651d9fb24535e478a669325a7a9f3c2ec1c90afb2a699e674ba9c0eb",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 0
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_approval_date-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 28.05.2026",
-          "metrics": {
-            "approval_date": "28.05.2026",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_auditor-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Per Marcus Daae Johannessen",
-          "metrics": {
-            "auditor": "Per Marcus Daae Johannessen",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_accounting_rules-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_business_address-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Strandgaten 196",
-          "metrics": {
-            "business_address": "Strandgaten 196",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_signing_officer-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-925999210-annual_report_org_number-f84d7caed94100a0",
-          "organisation_number": "925999210",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-          "retrieved_at": "2026-11-05T14:59:26.049676Z",
-          "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "925999210"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "925999210"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 925 999 210",
-          "metrics": {
-            "org_number": "925999210",
-            "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-            "ocr_chars": 1322
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "925999210",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/925999210",
-          "retrieved_at": "2026-11-05T21:09:52.125487Z",
-          "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "925999210"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "LITLATUNET SAMEIE",
-              "matched_organisation_number": "925999210"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-          "id": "purehelp-email-925999210-f3e631a4f97514d4",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "post@vestbo.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "925999210",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/925999210",
-          "retrieved_at": "2026-11-05T21:09:52.125487Z",
-          "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "925999210"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "LITLATUNET SAMEIE",
-              "matched_organisation_number": "925999210"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-          "id": "purehelp-phone-925999210-f3e631a4f97514d4",
-          "signal_type": "contact_phone",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "phone": "55 30 96 00",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "925999210",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/925999210",
-          "retrieved_at": "2026-11-05T21:09:52.125487Z",
-          "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "925999210"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "LITLATUNET SAMEIE",
-              "matched_organisation_number": "925999210"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-          "id": "purehelp-profile-925999210-f3e631a4f97514d4",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "ESEK",
-            "legal_form_description": "Condominium flat owner",
-            "nace_code": "97.001",
-            "nace_description": "Activities of housing cooperatives",
-            "town": "BERGEN",
-            "zipcode": "5004",
-            "municipality": "BERGEN",
-            "municipality_number": "4601",
-            "county": "Vestland",
-            "registration_date": "2020-11-19",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2020-11-19",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.vestbo.no"
-          }
         }
       ]
     },
+    "industry_code": "97.001",
+    "industry_label": "Aktiviteter i borettslag og boligsameier",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "ESEK",
+    "liquidating": false,
+    "municipality": "BERGEN",
+    "municipality_number": "4601",
+    "name": "LITLATUNET SAMEIE",
+    "organisation_number": "925999210",
     "run_metrics": {
-      "requests": 20,
       "bytes": 1551258,
       "latencies_ms": [
         758,
@@ -1350,15 +1059,17 @@
         1350,
         2159,
         1257
-      ]
-    }
+      ],
+      "requests": 20
+    },
+    "website": "www.vestbo.no"
   },
   "summary": {
     "organisation_number": "925999210",
     "company_name": "LITLATUNET SAMEIE",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "LITLATUNET SAMEIE operates in Aktiviteter i borettslag og boligsameier. Latest accounts (2025): revenue NOK 591.6k, annual result NOK -523.6k. Annual accounts available for 2021-2025 (5 years). Detailed records only available as PDFs. Revenue shrinking (-13.3% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "LITLATUNET SAMEIE operates in Aktiviteter i borettslag og boligsameier. Latest accounts (2025): revenue NOK 591.6k, annual result NOK -523.6k. Annual accounts available for 2021-2025 (5 years). Detailed records only available as PDFs. Revenue shrinking (-13.3% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1372,13 +1083,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
           "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1394,13 +1100,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
           "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1416,13 +1117,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
           "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1438,13 +1134,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
           "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1466,25 +1157,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/925999210/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
-          "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1498,13 +1175,8 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-          "https://purehelp.no/company/NO/925999210",
           "https://vestbo.no/",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000539761&amp;sokeverdi=925999210&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000715665&amp;sokeverdi=925999210&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
@@ -1514,154 +1186,314 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:45.144882Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "925999210",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "925999210",
-        "navn": "LITLATUNET SAMEIE",
-        "organisasjonsform.kode": "ESEK",
-        "organisasjonsform.beskrivelse": "Eierseksjonssameie",
-        "naeringskode1.kode": "97.001",
-        "naeringskode1.beskrivelse": "Aktiviteter i borettslag og boligsameier",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "ESEK",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "3224f0706bd3ffc731997668057588188a2f2ceb01a45d0d434e8929f7100c8e",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:41:44.266262Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2022",
+            "year": "2022"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2021",
+            "year": "2021"
+          }
+        ],
+        "years": [
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "7ebb771d2ef58e06302bbccdcf3ccdadb8e30f0b272191972c1555e6cece81a4",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:41:36.956919Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -523626.0,
+            "assets": 45995.0,
+            "currency": "NOK",
+            "debt": 492414.0,
+            "equity": -446419.0,
+            "operating_result": -515295.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": -523626.0,
+            "record_id": 4779517,
+            "revenue": 591585.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 296166.0,
+            "assets": 153755.0,
+            "currency": "NOK",
+            "debt": 304008.0,
+            "equity": -150253.0,
+            "operating_result": 318496.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": 296166.0,
+            "record_id": 5975093,
+            "revenue": 681973.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 283345.0,
+            "assets": 179629.0,
+            "currency": "NOK",
+            "debt": 46537.0,
+            "equity": 133092.0,
+            "operating_result": 288845.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": null,
+            "record_id": 6953026,
+            "revenue": 708922.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:41:45.669608Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/925999210",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:41:46.392267Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Strandgaten 196"
+              ],
+              "kommune": "BERGEN",
+              "kommunenummer": "4601",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "5004",
+              "poststed": "BERGEN"
+            },
+            "employees": null,
+            "industry": {
+              "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+              "kode": "97.001"
+            },
+            "name": "LITLATUNET SAMEIE",
+            "organisation_number": "926001604"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "925999210",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Eierseksjonssameie.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.vestbo.no",
         "epostadresse": "post@vestbo.no",
-        "telefon": "55 30 96 00",
-        "mobil": "",
-        "postadresse.adresse": "c/o Vestbo BBL\nPostboks 1947, Nordnes",
-        "postadresse.poststed": "BERGEN",
-        "postadresse.postnummer": "5817",
-        "postadresse.kommune": "BERGEN",
-        "postadresse.kommunenummer": "4601",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Strandgaten 196",
-        "forretningsadresse.poststed": "BERGEN",
-        "forretningsadresse.postnummer": "5004",
         "forretningsadresse.kommune": "BERGEN",
         "forretningsadresse.kommunenummer": "4601",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "",
-        "institusjonellSektorkode.beskrivelse": "",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2020-11-19",
-        "stiftelsesdato": "2019-10-17",
-        "registrertIMvaRegisteret": "false",
-        "registreringsdatoMerverdiavgiftsregisteret": "",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "forretningsadresse.postnummer": "5004",
+        "forretningsadresse.poststed": "BERGEN",
+        "fravalgRevisjonBeslutningsDato": "",
+        "fravalgRevisjonDato": "",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2020-11-19",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.vestbo.no",
+        "institusjonellSektorkode.beskrivelse": "",
+        "institusjonellSektorkode.kode": "",
+        "kapital.antallAksjer": "",
+        "kapital.belop": "",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "",
+        "kapital.type": "",
+        "kapital.valuta": "",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "",
+        "naeringskode1.beskrivelse": "Aktiviteter i borettslag og boligsameier",
+        "naeringskode1.kode": "97.001",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "LITLATUNET SAMEIE",
+        "organisasjonsform.beskrivelse": "Eierseksjonssameie",
+        "organisasjonsform.kode": "ESEK",
+        "organisasjonsnummer": "925999210",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "c/o Vestbo BBL\nPostboks 1947, Nordnes",
+        "postadresse.kommune": "BERGEN",
+        "postadresse.kommunenummer": "4601",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "5817",
+        "postadresse.poststed": "BERGEN",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2020-11-19",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2020-11-19",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "false",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2019-10-17",
+        "telefon": "55 30 96 00",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2019-10-17",
-        "vedtektsfestetFormaal": "Eierseksjonssameie.",
-        "aktivitet": "Eierseksjonssameie.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "",
-        "fravalgRevisjonBeslutningsDato": "",
-        "erIKonsern": "false",
-        "kapital.belop": "",
-        "kapital.antallAksjer": "",
-        "kapital.type": "",
-        "kapital.bundet": "",
-        "kapital.valuta": "",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "925999210",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:45.144882Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "ESEK",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "925999210",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2019-10-17",
+        "vedtektsfestetFormaal": "Eierseksjonssameie."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "78de101436ab88a82acddb234378dcf266501f074cd1c7910c36bbe7fa1f4dd5",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
+      "note": null,
       "retrieved_at": "2026-10-05T08:41:36.229203Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
+      "status": "available",
       "value": {
-        "organisation_number": "925999210",
-        "name": "LITLATUNET SAMEIE",
-        "legal_form": "ESEK",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.vestbo.no",
-        "industry": {
-          "beskrivelse": "Aktiviteter i borettslag og boligsameier",
-          "kode": "97.001"
-        },
         "business_address": {
           "adresse": [
             "Strandgaten 196"
@@ -1673,6 +1505,16 @@
           "postnummer": "5004",
           "poststed": "BERGEN"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Aktiviteter i borettslag og boligsameier",
+          "kode": "97.001"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "ESEK",
+        "liquidating": false,
+        "name": "LITLATUNET SAMEIE",
+        "organisation_number": "925999210",
         "postal_address": {
           "adresse": [
             "c/o Vestbo BBL",
@@ -1685,373 +1527,106 @@
           "postnummer": "5817",
           "poststed": "BERGEN"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "78de101436ab88a82acddb234378dcf266501f074cd1c7910c36bbe7fa1f4dd5",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/925999210",
-      "retrieved_at": "2026-10-05T08:41:36.956919Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4779517,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 591585.0,
-            "operating_result": -515295.0,
-            "profit_before_tax": -523626.0,
-            "annual_result": -523626.0,
-            "assets": 45995.0,
-            "equity": -446419.0,
-            "debt": 492414.0
-          },
-          {
-            "record_id": 5975093,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 681973.0,
-            "operating_result": 318496.0,
-            "profit_before_tax": 296166.0,
-            "annual_result": 296166.0,
-            "assets": 153755.0,
-            "equity": -150253.0,
-            "debt": 304008.0
-          },
-          {
-            "record_id": 6953026,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 708922.0,
-            "operating_result": 288845.0,
-            "profit_before_tax": null,
-            "annual_result": 283345.0,
-            "assets": 179629.0,
-            "equity": 133092.0,
-            "debt": 46537.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "7ebb771d2ef58e06302bbccdcf3ccdadb8e30f0b272191972c1555e6cece81a4",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/aar",
-      "retrieved_at": "2026-10-05T08:41:44.266262Z",
-      "value": {
-        "years": [
-          "2021",
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2022"
-          },
-          {
-            "year": "2021",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2021"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "3224f0706bd3ffc731997668057588188a2f2ceb01a45d0d434e8929f7100c8e",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.vestbo.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "4cc15f7f9ec0a7d0a2c67b3cdd49f4321a368110c316b29f53d1d39b48ef39c1",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:41:44.962028Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Forretningsfører",
+            "group_code": "FFØR",
+            "inactive": false,
+            "last_changed": "2020-11-19",
             "name": [
               "VESTBO BBL"
             ],
             "organisation_number": "946450197",
-            "role_code": "FFØR",
             "role": "Forretningsfører",
-            "group_code": "FFØR",
-            "group": "Forretningsfører",
-            "last_changed": "2020-11-19",
-            "inactive": false
+            "role_code": "FFØR"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-08-26",
             "name": "Per Marcus Daae Johannessen",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-08-26",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-08-26",
             "name": "Rebekka Mjånes Nordland",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-08-26",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-08-26",
             "name": "Simon Elias Jorn",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-08-26",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-08-26",
             "name": "Hugo Rodolpho Alves Pereira",
             "organisation_number": null,
-            "role_code": "VARA",
             "role": "Varamedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-08-26",
-            "inactive": false
+            "role_code": "VARA"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2020-11-19",
             "name": [
               "VESTBO BBL"
             ],
             "organisation_number": "946450197",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2020-11-19",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "4cc15f7f9ec0a7d0a2c67b3cdd49f4321a368110c316b29f53d1d39b48ef39c1",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/925999210",
-      "retrieved_at": "2026-10-05T08:41:45.669608Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
-      "retrieved_at": "2026-10-05T08:41:46.392267Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "926001604",
-            "name": "LITLATUNET SAMEIE",
-            "address": {
-              "adresse": [
-                "Strandgaten 196"
-              ],
-              "kommune": "BERGEN",
-              "kommunenummer": "4601",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "5004",
-              "poststed": "BERGEN"
-            },
-            "industry": {
-              "beskrivelse": "Aktiviteter i borettslag og boligsameier",
-              "kode": "97.001"
-            },
-            "employees": null
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://vestbo.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:42:04.054713Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://vestbo.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.vestbo.no/",
-        "final_url": "https://vestbo.no/",
-        "registered_domain": "vestbo.no",
-        "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
-        "description": "Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Velkommen hjem!",
-        "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
-        "social_links": [],
-        "structured_organisations": [
-          {
-            "@type": "Organization",
-            "@id": "https://vestbo.no/#organization",
-            "name": "Vestbo BBL",
-            "url": "https://vestbo.wpengine.com",
-            "sameAs": [
-              "https://www.facebook.com/vestbo.no/"
-            ],
-            "email": "post@vestbo.no",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Strandgaten 196",
-              "addressLocality": "Bergen",
-              "addressRegion": "Vestland",
-              "postalCode": "5004",
-              "addressCountry": "Norge"
-            },
-            "logo": {
-              "@type": "ImageObject",
-              "@id": "https://vestbo.no/#logo",
-              "url": "https://vestbo.no/wp-content/uploads/favicon.png",
-              "contentUrl": "https://vestbo.no/wp-content/uploads/favicon.png",
-              "caption": "Vestbo BBL",
-              "inLanguage": "nb-NO",
-              "width": "1464",
-              "height": "1464"
-            },
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "55 30 96 00",
-                "contactType": "customer support"
-              }
-            ],
-            "location": {
-              "@id": "https://vestbo.no/#place"
-            }
-          }
-        ],
         "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
-        "extraction_state": "js_fallback_candidate",
-        "pages": [
-          {
-            "url": "https://vestbo.no/",
-            "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
-            "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
-            "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c"
-          },
-          {
-            "url": "https://vestbo.no/om-oss/",
-            "title": "Om oss - Vestbo BBL",
-            "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
-            "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6"
-          },
-          {
-            "url": "https://vestbo.no/om-oss//",
-            "title": "Om oss - Vestbo BBL",
-            "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
-            "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6"
-          },
-          {
-            "url": "https://vestbo.no/om-oss/samfunnsansvar-og-baerekraft/",
-            "title": "Samfunnsansvar og bærekraft - Vestbo BBL",
-            "main_text_excerpt": "Samfunnsansvar og bærekraft\nHos Vestbo er alle velkommen. Vi vil ha alle med, fordi modellen vår inviterer til noe større enn oss selv – vårt overskudd reinvesteres i fremtidens løsninger.\nBærekraft handler ikke bare om miljø og økonomi. Det handler om mennesker. Om hvordan vi bor, hvem vi bor med – og hva som skjer når noen blir stående alene.\nEnsomhet er en av vår tids største samfunnsutfordringer. Gode boligsamfunn utgjør en forskjell. Derfor gjør vi mer enn å bygge og forvalte – vi skaper møteplasser, vi styrker fellesskap, og vi legger til rette for at flere kan bo godt, lengre.\nVi går foran, vi utfordrer for å skape positiv endring, og vi jobber hver dag for å gjøre nabolag tryggere og mer inkluderende – slik at færre står utenfor.\nDette er vårt løfte.\nVestbo er et samvirkeforetak som bryr seg, og derfor er bærekraft en integrert del av vår strategi. Dette gjør vi gjennom å ta en offensiv rolle som samfunnsbygger, samt at vi legger til rette for et godt og trivelig bomiljø med fokus på bærekraftige løsninger gjennom teknologi og innovasjon. Vestbo skal være en lokal pådriver for kvalitet og nytenking innen byutvikling. Vi tar ansvar for det vi leverer og følger våre byggeprosjekter fra planlegging til resirkulering.\nVi skal skape framtidsrettete og bærekraftige bomiljø-hvor alle generasjoner kan trives og møtes- «ut av ensomheten og inn i et aktivt sosialt liv». Vi ønsker at du skal få bo hele livet i samme bomiljø-om du vil!\nVi samarbeider blant annet aktivt med andre lokale aktører i næringslivet for å etterleve vårt felles menneskerettighetsansvar gjennom FUTURE-PROOF. Vi bryr oss, og vi vil bruke styrken i merkevaren til å skape endring.\nVestbo kombinerer omsorg og engasjement med troverdighet og soliditet. Vi bygger ikke bare boliger – vi skaper sterke fellesskap, former fremtidens nabolag, og morgendagens hjem.\nVi er opptatt av inkluderende og levende nabolag.\nFor barn spesielt er tilhørighet og samhold viktig for utviklingen, og noe man kan oppleve sammen med venner innenfor idretten. Vestbo ønsker derfor å bidra til fellesskapet og støtter barneidrett i vår region med like treningsjakker. Vi deler ut nærmere kr. 500.000,- årlig til glede for barn og unge på Vestlandet.\nVåre støtteordninger kan du lese mer om her.\nFoto: Anita Vedå\nVestbo og Stiftelsen Betanien Bergen planlegger helsefremmende, bærekraftige boliger og nabolag. Med selskapenes motto “Boliger for alle” og “I tjeneste for mennesker” er det allerede dannet et godt grunnlag for samarbeidet.\nPilotprosjektet er Vestlundveien i Fyllingsdalen, og skal romme blant annet boliger, helseklynge, barnehage og ha et bredt utvalg av tilbud i nærmiljøet.\nBolig for alle\nMålet er fremtidsrettede boliger hvor innovative løsninger, helse- og omsorgsteknologi innlemmes naturlig. Dette vil medføre at flere kan bo hjemme selv om helsesituasjon endres. Alternative boformer som kollektiv, leie til eie, deleie og utleie gjør boligene tilgjengelig gjennom alle livets faser.\nEt inkluderende nabolag\nVi ønsker å fremme involvering, styrke tilhørighet og begrense ensomhet. Nabolaget tilrettelegges for samhandling uavhengig av alder, interesser, kjønn og funksjonsnivå. Her planlegges alt fra barnehage, helseklynge med blant annet fastleger, fysioterapi, tannlege og apotek, til klatrevegg og atelier. Grønne pusterom, arealer for trening, rehabilitering og lek blir en naturlig del av nabolaget.\nDelekultur & bærekraft\nDelekultur går som en rød tråd gjennom prosjektet med tilbud som bil- og sykkeldeling, gjesteleilighet, gjenbruksstasjon, verksted og drivhus. Det vil også tilrettelegges for deling av menneskelige ressurser som hjelp til enkle arbeidsoppgaver og sosial tilstedeværelse.\nFrivilligheten – en viktig brikke\nFrivillighetsarbeid er en vinn-vinn-situasjon, hvor mennesker kan glede andre og få tilbake ny kunnskap og venner i inkluderende og trygge omgivelser. Her legges det til rette for frivillighet og samhandling ikke bare naboer imellom, men også mellom naboer i Fyllingsdalen generelt.\nVestbo vektlegger særlig bærekraftmålene 11 og 13, samt 9 og 17 fordi de utgjør et viktig grunnlag for å nå våre mål.",
-            "content_sha256": "d6ff1a181463e36251cc3621b709d1ca502fb92dfd6b7a006950b9fcb701200a"
-          },
-          {
-            "url": "https://vestbo.no/kontakt/",
-            "title": "Kontakt oss - Vestbo BBL",
-            "main_text_excerpt": "Kontakt oss\nHar du spørsmål til oss? Ta kontakt, så hjelper vi deg gjerne.\nSe gjerne over «ofte stilte spørsmål», så finner du kanskje svaret du leter etter raskt og effektivt.\nFra 1.1.2024 er det ikke lenger mulig å betale felleskostnader uten KID-nummer. Vi anbefaler å benytte elektroniske avtaler, som e-faktura eller avtalegiro. Dersom innbetalingen gjøres manuelt må den inneholde et KID-nummer, ellers vil den ikke registreres i vårt system og man risikerer purregebyrer.\nPå Min Side finner du oversikt over din faktura.\nLogg deg inn på Min side for å finne oversikt over alle faktura.\nEr du beboer i ett borettslag eller sameie vil du får en månedlig kostnad du må betale. Felleskostnader kalles ofte for «husleie», vi bruker disse uttrykkene litt om hverandre.\nFaktura for felleskostnader finner du på MinSide\nFelleskostnader er kostnader alle deler på. Det kan være stor forskjell og variasjon på hva som er inkludert i felleskostnadene, eksempel kan være:\n– Vaktmestertjenester\n– Vedlikehold og drift av felles eiendom\n– TV og Internett. For informasjon om fordeling mellom TV og internett, kontakt styret i boligselskapet der du bor. Kontaktinformasjon finner du på MinSide.\n– Felles strøm\n– Nedbetaling av felles lån\nFor borettslag vil felleskostnader også dekke kommunale avgifter, mens i sameier vil det faktureres hver enkelt fra kommunen.\nFelleskostnadene betales forskuddsvis. For eksempel faktura som forfaller 01.05 gjelder for mai måned (perioden 01.05 – 31.05).\nDu kan betale medlemskontingenten og felleskostnader med AvtaleGiro eller eFaktura, som er avtaler du selv kan opprette i nettbanken din. Dersom du nylig har opprettet AvtaleGiro eller eFaktura, kan det skje at Vestbo ikke mottar informasjon om avtalen før faktura blir sendt ut, og at du må betale fakturaen manuelt for denne perioden. Husk at det er ditt ansvar å påse at felleskostnadene blir betalt selv om AvtaleGiro eller eFaktura ikke fungerer.\nHusk å avslutte AvtaleGiro når du flytter ut fra en bolig og ikke skal betale felleskostnader lenger.\nDersom din AvtaleGiro eller eFaktura har sluttet å fungere bør du ta kontakt med banken. Les mer om AvtaleGiro og om eFaktura.\nI forbindelse med eierskifter kan det ta opp til en måned før du mottar din første giro for felleskostnadene.\nFor at prosesser skal gå best mulig og uten unødvendige forsinkelser må du vente med å betale felleskostnadene til du får faktura i ditt navn\nNei, det er dessverre ikke mulig for Vestbo å endre forfallsdato på felleskostnadene.\nStyret i boligselskapet der du bor kan vedta endringer i felleskostnadene to ganger i året. Dersom endringer blir vedtatt, kan dette føre til at Vestbo fakturerer noe senere enn vanlig.\nTredjepartsopplysningene (eller årsoppgaven som den også kalles) blir sendt ut i slutten av januar.\nDu finner denne også inne på Min Side.\nEtter at du har logget deg inn klikker du på den lille konvolutten øverst i høyre hjørne og velger «Dokumenter»\nDen som står som eier per 31. desember får gjelds- og formuesposten. Andel andre inntekter og utgifter blir fordelt etter antall hele måneder som du har eid boligen\nAlle, uansett alder, kan bli medlem i Vestbo. Medlemskap er gratis til og med det året du fyller 18 år.\nBli medlem i dag og invester i fremtiden ved å få en plass først i køen når du skal kjøpe bolig!\nHovedeier og medeier(e) må være medlem i Vestbo.\nHovedeier betaler en andelsavgift på kr 300,- ved innmelding. Hovedeier betaler ikke årskontingent. Denne betales av boligselskapet.\nMedeier(e) betaler en andelsavgift på kr 300,- ved innmelding. Deretter betaler medeier(e) en årlig kontingent på kr 300,-.\nMedlemskap/årskontingent må innbetales før overtagelsesdato, sammen med øvrige gebyrer.\n* I boligaksjeselskap (AS) er det eierskiftegebyr både for selger og kjøper.\nDet tas forbehold om trykkfeil og endringer i pris- og avgiftsnivå.\nMin side, også kalt Portalen, er en nettløsning for medlemmer, beboere og styrerepresentanter som viser informasjon registrert hos Vestbo med eksempelvis navn og adresse, medlemskap, bolig og forkjøpsrett.\nPortalen er også koblet opp mot Fordelskortet, og viser oppspart bonus.\nHvis du er eller har vært styremedlem i et av våre borettslag eller sameier har du kanskje opprettet en bruker tidligere, dersom du har vært logget inn i Portalen. Dette er samme innlogging som du nå kan bruke for å administrere medlemskapet ditt.\nDu logger deg inn på Min side via Vestbo-appen eller via forsiden på www.vestbo.no\nTast inn mobilnummeret ditt eller e-postadressen din i det hvite feltet og trykk på «Send meg en kode».\nDu vil da få tilsendt en firesifret kode på SMS dersom du taster inn mobilnummeret ditt eller på e-post dersom du bruker e-postadressen din.\nDenne fremgangsmåten bruker du hver gang du skal logge deg inn og du får ny kode hver gang.\nDin e-postadresse og ditt mobilnummer må være registrert i vårt system før du kan logge deg inn.\nDin ansiennitet som medlem i Vestbo løper fra det øyeblikket din innmelding er registrert betalt hos oss. Du kan",
-            "content_sha256": "132ce97d763d445f139256d1d7c54af5f0ce4749121986116ea7f3d83e89d84d"
-          },
-          {
-            "url": "https://vestbo.no/aktuelt/",
-            "title": "Aktuelt - Vestbo BBL",
-            "main_text_excerpt": "Aktuelt\nSiste nytt og aktuell informasjon.",
-            "content_sha256": "496b7bd2a1b30837b37e9cad392d5570b9c1190fd55f383090fc6b632744918f"
-          },
-          {
-            "url": "https://vestbo.no/vestboseminaret-2026-aktuelt/",
-            "title": "Velkommen til historiens siste Vestboseminar - Vestbo BBL",
-            "main_text_excerpt": "Etter mange år med faglig påfyll, gode samtaler, nye bekjentskaper, gamle kjente og tradisjoner som har blitt en viktig del av Vestbo-fellesskapet, er vi kommet til historiens siste seminar i regi av Vestbo.\nDenne gangen byr vi på et humoristisk og fremtidsrettet program som forhåpentligvis både engasjerer, utfordrer og gir oss noe å ta med videre. Men når dette nå er siste gang vi samles på denne måten, håper vi også at vi kan tillate oss å nyte det litt ekstra – både det faglige programmet, samtalene mellom slagene og ikke minst fellesskapet som har gjort Vestboseminaret til det det har vært.\nMer informasjon, program, priser og påmeldingsskjema finner du her",
-            "content_sha256": "803c9b704dc018814188da61a39144baa321859a6a861fb2b8e58bea786a81c5"
-          }
-        ],
         "crawl_errors": [],
-        "identity_assessment": {
-          "status": "related_or_uncertain",
-          "score": 0.3,
-          "publishable": false,
-          "legal_name_tokens": [
-            "litlatunet",
-            "sameie"
-          ],
-          "matched_tokens": [
-            "sameie"
-          ],
-          "reasons": [
-            "registry-linked URL lacks strong exact-entity identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
+        "description": "Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Velkommen hjem!",
         "discovered_social_links": [
           {
             "platform": "facebook",
@@ -2066,51 +1641,186 @@
             "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA"
           }
         ],
+        "extraction_state": "js_fallback_candidate",
+        "final_url": "https://vestbo.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "litlatunet",
+            "sameie"
+          ],
+          "matched_tokens": [
+            "sameie"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "registry-linked URL lacks strong exact-entity identity evidence"
+          ],
+          "score": 0.3,
+          "status": "related_or_uncertain"
+        },
+        "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
+        "pages": [
+          {
+            "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
+            "main_text_excerpt": "Hopp til innhold\n        \n Bli medlem",
+            "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL",
+            "url": "https://vestbo.no/"
+          },
+          {
+            "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6",
+            "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
+            "title": "Om oss - Vestbo BBL",
+            "url": "https://vestbo.no/om-oss/"
+          },
+          {
+            "content_sha256": "96b4e13b99085b2643593e3b4e5a45657068d3a6acb4b5203afe50ee991c8fb6",
+            "main_text_excerpt": "Om oss\nVestbo – vi skal levere den beste bo-opplevelsen på Vestlandet.\nVestbo har siden 25. april 1946 bygget store deler av Vestlandet gjennom å bygge boliger og forvalte disse. Vestbo er i dag et av de større boligbyggelagene i Norge og forvalter over 750 boligselskaper med til sammen 25.500 boliger over hele Vestlandet.\nVestbo er et foretak eid av medlemmene og vi setter bomiljø i førersete. Vestbo har ca 39 000 medlemmer. Et medlemskap i Vestbo er en verdifull investering, som gir deg forkjøpsrett i boligkøen og gode medlemsfordeler. Et medlemskap kan gå i generasjoner og kan benyttes i de fleste storbyer over hele landet.\nKonsernet drives hovedsakelig innenfor virksomhetsområdene eiendomsutvikling, boligbygging, forvaltning, eiendomsdrift, finans og eiendomsmegling.\nVestbo Garanti Sentrum AS og Vestbo Garanti Landås AS er heleide datterselskaper av Vestbo Garanti Holding AS. Kontorene er lokalisert i Bergen sentrum og på Landåstorget.\nDe to datterselskapene er med i den landsomfattende eiendomsmeglerkjeden Garanti Eiendomsmegling.\nVestbo Drift AS er totalleverandør av vaktmester-, gartner-, renholds- og håndverkstjenester til borettslag, boligselskap og privatpersoner i Bergens regionen.\nSelskapet eies 100 % av Vestbo og har gjennom en årrekke levert et bredt tjenestespekter med høy kvalitet innen eiendomsdrift. Vestbo Drift AS i Bergen har omkring 50 ansatte og er en betydelig aktør i markedet.\nVestbo Eiendomsutvikling AS er et datterselskap av Vestbo BBL.\nVi jobber med utvikling og salg av nye bolig prosjekter i regi av Vestbo.\nVårt formål er å erverve arealer til tomer, gjennomføre nødvendige reguleringer i samarbeid med rådgivere og offentlige myndigheter,\ngjennomføre selve byggeprosjektet og overlevere ferdige boliger til Vestbo sine medlemmer.\nVi brenner for å skape den beste bo opplevelsen på Vestlandet, skape prosjekt som fremmer livsglede og livskvalitet og forebygge ensomhet gjennom gode møteplasser.\nKlikk her for en oversikt over boligprosjekter som er for salg eller kommer for salg.\nI Vestbo jobber vi alltid etter disse verdiene:\nE – Endringsfokusert\nK – Kundeorientert\nT – Troverdig\nE – Engasjert\nVed å ta første bokstav fra hver verdi, får vi en femte verdi – som er EKTE.",
+            "title": "Om oss - Vestbo BBL",
+            "url": "https://vestbo.no/om-oss//"
+          },
+          {
+            "content_sha256": "d6ff1a181463e36251cc3621b709d1ca502fb92dfd6b7a006950b9fcb701200a",
+            "main_text_excerpt": "Samfunnsansvar og bærekraft\nHos Vestbo er alle velkommen. Vi vil ha alle med, fordi modellen vår inviterer til noe større enn oss selv – vårt overskudd reinvesteres i fremtidens løsninger.\nBærekraft handler ikke bare om miljø og økonomi. Det handler om mennesker. Om hvordan vi bor, hvem vi bor med – og hva som skjer når noen blir stående alene.\nEnsomhet er en av vår tids største samfunnsutfordringer. Gode boligsamfunn utgjør en forskjell. Derfor gjør vi mer enn å bygge og forvalte – vi skaper møteplasser, vi styrker fellesskap, og vi legger til rette for at flere kan bo godt, lengre.\nVi går foran, vi utfordrer for å skape positiv endring, og vi jobber hver dag for å gjøre nabolag tryggere og mer inkluderende – slik at færre står utenfor.\nDette er vårt løfte.\nVestbo er et samvirkeforetak som bryr seg, og derfor er bærekraft en integrert del av vår strategi. Dette gjør vi gjennom å ta en offensiv rolle som samfunnsbygger, samt at vi legger til rette for et godt og trivelig bomiljø med fokus på bærekraftige løsninger gjennom teknologi og innovasjon. Vestbo skal være en lokal pådriver for kvalitet og nytenking innen byutvikling. Vi tar ansvar for det vi leverer og følger våre byggeprosjekter fra planlegging til resirkulering.\nVi skal skape framtidsrettete og bærekraftige bomiljø-hvor alle generasjoner kan trives og møtes- «ut av ensomheten og inn i et aktivt sosialt liv». Vi ønsker at du skal få bo hele livet i samme bomiljø-om du vil!\nVi samarbeider blant annet aktivt med andre lokale aktører i næringslivet for å etterleve vårt felles menneskerettighetsansvar gjennom FUTURE-PROOF. Vi bryr oss, og vi vil bruke styrken i merkevaren til å skape endring.\nVestbo kombinerer omsorg og engasjement med troverdighet og soliditet. Vi bygger ikke bare boliger – vi skaper sterke fellesskap, former fremtidens nabolag, og morgendagens hjem.\nVi er opptatt av inkluderende og levende nabolag.\nFor barn spesielt er tilhørighet og samhold viktig for utviklingen, og noe man kan oppleve sammen med venner innenfor idretten. Vestbo ønsker derfor å bidra til fellesskapet og støtter barneidrett i vår region med like treningsjakker. Vi deler ut nærmere kr. 500.000,- årlig til glede for barn og unge på Vestlandet.\nVåre støtteordninger kan du lese mer om her.\nFoto: Anita Vedå\nVestbo og Stiftelsen Betanien Bergen planlegger helsefremmende, bærekraftige boliger og nabolag. Med selskapenes motto “Boliger for alle” og “I tjeneste for mennesker” er det allerede dannet et godt grunnlag for samarbeidet.\nPilotprosjektet er Vestlundveien i Fyllingsdalen, og skal romme blant annet boliger, helseklynge, barnehage og ha et bredt utvalg av tilbud i nærmiljøet.\nBolig for alle\nMålet er fremtidsrettede boliger hvor innovative løsninger, helse- og omsorgsteknologi innlemmes naturlig. Dette vil medføre at flere kan bo hjemme selv om helsesituasjon endres. Alternative boformer som kollektiv, leie til eie, deleie og utleie gjør boligene tilgjengelig gjennom alle livets faser.\nEt inkluderende nabolag\nVi ønsker å fremme involvering, styrke tilhørighet og begrense ensomhet. Nabolaget tilrettelegges for samhandling uavhengig av alder, interesser, kjønn og funksjonsnivå. Her planlegges alt fra barnehage, helseklynge med blant annet fastleger, fysioterapi, tannlege og apotek, til klatrevegg og atelier. Grønne pusterom, arealer for trening, rehabilitering og lek blir en naturlig del av nabolaget.\nDelekultur & bærekraft\nDelekultur går som en rød tråd gjennom prosjektet med tilbud som bil- og sykkeldeling, gjesteleilighet, gjenbruksstasjon, verksted og drivhus. Det vil også tilrettelegges for deling av menneskelige ressurser som hjelp til enkle arbeidsoppgaver og sosial tilstedeværelse.\nFrivilligheten – en viktig brikke\nFrivillighetsarbeid er en vinn-vinn-situasjon, hvor mennesker kan glede andre og få tilbake ny kunnskap og venner i inkluderende og trygge omgivelser. Her legges det til rette for frivillighet og samhandling ikke bare naboer imellom, men også mellom naboer i Fyllingsdalen generelt.\nVestbo vektlegger særlig bærekraftmålene 11 og 13, samt 9 og 17 fordi de utgjør et viktig grunnlag for å nå våre mål.",
+            "title": "Samfunnsansvar og bærekraft - Vestbo BBL",
+            "url": "https://vestbo.no/om-oss/samfunnsansvar-og-baerekraft/"
+          },
+          {
+            "content_sha256": "132ce97d763d445f139256d1d7c54af5f0ce4749121986116ea7f3d83e89d84d",
+            "main_text_excerpt": "Kontakt oss\nHar du spørsmål til oss? Ta kontakt, så hjelper vi deg gjerne.\nSe gjerne over «ofte stilte spørsmål», så finner du kanskje svaret du leter etter raskt og effektivt.\nFra 1.1.2024 er det ikke lenger mulig å betale felleskostnader uten KID-nummer. Vi anbefaler å benytte elektroniske avtaler, som e-faktura eller avtalegiro. Dersom innbetalingen gjøres manuelt må den inneholde et KID-nummer, ellers vil den ikke registreres i vårt system og man risikerer purregebyrer.\nPå Min Side finner du oversikt over din faktura.\nLogg deg inn på Min side for å finne oversikt over alle faktura.\nEr du beboer i ett borettslag eller sameie vil du får en månedlig kostnad du må betale. Felleskostnader kalles ofte for «husleie», vi bruker disse uttrykkene litt om hverandre.\nFaktura for felleskostnader finner du på MinSide\nFelleskostnader er kostnader alle deler på. Det kan være stor forskjell og variasjon på hva som er inkludert i felleskostnadene, eksempel kan være:\n– Vaktmestertjenester\n– Vedlikehold og drift av felles eiendom\n– TV og Internett. For informasjon om fordeling mellom TV og internett, kontakt styret i boligselskapet der du bor. Kontaktinformasjon finner du på MinSide.\n– Felles strøm\n– Nedbetaling av felles lån\nFor borettslag vil felleskostnader også dekke kommunale avgifter, mens i sameier vil det faktureres hver enkelt fra kommunen.\nFelleskostnadene betales forskuddsvis. For eksempel faktura som forfaller 01.05 gjelder for mai måned (perioden 01.05 – 31.05).\nDu kan betale medlemskontingenten og felleskostnader med AvtaleGiro eller eFaktura, som er avtaler du selv kan opprette i nettbanken din. Dersom du nylig har opprettet AvtaleGiro eller eFaktura, kan det skje at Vestbo ikke mottar informasjon om avtalen før faktura blir sendt ut, og at du må betale fakturaen manuelt for denne perioden. Husk at det er ditt ansvar å påse at felleskostnadene blir betalt selv om AvtaleGiro eller eFaktura ikke fungerer.\nHusk å avslutte AvtaleGiro når du flytter ut fra en bolig og ikke skal betale felleskostnader lenger.\nDersom din AvtaleGiro eller eFaktura har sluttet å fungere bør du ta kontakt med banken. Les mer om AvtaleGiro og om eFaktura.\nI forbindelse med eierskifter kan det ta opp til en måned før du mottar din første giro for felleskostnadene.\nFor at prosesser skal gå best mulig og uten unødvendige forsinkelser må du vente med å betale felleskostnadene til du får faktura i ditt navn\nNei, det er dessverre ikke mulig for Vestbo å endre forfallsdato på felleskostnadene.\nStyret i boligselskapet der du bor kan vedta endringer i felleskostnadene to ganger i året. Dersom endringer blir vedtatt, kan dette føre til at Vestbo fakturerer noe senere enn vanlig.\nTredjepartsopplysningene (eller årsoppgaven som den også kalles) blir sendt ut i slutten av januar.\nDu finner denne også inne på Min Side.\nEtter at du har logget deg inn klikker du på den lille konvolutten øverst i høyre hjørne og velger «Dokumenter»\nDen som står som eier per 31. desember får gjelds- og formuesposten. Andel andre inntekter og utgifter blir fordelt etter antall hele måneder som du har eid boligen\nAlle, uansett alder, kan bli medlem i Vestbo. Medlemskap er gratis til og med det året du fyller 18 år.\nBli medlem i dag og invester i fremtiden ved å få en plass først i køen når du skal kjøpe bolig!\nHovedeier og medeier(e) må være medlem i Vestbo.\nHovedeier betaler en andelsavgift på kr 300,- ved innmelding. Hovedeier betaler ikke årskontingent. Denne betales av boligselskapet.\nMedeier(e) betaler en andelsavgift på kr 300,- ved innmelding. Deretter betaler medeier(e) en årlig kontingent på kr 300,-.\nMedlemskap/årskontingent må innbetales før overtagelsesdato, sammen med øvrige gebyrer.\n* I boligaksjeselskap (AS) er det eierskiftegebyr både for selger og kjøper.\nDet tas forbehold om trykkfeil og endringer i pris- og avgiftsnivå.\nMin side, også kalt Portalen, er en nettløsning for medlemmer, beboere og styrerepresentanter som viser informasjon registrert hos Vestbo med eksempelvis navn og adresse, medlemskap, bolig og forkjøpsrett.\nPortalen er også koblet opp mot Fordelskortet, og viser oppspart bonus.\nHvis du er eller har vært styremedlem i et av våre borettslag eller sameier har du kanskje opprettet en bruker tidligere, dersom du har vært logget inn i Portalen. Dette er samme innlogging som du nå kan bruke for å administrere medlemskapet ditt.\nDu logger deg inn på Min side via Vestbo-appen eller via forsiden på www.vestbo.no\nTast inn mobilnummeret ditt eller e-postadressen din i det hvite feltet og trykk på «Send meg en kode».\nDu vil da få tilsendt en firesifret kode på SMS dersom du taster inn mobilnummeret ditt eller på e-post dersom du bruker e-postadressen din.\nDenne fremgangsmåten bruker du hver gang du skal logge deg inn og du får ny kode hver gang.\nDin e-postadresse og ditt mobilnummer må være registrert i vårt system før du kan logge deg inn.\nDin ansiennitet som medlem i Vestbo løper fra det øyeblikket din innmelding er registrert betalt hos oss. Du kan",
+            "title": "Kontakt oss - Vestbo BBL",
+            "url": "https://vestbo.no/kontakt/"
+          },
+          {
+            "content_sha256": "496b7bd2a1b30837b37e9cad392d5570b9c1190fd55f383090fc6b632744918f",
+            "main_text_excerpt": "Aktuelt\nSiste nytt og aktuell informasjon.",
+            "title": "Aktuelt - Vestbo BBL",
+            "url": "https://vestbo.no/aktuelt/"
+          },
+          {
+            "content_sha256": "803c9b704dc018814188da61a39144baa321859a6a861fb2b8e58bea786a81c5",
+            "main_text_excerpt": "Etter mange år med faglig påfyll, gode samtaler, nye bekjentskaper, gamle kjente og tradisjoner som har blitt en viktig del av Vestbo-fellesskapet, er vi kommet til historiens siste seminar i regi av Vestbo.\nDenne gangen byr vi på et humoristisk og fremtidsrettet program som forhåpentligvis både engasjerer, utfordrer og gir oss noe å ta med videre. Men når dette nå er siste gang vi samles på denne måten, håper vi også at vi kan tillate oss å nyte det litt ekstra – både det faglige programmet, samtalene mellom slagene og ikke minst fellesskapet som har gjort Vestboseminaret til det det har vært.\nMer informasjon, program, priser og påmeldingsskjema finner du her",
+            "title": "Velkommen til historiens siste Vestboseminar - Vestbo BBL",
+            "url": "https://vestbo.no/vestboseminaret-2026-aktuelt/"
+          }
+        ],
+        "registered_domain": "vestbo.no",
+        "requested_url": "https://www.vestbo.no/",
         "social_link_assessments": [
           {
+            "identity_score": 0.3,
+            "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "facebook",
-            "url": "https://facebook.com/vestbo.no",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://facebook.com/vestbo.no"
           },
           {
+            "identity_score": 0.3,
+            "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
             "platform": "instagram",
-            "url": "https://instagram.com/vestbo.no",
-            "identity_score": 0.3,
             "publishable": false,
-            "matched_tokens": [],
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://instagram.com/vestbo.no"
           },
           {
-            "platform": "youtube",
-            "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA",
             "identity_score": 0.3,
-            "publishable": false,
             "matched_tokens": [],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "youtube",
+            "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
-            "method": "deterministic_social_handle_identity_v1"
+            "url": "https://youtube.com/channel/UCuCMwjcfqtDaMpfxK-wJOpA"
           }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "1b9b60dcf2351b5d921bdfcb82d7d4c662599ae805685ab8986f999b8d42950c",
-      "source_row_key": null,
-      "effective_at": null
+        ],
+        "social_links": [],
+        "structured_organisations": [
+          {
+            "@id": "https://vestbo.no/#organization",
+            "@type": "Organization",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "Norge",
+              "addressLocality": "Bergen",
+              "addressRegion": "Vestland",
+              "postalCode": "5004",
+              "streetAddress": "Strandgaten 196"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "telephone": "55 30 96 00"
+              }
+            ],
+            "email": "post@vestbo.no",
+            "location": {
+              "@id": "https://vestbo.no/#place"
+            },
+            "logo": {
+              "@id": "https://vestbo.no/#logo",
+              "@type": "ImageObject",
+              "caption": "Vestbo BBL",
+              "contentUrl": "https://vestbo.no/wp-content/uploads/favicon.png",
+              "height": "1464",
+              "inLanguage": "nb-NO",
+              "url": "https://vestbo.no/wp-content/uploads/favicon.png",
+              "width": "1464"
+            },
+            "name": "Vestbo BBL",
+            "sameAs": [
+              "https://www.facebook.com/vestbo.no/"
+            ],
+            "url": "https://vestbo.wpengine.com"
+          }
+        ],
+        "title": "Vestbo: ditt lokale boligbyggelag på Vestlandet - Vestbo BBL"
+      }
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-5e0d15de076f37867d53d104",
+        "organisation_number": "925999210",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
+        "retrieved_at": "2026-10-08T18:01:24.845268Z",
+        "content_sha256": "cfd6c31dc7d04f1881543ae28cfc895d1977e9ef6beaeae4810e6559b0a051e9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "925999210"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "925999210"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
       {
         "id": "registry-contact-38a440be2ebee1d804d6ffc2",
         "organisation_number": "925999210",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2137,8 +1847,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2163,7 +1873,7 @@
         "organisation_number": "925999210",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=925999210&size=1000",
-        "retrieved_at": "2026-09-29T10:09:11.199745Z",
+        "retrieved_at": "2026-10-05T08:41:46.392267Z",
         "content_sha256": "72bc5dee388471606a4aedd2bc412ccceb8e0ee21b80cb434ba97b5813e5afce",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2193,7 +1903,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c227b7ebe675c88feca91a152d83cf28028cbbbfce212cbafea0c1bad376a0b1",
         "observed_at": "2026-07-13",
         "exact_entity": true,
@@ -2223,7 +1933,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "efb0d485ace6ccc089fccf15a19c1f3b48fabf32b655db1a2c2e506d65ee06cc",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2253,7 +1963,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c62d37b031624259e9224b9ac7c14fba8c49f72a4a565eda5639d285704c5a98",
         "observed_at": "2025-06-28",
         "exact_entity": true,
@@ -2283,7 +1993,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c67df5b5efe6bc8dc18cf94e7b44b6c42ac2cfe1bd3ea98c87deba497506ab4d",
         "observed_at": "2024-05-27",
         "exact_entity": true,
@@ -2313,7 +2023,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "f7cead7f29ec4ce13227016271635755117121b9d0c6bb64bb95d1e168f3bf2d",
         "observed_at": "2023-08-01",
         "exact_entity": true,
@@ -2343,7 +2053,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "21ad4aa9e06b1108745ff2bbef18d10f0eb64458cc3bd06e4296eca958e30380",
         "observed_at": "2022-07-12",
         "exact_entity": true,
@@ -2373,7 +2083,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "28a374d691b2b706d579a8c364950e57327cae4eb75e5ea1b9abfbf80040d7b9",
         "observed_at": "2020-11-19",
         "exact_entity": true,
@@ -2403,7 +2113,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/925999210",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "f45ba0f3c74de5c7f4003d25b3c7e8ec9896883d7c3a381aacac54e62555a16c",
         "observed_at": "2020-11-19",
         "exact_entity": true,
@@ -2513,330 +2223,8 @@
           "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000727907&amp;sokeverdi=925999210&amp;spraak=nb"
         },
         "evidence_span": "Styre — 2025-09-04 (BRREG official announcement)"
-      },
-      {
-        "id": "annual-workforce-a773f5c9ade0bf4363f6eb14",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/925999210/2025",
-        "retrieved_at": "2026-10-28T04:37:56.251880Z",
-        "content_sha256": "5ba2241f651d9fb24535e478a669325a7a9f3c2ec1c90afb2a699e674ba9c0eb",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall Aarsverk i regnskapsaret\n\n0.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 0
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_approval_date-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 28.05.2026",
-        "metrics": {
-          "approval_date": "28.05.2026",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_auditor-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Per Marcus Daae Johannessen",
-        "metrics": {
-          "auditor": "Per Marcus Daae Johannessen",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_accounting_rules-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_business_address-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Strandgaten 196",
-        "metrics": {
-          "business_address": "Strandgaten 196",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_signing_officer-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-925999210-annual_report_org_number-f84d7caed94100a0",
-        "organisation_number": "925999210",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/925999210-2025.pdf",
-        "retrieved_at": "2026-11-05T14:59:26.049676Z",
-        "content_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "925999210"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "925999210"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 925 999 210",
-        "metrics": {
-          "org_number": "925999210",
-          "ocr_text_sha256": "f84d7caed94100a03e1e35c2bbc2a3e22324fe837918d86f7b0f434f63278a5b",
-          "ocr_chars": 1322
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "925999210",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/925999210",
-        "retrieved_at": "2026-11-05T21:09:52.125487Z",
-        "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "925999210"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "LITLATUNET SAMEIE",
-            "matched_organisation_number": "925999210"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-        "id": "purehelp-email-925999210-f3e631a4f97514d4",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "post@vestbo.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "925999210",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/925999210",
-        "retrieved_at": "2026-11-05T21:09:52.125487Z",
-        "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "925999210"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "LITLATUNET SAMEIE",
-            "matched_organisation_number": "925999210"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-        "id": "purehelp-phone-925999210-f3e631a4f97514d4",
-        "signal_type": "contact_phone",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "phone": "55 30 96 00",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "925999210",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/925999210",
-        "retrieved_at": "2026-11-05T21:09:52.125487Z",
-        "content_sha256": "093b3278cd1ba352e0e89cc9a9d5715c4665b9c90b462796a6ea4ea31395489b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "925999210"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "LITLATUNET SAMEIE",
-            "matched_organisation_number": "925999210"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-925999210.orgNumber=925999210;name=LITLATUNET SAMEIE",
-        "id": "purehelp-profile-925999210-f3e631a4f97514d4",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "ESEK",
-          "legal_form_description": "Condominium flat owner",
-          "nace_code": "97.001",
-          "nace_description": "Activities of housing cooperatives",
-          "town": "BERGEN",
-          "zipcode": "5004",
-          "municipality": "BERGEN",
-          "municipality_number": "4601",
-          "county": "Vestland",
-          "registration_date": "2020-11-19",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2020-11-19",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.vestbo.no"
-        }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:32.921227+00:00"
+  "generated_at": "2026-11-07T07:28:27.285515+00:00"
 }

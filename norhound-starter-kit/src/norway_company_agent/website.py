@@ -38,6 +38,36 @@ PRIORITY_TERMS = (
 )
 
 
+# A burst of concurrent lookups against the system resolver can fail a
+# lookup that would succeed a second later. The 1,000-company run on
+# 2026-11-07 lost 330 company homepages to "Hostname did not resolve";
+# every one of those hosts resolved normally when asked again, and 231 of
+# them had resolved in the baseline run on the same day. A single failed
+# lookup therefore has to be retried before the domain is written off.
+DNS_RETRY_ATTEMPTS = 3
+DNS_RETRY_BACKOFF_S = (0.5, 1.5)
+
+
+def _resolve_addresses(host: str, port: int) -> set[str]:
+    """Resolve a host, retrying a transient lookup failure.
+
+    The lookup is bounded: after `DNS_RETRY_ATTEMPTS` failures the domain is
+    treated as unresolvable, so a genuinely dead domain still fails fast.
+    """
+    last_error: socket.gaierror | None = None
+    for attempt in range(DNS_RETRY_ATTEMPTS):
+        try:
+            return {
+                item[4][0]
+                for item in socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+            }
+        except socket.gaierror as exc:
+            last_error = exc
+            if attempt < len(DNS_RETRY_BACKOFF_S):
+                time.sleep(DNS_RETRY_BACKOFF_S[attempt])
+    raise ValueError("Hostname did not resolve") from last_error
+
+
 def assert_public_url(url: str) -> None:
     parsed = urllib.parse.urlparse(url)
     host = (parsed.hostname or "").lower().rstrip(".")
@@ -45,10 +75,9 @@ def assert_public_url(url: str) -> None:
         raise ValueError("Only public HTTP(S) URLs are allowed")
     if host == "localhost" or host.endswith(".localhost") or host.endswith(".local"):
         raise ValueError("Local hosts are blocked")
-    try:
-        addresses = {item[4][0] for item in socket.getaddrinfo(host, parsed.port or (443 if parsed.scheme == "https" else 80), type=socket.SOCK_STREAM)}
-    except socket.gaierror as exc:
-        raise ValueError("Hostname did not resolve") from exc
+    addresses = _resolve_addresses(
+        host, parsed.port or (443 if parsed.scheme == "https" else 80)
+    )
     for address in addresses:
         ip = ipaddress.ip_address(address)
         if not ip.is_global:

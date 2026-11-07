@@ -1,162 +1,302 @@
 {
   "profile": {
-    "organisation_number": "928783243",
-    "name": "BIRDIE AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "HAMAR",
-    "municipality_number": "3403",
-    "industry_code": "85.510",
-    "industry_label": "Undervisning innenfor idrett og rekreasjon",
-    "website": "www.birdiediskgolf.no",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:47.691148Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "928783243",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "928783243",
-          "navn": "BIRDIE AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "85.510",
-          "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:47:21.579810Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2022",
+              "year": "2022"
+            }
+          ],
+          "years": [
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "8c374bf734508b1ea0fbf1f1a0eeed9748acd85615f89aa36b87792380ad3477",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:47:14.804160Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 36925.0,
+              "assets": 120845.0,
+              "currency": "NOK",
+              "debt": 7608.0,
+              "equity": 113237.0,
+              "operating_result": 43875.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": 43693.0,
+              "record_id": 4995555,
+              "revenue": 650396.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -9963.0,
+              "assets": 99496.0,
+              "currency": "NOK",
+              "debt": -3779.0,
+              "equity": 103274.0,
+              "operating_result": -536.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": -10129.0,
+              "record_id": 5481401,
+              "revenue": 498573.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -394.0,
+              "assets": 131925.0,
+              "currency": "NOK",
+              "debt": 29045.0,
+              "equity": 102880.0,
+              "operating_result": 2482.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": 2481.0,
+              "record_id": 6526057,
+              "revenue": 600743.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:47:22.983629Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/928783243",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:47:23.688197Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Enervegen 48"
+                ],
+                "kommune": "HAMAR",
+                "kommunenummer": "3403",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "2322",
+                "poststed": "RIDABU"
+              },
+              "employees": null,
+              "industry": {
+                "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+                "kode": "85.510"
+              },
+              "name": "BIRDIE AS",
+              "organisation_number": "928953173"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "928783243",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Arrangementer, kursvirksomhet, design og konsulentvirksomhet hovedsakelig innen diskgolf.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.birdiediskgolf.no",
           "epostadresse": "post@birdiediskgolf.no",
-          "telefon": "",
-          "mobil": "",
-          "postadresse.adresse": "c/o Knut Ågestad Hummelvoll\nEnervegen 48",
-          "postadresse.poststed": "RIDABU",
-          "postadresse.postnummer": "2322",
-          "postadresse.kommune": "HAMAR",
-          "postadresse.kommunenummer": "3403",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Enervegen 48",
-          "forretningsadresse.poststed": "RIDABU",
-          "forretningsadresse.postnummer": "2322",
           "forretningsadresse.kommune": "HAMAR",
           "forretningsadresse.kommunenummer": "3403",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2022-02-21",
-          "stiftelsesdato": "2022-02-01",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2023-05-11",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-05-11",
+          "forretningsadresse.postnummer": "2322",
+          "forretningsadresse.poststed": "RIDABU",
+          "fravalgRevisjonBeslutningsDato": "2022-02-01",
+          "fravalgRevisjonDato": "2022-02-21",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2022-02-21",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.birdiediskgolf.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "30",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2022-02-21",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "",
+          "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+          "naeringskode1.kode": "85.510",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "BIRDIE AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "928783243",
+          "overordnetEnhet": "",
+          "paategninger": "true",
+          "postadresse.adresse": "c/o Knut Ågestad Hummelvoll\nEnervegen 48",
+          "postadresse.kommune": "HAMAR",
+          "postadresse.kommunenummer": "3403",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "2322",
+          "postadresse.poststed": "RIDABU",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2022-02-21",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "2023-05-11",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-05-11",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2022-02-21",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2022-02-01",
+          "telefon": "",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2022-02-01",
-          "vedtektsfestetFormaal": "Konsulenttjenester og arrangementer.",
-          "aktivitet": "Arrangementer, kursvirksomhet, design og konsulentvirksomhet hovedsakelig innen diskgolf.",
-          "paategninger": "true",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "2022-02-21",
-          "fravalgRevisjonBeslutningsDato": "2022-02-01",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "30",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2022-02-21",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "928783243",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:47.691148Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "928783243",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2022-02-01",
+          "vedtektsfestetFormaal": "Konsulenttjenester og arrangementer."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "f87eec9e23efa4a2543177f5dd03d6f2f39e6e74def5401e4a4352b1cf29bd04",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
+        "note": null,
         "retrieved_at": "2026-10-05T08:47:14.096601Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
+        "status": "available",
         "value": {
-          "organisation_number": "928783243",
-          "name": "BIRDIE AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.birdiediskgolf.no",
-          "industry": {
-            "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-            "kode": "85.510"
-          },
           "business_address": {
             "adresse": [
               "Enervegen 48"
@@ -168,6 +308,16 @@
             "postnummer": "2322",
             "poststed": "RIDABU"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+            "kode": "85.510"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "BIRDIE AS",
+          "organisation_number": "928783243",
           "postal_address": {
             "adresse": [
               "c/o Knut Ågestad Hummelvoll",
@@ -180,232 +330,142 @@
             "postnummer": "2322",
             "poststed": "RIDABU"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f87eec9e23efa4a2543177f5dd03d6f2f39e6e74def5401e4a4352b1cf29bd04",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
-        "retrieved_at": "2026-10-05T08:47:14.804160Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4995555,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 650396.0,
-              "operating_result": 43875.0,
-              "profit_before_tax": 43693.0,
-              "annual_result": 36925.0,
-              "assets": 120845.0,
-              "equity": 113237.0,
-              "debt": 7608.0
-            },
-            {
-              "record_id": 5481401,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 498573.0,
-              "operating_result": -536.0,
-              "profit_before_tax": -10129.0,
-              "annual_result": -9963.0,
-              "assets": 99496.0,
-              "equity": 103274.0,
-              "debt": -3779.0
-            },
-            {
-              "record_id": 6526057,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 600743.0,
-              "operating_result": 2482.0,
-              "profit_before_tax": 2481.0,
-              "annual_result": -394.0,
-              "assets": 131925.0,
-              "equity": 102880.0,
-              "debt": 29045.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "8c374bf734508b1ea0fbf1f1a0eeed9748acd85615f89aa36b87792380ad3477",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-        "retrieved_at": "2026-10-05T08:47:21.579810Z",
-        "value": {
-          "years": [
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2022"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.birdiediskgolf.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "73fcee41b75d8c831eb394dc848efea914cd8a6a366d50f9a02ad4b60c0ee3c6",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:47:22.288953Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Knut Ågestad Hummelvoll",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Sondre Skulstad",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2025-01-02",
               "name": [
                 "RESSURS REGNSKAP AS"
               ],
               "organisation_number": "917446083",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2025-01-02",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "73fcee41b75d8c831eb394dc848efea914cd8a6a366d50f9a02ad4b60c0ee3c6",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/928783243",
-        "retrieved_at": "2026-10-05T08:47:22.983629Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
-        "retrieved_at": "2026-10-05T08:47:23.688197Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "928953173",
-              "name": "BIRDIE AS",
-              "address": {
-                "adresse": [
-                  "Enervegen 48"
-                ],
-                "kommune": "HAMAR",
-                "kommunenummer": "3403",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "2322",
-                "poststed": "RIDABU"
-              },
-              "industry": {
-                "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-                "kode": "85.510"
-              },
-              "employees": null
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.birdiediskgolf.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:47:26.520385Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.birdiediskgolf.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.birdiediskgolf.no/",
-          "final_url": "https://www.birdiediskgolf.no/",
-          "registered_domain": "birdiediskgolf.no",
-          "title": "Hjem",
+          "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+          "crawl_errors": [],
           "description": "Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+          "discovered_social_links": [
+            {
+              "platform": "facebook",
+              "url": "https://facebook.com/birdiediskgolf"
+            },
+            {
+              "platform": "instagram",
+              "url": "https://instagram.com/birdie.diskgolf"
+            }
+          ],
+          "extraction_state": "js_fallback_candidate",
+          "final_url": "https://www.birdiediskgolf.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "birdie"
+            ],
+            "matched_tokens": [
+              "birdie"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
+            "reasons": [
+              "legal-name tokens appear in homepage identity evidence"
+            ],
+            "score": 0.9,
+            "status": "exact"
+          },
           "main_text_excerpt": "",
+          "pages": [
+            {
+              "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+              "main_text_excerpt": "",
+              "title": "Hjem",
+              "url": "https://www.birdiediskgolf.no/"
+            },
+            {
+              "content_sha256": "26d45e581f95130cf068e890b90ded938744ea6fb6e6d4af648fb381667a1fe3",
+              "main_text_excerpt": "Kontakt oss\nVi gleder oss til å høre fra deg!\n \nknut@birdiediskgolf.no\nsondre@birdiediskgolf.no\ntom.erik@birdiediskgolf.no",
+              "title": "Kontakt oss",
+              "url": "https://www.birdiediskgolf.no/kopi-av-ta-kontakt-med-meg/"
+            }
+          ],
+          "registered_domain": "birdiediskgolf.no",
+          "requested_url": "https://www.birdiediskgolf.no/",
+          "social_link_assessments": [
+            {
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "birdie"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": true,
+              "reason": "normalized legal-name sequence appears in the social handle",
+              "url": "https://facebook.com/birdiediskgolf"
+            },
+            {
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "birdie"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "instagram",
+              "publishable": true,
+              "reason": "normalized legal-name sequence appears in the social handle",
+              "url": "https://instagram.com/birdie.diskgolf"
+            }
+          ],
           "social_links": [
             {
               "platform": "facebook",
@@ -417,88 +477,72 @@
             }
           ],
           "structured_organisations": [],
-          "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
-          "extraction_state": "js_fallback_candidate",
-          "pages": [
-            {
-              "url": "https://www.birdiediskgolf.no/",
-              "title": "Hjem",
-              "main_text_excerpt": "",
-              "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6"
-            },
-            {
-              "url": "https://www.birdiediskgolf.no/kopi-av-ta-kontakt-med-meg/",
-              "title": "Kontakt oss",
-              "main_text_excerpt": "Kontakt oss\nVi gleder oss til å høre fra deg!\n \nknut@birdiediskgolf.no\nsondre@birdiediskgolf.no\ntom.erik@birdiediskgolf.no",
-              "content_sha256": "26d45e581f95130cf068e890b90ded938744ea6fb6e6d4af648fb381667a1fe3"
-            }
-          ],
-          "crawl_errors": [],
-          "identity_assessment": {
-            "status": "exact",
-            "score": 0.9,
-            "publishable": true,
-            "legal_name_tokens": [
-              "birdie"
-            ],
-            "matched_tokens": [
-              "birdie"
-            ],
-            "reasons": [
-              "legal-name tokens appear in homepage identity evidence"
-            ],
-            "method": "deterministic_name_org_evidence_v2"
-          },
-          "discovered_social_links": [
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/birdiediskgolf"
-            },
-            {
-              "platform": "instagram",
-              "url": "https://instagram.com/birdie.diskgolf"
-            }
-          ],
-          "social_link_assessments": [
-            {
-              "platform": "facebook",
-              "url": "https://facebook.com/birdiediskgolf",
-              "identity_score": 0.98,
-              "publishable": true,
-              "matched_tokens": [
-                "birdie"
-              ],
-              "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
-            },
-            {
-              "platform": "instagram",
-              "url": "https://instagram.com/birdie.diskgolf",
-              "identity_score": 0.98,
-              "publishable": true,
-              "matched_tokens": [
-                "birdie"
-              ],
-              "reason": "normalized legal-name sequence appears in the social handle",
-              "method": "deterministic_social_handle_identity_v1"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
-        "source_row_key": null,
-        "effective_at": null
+          "title": "Hjem"
+        }
       },
       "external_observations": [
+        {
+          "organisation_number": "928783243",
+          "platform": "company_site",
+          "source_url": "https://www.birdiediskgolf.no/",
+          "retrieved_at": "2026-10-09T13:54:41.260553Z",
+          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-a679a0fee88f81b2122c7afa",
+          "signal_type": "website_description",
+          "evidence_span": "Hjem — Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "928783243",
+          "platform": "company_site",
+          "source_url": "https://www.birdiediskgolf.no/",
+          "retrieved_at": "2026-10-05T08:47:26.520385Z",
+          "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.9
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-928783243-8186c4fee5ecad4e",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 2 bounded pages and 2 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 2,
+            "verified_social_links": 2,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          }
+        },
         {
           "id": "registry-contact-891c6a44770feaedc38a6827",
           "organisation_number": "928783243",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -523,7 +567,7 @@
           "organisation_number": "928783243",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
-          "retrieved_at": "2026-09-29T10:14:17.158013Z",
+          "retrieved_at": "2026-10-05T08:47:23.688197Z",
           "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -553,7 +597,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "64d07650437295cc1062c37d30457fe41c803c5c4f36b82a34ee8875acb444f3",
           "observed_at": "2026-05-06",
           "exact_entity": true,
@@ -583,7 +627,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "ad123167f65d3ff69bb38d815953456b028e4d23b5fada5d5ea36ca3b5205ed0",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -613,7 +657,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "2e5446ce40438d0487de82ba7cca9bfa754e9485b8de3a4700170b59e100dfad",
           "observed_at": "2025-05-24",
           "exact_entity": true,
@@ -643,7 +687,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "601296824909e40af3ee9e2526c491fccd22d12803d0ccd3139575197d628f58",
           "observed_at": "2025-03-07",
           "exact_entity": true,
@@ -673,7 +717,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "915ff607d8ee249407709090ec20b38686da260ccee8a374c085520e1abdbdc2",
           "observed_at": "2024-06-25",
           "exact_entity": true,
@@ -703,7 +747,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "77c5adbe61842158360d18fa768be9cba3e845a48c9331a7a9e7a1be2161fd8a",
           "observed_at": "2023-06-28",
           "exact_entity": true,
@@ -733,7 +777,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "0aefb2b31db901823a738b9aade309fc355b7d0e9efaf2fd8a0fd514025ab07d",
           "observed_at": "2023-05-11",
           "exact_entity": true,
@@ -763,7 +807,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "fb7fa19e44a98d635c38f3938c8632d9836e74c6a997795ae784d0f9a0374eab",
           "observed_at": "2023-03-13",
           "exact_entity": true,
@@ -793,7 +837,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "f1bcdab1fd59cddf4171db61c51f689ab5081e6c094acacf9aba8e053889a5be",
           "observed_at": "2022-12-01",
           "exact_entity": true,
@@ -823,7 +867,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c963fc407604119270812f412e7837938d3cc9d663424d0de6660943a4ca80ea",
           "observed_at": "2022-03-19",
           "exact_entity": true,
@@ -853,7 +897,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "3df04a9632b1b55a488772c0d3b23bf1a27490847386267796ebdc49dd74171b",
           "observed_at": "2022-02-21",
           "exact_entity": true,
@@ -965,493 +1009,85 @@
           "evidence_span": "Godkjente årsregnskap — 2024-06-24 (BRREG official announcement)"
         },
         {
-          "organisation_number": "928783243",
-          "platform": "facebook",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://www.birdiediskgolf.no/",
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "birdie"
-              ],
-              "name_token_gate": true,
-              "method": "linked_from_verified_site_v1"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "site_linked_social_handle",
-          "id": "site-social-928783243-facebook-76ea1a5e6fd56f68",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.birdiediskgolf.no/.",
-          "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/birdiediskgolf",
-            "identity_score": 0.98
-          }
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "instagram",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://www.birdiediskgolf.no/",
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "birdie"
-              ],
-              "name_token_gate": true,
-              "method": "linked_from_verified_site_v1"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "site_linked_social_handle",
-          "id": "site-social-928783243-instagram-73c2cd72b2c7c160",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.birdiediskgolf.no/.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/birdie.diskgolf",
-            "identity_score": 0.98
-          }
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "facebook",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-24T19:13:38.732134Z",
-          "content_sha256": "fc2547ee736eb47365cf689d2492aaa1ea5c4b8dfc0661fd6b46c136ed7bfb30",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://www.birdiediskgolf.no/",
-              "identity_score": 0.98,
-              "probe_method": "email_or_slug_probe_v1"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "probed_site_social_handle",
-          "id": "probed-social-928783243-facebook-76ea1a5e6fd56f68",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the probed verified company website https://www.birdiediskgolf.no/.",
-          "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/birdiediskgolf"
-          }
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "instagram",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-24T19:13:38.732134Z",
-          "content_sha256": "fc2547ee736eb47365cf689d2492aaa1ea5c4b8dfc0661fd6b46c136ed7bfb30",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "linked_from_verified_site",
-              "company_site_url": "https://www.birdiediskgolf.no/",
-              "identity_score": 0.98,
-              "probe_method": "email_or_slug_probe_v1"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "probed_site_social_handle",
-          "id": "probed-social-928783243-instagram-73c2cd72b2c7c160",
-          "signal_type": "profile_handle",
-          "evidence_span": "Social handle linked from the probed verified company website https://www.birdiediskgolf.no/.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/birdie.diskgolf"
-          }
-        },
-        {
+          "id": "registry-site-928783243-38793a69642ce43a",
           "organisation_number": "928783243",
           "platform": "company_site",
+          "signal_type": "website_description",
           "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+          "retrieved_at": "2026-09-29T10:14:20.252823Z",
+          "content_sha256": "38793a69642ce43aa7427ce0a9de58aecf1205bf82e7d54529266c14d355600e",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "registry_declared_website_domain_match",
+              "value": "birdiediskgolf.no",
+              "matched_organisation_number": "928783243",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares birdiediskgolf.no as the website of organisation 928783243; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-a679a0fee88f81b2122c7afa",
-          "signal_type": "website_description",
           "evidence_span": "Hjem — Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
           "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
+            "title": "Hjem",
+            "description": "Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+            "registry_domain": "birdiediskgolf.no"
+          },
+          "strategy": "registry_declared_website_description"
         },
         {
           "organisation_number": "928783243",
           "platform": "company_site",
           "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+          "retrieved_at": "2026-09-29T10:14:20.252823Z",
+          "content_sha256": "38793a69642ce43aa7427ce0a9de58aecf1205bf82e7d54529266c14d355600e",
           "exact_entity": true,
           "identity_proof": [
+            {
+              "type": "registry_declared_domain_unique",
+              "domain": "birdiediskgolf.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-06",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
             {
               "type": "website_identity_gate",
               "status": "exact",
-              "score": 0.9
+              "score": 0.95
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-activity-928783243-f800cedcf9b2872a",
+          "id": "company-site-activity-928783243-38793a69642ce43a",
           "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 2 bounded pages and 2 verified social links.",
+          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
           "metrics": {
             "bounded_pages_captured": 2,
-            "verified_social_links": 2,
+            "verified_social_links": 0,
             "structured_organisation_records": 0,
             "extraction_state": "js_fallback_candidate",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          },
-          "observed_at": "2026-10-09"
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "facebook",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-928783243-f800cedcf9b2872a-facebook",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-          "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/birdiediskgolf"
-          },
-          "observed_at": "2026-10-09"
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "instagram",
-          "source_url": "https://www.birdiediskgolf.no/",
-          "retrieved_at": "2026-10-09T13:54:41.260553Z",
-          "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-928783243-f800cedcf9b2872a-instagram",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/birdie.diskgolf"
-          },
-          "observed_at": "2026-10-09"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_approval_date-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 22.04.2026",
-          "metrics": {
-            "approval_date": "22.04.2026",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_auditor-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Ressurs Regnskap AS",
-          "metrics": {
-            "auditor": "Ressurs Regnskap AS",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_accounting_rules-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_business_address-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Enervegen 48",
-          "metrics": {
-            "business_address": "Enervegen 48",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_signing_officer-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-928783243-annual_report_org_number-2fe9b6c246e86363",
-          "organisation_number": "928783243",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-          "retrieved_at": "2026-11-05T15:15:48.384467Z",
-          "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "928783243"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "928783243"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 928 783 243",
-          "metrics": {
-            "org_number": "928783243",
-            "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-            "ocr_chars": 1599
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/928783243",
-          "retrieved_at": "2026-11-05T21:10:16.191667Z",
-          "content_sha256": "f4774f699d505e1c9b5204dfbabb37561e82c039b5ce6cb710b9d01a1eaf4d28",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "928783243"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BIRDIE AS",
-              "matched_organisation_number": "928783243"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-928783243.orgNumber=928783243;name=BIRDIE AS",
-          "id": "purehelp-email-928783243-13cad362a5a80631",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "post@birdiediskgolf.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "928783243",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/928783243",
-          "retrieved_at": "2026-11-05T21:10:16.191667Z",
-          "content_sha256": "f4774f699d505e1c9b5204dfbabb37561e82c039b5ce6cb710b9d01a1eaf4d28",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "928783243"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "BIRDIE AS",
-              "matched_organisation_number": "928783243"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-928783243.orgNumber=928783243;name=BIRDIE AS",
-          "id": "purehelp-profile-928783243-13cad362a5a80631",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "85.510",
-            "nace_description": "Sports and recreation education",
-            "town": "RIDABU",
-            "zipcode": "2322",
-            "municipality": "HAMAR",
-            "municipality_number": "3403",
-            "county": "Innlandet",
-            "registration_date": "2022-02-21",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2022-02-21",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.birdiediskgolf.no"
           }
         }
       ]
     },
+    "industry_code": "85.510",
+    "industry_label": "Undervisning innenfor idrett og rekreasjon",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "HAMAR",
+    "municipality_number": "3403",
+    "name": "BIRDIE AS",
+    "organisation_number": "928783243",
     "run_metrics": {
-      "requests": 10,
       "bytes": 128810,
       "latencies_ms": [
         685,
@@ -1462,15 +1098,17 @@
         704,
         811,
         876
-      ]
-    }
+      ],
+      "requests": 10
+    },
+    "website": "www.birdiediskgolf.no"
   },
   "summary": {
     "organisation_number": "928783243",
     "company_name": "BIRDIE AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "BIRDIE AS is a private limited company operating in Undervisning innenfor idrett og rekreasjon. Latest accounts (2025): revenue NOK 650.4k, annual result NOK 36.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue growing (+30.5% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "BIRDIE AS is a private limited company operating in Undervisning innenfor idrett og rekreasjon. Latest accounts (2025): revenue NOK 650.4k, annual result NOK 36.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue growing (+30.5% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1485,10 +1123,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
           "https://www.birdiediskgolf.no/",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
@@ -1506,10 +1140,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
           "https://www.birdiediskgolf.no/",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
@@ -1527,10 +1157,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
           "https://www.birdiediskgolf.no/",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
@@ -1548,10 +1174,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
           "https://www.birdiediskgolf.no/",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
@@ -1574,24 +1196,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/928783243/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://www.birdiediskgolf.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1606,10 +1215,6 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-          "https://purehelp.no/company/NO/928783243",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000589501&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000100347&amp;sokeverdi=928783243&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000243289&amp;sokeverdi=928783243&amp;spraak=nb",
           "https://www.birdiediskgolf.no/",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
@@ -1620,154 +1225,309 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:47.691148Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "928783243",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "928783243",
-        "navn": "BIRDIE AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "85.510",
-        "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:47:21.579810Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2022",
+            "year": "2022"
+          }
+        ],
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "8c374bf734508b1ea0fbf1f1a0eeed9748acd85615f89aa36b87792380ad3477",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:47:14.804160Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 36925.0,
+            "assets": 120845.0,
+            "currency": "NOK",
+            "debt": 7608.0,
+            "equity": 113237.0,
+            "operating_result": 43875.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": 43693.0,
+            "record_id": 4995555,
+            "revenue": 650396.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -9963.0,
+            "assets": 99496.0,
+            "currency": "NOK",
+            "debt": -3779.0,
+            "equity": 103274.0,
+            "operating_result": -536.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": -10129.0,
+            "record_id": 5481401,
+            "revenue": 498573.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -394.0,
+            "assets": 131925.0,
+            "currency": "NOK",
+            "debt": 29045.0,
+            "equity": 102880.0,
+            "operating_result": 2482.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": 2481.0,
+            "record_id": 6526057,
+            "revenue": 600743.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:47:22.983629Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/928783243",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:47:23.688197Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Enervegen 48"
+              ],
+              "kommune": "HAMAR",
+              "kommunenummer": "3403",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "2322",
+              "poststed": "RIDABU"
+            },
+            "employees": null,
+            "industry": {
+              "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+              "kode": "85.510"
+            },
+            "name": "BIRDIE AS",
+            "organisation_number": "928953173"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "928783243",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Arrangementer, kursvirksomhet, design og konsulentvirksomhet hovedsakelig innen diskgolf.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.birdiediskgolf.no",
         "epostadresse": "post@birdiediskgolf.no",
-        "telefon": "",
-        "mobil": "",
-        "postadresse.adresse": "c/o Knut Ågestad Hummelvoll\nEnervegen 48",
-        "postadresse.poststed": "RIDABU",
-        "postadresse.postnummer": "2322",
-        "postadresse.kommune": "HAMAR",
-        "postadresse.kommunenummer": "3403",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Enervegen 48",
-        "forretningsadresse.poststed": "RIDABU",
-        "forretningsadresse.postnummer": "2322",
         "forretningsadresse.kommune": "HAMAR",
         "forretningsadresse.kommunenummer": "3403",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2022-02-21",
-        "stiftelsesdato": "2022-02-01",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2023-05-11",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-05-11",
+        "forretningsadresse.postnummer": "2322",
+        "forretningsadresse.poststed": "RIDABU",
+        "fravalgRevisjonBeslutningsDato": "2022-02-01",
+        "fravalgRevisjonDato": "2022-02-21",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2022-02-21",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.birdiediskgolf.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "30",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2022-02-21",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "",
+        "naeringskode1.beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+        "naeringskode1.kode": "85.510",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "BIRDIE AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "928783243",
+        "overordnetEnhet": "",
+        "paategninger": "true",
+        "postadresse.adresse": "c/o Knut Ågestad Hummelvoll\nEnervegen 48",
+        "postadresse.kommune": "HAMAR",
+        "postadresse.kommunenummer": "3403",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "2322",
+        "postadresse.poststed": "RIDABU",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2022-02-21",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "2023-05-11",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-05-11",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2022-02-21",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2022-02-01",
+        "telefon": "",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2022-02-01",
-        "vedtektsfestetFormaal": "Konsulenttjenester og arrangementer.",
-        "aktivitet": "Arrangementer, kursvirksomhet, design og konsulentvirksomhet hovedsakelig innen diskgolf.",
-        "paategninger": "true",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "2022-02-21",
-        "fravalgRevisjonBeslutningsDato": "2022-02-01",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "30",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2022-02-21",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "928783243",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:47.691148Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "928783243",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2022-02-01",
+        "vedtektsfestetFormaal": "Konsulenttjenester og arrangementer."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "f87eec9e23efa4a2543177f5dd03d6f2f39e6e74def5401e4a4352b1cf29bd04",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
+      "note": null,
       "retrieved_at": "2026-10-05T08:47:14.096601Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
+      "status": "available",
       "value": {
-        "organisation_number": "928783243",
-        "name": "BIRDIE AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.birdiediskgolf.no",
-        "industry": {
-          "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-          "kode": "85.510"
-        },
         "business_address": {
           "adresse": [
             "Enervegen 48"
@@ -1779,6 +1539,16 @@
           "postnummer": "2322",
           "poststed": "RIDABU"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
+          "kode": "85.510"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "BIRDIE AS",
+        "organisation_number": "928783243",
         "postal_address": {
           "adresse": [
             "c/o Knut Ågestad Hummelvoll",
@@ -1791,232 +1561,142 @@
           "postnummer": "2322",
           "poststed": "RIDABU"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f87eec9e23efa4a2543177f5dd03d6f2f39e6e74def5401e4a4352b1cf29bd04",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/928783243",
-      "retrieved_at": "2026-10-05T08:47:14.804160Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4995555,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 650396.0,
-            "operating_result": 43875.0,
-            "profit_before_tax": 43693.0,
-            "annual_result": 36925.0,
-            "assets": 120845.0,
-            "equity": 113237.0,
-            "debt": 7608.0
-          },
-          {
-            "record_id": 5481401,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 498573.0,
-            "operating_result": -536.0,
-            "profit_before_tax": -10129.0,
-            "annual_result": -9963.0,
-            "assets": 99496.0,
-            "equity": 103274.0,
-            "debt": -3779.0
-          },
-          {
-            "record_id": 6526057,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 600743.0,
-            "operating_result": 2482.0,
-            "profit_before_tax": 2481.0,
-            "annual_result": -394.0,
-            "assets": 131925.0,
-            "equity": 102880.0,
-            "debt": 29045.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "8c374bf734508b1ea0fbf1f1a0eeed9748acd85615f89aa36b87792380ad3477",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/aar",
-      "retrieved_at": "2026-10-05T08:47:21.579810Z",
-      "value": {
-        "years": [
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/928783243/2022"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.birdiediskgolf.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "73fcee41b75d8c831eb394dc848efea914cd8a6a366d50f9a02ad4b60c0ee3c6",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:47:22.288953Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Knut Ågestad Hummelvoll",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Sondre Skulstad",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2025-01-02",
             "name": [
               "RESSURS REGNSKAP AS"
             ],
             "organisation_number": "917446083",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2025-01-02",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "73fcee41b75d8c831eb394dc848efea914cd8a6a366d50f9a02ad4b60c0ee3c6",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/928783243",
-      "retrieved_at": "2026-10-05T08:47:22.983629Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
-      "retrieved_at": "2026-10-05T08:47:23.688197Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "928953173",
-            "name": "BIRDIE AS",
-            "address": {
-              "adresse": [
-                "Enervegen 48"
-              ],
-              "kommune": "HAMAR",
-              "kommunenummer": "3403",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "2322",
-              "poststed": "RIDABU"
-            },
-            "industry": {
-              "beskrivelse": "Undervisning innenfor idrett og rekreasjon",
-              "kode": "85.510"
-            },
-            "employees": null
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.birdiediskgolf.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:47:26.520385Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.birdiediskgolf.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.birdiediskgolf.no/",
-        "final_url": "https://www.birdiediskgolf.no/",
-        "registered_domain": "birdiediskgolf.no",
-        "title": "Hjem",
+        "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+        "crawl_errors": [],
         "description": "Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+        "discovered_social_links": [
+          {
+            "platform": "facebook",
+            "url": "https://facebook.com/birdiediskgolf"
+          },
+          {
+            "platform": "instagram",
+            "url": "https://instagram.com/birdie.diskgolf"
+          }
+        ],
+        "extraction_state": "js_fallback_candidate",
+        "final_url": "https://www.birdiediskgolf.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "birdie"
+          ],
+          "matched_tokens": [
+            "birdie"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
+          "reasons": [
+            "legal-name tokens appear in homepage identity evidence"
+          ],
+          "score": 0.9,
+          "status": "exact"
+        },
         "main_text_excerpt": "",
+        "pages": [
+          {
+            "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+            "main_text_excerpt": "",
+            "title": "Hjem",
+            "url": "https://www.birdiediskgolf.no/"
+          },
+          {
+            "content_sha256": "26d45e581f95130cf068e890b90ded938744ea6fb6e6d4af648fb381667a1fe3",
+            "main_text_excerpt": "Kontakt oss\nVi gleder oss til å høre fra deg!\n \nknut@birdiediskgolf.no\nsondre@birdiediskgolf.no\ntom.erik@birdiediskgolf.no",
+            "title": "Kontakt oss",
+            "url": "https://www.birdiediskgolf.no/kopi-av-ta-kontakt-med-meg/"
+          }
+        ],
+        "registered_domain": "birdiediskgolf.no",
+        "requested_url": "https://www.birdiediskgolf.no/",
+        "social_link_assessments": [
+          {
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "birdie"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": true,
+            "reason": "normalized legal-name sequence appears in the social handle",
+            "url": "https://facebook.com/birdiediskgolf"
+          },
+          {
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "birdie"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "instagram",
+            "publishable": true,
+            "reason": "normalized legal-name sequence appears in the social handle",
+            "url": "https://instagram.com/birdie.diskgolf"
+          }
+        ],
         "social_links": [
           {
             "platform": "facebook",
@@ -2028,88 +1708,72 @@
           }
         ],
         "structured_organisations": [],
-        "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
-        "extraction_state": "js_fallback_candidate",
-        "pages": [
-          {
-            "url": "https://www.birdiediskgolf.no/",
-            "title": "Hjem",
-            "main_text_excerpt": "",
-            "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6"
-          },
-          {
-            "url": "https://www.birdiediskgolf.no/kopi-av-ta-kontakt-med-meg/",
-            "title": "Kontakt oss",
-            "main_text_excerpt": "Kontakt oss\nVi gleder oss til å høre fra deg!\n \nknut@birdiediskgolf.no\nsondre@birdiediskgolf.no\ntom.erik@birdiediskgolf.no",
-            "content_sha256": "26d45e581f95130cf068e890b90ded938744ea6fb6e6d4af648fb381667a1fe3"
-          }
-        ],
-        "crawl_errors": [],
-        "identity_assessment": {
-          "status": "exact",
-          "score": 0.9,
-          "publishable": true,
-          "legal_name_tokens": [
-            "birdie"
-          ],
-          "matched_tokens": [
-            "birdie"
-          ],
-          "reasons": [
-            "legal-name tokens appear in homepage identity evidence"
-          ],
-          "method": "deterministic_name_org_evidence_v2"
-        },
-        "discovered_social_links": [
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/birdiediskgolf"
-          },
-          {
-            "platform": "instagram",
-            "url": "https://instagram.com/birdie.diskgolf"
-          }
-        ],
-        "social_link_assessments": [
-          {
-            "platform": "facebook",
-            "url": "https://facebook.com/birdiediskgolf",
-            "identity_score": 0.98,
-            "publishable": true,
-            "matched_tokens": [
-              "birdie"
-            ],
-            "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
-          },
-          {
-            "platform": "instagram",
-            "url": "https://instagram.com/birdie.diskgolf",
-            "identity_score": 0.98,
-            "publishable": true,
-            "matched_tokens": [
-              "birdie"
-            ],
-            "reason": "normalized legal-name sequence appears in the social handle",
-            "method": "deterministic_social_handle_identity_v1"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
-      "source_row_key": null,
-      "effective_at": null
+        "title": "Hjem"
+      }
     },
     "external_observations": [
+      {
+        "organisation_number": "928783243",
+        "platform": "company_site",
+        "source_url": "https://www.birdiediskgolf.no/",
+        "retrieved_at": "2026-10-09T13:54:41.260553Z",
+        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-a679a0fee88f81b2122c7afa",
+        "signal_type": "website_description",
+        "evidence_span": "Hjem — Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "928783243",
+        "platform": "company_site",
+        "source_url": "https://www.birdiediskgolf.no/",
+        "retrieved_at": "2026-10-05T08:47:26.520385Z",
+        "content_sha256": "8186c4fee5ecad4e5b297ef4b84b64f42c20c50f71536b0bf5c5b41afe5652e6",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.9
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-928783243-8186c4fee5ecad4e",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 2 bounded pages and 2 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 2,
+          "verified_social_links": 2,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        }
+      },
       {
         "id": "registry-contact-891c6a44770feaedc38a6827",
         "organisation_number": "928783243",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2134,7 +1798,7 @@
         "organisation_number": "928783243",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=928783243&size=1000",
-        "retrieved_at": "2026-09-29T10:14:17.158013Z",
+        "retrieved_at": "2026-10-05T08:47:23.688197Z",
         "content_sha256": "42623ec9e0683f5580fd5543c5ed6f3e8327e0e64675ad36c8147597156ea15e",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2164,7 +1828,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "64d07650437295cc1062c37d30457fe41c803c5c4f36b82a34ee8875acb444f3",
         "observed_at": "2026-05-06",
         "exact_entity": true,
@@ -2194,7 +1858,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "ad123167f65d3ff69bb38d815953456b028e4d23b5fada5d5ea36ca3b5205ed0",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2224,7 +1888,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "2e5446ce40438d0487de82ba7cca9bfa754e9485b8de3a4700170b59e100dfad",
         "observed_at": "2025-05-24",
         "exact_entity": true,
@@ -2254,7 +1918,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "601296824909e40af3ee9e2526c491fccd22d12803d0ccd3139575197d628f58",
         "observed_at": "2025-03-07",
         "exact_entity": true,
@@ -2284,7 +1948,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "915ff607d8ee249407709090ec20b38686da260ccee8a374c085520e1abdbdc2",
         "observed_at": "2024-06-25",
         "exact_entity": true,
@@ -2314,7 +1978,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "77c5adbe61842158360d18fa768be9cba3e845a48c9331a7a9e7a1be2161fd8a",
         "observed_at": "2023-06-28",
         "exact_entity": true,
@@ -2344,7 +2008,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "0aefb2b31db901823a738b9aade309fc355b7d0e9efaf2fd8a0fd514025ab07d",
         "observed_at": "2023-05-11",
         "exact_entity": true,
@@ -2374,7 +2038,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "fb7fa19e44a98d635c38f3938c8632d9836e74c6a997795ae784d0f9a0374eab",
         "observed_at": "2023-03-13",
         "exact_entity": true,
@@ -2404,7 +2068,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "f1bcdab1fd59cddf4171db61c51f689ab5081e6c094acacf9aba8e053889a5be",
         "observed_at": "2022-12-01",
         "exact_entity": true,
@@ -2434,7 +2098,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c963fc407604119270812f412e7837938d3cc9d663424d0de6660943a4ca80ea",
         "observed_at": "2022-03-19",
         "exact_entity": true,
@@ -2464,7 +2128,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/928783243",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "3df04a9632b1b55a488772c0d3b23bf1a27490847386267796ebdc49dd74171b",
         "observed_at": "2022-02-21",
         "exact_entity": true,
@@ -2576,490 +2240,74 @@
         "evidence_span": "Godkjente årsregnskap — 2024-06-24 (BRREG official announcement)"
       },
       {
-        "organisation_number": "928783243",
-        "platform": "facebook",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://www.birdiediskgolf.no/",
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "birdie"
-            ],
-            "name_token_gate": true,
-            "method": "linked_from_verified_site_v1"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "site_linked_social_handle",
-        "id": "site-social-928783243-facebook-76ea1a5e6fd56f68",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.birdiediskgolf.no/.",
-        "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/birdiediskgolf",
-          "identity_score": 0.98
-        }
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "instagram",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://www.birdiediskgolf.no/",
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "birdie"
-            ],
-            "name_token_gate": true,
-            "method": "linked_from_verified_site_v1"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "site_linked_social_handle",
-        "id": "site-social-928783243-instagram-73c2cd72b2c7c160",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the exact-identity-gated company website https://www.birdiediskgolf.no/.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/birdie.diskgolf",
-          "identity_score": 0.98
-        }
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "facebook",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-24T19:13:38.732134Z",
-        "content_sha256": "fc2547ee736eb47365cf689d2492aaa1ea5c4b8dfc0661fd6b46c136ed7bfb30",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://www.birdiediskgolf.no/",
-            "identity_score": 0.98,
-            "probe_method": "email_or_slug_probe_v1"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "probed_site_social_handle",
-        "id": "probed-social-928783243-facebook-76ea1a5e6fd56f68",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the probed verified company website https://www.birdiediskgolf.no/.",
-        "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/birdiediskgolf"
-        }
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "instagram",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-24T19:13:38.732134Z",
-        "content_sha256": "fc2547ee736eb47365cf689d2492aaa1ea5c4b8dfc0661fd6b46c136ed7bfb30",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "linked_from_verified_site",
-            "company_site_url": "https://www.birdiediskgolf.no/",
-            "identity_score": 0.98,
-            "probe_method": "email_or_slug_probe_v1"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "probed_site_social_handle",
-        "id": "probed-social-928783243-instagram-73c2cd72b2c7c160",
-        "signal_type": "profile_handle",
-        "evidence_span": "Social handle linked from the probed verified company website https://www.birdiediskgolf.no/.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/birdie.diskgolf"
-        }
-      },
-      {
+        "id": "registry-site-928783243-38793a69642ce43a",
         "organisation_number": "928783243",
         "platform": "company_site",
+        "signal_type": "website_description",
         "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+        "retrieved_at": "2026-09-29T10:14:20.252823Z",
+        "content_sha256": "38793a69642ce43aa7427ce0a9de58aecf1205bf82e7d54529266c14d355600e",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "registry_declared_website_domain_match",
+            "value": "birdiediskgolf.no",
+            "matched_organisation_number": "928783243",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares birdiediskgolf.no as the website of organisation 928783243; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-a679a0fee88f81b2122c7afa",
-        "signal_type": "website_description",
         "evidence_span": "Hjem — Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
         "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
+          "title": "Hjem",
+          "description": "Birdie er en virksomhet som tilbyr konsulenttjenester, kursvirksomhet, design og administering av arrangmenter innen diskgolf.",
+          "registry_domain": "birdiediskgolf.no"
+        },
+        "strategy": "registry_declared_website_description"
       },
       {
         "organisation_number": "928783243",
         "platform": "company_site",
         "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
+        "retrieved_at": "2026-09-29T10:14:20.252823Z",
+        "content_sha256": "38793a69642ce43aa7427ce0a9de58aecf1205bf82e7d54529266c14d355600e",
         "exact_entity": true,
         "identity_proof": [
+          {
+            "type": "registry_declared_domain_unique",
+            "domain": "birdiediskgolf.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-06",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
           {
             "type": "website_identity_gate",
             "status": "exact",
-            "score": 0.9
+            "score": 0.95
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-activity-928783243-f800cedcf9b2872a",
+        "id": "company-site-activity-928783243-38793a69642ce43a",
         "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 2 bounded pages and 2 verified social links.",
+        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
         "metrics": {
           "bounded_pages_captured": 2,
-          "verified_social_links": 2,
+          "verified_social_links": 0,
           "structured_organisation_records": 0,
           "extraction_state": "js_fallback_candidate",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        },
-        "observed_at": "2026-10-09"
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "facebook",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-928783243-f800cedcf9b2872a-facebook",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-        "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/birdiediskgolf"
-        },
-        "observed_at": "2026-10-09"
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "instagram",
-        "source_url": "https://www.birdiediskgolf.no/",
-        "retrieved_at": "2026-10-09T13:54:41.260553Z",
-        "content_sha256": "f800cedcf9b2872a602740f15488171989a44713bfa81e4390c0bfe3b117245f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-928783243-f800cedcf9b2872a-instagram",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/birdie.diskgolf"
-        },
-        "observed_at": "2026-10-09"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_approval_date-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 22.04.2026",
-        "metrics": {
-          "approval_date": "22.04.2026",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_auditor-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Ressurs Regnskap AS",
-        "metrics": {
-          "auditor": "Ressurs Regnskap AS",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_accounting_rules-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_business_address-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Enervegen 48",
-        "metrics": {
-          "business_address": "Enervegen 48",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_signing_officer-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-928783243-annual_report_org_number-2fe9b6c246e86363",
-        "organisation_number": "928783243",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/928783243-2025.pdf",
-        "retrieved_at": "2026-11-05T15:15:48.384467Z",
-        "content_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "928783243"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "928783243"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 928 783 243",
-        "metrics": {
-          "org_number": "928783243",
-          "ocr_text_sha256": "2fe9b6c246e86363e74b21474ca4cd044817d13408e9561327b6ba96be976729",
-          "ocr_chars": 1599
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/928783243",
-        "retrieved_at": "2026-11-05T21:10:16.191667Z",
-        "content_sha256": "f4774f699d505e1c9b5204dfbabb37561e82c039b5ce6cb710b9d01a1eaf4d28",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "928783243"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BIRDIE AS",
-            "matched_organisation_number": "928783243"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-928783243.orgNumber=928783243;name=BIRDIE AS",
-        "id": "purehelp-email-928783243-13cad362a5a80631",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "post@birdiediskgolf.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "928783243",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/928783243",
-        "retrieved_at": "2026-11-05T21:10:16.191667Z",
-        "content_sha256": "f4774f699d505e1c9b5204dfbabb37561e82c039b5ce6cb710b9d01a1eaf4d28",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "928783243"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "BIRDIE AS",
-            "matched_organisation_number": "928783243"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-928783243.orgNumber=928783243;name=BIRDIE AS",
-        "id": "purehelp-profile-928783243-13cad362a5a80631",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "85.510",
-          "nace_description": "Sports and recreation education",
-          "town": "RIDABU",
-          "zipcode": "2322",
-          "municipality": "HAMAR",
-          "municipality_number": "3403",
-          "county": "Innlandet",
-          "registration_date": "2022-02-21",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2022-02-21",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.birdiediskgolf.no"
         }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:34.620094+00:00"
+  "generated_at": "2026-11-07T07:28:29.375724+00:00"
 }

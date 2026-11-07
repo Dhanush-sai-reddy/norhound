@@ -9,6 +9,14 @@ A host belongs here when its observations cannot be published safely:
   official register. Publishing them would put unsourced financial figures
   into the output, so the host is excluded by default.
 
+* ``google.com`` — two independent reasons, either of which is enough.
+  The Google Places API requires an API key, so its rows cannot be reproduced
+  or re-verified by a run that must work without a credential. The other rows
+  were scraped from Google Maps map pages, which Google's Terms of Service
+  prohibit. Both are the same Maps/Places data reached by a route the source
+  policy does not allow, so the whole host is excluded by default. The
+  measured cost is in ``docs/evidence/keyless-google-exclusion-2026-11-07.md``.
+
 Exclusion is by registered host, so ``www.proff.no`` and any subdomain of
 ``proff.no`` are excluded too, while lookalike hosts such as
 ``proff.no.example.com`` are not.
@@ -18,7 +26,7 @@ from __future__ import annotations
 
 from urllib.parse import urlparse
 
-DEFAULT_EXCLUDED_HOSTS: tuple[str, ...] = ("proff.no",)
+DEFAULT_EXCLUDED_HOSTS: tuple[str, ...] = ("proff.no", "google.com")
 
 
 def source_host(source_url: str) -> str:

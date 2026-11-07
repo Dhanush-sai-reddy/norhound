@@ -141,6 +141,11 @@ def extract_observation(profile: dict) -> tuple[dict | None, dict]:
     title = str(value.get("title") or "").strip()
     description = str(value.get("description") or "").strip()
     if not title and not description:
+        # Some server-rendered pages carry no <title> and no meta description.
+        # The page's own extracted main text is the company's own words, and it
+        # comes from the bytes already captured and hashed for this page.
+        description = str(value.get("main_text_excerpt") or "").strip()
+    if not title and not description:
         return None, {**status, "reason": "no_extractable_text"}
 
     source_url = str(value.get("final_url") or website.get("source_url") or "")

@@ -50,6 +50,11 @@ def observations_for_profile(profile: dict[str, Any]) -> list[dict[str, Any]]:
     title = str(value.get("title") or "").strip()
     description = str(value.get("description") or "").strip()
     text = " — ".join(part for part in (title, description) if part)
+    if not text:
+        # Some server-rendered pages carry no <title> and no meta description.
+        # The page's own extracted main text is the company's own words, and it
+        # comes from the bytes already captured and hashed for this page.
+        text = str(value.get("main_text_excerpt") or "").strip()
     if text:
         observations.append({
             **base,

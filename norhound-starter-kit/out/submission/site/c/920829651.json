@@ -1,162 +1,322 @@
 {
   "profile": {
-    "organisation_number": "920829651",
-    "name": "SØRVEIV AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "KRISTIANSAND",
-    "municipality_number": "4204",
-    "industry_code": "90.390",
-    "industry_label": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-    "website": "www.sorveiv.no",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:41.103516Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "920829651",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "920829651",
-          "navn": "SØRVEIV AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "90.390",
-          "naeringskode1.beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "d88d94fb45ac5859506f8f8afdd85660a5379de004948dde108cf8398688c7ea",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:44.259172Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2022",
+              "year": "2022"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2021",
+              "year": "2021"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2020",
+              "year": "2020"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2019",
+              "year": "2019"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2018",
+              "year": "2018"
+            }
+          ],
+          "years": [
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "f64db286a1fd70e4081a2854dd7498f00e78bfaeeddbe8a1c6d8d205cb182800",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:40.079490Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -288204.0,
+              "assets": 721902.0,
+              "currency": "NOK",
+              "debt": 647328.0,
+              "equity": 74574.0,
+              "operating_result": -287079.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": -288204.0,
+              "record_id": 4882079,
+              "revenue": 1144266.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -102955.0,
+              "assets": 36624.0,
+              "currency": "NOK",
+              "debt": 65005.0,
+              "equity": -28381.0,
+              "operating_result": -101002.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": -102955.0,
+              "record_id": 6040405,
+              "revenue": 1338451.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -61492.0,
+              "assets": 51372.0,
+              "currency": "NOK",
+              "debt": 141246.0,
+              "equity": -89874.0,
+              "operating_result": -60066.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": -61492.0,
+              "record_id": 7131095,
+              "revenue": 830.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T09:06:45.708917Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/920829651",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T09:06:46.412036Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Skippergata 24B"
+                ],
+                "kommune": "KRISTIANSAND",
+                "kommunenummer": "4204",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "4611",
+                "poststed": "KRISTIANSAND S"
+              },
+              "employees": null,
+              "industry": {
+                "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+                "kode": "90.390"
+              },
+              "name": "SØRVEIV",
+              "organisation_number": "920965474"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "920829651",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Ideell musikkfestival og -konferanse med billettsalg.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.sorveiv.no",
           "epostadresse": "lena@sorveiv.no",
-          "telefon": "",
-          "mobil": "452 18 603",
-          "postadresse.adresse": "c/o Lena Bylund Andersen\nTønnevoldsgate 4",
-          "postadresse.poststed": "GRIMSTAD",
-          "postadresse.postnummer": "4877",
-          "postadresse.kommune": "GRIMSTAD",
-          "postadresse.kommunenummer": "4202",
-          "postadresse.land": "Norge",
-          "postadresse.landkode": "NO",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Skippergata 24B",
-          "forretningsadresse.poststed": "KRISTIANSAND S",
-          "forretningsadresse.postnummer": "4611",
           "forretningsadresse.kommune": "KRISTIANSAND",
           "forretningsadresse.kommunenummer": "4204",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2018-05-08",
-          "stiftelsesdato": "2018-04-12",
-          "registrertIMvaRegisteret": "true",
-          "registreringsdatoMerverdiavgiftsregisteret": "2018-09-01",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-01-25",
+          "forretningsadresse.postnummer": "4611",
+          "forretningsadresse.poststed": "KRISTIANSAND S",
+          "fravalgRevisjonBeslutningsDato": "2025-11-06",
+          "fravalgRevisjonDato": "2025-11-27",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "true",
-          "registreringsdatoFrivillighetsregisteret": "2019-08-23",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2018-05-08",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.sorveiv.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "30000",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2018-05-08",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "452 18 603",
+          "naeringskode1.beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+          "naeringskode1.kode": "90.390",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "SØRVEIV AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "920829651",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "c/o Lena Bylund Andersen\nTønnevoldsgate 4",
+          "postadresse.kommune": "GRIMSTAD",
+          "postadresse.kommunenummer": "4202",
+          "postadresse.land": "Norge",
+          "postadresse.landkode": "NO",
+          "postadresse.postnummer": "4877",
+          "postadresse.poststed": "GRIMSTAD",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2018-05-08",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "2019-08-23",
+          "registreringsdatoMerverdiavgiftsregisteret": "2018-09-01",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-01-25",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2018-05-08",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "true",
+          "registrertIMvaRegisteret": "true",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2018-04-12",
+          "telefon": "",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2023-11-01",
-          "vedtektsfestetFormaal": "Å bidra til en faglig og kunstnerisk utvikling av musikkbransjen på Sørlandet. Dette gjøres gjennom å arrangere en musikkfaglig festival og konferanse på et høyt kvalitativt nivå, for å synliggjøre regionens musikkliv og fremme sørlandsk musikkbransje både regionalt, nasjonalt og internasjonalt. Være en arena for utvikling av talenter innenfor musikk både på og bak scenen. Styrke Sørlandets livescene og musikkmiljø. Selskapet kan samarbeide med alle organisasjoner og institusjoner som fremmer dette formålet.",
-          "aktivitet": "Ideell musikkfestival og -konferanse med billettsalg.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "2025-11-27",
-          "fravalgRevisjonBeslutningsDato": "2025-11-06",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "30000",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2018-05-08",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "920829651",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:41.103516Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "920829651",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2023-11-01",
+          "vedtektsfestetFormaal": "Å bidra til en faglig og kunstnerisk utvikling av musikkbransjen på Sørlandet. Dette gjøres gjennom å arrangere en musikkfaglig festival og konferanse på et høyt kvalitativt nivå, for å synliggjøre regionens musikkliv og fremme sørlandsk musikkbransje både regionalt, nasjonalt og internasjonalt. Være en arena for utvikling av talenter innenfor musikk både på og bak scenen. Styrke Sørlandets livescene og musikkmiljø. Selskapet kan samarbeide med alle organisasjoner og institusjoner som fremmer dette formålet."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "1ff76cd56d97615c30458bd883147649676772843509709e1d3024c3227b22c6",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
+        "note": null,
         "retrieved_at": "2026-10-05T09:06:39.333046Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
+        "status": "available",
         "value": {
-          "organisation_number": "920829651",
-          "name": "SØRVEIV AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.sorveiv.no",
-          "industry": {
-            "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-            "kode": "90.390"
-          },
           "business_address": {
             "adresse": [
               "Skippergata 24B"
@@ -168,6 +328,16 @@
             "postnummer": "4611",
             "poststed": "KRISTIANSAND S"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+            "kode": "90.390"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "SØRVEIV AS",
+          "organisation_number": "920829651",
           "postal_address": {
             "adresse": [
               "c/o Lena Bylund Andersen",
@@ -180,271 +350,124 @@
             "postnummer": "4877",
             "poststed": "GRIMSTAD"
           },
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "1ff76cd56d97615c30458bd883147649676772843509709e1d3024c3227b22c6",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-        "retrieved_at": "2026-10-05T09:06:40.079490Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4882079,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 1144266.0,
-              "operating_result": -287079.0,
-              "profit_before_tax": -288204.0,
-              "annual_result": -288204.0,
-              "assets": 721902.0,
-              "equity": 74574.0,
-              "debt": 647328.0
-            },
-            {
-              "record_id": 6040405,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 1338451.0,
-              "operating_result": -101002.0,
-              "profit_before_tax": -102955.0,
-              "annual_result": -102955.0,
-              "assets": 36624.0,
-              "equity": -28381.0,
-              "debt": 65005.0
-            },
-            {
-              "record_id": 7131095,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 830.0,
-              "operating_result": -60066.0,
-              "profit_before_tax": -61492.0,
-              "annual_result": -61492.0,
-              "assets": 51372.0,
-              "equity": -89874.0,
-              "debt": 141246.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f64db286a1fd70e4081a2854dd7498f00e78bfaeeddbe8a1c6d8d205cb182800",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-        "retrieved_at": "2026-10-05T09:06:44.259172Z",
-        "value": {
-          "years": [
-            "2018",
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2022"
-            },
-            {
-              "year": "2021",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2021"
-            },
-            {
-              "year": "2020",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2020"
-            },
-            {
-              "year": "2019",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2019"
-            },
-            {
-              "year": "2018",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2018"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "d88d94fb45ac5859506f8f8afdd85660a5379de004948dde108cf8398688c7ea",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.sorveiv.no"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "8c77ea92b8524cc7d8935a2f5a7b62270fbb5f168ea08acd176237174b081bc0",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T09:06:45.027030Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
-              "name": "Lena Kristin Bylund Andersen",
-              "organisation_number": null,
-              "role_code": "DAGL",
-              "role": "Daglig leder",
-              "group_code": "DAGL",
               "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
               "last_changed": "2022-12-08",
-              "inactive": false
-            },
-            {
               "name": "Lena Kristin Bylund Andersen",
               "organisation_number": null,
-              "role_code": "LEDE",
-              "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-09-21",
-              "inactive": false
+              "role": "Daglig leder",
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-09-21",
+              "name": "Lena Kristin Bylund Andersen",
+              "organisation_number": null,
+              "role": "Styrets leder",
+              "role_code": "LEDE"
+            },
+            {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-09-21",
               "name": "Sturle Breivik",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-09-21",
-              "inactive": false
+              "role_code": "MEDL"
             },
             {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2024-02-15",
               "name": [
                 "LILLESAND REGNSKAP OG ØKONOMI AS"
               ],
               "organisation_number": "814447502",
-              "role_code": "REGN",
               "role": "Regnskapsfører",
-              "group_code": "REGN",
-              "group": "Regnskapsfører",
-              "last_changed": "2024-02-15",
-              "inactive": false
+              "role_code": "REGN"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "8c77ea92b8524cc7d8935a2f5a7b62270fbb5f168ea08acd176237174b081bc0",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/920829651",
-        "retrieved_at": "2026-10-05T09:06:45.708917Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
-        "retrieved_at": "2026-10-05T09:06:46.412036Z",
-        "value": {
-          "locations": [
-            {
-              "organisation_number": "920965474",
-              "name": "SØRVEIV",
-              "address": {
-                "adresse": [
-                  "Skippergata 24B"
-                ],
-                "kommune": "KRISTIANSAND",
-                "kommunenummer": "4204",
-                "land": "Norge",
-                "landkode": "NO",
-                "postnummer": "4611",
-                "poststed": "KRISTIANSAND S"
-              },
-              "industry": {
-                "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-                "kode": "90.390"
-              },
-              "employees": null
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
-        "field": "website",
-        "status": "blocked",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.sorveiv.no/",
-        "retrieved_at": "2026-10-05T09:06:46.438277Z",
-        "value": null,
         "as_of": null,
-        "note": "Hostname did not resolve",
         "content_sha256": null,
+        "effective_at": null,
+        "field": "website",
+        "note": "Hostname did not resolve",
+        "retrieved_at": "2026-10-05T09:06:46.438277Z",
+        "source_class": "registry_linked_company_website",
         "source_row_key": null,
-        "effective_at": null
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.sorveiv.no/",
+        "status": "blocked",
+        "value": null
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-04a9aa5834d03c743449e56e",
+          "organisation_number": "920829651",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
+          "retrieved_at": "2026-10-08T21:03:44.259035Z",
+          "content_sha256": "7169480b8171d3084dc6c2e3595ff39f51a745fcb1b9027ab13d369b143013b8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "920829651"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "920829651"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Selskapet har ikke hatt ansatte i Ispet av regnskapsaret.",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "employees",
+            "year": "2025",
+            "scope": "company_phrase",
+            "employees": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
         {
           "id": "registry-contact-7aa312f6b8d5057fa67b7c8c",
           "organisation_number": "920829651",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -471,8 +494,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -497,7 +520,7 @@
           "organisation_number": "920829651",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
-          "retrieved_at": "2026-09-29T10:33:12.677418Z",
+          "retrieved_at": "2026-10-05T09:06:46.412036Z",
           "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -527,7 +550,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "67e69f568347e11bcffe33369ca41b93e6c7e49beef6c0d93842462e7fa72e40",
           "observed_at": "2026-08-03",
           "exact_entity": true,
@@ -557,7 +580,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9e112f7297fbc7f1096a391489ce611f2e4e3c19be731aa3edaa781d8f94e095",
           "observed_at": "2025-11-27",
           "exact_entity": true,
@@ -587,7 +610,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "aec5a94915d0c9dcf8bd0dea4f080887b072ce07efb0126c462789498a166e0d",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -617,7 +640,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "91657b095a117b143db213ab187709e3a7fe97fd99ae3758231bc688ab3c3b3e",
           "observed_at": "2025-07-02",
           "exact_entity": true,
@@ -647,7 +670,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "1b452a3a27dab74a6dc6ade473445793fb0c1436f39e1e97fb071db6efa02ee8",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -677,7 +700,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "454e97bb184c06c78e3df6a80e29b0b3df20a29acb94a6a36fef2295e882c2f7",
           "observed_at": "2024-07-01",
           "exact_entity": true,
@@ -707,7 +730,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "824027b03d0cae24c832c934ac270db5157c7bf16fc88132fe668c5f38ad8140",
           "observed_at": "2024-06-06",
           "exact_entity": true,
@@ -737,7 +760,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "b0e8b703e6b686f4e27f1d729516301188f37f4c5836b365ed2a9a4625c991df",
           "observed_at": "2024-01-16",
           "exact_entity": true,
@@ -767,7 +790,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e3a56da595f7c1663265adb15c224855f203ce13e4b276ee2e801fb29f5473fa",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -797,7 +820,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "43c3b163f5abce5e6ed4967ba1373cb29954e4fe8b372058b928f643819182aa",
           "observed_at": "2023-11-30",
           "exact_entity": true,
@@ -827,7 +850,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "eb0274c7c6bd0c292e42a57d7a05b3ee6249b0a8615bcefea820e626bf502439",
           "observed_at": "2023-10-20",
           "exact_entity": true,
@@ -857,7 +880,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c7ed4017f490c84205e7c7663897e8261a43c3c3f2165f4d9c4339c6d1b1190f",
           "observed_at": "2023-06-24",
           "exact_entity": true,
@@ -887,7 +910,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "deb70fe4091be826e8c89153f0f202cac98a220fafc0bd06cc45edbc0531703f",
           "observed_at": "2023-01-25",
           "exact_entity": true,
@@ -917,7 +940,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "a9a701a5860cdbfdd425480f98f840623287f3fc90c2859d107d3a6a8ef18aed",
           "observed_at": "2022-12-08",
           "exact_entity": true,
@@ -947,7 +970,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "37d8e0d71007fe4ec023629f50d749d0f9873ef5d898dbc8787944e0f1b3c668",
           "observed_at": "2022-07-18",
           "exact_entity": true,
@@ -977,7 +1000,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "445d12cee3baadb53a6a11ab4723a13dc92779fd994036579c8e44d0eb751c75",
           "observed_at": "2022-07-05",
           "exact_entity": true,
@@ -1007,7 +1030,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "419b30a0fbd475e5ec34557265b8bf2009fd226d75a33c055baa53632f97b757",
           "observed_at": "2022-06-29",
           "exact_entity": true,
@@ -1037,7 +1060,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c8d16dadc8e7605b7c80c766c4c48cb4d4f9e85d0f65f7d4a16f4f70472da624",
           "observed_at": "2022-01-11",
           "exact_entity": true,
@@ -1067,7 +1090,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "bb80813bff314d274bcdf00c5601b7683a09410e31a72efa2f66a1ad704986d3",
           "observed_at": "2021-09-14",
           "exact_entity": true,
@@ -1177,302 +1200,19 @@
             "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb"
           },
           "evidence_span": "Styre — 2026-05-11 (BRREG official announcement)"
-        },
-        {
-          "id": "annual-workforce-59e03de8c7105d9da85c17b8",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
-          "retrieved_at": "2026-10-28T05:24:57.255720Z",
-          "content_sha256": "f16dbe327a25336aea83e23f10a218ea940070e56501d22cde061715948236d5",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Selskapet har ikke hatt ansatte i Ispet av regnskapsaret.",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "employees",
-            "year": "2025",
-            "scope": "company_phrase",
-            "employees": 0
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_approval_date-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_approval_date",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Dato for fastsettelse av årsregnskapet: 30.06.2026",
-          "metrics": {
-            "approval_date": "30.06.2026",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_auditor-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Lena Kristin Bylund Andersen",
-          "metrics": {
-            "auditor": "Lena Kristin Bylund Andersen",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_accounting_rules-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_business_address-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Skippergata 24B",
-          "metrics": {
-            "business_address": "Skippergata 24B",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_signing_officer-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_signing_officer",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-          "metrics": {
-            "signing_officer": "t.",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-920829651-annual_report_org_number-d891c3260ce9a712",
-          "organisation_number": "920829651",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-          "retrieved_at": "2026-11-05T16:09:04.561725Z",
-          "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "920829651"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "920829651"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 920 829 651",
-          "metrics": {
-            "org_number": "920829651",
-            "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-            "ocr_chars": 1621
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "920829651",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/920829651",
-          "retrieved_at": "2026-11-05T21:11:40.680560Z",
-          "content_sha256": "46df8358fbbe7b522e41790c54eb5151f4063b940bdd37684b0d3a88907650f0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "920829651"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "SØRVEIV AS",
-              "matched_organisation_number": "920829651"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-920829651.orgNumber=920829651;name=SØRVEIV AS",
-          "id": "purehelp-email-920829651-145513e0f11d0b1b",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "lena@sorveiv.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "920829651",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/920829651",
-          "retrieved_at": "2026-11-05T21:11:40.680560Z",
-          "content_sha256": "46df8358fbbe7b522e41790c54eb5151f4063b940bdd37684b0d3a88907650f0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "920829651"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "SØRVEIV AS",
-              "matched_organisation_number": "920829651"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-920829651.orgNumber=920829651;name=SØRVEIV AS",
-          "id": "purehelp-profile-920829651-145513e0f11d0b1b",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "90.390",
-            "nace_description": "Other support activities to arts and performing arts",
-            "town": "KRISTIANSAND S",
-            "zipcode": "4611",
-            "municipality": "KRISTIANSAND",
-            "municipality_number": "4204",
-            "county": "Agder",
-            "registration_date": "2018-05-08",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2018-05-08",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.sorveiv.no"
-          }
         }
       ]
     },
+    "industry_code": "90.390",
+    "industry_label": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "KRISTIANSAND",
+    "municipality_number": "4204",
+    "name": "SØRVEIV AS",
+    "organisation_number": "920829651",
     "run_metrics": {
-      "requests": 6,
       "bytes": 10822,
       "latencies_ms": [
         727,
@@ -1481,15 +1221,17 @@
         767,
         681,
         702
-      ]
-    }
+      ],
+      "requests": 6
+    },
+    "website": "www.sorveiv.no"
   },
   "summary": {
     "organisation_number": "920829651",
     "company_name": "SØRVEIV AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "SØRVEIV AS is a private limited company operating in Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet. Latest accounts (2025): revenue NOK 1.1m, annual result NOK -288.2k. Annual accounts available for 2018-2025 (8 years). Detailed records only available as PDFs. Revenue shrinking (-14.5% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); employees (registry returned no employee count).",
+    "summary": "SØRVEIV AS is a private limited company operating in Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet. Latest accounts (2025): revenue NOK 1.1m, annual result NOK -288.2k. Annual accounts available for 2018-2025 (8 years). Detailed records only available as PDFs. Revenue shrinking (-14.5% YoY). Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1503,12 +1245,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1524,12 +1261,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1545,12 +1277,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1566,12 +1293,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       },
@@ -1593,24 +1315,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/920829651/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1624,12 +1333,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-          "https://purehelp.no/company/NO/920829651",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000648319&amp;sokeverdi=920829651&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000753076&amp;sokeverdi=920829651&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
         ]
       }
@@ -1644,154 +1348,329 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:41.103516Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "920829651",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "920829651",
-        "navn": "SØRVEIV AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "90.390",
-        "naeringskode1.beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "d88d94fb45ac5859506f8f8afdd85660a5379de004948dde108cf8398688c7ea",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:44.259172Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2022",
+            "year": "2022"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2021",
+            "year": "2021"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2020",
+            "year": "2020"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2019",
+            "year": "2019"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2018",
+            "year": "2018"
+          }
+        ],
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "f64db286a1fd70e4081a2854dd7498f00e78bfaeeddbe8a1c6d8d205cb182800",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:40.079490Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -288204.0,
+            "assets": 721902.0,
+            "currency": "NOK",
+            "debt": 647328.0,
+            "equity": 74574.0,
+            "operating_result": -287079.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": -288204.0,
+            "record_id": 4882079,
+            "revenue": 1144266.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -102955.0,
+            "assets": 36624.0,
+            "currency": "NOK",
+            "debt": 65005.0,
+            "equity": -28381.0,
+            "operating_result": -101002.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": -102955.0,
+            "record_id": 6040405,
+            "revenue": 1338451.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -61492.0,
+            "assets": 51372.0,
+            "currency": "NOK",
+            "debt": 141246.0,
+            "equity": -89874.0,
+            "operating_result": -60066.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": -61492.0,
+            "record_id": 7131095,
+            "revenue": 830.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T09:06:45.708917Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/920829651",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T09:06:46.412036Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Skippergata 24B"
+              ],
+              "kommune": "KRISTIANSAND",
+              "kommunenummer": "4204",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "4611",
+              "poststed": "KRISTIANSAND S"
+            },
+            "employees": null,
+            "industry": {
+              "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+              "kode": "90.390"
+            },
+            "name": "SØRVEIV",
+            "organisation_number": "920965474"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "920829651",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Ideell musikkfestival og -konferanse med billettsalg.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.sorveiv.no",
         "epostadresse": "lena@sorveiv.no",
-        "telefon": "",
-        "mobil": "452 18 603",
-        "postadresse.adresse": "c/o Lena Bylund Andersen\nTønnevoldsgate 4",
-        "postadresse.poststed": "GRIMSTAD",
-        "postadresse.postnummer": "4877",
-        "postadresse.kommune": "GRIMSTAD",
-        "postadresse.kommunenummer": "4202",
-        "postadresse.land": "Norge",
-        "postadresse.landkode": "NO",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Skippergata 24B",
-        "forretningsadresse.poststed": "KRISTIANSAND S",
-        "forretningsadresse.postnummer": "4611",
         "forretningsadresse.kommune": "KRISTIANSAND",
         "forretningsadresse.kommunenummer": "4204",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2018-05-08",
-        "stiftelsesdato": "2018-04-12",
-        "registrertIMvaRegisteret": "true",
-        "registreringsdatoMerverdiavgiftsregisteret": "2018-09-01",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-01-25",
+        "forretningsadresse.postnummer": "4611",
+        "forretningsadresse.poststed": "KRISTIANSAND S",
+        "fravalgRevisjonBeslutningsDato": "2025-11-06",
+        "fravalgRevisjonDato": "2025-11-27",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "true",
-        "registreringsdatoFrivillighetsregisteret": "2019-08-23",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2018-05-08",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.sorveiv.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "30000",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2018-05-08",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "452 18 603",
+        "naeringskode1.beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+        "naeringskode1.kode": "90.390",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "SØRVEIV AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "920829651",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "c/o Lena Bylund Andersen\nTønnevoldsgate 4",
+        "postadresse.kommune": "GRIMSTAD",
+        "postadresse.kommunenummer": "4202",
+        "postadresse.land": "Norge",
+        "postadresse.landkode": "NO",
+        "postadresse.postnummer": "4877",
+        "postadresse.poststed": "GRIMSTAD",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2018-05-08",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "2019-08-23",
+        "registreringsdatoMerverdiavgiftsregisteret": "2018-09-01",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2023-01-25",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2018-05-08",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "true",
+        "registrertIMvaRegisteret": "true",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2018-04-12",
+        "telefon": "",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2023-11-01",
-        "vedtektsfestetFormaal": "Å bidra til en faglig og kunstnerisk utvikling av musikkbransjen på Sørlandet. Dette gjøres gjennom å arrangere en musikkfaglig festival og konferanse på et høyt kvalitativt nivå, for å synliggjøre regionens musikkliv og fremme sørlandsk musikkbransje både regionalt, nasjonalt og internasjonalt. Være en arena for utvikling av talenter innenfor musikk både på og bak scenen. Styrke Sørlandets livescene og musikkmiljø. Selskapet kan samarbeide med alle organisasjoner og institusjoner som fremmer dette formålet.",
-        "aktivitet": "Ideell musikkfestival og -konferanse med billettsalg.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "2025-11-27",
-        "fravalgRevisjonBeslutningsDato": "2025-11-06",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "30000",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2018-05-08",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "920829651",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:41.103516Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "920829651",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2023-11-01",
+        "vedtektsfestetFormaal": "Å bidra til en faglig og kunstnerisk utvikling av musikkbransjen på Sørlandet. Dette gjøres gjennom å arrangere en musikkfaglig festival og konferanse på et høyt kvalitativt nivå, for å synliggjøre regionens musikkliv og fremme sørlandsk musikkbransje både regionalt, nasjonalt og internasjonalt. Være en arena for utvikling av talenter innenfor musikk både på og bak scenen. Styrke Sørlandets livescene og musikkmiljø. Selskapet kan samarbeide med alle organisasjoner og institusjoner som fremmer dette formålet."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "1ff76cd56d97615c30458bd883147649676772843509709e1d3024c3227b22c6",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
+      "note": null,
       "retrieved_at": "2026-10-05T09:06:39.333046Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
+      "status": "available",
       "value": {
-        "organisation_number": "920829651",
-        "name": "SØRVEIV AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.sorveiv.no",
-        "industry": {
-          "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-          "kode": "90.390"
-        },
         "business_address": {
           "adresse": [
             "Skippergata 24B"
@@ -1803,6 +1682,16 @@
           "postnummer": "4611",
           "poststed": "KRISTIANSAND S"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
+          "kode": "90.390"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "SØRVEIV AS",
+        "organisation_number": "920829651",
         "postal_address": {
           "adresse": [
             "c/o Lena Bylund Andersen",
@@ -1815,271 +1704,124 @@
           "postnummer": "4877",
           "poststed": "GRIMSTAD"
         },
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "1ff76cd56d97615c30458bd883147649676772843509709e1d3024c3227b22c6",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/920829651",
-      "retrieved_at": "2026-10-05T09:06:40.079490Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4882079,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 1144266.0,
-            "operating_result": -287079.0,
-            "profit_before_tax": -288204.0,
-            "annual_result": -288204.0,
-            "assets": 721902.0,
-            "equity": 74574.0,
-            "debt": 647328.0
-          },
-          {
-            "record_id": 6040405,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 1338451.0,
-            "operating_result": -101002.0,
-            "profit_before_tax": -102955.0,
-            "annual_result": -102955.0,
-            "assets": 36624.0,
-            "equity": -28381.0,
-            "debt": 65005.0
-          },
-          {
-            "record_id": 7131095,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 830.0,
-            "operating_result": -60066.0,
-            "profit_before_tax": -61492.0,
-            "annual_result": -61492.0,
-            "assets": 51372.0,
-            "equity": -89874.0,
-            "debt": 141246.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f64db286a1fd70e4081a2854dd7498f00e78bfaeeddbe8a1c6d8d205cb182800",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/aar",
-      "retrieved_at": "2026-10-05T09:06:44.259172Z",
-      "value": {
-        "years": [
-          "2018",
-          "2019",
-          "2020",
-          "2021",
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2022"
-          },
-          {
-            "year": "2021",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2021"
-          },
-          {
-            "year": "2020",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2020"
-          },
-          {
-            "year": "2019",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2019"
-          },
-          {
-            "year": "2018",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2018"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "d88d94fb45ac5859506f8f8afdd85660a5379de004948dde108cf8398688c7ea",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.sorveiv.no"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "8c77ea92b8524cc7d8935a2f5a7b62270fbb5f168ea08acd176237174b081bc0",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T09:06:45.027030Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
-            "name": "Lena Kristin Bylund Andersen",
-            "organisation_number": null,
-            "role_code": "DAGL",
-            "role": "Daglig leder",
-            "group_code": "DAGL",
             "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
             "last_changed": "2022-12-08",
-            "inactive": false
-          },
-          {
             "name": "Lena Kristin Bylund Andersen",
             "organisation_number": null,
-            "role_code": "LEDE",
-            "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-09-21",
-            "inactive": false
+            "role": "Daglig leder",
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-09-21",
+            "name": "Lena Kristin Bylund Andersen",
+            "organisation_number": null,
+            "role": "Styrets leder",
+            "role_code": "LEDE"
+          },
+          {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-09-21",
             "name": "Sturle Breivik",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-09-21",
-            "inactive": false
+            "role_code": "MEDL"
           },
           {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2024-02-15",
             "name": [
               "LILLESAND REGNSKAP OG ØKONOMI AS"
             ],
             "organisation_number": "814447502",
-            "role_code": "REGN",
             "role": "Regnskapsfører",
-            "group_code": "REGN",
-            "group": "Regnskapsfører",
-            "last_changed": "2024-02-15",
-            "inactive": false
+            "role_code": "REGN"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "8c77ea92b8524cc7d8935a2f5a7b62270fbb5f168ea08acd176237174b081bc0",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/920829651",
-      "retrieved_at": "2026-10-05T09:06:45.708917Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
-      "retrieved_at": "2026-10-05T09:06:46.412036Z",
-      "value": {
-        "locations": [
-          {
-            "organisation_number": "920965474",
-            "name": "SØRVEIV",
-            "address": {
-              "adresse": [
-                "Skippergata 24B"
-              ],
-              "kommune": "KRISTIANSAND",
-              "kommunenummer": "4204",
-              "land": "Norge",
-              "landkode": "NO",
-              "postnummer": "4611",
-              "poststed": "KRISTIANSAND S"
-            },
-            "industry": {
-              "beskrivelse": "Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet",
-              "kode": "90.390"
-            },
-            "employees": null
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
-      "field": "website",
-      "status": "blocked",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.sorveiv.no/",
-      "retrieved_at": "2026-10-05T09:06:46.438277Z",
-      "value": null,
       "as_of": null,
-      "note": "Hostname did not resolve",
       "content_sha256": null,
+      "effective_at": null,
+      "field": "website",
+      "note": "Hostname did not resolve",
+      "retrieved_at": "2026-10-05T09:06:46.438277Z",
+      "source_class": "registry_linked_company_website",
       "source_row_key": null,
-      "effective_at": null
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.sorveiv.no/",
+      "status": "blocked",
+      "value": null
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-04a9aa5834d03c743449e56e",
+        "organisation_number": "920829651",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
+        "retrieved_at": "2026-10-08T21:03:44.259035Z",
+        "content_sha256": "7169480b8171d3084dc6c2e3595ff39f51a745fcb1b9027ab13d369b143013b8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "920829651"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "920829651"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Selskapet har ikke hatt ansatte i Ispet av regnskapsaret.",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "employees",
+          "year": "2025",
+          "scope": "company_phrase",
+          "employees": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
       {
         "id": "registry-contact-7aa312f6b8d5057fa67b7c8c",
         "organisation_number": "920829651",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2106,8 +1848,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2132,7 +1874,7 @@
         "organisation_number": "920829651",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=920829651&size=1000",
-        "retrieved_at": "2026-09-29T10:33:12.677418Z",
+        "retrieved_at": "2026-10-05T09:06:46.412036Z",
         "content_sha256": "b40a1ecf04b2483f90640176fde5b09cf098eb29176a26238f3b133813130055",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2162,7 +1904,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "67e69f568347e11bcffe33369ca41b93e6c7e49beef6c0d93842462e7fa72e40",
         "observed_at": "2026-08-03",
         "exact_entity": true,
@@ -2192,7 +1934,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9e112f7297fbc7f1096a391489ce611f2e4e3c19be731aa3edaa781d8f94e095",
         "observed_at": "2025-11-27",
         "exact_entity": true,
@@ -2222,7 +1964,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "aec5a94915d0c9dcf8bd0dea4f080887b072ce07efb0126c462789498a166e0d",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2252,7 +1994,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "91657b095a117b143db213ab187709e3a7fe97fd99ae3758231bc688ab3c3b3e",
         "observed_at": "2025-07-02",
         "exact_entity": true,
@@ -2282,7 +2024,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "1b452a3a27dab74a6dc6ade473445793fb0c1436f39e1e97fb071db6efa02ee8",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -2312,7 +2054,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "454e97bb184c06c78e3df6a80e29b0b3df20a29acb94a6a36fef2295e882c2f7",
         "observed_at": "2024-07-01",
         "exact_entity": true,
@@ -2342,7 +2084,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "824027b03d0cae24c832c934ac270db5157c7bf16fc88132fe668c5f38ad8140",
         "observed_at": "2024-06-06",
         "exact_entity": true,
@@ -2372,7 +2114,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "b0e8b703e6b686f4e27f1d729516301188f37f4c5836b365ed2a9a4625c991df",
         "observed_at": "2024-01-16",
         "exact_entity": true,
@@ -2402,7 +2144,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e3a56da595f7c1663265adb15c224855f203ce13e4b276ee2e801fb29f5473fa",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2432,7 +2174,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "43c3b163f5abce5e6ed4967ba1373cb29954e4fe8b372058b928f643819182aa",
         "observed_at": "2023-11-30",
         "exact_entity": true,
@@ -2462,7 +2204,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "eb0274c7c6bd0c292e42a57d7a05b3ee6249b0a8615bcefea820e626bf502439",
         "observed_at": "2023-10-20",
         "exact_entity": true,
@@ -2492,7 +2234,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c7ed4017f490c84205e7c7663897e8261a43c3c3f2165f4d9c4339c6d1b1190f",
         "observed_at": "2023-06-24",
         "exact_entity": true,
@@ -2522,7 +2264,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "deb70fe4091be826e8c89153f0f202cac98a220fafc0bd06cc45edbc0531703f",
         "observed_at": "2023-01-25",
         "exact_entity": true,
@@ -2552,7 +2294,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "a9a701a5860cdbfdd425480f98f840623287f3fc90c2859d107d3a6a8ef18aed",
         "observed_at": "2022-12-08",
         "exact_entity": true,
@@ -2582,7 +2324,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "37d8e0d71007fe4ec023629f50d749d0f9873ef5d898dbc8787944e0f1b3c668",
         "observed_at": "2022-07-18",
         "exact_entity": true,
@@ -2612,7 +2354,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "445d12cee3baadb53a6a11ab4723a13dc92779fd994036579c8e44d0eb751c75",
         "observed_at": "2022-07-05",
         "exact_entity": true,
@@ -2642,7 +2384,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "419b30a0fbd475e5ec34557265b8bf2009fd226d75a33c055baa53632f97b757",
         "observed_at": "2022-06-29",
         "exact_entity": true,
@@ -2672,7 +2414,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c8d16dadc8e7605b7c80c766c4c48cb4d4f9e85d0f65f7d4a16f4f70472da624",
         "observed_at": "2022-01-11",
         "exact_entity": true,
@@ -2702,7 +2444,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/920829651",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "bb80813bff314d274bcdf00c5601b7683a09410e31a72efa2f66a1ad704986d3",
         "observed_at": "2021-09-14",
         "exact_entity": true,
@@ -2812,299 +2554,8 @@
           "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000254405&amp;sokeverdi=920829651&amp;spraak=nb"
         },
         "evidence_span": "Styre — 2026-05-11 (BRREG official announcement)"
-      },
-      {
-        "id": "annual-workforce-59e03de8c7105d9da85c17b8",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/920829651/2025",
-        "retrieved_at": "2026-10-28T05:24:57.255720Z",
-        "content_sha256": "f16dbe327a25336aea83e23f10a218ea940070e56501d22cde061715948236d5",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Selskapet har ikke hatt ansatte i Ispet av regnskapsaret.",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "employees",
-          "year": "2025",
-          "scope": "company_phrase",
-          "employees": 0
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_approval_date-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_approval_date",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Dato for fastsettelse av årsregnskapet: 30.06.2026",
-        "metrics": {
-          "approval_date": "30.06.2026",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_auditor-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Lena Kristin Bylund Andersen",
-        "metrics": {
-          "auditor": "Lena Kristin Bylund Andersen",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_accounting_rules-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_business_address-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Skippergata 24B",
-        "metrics": {
-          "business_address": "Skippergata 24B",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_signing_officer-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_signing_officer",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Virksomheten sitt øverste organ er ansvarlig for at årsregnskapet er signert.",
-        "metrics": {
-          "signing_officer": "t.",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-920829651-annual_report_org_number-d891c3260ce9a712",
-        "organisation_number": "920829651",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/920829651-2025.pdf",
-        "retrieved_at": "2026-11-05T16:09:04.561725Z",
-        "content_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "920829651"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "920829651"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 920 829 651",
-        "metrics": {
-          "org_number": "920829651",
-          "ocr_text_sha256": "d891c3260ce9a712cc4849dd1679c04640c3d932d7f06c72147deecf6f7f90a6",
-          "ocr_chars": 1621
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "920829651",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/920829651",
-        "retrieved_at": "2026-11-05T21:11:40.680560Z",
-        "content_sha256": "46df8358fbbe7b522e41790c54eb5151f4063b940bdd37684b0d3a88907650f0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "920829651"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "SØRVEIV AS",
-            "matched_organisation_number": "920829651"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-920829651.orgNumber=920829651;name=SØRVEIV AS",
-        "id": "purehelp-email-920829651-145513e0f11d0b1b",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "lena@sorveiv.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "920829651",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/920829651",
-        "retrieved_at": "2026-11-05T21:11:40.680560Z",
-        "content_sha256": "46df8358fbbe7b522e41790c54eb5151f4063b940bdd37684b0d3a88907650f0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "920829651"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "SØRVEIV AS",
-            "matched_organisation_number": "920829651"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-920829651.orgNumber=920829651;name=SØRVEIV AS",
-        "id": "purehelp-profile-920829651-145513e0f11d0b1b",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "90.390",
-          "nace_description": "Other support activities to arts and performing arts",
-          "town": "KRISTIANSAND S",
-          "zipcode": "4611",
-          "municipality": "KRISTIANSAND",
-          "municipality_number": "4204",
-          "county": "Agder",
-          "registration_date": "2018-05-08",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2018-05-08",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.sorveiv.no"
-        }
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:40.849216+00:00"
+  "generated_at": "2026-11-07T07:28:38.423749+00:00"
 }

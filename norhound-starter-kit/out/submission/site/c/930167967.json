@@ -1,162 +1,281 @@
 {
   "profile": {
-    "organisation_number": "930167967",
-    "name": "EDUDIGI AS",
-    "legal_form": "AS",
-    "employees": null,
     "bankrupt": false,
-    "liquidating": false,
-    "municipality": "ALTA",
-    "municipality_number": "5601",
-    "industry_code": "74.130",
-    "industry_label": "Interiørdesignvirksomhet",
-    "website": "www.edudigi.no/",
-    "latest_submitted_accounts": "2025",
+    "employees": null,
     "evidence": {
-      "registry": {
-        "field": "registry",
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:48.944138Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "930167967",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
         "status": "available",
-        "source_type": "official_registry_bulk",
-        "source_class": "official_registry_bulk",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
         "value": {
-          "organisasjonsnummer": "930167967",
-          "navn": "EDUDIGI AS",
-          "organisasjonsform.kode": "AS",
-          "organisasjonsform.beskrivelse": "Aksjeselskap",
-          "naeringskode1.kode": "74.130",
-          "naeringskode1.beskrivelse": "Interiørdesignvirksomhet",
-          "naeringskode2.kode": "",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode3.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
-          "hjelpeenhetskode.beskrivelse": "",
-          "harRegistrertAntallAnsatte": "false",
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:52.810160Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2022",
+              "year": "2022"
+            }
+          ],
+          "years": [
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "f3c0ca5b7fe5814e7964b7384abdcbbce114786f336b5ede43c5ec618941d6dc",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:51.718716Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -14326.0,
+              "assets": 729.0,
+              "currency": "NOK",
+              "debt": 10237.0,
+              "equity": -9508.0,
+              "operating_result": -14326.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": -14326.0,
+              "record_id": 4653035,
+              "revenue": 10690.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -6395.0,
+              "assets": 907.0,
+              "currency": "NOK",
+              "debt": 16811.0,
+              "equity": -15904.0,
+              "operating_result": -6395.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": -6395.0,
+              "record_id": 5611269,
+              "revenue": 6781.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": -8308.0,
+              "assets": 514.0,
+              "currency": "NOK",
+              "debt": 24726.0,
+              "equity": -24212.0,
+              "operating_result": -8308.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": -8308.0,
+              "record_id": 7000880,
+              "revenue": 242.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-10-05T08:38:54.231510Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/930167967",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "f47603c240f44b6b8e39f9d1a637039f231b6ae0e1dfd3757b066d34b8461f03",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:38:54.951476Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
+        "status": "available",
+        "value": {
+          "locations": []
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "930167967",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": "Interiørdesign, utvikling, drift og vedlikehold av digitale plattformer.",
           "antallAnsatte": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "",
-          "hjemmeside": "www.edudigi.no/",
           "epostadresse": "kontakt@edudigi.no",
-          "telefon": "",
-          "mobil": "977 94 103",
-          "postadresse.adresse": "",
-          "postadresse.poststed": "",
-          "postadresse.postnummer": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
+          "erIKonsern": "false",
+          "foretaksformIHjemlandet.beskrivelse": "",
+          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+          "foretaksformIHjemlandet.kode": "",
           "forretningsadresse.adresse": "Grepplyngveien 8C",
-          "forretningsadresse.poststed": "ALTA",
-          "forretningsadresse.postnummer": "9514",
           "forretningsadresse.kommune": "ALTA",
           "forretningsadresse.kommunenummer": "5601",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
-          "institusjonellSektorkode.kode": "2100",
-          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-          "sisteInnsendteAarsregnskap": "2025",
-          "registreringsdatoenhetsregisteret": "2022-11-05",
-          "stiftelsesdato": "2022-10-05",
-          "registrertIMvaRegisteret": "false",
-          "registreringsdatoMerverdiavgiftsregisteret": "",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "forretningsadresse.postnummer": "9514",
+          "forretningsadresse.poststed": "ALTA",
+          "fravalgRevisjonBeslutningsDato": "2022-10-05",
+          "fravalgRevisjonDato": "2022-11-05",
           "frivilligMvaRegistrertBeskrivelser": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registrertIFrivillighetsregisteret": "false",
-          "registreringsdatoFrivillighetsregisteret": "",
-          "registrertIForetaksregisteret": "true",
-          "registreringsdatoForetaksregisteret": "2022-11-05",
-          "registrertIStiftelsesregisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registreringsdatoPartiregisteret": "",
+          "harRegistrertAntallAnsatte": "false",
+          "hjelpeenhetskode.beskrivelse": "",
+          "hjelpeenhetskode.kode": "",
+          "hjemmeside": "www.edudigi.no/",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": "100",
+          "kapital.belop": "30000.00",
+          "kapital.bundet": "",
+          "kapital.fulltInnbetalt": "",
+          "kapital.innbetalt": "",
+          "kapital.innfortDato": "2022-11-05",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
           "konkurs": "false",
           "konkursdato": "",
+          "maalform": "Bokmål",
+          "mobil": "977 94 103",
+          "naeringskode1.beskrivelse": "Interiørdesignvirksomhet",
+          "naeringskode1.kode": "74.130",
+          "naeringskode2.beskrivelse": "",
+          "naeringskode2.kode": "",
+          "naeringskode3.beskrivelse": "",
+          "naeringskode3.kode": "",
+          "navn": "EDUDIGI AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsnummer": "930167967",
+          "overordnetEnhet": "",
+          "paategninger": "false",
+          "postadresse.adresse": "",
+          "postadresse.kommune": "",
+          "postadresse.kommunenummer": "",
+          "postadresse.land": "",
+          "postadresse.landkode": "",
+          "postadresse.postnummer": "",
+          "postadresse.poststed": "",
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+          "registreringsdatoForetaksregisteret": "2022-11-05",
+          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "registreringsdatoFrivillighetsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteret": "",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+          "registreringsdatoPartiregisteret": "",
+          "registreringsdatoantallansatteNAVAaregisteret": "",
+          "registreringsdatoenhetsregisteret": "2022-11-05",
+          "registreringsnummerIHjemlandet": "",
+          "registrertIForetaksregisteret": "true",
+          "registrertIFrivillighetsregisteret": "false",
+          "registrertIMvaRegisteret": "false",
+          "registrertIPartiregisteret": "false",
+          "registrertIStiftelsesregisteret": "false",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "2022-10-05",
+          "telefon": "",
+          "tvangsavvikletPgaManglendeSlettingDato": "",
+          "tvangsopplostPgaMangelfulltStyreDato": "",
+          "tvangsopplostPgaManglendeDagligLederDato": "",
+          "tvangsopplostPgaManglendeRegnskapDato": "",
+          "tvangsopplostPgaManglendeRevisorDato": "",
           "underAvvikling": "false",
           "underAvviklingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "overordnetEnhet": "",
-          "maalform": "Bokmål",
-          "vedtektsdato": "2025-04-08",
-          "vedtektsfestetFormaal": "Å drive med utvikling, drift og vedlikehold av digitale plattformer, inkludert en portal for lærere med fokus på deling av undervisningsopplegg, tilgang til ferdige ressurser og muligheten til å tjene penger på eget arbeid.",
-          "aktivitet": "Interiørdesign, utvikling, drift og vedlikehold av digitale plattformer.",
-          "paategninger": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
           "underRekonstruksjonsforhandlingDato": "",
-          "fravalgRevisjonDato": "2022-11-05",
-          "fravalgRevisjonBeslutningsDato": "2022-10-05",
-          "erIKonsern": "false",
-          "kapital.belop": "30000.00",
-          "kapital.antallAksjer": "100",
-          "kapital.type": "Aksjekapital",
-          "kapital.bundet": "",
-          "kapital.valuta": "NOK",
-          "kapital.innbetalt": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innfortDato": "2022-11-05",
-          "registreringsnummerIHjemlandet": "",
-          "utenlandskRegisterNavn": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterAdresse.adresse": "",
+          "underTvangsavviklingEllerTvangsopplosning": "false",
+          "underUtenlandskInsolvensbehandlingDato": "",
           "underlagtLovgivningLand": "",
           "underlagtLovgivningLandKode": "",
-          "foretaksformIHjemlandet.kode": "",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-        "source_row_key": "930167967",
-        "effective_at": null
-      },
-      "accounting_obligation": {
-        "field": "accounting_obligation",
-        "status": "available",
-        "source_type": "official_rule_interpretation",
-        "source_class": "official_rule_interpretation",
-        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-        "retrieved_at": "2026-10-05T08:34:48.944138Z",
-        "value": {
-          "classification": "filing_observed",
-          "legal_form": "AS",
-          "latest_submitted_accounts": "2025",
-          "reason": "The registry snapshot reports a latest submitted annual-account year.",
-          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-        },
-        "as_of": "2024-08-09",
-        "note": null,
-        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-        "source_row_key": "930167967",
-        "effective_at": null
+          "utenlandskRegisterAdresse.adresse": "",
+          "utenlandskRegisterAdresse.land": "",
+          "utenlandskRegisterAdresse.poststed": "",
+          "utenlandskRegisterNavn": "",
+          "vedtektsdato": "2025-04-08",
+          "vedtektsfestetFormaal": "Å drive med utvikling, drift og vedlikehold av digitale plattformer, inkludert en portal for lærere med fokus på deling av undervisningsopplegg, tilgang til ferdige ressurser og muligheten til å tjene penger på eget arbeid."
+        }
       },
       "registry_live": {
+        "as_of": null,
+        "content_sha256": "29c0a4353d580a9a8ab5d75947945851e87291ef7584961f0b25eed823ccdeee",
+        "effective_at": null,
         "field": "registry_live",
-        "status": "available",
-        "source_type": "official_registry_live",
-        "source_class": "official_registry_live",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
+        "note": null,
         "retrieved_at": "2026-10-05T08:38:51.003534Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
+        "status": "available",
         "value": {
-          "organisation_number": "930167967",
-          "name": "EDUDIGI AS",
-          "legal_form": "AS",
-          "employees": null,
           "bankrupt": false,
-          "liquidating": false,
-          "website": "www.edudigi.no/",
-          "industry": {
-            "beskrivelse": "Interiørdesignvirksomhet",
-            "kode": "74.130"
-          },
           "business_address": {
             "adresse": [
               "Grepplyngveien 8C"
@@ -168,256 +287,214 @@
             "postnummer": "9514",
             "poststed": "ALTA"
           },
+          "employees": null,
+          "industry": {
+            "beskrivelse": "Interiørdesignvirksomhet",
+            "kode": "74.130"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "EDUDIGI AS",
+          "organisation_number": "930167967",
           "postal_address": null,
-          "latest_submitted_accounts": "2025"
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "29c0a4353d580a9a8ab5d75947945851e87291ef7584961f0b25eed823ccdeee",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financials": {
-        "field": "financials",
-        "status": "available",
-        "source_type": "official_annual_accounts",
-        "source_class": "official_annual_accounts",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-        "retrieved_at": "2026-10-05T08:38:51.718716Z",
-        "value": {
-          "records": [
-            {
-              "record_id": 4653035,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2023-01-01",
-                "tilDato": "2023-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 10690.0,
-              "operating_result": -14326.0,
-              "profit_before_tax": -14326.0,
-              "annual_result": -14326.0,
-              "assets": 729.0,
-              "equity": -9508.0,
-              "debt": 10237.0
-            },
-            {
-              "record_id": 5611269,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2024-01-01",
-                "tilDato": "2024-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 6781.0,
-              "operating_result": -6395.0,
-              "profit_before_tax": -6395.0,
-              "annual_result": -6395.0,
-              "assets": 907.0,
-              "equity": -15904.0,
-              "debt": 16811.0
-            },
-            {
-              "record_id": 7000880,
-              "account_type": "SELSKAP",
-              "period": {
-                "fraDato": "2025-01-01",
-                "tilDato": "2025-12-31"
-              },
-              "currency": "NOK",
-              "revenue": 242.0,
-              "operating_result": -8308.0,
-              "profit_before_tax": -8308.0,
-              "annual_result": -8308.0,
-              "assets": 514.0,
-              "equity": -24212.0,
-              "debt": 24726.0
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f3c0ca5b7fe5814e7964b7384abdcbbce114786f336b5ede43c5ec618941d6dc",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "financial_history": {
-        "field": "financial_history",
-        "status": "available",
-        "source_type": "official_annual_account_copies",
-        "source_class": "official_annual_account_copies",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-        "retrieved_at": "2026-10-05T08:38:52.810160Z",
-        "value": {
-          "years": [
-            "2022",
-            "2023",
-            "2024",
-            "2025"
-          ],
-          "pdfs": [
-            {
-              "year": "2025",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025"
-            },
-            {
-              "year": "2024",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2024"
-            },
-            {
-              "year": "2023",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2023"
-            },
-            {
-              "year": "2022",
-              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2022"
-            }
-          ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-        "source_row_key": null,
-        "effective_at": null
+          "website": "www.edudigi.no/"
+        }
       },
       "roles": {
+        "as_of": null,
+        "content_sha256": "b238c973e4cbd5339d2b8bcbc01749ca3073a653e944f7cadab0d1dfc3435dad",
+        "effective_at": null,
         "field": "roles",
-        "status": "available",
-        "source_type": "official_roles",
-        "source_class": "official_roles",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967/roller",
+        "note": null,
         "retrieved_at": "2026-10-05T08:38:53.524226Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967/roller",
+        "status": "available",
         "value": {
           "roles": [
             {
+              "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
+              "last_changed": "2022-11-05",
               "name": "Lena-Marie Digre Tørresvold",
               "organisation_number": null,
-              "role_code": "DAGL",
               "role": "Daglig leder",
-              "group_code": "DAGL",
-              "group": "Daglig leder",
-              "last_changed": "2022-11-05",
-              "inactive": false
+              "role_code": "DAGL"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Mirjam Kulstad Næss",
               "organisation_number": null,
-              "role_code": "LEDE",
               "role": "Styrets leder",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "LEDE"
             },
             {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2026-02-07",
               "name": "Lena-Marie Digre Tørresvold",
               "organisation_number": null,
-              "role_code": "MEDL",
               "role": "Styremedlem",
-              "group_code": "STYR",
-              "group": "Styre",
-              "last_changed": "2026-02-07",
-              "inactive": false
+              "role_code": "MEDL"
             }
           ]
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "b238c973e4cbd5339d2b8bcbc01749ca3073a653e944f7cadab0d1dfc3435dad",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "group": {
-        "field": "group",
-        "status": "not_found",
-        "source_type": "official_group_structure",
-        "source_class": "official_group_structure",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/930167967",
-        "retrieved_at": "2026-10-05T08:38:54.231510Z",
-        "value": null,
-        "as_of": null,
-        "note": "HTTP 404",
-        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "source_row_key": null,
-        "effective_at": null
-      },
-      "locations": {
-        "field": "locations",
-        "status": "available",
-        "source_type": "official_subunits",
-        "source_class": "official_subunits",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
-        "retrieved_at": "2026-10-05T08:38:54.951476Z",
-        "value": {
-          "locations": []
-        },
-        "as_of": null,
-        "note": null,
-        "content_sha256": "f47603c240f44b6b8e39f9d1a637039f231b6ae0e1dfd3757b066d34b8461f03",
-        "source_row_key": null,
-        "effective_at": null
+        }
       },
       "website": {
+        "as_of": null,
+        "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+        "effective_at": null,
         "field": "website",
-        "status": "available",
-        "source_type": "registry_linked_company_website",
-        "source_class": "registry_linked_company_website",
-        "source_url": "https://www.edudigi.no/",
+        "note": "Company-controlled claim layer; not an official registry fact",
         "retrieved_at": "2026-10-05T08:38:58.873766Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://www.edudigi.no/",
+        "status": "available",
         "value": {
-          "requested_url": "https://www.edudigi.no/",
-          "final_url": "https://www.edudigi.no/",
-          "registered_domain": "edudigi.no",
-          "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
-          "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
-          "main_text_excerpt": "",
-          "social_links": [],
-          "structured_organisations": [],
           "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
-          "extraction_state": "js_fallback_candidate",
-          "pages": [
-            {
-              "url": "https://www.edudigi.no/",
-              "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
-              "main_text_excerpt": "",
-              "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf"
-            }
-          ],
           "crawl_errors": [],
+          "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+          "discovered_social_links": [],
+          "extraction_state": "js_fallback_candidate",
+          "final_url": "https://www.edudigi.no/",
           "identity_assessment": {
-            "status": "exact",
-            "score": 0.9,
-            "publishable": true,
             "legal_name_tokens": [
               "edudigi"
             ],
             "matched_tokens": [
               "edudigi"
             ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
             "reasons": [
               "legal-name tokens appear in homepage identity evidence"
             ],
-            "method": "deterministic_name_org_evidence_v2"
+            "score": 0.9,
+            "status": "exact"
           },
-          "discovered_social_links": [],
-          "social_link_assessments": []
-        },
-        "as_of": null,
-        "note": "Company-controlled claim layer; not an official registry fact",
-        "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
-        "source_row_key": null,
-        "effective_at": null
+          "main_text_excerpt": "",
+          "pages": [
+            {
+              "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+              "main_text_excerpt": "",
+              "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
+              "url": "https://www.edudigi.no/"
+            }
+          ],
+          "registered_domain": "edudigi.no",
+          "requested_url": "https://www.edudigi.no/",
+          "social_link_assessments": [],
+          "social_links": [],
+          "structured_organisations": [],
+          "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell"
+        }
       },
       "external_observations": [
+        {
+          "id": "annual-workforce-7971be980d818d1ec2cc6011",
+          "organisation_number": "930167967",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
+          "retrieved_at": "2026-10-08T17:35:58.748302Z",
+          "content_sha256": "4de69749b7e9796825942463809d817d5852d2201b2b7e863d8c4b540bdcb0db",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "official_report_url_organisation_number",
+              "value": "930167967"
+            },
+            {
+              "type": "organisation_number_in_pdf",
+              "value": "930167967"
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_annual_account_copy",
+          "evidence_span": "Antall Aarsverk i regnskapsaret\n0.00",
+          "effective_at": "2025",
+          "metrics": {
+            "workforce_value": 0,
+            "measure": "full_time_equivalents",
+            "year": "2025",
+            "scope": "company_phrase",
+            "full_time_equivalents": 0
+          },
+          "strategy": "annual_report_workforce_snapshot"
+        },
+        {
+          "organisation_number": "930167967",
+          "platform": "company_site",
+          "source_url": "https://www.edudigi.no/",
+          "retrieved_at": "2026-10-09T13:51:16.940824Z",
+          "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.9,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-a24526aad598141246877b48",
+          "signal_type": "website_description",
+          "evidence_span": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell — Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "930167967",
+          "platform": "company_site",
+          "source_url": "https://www.edudigi.no/",
+          "retrieved_at": "2026-10-05T08:38:58.873766Z",
+          "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.9
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-930167967-7433ef4d913155a9",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 1,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          }
+        },
         {
           "id": "registry-contact-7c0a1303b4228d20b834cf43",
           "organisation_number": "930167967",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -444,8 +521,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-09-29T10:02:25.550213Z",
-          "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+          "retrieved_at": "2026-10-05T08:34:31.959772Z",
+          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -472,7 +549,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "4f04b42af1c692310887dccc39a8f9f8af564bd05502849892dd1ece555b2b58",
           "observed_at": "2026-07-20",
           "exact_entity": true,
@@ -502,7 +579,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "3dc09abda041a28d89efa74547501a04c4028c4344a8d29c3794ad5a5a143e7f",
           "observed_at": "2026-04-29",
           "exact_entity": true,
@@ -532,7 +609,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "0469b257406a55a9a551e82500f6c15d1f254242e95db3425d4cb06078fcefd5",
           "observed_at": "2026-02-08",
           "exact_entity": true,
@@ -562,7 +639,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "c279859e130a754bf967f0e333063262bf792c50f15f96c680f0156c1c4ac1cc",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -592,7 +669,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "8f7cc57c23715e0a366ed4688d784d386e119b8c0bc9c002828ce9be1efcfa84",
           "observed_at": "2025-04-28",
           "exact_entity": true,
@@ -622,7 +699,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "9617e81877411940cdb630fb701f8ec8b14500a7dbc7a6074822d16b0a57fba0",
           "observed_at": "2025-04-16",
           "exact_entity": true,
@@ -652,7 +729,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "e961a42eeca0d0b98370ce3673b3236a7a42fc0e13b0ed541976c852a79f83a0",
           "observed_at": "2025-04-15",
           "exact_entity": true,
@@ -682,7 +759,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "5133586992124f3416a28850d7b7f6f74886bacac11148698aef48cab9480e41",
           "observed_at": "2024-04-08",
           "exact_entity": true,
@@ -712,7 +789,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "4386bb505ab94333036b3833b570ae3fc8abdc073b912476beda0e7f7cd2c65b",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -742,7 +819,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "39cbe4e4fe3b9280a0d937c6781dc7613caaa889df274a1eb274dd39eca6fbb8",
           "observed_at": "2024-02-26",
           "exact_entity": true,
@@ -772,7 +849,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "04f4ce2537f93e35a641eeb38d1e3d4f4cf757274949698f2e394bd885460335",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -802,7 +879,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "8e7d62f2c833bfe7e9b633e8a6a33e9aa68bf40b7f5ae93f28cdbd3f222ca3ea",
           "observed_at": "2023-07-11",
           "exact_entity": true,
@@ -832,7 +909,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "24302944cc759931a143733c1c112534165c29f96e550d76b8c3c8baadbbf58c",
           "observed_at": "2022-11-09",
           "exact_entity": true,
@@ -862,7 +939,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "retrieved_at": "2026-09-29T10:44:00.020607Z",
+          "retrieved_at": "2026-11-06T14:47:49.419792Z",
           "content_sha256": "90d7768b305fb5976f77d555d2823c40fa7dc50021faa33e4174009e75d58e75",
           "observed_at": "2022-11-05",
           "exact_entity": true,
@@ -974,295 +1051,48 @@
           "evidence_span": "Godkjente årsregnskap — 2025-04-28 (BRREG official announcement)"
         },
         {
+          "id": "registry-site-930167967-7433ef4d913155a9",
           "organisation_number": "930167967",
           "platform": "company_site",
+          "signal_type": "website_description",
           "source_url": "https://www.edudigi.no/",
-          "retrieved_at": "2026-10-09T13:51:16.940824Z",
-          "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
+          "retrieved_at": "2026-09-29T10:06:28.563160Z",
+          "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.9,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "registry_declared_website_domain_match",
+              "value": "edudigi.no",
+              "matched_organisation_number": "930167967",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-09-29T10:02:25.550213Z",
+              "explanation": "BRREG declares edudigi.no as the website of organisation 930167967; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-a24526aad598141246877b48",
-          "signal_type": "website_description",
           "evidence_span": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell — Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
           "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
-        },
-        {
-          "organisation_number": "930167967",
-          "platform": "company_site",
-          "source_url": "https://www.edudigi.no/",
-          "retrieved_at": "2026-10-09T13:51:16.940824Z",
-          "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.9
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-930167967-2eda558e71563e63",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 1,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "js_fallback_candidate",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+            "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
+            "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+            "registry_domain": "edudigi.no"
           },
-          "observed_at": "2026-10-09"
-        },
-        {
-          "id": "annual-workforce-a1c30795ba680f228da687ab",
-          "organisation_number": "930167967",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
-          "retrieved_at": "2026-10-28T04:37:55.022907Z",
-          "content_sha256": "74d94ffd90c3e8ab31b9f70d6b8eea819413111d9cd35b418aed4fd24b19c2ba",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "930167967"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "930167967"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Antall Aarsverk i regnskapsaret\n0.00",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 0,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 0
-          },
-          "strategy": "annual_report_workforce_snapshot",
-          "observed_at": "2025"
-        },
-        {
-          "id": "ar-page1-930167967-annual_report_auditor-7fb245d6689b218b",
-          "organisation_number": "930167967",
-          "platform": "brreg",
-          "signal_type": "annual_report_auditor",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-          "retrieved_at": "2026-11-05T14:51:02.075117Z",
-          "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "930167967"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "930167967"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Bekreftet av: Mirjam Kulstad Næss",
-          "metrics": {
-            "auditor": "Mirjam Kulstad Næss",
-            "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-            "ocr_chars": 1374
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-930167967-annual_report_accounting_rules-7fb245d6689b218b",
-          "organisation_number": "930167967",
-          "platform": "brreg",
-          "signal_type": "annual_report_accounting_rules",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-          "retrieved_at": "2026-11-05T14:51:02.075117Z",
-          "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "930167967"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "930167967"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Regler for små foretak benyttet: Ja",
-          "metrics": {
-            "accounting_rules": "benyttet: Ja",
-            "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-            "ocr_chars": 1374
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-930167967-annual_report_business_address-7fb245d6689b218b",
-          "organisation_number": "930167967",
-          "platform": "brreg",
-          "signal_type": "annual_report_business_address",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-          "retrieved_at": "2026-11-05T14:51:02.075117Z",
-          "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "930167967"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "930167967"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Forretningsadresse: Grepplyngveien 8C",
-          "metrics": {
-            "business_address": "Grepplyngveien 8C",
-            "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-            "ocr_chars": 1374
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "id": "ar-page1-930167967-annual_report_org_number-7fb245d6689b218b",
-          "organisation_number": "930167967",
-          "platform": "brreg",
-          "signal_type": "annual_report_org_number",
-          "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-          "retrieved_at": "2026-11-05T14:51:02.075117Z",
-          "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "930167967"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "930167967"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Organisasjonsnummer: 930 167 967",
-          "metrics": {
-            "org_number": "930167967",
-            "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-            "ocr_chars": 1374
-          },
-          "strategy": "annual_report_page1_ocr"
-        },
-        {
-          "organisation_number": "930167967",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/930167967",
-          "retrieved_at": "2026-11-05T21:09:38.596749Z",
-          "content_sha256": "f4ed49b77ba2eeb7329284cfe214f9b4fe6ef1ee76838b3697341e98282e988b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "930167967"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "EDUDIGI AS",
-              "matched_organisation_number": "930167967"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-930167967.orgNumber=930167967;name=EDUDIGI AS",
-          "id": "purehelp-email-930167967-a3d4b6129bcce1dc",
-          "signal_type": "contact_email",
-          "strategy": "purehelp_directory_contact",
-          "metrics": {
-            "email": "kontakt@edudigi.no",
-            "contact_as_of": "2026-10-26"
-          }
-        },
-        {
-          "organisation_number": "930167967",
-          "platform": "company_directory",
-          "source_url": "https://purehelp.no/company/NO/930167967",
-          "retrieved_at": "2026-11-05T21:09:38.596749Z",
-          "content_sha256": "f4ed49b77ba2eeb7329284cfe214f9b4fe6ef1ee76838b3697341e98282e988b",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "exact_organisation_number_on_directory_page",
-              "value": "930167967"
-            },
-            {
-              "type": "exact_legal_name_on_directory_page",
-              "value": "EDUDIGI AS",
-              "matched_organisation_number": "930167967"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_directory",
-          "extraction_method": "nuxt_ssr_payload_company_record",
-          "evidence_span": "nuxt:company-NO-930167967.orgNumber=930167967;name=EDUDIGI AS",
-          "id": "purehelp-profile-930167967-a3d4b6129bcce1dc",
-          "signal_type": "profile_metrics",
-          "strategy": "purehelp_directory_profile",
-          "metrics": {
-            "legal_form": "AS",
-            "legal_form_description": "Limited company",
-            "nace_code": "74.130",
-            "nace_description": "Interior design activities",
-            "town": "ALTA",
-            "zipcode": "9514",
-            "municipality": "ALTA",
-            "municipality_number": "5601",
-            "county": "Finnmark",
-            "registration_date": "2022-11-05",
-            "registry_status": "ACTIVE",
-            "registry_status_date": "2022-11-05",
-            "deregistration_date": "",
-            "is_active": true,
-            "is_bankrupt": null,
-            "bankruptcy_date": "",
-            "website_domain": "www.edudigi.no/"
-          }
+          "strategy": "registry_declared_website_description"
         }
       ]
     },
+    "industry_code": "74.130",
+    "industry_label": "Interiørdesignvirksomhet",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "ALTA",
+    "municipality_number": "5601",
+    "name": "EDUDIGI AS",
+    "organisation_number": "930167967",
     "run_metrics": {
-      "requests": 8,
       "bytes": 10204,
       "latencies_ms": [
         716,
@@ -1272,15 +1102,17 @@
         706,
         719,
         1684
-      ]
-    }
+      ],
+      "requests": 8
+    },
+    "website": "www.edudigi.no/"
   },
   "summary": {
     "organisation_number": "930167967",
     "company_name": "EDUDIGI AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "EDUDIGI AS is a private limited company operating in Interiørdesignvirksomhet. Latest accounts (2025): revenue NOK 10.7k, annual result NOK -14.3k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue growing (+57.6% YoY). No open postings found in checked sources. Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count).",
+    "summary": "EDUDIGI AS is a private limited company operating in Interiørdesignvirksomhet. Latest accounts (2025): revenue NOK 10.7k, annual result NOK -14.3k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue growing (+57.6% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1294,12 +1126,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.edudigi.no/"
         ]
@@ -1316,12 +1143,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.edudigi.no/"
         ]
@@ -1338,12 +1160,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.edudigi.no/"
         ]
@@ -1360,12 +1177,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.edudigi.no/"
         ]
@@ -1388,25 +1200,11 @@
       },
       {
         "question": "hiring",
-        "answer": "No open postings found in checked sources.",
-        "answerable": true,
-        "status": "inferred",
-        "confidence": 0.6,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/930167967/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-          "https://www.edudigi.no/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "changes",
@@ -1420,12 +1218,7 @@
           "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-          "https://purehelp.no/company/NO/930167967",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000211885&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000047135&amp;sokeverdi=930167967&amp;spraak=nb",
-          "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000569906&amp;sokeverdi=930167967&amp;spraak=nb",
           "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
           "https://www.edudigi.no/"
         ]
@@ -1436,154 +1229,288 @@
         "field": "employees",
         "state": "not_available",
         "reason": "registry returned no employee count"
+      },
+      {
+        "field": "hiring",
+        "state": "not_available",
+        "reason": "no job sources were checked"
       }
     ]
   },
   "evidence": {
-    "registry": {
-      "field": "registry",
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:48.944138Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "930167967",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
       "status": "available",
-      "source_type": "official_registry_bulk",
-      "source_class": "official_registry_bulk",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
       "value": {
-        "organisasjonsnummer": "930167967",
-        "navn": "EDUDIGI AS",
-        "organisasjonsform.kode": "AS",
-        "organisasjonsform.beskrivelse": "Aksjeselskap",
-        "naeringskode1.kode": "74.130",
-        "naeringskode1.beskrivelse": "Interiørdesignvirksomhet",
-        "naeringskode2.kode": "",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode3.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
-        "hjelpeenhetskode.beskrivelse": "",
-        "harRegistrertAntallAnsatte": "false",
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:52.810160Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2022",
+            "year": "2022"
+          }
+        ],
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "f3c0ca5b7fe5814e7964b7384abdcbbce114786f336b5ede43c5ec618941d6dc",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:51.718716Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -14326.0,
+            "assets": 729.0,
+            "currency": "NOK",
+            "debt": 10237.0,
+            "equity": -9508.0,
+            "operating_result": -14326.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": -14326.0,
+            "record_id": 4653035,
+            "revenue": 10690.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -6395.0,
+            "assets": 907.0,
+            "currency": "NOK",
+            "debt": 16811.0,
+            "equity": -15904.0,
+            "operating_result": -6395.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": -6395.0,
+            "record_id": 5611269,
+            "revenue": 6781.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": -8308.0,
+            "assets": 514.0,
+            "currency": "NOK",
+            "debt": 24726.0,
+            "equity": -24212.0,
+            "operating_result": -8308.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": -8308.0,
+            "record_id": 7000880,
+            "revenue": 242.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-10-05T08:38:54.231510Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/930167967",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "f47603c240f44b6b8e39f9d1a637039f231b6ae0e1dfd3757b066d34b8461f03",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:38:54.951476Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
+      "status": "available",
+      "value": {
+        "locations": []
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "930167967",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": "Interiørdesign, utvikling, drift og vedlikehold av digitale plattformer.",
         "antallAnsatte": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "",
-        "hjemmeside": "www.edudigi.no/",
         "epostadresse": "kontakt@edudigi.no",
-        "telefon": "",
-        "mobil": "977 94 103",
-        "postadresse.adresse": "",
-        "postadresse.poststed": "",
-        "postadresse.postnummer": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
+        "erIKonsern": "false",
+        "foretaksformIHjemlandet.beskrivelse": "",
+        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
+        "foretaksformIHjemlandet.kode": "",
         "forretningsadresse.adresse": "Grepplyngveien 8C",
-        "forretningsadresse.poststed": "ALTA",
-        "forretningsadresse.postnummer": "9514",
         "forretningsadresse.kommune": "ALTA",
         "forretningsadresse.kommunenummer": "5601",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
-        "institusjonellSektorkode.kode": "2100",
-        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
-        "sisteInnsendteAarsregnskap": "2025",
-        "registreringsdatoenhetsregisteret": "2022-11-05",
-        "stiftelsesdato": "2022-10-05",
-        "registrertIMvaRegisteret": "false",
-        "registreringsdatoMerverdiavgiftsregisteret": "",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "forretningsadresse.postnummer": "9514",
+        "forretningsadresse.poststed": "ALTA",
+        "fravalgRevisjonBeslutningsDato": "2022-10-05",
+        "fravalgRevisjonDato": "2022-11-05",
         "frivilligMvaRegistrertBeskrivelser": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registrertIFrivillighetsregisteret": "false",
-        "registreringsdatoFrivillighetsregisteret": "",
-        "registrertIForetaksregisteret": "true",
-        "registreringsdatoForetaksregisteret": "2022-11-05",
-        "registrertIStiftelsesregisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registreringsdatoPartiregisteret": "",
+        "harRegistrertAntallAnsatte": "false",
+        "hjelpeenhetskode.beskrivelse": "",
+        "hjelpeenhetskode.kode": "",
+        "hjemmeside": "www.edudigi.no/",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": "100",
+        "kapital.belop": "30000.00",
+        "kapital.bundet": "",
+        "kapital.fulltInnbetalt": "",
+        "kapital.innbetalt": "",
+        "kapital.innfortDato": "2022-11-05",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
         "konkurs": "false",
         "konkursdato": "",
+        "maalform": "Bokmål",
+        "mobil": "977 94 103",
+        "naeringskode1.beskrivelse": "Interiørdesignvirksomhet",
+        "naeringskode1.kode": "74.130",
+        "naeringskode2.beskrivelse": "",
+        "naeringskode2.kode": "",
+        "naeringskode3.beskrivelse": "",
+        "naeringskode3.kode": "",
+        "navn": "EDUDIGI AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsnummer": "930167967",
+        "overordnetEnhet": "",
+        "paategninger": "false",
+        "postadresse.adresse": "",
+        "postadresse.kommune": "",
+        "postadresse.kommunenummer": "",
+        "postadresse.land": "",
+        "postadresse.landkode": "",
+        "postadresse.postnummer": "",
+        "postadresse.poststed": "",
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "",
+        "registreringsdatoForetaksregisteret": "2022-11-05",
+        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "registreringsdatoFrivillighetsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteret": "",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
+        "registreringsdatoPartiregisteret": "",
+        "registreringsdatoantallansatteNAVAaregisteret": "",
+        "registreringsdatoenhetsregisteret": "2022-11-05",
+        "registreringsnummerIHjemlandet": "",
+        "registrertIForetaksregisteret": "true",
+        "registrertIFrivillighetsregisteret": "false",
+        "registrertIMvaRegisteret": "false",
+        "registrertIPartiregisteret": "false",
+        "registrertIStiftelsesregisteret": "false",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "2022-10-05",
+        "telefon": "",
+        "tvangsavvikletPgaManglendeSlettingDato": "",
+        "tvangsopplostPgaMangelfulltStyreDato": "",
+        "tvangsopplostPgaManglendeDagligLederDato": "",
+        "tvangsopplostPgaManglendeRegnskapDato": "",
+        "tvangsopplostPgaManglendeRevisorDato": "",
         "underAvvikling": "false",
         "underAvviklingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "overordnetEnhet": "",
-        "maalform": "Bokmål",
-        "vedtektsdato": "2025-04-08",
-        "vedtektsfestetFormaal": "Å drive med utvikling, drift og vedlikehold av digitale plattformer, inkludert en portal for lærere med fokus på deling av undervisningsopplegg, tilgang til ferdige ressurser og muligheten til å tjene penger på eget arbeid.",
-        "aktivitet": "Interiørdesign, utvikling, drift og vedlikehold av digitale plattformer.",
-        "paategninger": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
         "underRekonstruksjonsforhandlingDato": "",
-        "fravalgRevisjonDato": "2022-11-05",
-        "fravalgRevisjonBeslutningsDato": "2022-10-05",
-        "erIKonsern": "false",
-        "kapital.belop": "30000.00",
-        "kapital.antallAksjer": "100",
-        "kapital.type": "Aksjekapital",
-        "kapital.bundet": "",
-        "kapital.valuta": "NOK",
-        "kapital.innbetalt": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innfortDato": "2022-11-05",
-        "registreringsnummerIHjemlandet": "",
-        "utenlandskRegisterNavn": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterAdresse.adresse": "",
+        "underTvangsavviklingEllerTvangsopplosning": "false",
+        "underUtenlandskInsolvensbehandlingDato": "",
         "underlagtLovgivningLand": "",
         "underlagtLovgivningLandKode": "",
-        "foretaksformIHjemlandet.kode": "",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": ""
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
-      "source_row_key": "930167967",
-      "effective_at": null
-    },
-    "accounting_obligation": {
-      "field": "accounting_obligation",
-      "status": "available",
-      "source_type": "official_rule_interpretation",
-      "source_class": "official_rule_interpretation",
-      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
-      "retrieved_at": "2026-10-05T08:34:48.944138Z",
-      "value": {
-        "classification": "filing_observed",
-        "legal_form": "AS",
-        "latest_submitted_accounts": "2025",
-        "reason": "The registry snapshot reports a latest submitted annual-account year.",
-        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
-      },
-      "as_of": "2024-08-09",
-      "note": null,
-      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
-      "source_row_key": "930167967",
-      "effective_at": null
+        "utenlandskRegisterAdresse.adresse": "",
+        "utenlandskRegisterAdresse.land": "",
+        "utenlandskRegisterAdresse.poststed": "",
+        "utenlandskRegisterNavn": "",
+        "vedtektsdato": "2025-04-08",
+        "vedtektsfestetFormaal": "Å drive med utvikling, drift og vedlikehold av digitale plattformer, inkludert en portal for lærere med fokus på deling av undervisningsopplegg, tilgang til ferdige ressurser og muligheten til å tjene penger på eget arbeid."
+      }
     },
     "registry_live": {
+      "as_of": null,
+      "content_sha256": "29c0a4353d580a9a8ab5d75947945851e87291ef7584961f0b25eed823ccdeee",
+      "effective_at": null,
       "field": "registry_live",
-      "status": "available",
-      "source_type": "official_registry_live",
-      "source_class": "official_registry_live",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
+      "note": null,
       "retrieved_at": "2026-10-05T08:38:51.003534Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
+      "status": "available",
       "value": {
-        "organisation_number": "930167967",
-        "name": "EDUDIGI AS",
-        "legal_form": "AS",
-        "employees": null,
         "bankrupt": false,
-        "liquidating": false,
-        "website": "www.edudigi.no/",
-        "industry": {
-          "beskrivelse": "Interiørdesignvirksomhet",
-          "kode": "74.130"
-        },
         "business_address": {
           "adresse": [
             "Grepplyngveien 8C"
@@ -1595,256 +1522,214 @@
           "postnummer": "9514",
           "poststed": "ALTA"
         },
+        "employees": null,
+        "industry": {
+          "beskrivelse": "Interiørdesignvirksomhet",
+          "kode": "74.130"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "EDUDIGI AS",
+        "organisation_number": "930167967",
         "postal_address": null,
-        "latest_submitted_accounts": "2025"
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "29c0a4353d580a9a8ab5d75947945851e87291ef7584961f0b25eed823ccdeee",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financials": {
-      "field": "financials",
-      "status": "available",
-      "source_type": "official_annual_accounts",
-      "source_class": "official_annual_accounts",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/930167967",
-      "retrieved_at": "2026-10-05T08:38:51.718716Z",
-      "value": {
-        "records": [
-          {
-            "record_id": 4653035,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2023-01-01",
-              "tilDato": "2023-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 10690.0,
-            "operating_result": -14326.0,
-            "profit_before_tax": -14326.0,
-            "annual_result": -14326.0,
-            "assets": 729.0,
-            "equity": -9508.0,
-            "debt": 10237.0
-          },
-          {
-            "record_id": 5611269,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2024-01-01",
-              "tilDato": "2024-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 6781.0,
-            "operating_result": -6395.0,
-            "profit_before_tax": -6395.0,
-            "annual_result": -6395.0,
-            "assets": 907.0,
-            "equity": -15904.0,
-            "debt": 16811.0
-          },
-          {
-            "record_id": 7000880,
-            "account_type": "SELSKAP",
-            "period": {
-              "fraDato": "2025-01-01",
-              "tilDato": "2025-12-31"
-            },
-            "currency": "NOK",
-            "revenue": 242.0,
-            "operating_result": -8308.0,
-            "profit_before_tax": -8308.0,
-            "annual_result": -8308.0,
-            "assets": 514.0,
-            "equity": -24212.0,
-            "debt": 24726.0
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f3c0ca5b7fe5814e7964b7384abdcbbce114786f336b5ede43c5ec618941d6dc",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "financial_history": {
-      "field": "financial_history",
-      "status": "available",
-      "source_type": "official_annual_account_copies",
-      "source_class": "official_annual_account_copies",
-      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/aar",
-      "retrieved_at": "2026-10-05T08:38:52.810160Z",
-      "value": {
-        "years": [
-          "2022",
-          "2023",
-          "2024",
-          "2025"
-        ],
-        "pdfs": [
-          {
-            "year": "2025",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025"
-          },
-          {
-            "year": "2024",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2024"
-          },
-          {
-            "year": "2023",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2023"
-          },
-          {
-            "year": "2022",
-            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2022"
-          }
-        ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "8777589904e2ac253b73d38c04570834020e4e1d5b225ce7078e99d6487ffa3d",
-      "source_row_key": null,
-      "effective_at": null
+        "website": "www.edudigi.no/"
+      }
     },
     "roles": {
+      "as_of": null,
+      "content_sha256": "b238c973e4cbd5339d2b8bcbc01749ca3073a653e944f7cadab0d1dfc3435dad",
+      "effective_at": null,
       "field": "roles",
-      "status": "available",
-      "source_type": "official_roles",
-      "source_class": "official_roles",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967/roller",
+      "note": null,
       "retrieved_at": "2026-10-05T08:38:53.524226Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967/roller",
+      "status": "available",
       "value": {
         "roles": [
           {
+            "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
+            "last_changed": "2022-11-05",
             "name": "Lena-Marie Digre Tørresvold",
             "organisation_number": null,
-            "role_code": "DAGL",
             "role": "Daglig leder",
-            "group_code": "DAGL",
-            "group": "Daglig leder",
-            "last_changed": "2022-11-05",
-            "inactive": false
+            "role_code": "DAGL"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Mirjam Kulstad Næss",
             "organisation_number": null,
-            "role_code": "LEDE",
             "role": "Styrets leder",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "LEDE"
           },
           {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2026-02-07",
             "name": "Lena-Marie Digre Tørresvold",
             "organisation_number": null,
-            "role_code": "MEDL",
             "role": "Styremedlem",
-            "group_code": "STYR",
-            "group": "Styre",
-            "last_changed": "2026-02-07",
-            "inactive": false
+            "role_code": "MEDL"
           }
         ]
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "b238c973e4cbd5339d2b8bcbc01749ca3073a653e944f7cadab0d1dfc3435dad",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "group": {
-      "field": "group",
-      "status": "not_found",
-      "source_type": "official_group_structure",
-      "source_class": "official_group_structure",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/930167967",
-      "retrieved_at": "2026-10-05T08:38:54.231510Z",
-      "value": null,
-      "as_of": null,
-      "note": "HTTP 404",
-      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source_row_key": null,
-      "effective_at": null
-    },
-    "locations": {
-      "field": "locations",
-      "status": "available",
-      "source_type": "official_subunits",
-      "source_class": "official_subunits",
-      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=930167967&size=1000",
-      "retrieved_at": "2026-10-05T08:38:54.951476Z",
-      "value": {
-        "locations": []
-      },
-      "as_of": null,
-      "note": null,
-      "content_sha256": "f47603c240f44b6b8e39f9d1a637039f231b6ae0e1dfd3757b066d34b8461f03",
-      "source_row_key": null,
-      "effective_at": null
+      }
     },
     "website": {
+      "as_of": null,
+      "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+      "effective_at": null,
       "field": "website",
-      "status": "available",
-      "source_type": "registry_linked_company_website",
-      "source_class": "registry_linked_company_website",
-      "source_url": "https://www.edudigi.no/",
+      "note": "Company-controlled claim layer; not an official registry fact",
       "retrieved_at": "2026-10-05T08:38:58.873766Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://www.edudigi.no/",
+      "status": "available",
       "value": {
-        "requested_url": "https://www.edudigi.no/",
-        "final_url": "https://www.edudigi.no/",
-        "registered_domain": "edudigi.no",
-        "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
-        "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
-        "main_text_excerpt": "",
-        "social_links": [],
-        "structured_organisations": [],
         "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
-        "extraction_state": "js_fallback_candidate",
-        "pages": [
-          {
-            "url": "https://www.edudigi.no/",
-            "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
-            "main_text_excerpt": "",
-            "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf"
-          }
-        ],
         "crawl_errors": [],
+        "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+        "discovered_social_links": [],
+        "extraction_state": "js_fallback_candidate",
+        "final_url": "https://www.edudigi.no/",
         "identity_assessment": {
-          "status": "exact",
-          "score": 0.9,
-          "publishable": true,
           "legal_name_tokens": [
             "edudigi"
           ],
           "matched_tokens": [
             "edudigi"
           ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
           "reasons": [
             "legal-name tokens appear in homepage identity evidence"
           ],
-          "method": "deterministic_name_org_evidence_v2"
+          "score": 0.9,
+          "status": "exact"
         },
-        "discovered_social_links": [],
-        "social_link_assessments": []
-      },
-      "as_of": null,
-      "note": "Company-controlled claim layer; not an official registry fact",
-      "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
-      "source_row_key": null,
-      "effective_at": null
+        "main_text_excerpt": "",
+        "pages": [
+          {
+            "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+            "main_text_excerpt": "",
+            "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
+            "url": "https://www.edudigi.no/"
+          }
+        ],
+        "registered_domain": "edudigi.no",
+        "requested_url": "https://www.edudigi.no/",
+        "social_link_assessments": [],
+        "social_links": [],
+        "structured_organisations": [],
+        "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell"
+      }
     },
     "external_observations": [
+      {
+        "id": "annual-workforce-7971be980d818d1ec2cc6011",
+        "organisation_number": "930167967",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
+        "retrieved_at": "2026-10-08T17:35:58.748302Z",
+        "content_sha256": "4de69749b7e9796825942463809d817d5852d2201b2b7e863d8c4b540bdcb0db",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "official_report_url_organisation_number",
+            "value": "930167967"
+          },
+          {
+            "type": "organisation_number_in_pdf",
+            "value": "930167967"
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_annual_account_copy",
+        "evidence_span": "Antall Aarsverk i regnskapsaret\n0.00",
+        "effective_at": "2025",
+        "metrics": {
+          "workforce_value": 0,
+          "measure": "full_time_equivalents",
+          "year": "2025",
+          "scope": "company_phrase",
+          "full_time_equivalents": 0
+        },
+        "strategy": "annual_report_workforce_snapshot"
+      },
+      {
+        "organisation_number": "930167967",
+        "platform": "company_site",
+        "source_url": "https://www.edudigi.no/",
+        "retrieved_at": "2026-10-09T13:51:16.940824Z",
+        "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.9,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-a24526aad598141246877b48",
+        "signal_type": "website_description",
+        "evidence_span": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell — Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "930167967",
+        "platform": "company_site",
+        "source_url": "https://www.edudigi.no/",
+        "retrieved_at": "2026-10-05T08:38:58.873766Z",
+        "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.9
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-930167967-7433ef4d913155a9",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 1,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        }
+      },
       {
         "id": "registry-contact-7c0a1303b4228d20b834cf43",
         "organisation_number": "930167967",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1871,8 +1756,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-09-29T10:02:25.550213Z",
-        "content_sha256": "5604d3b41f38056d34e6bf82be54e017d990da34cbda5ee9112e6ecd020ec981",
+        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1899,7 +1784,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "4f04b42af1c692310887dccc39a8f9f8af564bd05502849892dd1ece555b2b58",
         "observed_at": "2026-07-20",
         "exact_entity": true,
@@ -1929,7 +1814,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "3dc09abda041a28d89efa74547501a04c4028c4344a8d29c3794ad5a5a143e7f",
         "observed_at": "2026-04-29",
         "exact_entity": true,
@@ -1959,7 +1844,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "0469b257406a55a9a551e82500f6c15d1f254242e95db3425d4cb06078fcefd5",
         "observed_at": "2026-02-08",
         "exact_entity": true,
@@ -1989,7 +1874,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "c279859e130a754bf967f0e333063262bf792c50f15f96c680f0156c1c4ac1cc",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2019,7 +1904,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "8f7cc57c23715e0a366ed4688d784d386e119b8c0bc9c002828ce9be1efcfa84",
         "observed_at": "2025-04-28",
         "exact_entity": true,
@@ -2049,7 +1934,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "9617e81877411940cdb630fb701f8ec8b14500a7dbc7a6074822d16b0a57fba0",
         "observed_at": "2025-04-16",
         "exact_entity": true,
@@ -2079,7 +1964,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "e961a42eeca0d0b98370ce3673b3236a7a42fc0e13b0ed541976c852a79f83a0",
         "observed_at": "2025-04-15",
         "exact_entity": true,
@@ -2109,7 +1994,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "5133586992124f3416a28850d7b7f6f74886bacac11148698aef48cab9480e41",
         "observed_at": "2024-04-08",
         "exact_entity": true,
@@ -2139,7 +2024,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "4386bb505ab94333036b3833b570ae3fc8abdc073b912476beda0e7f7cd2c65b",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2169,7 +2054,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "39cbe4e4fe3b9280a0d937c6781dc7613caaa889df274a1eb274dd39eca6fbb8",
         "observed_at": "2024-02-26",
         "exact_entity": true,
@@ -2199,7 +2084,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "04f4ce2537f93e35a641eeb38d1e3d4f4cf757274949698f2e394bd885460335",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2229,7 +2114,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "8e7d62f2c833bfe7e9b633e8a6a33e9aa68bf40b7f5ae93f28cdbd3f222ca3ea",
         "observed_at": "2023-07-11",
         "exact_entity": true,
@@ -2259,7 +2144,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "24302944cc759931a143733c1c112534165c29f96e550d76b8c3c8baadbbf58c",
         "observed_at": "2022-11-09",
         "exact_entity": true,
@@ -2289,7 +2174,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/930167967",
-        "retrieved_at": "2026-09-29T10:44:00.020607Z",
+        "retrieved_at": "2026-11-06T14:47:49.419792Z",
         "content_sha256": "90d7768b305fb5976f77d555d2823c40fa7dc50021faa33e4174009e75d58e75",
         "observed_at": "2022-11-05",
         "exact_entity": true,
@@ -2401,292 +2286,37 @@
         "evidence_span": "Godkjente årsregnskap — 2025-04-28 (BRREG official announcement)"
       },
       {
+        "id": "registry-site-930167967-7433ef4d913155a9",
         "organisation_number": "930167967",
         "platform": "company_site",
+        "signal_type": "website_description",
         "source_url": "https://www.edudigi.no/",
-        "retrieved_at": "2026-10-09T13:51:16.940824Z",
-        "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
+        "retrieved_at": "2026-09-29T10:06:28.563160Z",
+        "content_sha256": "7433ef4d913155a97d1d842bd5024e7d456eb18a72bc8b99bcc9068dd25ed6cf",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.9,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "registry_declared_website_domain_match",
+            "value": "edudigi.no",
+            "matched_organisation_number": "930167967",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-09-29T10:02:25.550213Z",
+            "explanation": "BRREG declares edudigi.no as the website of organisation 930167967; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-a24526aad598141246877b48",
-        "signal_type": "website_description",
         "evidence_span": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell — Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
         "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
-      },
-      {
-        "organisation_number": "930167967",
-        "platform": "company_site",
-        "source_url": "https://www.edudigi.no/",
-        "retrieved_at": "2026-10-09T13:51:16.940824Z",
-        "content_sha256": "2eda558e71563e63668a77d1344613b61b048fd1979b41bb6ba613a7c2c9a31b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.9
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-930167967-2eda558e71563e63",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 1,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "js_fallback_candidate",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          "title": "EduDigi - Gratis undervisningsopplegg og undervisningsmateriell",
+          "description": "Finn og del gratis undervisningsopplegg og undervisningsmateriell for alle fag og trinn. EduDigi er Norges ledende plattform for kvalitetssikrede undervisningsressurser fra lærere til lærere.",
+          "registry_domain": "edudigi.no"
         },
-        "observed_at": "2026-10-09"
-      },
-      {
-        "id": "annual-workforce-a1c30795ba680f228da687ab",
-        "organisation_number": "930167967",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/930167967/2025",
-        "retrieved_at": "2026-10-28T04:37:55.022907Z",
-        "content_sha256": "74d94ffd90c3e8ab31b9f70d6b8eea819413111d9cd35b418aed4fd24b19c2ba",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "930167967"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "930167967"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Antall Aarsverk i regnskapsaret\n0.00",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 0,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 0
-        },
-        "strategy": "annual_report_workforce_snapshot",
-        "observed_at": "2025"
-      },
-      {
-        "id": "ar-page1-930167967-annual_report_auditor-7fb245d6689b218b",
-        "organisation_number": "930167967",
-        "platform": "brreg",
-        "signal_type": "annual_report_auditor",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-        "retrieved_at": "2026-11-05T14:51:02.075117Z",
-        "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "930167967"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "930167967"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Bekreftet av: Mirjam Kulstad Næss",
-        "metrics": {
-          "auditor": "Mirjam Kulstad Næss",
-          "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "ocr_chars": 1374
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-930167967-annual_report_accounting_rules-7fb245d6689b218b",
-        "organisation_number": "930167967",
-        "platform": "brreg",
-        "signal_type": "annual_report_accounting_rules",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-        "retrieved_at": "2026-11-05T14:51:02.075117Z",
-        "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "930167967"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "930167967"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Regler for små foretak benyttet: Ja",
-        "metrics": {
-          "accounting_rules": "benyttet: Ja",
-          "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "ocr_chars": 1374
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-930167967-annual_report_business_address-7fb245d6689b218b",
-        "organisation_number": "930167967",
-        "platform": "brreg",
-        "signal_type": "annual_report_business_address",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-        "retrieved_at": "2026-11-05T14:51:02.075117Z",
-        "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "930167967"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "930167967"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Forretningsadresse: Grepplyngveien 8C",
-        "metrics": {
-          "business_address": "Grepplyngveien 8C",
-          "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "ocr_chars": 1374
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "id": "ar-page1-930167967-annual_report_org_number-7fb245d6689b218b",
-        "organisation_number": "930167967",
-        "platform": "brreg",
-        "signal_type": "annual_report_org_number",
-        "source_url": "file:///tmp/opencode/ar-page1-cache/930167967-2025.pdf",
-        "retrieved_at": "2026-11-05T14:51:02.075117Z",
-        "content_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "930167967"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "930167967"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Organisasjonsnummer: 930 167 967",
-        "metrics": {
-          "org_number": "930167967",
-          "ocr_text_sha256": "7fb245d6689b218b8d889417fd5ce6a463ea36994cbdb89b6ecc8638dc275783",
-          "ocr_chars": 1374
-        },
-        "strategy": "annual_report_page1_ocr"
-      },
-      {
-        "organisation_number": "930167967",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/930167967",
-        "retrieved_at": "2026-11-05T21:09:38.596749Z",
-        "content_sha256": "f4ed49b77ba2eeb7329284cfe214f9b4fe6ef1ee76838b3697341e98282e988b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "930167967"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "EDUDIGI AS",
-            "matched_organisation_number": "930167967"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-930167967.orgNumber=930167967;name=EDUDIGI AS",
-        "id": "purehelp-email-930167967-a3d4b6129bcce1dc",
-        "signal_type": "contact_email",
-        "strategy": "purehelp_directory_contact",
-        "metrics": {
-          "email": "kontakt@edudigi.no",
-          "contact_as_of": "2026-10-26"
-        }
-      },
-      {
-        "organisation_number": "930167967",
-        "platform": "company_directory",
-        "source_url": "https://purehelp.no/company/NO/930167967",
-        "retrieved_at": "2026-11-05T21:09:38.596749Z",
-        "content_sha256": "f4ed49b77ba2eeb7329284cfe214f9b4fe6ef1ee76838b3697341e98282e988b",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "exact_organisation_number_on_directory_page",
-            "value": "930167967"
-          },
-          {
-            "type": "exact_legal_name_on_directory_page",
-            "value": "EDUDIGI AS",
-            "matched_organisation_number": "930167967"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_directory",
-        "extraction_method": "nuxt_ssr_payload_company_record",
-        "evidence_span": "nuxt:company-NO-930167967.orgNumber=930167967;name=EDUDIGI AS",
-        "id": "purehelp-profile-930167967-a3d4b6129bcce1dc",
-        "signal_type": "profile_metrics",
-        "strategy": "purehelp_directory_profile",
-        "metrics": {
-          "legal_form": "AS",
-          "legal_form_description": "Limited company",
-          "nace_code": "74.130",
-          "nace_description": "Interior design activities",
-          "town": "ALTA",
-          "zipcode": "9514",
-          "municipality": "ALTA",
-          "municipality_number": "5601",
-          "county": "Finnmark",
-          "registration_date": "2022-11-05",
-          "registry_status": "ACTIVE",
-          "registry_status_date": "2022-11-05",
-          "deregistration_date": "",
-          "is_active": true,
-          "is_bankrupt": null,
-          "bankruptcy_date": "",
-          "website_domain": "www.edudigi.no/"
-        }
+        "strategy": "registry_declared_website_description"
       }
     ]
   },
-  "generated_at": "2026-11-06T05:27:31.957259+00:00"
+  "generated_at": "2026-11-07T07:28:26.151386+00:00"
 }
