@@ -42,7 +42,7 @@ mkdir -p "$OUT" "$CACHE" "$OUT/logs"
 # Frozen official inputs. They are downloaded once and reused when present.
 UNIVERSE="$CACHE/norhound-universe.jsonl.gz"
 BRREG_JSON="$CACHE/enheter_alle.json.gz"
-DOMAIN_INDEX="data/registry-domain-unique.jsonl.gz"
+DOMAIN_INDEX="${DOMAIN_INDEX:-data/registry-domain-unique.jsonl.gz}"
 
 say() { printf '\n=== %s ===\n' "$*"; }
 run() { printf '+ %s\n' "$*"; "$@"; }
@@ -72,7 +72,9 @@ say "2. select the entry batch (same seed and website filter as the submission)"
 # The pipeline itself has no such floor: pointing ENTRY_MANIFEST at an existing
 # manifest runs the rest of the pipeline on exactly those organisations.
 if [[ -n "$ENTRY_MANIFEST" ]]; then
-  cp "$ENTRY_MANIFEST" "$OUT/entry.jsonl"
+  if [[ "$(cd "$(dirname "$ENTRY_MANIFEST")" && pwd)/$(basename "$ENTRY_MANIFEST")" != "$(cd "$(dirname "$OUT/entry.jsonl")" && pwd)/$(basename "$OUT/entry.jsonl")" ]]; then
+    cp "$ENTRY_MANIFEST" "$OUT/entry.jsonl"
+  fi
   expected_count="$(wc -l < "$OUT/entry.jsonl" | tr -d ' ')"
   echo "using supplied manifest $ENTRY_MANIFEST ($expected_count organisations)"
 else

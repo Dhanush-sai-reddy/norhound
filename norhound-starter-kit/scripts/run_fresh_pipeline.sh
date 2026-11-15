@@ -110,6 +110,7 @@ say "G. run the 14-stage pipeline on the fresh inputs"
 ENTRY_MANIFEST="$OUT/entry.jsonl" \
 NAV_INDEX="$NAV_INDEX" \
 WIKIDATA_INDEX="$WIKIDATA_INDEX" \
+DOMAIN_INDEX="$DOMAIN_INDEX" \
 bash scripts/run_full_batch.sh
 
 say "fresh run complete"
