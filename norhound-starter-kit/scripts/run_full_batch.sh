@@ -118,11 +118,20 @@ run uv run python scripts/promote_registry_declared_sites.py \
 PROFILES="$OUT/profiles-promoted.jsonl"
 
 say "5. external footprint: every keyless connector"
+# Two connectors are unbounded in practice: Fagfolkguiden (0 rows after 4 h on
+# the 2026-11-07 run) and the annual-report PDF/OCR extractor (10800 s cap).
+# The default run skips both; SLOW_STAGES=1 puts them back.
+SLOW_FLAGS="--no-reviews --no-workforce-pdf"
+if [[ "${SLOW_STAGES:-0}" == "1" ]]; then
+  SLOW_FLAGS=""
+fi
 run uv run python scripts/run_external_pipeline.py \
   --profiles "$OUT/profiles-promoted.jsonl" \
   --envelopes "$OUT/envelopes.jsonl" \
   --prefix "$OUT/batch" \
-  --jobs --reviews --keyless --nav --workforce --kunngjoring --google-news \
+  --jobs --keyless --nav --workforce --kunngjoring --google-news $SLOW_FLAGS \
+  --rescue-workers "${RESCUE_WORKERS:-16}" \
+  --rescue-timeout "${RESCUE_TIMEOUT:-20}" \
   --nav-index "${NAV_INDEX:-data/nav-job-index.jsonl}" \
   --wikidata-index "${WIKIDATA_INDEX:-data/wikidata-index.jsonl}" \
   --workforce-workers "$WORKFORCE_WORKERS" \

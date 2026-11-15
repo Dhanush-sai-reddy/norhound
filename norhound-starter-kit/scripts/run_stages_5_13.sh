@@ -27,6 +27,8 @@ OUT="out/run-$RUN_ID"
 CACHE="${CACHE:-.cache/run-$RUN_ID}"
 MIN_AUDIT="${MIN_AUDIT:-300}"
 WORKFORCE_WORKERS="${WORKFORCE_WORKERS:-8}"
+RESCUE_WORKERS="${RESCUE_WORKERS:-16}"
+RESCUE_TIMEOUT="${RESCUE_TIMEOUT:-20}"
 NAV_INDEX="${NAV_INDEX:-data/nav-job-index.jsonl}"
 WIKIDATA_INDEX="${WIKIDATA_INDEX:-data/wikidata-index.jsonl}"
 
@@ -42,6 +44,8 @@ run uv run python scripts/run_external_pipeline.py \
   --envelopes "$OUT/envelopes.jsonl" \
   --prefix "$OUT/batch" \
   --jobs --no-reviews --no-workforce-pdf --keyless --nav --workforce --kunngjoring --google-news \
+  --rescue-workers "$RESCUE_WORKERS" \
+  --rescue-timeout "$RESCUE_TIMEOUT" \
   --nav-index "$NAV_INDEX" \
   --wikidata-index "$WIKIDATA_INDEX" \
   --workforce-workers "$WORKFORCE_WORKERS" \
