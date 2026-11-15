@@ -115,6 +115,29 @@ class AtsStageTests(unittest.TestCase):
         self.assertIn('"--no-ats", dest="ats", action="store_false"', source)
 
 
+class NavSearchStageTests(unittest.TestCase):
+    """The NAV live-search connector must run inside the pipeline.
+
+    The frozen NAV feed index only reaches employers that publish through
+    NAV's own feed: on the 2026-11-15 fresh index, 13 of 1,000 companies
+    matched. `run_nav_search_connector.py` queries the public stillinger
+    search API per legal name and publishes only ads whose `employer.orgnr`
+    equals the profile organisation number, so it reaches employers the feed
+    index never sees — keyless, org-number confirmed.
+    """
+
+    def test_pipeline_runs_the_nav_search_connector(self) -> None:
+        self.assertIn("run_nav_search_connector.py", PIPELINE.read_text(encoding="utf-8"))
+
+    def test_pipeline_collects_the_nav_search_output(self) -> None:
+        self.assertIn("observation_files.append(nav_search_out)", PIPELINE.read_text(encoding="utf-8"))
+
+    def test_nav_search_stage_is_enabled_by_default(self) -> None:
+        source = PIPELINE.read_text(encoding="utf-8")
+        self.assertIn("parser.set_defaults(nav_search=True)", source)
+        self.assertIn('"--no-nav-search", dest="nav_search", action="store_false"', source)
+
+
 class RescueStageTests(unittest.TestCase):
     """The browser rescue must run inside the pipeline, before the site stages.
 

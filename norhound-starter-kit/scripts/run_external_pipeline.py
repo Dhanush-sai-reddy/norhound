@@ -164,6 +164,8 @@ def main() -> None:
     parser.add_argument("--no-nav", dest="nav", action="store_false", help="Disable the official NAV job feed connector")
     parser.add_argument("--nav", dest="nav", action="store_true", help="Deprecated no-op: NAV job feed now runs by default")
     parser.set_defaults(nav=True)
+    parser.add_argument("--no-nav-search", dest="nav_search", action="store_false", help="Disable the NAV live-search job connector (public stillinger API, org-number confirmed)")
+    parser.set_defaults(nav_search=True)
     parser.add_argument("--no-workforce", dest="workforce", action="store_false", help="Disable the workforce connectors (registry employee count + official annual-report extraction)")
     parser.add_argument("--workforce", dest="workforce", action="store_true", help="Deprecated no-op: workforce connectors now run by default")
     parser.set_defaults(workforce=True)
@@ -388,6 +390,25 @@ def main() -> None:
         ])
     if ats_out.exists() and ats_out.stat().st_size > 0:
         observation_files.append(ats_out)
+
+    # The frozen NAV feed index only reaches employers that publish through
+    # NAV's own feed: on the 2026-11-15 fresh index, 13 of 1,000 companies
+    # matched. The live-search connector queries the public stillinger API per
+    # legal name and publishes only ads whose employer.orgnr equals the profile
+    # organisation number, so it reaches the employers the index never sees.
+    nav_search_out = prefix.with_suffix(prefix.suffix + ".nav-search.jsonl")
+    if args.nav_search:
+        run([
+            "python", str(SCRIPTS / "run_nav_search_connector.py"),
+            "--profiles", args.profiles,
+            "--organisations", str(orgs_out),
+            "--output", str(nav_search_out),
+            "--cache", str(prefix.with_suffix(prefix.suffix + ".nav-search-cache")),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".nav-search-report.json")),
+            "--workers", "6",
+        ])
+    if nav_search_out.exists() and nav_search_out.stat().st_size > 0:
+        observation_files.append(nav_search_out)
 
     if args.discovery_input and args.promote:
         discovery_candidates = [json.loads(line) for line in Path(args.discovery_input).read_text(encoding="utf-8").splitlines() if line.strip()]
