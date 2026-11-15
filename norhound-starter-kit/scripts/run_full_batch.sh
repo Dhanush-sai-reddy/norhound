@@ -121,8 +121,8 @@ run uv run python scripts/run_external_pipeline.py \
   --envelopes "$OUT/envelopes.jsonl" \
   --prefix "$OUT/batch" \
   --jobs --reviews --keyless --nav --workforce --kunngjoring --google-news \
-  --nav-index data/nav-job-index.jsonl \
-  --wikidata-index data/wikidata-index.jsonl \
+  --nav-index "${NAV_INDEX:-data/nav-job-index.jsonl}" \
+  --wikidata-index "${WIKIDATA_INDEX:-data/wikidata-index.jsonl}" \
   --workforce-workers "$WORKFORCE_WORKERS" \
   --minimum-audit "$MIN_AUDIT"
 
