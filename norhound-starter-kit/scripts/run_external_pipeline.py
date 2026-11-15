@@ -167,6 +167,8 @@ def main() -> None:
     parser.add_argument("--no-workforce", dest="workforce", action="store_false", help="Disable the workforce connectors (registry employee count + official annual-report extraction)")
     parser.add_argument("--workforce", dest="workforce", action="store_true", help="Deprecated no-op: workforce connectors now run by default")
     parser.set_defaults(workforce=True)
+    parser.add_argument("--no-workforce-pdf", dest="workforce_pdf", action="store_false", help="Disable the annual-report PDF/OCR extractor (the slowest stage; the registry employee count still runs)")
+    parser.set_defaults(workforce_pdf=True)
     parser.add_argument("--workforce-workers", default="3", help="Parallel workers for the official annual-report PDF extractor")
     parser.add_argument("--nav-index", default="data/nav-job-index.jsonl", help="Frozen NAV job feed index path (built via run_nav_job_feed_connector.py --build-index)")
     parser.add_argument("--wikidata-index", default="data/wikidata-index.jsonl", help="Frozen Wikidata search index path (built once via run_wikidata_connector.py --build-index)")
@@ -317,15 +319,16 @@ def main() -> None:
             "--output", str(workforce_registry_out),
             "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-registry-report.json")),
         ])
-        run([
-            "python", str(SCRIPTS / "run_annual_report_workforce_connector.py"),
-            "--profiles", args.profiles,
-            "--organisations", str(orgs_out),
-            "--output", str(workforce_pdf_out),
-            "--cache", str(prefix.with_suffix(prefix.suffix + ".workforce-cache")),
-            "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-pdf-report.json")),
-            "--workers", str(args.workforce_workers),
-        ], timeout=stage_timeout("workforce_pdf"))
+        if args.workforce_pdf:
+            run([
+                "python", str(SCRIPTS / "run_annual_report_workforce_connector.py"),
+                "--profiles", args.profiles,
+                "--organisations", str(orgs_out),
+                "--output", str(workforce_pdf_out),
+                "--cache", str(prefix.with_suffix(prefix.suffix + ".workforce-cache")),
+                "--report", str(prefix.with_suffix(prefix.suffix + ".workforce-pdf-report.json")),
+                "--workers", str(args.workforce_workers),
+            ], timeout=stage_timeout("workforce_pdf"))
     gleif_out = prefix.with_suffix(prefix.suffix + ".gleif.jsonl")
     if args.gleif:
         run([
