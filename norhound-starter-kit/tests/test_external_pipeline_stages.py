@@ -132,10 +132,10 @@ class NavSearchStageTests(unittest.TestCase):
     def test_pipeline_collects_the_nav_search_output(self) -> None:
         self.assertIn("observation_files.append(nav_search_out)", PIPELINE.read_text(encoding="utf-8"))
 
-    def test_nav_search_stage_is_enabled_by_default(self) -> None:
+    def test_nav_search_stage_is_opt_in(self) -> None:
         source = PIPELINE.read_text(encoding="utf-8")
-        self.assertIn("parser.set_defaults(nav_search=True)", source)
-        self.assertIn('"--no-nav-search", dest="nav_search", action="store_false"', source)
+        self.assertIn("parser.set_defaults(nav_search=False)", source)
+        self.assertIn('"--nav-search", dest="nav_search", action="store_true"', source)
 
 
 class RescueStageTests(unittest.TestCase):

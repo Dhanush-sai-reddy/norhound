@@ -24,6 +24,7 @@ import json
 import re
 import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -36,6 +37,10 @@ AD_URL = "https://arbeidsplassen.nav.no/stillinger/stilling/{uuid}"
 UA = "NorHound/1.0 (+https://github.com/Dhanush-sai-reddy/norhound)"
 LEGAL_FORM_TOKENS = {"as", "asa", "ans", "da", "sa", "nuf", "ba", "enk", "ks", "se", "sti", "brl", "iks", "kf"}
 MAX_CANDIDATES = 8
+# Unauthenticated bulk search is rate limited (HTTP 429). Stop instead of
+# burning the run: below this share of refusals the endpoint is answering.
+EARLY_STOP_SAMPLES = 25
+EARLY_STOP_RATIO = 0.5
 
 
 def utc_now() -> str:
@@ -63,13 +68,24 @@ def names_match(legal_name: str, candidate: str) -> bool:
     return a in b or b in a
 
 
+class SearchUnavailable(RuntimeError):
+    """The arbeidsplassen endpoint refused or failed the request.
+
+    Unauthenticated bulk search answers HTTP 429. A refused request proves
+    nothing about whether the company is hiring, so it must never be cached as
+    "no ads" — a later run would then never retry that company.
+    """
+
+
 def get_json(url: str, timeout: float = 25) -> dict | None:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read())
-    except Exception:
-        return None
+    except urllib.error.HTTPError as exc:
+        raise SearchUnavailable(f"HTTP {exc.code} for {url}") from exc
+    except Exception as exc:  # network error, timeout, non-JSON body
+        raise SearchUnavailable(f"{type(exc).__name__}: {exc}") from exc
 
 
 def fetch_company(org: str, profile: dict, cache_dir: Path) -> tuple[list[dict], dict]:
@@ -81,26 +97,31 @@ def fetch_company(org: str, profile: dict, cache_dir: Path) -> tuple[list[dict],
         ads = json.loads(cache.read_text(encoding="utf-8"))
     else:
         q = urllib.parse.urlencode({"q": name, "size": 25})
-        data = get_json(f"{SEARCH_API}?{q}")
-        hits = (((data or {}).get("content")) or []) if isinstance(data, dict) else []
-        cands = [h for h in hits if isinstance(h, dict)][:MAX_CANDIDATES]
-        ads = []
-        for hit in cands:
-            employer = str((hit.get("employer") or {}).get("name") or hit.get("businessName") or "")
-            if not names_match(name, employer):
-                continue
-            uuid = hit.get("uuid") or hit.get("id")
-            if not uuid:
-                continue
-            detail = get_json(AD_API.format(uuid=urllib.parse.quote(str(uuid))))
-            if not detail:
-                continue
-            empl = detail.get("employer") or {}
-            orgnr = re.sub(r"\D", "", str(empl.get("orgnr") or empl.get("organisationNumber") or ""))
-            if orgnr != org:
-                continue
-            ads.append(detail)
-            time.sleep(0.2)
+        try:
+            data = get_json(f"{SEARCH_API}?{q}")
+            hits = (((data or {}).get("content")) or []) if isinstance(data, dict) else []
+            cands = [h for h in hits if isinstance(h, dict)][:MAX_CANDIDATES]
+            ads = []
+            for hit in cands:
+                employer = str((hit.get("employer") or {}).get("name") or hit.get("businessName") or "")
+                if not names_match(name, employer):
+                    continue
+                uuid = hit.get("uuid") or hit.get("id")
+                if not uuid:
+                    continue
+                detail = get_json(AD_API.format(uuid=urllib.parse.quote(str(uuid))))
+                if not detail:
+                    continue
+                empl = detail.get("employer") or {}
+                orgnr = re.sub(r"\D", "", str(empl.get("orgnr") or empl.get("organisationNumber") or ""))
+                if orgnr != org:
+                    continue
+                ads.append(detail)
+                time.sleep(0.2)
+        except SearchUnavailable as exc:
+            # Do not cache: a refused request is not evidence of no vacancies.
+            return [], {"organisation_number": org, "status": "search_unavailable",
+                        "reason": str(exc)[:200]}
         cache.write_text(json.dumps(ads, ensure_ascii=False), encoding="utf-8")
         time.sleep(0.3)
 
@@ -159,7 +180,9 @@ def main() -> None:
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     observations, statuses = [], []
-    with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 8))) as pool:
+    stopped_early = False
+    pool = ThreadPoolExecutor(max_workers=max(1, min(args.workers, 8)))
+    try:
         futures = {pool.submit(fetch_company, org, profiles[org], cache_dir): org for org in wanted if org in profiles}
         for i, fut in enumerate(as_completed(futures)):
             rows, status = fut.result()
@@ -167,6 +190,15 @@ def main() -> None:
             statuses.append(status)
             if (i + 1) % 100 == 0:
                 print(f"{i+1}/{len(wanted)}; ads={len(observations)}", flush=True)
+            unavailable = sum(1 for s in statuses if s.get("status") == "search_unavailable")
+            if len(statuses) >= EARLY_STOP_SAMPLES and unavailable / len(statuses) > EARLY_STOP_RATIO:
+                stopped_early = True
+                print(f"stopping early: {unavailable}/{len(statuses)} searches unavailable "
+                      f"(the search endpoint is refusing requests)", flush=True)
+                pool.shutdown(wait=False, cancel_futures=True)
+                break
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
 
     order = {org: i for i, org in enumerate(wanted)}
     observations.sort(key=lambda r: (order.get(r["organisation_number"], 99999), r["id"]))
@@ -175,8 +207,11 @@ def main() -> None:
     report = {
         "connector": "nav_stillinger_search_org_confirmed_v1",
         "companies": len(wanted),
+        "companies_searched": len(statuses),
         "companies_with_ads": sum(1 for s in statuses if s.get("ads")),
         "observations": len(observations),
+        "search_unavailable": sum(1 for s in statuses if s.get("status") == "search_unavailable"),
+        "stopped_early": stopped_early,
         "retrieved_at": utc_now(),
     }
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
