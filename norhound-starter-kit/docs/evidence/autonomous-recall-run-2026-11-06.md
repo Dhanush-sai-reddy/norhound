@@ -8,7 +8,6 @@ Baseline (commit `14b9dd7`, `out/frozen/measure-all-fixed3.json`):
 | metric | value |
 |---|---|
 | recall_proxy_50 | 37.7833 |
-| implied official recall | 36.71 / 50 |
 | entity_precision | 1.0 |
 | published rows | 39,951 |
 | any_external | 1.000 |
@@ -194,8 +193,10 @@ The Google Maps reviews connector was already built and had 600 observations for
 | wrong_entity_publications | 0 | perfect |
 | published_audited | 39,029 | 998 companies |
 
-**Official Recall (implied):** ~39.1 / 50 (vs 12.89 baseline)  
-**Gap to qualification (65):** Recall is the bottleneck; ratings/sentiment capped at keyless ceiling.
+**Recall proxy:** 40.275 / 50 — **internal six-field proxy only, and this run
+included Apify Google Places (Track 19), which the keyless submission does not
+use.** The keyless-only corpus measures 33.43 / 50; see
+`RECALL_LEVERS.md` §5. No official Recall figure exists for this revision.
 
 **All tests pass:** 388/388
 

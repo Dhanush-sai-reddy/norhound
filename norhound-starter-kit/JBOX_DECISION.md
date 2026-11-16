@@ -35,7 +35,7 @@ The Signalpost challenge has a **separate sponsor prize** from JBOX. Evidence â€
 
 ## Does JBOX raise recall?
 
-**No.** Recall (50 of 100 points, our score 12.89) is graded on *facts collected
+**No.** Recall (50 of 100 points) is graded on *facts collected
 about the company*. JBOX produces UI code; it serves no Norwegian registry,
 account, job, review or news data. Nothing in it can add an observation, a
 source URL, or a dated fact. Adopting it leaves every recall number in
@@ -43,17 +43,18 @@ source URL, or a dated fact. Adopting it leaves every recall number in
 
 ## Could it help anywhere else?
 
-Only UX (8 points, we score 3.20, tied best in the field). JBOX could rebuild
+Only UX (8 points). JBOX could rebuild
 the static viewer in `site/` as a Next.js app with search, compare and per-claim
 evidence. That is a **maximum +4.8 points**, and it is a rewrite of a working
 surface, not a new capability.
 
 ## The blocker on the $500
 
-The bonus is for *qualifying* agents. Qualification requires **â‰¥65/100**; the
-last official score was **42.21/100** (Recall 12.89 / Evidence 18.92 /
-Synthesis 7.20 / UX 3.20). An agent that does not qualify cannot collect a
-qualifying-agent bonus, whatever it is built with.
+The bonus is for *qualifying* agents. **No official score has been issued for
+the current revision**, and the only figures this repository can reproduce are
+its own six-field proxy (33.43/50, `RECALL_LEVERS.md`). An agent that cannot be
+shown to qualify cannot collect a qualifying-agent bonus, whatever it is built
+with.
 
 ## Cost / constraint check
 

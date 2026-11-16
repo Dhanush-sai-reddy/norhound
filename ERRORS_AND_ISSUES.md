@@ -154,9 +154,12 @@
 
 ---
 
-## 📊 CURRENT SCORE: 60.62/100 (2nd place)
+## 📊 HISTORICAL SCORE PROJECTION: 60.62/100 (4 Oct 2026)
 
-| Category | Current | Target | Gap |
+> Not reproducible and not official. Kept only to show what the projection
+> assumed; see the banner in `SESSION_REPORT.md`.
+
+| Category | Projected | Target | Gap |
 |--------|---------|--------|-----|
 | Recall | 15.30 | 19.7 | -4.4 |
 | Evidence | 26.92 | 30 | -3.08 |
@@ -166,7 +169,7 @@
 
 ---
 
-## 🚀 WHAT'S FIXED (vs 58.15 baseline)
+## 🚀 WHAT'S FIXED (vs the 4 Oct 2026 projection)
 
 | Fix | Impact |
 |-----|--------|
@@ -196,7 +199,7 @@
 ---
 
 ## 📦 SUBMISSION READY
-**Package:** `out/submission/` - 60.62 projected
+**Package:** `out/submission/` — see `norhound-starter-kit/RECALL_LEVERS.md` for the reproducible proxy
 
 ```bash
 uv run python scripts/run_one_shot.py --out out/submission

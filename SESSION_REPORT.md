@@ -2,18 +2,23 @@
 ## For Next Session / Handoff to Another Agent (Claude Opus)
 ## Generated: 2026-10-04
 
+> **HISTORICAL — superseded 16 Nov 2026.** Every score in this file is a
+> projection made on 4 Oct 2026 against a third-party leaderboard reading that
+> this repository cannot reproduce. **No official score has been issued for the
+> current revision.** The only numbers that count are the ones `scripts/measure_recall.py`
+> produces here — see `norhound-starter-kit/RECALL_LEVERS.md`.
+
 ---
 
 ## EXECUTIVE SUMMARY
 
 **Project:** Signalpost Hackathon - Norwegian Company Intelligence Agent
-**Status:** SUBMISSION READY (60.62 projected score)
-**Qualification Threshold:** 65/100 (NOT MET - max achievable ~62-63)
+**Status:** SUBMISSION READY (six-field proxy 33.43/50, precision 1.0)
 **Submission Package:** `out/submission/` - READY
 
 ---
 
-## FINAL SCORE PROJECTION
+## FINAL SCORE PROJECTION (historical — not reproducible)
 
 | Category | Score | Max | Gap |
 |----------|-------|-----|-----|
@@ -23,9 +28,8 @@
 | **UX** | 6.40/8 | 8 | -1.60 |
 | **TOTAL** | **60.62/100** | **100** | **-4.38** |
 
-**Qualification Threshold: 65/100** ❌ NOT MET
-**Projected Rank:** 2nd place (beats Nikita 60.51)
-**Max Achievable:** ~62-63 (cannot reach 65 with current architecture)
+**Qualification Threshold: 65/100** — no official score exists for this revision, so qualification cannot be claimed either way.
+**Projected Rank:** not stated — the comparative board reading this projection used is not reproducible.
 
 ---
 
@@ -260,13 +264,14 @@ out/submission/
 
 ---
 
-## FINAL VERDICT
+## FINAL VERDICT (historical, 4 Oct 2026)
 
-**Cannot reach 65 with current architecture. Maximum achievable: ~62-63.**
+**Cannot reach 65 with the architecture as it stood on 4 Oct 2026.**
 
 **Recommendation: SUBMIT NOW.** Package at `out/submission/` is complete.
 
-**Projected Score: 60.62/100 (2nd place, beats Nikita 60.51)**
+**Score:** no official figure exists for this revision. Current reproducible
+six-field proxy: **33.43 / 50** (see `norhound-starter-kit/RECALL_LEVERS.md`).
 
 ---
 
@@ -363,12 +368,11 @@ uv run python scripts/run_one_shot.py --out out/submission
 
 ---
 
-## FINAL VERDICT
+## FINAL VERDICT (historical, 4 Oct 2026)
 
-**Projected Score: 60.62/100** (2nd place, beats Nikita 60.51)
-**Qualification: NOT MET (65 required)**
-**Max Achievable: ~62-63**
-**Recommendation: SUBMIT NOW**
+**Score: no official figure exists for this revision.**
+**Reproducible six-field proxy today: 33.43 / 50**
+**Recommendation: SUBMIT**
 
 ---
 

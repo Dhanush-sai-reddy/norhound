@@ -12,7 +12,7 @@
 ### Step 1: Initial Strategy & Diagnostic Analysis
 - **User Request:** Read project, review feedback, and suggest ways to increase recall.
 - **Action Taken:** Reviewed `AGENTS.md`, `reviewer.md`, and `RECALL_STRATEGY.md`.
-- **Key Finding:** Recall (12.89/50) is the sole bottleneck accounting for 37 of 57 missing points. Three fields were dead (`sentiment: 0.000`, `ratings_reviews: 0.015`, `workforce_jobs: 0.041`).
+- **Key Finding:** Recall is the sole bottleneck. At the time, three fields were dead (`sentiment: 0.000`, `ratings_reviews: 0.015`, `workforce_jobs: 0.041`); all three were subsequently fixed or capped by source access — see `RECALL_STRATEGY.md`.
 - **Artifact Created:** `analysis_results.md`
 
 ### Step 2: Apify Actors Strategy
@@ -245,7 +245,7 @@ After reviewing `CHAT_LOG.md`, `RECALL_STRATEGY.md`, pipeline logs, and source c
 | **Finn.no/LinkedIn** | No org numbers | No exact entity | ❌ Skip |
 | **News body retention** | Only 7/1000 dated (0.7%) | Need 20%+ | 30 min fix + re-run |
 
-### 🎯 What's Fixed (vs 58.15 baseline)
+### 🎯 What's Fixed (vs the 4 Oct 2026 projection)
 
 | Fix | Impact |
 |-----|--------|
@@ -265,15 +265,16 @@ After reviewing `CHAT_LOG.md`, `RECALL_STRATEGY.md`, pipeline logs, and source c
 | LinkedIn/Finn.no org numbers | Not provided by APIs |
 | Full page body retention | Storage cost vs benefit |
 
-### 📊 Score Projection
+### 📊 Score Projection (historical, 4 Oct 2026 — not reproducible)
 
 | Scenario | Recall | UX | Total |
 |----------|--------|-----|-------|
-| Current | 15.30 | 6.40 | 60.62 |
+| At the time | 15.30 | 6.40 | 60.62 |
 | + Fix jobs + NAV + multi-source | +3.5 | +1.6 | 65.7 |
-| + UX 8.0 | +1.6 | 67.3 | ✅ |
+| + UX 8.0 | +1.6 | 67.3 | |
 
-**Verdict: 65 is achievable IF all 3 big fixes land perfectly.**
+**No official score has been issued for the current revision.** Measured
+six-field proxy today: **33.43 / 50**.
 
 ---
 

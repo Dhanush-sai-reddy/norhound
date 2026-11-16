@@ -84,7 +84,7 @@ paths:
 Both are defensible; mixing them is not. Enabling Places while still claiming
 "no API key, no account" in the submission would be a false statement.
 
-## 5. Why the six-field proxy is near-maxed but the official score is not
+## 5. Why the six-field proxy is near-maxed but per-company depth is not
 
 Measured on the shipped corpus (`out/run-fresh-20261115T073743Z/`, 1,000
 envelopes, 105,772 claims):
@@ -106,11 +106,12 @@ every value straight from Regnskapsregisteret, so "add multi-year accounts" is
 not a lever — it is already 34.7% of every claim we publish.
 
 The proxy asks "does this company have *any* signal in this field", and answers
-yes for 4 of 6 fields at 99–100%. The official score gave 12.89/50 = 25.8% on
-the same corpus. The difference is **depth**: the proxy counts presence, the
-graded score counts how many of the reference's items we reproduce. That is why
-`workforce_jobs` reads 0.954 while only 537 real hiring claims exist, and why
-`news` is 3 items per company against a reference that can hold far more.
+yes for 4 of 6 fields at 99–100%. That is not the same question the graded
+metric asks: the proxy counts presence, the graded metric counts how many of a
+reference collection's items we reproduce. The census above makes the depth
+problem concrete — `workforce_jobs` reads 0.954 while only 537 real hiring
+claims exist, and `news` is ~3 items per company against a reference that can
+hold far more. Presence is solved; per-company depth is not.
 
 ### Depth levers, in the order they are worth doing
 

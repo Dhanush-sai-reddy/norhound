@@ -63,8 +63,9 @@ Wikidata/Wikipedia, Google News RSS (840 rows), Finn job ads (in progress, Task 
    `robots.txt`; the only rights-clean one (Fagfolkguiden) covers 27 companies with ratings
    and 99 companies with any directory record.
 2. **91 % of the published corpus is already keyless** (35,673 of 39,214 rows). Dropping
-   Google Places costs 8.37 proxy points (36.675 → 28.308), i.e. ≈ 8.1 implied official
-   recall points.
+   Google Places costs 8.37 proxy points (36.675 → 28.308) on the six-field proxy. There is
+   no defensible way to convert proxy points into graded points, and no official Recall
+   figure exists for this revision.
 3. **The keyless growth that is actually available:**
    * Fagfolkguiden sitemap discovery: 32 → 99 exact-entity directory companies (Task 6,
      in progress), of which 27 carry ratings and 20 carry the company's own website for

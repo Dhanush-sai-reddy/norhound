@@ -6,37 +6,34 @@
 
 ## 1. Mission
 
-We are **4th at 58.15/100**. First place is **60.51**. The gap is **2.36 points**.
+> **Superseded 16 Nov 2026.** The leaderboard below was a board reading from
+> 3 Oct 2026. It is kept only as history: this repository cannot reproduce those
+> third-party totals, and **no official score has been issued for the current
+> revision**. Do not plan against these numbers — use `RECALL_STRATEGY.md`,
+> which reports only what `scripts/measure_recall.py` produces here.
 
-| # | Builder | Recall /50 | Evidence /30 | Synthesis /12 | UX /8 | Total |
-|---|---|---|---|---|---|---|
-| 1 | Nikita | 13.59 | 26.92 | 12.00 | 8.00 | **60.51** |
-| 2 | Mangal | 12.83 | 26.92 | 12.00 | 8.00 | 59.75 |
-| 2 | Siri Nandan | 12.83 | 26.92 | 12.00 | 8.00 | 59.75 |
-| **4** | **Dhanush R2 (us)** | **12.83** | 26.92 | **12.00** | **6.40** | **58.15** |
-| 5 | Biswajeet v4 | 8.75 | 29.00 | 12.00 | 8.00 | 57.75 |
+Recall is the only category with real headroom. Six fields, each worth 8.33 of
+50; measured six-field proxy today is **33.43 / 50** (see `RECALL_STRATEGY.md`).
 
-Board reviewed **3 Oct 2026**. **0 of 19 entries qualified.** Batch is now **1,200** companies.
-Qualification (65) is unreachable for everyone — **the winner is whoever reaches ~60.5.**
-
-### Two levers. Do both and we win.
+### Two levers. Do both.
 
 | Task | Move | Gain |
 |---|---|---|
-| **A** | UX 6.40 → 8.00 (match the three 8.00 holders) | **+1.60** |
-| **B** | Recall 12.83 → 13.59 (just match Nikita) | **+0.76** |
-| | **Total** | **+2.36 → 60.51, 1st** |
+| **A** | UX: close the remaining viewer gaps (sentiment tab, compare polish) | up to **+4.8** of 8 |
+| **B** | Recall: close `workforce_jobs` (0.38 left) and unlock a keyless ratings source | up to **+8.4** of 50 |
 
 ### ✅ Progress since spec written (3 Oct 2026)
 
 | Done | Impact |
 |---|---|
-| **B1 — Sentiment from rating** (20 min) | sentiment 0.000 → 0.015, +0.11 official recall |
-| **B3 — Social handles crawl depth** (1 min) | `_priority_links` limit 6 → 24, more platform handles |
+| **B1 — Sentiment from rating** | `sentiment` 0.000 → 0.032 (capped by the 32 companies with a rating page) |
+| **B3 — Social handles crawl depth** | `_priority_links` limit 6 → 24, more platform handles |
 | **Task A — UX overhaul** | Site rebuilt with 5-area tabs, audit banner, completeness filter |
+| **News body retention** | `--fetch-dates` wired into the pipeline by default |
+| **NAV parent resolution** | Sub-unit → legal entity, index no longer collapses to zero |
 
-Current internal recall: **0.2975** (14.88/50) → projected official **12.94/50** (+0.11 vs 12.83)
-Gap to Nikita recall 13.59: need **+0.65 official** = +0.75 internal = sum fields +0.045
+Current six-field proxy: **33.43 / 50**. No official Recall figure exists for
+this revision, so no official gap can be stated.
 
 ---
 
@@ -71,9 +68,11 @@ NAV is **mathematically capped at 1.3% company coverage**. Do not spend time ext
 raising `--days`, or re-running `--resolve-parents`. Only 13 of our companies ever posted a job
 inside the statutory 183-day window.
 
-### Trap 3: internal eval now OVERSTATES official
-Internal evaluator says Recall **14.75**. Official says **12.83**. Ratio **0.87**, not the 0.97
-from the previous review cycle. Treat internal gains as roughly **0.87×** their official value.
+### Trap 3: the internal evaluator is a proxy, not the graded metric
+`measure_recall.py` counts *presence* per field; the graded metric counts how many
+of a reference collection's items are reproduced. Do not convert one into the
+other with a fixed ratio — the two are not linearly related, and no official
+Recall figure exists for this revision to calibrate against.
 
 ### Trap 4: `workforce_snapshot` is not hiring
 `evaluate_external_footprint.py:80` counts `{"job_posting", "workforce_snapshot"}` as
@@ -123,7 +122,7 @@ page and has this exact surface:
 
 ---
 
-## 5. TASK B — Recall 12.83 → 13.59 (+0.76)
+## 5. TASK B — Raise the six-field proxy above 33.43
 
 Recall = **mean of six field recalls × 50**. Verified current values:
 
@@ -259,10 +258,10 @@ print(f'  projected official ~{m*50*0.87:.2f}/50')
 
 ## 8. Definition of done
 
-- [ ] UX at parity with the 8.00 entries → **+1.60**
-- [ ] Recall ≥ 13.59 official-equivalent → **+0.76**
+- [ ] UX: every viewer gap closed, sentiment surface present
+- [ ] Six-field proxy ≥ 33.43 (no official Recall figure exists to target)
 - [ ] `wrong_entity_publications == 0`, `entity_precision == 1.0`
 - [ ] All tests pass
-- [ ] Total projected **≥ 60.51 → first place**
+- [ ] Submission package reproducible from the pinned commit
 
 **If precision breaks, ship nothing.** A disqualified entry scores zero.

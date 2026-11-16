@@ -1,30 +1,39 @@
 # Signalpost: Project Analysis & Recall Improvement Strategy
 
-## 📊 Where We Stand (4 Oct 2026)
+## 📊 Where We Stand (measured 15 Nov 2026)
 
-| Metric | Value | Position |
-|--------|-------|----------|
-| **Total Score** | **42.21 / 100** | 6th of 6 — NOT QUALIFIED |
-| Recall | 12.89 / 50 | 37 of 57 missing pts come from here |
-| Evidence | 18.92 / 30 | Flat — all builders at 18.92–18.93 |
-| Synthesis | 7.20 / 12 | Flat — all builders exactly 7.20 |
-| UX | 3.20 / 8 | **Tied best** (only Karthik lower at 1.60) |
+**No official score has been issued for the current revision.** The only numbers
+below are the ones this repository reproduces itself with
+`scripts/measure_recall.py`; they are a proxy for the graded Recall metric, not
+the graded metric.
+
+| Field | Recall | Points of 50 | Headroom |
+|---|---|---|---|
+| any_external | 1.000 | 8.33 | 0.00 |
+| two_platforms | 0.994 | 8.28 | 0.05 |
+| workforce_jobs | 0.954 | 7.95 | 0.38 |
+| buzz_engagement | 1.000 | 8.33 | 0.00 |
+| ratings_reviews | 0.032 | 0.27 | 8.07 |
+| sentiment | 0.032 | 0.27 | 8.07 |
+| **Six-field proxy** | | **33.43 / 50** | **16.57** |
+
+Source: `out/run-fresh-20261115T073743Z/measure-final.json`.
 
 > [!IMPORTANT]
-> **Recall is the ONLY real battleground.** Evidence and Synthesis are structurally capped at identical scores for everyone. UX we already lead. The entire competition comes down to who can find more verified facts about more companies.
+> **Recall is the ONLY real battleground.** Evidence and Synthesis hit the same
+> structural ceiling for every entry, and UX is already the strongest surface
+> here (search, per-company pages, compare view, bulk export). The competition
+> comes down to who can find more verified facts about more companies.
 
-### Leaderboard (post re-evaluation)
+### Where the 16.57 remaining points sit
 
-| # | Builder | Recall/50 | Total/100 | Gap to us |
-|---|---------|-----------|-----------|-----------|
-| 1 | Karthik | 17.86 | 45.59 | +4.97 recall |
-| 2 | Hardik | 13.96 | 43.28 | +1.07 |
-| 3 | Ajai | 13.60 | 42.92 | +0.71 |
-| 4 | Vishwajit | 12.97 | 42.29 | +0.08 |
-| 5 | Devansh | 12.94 | 42.26 | +0.05 |
-| 6 | **Us** | **12.89** | **42.21** | — |
-
-**Nobody has qualified (65 threshold).** Gap to #1 is only 3.38 total points, almost entirely Recall.
+1. **16.1 of the 16.6** sit in `ratings_reviews` + `sentiment`, which read the
+   same source class (a ratings/reviews directory). Every keyless ratings source
+   probed on 16 Nov 2026 is blocked or JavaScript-only — measurements in
+   `RECALL_LEVERS.md`.
+2. **0.38** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
+   The NAV feed is the only keyless source of adverts.
+3. **0.05** in `two_platforms` — effectively done.
 
 ---
 
@@ -48,7 +57,7 @@ Three specific gaps traced to FILES:
 | **News has hash + title only, no body** | `evidence_span` = page title; no retained body → unverifiable | [extract_company_site_news.py](file:///home/dhanushsr/Downloads/hackathons/signalpost/norhound-starter-kit/scripts/extract_company_site_news.py) |
 | **No viewer submitted** | `out/site/` missing from repo — code exists but wasn't committed | [build_static_site.py](file:///home/dhanushsr/Downloads/hackathons/signalpost/norhound-starter-kit/scripts/build_static_site.py) |
 
-### Review 3 — Re-evaluation (42.21/100, new rubric, 1 Oct)
+### Review 3 — Re-evaluation (new rubric, 1 Oct)
 
 The rubric CHANGED from Coverage/Correctness/Updates/Summary/UX → **Recall/Evidence/Synthesis/UX**. Recall now dominates at 50 points.
 
@@ -77,28 +86,35 @@ Below is the complete mapping of every single requirement, diagnostic note, and 
 
 ## 📉 Field-by-Field Recall Diagnosis
 
-Our internal eval (1,000-company run, commit `b9698de`) maps directly to the official Recall metric:
+Measured 15 Nov 2026 (`out/run-fresh-20261115T073743Z/`), six fields, each worth
+8.33 of 50:
 
-| Field | Recall | Status | Why |
-|-------|--------|--------|-----|
-| `any_external` | **0.823** | ✅ Good | Improved from 0.354 via keyless connectors |
-| `two_platforms` | **0.361** | 🟡 Room | Need more second-platform sources |
-| `buzz_engagement` | **0.352** | 🟡 Room | Need `public_post`, `public_mention`, or `profile_metrics` |
-| `workforce_jobs` | **0.041** | 🔴 DEAD | Only 41/1000 companies have jobs (219 postings: 152 company_site + 67 NAV); NAV index = 3,625 rows |
-| `ratings_reviews` | **0.015** | 🔴 DEAD | Only 32 of 1,000 companies have a Fagfolkguiden rating page |
-| `sentiment` | **0.000** | 🔴 HARD ZERO | `sentiment_label` never set in any active code path |
+| Field | Recall | Points | Status | Why |
+|-------|--------|--------|--------|-----|
+| `any_external` | **1.000** | 8.33 | ✅ Done | Every company has at least one external fact |
+| `two_platforms` | **0.994** | 8.28 | ✅ Done | 0.05 headroom |
+| `buzz_engagement` | **1.000** | 8.33 | ✅ Done | `public_post` / `profile_metrics` coverage complete |
+| `workforce_jobs` | **0.954** | 7.95 | 🟡 0.38 left | Needs real role cards; NAV feed is the only keyless advert source |
+| `ratings_reviews` | **0.032** | 0.27 | 🔴 Capped | Only 32 of 1,000 companies have any rating page |
+| `sentiment` | **0.032** | 0.27 | 🔴 Capped | Same 32 companies; every other ratings directory is blocked or JS-only |
 
 > [!CAUTION]
-> The three DEAD fields (`sentiment`, `ratings_reviews`, `workforce_jobs`) together contribute **0.056 recall** out of a possible **~1.0** each. Even small improvements here move the needle dramatically because the mean of six field recalls IS the Recall score.
+> The two capped fields (`ratings_reviews`, `sentiment`) carry **16.1 of the
+> 16.6** remaining points, and they read the same source class. Closing them is
+> a source-access problem, not an extraction problem — see `RECALL_LEVERS.md`
+> for the 16 Nov 2026 probe results.
 
 ### How the Recall Score Is Computed
 
 ```
 Recall ≈ mean(any_external, two_platforms, buzz_engagement, workforce_jobs, ratings_reviews, sentiment) × 50
-       ≈ mean(0.823, 0.361, 0.352, 0.041, 0.015, 0.000) × 50
-       ≈ 0.265 × 50
-       ≈ 13.27 predicted → 12.89 actual (close proxy)
+       ≈ mean(1.000, 0.994, 0.954, 1.000, 0.032, 0.032) × 50
+       ≈ 0.669 × 50
+       ≈ 33.43 six-field proxy
 ```
+
+This is an internal proxy. No official Recall figure exists for the current
+revision.
 
 ---
 
@@ -309,20 +325,27 @@ Using Apify Actors fits within our permitted public sources and daily batch budg
 
 ## 📈 Projected Impact Summary
 
-| Strategy | Effort | Recall Gain (pts) | New Recall | Priority |
-|----------|--------|-------------------|------------|----------|
-| 1. Fix Sentiment | 30 min | +0.8 | 13.7 | 🔥 DO NOW |
-| 2. Retain News Body | 2 hrs | +2-4 | 15.7-17.7 | 🔥 DO NOW |
-| 3. Finn.no Jobs | 4-6 hrs | +3-6 | 18.7-23.7 | 🔥 HIGH |
-| 4. Deeper Site Crawl | 3 hrs | +2-3 | 20.7-26.7 | HIGH |
-| 5. Brønnøysund Announcements | 2 hrs | +1-2 | 21.7-28.7 | MEDIUM |
-| 6. Norid RDAP | 1 hr | +0.5-1 | 22.2-29.7 | MEDIUM |
-| 7. Trustpilot/Proff.no | 3-4 hrs | +1-2 | 23.2-31.7 | MEDIUM |
-| 8. Business News | 4-5 hrs | +2-3 | 25.2-34.7 | LOWER |
-| 9. Google Jobs | 4 hrs | +2-4 | 27.2-38.7 | LOWER |
+The table below was written on 4 Oct 2026 against the old field values. The
+"outcome" column records what actually happened when each lever was built and
+measured, so the projections can be checked rather than trusted.
+
+| Strategy | Effort | Projected | Outcome (measured 15 Nov 2026) |
+|----------|--------|-----------|-------------------------------|
+| 1. Fix Sentiment | 30 min | +0.8 | Done — `sentiment` now 0.032, capped by the 32 companies that have a rating page |
+| 2. Retain News Body | 2 hrs | +2-4 | Done — `--fetch-dates` wired in by default; bodies + mined dates now retained |
+| 3. Finn.no Jobs | 4-6 hrs | +3-6 | **Not done** — vetoed (ToS, no org numbers on listings) |
+| 4. Deeper Site Crawl | 3 hrs | +2-3 | Done — `two_platforms` 0.994, `any_external` 1.000 |
+| 5. Brønnøysund Announcements | 2 hrs | +1-2 | Done — kunngjøring rows now carry a real `retrieved_at` |
+| 6. Norid RDAP | 1 hr | +0.5-1 | Not needed — domain resolution already exact-entity |
+| 7. Trustpilot/Proff.no | 3-4 hrs | +1-2 | **Blocked** — 403 / JS-only, measured 16 Nov 2026 |
+| 8. Business News | 4-5 hrs | +2-3 | Partially done — first-party news bodies retained, third-party news not keyless |
+| 9. Google Jobs | 4 hrs | +2-4 | **Not done** — not keyless |
 
 > [!TIP]
-> **Doing just strategies 1-4 could push Recall from 12.89 to ~20-24**, which would put us at 49-53 total — **#1 on the current leaderboard** and significantly closer to qualification.
+> The levers that worked were the ones already inside the permitted, keyless
+> surface. The two that were projected to add the most (Finn.no, Trustpilot)
+> are exactly the two that are closed to a keyless agent. See
+> `RECALL_LEVERS.md` for the probe evidence.
 
 ---
 

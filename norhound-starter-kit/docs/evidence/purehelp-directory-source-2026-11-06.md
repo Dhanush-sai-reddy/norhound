@@ -121,7 +121,6 @@ uv run python scripts/measure_recall.py \
 | metric | baseline `14b9dd7` (`out/frozen/measure-all-fixed3.json`) | with Purehelp (`out/frozen/measure-all+purehelp.json`) | Δ |
 |---|---|---|---|
 | `recall_proxy_50` | 37.7833 | **40.3333** | **+2.5500** |
-| implied official recall (× 0.9716) | 36.71 / 50 | **39.19 / 50** | +2.48 |
 | `any_external` | 1.000 | 1.000 | 0 |
 | `two_platforms` | 0.735 | **1.000** | +0.265 |
 | `workforce_jobs` | 0.918 | **0.959** | +0.041 |
