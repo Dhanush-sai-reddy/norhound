@@ -71,7 +71,11 @@ copy "$SRC/profiles-promoted.jsonl"   profiles-promoted.jsonl
 cp -r "$SRC/site" "$DEST/site"
 echo "  site/                      $(du -sh "$DEST/site" | cut -f1)"
 
-say "4. package README with this run's measured numbers"
+say "4. 100-company smoke test"
+uv run python scripts/build_smoke_report.py \
+  --run-dir "$SRC" --count 100 --output-dir "$DEST/smoke-100"
+
+say "5. package README with this run's measured numbers"
 python3 - "$DEST" "$RUN_ID" <<'PY'
 import json, sys
 from pathlib import Path
@@ -109,6 +113,7 @@ API key, no login, no paid account; $0 per 100-company run.
 | `manifest.jsonl` | The organisation-number manifest |
 | `profiles-promoted.jsonl` | The frozen profiles the claims were derived from |
 | `site/` | The static viewer: `index.html` (search/sort/compare), `c/<org>.html`, `c/<org>.json`, `companies.csv` |
+| `smoke-100/` | The 100-company smoke test: `smoke-envelopes.jsonl` (one complete result per input) and `smoke-report.json` (requested vs returned, per-company claim/evidence counts) |
 
 Checks on this package:
 
@@ -126,7 +131,7 @@ Reproduce: `scripts/run_fresh_pipeline.sh` (see the repository README).
 print(text)
 PY
 
-say "5. build the package zip"
+say "6. build the package zip"
 rm -rf "$STAGE"
 mkdir -p "$STAGE/$PKG"
 for item in "$DEST"/*; do
