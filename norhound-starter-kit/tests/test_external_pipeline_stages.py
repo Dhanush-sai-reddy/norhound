@@ -216,3 +216,35 @@ class StageBudgetTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NewsBodyRetentionTests(unittest.TestCase):
+    """The news stage must retain a readable body and the real publication date.
+
+    `extract_company_site_news.py` has always supported `--fetch-dates`, which
+    keeps the first 5,000 characters of the page and mines the publication date
+    from the page body. The pipeline never passed the flag, so the shipped
+    corpus kept only the page title as evidence (933 activity rows, median
+    evidence span 77 characters, 8 rows with a mined date).
+
+    Measured on 20 real profiles: without the flag 6 observations, 0 dated,
+    0 bodies; with it 6 observations, 3 dated, 6 bodies. One extra request per
+    company that already has an activity page, no key, no new source.
+    """
+
+    def test_news_stage_retains_the_page_body(self) -> None:
+        source = PIPELINE.read_text(encoding="utf-8")
+        start = source.index("extract_company_site_news.py")
+        stage = source[start : start + 600]
+        self.assertIn('"--fetch-dates"', stage)
+
+    def test_news_extractor_supports_body_retention(self) -> None:
+        extractor = (ROOT / "scripts" / "extract_company_site_news.py").read_text(encoding="utf-8")
+        self.assertIn('"--fetch-dates"', extractor)
+        self.assertIn("body_excerpt", extractor)
+
+    def test_news_stage_stays_bounded(self) -> None:
+        """One page per company: the body read is capped, not unbounded."""
+        extractor = (ROOT / "scripts" / "extract_company_site_news.py").read_text(encoding="utf-8")
+        self.assertIn("read(200000)", extractor)
+        self.assertIn("body[:5000]", extractor)

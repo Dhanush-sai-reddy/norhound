@@ -240,6 +240,11 @@ def main() -> None:
         "--profiles", args.profiles,
         "--output", str(news_out),
         "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
+        # Retain a bounded body and mine the real publication date from the page
+        # itself. Without this the observation keeps only the page title, which
+        # is reproducible but not readable as a dated news fact. One extra
+        # request per company that has an activity page, no key, no new source.
+        "--fetch-dates",
     ])
     keyless_out = prefix.with_suffix(prefix.suffix + ".keyless.jsonl")
     if args.keyless:

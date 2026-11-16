@@ -114,12 +114,21 @@ graded score counts how many of the reference's items we reproduce. That is why
 
 ### Depth levers, in the order they are worth doing
 
-1. **Retain a bounded first-party body for news.** Today a `dated_news`
-   observation keeps `content_sha256` and an `evidence_span` that is often just
-   the page title, so the fact is reproducible but not *readable* from the
-   evidence. Keeping the first ~1,500 characters of the article body (the same
-   cap the envelope already uses for `claim_span`) makes every news claim
-   verifiable from our own artifact. No new source, no new request.
+1. **Retain a bounded first-party body for news. — DONE (2026-11-16)**
+   `extract_company_site_news.py` already supported `--fetch-dates` (keep the
+   first 5,000 characters, mine the publication date from the page body), but
+   the pipeline never passed the flag. Shipped corpus: 933 activity rows, median
+   `evidence_span` **77 characters**, 8 rows with a mined date.
+   Measured on 20 real profiles, same companies both ways:
+
+   | | observations | dated | bodies retained |
+   |---|---|---|---|
+   | without the flag | 6 | 0 | 0 |
+   | with `--fetch-dates` | 6 | **3** | **6** |
+
+   Wired into `scripts/run_external_pipeline.py`; three tests pin it. One extra
+   request per company that already has an activity page, no key, no new
+   source.
 2. **Publish real role cards, not `/karriere` pages.** 537 hiring claims for
    1,000 companies is thin, and the reviewer's rule is explicit: a bare careers
    page must emit `careers_page`, never `hiring: true`. The NAV index is the
