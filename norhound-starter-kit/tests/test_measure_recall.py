@@ -229,6 +229,7 @@ class MeasureRecallCoverageTests(unittest.TestCase):
                 "any_external": 1.0,
                 "two_platforms": 2 / 3,
                 "workforce_jobs": 1 / 3,
+                "workforce_snapshot": 0.0,
                 "ratings_reviews": 1 / 3,
                 "buzz_engagement": 1.0,
                 "sentiment": 1 / 3,
@@ -257,12 +258,27 @@ class MeasureRecallCoverageTests(unittest.TestCase):
         self.assertEqual(mine_report["published_audited"], their_report["published_audited"])
         self.assertEqual(
             list(mine_report["coverage"]),
-            ["any_external", "two_platforms", "workforce_jobs", "ratings_reviews", "buzz_engagement", "sentiment"],
+            ["any_external", "two_platforms", "workforce_jobs", "workforce_snapshot", "ratings_reviews", "buzz_engagement", "sentiment"],
         )
 
     def test_ratings_reviews_counts_review_summary_rows(self):
         report = _report()
         self.assertAlmostEqual(report["coverage"]["ratings_reviews"], 1 / 3)
+
+    def test_the_proxy_averages_only_the_six_scored_fields(self):
+        # Headcount is reported in `coverage` but must never lift the headline.
+        report = _report()
+        scored = [report["coverage"][field] for field in measure_recall.RECALL_PROXY_FIELDS]
+        self.assertAlmostEqual(report["recall_proxy_50"], sum(scored) / 6 * 50)
+        self.assertIn("workforce_snapshot", report["coverage"])
+
+    def test_headcount_alone_does_not_raise_the_proxy(self):
+        observations = [
+            _observation(id="w1", organisation_number=ORG_A, platform="brreg", signal_type="workforce_snapshot"),
+        ]
+        report = _single_org_report(observations, [_label(id="w1")])
+        self.assertAlmostEqual(report["coverage"]["workforce_snapshot"], 1.0)
+        self.assertEqual(report["coverage"]["workforce_jobs"], 0.0)
 
     def test_buzz_engagement_counts_public_mention_rows(self):
         report = _report()
@@ -311,9 +327,10 @@ class MeasureRecallCoverageTests(unittest.TestCase):
         self.assertEqual(report["profiles_missing_organisation_number"], 1)
         self.assertAlmostEqual(report["coverage"]["two_platforms"], 2 / 3)
 
-    def test_recall_proxy_is_mean_of_coverage_times_fifty(self):
+    def test_recall_proxy_is_mean_of_the_scored_coverage_fields_times_fifty(self):
         report = _report()
-        expected = sum(report["coverage"].values()) / len(report["coverage"]) * 50
+        scored = [report["coverage"][field] for field in measure_recall.RECALL_PROXY_FIELDS]
+        expected = sum(scored) / len(scored) * 50
         self.assertAlmostEqual(report["recall_proxy_50"], expected)
 
 

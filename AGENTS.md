@@ -78,19 +78,27 @@ repository can reproduce today with `scripts/measure_recall.py`.
 |---|---|---|---|
 | any_external | 1.000 | 8.33 | 0.00 |
 | two_platforms | 0.994 | 8.28 | 0.05 |
-| workforce_jobs | 0.954 | 7.95 | 0.38 |
+| workforce_jobs | 0.051 | 0.42 | 7.91 |
 | buzz_engagement | 1.000 | 8.33 | 0.00 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **total** | | **33.43 / 50** | **16.57** |
+| **six-field proxy** | | **25.91 / 50** | **24.09** |
+
+`workforce_snapshot` (headcount, 0.954) is measured and reported **beside** the
+six fields, not inside the proxy: 954 of 1,000 companies have a headcount figure
+from the register or an annual report, but only **51 have a real job posting**.
+Counting headcount as hiring made this field read 0.954 and the proxy 33.43; the
+reviewer's rule is that a hiring fact needs a role card, a job-feed item or an
+apply action, so the honest field value is 0.051.
 
 ### Where the remaining points are
-1. **16.1 of the 16.6 remaining points sit in two fields that read the same
+1. **16.1 of the 24.1 remaining points sit in two fields that read the same
    source class** — a ratings/reviews directory. Every keyless ratings source
    was probed on 16 Nov 2026 and is blocked or JavaScript-only; the measurements
    are in `norhound-starter-kit/RECALL_LEVERS.md`.
-2. **`workforce_jobs` has 0.38 left** — needs real role cards, not `/karriere`
-   pages. The NAV feed is the only keyless source of adverts.
+2. **`workforce_jobs` has 7.91 left** — the largest honest gap. It needs real
+   role cards. The NAV feed is the only keyless source of adverts and reaches
+   51 companies at a 183-day window.
 3. **`two_platforms` has 0.05 left** — effectively done.
 4. **The viewer has no sentiment tab** — sections are Summary / Questions /
    Facts / Observations / Evidence / Changes. Costs UX, not recall.

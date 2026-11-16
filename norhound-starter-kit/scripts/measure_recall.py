@@ -49,7 +49,24 @@ from norway_company_agent.external_footprint import publishable_observation, val
 
 # Signal sets copied from scripts/evaluate_external_footprint.py so that the
 # coverage numbers stay directly comparable with the existing scorer.
-WORKFORCE_SIGNALS = {"job_posting", "workforce_snapshot"}
+WORKFORCE_SIGNALS = {"job_posting"}
+# Headcount is a real, publishable workforce fact, but it is not evidence of
+# hiring: the reviewer's rule is that a hiring fact needs a role card, a
+# job-feed item or an apply action. Counting `workforce_snapshot` here made
+# workforce_jobs read 0.954 on a corpus where only 53 of 1,000 companies had an
+# actual posting, so it is measured and reported separately instead.
+WORKFORCE_SNAPSHOT_SIGNALS = {"workforce_snapshot"}
+
+# The six fields the recall proxy averages. Every other coverage field is
+# informational.
+RECALL_PROXY_FIELDS = (
+    "any_external",
+    "two_platforms",
+    "workforce_jobs",
+    "ratings_reviews",
+    "buzz_engagement",
+    "sentiment",
+)
 REVIEW_SIGNALS = {"review", "review_summary", "place_summary"}
 BUZZ_SIGNALS = {"public_post", "public_mention", "profile_metrics"}
 
@@ -164,6 +181,7 @@ def compute_coverage(published: list[dict[str, Any]], organisations: list[str]) 
         "any_external": ratio(sum(bool(platforms.get(org)) for org in organisations), total),
         "two_platforms": ratio(sum(len(platforms.get(org, set())) >= 2 for org in organisations), total),
         "workforce_jobs": ratio(sum(bool(signals.get(org, set()) & WORKFORCE_SIGNALS) for org in organisations), total),
+        "workforce_snapshot": ratio(sum(bool(signals.get(org, set()) & WORKFORCE_SNAPSHOT_SIGNALS) for org in organisations), total),
         "ratings_reviews": ratio(sum(bool(signals.get(org, set()) & REVIEW_SIGNALS) for org in organisations), total),
         "buzz_engagement": ratio(sum(bool(signals.get(org, set()) & BUZZ_SIGNALS) for org in organisations), total),
         "sentiment": ratio(sum(org in sentiment_orgs for org in organisations), total),
@@ -224,7 +242,7 @@ def metric_definitions() -> dict[str, str]:
         "sentiment_audited": "Published rows that carry a truthy sentiment label.",
         "sentiment_accuracy": "sentiment_correct audited rows / sentiment_audited rows; null when no sentiment row was audited.",
         "coverage": "Per-field organisation coverage over the profile organisation set, computed with the same rules and signal sets as scripts/evaluate_external_footprint.py.",
-        "recall_proxy_50": "Mean of the six coverage ratios multiplied by 50 (a proxy: the official Recall/50 field weights are not documented in this tree).",
+        "recall_proxy_50": "Mean of the six scored coverage ratios (RECALL_PROXY_FIELDS) multiplied by 50 (a proxy: the official Recall/50 field weights are not documented in this tree). `workforce_snapshot` is reported but excluded.",
         "direct_reviewer_gaps": "Organisations with at least one published row per gap kind: social_profile=profile_handle, dated_news=public_post with a publication date, hiring=job_posting.",
         "dated_news": "Organisations with a published public_post row whose date is in metrics.published_at, metrics.published_date or a top-level published_at; BRREG announcements dated only in signal.date are excluded because they are registry events, not news.",
         "direct_reviewer_gap_ratios": "direct_reviewer_gaps divided by the profile organisation count.",
@@ -276,7 +294,11 @@ def build_report(
     withheld_wrong_entity = len(accepted_audited) - len(published)
 
     coverage = compute_coverage(published, organisations)
-    recall_proxy_50 = sum(coverage.values()) / len(coverage) * 50
+    # The proxy is the mean of the six scored fields. `workforce_snapshot` is
+    # reported beside them for information and must not enter the mean: doing so
+    # would let headcount, which the rubric does not count as hiring, raise the
+    # headline.
+    recall_proxy_50 = sum(coverage[field] for field in RECALL_PROXY_FIELDS) / len(RECALL_PROXY_FIELDS) * 50
     gap_counts, gap_ratios = compute_gaps(published, organisations)
     gap_score = sum(gap_ratios.values()) / len(gap_ratios)
     registry_announcements = registry_announcement_count(published, organisations)

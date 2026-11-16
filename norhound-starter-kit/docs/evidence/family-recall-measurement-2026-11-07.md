@@ -118,6 +118,11 @@ same corpus against a 37.0083 baseline, because two of its six terms are
 ratings and sentiment — the two the rubric does not score and the two the
 Google exclusion removed. The family scorer above is the honest comparison.
 
+> **Scorer changed 16 Nov 2026.** `measure_recall.py` no longer counts
+> `workforce_snapshot` (headcount) as `workforce_jobs`, so the six-field proxy
+> for that corpus reads **23.1083**, not 30.13. The numbers in this note are
+> left as measured on 7 Nov; see `RECALL_EVIDENCE.md` for the current scorer.
+
 ## The external-only measurement (the number that actually tracks external recall)
 
 The all-claim proxy above counts the register's own facts, and the register

@@ -13,14 +13,20 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 |---|---|---|---|
 | any_external | 1.000 | 8.33 | 0.00 |
 | two_platforms | 0.994 | 8.28 | **0.05** |
-| workforce_jobs | 0.954 | 7.95 | **0.38** |
+| workforce_jobs | 0.051 | 0.42 | **7.91** |
 | buzz_engagement | 1.000 | 8.33 | 0.00 |
 | ratings_reviews | 0.032 | 0.27 | **8.07** |
 | sentiment | 0.032 | 0.27 | **8.07** |
 
-**16.1 of the 16.6 remaining points sit in two fields that read the same source
-class.** Every other field is effectively maxed. So "increase recall" means
-exactly one thing: find a ratings/reviews source with broad coverage.
+**24.1 of the 24.1 remaining points sit in three fields.** 16.1 of them are in
+`ratings_reviews` + `sentiment`, which read the same source class; the other 7.9
+is `workforce_jobs`, where the constraint is the number of real adverts a
+keyless source holds. `any_external`, `two_platforms` and `buzz_engagement` are
+effectively maxed.
+
+Headcount (`workforce_snapshot`, 0.954) is measured and excluded from the proxy.
+Counting it as hiring is what made `workforce_jobs` read 0.954 and the proxy
+33.43; only 51 of 1,000 companies publish an actual job posting.
 
 ## 2. Keyless rating sources — all probed, all dead
 
@@ -109,9 +115,9 @@ The proxy asks "does this company have *any* signal in this field", and answers
 yes for 4 of 6 fields at 99–100%. That is not the same question the graded
 metric asks: the proxy counts presence, the graded metric counts how many of a
 reference collection's items we reproduce. The census above makes the depth
-problem concrete — `workforce_jobs` reads 0.954 while only 537 real hiring
-claims exist, and `news` is ~3 items per company against a reference that can
-hold far more. Presence is solved; per-company depth is not.
+problem concrete — only 537 real hiring claims exist across 1,000 companies, and
+`news` is ~3 items per company against a reference that can hold far more.
+Presence is solved; per-company depth is not.
 
 ### Depth levers, in the order they are worth doing
 

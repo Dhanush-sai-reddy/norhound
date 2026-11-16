@@ -77,7 +77,11 @@ def main() -> None:
     coverage = {
         "any_external": ratio(sum(bool(org_platforms[org]) for org in all_orgs), len(all_orgs)),
         "two_platforms": ratio(sum(len(org_platforms[org]) >= 2 for org in all_orgs), len(all_orgs)),
-        "workforce_jobs": ratio(sum(bool(org_signals[org] & {"job_posting", "workforce_snapshot"}) for org in all_orgs), len(all_orgs)),
+        # Headcount is reported on its own: it is a workforce fact but not
+        # evidence of hiring, which needs a role card, a job-feed item or an
+        # apply action.
+        "workforce_jobs": ratio(sum(bool(org_signals[org] & {"job_posting"}) for org in all_orgs), len(all_orgs)),
+        "workforce_snapshot": ratio(sum(bool(org_signals[org] & {"workforce_snapshot"}) for org in all_orgs), len(all_orgs)),
         "ratings_reviews": ratio(sum(bool(org_signals[org] & {"review", "review_summary", "place_summary"}) for org in all_orgs), len(all_orgs)),
         "buzz_engagement": ratio(sum(bool(org_signals[org] & {"public_post", "public_mention", "profile_metrics"}) for org in all_orgs), len(all_orgs)),
         "sentiment": ratio(sum(any(item.get("sentiment_label") for item in accepted_all if str(item.get("organisation_number")) == org) for org in all_orgs), len(all_orgs)),

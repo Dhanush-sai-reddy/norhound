@@ -274,7 +274,7 @@ After reviewing `CHAT_LOG.md`, `RECALL_STRATEGY.md`, pipeline logs, and source c
 | + UX 8.0 | +1.6 | 67.3 | |
 
 **No official score has been issued for the current revision.** Measured
-six-field proxy today: **33.43 / 50**.
+six-field proxy today: **25.91 / 50**.
 
 ---
 

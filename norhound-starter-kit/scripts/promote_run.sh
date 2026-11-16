@@ -46,9 +46,13 @@ if unsupported not in (0, None):
 PY
 
 say "2. archive the previous package"
-if [[ -d "$DEST" && ! -d "${DEST}-prev" ]]; then
-  mv "$DEST" "${DEST}-prev"
-  echo "moved the previous package to ${DEST}-prev"
+if [[ -d "$DEST" ]]; then
+  PREV="${DEST}-prev"
+  # A leftover ${DEST}-prev would otherwise make this a silent merge of the old
+  # and new corpora, which is how a stale company page survives into the zip.
+  [[ -d "$PREV" ]] && rm -rf "$PREV"
+  mv "$DEST" "$PREV"
+  echo "moved the previous package to $PREV"
 fi
 mkdir -p "$DEST"
 
@@ -68,6 +72,7 @@ copy "$SRC/measure-final.json"        measure.json
 copy "$SRC/measure-family-final.json" measure-family.json
 copy "$SRC/entry.jsonl"               manifest.jsonl
 copy "$SRC/profiles-promoted.jsonl"   profiles-promoted.jsonl
+[[ -d "$SRC/site" ]] || { echo "missing $SRC/site"; exit 1; }
 cp -r "$SRC/site" "$DEST/site"
 echo "  site/                      $(du -sh "$DEST/site" | cut -f1)"
 
@@ -86,12 +91,18 @@ m = json.loads((dest / "measure.json").read_text())
 fam = json.loads((dest / "measure-family.json").read_text())["family_company_recall"]
 
 claims = evidence = 0
-for line in (dest / "envelopes.jsonl").read_text(encoding="utf-8").splitlines():
-    if not line.strip():
-        continue
-    row = json.loads(line)
-    claims += len(row.get("claims") or [])
-    evidence += len(row.get("evidence") or [])
+# A raw U+2028/U+2029 inside a JSON string is a line terminator to str.splitlines()
+# and would abort the parse, so read line by line (which splits on \n only) and
+# escape those two characters before decoding.
+with (dest / "envelopes.jsonl").open(encoding="utf-8") as handle:
+    for line in handle:
+        if not line.strip():
+            continue
+        row = json.loads(
+            line.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+        )
+        claims += len(row.get("claims") or [])
+        evidence += len(row.get("evidence") or [])
 
 families = ", ".join(
     f"{name} {row['covered']}/{row['opportunities']}" for name, row in fam.items()
@@ -137,6 +148,9 @@ mkdir -p "$STAGE/$PKG"
 for item in "$DEST"/*; do
   cp -rl "$item" "$STAGE/$PKG/" 2>/dev/null || cp -r "$item" "$STAGE/$PKG/"
 done
+# `zip` updates an existing archive in place, so a stale zip would keep entries
+# from a previous run that no longer exist.
+rm -f "$ROOT/out/norhound-signalpost-submission.zip"
 ( cd "$STAGE" && zip -qr "$ROOT/out/norhound-signalpost-submission.zip" "$PKG" )
 rm -rf "$STAGE"
 ls -la out/norhound-signalpost-submission.zip | awk '{print $5, $9}'

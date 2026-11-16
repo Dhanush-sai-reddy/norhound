@@ -11,13 +11,18 @@ the graded metric.
 |---|---|---|---|
 | any_external | 1.000 | 8.33 | 0.00 |
 | two_platforms | 0.994 | 8.28 | 0.05 |
-| workforce_jobs | 0.954 | 7.95 | 0.38 |
+| workforce_jobs | 0.051 | 0.42 | 7.91 |
 | buzz_engagement | 1.000 | 8.33 | 0.00 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **Six-field proxy** | | **33.43 / 50** | **16.57** |
+| **Six-field proxy** | | **25.91 / 50** | **24.09** |
 
 Source: `out/run-fresh-20261115T073743Z/measure-final.json`.
+
+`workforce_snapshot` (headcount: 0.954 of companies) is reported beside these
+six fields and excluded from the proxy. Only **51 of 1,000** companies publish a
+real job posting; counting headcount as hiring is what produced the earlier
+0.954 and the inflated 33.43 headline.
 
 > [!IMPORTANT]
 > **Recall is the ONLY real battleground.** Evidence and Synthesis hit the same
@@ -25,13 +30,13 @@ Source: `out/run-fresh-20261115T073743Z/measure-final.json`.
 > here (search, per-company pages, compare view, bulk export). The competition
 > comes down to who can find more verified facts about more companies.
 
-### Where the 16.57 remaining points sit
+### Where the 24.09 remaining points sit
 
-1. **16.1 of the 16.6** sit in `ratings_reviews` + `sentiment`, which read the
+1. **16.1 of the 24.1** sit in `ratings_reviews` + `sentiment`, which read the
    same source class (a ratings/reviews directory). Every keyless ratings source
    probed on 16 Nov 2026 is blocked or JavaScript-only — measurements in
    `RECALL_LEVERS.md`.
-2. **0.38** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
+2. **7.9** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
    The NAV feed is the only keyless source of adverts.
 3. **0.05** in `two_platforms` — effectively done.
 
@@ -94,24 +99,29 @@ Measured 15 Nov 2026 (`out/run-fresh-20261115T073743Z/`), six fields, each worth
 | `any_external` | **1.000** | 8.33 | ✅ Done | Every company has at least one external fact |
 | `two_platforms` | **0.994** | 8.28 | ✅ Done | 0.05 headroom |
 | `buzz_engagement` | **1.000** | 8.33 | ✅ Done | `public_post` / `profile_metrics` coverage complete |
-| `workforce_jobs` | **0.954** | 7.95 | 🟡 0.38 left | Needs real role cards; NAV feed is the only keyless advert source |
+| `workforce_jobs` | **0.051** | 0.42 | 🔴 Largest honest gap | 51 of 1,000 companies publish a real job posting; NAV feed is the only keyless advert source |
 | `ratings_reviews` | **0.032** | 0.27 | 🔴 Capped | Only 32 of 1,000 companies have any rating page |
 | `sentiment` | **0.032** | 0.27 | 🔴 Capped | Same 32 companies; every other ratings directory is blocked or JS-only |
 
 > [!CAUTION]
 > The two capped fields (`ratings_reviews`, `sentiment`) carry **16.1 of the
-> 16.6** remaining points, and they read the same source class. Closing them is
+> 24.1** remaining points, and they read the same source class. Closing them is
 > a source-access problem, not an extraction problem — see `RECALL_LEVERS.md`
-> for the 16 Nov 2026 probe results.
+> for the 16 Nov 2026 probe results. The other 7.9 sits in `workforce_jobs`,
+> where the constraint is the number of real adverts the keyless NAV feed holds.
 
 ### How the Recall Score Is Computed
 
 ```
-Recall ≈ mean(any_external, two_platforms, buzz_engagement, workforce_jobs, ratings_reviews, sentiment) × 50
-       ≈ mean(1.000, 0.994, 0.954, 1.000, 0.032, 0.032) × 50
-       ≈ 0.669 × 50
-       ≈ 33.43 six-field proxy
+Recall ≈ mean(any_external, two_platforms, workforce_jobs, ratings_reviews, buzz_engagement, sentiment) × 50
+       ≈ mean(1.000, 0.994, 0.051, 0.032, 1.000, 0.032) × 50
+       ≈ 0.518 × 50
+       ≈ 25.91 six-field proxy
 ```
+
+`workforce_snapshot` (0.954) is reported separately and excluded: headcount is a
+workforce fact, but the reviewer's rule is that hiring needs a role card, a
+job-feed item or an apply action.
 
 This is an internal proxy. No official Recall figure exists for the current
 revision.

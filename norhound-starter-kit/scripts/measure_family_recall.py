@@ -175,15 +175,26 @@ def covered_companies_external(envelopes: list[dict[str, Any]]) -> dict[str, set
 def family_recall(
     covered: dict[str, set[str]], opportunities: dict[str, int]
 ) -> dict[str, dict[str, Any]]:
-    """Covered companies, opportunities and recall for every family."""
+    """Covered companies, opportunities and recall for every family.
+
+    A recall is a share of the opportunity set, so it cannot exceed 1.0. We can
+    publish a family for more companies than the reference union holds (for
+    example a news fact for all 1,000 companies when the union has 998), and
+    those extra companies earn nothing: the denominator is the reference, not
+    our own coverage. `covered` reports what we actually published and `matched`
+    the part of it that counts, so the surplus stays visible instead of being
+    silently dropped or silently inflating the headline.
+    """
     report: dict[str, dict[str, Any]] = {}
     for family in sorted(opportunities):
         total = opportunities[family]
         hits = len(covered.get(family, set()))
+        matched = min(hits, total) if total else 0
         report[family] = {
             "covered": hits,
+            "matched": matched,
             "opportunities": total,
-            "recall": (hits / total) if total else 0.0,
+            "recall": (matched / total) if total else 0.0,
         }
     return report
 
@@ -229,7 +240,7 @@ def metric_definitions() -> dict[str, str]:
         "companies": "Distinct organisation numbers in the measured envelopes.",
         "batch_size": "The batch the measurement ran on; the opportunity counts are scaled to it.",
         "opportunities": "Official per-family opportunity counts (companies with a match in the union of all participants' and Builderr's discoveries), scaled to the batch size.",
-        "family_company_recall": "Per family: companies publishing at least one claim of that family, the opportunity count, and covered/opportunities.",
+        "family_company_recall": "Per family: companies publishing at least one claim of that family, the part of that count which falls inside the opportunity set (`matched`, capped at the opportunity count), the opportunity count, and matched/opportunities.",
         "scored_family_recall": "family_company_recall restricted to the scored families.",
         "scored_family_recall_proxy_50": "Opportunity-weighted mean of the scored families' recall, in points out of 50. The rubric's other half (claim recall against the union) is not computable without the official union, so this is the company-recall half only.",
         "scored_group_recall": "The six decision families (identity, accounts, people, website, hiring, activity), each the opportunity-weighted mean of its official families.",

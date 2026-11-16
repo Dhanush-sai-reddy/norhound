@@ -80,6 +80,23 @@ class FamilyRecallTests(unittest.TestCase):
         report = fam.family_recall(covered, opportunities)
         self.assertAlmostEqual(report["website"]["recall"], 2 / 577)
 
+    def test_a_recall_can_never_exceed_one(self) -> None:
+        # 1,000 companies publish a news fact, but the reference union only holds
+        # 998: the surplus earns nothing and must not inflate the headline.
+        opportunities = {"news": 998}
+        covered = {"news": {f"{n:09d}" for n in range(1000)}}
+        report = fam.family_recall(covered, opportunities)
+        self.assertEqual(report["news"]["covered"], 1000)
+        self.assertEqual(report["news"]["matched"], 998)
+        self.assertEqual(report["news"]["recall"], 1.0)
+
+    def test_the_headline_proxy_can_never_exceed_fifty(self) -> None:
+        recalls = {family: 1.0 for family in fam.SCORED_FAMILIES}
+        opportunities = dict(fam.OFFICIAL_FAMILY_OPPORTUNITIES)
+        score = fam.opportunity_weighted_mean(recalls, opportunities, fam.SCORED_FAMILIES)
+        self.assertLessEqual(score * 50, 50.0)
+        self.assertAlmostEqual(score * 50, 50.0)
+
     def test_reviews_are_reported_but_left_out_of_the_headline(self) -> None:
         self.assertIn("reviews", fam.OFFICIAL_FAMILY_OPPORTUNITIES)
         self.assertNotIn("reviews", fam.SCORED_FAMILIES)

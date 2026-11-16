@@ -13,7 +13,7 @@
 ## EXECUTIVE SUMMARY
 
 **Project:** Signalpost Hackathon - Norwegian Company Intelligence Agent
-**Status:** SUBMISSION READY (six-field proxy 33.43/50, precision 1.0)
+**Status:** SUBMISSION READY (six-field proxy 25.91/50, precision 1.0)
 **Submission Package:** `out/submission/` - READY
 
 ---
@@ -271,7 +271,7 @@ out/submission/
 **Recommendation: SUBMIT NOW.** Package at `out/submission/` is complete.
 
 **Score:** no official figure exists for this revision. Current reproducible
-six-field proxy: **33.43 / 50** (see `norhound-starter-kit/RECALL_LEVERS.md`).
+six-field proxy: **25.91 / 50** (see `norhound-starter-kit/RECALL_LEVERS.md`).
 
 ---
 
@@ -371,7 +371,7 @@ uv run python scripts/run_one_shot.py --out out/submission
 ## FINAL VERDICT (historical, 4 Oct 2026)
 
 **Score: no official figure exists for this revision.**
-**Reproducible six-field proxy today: 33.43 / 50**
+**Reproducible six-field proxy today: 25.91 / 50**
 **Recommendation: SUBMIT**
 
 ---

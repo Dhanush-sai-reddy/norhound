@@ -13,7 +13,7 @@
 > which reports only what `scripts/measure_recall.py` produces here.
 
 Recall is the only category with real headroom. Six fields, each worth 8.33 of
-50; measured six-field proxy today is **33.43 / 50** (see `RECALL_STRATEGY.md`).
+50; measured six-field proxy today is **25.91 / 50** (see `RECALL_STRATEGY.md`).
 
 ### Two levers. Do both.
 
@@ -32,7 +32,7 @@ Recall is the only category with real headroom. Six fields, each worth 8.33 of
 | **News body retention** | `--fetch-dates` wired into the pipeline by default |
 | **NAV parent resolution** | Sub-unit → legal entity, index no longer collapses to zero |
 
-Current six-field proxy: **33.43 / 50**. No official Recall figure exists for
+Current six-field proxy: **25.91 / 50**. No official Recall figure exists for
 this revision, so no official gap can be stated.
 
 ---
@@ -122,7 +122,7 @@ page and has this exact surface:
 
 ---
 
-## 5. TASK B — Raise the six-field proxy above 33.43
+## 5. TASK B — Raise the six-field proxy above 25.91
 
 Recall = **mean of six field recalls × 50**. Verified current values:
 
@@ -259,7 +259,7 @@ print(f'  projected official ~{m*50*0.87:.2f}/50')
 ## 8. Definition of done
 
 - [ ] UX: every viewer gap closed, sentiment surface present
-- [ ] Six-field proxy ≥ 33.43 (no official Recall figure exists to target)
+- [ ] Six-field proxy ≥ 25.91 (no official Recall figure exists to target)
 - [ ] `wrong_entity_publications == 0`, `entity_precision == 1.0`
 - [ ] All tests pass
 - [ ] Submission package reproducible from the pinned commit

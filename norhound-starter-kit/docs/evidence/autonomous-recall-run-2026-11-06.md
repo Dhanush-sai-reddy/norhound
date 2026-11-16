@@ -195,7 +195,7 @@ The Google Maps reviews connector was already built and had 600 observations for
 
 **Recall proxy:** 40.275 / 50 — **internal six-field proxy only, and this run
 included Apify Google Places (Track 19), which the keyless submission does not
-use.** The keyless-only corpus measures 33.43 / 50; see
+use.** The keyless-only corpus measures 25.91 / 50; see
 `RECALL_LEVERS.md` §5. No official Recall figure exists for this revision.
 
 **All tests pass:** 388/388
