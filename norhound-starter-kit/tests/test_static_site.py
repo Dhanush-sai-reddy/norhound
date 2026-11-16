@@ -138,6 +138,28 @@ class StaticSiteObservationTests(unittest.TestCase):
         self.assertIn("observed 2026-09-29", page)
         self.assertIn("retrieved 2026-09-29", page)
 
+    def test_a_review_rating_is_the_headline_not_the_raw_json_ld(self):
+        """A reviewer should read "4.6/5 from 12 reviews", not the aggregate span.
+
+        The aggregate-rating span stays on the card as the machine-readable
+        proof, and the derived sentiment row does not repeat it.
+        """
+        env = _envelope()
+        span = '"aggregateRating":{"@type":"AggregateRating","ratingValue":4.6,"ratingCount":12}'
+        env["profile"]["evidence"]["external_observations"] = [
+            {**_obs(signal="review_summary"), "platform": "company_directory",
+             "metrics": {"rating": 4.6, "review_count": 12, "scale": 5}, "evidence_span": span},
+            {**_obs(oid="obs-2", signal="sentiment"), "platform": "company_directory",
+             "sentiment_label": "positive", "metrics": {"rating": 4.6, "review_count": 12},
+             "evidence_span": span},
+        ]
+        _, out = _run_tmp([env])
+        page = (out / "c" / "810034882.html").read_text(encoding="utf-8")
+        self.assertIn("<b>4.6/5</b> from 12 reviews", page)
+        self.assertIn("positive", page)
+        # the proof is kept once, on the review card; the sentiment row omits it
+        self.assertEqual(page.count('<small class="span">'), 1)
+
     def test_index_offers_sort_search_platform_filter_and_compare(self):
         _, out = _run_tmp([_envelope_with_obs()])
         index = (out / "index.html").read_text(encoding="utf-8")

@@ -100,8 +100,10 @@ apply action, so the honest field value is 0.051.
    role cards. The NAV feed is the only keyless source of adverts and reaches
    51 companies at a 183-day window.
 3. **`two_platforms` has 0.05 left** — effectively done.
-4. **The viewer has no sentiment tab** — sections are Summary / Questions /
-   Facts / Observations / Evidence / Changes. Costs UX, not recall.
+4. **The viewer's sentiment section already exists and works** — every company
+   page renders `Sentiment & Reviews` with the rating, the review count, the
+   derived label and the source link (measured on 32 companies with a rating).
+   It costs no recall; the ceiling is the source, not the product.
 
 These are internal, reproducible numbers. They are a proxy for the graded
 metric, not the graded metric itself.

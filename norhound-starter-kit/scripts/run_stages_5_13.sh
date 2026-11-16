@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 #
-# run_stages_5_13.sh — the post-crawl half of the pipeline, with the two
-# unbounded stages switched off.
+# run_stages_5_13.sh — the post-crawl half of the pipeline, with the one
+# unbounded stage switched off.
 #
-# Stages 5-13 of run_full_batch.sh assume they may spend hours on two
-# connectors:
+# Stage 5 of run_full_batch.sh may spend hours on one connector:
 #
-#   * Fagfolkguiden reviews  — one page per organisation, produced 0 rows after
-#                              4 h on the 2026-11-07 run.
-#   * annual-report PDF/OCR  — one full annual report per company, 10800 s cap.
+#   * Fagfolkguiden reviews  — kept: it is the only keyless source of a scored
+#                              rating (0.032 of ratings_reviews and sentiment)
+#                              and costs ~46 min per 1,000 companies.
+#   * annual-report PDF/OCR  — skipped: 3 h 22 min per 1,000 companies for 0
+#                              scored points (RECALL_LEVERS.md). Opt in with
+#                              --workforce-pdf.
 #
-# Both are still reachable from run_full_batch.sh; this script is the fast
-# path: it skips them (--no-reviews --no-workforce-pdf) and keeps the registry
-# employee count, NAV, Wikidata, Purehelp, jobs, announcements and news.
+# The fast path keeps the registry employee count, NAV, Wikidata, Purehelp,
+# jobs, announcements, news and the reviews directory.
 #
 # Usage:
 #   RUN_ID=fresh-20261115T073743Z scripts/run_stages_5_13.sh
@@ -43,7 +44,7 @@ run uv run python scripts/run_external_pipeline.py \
   --profiles "$PROFILES" \
   --envelopes "$OUT/envelopes.jsonl" \
   --prefix "$OUT/batch" \
-  --jobs --no-reviews --no-workforce-pdf --keyless --nav --workforce --kunngjoring --google-news \
+  --jobs --keyless --nav --workforce --kunngjoring --google-news \
   --rescue-workers "$RESCUE_WORKERS" \
   --rescue-timeout "$RESCUE_TIMEOUT" \
   --nav-index "$NAV_INDEX" \

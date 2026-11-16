@@ -120,6 +120,35 @@ class FullBatchScriptTests(unittest.TestCase):
         self.assertIn('WORKFORCE_WORKERS="${WORKFORCE_WORKERS:-8}"', text)
         self.assertIn('--workforce-workers "$WORKFORCE_WORKERS"', text)
 
+    def test_the_default_run_keeps_the_reviews_connector(self) -> None:
+        """Fagfolkguiden is the only keyless source of a scored rating.
+
+        It yields 32 of 1,000 companies with a rating and costs ~46 min per
+        1,000 companies, which is 0.032 of both ratings_reviews and sentiment.
+        Disabling it by default would drop those points for no time saving that
+        matters at 100 companies.
+        """
+        self.assertNotIn("--no-reviews", _script_text())
+
+    def test_the_default_run_skips_the_annual_report_ocr_stage(self) -> None:
+        """The OCR stage measured 3 h 22 min per 1,000 companies and 0 points.
+
+        It may only be switched on by the SLOW_STAGES branch, never by the
+        default invocation.
+        """
+        text = _script_text()
+        self.assertNotIn("--no-workforce-pdf", text)
+        enabling = [line for line in text.splitlines() if "--workforce-pdf" in line]
+        self.assertTrue(enabling, "SLOW_STAGES must be able to enable the OCR stage")
+        for line in enabling:
+            self.assertIn("SLOW_FLAGS", line, "only the SLOW_STAGES branch may enable the OCR stage")
+
+    def test_the_pipeline_parser_defaults_the_ocr_stage_off(self) -> None:
+        """A direct pipeline invocation must not start the 3 h OCR stage."""
+        text = (ROOT / "scripts" / "run_external_pipeline.py").read_text(encoding="utf-8")
+        self.assertIn("parser.set_defaults(workforce_pdf=False)", text)
+        self.assertIn('"--workforce-pdf"', text)
+
 
 if __name__ == "__main__":
     unittest.main()

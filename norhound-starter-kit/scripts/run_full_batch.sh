@@ -118,12 +118,13 @@ run uv run python scripts/promote_registry_declared_sites.py \
 PROFILES="$OUT/profiles-promoted.jsonl"
 
 say "5. external footprint: every keyless connector"
-# Two connectors are unbounded in practice: Fagfolkguiden (0 rows after 4 h on
-# the 2026-11-07 run) and the annual-report PDF/OCR extractor (10800 s cap).
-# The default run skips both; SLOW_STAGES=1 puts them back.
-SLOW_FLAGS="--no-reviews --no-workforce-pdf"
+# Fagfolkguiden is the only keyless source that yields a scored rating (0.032 of
+# both ratings_reviews and sentiment) and costs ~46 min per 1,000 companies, so
+# it runs by default. The annual-report PDF/OCR extractor measured 3 h 22 min
+# and 0 scored points (RECALL_LEVERS.md): opt in with SLOW_STAGES=1.
+SLOW_FLAGS=""
 if [[ "${SLOW_STAGES:-0}" == "1" ]]; then
-  SLOW_FLAGS=""
+  SLOW_FLAGS="--workforce-pdf"
 fi
 run uv run python scripts/run_external_pipeline.py \
   --profiles "$OUT/profiles-promoted.jsonl" \

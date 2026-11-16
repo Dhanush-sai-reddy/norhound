@@ -389,15 +389,32 @@ def _company_page(env: dict, summary: dict | None) -> str:
                 dates.append(f"observed {esc(str(o['observed_at']))}")
             if o.get("retrieved_at"):
                 dates.append(f"retrieved {esc(str(o['retrieved_at'])[:10])}")
+            metrics = o.get("metrics") if isinstance(o.get("metrics"), dict) else {}
+            signal = str(o.get("signal_type") or "")
             sentiment = o.get("sentiment_label") or ""
             sentiment_badge = f'<span class="badge" style="background:{"#c8e6c9" if sentiment == "positive" else "#ffcdd2" if sentiment == "negative" else "#fff9c4"}">{esc(sentiment)}</span>' if sentiment else ""
-            rating = o.get("metrics", {}).get("rating") if isinstance(o.get("metrics"), dict) else None
-            rating_str = f" · {esc(str(rating))}/5" if rating else ""
+            # A rating is the useful fact. The raw aggregate-rating span is JSON-LD,
+            # so it is kept as the machine-readable proof underneath rather than as
+            # the headline, and the derived sentiment row does not repeat it.
+            headline = ""
+            proof = ""
+            if signal in ("review", "review_summary"):
+                rating = metrics.get("rating")
+                count = metrics.get("review_count")
+                scale = metrics.get("scale") or 5
+                if rating is not None:
+                    headline = f"<b>{esc(str(rating))}/{esc(str(scale))}</b>"
+                    if count not in (None, ""):
+                        reviews = str(count)
+                        headline += f" from {esc(reviews)} review{'s' if reviews != '1' else ''}"
+                    headline += " · "
+                if o.get("evidence_span"):
+                    proof = f'<br><small class="span">{esc(o.get("evidence_span"))}</small>'
             parts.append(
-                f"<div class=card><b>{esc(o.get('signal_type'))}</b> "
+                f"<div class=card><b>{esc(signal)}</b> "
                 f'<span class="badge">{esc(o.get("platform"))}</span> '
-                f"{sentiment_badge} "
-                f"{esc(o.get('evidence_span') or '')}{rating_str}<br>{_link(o.get('source_url') or '')}"
+                f"{sentiment_badge}"
+                f"{headline}{_link(o.get('source_url') or '')}{proof}"
                 + (f'<br><span class="date">' + " · ".join(dates) + "</span>" if dates else "")
                 + "</div>"
             )
