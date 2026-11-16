@@ -28,6 +28,27 @@ Headcount (`workforce_snapshot`, 0.954) is measured and excluded from the proxy.
 Counting it as hiring is what made `workforce_jobs` read 0.954 and the proxy
 33.43; only 51 of 1,000 companies publish an actual job posting.
 
+### The annual-report PDF/OCR stage scores nothing — measured 16 Nov 2026
+
+`run_annual_report_workforce_connector.py` is the longest stage in the chain
+(~2 h 20 min for 1,000 companies, `SLOW_STAGES=1` only) and earns **0** of the
+50 recall points. The 15 Nov corpus, measured:
+
+- 585 accepted `workforce_snapshot` facts, **585/585 `ocr_used: true`** — none
+  exist without tesseract.
+- 382 of the 585 are `0.00` full-time-equivalent filings (span
+  `"Antall årsverk i regnskapsåret 0.00"`). They are real filings, not parse
+  failures: **0 of 382** are contradicted by a positive registry or Purehelp
+  figure.
+- 379 companies have no other headcount source, but the summary and viewer both
+  read `profile["employees"]` (the registry field), and the connector skips
+  every company that already has `registry.antallAnsatte`. So it changes
+  **0** summaries and **0** viewer columns.
+- Its only visible effect is 585 observation cards in the Evidence tab.
+
+It is off by default (`scripts/run_full_batch.sh:124`). Do not turn it back on
+to chase recall; the 45-minute daily budget cannot afford it either way.
+
 ## 2. Keyless rating sources — all probed, all dead
 
 `REVIEW_SIGNALS = {"review", "review_summary", "place_summary"}`
