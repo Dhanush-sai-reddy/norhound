@@ -49,7 +49,36 @@ Counting it as hiring is what made `workforce_jobs` read 0.954 and the proxy
 It is off by default (`scripts/run_full_batch.sh:124`). Do not turn it back on
 to chase recall; the 45-minute daily budget cannot afford it either way.
 
-## 2. Keyless rating sources — all probed, all dead
+## 2. Stage cost against the daily budget — measured 16 Nov 2026
+
+The daily limits are **45 minutes, 2,000 outbound requests and $10 per batch of
+100 companies**. The 1,000-company corpus therefore has a 7 h 30 m and 20,000
+request ceiling. Stage 5 wall times below are the deltas between the
+`batch.*.jsonl` mtimes of `out/run-fresh-20261115T073743Z/`; every stage is a
+separate process that writes its file when it finishes.
+
+| stage 5 connector | wall time | scored recall |
+|---|---|---|
+| activity, news, contacts, site description, substructure | ~5 s | 0 (feeds the viewer only) |
+| sitemap lastmod | 2.6 min | 0 (`any_external` already 1.000) |
+| registry updates | 16.7 min | 0 (feeds the Changes tab) |
+| Wikidata | 0.9 s | `two_platforms`, already 0.994 |
+| Purehelp headcount | 2.3 min | 0 (headcount is not hiring) |
+| NAV job feed | 18 s | +0.13 (13 companies) |
+| company-site jobs | 12.4 min | +0.39 (39 companies) |
+| ATS role cards | 12.8 min | +0.02 (2 companies no other connector found) |
+| Google News RSS | 2.2 min | 0 (`buzz_engagement` already 1.000) |
+| Kunngjøringer | 3.0 min | 0 (`buzz_engagement` already 1.000) |
+| Fagfolkguiden | 45.6 min | +0.54 (32 companies, both rating fields) |
+| **annual-report PDF/OCR** | **3 h 22 m** | **0** |
+
+Stage 5 totals **5 h 01 m** with the OCR stage and **1 h 39 m** without it. The
+whole 1,000-company run took **10.7 h** wall clock (13:16 to 23:55), which is
+**64 min per 100 companies** — 1.4× the stated budget. Removing the OCR stage
+alone brings it to **44 min per 100**, inside the budget, which is the reason it
+stays opt-in rather than the missing points.
+
+## 3. Keyless rating sources — all probed, all dead
 
 `REVIEW_SIGNALS = {"review", "review_summary", "place_summary"}`
 (`scripts/measure_recall.py:53`), so a source only helps if it yields one of
@@ -69,7 +98,7 @@ That is the whole keyless landscape for ratings. There is no fifth option: the
 aggregators that hold Norwegian ratings either block non-browser clients or
 require a key.
 
-## 3. The one lever that works, and what it costs
+## 4. The one lever that works, and what it costs
 
 `scripts/run_google_places_connector.py` is already written, already wired to
 `--google-places`, and already gated on `GOOGLE_PLACES_KEY`. It proves identity
@@ -88,7 +117,7 @@ the fuzzy name+address fallback to keep precision at 1.0.
 - Cost of adopting it: it stops being a keyless entry. That is a policy
   decision, not a technical one.
 
-## 4. What is not worth doing
+## 5. What is not worth doing
 
 - `workforce_jobs` has 0.38 points of headroom and `two_platforms` 0.05. The
   hiring family (50/84) would need 34 more companies with a real role card or
@@ -111,7 +140,7 @@ paths:
 Both are defensible; mixing them is not. Enabling Places while still claiming
 "no API key, no account" in the submission would be a false statement.
 
-## 5. Why the six-field proxy is near-maxed but per-company depth is not
+## 6. Why the six-field proxy is near-maxed but per-company depth is not
 
 Measured on the shipped corpus (`out/run-fresh-20261115T073743Z/`, 1,000
 envelopes, 105,772 claims):
