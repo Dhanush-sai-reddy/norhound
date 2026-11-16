@@ -21,6 +21,7 @@ import time
 import urllib.request
 import urllib.error
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
 
@@ -50,12 +51,21 @@ def parse_announcements(html: str) -> list[dict]:
     return rows
 
 
-def fetch_org(org: str) -> dict:
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def fetch_org(org: str) -> tuple[list[dict], str]:
+    """Return (announcements, retrieval timestamp of this exact HTTP read).
+
+    The timestamp is taken immediately after the body is read, so every
+    observation carries the real crawl time of the page it was extracted from.
+    """
     url = f"https://w2.brreg.no/kunngjoring/hent_nr.jsp?orgnr={org}"
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as resp:
         html = resp.read().decode("latin-1", errors="replace")
-    return parse_announcements(html)
+    return parse_announcements(html), _utc_now()
 
 
 def main() -> int:
@@ -81,12 +91,12 @@ def main() -> int:
             org = futures[fut]
             done += 1
             try:
-                rows = fut.result()
+                rows, retrieved_at = fut.result()
             except urllib.error.HTTPError as exc:
-                rows = []
+                rows, retrieved_at = [], None
                 statuses[org] = f"http_{exc.code}"
             except Exception as exc:
-                rows = []
+                rows, retrieved_at = [], None
                 statuses[org] = f"{type(exc).__name__}"
             if rows:
                 statuses[org] = f"ok:{len(rows)}"
@@ -106,7 +116,7 @@ def main() -> int:
                         "platform": "brreg",
                         "signal_type": "public_post",
                         "source_url": row["url"],
-                        "retrieved_at": "2026-10-05T00:00:00Z",
+                        "retrieved_at": retrieved_at,
                         "content_sha256": hashlib.sha256(raw).hexdigest(),
                         "exact_entity": True,
                         "identity_proof": [{
