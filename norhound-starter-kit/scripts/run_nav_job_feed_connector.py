@@ -51,6 +51,11 @@ FEED_BASE = "https://pam-stilling-feed.nav.no"
 TOKEN_URL = FEED_BASE + "/api/publicToken"
 FEED_URL = FEED_BASE + "/api/v1/feed"
 BRREG_UNDERENHET = "https://data.brreg.no/enhetsregisteret/api/underenheter/{orgnr}"
+BRREG_ENHET = "https://data.brreg.no/enhetsregisteret/api/enheter/{orgnr}"
+USER_AGENT = "NorHound/1.0 (+https://github.com/Dhanush-sai-reddy/norhound)"
+# A resolution pass that keeps less than this share of the distinct employers is
+# treated as an outage, not as a real answer, and refuses to overwrite the index.
+MIN_RESOLUTION_RATIO = 0.5
 MAX_POSTING_AGE_DAYS = 183
 POLL_WORKERS = 24
 MIN_INTERVAL_BUILD = 0.0
@@ -143,22 +148,60 @@ def _norm_name(name: str) -> str:
     return str(name or "").translate(str.maketrans({"ø": "o", "Ø": "O", "å": "a", "Å": "A", "æ": "ae", "Æ": "AE"})).casefold()
 
 
-def _parent_enhet(orgnr: str, *, timeout: float = HTTP_TIMEOUT) -> str | None:
-    """Resolve a brreg sub-unit (underenhet) number to its parent legal entity.
+def _brreg_get(url: str, *, timeout: float = HTTP_TIMEOUT) -> dict[str, Any] | None:
+    """GET one brreg JSON document.
 
-    NAV adverts list the posting workplace as a brreg 'underenhet' number while
-    profiles carry the parent 'enhet' number, so org-number matching requires
-    resolving each sub-unit to its overordnetEnhet. Sub-units without a parent
-    (or numbers that no longer resolve) return None and are dropped.
+    Returns None for a definitive "not in the register" (HTTP 404). Transient
+    failures (429, 5xx, timeouts, connection resets) are retried with backoff,
+    because a rate-limited burst must not be mistaken for "this org number does
+    not exist" — that is exactly how a whole index gets silently emptied.
     """
-    try:
-        request = urllib.request.Request(BRREG_UNDERENHET.format(orgnr=orgnr), headers={"Accept": "application/json"})
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except Exception:
+    for attempt in range(3):
+        try:
+            request = urllib.request.Request(
+                url,
+                headers={"Accept": "application/json", "User-Agent": USER_AGENT},
+            )
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:
+                return None
+            if exc.code in (429, 500, 502, 503, 504) and attempt < 2:
+                time.sleep(0.5 * (2**attempt))
+                continue
+            return None
+        except Exception:
+            if attempt < 2:
+                time.sleep(0.5 * (2**attempt))
+                continue
+            return None
+    return None
+
+
+def _parent_enhet(orgnr: str, *, timeout: float = HTTP_TIMEOUT) -> str | None:
+    """Resolve a NAV employer org number to the legal entity a profile carries.
+
+    NAV adverts list the posting workplace, and that number is not always a
+    brreg sub-unit: the feed also carries parent entities directly. So:
+
+    1. if the number is a sub-unit (underenhet), return its overordnetEnhet;
+    2. if the number is already a legal entity (enhet), it is its own parent;
+    3. otherwise return None and drop the posting.
+
+    Step 2 is not cosmetic. When the feed switched to listing parent entities,
+    every number 404'd on `/underenheter/` and the old code dropped 100% of the
+    index (16 Nov 2026: 3,872 employers, 5,776 postings, 0 resolved).
+    """
+    if not orgnr.isdigit():
         return None
-    parent = str(payload.get("overordnetEnhet") or "").strip()
-    return parent if parent.isdigit() else None
+    payload = _brreg_get(BRREG_UNDERENHET.format(orgnr=orgnr), timeout=timeout)
+    if payload is not None:
+        parent = str(payload.get("overordnetEnhet") or "").strip()
+        return parent if parent.isdigit() else None
+    if _brreg_get(BRREG_ENHET.format(orgnr=orgnr), timeout=timeout) is not None:
+        return orgnr
+    return None
 
 
 def build_index(index_path: Path, report_path: Path, *, days: int, workers: int) -> None:
@@ -252,29 +295,62 @@ def build_index(index_path: Path, report_path: Path, *, days: int, workers: int)
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
-def resolve_index(index_path: Path, report_path: Path, *, workers: int) -> None:
-    """Re-key a raw NAV index by brreg parent enhet.
-
-    NAV detail records list the posting workplace as a brreg 'underenhet'
-    (sub-unit) organisation number, while profiles carry the parent 'enhet'
-    number. This pass resolves every distinct employer org number to its
-    overordnetEnhet via brreg and rewrites the index keyed by parent enhet,
-    so downstream org-number matching is exact against profile organisation
-    numbers. Sub-units with no resolvable parent are dropped.
-    """
-    rows = read_jsonl(index_path)
-    distinct = sorted({str(p.get("employer_orgnr") or "") for row in rows for p in (row.get("postings") or []) if str(p.get("employer_orgnr") or "").isdigit()})
+def _resolve_parents(distinct: list[str], *, workers: int, started: float) -> dict[str, str]:
     parents: dict[str, str] = {}
-    started = time.time()
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(_parent_enhet, org): org for org in distinct}
         for i, future in enumerate(as_completed(futures)):
             org = futures[future]
-            parent = future.result()
+            try:
+                parent = future.result()
+            except Exception:
+                parent = None
             if parent:
                 parents[org] = parent
             if i % 500 == 0 and i:
                 print(f"    parents {i}/{len(distinct)} resolved={len(parents)} ({time.time()-started:.0f}s)", flush=True)
+    return parents
+
+
+def resolve_index(index_path: Path, report_path: Path, *, workers: int) -> None:
+    """Re-key a raw NAV index by brreg parent enhet.
+
+    NAV detail records list the posting workplace as a brreg organisation
+    number, while profiles carry the parent legal entity. This pass resolves
+    every distinct employer number to that entity and rewrites the index keyed
+    by it, so downstream matching is exact against profile org numbers.
+
+    Two safety rules, both learned the hard way on 16 Nov 2026 when this pass
+    emptied a 5,776-posting index and killed a 24-minute feed rebuild:
+
+    * a number that is already a legal entity is its own parent, so a feed that
+      lists parent entities does not resolve to nothing;
+    * if fewer than ``MIN_RESOLUTION_RATIO`` of the employers resolve, the pass
+      retries the failures at low concurrency and then refuses to write at all.
+      An unresolved index is recoverable; a zeroed one is not.
+    """
+    rows = read_jsonl(index_path)
+    if not rows:
+        raise SystemExit(f"refusing to resolve an empty index: {index_path}")
+    distinct = sorted({str(p.get("employer_orgnr") or "") for row in rows for p in (row.get("postings") or []) if str(p.get("employer_orgnr") or "").isdigit()})
+    started = time.time()
+    parents = _resolve_parents(distinct, workers=workers, started=started)
+    total = len(distinct)
+    if total and len(parents) / total < MIN_RESOLUTION_RATIO:
+        unresolved = [org for org in distinct if org not in parents]
+        print(
+            f"    resolution collapsed: {len(parents)}/{total} resolved; "
+            f"retrying {len(unresolved)} at {min(4, workers)} workers",
+            flush=True,
+        )
+        parents.update(_resolve_parents(unresolved, workers=min(4, workers), started=started))
+    ratio = len(parents) / total if total else 0.0
+    if total and ratio < MIN_RESOLUTION_RATIO:
+        raise SystemExit(
+            f"refusing to rewrite {index_path}: only {len(parents)}/{total} employers resolved "
+            f"({ratio:.1%} < {MIN_RESOLUTION_RATIO:.0%}). brreg is probably rate-limiting or "
+            "down, so the raw index is left untouched and the run should be retried."
+        )
     by_parent: dict[str, list[dict[str, Any]]] = {}
     dropped = 0
     for row in rows:
