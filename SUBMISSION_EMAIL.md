@@ -1,4 +1,4 @@
-Subject: Signalpost submission — NorHound Company Research Agent (commit 4fb833e)
+Subject: Signalpost submission — NorHound Company Research Agent (commit cfd09e9)
 
 Hi,
 
@@ -10,8 +10,13 @@ REPOSITORY
 https://github.com/Dhanush-sai-reddy/norhound
 
 COMMIT HASH
-4fb833e0ba9993aacbfe627c80da204d3fb00cb6
-(branch: main)
+cfd09e9  (branch: main, github.com/Dhanush-sai-reddy/norhound)
+
+DEADLINE NOTE
+The challenge page states entries close 22 Nov 2026 and that a 100-company
+smoke test plus repository, commit hash and one command are the submission
+unit — no precomputed profile bundle or company manifest is required. Both are
+shipped anyway (see below) as evidence, not as the deliverable.
 
 ONE COMMAND TO RUN
   cd norhound-starter-kit
@@ -41,6 +46,11 @@ WHAT IS IN THE REPO
 - `out/submission/site/` — the searchable viewer (1,000 company pages + compare
   view + bulk export)
 - `out/measure-family-submitted.json` — the recall report
+- `out/smoke-100/smoke-envelopes.jsonl` + `out/smoke-100/smoke-report.json` —
+  the 100-company smoke test: 100 requested, 100 returned, complete, 10,358
+  claims and 3,451 evidence records, produced by
+  `scripts/build_smoke_report.py --run-dir <run> --count 100 --output-dir <dir>`
+  (exit code 1 if any requested company comes back missing or incomplete)
 
 RECALL (measured with `scripts/measure_family_recall.py`, against the official
 per-family opportunity counts; same scorer run on the baseline corpus for
@@ -150,6 +160,11 @@ WHAT IS IN THE REPO
 - `out/submission/site/` — the searchable viewer (1,000 company pages + compare
   view + bulk export)
 - `out/measure-family-submitted.json` — the recall report
+- `out/smoke-100/smoke-envelopes.jsonl` + `out/smoke-100/smoke-report.json` —
+  the 100-company smoke test: 100 requested, 100 returned, complete, 10,358
+  claims and 3,451 evidence records, produced by
+  `scripts/build_smoke_report.py --run-dir <run> --count 100 --output-dir <dir>`
+  (exit code 1 if any requested company comes back missing or incomplete)
 
 RECALL (measured with `scripts/measure_family_recall.py`, against the official
 per-family opportunity counts; same scorer run on the baseline corpus for
