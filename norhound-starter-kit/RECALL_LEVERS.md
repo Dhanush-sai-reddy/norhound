@@ -83,3 +83,53 @@ paths:
 
 Both are defensible; mixing them is not. Enabling Places while still claiming
 "no API key, no account" in the submission would be a false statement.
+
+## 5. Why the six-field proxy is near-maxed but the official score is not
+
+Measured on the shipped corpus (`out/run-fresh-20261115T073743Z/`, 1,000
+envelopes, 105,772 claims):
+
+| family | claims | share | companies |
+|---|---|---|---|
+| financials | 36,680 | 34.7% | 982 |
+| identity | 25,563 | 24.2% | 1,000 |
+| other (registry_update 16,062, sitemap 2,531, workforce_snapshot 1,486, subunit 1,165, group_child 1,291) | 22,913 | 21.7% | 1,000 |
+| roles | 15,671 | 14.8% | 994 |
+| **news** (dated_news) | **2,996** | 2.8% | 1,000 |
+| website | 900 | 0.9% | 824 |
+| **hiring** | **537** | 0.5% | ~500 |
+| **social** | **416** | 0.4% | 416 |
+| **reviews** | **96** | 0.1% | 32 |
+
+Financials are already fully exploited: 7 figures × ~2.9 years × 982 companies,
+every value straight from Regnskapsregisteret, so "add multi-year accounts" is
+not a lever — it is already 34.7% of every claim we publish.
+
+The proxy asks "does this company have *any* signal in this field", and answers
+yes for 4 of 6 fields at 99–100%. The official score gave 12.89/50 = 25.8% on
+the same corpus. The difference is **depth**: the proxy counts presence, the
+graded score counts how many of the reference's items we reproduce. That is why
+`workforce_jobs` reads 0.954 while only 537 real hiring claims exist, and why
+`news` is 3 items per company against a reference that can hold far more.
+
+### Depth levers, in the order they are worth doing
+
+1. **Retain a bounded first-party body for news.** Today a `dated_news`
+   observation keeps `content_sha256` and an `evidence_span` that is often just
+   the page title, so the fact is reproducible but not *readable* from the
+   evidence. Keeping the first ~1,500 characters of the article body (the same
+   cap the envelope already uses for `claim_span`) makes every news claim
+   verifiable from our own artifact. No new source, no new request.
+2. **Publish real role cards, not `/karriere` pages.** 537 hiring claims for
+   1,000 companies is thin, and the reviewer's rule is explicit: a bare careers
+   page must emit `careers_page`, never `hiring: true`. The NAV index is the
+   only keyless source of real adverts; widening its window from 183 days, or
+   matching adverts by municipality + name when the employer number is missing,
+   adds claims without weakening identity.
+3. **Social handles from first-party pages.** 416 claims. The extractor already
+   reads `sameAs` from JSON-LD on the homepage; it only visits the homepage.
+   Following one contact/about page per site would roughly double this.
+4. **Ratings.** Only Google Places moves this; see sections 2–3 above.
+
+None of 1–3 changes a source, a right, or a cost. All three are depth on pages
+we already fetch, which is exactly where the graded score is losing points.
