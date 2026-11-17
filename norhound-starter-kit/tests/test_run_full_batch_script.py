@@ -149,6 +149,57 @@ class FullBatchScriptTests(unittest.TestCase):
         self.assertIn("parser.set_defaults(workforce_pdf=False)", text)
         self.assertIn('"--workforce-pdf"', text)
 
+    def test_the_merge_reads_only_real_connector_outputs(self) -> None:
+        """The merge must not take back its own derived files.
+
+        `"$OUT"/batch.*.jsonl` also matches four files that are not connector
+        outputs:
+          * batch.keyless.jsonl  — the concatenation of the keyless parts
+          * batch.external.jsonl  — the consolidated corpus
+          * batch.enriched.jsonl  — one row per company: an ENVELOPE
+          * batch.labels.jsonl    — one row per observation: a LABEL
+
+        A label row and its observation share an id and the merge keeps the
+        first row it sees for an id, so a label row can silently displace the
+        observation it belongs to, and an envelope row lands in a corpus of
+        observations.
+        """
+        text = _script_text()
+        code = "\n".join(
+            line for line in text.splitlines() if not line.lstrip().startswith("#")
+        )
+        self.assertNotIn('"$OUT"/batch.*.jsonl', code)
+        self.assertIn("batch.$tag.jsonl", code)
+        for derived in ("batch.external.jsonl", "batch.enriched.jsonl", "batch.labels.jsonl"):
+            self.assertNotIn(f'"{derived}"', code)
+
+    def test_the_merge_stamps_an_observation_date_on_every_fact(self) -> None:
+        """A fact with no date cannot be shown to have been observed on a day."""
+        self.assertIn("--stamp-observed-at", _script_text())
+
+    def test_the_run_writes_the_canonical_artifact_names(self) -> None:
+        """One command must produce exactly the files the package is built from.
+
+        `scripts/promote_run.sh` copies `external-final.jsonl`,
+        `labels-final.jsonl`, `eval-final.json`, `measure-final.json` and
+        `measure-family-final.json`. A run that wrote different names could
+        not be promoted without hand-renaming files, which is how a package
+        ends up holding one run's envelopes and another run's audit.
+        """
+        text = _script_text()
+        for name in (
+            "external-final.jsonl",
+            "labels-final.jsonl",
+            "eval-final.json",
+            "measure-final.json",
+            "measure-family-final.json",
+        ):
+            self.assertIn(name, text, f"{name} missing from run_full_batch.sh")
+
+    def test_the_run_measures_the_family_recall(self) -> None:
+        """The per-family report is part of the shipped package."""
+        self.assertIn("measure_family_recall.py", _script_text())
+
 
 if __name__ == "__main__":
     unittest.main()

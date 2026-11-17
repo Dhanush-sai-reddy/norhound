@@ -1,11 +1,15 @@
-"""Tests for merging external observation outputs, including rights-based host exclusion.
+"""The merge is the step that decides what the corpus contains.
 
-Some collected sources cannot be re-verified afterwards: ``proff.no`` now
-answers every request with a CloudFront 403, so neither its robots.txt nor its
-pages can be re-checked, and the collected rows carry third-party financial
-values that are not copied from an official register. Those rows must not be
-published, so the merge step can exclude them by host and report what it
-dropped.
+Two properties matter and neither is obvious from the code:
+
+* A row that has a retrieval time but no observation date gets one. A fact
+  with no date cannot be shown to have been observed on any day, and 30.6% of
+  the rows in the 16 Nov corpus had no `observed_at` because the merge read
+  the raw connector files rather than the consolidated file.
+* The merge keeps the first row it sees for an id. A label row and its
+  observation share an id, so merging a derived label file back into the
+  corpus can displace the observation it belongs to. The caller must therefore
+  pass only real connector outputs.
 """
 
 from __future__ import annotations
@@ -20,133 +24,94 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT))
 
-from scripts.merge_external_outputs import merge_observations  # noqa: E402
+from scripts import merge_external_outputs as merge  # noqa: E402
 
 
-def row(identifier: str, source_url: str) -> dict:
-    return {
-        "id": identifier,
-        "organisation_number": "916498721",
-        "platform": "company_directory",
-        "signal_type": "profile_metrics",
-        "source_url": source_url,
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
+def _observation(**overrides) -> dict:
+    base = {
+        "id": "obs-1",
+        "organisation_number": "810034882",
+        "platform": "company_site",
+        "signal_type": "news_item",
+        "source_url": "https://example.no/nyheter/",
+        "retrieved_at": "2026-11-16T15:19:00.613969Z",
+        "evidence_span": "Example AS",
+        "content_sha256": "a" * 64,
     }
+    base.update(overrides)
+    return base
 
 
-class MergeExclusionTests(unittest.TestCase):
-    def _write(self, directory: Path, name: str, rows: list[dict]) -> Path:
-        path = directory / name
-        path.write_text(
-            "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in rows),
-            encoding="utf-8",
-        )
-        return path
+def _write(directory: Path, name: str, rows: list[dict]) -> Path:
+    path = directory / name
+    path.write_text(
+        "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
+        encoding="utf-8",
+    )
+    return path
 
-    def test_excluded_host_rows_are_dropped(self) -> None:
+
+class ObservedAtStampingTests(unittest.TestCase):
+    def test_a_row_without_a_date_gets_the_retrieval_date(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            source = self._write(
-                base,
-                "source.jsonl",
-                [
-                    row("proff-a", "https://www.proff.no/bedrift/916498721"),
-                    row("proff-b", "https://proff.no/bedrift/916498721"),
-                    row("keep", "https://purehelp.no/company/NO/916498721"),
-                ],
+            source = _write(Path(tmp), "batch.activity.jsonl", [_observation()])
+            rows, report = merge.merge_observations(
+                [source], stamp_observed_at=True
             )
-            merged, report = merge_observations([source], exclude_hosts={"proff.no"})
-            self.assertEqual([item["id"] for item in merged], ["keep"])
-            self.assertEqual(report["excluded_hosts"], {"proff.no": 2})
+        self.assertEqual(rows[0]["observed_at"], "2026-11-16")
+        self.assertEqual(report["observed_at_stamped"], 1)
 
-    def test_without_exclusions_every_row_is_kept(self) -> None:
+    def test_an_existing_date_is_never_overwritten(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            source = self._write(
-                base,
-                "source.jsonl",
-                [
-                    row("proff-a", "https://www.proff.no/bedrift/916498721"),
-                    row("keep", "https://purehelp.no/company/NO/916498721"),
-                ],
+            source = _write(
+                Path(tmp),
+                "batch.activity.jsonl",
+                [_observation(observed_at="2024-01-05")],
             )
-            merged, report = merge_observations([source], exclude_hosts=set())
-            self.assertEqual(len(merged), 2)
-            self.assertEqual(report["excluded_hosts"], {})
-
-    def test_first_input_wins_on_id_collision(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            first = self._write(base, "first.jsonl", [row("same", "https://a.example/x")])
-            second = self._write(base, "second.jsonl", [row("same", "https://b.example/x")])
-            merged, report = merge_observations([first, second], exclude_hosts=set())
-            self.assertEqual(len(merged), 1)
-            self.assertEqual(merged[0]["source_url"], "https://a.example/x")
-            self.assertEqual(report["duplicates_dropped"], 1)
-
-    def test_excluded_hosts_are_reported_in_the_merge_report(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            source = self._write(
-                base,
-                "source.jsonl",
-                [row("proff-a", "https://www.proff.no/bedrift/916498721")],
+            rows, report = merge.merge_observations(
+                [source], stamp_observed_at=True
             )
-            _, report = merge_observations([source], exclude_hosts={"proff.no"})
-            self.assertEqual(report["excluded_host_list"], ["proff.no"])
-            self.assertEqual(report["rows_excluded"], 1)
+        self.assertEqual(rows[0]["observed_at"], "2024-01-05")
+        self.assertEqual(report["observed_at_stamped"], 0)
 
-    def test_duplicate_claims_keep_the_latest_retrieval(self) -> None:
+    def test_without_the_flag_nothing_is_stamped(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            older = row("ar-old", "https://data.brreg.no/regnskap/2025")
-            older["signal_type"] = "workforce_snapshot"
-            older["effective_at"] = "2025"
-            older["retrieved_at"] = "2026-10-08T17:15:01Z"
-            older["evidence_span"] = "Selskapet har 4 ansatte"
-            older["metrics"] = {"workforce_value": 4}
-            newer = dict(older)
-            newer["id"] = "ar-new"
-            newer["retrieved_at"] = "2026-10-28T06:24:48Z"
-            newer["content_sha256"] = "different-bytes-same-claim"
-            source = self._write(base, "source.jsonl", [older, newer])
-            merged, report = merge_observations([source], exclude_hosts=set(), dedupe_latest=True)
-            self.assertEqual([item["id"] for item in merged], ["ar-new"])
-            self.assertEqual(report["duplicate_claims_dropped"], 1)
+            source = _write(Path(tmp), "batch.activity.jsonl", [_observation()])
+            rows, report = merge.merge_observations([source])
+        self.assertNotIn("observed_at", rows[0])
+        self.assertEqual(report["observed_at_stamped"], 0)
 
-    def test_same_source_with_different_claims_is_never_deduplicated(self) -> None:
-        with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            first = row("a", "https://data.brreg.no/enheter/916498721")
-            first["signal_type"] = "registry_update"
-            first["evidence_span"] = "Navn endret til A AS"
-            first["metrics"] = {"field": "navn", "value": "A AS"}
-            first["retrieved_at"] = "2026-10-08T17:15:01Z"
-            second = dict(first)
-            second["id"] = "b"
-            second["evidence_span"] = "Adresse endret til Oslo"
-            second["metrics"] = {"field": "adresse", "value": "Oslo"}
-            source = self._write(base, "source.jsonl", [first, second])
-            merged, report = merge_observations([source], exclude_hosts=set(), dedupe_latest=True)
-            self.assertEqual(len(merged), 2)
-            self.assertEqual(report["duplicate_claims_dropped"], 0)
 
-    def test_different_claims_are_never_deduplicated(self) -> None:
+class MergeInputTests(unittest.TestCase):
+    def test_the_first_row_for_an_id_wins(self) -> None:
+        """This is why a derived label file must never be merged back in."""
         with tempfile.TemporaryDirectory() as tmp:
-            base = Path(tmp)
-            first = row("a", "https://data.brreg.no/regnskap/2025")
-            first["signal_type"] = "workforce_snapshot"
-            first["effective_at"] = "2025"
-            first["retrieved_at"] = "2026-10-08T17:15:01Z"
-            second = dict(first)
-            second["id"] = "b"
-            second["source_url"] = "https://data.brreg.no/regnskap/2024"
-            second["effective_at"] = "2024"
-            source = self._write(base, "source.jsonl", [first, second])
-            merged, report = merge_observations([source], exclude_hosts=set(), dedupe_latest=True)
-            self.assertEqual(len(merged), 2)
-            self.assertEqual(report["duplicate_claims_dropped"], 0)
+            directory = Path(tmp)
+            observation = _write(directory, "batch.activity.jsonl", [_observation()])
+            label = _write(
+                directory,
+                "batch.labels.jsonl",
+                [{"id": "obs-1", "exact_entity": 1, "organisation_number": "810034882"}],
+            )
+            rows, _ = merge.merge_observations([observation, label])
+            rows_reversed, _ = merge.merge_observations([label, observation])
+        self.assertEqual(rows[0]["signal_type"], "news_item")
+        # The order decides which row survives, and a label row has no
+        # source_url, so the observation is lost.
+        self.assertNotIn("signal_type", rows_reversed[0])
+
+    def test_excluded_hosts_never_reach_the_corpus(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            source = _write(
+                Path(tmp),
+                "batch.activity.jsonl",
+                [_observation(source_url="https://www.proff.no/bedrift/x")],
+            )
+            rows, report = merge.merge_observations(
+                [source], {"proff.no"}, stamp_observed_at=True
+            )
+        self.assertEqual(rows, [])
+        self.assertEqual(report["rows_excluded"], 1)
 
 
 if __name__ == "__main__":

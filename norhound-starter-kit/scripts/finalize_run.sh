@@ -69,6 +69,7 @@ run uv run python scripts/merge_external_outputs.py \
   --output "$OUT/external-final.jsonl" \
   --report "$OUT/merge-final-report.json" \
   --exclude-hosts proff.no google.com \
+  --stamp-observed-at \
   --dedupe-latest
 
 say "7. purge wrong-company probes"

@@ -78,6 +78,7 @@ def merge_observations(
     inputs: list[Path],
     exclude_hosts: set[str] | None = None,
     dedupe_latest: bool = False,
+    stamp_observed_at: bool = False,
 ) -> tuple[list[dict], dict]:
     """Merge observation files (first input wins on id collision) and drop excluded hosts.
 
@@ -87,6 +88,12 @@ def merge_observations(
 
     With ``dedupe_latest`` the merge also collapses repeated claims of the same
     company, signal, source and period to the most recently retrieved row.
+
+    With ``stamp_observed_at`` every row that has a retrieval time but no
+    observation date gets one. A fact with no date at all cannot be shown to
+    have been observed on any day, and 30.6% of the rows in the 16 Nov corpus
+    had no ``observed_at`` because the merge read the raw connector files
+    rather than the consolidated file.
     """
     excluded = {str(host).strip().lower() for host in (exclude_hosts or set()) if str(host).strip()}
     merged: dict[str, dict] = {}
@@ -94,6 +101,7 @@ def merge_observations(
     duplicates = 0
     excluded_counts: dict[str, int] = {}
     duplicate_claims = 0
+    stamped = 0
     latest_by_claim: dict[tuple[str, str, str, str], tuple[str, str]] = {}
     for raw in inputs:
         path = Path(raw)
@@ -105,6 +113,9 @@ def merge_observations(
             if blocked:
                 excluded_counts[blocked] = excluded_counts.get(blocked, 0) + 1
                 continue
+            if stamp_observed_at and not row.get("observed_at") and row.get("retrieved_at"):
+                row["observed_at"] = str(row["retrieved_at"])[:10]
+                stamped += 1
             key = str(row.get("id"))
             if key in merged:
                 duplicates += 1
@@ -129,6 +140,7 @@ def merge_observations(
         "merged_rows": len(rows),
         "duplicates_dropped": duplicates,
         "duplicate_claims_dropped": duplicate_claims,
+        "observed_at_stamped": stamped,
         "per_file": per_file,
         "excluded_hosts": excluded_counts,
         "excluded_host_list": sorted(excluded_counts),
@@ -154,12 +166,18 @@ def main() -> None:
         action="store_true",
         help="Collapse repeated claims of the same company, signal, source and period to the latest retrieval.",
     )
+    parser.add_argument(
+        "--stamp-observed-at",
+        action="store_true",
+        help="Give every row with a retrieval time but no observation date one, so every published fact carries a date.",
+    )
     args = parser.parse_args()
 
     rows, report = merge_observations(
         [Path(raw) for raw in args.inputs],
         set(args.exclude_hosts),
         dedupe_latest=args.dedupe_latest,
+        stamp_observed_at=args.stamp_observed_at,
     )
     report["output"] = args.output
     write_jsonl(Path(args.output), rows)

@@ -144,44 +144,67 @@ if [[ -s "$OUT/batch-rescued-profiles.jsonl" ]]; then
 fi
 
 say "6. merge every connector output into one observation corpus"
+# Only real connector outputs are merged. The glob "$OUT"/batch.*.jsonl also
+# catches three derived files, and merging them back in corrupts the corpus:
+#   batch.keyless.jsonl  — the concatenation of the keyless parts, so merging
+#                          it and its parts inserts every row twice
+#   batch.external.jsonl  — the consolidated corpus itself
+#   batch.enriched.jsonl  — one row per company: an ENVELOPE, not an observation
+#   batch.labels.jsonl    — one row per observation: a LABEL, not an observation
+# A label row and its observation share an id, and the merge keeps the first
+# row it sees for an id, so a label row can silently displace the observation
+# it belongs to.
 # proff.no cannot be re-verified and carries third-party financial figures;
 # google.com is excluded because the Places API needs a key and the Maps rows
 # were scraped against Google's Terms of Service.
+INPUTS=()
+for tag in activity news jobs ats nav nav-search registry-site purehelp \
+           workforce-registry workforce-pdf fagfolk google-news kunngjoring \
+           contacts sitedesc substruct sitemap updates wikidata gleif discovery \
+           linkedin reddit handles; do
+  f="$OUT/batch.$tag.jsonl"
+  if [[ -s "$f" ]]; then
+    INPUTS+=("$f")
+    printf '  %-22s %s rows\n' "$tag" "$(wc -l < "$f" | tr -d ' ')"
+  fi
+done
+[[ ${#INPUTS[@]} -gt 0 ]] || { echo "no connector outputs found"; exit 1; }
 run uv run python scripts/merge_external_outputs.py \
-  --inputs "$OUT"/batch.*.jsonl \
-  --output "$OUT/external-merged.jsonl" \
+  --inputs "${INPUTS[@]}" \
+  --output "$OUT/external-final.jsonl" \
   --report "$OUT/merge-report.json" \
   --exclude-hosts proff.no google.com \
+  --stamp-observed-at \
   --dedupe-latest
 
 say "7. purge wrong-company probes"
 run uv run python scripts/purge_wrong_company_probes.py \
-  --observations "$OUT/external-merged.jsonl" \
+  --observations "$OUT/external-final.jsonl" \
   --profiles "$PROFILES" \
-  --output "$OUT/external-merged.jsonl" \
+  --output "$OUT/external-final.jsonl" \
   --report "$OUT/purge-report.json"
 
 say "8. re-verify every observation against frozen evidence"
 run uv run python scripts/verify_and_label_observations.py \
   --profiles "$PROFILES" \
-  --observations "$OUT/external-merged.jsonl" \
-  --labels "$OUT/labels.jsonl" \
+  --observations "$OUT/external-final.jsonl" \
+  --labels "$OUT/labels-final.jsonl" \
   --report "$OUT/verify-report.json"
 
 say "9. evaluate the labeled corpus"
 run uv run python scripts/evaluate_external_footprint.py \
   --profiles "$PROFILES" \
-  --observations "$OUT/external-merged.jsonl" \
-  --labels "$OUT/labels.jsonl" \
-  --output "$OUT/eval.json" \
+  --observations "$OUT/external-final.jsonl" \
+  --labels "$OUT/labels-final.jsonl" \
+  --output "$OUT/eval-final.json" \
   --minimum-audit "$MIN_AUDIT"
 
 say "10. emit the terminal contract envelopes"
 run uv run python scripts/emit_contract_envelope.py \
   --profiles "$PROFILES" \
   --envelopes "$OUT/envelopes.jsonl" \
-  --observations "$OUT/external-merged.jsonl" \
-  --labels "$OUT/labels.jsonl" \
+  --observations "$OUT/external-final.jsonl" \
+  --labels "$OUT/labels-final.jsonl" \
   --output "$OUT/envelopes-final.jsonl" \
   --report "$OUT/envelope-report.json"
 
@@ -195,20 +218,38 @@ say "12. static viewer"
 run uv run python scripts/build_static_site.py \
   --envelopes "$OUT/envelopes-final.jsonl" \
   --summaries "$OUT/summaries.jsonl" \
-  --labels "$OUT/labels.jsonl" \
-  --observations "$OUT/external-merged.jsonl" \
-  --eval "$OUT/eval.json" \
+  --labels "$OUT/labels-final.jsonl" \
+  --observations "$OUT/external-final.jsonl" \
+  --eval "$OUT/eval-final.json" \
   --out "$OUT/site"
 
-say "13. measure the recall proxy"
+say "13. recall proxies"
 run uv run python scripts/measure_recall.py \
   --profiles "$PROFILES" \
-  --observations "$OUT/external-merged.jsonl" \
-  --labels "$OUT/labels.jsonl" \
-  --output "$OUT/measure.json" \
+  --observations "$OUT/external-final.jsonl" \
+  --labels "$OUT/labels-final.jsonl" \
+  --output "$OUT/measure-final.json" \
   --minimum-audit "$MIN_AUDIT"
+run uv run python scripts/measure_family_recall.py \
+  --envelopes "$OUT/envelopes-final.jsonl" \
+  --output "$OUT/measure-family-final.json"
+
+say "result"
+python3 - "$OUT" <<'PY'
+import json, pathlib, sys
+out = pathlib.Path(sys.argv[1])
+ev = json.loads((out / "eval-final.json").read_text())
+m = json.loads((out / "measure-final.json").read_text())
+fam = json.loads((out / "measure-family-final.json").read_text())
+print("published:", ev.get("published_audited"), "of", ev.get("observations"))
+print("entity_precision:", ev.get("entity_precision"), "wrong_entity:", ev.get("wrong_entity_publications"))
+print("coverage:", json.dumps(ev.get("coverage")))
+print("recall_proxy_50:", round(m.get("recall_proxy_50", 0), 2))
+for name, row in fam["family_company_recall"].items():
+    print(f"  {name:12} {row['covered']:5}/{row['opportunities']:<5} {row['recall']:.3f}")
+PY
 
 say "done"
 printf 'artifacts: %s\n' "$OUT"
 printf 'envelopes: %s\n' "$OUT/envelopes-final.jsonl"
-printf 'measure:   %s\n' "$OUT/measure.json"
+printf 'measure:   %s\n' "$OUT/measure-final.json"
