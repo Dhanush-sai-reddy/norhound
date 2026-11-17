@@ -16,7 +16,7 @@ COMMIT HASH
 015dedb  (branch: main, github.com/Dhanush-sai-reddy/norhound)
 
 This is the commit that contains the code and the shipped corpus. The only
-change after it is this email quoting the hash.
+commits after it are documentation-only.
 
 DEADLINE NOTE
 The challenge page states entries close 22 Nov 2026 and that a 100-company
