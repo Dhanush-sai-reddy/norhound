@@ -71,6 +71,20 @@ copy "$SRC/eval-final.json"           eval.json
 copy "$SRC/measure-final.json"        measure.json
 copy "$SRC/measure-family-final.json" measure-family.json
 copy "$SRC/entry.jsonl"               manifest.jsonl
+# The official contract asks for a machine-readable run report and for the
+# refresh history. Both are produced by the official command
+# (scripts/run_official_batch.sh); a run made by run_full_batch.sh alone does
+# not have them, so they are copied when they exist.
+if [[ -s "$SRC/official-run-report.json" ]]; then
+  copy "$SRC/official-run-report.json" official-run-report.json
+else
+  echo "  (no official-run-report.json in this run)"
+fi
+if [[ -s "$SRC/refresh-report.json" ]]; then
+  copy "$SRC/refresh-report.json" refresh-report.json
+else
+  echo "  (no refresh-report.json in this run)"
+fi
 # finalize_run.sh prefers the browser-rescued profiles when they exist, because
 # that is the file the claims were derived from. Shipping profiles-promoted in
 # that case would publish a different profile set from the one behind the
@@ -131,6 +145,8 @@ API key, no login, no paid account; $0 per 100-company run.
 | `measure.json` | The six-field recall proxy used to compare runs |
 | `manifest.jsonl` | The organisation-number manifest |
 | `profiles-promoted.jsonl` | The frozen profiles the claims were derived from |
+| `official-run-report.json` | The machine-readable run report: runtime, request count, third-party cost, identity precision, declared source rights |
+| `refresh-report.json` | The material changes found against the previous snapshot, and the changes preserved |
 | `site/` | The static viewer: `index.html` (search/sort/compare), `c/<org>.html`, `c/<org>.json`, `companies.csv` |
 | `smoke-100/` | The 100-company smoke test: `smoke-envelopes.jsonl` (one complete result per input) and `smoke-report.json` (requested vs returned, per-company claim/evidence counts) |
 
@@ -144,7 +160,9 @@ Checks on this package:
 - company recall per fact family: {families}
 - six-field recall proxy {round(m.get('recall_proxy_50', 0), 2)} / 50
 
-Reproduce: `scripts/run_fresh_pipeline.sh` (see the repository README).
+Reproduce the evaluator's command: `scripts/run_official_batch.sh --batch
+organisations.jsonl` (add `--previous-envelopes <prior envelopes.jsonl>` for a
+refresh). See the repository README for the local 1,000-company run.
 """
 (dest / "README.md").write_text(text, encoding="utf-8")
 print(text)
