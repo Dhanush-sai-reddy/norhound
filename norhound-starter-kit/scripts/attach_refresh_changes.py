@@ -168,10 +168,16 @@ def diff_claims(
         # The new anchor is the value the current run published; the old anchor
         # is the value the previous run published for the same field. When the
         # value was replaced, the old value is no longer in the current set,
-        # so it is anchored on the removed values instead.
-        new_anchor = new_values.get((added_keys or availability_changed or sorted(new_values))[0]) or {}
+        # so it is anchored on the removed values instead. A field that only
+        # exists in one of the two runs has no anchor on the other side.
+        new_candidates = added_keys or availability_changed or sorted(new_values)
         old_candidates = removed_keys or availability_changed or sorted(old_values)
-        old_anchor = old_values.get(old_candidates[0]) if old_candidates else {}
+        new_anchor = (
+            new_values.get(new_candidates[0]) if new_candidates else {}
+        )
+        old_anchor = (
+            old_values.get(old_candidates[0]) if old_candidates else {}
+        )
         new_facts = _evidence_facts(current, new_anchor.get("evidence_id"))
         old_facts = _evidence_facts(previous, old_anchor.get("evidence_id"))
         record = {

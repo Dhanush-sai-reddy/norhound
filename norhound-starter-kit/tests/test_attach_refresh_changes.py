@@ -132,6 +132,17 @@ class ChangeDetectionTests(unittest.TestCase):
         changes = rows[0]["changes"]
         self.assertTrue(any(c["field"] == "registry.employees" for c in changes))
 
+    def test_a_field_that_disappears_is_still_a_change(self) -> None:
+        """A field the current run no longer publishes is a change, not a crash."""
+        current = envelope()
+        current["claims"] = []
+        rows, _ = refresh.attach([current], [envelope()], "prior.jsonl")
+        changes = rows[0]["changes"]
+        self.assertEqual(len(changes), 1)
+        self.assertEqual(changes[0]["field"], "official_website")
+        self.assertEqual(changes[0]["removed"], "https://example.no/")
+        self.assertEqual(changes[0]["added"], [])
+
 
 class HistoryAndIdempotencyTests(unittest.TestCase):
     def test_an_earlier_change_is_preserved_and_not_duplicated(self) -> None:
