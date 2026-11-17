@@ -188,7 +188,10 @@ envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
 `out/submission/manifest.jsonl` (the organisation-number manifest),
 `out/submission/summaries.jsonl`, `out/submission/eval.json`,
 `out/submission/measure.json`, `out/submission/measure-family.json`,
-`out/submission/site/` (the viewer) and `out/norhound-signalpost-submission.zip`.
+`out/submission/site/` (the viewer). `scripts/promote_run.sh` also writes
+`out/norhound-signalpost-submission.zip`, the same package as one archive;
+`out/` is gitignored, so the archive is built locally while every file inside
+it is committed under `out/submission/`.
 Where the recall numbers can still come from, and which keyless sources were
 probed and found blocked, is written up in
 `norhound-starter-kit/RECALL_LEVERS.md`.

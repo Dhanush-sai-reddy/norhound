@@ -265,8 +265,9 @@ envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
 (the 31,855-row audit corpus), `out/submission/profiles-promoted.jsonl`,
 `out/submission/manifest.jsonl`, `out/submission/summaries.jsonl`,
 `out/submission/eval.json`, `out/submission/measure.json`,
-`out/submission/measure-family.json`, `out/submission/site/` (the viewer) and
-`out/norhound-signalpost-submission.zip`. Older `out/batch1000f.*` and
+`out/submission/measure-family.json`, `out/submission/site/` (the viewer) and `out/norhound-signalpost-submission.zip`
+(the same package as one archive, rebuilt locally by `promote_run.sh` because
+`out/` is gitignored). Older `out/batch1000f.*` and
 `out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
 submitted numbers.
 

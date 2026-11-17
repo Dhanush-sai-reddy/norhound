@@ -59,7 +59,10 @@ WHAT IS IN THE REPO
   records, produced by `scripts/build_smoke_report.py --run-dir <run> --count
   100 --output-dir <dir>` (exit code 1 if any requested company comes back
   missing or incomplete)
-- `out/norhound-signalpost-submission.zip` — the same package, zipped
+- `scripts/promote_run.sh` also writes `out/norhound-signalpost-submission.zip`
+  (the same package as one archive). `out/` is gitignored, so the archive is
+  built locally rather than committed — every file inside it is committed
+  under `out/submission/`.
 
 PRECISION (the gates that matter more than volume)
 - entity precision **1.0**, metric precision **1.0**
