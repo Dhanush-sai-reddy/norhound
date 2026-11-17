@@ -73,6 +73,33 @@ def count_jsonl(path: Path) -> tuple[int, int, int, int, int]:
     return rows, claims, evidence, requests, int(cost)
 
 
+def count_request_log(path: Path) -> tuple[int, dict[str, int]]:
+    """Requests recorded by the run's own counter, and the busiest hosts.
+
+    The counter lives in `sitecustomize.py`, so it sees every outbound request
+    of every subprocess of the run: the registry capture, every connector, the
+    verification re-fetch and the summariser. It records the host, the method
+    and the status only.
+    """
+    total = 0
+    by_host: dict[str, int] = {}
+    if not path.exists():
+        return total, by_host
+    with path.open(encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            total += 1
+            host = str(row.get("host") or "")
+            if host:
+                by_host[host] = by_host.get(host, 0) + 1
+    return total, by_host
+
+
 def build(run_dir: Path) -> dict:
     base = read_json(run_dir / "run-report.json")
     evaluation = read_json(run_dir / "eval-final.json")
@@ -80,7 +107,7 @@ def build(run_dir: Path) -> dict:
     family = read_json(run_dir / "measure-family-final.json")
     merge = read_json(run_dir / "merge-report.json")
     refresh = read_json(run_dir / "refresh-report.json")
-    requests_file = read_json(run_dir / "requests.json")
+    rescue = read_json(run_dir / "batch.rescue-report.json")
 
     envelopes_path = run_dir / "envelopes-final.jsonl"
     observations_path = run_dir / "external-final.jsonl"
@@ -109,14 +136,25 @@ def build(run_dir: Path) -> dict:
     runtime_ms = int((completed - started).total_seconds() * 1000) if started else 0
 
     registry_requests = int((base.get("operations") or {}).get("requests") or 0)
-    measured_external = requests_file.get("requests")
+    counted, by_host = count_request_log(run_dir / "requests.jsonl")
     requests: dict[str, Any]
-    if isinstance(measured_external, int):
+    if counted:
         requests = {
-            "registry_and_website": registry_requests,
-            "external_connectors": measured_external,
-            "total": registry_requests + measured_external,
+            "total": counted,
             "measured": True,
+            "source": "sitecustomize.py request counter (host, method and status only)",
+            "busiest_hosts": dict(
+                sorted(by_host.items(), key=lambda item: -item[1])[:15]
+            ),
+            "registry_and_website": registry_requests,
+            "note": (
+                "Every outbound request of every subprocess of the run is counted. "
+                "The headless-browser rescue stage is the one exception: its "
+                "requests are made by the browser process, not by Python, so they "
+                "are reported as page counts instead "
+                f"({rescue.get('rescued', 0)} pages rescued of "
+                f"{rescue.get('eligible', 0)} eligible)."
+            ),
         }
     else:
         requests = {
@@ -126,10 +164,9 @@ def build(run_dir: Path) -> dict:
             "total_lower_bound": registry_requests + observations,
             "measured": False,
             "note": (
-                "The external connectors do not keep a per-request counter, so the "
-                "external request count is a lower bound: every published observation "
-                "needed at least one request. The registry and website-capture stage "
-                "is measured exactly."
+                "The run carried no request log, so the external request count is a "
+                "lower bound: every published observation needed at least one "
+                "request. The registry and website-capture stage is measured exactly."
             ),
         }
 

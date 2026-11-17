@@ -143,6 +143,25 @@ class RunReportTests(unittest.TestCase):
         self.assertIsNone(report["requests"]["external_connectors"])
         self.assertIn("note", report["requests"])
 
+    def test_a_measured_request_log_replaces_the_bound(self) -> None:
+        from scripts import build_official_run_report as report_builder
+
+        with tempfile.TemporaryDirectory() as tmp:
+            run_dir = Path(tmp)
+            (run_dir / "requests.jsonl").write_text(
+                "\n".join(
+                    json.dumps({"host": "example.no", "method": "GET", "status": 200})
+                    for _ in range(3)
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            report = report_builder.build(run_dir)
+
+        self.assertTrue(report["requests"]["measured"])
+        self.assertEqual(report["requests"]["total"], 3)
+        self.assertEqual(report["requests"]["busiest_hosts"]["example.no"], 3)
+
 
 if __name__ == "__main__":
     unittest.main()

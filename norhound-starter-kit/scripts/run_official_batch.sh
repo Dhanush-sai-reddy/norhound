@@ -67,6 +67,9 @@ done
 [[ -s "$BATCH" ]] || { echo "batch file not found or empty: $BATCH" >&2; exit 2; }
 [[ -n "$RUN_ID" ]] || RUN_ID="official-$(date -u +%Y%m%dT%H%M%SZ)"
 [[ -n "$OUT_DIR" ]] || OUT_DIR="out/run-$RUN_ID"
+# The pipeline writes to out/run-<run-id>; --out-dir only says where the
+# finished run should end up, so the directory is moved once the run is done.
+PIPELINE_OUT="out/run-$RUN_ID"
 
 say "1. read the supplied batch"
 BATCH_ROWS="$(wc -l < "$BATCH" | tr -d ' ')"
@@ -104,6 +107,12 @@ else
 fi
 
 say "3. run the pipeline over the supplied batch"
+# The request counter is installed by the interpreter itself (sitecustomize.py),
+# so every subprocess of the run is counted. It records the host, the method
+# and the status only, and it is inert unless NORHOUND_REQUEST_LOG is set.
+mkdir -p "$PIPELINE_OUT"
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export NORHOUND_REQUEST_LOG="$PIPELINE_OUT/requests.jsonl"
 run env \
   RUN_ID="$RUN_ID" \
   ENTRY_MANIFEST="$BATCH" \
@@ -113,6 +122,13 @@ run env \
   WORKERS="$WORKERS" \
   MIN_AUDIT="$MIN_AUDIT" \
   bash scripts/run_full_batch.sh
+
+if [[ "$OUT_DIR" != "$PIPELINE_OUT" ]]; then
+  mkdir -p "$(dirname "$OUT_DIR")"
+  rm -rf "$OUT_DIR"
+  mv "$PIPELINE_OUT" "$OUT_DIR"
+  echo "moved the run to $OUT_DIR"
+fi
 
 say "4. attach the refresh history"
 if [[ -n "$PREVIOUS" ]]; then
