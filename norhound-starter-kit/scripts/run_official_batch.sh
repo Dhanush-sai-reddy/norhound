@@ -98,6 +98,12 @@ if [[ "$REBUILD_INDEXES" == "1" ]]; then
   mkdir -p "$CACHE"
   run uv run python scripts/run_nav_job_feed_connector.py \
     --build-index --index "$CACHE/nav-job-index.jsonl" --days 183 --workers 24
+  # A freshly built index is keyed by the advertising sub-unit. Most postings
+  # belong to a sub-unit whose parent is the company in the batch, so the index
+  # is re-keyed to the parent before it is used. Skipping this step drops the
+  # NAV postings from 52 companies to 3 in a 1,000-company run.
+  run uv run python scripts/run_nav_job_feed_connector.py \
+    --resolve-parents --index "$CACHE/nav-job-index.jsonl" --workers 24
   NAV_INDEX="$CACHE/nav-job-index.jsonl"
   run uv run python scripts/run_wikidata_connector.py \
     --build-index --organisations "$BATCH" --index "$CACHE/wikidata-index.jsonl"

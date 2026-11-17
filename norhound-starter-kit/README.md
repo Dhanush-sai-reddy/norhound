@@ -45,7 +45,7 @@ number or as an object with `"organisation_number"`.
 | `--batch PATH` | the organisation numbers to research (required) |
 | `--previous-envelopes PATH` | the prior snapshot: every envelope then carries the refresh metadata and the material changes since that run |
 | `--out-dir PATH`, `--run-id ID` | where the run writes and how it is named |
-| `--rebuild-indexes` | rebuild the NAV job-feed and Wikidata indexes from their live sources instead of using the frozen copies in `data/` |
+| `--rebuild-indexes` | rebuild the NAV job-feed and Wikidata indexes from their live sources instead of using the frozen copies in `data/`. The rebuild also re-keys the NAV index to the parent company of each advertising sub-unit (`--resolve-parents`); without that step the NAV postings fall from 52 companies to 3 in a 1,000-company run |
 | `--workers N`, `--min-audit N` | parallelism and the minimum number of audited observations |
 
 Outputs:

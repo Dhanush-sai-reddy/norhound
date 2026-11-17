@@ -25,6 +25,11 @@ OUT="out/run-$RUN_ID"
 MIN_AUDIT="${MIN_AUDIT:-300}"
 WAIT_PIDS="${WAIT_PIDS:-}"
 
+# The request counter is installed by the interpreter itself (sitecustomize.py),
+# so every subprocess of this run is counted: host, method and status only.
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export NORHOUND_REQUEST_LOG="$OUT/requests.jsonl"
+
 say() { printf '\n=== %s ===\n' "$*"; }
 run() { printf '+ %s\n' "$*"; "$@"; }
 

@@ -39,6 +39,13 @@ OUT="out/run-$RUN_ID"
 CACHE="${CACHE:-.cache/run-$RUN_ID}"
 mkdir -p "$OUT" "$CACHE" "$OUT/logs"
 
+# The request counter is installed by the interpreter itself (sitecustomize.py),
+# so every subprocess of this run is counted: host, method and status only, no
+# path and no query string. It is inert unless NORHOUND_REQUEST_LOG is set,
+# and it never changes what a request returns. The run report reads this log.
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export NORHOUND_REQUEST_LOG="$OUT/requests.jsonl"
+
 # Frozen official inputs. They are downloaded once and reused when present.
 UNIVERSE="$CACHE/norhound-universe.jsonl.gz"
 BRREG_JSON="$CACHE/enheter_alle.json.gz"
