@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-10-05T08:35:01.540337Z",
+        "retrieved_at": "2026-11-16T15:19:02.283022Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "980954633",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-10-05T08:49:32.642259Z",
+        "retrieved_at": "2026-11-16T15:35:19.813536Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-10-05T08:49:27.927041Z",
+        "retrieved_at": "2026-11-16T15:35:18.144055Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-10-05T08:49:34.038166Z",
+        "retrieved_at": "2026-11-16T15:35:21.708861Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -202,7 +202,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-10-05T08:49:34.755274Z",
+        "retrieved_at": "2026-11-16T15:35:22.705280Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,25 +235,27 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "980954633",
         "source_type": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
         "status": "available",
         "value": {
-          "aktivitet": "Konsulentvirksomhet. Handel. Produksjon, tilknytning til EDB virksomhet, investering i aksjer og fast eiendom. Kjøp, utleie og handel med maskiner.",
-          "antallAnsatte": "",
+          "aktivitet": [
+            "Konsulentvirksomhet. Handel. Produksjon, tilknytning til EDB",
+            "virksomhet, investering i aksjer og fast eiendom. Kjøp, utleie og",
+            "handel med maskiner."
+          ],
           "epostadresse": "ftr@petabit.no",
-          "erIKonsern": "false",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-          "foretaksformIHjemlandet.kode": "",
-          "forretningsadresse.adresse": "Innspurten 9",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Innspurten 9"
+          ],
           "forretningsadresse.kommune": "OSLO",
           "forretningsadresse.kommunenummer": "0301",
           "forretningsadresse.land": "Norge",
@@ -262,80 +264,77 @@
           "forretningsadresse.poststed": "OSLO",
           "fravalgRevisjonBeslutningsDato": "2024-11-27",
           "fravalgRevisjonDato": "2024-12-03",
-          "frivilligMvaRegistrertBeskrivelser": "",
-          "harRegistrertAntallAnsatte": "true",
-          "hjelpeenhetskode.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [
+            {
+              "fraDato": "1999-09-07 11:01:25",
+              "navn": "NETWORK SOLUTIONS NORWAY AS",
+              "tilDato": "2003-04-08 11:15:59"
+            },
+            {
+              "fraDato": "2003-04-08 11:15:59",
+              "navn": "NETWORK SOLUTIONS NORWAY ASA",
+              "tilDato": "2010-07-12 20:17:17"
+            },
+            {
+              "fraDato": "2010-07-12 20:17:17",
+              "navn": "NSN ASA",
+              "tilDato": "2011-06-15 20:33:21"
+            },
+            {
+              "fraDato": "2011-06-15 20:33:21",
+              "navn": "NSN AS",
+              "tilDato": "2013-04-15 21:06:28"
+            }
+          ],
           "hjemmeside": "www.petabit.no",
           "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
           "institusjonellSektorkode.kode": "2100",
-          "kapital.antallAksjer": "100000",
-          "kapital.belop": "100000.00",
-          "kapital.bundet": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innbetalt": "",
+          "kapital.antallAksjer": 100000,
+          "kapital.belop": 100000.0,
           "kapital.innfortDato": "2025-12-03",
           "kapital.type": "Aksjekapital",
           "kapital.valuta": "NOK",
-          "konkurs": "false",
-          "konkursdato": "",
+          "konkurs": false,
+          "links": [],
           "maalform": "Bokmål",
           "mobil": "906 33 883",
           "naeringskode1.beskrivelse": "Datainfrastruktur, -behandling, -lagring og tilknyttede tjenester",
           "naeringskode1.kode": "63.100",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode2.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "naeringskode3.kode": "",
           "navn": "PETABIT AS",
           "organisasjonsform.beskrivelse": "Aksjeselskap",
           "organisasjonsform.kode": "AS",
+          "organisasjonsform.links": [],
           "organisasjonsnummer": "980954633",
-          "overordnetEnhet": "",
-          "paategninger": "false",
-          "postadresse.adresse": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
-          "postadresse.postnummer": "",
-          "postadresse.poststed": "",
+          "paategninger": [],
           "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-06-10",
+          "registreringsdatoEnhetsregisteret": "1999-09-07",
           "registreringsdatoForetaksregisteret": "1999-09-07",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registreringsdatoFrivillighetsregisteret": "",
           "registreringsdatoMerverdiavgiftsregisteret": "2000-01-01",
           "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2000-07-04",
-          "registreringsdatoPartiregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
-          "registreringsdatoenhetsregisteret": "1999-09-07",
-          "registreringsnummerIHjemlandet": "",
-          "registrertIForetaksregisteret": "true",
-          "registrertIFrivillighetsregisteret": "false",
-          "registrertIMvaRegisteret": "true",
-          "registrertIPartiregisteret": "false",
-          "registrertIStiftelsesregisteret": "false",
+          "registrertIForetaksregisteret": true,
+          "registrertIFrivillighetsregisteret": false,
+          "registrertIMvaregisteret": true,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": false,
+          "respons_klasse": "Enhet",
           "sisteInnsendteAarsregnskap": "2025",
           "stiftelsesdato": "1999-06-11",
           "telefon": "21 93 11 00",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
-          "underRekonstruksjonsforhandlingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
-          "underlagtLovgivningLand": "",
-          "underlagtLovgivningLandKode": "",
-          "utenlandskRegisterAdresse.adresse": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterNavn": "",
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false,
           "vedtektsdato": "2022-08-21",
-          "vedtektsfestetFormaal": "Salg, distribusjon, produksjon av IT og ITK relaterte varer og tjenester innenfor produktområdet ISP (Internet Service Provider). Teknisk rådgivning/veiledning av kunder og sluttbrukere innenfor ovennevnte produktområde. Utdanning- og opplæringsaktiviteter knyttet til selskapets virksomhet. Selskapet kan erverve, selge eller leie alle slags bygninger, etablere pantelån, samt yte lån, garantier eller andre rettigheter til fordel for tredjemann, innenfor selskapets virksomhet."
+          "vedtektsfestetFormaal": [
+            "Salg, distribusjon, produksjon av IT og ITK relaterte varer og",
+            "tjenester innenfor produktområdet ISP (Internet Service Provider).",
+            "Teknisk rådgivning/veiledning av kunder og sluttbrukere innenfor",
+            "ovennevnte produktområde. Utdanning- og opplæringsaktiviteter knyttet",
+            "til selskapets virksomhet. Selskapet kan erverve, selge eller leie",
+            "alle slags bygninger, etablere pantelån, samt yte lån, garantier eller",
+            "andre rettigheter til fordel for tredjemann, innenfor selskapets",
+            "virksomhet."
+          ]
         }
       },
       "registry_live": {
@@ -344,7 +343,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-10-05T08:49:27.148237Z",
+        "retrieved_at": "2026-11-16T15:35:17.180753Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -383,7 +382,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-10-05T08:49:33.331460Z",
+        "retrieved_at": "2026-11-16T15:35:20.795516Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -420,7 +419,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-10-05T08:49:36.190282Z",
+        "retrieved_at": "2026-11-16T15:35:25.444593Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -467,83 +466,25 @@
       },
       "external_observations": [
         {
-          "id": "annual-workforce-91ac37864b39f132c7347ab8",
-          "organisation_number": "980954633",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980954633/2025",
-          "retrieved_at": "2026-10-08T19:05:53.758436Z",
-          "content_sha256": "a0361732b2d1430c62f98360dea742020c59644e66086cb9e463edf7ba4440f9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "official_report_url_organisation_number",
-              "value": "980954633"
-            },
-            {
-              "type": "organisation_number_in_pdf",
-              "value": "980954633"
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_annual_account_copy",
-          "evidence_span": "Selskapet har sysselsatt 1.00 arsverk i 2025.",
-          "effective_at": "2025",
-          "metrics": {
-            "workforce_value": 1,
-            "measure": "full_time_equivalents",
-            "year": "2025",
-            "scope": "company_phrase",
-            "full_time_equivalents": 1
-          },
-          "strategy": "annual_report_workforce_snapshot"
-        },
-        {
-          "organisation_number": "980954633",
-          "retrieved_at": "2026-10-02T19:17:05.994104Z",
-          "content_sha256": "5ad8fbc960a0c5e92ae0159792ac6f7235b43009a21bdac182b0eb56cc168e50",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_wikidata",
-              "source": "wikidata.org",
-              "source_class": "open_knowledge_base",
-              "matched_organisation_number": "980954633",
-              "explanation": "Wikidata entity Q11991237 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "public_mention",
-          "strategy": "wikidata_p2333_orgnr_match",
-          "id": "wikidata-980954633",
-          "platform": "wikidata",
-          "signal_type": "company_profile",
-          "source_url": "https://www.wikidata.org/wiki/Q11991237",
-          "evidence_span": "P2333 = 980954633 on Q11991237 (Network Solutions Norway)",
-          "metrics": {
-            "qid": "Q11991237",
-            "label": "Network Solutions Norway",
-            "values": {
-              "wikidata.website": "http://www.nsn.no/",
-              "wikidata.inception": null,
-              "wikidata.employees": null
-            }
-          }
-        },
-        {
           "organisation_number": "980954633",
           "platform": "company_site",
           "source_url": "http://www.petabit.no/",
-          "retrieved_at": "2026-10-05T08:49:36.190282Z",
+          "retrieved_at": "2026-11-16T15:35:25.444593Z",
           "content_sha256": "9278d16ed2fdcd5dc651615b0b8adc6b55fb667a9d106a9891b861d4561d9a24",
           "exact_entity": true,
           "identity_proof": [
             {
+              "type": "registry_declared_domain_unique",
+              "domain": "petabit.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-16",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
+            {
               "type": "website_identity_gate",
               "status": "exact",
-              "score": 0.9
+              "score": 0.95
             }
           ],
           "acquisition_mode": "permitted_public_page",
@@ -562,13 +503,241 @@
           }
         },
         {
+          "organisation_number": "980954633",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980954633",
+          "retrieved_at": "2026-11-16T16:37:30.240903Z",
+          "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980954633"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "PETABIT AS",
+              "matched_organisation_number": "980954633"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+          "id": "purehelp-email-980954633-e746a207c7f9fc01",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "ftr@petabit.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "980954633",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980954633",
+          "retrieved_at": "2026-11-16T16:37:30.240903Z",
+          "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980954633"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "PETABIT AS",
+              "matched_organisation_number": "980954633"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+          "id": "purehelp-phone-980954633-e746a207c7f9fc01",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "21 93 11 00",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "980954633",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980954633",
+          "retrieved_at": "2026-11-16T16:37:30.240903Z",
+          "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980954633"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "PETABIT AS",
+              "matched_organisation_number": "980954633"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+          "id": "purehelp-profile-980954633-e746a207c7f9fc01",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "63.100",
+            "nace_description": "Computing infrastructure\\, data processing\\, hosting and related activities",
+            "town": "OSLO",
+            "zipcode": "0663",
+            "municipality": "OSLO",
+            "municipality_number": "0301",
+            "county": "Oslo",
+            "registration_date": "1999-09-07",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1999-09-07",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.petabit.no"
+          }
+        },
+        {
+          "organisation_number": "980954633",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/980954633",
+          "retrieved_at": "2026-11-16T16:37:30.240903Z",
+          "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "980954633"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "PETABIT AS",
+              "matched_organisation_number": "980954633"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+          "id": "purehelp-workforce-980954633-e746a207c7f9fc01",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 0,
+            "as_of": "2026-09-18",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "brreg-kunngjoring-817a0997dd538665d76c8097",
+          "organisation_number": "980954633",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:42Z",
+          "content_sha256": "27ebbd7ccf623ee47632f08f8eb352b8c9fe03efd071604b860128863df1d8f4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980954633",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-14",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-14",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-14 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-668f08618840a57d2c2817fc",
+          "organisation_number": "980954633",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:42Z",
+          "content_sha256": "719da648bd760fe97fd6ff059495045075136f0cc5f3422ccc3c02f32f0510d4",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980954633",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-12-03",
+          "signal": {
+            "title": "Kapital",
+            "date": "2025-12-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb"
+          },
+          "evidence_span": "Kapital — 2025-12-03 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-1d3bfa358d5c011c20124f94",
+          "organisation_number": "980954633",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:42Z",
+          "content_sha256": "812bb59dfe046b32f8acad8ae1fd1c91f32a2c41774f3b2c79de0e55367022a7",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "980954633",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-09-08",
+          "signal": {
+            "title": "Nedsettelse av kapital",
+            "date": "2025-09-08",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb"
+          },
+          "evidence_span": "Nedsettelse av kapital — 2025-09-08 (BRREG official announcement)"
+        },
+        {
           "id": "registry-contact-a1e548b70897fd650b5ccf06",
           "organisation_number": "980954633",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -595,8 +764,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -623,8 +792,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -649,7 +818,7 @@
           "organisation_number": "980954633",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980954633&size=1000",
-          "retrieved_at": "2026-10-05T08:49:34.755274Z",
+          "retrieved_at": "2026-11-16T15:35:22.705280Z",
           "content_sha256": "1aad1f22293621e0536a484a07f58feb46496287c47411ee4cbad7ea5ebcb923",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -679,7 +848,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6f50ef8aa76a44c3b69ecd6f64763f3eadd6fcb9ae2e9087cd415179f82d291c",
           "observed_at": "2026-07-14",
           "exact_entity": true,
@@ -709,7 +878,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "17aa003e6fc0f05bdc437fc13b0a074b965fcfe14c71610d03cd7dff1d250aa3",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -739,7 +908,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "165b66224cd792fa4dfed34385a40c8b3fef33de38e40ce7bfa192ae787b17f3",
           "observed_at": "2025-12-03",
           "exact_entity": true,
@@ -769,7 +938,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "eca64d7dbce99aaca0df20e9443bf290547d2a392dbcc07707e90351a11c26b2",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -799,7 +968,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "e660d5ba8d063dd3d5aad183c0bdfced1651fddc38f28807b7e1cf095ec7c178",
           "observed_at": "2025-06-25",
           "exact_entity": true,
@@ -829,7 +998,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "61c041488d2bda392bc537b76d20e70af14b01321be5c277648b0e939093ccc6",
           "observed_at": "2024-07-20",
           "exact_entity": true,
@@ -859,7 +1028,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3d6cd4bec000aef14e443d1c1219c679a53014c1391a4a5427e915c0484fa4d8",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -889,7 +1058,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "ca1319d8af471d4541b19ae03fd705896aede82b90b7c361ee497e999ed11820",
           "observed_at": "2023-06-21",
           "exact_entity": true,
@@ -919,7 +1088,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "f78c5de9723d39ccb8723ffca15cb3b8d5c01434ff2215f5c82bb00fb96d843f",
           "observed_at": "2023-01-12",
           "exact_entity": true,
@@ -949,7 +1118,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "98f74a4c0ac9a3adfb054a8dce58114b84198a392189c295cffd41d0df5e386f",
           "observed_at": "2022-09-13",
           "exact_entity": true,
@@ -979,7 +1148,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c89ce3633d686e389b25c0749ad7558fbf71fc5eac05578035e3afb8ebfb695b",
           "observed_at": "2022-07-19",
           "exact_entity": true,
@@ -1009,7 +1178,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "000642dc6621508916cc084e072b97a2d688c3d8a2277b06825af252a9f174a4",
           "observed_at": "2022-07-12",
           "exact_entity": true,
@@ -1039,7 +1208,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "342f9b8b9df6760026a83f0eab6c86119f6d78dcfead2f949513c0afbee763b4",
           "observed_at": "2022-07-01",
           "exact_entity": true,
@@ -1069,7 +1238,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "018f098abe5798f1a7a106f39b7b1a3f339f8ee3d33171ad624953925409f5e5",
           "observed_at": "2022-06-15",
           "exact_entity": true,
@@ -1099,7 +1268,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "15189823e668f31934d15ba479dfc1c24cd598154a4427c47eddd9ec04404348",
           "observed_at": "2022-01-12",
           "exact_entity": true,
@@ -1129,7 +1298,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "dbc965ddf9ffd43b157e9e90f7a25ca40f58fa1b8d69d61cd0ed7110427801c9",
           "observed_at": "2021-07-13",
           "exact_entity": true,
@@ -1159,7 +1328,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3a5492f37712157815867b046b690ef4b4a8c162d63803bc1986254a84211ac1",
           "observed_at": "2021-06-28",
           "exact_entity": true,
@@ -1184,91 +1353,37 @@
           "strategy": "registry_updates_feed"
         },
         {
-          "id": "brreg-kunngjoring-817a0997dd538665d76c8097",
           "organisation_number": "980954633",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "27ebbd7ccf623ee47632f08f8eb352b8c9fe03efd071604b860128863df1d8f4",
+          "retrieved_at": "2026-11-16T14:54:57.864149Z",
+          "content_sha256": "5ad8fbc960a0c5e92ae0159792ac6f7235b43009a21bdac182b0eb56cc168e50",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
+              "type": "organisation_number_on_wikidata",
+              "source": "wikidata.org",
+              "source_class": "open_knowledge_base",
               "matched_organisation_number": "980954633",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+              "explanation": "Wikidata entity Q11991237 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-07-14",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-07-14",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-07-14 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-668f08618840a57d2c2817fc",
-          "organisation_number": "980954633",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "719da648bd760fe97fd6ff059495045075136f0cc5f3422ccc3c02f32f0510d4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "980954633",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          "source_class": "public_mention",
+          "strategy": "wikidata_p2333_orgnr_match",
+          "id": "wikidata-980954633",
+          "platform": "wikidata",
+          "signal_type": "company_profile",
+          "source_url": "https://www.wikidata.org/wiki/Q11991237",
+          "evidence_span": "P2333 = 980954633 on Q11991237 (Network Solutions Norway)",
+          "metrics": {
+            "qid": "Q11991237",
+            "label": "Network Solutions Norway",
+            "values": {
+              "wikidata.website": "http://www.nsn.no/",
+              "wikidata.inception": null,
+              "wikidata.employees": null
             }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-12-03",
-          "signal": {
-            "title": "Kapital",
-            "date": "2025-12-03",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb"
-          },
-          "evidence_span": "Kapital — 2025-12-03 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-1d3bfa358d5c011c20124f94",
-          "organisation_number": "980954633",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "812bb59dfe046b32f8acad8ae1fd1c91f32a2c41774f3b2c79de0e55367022a7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "980954633",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-09-08",
-          "signal": {
-            "title": "Nedsettelse av kapital",
-            "date": "2025-09-08",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb"
-          },
-          "evidence_span": "Nedsettelse av kapital — 2025-09-08 (BRREG official announcement)"
+          }
         }
       ]
     },
@@ -1284,14 +1399,14 @@
     "run_metrics": {
       "bytes": 10823,
       "latencies_ms": [
-        680,
-        778,
-        983,
-        688,
-        706,
-        716,
-        369,
-        366
+        940,
+        962,
+        1669,
+        981,
+        912,
+        996,
+        350,
+        1362
       ],
       "requests": 10
     },
@@ -1434,7 +1549,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-10-05T08:35:01.540337Z",
+      "retrieved_at": "2026-11-16T15:19:02.283022Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "980954633",
       "source_type": "official_rule_interpretation",
@@ -1454,7 +1569,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-10-05T08:49:32.642259Z",
+      "retrieved_at": "2026-11-16T15:35:19.813536Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1548,7 +1663,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-10-05T08:49:27.927041Z",
+      "retrieved_at": "2026-11-16T15:35:18.144055Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1613,7 +1728,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-10-05T08:49:34.038166Z",
+      "retrieved_at": "2026-11-16T15:35:21.708861Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1627,7 +1742,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-10-05T08:49:34.755274Z",
+      "retrieved_at": "2026-11-16T15:35:22.705280Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1660,25 +1775,27 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "980954633",
       "source_type": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
       "status": "available",
       "value": {
-        "aktivitet": "Konsulentvirksomhet. Handel. Produksjon, tilknytning til EDB virksomhet, investering i aksjer og fast eiendom. Kjøp, utleie og handel med maskiner.",
-        "antallAnsatte": "",
+        "aktivitet": [
+          "Konsulentvirksomhet. Handel. Produksjon, tilknytning til EDB",
+          "virksomhet, investering i aksjer og fast eiendom. Kjøp, utleie og",
+          "handel med maskiner."
+        ],
         "epostadresse": "ftr@petabit.no",
-        "erIKonsern": "false",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-        "foretaksformIHjemlandet.kode": "",
-        "forretningsadresse.adresse": "Innspurten 9",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Innspurten 9"
+        ],
         "forretningsadresse.kommune": "OSLO",
         "forretningsadresse.kommunenummer": "0301",
         "forretningsadresse.land": "Norge",
@@ -1687,80 +1804,77 @@
         "forretningsadresse.poststed": "OSLO",
         "fravalgRevisjonBeslutningsDato": "2024-11-27",
         "fravalgRevisjonDato": "2024-12-03",
-        "frivilligMvaRegistrertBeskrivelser": "",
-        "harRegistrertAntallAnsatte": "true",
-        "hjelpeenhetskode.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [
+          {
+            "fraDato": "1999-09-07 11:01:25",
+            "navn": "NETWORK SOLUTIONS NORWAY AS",
+            "tilDato": "2003-04-08 11:15:59"
+          },
+          {
+            "fraDato": "2003-04-08 11:15:59",
+            "navn": "NETWORK SOLUTIONS NORWAY ASA",
+            "tilDato": "2010-07-12 20:17:17"
+          },
+          {
+            "fraDato": "2010-07-12 20:17:17",
+            "navn": "NSN ASA",
+            "tilDato": "2011-06-15 20:33:21"
+          },
+          {
+            "fraDato": "2011-06-15 20:33:21",
+            "navn": "NSN AS",
+            "tilDato": "2013-04-15 21:06:28"
+          }
+        ],
         "hjemmeside": "www.petabit.no",
         "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
         "institusjonellSektorkode.kode": "2100",
-        "kapital.antallAksjer": "100000",
-        "kapital.belop": "100000.00",
-        "kapital.bundet": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innbetalt": "",
+        "kapital.antallAksjer": 100000,
+        "kapital.belop": 100000.0,
         "kapital.innfortDato": "2025-12-03",
         "kapital.type": "Aksjekapital",
         "kapital.valuta": "NOK",
-        "konkurs": "false",
-        "konkursdato": "",
+        "konkurs": false,
+        "links": [],
         "maalform": "Bokmål",
         "mobil": "906 33 883",
         "naeringskode1.beskrivelse": "Datainfrastruktur, -behandling, -lagring og tilknyttede tjenester",
         "naeringskode1.kode": "63.100",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode2.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "naeringskode3.kode": "",
         "navn": "PETABIT AS",
         "organisasjonsform.beskrivelse": "Aksjeselskap",
         "organisasjonsform.kode": "AS",
+        "organisasjonsform.links": [],
         "organisasjonsnummer": "980954633",
-        "overordnetEnhet": "",
-        "paategninger": "false",
-        "postadresse.adresse": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
-        "postadresse.postnummer": "",
-        "postadresse.poststed": "",
+        "paategninger": [],
         "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-06-13",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-06-10",
+        "registreringsdatoEnhetsregisteret": "1999-09-07",
         "registreringsdatoForetaksregisteret": "1999-09-07",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registreringsdatoFrivillighetsregisteret": "",
         "registreringsdatoMerverdiavgiftsregisteret": "2000-01-01",
         "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2000-07-04",
-        "registreringsdatoPartiregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-06-10",
-        "registreringsdatoenhetsregisteret": "1999-09-07",
-        "registreringsnummerIHjemlandet": "",
-        "registrertIForetaksregisteret": "true",
-        "registrertIFrivillighetsregisteret": "false",
-        "registrertIMvaRegisteret": "true",
-        "registrertIPartiregisteret": "false",
-        "registrertIStiftelsesregisteret": "false",
+        "registrertIForetaksregisteret": true,
+        "registrertIFrivillighetsregisteret": false,
+        "registrertIMvaregisteret": true,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": false,
+        "respons_klasse": "Enhet",
         "sisteInnsendteAarsregnskap": "2025",
         "stiftelsesdato": "1999-06-11",
         "telefon": "21 93 11 00",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
-        "underRekonstruksjonsforhandlingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
-        "underlagtLovgivningLand": "",
-        "underlagtLovgivningLandKode": "",
-        "utenlandskRegisterAdresse.adresse": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterNavn": "",
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false,
         "vedtektsdato": "2022-08-21",
-        "vedtektsfestetFormaal": "Salg, distribusjon, produksjon av IT og ITK relaterte varer og tjenester innenfor produktområdet ISP (Internet Service Provider). Teknisk rådgivning/veiledning av kunder og sluttbrukere innenfor ovennevnte produktområde. Utdanning- og opplæringsaktiviteter knyttet til selskapets virksomhet. Selskapet kan erverve, selge eller leie alle slags bygninger, etablere pantelån, samt yte lån, garantier eller andre rettigheter til fordel for tredjemann, innenfor selskapets virksomhet."
+        "vedtektsfestetFormaal": [
+          "Salg, distribusjon, produksjon av IT og ITK relaterte varer og",
+          "tjenester innenfor produktområdet ISP (Internet Service Provider).",
+          "Teknisk rådgivning/veiledning av kunder og sluttbrukere innenfor",
+          "ovennevnte produktområde. Utdanning- og opplæringsaktiviteter knyttet",
+          "til selskapets virksomhet. Selskapet kan erverve, selge eller leie",
+          "alle slags bygninger, etablere pantelån, samt yte lån, garantier eller",
+          "andre rettigheter til fordel for tredjemann, innenfor selskapets",
+          "virksomhet."
+        ]
       }
     },
     "registry_live": {
@@ -1769,7 +1883,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-10-05T08:49:27.148237Z",
+      "retrieved_at": "2026-11-16T15:35:17.180753Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1808,7 +1922,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-10-05T08:49:33.331460Z",
+      "retrieved_at": "2026-11-16T15:35:20.795516Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1845,7 +1959,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-10-05T08:49:36.190282Z",
+      "retrieved_at": "2026-11-16T15:35:25.444593Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -1892,83 +2006,25 @@
     },
     "external_observations": [
       {
-        "id": "annual-workforce-91ac37864b39f132c7347ab8",
-        "organisation_number": "980954633",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/980954633/2025",
-        "retrieved_at": "2026-10-08T19:05:53.758436Z",
-        "content_sha256": "a0361732b2d1430c62f98360dea742020c59644e66086cb9e463edf7ba4440f9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "official_report_url_organisation_number",
-            "value": "980954633"
-          },
-          {
-            "type": "organisation_number_in_pdf",
-            "value": "980954633"
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_annual_account_copy",
-        "evidence_span": "Selskapet har sysselsatt 1.00 arsverk i 2025.",
-        "effective_at": "2025",
-        "metrics": {
-          "workforce_value": 1,
-          "measure": "full_time_equivalents",
-          "year": "2025",
-          "scope": "company_phrase",
-          "full_time_equivalents": 1
-        },
-        "strategy": "annual_report_workforce_snapshot"
-      },
-      {
-        "organisation_number": "980954633",
-        "retrieved_at": "2026-10-02T19:17:05.994104Z",
-        "content_sha256": "5ad8fbc960a0c5e92ae0159792ac6f7235b43009a21bdac182b0eb56cc168e50",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_wikidata",
-            "source": "wikidata.org",
-            "source_class": "open_knowledge_base",
-            "matched_organisation_number": "980954633",
-            "explanation": "Wikidata entity Q11991237 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "public_mention",
-        "strategy": "wikidata_p2333_orgnr_match",
-        "id": "wikidata-980954633",
-        "platform": "wikidata",
-        "signal_type": "company_profile",
-        "source_url": "https://www.wikidata.org/wiki/Q11991237",
-        "evidence_span": "P2333 = 980954633 on Q11991237 (Network Solutions Norway)",
-        "metrics": {
-          "qid": "Q11991237",
-          "label": "Network Solutions Norway",
-          "values": {
-            "wikidata.website": "http://www.nsn.no/",
-            "wikidata.inception": null,
-            "wikidata.employees": null
-          }
-        }
-      },
-      {
         "organisation_number": "980954633",
         "platform": "company_site",
         "source_url": "http://www.petabit.no/",
-        "retrieved_at": "2026-10-05T08:49:36.190282Z",
+        "retrieved_at": "2026-11-16T15:35:25.444593Z",
         "content_sha256": "9278d16ed2fdcd5dc651615b0b8adc6b55fb667a9d106a9891b861d4561d9a24",
         "exact_entity": true,
         "identity_proof": [
           {
+            "type": "registry_declared_domain_unique",
+            "domain": "petabit.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-16",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
+          {
             "type": "website_identity_gate",
             "status": "exact",
-            "score": 0.9
+            "score": 0.95
           }
         ],
         "acquisition_mode": "permitted_public_page",
@@ -1987,13 +2043,241 @@
         }
       },
       {
+        "organisation_number": "980954633",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980954633",
+        "retrieved_at": "2026-11-16T16:37:30.240903Z",
+        "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980954633"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "PETABIT AS",
+            "matched_organisation_number": "980954633"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+        "id": "purehelp-email-980954633-e746a207c7f9fc01",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "ftr@petabit.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "980954633",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980954633",
+        "retrieved_at": "2026-11-16T16:37:30.240903Z",
+        "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980954633"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "PETABIT AS",
+            "matched_organisation_number": "980954633"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+        "id": "purehelp-phone-980954633-e746a207c7f9fc01",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "21 93 11 00",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "980954633",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980954633",
+        "retrieved_at": "2026-11-16T16:37:30.240903Z",
+        "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980954633"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "PETABIT AS",
+            "matched_organisation_number": "980954633"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+        "id": "purehelp-profile-980954633-e746a207c7f9fc01",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "63.100",
+          "nace_description": "Computing infrastructure\\, data processing\\, hosting and related activities",
+          "town": "OSLO",
+          "zipcode": "0663",
+          "municipality": "OSLO",
+          "municipality_number": "0301",
+          "county": "Oslo",
+          "registration_date": "1999-09-07",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1999-09-07",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.petabit.no"
+        }
+      },
+      {
+        "organisation_number": "980954633",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/980954633",
+        "retrieved_at": "2026-11-16T16:37:30.240903Z",
+        "content_sha256": "d7304055d2c97c417e706f58106ed7a92b6052af66a64bdfffb322251a8cbc27",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "980954633"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "PETABIT AS",
+            "matched_organisation_number": "980954633"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-980954633.orgNumber=980954633;name=PETABIT AS",
+        "id": "purehelp-workforce-980954633-e746a207c7f9fc01",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 0,
+          "as_of": "2026-09-18",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "brreg-kunngjoring-817a0997dd538665d76c8097",
+        "organisation_number": "980954633",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:42Z",
+        "content_sha256": "27ebbd7ccf623ee47632f08f8eb352b8c9fe03efd071604b860128863df1d8f4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980954633",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-14",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-14",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-14 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-668f08618840a57d2c2817fc",
+        "organisation_number": "980954633",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:42Z",
+        "content_sha256": "719da648bd760fe97fd6ff059495045075136f0cc5f3422ccc3c02f32f0510d4",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980954633",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-12-03",
+        "signal": {
+          "title": "Kapital",
+          "date": "2025-12-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb"
+        },
+        "evidence_span": "Kapital — 2025-12-03 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-1d3bfa358d5c011c20124f94",
+        "organisation_number": "980954633",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:42Z",
+        "content_sha256": "812bb59dfe046b32f8acad8ae1fd1c91f32a2c41774f3b2c79de0e55367022a7",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "980954633",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-09-08",
+        "signal": {
+          "title": "Nedsettelse av kapital",
+          "date": "2025-09-08",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb"
+        },
+        "evidence_span": "Nedsettelse av kapital — 2025-09-08 (BRREG official announcement)"
+      },
+      {
         "id": "registry-contact-a1e548b70897fd650b5ccf06",
         "organisation_number": "980954633",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2020,8 +2304,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2048,8 +2332,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2074,7 +2358,7 @@
         "organisation_number": "980954633",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=980954633&size=1000",
-        "retrieved_at": "2026-10-05T08:49:34.755274Z",
+        "retrieved_at": "2026-11-16T15:35:22.705280Z",
         "content_sha256": "1aad1f22293621e0536a484a07f58feb46496287c47411ee4cbad7ea5ebcb923",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2104,7 +2388,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6f50ef8aa76a44c3b69ecd6f64763f3eadd6fcb9ae2e9087cd415179f82d291c",
         "observed_at": "2026-07-14",
         "exact_entity": true,
@@ -2134,7 +2418,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "17aa003e6fc0f05bdc437fc13b0a074b965fcfe14c71610d03cd7dff1d250aa3",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2164,7 +2448,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "165b66224cd792fa4dfed34385a40c8b3fef33de38e40ce7bfa192ae787b17f3",
         "observed_at": "2025-12-03",
         "exact_entity": true,
@@ -2194,7 +2478,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "eca64d7dbce99aaca0df20e9443bf290547d2a392dbcc07707e90351a11c26b2",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2224,7 +2508,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "e660d5ba8d063dd3d5aad183c0bdfced1651fddc38f28807b7e1cf095ec7c178",
         "observed_at": "2025-06-25",
         "exact_entity": true,
@@ -2254,7 +2538,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "61c041488d2bda392bc537b76d20e70af14b01321be5c277648b0e939093ccc6",
         "observed_at": "2024-07-20",
         "exact_entity": true,
@@ -2284,7 +2568,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3d6cd4bec000aef14e443d1c1219c679a53014c1391a4a5427e915c0484fa4d8",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -2314,7 +2598,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "ca1319d8af471d4541b19ae03fd705896aede82b90b7c361ee497e999ed11820",
         "observed_at": "2023-06-21",
         "exact_entity": true,
@@ -2344,7 +2628,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "f78c5de9723d39ccb8723ffca15cb3b8d5c01434ff2215f5c82bb00fb96d843f",
         "observed_at": "2023-01-12",
         "exact_entity": true,
@@ -2374,7 +2658,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "98f74a4c0ac9a3adfb054a8dce58114b84198a392189c295cffd41d0df5e386f",
         "observed_at": "2022-09-13",
         "exact_entity": true,
@@ -2404,7 +2688,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c89ce3633d686e389b25c0749ad7558fbf71fc5eac05578035e3afb8ebfb695b",
         "observed_at": "2022-07-19",
         "exact_entity": true,
@@ -2434,7 +2718,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "000642dc6621508916cc084e072b97a2d688c3d8a2277b06825af252a9f174a4",
         "observed_at": "2022-07-12",
         "exact_entity": true,
@@ -2464,7 +2748,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "342f9b8b9df6760026a83f0eab6c86119f6d78dcfead2f949513c0afbee763b4",
         "observed_at": "2022-07-01",
         "exact_entity": true,
@@ -2494,7 +2778,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "018f098abe5798f1a7a106f39b7b1a3f339f8ee3d33171ad624953925409f5e5",
         "observed_at": "2022-06-15",
         "exact_entity": true,
@@ -2524,7 +2808,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "15189823e668f31934d15ba479dfc1c24cd598154a4427c47eddd9ec04404348",
         "observed_at": "2022-01-12",
         "exact_entity": true,
@@ -2554,7 +2838,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "dbc965ddf9ffd43b157e9e90f7a25ca40f58fa1b8d69d61cd0ed7110427801c9",
         "observed_at": "2021-07-13",
         "exact_entity": true,
@@ -2584,7 +2868,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/980954633",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3a5492f37712157815867b046b690ef4b4a8c162d63803bc1986254a84211ac1",
         "observed_at": "2021-06-28",
         "exact_entity": true,
@@ -2609,93 +2893,39 @@
         "strategy": "registry_updates_feed"
       },
       {
-        "id": "brreg-kunngjoring-817a0997dd538665d76c8097",
         "organisation_number": "980954633",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "27ebbd7ccf623ee47632f08f8eb352b8c9fe03efd071604b860128863df1d8f4",
+        "retrieved_at": "2026-11-16T14:54:57.864149Z",
+        "content_sha256": "5ad8fbc960a0c5e92ae0159792ac6f7235b43009a21bdac182b0eb56cc168e50",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
+            "type": "organisation_number_on_wikidata",
+            "source": "wikidata.org",
+            "source_class": "open_knowledge_base",
             "matched_organisation_number": "980954633",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            "explanation": "Wikidata entity Q11991237 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-07-14",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-07-14",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000548898&amp;sokeverdi=980954633&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-07-14 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-668f08618840a57d2c2817fc",
-        "organisation_number": "980954633",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "719da648bd760fe97fd6ff059495045075136f0cc5f3422ccc3c02f32f0510d4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "980954633",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+        "source_class": "public_mention",
+        "strategy": "wikidata_p2333_orgnr_match",
+        "id": "wikidata-980954633",
+        "platform": "wikidata",
+        "signal_type": "company_profile",
+        "source_url": "https://www.wikidata.org/wiki/Q11991237",
+        "evidence_span": "P2333 = 980954633 on Q11991237 (Network Solutions Norway)",
+        "metrics": {
+          "qid": "Q11991237",
+          "label": "Network Solutions Norway",
+          "values": {
+            "wikidata.website": "http://www.nsn.no/",
+            "wikidata.inception": null,
+            "wikidata.employees": null
           }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-12-03",
-        "signal": {
-          "title": "Kapital",
-          "date": "2025-12-03",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000861559&amp;sokeverdi=980954633&amp;spraak=nb"
-        },
-        "evidence_span": "Kapital — 2025-12-03 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-1d3bfa358d5c011c20124f94",
-        "organisation_number": "980954633",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "812bb59dfe046b32f8acad8ae1fd1c91f32a2c41774f3b2c79de0e55367022a7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "980954633",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-09-08",
-        "signal": {
-          "title": "Nedsettelse av kapital",
-          "date": "2025-09-08",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000731353&amp;sokeverdi=980954633&amp;spraak=nb"
-        },
-        "evidence_span": "Nedsettelse av kapital — 2025-09-08 (BRREG official announcement)"
+        }
       }
     ]
   },
-  "generated_at": "2026-11-07T10:54:53.157950+00:00"
+  "generated_at": "2026-11-17T09:30:47.968536+00:00"
 }

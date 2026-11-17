@@ -142,6 +142,9 @@ ROLE_STOPWORDS = (
     "logg", "kontakt", "personvern", "cookies", "vilkår", "hjem", "meny",
     "les mer her", "les mer", "abonner", "del", "les saken", "forrige",
     "neste", "se alle", "alle ledige",
+    # Skip links are anchor text on the page, not role cards. Jobbnorge served
+    # "Hopp til hovedinnhold" as a job title on the 2026-11-15 corpus.
+    "hopp til", "gå til", "skip to", "hovedinnhold", "main content",
 )
 ROLE_CARD_LIMIT = 20
 ROLE_TEXT_MIN = 3
@@ -187,6 +190,9 @@ def extract_role_cards(html: str, base: str) -> list[dict]:
         url = urllib.parse.urljoin(base, href)
         parts = urllib.parse.urlparse(url)
         if parts.netloc.lower() != base_netloc:
+            continue
+        # A same-page fragment is a skip link, never a role card.
+        if parts.fragment and not parts.path.strip("/") and not parts.query:
             continue
         text = " ".join(raw_text.split())
         if not (ROLE_TEXT_MIN <= len(text) <= ROLE_TEXT_MAX):

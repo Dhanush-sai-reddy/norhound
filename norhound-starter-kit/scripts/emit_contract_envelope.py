@@ -81,10 +81,13 @@ def text_key(value: Any) -> str:
 
 
 ROLE_TRUSTED_STRATEGIES = {
-    "jobs_feed_discovery",
     "official_nav_job_feed_orgnr_match", "nav_job_feed", "ats_role_card",
     "finn_job_details", "nav_direct_api", "apify_nav_jobs",
 }
+# `jobs_feed_discovery` is deliberately absent: it records a link found on a
+# careers page, never a role card. Trusting it published "Digitalt testament"
+# and "Marketing" as job titles on the 2026-11-15 corpus. Those rows now carry
+# signal_type `careers_page` and earn the careers-page signal, not a role.
 CAREERS_PATH_HINTS = (
     "jobb", "job", "karriere", "career", "stilling", "ledig", "vacanc", "recruit",
     "stillinger", "ledige", "annonse", "join-us", "joinus", "work-with-us", "ahoj",

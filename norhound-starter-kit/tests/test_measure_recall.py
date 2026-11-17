@@ -280,6 +280,22 @@ class MeasureRecallCoverageTests(unittest.TestCase):
         self.assertAlmostEqual(report["coverage"]["workforce_snapshot"], 1.0)
         self.assertEqual(report["coverage"]["workforce_jobs"], 0.0)
 
+    def test_a_careers_page_link_is_not_a_job_posting(self):
+        """A link discovered on a careers page must not raise workforce_jobs.
+
+        Only a role card, a job-feed item or an apply action proves hiring. The
+        2026-11-15 corpus published 165 discovered careers-page links as
+        job_postings ("Digitalt testament", "Marketing"), which lifted
+        workforce_jobs from ~15 companies with a real advert to 51.
+        """
+        observations = [
+            _observation(id="c1", organisation_number=ORG_A, platform="company_site",
+                         signal_type="careers_page"),
+        ]
+        report = _single_org_report(observations, [_label(id="c1")])
+        self.assertEqual(report["coverage"]["workforce_jobs"], 0.0)
+        self.assertEqual(measure_recall.WORKFORCE_SIGNALS, {"job_posting"})
+
     def test_buzz_engagement_counts_public_mention_rows(self):
         report = _report()
         self.assertAlmostEqual(report["coverage"]["buzz_engagement"], 1.0)

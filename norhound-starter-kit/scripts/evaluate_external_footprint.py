@@ -4,14 +4,23 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT))
 
 from norway_company_agent.external_footprint import publishable_observation, validate_observation  # noqa: E402
+
+# The coverage definitions live in one place. The evaluator and the recall
+# proxy used to disagree: `any_external` and `two_platforms` counted the
+# register, which every profiled company has, and `buzz_engagement` counted
+# Brønnøysund announcements, which every filer has. Shipping two coverage
+# numbers that contradict each other is how a run ends up claiming
+# "two_platforms 0.994" in the audit report and "0.627" in the recall report.
+from scripts import measure_recall  # noqa: E402
 
 
 def sanitize_line_separators(text: str) -> str:
@@ -65,27 +74,9 @@ def main() -> None:
         and publishable_observation(item)
         and labels[str(item.get("id"))].get("exact_entity")
     ]
-    org_platforms: dict[str, set[str]] = defaultdict(set)
-    org_signals: dict[str, set[str]] = defaultdict(set)
-    for item in accepted_all:
-        org = str(item["organisation_number"])
-        if org not in all_orgs:
-            continue
-        org_platforms[org].add(str(item["platform"]))
-        org_signals[org].add(str(item["signal_type"]))
-
-    coverage = {
-        "any_external": ratio(sum(bool(org_platforms[org]) for org in all_orgs), len(all_orgs)),
-        "two_platforms": ratio(sum(len(org_platforms[org]) >= 2 for org in all_orgs), len(all_orgs)),
-        # Headcount is reported on its own: it is a workforce fact but not
-        # evidence of hiring, which needs a role card, a job-feed item or an
-        # apply action.
-        "workforce_jobs": ratio(sum(bool(org_signals[org] & {"job_posting"}) for org in all_orgs), len(all_orgs)),
-        "workforce_snapshot": ratio(sum(bool(org_signals[org] & {"workforce_snapshot"}) for org in all_orgs), len(all_orgs)),
-        "ratings_reviews": ratio(sum(bool(org_signals[org] & {"review", "review_summary", "place_summary"}) for org in all_orgs), len(all_orgs)),
-        "buzz_engagement": ratio(sum(bool(org_signals[org] & {"public_post", "public_mention", "profile_metrics"}) for org in all_orgs), len(all_orgs)),
-        "sentiment": ratio(sum(any(item.get("sentiment_label") for item in accepted_all if str(item.get("organisation_number")) == org) for org in all_orgs), len(all_orgs)),
-    }
+    # One definition of every coverage field, shared with scripts/measure_recall.py
+    # so the audit report and the recall report can never disagree.
+    coverage = measure_recall.compute_coverage(accepted_all, sorted(all_orgs))
     acquisition_modes = Counter(str(item.get("acquisition_mode")) for item in observations)
     entity_precision = ratio(len(published) - wrong_entity, len(published))
     metric_precision = ratio(len(published) - wrong_metric, len(published))

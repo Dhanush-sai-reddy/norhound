@@ -236,24 +236,37 @@ profiles and observations and can be re-run on any checkout.
 
 ### Expected results (as shipped)
 
-- **Published observations** every one carrying the verified `exact_entity`
-  label (1,391+ re-verified; unverified rows never publish).
+Run `fresh-20261116T144704Z`, promoted to `out/submission/` by
+`scripts/promote_run.sh`.
+
+- **31,829 published observations** out of 31,855 re-verified, every one
+  carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- Qualification gate **passed** (minimum audit 300).
-- 65 NAV official-API job-posting observations merged into the audit
-  (`official_api` acquisition, resolved via the Brønnøysund `underenheter`
-  endpoint to each advertiser's parent legal entity). A live chain re-check
-  (2026-09-22) re-confirmed the feed detail carries `employer.orgnr`.
+- **105,204 claims** backed by **35,361 evidence records** across 1,000
+  terminal envelopes.
+- **52 NAV official-API job-posting observations** across 13 companies merged
+  into the audit (`official_api` acquisition, resolved via the Brønnøysund
+  `underenheter` endpoint to each advertiser's parent legal entity). A live
+  chain re-check (2026-09-22) re-confirmed the feed detail carries
+  `employer.orgnr`. A discovered careers-page link is **not** a job posting: it
+  is published as an explicit `careers_page` signal.
 - Deterministic, no-API-key summaries produced for every profile with
   evidence (answers carry confidence and citation-integrity validation); a
   static site renders the directory and per-company pages over `file://`.
-- 199 tests pass by default (see below).
+- Coverage over sources outside the register: any_external 0.994,
+  two_platforms 0.627, buzz_engagement 0.994, workforce_jobs 0.013,
+  workforce_snapshot 0.575 (headcount, reported separately), ratings_reviews
+  0.032, sentiment 0.032. Six-field recall proxy **22.43 / 50**.
+- 559 tests pass by default (8 skipped).
 
-Canonical shipped artifacts: `out/web1000batch.external-eval.json` (944/p1.0),
-`out/web1000batch.labels-withfag.jsonl` + `out/web1000batch.external-withfag.jsonl`
-(audit inputs, 1,391 rows), `out/web1000-profiles.jsonl`, `out/SUBMISSION-REPORT.md`,
-and the seals in the report. Note `out/batch1000f.*` and the non-`withfag`
+Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
+envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
+(the 31,855-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+`out/submission/manifest.jsonl`, `out/submission/summaries.jsonl`,
+`out/submission/eval.json`, `out/submission/measure.json`,
+`out/submission/measure-family.json`, `out/submission/site/` (the viewer) and
+`out/norhound-signalpost-submission.zip`. Older `out/batch1000f.*` and
 `out/web1000batch.*` JSONL are intermediate runs left on disk; they are not the
 submitted numbers.
 
@@ -294,7 +307,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest discover -s tests -p "test_*.py"
-# 199 tests pass
+# 559 tests pass (8 skipped)
 ```
 
 ## The improvement loop

@@ -53,9 +53,16 @@ WORKFORCE_SIGNALS = {"job_posting"}
 # Headcount is a real, publishable workforce fact, but it is not evidence of
 # hiring: the reviewer's rule is that a hiring fact needs a role card, a
 # job-feed item or an apply action. Counting `workforce_snapshot` here made
-# workforce_jobs read 0.954 on a corpus where only 53 of 1,000 companies had an
-# actual posting, so it is measured and reported separately instead.
+# workforce_jobs read 0.954 on a corpus where only 13 of 1,000 companies had an
+# actual advert, so it is measured and reported separately instead.
 WORKFORCE_SNAPSHOT_SIGNALS = {"workforce_snapshot"}
+
+# The register is one platform, and every profiled company has a row in it, so
+# counting it here would make `any_external` mean "has any fact at all" and
+# `two_platforms` mean "register plus anything". Both fields are defined over
+# sources outside the register instead: `any_external` is one independent
+# source, `two_platforms` is two independent sources.
+REGISTRY_PLATFORMS = {"brreg"}
 
 # The six fields the recall proxy averages. Every other coverage field is
 # informational.
@@ -69,6 +76,11 @@ RECALL_PROXY_FIELDS = (
 )
 REVIEW_SIGNALS = {"review", "review_summary", "place_summary"}
 BUZZ_SIGNALS = {"public_post", "public_mention", "profile_metrics"}
+# A registry filing is not buzz. Brønnøysund announcements ("Godkjente
+# årsregnskap", "Forretningsadresse") cover every company that files accounts,
+# so counting them here made buzz_engagement read 1.000 on routine filings
+# alone. Buzz means a third-party profile, mention or post outside the register
+# (REGISTRY_PLATFORMS, defined above).
 
 # Gap order follows the brief: social_profile, dated_news, hiring.
 GAP_SIGNAL_TYPES = {
@@ -176,14 +188,24 @@ def compute_coverage(published: list[dict[str, Any]], organisations: list[str]) 
         for item in published
         if has_sentiment_label(item) and str(item.get("organisation_number")) in known
     }
+    buzz_orgs = {
+        str(item.get("organisation_number"))
+        for item in published
+        if str(item.get("signal_type")) in BUZZ_SIGNALS
+        and str(item.get("platform")) not in REGISTRY_PLATFORMS
+        and str(item.get("organisation_number")) in known
+    }
+    external_platforms = {
+        org: platforms.get(org, set()) - REGISTRY_PLATFORMS for org in organisations
+    }
     total = len(organisations)
     return {
-        "any_external": ratio(sum(bool(platforms.get(org)) for org in organisations), total),
-        "two_platforms": ratio(sum(len(platforms.get(org, set())) >= 2 for org in organisations), total),
+        "any_external": ratio(sum(bool(external_platforms[org]) for org in organisations), total),
+        "two_platforms": ratio(sum(len(external_platforms[org]) >= 2 for org in organisations), total),
         "workforce_jobs": ratio(sum(bool(signals.get(org, set()) & WORKFORCE_SIGNALS) for org in organisations), total),
         "workforce_snapshot": ratio(sum(bool(signals.get(org, set()) & WORKFORCE_SNAPSHOT_SIGNALS) for org in organisations), total),
         "ratings_reviews": ratio(sum(bool(signals.get(org, set()) & REVIEW_SIGNALS) for org in organisations), total),
-        "buzz_engagement": ratio(sum(bool(signals.get(org, set()) & BUZZ_SIGNALS) for org in organisations), total),
+        "buzz_engagement": ratio(sum(org in buzz_orgs for org in organisations), total),
         "sentiment": ratio(sum(org in sentiment_orgs for org in organisations), total),
     }
 

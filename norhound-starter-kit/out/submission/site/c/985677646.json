@@ -1,7 +1,7 @@
 {
   "profile": {
     "bankrupt": false,
-    "employees": 49,
+    "employees": 50,
     "evidence": {
       "accounting_obligation": {
         "as_of": "2024-08-09",
@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-10-05T08:35:03.625762Z",
+        "retrieved_at": "2026-11-16T15:19:02.932098Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "985677646",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-10-05T08:38:21.263098Z",
+        "retrieved_at": "2026-11-16T15:22:23.492464Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-10-05T08:38:18.652140Z",
+        "retrieved_at": "2026-11-16T15:22:22.505255Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-10-05T08:38:22.697066Z",
+        "retrieved_at": "2026-11-16T15:22:25.469599Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -198,11 +198,11 @@
       },
       "locations": {
         "as_of": null,
-        "content_sha256": "1c4c0ff213bdacc8cd63ca0bd55f5dcc5eca8736747566db7cb36d5b8c3a850d",
+        "content_sha256": "32156a0b9daed2d03e53dd6b1416f3cc74e222e73925d040c517f8022fbf324c",
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-10-05T08:38:23.387466Z",
+        "retrieved_at": "2026-11-16T15:22:26.784762Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -222,7 +222,7 @@
                 "postnummer": "4735",
                 "poststed": "EVJE"
               },
-              "employees": 49,
+              "employees": 50,
               "industry": {
                 "beskrivelse": "Passasjertransport utenom rutetabell",
                 "kode": "49.320"
@@ -235,116 +235,94 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "985677646",
         "source_type": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
         "status": "available",
         "value": {
-          "aktivitet": "Eie og drive busser innenfor både tur- og ruteoppdrag.",
-          "antallAnsatte": "49",
+          "aktivitet": [
+            "Eie og drive busser innenfor både tur- og ruteoppdrag."
+          ],
+          "antallAnsatte": 50,
           "epostadresse": "post@touring.no",
-          "erIKonsern": "false",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-          "foretaksformIHjemlandet.kode": "",
-          "forretningsadresse.adresse": "Transportvegen 17",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Transportvegen 17"
+          ],
           "forretningsadresse.kommune": "EVJE OG HORNNES",
           "forretningsadresse.kommunenummer": "4219",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
           "forretningsadresse.postnummer": "4735",
           "forretningsadresse.poststed": "EVJE",
-          "fravalgRevisjonBeslutningsDato": "",
-          "fravalgRevisjonDato": "",
-          "frivilligMvaRegistrertBeskrivelser": "",
-          "harRegistrertAntallAnsatte": "true",
-          "hjelpeenhetskode.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [
+            {
+              "fraDato": "2003-05-09 09:14:27",
+              "navn": "OLTO TARES AS",
+              "tilDato": "2003-05-21 20:41:33"
+            },
+            {
+              "fraDato": "2003-05-21 20:41:33",
+              "navn": "OLTO TARES AS",
+              "tilDato": "2006-02-14 08:38:42"
+            }
+          ],
           "hjemmeside": "www.touring.no",
           "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
           "institusjonellSektorkode.kode": "2100",
-          "kapital.antallAksjer": "100",
-          "kapital.belop": "300000.00",
-          "kapital.bundet": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innbetalt": "",
+          "kapital.antallAksjer": 100,
+          "kapital.belop": 300000.0,
           "kapital.innfortDato": "2014-12-19",
           "kapital.type": "Aksjekapital",
           "kapital.valuta": "NOK",
-          "konkurs": "false",
-          "konkursdato": "",
+          "konkurs": false,
+          "links": [],
           "maalform": "Bokmål",
-          "mobil": "",
           "naeringskode1.beskrivelse": "Passasjertransport utenom rutetabell",
           "naeringskode1.kode": "49.320",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode2.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "naeringskode3.kode": "",
           "navn": "RISDAL BUSS AS",
           "organisasjonsform.beskrivelse": "Aksjeselskap",
           "organisasjonsform.kode": "AS",
+          "organisasjonsform.links": [],
           "organisasjonsnummer": "985677646",
-          "overordnetEnhet": "",
-          "paategninger": "false",
-          "postadresse.adresse": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
-          "postadresse.postnummer": "",
-          "postadresse.poststed": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+          "paategninger": [],
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-10-13",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-10-10",
+          "registreringsdatoEnhetsregisteret": "2003-05-09",
           "registreringsdatoForetaksregisteret": "2003-05-21",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registreringsdatoFrivillighetsregisteret": "",
           "registreringsdatoMerverdiavgiftsregisteret": "2003-07-01",
           "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2003-09-18",
-          "registreringsdatoPartiregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-09-10",
-          "registreringsdatoenhetsregisteret": "2003-05-09",
-          "registreringsnummerIHjemlandet": "",
-          "registrertIForetaksregisteret": "true",
-          "registrertIFrivillighetsregisteret": "false",
-          "registrertIMvaRegisteret": "true",
-          "registrertIPartiregisteret": "false",
-          "registrertIStiftelsesregisteret": "false",
+          "registrertIForetaksregisteret": true,
+          "registrertIFrivillighetsregisteret": false,
+          "registrertIMvaregisteret": true,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": false,
+          "respons_klasse": "Enhet",
           "sisteInnsendteAarsregnskap": "2025",
           "stiftelsesdato": "2003-04-25",
           "telefon": "37 93 15 15",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
-          "underRekonstruksjonsforhandlingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
-          "underlagtLovgivningLand": "",
-          "underlagtLovgivningLandKode": "",
-          "utenlandskRegisterAdresse.adresse": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterNavn": "",
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false,
           "vedtektsdato": "2014-12-02",
-          "vedtektsfestetFormaal": "Eie og drive busser innenfor både tur- og ruteoppdrag."
+          "vedtektsfestetFormaal": [
+            "Eie og drive busser innenfor både tur- og ruteoppdrag."
+          ]
         }
       },
       "registry_live": {
         "as_of": null,
-        "content_sha256": "84165b47b8c67ccc1e2d1db0fa08640697cd0b3ba1d31b0917bcb5ca4659a686",
+        "content_sha256": "dd5a054dd6d786ea901272f55489a0829f136c61a47087a249e78615679b3a2d",
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-10-05T08:38:17.942120Z",
+        "retrieved_at": "2026-11-16T15:22:21.393320Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -363,7 +341,7 @@
             "postnummer": "4735",
             "poststed": "EVJE"
           },
-          "employees": 49,
+          "employees": 50,
           "industry": {
             "beskrivelse": "Passasjertransport utenom rutetabell",
             "kode": "49.320"
@@ -383,7 +361,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-10-05T08:38:21.971459Z",
+        "retrieved_at": "2026-11-16T15:22:24.490571Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -450,24 +428,28 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
         "source_url": "https://touring.no/",
         "status": "available",
         "value": {
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "crawl_errors": [],
-          "description": "Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
+          "description": "Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
           "discovered_social_links": [
             {
               "platform": "facebook",
               "url": "https://facebook.com/RisdalTouring"
+            },
+            {
+              "platform": "instagram",
+              "url": "https://instagram.com/risdaltouringas"
             }
           ],
           "extraction_state": "static_complete",
@@ -482,41 +464,41 @@
               "risdal"
             ],
             "method": "deterministic_name_org_evidence_v2",
-            "publishable": true,
+            "publishable": false,
             "reasons": [
-              "all normalized legal-name tokens appear together in homepage identity evidence"
+              "most legal-name tokens appear, but exact identity is incomplete"
             ],
-            "score": 0.95,
-            "status": "exact"
+            "score": 0.85,
+            "status": "review"
           },
           "main_text_excerpt": "Reisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\nReisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\n- \nKlimaanlegg i busser – hygienisk, rent og effektivtKontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser.\n- \nHøydepunktene fra Setesdal KulturnéUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum…\n- \nDu kan bestille din reise på vår hjemmesideVi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål.\n- \nFlotte nye busserUnder ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her:",
           "pages": [
             {
-              "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+              "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
               "main_text_excerpt": "Reisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\nReisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\n- \nKlimaanlegg i busser – hygienisk, rent og effektivtKontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser.\n- \nHøydepunktene fra Setesdal KulturnéUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum…\n- \nDu kan bestille din reise på vår hjemmesideVi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål.\n- \nFlotte nye busserUnder ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her:",
               "title": "Risdal Touring",
               "url": "https://touring.no/"
             },
             {
-              "content_sha256": "fe08383fde717439e44a59aaf1af04a356416b148ed19152508dcbf672678314",
+              "content_sha256": "96dbe68e545d6d3f2046f33ee45656d3af6c1a71ef9dd89f286cf33c4bca1643",
               "main_text_excerpt": "Sammen skaper vi turglede!\nTradisjoner å ta vare på!\nJohn Risdal startet på begynnelsen av 60-tallet med turbusser. Firmaet ble kjent under navnet John Risdal Turbusser og var å se på veiene helt fram til 2004. Varemerket var god og personlig service til alle kunder! Aldri ble det kompromisset på kvaliteten. Dessverre døde John så altfor tidlig og brått 8. november 2003, kun 68 år gammel. På slutten av 80-tallet overtok sønn til John, Olav Ljosland Risdal, mer og mer den daglige driften.\nVed årskiftet 1994/1995 kom den første, store turbusser i tunet på Ljosland. I 1998 ble også 45-seters turbuss nummer to innkjøpt. Aktiviteten var allerede da økende og ved gjennomføring av pakketurer, ble det samarbeidet med Sørlandsruta Touring i Kristiansand. Det var derfra bekjentskapet mellom Olav og Tom Roger Øydne, som leder av avdelingen, utviklet seg og som resulterte i at et felleseid selskap ble etablert 3. januar 1999 – Risdal Touring AS.\nStrategien var å bli en turoperatør for Sørlandet – med spennende turer til attraktive, gunstige priser! Flere og flere kunder etterspurte ferdige pakkeløsninger. Den lange erfaringen med å kjøre for andre som selv hadde lagt opp sin tur, gjorde beslutningen enkel: Dette trodde vi på!\n– Søsterselskapet Konkurrenten.no blir stiftet\n27. desember 2000 leverte vi søknad om å kjøre ekspressbussrute på strekningen Kristiansand – Oslo. \nMed det utfordret vi ”statsmonopolet” for landverts reise på strekningen. Etter først å ha fått avslag av daværende samferdselsminister Terje Moe-Gustavsen, forøvrig fem dager før han formelt gikk av som statsråd etter at valget var tapt i 2001. ble avslaget anket og 5. mars 2002 innvilget samferdselsminister Torhild Skogsholm søknaden. Den 15. mai 2002 gikk de første avganger, samtidig kl. 09.00 fra både Kristiansand og Oslo. Konkurrenten.no hadde sett dagens lys! \nFor kundene har konkurransen vist seg å være effektiv for å få bedre og billigere reiser. Den knallharde kampen om passasjerene har ført til at alle skjerper seg, tilbudet ble og blir stadig forbedret og har blitt flere avganger å velge mellom. Prisene er gått ned med ca 35-40% og antall daglige avganger er økt fra 3 til ca 15, altså med 400%.\nDet har vært en hard kamp å etablere seg som ekspressbussaktør på strekningen. Fra den spede start med 28 ukentlige avganger, har konkurrenten.no nå høsten 2018 hele 105 ukentlige avganger inkludert direktebusser. Kostnadene med å starte opp var store, men nå gir satsingen resultater.\n– Risdal Touring inngikk i en større omorganisering fra 1. januar 2006 og i dag er vi et Touring\nSatsingen er fortsatt offensiv og vi tør love at vi skal være en kundeorientert og markedsrettet bedrift, som hele tiden vil ha som målsetning å tilby konkurransedyktige reiser. Selv om bussvirksomhet er det vi har drevet med fra start, har vi frem til i dag bygget opp en katalog på reiser med både fly, cruise og tog i tillegg! \nVi jobber stadig med å utvide tilbudet vårt, med en egen salgsressurs på Vestlandet, som dekker områdene fra Haugesund, via Bergen til Sogn. \nI 2024 ble det tradisjonsrike Sverre Haga Bussreiser AS en del av bussfamilien! Haga-familien har røtter tilbake til rutebussens tidlige barndom. Tre generasjoner har drevet med busstransport i alle former. Sverre Haga AS ble i 25 år drevet av 3. generasjon i Haga-familien, men familiebåndene er fremdeles ivaretatt med 4. generasjon i ledelsen og drives videre som egen merkevare.\nEtter lang tids samarbeid, overtok konsernselskapet i 2020 alle aksjer i Gjerstad Tur og Taxi med base på Brokelandsheia i østre del av Agder. I 2025 ble LB-tur og Gjerstad Tur og Taxi fusjonert, og går under navnet Gjerstad og LB tur.\nEpeak AS og Active Travel Norway AS er også selskaper som har turer du vil finne på vår side. Valdresruta i Valdres har vi også et samarbeide med.\nGjennom samarbeidet kan selskapene dra nytte av felles ressurser og kompetanse, som gir styrket service, flere muligheter og bedre samarbeidsavtaler hos aktørene våre – til fordel for våre kunder!\n– «Kulturbærere»\nVi er kulturbærere av topp moderne turbusser, dyktige sjåfører, kunnskapsrike reiseledere og reisekonsulenter – med lang erfaring og tradisjon for å drive persontransport.\nVi gjør alltid vårt ytterste for å skape gode opplevelser og yte god service i alle ledd, fra du setter deg på bussen til du er hjemme igjen!",
               "title": "Om oss - Risdal Touring",
               "url": "https://touring.no/om-oss/"
             },
             {
-              "content_sha256": "fe08383fde717439e44a59aaf1af04a356416b148ed19152508dcbf672678314",
+              "content_sha256": "96dbe68e545d6d3f2046f33ee45656d3af6c1a71ef9dd89f286cf33c4bca1643",
               "main_text_excerpt": "Sammen skaper vi turglede!\nTradisjoner å ta vare på!\nJohn Risdal startet på begynnelsen av 60-tallet med turbusser. Firmaet ble kjent under navnet John Risdal Turbusser og var å se på veiene helt fram til 2004. Varemerket var god og personlig service til alle kunder! Aldri ble det kompromisset på kvaliteten. Dessverre døde John så altfor tidlig og brått 8. november 2003, kun 68 år gammel. På slutten av 80-tallet overtok sønn til John, Olav Ljosland Risdal, mer og mer den daglige driften.\nVed årskiftet 1994/1995 kom den første, store turbusser i tunet på Ljosland. I 1998 ble også 45-seters turbuss nummer to innkjøpt. Aktiviteten var allerede da økende og ved gjennomføring av pakketurer, ble det samarbeidet med Sørlandsruta Touring i Kristiansand. Det var derfra bekjentskapet mellom Olav og Tom Roger Øydne, som leder av avdelingen, utviklet seg og som resulterte i at et felleseid selskap ble etablert 3. januar 1999 – Risdal Touring AS.\nStrategien var å bli en turoperatør for Sørlandet – med spennende turer til attraktive, gunstige priser! Flere og flere kunder etterspurte ferdige pakkeløsninger. Den lange erfaringen med å kjøre for andre som selv hadde lagt opp sin tur, gjorde beslutningen enkel: Dette trodde vi på!\n– Søsterselskapet Konkurrenten.no blir stiftet\n27. desember 2000 leverte vi søknad om å kjøre ekspressbussrute på strekningen Kristiansand – Oslo. \nMed det utfordret vi ”statsmonopolet” for landverts reise på strekningen. Etter først å ha fått avslag av daværende samferdselsminister Terje Moe-Gustavsen, forøvrig fem dager før han formelt gikk av som statsråd etter at valget var tapt i 2001. ble avslaget anket og 5. mars 2002 innvilget samferdselsminister Torhild Skogsholm søknaden. Den 15. mai 2002 gikk de første avganger, samtidig kl. 09.00 fra både Kristiansand og Oslo. Konkurrenten.no hadde sett dagens lys! \nFor kundene har konkurransen vist seg å være effektiv for å få bedre og billigere reiser. Den knallharde kampen om passasjerene har ført til at alle skjerper seg, tilbudet ble og blir stadig forbedret og har blitt flere avganger å velge mellom. Prisene er gått ned med ca 35-40% og antall daglige avganger er økt fra 3 til ca 15, altså med 400%.\nDet har vært en hard kamp å etablere seg som ekspressbussaktør på strekningen. Fra den spede start med 28 ukentlige avganger, har konkurrenten.no nå høsten 2018 hele 105 ukentlige avganger inkludert direktebusser. Kostnadene med å starte opp var store, men nå gir satsingen resultater.\n– Risdal Touring inngikk i en større omorganisering fra 1. januar 2006 og i dag er vi et Touring\nSatsingen er fortsatt offensiv og vi tør love at vi skal være en kundeorientert og markedsrettet bedrift, som hele tiden vil ha som målsetning å tilby konkurransedyktige reiser. Selv om bussvirksomhet er det vi har drevet med fra start, har vi frem til i dag bygget opp en katalog på reiser med både fly, cruise og tog i tillegg! \nVi jobber stadig med å utvide tilbudet vårt, med en egen salgsressurs på Vestlandet, som dekker områdene fra Haugesund, via Bergen til Sogn. \nI 2024 ble det tradisjonsrike Sverre Haga Bussreiser AS en del av bussfamilien! Haga-familien har røtter tilbake til rutebussens tidlige barndom. Tre generasjoner har drevet med busstransport i alle former. Sverre Haga AS ble i 25 år drevet av 3. generasjon i Haga-familien, men familiebåndene er fremdeles ivaretatt med 4. generasjon i ledelsen og drives videre som egen merkevare.\nEtter lang tids samarbeid, overtok konsernselskapet i 2020 alle aksjer i Gjerstad Tur og Taxi med base på Brokelandsheia i østre del av Agder. I 2025 ble LB-tur og Gjerstad Tur og Taxi fusjonert, og går under navnet Gjerstad og LB tur.\nEpeak AS og Active Travel Norway AS er også selskaper som har turer du vil finne på vår side. Valdresruta i Valdres har vi også et samarbeide med.\nGjennom samarbeidet kan selskapene dra nytte av felles ressurser og kompetanse, som gir styrket service, flere muligheter og bedre samarbeidsavtaler hos aktørene våre – til fordel for våre kunder!\n– «Kulturbærere»\nVi er kulturbærere av topp moderne turbusser, dyktige sjåfører, kunnskapsrike reiseledere og reisekonsulenter – med lang erfaring og tradisjon for å drive persontransport.\nVi gjør alltid vårt ytterste for å skape gode opplevelser og yte god service i alle ledd, fra du setter deg på bussen til du er hjemme igjen!",
               "title": "Om oss - Risdal Touring",
               "url": "https://touring.no/om-oss/"
             },
             {
-              "content_sha256": "eadeb5686baf65482bc9457a402cfc88cc7e3ef1437085f9f737f1f393762dd0",
+              "content_sha256": "70b3a686adeecb5485e59600cf523397e93897909a02c20f5b3615da18ff42d1",
               "main_text_excerpt": "Kontakt oss\nØnsker du å kontakte Risdal Touring AS kan du enten ta direkte kontakt per telefon eller e-post, eller fylle inn kontaktskjema nedenfor.",
               "title": "Kontakt oss - Risdal Touring",
               "url": "https://touring.no/kontakt-oss/"
             },
             {
-              "content_sha256": "596eee8e8924b9e7a555ccc245e35a0c5d9f032dd0d155604488c5e6884899bf",
+              "content_sha256": "faeaf09aaf0d1a8b88eee89d361e2faec02f5edca2c54442d13d8d56ccf6f4ab",
               "main_text_excerpt": "Utøving av stevkunst, dans og folkemusikk fra Setesdal har fått…\nLes artikkel",
               "title": "Aktuelt - Risdal Touring",
               "url": "https://touring.no/aktuelt/"
@@ -535,6 +517,17 @@
               "publishable": false,
               "reason": "social handle lacks strong exact-entity name evidence",
               "url": "https://facebook.com/RisdalTouring"
+            },
+            {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "risdal"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "instagram",
+              "publishable": false,
+              "reason": "social handle lacks strong exact-entity name evidence",
+              "url": "https://instagram.com/risdaltouringas"
             }
           ],
           "social_links": [],
@@ -564,13 +557,50 @@
       },
       "external_observations": [
         {
+          "organisation_number": "985677646",
+          "platform": "company_site",
+          "source_url": "https://touring.no/",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_domain_unique",
+              "domain": "touring.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-16",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-985677646-c0ba1c10b4d64f69",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 5 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 5,
+            "verified_social_links": 0,
+            "structured_organisation_records": 1,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          }
+        },
+        {
           "id": "company-site-news-844f38e1a162a2340bcac2fe",
           "organisation_number": "985677646",
           "platform": "company_site",
           "signal_type": "public_post",
           "source_url": "https://touring.no/aktuelt/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "a9feb0e1b9c94b29328b62239a1c79ca520c4f558cf9d62728ab1dce56210250",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "faeaf09aaf0d1a8b88eee89d361e2faec02f5edca2c54442d13d8d56ccf6f4ab",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -584,131 +614,198 @@
           "source_class": "company_site",
           "evidence_span": "Aktuelt - Risdal Touring\n\nUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått…\nLes artikkel",
           "metrics": {
+            "title": "Aktuelt - Risdal Touring",
             "captured_news_pages": 1,
-            "interpretation": "Company-owned activity; not independent sentiment."
+            "interpretation": "Company-owned activity; not independent sentiment.",
+            "body_excerpt": "<!DOCTYPE html>\n<html lang=\"nb-NO\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>\nwindow.APTUM_BLOCKS_PLUGIN = {\"assetsDistPath\":\"https:\\/\\/touring.no\\/wp-content\\/plugins\\/aptum-blocks\\/dist\\/\"};\n</script>\n<script>\nwindow.SITE_PLUGIN = {\"assetsDistPath\":\"https:\\/\\/touring.no\\/wp-content\\/plugins\\/site\\/dist\\/\"};\n</script>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<link rel=\"canonical\" href=\"https://touring.no/aktuelt/\" />\n\t<meta property=\"og:locale\" content=\"nb_NO\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"Aktuelt - Risdal Touring\" />\n\t<meta property=\"og:url\" content=\"https://touring.no/aktuelt/\" />\n\t<meta property=\"og:site_name\" content=\"Risdal Touring\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":[\"WebPage\",\"CollectionPage\"],\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/\",\"url\":\"https:\\/\\/touring.no\\/aktuelt\\/\",\"name\":\"Aktuelt - Risdal Touring\",\"isPartOf\":{\"@id\":\"https:\\/\\/touring.no\\/#website\"},\"datePublished\":\"2016-11-08T13:45:46+00:00\",\"dateModified\":\"2016-12-22T12:15:04+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/#breadcrumb\"},\"inLanguage\":\"nb-NO\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hjem\",\"item\":\"https:\\/\\/touring.no\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Aktuelt\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/touring.no\\/#website\",\"url\":\"https:\\/\\/touring.no\\/\",\"name\":\"Risdal Touring\",\"description\":\"en av Norges ledende turoperatører\",\"publisher\":{\"@id\":\"https:\\/\\/touring.no\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/touring.no\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nb-NO\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/touring.no\\/#organization\",\"name\":\"Risdal Touring\",\"url\":\"https:\\/\\/touring.no\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nb-NO\",\"@id\":\"https:\\/\\/touring.no\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/d2im8jrr54be60.cloudfront.net\\/wp-content\\/uploads\\/2026\\/08\\/20151245\\/touring-vertical-ny-white.svg\",\"contentUrl\":\"https:\\/\\/d2im8jrr54be60.cloudfront.net\\/wp-content\\/uploads\\/2026\\/08\\/20151245\\/touring-vertical-ny-white.svg\",\"width\":295,\"height\":80,\"caption\":\"Risdal Touring\"},\"image\":{\"@id\":\"https:\\/\\/touring.no\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<title>Aktuelt - Risdal Touring</title>\n<link rel='dns-prefetch' href='//app.weply.chat' />\n<link rel='dns-prefetch' href='//www.googletagmanager.com' />\n<link rel='dns-prefetch' href='//use.typekit.net' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Risdal Touring &raquo; strøm\" href=\"https://touring.no/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Risdal Touring &raquo; kommentarstrøm\" href=\"https://touring.no/comments/feed/\" />\n<style id=\"wp-img-auto-sizes-contain-inline-css\">\nimg:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css */\n</style>\n<style id=\"wp-block-site-logo-inline-css\">\n.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}\n/*# sourceURL=https://touring.no/wp-includes/blocks/site-logo/style.min.css */\n</style>\n<style id=\"wp-block-group-inline-css\">\n.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}\n/*# sourceURL=https://touring.no/wp-includes/blocks/group/style.min.css */\n</style>\n<style id=\"wp-block-search-inline-css\">\n.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.",
+            "published": "2016-11-08T13:45:46+00:00",
+            "date_source": "page_body",
+            "published_at": "2016-11-08T13:45:46+00:00",
+            "page_url_fetched": "https://touring.no/aktuelt/"
           },
-          "strategy": "company_site_activity"
+          "strategy": "company_site_activity",
+          "observed_at": "2016-11-08T13:45:46+00:00"
         },
         {
+          "id": "registry-site-985677646-c0ba1c10b4d64f69",
           "organisation_number": "985677646",
           "platform": "company_site",
-          "source_url": "https://touring.no/klimaanlegg-i-busser-hygienisk-rent-og-effektivt/",
-          "retrieved_at": "2026-10-07T18:13:31.132974Z",
-          "content_sha256": "5514ef887eb87b617c52e216ba5e66558a950be47831251955255254012bfb6d",
+          "signal_type": "website_description",
+          "source_url": "https://touring.no/",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "registry_declared_website_domain_match",
+              "value": "touring.no",
+              "matched_organisation_number": "985677646",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-11-16T15:18:00.649157Z",
+              "explanation": "BRREG declares touring.no as the website of organisation 985677646; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
           "source_class": "company_site",
-          "strategy": "company_feed_news",
-          "id": "site-feed-news-985677646-83a25d6685fed26d",
-          "signal_type": "public_post",
-          "evidence_span": "Klimaanlegg i busser – hygienisk, rent og effektivt",
+          "evidence_span": "Risdal Touring — Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
           "metrics": {
-            "published_at": "2020-12-07T08:42:38Z",
-            "date_source": "rss_atom",
-            "body_excerpt": " Kontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser. \n Innlegget  Klimaanlegg i busser – hygienisk, rent og effektivt  dukket først opp på  Risdal Touring . ",
-            "feed_url": "https://touring.no/feed/"
-          }
+            "title": "Risdal Touring",
+            "description": "Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
+            "registry_domain": "touring.no"
+          },
+          "strategy": "registry_declared_website_description"
         },
         {
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/hoydepunktene-fra-setesdal-kulturne/",
-          "retrieved_at": "2026-10-07T18:13:31.133006Z",
-          "content_sha256": "6aaf007feef51f51f8dc720c04474259bc9fe07ce17abf5c2a5dda04005354fa",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/985677646",
+          "retrieved_at": "2026-11-16T16:36:49.385430Z",
+          "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "985677646"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RISDAL BUSS AS",
+              "matched_organisation_number": "985677646"
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_feed_news",
-          "id": "site-feed-news-985677646-713cc9c5ff6a7d86",
-          "signal_type": "public_post",
-          "evidence_span": "Høydepunktene fra Setesdal Kulturné",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+          "id": "purehelp-email-985677646-c3b1552c17a180c9",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
           "metrics": {
-            "published_at": "2020-09-08T07:19:22Z",
-            "date_source": "rss_atom",
-            "body_excerpt": " Utøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum &#8230;  Continued  \n Innlegget  Høydepunktene fra Setesdal Kulturné  dukket først opp på  Risdal Touring . ",
-            "feed_url": "https://touring.no/feed/"
+            "email": "post@touring.no",
+            "contact_as_of": "2026-10-26"
           }
         },
         {
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/nytt-bookingsystem/",
-          "retrieved_at": "2026-10-07T18:13:31.133029Z",
-          "content_sha256": "4ab7ba78fec2f97f3801f589a9249197d10f27b84de91aaaa14bdd7b5a74ce1d",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/985677646",
+          "retrieved_at": "2026-11-16T16:36:49.385430Z",
+          "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "985677646"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RISDAL BUSS AS",
+              "matched_organisation_number": "985677646"
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_feed_news",
-          "id": "site-feed-news-985677646-a5d1373d82d45341",
-          "signal_type": "public_post",
-          "evidence_span": "Du kan bestille din reise på vår hjemmeside",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+          "id": "purehelp-phone-985677646-c3b1552c17a180c9",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
           "metrics": {
-            "published_at": "2020-02-05T08:40:41Z",
-            "date_source": "rss_atom",
-            "body_excerpt": " Vi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål. &#160; &#160; &#160; &#160; \n Innlegget  Du kan bestille din reise på vår hjemmeside  dukket først opp på  Risdal Touring . ",
-            "feed_url": "https://touring.no/feed/"
+            "phone": "37 93 15 15",
+            "contact_as_of": "2026-10-26"
           }
         },
         {
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/flotte-nye-busser/",
-          "retrieved_at": "2026-10-07T18:13:31.133050Z",
-          "content_sha256": "4dcfc5de013b60df3fc0d9f1446bb9eeb8a8f758db4c8925a316581b38c4dacb",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/985677646",
+          "retrieved_at": "2026-11-16T16:36:49.385430Z",
+          "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "985677646"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RISDAL BUSS AS",
+              "matched_organisation_number": "985677646"
             }
           ],
           "acquisition_mode": "permitted_public_page",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_feed_news",
-          "id": "site-feed-news-985677646-d944d330e9768b38",
-          "signal_type": "public_post",
-          "evidence_span": "Flotte nye busser",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+          "id": "purehelp-profile-985677646-c3b1552c17a180c9",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
           "metrics": {
-            "published_at": "2017-10-10T11:43:06Z",
-            "date_source": "rss_atom",
-            "body_excerpt": " Under ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her: \n Innlegget  Flotte nye busser  dukket først opp på  Risdal Touring . ",
-            "feed_url": "https://touring.no/feed/"
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "49.320",
+            "nace_description": "Non-scheduled passenger transport by road",
+            "town": "EVJE",
+            "zipcode": "4735",
+            "municipality": "EVJE OG HORNNES",
+            "municipality_number": "4219",
+            "county": "Agder",
+            "registration_date": "2003-05-09",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2003-05-09",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.touring.no"
           }
         },
         {
-          "id": "registry-workforce-7b01fd2910d792681862bee9",
+          "organisation_number": "985677646",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/985677646",
+          "retrieved_at": "2026-11-16T16:36:49.385430Z",
+          "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "985677646"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "RISDAL BUSS AS",
+              "matched_organisation_number": "985677646"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+          "id": "purehelp-workforce-985677646-c3b1552c17a180c9",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 50,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "registry-workforce-f3d59ea6ab72ed28af2ce73b",
           "organisation_number": "985677646",
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-09-29T10:05:46.624332Z",
-          "content_sha256": "84165b47b8c67ccc1e2d1db0fa08640697cd0b3ba1d31b0917bcb5ca4659a686",
+          "retrieved_at": "2026-11-16T15:22:21.393320Z",
+          "content_sha256": "dd5a054dd6d786ea901272f55489a0829f136c61a47087a249e78615679b3a2d",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -722,96 +819,103 @@
           "acquisition_mode": "official_api",
           "rights_status": "approved",
           "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 49",
+          "evidence_span": "\"employees\": 50",
           "metrics": {
-            "workforce_value": 49,
+            "workforce_value": 50,
             "measure": "employees",
             "registry_field": "employees",
-            "registered_at": "2026-08-12"
+            "registered_at": "2026-10-13"
           },
           "strategy": "registry_workforce_exact",
-          "observed_at": "2026-08-12",
-          "effective_at": "2026-08-12"
+          "observed_at": "2026-10-13",
+          "effective_at": "2026-10-13"
         },
         {
+          "id": "brreg-kunngjoring-67994971780b153262f9896e",
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:16:56Z",
+          "content_sha256": "87aca9f42ac4c341bbf470832581bbd60c15d775b0ba324ed8e20d77ed9d3b41",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "985677646",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-90588107128bc6938b29a90c",
-          "signal_type": "website_description",
-          "evidence_span": "Risdal Touring — Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-07-23",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-23",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-23 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-cd979058ba98f85054a4105c",
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:16:56Z",
+          "content_sha256": "72c38d3924fdc9b456f96ef6c99edd07ffdbe0facef70cb0141c6a0125398765",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "985677646",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-brand-4ebe240576e533d01a93bf61",
-          "signal_type": "public_brand",
-          "evidence_span": "Risdal Touring",
-          "metrics": {
-            "declared_url": "https://touring.no/",
-            "interpretation": "Brand name from the site's own JSON-LD."
-          }
+          "source_class": "official_api",
+          "observed_at": "2025-07-03",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-03 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-934ef39157e9ec2032cb5d71",
           "organisation_number": "985677646",
-          "platform": "company_site",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:16:56Z",
+          "content_sha256": "00864ab4569c19afae35b3d0a293f1c558c5c7724a4af1f2119ba22eb77262c9",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "985677646",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-985677646-aa317e8fa7820e0f",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 5 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 5,
-            "verified_social_links": 0,
-            "structured_organisation_records": 1,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          }
+          "source_class": "official_api",
+          "observed_at": "2025-04-11",
+          "signal": {
+            "title": "Daglig leder",
+            "date": "2025-04-11",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb"
+          },
+          "evidence_span": "Daglig leder — 2025-04-11 (BRREG official announcement)"
         },
         {
           "id": "registry-contact-5b369b1e9869c212006abe12",
@@ -819,8 +923,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -847,8 +951,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -870,13 +974,120 @@
           "strategy": "registry_contact_exact"
         },
         {
+          "organisation_number": "985677646",
+          "platform": "company_site",
+          "source_url": "https://touring.no/",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-b131c7d75c3d8cc08a770199",
+          "signal_type": "website_description",
+          "evidence_span": "Risdal Touring — Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "985677646",
+          "platform": "company_site",
+          "source_url": "https://touring.no/",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-brand-4ebe240576e533d01a93bf61",
+          "signal_type": "public_brand",
+          "evidence_span": "Risdal Touring",
+          "metrics": {
+            "declared_url": "https://touring.no/",
+            "interpretation": "Brand name from the site's own JSON-LD."
+          }
+        },
+        {
+          "organisation_number": "985677646",
+          "platform": "brreg",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=985677646&size=1000",
+          "retrieved_at": "2026-11-16T15:22:26.784762Z",
+          "content_sha256": "32156a0b9daed2d03e53dd6b1416f3cc74e222e73925d040c517f8022fbf324c",
+          "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "id": "subunit-4eb45fc6d980b88a6dde362f",
+          "signal_type": "subunit",
+          "evidence_span": "RISDAL BUSS AS",
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_subunits",
+              "matched_organisation_number": "985677646",
+              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+            }
+          ],
+          "metrics": {
+            "subunit_organisation_number": "985686777",
+            "municipality": "EVJE OG HORNNES",
+            "interpretation": "Officially registered sub-unit of this organisation."
+          }
+        },
+        {
+          "id": "sitemap-page-3e462724c84c88ffcb034206",
+          "organisation_number": "985677646",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://touring.no/",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+          "observed_at": "2026-11-16",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://touring.no/reise/touring-korpscruise-med-nmf-og-yamaha/130227-touring-korpscruise-med-nmf-og-yamaha_oppdatert161126/ last modified 2026-11-16",
+          "metrics": {
+            "page_url": "https://touring.no/reise/touring-korpscruise-med-nmf-og-yamaha/130227-touring-korpscruise-med-nmf-og-yamaha_oppdatert161126/",
+            "lastmod": "2026-11-16",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "id": "sitemap-page-cf6811c9d62557bd3917a4e8",
           "organisation_number": "985677646",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -903,8 +1114,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -931,8 +1142,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -959,8 +1170,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -987,8 +1198,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1015,8 +1226,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1043,8 +1254,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1071,8 +1282,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1099,8 +1310,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+          "retrieved_at": "2026-11-16T15:22:38.533763Z",
+          "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
           "observed_at": "2026-11-05",
           "exact_entity": true,
           "identity_proof": [
@@ -1122,68 +1333,12 @@
           "strategy": "sitemap_lastmod"
         },
         {
-          "id": "sitemap-page-5d6ea14e24dd592ea674b4fa",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-10-05T08:38:38.692450Z",
-          "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
-          "observed_at": "2026-11-05",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/wat-arun-ratchawararamtemple-of-dawn-famous-tourist-destination-in-bangkok-thailand/ last modified 2026-11-05",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/wat-arun-ratchawararamtemple-of-dawn-famous-tourist-destination-in-bangkok-thailand/",
-            "lastmod": "2026-11-05",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "organisation_number": "985677646",
-          "platform": "brreg",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=985677646&size=1000",
-          "retrieved_at": "2026-10-05T08:38:23.387466Z",
-          "content_sha256": "1c4c0ff213bdacc8cd63ca0bd55f5dcc5eca8736747566db7cb36d5b8c3a850d",
-          "exact_entity": true,
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "id": "subunit-4eb45fc6d980b88a6dde362f",
-          "signal_type": "subunit",
-          "evidence_span": "RISDAL BUSS AS",
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_subunits",
-              "matched_organisation_number": "985677646",
-              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
-            }
-          ],
-          "metrics": {
-            "subunit_organisation_number": "985686777",
-            "municipality": "EVJE OG HORNNES",
-            "interpretation": "Officially registered sub-unit of this organisation."
-          }
-        },
-        {
           "id": "registry-update-230fb8fc2d9c3805d98d7125",
           "organisation_number": "985677646",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "230fb8fc2d9c3805d98d7125d2020ee3f077757e403a4beb8fbf3fd127d645dd",
           "observed_at": "2026-10-13",
           "exact_entity": true,
@@ -1213,7 +1368,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "f43b637e1acf1465c259560369184a3439f6e0145632b161153634b1687011f8",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1243,7 +1398,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "d315d6e25d6ab5ab6cf8e89bcb8f9ec052a6e5365919965b368487327ba1f8cf",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1273,7 +1428,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "772fca73569af0941f07e8e56857d6133e4e4b2b6180959fde580e3d480a5b56",
           "observed_at": "2026-07-23",
           "exact_entity": true,
@@ -1303,7 +1458,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "834fe2c63c7f8803f9772cf5380a2454aacfcbb3956bc9e26ea1970c07ecc61e",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1333,7 +1488,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "04f1189d460c615f4465fed0a7031de6b1bb810141310759a531ce5c0895447d",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1363,7 +1518,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "e05984fb8c29d2907fe7033f63b9220a913bfc10eb41cc233f227d106c2831f5",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1393,7 +1548,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "2d7faa5771cbf3662108855e2c7cb803360074e755807317d68fff5f66ce6c3b",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1423,7 +1578,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "bef344507bb6d4585536219a88cf0e66ddeb370402005132dc9b2ddf641328ee",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1453,7 +1608,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "972c8e0546a19d034eb21f1f41651742d24b747a4394abfe638b23473d4225de",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1483,7 +1638,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "a93f6a5bd0a03d154d3d3fb3f2d9c1b16c6cf6f11347a0d257b70a16beabde19",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1513,7 +1668,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "84be6a7c031e97c0d1f9fe5bc05d6926d9e0cc711ba0cbf76a37562b977ee074",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1543,7 +1698,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "bbcf27cdeae81c0d6e5cc741ff3329367f83ca101305d61323cd9c9de593f528",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1573,7 +1728,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "96e19c05681ce582383d8a522ed27f501ce284ea8abb9b5f8b51ace270c0d6da",
           "observed_at": "2025-07-03",
           "exact_entity": true,
@@ -1603,7 +1758,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "8886b609bba32eec9830f6e117615cc1563b54a79fa5c6d8f008803d22e6a52f",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1633,7 +1788,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "a2421f2f3d65c56845d4eba6870001c5df6130a7fcc0743ccac29bfd5d2e5d38",
           "observed_at": "2025-05-14",
           "exact_entity": true,
@@ -1663,7 +1818,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "fb3423a424aa17b8550f7118aacd05ddf188cfff667707a287bf3a04b0967f09",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -1693,7 +1848,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "55174bb19a415064ca8cdb4a7dab9b2ef2d3100b09eca9857f67686dedefb712",
           "observed_at": "2025-03-13",
           "exact_entity": true,
@@ -1723,7 +1878,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c330b705ab14411dfacedcb09b776b28a5a8cdf70a56e5f3290fa750f2ea0b82",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1753,7 +1908,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "495ff213e1a8d50e4859e1c0e133a583e8dcea465d86a55adfce75ac6d3ab630",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1776,264 +1931,6 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "brreg-kunngjoring-67994971780b153262f9896e",
-          "organisation_number": "985677646",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "87aca9f42ac4c341bbf470832581bbd60c15d775b0ba324ed8e20d77ed9d3b41",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "985677646",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-07-23",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-07-23",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-07-23 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-cd979058ba98f85054a4105c",
-          "organisation_number": "985677646",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "72c38d3924fdc9b456f96ef6c99edd07ffdbe0facef70cb0141c6a0125398765",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "985677646",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-07-03",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2025-07-03",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2025-07-03 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-934ef39157e9ec2032cb5d71",
-          "organisation_number": "985677646",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "00864ab4569c19afae35b3d0a293f1c558c5c7724a4af1f2119ba22eb77262c9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "985677646",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-04-11",
-          "signal": {
-            "title": "Daglig leder",
-            "date": "2025-04-11",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb"
-          },
-          "evidence_span": "Daglig leder — 2025-04-11 (BRREG official announcement)"
-        },
-        {
-          "id": "registry-site-985677646-f7165cad72199644",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "touring.no",
-              "matched_organisation_number": "985677646",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-09-29T10:02:25.550213Z",
-              "explanation": "BRREG declares touring.no as the website of organisation 985677646; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Risdal Touring — Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-          "metrics": {
-            "title": "Risdal Touring",
-            "description": "Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-            "registry_domain": "touring.no"
-          },
-          "strategy": "registry_declared_website_description"
-        },
-        {
-          "id": "sitemap-page-537ffeb30be2197f5cfd8c70",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "observed_at": "2026-11-05",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/050227-thailand/ last modified 2026-11-05",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/050227-thailand/",
-            "lastmod": "2026-11-05",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-8dc3cc2ea98784fe8557cdb3",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "observed_at": "2026-11-04",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen/100427-110427-touring-vaaropplevelser-i-bremen/ last modified 2026-11-04",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen/100427-110427-touring-vaaropplevelser-i-bremen/",
-            "lastmod": "2026-11-04",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-9d64d4525feda0635e4309f8",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "observed_at": "2026-11-04",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen/mal-forsidebilde-_-var-i-bremen-1/ last modified 2026-11-04",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen/mal-forsidebilde-_-var-i-bremen-1/",
-            "lastmod": "2026-11-04",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-4180173e469f86f2d03b942d",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "observed_at": "2026-11-04",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen-2/mal-forsidebilde-_-var-i-bremen-2/ last modified 2026-11-04",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen-2/mal-forsidebilde-_-var-i-bremen-2/",
-            "lastmod": "2026-11-04",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-7eac8f7709056bfaf64e4cfa",
-          "organisation_number": "985677646",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://touring.no/",
-          "retrieved_at": "2026-09-29T10:06:08.731633Z",
-          "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-          "observed_at": "2026-11-04",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen-2/100427-110427-touring-vaaropplevelser-i-bremen-2/ last modified 2026-11-04",
-          "metrics": {
-            "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen-2/100427-110427-touring-vaaropplevelser-i-bremen-2/",
-            "lastmod": "2026-11-04",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
         }
       ]
     },
@@ -2047,19 +1944,19 @@
     "name": "RISDAL BUSS AS",
     "organisation_number": "985677646",
     "run_metrics": {
-      "bytes": 773100,
+      "bytes": 797405,
       "latencies_ms": [
-        714,
-        709,
-        719,
-        707,
-        725,
-        690,
-        2377,
-        1708,
-        1481,
-        795,
-        1882
+        959,
+        1111,
+        986,
+        996,
+        978,
+        1314,
+        2844,
+        2039,
+        382,
+        850,
+        945
       ],
       "requests": 16
     },
@@ -2070,7 +1967,7 @@
     "company_name": "RISDAL BUSS AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "RISDAL BUSS AS is a private limited company operating in Passasjertransport utenom rutetabell. Latest accounts (2025): revenue NOK 16.9m, annual result NOK 333.8k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (-4.8% YoY). Registered employees: 49. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "RISDAL BUSS AS is a private limited company operating in Passasjertransport utenom rutetabell. Latest accounts (2025): revenue NOK 16.9m, annual result NOK 333.8k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (-4.8% YoY). Registered employees: 50. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2142,7 +2039,7 @@
       },
       {
         "question": "staff",
-        "answer": "Registered employees: 49.",
+        "answer": "Registered employees: 50.",
         "answerable": true,
         "status": "confirmed",
         "confidence": 1.0,
@@ -2206,7 +2103,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-10-05T08:35:03.625762Z",
+      "retrieved_at": "2026-11-16T15:19:02.932098Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "985677646",
       "source_type": "official_rule_interpretation",
@@ -2226,7 +2123,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-10-05T08:38:21.263098Z",
+      "retrieved_at": "2026-11-16T15:22:23.492464Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2320,7 +2217,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-10-05T08:38:18.652140Z",
+      "retrieved_at": "2026-11-16T15:22:22.505255Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2385,7 +2282,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-10-05T08:38:22.697066Z",
+      "retrieved_at": "2026-11-16T15:22:25.469599Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2395,11 +2292,11 @@
     },
     "locations": {
       "as_of": null,
-      "content_sha256": "1c4c0ff213bdacc8cd63ca0bd55f5dcc5eca8736747566db7cb36d5b8c3a850d",
+      "content_sha256": "32156a0b9daed2d03e53dd6b1416f3cc74e222e73925d040c517f8022fbf324c",
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-10-05T08:38:23.387466Z",
+      "retrieved_at": "2026-11-16T15:22:26.784762Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2419,7 +2316,7 @@
               "postnummer": "4735",
               "poststed": "EVJE"
             },
-            "employees": 49,
+            "employees": 50,
             "industry": {
               "beskrivelse": "Passasjertransport utenom rutetabell",
               "kode": "49.320"
@@ -2432,116 +2329,94 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "985677646",
       "source_type": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
       "status": "available",
       "value": {
-        "aktivitet": "Eie og drive busser innenfor både tur- og ruteoppdrag.",
-        "antallAnsatte": "49",
+        "aktivitet": [
+          "Eie og drive busser innenfor både tur- og ruteoppdrag."
+        ],
+        "antallAnsatte": 50,
         "epostadresse": "post@touring.no",
-        "erIKonsern": "false",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-        "foretaksformIHjemlandet.kode": "",
-        "forretningsadresse.adresse": "Transportvegen 17",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Transportvegen 17"
+        ],
         "forretningsadresse.kommune": "EVJE OG HORNNES",
         "forretningsadresse.kommunenummer": "4219",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
         "forretningsadresse.postnummer": "4735",
         "forretningsadresse.poststed": "EVJE",
-        "fravalgRevisjonBeslutningsDato": "",
-        "fravalgRevisjonDato": "",
-        "frivilligMvaRegistrertBeskrivelser": "",
-        "harRegistrertAntallAnsatte": "true",
-        "hjelpeenhetskode.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [
+          {
+            "fraDato": "2003-05-09 09:14:27",
+            "navn": "OLTO TARES AS",
+            "tilDato": "2003-05-21 20:41:33"
+          },
+          {
+            "fraDato": "2003-05-21 20:41:33",
+            "navn": "OLTO TARES AS",
+            "tilDato": "2006-02-14 08:38:42"
+          }
+        ],
         "hjemmeside": "www.touring.no",
         "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
         "institusjonellSektorkode.kode": "2100",
-        "kapital.antallAksjer": "100",
-        "kapital.belop": "300000.00",
-        "kapital.bundet": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innbetalt": "",
+        "kapital.antallAksjer": 100,
+        "kapital.belop": 300000.0,
         "kapital.innfortDato": "2014-12-19",
         "kapital.type": "Aksjekapital",
         "kapital.valuta": "NOK",
-        "konkurs": "false",
-        "konkursdato": "",
+        "konkurs": false,
+        "links": [],
         "maalform": "Bokmål",
-        "mobil": "",
         "naeringskode1.beskrivelse": "Passasjertransport utenom rutetabell",
         "naeringskode1.kode": "49.320",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode2.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "naeringskode3.kode": "",
         "navn": "RISDAL BUSS AS",
         "organisasjonsform.beskrivelse": "Aksjeselskap",
         "organisasjonsform.kode": "AS",
+        "organisasjonsform.links": [],
         "organisasjonsnummer": "985677646",
-        "overordnetEnhet": "",
-        "paategninger": "false",
-        "postadresse.adresse": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
-        "postadresse.postnummer": "",
-        "postadresse.poststed": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-09-14",
+        "paategninger": [],
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-10-13",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-10-10",
+        "registreringsdatoEnhetsregisteret": "2003-05-09",
         "registreringsdatoForetaksregisteret": "2003-05-21",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registreringsdatoFrivillighetsregisteret": "",
         "registreringsdatoMerverdiavgiftsregisteret": "2003-07-01",
         "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2003-09-18",
-        "registreringsdatoPartiregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-09-10",
-        "registreringsdatoenhetsregisteret": "2003-05-09",
-        "registreringsnummerIHjemlandet": "",
-        "registrertIForetaksregisteret": "true",
-        "registrertIFrivillighetsregisteret": "false",
-        "registrertIMvaRegisteret": "true",
-        "registrertIPartiregisteret": "false",
-        "registrertIStiftelsesregisteret": "false",
+        "registrertIForetaksregisteret": true,
+        "registrertIFrivillighetsregisteret": false,
+        "registrertIMvaregisteret": true,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": false,
+        "respons_klasse": "Enhet",
         "sisteInnsendteAarsregnskap": "2025",
         "stiftelsesdato": "2003-04-25",
         "telefon": "37 93 15 15",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
-        "underRekonstruksjonsforhandlingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
-        "underlagtLovgivningLand": "",
-        "underlagtLovgivningLandKode": "",
-        "utenlandskRegisterAdresse.adresse": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterNavn": "",
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false,
         "vedtektsdato": "2014-12-02",
-        "vedtektsfestetFormaal": "Eie og drive busser innenfor både tur- og ruteoppdrag."
+        "vedtektsfestetFormaal": [
+          "Eie og drive busser innenfor både tur- og ruteoppdrag."
+        ]
       }
     },
     "registry_live": {
       "as_of": null,
-      "content_sha256": "84165b47b8c67ccc1e2d1db0fa08640697cd0b3ba1d31b0917bcb5ca4659a686",
+      "content_sha256": "dd5a054dd6d786ea901272f55489a0829f136c61a47087a249e78615679b3a2d",
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-10-05T08:38:17.942120Z",
+      "retrieved_at": "2026-11-16T15:22:21.393320Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2560,7 +2435,7 @@
           "postnummer": "4735",
           "poststed": "EVJE"
         },
-        "employees": 49,
+        "employees": 50,
         "industry": {
           "beskrivelse": "Passasjertransport utenom rutetabell",
           "kode": "49.320"
@@ -2580,7 +2455,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-10-05T08:38:21.971459Z",
+      "retrieved_at": "2026-11-16T15:22:24.490571Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2647,24 +2522,28 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+      "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-10-05T08:38:38.692450Z",
+      "retrieved_at": "2026-11-16T15:22:38.533763Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
       "source_url": "https://touring.no/",
       "status": "available",
       "value": {
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "crawl_errors": [],
-        "description": "Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
+        "description": "Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
         "discovered_social_links": [
           {
             "platform": "facebook",
             "url": "https://facebook.com/RisdalTouring"
+          },
+          {
+            "platform": "instagram",
+            "url": "https://instagram.com/risdaltouringas"
           }
         ],
         "extraction_state": "static_complete",
@@ -2679,41 +2558,41 @@
             "risdal"
           ],
           "method": "deterministic_name_org_evidence_v2",
-          "publishable": true,
+          "publishable": false,
           "reasons": [
-            "all normalized legal-name tokens appear together in homepage identity evidence"
+            "most legal-name tokens appear, but exact identity is incomplete"
           ],
-          "score": 0.95,
-          "status": "exact"
+          "score": 0.85,
+          "status": "review"
         },
         "main_text_excerpt": "Reisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\nReisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\n- \nKlimaanlegg i busser – hygienisk, rent og effektivtKontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser.\n- \nHøydepunktene fra Setesdal KulturnéUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum…\n- \nDu kan bestille din reise på vår hjemmesideVi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål.\n- \nFlotte nye busserUnder ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her:",
         "pages": [
           {
-            "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+            "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
             "main_text_excerpt": "Reisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\nReisebrev\n- \n                        Tsjekkia – en perfekt blanding av kultur og sportslig spenning med VM i skiskyting. – Reisefølge fra Stavanger\n- \n                        Å få være med på konsert med Lindesnes Trekkspillklubb var virkelig en fantastisk opplevelse! – Geir, 75\n- \n                        Med Superspeed fra Kristiansand og deretter buss videre til Alsace, ble vår 11-dagers reise en fantastisk opplevelse fra start til slutt! – Siren og Magnus\n- \nKlimaanlegg i busser – hygienisk, rent og effektivtKontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser.\n- \nHøydepunktene fra Setesdal KulturnéUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum…\n- \nDu kan bestille din reise på vår hjemmesideVi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål.\n- \nFlotte nye busserUnder ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her:",
             "title": "Risdal Touring",
             "url": "https://touring.no/"
           },
           {
-            "content_sha256": "fe08383fde717439e44a59aaf1af04a356416b148ed19152508dcbf672678314",
+            "content_sha256": "96dbe68e545d6d3f2046f33ee45656d3af6c1a71ef9dd89f286cf33c4bca1643",
             "main_text_excerpt": "Sammen skaper vi turglede!\nTradisjoner å ta vare på!\nJohn Risdal startet på begynnelsen av 60-tallet med turbusser. Firmaet ble kjent under navnet John Risdal Turbusser og var å se på veiene helt fram til 2004. Varemerket var god og personlig service til alle kunder! Aldri ble det kompromisset på kvaliteten. Dessverre døde John så altfor tidlig og brått 8. november 2003, kun 68 år gammel. På slutten av 80-tallet overtok sønn til John, Olav Ljosland Risdal, mer og mer den daglige driften.\nVed årskiftet 1994/1995 kom den første, store turbusser i tunet på Ljosland. I 1998 ble også 45-seters turbuss nummer to innkjøpt. Aktiviteten var allerede da økende og ved gjennomføring av pakketurer, ble det samarbeidet med Sørlandsruta Touring i Kristiansand. Det var derfra bekjentskapet mellom Olav og Tom Roger Øydne, som leder av avdelingen, utviklet seg og som resulterte i at et felleseid selskap ble etablert 3. januar 1999 – Risdal Touring AS.\nStrategien var å bli en turoperatør for Sørlandet – med spennende turer til attraktive, gunstige priser! Flere og flere kunder etterspurte ferdige pakkeløsninger. Den lange erfaringen med å kjøre for andre som selv hadde lagt opp sin tur, gjorde beslutningen enkel: Dette trodde vi på!\n– Søsterselskapet Konkurrenten.no blir stiftet\n27. desember 2000 leverte vi søknad om å kjøre ekspressbussrute på strekningen Kristiansand – Oslo. \nMed det utfordret vi ”statsmonopolet” for landverts reise på strekningen. Etter først å ha fått avslag av daværende samferdselsminister Terje Moe-Gustavsen, forøvrig fem dager før han formelt gikk av som statsråd etter at valget var tapt i 2001. ble avslaget anket og 5. mars 2002 innvilget samferdselsminister Torhild Skogsholm søknaden. Den 15. mai 2002 gikk de første avganger, samtidig kl. 09.00 fra både Kristiansand og Oslo. Konkurrenten.no hadde sett dagens lys! \nFor kundene har konkurransen vist seg å være effektiv for å få bedre og billigere reiser. Den knallharde kampen om passasjerene har ført til at alle skjerper seg, tilbudet ble og blir stadig forbedret og har blitt flere avganger å velge mellom. Prisene er gått ned med ca 35-40% og antall daglige avganger er økt fra 3 til ca 15, altså med 400%.\nDet har vært en hard kamp å etablere seg som ekspressbussaktør på strekningen. Fra den spede start med 28 ukentlige avganger, har konkurrenten.no nå høsten 2018 hele 105 ukentlige avganger inkludert direktebusser. Kostnadene med å starte opp var store, men nå gir satsingen resultater.\n– Risdal Touring inngikk i en større omorganisering fra 1. januar 2006 og i dag er vi et Touring\nSatsingen er fortsatt offensiv og vi tør love at vi skal være en kundeorientert og markedsrettet bedrift, som hele tiden vil ha som målsetning å tilby konkurransedyktige reiser. Selv om bussvirksomhet er det vi har drevet med fra start, har vi frem til i dag bygget opp en katalog på reiser med både fly, cruise og tog i tillegg! \nVi jobber stadig med å utvide tilbudet vårt, med en egen salgsressurs på Vestlandet, som dekker områdene fra Haugesund, via Bergen til Sogn. \nI 2024 ble det tradisjonsrike Sverre Haga Bussreiser AS en del av bussfamilien! Haga-familien har røtter tilbake til rutebussens tidlige barndom. Tre generasjoner har drevet med busstransport i alle former. Sverre Haga AS ble i 25 år drevet av 3. generasjon i Haga-familien, men familiebåndene er fremdeles ivaretatt med 4. generasjon i ledelsen og drives videre som egen merkevare.\nEtter lang tids samarbeid, overtok konsernselskapet i 2020 alle aksjer i Gjerstad Tur og Taxi med base på Brokelandsheia i østre del av Agder. I 2025 ble LB-tur og Gjerstad Tur og Taxi fusjonert, og går under navnet Gjerstad og LB tur.\nEpeak AS og Active Travel Norway AS er også selskaper som har turer du vil finne på vår side. Valdresruta i Valdres har vi også et samarbeide med.\nGjennom samarbeidet kan selskapene dra nytte av felles ressurser og kompetanse, som gir styrket service, flere muligheter og bedre samarbeidsavtaler hos aktørene våre – til fordel for våre kunder!\n– «Kulturbærere»\nVi er kulturbærere av topp moderne turbusser, dyktige sjåfører, kunnskapsrike reiseledere og reisekonsulenter – med lang erfaring og tradisjon for å drive persontransport.\nVi gjør alltid vårt ytterste for å skape gode opplevelser og yte god service i alle ledd, fra du setter deg på bussen til du er hjemme igjen!",
             "title": "Om oss - Risdal Touring",
             "url": "https://touring.no/om-oss/"
           },
           {
-            "content_sha256": "fe08383fde717439e44a59aaf1af04a356416b148ed19152508dcbf672678314",
+            "content_sha256": "96dbe68e545d6d3f2046f33ee45656d3af6c1a71ef9dd89f286cf33c4bca1643",
             "main_text_excerpt": "Sammen skaper vi turglede!\nTradisjoner å ta vare på!\nJohn Risdal startet på begynnelsen av 60-tallet med turbusser. Firmaet ble kjent under navnet John Risdal Turbusser og var å se på veiene helt fram til 2004. Varemerket var god og personlig service til alle kunder! Aldri ble det kompromisset på kvaliteten. Dessverre døde John så altfor tidlig og brått 8. november 2003, kun 68 år gammel. På slutten av 80-tallet overtok sønn til John, Olav Ljosland Risdal, mer og mer den daglige driften.\nVed årskiftet 1994/1995 kom den første, store turbusser i tunet på Ljosland. I 1998 ble også 45-seters turbuss nummer to innkjøpt. Aktiviteten var allerede da økende og ved gjennomføring av pakketurer, ble det samarbeidet med Sørlandsruta Touring i Kristiansand. Det var derfra bekjentskapet mellom Olav og Tom Roger Øydne, som leder av avdelingen, utviklet seg og som resulterte i at et felleseid selskap ble etablert 3. januar 1999 – Risdal Touring AS.\nStrategien var å bli en turoperatør for Sørlandet – med spennende turer til attraktive, gunstige priser! Flere og flere kunder etterspurte ferdige pakkeløsninger. Den lange erfaringen med å kjøre for andre som selv hadde lagt opp sin tur, gjorde beslutningen enkel: Dette trodde vi på!\n– Søsterselskapet Konkurrenten.no blir stiftet\n27. desember 2000 leverte vi søknad om å kjøre ekspressbussrute på strekningen Kristiansand – Oslo. \nMed det utfordret vi ”statsmonopolet” for landverts reise på strekningen. Etter først å ha fått avslag av daværende samferdselsminister Terje Moe-Gustavsen, forøvrig fem dager før han formelt gikk av som statsråd etter at valget var tapt i 2001. ble avslaget anket og 5. mars 2002 innvilget samferdselsminister Torhild Skogsholm søknaden. Den 15. mai 2002 gikk de første avganger, samtidig kl. 09.00 fra både Kristiansand og Oslo. Konkurrenten.no hadde sett dagens lys! \nFor kundene har konkurransen vist seg å være effektiv for å få bedre og billigere reiser. Den knallharde kampen om passasjerene har ført til at alle skjerper seg, tilbudet ble og blir stadig forbedret og har blitt flere avganger å velge mellom. Prisene er gått ned med ca 35-40% og antall daglige avganger er økt fra 3 til ca 15, altså med 400%.\nDet har vært en hard kamp å etablere seg som ekspressbussaktør på strekningen. Fra den spede start med 28 ukentlige avganger, har konkurrenten.no nå høsten 2018 hele 105 ukentlige avganger inkludert direktebusser. Kostnadene med å starte opp var store, men nå gir satsingen resultater.\n– Risdal Touring inngikk i en større omorganisering fra 1. januar 2006 og i dag er vi et Touring\nSatsingen er fortsatt offensiv og vi tør love at vi skal være en kundeorientert og markedsrettet bedrift, som hele tiden vil ha som målsetning å tilby konkurransedyktige reiser. Selv om bussvirksomhet er det vi har drevet med fra start, har vi frem til i dag bygget opp en katalog på reiser med både fly, cruise og tog i tillegg! \nVi jobber stadig med å utvide tilbudet vårt, med en egen salgsressurs på Vestlandet, som dekker områdene fra Haugesund, via Bergen til Sogn. \nI 2024 ble det tradisjonsrike Sverre Haga Bussreiser AS en del av bussfamilien! Haga-familien har røtter tilbake til rutebussens tidlige barndom. Tre generasjoner har drevet med busstransport i alle former. Sverre Haga AS ble i 25 år drevet av 3. generasjon i Haga-familien, men familiebåndene er fremdeles ivaretatt med 4. generasjon i ledelsen og drives videre som egen merkevare.\nEtter lang tids samarbeid, overtok konsernselskapet i 2020 alle aksjer i Gjerstad Tur og Taxi med base på Brokelandsheia i østre del av Agder. I 2025 ble LB-tur og Gjerstad Tur og Taxi fusjonert, og går under navnet Gjerstad og LB tur.\nEpeak AS og Active Travel Norway AS er også selskaper som har turer du vil finne på vår side. Valdresruta i Valdres har vi også et samarbeide med.\nGjennom samarbeidet kan selskapene dra nytte av felles ressurser og kompetanse, som gir styrket service, flere muligheter og bedre samarbeidsavtaler hos aktørene våre – til fordel for våre kunder!\n– «Kulturbærere»\nVi er kulturbærere av topp moderne turbusser, dyktige sjåfører, kunnskapsrike reiseledere og reisekonsulenter – med lang erfaring og tradisjon for å drive persontransport.\nVi gjør alltid vårt ytterste for å skape gode opplevelser og yte god service i alle ledd, fra du setter deg på bussen til du er hjemme igjen!",
             "title": "Om oss - Risdal Touring",
             "url": "https://touring.no/om-oss/"
           },
           {
-            "content_sha256": "eadeb5686baf65482bc9457a402cfc88cc7e3ef1437085f9f737f1f393762dd0",
+            "content_sha256": "70b3a686adeecb5485e59600cf523397e93897909a02c20f5b3615da18ff42d1",
             "main_text_excerpt": "Kontakt oss\nØnsker du å kontakte Risdal Touring AS kan du enten ta direkte kontakt per telefon eller e-post, eller fylle inn kontaktskjema nedenfor.",
             "title": "Kontakt oss - Risdal Touring",
             "url": "https://touring.no/kontakt-oss/"
           },
           {
-            "content_sha256": "596eee8e8924b9e7a555ccc245e35a0c5d9f032dd0d155604488c5e6884899bf",
+            "content_sha256": "faeaf09aaf0d1a8b88eee89d361e2faec02f5edca2c54442d13d8d56ccf6f4ab",
             "main_text_excerpt": "Utøving av stevkunst, dans og folkemusikk fra Setesdal har fått…\nLes artikkel",
             "title": "Aktuelt - Risdal Touring",
             "url": "https://touring.no/aktuelt/"
@@ -2732,6 +2611,17 @@
             "publishable": false,
             "reason": "social handle lacks strong exact-entity name evidence",
             "url": "https://facebook.com/RisdalTouring"
+          },
+          {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "risdal"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "instagram",
+            "publishable": false,
+            "reason": "social handle lacks strong exact-entity name evidence",
+            "url": "https://instagram.com/risdaltouringas"
           }
         ],
         "social_links": [],
@@ -2761,13 +2651,50 @@
     },
     "external_observations": [
       {
+        "organisation_number": "985677646",
+        "platform": "company_site",
+        "source_url": "https://touring.no/",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_domain_unique",
+            "domain": "touring.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-16",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-985677646-c0ba1c10b4d64f69",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 5 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 5,
+          "verified_social_links": 0,
+          "structured_organisation_records": 1,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        }
+      },
+      {
         "id": "company-site-news-844f38e1a162a2340bcac2fe",
         "organisation_number": "985677646",
         "platform": "company_site",
         "signal_type": "public_post",
         "source_url": "https://touring.no/aktuelt/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "a9feb0e1b9c94b29328b62239a1c79ca520c4f558cf9d62728ab1dce56210250",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "faeaf09aaf0d1a8b88eee89d361e2faec02f5edca2c54442d13d8d56ccf6f4ab",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2781,131 +2708,198 @@
         "source_class": "company_site",
         "evidence_span": "Aktuelt - Risdal Touring\n\nUtøving av stevkunst, dans og folkemusikk fra Setesdal har fått…\nLes artikkel",
         "metrics": {
+          "title": "Aktuelt - Risdal Touring",
           "captured_news_pages": 1,
-          "interpretation": "Company-owned activity; not independent sentiment."
+          "interpretation": "Company-owned activity; not independent sentiment.",
+          "body_excerpt": "<!DOCTYPE html>\n<html lang=\"nb-NO\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<script>\nwindow.APTUM_BLOCKS_PLUGIN = {\"assetsDistPath\":\"https:\\/\\/touring.no\\/wp-content\\/plugins\\/aptum-blocks\\/dist\\/\"};\n</script>\n<script>\nwindow.SITE_PLUGIN = {\"assetsDistPath\":\"https:\\/\\/touring.no\\/wp-content\\/plugins\\/site\\/dist\\/\"};\n</script>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<link rel=\"canonical\" href=\"https://touring.no/aktuelt/\" />\n\t<meta property=\"og:locale\" content=\"nb_NO\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"Aktuelt - Risdal Touring\" />\n\t<meta property=\"og:url\" content=\"https://touring.no/aktuelt/\" />\n\t<meta property=\"og:site_name\" content=\"Risdal Touring\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":[\"WebPage\",\"CollectionPage\"],\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/\",\"url\":\"https:\\/\\/touring.no\\/aktuelt\\/\",\"name\":\"Aktuelt - Risdal Touring\",\"isPartOf\":{\"@id\":\"https:\\/\\/touring.no\\/#website\"},\"datePublished\":\"2016-11-08T13:45:46+00:00\",\"dateModified\":\"2016-12-22T12:15:04+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/#breadcrumb\"},\"inLanguage\":\"nb-NO\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/touring.no\\/aktuelt\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hjem\",\"item\":\"https:\\/\\/touring.no\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Aktuelt\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/touring.no\\/#website\",\"url\":\"https:\\/\\/touring.no\\/\",\"name\":\"Risdal Touring\",\"description\":\"en av Norges ledende turoperatører\",\"publisher\":{\"@id\":\"https:\\/\\/touring.no\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/touring.no\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nb-NO\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/touring.no\\/#organization\",\"name\":\"Risdal Touring\",\"url\":\"https:\\/\\/touring.no\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nb-NO\",\"@id\":\"https:\\/\\/touring.no\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/d2im8jrr54be60.cloudfront.net\\/wp-content\\/uploads\\/2026\\/08\\/20151245\\/touring-vertical-ny-white.svg\",\"contentUrl\":\"https:\\/\\/d2im8jrr54be60.cloudfront.net\\/wp-content\\/uploads\\/2026\\/08\\/20151245\\/touring-vertical-ny-white.svg\",\"width\":295,\"height\":80,\"caption\":\"Risdal Touring\"},\"image\":{\"@id\":\"https:\\/\\/touring.no\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<title>Aktuelt - Risdal Touring</title>\n<link rel='dns-prefetch' href='//app.weply.chat' />\n<link rel='dns-prefetch' href='//www.googletagmanager.com' />\n<link rel='dns-prefetch' href='//use.typekit.net' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Risdal Touring &raquo; strøm\" href=\"https://touring.no/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Risdal Touring &raquo; kommentarstrøm\" href=\"https://touring.no/comments/feed/\" />\n<style id=\"wp-img-auto-sizes-contain-inline-css\">\nimg:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css */\n</style>\n<style id=\"wp-block-site-logo-inline-css\">\n.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}\n/*# sourceURL=https://touring.no/wp-includes/blocks/site-logo/style.min.css */\n</style>\n<style id=\"wp-block-group-inline-css\">\n.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}\n/*# sourceURL=https://touring.no/wp-includes/blocks/group/style.min.css */\n</style>\n<style id=\"wp-block-search-inline-css\">\n.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.",
+          "published": "2016-11-08T13:45:46+00:00",
+          "date_source": "page_body",
+          "published_at": "2016-11-08T13:45:46+00:00",
+          "page_url_fetched": "https://touring.no/aktuelt/"
         },
-        "strategy": "company_site_activity"
+        "strategy": "company_site_activity",
+        "observed_at": "2016-11-08T13:45:46+00:00"
       },
       {
+        "id": "registry-site-985677646-c0ba1c10b4d64f69",
         "organisation_number": "985677646",
         "platform": "company_site",
-        "source_url": "https://touring.no/klimaanlegg-i-busser-hygienisk-rent-og-effektivt/",
-        "retrieved_at": "2026-10-07T18:13:31.132974Z",
-        "content_sha256": "5514ef887eb87b617c52e216ba5e66558a950be47831251955255254012bfb6d",
+        "signal_type": "website_description",
+        "source_url": "https://touring.no/",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "registry_declared_website_domain_match",
+            "value": "touring.no",
+            "matched_organisation_number": "985677646",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-11-16T15:18:00.649157Z",
+            "explanation": "BRREG declares touring.no as the website of organisation 985677646; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
         "source_class": "company_site",
-        "strategy": "company_feed_news",
-        "id": "site-feed-news-985677646-83a25d6685fed26d",
-        "signal_type": "public_post",
-        "evidence_span": "Klimaanlegg i busser – hygienisk, rent og effektivt",
+        "evidence_span": "Risdal Touring — Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
         "metrics": {
-          "published_at": "2020-12-07T08:42:38Z",
-          "date_source": "rss_atom",
-          "body_excerpt": " Kontinuerlig utskiftning av luft – hvert 2-4 minutt avhengig av modell og temperatur – gir et godt og trygt inneklima på bussen. Videoen illustrerer på en god måte hvordan ventilasjonsanlegget i våre busser virker, både på tur- og ekspressbusser. \n Innlegget  Klimaanlegg i busser – hygienisk, rent og effektivt  dukket først opp på  Risdal Touring . ",
-          "feed_url": "https://touring.no/feed/"
-        }
+          "title": "Risdal Touring",
+          "description": "Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
+          "registry_domain": "touring.no"
+        },
+        "strategy": "registry_declared_website_description"
       },
       {
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/hoydepunktene-fra-setesdal-kulturne/",
-        "retrieved_at": "2026-10-07T18:13:31.133006Z",
-        "content_sha256": "6aaf007feef51f51f8dc720c04474259bc9fe07ce17abf5c2a5dda04005354fa",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/985677646",
+        "retrieved_at": "2026-11-16T16:36:49.385430Z",
+        "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "985677646"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RISDAL BUSS AS",
+            "matched_organisation_number": "985677646"
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_feed_news",
-        "id": "site-feed-news-985677646-713cc9c5ff6a7d86",
-        "signal_type": "public_post",
-        "evidence_span": "Høydepunktene fra Setesdal Kulturné",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+        "id": "purehelp-email-985677646-c3b1552c17a180c9",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
         "metrics": {
-          "published_at": "2020-09-08T07:19:22Z",
-          "date_source": "rss_atom",
-          "body_excerpt": " Utøving av stevkunst, dans og folkemusikk fra Setesdal har fått plass på UNESCOs verdensarvliste for immateriell kunst! Inger Lise Stulien – kjent og allsidig artist opprinnelig fra Byremo, men som nå bor på Syrtveit i Setesdal – fekk idéen: Når ikke artistene kan reise ut på turné, må vi lage det til slik at publikum &#8230;  Continued  \n Innlegget  Høydepunktene fra Setesdal Kulturné  dukket først opp på  Risdal Touring . ",
-          "feed_url": "https://touring.no/feed/"
+          "email": "post@touring.no",
+          "contact_as_of": "2026-10-26"
         }
       },
       {
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/nytt-bookingsystem/",
-        "retrieved_at": "2026-10-07T18:13:31.133029Z",
-        "content_sha256": "4ab7ba78fec2f97f3801f589a9249197d10f27b84de91aaaa14bdd7b5a74ce1d",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/985677646",
+        "retrieved_at": "2026-11-16T16:36:49.385430Z",
+        "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "985677646"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RISDAL BUSS AS",
+            "matched_organisation_number": "985677646"
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_feed_news",
-        "id": "site-feed-news-985677646-a5d1373d82d45341",
-        "signal_type": "public_post",
-        "evidence_span": "Du kan bestille din reise på vår hjemmeside",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+        "id": "purehelp-phone-985677646-c3b1552c17a180c9",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
         "metrics": {
-          "published_at": "2020-02-05T08:40:41Z",
-          "date_source": "rss_atom",
-          "body_excerpt": " Vi har gått over til et nettbasert bookingsystem. Det vil med det nye systemet bli mulig å bestille tur fra vår nettside www.touring.no og betale direkte med Visa og MasterCard, eller velge faktura. Det er selvsagt fremdeles mulig å ringe oss for påmelding eller spørsmål. &#160; &#160; &#160; &#160; \n Innlegget  Du kan bestille din reise på vår hjemmeside  dukket først opp på  Risdal Touring . ",
-          "feed_url": "https://touring.no/feed/"
+          "phone": "37 93 15 15",
+          "contact_as_of": "2026-10-26"
         }
       },
       {
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/flotte-nye-busser/",
-        "retrieved_at": "2026-10-07T18:13:31.133050Z",
-        "content_sha256": "4dcfc5de013b60df3fc0d9f1446bb9eeb8a8f758db4c8925a316581b38c4dacb",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/985677646",
+        "retrieved_at": "2026-11-16T16:36:49.385430Z",
+        "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "985677646"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RISDAL BUSS AS",
+            "matched_organisation_number": "985677646"
           }
         ],
         "acquisition_mode": "permitted_public_page",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_feed_news",
-        "id": "site-feed-news-985677646-d944d330e9768b38",
-        "signal_type": "public_post",
-        "evidence_span": "Flotte nye busser",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+        "id": "purehelp-profile-985677646-c3b1552c17a180c9",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
         "metrics": {
-          "published_at": "2017-10-10T11:43:06Z",
-          "date_source": "rss_atom",
-          "body_excerpt": " Under ser dere to av våre flotte nyeste eksemplarer! Vi fikk tatt noen bilder av de i fin været på Evjemoen igår. Buss nr 46 har til og med panoramatak! Sjekk ut bildene her: \n Innlegget  Flotte nye busser  dukket først opp på  Risdal Touring . ",
-          "feed_url": "https://touring.no/feed/"
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "49.320",
+          "nace_description": "Non-scheduled passenger transport by road",
+          "town": "EVJE",
+          "zipcode": "4735",
+          "municipality": "EVJE OG HORNNES",
+          "municipality_number": "4219",
+          "county": "Agder",
+          "registration_date": "2003-05-09",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2003-05-09",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.touring.no"
         }
       },
       {
-        "id": "registry-workforce-7b01fd2910d792681862bee9",
+        "organisation_number": "985677646",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/985677646",
+        "retrieved_at": "2026-11-16T16:36:49.385430Z",
+        "content_sha256": "384816f5c4f156e7bf534581841fa214e8d67ca49cdd485d5e5bdac5c30192f8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "985677646"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "RISDAL BUSS AS",
+            "matched_organisation_number": "985677646"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-985677646.orgNumber=985677646;name=RISDAL BUSS AS",
+        "id": "purehelp-workforce-985677646-c3b1552c17a180c9",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 50,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "registry-workforce-f3d59ea6ab72ed28af2ce73b",
         "organisation_number": "985677646",
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-09-29T10:05:46.624332Z",
-        "content_sha256": "84165b47b8c67ccc1e2d1db0fa08640697cd0b3ba1d31b0917bcb5ca4659a686",
+        "retrieved_at": "2026-11-16T15:22:21.393320Z",
+        "content_sha256": "dd5a054dd6d786ea901272f55489a0829f136c61a47087a249e78615679b3a2d",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2919,96 +2913,103 @@
         "acquisition_mode": "official_api",
         "rights_status": "approved",
         "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 49",
+        "evidence_span": "\"employees\": 50",
         "metrics": {
-          "workforce_value": 49,
+          "workforce_value": 50,
           "measure": "employees",
           "registry_field": "employees",
-          "registered_at": "2026-08-12"
+          "registered_at": "2026-10-13"
         },
         "strategy": "registry_workforce_exact",
-        "observed_at": "2026-08-12",
-        "effective_at": "2026-08-12"
+        "observed_at": "2026-10-13",
+        "effective_at": "2026-10-13"
       },
       {
+        "id": "brreg-kunngjoring-67994971780b153262f9896e",
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:16:56Z",
+        "content_sha256": "87aca9f42ac4c341bbf470832581bbd60c15d775b0ba324ed8e20d77ed9d3b41",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "985677646",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-90588107128bc6938b29a90c",
-        "signal_type": "website_description",
-        "evidence_span": "Risdal Touring — Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-07-23",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-23",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-23 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-cd979058ba98f85054a4105c",
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:16:56Z",
+        "content_sha256": "72c38d3924fdc9b456f96ef6c99edd07ffdbe0facef70cb0141c6a0125398765",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "985677646",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-brand-4ebe240576e533d01a93bf61",
-        "signal_type": "public_brand",
-        "evidence_span": "Risdal Touring",
-        "metrics": {
-          "declared_url": "https://touring.no/",
-          "interpretation": "Brand name from the site's own JSON-LD."
-        }
+        "source_class": "official_api",
+        "observed_at": "2025-07-03",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-03 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-934ef39157e9ec2032cb5d71",
         "organisation_number": "985677646",
-        "platform": "company_site",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:16:56Z",
+        "content_sha256": "00864ab4569c19afae35b3d0a293f1c558c5c7724a4af1f2119ba22eb77262c9",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "985677646",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-985677646-aa317e8fa7820e0f",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 5 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 5,
-          "verified_social_links": 0,
-          "structured_organisation_records": 1,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        }
+        "source_class": "official_api",
+        "observed_at": "2025-04-11",
+        "signal": {
+          "title": "Daglig leder",
+          "date": "2025-04-11",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb"
+        },
+        "evidence_span": "Daglig leder — 2025-04-11 (BRREG official announcement)"
       },
       {
         "id": "registry-contact-5b369b1e9869c212006abe12",
@@ -3016,8 +3017,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3044,8 +3045,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3067,13 +3068,120 @@
         "strategy": "registry_contact_exact"
       },
       {
+        "organisation_number": "985677646",
+        "platform": "company_site",
+        "source_url": "https://touring.no/",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-b131c7d75c3d8cc08a770199",
+        "signal_type": "website_description",
+        "evidence_span": "Risdal Touring — Opplev Norge og Europa med Touring! Vi tilbyr flotte bussreiser, flyreiser og gruppeturer med spennende opplevelser og hyggelig fellesskap.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "985677646",
+        "platform": "company_site",
+        "source_url": "https://touring.no/",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-brand-4ebe240576e533d01a93bf61",
+        "signal_type": "public_brand",
+        "evidence_span": "Risdal Touring",
+        "metrics": {
+          "declared_url": "https://touring.no/",
+          "interpretation": "Brand name from the site's own JSON-LD."
+        }
+      },
+      {
+        "organisation_number": "985677646",
+        "platform": "brreg",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=985677646&size=1000",
+        "retrieved_at": "2026-11-16T15:22:26.784762Z",
+        "content_sha256": "32156a0b9daed2d03e53dd6b1416f3cc74e222e73925d040c517f8022fbf324c",
+        "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "id": "subunit-4eb45fc6d980b88a6dde362f",
+        "signal_type": "subunit",
+        "evidence_span": "RISDAL BUSS AS",
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_subunits",
+            "matched_organisation_number": "985677646",
+            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+          }
+        ],
+        "metrics": {
+          "subunit_organisation_number": "985686777",
+          "municipality": "EVJE OG HORNNES",
+          "interpretation": "Officially registered sub-unit of this organisation."
+        }
+      },
+      {
+        "id": "sitemap-page-3e462724c84c88ffcb034206",
+        "organisation_number": "985677646",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://touring.no/",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
+        "observed_at": "2026-11-16",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://touring.no/reise/touring-korpscruise-med-nmf-og-yamaha/130227-touring-korpscruise-med-nmf-og-yamaha_oppdatert161126/ last modified 2026-11-16",
+        "metrics": {
+          "page_url": "https://touring.no/reise/touring-korpscruise-med-nmf-og-yamaha/130227-touring-korpscruise-med-nmf-og-yamaha_oppdatert161126/",
+          "lastmod": "2026-11-16",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "id": "sitemap-page-cf6811c9d62557bd3917a4e8",
         "organisation_number": "985677646",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3100,8 +3208,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3128,8 +3236,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3156,8 +3264,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3184,8 +3292,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3212,8 +3320,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3240,8 +3348,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3268,8 +3376,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3296,8 +3404,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
+        "retrieved_at": "2026-11-16T15:22:38.533763Z",
+        "content_sha256": "c0ba1c10b4d64f698dc555e91398a181893c775a6a43d8f71f9c1d719f0cc2e0",
         "observed_at": "2026-11-05",
         "exact_entity": true,
         "identity_proof": [
@@ -3319,68 +3427,12 @@
         "strategy": "sitemap_lastmod"
       },
       {
-        "id": "sitemap-page-5d6ea14e24dd592ea674b4fa",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-10-05T08:38:38.692450Z",
-        "content_sha256": "aa317e8fa7820e0f0228f4976a92deb93648ab6d02d36a2d804693a7d02abe4e",
-        "observed_at": "2026-11-05",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/wat-arun-ratchawararamtemple-of-dawn-famous-tourist-destination-in-bangkok-thailand/ last modified 2026-11-05",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/wat-arun-ratchawararamtemple-of-dawn-famous-tourist-destination-in-bangkok-thailand/",
-          "lastmod": "2026-11-05",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "organisation_number": "985677646",
-        "platform": "brreg",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=985677646&size=1000",
-        "retrieved_at": "2026-10-05T08:38:23.387466Z",
-        "content_sha256": "1c4c0ff213bdacc8cd63ca0bd55f5dcc5eca8736747566db7cb36d5b8c3a850d",
-        "exact_entity": true,
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "id": "subunit-4eb45fc6d980b88a6dde362f",
-        "signal_type": "subunit",
-        "evidence_span": "RISDAL BUSS AS",
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_subunits",
-            "matched_organisation_number": "985677646",
-            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
-          }
-        ],
-        "metrics": {
-          "subunit_organisation_number": "985686777",
-          "municipality": "EVJE OG HORNNES",
-          "interpretation": "Officially registered sub-unit of this organisation."
-        }
-      },
-      {
         "id": "registry-update-230fb8fc2d9c3805d98d7125",
         "organisation_number": "985677646",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "230fb8fc2d9c3805d98d7125d2020ee3f077757e403a4beb8fbf3fd127d645dd",
         "observed_at": "2026-10-13",
         "exact_entity": true,
@@ -3410,7 +3462,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "f43b637e1acf1465c259560369184a3439f6e0145632b161153634b1687011f8",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -3440,7 +3492,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "d315d6e25d6ab5ab6cf8e89bcb8f9ec052a6e5365919965b368487327ba1f8cf",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -3470,7 +3522,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "772fca73569af0941f07e8e56857d6133e4e4b2b6180959fde580e3d480a5b56",
         "observed_at": "2026-07-23",
         "exact_entity": true,
@@ -3500,7 +3552,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "834fe2c63c7f8803f9772cf5380a2454aacfcbb3956bc9e26ea1970c07ecc61e",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -3530,7 +3582,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "04f1189d460c615f4465fed0a7031de6b1bb810141310759a531ce5c0895447d",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -3560,7 +3612,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "e05984fb8c29d2907fe7033f63b9220a913bfc10eb41cc233f227d106c2831f5",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -3590,7 +3642,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "2d7faa5771cbf3662108855e2c7cb803360074e755807317d68fff5f66ce6c3b",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3620,7 +3672,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "bef344507bb6d4585536219a88cf0e66ddeb370402005132dc9b2ddf641328ee",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3650,7 +3702,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "972c8e0546a19d034eb21f1f41651742d24b747a4394abfe638b23473d4225de",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3680,7 +3732,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "a93f6a5bd0a03d154d3d3fb3f2d9c1b16c6cf6f11347a0d257b70a16beabde19",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3710,7 +3762,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "84be6a7c031e97c0d1f9fe5bc05d6926d9e0cc711ba0cbf76a37562b977ee074",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -3740,7 +3792,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "bbcf27cdeae81c0d6e5cc741ff3329367f83ca101305d61323cd9c9de593f528",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3770,7 +3822,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "96e19c05681ce582383d8a522ed27f501ce284ea8abb9b5f8b51ace270c0d6da",
         "observed_at": "2025-07-03",
         "exact_entity": true,
@@ -3800,7 +3852,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "8886b609bba32eec9830f6e117615cc1563b54a79fa5c6d8f008803d22e6a52f",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -3830,7 +3882,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "a2421f2f3d65c56845d4eba6870001c5df6130a7fcc0743ccac29bfd5d2e5d38",
         "observed_at": "2025-05-14",
         "exact_entity": true,
@@ -3860,7 +3912,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "fb3423a424aa17b8550f7118aacd05ddf188cfff667707a287bf3a04b0967f09",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -3890,7 +3942,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "55174bb19a415064ca8cdb4a7dab9b2ef2d3100b09eca9857f67686dedefb712",
         "observed_at": "2025-03-13",
         "exact_entity": true,
@@ -3920,7 +3972,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c330b705ab14411dfacedcb09b776b28a5a8cdf70a56e5f3290fa750f2ea0b82",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3950,7 +4002,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/985677646",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "495ff213e1a8d50e4859e1c0e133a583e8dcea465d86a55adfce75ac6d3ab630",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -3973,266 +4025,8 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "brreg-kunngjoring-67994971780b153262f9896e",
-        "organisation_number": "985677646",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "87aca9f42ac4c341bbf470832581bbd60c15d775b0ba324ed8e20d77ed9d3b41",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "985677646",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-07-23",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-07-23",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000595905&amp;sokeverdi=985677646&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-07-23 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-cd979058ba98f85054a4105c",
-        "organisation_number": "985677646",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "72c38d3924fdc9b456f96ef6c99edd07ffdbe0facef70cb0141c6a0125398765",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "985677646",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-07-03",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2025-07-03",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000534471&amp;sokeverdi=985677646&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2025-07-03 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-934ef39157e9ec2032cb5d71",
-        "organisation_number": "985677646",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "00864ab4569c19afae35b3d0a293f1c558c5c7724a4af1f2119ba22eb77262c9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "985677646",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-04-11",
-        "signal": {
-          "title": "Daglig leder",
-          "date": "2025-04-11",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000181691&amp;sokeverdi=985677646&amp;spraak=nb"
-        },
-        "evidence_span": "Daglig leder — 2025-04-11 (BRREG official announcement)"
-      },
-      {
-        "id": "registry-site-985677646-f7165cad72199644",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "touring.no",
-            "matched_organisation_number": "985677646",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-09-29T10:02:25.550213Z",
-            "explanation": "BRREG declares touring.no as the website of organisation 985677646; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Risdal Touring — Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-        "metrics": {
-          "title": "Risdal Touring",
-          "description": "Risdal Touring har gruppereiser i Norge og Europa. Med buss, fly og cruise. Se vårt store utvalg av spennende turer. Vi skreddersyr gruppereise og bussleie!",
-          "registry_domain": "touring.no"
-        },
-        "strategy": "registry_declared_website_description"
-      },
-      {
-        "id": "sitemap-page-537ffeb30be2197f5cfd8c70",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "observed_at": "2026-11-05",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/050227-thailand/ last modified 2026-11-05",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-thailand-under-huden-en-reise-utenom-det-vanlige/050227-thailand/",
-          "lastmod": "2026-11-05",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-8dc3cc2ea98784fe8557cdb3",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "observed_at": "2026-11-04",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen/100427-110427-touring-vaaropplevelser-i-bremen/ last modified 2026-11-04",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen/100427-110427-touring-vaaropplevelser-i-bremen/",
-          "lastmod": "2026-11-04",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-9d64d4525feda0635e4309f8",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "observed_at": "2026-11-04",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen/mal-forsidebilde-_-var-i-bremen-1/ last modified 2026-11-04",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen/mal-forsidebilde-_-var-i-bremen-1/",
-          "lastmod": "2026-11-04",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-4180173e469f86f2d03b942d",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "observed_at": "2026-11-04",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen-2/mal-forsidebilde-_-var-i-bremen-2/ last modified 2026-11-04",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen-2/mal-forsidebilde-_-var-i-bremen-2/",
-          "lastmod": "2026-11-04",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-7eac8f7709056bfaf64e4cfa",
-        "organisation_number": "985677646",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://touring.no/",
-        "retrieved_at": "2026-09-29T10:06:08.731633Z",
-        "content_sha256": "f7165cad72199644de28c4c32f1f361cdcc8e893ecd574f54911dded7ced9c1e",
-        "observed_at": "2026-11-04",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://touring.no/reise/touring-varopplevelser-i-bremen-2/100427-110427-touring-vaaropplevelser-i-bremen-2/ last modified 2026-11-04",
-        "metrics": {
-          "page_url": "https://touring.no/reise/touring-varopplevelser-i-bremen-2/100427-110427-touring-vaaropplevelser-i-bremen-2/",
-          "lastmod": "2026-11-04",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
       }
     ]
   },
-  "generated_at": "2026-11-07T10:54:49.860196+00:00"
+  "generated_at": "2026-11-17T09:30:45.165602+00:00"
 }

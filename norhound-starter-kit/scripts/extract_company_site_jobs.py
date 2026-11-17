@@ -249,11 +249,19 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
         if not observed_at:
             observed_at = retrieved_at[:10]
 
+        # A link discovered on a careers page is NOT a role card. The connector
+        # never fetches the posting and never confirms an application, so it
+        # emits `careers_page` — the same signal extract_company_site_careers.py
+        # emits — and `workforce_jobs` (which counts only `job_posting`) stays
+        # honest. Publishing these as job_postings put "Digitalt testament" and
+        # "Marketing" in the corpus as job titles and inflated workforce_jobs
+        # from ~15 companies with a real advert to 51.
         observations.append({
             "id": "company-site-job-" + hashlib.sha256(f"{org}|{url}".encode()).hexdigest()[:24],
             "organisation_number": org,
             "platform": "company_site",
-            "signal_type": "job_posting",
+            "signal_type": "careers_page",
+            "careers_url": url,
             "source_url": url,
             "retrieved_at": retrieved_at,
             "observed_at": observed_at,
@@ -266,7 +274,7 @@ def extract_jobs_from_page(profile: dict, page_url: str, html: str, raw: bytes, 
             "evidence_span": posting["title"][:1200],
             "metrics": {
                 "anchor_text": posting["anchor"][:200],
-                "interpretation": "Job posting link discovered on the verified company careers page; not a confirmed application.",
+                "interpretation": "Careers-page link discovered on the verified company site; not a confirmed open position.",
             },
             "strategy": "jobs_feed_discovery",
         })

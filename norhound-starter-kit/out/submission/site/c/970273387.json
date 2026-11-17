@@ -1,7 +1,7 @@
 {
   "profile": {
     "bankrupt": false,
-    "employees": 7,
+    "employees": null,
     "evidence": {
       "accounting_obligation": {
         "as_of": "2024-08-09",
@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:59.083380Z",
+        "retrieved_at": "2026-11-16T15:19:01.604540Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "970273387",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-10-05T08:55:03.551744Z",
+        "retrieved_at": "2026-11-16T15:41:10.412657Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-10-05T08:54:59.269802Z",
+        "retrieved_at": "2026-11-16T15:41:08.565663Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-10-05T08:55:05.013867Z",
+        "retrieved_at": "2026-11-16T15:41:12.340148Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -198,11 +198,11 @@
       },
       "locations": {
         "as_of": null,
-        "content_sha256": "334ba101569462f33cfcc3cc1d060471dc95c0cf3c190c12b42944f9f8aab2d4",
+        "content_sha256": "f442fdf2136221cb6a259302cc98cb4c00ceebef01eeb425556a720a1cafa8dd",
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-10-05T08:55:05.775351Z",
+        "retrieved_at": "2026-11-16T15:41:13.322636Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -222,7 +222,7 @@
                 "postnummer": "3804",
                 "poststed": "BØ I TELEMARK"
               },
-              "employees": 7,
+              "employees": null,
               "industry": {
                 "beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
                 "kode": "55.200"
@@ -235,116 +235,83 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "970273387",
         "source_type": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
         "status": "available",
         "value": {
-          "aktivitet": "Kristen skole, student- og ungdomsorganisasjon som bl.a. driver lag- og ledertreningsarbeid.",
-          "antallAnsatte": "7",
+          "aktivitet": [
+            "Kristen skole, student- og ungdomsorganisasjon som bl.a. driver lag-",
+            "og ledertreningsarbeid."
+          ],
           "epostadresse": "post@jonnbu.no",
-          "erIKonsern": "false",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-          "foretaksformIHjemlandet.kode": "",
-          "forretningsadresse.adresse": "Lifjellvegen 966",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Lifjellvegen 966"
+          ],
           "forretningsadresse.kommune": "MIDT-TELEMARK",
           "forretningsadresse.kommunenummer": "4020",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
           "forretningsadresse.postnummer": "3804",
           "forretningsadresse.poststed": "BØ I TELEMARK",
-          "fravalgRevisjonBeslutningsDato": "",
-          "fravalgRevisjonDato": "",
-          "frivilligMvaRegistrertBeskrivelser": "",
-          "harRegistrertAntallAnsatte": "true",
-          "hjelpeenhetskode.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [
+            {
+              "fraDato": "1995-02-20 06:16:00",
+              "navn": "JØNNEBU FJELLKYRKJE/UNGDOMSSENTER",
+              "tilDato": "1997-06-05 20:17:26"
+            },
+            {
+              "fraDato": "1997-06-05 20:17:26",
+              "navn": "JØNNEBU FJELLKYRKJE OG UNGDOMSSENTER STIFTELSE",
+              "tilDato": "1999-09-01 19:32:53"
+            }
+          ],
           "hjemmeside": "www.jonnbu.no",
           "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
           "institusjonellSektorkode.kode": "7000",
-          "kapital.antallAksjer": "",
-          "kapital.belop": "",
-          "kapital.bundet": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innbetalt": "",
-          "kapital.innfortDato": "",
-          "kapital.type": "",
-          "kapital.valuta": "",
-          "konkurs": "false",
-          "konkursdato": "",
+          "konkurs": false,
+          "links": [],
           "maalform": "Nynorsk",
           "mobil": "92045385",
           "naeringskode1.beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
           "naeringskode1.kode": "55.200",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode2.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "naeringskode3.kode": "",
           "navn": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
           "organisasjonsform.beskrivelse": "Stiftelse",
           "organisasjonsform.kode": "STI",
+          "organisasjonsform.links": [],
           "organisasjonsnummer": "970273387",
-          "overordnetEnhet": "",
-          "paategninger": "false",
-          "postadresse.adresse": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
-          "postadresse.postnummer": "",
-          "postadresse.poststed": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-07-15",
-          "registreringsdatoForetaksregisteret": "",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+          "paategninger": [],
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-12",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+          "registreringsdatoEnhetsregisteret": "1995-02-20",
           "registreringsdatoFrivillighetsregisteret": "2014-09-17",
-          "registreringsdatoMerverdiavgiftsregisteret": "",
-          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
-          "registreringsdatoPartiregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-07-10",
-          "registreringsdatoenhetsregisteret": "1995-02-20",
-          "registreringsnummerIHjemlandet": "",
-          "registrertIForetaksregisteret": "false",
-          "registrertIFrivillighetsregisteret": "true",
-          "registrertIMvaRegisteret": "false",
-          "registrertIPartiregisteret": "false",
-          "registrertIStiftelsesregisteret": "true",
+          "registrertIForetaksregisteret": false,
+          "registrertIFrivillighetsregisteret": true,
+          "registrertIMvaregisteret": false,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": true,
+          "respons_klasse": "Enhet",
           "sisteInnsendteAarsregnskap": "2025",
-          "stiftelsesdato": "",
           "telefon": "35 95 33 84",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
-          "underRekonstruksjonsforhandlingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
-          "underlagtLovgivningLand": "",
-          "underlagtLovgivningLandKode": "",
-          "utenlandskRegisterAdresse.adresse": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterNavn": "",
-          "vedtektsdato": "",
-          "vedtektsfestetFormaal": ""
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false
         }
       },
       "registry_live": {
         "as_of": null,
-        "content_sha256": "1345d191246d83267df91f34d3fe5e0baf61dd9dcd3b9b11a5aa9e3cdf95b389",
+        "content_sha256": "ad217e90732ce51e5c8463bf535794bfa12a7bd7f0431f4e8910a1b01652d4fa",
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-10-05T08:54:58.529849Z",
+        "retrieved_at": "2026-11-16T15:41:06.592955Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -363,7 +330,7 @@
             "postnummer": "3804",
             "poststed": "BØ I TELEMARK"
           },
-          "employees": 7,
+          "employees": null,
           "industry": {
             "beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
             "kode": "55.200"
@@ -383,7 +350,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-10-05T08:55:04.268887Z",
+        "retrieved_at": "2026-11-16T15:41:11.386276Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -500,18 +467,18 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-10-05T08:55:12.864154Z",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
         "source_url": "https://jonnbu.no/",
         "status": "available",
         "value": {
-          "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
           "crawl_errors": [],
           "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
           "discovered_social_links": [
@@ -547,13 +514,13 @@
           "main_text_excerpt": "Ein samlingsstad i vakker fjellnatur\nJønnbu Fjellkyrkje ligg idyllisk til på Lifjell og er ein perfekt stad for leirskule, kurs, samlingar og overnatting. Her kombinerer du gode fasilitetar med ro, natur og aktivitetar rett utanfor døra.\nOvernatting på fjellet\nJønnbu kan leigast til opphald for større og mindre grupper. Enten det er slektstreff, fotballaget, skulekorpset eller ei skuleklasse på tur, ligg alt til rette for eit triveleg opphald. De bur i enkle fleirsengsrom, med gode fellesareal der heile gruppa kan samlast til måltid og aktivitetar. Her er det kort veg til naturopplevingar og gode dagar ute.",
           "pages": [
             {
-              "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+              "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
               "main_text_excerpt": "Ein samlingsstad i vakker fjellnatur\nJønnbu Fjellkyrkje ligg idyllisk til på Lifjell og er ein perfekt stad for leirskule, kurs, samlingar og overnatting. Her kombinerer du gode fasilitetar med ro, natur og aktivitetar rett utanfor døra.\nOvernatting på fjellet\nJønnbu kan leigast til opphald for større og mindre grupper. Enten det er slektstreff, fotballaget, skulekorpset eller ei skuleklasse på tur, ligg alt til rette for eit triveleg opphald. De bur i enkle fleirsengsrom, med gode fellesareal der heile gruppa kan samlast til måltid og aktivitetar. Her er det kort veg til naturopplevingar og gode dagar ute.",
               "title": "Jønnbu Fjellkyrkje - Visit Bø",
               "url": "https://jonnbu.no/"
             },
             {
-              "content_sha256": "a1d4e963a6992c69e360acaa9a05366e1c249e36f323dc0fbb955b96bcfe97c4",
+              "content_sha256": "19e7f2091187ff83778bca476b8194db0781574ebe541e1d410ccfe379f915bd",
               "main_text_excerpt": "Kontakt Oss\nLifjellvegen 666, 3804 Bø i Telemark\npost@jonnbu.no\n405 42 514\nHar du spørsmål?\nTa kontakt for å bestille eller om du har andre spørsmål!\nDaglig leder\nMads Dybro",
               "title": "Kontakt Oss - Jønnbu Fjellkyrkje",
               "url": "https://jonnbu.no/kontakt/"
@@ -588,69 +555,300 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-e818538c64c5c6bf352d29fa",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_domain_unique",
+              "domain": "jonnbu.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-16",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-970273387-5025b2531a12de4e",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 2,
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          }
+        },
+        {
+          "id": "registry-site-970273387-5025b2531a12de4e",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "jonnbu.no",
+              "matched_organisation_number": "970273387",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-11-16T15:18:00.649157Z",
+              "explanation": "BRREG declares jonnbu.no as the website of organisation 970273387; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+          "metrics": {
+            "title": "Jønnbu Fjellkyrkje - Visit Bø",
+            "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+            "registry_domain": "jonnbu.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "970273387",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/970273387",
+          "retrieved_at": "2026-11-16T16:37:48.560910Z",
+          "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "970273387"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+              "matched_organisation_number": "970273387"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+          "id": "purehelp-email-970273387-bc137e827a6c4372",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@jonnbu.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "970273387",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/970273387",
+          "retrieved_at": "2026-11-16T16:37:48.560910Z",
+          "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "970273387"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+              "matched_organisation_number": "970273387"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+          "id": "purehelp-phone-970273387-bc137e827a6c4372",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "35 95 33 84",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "970273387",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/970273387",
+          "retrieved_at": "2026-11-16T16:37:48.560910Z",
+          "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "970273387"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+              "matched_organisation_number": "970273387"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+          "id": "purehelp-profile-970273387-bc137e827a6c4372",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "STI",
+            "legal_form_description": "Foundation",
+            "nace_code": "55.200",
+            "nace_description": "Holiday and other short-stay accommodation",
+            "town": "BØ I TELEMARK",
+            "zipcode": "3804",
+            "municipality": "MIDT-TELEMARK",
+            "municipality_number": "4020",
+            "county": "Telemark",
+            "registration_date": "1997-06-05",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1997-06-05",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.jonnbu.no"
+          }
+        },
+        {
+          "organisation_number": "970273387",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/970273387",
+          "retrieved_at": "2026-11-16T16:37:48.560910Z",
+          "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "970273387"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+              "matched_organisation_number": "970273387"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+          "id": "purehelp-workforce-970273387-bc137e827a6c4372",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 0,
+            "as_of": "2026-11-16",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "brreg-kunngjoring-443c38c9de60ee0cdce0cd0b",
           "organisation_number": "970273387",
           "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-09-29T10:21:37.641120Z",
-          "content_sha256": "1345d191246d83267df91f34d3fe5e0baf61dd9dcd3b9b11a5aa9e3cdf95b389",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:04Z",
+          "content_sha256": "ceb88556a0287606ec2996439cfa5747bf0d77c18b8c0e0ee65407b4c0b4f2ed",
           "exact_entity": true,
           "identity_proof": [
             {
               "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "970273387",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 7",
-          "metrics": {
-            "workforce_value": 7,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-07-15"
+          "source_class": "official_api",
+          "observed_at": "2026-06-03",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-06-03",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb"
           },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-07-15",
-          "effective_at": "2026-07-15"
+          "evidence_span": "Godkjente årsregnskap — 2026-06-03 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-2c9484dc09c1f22fd3b6601b",
           "organisation_number": "970273387",
-          "retrieved_at": "2026-10-02T19:17:05.994104Z",
-          "content_sha256": "55b684a6454e2abd4da4132da46eaf78bea683389d9aaa8ca80f63ede3b54dd3",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:04Z",
+          "content_sha256": "496c730dd797d852bfb8e9d023cbd679e432b2e098393449a55e16d166699033",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_wikidata",
-              "source": "wikidata.org",
-              "source_class": "open_knowledge_base",
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "970273387",
-              "explanation": "Wikidata entity Q127060368 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "public_mention",
-          "strategy": "wikidata_p2333_orgnr_match",
-          "id": "wikidata-970273387",
-          "platform": "wikidata",
-          "signal_type": "company_profile",
-          "source_url": "https://www.wikidata.org/wiki/Q127060368",
-          "evidence_span": "P2333 = 970273387 on Q127060368 (Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter)",
-          "metrics": {
-            "qid": "Q127060368",
-            "label": "Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter",
-            "values": {
-              "wikidata.website": "https://www.jonnbu.no",
-              "wikidata.inception": "2006-10-13",
-              "wikidata.employees": null
+          "source_class": "official_api",
+          "observed_at": "2025-07-01",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-01",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-01 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-1509b7962f3053d342ae5230",
+          "organisation_number": "970273387",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:04Z",
+          "content_sha256": "cf4c2f530d81e9c1b814fe7d01ed0ec1ca5bddad1d89ba48ccab2561f11b36df",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "970273387",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
-          }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2024-06-11",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-06-11",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-06-11 (BRREG official announcement)"
         },
         {
           "id": "registry-contact-808d48da9db7402c57c7031e",
@@ -658,8 +856,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -686,8 +884,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -714,8 +912,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -738,10 +936,35 @@
         },
         {
           "organisation_number": "970273387",
+          "platform": "company_site",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-d4eda7b9d4c6e22f9018e883",
+          "signal_type": "website_description",
+          "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "970273387",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=970273387&size=1000",
-          "retrieved_at": "2026-10-05T08:55:05.775351Z",
-          "content_sha256": "334ba101569462f33cfcc3cc1d060471dc95c0cf3c190c12b42944f9f8aab2d4",
+          "retrieved_at": "2026-11-16T15:41:13.322636Z",
+          "content_sha256": "f442fdf2136221cb6a259302cc98cb4c00ceebef01eeb425556a720a1cafa8dd",
           "exact_entity": true,
           "acquisition_mode": "official_api",
           "rights_status": "approved",
@@ -765,12 +988,322 @@
           }
         },
         {
+          "id": "sitemap-page-a0d8f6730116f9ca43ba7d3d",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-06-25",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/ last modified 2026-06-25",
+          "metrics": {
+            "page_url": "https://jonnbu.no/",
+            "lastmod": "2026-06-25",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-88044418269755c00603e2c4",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-06-25",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/kontakt/ last modified 2026-06-25",
+          "metrics": {
+            "page_url": "https://jonnbu.no/kontakt/",
+            "lastmod": "2026-06-25",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-a63286328775d38e488d3b8d",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-06-25",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/overnatting/ last modified 2026-06-25",
+          "metrics": {
+            "page_url": "https://jonnbu.no/overnatting/",
+            "lastmod": "2026-06-25",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-098b36228045a2b606d8c9c5",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-06-25",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/leirskule/ last modified 2026-06-25",
+          "metrics": {
+            "page_url": "https://jonnbu.no/leirskule/",
+            "lastmod": "2026-06-25",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-dea368ab647b42998b24c289",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-06-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/aktivitetar/ last modified 2026-06-19",
+          "metrics": {
+            "page_url": "https://jonnbu.no/aktivitetar/",
+            "lastmod": "2026-06-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-46023bece3bac9b619a8cd6c",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-03-26",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/?page_id=4224 last modified 2026-03-26",
+          "metrics": {
+            "page_url": "https://jonnbu.no/?page_id=4224",
+            "lastmod": "2026-03-26",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-160ad255f715673e6927ca3e",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-03-26",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/nyheter/ last modified 2026-03-26",
+          "metrics": {
+            "page_url": "https://jonnbu.no/blog/aktuelt/nyheter/",
+            "lastmod": "2026-03-26",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-7170251aa8ebe6e8e7a507eb",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-03-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/vinter/ last modified 2026-03-19",
+          "metrics": {
+            "page_url": "https://jonnbu.no/vinter/",
+            "lastmod": "2026-03-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-06538f695174f212c4607122",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-03-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/vinterferie-lifjell/ last modified 2026-03-19",
+          "metrics": {
+            "page_url": "https://jonnbu.no/vinterferie-lifjell/",
+            "lastmod": "2026-03-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-04d0414525120aa5a259d4d0",
+          "organisation_number": "970273387",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://jonnbu.no/",
+          "retrieved_at": "2026-11-16T15:41:20.591708Z",
+          "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+          "observed_at": "2026-03-19",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell last modified 2026-03-19",
+          "metrics": {
+            "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell",
+            "lastmod": "2026-03-19",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "registry-update-9c858699e958363a7dbd954f",
+          "organisation_number": "970273387",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "content_sha256": "9c858699e958363a7dbd954f089f87fe942adf2e6aca916ea261a690b6781240",
+          "observed_at": "2026-11-12",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "970273387",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-11-12: Endring",
+          "metrics": {
+            "date": "2026-11-12",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
           "id": "registry-update-d4c44e39d7ef027ab8c148b5",
           "organisation_number": "970273387",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "d4c44e39d7ef027ab8c148b532e5f822b40977f5aa1bc92642731fe722ae1e50",
           "observed_at": "2026-10-13",
           "exact_entity": true,
@@ -800,7 +1333,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6813751e7cd12b7c02d2d33f96252e144c303d71e158a93d0be4f9ed2a2f866b",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -830,7 +1363,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c7b61a7e6ec23f386b83e506c0ceb2dc6b402e46d2853e64d5641aa3a892c783",
           "observed_at": "2026-06-03",
           "exact_entity": true,
@@ -860,7 +1393,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "d5ac803f8e913239fec7f401da85ce5ffb4b99bcf643ef87b7b87d322656b701",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -890,7 +1423,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6adac9fafd87b0c4d3f459821d2950054ad6b9341fa90ead034cc5bda0e0d7c4",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -920,7 +1453,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "78a7b48311614d32ca2947bd308f08f9ae79296f773bbe0cbc7a5b817c216a35",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -950,7 +1483,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3e41e4a3ce392cdd5817cc2375b3b885960e78b911fefc8217767a5f5bfbf644",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -980,7 +1513,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "cd0bf5d7c187a39d05fec0c08cb45e8a362860a64eda49248adba9eaafdab70b",
           "observed_at": "2025-07-01",
           "exact_entity": true,
@@ -1010,7 +1543,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "e7a738a812f73d3f8e525510da78d278672d8a8c5d430b0d71b8086acf1dabc1",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1040,7 +1573,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "fc319e375160916e0caa8ca5fb7967abdce4db0d701fd08939952d3bf62b2498",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -1070,7 +1603,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c9a6fbc8a40acd8fff26e5c795f74c4e8efa510a3ebc63fc28eb46f90534ae1d",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1100,7 +1633,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "a19ba6623c8b47c487db74debb75c7a326c2d3be98f746c25e6a49293cdc28a4",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1130,7 +1663,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "1cf842b1a90c8dc04e0a79bed9dfd72864baf88aa45bc76a090d2578dd6afde6",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1160,7 +1693,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6243652959dff91e2019b5c4042191ca15178ad7da7e1adae437255272f36192",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1190,7 +1723,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c039cd803196932a02e30dd03965c6bb0b0bb0d341b152a6818e295fb4278a07",
           "observed_at": "2023-06-13",
           "exact_entity": true,
@@ -1220,7 +1753,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "de2e50f6069a037dc2577e66f10af7431ca62365da774f5eef8674f929dab6a5",
           "observed_at": "2023-06-12",
           "exact_entity": true,
@@ -1250,7 +1783,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "2a10fe1e36e750664cbf1b20fecf3adbf5cf0f37f359140c54b49a6725e82b98",
           "observed_at": "2023-05-13",
           "exact_entity": true,
@@ -1280,7 +1813,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6e9f4a98942732894a7502ab916cce7910a3b3bfb623df2e16c72c1e39e8d74f",
           "observed_at": "2023-03-21",
           "exact_entity": true,
@@ -1310,7 +1843,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "65d41bbf01605e8630f1f45fe8eb88bcfd53e54fca6839fac32ff67fa9878359",
           "observed_at": "2023-03-15",
           "exact_entity": true,
@@ -1335,604 +1868,37 @@
           "strategy": "registry_updates_feed"
         },
         {
-          "id": "brreg-kunngjoring-443c38c9de60ee0cdce0cd0b",
           "organisation_number": "970273387",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "ceb88556a0287606ec2996439cfa5747bf0d77c18b8c0e0ee65407b4c0b4f2ed",
+          "retrieved_at": "2026-11-16T14:54:57.864149Z",
+          "content_sha256": "55b684a6454e2abd4da4132da46eaf78bea683389d9aaa8ca80f63ede3b54dd3",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
+              "type": "organisation_number_on_wikidata",
+              "source": "wikidata.org",
+              "source_class": "open_knowledge_base",
               "matched_organisation_number": "970273387",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+              "explanation": "Wikidata entity Q127060368 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-06-03",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-06-03",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-06-03 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-2c9484dc09c1f22fd3b6601b",
-          "organisation_number": "970273387",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "496c730dd797d852bfb8e9d023cbd679e432b2e098393449a55e16d166699033",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "970273387",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-07-01",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2025-07-01",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2025-07-01 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-1509b7962f3053d342ae5230",
-          "organisation_number": "970273387",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "cf4c2f530d81e9c1b814fe7d01ed0ec1ca5bddad1d89ba48ccab2561f11b36df",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "970273387",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2024-06-11",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2024-06-11",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2024-06-11 (BRREG official announcement)"
-        },
-        {
-          "id": "registry-site-970273387-1fb67f3dfa65f188",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "jonnbu.no",
-              "matched_organisation_number": "970273387",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-09-29T10:02:25.550213Z",
-              "explanation": "BRREG declares jonnbu.no as the website of organisation 970273387; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+          "source_class": "public_mention",
+          "strategy": "wikidata_p2333_orgnr_match",
+          "id": "wikidata-970273387",
+          "platform": "wikidata",
+          "signal_type": "company_profile",
+          "source_url": "https://www.wikidata.org/wiki/Q127060368",
+          "evidence_span": "P2333 = 970273387 on Q127060368 (Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter)",
           "metrics": {
-            "title": "Jønnbu Fjellkyrkje - Visit Bø",
-            "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
-            "registry_domain": "jonnbu.no"
-          },
-          "strategy": "registry_declared_website_description"
-        },
-        {
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_domain_unique",
-              "domain": "jonnbu.no",
-              "register_field": "hjemmeside",
-              "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-06",
-              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
-            },
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+            "qid": "Q127060368",
+            "label": "Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter",
+            "values": {
+              "wikidata.website": "https://www.jonnbu.no",
+              "wikidata.inception": "2006-10-13",
+              "wikidata.employees": null
             }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-970273387-1fb67f3dfa65f188",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 2,
-            "verified_social_links": 0,
-            "structured_organisation_records": 0,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           }
-        },
-        {
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-d4eda7b9d4c6e22f9018e883",
-          "signal_type": "website_description",
-          "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
-        },
-        {
-          "id": "sitemap-page-a0d8f6730116f9ca43ba7d3d",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-06-25",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/ last modified 2026-06-25",
-          "metrics": {
-            "page_url": "https://jonnbu.no/",
-            "lastmod": "2026-06-25",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-88044418269755c00603e2c4",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-06-25",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/kontakt/ last modified 2026-06-25",
-          "metrics": {
-            "page_url": "https://jonnbu.no/kontakt/",
-            "lastmod": "2026-06-25",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-a63286328775d38e488d3b8d",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-06-25",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/overnatting/ last modified 2026-06-25",
-          "metrics": {
-            "page_url": "https://jonnbu.no/overnatting/",
-            "lastmod": "2026-06-25",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-098b36228045a2b606d8c9c5",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-06-25",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/leirskule/ last modified 2026-06-25",
-          "metrics": {
-            "page_url": "https://jonnbu.no/leirskule/",
-            "lastmod": "2026-06-25",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-dea368ab647b42998b24c289",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-06-19",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/aktivitetar/ last modified 2026-06-19",
-          "metrics": {
-            "page_url": "https://jonnbu.no/aktivitetar/",
-            "lastmod": "2026-06-19",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-46023bece3bac9b619a8cd6c",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-26",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/?page_id=4224 last modified 2026-03-26",
-          "metrics": {
-            "page_url": "https://jonnbu.no/?page_id=4224",
-            "lastmod": "2026-03-26",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-160ad255f715673e6927ca3e",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-26",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/nyheter/ last modified 2026-03-26",
-          "metrics": {
-            "page_url": "https://jonnbu.no/blog/aktuelt/nyheter/",
-            "lastmod": "2026-03-26",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-7170251aa8ebe6e8e7a507eb",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-19",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/vinter/ last modified 2026-03-19",
-          "metrics": {
-            "page_url": "https://jonnbu.no/vinter/",
-            "lastmod": "2026-03-19",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-06538f695174f212c4607122",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-19",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/vinterferie-lifjell/ last modified 2026-03-19",
-          "metrics": {
-            "page_url": "https://jonnbu.no/vinterferie-lifjell/",
-            "lastmod": "2026-03-19",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-04d0414525120aa5a259d4d0",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-19",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell last modified 2026-03-19",
-          "metrics": {
-            "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell",
-            "lastmod": "2026-03-19",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-1ac3fb4d3851fef4f4cf7b0e",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-19",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=telemarkskanalen last modified 2026-03-19",
-          "metrics": {
-            "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=telemarkskanalen",
-            "lastmod": "2026-03-19",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-12368c7d67c76b08b00c6b8c",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2026-03-18",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/demo/ last modified 2026-03-18",
-          "metrics": {
-            "page_url": "https://jonnbu.no/demo/",
-            "lastmod": "2026-03-18",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-4e558da68e1d14998ff5bc19",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2019-03-29",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/overnatting-mal/ last modified 2019-03-29",
-          "metrics": {
-            "page_url": "https://jonnbu.no/overnatting-mal/",
-            "lastmod": "2019-03-29",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-d49639405e052a561e0091d5",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2019-03-29",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/overnatting/bo-hotell/ last modified 2019-03-29",
-          "metrics": {
-            "page_url": "https://jonnbu.no/blog/aktuelt/overnatting/bo-hotell/",
-            "lastmod": "2019-03-29",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-b43cd24cb2150ea39277bc7a",
-          "organisation_number": "970273387",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://jonnbu.no/",
-          "retrieved_at": "2026-09-29T10:21:53.424539Z",
-          "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-          "observed_at": "2019-03-29",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/overnatting/ last modified 2019-03-29",
-          "metrics": {
-            "page_url": "https://jonnbu.no/blog/aktuelt/overnatting/",
-            "lastmod": "2019-03-29",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
         }
       ]
     },
@@ -1946,16 +1912,16 @@
     "name": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
     "organisation_number": "970273387",
     "run_metrics": {
-      "bytes": 291631,
+      "bytes": 290777,
       "latencies_ms": [
-        756,
-        739,
-        724,
-        716,
-        743,
-        761,
-        1543,
-        2078
+        1207,
+        1972,
+        1846,
+        973,
+        953,
+        982,
+        2284,
+        1413
       ],
       "requests": 10
     },
@@ -1966,7 +1932,7 @@
     "company_name": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER is a foundation operating in Drift av vandrerhjem og ferieleiligheter. Latest accounts (2025): revenue NOK 1.4m, annual result NOK -74.6k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-23.3% YoY). Registered employees: 7. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER is a foundation operating in Drift av vandrerhjem og ferieleiligheter. Latest accounts (2025): revenue NOK 1.4m, annual result NOK -74.6k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-23.3% YoY). Baseline run, no prior version to compare against (run none). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2038,20 +2004,11 @@
       },
       {
         "question": "staff",
-        "answer": "Registered employees: 7.",
-        "answerable": true,
-        "status": "confirmed",
-        "confidence": 1.0,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/970273387/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=970273387&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/970273387",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/970273387/aar",
-          "https://jonnbu.no/",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "staff_growth",
@@ -2089,6 +2046,11 @@
     ],
     "unknowns": [
       {
+        "field": "employees",
+        "state": "not_available",
+        "reason": "registry returned no employee count"
+      },
+      {
         "field": "hiring",
         "state": "not_available",
         "reason": "no job sources were checked"
@@ -2102,7 +2064,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:59.083380Z",
+      "retrieved_at": "2026-11-16T15:19:01.604540Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "970273387",
       "source_type": "official_rule_interpretation",
@@ -2122,7 +2084,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-10-05T08:55:03.551744Z",
+      "retrieved_at": "2026-11-16T15:41:10.412657Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2216,7 +2178,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-10-05T08:54:59.269802Z",
+      "retrieved_at": "2026-11-16T15:41:08.565663Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2281,7 +2243,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-10-05T08:55:05.013867Z",
+      "retrieved_at": "2026-11-16T15:41:12.340148Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2291,11 +2253,11 @@
     },
     "locations": {
       "as_of": null,
-      "content_sha256": "334ba101569462f33cfcc3cc1d060471dc95c0cf3c190c12b42944f9f8aab2d4",
+      "content_sha256": "f442fdf2136221cb6a259302cc98cb4c00ceebef01eeb425556a720a1cafa8dd",
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-10-05T08:55:05.775351Z",
+      "retrieved_at": "2026-11-16T15:41:13.322636Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2315,7 +2277,7 @@
               "postnummer": "3804",
               "poststed": "BØ I TELEMARK"
             },
-            "employees": 7,
+            "employees": null,
             "industry": {
               "beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
               "kode": "55.200"
@@ -2328,116 +2290,83 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "970273387",
       "source_type": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
       "status": "available",
       "value": {
-        "aktivitet": "Kristen skole, student- og ungdomsorganisasjon som bl.a. driver lag- og ledertreningsarbeid.",
-        "antallAnsatte": "7",
+        "aktivitet": [
+          "Kristen skole, student- og ungdomsorganisasjon som bl.a. driver lag-",
+          "og ledertreningsarbeid."
+        ],
         "epostadresse": "post@jonnbu.no",
-        "erIKonsern": "false",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-        "foretaksformIHjemlandet.kode": "",
-        "forretningsadresse.adresse": "Lifjellvegen 966",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Lifjellvegen 966"
+        ],
         "forretningsadresse.kommune": "MIDT-TELEMARK",
         "forretningsadresse.kommunenummer": "4020",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
         "forretningsadresse.postnummer": "3804",
         "forretningsadresse.poststed": "BØ I TELEMARK",
-        "fravalgRevisjonBeslutningsDato": "",
-        "fravalgRevisjonDato": "",
-        "frivilligMvaRegistrertBeskrivelser": "",
-        "harRegistrertAntallAnsatte": "true",
-        "hjelpeenhetskode.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [
+          {
+            "fraDato": "1995-02-20 06:16:00",
+            "navn": "JØNNEBU FJELLKYRKJE/UNGDOMSSENTER",
+            "tilDato": "1997-06-05 20:17:26"
+          },
+          {
+            "fraDato": "1997-06-05 20:17:26",
+            "navn": "JØNNEBU FJELLKYRKJE OG UNGDOMSSENTER STIFTELSE",
+            "tilDato": "1999-09-01 19:32:53"
+          }
+        ],
         "hjemmeside": "www.jonnbu.no",
         "institusjonellSektorkode.beskrivelse": "Ideelle organisasjoner",
         "institusjonellSektorkode.kode": "7000",
-        "kapital.antallAksjer": "",
-        "kapital.belop": "",
-        "kapital.bundet": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innbetalt": "",
-        "kapital.innfortDato": "",
-        "kapital.type": "",
-        "kapital.valuta": "",
-        "konkurs": "false",
-        "konkursdato": "",
+        "konkurs": false,
+        "links": [],
         "maalform": "Nynorsk",
         "mobil": "92045385",
         "naeringskode1.beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
         "naeringskode1.kode": "55.200",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode2.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "naeringskode3.kode": "",
         "navn": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
         "organisasjonsform.beskrivelse": "Stiftelse",
         "organisasjonsform.kode": "STI",
+        "organisasjonsform.links": [],
         "organisasjonsnummer": "970273387",
-        "overordnetEnhet": "",
-        "paategninger": "false",
-        "postadresse.adresse": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
-        "postadresse.postnummer": "",
-        "postadresse.poststed": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-07-15",
-        "registreringsdatoForetaksregisteret": "",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
+        "paategninger": [],
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-12",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+        "registreringsdatoEnhetsregisteret": "1995-02-20",
         "registreringsdatoFrivillighetsregisteret": "2014-09-17",
-        "registreringsdatoMerverdiavgiftsregisteret": "",
-        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "",
-        "registreringsdatoPartiregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-07-10",
-        "registreringsdatoenhetsregisteret": "1995-02-20",
-        "registreringsnummerIHjemlandet": "",
-        "registrertIForetaksregisteret": "false",
-        "registrertIFrivillighetsregisteret": "true",
-        "registrertIMvaRegisteret": "false",
-        "registrertIPartiregisteret": "false",
-        "registrertIStiftelsesregisteret": "true",
+        "registrertIForetaksregisteret": false,
+        "registrertIFrivillighetsregisteret": true,
+        "registrertIMvaregisteret": false,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": true,
+        "respons_klasse": "Enhet",
         "sisteInnsendteAarsregnskap": "2025",
-        "stiftelsesdato": "",
         "telefon": "35 95 33 84",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
-        "underRekonstruksjonsforhandlingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
-        "underlagtLovgivningLand": "",
-        "underlagtLovgivningLandKode": "",
-        "utenlandskRegisterAdresse.adresse": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterNavn": "",
-        "vedtektsdato": "",
-        "vedtektsfestetFormaal": ""
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false
       }
     },
     "registry_live": {
       "as_of": null,
-      "content_sha256": "1345d191246d83267df91f34d3fe5e0baf61dd9dcd3b9b11a5aa9e3cdf95b389",
+      "content_sha256": "ad217e90732ce51e5c8463bf535794bfa12a7bd7f0431f4e8910a1b01652d4fa",
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-10-05T08:54:58.529849Z",
+      "retrieved_at": "2026-11-16T15:41:06.592955Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2456,7 +2385,7 @@
           "postnummer": "3804",
           "poststed": "BØ I TELEMARK"
         },
-        "employees": 7,
+        "employees": null,
         "industry": {
           "beskrivelse": "Drift av vandrerhjem og ferieleiligheter",
           "kode": "55.200"
@@ -2476,7 +2405,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-10-05T08:55:04.268887Z",
+      "retrieved_at": "2026-11-16T15:41:11.386276Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2593,18 +2522,18 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+      "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-10-05T08:55:12.864154Z",
+      "retrieved_at": "2026-11-16T15:41:20.591708Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
       "source_url": "https://jonnbu.no/",
       "status": "available",
       "value": {
-        "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
         "crawl_errors": [],
         "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
         "discovered_social_links": [
@@ -2640,13 +2569,13 @@
         "main_text_excerpt": "Ein samlingsstad i vakker fjellnatur\nJønnbu Fjellkyrkje ligg idyllisk til på Lifjell og er ein perfekt stad for leirskule, kurs, samlingar og overnatting. Her kombinerer du gode fasilitetar med ro, natur og aktivitetar rett utanfor døra.\nOvernatting på fjellet\nJønnbu kan leigast til opphald for større og mindre grupper. Enten det er slektstreff, fotballaget, skulekorpset eller ei skuleklasse på tur, ligg alt til rette for eit triveleg opphald. De bur i enkle fleirsengsrom, med gode fellesareal der heile gruppa kan samlast til måltid og aktivitetar. Her er det kort veg til naturopplevingar og gode dagar ute.",
         "pages": [
           {
-            "content_sha256": "ae45405b21ede0195f1ed4c7e21b1a61ce05deedb2c39664b6a5c4bfc1d1772b",
+            "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
             "main_text_excerpt": "Ein samlingsstad i vakker fjellnatur\nJønnbu Fjellkyrkje ligg idyllisk til på Lifjell og er ein perfekt stad for leirskule, kurs, samlingar og overnatting. Her kombinerer du gode fasilitetar med ro, natur og aktivitetar rett utanfor døra.\nOvernatting på fjellet\nJønnbu kan leigast til opphald for større og mindre grupper. Enten det er slektstreff, fotballaget, skulekorpset eller ei skuleklasse på tur, ligg alt til rette for eit triveleg opphald. De bur i enkle fleirsengsrom, med gode fellesareal der heile gruppa kan samlast til måltid og aktivitetar. Her er det kort veg til naturopplevingar og gode dagar ute.",
             "title": "Jønnbu Fjellkyrkje - Visit Bø",
             "url": "https://jonnbu.no/"
           },
           {
-            "content_sha256": "a1d4e963a6992c69e360acaa9a05366e1c249e36f323dc0fbb955b96bcfe97c4",
+            "content_sha256": "19e7f2091187ff83778bca476b8194db0781574ebe541e1d410ccfe379f915bd",
             "main_text_excerpt": "Kontakt Oss\nLifjellvegen 666, 3804 Bø i Telemark\npost@jonnbu.no\n405 42 514\nHar du spørsmål?\nTa kontakt for å bestille eller om du har andre spørsmål!\nDaglig leder\nMads Dybro",
             "title": "Kontakt Oss - Jønnbu Fjellkyrkje",
             "url": "https://jonnbu.no/kontakt/"
@@ -2681,69 +2610,300 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-e818538c64c5c6bf352d29fa",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_domain_unique",
+            "domain": "jonnbu.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-16",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-970273387-5025b2531a12de4e",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 2,
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        }
+      },
+      {
+        "id": "registry-site-970273387-5025b2531a12de4e",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "jonnbu.no",
+            "matched_organisation_number": "970273387",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-11-16T15:18:00.649157Z",
+            "explanation": "BRREG declares jonnbu.no as the website of organisation 970273387; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+        "metrics": {
+          "title": "Jønnbu Fjellkyrkje - Visit Bø",
+          "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+          "registry_domain": "jonnbu.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "970273387",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/970273387",
+        "retrieved_at": "2026-11-16T16:37:48.560910Z",
+        "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "970273387"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+            "matched_organisation_number": "970273387"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+        "id": "purehelp-email-970273387-bc137e827a6c4372",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@jonnbu.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "970273387",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/970273387",
+        "retrieved_at": "2026-11-16T16:37:48.560910Z",
+        "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "970273387"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+            "matched_organisation_number": "970273387"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+        "id": "purehelp-phone-970273387-bc137e827a6c4372",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "35 95 33 84",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "970273387",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/970273387",
+        "retrieved_at": "2026-11-16T16:37:48.560910Z",
+        "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "970273387"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+            "matched_organisation_number": "970273387"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+        "id": "purehelp-profile-970273387-bc137e827a6c4372",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "STI",
+          "legal_form_description": "Foundation",
+          "nace_code": "55.200",
+          "nace_description": "Holiday and other short-stay accommodation",
+          "town": "BØ I TELEMARK",
+          "zipcode": "3804",
+          "municipality": "MIDT-TELEMARK",
+          "municipality_number": "4020",
+          "county": "Telemark",
+          "registration_date": "1997-06-05",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1997-06-05",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.jonnbu.no"
+        }
+      },
+      {
+        "organisation_number": "970273387",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/970273387",
+        "retrieved_at": "2026-11-16T16:37:48.560910Z",
+        "content_sha256": "0a3d390b1b13b7483a3bc708f2a239d9608634fa5a9127d94c2a411a45a3dd83",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "970273387"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+            "matched_organisation_number": "970273387"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-970273387.orgNumber=970273387;name=STIFTELSEN JØNNBU FJELLKYRKJE OG UNGDOMSSENTER",
+        "id": "purehelp-workforce-970273387-bc137e827a6c4372",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 0,
+          "as_of": "2026-11-16",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "brreg-kunngjoring-443c38c9de60ee0cdce0cd0b",
         "organisation_number": "970273387",
         "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-09-29T10:21:37.641120Z",
-        "content_sha256": "1345d191246d83267df91f34d3fe5e0baf61dd9dcd3b9b11a5aa9e3cdf95b389",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:04Z",
+        "content_sha256": "ceb88556a0287606ec2996439cfa5747bf0d77c18b8c0e0ee65407b4c0b4f2ed",
         "exact_entity": true,
         "identity_proof": [
           {
             "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "970273387",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 7",
-        "metrics": {
-          "workforce_value": 7,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-07-15"
+        "source_class": "official_api",
+        "observed_at": "2026-06-03",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-06-03",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb"
         },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-07-15",
-        "effective_at": "2026-07-15"
+        "evidence_span": "Godkjente årsregnskap — 2026-06-03 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-2c9484dc09c1f22fd3b6601b",
         "organisation_number": "970273387",
-        "retrieved_at": "2026-10-02T19:17:05.994104Z",
-        "content_sha256": "55b684a6454e2abd4da4132da46eaf78bea683389d9aaa8ca80f63ede3b54dd3",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:04Z",
+        "content_sha256": "496c730dd797d852bfb8e9d023cbd679e432b2e098393449a55e16d166699033",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_wikidata",
-            "source": "wikidata.org",
-            "source_class": "open_knowledge_base",
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "970273387",
-            "explanation": "Wikidata entity Q127060368 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "public_mention",
-        "strategy": "wikidata_p2333_orgnr_match",
-        "id": "wikidata-970273387",
-        "platform": "wikidata",
-        "signal_type": "company_profile",
-        "source_url": "https://www.wikidata.org/wiki/Q127060368",
-        "evidence_span": "P2333 = 970273387 on Q127060368 (Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter)",
-        "metrics": {
-          "qid": "Q127060368",
-          "label": "Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter",
-          "values": {
-            "wikidata.website": "https://www.jonnbu.no",
-            "wikidata.inception": "2006-10-13",
-            "wikidata.employees": null
+        "source_class": "official_api",
+        "observed_at": "2025-07-01",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-01",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-01 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-1509b7962f3053d342ae5230",
+        "organisation_number": "970273387",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:04Z",
+        "content_sha256": "cf4c2f530d81e9c1b814fe7d01ed0ec1ca5bddad1d89ba48ccab2561f11b36df",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "970273387",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
-        }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2024-06-11",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-06-11",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-06-11 (BRREG official announcement)"
       },
       {
         "id": "registry-contact-808d48da9db7402c57c7031e",
@@ -2751,8 +2911,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2779,8 +2939,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2807,8 +2967,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2831,10 +2991,35 @@
       },
       {
         "organisation_number": "970273387",
+        "platform": "company_site",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-d4eda7b9d4c6e22f9018e883",
+        "signal_type": "website_description",
+        "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "970273387",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=970273387&size=1000",
-        "retrieved_at": "2026-10-05T08:55:05.775351Z",
-        "content_sha256": "334ba101569462f33cfcc3cc1d060471dc95c0cf3c190c12b42944f9f8aab2d4",
+        "retrieved_at": "2026-11-16T15:41:13.322636Z",
+        "content_sha256": "f442fdf2136221cb6a259302cc98cb4c00ceebef01eeb425556a720a1cafa8dd",
         "exact_entity": true,
         "acquisition_mode": "official_api",
         "rights_status": "approved",
@@ -2858,12 +3043,322 @@
         }
       },
       {
+        "id": "sitemap-page-a0d8f6730116f9ca43ba7d3d",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-06-25",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/ last modified 2026-06-25",
+        "metrics": {
+          "page_url": "https://jonnbu.no/",
+          "lastmod": "2026-06-25",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-88044418269755c00603e2c4",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-06-25",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/kontakt/ last modified 2026-06-25",
+        "metrics": {
+          "page_url": "https://jonnbu.no/kontakt/",
+          "lastmod": "2026-06-25",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-a63286328775d38e488d3b8d",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-06-25",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/overnatting/ last modified 2026-06-25",
+        "metrics": {
+          "page_url": "https://jonnbu.no/overnatting/",
+          "lastmod": "2026-06-25",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-098b36228045a2b606d8c9c5",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-06-25",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/leirskule/ last modified 2026-06-25",
+        "metrics": {
+          "page_url": "https://jonnbu.no/leirskule/",
+          "lastmod": "2026-06-25",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-dea368ab647b42998b24c289",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-06-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/aktivitetar/ last modified 2026-06-19",
+        "metrics": {
+          "page_url": "https://jonnbu.no/aktivitetar/",
+          "lastmod": "2026-06-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-46023bece3bac9b619a8cd6c",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-03-26",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/?page_id=4224 last modified 2026-03-26",
+        "metrics": {
+          "page_url": "https://jonnbu.no/?page_id=4224",
+          "lastmod": "2026-03-26",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-160ad255f715673e6927ca3e",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-03-26",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/nyheter/ last modified 2026-03-26",
+        "metrics": {
+          "page_url": "https://jonnbu.no/blog/aktuelt/nyheter/",
+          "lastmod": "2026-03-26",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-7170251aa8ebe6e8e7a507eb",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-03-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/vinter/ last modified 2026-03-19",
+        "metrics": {
+          "page_url": "https://jonnbu.no/vinter/",
+          "lastmod": "2026-03-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-06538f695174f212c4607122",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-03-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/vinterferie-lifjell/ last modified 2026-03-19",
+        "metrics": {
+          "page_url": "https://jonnbu.no/vinterferie-lifjell/",
+          "lastmod": "2026-03-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-04d0414525120aa5a259d4d0",
+        "organisation_number": "970273387",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://jonnbu.no/",
+        "retrieved_at": "2026-11-16T15:41:20.591708Z",
+        "content_sha256": "5025b2531a12de4e62169a2019fc181b260ab8bf113c3188980a3c6c86ea4859",
+        "observed_at": "2026-03-19",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell last modified 2026-03-19",
+        "metrics": {
+          "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell",
+          "lastmod": "2026-03-19",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "registry-update-9c858699e958363a7dbd954f",
+        "organisation_number": "970273387",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "content_sha256": "9c858699e958363a7dbd954f089f87fe942adf2e6aca916ea261a690b6781240",
+        "observed_at": "2026-11-12",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "970273387",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-11-12: Endring",
+        "metrics": {
+          "date": "2026-11-12",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
         "id": "registry-update-d4c44e39d7ef027ab8c148b5",
         "organisation_number": "970273387",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "d4c44e39d7ef027ab8c148b532e5f822b40977f5aa1bc92642731fe722ae1e50",
         "observed_at": "2026-10-13",
         "exact_entity": true,
@@ -2893,7 +3388,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6813751e7cd12b7c02d2d33f96252e144c303d71e158a93d0be4f9ed2a2f866b",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -2923,7 +3418,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c7b61a7e6ec23f386b83e506c0ceb2dc6b402e46d2853e64d5641aa3a892c783",
         "observed_at": "2026-06-03",
         "exact_entity": true,
@@ -2953,7 +3448,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "d5ac803f8e913239fec7f401da85ce5ffb4b99bcf643ef87b7b87d322656b701",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2983,7 +3478,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6adac9fafd87b0c4d3f459821d2950054ad6b9341fa90ead034cc5bda0e0d7c4",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3013,7 +3508,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "78a7b48311614d32ca2947bd308f08f9ae79296f773bbe0cbc7a5b817c216a35",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3043,7 +3538,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3e41e4a3ce392cdd5817cc2375b3b885960e78b911fefc8217767a5f5bfbf644",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -3073,7 +3568,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "cd0bf5d7c187a39d05fec0c08cb45e8a362860a64eda49248adba9eaafdab70b",
         "observed_at": "2025-07-01",
         "exact_entity": true,
@@ -3103,7 +3598,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "e7a738a812f73d3f8e525510da78d278672d8a8c5d430b0d71b8086acf1dabc1",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -3133,7 +3628,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "fc319e375160916e0caa8ca5fb7967abdce4db0d701fd08939952d3bf62b2498",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -3163,7 +3658,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c9a6fbc8a40acd8fff26e5c795f74c4e8efa510a3ebc63fc28eb46f90534ae1d",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -3193,7 +3688,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "a19ba6623c8b47c487db74debb75c7a326c2d3be98f746c25e6a49293cdc28a4",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -3223,7 +3718,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "1cf842b1a90c8dc04e0a79bed9dfd72864baf88aa45bc76a090d2578dd6afde6",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3253,7 +3748,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6243652959dff91e2019b5c4042191ca15178ad7da7e1adae437255272f36192",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -3283,7 +3778,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c039cd803196932a02e30dd03965c6bb0b0bb0d341b152a6818e295fb4278a07",
         "observed_at": "2023-06-13",
         "exact_entity": true,
@@ -3313,7 +3808,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "de2e50f6069a037dc2577e66f10af7431ca62365da774f5eef8674f929dab6a5",
         "observed_at": "2023-06-12",
         "exact_entity": true,
@@ -3343,7 +3838,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "2a10fe1e36e750664cbf1b20fecf3adbf5cf0f37f359140c54b49a6725e82b98",
         "observed_at": "2023-05-13",
         "exact_entity": true,
@@ -3373,7 +3868,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6e9f4a98942732894a7502ab916cce7910a3b3bfb623df2e16c72c1e39e8d74f",
         "observed_at": "2023-03-21",
         "exact_entity": true,
@@ -3403,7 +3898,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/970273387",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "65d41bbf01605e8630f1f45fe8eb88bcfd53e54fca6839fac32ff67fa9878359",
         "observed_at": "2023-03-15",
         "exact_entity": true,
@@ -3428,606 +3923,39 @@
         "strategy": "registry_updates_feed"
       },
       {
-        "id": "brreg-kunngjoring-443c38c9de60ee0cdce0cd0b",
         "organisation_number": "970273387",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "ceb88556a0287606ec2996439cfa5747bf0d77c18b8c0e0ee65407b4c0b4f2ed",
+        "retrieved_at": "2026-11-16T14:54:57.864149Z",
+        "content_sha256": "55b684a6454e2abd4da4132da46eaf78bea683389d9aaa8ca80f63ede3b54dd3",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
+            "type": "organisation_number_on_wikidata",
+            "source": "wikidata.org",
+            "source_class": "open_knowledge_base",
             "matched_organisation_number": "970273387",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            "explanation": "Wikidata entity Q127060368 carries property P2333 (Norwegian organisation number) equal to the profile organisation number; no name matching involved."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-06-03",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-06-03",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000344831&amp;sokeverdi=970273387&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-06-03 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-2c9484dc09c1f22fd3b6601b",
-        "organisation_number": "970273387",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "496c730dd797d852bfb8e9d023cbd679e432b2e098393449a55e16d166699033",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "970273387",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-07-01",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2025-07-01",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000511942&amp;sokeverdi=970273387&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2025-07-01 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-1509b7962f3053d342ae5230",
-        "organisation_number": "970273387",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "cf4c2f530d81e9c1b814fe7d01ed0ec1ca5bddad1d89ba48ccab2561f11b36df",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "970273387",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2024-06-11",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2024-06-11",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000532218&amp;sokeverdi=970273387&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2024-06-11 (BRREG official announcement)"
-      },
-      {
-        "id": "registry-site-970273387-1fb67f3dfa65f188",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "jonnbu.no",
-            "matched_organisation_number": "970273387",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-09-29T10:02:25.550213Z",
-            "explanation": "BRREG declares jonnbu.no as the website of organisation 970273387; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
+        "source_class": "public_mention",
+        "strategy": "wikidata_p2333_orgnr_match",
+        "id": "wikidata-970273387",
+        "platform": "wikidata",
+        "signal_type": "company_profile",
+        "source_url": "https://www.wikidata.org/wiki/Q127060368",
+        "evidence_span": "P2333 = 970273387 on Q127060368 (Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter)",
         "metrics": {
-          "title": "Jønnbu Fjellkyrkje - Visit Bø",
-          "description": "Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
-          "registry_domain": "jonnbu.no"
-        },
-        "strategy": "registry_declared_website_description"
-      },
-      {
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_domain_unique",
-            "domain": "jonnbu.no",
-            "register_field": "hjemmeside",
-            "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-06",
-            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
-          },
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+          "qid": "Q127060368",
+          "label": "Stiftelsen Jønnbu Fjellkyrkje Og Ungdomssenter",
+          "values": {
+            "wikidata.website": "https://www.jonnbu.no",
+            "wikidata.inception": "2006-10-13",
+            "wikidata.employees": null
           }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-970273387-1fb67f3dfa65f188",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 2 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 2,
-          "verified_social_links": 0,
-          "structured_organisation_records": 0,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         }
-      },
-      {
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-d4eda7b9d4c6e22f9018e883",
-        "signal_type": "website_description",
-        "evidence_span": "Jønnbu Fjellkyrkje - Visit Bø — Unik leirstad og fjellkyrkje på Lifjell med utleige for grupper, overnatting, sjølhushald/fullpensjon og historisk atmosfære i vakker Telemark-natur.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
-      },
-      {
-        "id": "sitemap-page-a0d8f6730116f9ca43ba7d3d",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-06-25",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/ last modified 2026-06-25",
-        "metrics": {
-          "page_url": "https://jonnbu.no/",
-          "lastmod": "2026-06-25",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-88044418269755c00603e2c4",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-06-25",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/kontakt/ last modified 2026-06-25",
-        "metrics": {
-          "page_url": "https://jonnbu.no/kontakt/",
-          "lastmod": "2026-06-25",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-a63286328775d38e488d3b8d",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-06-25",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/overnatting/ last modified 2026-06-25",
-        "metrics": {
-          "page_url": "https://jonnbu.no/overnatting/",
-          "lastmod": "2026-06-25",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-098b36228045a2b606d8c9c5",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-06-25",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/leirskule/ last modified 2026-06-25",
-        "metrics": {
-          "page_url": "https://jonnbu.no/leirskule/",
-          "lastmod": "2026-06-25",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-dea368ab647b42998b24c289",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-06-19",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/aktivitetar/ last modified 2026-06-19",
-        "metrics": {
-          "page_url": "https://jonnbu.no/aktivitetar/",
-          "lastmod": "2026-06-19",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-46023bece3bac9b619a8cd6c",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-26",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/?page_id=4224 last modified 2026-03-26",
-        "metrics": {
-          "page_url": "https://jonnbu.no/?page_id=4224",
-          "lastmod": "2026-03-26",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-160ad255f715673e6927ca3e",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-26",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/nyheter/ last modified 2026-03-26",
-        "metrics": {
-          "page_url": "https://jonnbu.no/blog/aktuelt/nyheter/",
-          "lastmod": "2026-03-26",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-7170251aa8ebe6e8e7a507eb",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-19",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/vinter/ last modified 2026-03-19",
-        "metrics": {
-          "page_url": "https://jonnbu.no/vinter/",
-          "lastmod": "2026-03-19",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-06538f695174f212c4607122",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-19",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/vinterferie-lifjell/ last modified 2026-03-19",
-        "metrics": {
-          "page_url": "https://jonnbu.no/vinterferie-lifjell/",
-          "lastmod": "2026-03-19",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-04d0414525120aa5a259d4d0",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-19",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell last modified 2026-03-19",
-        "metrics": {
-          "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=lifjell",
-          "lastmod": "2026-03-19",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-1ac3fb4d3851fef4f4cf7b0e",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-19",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/?taxonomy=rl_media_folder&term=telemarkskanalen last modified 2026-03-19",
-        "metrics": {
-          "page_url": "https://jonnbu.no/?taxonomy=rl_media_folder&term=telemarkskanalen",
-          "lastmod": "2026-03-19",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-12368c7d67c76b08b00c6b8c",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2026-03-18",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/demo/ last modified 2026-03-18",
-        "metrics": {
-          "page_url": "https://jonnbu.no/demo/",
-          "lastmod": "2026-03-18",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-4e558da68e1d14998ff5bc19",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2019-03-29",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/overnatting-mal/ last modified 2019-03-29",
-        "metrics": {
-          "page_url": "https://jonnbu.no/overnatting-mal/",
-          "lastmod": "2019-03-29",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-d49639405e052a561e0091d5",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2019-03-29",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/overnatting/bo-hotell/ last modified 2019-03-29",
-        "metrics": {
-          "page_url": "https://jonnbu.no/blog/aktuelt/overnatting/bo-hotell/",
-          "lastmod": "2019-03-29",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-b43cd24cb2150ea39277bc7a",
-        "organisation_number": "970273387",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://jonnbu.no/",
-        "retrieved_at": "2026-09-29T10:21:53.424539Z",
-        "content_sha256": "1fb67f3dfa65f188dcf85b03208344b28dcb331399a9f98076df6be1867029e4",
-        "observed_at": "2019-03-29",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://jonnbu.no/blog/aktuelt/overnatting/ last modified 2019-03-29",
-        "metrics": {
-          "page_url": "https://jonnbu.no/blog/aktuelt/overnatting/",
-          "lastmod": "2019-03-29",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
       }
     ]
   },
-  "generated_at": "2026-11-07T10:54:54.778972+00:00"
+  "generated_at": "2026-11-17T09:30:49.327725+00:00"
 }

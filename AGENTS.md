@@ -73,33 +73,43 @@ repository can reproduce today with `scripts/measure_recall.py`.
 - Recall is measured here, not guessed: six fields, each worth 8.33 of 50.
 
 
-### Our field recalls — measured, 2026-11-15 run (`out/run-fresh-20261115T073743Z/`)
+### Our field recalls — measured, 2026-11-16 run (`out/run-fresh-20261116T144704Z/`)
 | field | recall | points | headroom |
 |---|---|---|---|
-| any_external | 1.000 | 8.33 | 0.00 |
-| two_platforms | 0.994 | 8.28 | 0.05 |
-| workforce_jobs | 0.051 | 0.42 | 7.91 |
-| buzz_engagement | 1.000 | 8.33 | 0.00 |
+| any_external | 0.994 | 8.28 | 0.05 |
+| two_platforms | 0.627 | 5.22 | 3.11 |
+| workforce_jobs | 0.013 | 0.11 | 8.22 |
+| buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **six-field proxy** | | **25.91 / 50** | **24.09** |
+| **six-field proxy** | | **22.43 / 50** | **27.57** |
 
-`workforce_snapshot` (headcount, 0.954) is measured and reported **beside** the
-six fields, not inside the proxy: 954 of 1,000 companies have a headcount figure
-from the register or an annual report, but only **51 have a real job posting**.
-Counting headcount as hiring made this field read 0.954 and the proxy 33.43; the
-reviewer's rule is that a hiring fact needs a role card, a job-feed item or an
-apply action, so the honest field value is 0.051.
+`workforce_snapshot` (headcount, 0.575) is measured and reported **beside** the
+six fields, not inside the proxy: it is a real workforce fact but not evidence
+of hiring. Counting headcount as hiring made that field read 0.954 and the
+proxy 33.43; the reviewer's rule is that a hiring fact needs a role card, a
+job-feed item or an apply action, so the honest field value is 0.013 (13
+companies with a real role card).
+
+Three field definitions were corrected on 16 Nov 2026 because the originals
+were tautologies: `workforce_jobs` counted headcount, `any_external` and
+`two_platforms` counted the register (which every profiled company has), and
+`buzz_engagement` counted Brønnøysund annual-account announcements (which every
+filer has). All three are now defined over something the company has to earn.
+`scripts/evaluate_external_footprint.py` imports the same definitions, so the
+audit report and the recall report cannot print different coverage numbers.
 
 ### Where the remaining points are
-1. **16.1 of the 24.1 remaining points sit in two fields that read the same
+1. **16.1 of the 27.6 remaining points sit in two fields that read the same
    source class** — a ratings/reviews directory. Every keyless ratings source
    was probed on 16 Nov 2026 and is blocked or JavaScript-only; the measurements
    are in `norhound-starter-kit/RECALL_LEVERS.md`.
-2. **`workforce_jobs` has 7.91 left** — the largest honest gap. It needs real
-   role cards. The NAV feed is the only keyless source of adverts and reaches
-   51 companies at a 183-day window.
-3. **`two_platforms` has 0.05 left** — effectively done.
+2. **`workforce_jobs` has 8.22 left** — the largest honest gap. It needs real
+   role cards. NAV's official feed reaches 13 companies and the public ATS
+   boards add 3; a discovered careers-page link is not a role card and is
+   published as `careers_page` only.
+3. **`two_platforms` has 3.11 left** — 367 of the 373 missing companies have
+   only Purehelp, no verified website and no Wikidata item.
 4. **The viewer's sentiment section already exists and works** — every company
    page renders `Sentiment & Reviews` with the rating, the review count, the
    derived label and the source link (measured on 32 companies with a rating).
@@ -185,18 +195,20 @@ All code lives in `norhound-starter-kit/`. Entry points: `select_entry_batch.py`
 5. **Evaluate** — Score labeled entry (publication requires verified exact_entity)
 6. **Deterministic summaries** — Rule-based summaries (no API key)
 
-### Current Coverage (from shipped evaluation)
+### Current Coverage (shipped run `fresh-20261116T144704Z`, measured over sources outside the register)
 ```
-any_external:      0.358  (35.8%)
-two_platforms:     0.175  (17.5%)
-buzz_engagement:   0.352  (35.2%)
-ratings_reviews:   0.015  (1.5%)
-workforce_jobs:    0.036  (3.6%)
-sentiment:         0.000  (0%)  ← FIXED: added customer_review to eligible sources
+any_external:      0.994  (99.4%)
+two_platforms:     0.627  (62.7%)
+buzz_engagement:   0.994  (99.4%)
+workforce_jobs:    0.013  (1.3%)   ← role cards only; careers pages excluded
+workforce_snapshot:0.575  (57.5%)  ← headcount, reported separately
+ratings_reviews:   0.032  (3.2%)
+sentiment:         0.032  (3.2%)
+six-field proxy:  22.43 / 50
 ```
 
 ### Test Status
-- **199 tests pass** (was 135)
+- **559 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
 - All tests in `tests/test_poc.py` and related test files
 
 ---
@@ -216,23 +228,27 @@ sentiment:         0.000  (0%)  ← FIXED: added customer_review to eligible sou
 | **Substructure/Sitemap** | `extract_substructure.py`, `extract_sitemap_pages.py` | `permitted_public_page` | `company_site` | `sitemap_page` | ⚠️ `--keyless` only |
 
 ### NAV Job Feed — High Impact
-- Added **65 official_api job postings** in shipped audit
+- **52 official_api job postings across 13 companies** in the shipped audit
 - Free, official, exact-entity (resolves sub-units to parent enhet)
 - Requires one-time index build (walks 6 months of feed)
 
 ### Wikidata — High Impact
 - ~6 requests per 100 companies
 - Adds `wikidata` + `wikipedia` platforms + social handles as `profile_handle`
-- Boosts `two_platforms` and `buzz_engagement`
+- The index holds only 67 organisations, and **none** of the 367
+  single-source companies are in it, so it cannot close `two_platforms`
 
 ---
 
 ## 🚀 Immediate Coverage Wins (Enable What's Built)
 
+All three of the steps below are **done** and shipped in the
+`fresh-20261116T144704Z` corpus. They are kept here as the reproduction recipe.
+
 ### 1. Enable `--keyless` + NAV in Pipeline
-Edit `scripts/run_external_pipeline.py` to:
-- Add `--keyless` flag to default run
-- Include `nav.jsonl` in observation consolidation
+`scripts/run_external_pipeline.py`:
+- `--keyless` is on by default
+- `nav.jsonl` is part of the observation consolidation
 
 ### 2. One-Time Index Builds
 ```bash
@@ -282,7 +298,7 @@ uv run python scripts/run_external_pipeline.py \
 ### 6. README Updated
 - Step 6 now uses deterministic summaries (no NVIDIA_API_KEY)
 - Removed NIM references; only `FIRECRAWL_API_KEY` optional
-- Test count updated to 199
+- Test count updated to 559
 
 ---
 
@@ -335,11 +351,13 @@ From `https://builderr.ai/starter-briefs/signalpost-sources.md`:
 
 ## 🎯 Next Actions Priority
 
-1. **Patch `run_external_pipeline.py`** to include `--keyless` + NAV jobs by default
-2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs
-3. **Verify coverage improvement** — target ≥21/35 coverage
-4. **Implement deterministic summaries** in submission pipeline (already done)
-5. **Consider Finn.no job connector** for next coverage jump
+Everything below is **done** as of 17 Nov 2026. Kept as the recipe.
+
+1. **Patch `run_external_pipeline.py`** to include `--keyless` + NAV jobs by default — done
+2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261116T144704Z`)
+3. **Verify coverage improvement** — measured: 22.43/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
+4. **Implement deterministic summaries** in submission pipeline — done, 1000/1000
+5. **Finn.no job connector** — **vetoed**: no organisation numbers on the site and its terms of service forbid the use
 
 ---
 
@@ -354,6 +372,10 @@ Email to `submit@builderr.ai` with:
 - Contact details
 - 1,000+ completed profiles + organisation-number manifest
 
+The ready-to-send text is `SUBMISSION_EMAIL.md` at the repository root. It is
+regenerated from the shipped run's measured numbers — do not hand-edit the
+numbers in it, re-run `scripts/promote_run.sh` and copy the new values.
+
 ---
 
 ## ⚠️ Critical Rules (Non-Negotiable)
@@ -366,7 +388,9 @@ Email to `submit@builderr.ai` with:
 - **Return exactly 100 terminal envelopes per daily batch**
 - **Document source rights, secrets, safe URL handling**
 - **Pinned dependencies + reproducible run command**
+- **A careers page is not a job posting** — publish `careers_page`, never `hiring: true`, unless a role card, a job-feed item or an apply action proves it
+- **Headcount is not hiring** — `workforce_snapshot` is measured beside the six fields, never inside them
 
 ---
 
-*Last updated: 23 Sep 2026 — Context compiled from official_review.md, report.md, builderr.ai challenge page, and repository state*
+*Last updated: 17 Nov 2026 — Context compiled from official_review.md, report.md, builderr.ai challenge page, the 2026-11-16 fresh run and repository state*

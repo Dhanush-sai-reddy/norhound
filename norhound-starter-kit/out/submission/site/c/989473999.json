@@ -1,7 +1,7 @@
 {
   "profile": {
     "bankrupt": false,
-    "employees": 6,
+    "employees": null,
     "evidence": {
       "accounting_obligation": {
         "as_of": "2024-08-09",
@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-10-05T08:35:05.539647Z",
+        "retrieved_at": "2026-11-16T15:19:03.641044Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "989473999",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-10-05T09:10:24.823447Z",
+        "retrieved_at": "2026-11-16T15:57:49.487966Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-10-05T09:10:24.111432Z",
+        "retrieved_at": "2026-11-16T15:57:44.478549Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-10-05T09:10:26.243108Z",
+        "retrieved_at": "2026-11-16T15:57:51.415020Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -198,11 +198,11 @@
       },
       "locations": {
         "as_of": null,
-        "content_sha256": "299c847bd9be3c9ddf46513e4f5db34a424e8a1e2eca9adc8bd54f85a9f088b4",
+        "content_sha256": "28e78553f53a1721cf672731401cb11133e449692d4b5afc3a9c4e7768aa4cd9",
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-10-05T09:10:26.988299Z",
+        "retrieved_at": "2026-11-16T15:57:52.389009Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -222,7 +222,7 @@
                 "postnummer": "4365",
                 "poststed": "NÆRBØ"
               },
-              "employees": 6,
+              "employees": null,
               "industry": {
                 "beskrivelse": "Utleie av egen eller leid fast eiendom",
                 "kode": "68.200"
@@ -235,116 +235,88 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "989473999",
         "source_type": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
         "status": "available",
         "value": {
-          "aktivitet": "Å planlegge, bygge og drifte ny idrettshall og ny ishall, samt drive utleie av disse.  ",
-          "antallAnsatte": "6",
+          "aktivitet": [
+            "Å planlegge, bygge og drifte ny idrettshall og ny ishall, samt drive",
+            "utleie av disse.",
+            " "
+          ],
           "epostadresse": "post@nyeloen.no",
-          "erIKonsern": "false",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-          "foretaksformIHjemlandet.kode": "",
-          "forretningsadresse.adresse": "Torlandsvegen 10",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Torlandsvegen 10"
+          ],
           "forretningsadresse.kommune": "HÅ",
           "forretningsadresse.kommunenummer": "1119",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
           "forretningsadresse.postnummer": "4365",
           "forretningsadresse.poststed": "NÆRBØ",
-          "fravalgRevisjonBeslutningsDato": "",
-          "fravalgRevisjonDato": "",
-          "frivilligMvaRegistrertBeskrivelser": "Utleier av bygg eller anlegg",
-          "harRegistrertAntallAnsatte": "true",
-          "hjelpeenhetskode.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
+          "frivilligMvaRegistrertBeskrivelser": [
+            "Utleier av bygg eller anlegg"
+          ],
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [],
           "hjemmeside": "www.nyeloen.no",
           "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
           "institusjonellSektorkode.kode": "2100",
-          "kapital.antallAksjer": "16800",
-          "kapital.belop": "16800000.00",
-          "kapital.bundet": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innbetalt": "",
+          "kapital.antallAksjer": 16800,
+          "kapital.belop": 16800000.0,
           "kapital.innfortDato": "2010-03-18",
           "kapital.type": "Aksjekapital",
           "kapital.valuta": "NOK",
-          "konkurs": "false",
-          "konkursdato": "",
+          "konkurs": false,
+          "links": [],
           "maalform": "Bokmål",
           "mobil": "4797018042",
           "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
           "naeringskode1.kode": "68.200",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode2.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "naeringskode3.kode": "",
           "navn": "NYE LOEN AS",
           "organisasjonsform.beskrivelse": "Aksjeselskap",
           "organisasjonsform.kode": "AS",
+          "organisasjonsform.links": [],
           "organisasjonsnummer": "989473999",
-          "overordnetEnhet": "",
-          "paategninger": "false",
-          "postadresse.adresse": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
-          "postadresse.postnummer": "",
-          "postadresse.poststed": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-07-15",
+          "paategninger": [],
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-12",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+          "registreringsdatoEnhetsregisteret": "2006-02-16",
           "registreringsdatoForetaksregisteret": "2006-02-16",
           "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2021-03-06",
-          "registreringsdatoFrivillighetsregisteret": "",
           "registreringsdatoMerverdiavgiftsregisteret": "2007-09-01",
           "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2007-11-01",
-          "registreringsdatoPartiregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-07-10",
-          "registreringsdatoenhetsregisteret": "2006-02-16",
-          "registreringsnummerIHjemlandet": "",
-          "registrertIForetaksregisteret": "true",
-          "registrertIFrivillighetsregisteret": "false",
-          "registrertIMvaRegisteret": "true",
-          "registrertIPartiregisteret": "false",
-          "registrertIStiftelsesregisteret": "false",
+          "registrertIForetaksregisteret": true,
+          "registrertIFrivillighetsregisteret": false,
+          "registrertIMvaregisteret": true,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": false,
+          "respons_klasse": "Enhet",
           "sisteInnsendteAarsregnskap": "2025",
           "stiftelsesdato": "2006-01-23",
-          "telefon": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
-          "underRekonstruksjonsforhandlingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
-          "underlagtLovgivningLand": "",
-          "underlagtLovgivningLandKode": "",
-          "utenlandskRegisterAdresse.adresse": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterNavn": "",
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false,
           "vedtektsdato": "2009-12-22",
-          "vedtektsfestetFormaal": "Drive idrettsanlegg på Nærbø i Hå kommune."
+          "vedtektsfestetFormaal": [
+            "Drive idrettsanlegg på Nærbø i Hå kommune."
+          ]
         }
       },
       "registry_live": {
         "as_of": null,
-        "content_sha256": "353bd3ddd9549c3e89fb51c7d6437082c827213a76933a5aeac95f5fa5f11957",
+        "content_sha256": "074c605313c80ba0e3af06847a5d7e4394978b09dfd88499e63f94e060742a9b",
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-10-05T09:10:23.344685Z",
+        "retrieved_at": "2026-11-16T15:57:43.513365Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -363,7 +335,7 @@
             "postnummer": "4365",
             "poststed": "NÆRBØ"
           },
-          "employees": 6,
+          "employees": null,
           "industry": {
             "beskrivelse": "Utleie av egen eller leid fast eiendom",
             "kode": "68.200"
@@ -383,7 +355,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-10-05T09:10:25.517961Z",
+        "retrieved_at": "2026-11-16T15:57:50.444071Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -484,7 +456,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Hostname did not resolve",
-        "retrieved_at": "2026-10-05T09:10:26.991739Z",
+        "retrieved_at": "2026-11-16T15:57:54.431173Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -494,36 +466,201 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-d1804b589b78a2fc76d66512",
+          "organisation_number": "989473999",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/989473999",
+          "retrieved_at": "2026-11-16T16:38:42.005712Z",
+          "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "989473999"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NYE LOEN AS",
+              "matched_organisation_number": "989473999"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+          "id": "purehelp-email-989473999-668e9f1a4d1c8318",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@nyeloen.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "989473999",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/989473999",
+          "retrieved_at": "2026-11-16T16:38:42.005712Z",
+          "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "989473999"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NYE LOEN AS",
+              "matched_organisation_number": "989473999"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+          "id": "purehelp-profile-989473999-668e9f1a4d1c8318",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "68.200",
+            "nace_description": "Renting and operating of own or leased real estate",
+            "town": "NÆRBØ",
+            "zipcode": "4365",
+            "municipality": "HÅ",
+            "municipality_number": "1119",
+            "county": "Rogaland",
+            "registration_date": "2006-02-16",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2006-02-16",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.nyeloen.no"
+          }
+        },
+        {
+          "organisation_number": "989473999",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/989473999",
+          "retrieved_at": "2026-11-16T16:38:42.005712Z",
+          "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "989473999"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "NYE LOEN AS",
+              "matched_organisation_number": "989473999"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+          "id": "purehelp-workforce-989473999-668e9f1a4d1c8318",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 0,
+            "as_of": "2026-11-16",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "brreg-kunngjoring-953082730b6e2ccd98c7f03a",
           "organisation_number": "989473999",
           "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-09-29T10:36:51.658558Z",
-          "content_sha256": "353bd3ddd9549c3e89fb51c7d6437082c827213a76933a5aeac95f5fa5f11957",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:19:10Z",
+          "content_sha256": "24f560c4b1cef4ebbec7fdbe66af04d7ec0219a4e1a933d4a45d95d47005258c",
           "exact_entity": true,
           "identity_proof": [
             {
               "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
               "matched_organisation_number": "989473999",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
           "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 6",
-          "metrics": {
-            "workforce_value": 6,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-07-15"
+          "source_class": "official_api",
+          "observed_at": "2026-04-16",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-04-16",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb"
           },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-07-15",
-          "effective_at": "2026-07-15"
+          "evidence_span": "Godkjente årsregnskap — 2026-04-16 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-1670d6e2def395e61a7e4299",
+          "organisation_number": "989473999",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:19:10Z",
+          "content_sha256": "01f8d14b658819f53b799299d2a0a1ffcbb759cddb3e5542669d9beb467dabae",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "989473999",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-07-02",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-07-02",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-07-02 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-ff43908a023797b4e15155dd",
+          "organisation_number": "989473999",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:19:10Z",
+          "content_sha256": "a299ab2518d645344778a688088abfefbeb67211714adf50b0b84d71ea46d7cb",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "989473999",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2025-02-15",
+          "signal": {
+            "title": "Styre",
+            "date": "2025-02-15",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb"
+          },
+          "evidence_span": "Styre — 2025-02-15 (BRREG official announcement)"
         },
         {
           "id": "registry-contact-9da058661500560c73536d2d",
@@ -531,8 +668,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -559,8 +696,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -585,8 +722,8 @@
           "organisation_number": "989473999",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989473999&size=1000",
-          "retrieved_at": "2026-10-05T09:10:26.988299Z",
-          "content_sha256": "299c847bd9be3c9ddf46513e4f5db34a424e8a1e2eca9adc8bd54f85a9f088b4",
+          "retrieved_at": "2026-11-16T15:57:52.389009Z",
+          "content_sha256": "28e78553f53a1721cf672731401cb11133e449692d4b5afc3a9c4e7768aa4cd9",
           "exact_entity": true,
           "acquisition_mode": "official_api",
           "rights_status": "approved",
@@ -610,12 +747,42 @@
           }
         },
         {
+          "id": "registry-update-a16aee801ebd4d0b7263a06d",
+          "organisation_number": "989473999",
+          "platform": "brreg",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "content_sha256": "a16aee801ebd4d0b7263a06dd84c9d66d97965162b035e4cac602a6d36889e3f",
+          "observed_at": "2026-11-12",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_updates",
+              "matched_organisation_number": "989473999",
+              "explanation": "Update event is keyed by this organisation number in the official feed."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-11-12: Endring",
+          "metrics": {
+            "date": "2026-11-12",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
+        },
+        {
           "id": "registry-update-47c261c9fc0890cc2465b43e",
           "organisation_number": "989473999",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "47c261c9fc0890cc2465b43ec7db843962399e8e963dc6b4e4097ced1c143e94",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -645,7 +812,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "456726edd6f45a2b909434a4188b8edbda1de32c72c0aa12ed3a618c86ab6461",
           "observed_at": "2026-04-16",
           "exact_entity": true,
@@ -675,7 +842,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "a59fe26c0da24a93bc9c4fc88fe4eeebae042df291b89053441ff84164b4d86a",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -705,7 +872,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "2cd827fcc3c1d180335993f932815b5cce5aee49aab9d544d0e74637792eb83e",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -735,7 +902,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "b030890360fe310f5206505ac3104a8c1f13f6d1c267bf7baf63e5790ca79224",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -765,7 +932,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "9dac6ec6b37ad38b0a52bda07378fd839e920ca0529168686723e9f5c47ee86d",
           "observed_at": "2025-07-02",
           "exact_entity": true,
@@ -795,7 +962,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "5447ee9a90bf55b3e5f1d86f710f053381487cc83d3df4fb67251960ef9116f7",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -825,7 +992,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "0963ed6f48ed1bdfea8e14e2e1cf732d85a04beec977ef98e1f57aafc1bdc348",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -855,7 +1022,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "61fadd6d69d19f5912e5227492de1d1e4bce61fa50b5d8a0a8633e8521b7a8d2",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -885,7 +1052,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "d930cf6cc1c694e35841421745cf44cfd87460ef6094b99ff5a5e69eb3b0a0ba",
           "observed_at": "2023-03-30",
           "exact_entity": true,
@@ -915,7 +1082,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "65388d6704fe0b246b95beccb5410a20d30f4e1d11ea499a93f795532f46e0f5",
           "observed_at": "2022-03-16",
           "exact_entity": true,
@@ -945,7 +1112,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6e67c22c0a871c5fe8a11ab73f5c834b04c7f5f47a84e6079ae168ab1d616618",
           "observed_at": "2022-02-24",
           "exact_entity": true,
@@ -975,7 +1142,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "cbf0878954c67f7395b3162c3d3103a5b2711e49f51ec96aa30a52e1417d2118",
           "observed_at": "2021-07-13",
           "exact_entity": true,
@@ -1005,7 +1172,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "057022be3217e949c6635e49aa5b559bb54f99eee6f423a1dad6e1297c31c5d2",
           "observed_at": "2021-03-17",
           "exact_entity": true,
@@ -1035,7 +1202,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "0427ed0ae25d308fe2c43dcaeaca536d04130d45a41433b4b92e5b9e4e751fb6",
           "observed_at": "2021-03-06",
           "exact_entity": true,
@@ -1065,7 +1232,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "481254a9f553ed7e4f2704b301893a7a355bc652a716cc189850ddff6d16bc59",
           "observed_at": "2020-06-27",
           "exact_entity": true,
@@ -1095,7 +1262,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "e820b79e2d9cd7a4c9289f25cd96a881e674b1a26eece6e60989c4fa0813fc1f",
           "observed_at": "2020-06-23",
           "exact_entity": true,
@@ -1125,7 +1292,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "f1b18048201d42420a9531dda3a24387ce3e235240bdd618a4dc55b649ed1e76",
           "observed_at": "2019-10-14",
           "exact_entity": true,
@@ -1148,123 +1315,6 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-4396b5118210cfdebadecc08",
-          "organisation_number": "989473999",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
-          "content_sha256": "4396b5118210cfdebadecc08a9d8d41e4337a557e9bc0862c453391c23ecddda",
-          "observed_at": "2019-07-13",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "989473999",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2019-07-13: Endring",
-          "metrics": {
-            "date": "2019-07-13",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "brreg-kunngjoring-953082730b6e2ccd98c7f03a",
-          "organisation_number": "989473999",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "24f560c4b1cef4ebbec7fdbe66af04d7ec0219a4e1a933d4a45d95d47005258c",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "989473999",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-04-16",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-04-16",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-04-16 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-1670d6e2def395e61a7e4299",
-          "organisation_number": "989473999",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "01f8d14b658819f53b799299d2a0a1ffcbb759cddb3e5542669d9beb467dabae",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "989473999",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-07-02",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2025-07-02",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2025-07-02 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-ff43908a023797b4e15155dd",
-          "organisation_number": "989473999",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "a299ab2518d645344778a688088abfefbeb67211714adf50b0b84d71ea46d7cb",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "989473999",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-02-15",
-          "signal": {
-            "title": "Styre",
-            "date": "2025-02-15",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb"
-          },
-          "evidence_span": "Styre — 2025-02-15 (BRREG official announcement)"
         }
       ]
     },
@@ -1278,14 +1328,14 @@
     "name": "NYE LOEN AS",
     "organisation_number": "989473999",
     "run_metrics": {
-      "bytes": 12043,
+      "bytes": 12007,
       "latencies_ms": [
-        705,
-        766,
-        711,
-        693,
-        724,
-        744
+        937,
+        964,
+        981,
+        955,
+        970,
+        973
       ],
       "requests": 6
     },
@@ -1296,7 +1346,7 @@
     "company_name": "NYE LOEN AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "NYE LOEN AS is a private limited company operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): revenue NOK 4.5m, annual result NOK 322.1k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (+0.2% YoY). Registered employees: 6. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); hiring (no job sources were checked).",
+    "summary": "NYE LOEN AS is a private limited company operating in Utleie av egen eller leid fast eiendom. Latest accounts (2025): revenue NOK 4.5m, annual result NOK 322.1k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (+0.2% YoY). Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1364,19 +1414,11 @@
       },
       {
         "question": "staff",
-        "answer": "Registered employees: 6.",
-        "answerable": true,
-        "status": "confirmed",
-        "confidence": 1.0,
-        "evidence_ids": [
-          "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/989473999/roller",
-          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989473999&size=1000",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/989473999",
-          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/989473999/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
-        ]
+        "answer": "not available",
+        "answerable": false,
+        "status": "unknown",
+        "confidence": 0.0,
+        "evidence_ids": []
       },
       {
         "question": "staff_growth",
@@ -1418,6 +1460,11 @@
         "reason": "no verified company website was established"
       },
       {
+        "field": "employees",
+        "state": "not_available",
+        "reason": "registry returned no employee count"
+      },
+      {
         "field": "hiring",
         "state": "not_available",
         "reason": "no job sources were checked"
@@ -1431,7 +1478,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-10-05T08:35:05.539647Z",
+      "retrieved_at": "2026-11-16T15:19:03.641044Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "989473999",
       "source_type": "official_rule_interpretation",
@@ -1451,7 +1498,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-10-05T09:10:24.823447Z",
+      "retrieved_at": "2026-11-16T15:57:49.487966Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1545,7 +1592,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-10-05T09:10:24.111432Z",
+      "retrieved_at": "2026-11-16T15:57:44.478549Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1610,7 +1657,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-10-05T09:10:26.243108Z",
+      "retrieved_at": "2026-11-16T15:57:51.415020Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1620,11 +1667,11 @@
     },
     "locations": {
       "as_of": null,
-      "content_sha256": "299c847bd9be3c9ddf46513e4f5db34a424e8a1e2eca9adc8bd54f85a9f088b4",
+      "content_sha256": "28e78553f53a1721cf672731401cb11133e449692d4b5afc3a9c4e7768aa4cd9",
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-10-05T09:10:26.988299Z",
+      "retrieved_at": "2026-11-16T15:57:52.389009Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1644,7 +1691,7 @@
               "postnummer": "4365",
               "poststed": "NÆRBØ"
             },
-            "employees": 6,
+            "employees": null,
             "industry": {
               "beskrivelse": "Utleie av egen eller leid fast eiendom",
               "kode": "68.200"
@@ -1657,116 +1704,88 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "989473999",
       "source_type": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
       "status": "available",
       "value": {
-        "aktivitet": "Å planlegge, bygge og drifte ny idrettshall og ny ishall, samt drive utleie av disse.  ",
-        "antallAnsatte": "6",
+        "aktivitet": [
+          "Å planlegge, bygge og drifte ny idrettshall og ny ishall, samt drive",
+          "utleie av disse.",
+          " "
+        ],
         "epostadresse": "post@nyeloen.no",
-        "erIKonsern": "false",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-        "foretaksformIHjemlandet.kode": "",
-        "forretningsadresse.adresse": "Torlandsvegen 10",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Torlandsvegen 10"
+        ],
         "forretningsadresse.kommune": "HÅ",
         "forretningsadresse.kommunenummer": "1119",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
         "forretningsadresse.postnummer": "4365",
         "forretningsadresse.poststed": "NÆRBØ",
-        "fravalgRevisjonBeslutningsDato": "",
-        "fravalgRevisjonDato": "",
-        "frivilligMvaRegistrertBeskrivelser": "Utleier av bygg eller anlegg",
-        "harRegistrertAntallAnsatte": "true",
-        "hjelpeenhetskode.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
+        "frivilligMvaRegistrertBeskrivelser": [
+          "Utleier av bygg eller anlegg"
+        ],
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [],
         "hjemmeside": "www.nyeloen.no",
         "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
         "institusjonellSektorkode.kode": "2100",
-        "kapital.antallAksjer": "16800",
-        "kapital.belop": "16800000.00",
-        "kapital.bundet": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innbetalt": "",
+        "kapital.antallAksjer": 16800,
+        "kapital.belop": 16800000.0,
         "kapital.innfortDato": "2010-03-18",
         "kapital.type": "Aksjekapital",
         "kapital.valuta": "NOK",
-        "konkurs": "false",
-        "konkursdato": "",
+        "konkurs": false,
+        "links": [],
         "maalform": "Bokmål",
         "mobil": "4797018042",
         "naeringskode1.beskrivelse": "Utleie av egen eller leid fast eiendom",
         "naeringskode1.kode": "68.200",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode2.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "naeringskode3.kode": "",
         "navn": "NYE LOEN AS",
         "organisasjonsform.beskrivelse": "Aksjeselskap",
         "organisasjonsform.kode": "AS",
+        "organisasjonsform.links": [],
         "organisasjonsnummer": "989473999",
-        "overordnetEnhet": "",
-        "paategninger": "false",
-        "postadresse.adresse": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
-        "postadresse.postnummer": "",
-        "postadresse.poststed": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-07-15",
+        "paategninger": [],
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-12",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+        "registreringsdatoEnhetsregisteret": "2006-02-16",
         "registreringsdatoForetaksregisteret": "2006-02-16",
         "registreringsdatoFrivilligMerverdiavgiftsregisteret": "2021-03-06",
-        "registreringsdatoFrivillighetsregisteret": "",
         "registreringsdatoMerverdiavgiftsregisteret": "2007-09-01",
         "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2007-11-01",
-        "registreringsdatoPartiregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-07-10",
-        "registreringsdatoenhetsregisteret": "2006-02-16",
-        "registreringsnummerIHjemlandet": "",
-        "registrertIForetaksregisteret": "true",
-        "registrertIFrivillighetsregisteret": "false",
-        "registrertIMvaRegisteret": "true",
-        "registrertIPartiregisteret": "false",
-        "registrertIStiftelsesregisteret": "false",
+        "registrertIForetaksregisteret": true,
+        "registrertIFrivillighetsregisteret": false,
+        "registrertIMvaregisteret": true,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": false,
+        "respons_klasse": "Enhet",
         "sisteInnsendteAarsregnskap": "2025",
         "stiftelsesdato": "2006-01-23",
-        "telefon": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
-        "underRekonstruksjonsforhandlingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
-        "underlagtLovgivningLand": "",
-        "underlagtLovgivningLandKode": "",
-        "utenlandskRegisterAdresse.adresse": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterNavn": "",
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false,
         "vedtektsdato": "2009-12-22",
-        "vedtektsfestetFormaal": "Drive idrettsanlegg på Nærbø i Hå kommune."
+        "vedtektsfestetFormaal": [
+          "Drive idrettsanlegg på Nærbø i Hå kommune."
+        ]
       }
     },
     "registry_live": {
       "as_of": null,
-      "content_sha256": "353bd3ddd9549c3e89fb51c7d6437082c827213a76933a5aeac95f5fa5f11957",
+      "content_sha256": "074c605313c80ba0e3af06847a5d7e4394978b09dfd88499e63f94e060742a9b",
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-10-05T09:10:23.344685Z",
+      "retrieved_at": "2026-11-16T15:57:43.513365Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1785,7 +1804,7 @@
           "postnummer": "4365",
           "poststed": "NÆRBØ"
         },
-        "employees": 6,
+        "employees": null,
         "industry": {
           "beskrivelse": "Utleie av egen eller leid fast eiendom",
           "kode": "68.200"
@@ -1805,7 +1824,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-10-05T09:10:25.517961Z",
+      "retrieved_at": "2026-11-16T15:57:50.444071Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1906,7 +1925,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Hostname did not resolve",
-      "retrieved_at": "2026-10-05T09:10:26.991739Z",
+      "retrieved_at": "2026-11-16T15:57:54.431173Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -1916,36 +1935,201 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-d1804b589b78a2fc76d66512",
+        "organisation_number": "989473999",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/989473999",
+        "retrieved_at": "2026-11-16T16:38:42.005712Z",
+        "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "989473999"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NYE LOEN AS",
+            "matched_organisation_number": "989473999"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+        "id": "purehelp-email-989473999-668e9f1a4d1c8318",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@nyeloen.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "989473999",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/989473999",
+        "retrieved_at": "2026-11-16T16:38:42.005712Z",
+        "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "989473999"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NYE LOEN AS",
+            "matched_organisation_number": "989473999"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+        "id": "purehelp-profile-989473999-668e9f1a4d1c8318",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "68.200",
+          "nace_description": "Renting and operating of own or leased real estate",
+          "town": "NÆRBØ",
+          "zipcode": "4365",
+          "municipality": "HÅ",
+          "municipality_number": "1119",
+          "county": "Rogaland",
+          "registration_date": "2006-02-16",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2006-02-16",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.nyeloen.no"
+        }
+      },
+      {
+        "organisation_number": "989473999",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/989473999",
+        "retrieved_at": "2026-11-16T16:38:42.005712Z",
+        "content_sha256": "f083db4e515f1c36d9a6d17f818fafef3f7112a63c7ea71a60ac0f97feaf457f",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "989473999"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "NYE LOEN AS",
+            "matched_organisation_number": "989473999"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-989473999.orgNumber=989473999;name=NYE LOEN AS",
+        "id": "purehelp-workforce-989473999-668e9f1a4d1c8318",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 0,
+          "as_of": "2026-11-16",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "brreg-kunngjoring-953082730b6e2ccd98c7f03a",
         "organisation_number": "989473999",
         "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-09-29T10:36:51.658558Z",
-        "content_sha256": "353bd3ddd9549c3e89fb51c7d6437082c827213a76933a5aeac95f5fa5f11957",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:19:10Z",
+        "content_sha256": "24f560c4b1cef4ebbec7fdbe66af04d7ec0219a4e1a933d4a45d95d47005258c",
         "exact_entity": true,
         "identity_proof": [
           {
             "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
             "matched_organisation_number": "989473999",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
         "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 6",
-        "metrics": {
-          "workforce_value": 6,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-07-15"
+        "source_class": "official_api",
+        "observed_at": "2026-04-16",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-04-16",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb"
         },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-07-15",
-        "effective_at": "2026-07-15"
+        "evidence_span": "Godkjente årsregnskap — 2026-04-16 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-1670d6e2def395e61a7e4299",
+        "organisation_number": "989473999",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:19:10Z",
+        "content_sha256": "01f8d14b658819f53b799299d2a0a1ffcbb759cddb3e5542669d9beb467dabae",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "989473999",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-07-02",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-07-02",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-07-02 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-ff43908a023797b4e15155dd",
+        "organisation_number": "989473999",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:19:10Z",
+        "content_sha256": "a299ab2518d645344778a688088abfefbeb67211714adf50b0b84d71ea46d7cb",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "989473999",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2025-02-15",
+        "signal": {
+          "title": "Styre",
+          "date": "2025-02-15",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb"
+        },
+        "evidence_span": "Styre — 2025-02-15 (BRREG official announcement)"
       },
       {
         "id": "registry-contact-9da058661500560c73536d2d",
@@ -1953,8 +2137,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1981,8 +2165,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2007,8 +2191,8 @@
         "organisation_number": "989473999",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989473999&size=1000",
-        "retrieved_at": "2026-10-05T09:10:26.988299Z",
-        "content_sha256": "299c847bd9be3c9ddf46513e4f5db34a424e8a1e2eca9adc8bd54f85a9f088b4",
+        "retrieved_at": "2026-11-16T15:57:52.389009Z",
+        "content_sha256": "28e78553f53a1721cf672731401cb11133e449692d4b5afc3a9c4e7768aa4cd9",
         "exact_entity": true,
         "acquisition_mode": "official_api",
         "rights_status": "approved",
@@ -2032,12 +2216,42 @@
         }
       },
       {
+        "id": "registry-update-a16aee801ebd4d0b7263a06d",
+        "organisation_number": "989473999",
+        "platform": "brreg",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "content_sha256": "a16aee801ebd4d0b7263a06dd84c9d66d97965162b035e4cac602a6d36889e3f",
+        "observed_at": "2026-11-12",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_updates",
+            "matched_organisation_number": "989473999",
+            "explanation": "Update event is keyed by this organisation number in the official feed."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-11-12: Endring",
+        "metrics": {
+          "date": "2026-11-12",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
+      },
+      {
         "id": "registry-update-47c261c9fc0890cc2465b43e",
         "organisation_number": "989473999",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "47c261c9fc0890cc2465b43ec7db843962399e8e963dc6b4e4097ced1c143e94",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -2067,7 +2281,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "456726edd6f45a2b909434a4188b8edbda1de32c72c0aa12ed3a618c86ab6461",
         "observed_at": "2026-04-16",
         "exact_entity": true,
@@ -2097,7 +2311,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "a59fe26c0da24a93bc9c4fc88fe4eeebae042df291b89053441ff84164b4d86a",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2127,7 +2341,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "2cd827fcc3c1d180335993f932815b5cce5aee49aab9d544d0e74637792eb83e",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2157,7 +2371,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "b030890360fe310f5206505ac3104a8c1f13f6d1c267bf7baf63e5790ca79224",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -2187,7 +2401,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "9dac6ec6b37ad38b0a52bda07378fd839e920ca0529168686723e9f5c47ee86d",
         "observed_at": "2025-07-02",
         "exact_entity": true,
@@ -2217,7 +2431,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "5447ee9a90bf55b3e5f1d86f710f053381487cc83d3df4fb67251960ef9116f7",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -2247,7 +2461,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "0963ed6f48ed1bdfea8e14e2e1cf732d85a04beec977ef98e1f57aafc1bdc348",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -2277,7 +2491,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "61fadd6d69d19f5912e5227492de1d1e4bce61fa50b5d8a0a8633e8521b7a8d2",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -2307,7 +2521,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "d930cf6cc1c694e35841421745cf44cfd87460ef6094b99ff5a5e69eb3b0a0ba",
         "observed_at": "2023-03-30",
         "exact_entity": true,
@@ -2337,7 +2551,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "65388d6704fe0b246b95beccb5410a20d30f4e1d11ea499a93f795532f46e0f5",
         "observed_at": "2022-03-16",
         "exact_entity": true,
@@ -2367,7 +2581,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6e67c22c0a871c5fe8a11ab73f5c834b04c7f5f47a84e6079ae168ab1d616618",
         "observed_at": "2022-02-24",
         "exact_entity": true,
@@ -2397,7 +2611,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "cbf0878954c67f7395b3162c3d3103a5b2711e49f51ec96aa30a52e1417d2118",
         "observed_at": "2021-07-13",
         "exact_entity": true,
@@ -2427,7 +2641,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "057022be3217e949c6635e49aa5b559bb54f99eee6f423a1dad6e1297c31c5d2",
         "observed_at": "2021-03-17",
         "exact_entity": true,
@@ -2457,7 +2671,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "0427ed0ae25d308fe2c43dcaeaca536d04130d45a41433b4b92e5b9e4e751fb6",
         "observed_at": "2021-03-06",
         "exact_entity": true,
@@ -2487,7 +2701,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "481254a9f553ed7e4f2704b301893a7a355bc652a716cc189850ddff6d16bc59",
         "observed_at": "2020-06-27",
         "exact_entity": true,
@@ -2517,7 +2731,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "e820b79e2d9cd7a4c9289f25cd96a881e674b1a26eece6e60989c4fa0813fc1f",
         "observed_at": "2020-06-23",
         "exact_entity": true,
@@ -2547,7 +2761,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "f1b18048201d42420a9531dda3a24387ce3e235240bdd618a4dc55b649ed1e76",
         "observed_at": "2019-10-14",
         "exact_entity": true,
@@ -2570,125 +2784,8 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-4396b5118210cfdebadecc08",
-        "organisation_number": "989473999",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989473999",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
-        "content_sha256": "4396b5118210cfdebadecc08a9d8d41e4337a557e9bc0862c453391c23ecddda",
-        "observed_at": "2019-07-13",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "989473999",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2019-07-13: Endring",
-        "metrics": {
-          "date": "2019-07-13",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "brreg-kunngjoring-953082730b6e2ccd98c7f03a",
-        "organisation_number": "989473999",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "24f560c4b1cef4ebbec7fdbe66af04d7ec0219a4e1a933d4a45d95d47005258c",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "989473999",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-04-16",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-04-16",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000182594&amp;sokeverdi=989473999&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-04-16 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-1670d6e2def395e61a7e4299",
-        "organisation_number": "989473999",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "01f8d14b658819f53b799299d2a0a1ffcbb759cddb3e5542669d9beb467dabae",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "989473999",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-07-02",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2025-07-02",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000526440&amp;sokeverdi=989473999&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2025-07-02 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-ff43908a023797b4e15155dd",
-        "organisation_number": "989473999",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "a299ab2518d645344778a688088abfefbeb67211714adf50b0b84d71ea46d7cb",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "989473999",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-02-15",
-        "signal": {
-          "title": "Styre",
-          "date": "2025-02-15",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000060886&amp;sokeverdi=989473999&amp;spraak=nb"
-        },
-        "evidence_span": "Styre — 2025-02-15 (BRREG official announcement)"
       }
     ]
   },
-  "generated_at": "2026-11-07T10:55:00.399667+00:00"
+  "generated_at": "2026-11-17T09:30:53.524267+00:00"
 }

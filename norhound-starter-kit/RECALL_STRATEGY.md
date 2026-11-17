@@ -1,6 +1,6 @@
 # Signalpost: Project Analysis & Recall Improvement Strategy
 
-## 📊 Where We Stand (measured 15 Nov 2026)
+## 📊 Where We Stand (measured 17 Nov 2026, run `fresh-20261116T144704Z`)
 
 **No official score has been issued for the current revision.** The only numbers
 below are the ones this repository reproduces itself with
@@ -9,20 +9,29 @@ the graded metric.
 
 | Field | Recall | Points of 50 | Headroom |
 |---|---|---|---|
-| any_external | 1.000 | 8.33 | 0.00 |
-| two_platforms | 0.994 | 8.28 | 0.05 |
-| workforce_jobs | 0.051 | 0.42 | 7.91 |
-| buzz_engagement | 1.000 | 8.33 | 0.00 |
+| any_external | 0.994 | 8.28 | 0.05 |
+| two_platforms | 0.627 | 5.22 | 3.11 |
+| workforce_jobs | 0.013 | 0.11 | 8.22 |
+| buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **Six-field proxy** | | **25.91 / 50** | **24.09** |
+| **Six-field proxy** | | **22.43 / 50** | **27.57** |
 
-Source: `out/run-fresh-20261115T073743Z/measure-final.json`.
+Source: `out/run-fresh-20261116T144704Z/measure-final.json`.
 
-`workforce_snapshot` (headcount: 0.954 of companies) is reported beside these
-six fields and excluded from the proxy. Only **51 of 1,000** companies publish a
-real job posting; counting headcount as hiring is what produced the earlier
-0.954 and the inflated 33.43 headline.
+`workforce_snapshot` (headcount: 0.575 of companies) is reported beside these
+six fields and excluded from the proxy. Only **13 of 1,000** companies have a
+real role card — 13 from NAV's official feed, 3 more from public ATS boards.
+Counting headcount as hiring is what produced the earlier 0.954 and the
+inflated 33.43 headline; counting a discovered careers-page link as a posting
+is what produced 0.051.
+
+Three field definitions were corrected on 16 Nov 2026 because the originals
+were tautologies: `workforce_jobs` counted headcount, `any_external` and
+`two_platforms` counted the register (which every profiled company has), and
+`buzz_engagement` counted Brønnøysund annual-account announcements (which every
+filer has). The headline fell from 25.91 to 22.43 because the coverage it
+claims is now coverage that exists.
 
 > [!IMPORTANT]
 > **Recall is the ONLY real battleground.** Evidence and Synthesis hit the same
@@ -30,15 +39,17 @@ real job posting; counting headcount as hiring is what produced the earlier
 > here (search, per-company pages, compare view, bulk export). The competition
 > comes down to who can find more verified facts about more companies.
 
-### Where the 24.09 remaining points sit
+### Where the 27.57 remaining points sit
 
-1. **16.1 of the 24.1** sit in `ratings_reviews` + `sentiment`, which read the
-   same source class (a ratings/reviews directory). Every keyless ratings source
-   probed on 16 Nov 2026 is blocked or JavaScript-only — measurements in
+1. **16.1** sit in `ratings_reviews` + `sentiment`, which read the same source
+   class (a ratings/reviews directory). Every keyless ratings source probed on
+   16 Nov 2026 is blocked or JavaScript-only — measurements in
    `RECALL_LEVERS.md`.
-2. **7.9** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
-   The NAV feed is the only keyless source of adverts.
-3. **0.05** in `two_platforms` — effectively done.
+2. **8.2** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
+   NAV's official feed and the public ATS boards are the only keyless sources of
+   adverts; Finn.no is excluded (no org numbers, terms of service).
+3. **3.1** in `two_platforms` — 367 of the 373 missing companies have only
+   Purehelp, no verified website and no Wikidata item.
 
 ---
 
@@ -91,35 +102,35 @@ Below is the complete mapping of every single requirement, diagnostic note, and 
 
 ## 📉 Field-by-Field Recall Diagnosis
 
-Measured 15 Nov 2026 (`out/run-fresh-20261115T073743Z/`), six fields, each worth
+Measured 17 Nov 2026 (`out/run-fresh-20261116T144704Z/`), six fields, each worth
 8.33 of 50:
 
 | Field | Recall | Points | Status | Why |
 |-------|--------|--------|--------|-----|
-| `any_external` | **1.000** | 8.33 | ✅ Done | Every company has at least one external fact |
-| `two_platforms` | **0.994** | 8.28 | ✅ Done | 0.05 headroom |
-| `buzz_engagement` | **1.000** | 8.33 | ✅ Done | `public_post` / `profile_metrics` coverage complete |
-| `workforce_jobs` | **0.051** | 0.42 | 🔴 Largest honest gap | 51 of 1,000 companies publish a real job posting; NAV feed is the only keyless advert source |
+| `any_external` | **0.994** | 8.28 | ✅ Done | 994 companies have at least one source outside the register |
+| `two_platforms` | **0.627** | 5.22 | 🟡 Bounded | 367 of the 373 missing companies have only Purehelp — no website, no Wikidata item |
+| `buzz_engagement` | **0.994** | 8.28 | ✅ Done | A third-party profile, mention or post; registry announcements excluded |
+| `workforce_jobs` | **0.013** | 0.11 | 🔴 Largest honest gap | 13 companies have a real role card; NAV's official feed plus public ATS boards are the only keyless advert sources |
 | `ratings_reviews` | **0.032** | 0.27 | 🔴 Capped | Only 32 of 1,000 companies have any rating page |
 | `sentiment` | **0.032** | 0.27 | 🔴 Capped | Same 32 companies; every other ratings directory is blocked or JS-only |
 
 > [!CAUTION]
 > The two capped fields (`ratings_reviews`, `sentiment`) carry **16.1 of the
-> 24.1** remaining points, and they read the same source class. Closing them is
+> 27.6** remaining points, and they read the same source class. Closing them is
 > a source-access problem, not an extraction problem — see `RECALL_LEVERS.md`
-> for the 16 Nov 2026 probe results. The other 7.9 sits in `workforce_jobs`,
+> for the 16 Nov 2026 probe results. The other 8.2 sits in `workforce_jobs`,
 > where the constraint is the number of real adverts the keyless NAV feed holds.
 
 ### How the Recall Score Is Computed
 
 ```
 Recall ≈ mean(any_external, two_platforms, workforce_jobs, ratings_reviews, buzz_engagement, sentiment) × 50
-       ≈ mean(1.000, 0.994, 0.051, 0.032, 1.000, 0.032) × 50
-       ≈ 0.518 × 50
-       ≈ 25.91 six-field proxy
+       ≈ mean(0.994, 0.627, 0.013, 0.032, 0.994, 0.032) × 50
+       ≈ 0.449 × 50
+       ≈ 22.43 six-field proxy
 ```
 
-`workforce_snapshot` (0.954) is reported separately and excluded: headcount is a
+`workforce_snapshot` (0.575) is reported separately and excluded: headcount is a
 workforce fact, but the reviewer's rule is that hiring needs a role card, a
 job-feed item or an apply action.
 

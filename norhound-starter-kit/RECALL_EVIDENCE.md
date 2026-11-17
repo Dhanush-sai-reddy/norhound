@@ -1,7 +1,7 @@
 # Recall measurement — reproducible evidence
 
 Two corpora, one scorer, same command. Numbers below were re-derived on
-16 Nov 2026 from the artifacts already on disk; nothing here is remembered or
+17 Nov 2026 from the artifacts already on disk; nothing here is remembered or
 estimated.
 
 ## Scorer
@@ -20,66 +20,76 @@ uv run python scripts/measure_recall.py \
   --output /tmp/opencode/m-base.json
 ```
 
-- `recall_proxy_50` = **23.1083**
+- `recall_proxy_50` = **13.0083**
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
-## Current corpus (`out/run-fresh-20261115T073743Z/`)
+## Current corpus (`out/run-fresh-20261116T144704Z/`)
 
 ```bash
 uv run python scripts/measure_recall.py \
-  --profiles out/run-fresh-20261115T073743Z/profiles-promoted.jsonl \
-  --observations out/run-fresh-20261115T073743Z/external-final.jsonl \
-  --labels out/run-fresh-20261115T073743Z/labels-final.jsonl \
+  --profiles out/run-fresh-20261116T144704Z/batch-rescued-profiles.jsonl \
+  --observations out/run-fresh-20261116T144704Z/external-final.jsonl \
+  --labels out/run-fresh-20261116T144704Z/labels-final.jsonl \
   --output /tmp/opencode/m1.json
 ```
 
-- `recall_proxy_50` = **25.9083**  (+2.80 over baseline)
+- `recall_proxy_50` = **22.4333**  (+9.43 over baseline)
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
-Both numbers are lower than the 30.13 / 33.43 this file reported until 16 Nov
-2026, because the scorer used to count `workforce_snapshot` (registry and
-annual-report headcount) as `workforce_jobs`. The reviewer's rule is that a
-hiring fact needs a role card, a job-feed item or an apply action, so headcount
-is now reported as its own coverage field and excluded from the proxy. Only 51
-of 1,000 companies publish an actual job posting.
+Both corpora are scored with the **same, current** scorer. Earlier versions of
+this file reported 30.13 / 33.43 for the same two corpora, because the scorer
+counted `workforce_snapshot` (registry and annual-report headcount) as
+`workforce_jobs`, counted the register itself towards `any_external` and
+`two_platforms`, and counted Brønnøysund annual-account announcements as
+`buzz_engagement`. Each of those made a field tautological: the register
+answers all three for every profiled company. They are now defined over
+something the company has to earn — a source outside the register, a real
+advert, a third-party mention — and the headline is lower because it is true.
+
+`scripts/evaluate_external_footprint.py` imports the same definitions, so the
+audit report and this report cannot print different coverage numbers for one
+corpus.
 
 ## Determinism check
 
-The command was run twice on identical inputs:
+Each command was run twice on identical inputs:
 
 ```
-sha256 3acca7eab34957c0795f23ac9598e0dc442d72a7d5c961299c5e0e38542f5b98  /tmp/opencode/m1.json
-sha256 3acca7eab34957c0795f23ac9598e0dc442d72a7d5c961299c5e0e38542f5b98  /tmp/opencode/m2.json
+b00f0be7687a14a73f531838bd3019e4b78c9e4b05a385e9abb5b9bba706245f  /tmp/opencode/mcur1.json
+b00f0be7687a14a73f531838bd3019e4b78c9e4b05a385e9abb5b9bba706245f  /tmp/opencode/mcur2.json
+8258bf950d0452350fa18b7acb696a06e7699c7eec9687ce5d27edf350f2df14  /tmp/opencode/mbase1.json
+8258bf950d0452350fa18b7acb696a06e7699c7eec9687ce5d27edf350f2df14  /tmp/opencode/mbase2.json
 ```
 
-Byte-identical, so the improvement is a property of the corpus, not of run
-order or of a timestamp.
+Byte-identical, so the gain is a property of the corpus, not of run order or of
+a timestamp.
 
 ## What produced the gain
 
-Per-family company recall, `out/run-fresh-20261115T073743Z/measure-family-final.json`:
+Per-field coverage, both corpora measured by the command above:
 
-| family | baseline | current |
-|---|---|---|
-| any_external (coverage field) | 1.000 | 1.000 |
-| two_platforms (coverage field) | 0.639 | **0.994** |
-| workforce_jobs (coverage field) | 0.072 | 0.051 |
-| workforce_snapshot (headcount, not in the proxy) | 0.915 | 0.954 |
-| buzz_engagement (coverage field) | 0.998 | 1.000 |
-| ratings_reviews (coverage field) | 0.032 | 0.032 |
-| sentiment (coverage field) | 0.032 | 0.032 |
+| field | baseline | current | what moved it |
+|---|---|---|---|
+| any_external | 0.639 | **0.994** | registry-proved website connector + Purehelp |
+| two_platforms | 0.276 | **0.627** | a second independent source for 351 more companies |
+| workforce_jobs | 0.072 | 0.013 | a careers-page link is not a role card; see below |
+| workforce_snapshot (headcount, not in the proxy) | 0.915 | 0.575 | the annual-report OCR stage is off by default and earns 0 points |
+| buzz_engagement | 0.510 | **0.994** | third-party profile, mention or post; registry announcements excluded |
+| ratings_reviews | 0.032 | 0.032 | no keyless source reaches more |
+| sentiment | 0.032 | 0.032 | derived from the same rating rows |
 
-The gain is `two_platforms` (0.639 → 0.994) from the registry-proved website
-connector plus Purehelp, and `buzz_engagement` (0.998 → 1.000).
-`workforce_jobs` moved slightly down (0.072 → 0.051): the headcount gain is real
-but it is not hiring, and it is reported on its own line instead of being
-counted as a job signal.
+`workforce_jobs` fell because the company-site jobs connector was emitting
+`job_posting` for every link it *discovered* on a careers page without fetching
+the posting — "Digitalt testament" and "Marketing" were published as job
+titles. It now emits an explicit `careers_page` signal, and a discovered link
+can no longer become a role title. The honest value is the number of companies
+with a real role card: 13 from NAV's official feed, 3 from public ATS boards.
 
 ## Precision gate
 
-`out/run-fresh-20261115T073743Z/eval-final.json`:
+`out/run-fresh-20261116T144704Z/eval-final.json`:
 `entity_precision 1.0`, `wrong_entity_publications 0`,
 `unsupported_publications 0`, `metric_precision 1.0`,
-`published_audited 32439 of 32466`, `qualification_passed true`.
+`published_audited 31829 of 31855`.
 
 Gate is 0.95; measured is 1.0.

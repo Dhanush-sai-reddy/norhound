@@ -182,6 +182,21 @@ class HiringTrustTests(unittest.TestCase):
         self.assertIn("hiring_signal", fields)
         self.assertNotIn("job_title", fields)
 
+    def test_a_discovered_careers_link_never_becomes_a_role_title(self):
+        """`jobs_feed_discovery` records a link, not a role card.
+
+        It published "Digitalt testament" and "Marketing" as job titles on the
+        2026-11-15 corpus, so it is no longer a trusted role strategy.
+        """
+        self.assertNotIn("jobs_feed_discovery", emit.ROLE_TRUSTED_STRATEGIES)
+        row = obs(id="c3", signal_type="job_posting", strategy="jobs_feed_discovery",
+                  source_url="https://test.no/din-radgivningspartner/digitalt-testament",
+                  metrics={"job_title": "Digitalt testament", "anchor_text": "Digitalt testament"})
+        claims = emit.external_claims([row], emit.EvidenceBook())
+        fields = {c["field"] for c in claims}
+        self.assertNotIn("job_title", fields)
+        self.assertNotIn("job_postings", fields)
+
 
 class SocialTests(unittest.TestCase):
     def test_profile_handle_becomes_a_host_plus_path_social_fact(self):

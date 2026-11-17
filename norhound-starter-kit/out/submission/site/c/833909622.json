@@ -1,7 +1,7 @@
 {
   "profile": {
     "bankrupt": false,
-    "employees": 11,
+    "employees": 12,
     "evidence": {
       "accounting_obligation": {
         "as_of": "2024-08-09",
@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:33.648312Z",
+        "retrieved_at": "2026-11-16T15:18:43.917911Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "833909622",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-10-05T08:41:12.290486Z",
+        "retrieved_at": "2026-11-16T15:25:50.066477Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -58,7 +58,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-10-05T08:41:11.535527Z",
+        "retrieved_at": "2026-11-16T15:25:44.440866Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -107,7 +107,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-10-05T08:41:13.681104Z",
+        "retrieved_at": "2026-11-16T15:25:51.929223Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -117,11 +117,11 @@
       },
       "locations": {
         "as_of": null,
-        "content_sha256": "bb4a56449419cafe8319e0a1ce2714454ba5d210a31c7eb49f5446bfc055c5f2",
+        "content_sha256": "b4103ac58765222510e51e5e6ce2d6e62eda3aeee5b25ae8b13bc8e5e04d456f",
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-10-05T08:41:14.362569Z",
+        "retrieved_at": "2026-11-16T15:25:52.891937Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -141,7 +141,7 @@
                 "postnummer": "7870",
                 "poststed": "GRONG"
               },
-              "employees": 11,
+              "employees": 12,
               "industry": {
                 "beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
                 "kode": "46.830"
@@ -154,116 +154,95 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "833909622",
         "source_type": "official_registry_bulk",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
         "status": "available",
         "value": {
-          "aktivitet": "Salg av byggevarer. Snekkerarbeid, montering av dører, vinduer, kjøkken med mer.",
-          "antallAnsatte": "11",
+          "aktivitet": [
+            "Salg av byggevarer.",
+            "Snekkerarbeid, montering av dører, vinduer, kjøkken med mer."
+          ],
+          "antallAnsatte": 12,
           "epostadresse": "post@trollbygg.no",
-          "erIKonsern": "false",
-          "foretaksformIHjemlandet.beskrivelse": "",
-          "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-          "foretaksformIHjemlandet.kode": "",
-          "forretningsadresse.adresse": "Mølnarmovegen 54",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Mølnarmovegen 54"
+          ],
           "forretningsadresse.kommune": "GRONG",
           "forretningsadresse.kommunenummer": "5045",
           "forretningsadresse.land": "Norge",
           "forretningsadresse.landkode": "NO",
           "forretningsadresse.postnummer": "7870",
           "forretningsadresse.poststed": "GRONG",
-          "fravalgRevisjonBeslutningsDato": "",
-          "fravalgRevisjonDato": "",
-          "frivilligMvaRegistrertBeskrivelser": "",
-          "harRegistrertAntallAnsatte": "true",
-          "hjelpeenhetskode.beskrivelse": "",
-          "hjelpeenhetskode.kode": "",
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [
+            {
+              "fraDato": "2024-08-12 11:51:34",
+              "navn": "AFAS 060824-14 AS",
+              "tilDato": "2024-08-28 13:37:51"
+            },
+            {
+              "fraDato": "2024-08-28 13:37:51",
+              "navn": "BYGGMAN AS",
+              "tilDato": "2025-08-04 13:33:18"
+            }
+          ],
           "hjemmeside": "trollbygg.no",
           "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
           "institusjonellSektorkode.kode": "2100",
-          "kapital.antallAksjer": "75000",
-          "kapital.belop": "750000.00",
-          "kapital.bundet": "",
-          "kapital.fulltInnbetalt": "",
-          "kapital.innbetalt": "",
+          "kapital.antallAksjer": 75000,
+          "kapital.belop": 750000.0,
           "kapital.innfortDato": "2025-04-22",
           "kapital.type": "Aksjekapital",
           "kapital.valuta": "NOK",
-          "konkurs": "false",
-          "konkursdato": "",
+          "konkurs": false,
+          "links": [],
           "maalform": "Bokmål",
           "mobil": "40054040",
           "naeringskode1.beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
           "naeringskode1.kode": "46.830",
-          "naeringskode2.beskrivelse": "",
-          "naeringskode2.kode": "",
-          "naeringskode3.beskrivelse": "",
-          "naeringskode3.kode": "",
           "navn": "TROLLBYGG AS",
           "organisasjonsform.beskrivelse": "Aksjeselskap",
           "organisasjonsform.kode": "AS",
+          "organisasjonsform.links": [],
           "organisasjonsnummer": "833909622",
-          "overordnetEnhet": "",
-          "paategninger": "false",
-          "postadresse.adresse": "",
-          "postadresse.kommune": "",
-          "postadresse.kommunenummer": "",
-          "postadresse.land": "",
-          "postadresse.landkode": "",
-          "postadresse.postnummer": "",
-          "postadresse.poststed": "",
-          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-08-12",
+          "paategninger": [],
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-10-13",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-10-10",
+          "registreringsdatoEnhetsregisteret": "2024-08-12",
           "registreringsdatoForetaksregisteret": "2024-08-12",
-          "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-          "registreringsdatoFrivillighetsregisteret": "",
           "registreringsdatoMerverdiavgiftsregisteret": "2024-09-18",
           "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-09-18",
-          "registreringsdatoPartiregisteret": "",
-          "registreringsdatoantallansatteNAVAaregisteret": "2026-08-10",
-          "registreringsdatoenhetsregisteret": "2024-08-12",
-          "registreringsnummerIHjemlandet": "",
-          "registrertIForetaksregisteret": "true",
-          "registrertIFrivillighetsregisteret": "false",
-          "registrertIMvaRegisteret": "true",
-          "registrertIPartiregisteret": "false",
-          "registrertIStiftelsesregisteret": "false",
+          "registrertIForetaksregisteret": true,
+          "registrertIFrivillighetsregisteret": false,
+          "registrertIMvaregisteret": true,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": false,
+          "respons_klasse": "Enhet",
           "sisteInnsendteAarsregnskap": "2025",
           "stiftelsesdato": "2024-08-06",
-          "telefon": "",
-          "tvangsavvikletPgaManglendeSlettingDato": "",
-          "tvangsopplostPgaMangelfulltStyreDato": "",
-          "tvangsopplostPgaManglendeDagligLederDato": "",
-          "tvangsopplostPgaManglendeRegnskapDato": "",
-          "tvangsopplostPgaManglendeRevisorDato": "",
-          "underAvvikling": "false",
-          "underAvviklingDato": "",
-          "underRekonstruksjonsforhandlingDato": "",
-          "underTvangsavviklingEllerTvangsopplosning": "false",
-          "underUtenlandskInsolvensbehandlingDato": "",
-          "underlagtLovgivningLand": "",
-          "underlagtLovgivningLandKode": "",
-          "utenlandskRegisterAdresse.adresse": "",
-          "utenlandskRegisterAdresse.land": "",
-          "utenlandskRegisterAdresse.poststed": "",
-          "utenlandskRegisterNavn": "",
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false,
           "vedtektsdato": "2025-07-09",
-          "vedtektsfestetFormaal": "Å selge håndverktjenester og byggevarer."
+          "vedtektsfestetFormaal": [
+            "Å selge håndverktjenester og byggevarer."
+          ]
         }
       },
       "registry_live": {
         "as_of": null,
-        "content_sha256": "b5cb34fbc6079dbdd0730d688180f931956aed05739e7662b0e9a866b10ebf3e",
+        "content_sha256": "be850baa96097e8096c41622e0f72cb7d2092b5f4856baf89752dddbbab00b5c",
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-10-05T08:41:10.800922Z",
+        "retrieved_at": "2026-11-16T15:25:43.499789Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -282,7 +261,7 @@
             "postnummer": "7870",
             "poststed": "GRONG"
           },
-          "employees": 11,
+          "employees": 12,
           "industry": {
             "beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
             "kode": "46.830"
@@ -302,7 +281,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-10-05T08:41:12.997471Z",
+        "retrieved_at": "2026-11-16T15:25:51.005456Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -373,7 +352,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -426,70 +405,21 @@
       },
       "external_observations": [
         {
-          "id": "registry-workforce-a1300ebae79f5112e58f886d",
-          "organisation_number": "833909622",
-          "platform": "brreg",
-          "signal_type": "workforce_snapshot",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-09-29T10:08:33.266502Z",
-          "content_sha256": "b5cb34fbc6079dbdd0730d688180f931956aed05739e7662b0e9a866b10ebf3e",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_live",
-              "matched_organisation_number": "833909622",
-              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 11",
-          "metrics": {
-            "workforce_value": 11,
-            "measure": "employees",
-            "registry_field": "employees",
-            "registered_at": "2026-08-12"
-          },
-          "strategy": "registry_workforce_exact",
-          "observed_at": "2026-08-12",
-          "effective_at": "2026-08-12"
-        },
-        {
           "organisation_number": "833909622",
           "platform": "company_site",
           "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-10-05T08:41:15.494148Z",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
           "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-e8bb08206a983ad983bbe2cf",
-          "signal_type": "website_description",
-          "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
-        },
-        {
-          "organisation_number": "833909622",
-          "platform": "company_site",
-          "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-10-05T08:41:15.494148Z",
-          "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
-          "exact_entity": true,
-          "identity_proof": [
+              "type": "registry_declared_domain_unique",
+              "domain": "trollbygg.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-16",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
             {
               "type": "website_identity_gate",
               "status": "exact",
@@ -512,13 +442,273 @@
           }
         },
         {
+          "id": "registry-site-833909622-3e53d59e59a53799",
+          "organisation_number": "833909622",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://www.trollbygg.no/",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
+          "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "trollbygg.no",
+              "matched_organisation_number": "833909622",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-11-16T15:18:00.649157Z",
+              "explanation": "BRREG declares trollbygg.no as the website of organisation 833909622; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+          "metrics": {
+            "title": "TROLLBYGG - Elementmontering og Tømrerarbeid",
+            "description": "TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+            "registry_domain": "trollbygg.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "833909622",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/833909622",
+          "retrieved_at": "2026-11-16T16:37:00.184944Z",
+          "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "833909622"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "TROLLBYGG AS",
+              "matched_organisation_number": "833909622"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+          "id": "purehelp-email-833909622-64a7fb4aefe2ebd4",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@trollbygg.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "833909622",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/833909622",
+          "retrieved_at": "2026-11-16T16:37:00.184944Z",
+          "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "833909622"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "TROLLBYGG AS",
+              "matched_organisation_number": "833909622"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+          "id": "purehelp-profile-833909622-64a7fb4aefe2ebd4",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "46.830",
+            "nace_description": "Wholesale of wood\\, construction materials and sanitary equipment",
+            "town": "GRONG",
+            "zipcode": "7870",
+            "municipality": "GRONG",
+            "municipality_number": "5045",
+            "county": "Trøndelag",
+            "registration_date": "2024-08-12",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "2024-08-12",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "trollbygg.no"
+          }
+        },
+        {
+          "organisation_number": "833909622",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/833909622",
+          "retrieved_at": "2026-11-16T16:37:00.184944Z",
+          "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "833909622"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "TROLLBYGG AS",
+              "matched_organisation_number": "833909622"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+          "id": "purehelp-workforce-833909622-64a7fb4aefe2ebd4",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 12,
+            "as_of": "2026-10-19",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "registry-workforce-3905c2f99873232d58839bd4",
+          "organisation_number": "833909622",
+          "platform": "brreg",
+          "signal_type": "workforce_snapshot",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
+          "retrieved_at": "2026-11-16T15:25:43.499789Z",
+          "content_sha256": "be850baa96097e8096c41622e0f72cb7d2092b5f4856baf89752dddbbab00b5c",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_registry_live",
+              "matched_organisation_number": "833909622",
+              "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_live",
+          "evidence_span": "\"employees\": 12",
+          "metrics": {
+            "workforce_value": 12,
+            "measure": "employees",
+            "registry_field": "employees",
+            "registered_at": "2026-10-13"
+          },
+          "strategy": "registry_workforce_exact",
+          "observed_at": "2026-10-13",
+          "effective_at": "2026-10-13"
+        },
+        {
+          "id": "brreg-kunngjoring-1305caca078f7efe3a2f5be5",
+          "organisation_number": "833909622",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:08Z",
+          "content_sha256": "09aa721a40d903649119188ca55e4e7d7382754e67681835ab9725f9bc3138d9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "833909622",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-08-05",
+          "signal": {
+            "title": "Revisor",
+            "date": "2026-08-05",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb"
+          },
+          "evidence_span": "Revisor — 2026-08-05 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-d09602ce036a6d8a6a826bb5",
+          "organisation_number": "833909622",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:08Z",
+          "content_sha256": "35005773a3a88ae43957d3aff58ad938cd66bd6250e0f2749eadf6115626b7a9",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "833909622",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-07-02",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-07-02",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-07-02 (BRREG official announcement)"
+        },
+        {
+          "id": "brreg-kunngjoring-6753a0c601abc9f419adbb5a",
+          "organisation_number": "833909622",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:17:08Z",
+          "content_sha256": "7a8be53d9a7f9c0e18f370a1e56fa007044f231580a7e4d5fbc401eaf0a46bc0",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "833909622",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "observed_at": "2026-04-24",
+          "signal": {
+            "title": "Forretningsadresse",
+            "date": "2026-04-24",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb"
+          },
+          "evidence_span": "Forretningsadresse — 2026-04-24 (BRREG official announcement)"
+        },
+        {
           "id": "registry-contact-7284e98455e75d15cfbcd325",
           "organisation_number": "833909622",
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -545,8 +735,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -568,12 +758,65 @@
           "strategy": "registry_contact_exact"
         },
         {
+          "organisation_number": "833909622",
+          "platform": "company_site",
+          "source_url": "https://www.trollbygg.no/",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
+          "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-e8bb08206a983ad983bbe2cf",
+          "signal_type": "website_description",
+          "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "833909622",
+          "platform": "brreg",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=833909622&size=1000",
+          "retrieved_at": "2026-11-16T15:25:52.891937Z",
+          "content_sha256": "b4103ac58765222510e51e5e6ce2d6e62eda3aeee5b25ae8b13bc8e5e04d456f",
+          "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "id": "subunit-fd55f9b4ed620d3f8d6bd9b3",
+          "signal_type": "subunit",
+          "evidence_span": "TROLLBYGG AS",
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_subunits",
+              "matched_organisation_number": "833909622",
+              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+            }
+          ],
+          "metrics": {
+            "subunit_organisation_number": "934000285",
+            "municipality": "GRONG",
+            "interpretation": "Officially registered sub-unit of this organisation."
+          }
+        },
+        {
           "id": "sitemap-page-ce32ab2cf8f9b28a97d5479e",
           "organisation_number": "833909622",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-10-05T08:41:15.494148Z",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
           "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
           "observed_at": "2025-12-12",
           "exact_entity": true,
@@ -601,7 +844,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-10-05T08:41:15.494148Z",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
           "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
           "observed_at": "2025-12-12",
           "exact_entity": true,
@@ -629,7 +872,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-10-05T08:41:15.494148Z",
+          "retrieved_at": "2026-11-16T15:25:55.781385Z",
           "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
           "observed_at": "2025-12-12",
           "exact_entity": true,
@@ -652,40 +895,12 @@
           "strategy": "sitemap_lastmod"
         },
         {
-          "organisation_number": "833909622",
-          "platform": "brreg",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=833909622&size=1000",
-          "retrieved_at": "2026-10-05T08:41:14.362569Z",
-          "content_sha256": "bb4a56449419cafe8319e0a1ce2714454ba5d210a31c7eb49f5446bfc055c5f2",
-          "exact_entity": true,
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "id": "subunit-fd55f9b4ed620d3f8d6bd9b3",
-          "signal_type": "subunit",
-          "evidence_span": "TROLLBYGG AS",
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_subunits",
-              "matched_organisation_number": "833909622",
-              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
-            }
-          ],
-          "metrics": {
-            "subunit_organisation_number": "934000285",
-            "municipality": "GRONG",
-            "interpretation": "Officially registered sub-unit of this organisation."
-          }
-        },
-        {
           "id": "registry-update-58fc60c92ebfb51811fde4f3",
           "organisation_number": "833909622",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "58fc60c92ebfb51811fde4f3faf8a683b6cb52a432ccc831efff0992b0a5685b",
           "observed_at": "2026-10-13",
           "exact_entity": true,
@@ -715,7 +930,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "62c509db8fbf957d06c999146f7c7e16ef4611cf1cdf38c4a2ac898eb643fdbc",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -745,7 +960,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "5914b4368affa199c7d2d6a809eece8dd9415f1230190c3c1923543b2ea5528f",
           "observed_at": "2026-07-04",
           "exact_entity": true,
@@ -775,7 +990,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c225d6cdc8f3311be7f31a18de1aa5b3c0f2eeb4d2fe185cb8769202904c64a3",
           "observed_at": "2026-07-02",
           "exact_entity": true,
@@ -805,7 +1020,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "de5da641a83553ad64cf5011a69ec9a3ad0043bb86e753bfe6d498a3b59f0dd2",
           "observed_at": "2026-05-11",
           "exact_entity": true,
@@ -835,7 +1050,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "b1e0789dd0aad958755d51c41e6ab319285f93de25b03e8d31699cdfa7386f96",
           "observed_at": "2026-04-24",
           "exact_entity": true,
@@ -865,7 +1080,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "220eef7cb837013db12d6da7391ab4c9870810670dc94ebbe17a0fc53a4996cb",
           "observed_at": "2026-04-23",
           "exact_entity": true,
@@ -895,7 +1110,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "60f69d98611dea15694181d18286b0ec789c993805328e3e89ba90a872b01be9",
           "observed_at": "2026-03-11",
           "exact_entity": true,
@@ -925,7 +1140,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "bf262a9f9db6fa9ab68a530ae53b130829ce2651c18add34a1174938ce20fe9d",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -955,7 +1170,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "1be0062ed500dcee89134731aba90d3fd5b2d48b48682ffbd5357d2f454a9be6",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -985,7 +1200,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c2b4f222110b92722024cc99f00e94f9d7fa9dcc11947028e0c5c458f53f10f7",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1015,7 +1230,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "6dc2784e98e2c94d0c0a4e00e24ac884b28732e484f249102c171983669a6f0e",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1045,7 +1260,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "9c0c8a0f1dd1e1442018e32e2cbe49eb70488d047933567643cddc012edf859d",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1075,7 +1290,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "89b18ec2aeb549125afba0f760eece5896a585643f43f844e1ccc8ccc2213cb0",
           "observed_at": "2025-08-04",
           "exact_entity": true,
@@ -1105,7 +1320,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3741f41f5651da60ba7f0ff794f737524f06df0516dcef39a9463d5b2d53bc54",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1135,7 +1350,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "8afa9f6195d2a02afdd6f973b40889342622c34bfe44650cfefefcd8763bb55e",
           "observed_at": "2025-05-12",
           "exact_entity": true,
@@ -1165,7 +1380,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3862e302e81ce6290d6b7087671822789586337141dc3e72ebcaf47b3abd1fb6",
           "observed_at": "2025-04-24",
           "exact_entity": true,
@@ -1195,7 +1410,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "7237f04ead4b45f39ca1374c58e5466c30cf9f8f7061a08ce51b31e8267b6176",
           "observed_at": "2025-04-22",
           "exact_entity": true,
@@ -1225,7 +1440,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "5bb7968531d4f1605a2d84ef05e6f79cad1fce27d3050144506915c91047882a",
           "observed_at": "2025-04-12",
           "exact_entity": true,
@@ -1248,150 +1463,6 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "brreg-kunngjoring-1305caca078f7efe3a2f5be5",
-          "organisation_number": "833909622",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "09aa721a40d903649119188ca55e4e7d7382754e67681835ab9725f9bc3138d9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "833909622",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-08-05",
-          "signal": {
-            "title": "Revisor",
-            "date": "2026-08-05",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb"
-          },
-          "evidence_span": "Revisor — 2026-08-05 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-d09602ce036a6d8a6a826bb5",
-          "organisation_number": "833909622",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "35005773a3a88ae43957d3aff58ad938cd66bd6250e0f2749eadf6115626b7a9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "833909622",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-07-02",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-07-02",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-07-02 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-6753a0c601abc9f419adbb5a",
-          "organisation_number": "833909622",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "7a8be53d9a7f9c0e18f370a1e56fa007044f231580a7e4d5fbc401eaf0a46bc0",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "833909622",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-04-24",
-          "signal": {
-            "title": "Forretningsadresse",
-            "date": "2026-04-24",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb"
-          },
-          "evidence_span": "Forretningsadresse — 2026-04-24 (BRREG official announcement)"
-        },
-        {
-          "id": "registry-site-833909622-3e53d59e59a53799",
-          "organisation_number": "833909622",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://www.trollbygg.no/",
-          "retrieved_at": "2026-09-29T10:08:40.905838Z",
-          "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "trollbygg.no",
-              "matched_organisation_number": "833909622",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-09-29T10:02:25.550213Z",
-              "explanation": "BRREG declares trollbygg.no as the website of organisation 833909622; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-          "metrics": {
-            "title": "TROLLBYGG - Elementmontering og Tømrerarbeid",
-            "description": "TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-            "registry_domain": "trollbygg.no"
-          },
-          "strategy": "registry_declared_website_description"
-        },
-        {
-          "id": "company-site-careers-da5667b455ad5b8f43ad02f6",
-          "organisation_number": "833909622",
-          "platform": "company_site",
-          "signal_type": "careers_page",
-          "source_url": "https://www.trollbygg.no/karriere",
-          "retrieved_at": "2026-09-29T10:08:40.905838Z",
-          "content_sha256": "867144bf032c7bf7d2410d68cc3980366b7d7a36b811546446f4d0b0fffa922a",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Careers page on the exact company site: TROLLBYGG - Elementmontering og Tømrerarbeid",
-          "metrics": {
-            "captured_careers_pages": 1,
-            "interpretation": "Hiring signal (page exists); not counted as individual open positions."
-          },
-          "strategy": "company_site_activity"
         }
       ]
     },
@@ -1407,14 +1478,14 @@
     "run_metrics": {
       "bytes": 67842,
       "latencies_ms": [
-        693,
-        734,
-        754,
-        706,
-        682,
-        681,
-        108,
-        671
+        971,
+        940,
+        974,
+        938,
+        922,
+        962,
+        828,
+        701
       ],
       "requests": 10
     },
@@ -1425,7 +1496,7 @@
     "company_name": "TROLLBYGG AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "TROLLBYGG AS is a private limited company operating in Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr. Latest accounts (2025): revenue NOK 2.9m, annual result NOK 429.0k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. Revenue shrinking (-82.9% YoY). Registered employees: 11. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
+    "summary": "TROLLBYGG AS is a private limited company operating in Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr. Latest accounts (2025): revenue NOK 2.9m, annual result NOK 429.0k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. Revenue shrinking (-82.9% YoY). Registered employees: 12. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1497,7 +1568,7 @@
       },
       {
         "question": "staff",
-        "answer": "Registered employees: 11.",
+        "answer": "Registered employees: 12.",
         "answerable": true,
         "status": "confirmed",
         "confidence": 1.0,
@@ -1561,7 +1632,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:33.648312Z",
+      "retrieved_at": "2026-11-16T15:18:43.917911Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "833909622",
       "source_type": "official_rule_interpretation",
@@ -1581,7 +1652,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-10-05T08:41:12.290486Z",
+      "retrieved_at": "2026-11-16T15:25:50.066477Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1610,7 +1681,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-10-05T08:41:11.535527Z",
+      "retrieved_at": "2026-11-16T15:25:44.440866Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1659,7 +1730,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-10-05T08:41:13.681104Z",
+      "retrieved_at": "2026-11-16T15:25:51.929223Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1669,11 +1740,11 @@
     },
     "locations": {
       "as_of": null,
-      "content_sha256": "bb4a56449419cafe8319e0a1ce2714454ba5d210a31c7eb49f5446bfc055c5f2",
+      "content_sha256": "b4103ac58765222510e51e5e6ce2d6e62eda3aeee5b25ae8b13bc8e5e04d456f",
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-10-05T08:41:14.362569Z",
+      "retrieved_at": "2026-11-16T15:25:52.891937Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1693,7 +1764,7 @@
               "postnummer": "7870",
               "poststed": "GRONG"
             },
-            "employees": 11,
+            "employees": 12,
             "industry": {
               "beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
               "kode": "46.830"
@@ -1706,116 +1777,95 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-10-05T08:34:31.959772Z",
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "833909622",
       "source_type": "official_registry_bulk",
       "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
       "status": "available",
       "value": {
-        "aktivitet": "Salg av byggevarer. Snekkerarbeid, montering av dører, vinduer, kjøkken med mer.",
-        "antallAnsatte": "11",
+        "aktivitet": [
+          "Salg av byggevarer.",
+          "Snekkerarbeid, montering av dører, vinduer, kjøkken med mer."
+        ],
+        "antallAnsatte": 12,
         "epostadresse": "post@trollbygg.no",
-        "erIKonsern": "false",
-        "foretaksformIHjemlandet.beskrivelse": "",
-        "foretaksformIHjemlandet.beskrivelseBokmaal": "",
-        "foretaksformIHjemlandet.kode": "",
-        "forretningsadresse.adresse": "Mølnarmovegen 54",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Mølnarmovegen 54"
+        ],
         "forretningsadresse.kommune": "GRONG",
         "forretningsadresse.kommunenummer": "5045",
         "forretningsadresse.land": "Norge",
         "forretningsadresse.landkode": "NO",
         "forretningsadresse.postnummer": "7870",
         "forretningsadresse.poststed": "GRONG",
-        "fravalgRevisjonBeslutningsDato": "",
-        "fravalgRevisjonDato": "",
-        "frivilligMvaRegistrertBeskrivelser": "",
-        "harRegistrertAntallAnsatte": "true",
-        "hjelpeenhetskode.beskrivelse": "",
-        "hjelpeenhetskode.kode": "",
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [
+          {
+            "fraDato": "2024-08-12 11:51:34",
+            "navn": "AFAS 060824-14 AS",
+            "tilDato": "2024-08-28 13:37:51"
+          },
+          {
+            "fraDato": "2024-08-28 13:37:51",
+            "navn": "BYGGMAN AS",
+            "tilDato": "2025-08-04 13:33:18"
+          }
+        ],
         "hjemmeside": "trollbygg.no",
         "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
         "institusjonellSektorkode.kode": "2100",
-        "kapital.antallAksjer": "75000",
-        "kapital.belop": "750000.00",
-        "kapital.bundet": "",
-        "kapital.fulltInnbetalt": "",
-        "kapital.innbetalt": "",
+        "kapital.antallAksjer": 75000,
+        "kapital.belop": 750000.0,
         "kapital.innfortDato": "2025-04-22",
         "kapital.type": "Aksjekapital",
         "kapital.valuta": "NOK",
-        "konkurs": "false",
-        "konkursdato": "",
+        "konkurs": false,
+        "links": [],
         "maalform": "Bokmål",
         "mobil": "40054040",
         "naeringskode1.beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
         "naeringskode1.kode": "46.830",
-        "naeringskode2.beskrivelse": "",
-        "naeringskode2.kode": "",
-        "naeringskode3.beskrivelse": "",
-        "naeringskode3.kode": "",
         "navn": "TROLLBYGG AS",
         "organisasjonsform.beskrivelse": "Aksjeselskap",
         "organisasjonsform.kode": "AS",
+        "organisasjonsform.links": [],
         "organisasjonsnummer": "833909622",
-        "overordnetEnhet": "",
-        "paategninger": "false",
-        "postadresse.adresse": "",
-        "postadresse.kommune": "",
-        "postadresse.kommunenummer": "",
-        "postadresse.land": "",
-        "postadresse.landkode": "",
-        "postadresse.postnummer": "",
-        "postadresse.poststed": "",
-        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-08-12",
+        "paategninger": [],
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-10-13",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-10-10",
+        "registreringsdatoEnhetsregisteret": "2024-08-12",
         "registreringsdatoForetaksregisteret": "2024-08-12",
-        "registreringsdatoFrivilligMerverdiavgiftsregisteret": "",
-        "registreringsdatoFrivillighetsregisteret": "",
         "registreringsdatoMerverdiavgiftsregisteret": "2024-09-18",
         "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "2024-09-18",
-        "registreringsdatoPartiregisteret": "",
-        "registreringsdatoantallansatteNAVAaregisteret": "2026-08-10",
-        "registreringsdatoenhetsregisteret": "2024-08-12",
-        "registreringsnummerIHjemlandet": "",
-        "registrertIForetaksregisteret": "true",
-        "registrertIFrivillighetsregisteret": "false",
-        "registrertIMvaRegisteret": "true",
-        "registrertIPartiregisteret": "false",
-        "registrertIStiftelsesregisteret": "false",
+        "registrertIForetaksregisteret": true,
+        "registrertIFrivillighetsregisteret": false,
+        "registrertIMvaregisteret": true,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": false,
+        "respons_klasse": "Enhet",
         "sisteInnsendteAarsregnskap": "2025",
         "stiftelsesdato": "2024-08-06",
-        "telefon": "",
-        "tvangsavvikletPgaManglendeSlettingDato": "",
-        "tvangsopplostPgaMangelfulltStyreDato": "",
-        "tvangsopplostPgaManglendeDagligLederDato": "",
-        "tvangsopplostPgaManglendeRegnskapDato": "",
-        "tvangsopplostPgaManglendeRevisorDato": "",
-        "underAvvikling": "false",
-        "underAvviklingDato": "",
-        "underRekonstruksjonsforhandlingDato": "",
-        "underTvangsavviklingEllerTvangsopplosning": "false",
-        "underUtenlandskInsolvensbehandlingDato": "",
-        "underlagtLovgivningLand": "",
-        "underlagtLovgivningLandKode": "",
-        "utenlandskRegisterAdresse.adresse": "",
-        "utenlandskRegisterAdresse.land": "",
-        "utenlandskRegisterAdresse.poststed": "",
-        "utenlandskRegisterNavn": "",
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false,
         "vedtektsdato": "2025-07-09",
-        "vedtektsfestetFormaal": "Å selge håndverktjenester og byggevarer."
+        "vedtektsfestetFormaal": [
+          "Å selge håndverktjenester og byggevarer."
+        ]
       }
     },
     "registry_live": {
       "as_of": null,
-      "content_sha256": "b5cb34fbc6079dbdd0730d688180f931956aed05739e7662b0e9a866b10ebf3e",
+      "content_sha256": "be850baa96097e8096c41622e0f72cb7d2092b5f4856baf89752dddbbab00b5c",
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-10-05T08:41:10.800922Z",
+      "retrieved_at": "2026-11-16T15:25:43.499789Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1834,7 +1884,7 @@
           "postnummer": "7870",
           "poststed": "GRONG"
         },
-        "employees": 11,
+        "employees": 12,
         "industry": {
           "beskrivelse": "Engroshandel med tømmer, trelast, byggevarer og sanitærutstyr",
           "kode": "46.830"
@@ -1854,7 +1904,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-10-05T08:41:12.997471Z",
+      "retrieved_at": "2026-11-16T15:25:51.005456Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1925,7 +1975,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-10-05T08:41:15.494148Z",
+      "retrieved_at": "2026-11-16T15:25:55.781385Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -1978,70 +2028,21 @@
     },
     "external_observations": [
       {
-        "id": "registry-workforce-a1300ebae79f5112e58f886d",
-        "organisation_number": "833909622",
-        "platform": "brreg",
-        "signal_type": "workforce_snapshot",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-09-29T10:08:33.266502Z",
-        "content_sha256": "b5cb34fbc6079dbdd0730d688180f931956aed05739e7662b0e9a866b10ebf3e",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_live",
-            "matched_organisation_number": "833909622",
-            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 11",
-        "metrics": {
-          "workforce_value": 11,
-          "measure": "employees",
-          "registry_field": "employees",
-          "registered_at": "2026-08-12"
-        },
-        "strategy": "registry_workforce_exact",
-        "observed_at": "2026-08-12",
-        "effective_at": "2026-08-12"
-      },
-      {
         "organisation_number": "833909622",
         "platform": "company_site",
         "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
         "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-e8bb08206a983ad983bbe2cf",
-        "signal_type": "website_description",
-        "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
-      },
-      {
-        "organisation_number": "833909622",
-        "platform": "company_site",
-        "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
-        "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
-        "exact_entity": true,
-        "identity_proof": [
+            "type": "registry_declared_domain_unique",
+            "domain": "trollbygg.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-16",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
           {
             "type": "website_identity_gate",
             "status": "exact",
@@ -2064,13 +2065,273 @@
         }
       },
       {
+        "id": "registry-site-833909622-3e53d59e59a53799",
+        "organisation_number": "833909622",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://www.trollbygg.no/",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
+        "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "trollbygg.no",
+            "matched_organisation_number": "833909622",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-11-16T15:18:00.649157Z",
+            "explanation": "BRREG declares trollbygg.no as the website of organisation 833909622; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+        "metrics": {
+          "title": "TROLLBYGG - Elementmontering og Tømrerarbeid",
+          "description": "TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+          "registry_domain": "trollbygg.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "833909622",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/833909622",
+        "retrieved_at": "2026-11-16T16:37:00.184944Z",
+        "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "833909622"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "TROLLBYGG AS",
+            "matched_organisation_number": "833909622"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+        "id": "purehelp-email-833909622-64a7fb4aefe2ebd4",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@trollbygg.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "833909622",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/833909622",
+        "retrieved_at": "2026-11-16T16:37:00.184944Z",
+        "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "833909622"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "TROLLBYGG AS",
+            "matched_organisation_number": "833909622"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+        "id": "purehelp-profile-833909622-64a7fb4aefe2ebd4",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "46.830",
+          "nace_description": "Wholesale of wood\\, construction materials and sanitary equipment",
+          "town": "GRONG",
+          "zipcode": "7870",
+          "municipality": "GRONG",
+          "municipality_number": "5045",
+          "county": "Trøndelag",
+          "registration_date": "2024-08-12",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "2024-08-12",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "trollbygg.no"
+        }
+      },
+      {
+        "organisation_number": "833909622",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/833909622",
+        "retrieved_at": "2026-11-16T16:37:00.184944Z",
+        "content_sha256": "1fdced6ea5ca8dea59a0b363501f19ec7432fd81cc8287b712bc224d0d8d5c23",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "833909622"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "TROLLBYGG AS",
+            "matched_organisation_number": "833909622"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-833909622.orgNumber=833909622;name=TROLLBYGG AS",
+        "id": "purehelp-workforce-833909622-64a7fb4aefe2ebd4",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 12,
+          "as_of": "2026-10-19",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "registry-workforce-3905c2f99873232d58839bd4",
+        "organisation_number": "833909622",
+        "platform": "brreg",
+        "signal_type": "workforce_snapshot",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
+        "retrieved_at": "2026-11-16T15:25:43.499789Z",
+        "content_sha256": "be850baa96097e8096c41622e0f72cb7d2092b5f4856baf89752dddbbab00b5c",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_registry_live",
+            "matched_organisation_number": "833909622",
+            "explanation": "Employee count is read from the official enhetsregisteret record fetched for this organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_live",
+        "evidence_span": "\"employees\": 12",
+        "metrics": {
+          "workforce_value": 12,
+          "measure": "employees",
+          "registry_field": "employees",
+          "registered_at": "2026-10-13"
+        },
+        "strategy": "registry_workforce_exact",
+        "observed_at": "2026-10-13",
+        "effective_at": "2026-10-13"
+      },
+      {
+        "id": "brreg-kunngjoring-1305caca078f7efe3a2f5be5",
+        "organisation_number": "833909622",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:08Z",
+        "content_sha256": "09aa721a40d903649119188ca55e4e7d7382754e67681835ab9725f9bc3138d9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "833909622",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-08-05",
+        "signal": {
+          "title": "Revisor",
+          "date": "2026-08-05",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb"
+        },
+        "evidence_span": "Revisor — 2026-08-05 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-d09602ce036a6d8a6a826bb5",
+        "organisation_number": "833909622",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:08Z",
+        "content_sha256": "35005773a3a88ae43957d3aff58ad938cd66bd6250e0f2749eadf6115626b7a9",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "833909622",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-07-02",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-07-02",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-07-02 (BRREG official announcement)"
+      },
+      {
+        "id": "brreg-kunngjoring-6753a0c601abc9f419adbb5a",
+        "organisation_number": "833909622",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:17:08Z",
+        "content_sha256": "7a8be53d9a7f9c0e18f370a1e56fa007044f231580a7e4d5fbc401eaf0a46bc0",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "833909622",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "observed_at": "2026-04-24",
+        "signal": {
+          "title": "Forretningsadresse",
+          "date": "2026-04-24",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb"
+        },
+        "evidence_span": "Forretningsadresse — 2026-04-24 (BRREG official announcement)"
+      },
+      {
         "id": "registry-contact-7284e98455e75d15cfbcd325",
         "organisation_number": "833909622",
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2097,8 +2358,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2120,12 +2381,65 @@
         "strategy": "registry_contact_exact"
       },
       {
+        "organisation_number": "833909622",
+        "platform": "company_site",
+        "source_url": "https://www.trollbygg.no/",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
+        "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-e8bb08206a983ad983bbe2cf",
+        "signal_type": "website_description",
+        "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "833909622",
+        "platform": "brreg",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=833909622&size=1000",
+        "retrieved_at": "2026-11-16T15:25:52.891937Z",
+        "content_sha256": "b4103ac58765222510e51e5e6ce2d6e62eda3aeee5b25ae8b13bc8e5e04d456f",
+        "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "id": "subunit-fd55f9b4ed620d3f8d6bd9b3",
+        "signal_type": "subunit",
+        "evidence_span": "TROLLBYGG AS",
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_subunits",
+            "matched_organisation_number": "833909622",
+            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+          }
+        ],
+        "metrics": {
+          "subunit_organisation_number": "934000285",
+          "municipality": "GRONG",
+          "interpretation": "Officially registered sub-unit of this organisation."
+        }
+      },
+      {
         "id": "sitemap-page-ce32ab2cf8f9b28a97d5479e",
         "organisation_number": "833909622",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
         "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
         "observed_at": "2025-12-12",
         "exact_entity": true,
@@ -2153,7 +2467,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
         "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
         "observed_at": "2025-12-12",
         "exact_entity": true,
@@ -2181,7 +2495,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-10-05T08:41:15.494148Z",
+        "retrieved_at": "2026-11-16T15:25:55.781385Z",
         "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
         "observed_at": "2025-12-12",
         "exact_entity": true,
@@ -2204,40 +2518,12 @@
         "strategy": "sitemap_lastmod"
       },
       {
-        "organisation_number": "833909622",
-        "platform": "brreg",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=833909622&size=1000",
-        "retrieved_at": "2026-10-05T08:41:14.362569Z",
-        "content_sha256": "bb4a56449419cafe8319e0a1ce2714454ba5d210a31c7eb49f5446bfc055c5f2",
-        "exact_entity": true,
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "id": "subunit-fd55f9b4ed620d3f8d6bd9b3",
-        "signal_type": "subunit",
-        "evidence_span": "TROLLBYGG AS",
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_subunits",
-            "matched_organisation_number": "833909622",
-            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
-          }
-        ],
-        "metrics": {
-          "subunit_organisation_number": "934000285",
-          "municipality": "GRONG",
-          "interpretation": "Officially registered sub-unit of this organisation."
-        }
-      },
-      {
         "id": "registry-update-58fc60c92ebfb51811fde4f3",
         "organisation_number": "833909622",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "58fc60c92ebfb51811fde4f3faf8a683b6cb52a432ccc831efff0992b0a5685b",
         "observed_at": "2026-10-13",
         "exact_entity": true,
@@ -2267,7 +2553,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "62c509db8fbf957d06c999146f7c7e16ef4611cf1cdf38c4a2ac898eb643fdbc",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -2297,7 +2583,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "5914b4368affa199c7d2d6a809eece8dd9415f1230190c3c1923543b2ea5528f",
         "observed_at": "2026-07-04",
         "exact_entity": true,
@@ -2327,7 +2613,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c225d6cdc8f3311be7f31a18de1aa5b3c0f2eeb4d2fe185cb8769202904c64a3",
         "observed_at": "2026-07-02",
         "exact_entity": true,
@@ -2357,7 +2643,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "de5da641a83553ad64cf5011a69ec9a3ad0043bb86e753bfe6d498a3b59f0dd2",
         "observed_at": "2026-05-11",
         "exact_entity": true,
@@ -2387,7 +2673,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "b1e0789dd0aad958755d51c41e6ab319285f93de25b03e8d31699cdfa7386f96",
         "observed_at": "2026-04-24",
         "exact_entity": true,
@@ -2417,7 +2703,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "220eef7cb837013db12d6da7391ab4c9870810670dc94ebbe17a0fc53a4996cb",
         "observed_at": "2026-04-23",
         "exact_entity": true,
@@ -2447,7 +2733,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "60f69d98611dea15694181d18286b0ec789c993805328e3e89ba90a872b01be9",
         "observed_at": "2026-03-11",
         "exact_entity": true,
@@ -2477,7 +2763,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "bf262a9f9db6fa9ab68a530ae53b130829ce2651c18add34a1174938ce20fe9d",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -2507,7 +2793,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "1be0062ed500dcee89134731aba90d3fd5b2d48b48682ffbd5357d2f454a9be6",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -2537,7 +2823,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c2b4f222110b92722024cc99f00e94f9d7fa9dcc11947028e0c5c458f53f10f7",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2567,7 +2853,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "6dc2784e98e2c94d0c0a4e00e24ac884b28732e484f249102c171983669a6f0e",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2597,7 +2883,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "9c0c8a0f1dd1e1442018e32e2cbe49eb70488d047933567643cddc012edf859d",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -2627,7 +2913,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "89b18ec2aeb549125afba0f760eece5896a585643f43f844e1ccc8ccc2213cb0",
         "observed_at": "2025-08-04",
         "exact_entity": true,
@@ -2657,7 +2943,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3741f41f5651da60ba7f0ff794f737524f06df0516dcef39a9463d5b2d53bc54",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -2687,7 +2973,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "8afa9f6195d2a02afdd6f973b40889342622c34bfe44650cfefefcd8763bb55e",
         "observed_at": "2025-05-12",
         "exact_entity": true,
@@ -2717,7 +3003,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3862e302e81ce6290d6b7087671822789586337141dc3e72ebcaf47b3abd1fb6",
         "observed_at": "2025-04-24",
         "exact_entity": true,
@@ -2747,7 +3033,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "7237f04ead4b45f39ca1374c58e5466c30cf9f8f7061a08ce51b31e8267b6176",
         "observed_at": "2025-04-22",
         "exact_entity": true,
@@ -2777,7 +3063,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/833909622",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "5bb7968531d4f1605a2d84ef05e6f79cad1fce27d3050144506915c91047882a",
         "observed_at": "2025-04-12",
         "exact_entity": true,
@@ -2800,152 +3086,8 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "brreg-kunngjoring-1305caca078f7efe3a2f5be5",
-        "organisation_number": "833909622",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "09aa721a40d903649119188ca55e4e7d7382754e67681835ab9725f9bc3138d9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "833909622",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-08-05",
-        "signal": {
-          "title": "Revisor",
-          "date": "2026-08-05",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000660896&amp;sokeverdi=833909622&amp;spraak=nb"
-        },
-        "evidence_span": "Revisor — 2026-08-05 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-d09602ce036a6d8a6a826bb5",
-        "organisation_number": "833909622",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "35005773a3a88ae43957d3aff58ad938cd66bd6250e0f2749eadf6115626b7a9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "833909622",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-07-02",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-07-02",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000484584&amp;sokeverdi=833909622&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-07-02 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-6753a0c601abc9f419adbb5a",
-        "organisation_number": "833909622",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "7a8be53d9a7f9c0e18f370a1e56fa007044f231580a7e4d5fbc401eaf0a46bc0",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "833909622",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-04-24",
-        "signal": {
-          "title": "Forretningsadresse",
-          "date": "2026-04-24",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000204106&amp;sokeverdi=833909622&amp;spraak=nb"
-        },
-        "evidence_span": "Forretningsadresse — 2026-04-24 (BRREG official announcement)"
-      },
-      {
-        "id": "registry-site-833909622-3e53d59e59a53799",
-        "organisation_number": "833909622",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://www.trollbygg.no/",
-        "retrieved_at": "2026-09-29T10:08:40.905838Z",
-        "content_sha256": "3e53d59e59a537998cddeaf00cdf7e27cc59d9f35997e7634e2854e064339881",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "trollbygg.no",
-            "matched_organisation_number": "833909622",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-09-29T10:02:25.550213Z",
-            "explanation": "BRREG declares trollbygg.no as the website of organisation 833909622; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "TROLLBYGG - Elementmontering og Tømrerarbeid — TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-        "metrics": {
-          "title": "TROLLBYGG - Elementmontering og Tømrerarbeid",
-          "description": "TROLLBYGG spesialiserer seg på elementmontering og tømrerarbeid med hele Skandinavia som markedsområde. Kraft og presisjon i alle våre prosjekter.",
-          "registry_domain": "trollbygg.no"
-        },
-        "strategy": "registry_declared_website_description"
-      },
-      {
-        "id": "company-site-careers-da5667b455ad5b8f43ad02f6",
-        "organisation_number": "833909622",
-        "platform": "company_site",
-        "signal_type": "careers_page",
-        "source_url": "https://www.trollbygg.no/karriere",
-        "retrieved_at": "2026-09-29T10:08:40.905838Z",
-        "content_sha256": "867144bf032c7bf7d2410d68cc3980366b7d7a36b811546446f4d0b0fffa922a",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Careers page on the exact company site: TROLLBYGG - Elementmontering og Tømrerarbeid",
-        "metrics": {
-          "captured_careers_pages": 1,
-          "interpretation": "Hiring signal (page exists); not counted as individual open positions."
-        },
-        "strategy": "company_site_activity"
       }
     ]
   },
-  "generated_at": "2026-11-07T10:54:50.745873+00:00"
+  "generated_at": "2026-11-17T09:30:45.946268+00:00"
 }

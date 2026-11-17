@@ -71,7 +71,15 @@ copy "$SRC/eval-final.json"           eval.json
 copy "$SRC/measure-final.json"        measure.json
 copy "$SRC/measure-family-final.json" measure-family.json
 copy "$SRC/entry.jsonl"               manifest.jsonl
-copy "$SRC/profiles-promoted.jsonl"   profiles-promoted.jsonl
+# finalize_run.sh prefers the browser-rescued profiles when they exist, because
+# that is the file the claims were derived from. Shipping profiles-promoted in
+# that case would publish a different profile set from the one behind the
+# evidence, so promote the same file finalize used.
+if [[ -s "$SRC/batch-rescued-profiles.jsonl" ]]; then
+  copy "$SRC/batch-rescued-profiles.jsonl" profiles-promoted.jsonl
+else
+  copy "$SRC/profiles-promoted.jsonl"      profiles-promoted.jsonl
+fi
 [[ -d "$SRC/site" ]] || { echo "missing $SRC/site"; exit 1; }
 cp -r "$SRC/site" "$DEST/site"
 echo "  site/                      $(du -sh "$DEST/site" | cut -f1)"

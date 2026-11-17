@@ -429,7 +429,11 @@ class CompanySiteJobsConnectorTests(unittest.TestCase):
         self.assertTrue(all(item["exact_entity"] for item in jobs))
         self.assertTrue(all(item["acquisition_mode"] == "permitted_public_page" for item in jobs))
         self.assertTrue(all(item["rights_status"] == "approved" for item in jobs))
-        self.assertTrue(all(item["signal_type"] == "job_posting" for item in jobs))
+        # A discovered careers-page link is not a role card: it is published as
+        # a careers_page signal, never as a job_posting, so workforce_jobs only
+        # counts adverts an official feed or an ATS role card proved.
+        self.assertTrue(all(item["signal_type"] == "careers_page" for item in jobs))
+        self.assertTrue(all(item["careers_url"] == item["source_url"] for item in jobs))
         self.assertTrue(all(publishable_observation(item) for item in jobs))
 
     def test_hr_services_page_is_not_a_job_posting(self):

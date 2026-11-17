@@ -1,15 +1,738 @@
 {
   "profile": {
+    "bankrupt": false,
+    "employees": 14,
     "evidence": {
+      "accounting_obligation": {
+        "as_of": "2024-08-09",
+        "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+        "effective_at": null,
+        "field": "accounting_obligation",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:19:01.251928Z",
+        "source_class": "official_rule_interpretation",
+        "source_row_key": "959617929",
+        "source_type": "official_rule_interpretation",
+        "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+        "status": "available",
+        "value": {
+          "classification": "filing_observed",
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "reason": "The registry snapshot reports a latest submitted annual-account year.",
+          "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+        }
+      },
+      "financial_history": {
+        "as_of": null,
+        "content_sha256": "b7bcd20d8a4607bc9ca49fbdfebf5e51cb31e39858edb985dc98a82e8d2b7cd1",
+        "effective_at": null,
+        "field": "financial_history",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:41:22.101856Z",
+        "source_class": "official_annual_account_copies",
+        "source_row_key": null,
+        "source_type": "official_annual_account_copies",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+        "status": "available",
+        "value": {
+          "pdfs": [
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2025",
+              "year": "2025"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2024",
+              "year": "2024"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2023",
+              "year": "2023"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2022",
+              "year": "2022"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2021",
+              "year": "2021"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2020",
+              "year": "2020"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2019",
+              "year": "2019"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2018",
+              "year": "2018"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2017",
+              "year": "2017"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2016",
+              "year": "2016"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2015",
+              "year": "2015"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2014",
+              "year": "2014"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2013",
+              "year": "2013"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2012",
+              "year": "2012"
+            },
+            {
+              "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2011",
+              "year": "2011"
+            }
+          ],
+          "years": [
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ]
+        }
+      },
+      "financials": {
+        "as_of": null,
+        "content_sha256": "8cdd512d9d3dc9d1f8200feabec743c2f2f07383b18e89a720aca9782ef9f403",
+        "effective_at": null,
+        "field": "financials",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:41:17.105149Z",
+        "source_class": "official_annual_accounts",
+        "source_row_key": null,
+        "source_type": "official_annual_accounts",
+        "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+        "status": "available",
+        "value": {
+          "records": [
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 5771750.0,
+              "assets": 30176147.0,
+              "currency": "NOK",
+              "debt": 24235845.0,
+              "equity": 5940302.0,
+              "operating_result": 7592409.0,
+              "period": {
+                "fraDato": "2023-01-01",
+                "tilDato": "2023-12-31"
+              },
+              "profit_before_tax": 7408535.0,
+              "record_id": 4602671,
+              "revenue": 53139322.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 3717730.0,
+              "assets": 18546997.0,
+              "currency": "NOK",
+              "debt": 12388966.0,
+              "equity": 6158032.0,
+              "operating_result": 4990240.0,
+              "period": {
+                "fraDato": "2024-01-01",
+                "tilDato": "2024-12-31"
+              },
+              "profit_before_tax": 4779180.0,
+              "record_id": 5509213,
+              "revenue": 46705114.0
+            },
+            {
+              "account_type": "SELSKAP",
+              "annual_result": 6284485.0,
+              "assets": 23700711.0,
+              "currency": "NOK",
+              "debt": 16758195.0,
+              "equity": 6942516.0,
+              "operating_result": 8183901.0,
+              "period": {
+                "fraDato": "2025-01-01",
+                "tilDato": "2025-12-31"
+              },
+              "profit_before_tax": 8081959.0,
+              "record_id": 6379539,
+              "revenue": 64372514.0
+            }
+          ]
+        }
+      },
+      "group": {
+        "as_of": null,
+        "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "effective_at": null,
+        "field": "group",
+        "note": "HTTP 404",
+        "retrieved_at": "2026-11-16T15:41:24.437486Z",
+        "source_class": "official_group_structure",
+        "source_row_key": null,
+        "source_type": "official_group_structure",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/959617929",
+        "status": "not_found",
+        "value": null
+      },
+      "locations": {
+        "as_of": null,
+        "content_sha256": "3856eeb862550b4023c9b76c6e9e67bb43e0c2d06f0048f975260de9b774482d",
+        "effective_at": null,
+        "field": "locations",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:41:25.405357Z",
+        "source_class": "official_subunits",
+        "source_row_key": null,
+        "source_type": "official_subunits",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+        "status": "available",
+        "value": {
+          "locations": [
+            {
+              "address": {
+                "adresse": [
+                  "Strandsvingen 1"
+                ],
+                "kommune": "STAVANGER",
+                "kommunenummer": "1103",
+                "land": "Norge",
+                "landkode": "NO",
+                "postnummer": "4032",
+                "poststed": "STAVANGER"
+              },
+              "employees": 14,
+              "industry": {
+                "beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+                "kode": "46.630"
+              },
+              "name": "AANESTAD SERVICE AS",
+              "organisation_number": "873437162"
+            }
+          ]
+        }
+      },
+      "registry": {
+        "as_of": null,
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "effective_at": null,
+        "field": "registry",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "source_class": "official_registry_bulk",
+        "source_row_key": "959617929",
+        "source_type": "official_registry_bulk",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+        "status": "available",
+        "value": {
+          "aktivitet": [
+            "Salg og agentur, samt produksjon og montasje-",
+            "tjenester, samt dertil beslektet virksomhet.",
+            "Selskapet kan også delta i andre selskapet."
+          ],
+          "antallAnsatte": 14,
+          "epostadresse": "post@aanestad-service.no",
+          "erIKonsern": false,
+          "forretningsadresse.adresse": [
+            "Strandsvingen 1"
+          ],
+          "forretningsadresse.kommune": "STAVANGER",
+          "forretningsadresse.kommunenummer": "1103",
+          "forretningsadresse.land": "Norge",
+          "forretningsadresse.landkode": "NO",
+          "forretningsadresse.postnummer": "4032",
+          "forretningsadresse.poststed": "STAVANGER",
+          "harRegistrertAntallAnsatte": true,
+          "historiskeNavn": [],
+          "hjemmeside": "www.aanestad-service.no",
+          "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+          "institusjonellSektorkode.kode": "2100",
+          "kapital.antallAksjer": 100,
+          "kapital.belop": 100000.0,
+          "kapital.innfortDato": "2003-04-24",
+          "kapital.type": "Aksjekapital",
+          "kapital.valuta": "NOK",
+          "konkurs": false,
+          "links": [],
+          "maalform": "Bokmål",
+          "naeringskode1.beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+          "naeringskode1.kode": "46.630",
+          "navn": "AANESTAD SERVICE AS",
+          "organisasjonsform.beskrivelse": "Aksjeselskap",
+          "organisasjonsform.kode": "AS",
+          "organisasjonsform.links": [],
+          "organisasjonsnummer": "959617929",
+          "paategninger": [],
+          "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-11",
+          "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+          "registreringsdatoEnhetsregisteret": "1995-03-12",
+          "registreringsdatoForetaksregisteret": "1991-01-18",
+          "registreringsdatoMerverdiavgiftsregisteret": "1991-01-01",
+          "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-03-12",
+          "registrertIForetaksregisteret": true,
+          "registrertIFrivillighetsregisteret": false,
+          "registrertIMvaregisteret": true,
+          "registrertIPartiregisteret": false,
+          "registrertIStiftelsesregisteret": false,
+          "respons_klasse": "Enhet",
+          "sisteInnsendteAarsregnskap": "2025",
+          "stiftelsesdato": "1990-12-20",
+          "telefon": "51 81 65 80",
+          "underAvvikling": false,
+          "underTvangsavviklingEllerTvangsopplosning": false,
+          "vedtektsdato": "2003-03-12",
+          "vedtektsfestetFormaal": [
+            "Salg og agentur, samt produksjon og montasje-",
+            "tjenester, samt dertil beslektet virksomhet.",
+            "Selskapet kan også delta i andre selskapet."
+          ]
+        }
+      },
+      "registry_live": {
+        "as_of": null,
+        "content_sha256": "e2bbb99fc69235e3de3a5a13c8835ab781344ca349720e4a5b71691236656fcf",
+        "effective_at": null,
+        "field": "registry_live",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:41:16.149112Z",
+        "source_class": "official_registry_live",
+        "source_row_key": null,
+        "source_type": "official_registry_live",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+        "status": "available",
+        "value": {
+          "bankrupt": false,
+          "business_address": {
+            "adresse": [
+              "Strandsvingen 1"
+            ],
+            "kommune": "STAVANGER",
+            "kommunenummer": "1103",
+            "land": "Norge",
+            "landkode": "NO",
+            "postnummer": "4032",
+            "poststed": "STAVANGER"
+          },
+          "employees": 14,
+          "industry": {
+            "beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+            "kode": "46.630"
+          },
+          "latest_submitted_accounts": "2025",
+          "legal_form": "AS",
+          "liquidating": false,
+          "name": "AANESTAD SERVICE AS",
+          "organisation_number": "959617929",
+          "postal_address": null,
+          "website": "www.aanestad-service.no"
+        }
+      },
+      "roles": {
+        "as_of": null,
+        "content_sha256": "82ecfddd8768b85b4d4582fd92ad96d6fde56d2bdc87d1d962d801228a68519d",
+        "effective_at": null,
+        "field": "roles",
+        "note": null,
+        "retrieved_at": "2026-11-16T15:41:23.061603Z",
+        "source_class": "official_roles",
+        "source_row_key": null,
+        "source_type": "official_roles",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+        "status": "available",
+        "value": {
+          "roles": [
+            {
+              "group": "Daglig leder",
+              "group_code": "DAGL",
+              "inactive": false,
+              "last_changed": "2012-12-29",
+              "name": "Bjarte Hausken",
+              "organisation_number": null,
+              "role": "Daglig leder",
+              "role_code": "DAGL"
+            },
+            {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2023-03-03",
+              "name": "Ivar Ullestad",
+              "organisation_number": null,
+              "role": "Styrets leder",
+              "role_code": "LEDE"
+            },
+            {
+              "group": "Styre",
+              "group_code": "STYR",
+              "inactive": false,
+              "last_changed": "2023-03-03",
+              "name": "Bjarte Hausken",
+              "organisation_number": null,
+              "role": "Styremedlem",
+              "role_code": "MEDL"
+            },
+            {
+              "group": "Revisor",
+              "group_code": "REVI",
+              "inactive": false,
+              "last_changed": "2012-07-21",
+              "name": [
+                "STATSAUTORISERT REVISOR KENNETH",
+                "SENLAND"
+              ],
+              "organisation_number": "995982226",
+              "role": "Revisor",
+              "role_code": "REVI"
+            },
+            {
+              "group": "Regnskapsfører",
+              "group_code": "REGN",
+              "inactive": false,
+              "last_changed": "2001-07-28",
+              "name": [
+                "Forus Regnskapsservice A/S"
+              ],
+              "organisation_number": "944961615",
+              "role": "Regnskapsfører",
+              "role_code": "REGN"
+            }
+          ]
+        }
+      },
+      "website": {
+        "as_of": null,
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "effective_at": null,
+        "field": "website",
+        "note": "Company-controlled claim layer; not an official registry fact",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "source_class": "registry_linked_company_website",
+        "source_row_key": null,
+        "source_type": "registry_linked_company_website",
+        "source_url": "https://aanestad-service.no/",
+        "status": "available",
+        "value": {
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+          "crawl_errors": [
+            {
+              "error": "unsupported or oversized page",
+              "url": "https://aanestad-service.no/wp-content/uploads/2025/02/Water-treatment-and-filter-press-Matec-Industries.jpg"
+            }
+          ],
+          "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+          "discovered_social_links": [],
+          "extraction_state": "static_complete",
+          "final_url": "https://aanestad-service.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "aanestad",
+              "service"
+            ],
+            "matched_tokens": [
+              "aanestad",
+              "service"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
+            "reasons": [
+              "all normalized legal-name tokens appear together in homepage identity evidence"
+            ],
+            "score": 0.95,
+            "status": "exact"
+          },
+          "main_text_excerpt": "Aanestad Service AS. leverer\ngode løsninger til prosessindustrien\nVaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.\nVi leverer i hele Norge.\nSmart og effektiv\nservice leverandør.\nAanestad Service AS kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nVi er ydmyke, men ønsker å være de mest fleksible og best i markedet på å levere akkurat det du trenger, når du trenger det!\nStøvdempingssystemer som effektivt reduserer støv der det oppstår.\nReduser støvproblemer i krevende industrimiljøer med energieffektive løsninger som gir bedre arbeidsmiljø, mindre vedlikehold og høyere driftssikkerhet.\nVaskeanlegg og vannbehandlingsanlegg med filterpresser.\nAanestad Service leverer, installerer og følger opp ditt vaskeanlegg!\n(oppfølging av anlegget i 2 år etter igangkjøring og levering).\nHos oss er vi opptatt av sikkerhet og holder oss oppdatert i henhold til regelverket.\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nProsjekter og installasjoner\nSikring av maskiner\nBelegning av tromler\nRensing av prosessvann\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nVi spesialiserer oss i service, prosjekt og installasjoner.\nI tillegg påstår vi å levere de smarteste og beste produktene som finnes på markedet slik at du blir fornøyd og velger oss igjen og igjen – hver gang du trenger noen som oss!\nNoen av våre utvalgte produkter og tjenester:\nGummiering av slitedeler med Linatex som forlenger levetiden på stålet med 15 ganger.\nVi har den bredeste skjøteservicen i landet\nDrivremmer og flatremmer\nDisse skjøter vi på verkstedet vårt eller ute hos deg som kunde med vårt mobile skjøteutstyr\nVårt fagutdannede personell har sertifikater for arbeid både On-shore og Off-shore",
+          "pages": [
+            {
+              "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+              "main_text_excerpt": "Aanestad Service AS. leverer\ngode løsninger til prosessindustrien\nVaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.\nVi leverer i hele Norge.\nSmart og effektiv\nservice leverandør.\nAanestad Service AS kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nVi er ydmyke, men ønsker å være de mest fleksible og best i markedet på å levere akkurat det du trenger, når du trenger det!\nStøvdempingssystemer som effektivt reduserer støv der det oppstår.\nReduser støvproblemer i krevende industrimiljøer med energieffektive løsninger som gir bedre arbeidsmiljø, mindre vedlikehold og høyere driftssikkerhet.\nVaskeanlegg og vannbehandlingsanlegg med filterpresser.\nAanestad Service leverer, installerer og følger opp ditt vaskeanlegg!\n(oppfølging av anlegget i 2 år etter igangkjøring og levering).\nHos oss er vi opptatt av sikkerhet og holder oss oppdatert i henhold til regelverket.\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nProsjekter og installasjoner\nSikring av maskiner\nBelegning av tromler\nRensing av prosessvann\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nVi spesialiserer oss i service, prosjekt og installasjoner.\nI tillegg påstår vi å levere de smarteste og beste produktene som finnes på markedet slik at du blir fornøyd og velger oss igjen og igjen – hver gang du trenger noen som oss!\nNoen av våre utvalgte produkter og tjenester:\nGummiering av slitedeler med Linatex som forlenger levetiden på stålet med 15 ganger.\nVi har den bredeste skjøteservicen i landet\nDrivremmer og flatremmer\nDisse skjøter vi på verkstedet vårt eller ute hos deg som kunde med vårt mobile skjøteutstyr\nVårt fagutdannede personell har sertifikater for arbeid både On-shore og Off-shore",
+              "title": "Gode løsninger til prosessindustrien - Aanestad Service",
+              "url": "https://aanestad-service.no/"
+            },
+            {
+              "content_sha256": "75c5d0888121da5783ab7bc911c38cd6a916ad22422f67d8c1a1d129cb0864ea",
+              "main_text_excerpt": "Om oss.\nService, vedlikehold og salg av transportører, transportbånd og transmisjoner.\nStøttet av tiår med ekspertise innen service og prosjektstyring.\nVi utfører service og tilstandskontroll på produksjonsutstyr og prosessutstyr.\nMed røtter tilbake til Arne Aanestad Mekaniske Verksted, grunnlagt i 1942, har Aanestad Service utviklet seg til en leverandørbedrift for prosessindustrien, som leverer løsninger for service og prosjektstyring.\nSiden 1986 har selskapet vært i front når det gjelder service og vedlikehold av transportører og prosessutstyr. Aanestad Service AS leverer et bredt spekter av komponenter som er avgjørende for den sømløse driften av transportører.\nI tillegg til vår kjernevirksomhet har vi skåret ut en nisje for oss selv innen slitedels-optimalisering. Vår ekspertise ligger i gummiering av slitedeler med Linatex, en prosess kjent for sin evne til å forlenge stålets levetid med en imponerende faktor på 15. Vi er opptatt av bærekraft, som maksimerer utstyrets levetid og minimerer nedetid.\nVidere er Aanestad Service leverandør av sikteduk i PU og stål til alle formål.\nLes mer\nVed å utvide porteføljen vår har Aanestad Service etablert partnerskap med bransjeledende merker. Vi er nå en anerkjent leverandør av transportører fra MAQConveyors, kjent for sin innovasjon og pålitelighet, samt transportør komponenter fra FLEXCO. Hos Aanestad Services er vi opptatt av å levere førsteklasses produkter og tjenester, skreddersydd for å møte varierte behov.\nI essens fortsetter Aanestad Services arv av håndverk og innovasjon å drive oss fremover mens vi navigerer gjennom kompleksitetene i moderne industri, og tilbyr skreddersydde løsninger støttet av tiår med ekspertise innen service og prosjektstyring innenfor vår bransje.\nVi leverer bånd og skjøte oppdrag på flyplasser i hele landet.\nVi har fagutdannet mekanisk personell med Sertifikater for arbeid både Onshore og Offshore.\nBåndleverandører: Forbo – Ammeraal – Habasit\nVi har i dag serviceavtaler og service for blant andre:\nMibau Stema, Heidelberg Materials, Norsk Hydro, New Boliden, BP/Amoco, Oddfjell Drilling, Stangeland Maskin, Skretting, Felleskjøpet, Mester Bakeren, Nortura, Goman Bakeriet, NCC Industri, Veidekke\nKunder som setter pris på våre tjenester.",
+              "title": "Om oss - Aanestad Service",
+              "url": "https://aanestad-service.no/om-oss/"
+            },
+            {
+              "content_sha256": "fc932ee8e63b7d83f224280a0334c024088cee2a009000e0a25b08f501e18cc8",
+              "main_text_excerpt": "Kontakt oss.\nOver 40 år med båndservice og transportørkomponenter skaper erfaringer\nDet handler om mennesker,\nprosjekter og service.\nAanestad Service leverer gode løsninger til prosessindustrien.\nKontakt oss.\nVaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nDu finner oss lett tilgjengelig i aktivt industriområde på Forusstraen.\nAdresse: Strandsvingen 1, 4032 Stavanger\nVeibeskrivelse:\nFra Gauselveien svinger du inn i Slettestrandveien. Kjør over broen og vi holder til på venstre side ved første veikryss. Velkommen skal du være!\nFlere av våre ansatte.\nKunder som setter pris på våre tjenester.",
+              "title": "Kontakt oss - Aanestad Service",
+              "url": "https://aanestad-service.no/kontakt/"
+            }
+          ],
+          "registered_domain": "aanestad-service.no",
+          "requested_url": "https://www.aanestad-service.no/",
+          "social_link_assessments": [],
+          "social_links": [],
+          "structured_organisations": [
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Stavanger",
+                "postalCode": "4032",
+                "streetAddress": "Strandsvingen 1"
+              },
+              "description": "Aanestad Service AS. leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.",
+              "email": "post@aanestad-service.no",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "58.898039",
+                "longitude": "5.744024"
+              },
+              "logo": "https://aanestad-service.no/wp-content/uploads/2024/04/Aanestad-service-logo.svg",
+              "name": "Aanestad Service AS",
+              "sameAs": [
+                "https://www.google.com/maps?cid=11314921325320799231"
+              ],
+              "telephone": "+4751816580",
+              "url": "https://aanestad-service.no"
+            }
+          ],
+          "title": "Gode løsninger til prosessindustrien - Aanestad Service"
+        }
+      },
       "external_observations": [
         {
-          "id": "registry-workforce-78ea42c0899367f5f0d72965",
+          "organisation_number": "959617929",
+          "platform": "company_site",
+          "source_url": "https://aanestad-service.no/",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_domain_unique",
+              "domain": "aanestad-service.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-16",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
+            {
+              "type": "website_identity_gate",
+              "status": "exact",
+              "score": 0.95
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_activity",
+          "id": "company-site-activity-959617929-99b86b0323006507",
+          "signal_type": "profile_metrics",
+          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+          "metrics": {
+            "bounded_pages_captured": 3,
+            "verified_social_links": 0,
+            "structured_organisation_records": 1,
+            "extraction_state": "static_complete",
+            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+          }
+        },
+        {
+          "id": "registry-site-959617929-99b86b0323006507",
+          "organisation_number": "959617929",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://aanestad-service.no/",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "aanestad-service.no",
+              "matched_organisation_number": "959617929",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-11-16T15:18:00.649157Z",
+              "explanation": "BRREG declares aanestad-service.no as the website of organisation 959617929; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+          "metrics": {
+            "title": "Gode løsninger til prosessindustrien - Aanestad Service",
+            "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+            "registry_domain": "aanestad-service.no"
+          },
+          "strategy": "registry_declared_website_description"
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/959617929",
+          "retrieved_at": "2026-11-16T16:37:49.290253Z",
+          "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "959617929"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "AANESTAD SERVICE AS",
+              "matched_organisation_number": "959617929"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+          "id": "purehelp-email-959617929-eb1c2468f2a6ebed",
+          "signal_type": "contact_email",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "email": "post@aanestad-service.no",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/959617929",
+          "retrieved_at": "2026-11-16T16:37:49.290253Z",
+          "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "959617929"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "AANESTAD SERVICE AS",
+              "matched_organisation_number": "959617929"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+          "id": "purehelp-phone-959617929-eb1c2468f2a6ebed",
+          "signal_type": "contact_phone",
+          "strategy": "purehelp_directory_contact",
+          "metrics": {
+            "phone": "51 81 65 80",
+            "contact_as_of": "2026-10-26"
+          }
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/959617929",
+          "retrieved_at": "2026-11-16T16:37:49.290253Z",
+          "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "959617929"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "AANESTAD SERVICE AS",
+              "matched_organisation_number": "959617929"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+          "id": "purehelp-profile-959617929-eb1c2468f2a6ebed",
+          "signal_type": "profile_metrics",
+          "strategy": "purehelp_directory_profile",
+          "metrics": {
+            "legal_form": "AS",
+            "legal_form_description": "Limited company",
+            "nace_code": "46.630",
+            "nace_description": "Wholesale of mining\\, construction and civil engineering machinery",
+            "town": "STAVANGER",
+            "zipcode": "4032",
+            "municipality": "STAVANGER",
+            "municipality_number": "1103",
+            "county": "Rogaland",
+            "registration_date": "1995-03-12",
+            "registry_status": "ACTIVE",
+            "registry_status_date": "1995-03-12",
+            "deregistration_date": "",
+            "is_active": true,
+            "is_bankrupt": null,
+            "bankruptcy_date": "",
+            "website_domain": "www.aanestad-service.no"
+          }
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "company_directory",
+          "source_url": "https://purehelp.no/company/NO/959617929",
+          "retrieved_at": "2026-11-16T16:37:49.290253Z",
+          "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "exact_organisation_number_on_directory_page",
+              "value": "959617929"
+            },
+            {
+              "type": "exact_legal_name_on_directory_page",
+              "value": "AANESTAD SERVICE AS",
+              "matched_organisation_number": "959617929"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_directory",
+          "extraction_method": "nuxt_ssr_payload_company_record",
+          "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+          "id": "purehelp-workforce-959617929-eb1c2468f2a6ebed",
+          "signal_type": "workforce_snapshot",
+          "strategy": "purehelp_directory_workforce",
+          "metrics": {
+            "employees": 14,
+            "as_of": "2026-11-16",
+            "employees_source": "enhetsregisteret",
+            "interpretation": "Employee count published by the directory; no value is inferred."
+          }
+        },
+        {
+          "id": "registry-workforce-e0e0e8754a42de6c5d5e58fc",
           "organisation_number": "959617929",
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-09-29T10:21:43.743683Z",
-          "content_sha256": "41afa0b3e8332619faca192c1057a7bdd52c5b82dfc04c59c674099210badf50",
+          "retrieved_at": "2026-11-16T15:41:16.149112Z",
+          "content_sha256": "e2bbb99fc69235e3de3a5a13c8835ab781344ca349720e4a5b71691236656fcf",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -23,96 +746,103 @@
           "acquisition_mode": "official_api",
           "rights_status": "approved",
           "source_class": "official_registry_live",
-          "evidence_span": "\"employees\": 12",
+          "evidence_span": "\"employees\": 14",
           "metrics": {
-            "workforce_value": 12,
+            "workforce_value": 14,
             "measure": "employees",
             "registry_field": "employees",
-            "registered_at": "2026-08-11"
+            "registered_at": "2026-11-11"
           },
           "strategy": "registry_workforce_exact",
-          "observed_at": "2026-08-11",
-          "effective_at": "2026-08-11"
+          "observed_at": "2026-11-11",
+          "effective_at": "2026-11-11"
         },
         {
+          "id": "brreg-kunngjoring-c5f3e33d907eca2067daf2d5",
           "organisation_number": "959617929",
-          "platform": "company_site",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:05Z",
+          "content_sha256": "c5ebd21a547a1361822f3ca90e3578daa0d4690923efdf7d3edb529ea3e1a6f4",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "959617929",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-ce8b676114dd414d7e40ee7b",
-          "signal_type": "website_description",
-          "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          }
+          "source_class": "official_api",
+          "observed_at": "2026-03-02",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2026-03-02",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-eabb6b3595e11d7ae6923e9b",
           "organisation_number": "959617929",
-          "platform": "company_site",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:05Z",
+          "content_sha256": "22fa34561da2e523e42999dba9934897e62d65bcc37b730f7f717e91ab780c4f",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "959617929",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-brand-53db38c298c3aae117d94b2a",
-          "signal_type": "public_brand",
-          "evidence_span": "Aanestad Service AS",
-          "metrics": {
-            "declared_url": "https://aanestad-service.no",
-            "interpretation": "Brand name from the site's own JSON-LD."
-          }
+          "source_class": "official_api",
+          "observed_at": "2025-03-20",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2025-03-20",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2025-03-20 (BRREG official announcement)"
         },
         {
+          "id": "brreg-kunngjoring-82418cbb47bdc0d9232c1318",
           "organisation_number": "959617929",
-          "platform": "company_site",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "platform": "brreg",
+          "signal_type": "public_post",
+          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb",
+          "retrieved_at": "2026-11-16T20:18:05Z",
+          "content_sha256": "51a74cdea74cb24f5cb97728c5b312d33d11bea3bbc8c97325294d4ce3d214d7",
           "exact_entity": true,
           "identity_proof": [
             {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
+              "type": "organisation_number_on_official_api",
+              "source": "w2.brreg.no/kunngjoring",
+              "source_class": "official_registry",
+              "matched_organisation_number": "959617929",
+              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
             }
           ],
-          "acquisition_mode": "permitted_public_page",
+          "acquisition_mode": "official_api",
           "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-activity-959617929-f47bf7f251ad8f7c",
-          "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-          "metrics": {
-            "bounded_pages_captured": 3,
-            "verified_social_links": 0,
-            "structured_organisation_records": 1,
-            "extraction_state": "static_complete",
-            "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          }
+          "source_class": "official_api",
+          "observed_at": "2024-03-09",
+          "signal": {
+            "title": "Godkjente årsregnskap",
+            "date": "2024-03-09",
+            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb"
+          },
+          "evidence_span": "Godkjente årsregnskap — 2024-03-09 (BRREG official announcement)"
         },
         {
           "id": "registry-contact-f785d1a8034e700f84adbae4",
@@ -120,8 +850,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -148,8 +878,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-10-05T08:34:31.959772Z",
-          "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+          "retrieved_at": "2026-11-16T15:18:00.649157Z",
+          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -171,13 +901,92 @@
           "strategy": "registry_contact_exact"
         },
         {
+          "organisation_number": "959617929",
+          "platform": "company_site",
+          "source_url": "https://aanestad-service.no/",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-description-ce8b676114dd414d7e40ee7b",
+          "signal_type": "website_description",
+          "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+          "metrics": {
+            "interpretation": "Company-owned description; the company's own words."
+          }
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "company_site",
+          "source_url": "https://aanestad-service.no/",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "strategy": "company_site_identity",
+          "id": "site-brand-53db38c298c3aae117d94b2a",
+          "signal_type": "public_brand",
+          "evidence_span": "Aanestad Service AS",
+          "metrics": {
+            "declared_url": "https://aanestad-service.no",
+            "interpretation": "Brand name from the site's own JSON-LD."
+          }
+        },
+        {
+          "organisation_number": "959617929",
+          "platform": "brreg",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "retrieved_at": "2026-11-16T15:41:25.405357Z",
+          "content_sha256": "3856eeb862550b4023c9b76c6e9e67bb43e0c2d06f0048f975260de9b774482d",
+          "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "id": "subunit-9f2ceaf2d85bbb611c224951",
+          "signal_type": "subunit",
+          "evidence_span": "AANESTAD SERVICE AS",
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "data.brreg.no",
+              "source_class": "official_subunits",
+              "matched_organisation_number": "959617929",
+              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+            }
+          ],
+          "metrics": {
+            "subunit_organisation_number": "873437162",
+            "municipality": "STAVANGER",
+            "interpretation": "Officially registered sub-unit of this organisation."
+          }
+        },
+        {
           "id": "sitemap-page-71bbebde276eca34b9cf2441",
           "organisation_number": "959617929",
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-10",
           "exact_entity": true,
           "identity_proof": [
@@ -204,8 +1013,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -232,8 +1041,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -260,8 +1069,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -288,8 +1097,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -316,8 +1125,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -344,8 +1153,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -372,8 +1181,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -400,8 +1209,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -428,8 +1237,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-10-05T08:55:25.684425Z",
-          "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+          "retrieved_at": "2026-11-16T15:41:35.088253Z",
+          "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
           "observed_at": "2026-09-09",
           "exact_entity": true,
           "identity_proof": [
@@ -451,32 +1260,34 @@
           "strategy": "sitemap_lastmod"
         },
         {
+          "id": "registry-update-a9f20653353fcbe135dfd3ba",
           "organisation_number": "959617929",
           "platform": "brreg",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
-          "retrieved_at": "2026-10-05T08:55:16.199009Z",
-          "content_sha256": "6918c54c945d84a2af6d28a4da394e923d29e1f229bd2bdb9ef0de1f0cbea384",
+          "signal_type": "registry_update",
+          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "content_sha256": "a9f20653353fcbe135dfd3ba7bf8060441b2320419676dcd5771503a7d4d776d",
+          "observed_at": "2026-11-11",
           "exact_entity": true,
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "id": "subunit-9f2ceaf2d85bbb611c224951",
-          "signal_type": "subunit",
-          "evidence_span": "AANESTAD SERVICE AS",
           "identity_proof": [
             {
               "type": "organisation_number_on_official_api",
               "source": "data.brreg.no",
-              "source_class": "official_subunits",
+              "source_class": "official_registry_updates",
               "matched_organisation_number": "959617929",
-              "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+              "explanation": "Update event is keyed by this organisation number in the official feed."
             }
           ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_registry_bulk",
+          "evidence_span": "Registry update 2026-11-11: Endring",
           "metrics": {
-            "subunit_organisation_number": "873437162",
-            "municipality": "STAVANGER",
-            "interpretation": "Officially registered sub-unit of this organisation."
-          }
+            "date": "2026-11-11",
+            "change_type": "Endring",
+            "interpretation": "Dated official registry event."
+          },
+          "strategy": "registry_updates_feed"
         },
         {
           "id": "registry-update-3332a4ad1ed11d41492b3c3a",
@@ -484,7 +1295,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "3332a4ad1ed11d41492b3c3afd4a40b61cbd3c90b36be246573ab66f21b5b98c",
           "observed_at": "2026-10-12",
           "exact_entity": true,
@@ -514,7 +1325,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "46a8bb63150fc9385610e58590d300b1527eb39e7a86794a0247dc7fa2d1de6a",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -544,7 +1355,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "193d88c923a8aefde18f904db97bc7e7258dbe1abb6e8cad05e50336cacd8e7c",
           "observed_at": "2026-08-18",
           "exact_entity": true,
@@ -574,7 +1385,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "fa88a9c12b9f9da2a08bb10705da64ebe9a9646fd7ae772f2d23b9f4bedcd25d",
           "observed_at": "2026-08-11",
           "exact_entity": true,
@@ -604,7 +1415,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "de851f9d7e4294b5cb024bc4984134e1d47adcd3730916dcd6bc0b033d876c97",
           "observed_at": "2026-05-11",
           "exact_entity": true,
@@ -634,7 +1445,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "4846de318873b74d99050cfe374e0f7d379f927a186d897e9eaf8bbbf8065072",
           "observed_at": "2026-03-02",
           "exact_entity": true,
@@ -664,7 +1475,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "f13aeb46deeb40e4812fbedab2d38593259b8d775a638fee7e4fad6d1f299acf",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -694,7 +1505,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "ac0e75cb0629c29d7b2ea5ae1080db02f6980f0decff1c9fbf3b40b20083974d",
           "observed_at": "2025-10-14",
           "exact_entity": true,
@@ -724,7 +1535,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "8d0f3b840410ad04a0e85ecad7f135d88558dbc339cdb45e2407929afabc5295",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -754,7 +1565,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "40f1e159c70d1d6704186cb2709a95e48b65e38e2d64ec28f1b1bd91f44d7e4e",
           "observed_at": "2025-08-11",
           "exact_entity": true,
@@ -784,7 +1595,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "4cafff1c45417fd4a30c9c281cd2b87611a0151fee6c3682e15da436149af31f",
           "observed_at": "2025-05-12",
           "exact_entity": true,
@@ -814,7 +1625,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "e7a7fb1c51eea3d8a79c97b7c71548d67c04827b919922fae9da9bba06be2646",
           "observed_at": "2025-04-08",
           "exact_entity": true,
@@ -844,7 +1655,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "c5860da41911359ce7bf41ad4ef4e9419d787985b36652038a193cde878d077b",
           "observed_at": "2025-03-21",
           "exact_entity": true,
@@ -874,7 +1685,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
+          "retrieved_at": "2026-11-16T16:14:49.080873Z",
           "content_sha256": "485458189f2f7e245a2cccfa884ca11ddc1b9111ec930a7e70521d18aaf5771a",
           "observed_at": "2025-03-12",
           "exact_entity": true,
@@ -897,344 +1708,127 @@
             "interpretation": "Dated official registry event."
           },
           "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "registry-update-25c512250d1ad87818c8613d",
-          "organisation_number": "959617929",
-          "platform": "brreg",
-          "signal_type": "registry_update",
-          "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-          "retrieved_at": "2026-11-06T14:47:49.419792Z",
-          "content_sha256": "25c512250d1ad87818c8613dd618077281c2ebfb936e9e4675243d570102ad93",
-          "observed_at": "2024-11-14",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "data.brreg.no",
-              "source_class": "official_registry_updates",
-              "matched_organisation_number": "959617929",
-              "explanation": "Update event is keyed by this organisation number in the official feed."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_registry_bulk",
-          "evidence_span": "Registry update 2024-11-14: Endring",
-          "metrics": {
-            "date": "2024-11-14",
-            "change_type": "Endring",
-            "interpretation": "Dated official registry event."
-          },
-          "strategy": "registry_updates_feed"
-        },
-        {
-          "id": "brreg-kunngjoring-c5f3e33d907eca2067daf2d5",
-          "organisation_number": "959617929",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "c5ebd21a547a1361822f3ca90e3578daa0d4690923efdf7d3edb529ea3e1a6f4",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "959617929",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2026-03-02",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2026-03-02",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-eabb6b3595e11d7ae6923e9b",
-          "organisation_number": "959617929",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "22fa34561da2e523e42999dba9934897e62d65bcc37b730f7f717e91ab780c4f",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "959617929",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2025-03-20",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2025-03-20",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2025-03-20 (BRREG official announcement)"
-        },
-        {
-          "id": "brreg-kunngjoring-82418cbb47bdc0d9232c1318",
-          "organisation_number": "959617929",
-          "platform": "brreg",
-          "signal_type": "public_post",
-          "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb",
-          "retrieved_at": "2026-10-05T00:00:00Z",
-          "content_sha256": "51a74cdea74cb24f5cb97728c5b312d33d11bea3bbc8c97325294d4ce3d214d7",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "organisation_number_on_official_api",
-              "source": "w2.brreg.no/kunngjoring",
-              "source_class": "official_registry",
-              "matched_organisation_number": "959617929",
-              "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-            }
-          ],
-          "acquisition_mode": "official_api",
-          "rights_status": "approved",
-          "source_class": "official_api",
-          "observed_at": "2024-03-09",
-          "signal": {
-            "title": "Godkjente årsregnskap",
-            "date": "2024-03-09",
-            "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb"
-          },
-          "evidence_span": "Godkjente årsregnskap — 2024-03-09 (BRREG official announcement)"
-        },
-        {
-          "id": "registry-site-959617929-bb09127735244a23",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "aanestad-service.no",
-              "matched_organisation_number": "959617929",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-09-29T10:02:25.550213Z",
-              "explanation": "BRREG declares aanestad-service.no as the website of organisation 959617929; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-          "metrics": {
-            "title": "Gode løsninger til prosessindustrien - Aanestad Service",
-            "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-            "registry_domain": "aanestad-service.no"
-          },
-          "strategy": "registry_declared_website_description"
-        },
-        {
-          "id": "sitemap-page-b51d8651d3eb95afe5640161",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "observed_at": "2026-09-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://aanestad-service.no/produkter/transportband-ruller/ last modified 2026-09-09",
-          "metrics": {
-            "page_url": "https://aanestad-service.no/produkter/transportband-ruller/",
-            "lastmod": "2026-09-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-0ce3b1f6cba5185576031e43",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "observed_at": "2026-09-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://aanestad-service.no/produkter/bandskrapere/ last modified 2026-09-09",
-          "metrics": {
-            "page_url": "https://aanestad-service.no/produkter/bandskrapere/",
-            "lastmod": "2026-09-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-a0f897bb0d1d4385a37ad07d",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "observed_at": "2026-09-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://aanestad-service.no/produkter/pvc-band/ last modified 2026-09-09",
-          "metrics": {
-            "page_url": "https://aanestad-service.no/produkter/pvc-band/",
-            "lastmod": "2026-09-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-a5a2084664f1463bef32f9a0",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "observed_at": "2026-09-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://aanestad-service.no/produkter/transmisjoner/ last modified 2026-09-09",
-          "metrics": {
-            "page_url": "https://aanestad-service.no/produkter/transmisjoner/",
-            "lastmod": "2026-09-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
-        },
-        {
-          "id": "sitemap-page-1e0c58cb6a29df3718f03da4",
-          "organisation_number": "959617929",
-          "platform": "company_site",
-          "signal_type": "sitemap_page",
-          "source_url": "https://aanestad-service.no/",
-          "retrieved_at": "2026-09-29T10:22:01.308961Z",
-          "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-          "observed_at": "2026-09-09",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Sitemap page https://aanestad-service.no/produkter/gummiering/ last modified 2026-09-09",
-          "metrics": {
-            "page_url": "https://aanestad-service.no/produkter/gummiering/",
-            "lastmod": "2026-09-09",
-            "interpretation": "Dated official-site page from the site's own sitemap."
-          },
-          "strategy": "sitemap_lastmod"
         }
       ]
-    }
+    },
+    "industry_code": "46.630",
+    "industry_label": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+    "latest_submitted_accounts": "2025",
+    "legal_form": "AS",
+    "liquidating": false,
+    "municipality": "STAVANGER",
+    "municipality_number": "1103",
+    "name": "AANESTAD SERVICE AS",
+    "organisation_number": "959617929",
+    "run_metrics": {
+      "bytes": 496751,
+      "latencies_ms": [
+        953,
+        955,
+        934,
+        959,
+        1368,
+        967,
+        3245,
+        800,
+        1150,
+        1012
+      ],
+      "requests": 14
+    },
+    "website": "www.aanestad-service.no"
   },
   "summary": {
     "organisation_number": "959617929",
-    "company_name": "959617929",
+    "company_name": "AANESTAD SERVICE AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "No fields changed since the previous run. Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); financial_health (no filed accounts found in checked sources); revenue_growth (insufficient financial history (need at least 2 years)); staff_growth (insufficient financial history (need at least 2 years)); financial_history (no financial history found); hiring (no job sources were checked).",
+    "summary": "AANESTAD SERVICE AS is a private limited company operating in Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet. Latest accounts (2025): revenue NOK 53.1m, annual result NOK 5.8m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+13.8% YoY). Registered employees: 14. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "AANESTAD SERVICE AS is a private limited company operating in Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 1.0,
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "financial_health",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Latest accounts (2025): revenue NOK 53.1m, annual result NOK 5.8m.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "financial_history",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.9,
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "revenue_growth",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Revenue growing (+13.8% YoY).",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 0.9,
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "staff",
-        "answer": "not available",
-        "answerable": false,
-        "status": "unknown",
-        "confidence": 0.0,
-        "evidence_ids": []
+        "answer": "Registered employees: 14.",
+        "answerable": true,
+        "status": "confirmed",
+        "confidence": 1.0,
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       },
       {
         "question": "staff_growth",
@@ -1254,44 +1848,23 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "Baseline run, no prior version to compare against (run none).",
         "answerable": true,
-        "status": "confirmed",
+        "status": "inferred",
         "confidence": 0.8,
-        "evidence_ids": []
+        "evidence_ids": [
+          "https://aanestad-service.no/",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+          "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+          "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+          "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+        ]
       }
     ],
     "unknowns": [
-      {
-        "field": "official_website",
-        "state": "not_available",
-        "reason": "no verified company website was established"
-      },
-      {
-        "field": "employees",
-        "state": "not_available",
-        "reason": "registry returned no employee count"
-      },
-      {
-        "field": "financial_health",
-        "state": "not_available",
-        "reason": "no filed accounts found in checked sources"
-      },
-      {
-        "field": "revenue_growth",
-        "state": "not_available",
-        "reason": "insufficient financial history (need at least 2 years)"
-      },
-      {
-        "field": "staff_growth",
-        "state": "not_available",
-        "reason": "insufficient financial history (need at least 2 years)"
-      },
-      {
-        "field": "financial_history",
-        "state": "not_available",
-        "reason": "no financial history found"
-      },
       {
         "field": "hiring",
         "state": "not_available",
@@ -1300,15 +1873,736 @@
     ]
   },
   "evidence": {
+    "accounting_obligation": {
+      "as_of": "2024-08-09",
+      "content_sha256": "b94e22c6da7667d1ae10db3dcb20f1b279634a1ce07b21111fc0f56758b3b6fb",
+      "effective_at": null,
+      "field": "accounting_obligation",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:19:01.251928Z",
+      "source_class": "official_rule_interpretation",
+      "source_row_key": "959617929",
+      "source_type": "official_rule_interpretation",
+      "source_url": "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+      "status": "available",
+      "value": {
+        "classification": "filing_observed",
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "reason": "The registry snapshot reports a latest submitted annual-account year.",
+        "ruleset_version": "brreg_accounting_obligation_rules_2024-08-09_v1"
+      }
+    },
+    "financial_history": {
+      "as_of": null,
+      "content_sha256": "b7bcd20d8a4607bc9ca49fbdfebf5e51cb31e39858edb985dc98a82e8d2b7cd1",
+      "effective_at": null,
+      "field": "financial_history",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:41:22.101856Z",
+      "source_class": "official_annual_account_copies",
+      "source_row_key": null,
+      "source_type": "official_annual_account_copies",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/aar",
+      "status": "available",
+      "value": {
+        "pdfs": [
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2025",
+            "year": "2025"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2024",
+            "year": "2024"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2023",
+            "year": "2023"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2022",
+            "year": "2022"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2021",
+            "year": "2021"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2020",
+            "year": "2020"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2019",
+            "year": "2019"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2018",
+            "year": "2018"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2017",
+            "year": "2017"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2016",
+            "year": "2016"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2015",
+            "year": "2015"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2014",
+            "year": "2014"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2013",
+            "year": "2013"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2012",
+            "year": "2012"
+          },
+          {
+            "url": "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/959617929/2011",
+            "year": "2011"
+          }
+        ],
+        "years": [
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      }
+    },
+    "financials": {
+      "as_of": null,
+      "content_sha256": "8cdd512d9d3dc9d1f8200feabec743c2f2f07383b18e89a720aca9782ef9f403",
+      "effective_at": null,
+      "field": "financials",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:41:17.105149Z",
+      "source_class": "official_annual_accounts",
+      "source_row_key": null,
+      "source_type": "official_annual_accounts",
+      "source_url": "https://data.brreg.no/regnskapsregisteret/regnskap/959617929",
+      "status": "available",
+      "value": {
+        "records": [
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 5771750.0,
+            "assets": 30176147.0,
+            "currency": "NOK",
+            "debt": 24235845.0,
+            "equity": 5940302.0,
+            "operating_result": 7592409.0,
+            "period": {
+              "fraDato": "2023-01-01",
+              "tilDato": "2023-12-31"
+            },
+            "profit_before_tax": 7408535.0,
+            "record_id": 4602671,
+            "revenue": 53139322.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 3717730.0,
+            "assets": 18546997.0,
+            "currency": "NOK",
+            "debt": 12388966.0,
+            "equity": 6158032.0,
+            "operating_result": 4990240.0,
+            "period": {
+              "fraDato": "2024-01-01",
+              "tilDato": "2024-12-31"
+            },
+            "profit_before_tax": 4779180.0,
+            "record_id": 5509213,
+            "revenue": 46705114.0
+          },
+          {
+            "account_type": "SELSKAP",
+            "annual_result": 6284485.0,
+            "assets": 23700711.0,
+            "currency": "NOK",
+            "debt": 16758195.0,
+            "equity": 6942516.0,
+            "operating_result": 8183901.0,
+            "period": {
+              "fraDato": "2025-01-01",
+              "tilDato": "2025-12-31"
+            },
+            "profit_before_tax": 8081959.0,
+            "record_id": 6379539,
+            "revenue": 64372514.0
+          }
+        ]
+      }
+    },
+    "group": {
+      "as_of": null,
+      "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "effective_at": null,
+      "field": "group",
+      "note": "HTTP 404",
+      "retrieved_at": "2026-11-16T15:41:24.437486Z",
+      "source_class": "official_group_structure",
+      "source_row_key": null,
+      "source_type": "official_group_structure",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/959617929",
+      "status": "not_found",
+      "value": null
+    },
+    "locations": {
+      "as_of": null,
+      "content_sha256": "3856eeb862550b4023c9b76c6e9e67bb43e0c2d06f0048f975260de9b774482d",
+      "effective_at": null,
+      "field": "locations",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:41:25.405357Z",
+      "source_class": "official_subunits",
+      "source_row_key": null,
+      "source_type": "official_subunits",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+      "status": "available",
+      "value": {
+        "locations": [
+          {
+            "address": {
+              "adresse": [
+                "Strandsvingen 1"
+              ],
+              "kommune": "STAVANGER",
+              "kommunenummer": "1103",
+              "land": "Norge",
+              "landkode": "NO",
+              "postnummer": "4032",
+              "poststed": "STAVANGER"
+            },
+            "employees": 14,
+            "industry": {
+              "beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+              "kode": "46.630"
+            },
+            "name": "AANESTAD SERVICE AS",
+            "organisation_number": "873437162"
+          }
+        ]
+      }
+    },
+    "registry": {
+      "as_of": null,
+      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+      "effective_at": null,
+      "field": "registry",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:18:00.649157Z",
+      "source_class": "official_registry_bulk",
+      "source_row_key": "959617929",
+      "source_type": "official_registry_bulk",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+      "status": "available",
+      "value": {
+        "aktivitet": [
+          "Salg og agentur, samt produksjon og montasje-",
+          "tjenester, samt dertil beslektet virksomhet.",
+          "Selskapet kan også delta i andre selskapet."
+        ],
+        "antallAnsatte": 14,
+        "epostadresse": "post@aanestad-service.no",
+        "erIKonsern": false,
+        "forretningsadresse.adresse": [
+          "Strandsvingen 1"
+        ],
+        "forretningsadresse.kommune": "STAVANGER",
+        "forretningsadresse.kommunenummer": "1103",
+        "forretningsadresse.land": "Norge",
+        "forretningsadresse.landkode": "NO",
+        "forretningsadresse.postnummer": "4032",
+        "forretningsadresse.poststed": "STAVANGER",
+        "harRegistrertAntallAnsatte": true,
+        "historiskeNavn": [],
+        "hjemmeside": "www.aanestad-service.no",
+        "institusjonellSektorkode.beskrivelse": "Private aksjeselskaper mv.",
+        "institusjonellSektorkode.kode": "2100",
+        "kapital.antallAksjer": 100,
+        "kapital.belop": 100000.0,
+        "kapital.innfortDato": "2003-04-24",
+        "kapital.type": "Aksjekapital",
+        "kapital.valuta": "NOK",
+        "konkurs": false,
+        "links": [],
+        "maalform": "Bokmål",
+        "naeringskode1.beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+        "naeringskode1.kode": "46.630",
+        "navn": "AANESTAD SERVICE AS",
+        "organisasjonsform.beskrivelse": "Aksjeselskap",
+        "organisasjonsform.kode": "AS",
+        "organisasjonsform.links": [],
+        "organisasjonsnummer": "959617929",
+        "paategninger": [],
+        "registreringsdatoAntallAnsatteEnhetsregisteret": "2026-11-11",
+        "registreringsdatoAntallAnsatteNAVAaregisteret": "2026-11-10",
+        "registreringsdatoEnhetsregisteret": "1995-03-12",
+        "registreringsdatoForetaksregisteret": "1991-01-18",
+        "registreringsdatoMerverdiavgiftsregisteret": "1991-01-01",
+        "registreringsdatoMerverdiavgiftsregisteretEnhetsregisteret": "1995-03-12",
+        "registrertIForetaksregisteret": true,
+        "registrertIFrivillighetsregisteret": false,
+        "registrertIMvaregisteret": true,
+        "registrertIPartiregisteret": false,
+        "registrertIStiftelsesregisteret": false,
+        "respons_klasse": "Enhet",
+        "sisteInnsendteAarsregnskap": "2025",
+        "stiftelsesdato": "1990-12-20",
+        "telefon": "51 81 65 80",
+        "underAvvikling": false,
+        "underTvangsavviklingEllerTvangsopplosning": false,
+        "vedtektsdato": "2003-03-12",
+        "vedtektsfestetFormaal": [
+          "Salg og agentur, samt produksjon og montasje-",
+          "tjenester, samt dertil beslektet virksomhet.",
+          "Selskapet kan også delta i andre selskapet."
+        ]
+      }
+    },
+    "registry_live": {
+      "as_of": null,
+      "content_sha256": "e2bbb99fc69235e3de3a5a13c8835ab781344ca349720e4a5b71691236656fcf",
+      "effective_at": null,
+      "field": "registry_live",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:41:16.149112Z",
+      "source_class": "official_registry_live",
+      "source_row_key": null,
+      "source_type": "official_registry_live",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+      "status": "available",
+      "value": {
+        "bankrupt": false,
+        "business_address": {
+          "adresse": [
+            "Strandsvingen 1"
+          ],
+          "kommune": "STAVANGER",
+          "kommunenummer": "1103",
+          "land": "Norge",
+          "landkode": "NO",
+          "postnummer": "4032",
+          "poststed": "STAVANGER"
+        },
+        "employees": 14,
+        "industry": {
+          "beskrivelse": "Engroshandel med maskiner og utstyr til bergverksdrift, olje- og gassutvinning og bygge- og anleggsvirksomhet",
+          "kode": "46.630"
+        },
+        "latest_submitted_accounts": "2025",
+        "legal_form": "AS",
+        "liquidating": false,
+        "name": "AANESTAD SERVICE AS",
+        "organisation_number": "959617929",
+        "postal_address": null,
+        "website": "www.aanestad-service.no"
+      }
+    },
+    "roles": {
+      "as_of": null,
+      "content_sha256": "82ecfddd8768b85b4d4582fd92ad96d6fde56d2bdc87d1d962d801228a68519d",
+      "effective_at": null,
+      "field": "roles",
+      "note": null,
+      "retrieved_at": "2026-11-16T15:41:23.061603Z",
+      "source_class": "official_roles",
+      "source_row_key": null,
+      "source_type": "official_roles",
+      "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929/roller",
+      "status": "available",
+      "value": {
+        "roles": [
+          {
+            "group": "Daglig leder",
+            "group_code": "DAGL",
+            "inactive": false,
+            "last_changed": "2012-12-29",
+            "name": "Bjarte Hausken",
+            "organisation_number": null,
+            "role": "Daglig leder",
+            "role_code": "DAGL"
+          },
+          {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2023-03-03",
+            "name": "Ivar Ullestad",
+            "organisation_number": null,
+            "role": "Styrets leder",
+            "role_code": "LEDE"
+          },
+          {
+            "group": "Styre",
+            "group_code": "STYR",
+            "inactive": false,
+            "last_changed": "2023-03-03",
+            "name": "Bjarte Hausken",
+            "organisation_number": null,
+            "role": "Styremedlem",
+            "role_code": "MEDL"
+          },
+          {
+            "group": "Revisor",
+            "group_code": "REVI",
+            "inactive": false,
+            "last_changed": "2012-07-21",
+            "name": [
+              "STATSAUTORISERT REVISOR KENNETH",
+              "SENLAND"
+            ],
+            "organisation_number": "995982226",
+            "role": "Revisor",
+            "role_code": "REVI"
+          },
+          {
+            "group": "Regnskapsfører",
+            "group_code": "REGN",
+            "inactive": false,
+            "last_changed": "2001-07-28",
+            "name": [
+              "Forus Regnskapsservice A/S"
+            ],
+            "organisation_number": "944961615",
+            "role": "Regnskapsfører",
+            "role_code": "REGN"
+          }
+        ]
+      }
+    },
+    "website": {
+      "as_of": null,
+      "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+      "effective_at": null,
+      "field": "website",
+      "note": "Company-controlled claim layer; not an official registry fact",
+      "retrieved_at": "2026-11-16T15:41:35.088253Z",
+      "source_class": "registry_linked_company_website",
+      "source_row_key": null,
+      "source_type": "registry_linked_company_website",
+      "source_url": "https://aanestad-service.no/",
+      "status": "available",
+      "value": {
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "crawl_errors": [
+          {
+            "error": "unsupported or oversized page",
+            "url": "https://aanestad-service.no/wp-content/uploads/2025/02/Water-treatment-and-filter-press-Matec-Industries.jpg"
+          }
+        ],
+        "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+        "discovered_social_links": [],
+        "extraction_state": "static_complete",
+        "final_url": "https://aanestad-service.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "aanestad",
+            "service"
+          ],
+          "matched_tokens": [
+            "aanestad",
+            "service"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
+          "reasons": [
+            "all normalized legal-name tokens appear together in homepage identity evidence"
+          ],
+          "score": 0.95,
+          "status": "exact"
+        },
+        "main_text_excerpt": "Aanestad Service AS. leverer\ngode løsninger til prosessindustrien\nVaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.\nVi leverer i hele Norge.\nSmart og effektiv\nservice leverandør.\nAanestad Service AS kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nVi er ydmyke, men ønsker å være de mest fleksible og best i markedet på å levere akkurat det du trenger, når du trenger det!\nStøvdempingssystemer som effektivt reduserer støv der det oppstår.\nReduser støvproblemer i krevende industrimiljøer med energieffektive løsninger som gir bedre arbeidsmiljø, mindre vedlikehold og høyere driftssikkerhet.\nVaskeanlegg og vannbehandlingsanlegg med filterpresser.\nAanestad Service leverer, installerer og følger opp ditt vaskeanlegg!\n(oppfølging av anlegget i 2 år etter igangkjøring og levering).\nHos oss er vi opptatt av sikkerhet og holder oss oppdatert i henhold til regelverket.\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nProsjekter og installasjoner\nSikring av maskiner\nBelegning av tromler\nRensing av prosessvann\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nVi spesialiserer oss i service, prosjekt og installasjoner.\nI tillegg påstår vi å levere de smarteste og beste produktene som finnes på markedet slik at du blir fornøyd og velger oss igjen og igjen – hver gang du trenger noen som oss!\nNoen av våre utvalgte produkter og tjenester:\nGummiering av slitedeler med Linatex som forlenger levetiden på stålet med 15 ganger.\nVi har den bredeste skjøteservicen i landet\nDrivremmer og flatremmer\nDisse skjøter vi på verkstedet vårt eller ute hos deg som kunde med vårt mobile skjøteutstyr\nVårt fagutdannede personell har sertifikater for arbeid både On-shore og Off-shore",
+        "pages": [
+          {
+            "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+            "main_text_excerpt": "Aanestad Service AS. leverer\ngode løsninger til prosessindustrien\nVaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.\nVi leverer i hele Norge.\nSmart og effektiv\nservice leverandør.\nAanestad Service AS kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nVi er ydmyke, men ønsker å være de mest fleksible og best i markedet på å levere akkurat det du trenger, når du trenger det!\nStøvdempingssystemer som effektivt reduserer støv der det oppstår.\nReduser støvproblemer i krevende industrimiljøer med energieffektive løsninger som gir bedre arbeidsmiljø, mindre vedlikehold og høyere driftssikkerhet.\nVaskeanlegg og vannbehandlingsanlegg med filterpresser.\nAanestad Service leverer, installerer og følger opp ditt vaskeanlegg!\n(oppfølging av anlegget i 2 år etter igangkjøring og levering).\nHos oss er vi opptatt av sikkerhet og holder oss oppdatert i henhold til regelverket.\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nProsjekter og installasjoner\nSikring av maskiner\nBelegning av tromler\nRensing av prosessvann\nBlant de beste på vulking og transportbånd.\nAanestad Servise AS har lang erfaring med ulike typer transportbånd og skjøting av alle typer bånd. Skjøting av stålkordbånd byr normalt på ekstraordinære utfordringer og vi er en av få leverandører som utfører skjøting av denne typen transportbånd.\nVi leverer ferdig vulket transportbånd, spesialtilpasset til dine spesifikasjoner, eller vi kan transportbånd til montering. Kald- eller varm-vulk, eller med mekanisk lås.\nVi spesialiserer oss i service, prosjekt og installasjoner.\nI tillegg påstår vi å levere de smarteste og beste produktene som finnes på markedet slik at du blir fornøyd og velger oss igjen og igjen – hver gang du trenger noen som oss!\nNoen av våre utvalgte produkter og tjenester:\nGummiering av slitedeler med Linatex som forlenger levetiden på stålet med 15 ganger.\nVi har den bredeste skjøteservicen i landet\nDrivremmer og flatremmer\nDisse skjøter vi på verkstedet vårt eller ute hos deg som kunde med vårt mobile skjøteutstyr\nVårt fagutdannede personell har sertifikater for arbeid både On-shore og Off-shore",
+            "title": "Gode løsninger til prosessindustrien - Aanestad Service",
+            "url": "https://aanestad-service.no/"
+          },
+          {
+            "content_sha256": "75c5d0888121da5783ab7bc911c38cd6a916ad22422f67d8c1a1d129cb0864ea",
+            "main_text_excerpt": "Om oss.\nService, vedlikehold og salg av transportører, transportbånd og transmisjoner.\nStøttet av tiår med ekspertise innen service og prosjektstyring.\nVi utfører service og tilstandskontroll på produksjonsutstyr og prosessutstyr.\nMed røtter tilbake til Arne Aanestad Mekaniske Verksted, grunnlagt i 1942, har Aanestad Service utviklet seg til en leverandørbedrift for prosessindustrien, som leverer løsninger for service og prosjektstyring.\nSiden 1986 har selskapet vært i front når det gjelder service og vedlikehold av transportører og prosessutstyr. Aanestad Service AS leverer et bredt spekter av komponenter som er avgjørende for den sømløse driften av transportører.\nI tillegg til vår kjernevirksomhet har vi skåret ut en nisje for oss selv innen slitedels-optimalisering. Vår ekspertise ligger i gummiering av slitedeler med Linatex, en prosess kjent for sin evne til å forlenge stålets levetid med en imponerende faktor på 15. Vi er opptatt av bærekraft, som maksimerer utstyrets levetid og minimerer nedetid.\nVidere er Aanestad Service leverandør av sikteduk i PU og stål til alle formål.\nLes mer\nVed å utvide porteføljen vår har Aanestad Service etablert partnerskap med bransjeledende merker. Vi er nå en anerkjent leverandør av transportører fra MAQConveyors, kjent for sin innovasjon og pålitelighet, samt transportør komponenter fra FLEXCO. Hos Aanestad Services er vi opptatt av å levere førsteklasses produkter og tjenester, skreddersydd for å møte varierte behov.\nI essens fortsetter Aanestad Services arv av håndverk og innovasjon å drive oss fremover mens vi navigerer gjennom kompleksitetene i moderne industri, og tilbyr skreddersydde løsninger støttet av tiår med ekspertise innen service og prosjektstyring innenfor vår bransje.\nVi leverer bånd og skjøte oppdrag på flyplasser i hele landet.\nVi har fagutdannet mekanisk personell med Sertifikater for arbeid både Onshore og Offshore.\nBåndleverandører: Forbo – Ammeraal – Habasit\nVi har i dag serviceavtaler og service for blant andre:\nMibau Stema, Heidelberg Materials, Norsk Hydro, New Boliden, BP/Amoco, Oddfjell Drilling, Stangeland Maskin, Skretting, Felleskjøpet, Mester Bakeren, Nortura, Goman Bakeriet, NCC Industri, Veidekke\nKunder som setter pris på våre tjenester.",
+            "title": "Om oss - Aanestad Service",
+            "url": "https://aanestad-service.no/om-oss/"
+          },
+          {
+            "content_sha256": "fc932ee8e63b7d83f224280a0334c024088cee2a009000e0a25b08f501e18cc8",
+            "main_text_excerpt": "Kontakt oss.\nOver 40 år med båndservice og transportørkomponenter skaper erfaringer\nDet handler om mennesker,\nprosjekter og service.\nAanestad Service leverer gode løsninger til prosessindustrien.\nKontakt oss.\nVaskeanlegg for tilslagsmateriale, vannbehandlingsanlegg med filterpresser, transportører, sikter og vibrasjonsmatere.\nDu finner oss lett tilgjengelig i aktivt industriområde på Forusstraen.\nAdresse: Strandsvingen 1, 4032 Stavanger\nVeibeskrivelse:\nFra Gauselveien svinger du inn i Slettestrandveien. Kjør over broen og vi holder til på venstre side ved første veikryss. Velkommen skal du være!\nFlere av våre ansatte.\nKunder som setter pris på våre tjenester.",
+            "title": "Kontakt oss - Aanestad Service",
+            "url": "https://aanestad-service.no/kontakt/"
+          }
+        ],
+        "registered_domain": "aanestad-service.no",
+        "requested_url": "https://www.aanestad-service.no/",
+        "social_link_assessments": [],
+        "social_links": [],
+        "structured_organisations": [
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Stavanger",
+              "postalCode": "4032",
+              "streetAddress": "Strandsvingen 1"
+            },
+            "description": "Aanestad Service AS. leverer gode løsninger til prosessindustrien. Vaskeanlegg for tilslagsmateriale, gjenvinning av betong vaskevann, pumper, transportører, sikter og vibrasjonsmatere.",
+            "email": "post@aanestad-service.no",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "58.898039",
+              "longitude": "5.744024"
+            },
+            "logo": "https://aanestad-service.no/wp-content/uploads/2024/04/Aanestad-service-logo.svg",
+            "name": "Aanestad Service AS",
+            "sameAs": [
+              "https://www.google.com/maps?cid=11314921325320799231"
+            ],
+            "telephone": "+4751816580",
+            "url": "https://aanestad-service.no"
+          }
+        ],
+        "title": "Gode løsninger til prosessindustrien - Aanestad Service"
+      }
+    },
     "external_observations": [
       {
-        "id": "registry-workforce-78ea42c0899367f5f0d72965",
+        "organisation_number": "959617929",
+        "platform": "company_site",
+        "source_url": "https://aanestad-service.no/",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_domain_unique",
+            "domain": "aanestad-service.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-16",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
+          {
+            "type": "website_identity_gate",
+            "status": "exact",
+            "score": 0.95
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_activity",
+        "id": "company-site-activity-959617929-99b86b0323006507",
+        "signal_type": "profile_metrics",
+        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
+        "metrics": {
+          "bounded_pages_captured": 3,
+          "verified_social_links": 0,
+          "structured_organisation_records": 1,
+          "extraction_state": "static_complete",
+          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
+        }
+      },
+      {
+        "id": "registry-site-959617929-99b86b0323006507",
+        "organisation_number": "959617929",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://aanestad-service.no/",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "aanestad-service.no",
+            "matched_organisation_number": "959617929",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-11-16T15:18:00.649157Z",
+            "explanation": "BRREG declares aanestad-service.no as the website of organisation 959617929; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+        "metrics": {
+          "title": "Gode løsninger til prosessindustrien - Aanestad Service",
+          "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+          "registry_domain": "aanestad-service.no"
+        },
+        "strategy": "registry_declared_website_description"
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/959617929",
+        "retrieved_at": "2026-11-16T16:37:49.290253Z",
+        "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "959617929"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "AANESTAD SERVICE AS",
+            "matched_organisation_number": "959617929"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+        "id": "purehelp-email-959617929-eb1c2468f2a6ebed",
+        "signal_type": "contact_email",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "email": "post@aanestad-service.no",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/959617929",
+        "retrieved_at": "2026-11-16T16:37:49.290253Z",
+        "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "959617929"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "AANESTAD SERVICE AS",
+            "matched_organisation_number": "959617929"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+        "id": "purehelp-phone-959617929-eb1c2468f2a6ebed",
+        "signal_type": "contact_phone",
+        "strategy": "purehelp_directory_contact",
+        "metrics": {
+          "phone": "51 81 65 80",
+          "contact_as_of": "2026-10-26"
+        }
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/959617929",
+        "retrieved_at": "2026-11-16T16:37:49.290253Z",
+        "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "959617929"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "AANESTAD SERVICE AS",
+            "matched_organisation_number": "959617929"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+        "id": "purehelp-profile-959617929-eb1c2468f2a6ebed",
+        "signal_type": "profile_metrics",
+        "strategy": "purehelp_directory_profile",
+        "metrics": {
+          "legal_form": "AS",
+          "legal_form_description": "Limited company",
+          "nace_code": "46.630",
+          "nace_description": "Wholesale of mining\\, construction and civil engineering machinery",
+          "town": "STAVANGER",
+          "zipcode": "4032",
+          "municipality": "STAVANGER",
+          "municipality_number": "1103",
+          "county": "Rogaland",
+          "registration_date": "1995-03-12",
+          "registry_status": "ACTIVE",
+          "registry_status_date": "1995-03-12",
+          "deregistration_date": "",
+          "is_active": true,
+          "is_bankrupt": null,
+          "bankruptcy_date": "",
+          "website_domain": "www.aanestad-service.no"
+        }
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "company_directory",
+        "source_url": "https://purehelp.no/company/NO/959617929",
+        "retrieved_at": "2026-11-16T16:37:49.290253Z",
+        "content_sha256": "cb7be572669e1ec5432d683a06fd77840a29ce6a1f09ee27ec5f3fbedd9c1f96",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "exact_organisation_number_on_directory_page",
+            "value": "959617929"
+          },
+          {
+            "type": "exact_legal_name_on_directory_page",
+            "value": "AANESTAD SERVICE AS",
+            "matched_organisation_number": "959617929"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_directory",
+        "extraction_method": "nuxt_ssr_payload_company_record",
+        "evidence_span": "nuxt:company-NO-959617929.orgNumber=959617929;name=AANESTAD SERVICE AS",
+        "id": "purehelp-workforce-959617929-eb1c2468f2a6ebed",
+        "signal_type": "workforce_snapshot",
+        "strategy": "purehelp_directory_workforce",
+        "metrics": {
+          "employees": 14,
+          "as_of": "2026-11-16",
+          "employees_source": "enhetsregisteret",
+          "interpretation": "Employee count published by the directory; no value is inferred."
+        }
+      },
+      {
+        "id": "registry-workforce-e0e0e8754a42de6c5d5e58fc",
         "organisation_number": "959617929",
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-09-29T10:21:43.743683Z",
-        "content_sha256": "41afa0b3e8332619faca192c1057a7bdd52c5b82dfc04c59c674099210badf50",
+        "retrieved_at": "2026-11-16T15:41:16.149112Z",
+        "content_sha256": "e2bbb99fc69235e3de3a5a13c8835ab781344ca349720e4a5b71691236656fcf",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1322,96 +2616,103 @@
         "acquisition_mode": "official_api",
         "rights_status": "approved",
         "source_class": "official_registry_live",
-        "evidence_span": "\"employees\": 12",
+        "evidence_span": "\"employees\": 14",
         "metrics": {
-          "workforce_value": 12,
+          "workforce_value": 14,
           "measure": "employees",
           "registry_field": "employees",
-          "registered_at": "2026-08-11"
+          "registered_at": "2026-11-11"
         },
         "strategy": "registry_workforce_exact",
-        "observed_at": "2026-08-11",
-        "effective_at": "2026-08-11"
+        "observed_at": "2026-11-11",
+        "effective_at": "2026-11-11"
       },
       {
+        "id": "brreg-kunngjoring-c5f3e33d907eca2067daf2d5",
         "organisation_number": "959617929",
-        "platform": "company_site",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:05Z",
+        "content_sha256": "c5ebd21a547a1361822f3ca90e3578daa0d4690923efdf7d3edb529ea3e1a6f4",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "959617929",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-ce8b676114dd414d7e40ee7b",
-        "signal_type": "website_description",
-        "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        }
+        "source_class": "official_api",
+        "observed_at": "2026-03-02",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2026-03-02",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-eabb6b3595e11d7ae6923e9b",
         "organisation_number": "959617929",
-        "platform": "company_site",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:05Z",
+        "content_sha256": "22fa34561da2e523e42999dba9934897e62d65bcc37b730f7f717e91ab780c4f",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "959617929",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-brand-53db38c298c3aae117d94b2a",
-        "signal_type": "public_brand",
-        "evidence_span": "Aanestad Service AS",
-        "metrics": {
-          "declared_url": "https://aanestad-service.no",
-          "interpretation": "Brand name from the site's own JSON-LD."
-        }
+        "source_class": "official_api",
+        "observed_at": "2025-03-20",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2025-03-20",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2025-03-20 (BRREG official announcement)"
       },
       {
+        "id": "brreg-kunngjoring-82418cbb47bdc0d9232c1318",
         "organisation_number": "959617929",
-        "platform": "company_site",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "platform": "brreg",
+        "signal_type": "public_post",
+        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb",
+        "retrieved_at": "2026-11-16T20:18:05Z",
+        "content_sha256": "51a74cdea74cb24f5cb97728c5b312d33d11bea3bbc8c97325294d4ce3d214d7",
         "exact_entity": true,
         "identity_proof": [
           {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
+            "type": "organisation_number_on_official_api",
+            "source": "w2.brreg.no/kunngjoring",
+            "source_class": "official_registry",
+            "matched_organisation_number": "959617929",
+            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
           }
         ],
-        "acquisition_mode": "permitted_public_page",
+        "acquisition_mode": "official_api",
         "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-activity-959617929-f47bf7f251ad8f7c",
-        "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 3 bounded pages and 0 verified social links.",
-        "metrics": {
-          "bounded_pages_captured": 3,
-          "verified_social_links": 0,
-          "structured_organisation_records": 1,
-          "extraction_state": "static_complete",
-          "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        }
+        "source_class": "official_api",
+        "observed_at": "2024-03-09",
+        "signal": {
+          "title": "Godkjente årsregnskap",
+          "date": "2024-03-09",
+          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb"
+        },
+        "evidence_span": "Godkjente årsregnskap — 2024-03-09 (BRREG official announcement)"
       },
       {
         "id": "registry-contact-f785d1a8034e700f84adbae4",
@@ -1419,8 +2720,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1447,8 +2748,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-10-05T08:34:31.959772Z",
-        "content_sha256": "b1c46096ccec1ee35f385f1b72226cceafe3c6ab84316958aa8221b0c6a88851",
+        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1470,13 +2771,92 @@
         "strategy": "registry_contact_exact"
       },
       {
+        "organisation_number": "959617929",
+        "platform": "company_site",
+        "source_url": "https://aanestad-service.no/",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-description-ce8b676114dd414d7e40ee7b",
+        "signal_type": "website_description",
+        "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
+        "metrics": {
+          "interpretation": "Company-owned description; the company's own words."
+        }
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "company_site",
+        "source_url": "https://aanestad-service.no/",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "strategy": "company_site_identity",
+        "id": "site-brand-53db38c298c3aae117d94b2a",
+        "signal_type": "public_brand",
+        "evidence_span": "Aanestad Service AS",
+        "metrics": {
+          "declared_url": "https://aanestad-service.no",
+          "interpretation": "Brand name from the site's own JSON-LD."
+        }
+      },
+      {
+        "organisation_number": "959617929",
+        "platform": "brreg",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
+        "retrieved_at": "2026-11-16T15:41:25.405357Z",
+        "content_sha256": "3856eeb862550b4023c9b76c6e9e67bb43e0c2d06f0048f975260de9b774482d",
+        "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "id": "subunit-9f2ceaf2d85bbb611c224951",
+        "signal_type": "subunit",
+        "evidence_span": "AANESTAD SERVICE AS",
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "data.brreg.no",
+            "source_class": "official_subunits",
+            "matched_organisation_number": "959617929",
+            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+          }
+        ],
+        "metrics": {
+          "subunit_organisation_number": "873437162",
+          "municipality": "STAVANGER",
+          "interpretation": "Officially registered sub-unit of this organisation."
+        }
+      },
+      {
         "id": "sitemap-page-71bbebde276eca34b9cf2441",
         "organisation_number": "959617929",
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-10",
         "exact_entity": true,
         "identity_proof": [
@@ -1503,8 +2883,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1531,8 +2911,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1559,8 +2939,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1587,8 +2967,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1615,8 +2995,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1643,8 +3023,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1671,8 +3051,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1699,8 +3079,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1727,8 +3107,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-10-05T08:55:25.684425Z",
-        "content_sha256": "f47bf7f251ad8f7cde47c0552672831bf675f806c7872ac5c4d6402f58610582",
+        "retrieved_at": "2026-11-16T15:41:35.088253Z",
+        "content_sha256": "99b86b03230065075baf2e4da66f5040f3dbe75d7ebd08fb98f6a3a8154e764d",
         "observed_at": "2026-09-09",
         "exact_entity": true,
         "identity_proof": [
@@ -1750,32 +3130,34 @@
         "strategy": "sitemap_lastmod"
       },
       {
+        "id": "registry-update-a9f20653353fcbe135dfd3ba",
         "organisation_number": "959617929",
         "platform": "brreg",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=959617929&size=1000",
-        "retrieved_at": "2026-10-05T08:55:16.199009Z",
-        "content_sha256": "6918c54c945d84a2af6d28a4da394e923d29e1f229bd2bdb9ef0de1f0cbea384",
+        "signal_type": "registry_update",
+        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "content_sha256": "a9f20653353fcbe135dfd3ba7bf8060441b2320419676dcd5771503a7d4d776d",
+        "observed_at": "2026-11-11",
         "exact_entity": true,
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "id": "subunit-9f2ceaf2d85bbb611c224951",
-        "signal_type": "subunit",
-        "evidence_span": "AANESTAD SERVICE AS",
         "identity_proof": [
           {
             "type": "organisation_number_on_official_api",
             "source": "data.brreg.no",
-            "source_class": "official_subunits",
+            "source_class": "official_registry_updates",
             "matched_organisation_number": "959617929",
-            "explanation": "Sub-unit is declared under this parent organisation number by Brønnøysund."
+            "explanation": "Update event is keyed by this organisation number in the official feed."
           }
         ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_registry_bulk",
+        "evidence_span": "Registry update 2026-11-11: Endring",
         "metrics": {
-          "subunit_organisation_number": "873437162",
-          "municipality": "STAVANGER",
-          "interpretation": "Officially registered sub-unit of this organisation."
-        }
+          "date": "2026-11-11",
+          "change_type": "Endring",
+          "interpretation": "Dated official registry event."
+        },
+        "strategy": "registry_updates_feed"
       },
       {
         "id": "registry-update-3332a4ad1ed11d41492b3c3a",
@@ -1783,7 +3165,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "3332a4ad1ed11d41492b3c3afd4a40b61cbd3c90b36be246573ab66f21b5b98c",
         "observed_at": "2026-10-12",
         "exact_entity": true,
@@ -1813,7 +3195,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "46a8bb63150fc9385610e58590d300b1527eb39e7a86794a0247dc7fa2d1de6a",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -1843,7 +3225,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "193d88c923a8aefde18f904db97bc7e7258dbe1abb6e8cad05e50336cacd8e7c",
         "observed_at": "2026-08-18",
         "exact_entity": true,
@@ -1873,7 +3255,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "fa88a9c12b9f9da2a08bb10705da64ebe9a9646fd7ae772f2d23b9f4bedcd25d",
         "observed_at": "2026-08-11",
         "exact_entity": true,
@@ -1903,7 +3285,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "de851f9d7e4294b5cb024bc4984134e1d47adcd3730916dcd6bc0b033d876c97",
         "observed_at": "2026-05-11",
         "exact_entity": true,
@@ -1933,7 +3315,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "4846de318873b74d99050cfe374e0f7d379f927a186d897e9eaf8bbbf8065072",
         "observed_at": "2026-03-02",
         "exact_entity": true,
@@ -1963,7 +3345,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "f13aeb46deeb40e4812fbedab2d38593259b8d775a638fee7e4fad6d1f299acf",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -1993,7 +3375,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "ac0e75cb0629c29d7b2ea5ae1080db02f6980f0decff1c9fbf3b40b20083974d",
         "observed_at": "2025-10-14",
         "exact_entity": true,
@@ -2023,7 +3405,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "8d0f3b840410ad04a0e85ecad7f135d88558dbc339cdb45e2407929afabc5295",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -2053,7 +3435,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "40f1e159c70d1d6704186cb2709a95e48b65e38e2d64ec28f1b1bd91f44d7e4e",
         "observed_at": "2025-08-11",
         "exact_entity": true,
@@ -2083,7 +3465,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "4cafff1c45417fd4a30c9c281cd2b87611a0151fee6c3682e15da436149af31f",
         "observed_at": "2025-05-12",
         "exact_entity": true,
@@ -2113,7 +3495,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "e7a7fb1c51eea3d8a79c97b7c71548d67c04827b919922fae9da9bba06be2646",
         "observed_at": "2025-04-08",
         "exact_entity": true,
@@ -2143,7 +3525,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "c5860da41911359ce7bf41ad4ef4e9419d787985b36652038a193cde878d077b",
         "observed_at": "2025-03-21",
         "exact_entity": true,
@@ -2173,7 +3555,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
+        "retrieved_at": "2026-11-16T16:14:49.080873Z",
         "content_sha256": "485458189f2f7e245a2cccfa884ca11ddc1b9111ec930a7e70521d18aaf5771a",
         "observed_at": "2025-03-12",
         "exact_entity": true,
@@ -2196,296 +3578,8 @@
           "interpretation": "Dated official registry event."
         },
         "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "registry-update-25c512250d1ad87818c8613d",
-        "organisation_number": "959617929",
-        "platform": "brreg",
-        "signal_type": "registry_update",
-        "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/959617929",
-        "retrieved_at": "2026-11-06T14:47:49.419792Z",
-        "content_sha256": "25c512250d1ad87818c8613dd618077281c2ebfb936e9e4675243d570102ad93",
-        "observed_at": "2024-11-14",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "data.brreg.no",
-            "source_class": "official_registry_updates",
-            "matched_organisation_number": "959617929",
-            "explanation": "Update event is keyed by this organisation number in the official feed."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_registry_bulk",
-        "evidence_span": "Registry update 2024-11-14: Endring",
-        "metrics": {
-          "date": "2024-11-14",
-          "change_type": "Endring",
-          "interpretation": "Dated official registry event."
-        },
-        "strategy": "registry_updates_feed"
-      },
-      {
-        "id": "brreg-kunngjoring-c5f3e33d907eca2067daf2d5",
-        "organisation_number": "959617929",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "c5ebd21a547a1361822f3ca90e3578daa0d4690923efdf7d3edb529ea3e1a6f4",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "959617929",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2026-03-02",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2026-03-02",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000089316&amp;sokeverdi=959617929&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2026-03-02 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-eabb6b3595e11d7ae6923e9b",
-        "organisation_number": "959617929",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "22fa34561da2e523e42999dba9934897e62d65bcc37b730f7f717e91ab780c4f",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "959617929",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2025-03-20",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2025-03-20",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000132432&amp;sokeverdi=959617929&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2025-03-20 (BRREG official announcement)"
-      },
-      {
-        "id": "brreg-kunngjoring-82418cbb47bdc0d9232c1318",
-        "organisation_number": "959617929",
-        "platform": "brreg",
-        "signal_type": "public_post",
-        "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb",
-        "retrieved_at": "2026-10-05T00:00:00Z",
-        "content_sha256": "51a74cdea74cb24f5cb97728c5b312d33d11bea3bbc8c97325294d4ce3d214d7",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "organisation_number_on_official_api",
-            "source": "w2.brreg.no/kunngjoring",
-            "source_class": "official_registry",
-            "matched_organisation_number": "959617929",
-            "explanation": "BRREG Kunngjoringer (official announcements) page queried by exact organisation number."
-          }
-        ],
-        "acquisition_mode": "official_api",
-        "rights_status": "approved",
-        "source_class": "official_api",
-        "observed_at": "2024-03-09",
-        "signal": {
-          "title": "Godkjente årsregnskap",
-          "date": "2024-03-09",
-          "url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20240000285351&amp;sokeverdi=959617929&amp;spraak=nb"
-        },
-        "evidence_span": "Godkjente årsregnskap — 2024-03-09 (BRREG official announcement)"
-      },
-      {
-        "id": "registry-site-959617929-bb09127735244a23",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "aanestad-service.no",
-            "matched_organisation_number": "959617929",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-09-29T10:02:25.550213Z",
-            "explanation": "BRREG declares aanestad-service.no as the website of organisation 959617929; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Gode løsninger til prosessindustrien - Aanestad Service — Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-        "metrics": {
-          "title": "Gode løsninger til prosessindustrien - Aanestad Service",
-          "description": "Vi kan service og vedlikehold av transportører og leverer gode løsninger til prosessindustrien. Vi leverer det du trenger, når du trenger det.",
-          "registry_domain": "aanestad-service.no"
-        },
-        "strategy": "registry_declared_website_description"
-      },
-      {
-        "id": "sitemap-page-b51d8651d3eb95afe5640161",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "observed_at": "2026-09-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://aanestad-service.no/produkter/transportband-ruller/ last modified 2026-09-09",
-        "metrics": {
-          "page_url": "https://aanestad-service.no/produkter/transportband-ruller/",
-          "lastmod": "2026-09-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-0ce3b1f6cba5185576031e43",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "observed_at": "2026-09-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://aanestad-service.no/produkter/bandskrapere/ last modified 2026-09-09",
-        "metrics": {
-          "page_url": "https://aanestad-service.no/produkter/bandskrapere/",
-          "lastmod": "2026-09-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-a0f897bb0d1d4385a37ad07d",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "observed_at": "2026-09-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://aanestad-service.no/produkter/pvc-band/ last modified 2026-09-09",
-        "metrics": {
-          "page_url": "https://aanestad-service.no/produkter/pvc-band/",
-          "lastmod": "2026-09-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-a5a2084664f1463bef32f9a0",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "observed_at": "2026-09-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://aanestad-service.no/produkter/transmisjoner/ last modified 2026-09-09",
-        "metrics": {
-          "page_url": "https://aanestad-service.no/produkter/transmisjoner/",
-          "lastmod": "2026-09-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
-      },
-      {
-        "id": "sitemap-page-1e0c58cb6a29df3718f03da4",
-        "organisation_number": "959617929",
-        "platform": "company_site",
-        "signal_type": "sitemap_page",
-        "source_url": "https://aanestad-service.no/",
-        "retrieved_at": "2026-09-29T10:22:01.308961Z",
-        "content_sha256": "bb09127735244a23fae38729eaa0dbf519ba475ee775358abe6e825e2c40933c",
-        "observed_at": "2026-09-09",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Sitemap page https://aanestad-service.no/produkter/gummiering/ last modified 2026-09-09",
-        "metrics": {
-          "page_url": "https://aanestad-service.no/produkter/gummiering/",
-          "lastmod": "2026-09-09",
-          "interpretation": "Dated official-site page from the site's own sitemap."
-        },
-        "strategy": "sitemap_lastmod"
       }
     ]
   },
-  "generated_at": "2026-11-07T10:54:55.074095+00:00"
+  "generated_at": "2026-11-17T09:30:49.389731+00:00"
 }

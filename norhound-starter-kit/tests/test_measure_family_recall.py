@@ -112,6 +112,49 @@ class FamilyRecallTests(unittest.TestCase):
         self.assertEqual(sorted(grouped), sorted(fam.SCORED_FAMILIES))
 
 
+class HiringEvidenceTests(unittest.TestCase):
+    """A careers page and a role card are different facts.
+
+    The reviewer's rule: publish a hiring fact only with a real role card, a
+    job-feed item or an apply action. A bare careers page emits an explicit
+    `careers_page` signal, never `hiring: true`. Counting both as one number
+    hid the difference, so the report keeps them apart.
+    """
+
+    @staticmethod
+    def _hiring_envelope(org: str, fields: list[str]) -> dict:
+        return {
+            "organisation_number": org,
+            "claims": [
+                {"family": "hiring", "field": field, "value": "x"}
+                for field in fields
+            ],
+        }
+
+    def test_a_role_card_is_counted_apart_from_a_careers_page(self) -> None:
+        envelopes = [
+            self._hiring_envelope("111111111", ["job_postings", "job_title"]),
+            self._hiring_envelope("222222222", ["hiring_signal", "careers_page"]),
+        ]
+        split = fam.hiring_evidence_split(envelopes)
+        self.assertEqual(split["companies_with_a_role_card"], 1)
+        self.assertEqual(split["companies_with_a_careers_page_only"], 1)
+        self.assertEqual(split["companies_with_hiring_family_claim"], 2)
+
+    def test_a_company_with_both_counts_as_a_role_card(self) -> None:
+        envelopes = [
+            self._hiring_envelope("111111111", ["hiring_signal", "job_postings"]),
+        ]
+        split = fam.hiring_evidence_split(envelopes)
+        self.assertEqual(split["companies_with_a_role_card"], 1)
+        self.assertEqual(split["companies_with_a_careers_page_only"], 0)
+
+    def test_the_split_is_part_of_the_report(self) -> None:
+        report = fam.build_report([self._hiring_envelope("111111111", ["job_postings"])])
+        self.assertEqual(report["hiring_evidence"]["companies_with_a_role_card"], 1)
+        self.assertIn("hiring_evidence", report["metric_definitions"])
+
+
 class ExternalProvenanceTests(unittest.TestCase):
     """Registry facts and external facts must not be counted as the same thing.
 

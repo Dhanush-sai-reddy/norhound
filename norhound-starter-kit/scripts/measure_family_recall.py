@@ -234,6 +234,45 @@ def group_recall(
     return report
 
 
+# Claim fields that only a real role card can produce: a job-feed item, an ATS
+# role card or an apply action. A careers page is a hiring-family claim too,
+# but it proves a page exists, not that a position is open.
+ROLE_CARD_CLAIM_FIELDS = frozenset({"job_postings", "job_title"})
+
+
+def hiring_evidence_split(envelopes: list[dict[str, Any]]) -> dict[str, Any]:
+    """Split the hiring family into role cards and careers-page-only signals.
+
+    The reviewer's rule is explicit: publish a hiring fact only with a real
+    role card, a job-feed item or an apply action. A bare careers page emits
+    an explicit `careers_page` signal and never `hiring: true`. Counting both
+    as one number hid the difference, so the report keeps them apart.
+    """
+    role_cards: set[str] = set()
+    careers_only: set[str] = set()
+    for envelope in envelopes:
+        org = str(envelope.get("organisation_number") or "").strip()
+        if not org:
+            continue
+        fields = {
+            str(claim.get("field") or "")
+            for claim in envelope.get("claims") or []
+            if isinstance(claim, dict) and claim.get("family") == "hiring"
+        }
+        if not fields:
+            continue
+        if fields & ROLE_CARD_CLAIM_FIELDS:
+            role_cards.add(org)
+        else:
+            careers_only.add(org)
+    return {
+        "companies_with_hiring_family_claim": len(role_cards | careers_only),
+        "companies_with_a_role_card": len(role_cards),
+        "companies_with_a_careers_page_only": len(careers_only),
+        "definition": "A role card is a job-feed item, an ATS role card or an apply action (claims `job_postings`/`job_title`). A careers page proves a page exists, not an open position.",
+    }
+
+
 def metric_definitions() -> dict[str, str]:
     """One line per reported metric, so no consumer has to guess a denominator."""
     return {
@@ -251,6 +290,7 @@ def metric_definitions() -> dict[str, str]:
         "scored_external_family_recall_proxy_50": "The external-only family recalls, opportunity-weighted, in points out of 50. This is the number that tracks external recall: the all-claims variant counts the register's own facts, which every company has.",
         "external_scored_group_recall": "The six decision families, restricted to claims backed by a non-register source.",
         "scored_external_group_recall_proxy_50": "The external-only six decision families, opportunity-weighted, in points out of 50.",
+        "hiring_evidence": "The hiring family split: companies with a role card (a job-feed item, an ATS role card or an apply action) against companies that only have a careers-page signal.",
         "metric_definitions": "This mapping.",
     }
 
@@ -315,6 +355,7 @@ def build_report(envelopes: list[dict[str, Any]], batch_size: int = EVALUATION_B
             {group: value["opportunities"] for group, value in external_groups.items()},
             tuple(external_groups),
         ) * 50,
+        "hiring_evidence": hiring_evidence_split(envelopes),
         "metric_definitions": metric_definitions(),
     }
 

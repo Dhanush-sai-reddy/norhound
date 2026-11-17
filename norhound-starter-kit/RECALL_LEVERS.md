@@ -6,27 +6,45 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 ## 1. The arithmetic of the six-field proxy
 
 `scripts/measure_recall.py` scores six fields, each worth 8.33 of 50 points
-(mean of the six × 50). Current values from
-`out/run-fresh-20261115T073743Z/measure-final.json`:
+(mean of the six × 50). Values below are from the shipped run
+`out/run-fresh-20261116T144704Z/measure-final.json`:
 
 | field | recall | points | headroom left |
 |---|---|---|---|
-| any_external | 1.000 | 8.33 | 0.00 |
-| two_platforms | 0.994 | 8.28 | **0.05** |
-| workforce_jobs | 0.051 | 0.42 | **7.91** |
-| buzz_engagement | 1.000 | 8.33 | 0.00 |
+| any_external | 0.994 | 8.28 | 0.05 |
+| two_platforms | 0.627 | 5.22 | **3.11** |
+| workforce_jobs | 0.013 | 0.11 | **8.22** |
+| buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | **8.07** |
 | sentiment | 0.032 | 0.27 | **8.07** |
 
-**24.1 of the 24.1 remaining points sit in three fields.** 16.1 of them are in
-`ratings_reviews` + `sentiment`, which read the same source class; the other 7.9
-is `workforce_jobs`, where the constraint is the number of real adverts a
-keyless source holds. `any_external`, `two_platforms` and `buzz_engagement` are
-effectively maxed.
+**27.6 of the 50 points remain unearned.** 16.1 of them are in
+`ratings_reviews` + `sentiment`, which read the same source class; 8.2 are in
+`workforce_jobs`, where the constraint is the number of real adverts a keyless
+source holds; 3.11 are in `two_platforms`, where 367 companies have exactly one
+independent source.
 
-Headcount (`workforce_snapshot`, 0.954) is measured and excluded from the proxy.
-Counting it as hiring is what made `workforce_jobs` read 0.954 and the proxy
-33.43; only 51 of 1,000 companies publish an actual job posting.
+Three definitions were corrected on 16 Nov 2026 because the original ones were
+tautologies:
+
+- `workforce_jobs` counted `workforce_snapshot` (headcount), which made it read
+  0.954 and the proxy 33.43. Headcount is measured separately; only
+  `job_posting` counts as hiring.
+- `any_external` and `two_platforms` counted the register (`brreg`), which every
+  profiled company has. They are now defined over non-register platforms:
+  one independent source, and two independent sources.
+- `buzz_engagement` counted Brønnøysund announcements ("Godkjente årsregnskap"),
+  which every filer has. Registry rows are excluded; buzz means a third-party
+  profile, mention or post.
+
+`scripts/evaluate_external_footprint.py` now imports the same definitions, so
+the audit report and the recall report can never print different coverage
+numbers for the same corpus.
+
+Headcount (`workforce_snapshot`) is still measured and reported beside the six
+fields: **0.575** in this run (the register's own headcount plus Purehelp; the
+annual-report OCR stage is off by default and earns 0 points anyway). It is a
+real fact, not a hiring signal.
 
 ### The annual-report PDF/OCR stage scores nothing — measured 16 Nov 2026
 
@@ -60,15 +78,15 @@ separate process that writes its file when it finishes.
 | stage 5 connector | wall time | scored recall |
 |---|---|---|
 | activity, news, contacts, site description, substructure | ~5 s | 0 (feeds the viewer only) |
-| sitemap lastmod | 2.6 min | 0 (`any_external` already 1.000) |
+| sitemap lastmod | 2.6 min | 0 (`any_external` already 0.994) |
 | registry updates | 16.7 min | 0 (feeds the Changes tab) |
-| Wikidata | 0.9 s | `two_platforms`, already 0.994 |
+| Wikidata | 0.9 s | `two_platforms` only if the company is in the 67-org index |
 | Purehelp headcount | 2.3 min | 0 (headcount is not hiring) |
 | NAV job feed | 18 s | +0.13 (13 companies) |
-| company-site jobs | 12.4 min | +0.39 (39 companies) |
+| company-site jobs | 12.4 min | 0 (emits `careers_page`; a discovered link is not a role card) |
 | ATS role cards | 12.8 min | +0.02 (2 companies no other connector found) |
-| Google News RSS | 2.2 min | 0 (`buzz_engagement` already 1.000) |
-| Kunngjøringer | 3.0 min | 0 (`buzz_engagement` already 1.000) |
+| Google News RSS | 2.2 min | 0 (`buzz_engagement` already 0.994) |
+| Kunngjøringer | 3.0 min | 0 (registry announcements are not buzz) |
 | Fagfolkguiden | 45.6 min | +0.54 (32 companies, both rating fields) |
 | **annual-report PDF/OCR** | **3 h 22 m** | **0** |
 
@@ -112,29 +130,34 @@ the fuzzy name+address fallback to keep precision at 1.0.
   the marginal cash cost of one run is **$0**.
 - Expected gain: Google has a rated listing for a large share of Norwegian
   companies. At 0.5 coverage on both fields that is
-  (0.5−0.032)/6×50 × 2 = **+7.8 proxy points** (33.4 → 41.2). At 0.7 it is
-  +11.1.
+  (0.5−0.032)/6×50 × 2 = **+7.8 proxy points** (22.4 → 30.2). At 0.7 it is
+  +11.1 (→ 33.5).
 - Cost of adopting it: it stops being a keyless entry. That is a policy
   decision, not a technical one.
 
 ## 5. What is not worth doing
 
-- `workforce_jobs` has 0.38 points of headroom and `two_platforms` 0.05. The
-  hiring family (50/84) would need 34 more companies with a real role card or
-  apply action; the realistic keyless sources for that are Finn.no (vetoed: no
-  org numbers, ToS) and NAV live search (HTTP 429 to unauthenticated bulk).
+- `two_platforms` has 3.11 points of headroom but 367 of the 373 missing
+  companies have **only** Purehelp, no verified website and **no Wikidata item**
+  (the index holds 67 organisations, none of them in that 367). A second
+  independent source for them does not exist keylessly.
+- `workforce_jobs` has 8.2 points of headroom and is limited by the number of
+  real adverts a keyless source holds. The hiring family needs a role card or an
+  apply action; the realistic keyless sources are Finn.no (vetoed: no org
+  numbers, ToS) and NAV live search (HTTP 429 to unauthenticated bulk). NAV's
+  static feed is already wired and reaches 13 companies.
 - Sentiment cannot rise independently: it is derived from the same rating rows.
 
 ## Recommendation
 
-Recall is **structurally capped at ≈33.5/50** for a keyless entry. Two honest
+Recall is **structurally capped at ≈22.4/50** for a keyless entry. Two honest
 paths:
 
-1. **Stay keyless** — accept 33.4, and spend the remaining effort on UX (3.2 of
-   8, the largest untouched pool: **+4.8 available**) and on the submission
-   deliverable. Nothing else in recall will move.
+1. **Stay keyless** — accept 22.4, and spend the remaining effort on the
+   submission deliverable. Nothing else in recall will move without a new
+   source.
 2. **Add Google Places** — one key, ≈$0 within the monthly credit, identity by
-   domain match, expected 33.4 → 41.2. Still short of the 65 qualification gate,
+   domain match, expected 22.4 → 30.2. Still short of the 65 qualification gate,
    but the single largest change available.
 
 Both are defensible; mixing them is not. Enabling Places while still claiming
@@ -142,32 +165,33 @@ Both are defensible; mixing them is not. Enabling Places while still claiming
 
 ## 6. Why the six-field proxy is near-maxed but per-company depth is not
 
-Measured on the shipped corpus (`out/run-fresh-20261115T073743Z/`, 1,000
-envelopes, 105,772 claims):
+Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,204
+claims):
 
 | family | claims | share | companies |
 |---|---|---|---|
-| financials | 36,680 | 34.7% | 982 |
-| identity | 25,563 | 24.2% | 1,000 |
-| other (registry_update 16,062, sitemap 2,531, workforce_snapshot 1,486, subunit 1,165, group_child 1,291) | 22,913 | 21.7% | 1,000 |
-| roles | 15,671 | 14.8% | 994 |
-| **news** (dated_news) | **2,996** | 2.8% | 1,000 |
-| website | 900 | 0.9% | 824 |
-| **hiring** | **537** | 0.5% | ~500 |
-| **social** | **416** | 0.4% | 416 |
+| financials | 36,680 | 34.9% | 994 |
+| identity | 25,566 | 24.3% | 1,000 |
+| other (registry_update 16,050, sitemap 2,513, workforce_snapshot, subunit 1,165, group_child 1,291) | 22,244 | 21.1% | 999 |
+| roles | 15,671 | 14.9% | 994 |
+| **news** (dated_news) | **3,050** | 2.9% | 1,000 |
+| website | 908 | 0.9% | 604 |
+| **hiring** | **572** | 0.5% | 49 |
+| **social** | **417** | 0.4% | 209 |
 | **reviews** | **96** | 0.1% | 32 |
 
-Financials are already fully exploited: 7 figures × ~2.9 years × 982 companies,
+Financials are already fully exploited: 7 figures × ~2.9 years × 994 companies,
 every value straight from Regnskapsregisteret, so "add multi-year accounts" is
-not a lever — it is already 34.7% of every claim we publish.
+not a lever — it is already 34.9% of every claim we publish.
 
 The proxy asks "does this company have *any* signal in this field", and answers
 yes for 4 of 6 fields at 99–100%. That is not the same question the graded
 metric asks: the proxy counts presence, the graded metric counts how many of a
 reference collection's items we reproduce. The census above makes the depth
-problem concrete — only 537 real hiring claims exist across 1,000 companies, and
-`news` is ~3 items per company against a reference that can hold far more.
-Presence is solved; per-company depth is not.
+problem concrete — only 572 hiring claims exist across 1,000 companies (49
+companies have a hiring-family claim, of which 13 have a real role card and 36
+only a careers page), and `news` is ~3 items per company against a reference
+that can hold far more. Presence is solved; per-company depth is not.
 
 ### Depth levers, in the order they are worth doing
 
@@ -186,15 +210,24 @@ Presence is solved; per-company depth is not.
    Wired into `scripts/run_external_pipeline.py`; three tests pin it. One extra
    request per company that already has an activity page, no key, no new
    source.
-2. **Publish real role cards, not `/karriere` pages.** 537 hiring claims for
-   1,000 companies is thin, and the reviewer's rule is explicit: a bare careers
-   page must emit `careers_page`, never `hiring: true`. The NAV index is the
-   only keyless source of real adverts; widening its window from 183 days, or
-   matching adverts by municipality + name when the employer number is missing,
-   adds claims without weakening identity.
-3. **Social handles from first-party pages.** 416 claims. The extractor already
-   reads `sameAs` from JSON-LD on the homepage; it only visits the homepage.
-   Following one contact/about page per site would roughly double this.
+2. **Publish real role cards, not `/karriere` pages. — DONE (2026-11-16)**
+   The reviewerer's rule is explicit: a bare careers page must emit
+   `careers_page`, never `hiring: true`. The company-site jobs connector was
+   violating it: it emitted `job_posting` for every link it *discovered* on a
+   careers page without ever fetching the posting, so "Digitalt testament" and
+   "Marketing" were published as job titles on 38 companies. It now emits
+   `careers_page` + `careers_url`, and `jobs_feed_discovery` is no longer a
+   trusted role strategy, so `workforce_jobs` fell from an inflated 0.051 to
+   the honest **0.013** (13 companies with a real role card: 13 from NAV's
+   official feed, 3 from public ATS boards).
+   The remaining lever is the NAV index — it is the only keyless source of real
+   adverts. Widening its window from 183 days, or matching adverts by
+   municipality + name when the employer number is missing, adds claims without
+   weakening identity.
+3. **Social handles from first-party pages.** 417 claims, 209 companies. The
+   extractor already reads `sameAs` from JSON-LD on the homepage; it only visits
+   the homepage. Following one contact/about page per site would roughly double
+   this.
 4. **Ratings.** Only Google Places moves this; see sections 2–3 above.
 
 None of 1–3 changes a source, a right, or a cost. All three are depth on pages
