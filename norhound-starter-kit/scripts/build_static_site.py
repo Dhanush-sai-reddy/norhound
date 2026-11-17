@@ -160,6 +160,29 @@ def _link(url: str) -> str:
     return f'<a href="{u}" rel="noopener">{u}</a>'
 
 
+def _short(value: Any, limit: int = 160) -> str:
+    """A compact, single-line rendering of a change value.
+
+    A change value can be a list of every dated news item a company has, which
+    would blow up the page if it were rendered in full.
+    """
+    if value is None or value == "":
+        return "not available"
+    if isinstance(value, (list, tuple)):
+        text = ", ".join(
+            item if isinstance(item, str) else json.dumps(item, ensure_ascii=False, default=str)
+            for item in value
+        )
+    elif isinstance(value, dict):
+        text = json.dumps(value, ensure_ascii=False, default=str, sort_keys=True)
+    else:
+        text = str(value)
+    text = " ".join(text.split())
+    if len(text) > limit:
+        text = text[: limit - 1] + "…"
+    return text
+
+
 def _val(value: Any) -> str:
     if value is None or value == "":
         return '<span class="muted">not available</span>'
@@ -475,7 +498,47 @@ def _company_page(env: dict, summary: dict | None) -> str:
 
     parts.append("<h2>Changes since previous run</h2>")
     changes = env.get("changes") or []
-    parts.append(f"<p>{len(changes)} recorded change(s).</p>" if changes else '<p class="muted">No changes recorded against the previous run.</p>')
+    refresh = env.get("refresh") or {}
+    if refresh.get("previous_run_id"):
+        parts.append(
+            "<p class=muted>compared against run "
+            f"<b>{esc(str(refresh.get('previous_run_id')))}</b>"
+            + (
+                f" · detected {esc(str(refresh.get('compared_at') or ''))}"
+                if refresh.get("compared_at")
+                else ""
+            )
+            + "</p>"
+        )
+    if changes:
+        # A count alone does not let anyone verify what changed, so every
+        # change is listed with its field, its old and new value and the
+        # source that proves the new value.
+        for change in changes[:25]:
+            old = change.get("old_value")
+            new = change.get("new_value")
+            parts.append(
+                "<div class=card><b>"
+                + esc(str(change.get("field") or change.get("change_type") or "change"))
+                + "</b> "
+                + f'<span class="badge">{esc(str(change.get("change_type") or "changed"))}</span>'
+                + "<br>"
+                + esc(_short(old))
+                + " &rarr; "
+                + esc(_short(new))                + _link(change.get("source_url") or "")
+                + (
+                    f'<br><span class="date">detected {esc(str(change.get("detected_at") or ""))}</span>'
+                    if change.get("detected_at")
+                    else ""
+                )
+                + "</div>"
+            )
+        if len(changes) > 25:
+            parts.append(
+                f'<p class="muted">{len(changes) - 25} further change(s) are in the envelope JSON.</p>'
+            )
+    else:
+        parts.append('<p class="muted">No changes recorded against the previous run.</p>')
 
     parts.append("<details><summary>Raw envelope JSON</summary><pre>" + esc(json.dumps(env, ensure_ascii=False, indent=1)) + "</pre></details>")
     body = "".join(parts)
