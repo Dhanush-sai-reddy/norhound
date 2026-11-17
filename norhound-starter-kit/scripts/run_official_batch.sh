@@ -145,7 +145,19 @@ else
     --report "$OUT_DIR/refresh-report.json"
 fi
 
-say "5. write the machine-readable run report"
+say "5. rebuild the viewer over the refreshed envelopes"
+# The pipeline builds the viewer before this stage, so the pages would carry
+# the old (empty) change list. The viewer is rebuilt here over the refreshed
+# envelopes, with the same inputs the pipeline used.
+run uv run python scripts/build_static_site.py \
+  --envelopes "$OUT_DIR/envelopes-final.jsonl" \
+  --summaries "$OUT_DIR/summaries.jsonl" \
+  --labels "$OUT_DIR/labels-final.jsonl" \
+  --observations "$OUT_DIR/external-final.jsonl" \
+  --eval "$OUT_DIR/eval-final.json" \
+  --out "$OUT_DIR/site"
+
+say "6. write the machine-readable run report"
 run uv run python scripts/build_official_run_report.py \
   --run-dir "$OUT_DIR" \
   --output "$OUT_DIR/official-run-report.json"
