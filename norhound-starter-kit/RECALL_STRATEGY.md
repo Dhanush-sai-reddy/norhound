@@ -319,6 +319,17 @@ Google Jobs aggregates postings from multiple Norwegian job boards including Fin
 
 ## 🐝 Apify Actors Analysis (Boost Recall via Pre-built Crawlers)
 
+> **Status: exploration only, not the shipped plan.** The shipped pipeline is
+> keyless and costs $0, and the Google Maps / Google Search actors would need a
+> Google credential or a paid Apify account — a credential tied to our own
+> account cannot be reproduced by the organiser ("What we cannot use is a
+> credential tied to your own account on another service, because we cannot
+> reproduce your run with it"). The "$10/batch" figure below belongs to the
+> superseded Unstop listing; the current brief states that each official run
+> has a fixed budget supplied by Builderr and publishes no numbers. This
+> section is kept for the record of what was evaluated and why it was not
+> used.
+
 Using Apify Actors fits within our permitted public sources and daily batch budget limits ($10/batch). Below are top candidate Apify Actors evaluated for Norwegian company coverage:
 
 ### 1. Google Maps Scraper (`compass/google-maps-scraper` or `scraping_experts/google-maps-scraper`)
@@ -401,6 +412,6 @@ Phase 4 (If time permits):
 4. **Evidence beats volume** — retained source body must prove the fact
 5. **Company-owned copy ≠ independent sentiment** — promotional text can't be sentiment evidence
 6. **Restricted platforms** — LinkedIn, Meta, Glassdoor, Indeed scraping prohibited
-7. **$10 external API limit** per 100-company batch
-8. **2,000 outbound requests** limit per batch
-9. **45 minutes** time limit per daily run
+7. **Cost** — the shipped pipeline is keyless: **$0 external spend** per official batch
+8. **Run budget** — the current brief states each official run has a fixed time and resource budget supplied by Builderr and publishes no numbers. The older 45 min / 2,000 requests / $10 figures belong to the superseded 100-company Unstop listing; the measured rate of the shipped pipeline is ≈30 minutes per 100 companies without the opt-in OCR stage
+9. **One envelope per company** in every official batch, with explicit availability states and idempotent refresh

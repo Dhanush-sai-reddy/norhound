@@ -29,12 +29,35 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
-**One command, no API key, no login, no paid account:**
+**The command an evaluator runs** — it takes a JSONL batch of organisation
+numbers and produces one terminal envelope per input, the refresh history and
+the machine-readable run report:
 
 ```bash
 cd norhound-starter-kit
 uv sync
 uv run playwright install chromium     # one-time, for the browser rescue stage
+scripts/run_official_batch.sh --batch organisations.jsonl
+```
+
+`organisations.jsonl` holds one organisation number per line, either as a bare
+number or as an object with `"organisation_number"`. The command writes:
+
+| Artifact | What it is |
+|---|---|
+| `out/run-<run-id>/envelopes-final.jsonl` | one terminal envelope per input company |
+| `out/run-<run-id>/official-run-report.json` | runtime, request count, third-party cost, identity precision, declared source rights |
+| `out/run-<run-id>/refresh-report.json` | the material changes found against the previous snapshot, and the changes preserved |
+
+Add `--previous-envelopes <prior envelopes.jsonl>` to run it as a refresh: every
+envelope then carries the previous run id, the typed old -> new change records
+and the earlier evidence behind a recorded change.
+
+**The local 1,000-company run** (the same pipeline, selecting its own batch
+with seed 20260823) is one command as well:
+
+```bash
+cd norhound-starter-kit
 scripts/run_full_batch.sh
 ```
 
@@ -283,21 +306,22 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
   key `FIRECRAWL_API_KEY` (site discovery) is not used by
   `scripts/run_full_batch.sh`. A missing key degrades cleanly — the
   corresponding connector is skipped or abstains, never errors.
-- Third-party spend is **$0 per 100 companies**. Every source is a public
+- Third-party spend is **$0 per official batch**. Every source is a public
   registry, a public feed or a public page: Brønnøysund, NAV, Wikidata, GLEIF,
   Fagfolkguiden and the companies' own websites.
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.
-- The declared expected cost per 100-company run is included in the
-  submission email; the run report records actual request counts and runtime.
+- The declared expected cost per official batch is included in the submission
+  email; the run report records the request count, the runtime and the cost.
 
 ## Submission contract
 
-Submit a repository with:
+The current brief (retrieved 17 Nov 2026, see
+`norhound-starter-kit/docs/evidence/signalpost-requirements-2026-11-17.md`)
+asks for a repository with:
 
-- at least 1,000 completed company profiles and the exact organisation-number
-  manifest used;
+- a **100-company smoke-test result or report**;
 - one documented command that accepts a JSONL batch of organisation numbers;
 - exactly one terminal envelope per input;
 - pinned dependencies and reproducible setup;
@@ -306,5 +330,8 @@ Submit a repository with:
   cost;
 - declared models, APIs, licences and source-rights assumptions.
 
-Email the repository URL, run command, models/APIs and expected cost per
-100-company run to the contest intake address.
+Email the repository URL, the exact commit hash, the smoke-test result, the
+run command, models/APIs/licences and the expected cost per official batch to
+`submit@builderr.ai`. Precomputed profiles and a company manifest are **not**
+submitted for scoring — the 1,000-company corpus in `out/submission/` is
+evidence of what the agent does.

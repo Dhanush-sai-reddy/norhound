@@ -26,35 +26,61 @@ input organisation number — validated 1,000/1,000, no silent drops.
 
 ## Reproduce the shipped submission
 
-### One command (recommended — `run_one_shot.py`)
+### The evaluator's command — `run_official_batch.sh`
 
-Everything the submission needs — manifest, base batch, external connectors
-(including pre-computed Google Places, social handles, feed-news, Finn/ATS jobs,
-probed signals, registry-workforce, workforce-pdf, GLEIF, Wikidata, gate474
-extractors), verification, evaluation, deterministic summaries, and the
-searchable viewer — runs from a single command:
+This is the command named in the submission email. It takes a JSONL batch of
+organisation numbers and produces one terminal envelope per input, the refresh
+history and the machine-readable run report:
 
 ```bash
-uv run python scripts/run_one_shot.py \
-  --out out/submission \
-  --external-data "out/gplaces-reviews.jsonl,out/site-social-handles.jsonl,out/company-feed-news.jsonl,out/company-article-dates.jsonl,out/finn-jobs.external.jsonl,out/ats-jobs.external.jsonl,out/probed-site-signals.jsonl,out/registry-workforce.jsonl,out/wikidata-ext.jsonl,out/gleif-ext.jsonl,out/norwegian-news-rss.jsonl,out/gate474.sitedesc.jsonl,out/gate474.sitemap.jsonl,out/gate474.news.jsonl,out/gate474.handles.jsonl"
+uv run playwright install chromium     # one-time, for the browser rescue stage
+scripts/run_official_batch.sh --batch organisations.jsonl
 ```
 
-Useful knobs:
+`organisations.jsonl` holds one organisation number per line, either as a bare
+number or as an object with `"organisation_number"`.
+
+| Flag | What it does |
+|---|---|
+| `--batch PATH` | the organisation numbers to research (required) |
+| `--previous-envelopes PATH` | the prior snapshot: every envelope then carries the refresh metadata and the material changes since that run |
+| `--out-dir PATH`, `--run-id ID` | where the run writes and how it is named |
+| `--rebuild-indexes` | rebuild the NAV job-feed and Wikidata indexes from their live sources instead of using the frozen copies in `data/` |
+| `--workers N`, `--min-audit N` | parallelism and the minimum number of audited observations |
+
+Outputs:
+
+| Artifact | What it is |
+|---|---|
+| `out/run-<run-id>/envelopes-final.jsonl` | one terminal envelope per input company |
+| `out/run-<run-id>/official-run-report.json` | runtime, request count, third-party cost, identity precision, declared source rights |
+| `out/run-<run-id>/refresh-report.json` | the changes found against the previous snapshot, and the changes preserved |
+
+### The local 1,000-company run — `run_full_batch.sh`
+
+The same pipeline, selecting its own batch (seed 20260823, identical to the
+shipped manifest):
 
 ```bash
-# Dry run (10 companies) — same chain, fewer companies
-uv run python scripts/run_one_shot.py --out out/test --external-data "..." --skip-batch --profiles out/web1000-profiles.jsonl --envelopes out/envelopes.jsonl
-
-# Resume after interruption
-uv run python scripts/run_one_shot.py --out out/submission --external-data "..." --skip-batch
-
-# Reuse cached external output
-uv run python scripts/run_one_shot.py --out out/submission --skip-external
+scripts/run_full_batch.sh
 ```
 
-It prints a final scorecard (published observations, entity/metric precision,
-qualification gate, coverage) and writes the viewer to `out/submission/`.
+It runs all 14 stages in order: select the 1,000-company manifest, registry
+enrichment with exact-identity website capture, the headless-browser rescue of
+unreadable homepages, every keyless connector (NAV job feed, Wikidata,
+Fagfolkguiden, Brønnøysund announcements, public ATS feeds), the wrong-company
+purge, re-verification against frozen evidence, evaluation, terminal contract
+envelopes, deterministic summaries, the static viewer and the recall
+measurement. Optional overrides: `COUNT`, `RUN_ID`, `WORKERS`,
+`WORKFORCE_WORKERS`, `MIN_AUDIT`, `ENTRY_MANIFEST`.
+
+### Historical paths (kept for debugging, not the submission)
+
+`scripts/run_one_shot.py` and `scripts/norhound_live.sh` are the earlier
+drivers. They expect precomputed external files and still mention sources the
+current pipeline no longer uses (Google Places rows, Finn job files), so they
+are **not** the reproducible path: use `run_official_batch.sh` for the
+evaluator and `run_full_batch.sh` for a local 1,000-company run.
 
 ---
 
@@ -80,19 +106,23 @@ It prints a final scorecard and writes the viewer to `out/norhound-site/`.
 Inside Docker the same script is the `norhound-full` entrypoint, so the grader
 needs only `docker compose run --rm norhound-full`.
 
-Re-running the same command is how refresh history is produced: before the run
-overwrites anything it copies the previous `<prefix>-envelopes.jsonl` to
-`<prefix>-envelopes.prev.jsonl` and passes it to `run_competition_batch.py
---previous-envelopes`, so the emitted envelopes keep the earlier version of
-each profile and gain `refresh`/`changes` events. The first run records a
+Re-running the same command is how refresh history is produced. The official
+command compares the new envelopes with the previous snapshot
+(`--previous-envelopes`) and writes, for every company, typed old -> new
+change records with the source URL, retrieval time, effective date and the
+content hash of both values, plus the earlier evidence behind a recorded
+change. A change is keyed by a content hash, so repeating the comparison
+records nothing twice. The first run has no previous snapshot, so it records a
 baseline with no change events, which is the correct result for a first run.
 `scripts/run_refresh_replay.py` replays a frozen fixture for auditing this
 diff; it is a test harness, not a pipeline stage.
 
 Each connector subprocess is bounded by `NORHOUND_STAGE_TIMEOUT_S` (default
 3600) and is killed as a process group, so a stalled site can no longer block
-the pipeline indefinitely. Note the default exceeds the 45-minute per-100-company
-budget, so lower it for an official batch.
+the pipeline indefinitely. The brief states that each official run has a fixed
+time and resource budget supplied by Builderr; the measured runtime of the
+shipped pipeline is ≈30 minutes per 100 companies without the opt-in OCR
+stage, so lower the stage timeout if the budget you are given is tighter.
 
 **Note on steps 4–5 below:** `run_external_pipeline.py` already runs
 `verify_and_label_observations.py` and `evaluate_external_footprint.py`
@@ -358,31 +388,36 @@ Read `docs/competition-control-loop.md`, `docs/external-connectors.md` and
   deterministic and all external connectors use free public sources. Optional
   keys exist only for legacy/optional connectors and degrade cleanly when
   absent (`NVIDIA_API_KEY`, `FIRECRAWL_API_KEY`).
-- Third-party spend is **~$0 per 100 companies**. The core batch (registry +
-  company-site capture) is free; waste connectors (Wikidata/Wikipedia CC0,
-  Brønnøysund REST + registry feed, NAV public job-feed token, sitemaps) are
-  free public/government sources.
+- Third-party spend is **$0 per official batch**. The core batch (registry +
+  company-site capture) is free; the other connectors (Wikidata/Wikipedia CC0,
+  Brønnøysund REST + registry feed, NAV public job feed, sitemaps) are free
+  public/government sources.
 - Outbound requests are bounded per company (page caps, per-domain budgets,
   robots.txt honoured, retries with backoff). No paid model is required to
   produce the submitted envelopes.
-- The declared expected cost per 100-company run is included in the
-  submission email; the run report records actual request counts and runtime.
+- The declared expected cost per official batch is included in the submission
+  email; `out/run-<run-id>/official-run-report.json` records the request
+  count, the runtime and the third-party cost of the run.
 
 ## Submission contract
 
-Submit a repository with:
+The current brief (retrieved 17 Nov 2026, see
+`docs/evidence/signalpost-requirements-2026-11-17.md`) asks for a repository
+with:
 
-- at least 1,000 completed company profiles and the exact organisation-number
-  manifest used;
+- a **100-company smoke-test result or report**;
 - one documented command that accepts a JSONL batch of organisation numbers:
-  `bash scripts/norhound_live.sh <batch.jsonl>` (the batch argument is the
-  evaluator's file; without it the script builds a self-contained manifest);
+  `scripts/run_official_batch.sh --batch <batch.jsonl>`;
 - exactly one terminal envelope per input;
 - pinned dependencies and reproducible setup;
-- a previous-snapshot input and material-change output;
+- a previous-snapshot input and material-change output:
+  `--previous-envelopes <prior envelopes.jsonl>`;
 - a machine-readable run report with runtime, request count and third-party
-  cost;
+  cost: `out/run-<run-id>/official-run-report.json`;
 - declared models, APIs, licences and source-rights assumptions.
 
-Email the repository URL, run command, models/APIs and expected cost per
-100-company run to the contest intake address.
+Email the repository URL, the exact commit hash, the smoke-test result, the
+run command, models/APIs/licences and the expected cost per official batch to
+`submit@builderr.ai`. Precomputed profiles and a company manifest are **not**
+submitted for scoring — the 1,000-company corpus in `out/submission/` is
+evidence of what the agent does.

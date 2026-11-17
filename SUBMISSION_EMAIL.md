@@ -4,7 +4,7 @@ Hi,
 
 Submitting the NorHound agent for the Signalpost challenge. This revision is
 **fully keyless**: every stage runs without an API key, a login or a paid
-account, so the cost per 100-company run is **$0**.
+account, so the external cost per official batch is **$0**.
 
 The headline is precision, not volume: 1,000 company profiles, 31,829 published
 observations, **entity precision 1.0** and **zero wrong-company publications**.
@@ -19,19 +19,35 @@ This is the commit that contains the code and the shipped corpus. The only
 commits after it are documentation-only.
 
 DEADLINE NOTE
-The challenge page states entries close 22 Nov 2026 and that a 100-company
-smoke test plus repository, commit hash and one command are the submission
-unit — no precomputed profile bundle or company manifest is required. Both are
-shipped anyway (see below) as evidence, not as the deliverable.
+Entries and revisions are accepted through **22 November 2026**, and up to
+four revised exact commit hashes are allowed through that date (five versions
+in total). The October dates still shown on the Unstop listing (share 17 Oct,
+revisions 18 Oct, run through 21 Oct) are superseded: the current Builderr
+brief says "New entries and revisions are accepted through 22 November 2026",
+and Builderr's platform rules say the challenge page wins when a summary
+conflicts with it.
 
 ONE COMMAND TO RUN
   cd norhound-starter-kit
   uv sync
   uv run playwright install chromium     # one-time, for the browser rescue stage
+  scripts/run_official_batch.sh --batch organisations.jsonl
+
+`organisations.jsonl` is the JSONL batch of organisation numbers you supply —
+one per line, either as a bare number or as an object with
+"organisation_number". That command checks the input count before any work
+starts, runs the whole pipeline over your batch, attaches the refresh history
+against the previous snapshot, and writes:
+
+  out/run-<run-id>/envelopes-final.jsonl    one terminal envelope per input
+  out/run-<run-id>/official-run-report.json runtime, requests, cost, audit
+
+For the local 1,000-company reproduction (the same pipeline, selecting its own
+batch with seed 20260823) the command is:
+
   scripts/run_full_batch.sh
 
-`scripts/run_full_batch.sh` runs all 14 stages in order: select the
-1,000-company manifest (seed 20260823, identical to the shipped one), registry
+It runs all 14 stages in order: select the 1,000-company manifest, registry
 enrichment with exact-identity website capture, the headless-browser rescue of
 unreadable homepages, every keyless connector (NAV job feed, Wikidata,
 Fagfolkguiden, Brønnøysund announcements, public ATS feeds), the wrong-company
@@ -58,11 +74,17 @@ WHAT IS IN THE REPO
   **100 requested, 100 returned, complete**, 10,305 claims and 3,396 evidence
   records, produced by `scripts/build_smoke_report.py --run-dir <run> --count
   100 --output-dir <dir>` (exit code 1 if any requested company comes back
-  missing or incomplete)
+  missing or incomplete). This is the artifact the brief asks for.
 - `scripts/promote_run.sh` also writes `out/norhound-signalpost-submission.zip`
   (the same package as one archive). `out/` is gitignored, so the archive is
   built locally rather than committed — every file inside it is committed
   under `out/submission/`.
+
+The 1,000-company corpus, the manifest and the viewer are shipped as evidence
+of what the agent does. The brief is explicit that precomputed profiles and a
+company manifest are not submitted for scoring: "Freshness, exact attribution
+and reproducible execution — not a submitted static profile file — are what the
+official run tests."
 
 PRECISION (the gates that matter more than volume)
 - entity precision **1.0**, metric precision **1.0**
@@ -72,6 +94,21 @@ PRECISION (the gates that matter more than volume)
 - every published fact carries source URL, retrieval time, reporting or
   effective date, content hash and extraction method
 - 559 tests pass (`uv run python -m unittest discover -s tests`)
+
+REFRESH AND THE RUN REPORT
+The brief asks for refresh metadata and material changes since the previous
+run, with idempotent refresh and prior snapshots preserved. The agent takes
+the previous run's envelopes and emits, for every company, typed old -> new
+change records with the source URL, retrieval time, effective date and the
+content hash of both the old and the new value; the earlier evidence behind a
+recorded change is preserved even when the current run no longer carries it.
+A change is keyed by a content hash, so re-running the same comparison records
+nothing twice — the stage is idempotent by construction, not by convention.
+
+`out/run-<run-id>/official-run-report.json` is the machine-readable run
+report: runtime, request count, third-party cost, envelope and claim counts,
+the identity precision, and the declared source rights. A count that was not
+measured is reported as a bound with the reason, not as a guess.
 
 RECALL — what is measured, and what each number means
 These are **our own reproducible measurements, not official scores**. The
@@ -194,13 +231,18 @@ MODELS / APIs / LICENCES
   corroborates the organisation number. A group, parent or subsidiary is
   labelled, never collapsed into its parent.
 
-EXPECTED COST PER 100-COMPANY RUN
-- External spend: **$0**. No paid API is called.
-- Outbound requests: roughly 40-60 public page/API requests per company, well
-  inside the 2,000-request budget for a 100-company batch.
-- Runtime: measured **44 minutes per 100 companies** on 8 workers, without the
-  opt-in OCR stage (a full 1,000-company run is about 7 h 20 m; with the OCR
-  stage on it is 10.7 h, which is why OCR stays off).
+EXPECTED COST PER OFFICIAL BATCH
+- External spend: **$0**. No paid API is called and no model key is needed.
+- Requests: the machine-readable run report states the measured count for the
+  registry and website-capture stage and a lower bound for the external
+  connectors — every published observation needed at least one request. The
+  bound is labelled as a bound; it is never presented as a measured count.
+- Runtime: measured **≈30 minutes per 100 companies** on 8 workers without the
+  opt-in OCR stage, i.e. **≈5 hours for a 1,000-company official batch**. (The
+  OCR stage would add ≈3 h 20 m and measures 0 scored points, which is why it
+  stays off; `SLOW_STAGES=1` turns it on.) The brief says each official run
+  has a fixed time and resource budget that Builderr supplies — send me the
+  limit you are given and I will fit the run to it.
 - Models: none. Licences: NLOD (registry), CC0 (Wikidata/GLEIF), ODbL where
   applicable; website content is quoted at claim level with source URL,
   retrieval time and content hash.

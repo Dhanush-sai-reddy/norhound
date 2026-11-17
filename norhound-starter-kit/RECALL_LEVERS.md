@@ -92,9 +92,16 @@ separate process that writes its file when it finishes.
 
 Stage 5 totals **5 h 01 m** with the OCR stage and **1 h 39 m** without it. The
 whole 1,000-company run took **10.7 h** wall clock (13:16 to 23:55), which is
-**64 min per 100 companies** — 1.4× the stated budget. Removing the OCR stage
-alone brings it to **44 min per 100**, inside the budget, which is the reason it
-stays opt-in rather than the missing points.
+**64 min per 100 companies**. Removing the OCR stage alone brings it to
+**44 min per 100**, which is the reason it stays opt-in rather than the missing
+points.
+
+> **Budget note (updated 18 Nov 2026).** The "stated budget" above was the
+> 45-minute-per-100-company figure from the older Unstop listing, which the
+> current Builderr brief supersedes: it now says each official run has "a fixed
+> time and resource budget" that Builderr supplies, and publishes no numbers.
+> The per-100-company rates here stay the right way to compare a run against
+> whatever budget is supplied.
 
 ## 3. Keyless rating sources — all probed, all dead
 

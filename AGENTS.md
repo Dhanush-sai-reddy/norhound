@@ -7,12 +7,24 @@ This file provides complete context for any agent working on the NorHound Signal
 ## 🎯 Challenge Overview
 
 **Signalpost: Build An Agent That Finds Company Information** (Builderr / Unstop)
-- **Deadline:** 17 Oct 2026 (project sharing), 18 Oct (code revisions), 21 Oct (entries close)
+- **Deadline (current Builderr brief, retrieved 17 Nov 2026):** entries and
+  revisions accepted **through 22 November 2026**. Up to **four revised exact
+  commit hashes** through that date (five versions in total). The October
+  dates still shown on the Unstop listing (share 17 Oct, revisions 18 Oct,
+  run through 21 Oct) are **superseded** — Builderr's platform rules say the
+  challenge page wins when a summary conflicts with it.
+  Evidence: `norhound-starter-kit/docs/evidence/signalpost-requirements-2026-11-17.md`
 - **Prize Pool:** $2,500 ($2,000 main + $500 JBOX bonus + $400 community awards)
 - **Submit to:** submit@builderr.ai
 
 ### The Task
-Build an agent that, given a Norwegian company number (organisasjonsnummer), searches **permitted public sources** and returns a company profile with facts, source links, and dates. Must produce 1,000+ profiles; tested on 100 random companies daily.
+Build an agent that, given a Norwegian company number (organisasjonsnummer), searches **permitted public sources** and returns a company profile with facts, source links, and dates.
+
+**Current official batch:** 1,000 companies now, possibly 1,100 — Builderr
+supplies the companies for every official run. The submission unit is the
+**agent plus a 100-company smoke-test result**; precomputed profiles and a
+company manifest are **not** submitted or scored. Local testing at 1,000+
+companies is encouraged.
 
 **Key constraint:** Every fact must be correctly matched to its company — a material wrong-company match fails the entry.
 
@@ -32,20 +44,46 @@ Build an agent that, given a Norwegian company number (organisasjonsnummer), sea
 | **Useful summary** | 10 | Profile explains what company does, changes, unknowns |
 | **Usability** | 5 | User can find, compare, verify on desktop and mobile |
 
-### Qualification Gates (ALL must pass)
+### Qualification Gates (SUPERSEDED — see the current gates below)
 - ≥ **65/100 overall**
-- ≥ **21/35 coverage**
-- ≥ **60% weighted external company recall** (across ≥3 field types with ≥15 opportunities)
+- ≥ **21/35 coverage** ← no longer a gate
+- ≥ **60% weighted external company recall** (across ≥3 field types with ≥15 opportunities) ← no longer a gate
 - ≥ **95% external precision** (exact entity match)
 - **No fabricated financial values**
 - **No material wrong-company publication**
-- Return exactly 100 terminal envelopes per daily batch
+- Return exactly 100 terminal envelopes per daily batch ← now one envelope per company in the supplied official batch
 - Idempotent refresh (same input → same output + preserved history)
 
-### Daily Run Limits
+### Daily Run Limits (SUPERSEDED — see the current budget below)
 - **45 minutes**
 - **2,000 outbound requests**
 - **$10 external API costs** per batch of 100 companies
+
+---
+
+## ✅ CURRENT REQUIREMENTS (Builderr brief + evaluation contract, retrieved 17 Nov 2026)
+
+**Qualification gates (current):**
+- ≥ **65/100 overall**
+- ≥ **95% precision** — at least 95 of every 100 checked published claims correct and attributed to the right company
+- **No separate recall/coverage threshold** — "coverage and recall contribute to the score; they are not separate qualification thresholds"
+- **No fabricated financial values**, **no material wrong-company publication**
+- **Exactly one terminal envelope per company in every official batch**
+- Explicit availability states (`available`, `not_available`, `blocked`,
+  `not_applicable`, `ambiguous`, `failed`), never zero for absence
+- **Idempotent refresh with prior snapshots preserved**
+- Claim-level source URL, retrieval time and reporting period; reproducible
+  setup, pinned dependencies and one evaluator command
+
+**Run budget (current):** Builderr supplies "a fixed time and resource budget
+for each official run"; no numeric limit is published on the current pages.
+The old 45 min / 2,000 requests / $10 figures belong to the superseded
+100-company Unstop listing. Our measured cost is **$0 external** and the
+measured runtime is **≈30 minutes per 100 companies** (≈5 hours per 1,000).
+
+**Submission email (current):** repository URL, exact commit hash,
+100-company smoke-test result or report, one run command, models/APIs/licences,
+expected cost per official batch, agent name and contact → `submit@builderr.ai`.
 
 ---
 
@@ -366,11 +404,19 @@ Everything below is **done** as of 17 Nov 2026. Kept as the recipe.
 Email to `submit@builderr.ai` with:
 - Repository URL
 - Exact commit hash
-- One command to run the agent
+- **100-company smoke-test result or report**
+- One command to run the agent — `scripts/run_official_batch.sh --batch organisations.jsonl`
 - Models, APIs, licences used
-- Expected cost per 100-company run
-- Contact details
-- 1,000+ completed profiles + organisation-number manifest
+- Expected cost per official batch (ours: **$0 external**)
+- Agent name and contact details
+
+The 1,000-company corpus, the manifest and the viewer are shipped as **evidence
+of what the agent does**, not as the submission unit: the current brief says
+"you do not submit precomputed profiles or a company manifest for scoring".
+
+Up to **four revised exact commit hashes** are accepted through 22 Nov 2026, so
+the corpus, the docs and the code can each move and still land as one of the
+five allowed versions.
 
 The ready-to-send text is `SUBMISSION_EMAIL.md` at the repository root. It is
 regenerated from the shipped run's measured numbers — do not hand-edit the
@@ -385,7 +431,7 @@ numbers in it, re-run `scripts/promote_run.sh` and copy the new values.
 - **Always include source URL, retrieval date, reporting period**
 - **Use explicit availability states** — never replace missing with zero
 - **Make refresh idempotent** — same input → same output + preserved history
-- **Return exactly 100 terminal envelopes per daily batch**
+- **Return exactly one terminal envelope per company in the supplied official batch**
 - **Document source rights, secrets, safe URL handling**
 - **Pinned dependencies + reproducible run command**
 - **A careers page is not a job posting** — publish `careers_page`, never `hiring: true`, unless a role card, a job-feed item or an apply action proves it
@@ -393,4 +439,4 @@ numbers in it, re-run `scripts/promote_run.sh` and copy the new values.
 
 ---
 
-*Last updated: 17 Nov 2026 — Context compiled from official_review.md, report.md, builderr.ai challenge page, the 2026-11-16 fresh run and repository state*
+*Last updated: 18 Nov 2026 — Context compiled from official_review.md, report.md, the Builderr brief and evaluation contract retrieved 17 Nov 2026 (`docs/evidence/signalpost-requirements-2026-11-17.md`), the fresh run and repository state*
