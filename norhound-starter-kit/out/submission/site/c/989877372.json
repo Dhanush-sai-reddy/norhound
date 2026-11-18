@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-16T15:19:03.705011Z",
+        "retrieved_at": "2026-11-17T21:31:54.252800Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "989877372",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-16T15:21:56.229698Z",
+        "retrieved_at": "2026-11-17T21:34:37.614636Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-16T15:21:54.747368Z",
+        "retrieved_at": "2026-11-17T21:34:31.306080Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-16T15:21:58.040145Z",
+        "retrieved_at": "2026-11-17T21:34:39.369138Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -202,7 +202,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-16T15:21:59.007344Z",
+        "retrieved_at": "2026-11-17T21:34:40.243996Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,11 +235,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "989877372",
         "source_type": "official_registry_bulk",
@@ -315,7 +315,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-16T15:21:53.771865Z",
+        "retrieved_at": "2026-11-17T21:34:30.441192Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -354,7 +354,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-16T15:21:57.139107Z",
+        "retrieved_at": "2026-11-17T21:34:38.489827Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -425,7 +425,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-16T15:22:00.327666Z",
+        "retrieved_at": "2026-11-17T21:34:41.509423Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -475,7 +475,7 @@
           "organisation_number": "989877372",
           "platform": "company_site",
           "source_url": "https://www.nmur.no/",
-          "retrieved_at": "2026-11-16T16:03:17.661449Z",
+          "retrieved_at": "2026-11-17T22:11:57.694933Z",
           "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
           "exact_entity": true,
           "identity_proof": [
@@ -498,7 +498,8 @@
             "structured_organisation_records": 0,
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-site-989877372-493d31f7d246665d",
@@ -506,7 +507,7 @@
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.nmur.no/",
-          "retrieved_at": "2026-11-16T16:03:17.661449Z",
+          "retrieved_at": "2026-11-17T22:11:57.694933Z",
           "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
           "exact_entity": true,
           "identity_proof": [
@@ -516,7 +517,7 @@
               "matched_organisation_number": "989877372",
               "source": "brreg",
               "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-16T15:18:00.649157Z",
+              "retrieved_at": "2026-11-17T21:31:01.581479Z",
               "explanation": "BRREG declares nmur.no as the website of organisation 989877372; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
@@ -529,14 +530,15 @@
             "description": "NaturMur AS produserer betongelementer med fasade av stein i Grimstad. Muren utformes i elementer som tilpasses kundens behov.",
             "registry_domain": "nmur.no"
           },
-          "strategy": "registry_declared_website_description"
+          "strategy": "registry_declared_website_description",
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "989877372",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/989877372",
-          "retrieved_at": "2026-11-16T16:36:47.732338Z",
-          "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+          "retrieved_at": "2026-11-17T22:40:49.995448Z",
+          "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -560,14 +562,15 @@
           "metrics": {
             "email": "trond@nmur.no",
             "contact_as_of": "2026-10-26"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "989877372",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/989877372",
-          "retrieved_at": "2026-11-16T16:36:47.732338Z",
-          "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+          "retrieved_at": "2026-11-17T22:40:49.995448Z",
+          "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -606,14 +609,15 @@
             "is_bankrupt": null,
             "bankruptcy_date": "",
             "website_domain": "www.nmur.no"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "989877372",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/989877372",
-          "retrieved_at": "2026-11-16T16:36:47.732338Z",
-          "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+          "retrieved_at": "2026-11-17T22:40:49.995448Z",
+          "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -639,7 +643,8 @@
             "as_of": "2026-11-16",
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-workforce-18530f98218f67a1247e8b89",
@@ -647,7 +652,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T15:21:53.771865Z",
+          "retrieved_at": "2026-11-17T21:34:30.441192Z",
           "content_sha256": "9b88d9a2ada309c3bf98cd0646d49b502d0af81ad5779cbddf35dc56d91a4b75",
           "exact_entity": true,
           "identity_proof": [
@@ -679,7 +684,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000786299&amp;sokeverdi=989877372&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:16:55Z",
+          "retrieved_at": "2026-11-17T23:25:37Z",
           "content_sha256": "8c74c94e1c2267f9e6e15ed0ff4b948d1f73d3ed23dbcfc1e75ff888c18100c2",
           "exact_entity": true,
           "identity_proof": [
@@ -708,7 +713,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000627139&amp;sokeverdi=989877372&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:16:55Z",
+          "retrieved_at": "2026-11-17T23:25:37Z",
           "content_sha256": "af6b5ae00cdd231527e3947b8126cb16828b4fbcf5a51fe83261739668a73939",
           "exact_entity": true,
           "identity_proof": [
@@ -737,7 +742,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000480488&amp;sokeverdi=989877372&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:16:55Z",
+          "retrieved_at": "2026-11-17T23:25:37Z",
           "content_sha256": "f4ce9c87d32089a338eee0511698ce0e1915247ef6bf09b45e43a5418228aa37",
           "exact_entity": true,
           "identity_proof": [
@@ -766,8 +771,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-16T15:18:00.649157Z",
-          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+          "retrieved_at": "2026-11-17T21:31:01.581479Z",
+          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -786,7 +791,8 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact"
+          "strategy": "registry_contact_exact",
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-contact-184accebf59319350ade2349",
@@ -794,8 +800,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-16T15:18:00.649157Z",
-          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+          "retrieved_at": "2026-11-17T21:31:01.581479Z",
+          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -814,13 +820,14 @@
             "registry_field": "mobil",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact"
+          "strategy": "registry_contact_exact",
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "989877372",
           "platform": "company_site",
           "source_url": "https://www.nmur.no/",
-          "retrieved_at": "2026-11-16T16:03:17.661449Z",
+          "retrieved_at": "2026-11-17T22:11:57.694933Z",
           "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
           "exact_entity": true,
           "identity_proof": [
@@ -839,13 +846,14 @@
           "evidence_span": "Forside - Naturmur — NaturMur AS produserer betongelementer med fasade av stein i Grimstad. Muren utformes i elementer som tilpasses kundens behov.",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "989877372",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989877372&size=1000",
-          "retrieved_at": "2026-11-16T15:21:59.007344Z",
+          "retrieved_at": "2026-11-17T21:34:40.243996Z",
           "content_sha256": "4de56c7ba40338d34c60b908db23d3b437fe4480b3c49f2aebd51c226719e902",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -867,7 +875,8 @@
             "subunit_organisation_number": "984543611",
             "municipality": "GRIMSTAD",
             "interpretation": "Officially registered sub-unit of this organisation."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-update-5aff4bbc6b9c39a0e228859d",
@@ -875,7 +884,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "5aff4bbc6b9c39a0e228859d4541d304c10efceaf5b3de2768a8afa1655ab083",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -905,7 +914,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "9f96acbe47fab09529a4a011d08e8d30e965e2dad07e29808f58f38741ff5be9",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -935,7 +944,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "470985d108f838369b3e114bc1a86b98cc362d789835bbb4e9f6f7b0112c35da",
           "observed_at": "2026-07-29",
           "exact_entity": true,
@@ -965,7 +974,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "ece772f35a95272927d196b95d2bace63752bc5ea97cd194ef874e41246f07d0",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -995,7 +1004,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "5af3341c33012242811905fe90cd45878638c14b88c9e3f03bfec5b23f11f2dd",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1025,7 +1034,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "f7b5decd7bf6c3862fe59f674aa58b0366e3a96fdc235c63ccdaa90452c2a86c",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1055,7 +1064,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "783038da707072fc5d862fe16a0422fc6ce07c82395b9ff6193646981dd2a0e5",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1085,7 +1094,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "d5ebb51f74082da664c3598931190311d966da93f7af304ade9f41a3c9e2e023",
           "observed_at": "2025-07-31",
           "exact_entity": true,
@@ -1115,7 +1124,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "fbb2ee198f64a330319ae917dcce9e925668e3a053558e073af18c7a56dc97c4",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1145,7 +1154,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "44546c78b05b37149c4560ed786c47a9359051c2dec048687743c33f0975aa54",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1175,7 +1184,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "b65d9bcb83cc4a29f5479c1df962b8ae3f5862129cdabb0cddbe2607058486ca",
           "observed_at": "2024-12-12",
           "exact_entity": true,
@@ -1205,7 +1214,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "4eeddf841f39b92c9bf2bfcdcdea19b7fe7fcea9c4c1650db2d183142e3032c1",
           "observed_at": "2024-10-14",
           "exact_entity": true,
@@ -1235,7 +1244,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "63c0eeeb64bb19fc41ea024ec19e66f12d1a6a541328cbd928c93b412349a2ca",
           "observed_at": "2024-09-12",
           "exact_entity": true,
@@ -1265,7 +1274,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "de675a20bca53a18ead12caf62ca8413cb84c120b87e340934a44bfa2f208eb4",
           "observed_at": "2024-07-30",
           "exact_entity": true,
@@ -1295,7 +1304,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "51894c9b646030a3ebaee1897d9fbf103a14e538ce4277dacdec2492f9be06df",
           "observed_at": "2024-06-12",
           "exact_entity": true,
@@ -1325,7 +1334,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "3e5522b7b66bb67feb8f2ff14d078c660cff938b7c2f970aab9f9ad70a523cbb",
           "observed_at": "2024-04-13",
           "exact_entity": true,
@@ -1355,7 +1364,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "8f7b6ec38e31a9a4d0599455a89c6a2a9e3d7846bef2b59ec198d62bc140d51c",
           "observed_at": "2024-03-12",
           "exact_entity": true,
@@ -1385,7 +1394,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "eeb44e7e1db51aade5e4140c6ae72728d4b2007e3ade34060ee045c895dd2335",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1415,7 +1424,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "df24de2f59ef19be1152fa3b7ae202dabc495919ef37266b41e1151838361520",
           "observed_at": "2023-12-12",
           "exact_entity": true,
@@ -1445,7 +1454,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "ecc82992a89bb9e67a67b701fb649d289e7f7e4812446f25c9a8785facd88a3c",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1483,12 +1492,12 @@
     "run_metrics": {
       "bytes": 19829,
       "latencies_ms": [
-        961,
-        975,
-        925,
-        908,
-        900,
-        966,
+        846,
+        864,
+        887,
+        874,
+        878,
+        874,
         638
       ],
       "requests": 8
@@ -1636,7 +1645,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-16T15:19:03.705011Z",
+      "retrieved_at": "2026-11-17T21:31:54.252800Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "989877372",
       "source_type": "official_rule_interpretation",
@@ -1656,7 +1665,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-16T15:21:56.229698Z",
+      "retrieved_at": "2026-11-17T21:34:37.614636Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1750,7 +1759,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-16T15:21:54.747368Z",
+      "retrieved_at": "2026-11-17T21:34:31.306080Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1815,7 +1824,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-16T15:21:58.040145Z",
+      "retrieved_at": "2026-11-17T21:34:39.369138Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1829,7 +1838,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-16T15:21:59.007344Z",
+      "retrieved_at": "2026-11-17T21:34:40.243996Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1862,11 +1871,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-16T15:18:00.649157Z",
+      "retrieved_at": "2026-11-17T21:31:01.581479Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "989877372",
       "source_type": "official_registry_bulk",
@@ -1942,7 +1951,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-16T15:21:53.771865Z",
+      "retrieved_at": "2026-11-17T21:34:30.441192Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1981,7 +1990,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-16T15:21:57.139107Z",
+      "retrieved_at": "2026-11-17T21:34:38.489827Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2052,7 +2061,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-16T15:22:00.327666Z",
+      "retrieved_at": "2026-11-17T21:34:41.509423Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -2102,7 +2111,7 @@
         "organisation_number": "989877372",
         "platform": "company_site",
         "source_url": "https://www.nmur.no/",
-        "retrieved_at": "2026-11-16T16:03:17.661449Z",
+        "retrieved_at": "2026-11-17T22:11:57.694933Z",
         "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
         "exact_entity": true,
         "identity_proof": [
@@ -2125,7 +2134,8 @@
           "structured_organisation_records": 0,
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-site-989877372-493d31f7d246665d",
@@ -2133,7 +2143,7 @@
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.nmur.no/",
-        "retrieved_at": "2026-11-16T16:03:17.661449Z",
+        "retrieved_at": "2026-11-17T22:11:57.694933Z",
         "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
         "exact_entity": true,
         "identity_proof": [
@@ -2143,7 +2153,7 @@
             "matched_organisation_number": "989877372",
             "source": "brreg",
             "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-16T15:18:00.649157Z",
+            "retrieved_at": "2026-11-17T21:31:01.581479Z",
             "explanation": "BRREG declares nmur.no as the website of organisation 989877372; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
@@ -2156,14 +2166,15 @@
           "description": "NaturMur AS produserer betongelementer med fasade av stein i Grimstad. Muren utformes i elementer som tilpasses kundens behov.",
           "registry_domain": "nmur.no"
         },
-        "strategy": "registry_declared_website_description"
+        "strategy": "registry_declared_website_description",
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "989877372",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/989877372",
-        "retrieved_at": "2026-11-16T16:36:47.732338Z",
-        "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+        "retrieved_at": "2026-11-17T22:40:49.995448Z",
+        "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2187,14 +2198,15 @@
         "metrics": {
           "email": "trond@nmur.no",
           "contact_as_of": "2026-10-26"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "989877372",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/989877372",
-        "retrieved_at": "2026-11-16T16:36:47.732338Z",
-        "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+        "retrieved_at": "2026-11-17T22:40:49.995448Z",
+        "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2233,14 +2245,15 @@
           "is_bankrupt": null,
           "bankruptcy_date": "",
           "website_domain": "www.nmur.no"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "989877372",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/989877372",
-        "retrieved_at": "2026-11-16T16:36:47.732338Z",
-        "content_sha256": "db92316ace328a97388f13bad0c29043ec7a0bc74fc5c8d6afc4df8c869e0e63",
+        "retrieved_at": "2026-11-17T22:40:49.995448Z",
+        "content_sha256": "edddce256e27dfb0f68b00c893b7ea1a5d0a054bbaa16de4b410708d4377905f",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2266,7 +2279,8 @@
           "as_of": "2026-11-16",
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-workforce-18530f98218f67a1247e8b89",
@@ -2274,7 +2288,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T15:21:53.771865Z",
+        "retrieved_at": "2026-11-17T21:34:30.441192Z",
         "content_sha256": "9b88d9a2ada309c3bf98cd0646d49b502d0af81ad5779cbddf35dc56d91a4b75",
         "exact_entity": true,
         "identity_proof": [
@@ -2306,7 +2320,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000786299&amp;sokeverdi=989877372&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:16:55Z",
+        "retrieved_at": "2026-11-17T23:25:37Z",
         "content_sha256": "8c74c94e1c2267f9e6e15ed0ff4b948d1f73d3ed23dbcfc1e75ff888c18100c2",
         "exact_entity": true,
         "identity_proof": [
@@ -2335,7 +2349,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000627139&amp;sokeverdi=989877372&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:16:55Z",
+        "retrieved_at": "2026-11-17T23:25:37Z",
         "content_sha256": "af6b5ae00cdd231527e3947b8126cb16828b4fbcf5a51fe83261739668a73939",
         "exact_entity": true,
         "identity_proof": [
@@ -2364,7 +2378,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000480488&amp;sokeverdi=989877372&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:16:55Z",
+        "retrieved_at": "2026-11-17T23:25:37Z",
         "content_sha256": "f4ce9c87d32089a338eee0511698ce0e1915247ef6bf09b45e43a5418228aa37",
         "exact_entity": true,
         "identity_proof": [
@@ -2393,8 +2407,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2413,7 +2427,8 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact"
+        "strategy": "registry_contact_exact",
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-contact-184accebf59319350ade2349",
@@ -2421,8 +2436,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2441,13 +2456,14 @@
           "registry_field": "mobil",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact"
+        "strategy": "registry_contact_exact",
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "989877372",
         "platform": "company_site",
         "source_url": "https://www.nmur.no/",
-        "retrieved_at": "2026-11-16T16:03:17.661449Z",
+        "retrieved_at": "2026-11-17T22:11:57.694933Z",
         "content_sha256": "493d31f7d246665d7e3605cebac45053989143ba1f173cbdb2fd6c08269a1a35",
         "exact_entity": true,
         "identity_proof": [
@@ -2466,13 +2482,14 @@
         "evidence_span": "Forside - Naturmur — NaturMur AS produserer betongelementer med fasade av stein i Grimstad. Muren utformes i elementer som tilpasses kundens behov.",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "989877372",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=989877372&size=1000",
-        "retrieved_at": "2026-11-16T15:21:59.007344Z",
+        "retrieved_at": "2026-11-17T21:34:40.243996Z",
         "content_sha256": "4de56c7ba40338d34c60b908db23d3b437fe4480b3c49f2aebd51c226719e902",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2494,7 +2511,8 @@
           "subunit_organisation_number": "984543611",
           "municipality": "GRIMSTAD",
           "interpretation": "Officially registered sub-unit of this organisation."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-update-5aff4bbc6b9c39a0e228859d",
@@ -2502,7 +2520,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "5aff4bbc6b9c39a0e228859d4541d304c10efceaf5b3de2768a8afa1655ab083",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -2532,7 +2550,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "9f96acbe47fab09529a4a011d08e8d30e965e2dad07e29808f58f38741ff5be9",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2562,7 +2580,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "470985d108f838369b3e114bc1a86b98cc362d789835bbb4e9f6f7b0112c35da",
         "observed_at": "2026-07-29",
         "exact_entity": true,
@@ -2592,7 +2610,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "ece772f35a95272927d196b95d2bace63752bc5ea97cd194ef874e41246f07d0",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -2622,7 +2640,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "5af3341c33012242811905fe90cd45878638c14b88c9e3f03bfec5b23f11f2dd",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2652,7 +2670,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "f7b5decd7bf6c3862fe59f674aa58b0366e3a96fdc235c63ccdaa90452c2a86c",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -2682,7 +2700,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "783038da707072fc5d862fe16a0422fc6ce07c82395b9ff6193646981dd2a0e5",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -2712,7 +2730,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "d5ebb51f74082da664c3598931190311d966da93f7af304ade9f41a3c9e2e023",
         "observed_at": "2025-07-31",
         "exact_entity": true,
@@ -2742,7 +2760,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "fbb2ee198f64a330319ae917dcce9e925668e3a053558e073af18c7a56dc97c4",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -2772,7 +2790,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "44546c78b05b37149c4560ed786c47a9359051c2dec048687743c33f0975aa54",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -2802,7 +2820,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "b65d9bcb83cc4a29f5479c1df962b8ae3f5862129cdabb0cddbe2607058486ca",
         "observed_at": "2024-12-12",
         "exact_entity": true,
@@ -2832,7 +2850,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "4eeddf841f39b92c9bf2bfcdcdea19b7fe7fcea9c4c1650db2d183142e3032c1",
         "observed_at": "2024-10-14",
         "exact_entity": true,
@@ -2862,7 +2880,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "63c0eeeb64bb19fc41ea024ec19e66f12d1a6a541328cbd928c93b412349a2ca",
         "observed_at": "2024-09-12",
         "exact_entity": true,
@@ -2892,7 +2910,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "de675a20bca53a18ead12caf62ca8413cb84c120b87e340934a44bfa2f208eb4",
         "observed_at": "2024-07-30",
         "exact_entity": true,
@@ -2922,7 +2940,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "51894c9b646030a3ebaee1897d9fbf103a14e538ce4277dacdec2492f9be06df",
         "observed_at": "2024-06-12",
         "exact_entity": true,
@@ -2952,7 +2970,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "3e5522b7b66bb67feb8f2ff14d078c660cff938b7c2f970aab9f9ad70a523cbb",
         "observed_at": "2024-04-13",
         "exact_entity": true,
@@ -2982,7 +3000,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "8f7b6ec38e31a9a4d0599455a89c6a2a9e3d7846bef2b59ec198d62bc140d51c",
         "observed_at": "2024-03-12",
         "exact_entity": true,
@@ -3012,7 +3030,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "eeb44e7e1db51aade5e4140c6ae72728d4b2007e3ade34060ee045c895dd2335",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -3042,7 +3060,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "df24de2f59ef19be1152fa3b7ae202dabc495919ef37266b41e1151838361520",
         "observed_at": "2023-12-12",
         "exact_entity": true,
@@ -3072,7 +3090,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/989877372",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "ecc82992a89bb9e67a67b701fb649d289e7f7e4812446f25c9a8785facd88a3c",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -3098,5 +3116,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-17T09:30:45.049577+00:00"
+  "generated_at": "2026-11-17T23:28:43.162591+00:00"
 }

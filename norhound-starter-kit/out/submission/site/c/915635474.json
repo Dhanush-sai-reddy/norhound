@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-16T15:18:45.453082Z",
+        "retrieved_at": "2026-11-17T21:31:46.575784Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "915635474",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-16T15:53:28.333607Z",
+        "retrieved_at": "2026-11-17T22:02:39.691259Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -103,7 +103,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-16T15:53:23.547808Z",
+        "retrieved_at": "2026-11-17T22:02:33.499037Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -168,7 +168,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-16T15:53:30.249359Z",
+        "retrieved_at": "2026-11-17T22:02:41.494516Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -182,7 +182,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-16T15:53:31.208134Z",
+        "retrieved_at": "2026-11-17T22:02:42.356314Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -215,11 +215,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "915635474",
         "source_type": "official_registry_bulk",
@@ -291,7 +291,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-16T15:53:22.585405Z",
+        "retrieved_at": "2026-11-17T22:02:32.588056Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -330,7 +330,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-16T15:53:29.302248Z",
+        "retrieved_at": "2026-11-17T22:02:40.570959Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -425,25 +425,240 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": null,
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "effective_at": null,
         "field": "website",
-        "note": "HTTP 504",
-        "retrieved_at": "2026-11-16T15:53:45.068301Z",
+        "note": "Company-controlled claim layer; not an official registry fact",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
-        "source_url": "https://www.okonomiavdelingen.no/",
-        "status": "source_error",
-        "value": null
+        "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
+        "status": "available",
+        "value": {
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
+          "crawl_errors": [],
+          "description": "Økonomiavdelingen Øst AS - autorisert regnskapsførerselskap",
+          "discovered_social_links": [
+            {
+              "platform": "facebook",
+              "url": "https://facebook.com/okonomiavdelingen"
+            },
+            {
+              "platform": "linkedin",
+              "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+            }
+          ],
+          "extraction_state": "static_complete",
+          "final_url": "https://www.xn--konomiavdelingen-kxb.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "okonomiavdelingen",
+              "ost"
+            ],
+            "matched_tokens": [
+              "okonomiavdelingen",
+              "ost"
+            ],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": true,
+            "reasons": [
+              "all normalized legal-name tokens appear together in homepage identity evidence"
+            ],
+            "score": 0.95,
+            "status": "exact"
+          },
+          "main_text_excerpt": "Velkommen til Økonomiavdelingen!\nØkonomiavdelingen er et autorisert regnskapsførerselskap med fokus på fornøyde kunder og fornøyde medarbeidere.\nVed hjelp medarbeidere med høy kompetanse, lang erfaring og faglig integritet, sørger vi for å levere våre tjenester til avtalt tid og fastsatte frister.\nVi holder til på Jessheim, men har kunder over store deler av Østlandet.\nSkulle du ønske bedriften din hadde en økonomiavdeling? Det kan vi hjelpe deg med!\nTa kontakt for en uforpliktende prat om din bedrift og hva vi som engasjert regnskapsfører kan hjelpe deg med.\nRing oss, send oss en e-post eller bruk kontaktskjema under:",
+          "pages": [
+            {
+              "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
+              "main_text_excerpt": "Velkommen til Økonomiavdelingen!\nØkonomiavdelingen er et autorisert regnskapsførerselskap med fokus på fornøyde kunder og fornøyde medarbeidere.\nVed hjelp medarbeidere med høy kompetanse, lang erfaring og faglig integritet, sørger vi for å levere våre tjenester til avtalt tid og fastsatte frister.\nVi holder til på Jessheim, men har kunder over store deler av Østlandet.\nSkulle du ønske bedriften din hadde en økonomiavdeling? Det kan vi hjelpe deg med!\nTa kontakt for en uforpliktende prat om din bedrift og hva vi som engasjert regnskapsfører kan hjelpe deg med.\nRing oss, send oss en e-post eller bruk kontaktskjema under:",
+              "title": "Forside | Økonomiavdelingen Øst AS",
+              "url": "https://www.xn--konomiavdelingen-kxb.no/"
+            },
+            {
+              "content_sha256": "b066a49c8bcc53dc63f5677844c187b3cc5293447a6f7a8239fe7ff6cb9b6e9a",
+              "main_text_excerpt": "Om oss\n \nØkonomiavdelingen har fokus på kunden og skikkelig kvalitet i oppdragsutførelse.\nMed fokus på god kommunikasjon og gode rutiner leverer vi kvalitet til riktig tid.\nDet viktigste for oss er å levere våre tjenester med høy kvalitet til avtalt tid og fastsatte frister. For å få til dette må vi sørge for at vi har fornøyde medarbeidere med høy kompetanse, gode systemer, god planlegging og et godt arbeidsmiljø. Dette får vi til!\nVi sørger alltid for å holde oss oppdatert på endringer i lover og regelverk samt systemer og programmer slik at vi alltid kan bistå våre kunder på den mest korrekte og mest effektive måten.\nNår vi tar oss av regnskapet ditt vil du oppleve at det er oppdatert så langt det er praktisk mulig til enhver tid. Du vil også oppleve at du har noen å henvende deg til som vil kunne hjelpe til med stort og smått i forhold til regnskapet. Vi bryr oss, så du kan bruke mest mulig tid på det bedriften din er god på.\nAll oppdragsutførelse er helt digital, både regnskapsføringen og dokumentasjonen. Dette er med på å sikre god kvalitet og sporbarhet, letter daglig arbeide og gjenfinning i tillegg til at det er enkelt for revisor som kan få tilgang til hele regnskapet uten å bla i permer.\nØkonomiavdelingen ble stiftet i 2015 av tre engasjerte eiere som ønsket å tilby kundene en skikkelig regnskapsfører med engasjement for kunden, rett og slett fordi det er dette som er den morsomste måten å være regnskapsfører på!\nI dag er vi 5 ansatte, hvorav 2 statsautoriserte regnskapsførere. Med samlet bred og lang erfaring i regnskapsbransjen og med diverse IT-systemer er vi godt rustet for oppgavene vi påtar oss.\nØkonomiavdelingen Øst AS er medlem av bransjeforeningen Regnskap Norge som jevnlig foretar kontroll av medlemsselskapene for å sikre kvalitet i bransjen.\nVi holder til i 2. etg. i et hyggelig lite hus i Leiv Holthes veg, midt i Jessheim sentrum, men kundene våre er over hele Østlandet.",
+              "title": "Om oss | Økonomiavdelingen Øst AS",
+              "url": "https://www.xn--konomiavdelingen-kxb.no/om-oss"
+            },
+            {
+              "content_sha256": "085ac2c86817aa63183520dea2cdfddd6979ce2163244f004adbdc7e1d4f296a",
+              "main_text_excerpt": "Kontakt oss\nAvtale\nDet er ikke alltid det er noen på kontoret. Vi kan være ute hos kunde eller i andre ærend. Noen ganger er vi på kontoret, men opptatt i møter. Vi anbefaler derfor at du gjør en avtale med oss - så slipper du bomtur.\nTelefonen blir besvart i hele åpningstiden 08:00 - 16:00",
+              "title": "Kontakt | Økonomiavdelingen Øst AS",
+              "url": "https://www.xn--konomiavdelingen-kxb.no/kontakt-oss"
+            }
+          ],
+          "registered_domain": "xn--konomiavdelingen-kxb.no",
+          "requested_url": "https://www.okonomiavdelingen.no/",
+          "social_link_assessments": [
+            {
+              "identity_score": 0.3,
+              "matched_tokens": [
+                "okonomiavdelingen"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "facebook",
+              "publishable": false,
+              "reason": "social handle lacks strong exact-entity name evidence",
+              "url": "https://facebook.com/okonomiavdelingen"
+            },
+            {
+              "identity_score": 0.98,
+              "matched_tokens": [
+                "okonomiavdelingen",
+                "ost"
+              ],
+              "method": "deterministic_social_handle_identity_v1",
+              "platform": "linkedin",
+              "publishable": true,
+              "reason": "normalized legal-name sequence appears in the social handle",
+              "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+            }
+          ],
+          "social_links": [
+            {
+              "platform": "linkedin",
+              "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+            }
+          ],
+          "structured_organisations": [
+            {
+              "@context": "http://schema.org",
+              "@id": "https://www.xn--konomiavdelingen-kxb.no/#global_business",
+              "@type": "LocalBusiness",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "NO",
+                "addressLocality": "Jessheim",
+                "addressRegion": "Viken",
+                "postalCode": "2066",
+                "streetAddress": "Leiv Holthes veg 3"
+              },
+              "email": "post@okonomiavdelingen.no",
+              "logo": "https://www.xn--konomiavdelingen-kxb.no/uploads/ikJtDUWr/header.1511950803777.1511950803000_997.png",
+              "member": [
+                {
+                  "@type": "Person",
+                  "affiliation": "",
+                  "description": "",
+                  "email": "espen@okonomiavdelingen.no",
+                  "faxNumber": "",
+                  "image": "/uploads/hB1XRMl2/EMK__msi___jpg.jpg",
+                  "jobTitle": "Daglig leder / Statsautorisert regnskapsfører (eier)",
+                  "mobile": "",
+                  "name": "Espen M. Karlsen",
+                  "sameAs": [],
+                  "telephone": ""
+                },
+                {
+                  "@type": "Person",
+                  "affiliation": "",
+                  "description": "",
+                  "email": "ellen@okonomiavdelingen.no",
+                  "faxNumber": "",
+                  "image": "/uploads/fq8t6phe/ESL__msi___jpg.jpg",
+                  "jobTitle": "Statsautorisert regnskapsfører (eier)",
+                  "mobile": "",
+                  "name": "Ellen S. B. B. Lerdalen",
+                  "sameAs": [],
+                  "telephone": ""
+                },
+                {
+                  "@type": "Person",
+                  "affiliation": "",
+                  "description": "",
+                  "email": "hege@okonomiavdelingen.no",
+                  "faxNumber": "",
+                  "image": "/uploads/zDImdjj8/HMN__msi___jpg.jpg",
+                  "jobTitle": "Lønns - og regnskapskonsulent / IT-ansvarlig (eier)",
+                  "mobile": "",
+                  "name": "Hege M. Nagel",
+                  "sameAs": [],
+                  "telephone": ""
+                },
+                {
+                  "@type": "Person",
+                  "affiliation": "",
+                  "description": "",
+                  "email": "aslaug@okonomiavdelingen.no",
+                  "faxNumber": "",
+                  "image": "/uploads/MLjmm0iF/AGA__msi___jpg.jpg",
+                  "jobTitle": "Regnskapskonsulent",
+                  "mobile": "",
+                  "name": "Áslaug Garðarsdóttir",
+                  "sameAs": [],
+                  "telephone": ""
+                },
+                {
+                  "@type": "Person",
+                  "affiliation": "",
+                  "description": "",
+                  "email": "marte@okonomiavdelingen.no",
+                  "faxNumber": "",
+                  "image": "/uploads/uAIMrl4l/MCB__msi___jpg.jpg",
+                  "jobTitle": "Regnskapskonsulent",
+                  "mobile": "",
+                  "name": "Marte C. Barrera",
+                  "sameAs": [],
+                  "telephone": ""
+                }
+              ],
+              "name": "Økonomiavdelingen Øst AS",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "closes": "16:00",
+                  "dayOfWeek": "http://schema.org/Monday",
+                  "opens": "08:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "closes": "16:00",
+                  "dayOfWeek": "http://schema.org/Tuesday",
+                  "opens": "08:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "closes": "16:00",
+                  "dayOfWeek": "http://schema.org/Wednesday",
+                  "opens": "08:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "closes": "16:00",
+                  "dayOfWeek": "http://schema.org/Thursday",
+                  "opens": "08:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "closes": "16:00",
+                  "dayOfWeek": "http://schema.org/Friday",
+                  "opens": "08:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "http://schema.org/Saturday"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": "http://schema.org/Sunday"
+                }
+              ],
+              "telephone": "+4740000302",
+              "url": "https://www.xn--konomiavdelingen-kxb.no"
+            }
+          ],
+          "title": "Forside | Økonomiavdelingen Øst AS"
+        }
       },
       "external_observations": [
         {
           "organisation_number": "915635474",
           "platform": "company_site",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -456,23 +671,24 @@
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-activity-915635474-105afbc6de60b5ea",
+          "id": "company-site-activity-915635474-53b07a6a258dbe85",
           "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 1 verified social links.",
+          "evidence_span": "Exact company site snapshot with 3 bounded pages and 1 verified social links.",
           "metrics": {
-            "bounded_pages_captured": 1,
+            "bounded_pages_captured": 3,
             "verified_social_links": 1,
             "structured_organisation_records": 1,
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "linkedin",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -485,20 +701,21 @@
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-handle-915635474-105afbc6de60b5ea-linkedin",
+          "id": "company-site-handle-915635474-53b07a6a258dbe85-linkedin",
           "signal_type": "profile_handle",
           "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
           "metrics": {
             "platform": "linkedin",
             "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915635474",
-          "retrieved_at": "2026-11-16T16:38:28.317257Z",
-          "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+          "retrieved_at": "2026-11-17T22:42:29.876273Z",
+          "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -522,14 +739,15 @@
           "metrics": {
             "email": "post@okavd.no",
             "contact_as_of": "2026-10-26"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915635474",
-          "retrieved_at": "2026-11-16T16:38:28.317257Z",
-          "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+          "retrieved_at": "2026-11-17T22:42:29.876273Z",
+          "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -553,14 +771,15 @@
           "metrics": {
             "phone": "40 00 03 02",
             "contact_as_of": "2026-10-26"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915635474",
-          "retrieved_at": "2026-11-16T16:38:28.317257Z",
-          "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+          "retrieved_at": "2026-11-17T22:42:29.876273Z",
+          "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -599,14 +818,15 @@
             "is_bankrupt": null,
             "bankruptcy_date": "",
             "website_domain": "www.okonomiavdelingen.no"
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915635474",
-          "retrieved_at": "2026-11-16T16:38:28.317257Z",
-          "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+          "retrieved_at": "2026-11-17T22:42:29.876273Z",
+          "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -632,7 +852,8 @@
             "as_of": "2026-09-18",
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-workforce-108402b350d5ab9cf2f18a00",
@@ -640,7 +861,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T15:53:22.585405Z",
+          "retrieved_at": "2026-11-17T22:02:32.588056Z",
           "content_sha256": "5554557c5639426c63642f1c89d66ca8ffe882d338775da7ec915d6cb3467252",
           "exact_entity": true,
           "identity_proof": [
@@ -670,7 +891,7 @@
           "organisation_number": "915635474",
           "platform": "company_directory",
           "source_url": "https://www.fagfolkguiden.no/bedrift/okonomiavdelingen-ost-as-915635474",
-          "retrieved_at": "2026-11-16T16:36:04.006800Z",
+          "retrieved_at": "2026-11-17T22:40:07.972889Z",
           "content_sha256": "94d16334c57a7a53d92d4086917b2b6cdc684c4f920af5d7c8551d44c5fdfb2b",
           "exact_entity": true,
           "identity_proof": [
@@ -699,7 +920,8 @@
           "signal_type": "profile_metrics",
           "strategy": "directory_profile_metrics",
           "source_class": "company_directory",
-          "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"915635474\"}"
+          "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"915635474\"}",
+          "observed_at": "2026-11-17"
         },
         {
           "id": "brreg-kunngjoring-cf56a0104cae5058cbf41b52",
@@ -707,7 +929,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000023177&amp;sokeverdi=915635474&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:18:53Z",
+          "retrieved_at": "2026-11-17T23:27:30Z",
           "content_sha256": "c2251510ed840f4887359f0880c0361c860880f964c6ee2218387c326181a7db",
           "exact_entity": true,
           "identity_proof": [
@@ -736,7 +958,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000054990&amp;sokeverdi=915635474&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:18:53Z",
+          "retrieved_at": "2026-11-17T23:27:30Z",
           "content_sha256": "74e9af13a6f26c331e5cc98c563b2eb8c0511b3ca90f2df16b28dc62ec6c7924",
           "exact_entity": true,
           "identity_proof": [
@@ -765,7 +987,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000024645&amp;sokeverdi=915635474&amp;spraak=nb",
-          "retrieved_at": "2026-11-16T20:18:53Z",
+          "retrieved_at": "2026-11-17T23:27:30Z",
           "content_sha256": "2e3cd61b02d769fd8635aa8e2855ac091f8798a117648dfc805528a006bea123",
           "exact_entity": true,
           "identity_proof": [
@@ -794,8 +1016,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-16T15:18:00.649157Z",
-          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+          "retrieved_at": "2026-11-17T21:31:01.581479Z",
+          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -814,7 +1036,8 @@
             "registry_field": "epostadresse",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact"
+          "strategy": "registry_contact_exact",
+          "observed_at": "2026-11-17"
         },
         {
           "id": "registry-contact-e0ef69978ea29a187a931c8f",
@@ -822,8 +1045,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-16T15:18:00.649157Z",
-          "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+          "retrieved_at": "2026-11-17T21:31:01.581479Z",
+          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -842,14 +1065,15 @@
             "registry_field": "telefon",
             "interpretation": "Registry-recorded contact; exact by record key."
           },
-          "strategy": "registry_contact_exact"
+          "strategy": "registry_contact_exact",
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_site",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -867,14 +1091,15 @@
           "evidence_span": "Forside | Økonomiavdelingen Øst AS — Økonomiavdelingen Øst AS - autorisert regnskapsførerselskap",
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "company_site",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -893,13 +1118,14 @@
           "metrics": {
             "declared_url": "https://www.xn--konomiavdelingen-kxb.no",
             "interpretation": "Brand name from the site's own JSON-LD."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "organisation_number": "915635474",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
-          "retrieved_at": "2026-11-16T15:53:31.208134Z",
+          "retrieved_at": "2026-11-17T22:02:42.356314Z",
           "content_sha256": "034a90de93473d6d8c109997d76838a9d21f397f8c94b2f703692042f70092ea",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -921,7 +1147,8 @@
             "subunit_organisation_number": "915677975",
             "municipality": "ULLENSAKER",
             "interpretation": "Officially registered sub-unit of this organisation."
-          }
+          },
+          "observed_at": "2026-11-17"
         },
         {
           "id": "sitemap-page-7084edf9f27247093edfab53",
@@ -929,8 +1156,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2026-11-13",
           "exact_entity": true,
           "identity_proof": [
@@ -957,8 +1184,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2026-04-23",
           "exact_entity": true,
           "identity_proof": [
@@ -985,8 +1212,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2026-04-23",
           "exact_entity": true,
           "identity_proof": [
@@ -1013,8 +1240,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2026-02-06",
           "exact_entity": true,
           "identity_proof": [
@@ -1041,8 +1268,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2025-10-21",
           "exact_entity": true,
           "identity_proof": [
@@ -1069,8 +1296,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2025-03-14",
           "exact_entity": true,
           "identity_proof": [
@@ -1097,8 +1324,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2022-02-01",
           "exact_entity": true,
           "identity_proof": [
@@ -1125,8 +1352,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-          "retrieved_at": "2026-11-16T16:10:27.052839Z",
-          "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+          "retrieved_at": "2026-11-17T22:02:45.435432Z",
+          "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
           "observed_at": "2019-10-11",
           "exact_entity": true,
           "identity_proof": [
@@ -1153,7 +1380,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "caddfee533ea64bcebdce9e5aa4675d60f03d18fcedc9f27597bc8003a5877e2",
           "observed_at": "2026-01-20",
           "exact_entity": true,
@@ -1183,7 +1410,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "635995fecb931f54a45e9c0b428f00c1edfc4f348f879eb7396ad69bcf4dea00",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1213,7 +1440,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "0245ea737fb9487ebffdfe07b80d2cd77638866b1e880ab5991d3d6dbfa75f6f",
           "observed_at": "2025-02-11",
           "exact_entity": true,
@@ -1243,7 +1470,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "93f7e22ac2b3015e260baec3e7bfd7bb700ec7615a2369977bca2ed18c7e1196",
           "observed_at": "2025-01-20",
           "exact_entity": true,
@@ -1273,7 +1500,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "06715816e76130fe8a6f1bb32028c9a8b92975cd792a0df2c06b45ae12908404",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1303,7 +1530,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "a674845ccdf21fb2364ef7d262270407a8954cd7ea639ce37bf17283d14799df",
           "observed_at": "2024-02-05",
           "exact_entity": true,
@@ -1333,7 +1560,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "8dae7d1ce3416ddecde5bb3fb7432f80f1de03545756488662bc2bbc7b09f356",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -1363,7 +1590,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "36381c772d7aae4623a86cb5035a7152ecf7ea54ca6adb39b8278a5e936960c7",
           "observed_at": "2023-09-12",
           "exact_entity": true,
@@ -1393,7 +1620,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "5715f56c7c7b48b22b9d9a80fc3e29db9c28b859d8eb60a76a14c325d2ae32ea",
           "observed_at": "2023-09-06",
           "exact_entity": true,
@@ -1423,7 +1650,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "811751fc95c16cf70e5d440dfa2c6e3cebb46bd6ea94b976ff3119b65255f5b9",
           "observed_at": "2023-06-12",
           "exact_entity": true,
@@ -1453,7 +1680,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "a9de48875ecf129fc8191fbc8d8d02ca6ba41e4adf1c44d98ff74e20e5abbfeb",
           "observed_at": "2023-02-13",
           "exact_entity": true,
@@ -1483,7 +1710,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "2f0b41d8dcc13a1ed6988419ec64ea6b358e3564cf3bd8d0249836e3d2e6ebdf",
           "observed_at": "2022-06-14",
           "exact_entity": true,
@@ -1513,7 +1740,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "64e3d86215e1759db65ea231c8a3fc9de393ebfc8ade4aa5a3b1f76d160d5362",
           "observed_at": "2022-04-09",
           "exact_entity": true,
@@ -1543,7 +1770,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "30f24dbc0eddb2922740614303d3f89729dfb97dbd8bdf5c447976de857fceab",
           "observed_at": "2022-02-21",
           "exact_entity": true,
@@ -1573,7 +1800,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "2952f18511eae0e070671b97614f641d50cccc3df515c298f9b76272ea77a138",
           "observed_at": "2021-10-12",
           "exact_entity": true,
@@ -1603,7 +1830,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "8a9968904b93ac36cef6c501b8d9113ba2882363c82d00a91715bd63349171cc",
           "observed_at": "2021-07-13",
           "exact_entity": true,
@@ -1633,7 +1860,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "eb27a325a2d3d6ea20d8297af8d416d6433899a9428e65cc94f5270199461288",
           "observed_at": "2021-02-13",
           "exact_entity": true,
@@ -1663,7 +1890,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "106e15fba16c214668c70df4061edee47af23ed2b45628bb4e3837af62a76ab2",
           "observed_at": "2020-12-12",
           "exact_entity": true,
@@ -1693,7 +1920,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "073445bebe25a29c12252e1fb0be9bcfa470c662b31405dae51aa626676c929e",
           "observed_at": "2020-10-16",
           "exact_entity": true,
@@ -1723,7 +1950,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-          "retrieved_at": "2026-11-16T16:14:49.080873Z",
+          "retrieved_at": "2026-11-17T22:22:45.921053Z",
           "content_sha256": "01871f82d9fc2ebfc5336009b6e6f01446d3add45c89af112dffb49639b48e3b",
           "observed_at": "2020-06-11",
           "exact_entity": true,
@@ -1759,17 +1986,19 @@
     "name": "ØKONOMIAVDELINGEN ØST AS",
     "organisation_number": "915635474",
     "run_metrics": {
-      "bytes": 11422,
+      "bytes": 234135,
       "latencies_ms": [
-        960,
-        961,
-        1203,
-        968,
-        946,
-        958,
-        11119
+        863,
+        910,
+        909,
+        879,
+        922,
+        861,
+        1075,
+        315,
+        337
       ],
-      "requests": 8
+      "requests": 12
     },
     "website": "www.okonomiavdelingen.no"
   },
@@ -1778,7 +2007,7 @@
     "company_name": "ØKONOMIAVDELINGEN ØST AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "ØKONOMIAVDELINGEN ØST AS is a private limited company operating in Regnskapsføring og bokføring. Latest accounts (2025): revenue NOK 8.7m, annual result NOK 1.7m. Annual accounts available for 2015-2025 (11 years). Detailed records only available as PDFs. Revenue shrinking (-6.4% YoY). Registered employees: 5. Baseline run, no prior version to compare against (run none). Unknowns: official_website (no verified company website was established); hiring (no job sources were checked).",
+    "summary": "ØKONOMIAVDELINGEN ØST AS is a private limited company operating in Regnskapsføring og bokføring. Latest accounts (2025): revenue NOK 8.7m, annual result NOK 1.7m. Annual accounts available for 2015-2025 (11 years). Detailed records only available as PDFs. Revenue shrinking (-6.4% YoY). Registered employees: 5. Baseline run, no prior version to compare against (run none). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1793,7 +2022,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       },
       {
@@ -1809,7 +2039,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       },
       {
@@ -1825,7 +2056,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       },
       {
@@ -1841,7 +2073,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       },
       {
@@ -1857,7 +2090,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       },
       {
@@ -1889,16 +2123,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/915635474",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/915635474/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.xn--konomiavdelingen-kxb.no/"
         ]
       }
     ],
     "unknowns": [
-      {
-        "field": "official_website",
-        "state": "not_available",
-        "reason": "no verified company website was established"
-      },
       {
         "field": "hiring",
         "state": "not_available",
@@ -1913,7 +2143,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-16T15:18:45.453082Z",
+      "retrieved_at": "2026-11-17T21:31:46.575784Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "915635474",
       "source_type": "official_rule_interpretation",
@@ -1933,7 +2163,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-16T15:53:28.333607Z",
+      "retrieved_at": "2026-11-17T22:02:39.691259Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2007,7 +2237,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-16T15:53:23.547808Z",
+      "retrieved_at": "2026-11-17T22:02:33.499037Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2072,7 +2302,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-16T15:53:30.249359Z",
+      "retrieved_at": "2026-11-17T22:02:41.494516Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2086,7 +2316,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-16T15:53:31.208134Z",
+      "retrieved_at": "2026-11-17T22:02:42.356314Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2119,11 +2349,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-16T15:18:00.649157Z",
+      "retrieved_at": "2026-11-17T21:31:01.581479Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "915635474",
       "source_type": "official_registry_bulk",
@@ -2195,7 +2425,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-16T15:53:22.585405Z",
+      "retrieved_at": "2026-11-17T22:02:32.588056Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2234,7 +2464,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-16T15:53:29.302248Z",
+      "retrieved_at": "2026-11-17T22:02:40.570959Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2329,25 +2559,240 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": null,
+      "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
       "effective_at": null,
       "field": "website",
-      "note": "HTTP 504",
-      "retrieved_at": "2026-11-16T15:53:45.068301Z",
+      "note": "Company-controlled claim layer; not an official registry fact",
+      "retrieved_at": "2026-11-17T22:02:45.435432Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
-      "source_url": "https://www.okonomiavdelingen.no/",
-      "status": "source_error",
-      "value": null
+      "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
+      "status": "available",
+      "value": {
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
+        "crawl_errors": [],
+        "description": "Økonomiavdelingen Øst AS - autorisert regnskapsførerselskap",
+        "discovered_social_links": [
+          {
+            "platform": "facebook",
+            "url": "https://facebook.com/okonomiavdelingen"
+          },
+          {
+            "platform": "linkedin",
+            "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+          }
+        ],
+        "extraction_state": "static_complete",
+        "final_url": "https://www.xn--konomiavdelingen-kxb.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "okonomiavdelingen",
+            "ost"
+          ],
+          "matched_tokens": [
+            "okonomiavdelingen",
+            "ost"
+          ],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": true,
+          "reasons": [
+            "all normalized legal-name tokens appear together in homepage identity evidence"
+          ],
+          "score": 0.95,
+          "status": "exact"
+        },
+        "main_text_excerpt": "Velkommen til Økonomiavdelingen!\nØkonomiavdelingen er et autorisert regnskapsførerselskap med fokus på fornøyde kunder og fornøyde medarbeidere.\nVed hjelp medarbeidere med høy kompetanse, lang erfaring og faglig integritet, sørger vi for å levere våre tjenester til avtalt tid og fastsatte frister.\nVi holder til på Jessheim, men har kunder over store deler av Østlandet.\nSkulle du ønske bedriften din hadde en økonomiavdeling? Det kan vi hjelpe deg med!\nTa kontakt for en uforpliktende prat om din bedrift og hva vi som engasjert regnskapsfører kan hjelpe deg med.\nRing oss, send oss en e-post eller bruk kontaktskjema under:",
+        "pages": [
+          {
+            "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
+            "main_text_excerpt": "Velkommen til Økonomiavdelingen!\nØkonomiavdelingen er et autorisert regnskapsførerselskap med fokus på fornøyde kunder og fornøyde medarbeidere.\nVed hjelp medarbeidere med høy kompetanse, lang erfaring og faglig integritet, sørger vi for å levere våre tjenester til avtalt tid og fastsatte frister.\nVi holder til på Jessheim, men har kunder over store deler av Østlandet.\nSkulle du ønske bedriften din hadde en økonomiavdeling? Det kan vi hjelpe deg med!\nTa kontakt for en uforpliktende prat om din bedrift og hva vi som engasjert regnskapsfører kan hjelpe deg med.\nRing oss, send oss en e-post eller bruk kontaktskjema under:",
+            "title": "Forside | Økonomiavdelingen Øst AS",
+            "url": "https://www.xn--konomiavdelingen-kxb.no/"
+          },
+          {
+            "content_sha256": "b066a49c8bcc53dc63f5677844c187b3cc5293447a6f7a8239fe7ff6cb9b6e9a",
+            "main_text_excerpt": "Om oss\n \nØkonomiavdelingen har fokus på kunden og skikkelig kvalitet i oppdragsutførelse.\nMed fokus på god kommunikasjon og gode rutiner leverer vi kvalitet til riktig tid.\nDet viktigste for oss er å levere våre tjenester med høy kvalitet til avtalt tid og fastsatte frister. For å få til dette må vi sørge for at vi har fornøyde medarbeidere med høy kompetanse, gode systemer, god planlegging og et godt arbeidsmiljø. Dette får vi til!\nVi sørger alltid for å holde oss oppdatert på endringer i lover og regelverk samt systemer og programmer slik at vi alltid kan bistå våre kunder på den mest korrekte og mest effektive måten.\nNår vi tar oss av regnskapet ditt vil du oppleve at det er oppdatert så langt det er praktisk mulig til enhver tid. Du vil også oppleve at du har noen å henvende deg til som vil kunne hjelpe til med stort og smått i forhold til regnskapet. Vi bryr oss, så du kan bruke mest mulig tid på det bedriften din er god på.\nAll oppdragsutførelse er helt digital, både regnskapsføringen og dokumentasjonen. Dette er med på å sikre god kvalitet og sporbarhet, letter daglig arbeide og gjenfinning i tillegg til at det er enkelt for revisor som kan få tilgang til hele regnskapet uten å bla i permer.\nØkonomiavdelingen ble stiftet i 2015 av tre engasjerte eiere som ønsket å tilby kundene en skikkelig regnskapsfører med engasjement for kunden, rett og slett fordi det er dette som er den morsomste måten å være regnskapsfører på!\nI dag er vi 5 ansatte, hvorav 2 statsautoriserte regnskapsførere. Med samlet bred og lang erfaring i regnskapsbransjen og med diverse IT-systemer er vi godt rustet for oppgavene vi påtar oss.\nØkonomiavdelingen Øst AS er medlem av bransjeforeningen Regnskap Norge som jevnlig foretar kontroll av medlemsselskapene for å sikre kvalitet i bransjen.\nVi holder til i 2. etg. i et hyggelig lite hus i Leiv Holthes veg, midt i Jessheim sentrum, men kundene våre er over hele Østlandet.",
+            "title": "Om oss | Økonomiavdelingen Øst AS",
+            "url": "https://www.xn--konomiavdelingen-kxb.no/om-oss"
+          },
+          {
+            "content_sha256": "085ac2c86817aa63183520dea2cdfddd6979ce2163244f004adbdc7e1d4f296a",
+            "main_text_excerpt": "Kontakt oss\nAvtale\nDet er ikke alltid det er noen på kontoret. Vi kan være ute hos kunde eller i andre ærend. Noen ganger er vi på kontoret, men opptatt i møter. Vi anbefaler derfor at du gjør en avtale med oss - så slipper du bomtur.\nTelefonen blir besvart i hele åpningstiden 08:00 - 16:00",
+            "title": "Kontakt | Økonomiavdelingen Øst AS",
+            "url": "https://www.xn--konomiavdelingen-kxb.no/kontakt-oss"
+          }
+        ],
+        "registered_domain": "xn--konomiavdelingen-kxb.no",
+        "requested_url": "https://www.okonomiavdelingen.no/",
+        "social_link_assessments": [
+          {
+            "identity_score": 0.3,
+            "matched_tokens": [
+              "okonomiavdelingen"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "facebook",
+            "publishable": false,
+            "reason": "social handle lacks strong exact-entity name evidence",
+            "url": "https://facebook.com/okonomiavdelingen"
+          },
+          {
+            "identity_score": 0.98,
+            "matched_tokens": [
+              "okonomiavdelingen",
+              "ost"
+            ],
+            "method": "deterministic_social_handle_identity_v1",
+            "platform": "linkedin",
+            "publishable": true,
+            "reason": "normalized legal-name sequence appears in the social handle",
+            "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+          }
+        ],
+        "social_links": [
+          {
+            "platform": "linkedin",
+            "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
+          }
+        ],
+        "structured_organisations": [
+          {
+            "@context": "http://schema.org",
+            "@id": "https://www.xn--konomiavdelingen-kxb.no/#global_business",
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "NO",
+              "addressLocality": "Jessheim",
+              "addressRegion": "Viken",
+              "postalCode": "2066",
+              "streetAddress": "Leiv Holthes veg 3"
+            },
+            "email": "post@okonomiavdelingen.no",
+            "logo": "https://www.xn--konomiavdelingen-kxb.no/uploads/ikJtDUWr/header.1511950803777.1511950803000_997.png",
+            "member": [
+              {
+                "@type": "Person",
+                "affiliation": "",
+                "description": "",
+                "email": "espen@okonomiavdelingen.no",
+                "faxNumber": "",
+                "image": "/uploads/hB1XRMl2/EMK__msi___jpg.jpg",
+                "jobTitle": "Daglig leder / Statsautorisert regnskapsfører (eier)",
+                "mobile": "",
+                "name": "Espen M. Karlsen",
+                "sameAs": [],
+                "telephone": ""
+              },
+              {
+                "@type": "Person",
+                "affiliation": "",
+                "description": "",
+                "email": "ellen@okonomiavdelingen.no",
+                "faxNumber": "",
+                "image": "/uploads/fq8t6phe/ESL__msi___jpg.jpg",
+                "jobTitle": "Statsautorisert regnskapsfører (eier)",
+                "mobile": "",
+                "name": "Ellen S. B. B. Lerdalen",
+                "sameAs": [],
+                "telephone": ""
+              },
+              {
+                "@type": "Person",
+                "affiliation": "",
+                "description": "",
+                "email": "hege@okonomiavdelingen.no",
+                "faxNumber": "",
+                "image": "/uploads/zDImdjj8/HMN__msi___jpg.jpg",
+                "jobTitle": "Lønns - og regnskapskonsulent / IT-ansvarlig (eier)",
+                "mobile": "",
+                "name": "Hege M. Nagel",
+                "sameAs": [],
+                "telephone": ""
+              },
+              {
+                "@type": "Person",
+                "affiliation": "",
+                "description": "",
+                "email": "aslaug@okonomiavdelingen.no",
+                "faxNumber": "",
+                "image": "/uploads/MLjmm0iF/AGA__msi___jpg.jpg",
+                "jobTitle": "Regnskapskonsulent",
+                "mobile": "",
+                "name": "Áslaug Garðarsdóttir",
+                "sameAs": [],
+                "telephone": ""
+              },
+              {
+                "@type": "Person",
+                "affiliation": "",
+                "description": "",
+                "email": "marte@okonomiavdelingen.no",
+                "faxNumber": "",
+                "image": "/uploads/uAIMrl4l/MCB__msi___jpg.jpg",
+                "jobTitle": "Regnskapskonsulent",
+                "mobile": "",
+                "name": "Marte C. Barrera",
+                "sameAs": [],
+                "telephone": ""
+              }
+            ],
+            "name": "Økonomiavdelingen Øst AS",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "closes": "16:00",
+                "dayOfWeek": "http://schema.org/Monday",
+                "opens": "08:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "closes": "16:00",
+                "dayOfWeek": "http://schema.org/Tuesday",
+                "opens": "08:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "closes": "16:00",
+                "dayOfWeek": "http://schema.org/Wednesday",
+                "opens": "08:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "closes": "16:00",
+                "dayOfWeek": "http://schema.org/Thursday",
+                "opens": "08:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "closes": "16:00",
+                "dayOfWeek": "http://schema.org/Friday",
+                "opens": "08:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Saturday"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Sunday"
+              }
+            ],
+            "telephone": "+4740000302",
+            "url": "https://www.xn--konomiavdelingen-kxb.no"
+          }
+        ],
+        "title": "Forside | Økonomiavdelingen Øst AS"
+      }
     },
     "external_observations": [
       {
         "organisation_number": "915635474",
         "platform": "company_site",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2360,23 +2805,24 @@
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-activity-915635474-105afbc6de60b5ea",
+        "id": "company-site-activity-915635474-53b07a6a258dbe85",
         "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 1 verified social links.",
+        "evidence_span": "Exact company site snapshot with 3 bounded pages and 1 verified social links.",
         "metrics": {
-          "bounded_pages_captured": 1,
+          "bounded_pages_captured": 3,
           "verified_social_links": 1,
           "structured_organisation_records": 1,
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "linkedin",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2389,20 +2835,21 @@
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-handle-915635474-105afbc6de60b5ea-linkedin",
+        "id": "company-site-handle-915635474-53b07a6a258dbe85-linkedin",
         "signal_type": "profile_handle",
         "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
         "metrics": {
           "platform": "linkedin",
           "url": "https://linkedin.com/company/økonomiavdelingen-øst-as"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915635474",
-        "retrieved_at": "2026-11-16T16:38:28.317257Z",
-        "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+        "retrieved_at": "2026-11-17T22:42:29.876273Z",
+        "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2426,14 +2873,15 @@
         "metrics": {
           "email": "post@okavd.no",
           "contact_as_of": "2026-10-26"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915635474",
-        "retrieved_at": "2026-11-16T16:38:28.317257Z",
-        "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+        "retrieved_at": "2026-11-17T22:42:29.876273Z",
+        "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2457,14 +2905,15 @@
         "metrics": {
           "phone": "40 00 03 02",
           "contact_as_of": "2026-10-26"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915635474",
-        "retrieved_at": "2026-11-16T16:38:28.317257Z",
-        "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+        "retrieved_at": "2026-11-17T22:42:29.876273Z",
+        "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2503,14 +2952,15 @@
           "is_bankrupt": null,
           "bankruptcy_date": "",
           "website_domain": "www.okonomiavdelingen.no"
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915635474",
-        "retrieved_at": "2026-11-16T16:38:28.317257Z",
-        "content_sha256": "78fb476a3c050d3427c319dd6c472ecb2ea9d7ca4b062c5778f3a028ee30d5b5",
+        "retrieved_at": "2026-11-17T22:42:29.876273Z",
+        "content_sha256": "3147875b8b7d14eb87adf3414dd9add2ca720ef4590974c9a4262984265446fe",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2536,7 +2986,8 @@
           "as_of": "2026-09-18",
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-workforce-108402b350d5ab9cf2f18a00",
@@ -2544,7 +2995,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T15:53:22.585405Z",
+        "retrieved_at": "2026-11-17T22:02:32.588056Z",
         "content_sha256": "5554557c5639426c63642f1c89d66ca8ffe882d338775da7ec915d6cb3467252",
         "exact_entity": true,
         "identity_proof": [
@@ -2574,7 +3025,7 @@
         "organisation_number": "915635474",
         "platform": "company_directory",
         "source_url": "https://www.fagfolkguiden.no/bedrift/okonomiavdelingen-ost-as-915635474",
-        "retrieved_at": "2026-11-16T16:36:04.006800Z",
+        "retrieved_at": "2026-11-17T22:40:07.972889Z",
         "content_sha256": "94d16334c57a7a53d92d4086917b2b6cdc684c4f920af5d7c8551d44c5fdfb2b",
         "exact_entity": true,
         "identity_proof": [
@@ -2603,7 +3054,8 @@
         "signal_type": "profile_metrics",
         "strategy": "directory_profile_metrics",
         "source_class": "company_directory",
-        "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"915635474\"}"
+        "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"915635474\"}",
+        "observed_at": "2026-11-17"
       },
       {
         "id": "brreg-kunngjoring-cf56a0104cae5058cbf41b52",
@@ -2611,7 +3063,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000023177&amp;sokeverdi=915635474&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:18:53Z",
+        "retrieved_at": "2026-11-17T23:27:30Z",
         "content_sha256": "c2251510ed840f4887359f0880c0361c860880f964c6ee2218387c326181a7db",
         "exact_entity": true,
         "identity_proof": [
@@ -2640,7 +3092,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000054990&amp;sokeverdi=915635474&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:18:53Z",
+        "retrieved_at": "2026-11-17T23:27:30Z",
         "content_sha256": "74e9af13a6f26c331e5cc98c563b2eb8c0511b3ca90f2df16b28dc62ec6c7924",
         "exact_entity": true,
         "identity_proof": [
@@ -2669,7 +3121,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000024645&amp;sokeverdi=915635474&amp;spraak=nb",
-        "retrieved_at": "2026-11-16T20:18:53Z",
+        "retrieved_at": "2026-11-17T23:27:30Z",
         "content_sha256": "2e3cd61b02d769fd8635aa8e2855ac091f8798a117648dfc805528a006bea123",
         "exact_entity": true,
         "identity_proof": [
@@ -2698,8 +3150,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2718,7 +3170,8 @@
           "registry_field": "epostadresse",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact"
+        "strategy": "registry_contact_exact",
+        "observed_at": "2026-11-17"
       },
       {
         "id": "registry-contact-e0ef69978ea29a187a931c8f",
@@ -2726,8 +3179,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-16T15:18:00.649157Z",
-        "content_sha256": "81d2c8e187e8e61db54d4db4b1165cdf43aa6a28fde22d8be741ad7d3eebebea",
+        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2746,14 +3199,15 @@
           "registry_field": "telefon",
           "interpretation": "Registry-recorded contact; exact by record key."
         },
-        "strategy": "registry_contact_exact"
+        "strategy": "registry_contact_exact",
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_site",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2771,14 +3225,15 @@
         "evidence_span": "Forside | Økonomiavdelingen Øst AS — Økonomiavdelingen Øst AS - autorisert regnskapsførerselskap",
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "company_site",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2797,13 +3252,14 @@
         "metrics": {
           "declared_url": "https://www.xn--konomiavdelingen-kxb.no",
           "interpretation": "Brand name from the site's own JSON-LD."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "organisation_number": "915635474",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915635474&size=1000",
-        "retrieved_at": "2026-11-16T15:53:31.208134Z",
+        "retrieved_at": "2026-11-17T22:02:42.356314Z",
         "content_sha256": "034a90de93473d6d8c109997d76838a9d21f397f8c94b2f703692042f70092ea",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2825,7 +3281,8 @@
           "subunit_organisation_number": "915677975",
           "municipality": "ULLENSAKER",
           "interpretation": "Officially registered sub-unit of this organisation."
-        }
+        },
+        "observed_at": "2026-11-17"
       },
       {
         "id": "sitemap-page-7084edf9f27247093edfab53",
@@ -2833,8 +3290,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2026-11-13",
         "exact_entity": true,
         "identity_proof": [
@@ -2861,8 +3318,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2026-04-23",
         "exact_entity": true,
         "identity_proof": [
@@ -2889,8 +3346,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2026-04-23",
         "exact_entity": true,
         "identity_proof": [
@@ -2917,8 +3374,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2026-02-06",
         "exact_entity": true,
         "identity_proof": [
@@ -2945,8 +3402,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2025-10-21",
         "exact_entity": true,
         "identity_proof": [
@@ -2973,8 +3430,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2025-03-14",
         "exact_entity": true,
         "identity_proof": [
@@ -3001,8 +3458,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2022-02-01",
         "exact_entity": true,
         "identity_proof": [
@@ -3029,8 +3486,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.xn--konomiavdelingen-kxb.no/",
-        "retrieved_at": "2026-11-16T16:10:27.052839Z",
-        "content_sha256": "105afbc6de60b5ea11c732e7c86e5f4002c29b6a62d621a88aca6f3a337ef338",
+        "retrieved_at": "2026-11-17T22:02:45.435432Z",
+        "content_sha256": "53b07a6a258dbe856be77bfdd10f60e60ff6ced4f2c59e75a11f715cb40adee7",
         "observed_at": "2019-10-11",
         "exact_entity": true,
         "identity_proof": [
@@ -3057,7 +3514,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "caddfee533ea64bcebdce9e5aa4675d60f03d18fcedc9f27597bc8003a5877e2",
         "observed_at": "2026-01-20",
         "exact_entity": true,
@@ -3087,7 +3544,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "635995fecb931f54a45e9c0b428f00c1edfc4f348f879eb7396ad69bcf4dea00",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3117,7 +3574,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "0245ea737fb9487ebffdfe07b80d2cd77638866b1e880ab5991d3d6dbfa75f6f",
         "observed_at": "2025-02-11",
         "exact_entity": true,
@@ -3147,7 +3604,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "93f7e22ac2b3015e260baec3e7bfd7bb700ec7615a2369977bca2ed18c7e1196",
         "observed_at": "2025-01-20",
         "exact_entity": true,
@@ -3177,7 +3634,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "06715816e76130fe8a6f1bb32028c9a8b92975cd792a0df2c06b45ae12908404",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -3207,7 +3664,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "a674845ccdf21fb2364ef7d262270407a8954cd7ea639ce37bf17283d14799df",
         "observed_at": "2024-02-05",
         "exact_entity": true,
@@ -3237,7 +3694,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "8dae7d1ce3416ddecde5bb3fb7432f80f1de03545756488662bc2bbc7b09f356",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -3267,7 +3724,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "36381c772d7aae4623a86cb5035a7152ecf7ea54ca6adb39b8278a5e936960c7",
         "observed_at": "2023-09-12",
         "exact_entity": true,
@@ -3297,7 +3754,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "5715f56c7c7b48b22b9d9a80fc3e29db9c28b859d8eb60a76a14c325d2ae32ea",
         "observed_at": "2023-09-06",
         "exact_entity": true,
@@ -3327,7 +3784,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "811751fc95c16cf70e5d440dfa2c6e3cebb46bd6ea94b976ff3119b65255f5b9",
         "observed_at": "2023-06-12",
         "exact_entity": true,
@@ -3357,7 +3814,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "a9de48875ecf129fc8191fbc8d8d02ca6ba41e4adf1c44d98ff74e20e5abbfeb",
         "observed_at": "2023-02-13",
         "exact_entity": true,
@@ -3387,7 +3844,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "2f0b41d8dcc13a1ed6988419ec64ea6b358e3564cf3bd8d0249836e3d2e6ebdf",
         "observed_at": "2022-06-14",
         "exact_entity": true,
@@ -3417,7 +3874,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "64e3d86215e1759db65ea231c8a3fc9de393ebfc8ade4aa5a3b1f76d160d5362",
         "observed_at": "2022-04-09",
         "exact_entity": true,
@@ -3447,7 +3904,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "30f24dbc0eddb2922740614303d3f89729dfb97dbd8bdf5c447976de857fceab",
         "observed_at": "2022-02-21",
         "exact_entity": true,
@@ -3477,7 +3934,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "2952f18511eae0e070671b97614f641d50cccc3df515c298f9b76272ea77a138",
         "observed_at": "2021-10-12",
         "exact_entity": true,
@@ -3507,7 +3964,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "8a9968904b93ac36cef6c501b8d9113ba2882363c82d00a91715bd63349171cc",
         "observed_at": "2021-07-13",
         "exact_entity": true,
@@ -3537,7 +3994,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "eb27a325a2d3d6ea20d8297af8d416d6433899a9428e65cc94f5270199461288",
         "observed_at": "2021-02-13",
         "exact_entity": true,
@@ -3567,7 +4024,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "106e15fba16c214668c70df4061edee47af23ed2b45628bb4e3837af62a76ab2",
         "observed_at": "2020-12-12",
         "exact_entity": true,
@@ -3597,7 +4054,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "073445bebe25a29c12252e1fb0be9bcfa470c662b31405dae51aa626676c929e",
         "observed_at": "2020-10-16",
         "exact_entity": true,
@@ -3627,7 +4084,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915635474",
-        "retrieved_at": "2026-11-16T16:14:49.080873Z",
+        "retrieved_at": "2026-11-17T22:22:45.921053Z",
         "content_sha256": "01871f82d9fc2ebfc5336009b6e6f01446d3add45c89af112dffb49639b48e3b",
         "observed_at": "2020-06-11",
         "exact_entity": true,
@@ -3653,5 +4110,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-17T09:30:52.512781+00:00"
+  "generated_at": "2026-11-17T23:28:50.333213+00:00"
 }

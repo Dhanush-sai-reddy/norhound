@@ -1,0 +1,139 @@
+{
+  "run_id": "fresh-20261117T213100Z",
+  "started_at": "2026-11-17T21:31:00.383147Z",
+  "completed_at": "2026-11-17T23:28:39.587944Z",
+  "runtime_ms": 7059204,
+  "requests": {
+    "total": 21159,
+    "measured": true,
+    "source": "sitecustomize.py request counter (host, method and status only)",
+    "busiest_hosts": {
+      "data.brreg.no": 6989,
+      "www.fagfolkguiden.no": 1007,
+      "purehelp.no": 1000,
+      "news.google.com": 1000,
+      "w2.brreg.no": 1000,
+      "staticus.com": 27,
+      "www.orland-sparebank.no": 26,
+      "www.uloba.no": 26,
+      "www.borga.no": 26,
+      "elbil.no": 26,
+      "harila.no": 26,
+      "www.caleo.no": 26,
+      "www.tellitsolutions.no": 25,
+      "www.armyshop.no": 25,
+      "psju.no": 25
+    },
+    "registry_and_website": 15067,
+    "note": "Every outbound request of every subprocess of the run is counted. The headless-browser rescue stage is the one exception: its requests are made by the browser process, not by Python, so they are reported as page counts instead (110 pages rescued of 171 eligible)."
+  },
+  "third_party_cost_usd": 0,
+  "cost_note": "No paid API, no model key, no login: every source is a public page or an official open registry. The declared external cost is $0.",
+  "outputs": {
+    "envelopes": 1000,
+    "claims": 105164,
+    "evidence_records": 35314,
+    "observations": 31804,
+    "manifest_rows": 1000
+  },
+  "identity_precision": 1.0,
+  "wrong_company_publications": 0,
+  "unsupported_publications": 0,
+  "published_observations": 31778,
+  "recall_proxy_50": 22.3833,
+  "family_company_recall": {
+    "financials": {
+      "covered": 994,
+      "opportunities": 1000,
+      "recall": 0.994
+    },
+    "hiring": {
+      "covered": 49,
+      "opportunities": 84,
+      "recall": 0.5833333333333334
+    },
+    "identity": {
+      "covered": 1000,
+      "opportunities": 1000,
+      "recall": 1.0
+    },
+    "news": {
+      "covered": 1000,
+      "opportunities": 998,
+      "recall": 1.0
+    },
+    "other": {
+      "covered": 1000,
+      "opportunities": 1000,
+      "recall": 1.0
+    },
+    "reviews": {
+      "covered": 32,
+      "opportunities": 323,
+      "recall": 0.09907120743034056
+    },
+    "roles": {
+      "covered": 994,
+      "opportunities": 1000,
+      "recall": 0.994
+    },
+    "social": {
+      "covered": 204,
+      "opportunities": 177,
+      "recall": 1.0
+    },
+    "website": {
+      "covered": 597,
+      "opportunities": 577,
+      "recall": 1.0
+    }
+  },
+  "refresh": {
+    "envelopes": 1000,
+    "compared": 1000,
+    "baselines": 0,
+    "changes_detected": 252,
+    "changes_already_recorded": 0,
+    "changes_preserved": 0,
+    "companies_with_changes": 126,
+    "preserved_evidence_records": 0,
+    "previous_envelopes": "out/submission/envelopes.jsonl",
+    "output": "out/run-fresh-20261117T213100Z/envelopes-final.jsonl"
+  },
+  "merge": {
+    "merged_rows": 31804,
+    "duplicates_dropped": 3,
+    "rows_excluded": 10,
+    "observed_at_stamped": 9731
+  },
+  "source_rights": {
+    "model_keys": false,
+    "logins": false,
+    "paid_accounts": false,
+    "official_registries": [
+      "Brønnøysund Enhetsregisteret (bulk dump + entity API)",
+      "Brønnøysund Kunngjoringer (announcements feed)",
+      "NAV Arbeidsplassen (official public job feed)"
+    ],
+    "open_registries": [
+      "Wikidata/Wikipedia (CC0)",
+      "GLEIF (public LEI registry)"
+    ],
+    "public_pages": [
+      "Fagfolkguiden directory pages",
+      "public ATS job boards",
+      "the companies' own websites (robots.txt honoured)"
+    ],
+    "excluded": [
+      "Google Places (needs a key; scraped rows removed)",
+      "LinkedIn, Meta, Indeed, Glassdoor (access restrictions)",
+      "Finn.no (no organisation numbers; terms forbid the use)",
+      "proff.no (permission state cannot be re-verified)"
+    ]
+  },
+  "reproduce": {
+    "command": "scripts/run_official_batch.sh --batch <organisations.jsonl>",
+    "dependencies": "pinned in pyproject.toml and uv.lock",
+    "python": "3.12+"
+  }
+}
