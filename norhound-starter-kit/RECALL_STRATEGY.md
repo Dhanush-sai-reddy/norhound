@@ -1,6 +1,6 @@
 # Signalpost: Project Analysis & Recall Improvement Strategy
 
-## 📊 Where We Stand (measured 17 Nov 2026, run `fresh-20261116T144704Z`)
+## 📊 Where We Stand (measured 18 Nov 2026, run `fresh-20261117T213100Z`)
 
 **No official score has been issued for the current revision.** The only numbers
 below are the ones this repository reproduces itself with
@@ -10,18 +10,21 @@ the graded metric.
 | Field | Recall | Points of 50 | Headroom |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.627 | 5.22 | 3.11 |
-| workforce_jobs | 0.013 | 0.11 | 8.22 |
+| two_platforms | 0.620 | 5.17 | 3.16 |
+| workforce_jobs | 0.014 | 0.12 | 8.21 |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **Six-field proxy** | | **22.43 / 50** | **27.57** |
+| **Six-field proxy** | | **22.38 / 50** | **27.62** |
 
-Source: `out/run-fresh-20261116T144704Z/measure-final.json`.
+Source: `out/run-fresh-20261117T213100Z/measure-final.json`.
 
 `workforce_snapshot` (headcount: 0.575 of companies) is reported beside these
-six fields and excluded from the proxy. Only **13 of 1,000** companies have a
-real role card — 13 from NAV's official feed, 3 more from public ATS boards.
+six fields and excluded from the proxy. Only **14 of 1,000** companies have a
+real role card — 14 companies, all from NAV's official feed. The public ATS
+boards find postings for 3 more companies, but the identity gate rejects them
+(the posting pages sit on third-party boards and the frozen site evidence
+cannot re-derive the board link).
 Counting headcount as hiring is what produced the earlier 0.954 and the
 inflated 33.43 headline; counting a discovered careers-page link as a posting
 is what produced 0.051.
@@ -30,7 +33,7 @@ Three field definitions were corrected on 16 Nov 2026 because the originals
 were tautologies: `workforce_jobs` counted headcount, `any_external` and
 `two_platforms` counted the register (which every profiled company has), and
 `buzz_engagement` counted Brønnøysund annual-account announcements (which every
-filer has). The headline fell from 25.91 to 22.43 because the coverage it
+filer has). The headline fell from 25.91 to 22.38 because the coverage it
 claims is now coverage that exists.
 
 > [!IMPORTANT]
@@ -39,16 +42,16 @@ claims is now coverage that exists.
 > here (search, per-company pages, compare view, bulk export). The competition
 > comes down to who can find more verified facts about more companies.
 
-### Where the 27.57 remaining points sit
+### Where the 27.62 remaining points sit
 
 1. **16.1** sit in `ratings_reviews` + `sentiment`, which read the same source
    class (a ratings/reviews directory). Every keyless ratings source probed on
    16 Nov 2026 is blocked or JavaScript-only — measurements in
    `RECALL_LEVERS.md`.
 2. **8.2** in `workforce_jobs` — needs real role cards, not `/karriere` pages.
-   NAV's official feed and the public ATS boards are the only keyless sources of
+   NAV's official feed is the only keyless source of
    adverts; Finn.no is excluded (no org numbers, terms of service).
-3. **3.1** in `two_platforms` — 367 of the 373 missing companies have only
+3. **3.2** in `two_platforms` — 374 of the 380 missing companies have only
    Purehelp, no verified website and no Wikidata item.
 
 ---
@@ -102,15 +105,16 @@ Below is the complete mapping of every single requirement, diagnostic note, and 
 
 ## 📉 Field-by-Field Recall Diagnosis
 
-Measured 17 Nov 2026 (`out/run-fresh-20261116T144704Z/`), six fields, each worth
+Measured 18 Nov 2026 (`out/run-fresh-20261117T213100Z/`), six fields, each worth
 8.33 of 50:
 
 | Field | Recall | Points | Status | Why |
 |-------|--------|--------|--------|-----|
 | `any_external` | **0.994** | 8.28 | ✅ Done | 994 companies have at least one source outside the register |
-| `two_platforms` | **0.627** | 5.22 | 🟡 Bounded | 367 of the 373 missing companies have only Purehelp — no website, no Wikidata item |
+| `two_platforms` | **0.620** | 5.17 | 🟡 Bounded | 374 of the 380 missing companies have only the company directory (Purehelp /
+   Fagfolkguiden) — no verified website, no Wikidata item |
 | `buzz_engagement` | **0.994** | 8.28 | ✅ Done | A third-party profile, mention or post; registry announcements excluded |
-| `workforce_jobs` | **0.013** | 0.11 | 🔴 Largest honest gap | 13 companies have a real role card; NAV's official feed plus public ATS boards are the only keyless advert sources |
+| `workforce_jobs` | **0.014** | 0.12 | 🔴 Largest honest gap | 14 companies have a real role card (all NAV); the ATS boards' postings fail the identity gate, so NAV is the only keyless advert source that publishes |
 | `ratings_reviews` | **0.032** | 0.27 | 🔴 Capped | Only 32 of 1,000 companies have any rating page |
 | `sentiment` | **0.032** | 0.27 | 🔴 Capped | Same 32 companies; every other ratings directory is blocked or JS-only |
 
@@ -125,9 +129,9 @@ Measured 17 Nov 2026 (`out/run-fresh-20261116T144704Z/`), six fields, each worth
 
 ```
 Recall ≈ mean(any_external, two_platforms, workforce_jobs, ratings_reviews, buzz_engagement, sentiment) × 50
-       ≈ mean(0.994, 0.627, 0.013, 0.032, 0.994, 0.032) × 50
+       ≈ mean(0.994, 0.620, 0.014, 0.032, 0.994, 0.032) × 50
        ≈ 0.449 × 50
-       ≈ 22.43 six-field proxy
+       ≈ 22.38 six-field proxy
 ```
 
 `workforce_snapshot` (0.575) is reported separately and excluded: headcount is a
@@ -413,5 +417,5 @@ Phase 4 (If time permits):
 5. **Company-owned copy ≠ independent sentiment** — promotional text can't be sentiment evidence
 6. **Restricted platforms** — LinkedIn, Meta, Glassdoor, Indeed scraping prohibited
 7. **Cost** — the shipped pipeline is keyless: **$0 external spend** per official batch
-8. **Run budget** — the current brief states each official run has a fixed time and resource budget supplied by Builderr and publishes no numbers. The older 45 min / 2,000 requests / $10 figures belong to the superseded 100-company Unstop listing; the measured rate of the shipped pipeline is ≈30 minutes per 100 companies without the opt-in OCR stage
+8. **Run budget** — the current brief states each official run has a fixed time and resource budget supplied by Builderr and publishes no numbers. The older 45 min / 2,000 requests / $10 figures belong to the superseded 100-company Unstop listing; the measured rate of the shipped pipeline is **11.8 minutes per 100 companies** (117.7 min per 1,000, measured end-to-end on the 17 Nov 2026 rehearsal, 21,159 requests measured)
 9. **One envelope per company** in every official batch, with explicit availability states and idempotent refresh

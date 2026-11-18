@@ -23,17 +23,17 @@ uv run python scripts/measure_recall.py \
 - `recall_proxy_50` = **13.0083**
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
-## Current corpus (`out/run-fresh-20261116T144704Z/`)
+## Current corpus (`out/run-fresh-20261117T213100Z/`)
 
 ```bash
 uv run python scripts/measure_recall.py \
-  --profiles out/run-fresh-20261116T144704Z/batch-rescued-profiles.jsonl \
-  --observations out/run-fresh-20261116T144704Z/external-final.jsonl \
-  --labels out/run-fresh-20261116T144704Z/labels-final.jsonl \
+  --profiles out/run-fresh-20261117T213100Z/batch-rescued-profiles.jsonl \
+  --observations out/run-fresh-20261117T213100Z/external-final.jsonl \
+  --labels out/run-fresh-20261117T213100Z/labels-final.jsonl \
   --output /tmp/opencode/m1.json
 ```
 
-- `recall_proxy_50` = **22.4333**  (+9.43 over baseline)
+- `recall_proxy_50` = **22.3833**  (+9.38 over baseline)
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
 Both corpora are scored with the **same, current** scorer. Earlier versions of
@@ -71,8 +71,8 @@ Per-field coverage, both corpora measured by the command above:
 | field | baseline | current | what moved it |
 |---|---|---|---|
 | any_external | 0.639 | **0.994** | registry-proved website connector + Purehelp |
-| two_platforms | 0.276 | **0.627** | a second independent source for 351 more companies |
-| workforce_jobs | 0.072 | 0.013 | a careers-page link is not a role card; see below |
+| two_platforms | 0.276 | **0.620** | a second independent source for 344 more companies |
+| workforce_jobs | 0.072 | 0.014 | a careers-page link is not a role card; see below |
 | workforce_snapshot (headcount, not in the proxy) | 0.915 | 0.575 | the annual-report OCR stage is off by default and earns 0 points |
 | buzz_engagement | 0.510 | **0.994** | third-party profile, mention or post; registry announcements excluded |
 | ratings_reviews | 0.032 | 0.032 | no keyless source reaches more |
@@ -83,13 +83,16 @@ Per-field coverage, both corpora measured by the command above:
 the posting — "Digitalt testament" and "Marketing" were published as job
 titles. It now emits an explicit `careers_page` signal, and a discovered link
 can no longer become a role title. The honest value is the number of companies
-with a real role card: 13 from NAV's official feed, 3 from public ATS boards.
+with a real role card: 14 companies, all from NAV's official feed. The public
+ATS boards find postings for 3 more companies, but the identity gate rejects
+them: the posting pages sit on third-party boards and the frozen site evidence
+cannot re-derive the board link.
 
 ## Precision gate
 
-`out/run-fresh-20261116T144704Z/eval-final.json`:
+`out/run-fresh-20261117T213100Z/eval-final.json`:
 `entity_precision 1.0`, `wrong_entity_publications 0`,
 `unsupported_publications 0`, `metric_precision 1.0`,
-`published_audited 31829 of 31855`.
+`published_audited 31778 of 31804`.
 
 Gate is 0.95; measured is 1.0.

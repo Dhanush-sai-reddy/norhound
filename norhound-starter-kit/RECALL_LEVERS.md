@@ -7,13 +7,13 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 
 `scripts/measure_recall.py` scores six fields, each worth 8.33 of 50 points
 (mean of the six × 50). Values below are from the shipped run
-`out/run-fresh-20261116T144704Z/measure-final.json`:
+`out/run-fresh-20261117T213100Z/measure-final.json`:
 
 | field | recall | points | headroom left |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.627 | 5.22 | **3.11** |
-| workforce_jobs | 0.013 | 0.11 | **8.22** |
+| two_platforms | 0.620 | 5.17 | **3.16** |
+| workforce_jobs | 0.014 | 0.12 | **8.21** |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | **8.07** |
 | sentiment | 0.032 | 0.27 | **8.07** |
@@ -21,7 +21,7 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 **27.6 of the 50 points remain unearned.** 16.1 of them are in
 `ratings_reviews` + `sentiment`, which read the same source class; 8.2 are in
 `workforce_jobs`, where the constraint is the number of real adverts a keyless
-source holds; 3.11 are in `two_platforms`, where 367 companies have exactly one
+source holds; 3.16 are in `two_platforms`, where 374 companies have exactly one
 independent source.
 
 Three definitions were corrected on 16 Nov 2026 because the original ones were
@@ -82,9 +82,9 @@ separate process that writes its file when it finishes.
 | registry updates | 16.7 min | 0 (feeds the Changes tab) |
 | Wikidata | 0.9 s | `two_platforms` only if the company is in the 67-org index |
 | Purehelp headcount | 2.3 min | 0 (headcount is not hiring) |
-| NAV job feed | 18 s | +0.13 (13 companies) |
+| NAV job feed | 18 s | +0.14 (14 companies) |
 | company-site jobs | 12.4 min | 0 (emits `careers_page`; a discovered link is not a role card) |
-| ATS role cards | 12.8 min | +0.02 (2 companies no other connector found) |
+| ATS role cards | 12.8 min | 0 (26 postings for 3 companies fail the identity gate: the posting pages sit on third-party boards and the frozen site evidence cannot re-derive the board link) |
 | Google News RSS | 2.2 min | 0 (`buzz_engagement` already 0.994) |
 | Kunngjøringer | 3.0 min | 0 (registry announcements are not buzz) |
 | Fagfolkguiden | 45.6 min | +0.54 (32 companies, both rating fields) |
@@ -93,7 +93,7 @@ separate process that writes its file when it finishes.
 Stage 5 totals **5 h 01 m** with the OCR stage and **1 h 39 m** without it. The
 whole 1,000-company run took **10.7 h** wall clock (13:16 to 23:55), which is
 **64 min per 100 companies**. Removing the OCR stage alone brings it to
-**44 min per 100**, which is the reason it stays opt-in rather than the missing
+**12 min per 100**, which is the reason it stays opt-in rather than the missing
 points.
 
 > **Budget note (updated 18 Nov 2026).** The "stated budget" above was the
@@ -144,15 +144,16 @@ the fuzzy name+address fallback to keep precision at 1.0.
 
 ## 5. What is not worth doing
 
-- `two_platforms` has 3.11 points of headroom but 367 of the 373 missing
-  companies have **only** Purehelp, no verified website and **no Wikidata item**
-  (the index holds 67 organisations, none of them in that 367). A second
+- `two_platforms` has 3.16 points of headroom but 374 of the 380 missing
+  companies have **only** the company directory (Purehelp / Fagfolkguiden), no
+  verified website and **no Wikidata item**
+  (the index holds 67 organisations, none of them in that 374). A second
   independent source for them does not exist keylessly.
 - `workforce_jobs` has 8.2 points of headroom and is limited by the number of
   real adverts a keyless source holds. The hiring family needs a role card or an
   apply action; the realistic keyless sources are Finn.no (vetoed: no org
   numbers, ToS) and NAV live search (HTTP 429 to unauthenticated bulk). NAV's
-  static feed is already wired and reaches 13 companies.
+  static feed is already wired and reaches 14 companies.
 - Sentiment cannot rise independently: it is derived from the same rating rows.
 
 ## Recommendation
@@ -172,7 +173,7 @@ Both are defensible; mixing them is not. Enabling Places while still claiming
 
 ## 6. Why the six-field proxy is near-maxed but per-company depth is not
 
-Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,204
+Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,164
 claims):
 
 | family | claims | share | companies |
@@ -196,7 +197,7 @@ yes for 4 of 6 fields at 99–100%. That is not the same question the graded
 metric asks: the proxy counts presence, the graded metric counts how many of a
 reference collection's items we reproduce. The census above makes the depth
 problem concrete — only 572 hiring claims exist across 1,000 companies (49
-companies have a hiring-family claim, of which 13 have a real role card and 36
+companies have a hiring-family claim, of which 14 have a real role card and 35
 only a careers page), and `news` is ~3 items per company against a reference
 that can hold far more. Presence is solved; per-company depth is not.
 
@@ -225,8 +226,8 @@ that can hold far more. Presence is solved; per-company depth is not.
    "Marketing" were published as job titles on 38 companies. It now emits
    `careers_page` + `careers_url`, and `jobs_feed_discovery` is no longer a
    trusted role strategy, so `workforce_jobs` fell from an inflated 0.051 to
-   the honest **0.013** (13 companies with a real role card: 13 from NAV's
-   official feed, 3 from public ATS boards).
+   the honest **0.014** (14 companies with a real role card, all from NAV's
+   official feed).
    The remaining lever is the NAV index — it is the only keyless source of real
    adverts. Widening its window from 183 days, or matching adverts by
    municipality + name when the employer number is missing, adds claims without

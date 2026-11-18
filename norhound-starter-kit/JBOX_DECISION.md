@@ -52,7 +52,7 @@ surface, not a new capability.
 
 The bonus is for *qualifying* agents. **No official score has been issued for
 the current revision**, and the only figures this repository can reproduce are
-its own six-field proxy (22.43/50, `RECALL_LEVERS.md`). An agent that cannot be
+its own six-field proxy (22.38/50, `RECALL_LEVERS.md`). An agent that cannot be
 shown to qualify cannot collect a qualifying-agent bonus, whatever it is built
 with.
 

@@ -1,4 +1,4 @@
-Subject: Signalpost submission — NorHound Company Research Agent (commit 015dedb)
+Subject: Signalpost submission — NorHound Company Research Agent (commit 5a7aeed)
 
 Hi,
 
@@ -6,14 +6,14 @@ Submitting the NorHound agent for the Signalpost challenge. This revision is
 **fully keyless**: every stage runs without an API key, a login or a paid
 account, so the external cost per official batch is **$0**.
 
-The headline is precision, not volume: 1,000 company profiles, 31,829 published
+The headline is precision, not volume: 1,000 company profiles, 31,778 published
 observations, **entity precision 1.0** and **zero wrong-company publications**.
 
 REPOSITORY
 https://github.com/Dhanush-sai-reddy/norhound
 
 COMMIT HASH
-015dedb  (branch: main, github.com/Dhanush-sai-reddy/norhound)
+5a7aeed  (branch: main, github.com/Dhanush-sai-reddy/norhound)
 
 This is the commit that contains the code and the shipped corpus. The only
 commits after it are documentation-only.
@@ -60,9 +60,9 @@ WHAT IS IN THE REPO
 - `out/submission/profiles-promoted.jsonl` — 1,000 frozen company profiles
 - `out/submission/manifest.jsonl` — the organisation-number manifest (1,000 rows)
 - `out/submission/envelopes.jsonl` — 1,000 terminal contract envelopes, one per
-  company: 105,204 claims backed by 35,361 evidence records
+  company: 105,164 claims backed by 35,314 evidence records
 - `out/submission/observations.jsonl` + `out/submission/labels.jsonl` — the
-  31,855-row re-verified corpus (31,829 rows published)
+  31,804-row re-verified corpus (31,778 rows published)
 - `out/submission/summaries.jsonl` — 1,000/1,000 deterministic summaries
 - `out/submission/eval.json` — the audit report
 - `out/submission/measure.json` — the six-field recall proxy
@@ -71,7 +71,7 @@ WHAT IS IN THE REPO
   view + bulk export)
 - `out/submission/smoke-100/smoke-envelopes.jsonl` +
   `out/submission/smoke-100/smoke-report.json` — the 100-company smoke test:
-  **100 requested, 100 returned, complete**, 10,305 claims and 3,396 evidence
+  **100 requested, 100 returned, complete**, 10,290 claims and 3,383 evidence
   records, produced by `scripts/build_smoke_report.py --run-dir <run> --count
   100 --output-dir <dir>` (exit code 1 if any requested company comes back
   missing or incomplete). This is the artifact the brief asks for.
@@ -89,11 +89,11 @@ official run tests."
 PRECISION (the gates that matter more than volume)
 - entity precision **1.0**, metric precision **1.0**
 - wrong-company publications **0**, unsupported publications **0**
-- 31,829 of 31,855 re-verified observations published; unverified rows never
+- 31,778 of 31,804 re-verified observations published; unverified rows never
   publish
 - every published fact carries source URL, retrieval time, reporting or
   effective date, content hash and extraction method
-- 559 tests pass (`uv run python -m unittest discover -s tests`)
+- 587 tests pass (`uv run python -m unittest discover -s tests`)
 
 REFRESH AND THE RUN REPORT
 The brief asks for refresh metadata and material changes since the previous
@@ -116,13 +116,13 @@ challenge publishes no score for this revision, so nothing below is presented
 as one.
 
 Six-field external recall proxy (`scripts/measure_recall.py`, mean of six
-fields × 50): **22.43 / 50**.
+fields × 50): **22.38 / 50**.
 
 | field | recall | what it counts |
 |---|---|---|
 | any_external | 0.994 | ≥1 source outside the register |
-| two_platforms | 0.627 | ≥2 independent sources outside the register |
-| workforce_jobs | 0.013 | a real role card, job-feed item or apply action |
+| two_platforms | 0.620 | ≥2 independent sources outside the register |
+| workforce_jobs | 0.014 | a real role card, job-feed item or apply action |
 | ratings_reviews | 0.032 | a third-party rating |
 | buzz_engagement | 0.994 | a third-party profile, mention or post |
 | sentiment | 0.032 | a derived sentiment label from a real rating |
@@ -136,22 +136,22 @@ opportunity counts):
 | identity | 1000 / 1000 | 1.000 |
 | financials | 994 / 1000 | 0.994 |
 | roles | 994 / 1000 | 0.994 |
-| other | 999 / 1000 | 0.999 |
+| other | 1000 / 1000 | 1.000 |
 | news | 1000 / 998 | 1.000 |
-| website | 604 / 577 | 1.000 |
-| social | 209 / 177 | 1.000 |
+| website | 597 / 577 | 1.000 |
+| social | 204 / 177 | 1.000 |
 | hiring | 49 / 84 | 0.583 |
 | reviews (not scored by the rubric) | 32 / 323 | 0.099 |
 
-Opportunity-weighted over the scored families this reads 49.59/50 for
-all-claims coverage and **13.07/50 for claims backed by a source outside the
+Opportunity-weighted over the scored families this reads 49.60/50 for
+all-claims coverage and **13.25/50 for claims backed by a source outside the
 register**, which is the variant that tracks external recall — the all-claims
 variant counts the register's own facts, which every company has. I am
 reporting the lower one rather than the flattering one.
 
 The hiring row needs its definition: **49** companies publish a hiring-family
-claim, but only **13** of them have a real role card (a NAV job-feed item or a
-public ATS role card). The other 36 publish an explicit `careers_page` signal —
+claim, but only **14** of them have a real role card (a NAV job-feed item). The
+other 35 publish an explicit `careers_page` signal —
 a careers page proves a page exists, not that a position is open. The report
 keeps the two apart (`hiring_evidence` in `measure-family.json`).
 
@@ -164,10 +164,13 @@ WHERE THE REMAINING POINTS ARE, AND WHY THEY ARE NOT CLOSED
   rating have a page there. No Norwegian SMB site embeds a review widget
   either (0 of 17 homepages checked).
 - `workforce_jobs` (8.2): bounded by how many real adverts a keyless source
-  holds. NAV's official feed reaches 13 companies; the public ATS boards add 3
-  more; Finn.no is excluded (no organisation numbers, and its terms of service
-  forbid it) and NAV's live search answers HTTP 429 to unauthenticated bulk.
-- `two_platforms` (3.1): 367 of the 373 missing companies have exactly one
+  holds. NAV's official feed reaches 14 companies. The public ATS boards find
+  postings for 3 more companies, but the identity gate rejects them (the posting
+  pages sit on third-party boards and the frozen site evidence cannot re-derive
+  the board link). Finn.no is excluded (no organisation numbers, and its terms of
+  service forbid it) and NAV's live search answers HTTP 429 to unauthenticated
+  bulk.
+- `two_platforms` (3.2): 374 of the 380 missing companies have exactly one
   independent source, no verified website and no Wikidata item.
 
 The full write-up, with the probes and the arithmetic, is in
@@ -177,17 +180,17 @@ WHAT CHANGED IN THIS REVISION
 - **Hiring integrity fixed.** The company-site jobs connector was emitting
   `job_posting` for every link it *discovered* on a careers page without ever
   fetching the posting — "Digitalt testament" and "Marketing" were published
-  as job titles on 38 companies, inflating `workforce_jobs` from 0.013 to
+  as job titles on 38 companies, inflating `workforce_jobs` from 0.014 to
   0.051. It now emits an explicit `careers_page` signal, and a discovered link
   can no longer become a role title anywhere in the envelope builder. The
-  honest number is 13 companies with a real role card.
+  honest number is 14 companies with a real role card.
 - **Three recall fields de-tautologised.** `workforce_jobs` was counting
   headcount; `any_external` and `two_platforms` were counting the register,
   which every profiled company has; `buzz_engagement` was counting
   Brønnøysund annual-account announcements, which every filer has. Each is now
   defined over something the company actually has to earn — a source outside
   the register, a real advert, a third-party mention. The proxy fell from a
-  flattering 33.43 to an honest 22.43; the coverage it claims is now coverage
+  flattering 33.43 to an honest 22.38; the coverage it claims is now coverage
   that exists.
 - **One scorer, not two.** The audit report and the recall report used to
   compute coverage separately and could print different numbers for the same
@@ -233,16 +236,16 @@ MODELS / APIs / LICENCES
 
 EXPECTED COST PER OFFICIAL BATCH
 - External spend: **$0**. No paid API is called and no model key is needed.
-- Requests: the machine-readable run report states the measured count for the
-  registry and website-capture stage and a lower bound for the external
-  connectors — every published observation needed at least one request. The
-  bound is labelled as a bound; it is never presented as a measured count.
-- Runtime: measured **≈30 minutes per 100 companies** on 8 workers without the
-  opt-in OCR stage, i.e. **≈5 hours for a 1,000-company official batch**. (The
-  OCR stage would add ≈3 h 20 m and measures 0 scored points, which is why it
-  stays off; `SLOW_STAGES=1` turns it on.) The brief says each official run
-  has a fixed time and resource budget that Builderr supplies — send me the
-  limit you are given and I will fit the run to it.
+- Requests: **21,159 measured** for the 1,000-company rehearsal
+  (`out/submission/official-run-report.json`). The count is taken at the
+  interpreter level, so every subprocess is included; only the host, method and
+  status are recorded, never a URL or a payload.
+- Runtime: measured **11.8 minutes per 100 companies** on 8 workers without the
+  opt-in OCR stage — **117.7 minutes (1 h 58 m) for a 1,000-company official
+  batch**. (The OCR stage would add ≈3 h 20 m and measures 0 scored points,
+  which is why it stays off; `SLOW_STAGES=1` turns it on.) The brief says each
+  official run has a fixed time and resource budget that Builderr supplies —
+  send me the limit you are given and I will fit the run to it.
 - Models: none. Licences: NLOD (registry), CC0 (Wikidata/GLEIF), ODbL where
   applicable; website content is quoted at claim level with source URL,
   retrieval time and content hash.

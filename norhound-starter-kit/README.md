@@ -121,8 +121,9 @@ Each connector subprocess is bounded by `NORHOUND_STAGE_TIMEOUT_S` (default
 3600) and is killed as a process group, so a stalled site can no longer block
 the pipeline indefinitely. The brief states that each official run has a fixed
 time and resource budget supplied by Builderr; the measured runtime of the
-shipped pipeline is ≈30 minutes per 100 companies without the opt-in OCR
-stage, so lower the stage timeout if the budget you are given is tighter.
+shipped pipeline is **11.8 minutes per 100 companies** (117.7 min per 1,000,
+measured end-to-end on the 17 Nov 2026 rehearsal), so lower the stage timeout
+if the budget you are given is tighter.
 
 **Note on steps 4–5 below:** `run_external_pipeline.py` already runs
 `verify_and_label_observations.py` and `evaluate_external_footprint.py`
@@ -266,18 +267,19 @@ profiles and observations and can be re-run on any checkout.
 
 ### Expected results (as shipped)
 
-Run `fresh-20261116T144704Z`, promoted to `out/submission/` by
+Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
 `scripts/promote_run.sh`.
 
-- **31,829 published observations** out of 31,855 re-verified, every one
+- **31,778 published observations** out of 31,804 re-verified, every one
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,204 claims** backed by **35,361 evidence records** across 1,000
+- **105,164 claims** backed by **35,314 evidence records** across 1,000
   terminal envelopes.
-- **52 NAV official-API job-posting observations** across 13 companies merged
-  into the audit (`official_api` acquisition, resolved via the Brønnøysund
-  `underenheter` endpoint to each advertiser's parent legal entity). A live
+- **50 published job-posting observations** across 14 companies merged
+  into the audit (NAV's official feed, `official_api` acquisition, resolved via
+  the Brønnøysund `underenheter` endpoint to each advertiser's parent legal
+  entity). A live
   chain re-check (2026-09-22) re-confirmed the feed detail carries
   `employer.orgnr`. A discovered careers-page link is **not** a job posting: it
   is published as an explicit `careers_page` signal.
@@ -285,14 +287,14 @@ Run `fresh-20261116T144704Z`, promoted to `out/submission/` by
   evidence (answers carry confidence and citation-integrity validation); a
   static site renders the directory and per-company pages over `file://`.
 - Coverage over sources outside the register: any_external 0.994,
-  two_platforms 0.627, buzz_engagement 0.994, workforce_jobs 0.013,
+  two_platforms 0.620, buzz_engagement 0.994, workforce_jobs 0.014,
   workforce_snapshot 0.575 (headcount, reported separately), ratings_reviews
-  0.032, sentiment 0.032. Six-field recall proxy **22.43 / 50**.
-- 559 tests pass by default (8 skipped).
+  0.032, sentiment 0.032. Six-field recall proxy **22.38 / 50**.
+- 587 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
-(the 31,855-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+(the 31,804-row audit corpus), `out/submission/profiles-promoted.jsonl`,
 `out/submission/manifest.jsonl`, `out/submission/summaries.jsonl`,
 `out/submission/eval.json`, `out/submission/measure.json`,
 `out/submission/measure-family.json`, `out/submission/site/` (the viewer) and `out/norhound-signalpost-submission.zip`
@@ -338,7 +340,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest discover -s tests -p "test_*.py"
-# 559 tests pass (8 skipped)
+# 587 tests pass (8 skipped)
 ```
 
 ## The improvement loop

@@ -79,7 +79,8 @@ companies is encouraged.
 for each official run"; no numeric limit is published on the current pages.
 The old 45 min / 2,000 requests / $10 figures belong to the superseded
 100-company Unstop listing. Our measured cost is **$0 external** and the
-measured runtime is **≈30 minutes per 100 companies** (≈5 hours per 1,000).
+measured runtime is **11.8 minutes per 100 companies** (117.7 min per 1,000,
+measured end-to-end on the 17 Nov 2026 rehearsal; 21,159 requests measured).
 
 **Submission email (current):** repository URL, exact commit hash,
 100-company smoke-test result or report, one run command, models/APIs/licences,
@@ -111,22 +112,22 @@ repository can reproduce today with `scripts/measure_recall.py`.
 - Recall is measured here, not guessed: six fields, each worth 8.33 of 50.
 
 
-### Our field recalls — measured, 2026-11-16 run (`out/run-fresh-20261116T144704Z/`)
+### Our field recalls — measured, 2026-11-17 run (`out/run-fresh-20261117T213100Z/`)
 | field | recall | points | headroom |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.627 | 5.22 | 3.11 |
-| workforce_jobs | 0.013 | 0.11 | 8.22 |
+| two_platforms | 0.620 | 5.17 | 3.16 |
+| workforce_jobs | 0.014 | 0.12 | 8.21 |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **six-field proxy** | | **22.43 / 50** | **27.57** |
+| **six-field proxy** | | **22.38 / 50** | **27.62** |
 
 `workforce_snapshot` (headcount, 0.575) is measured and reported **beside** the
 six fields, not inside the proxy: it is a real workforce fact but not evidence
 of hiring. Counting headcount as hiring made that field read 0.954 and the
 proxy 33.43; the reviewer's rule is that a hiring fact needs a role card, a
-job-feed item or an apply action, so the honest field value is 0.013 (13
+job-feed item or an apply action, so the honest field value is 0.014 (14
 companies with a real role card).
 
 Three field definitions were corrected on 16 Nov 2026 because the originals
@@ -142,12 +143,15 @@ audit report and the recall report cannot print different coverage numbers.
    source class** — a ratings/reviews directory. Every keyless ratings source
    was probed on 16 Nov 2026 and is blocked or JavaScript-only; the measurements
    are in `norhound-starter-kit/RECALL_LEVERS.md`.
-2. **`workforce_jobs` has 8.22 left** — the largest honest gap. It needs real
-   role cards. NAV's official feed reaches 13 companies and the public ATS
-   boards add 3; a discovered careers-page link is not a role card and is
-   published as `careers_page` only.
-3. **`two_platforms` has 3.11 left** — 367 of the 373 missing companies have
-   only Purehelp, no verified website and no Wikidata item.
+2. **`workforce_jobs` has 8.21 left** — the largest honest gap. It needs real
+   role cards. NAV's official feed reaches 14 companies. The public ATS boards
+   find postings for 3 more companies, but the identity gate rejects them (the
+   posting pages sit on third-party boards and the frozen site evidence cannot
+   re-derive the board link); a discovered careers-page link is not a role card
+   and is published as `careers_page` only.
+3. **`two_platforms` has 3.16 left** — 374 of the 380 missing companies have
+   only the company directory (Purehelp / Fagfolkguiden), no verified website and
+   no Wikidata item.
 4. **The viewer's sentiment section already exists and works** — every company
    page renders `Sentiment & Reviews` with the rating, the review count, the
    derived label and the source link (measured on 32 companies with a rating).
@@ -233,20 +237,20 @@ All code lives in `norhound-starter-kit/`. Entry points: `select_entry_batch.py`
 5. **Evaluate** — Score labeled entry (publication requires verified exact_entity)
 6. **Deterministic summaries** — Rule-based summaries (no API key)
 
-### Current Coverage (shipped run `fresh-20261116T144704Z`, measured over sources outside the register)
+### Current Coverage (shipped run `fresh-20261117T213100Z`, measured over sources outside the register)
 ```
 any_external:      0.994  (99.4%)
-two_platforms:     0.627  (62.7%)
+two_platforms:     0.620  (62.0%)
 buzz_engagement:   0.994  (99.4%)
-workforce_jobs:    0.013  (1.3%)   ← role cards only; careers pages excluded
+workforce_jobs:    0.014  (1.4%)   ← role cards only; careers pages excluded
 workforce_snapshot:0.575  (57.5%)  ← headcount, reported separately
 ratings_reviews:   0.032  (3.2%)
 sentiment:         0.032  (3.2%)
-six-field proxy:  22.43 / 50
+six-field proxy:  22.38 / 50
 ```
 
 ### Test Status
-- **559 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
+- **587 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
 - All tests in `tests/test_poc.py` and related test files
 
 ---
@@ -266,14 +270,15 @@ six-field proxy:  22.43 / 50
 | **Substructure/Sitemap** | `extract_substructure.py`, `extract_sitemap_pages.py` | `permitted_public_page` | `company_site` | `sitemap_page` | ⚠️ `--keyless` only |
 
 ### NAV Job Feed — High Impact
-- **52 official_api job postings across 13 companies** in the shipped audit
+- **50 published job postings across 14 companies** in the shipped audit (the
+  rebuilt index holds 9,432 postings across 3,384 parent enhets)
 - Free, official, exact-entity (resolves sub-units to parent enhet)
 - Requires one-time index build (walks 6 months of feed)
 
 ### Wikidata — High Impact
 - ~6 requests per 100 companies
 - Adds `wikidata` + `wikipedia` platforms + social handles as `profile_handle`
-- The index holds only 67 organisations, and **none** of the 367
+- The index holds only 67 organisations, and **none** of the 374
   single-source companies are in it, so it cannot close `two_platforms`
 
 ---
@@ -281,7 +286,7 @@ six-field proxy:  22.43 / 50
 ## 🚀 Immediate Coverage Wins (Enable What's Built)
 
 All three of the steps below are **done** and shipped in the
-`fresh-20261116T144704Z` corpus. They are kept here as the reproduction recipe.
+`fresh-20261117T213100Z` corpus. They are kept here as the reproduction recipe.
 
 ### 1. Enable `--keyless` + NAV in Pipeline
 `scripts/run_external_pipeline.py`:
@@ -336,7 +341,7 @@ uv run python scripts/run_external_pipeline.py \
 ### 6. README Updated
 - Step 6 now uses deterministic summaries (no NVIDIA_API_KEY)
 - Removed NIM references; only `FIRECRAWL_API_KEY` optional
-- Test count updated to 559
+- Test count updated to 587
 
 ---
 
@@ -392,8 +397,8 @@ From `https://builderr.ai/starter-briefs/signalpost-sources.md`:
 Everything below is **done** as of 17 Nov 2026. Kept as the recipe.
 
 1. **Patch `run_external_pipeline.py`** to include `--keyless` + NAV jobs by default — done
-2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261116T144704Z`)
-3. **Verify coverage improvement** — measured: 22.43/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
+2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261117T213100Z`)
+3. **Verify coverage improvement** — measured: 22.38/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
 4. **Implement deterministic summaries** in submission pipeline — done, 1000/1000
 5. **Finn.no job connector** — **vetoed**: no organisation numbers on the site and its terms of service forbid the use
 

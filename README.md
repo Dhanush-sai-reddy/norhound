@@ -175,39 +175,38 @@ checkout.
 
 ### Expected results (as shipped)
 
-Run `fresh-20261116T144704Z`, promoted to `out/submission/` by
+Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
 `scripts/promote_run.sh`.
 
-- **31,829 published** observations out of 31,855 re-verified, every one
+- **31,778 published** observations out of 31,804 re-verified, every one
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,204 claims** backed by **35,361 evidence records** across 1,000
+- **105,164 claims** backed by **35,314 evidence records** across 1,000
   terminal envelopes.
 - Coverage, measured over sources **outside** the register:
-  any_external 0.994, two_platforms 0.627, buzz_engagement 0.994,
-  workforce_jobs 0.013, workforce_snapshot 0.575 (headcount, reported
+  any_external 0.994, two_platforms 0.620, buzz_engagement 0.994,
+  workforce_jobs 0.014, workforce_snapshot 0.575 (headcount, reported
   separately — it is not evidence of hiring), ratings_reviews 0.032,
-  sentiment 0.032. Six-field recall proxy **22.43 / 50**.
+  sentiment 0.032. Six-field recall proxy **22.38 / 50**.
 - Company recall per official fact family
   (`scripts/measure_family_recall.py`): identity **1000/1000**, financials
-  **994/1000**, roles **994/1000**, other **999/1000**, news **1000/998**,
-  website **604/577**, social **209/177**, hiring **49/84**. Reviews are
+  **994/1000**, roles **994/1000**, other **1000/1000**, news **1000/998**,
+  website **597/577**, social **204/177**, hiring **49/84**. Reviews are
   **32/323** and are not scored by the rubric.
-- Of the 49 companies with a hiring-family claim, **13 have a real role card**
-  (a NAV job-feed item or a public ATS role card); the other 36 publish an
-  explicit `careers_page` signal, which proves a page exists and not that a
-  position is open. `measure-family.json` reports the split under
-  `hiring_evidence`.
+- Of the 49 companies with a hiring-family claim, **14 have a real role card**
+  (a NAV job-feed item); the other 35 publish an explicit `careers_page`
+  signal, which proves a page exists and not that a position is open.
+  `measure-family.json` reports the split under `hiring_evidence`.
 - **1000/1000 deterministic summaries** produced (what it does, financials,
   staff, hiring; all answers cite evidence; unknowns listed with reasons).
-- The 100-company smoke test returns **100/100 complete** (10,305 claims,
-  3,396 evidence records).
-- 559 tests pass by default (8 skipped).
+- The 100-company smoke test returns **100/100 complete** (10,290 claims,
+  3,383 evidence records).
+- 587 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
-(the 31,855-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+(the 31,804-row audit corpus), `out/submission/profiles-promoted.jsonl`,
 `out/submission/manifest.jsonl` (the organisation-number manifest),
 `out/submission/summaries.jsonl`, `out/submission/eval.json`,
 `out/submission/measure.json`, `out/submission/measure-family.json`,
@@ -256,7 +255,7 @@ qualify a live entry.
 
 ```bash
 uv run python -m unittest discover -s tests -p 'test_*.py'
-# 559 tests pass (8 skipped)
+# 587 tests pass (8 skipped)
 ```
 
 ## The improvement loop
