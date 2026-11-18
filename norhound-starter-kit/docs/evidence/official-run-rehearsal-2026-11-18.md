@@ -26,8 +26,16 @@ scripts/run_official_batch.sh \
 The same script without `--previous-envelopes` is the plain official run. The
 wrapper does, in order: read the supplied batch → prepare the frozen source
 indexes → run the 14-stage pipeline over the batch → attach the refresh
-comparison → rebuild the viewer over the refreshed envelopes → write the run
-report.
+comparison → rebuild the summaries over the refreshed envelopes → rebuild the
+viewer → write the run report.
+
+The summary rebuild is not cosmetic. The pipeline builds the summaries before
+the refresh stage attaches the change records, so a summary built earlier says
+"no prior version to compare against" while the envelope carries the detected
+changes. The rubric asks the summary to explain "the company, changes and
+unknowns", so the command rebuilds the summaries over the refreshed envelopes:
+126 of the 1,000 summaries now state what changed and the source that proves
+it.
 
 No API key, no login, no paid account, no model provider. **External cost: $0.**
 
@@ -126,6 +134,7 @@ previous snapshot, keyed by a content hash.
 | envelopes compared | 1,000 |
 | material changes detected | 252 |
 | companies with changes | 126 |
+| summaries that state the change and its source | **126** (of 1,000) |
 | changes already recorded (re-run over the refreshed corpus) | 252 |
 | new changes on the re-run | **0** |
 
@@ -195,7 +204,7 @@ The measurements behind these limits are in
 
 ```bash
 cd norhound-starter-kit
-uv run python -m unittest discover -s tests          # 587 tests, 8 skipped
+uv run python -m unittest discover -s tests          # 593 tests, 8 skipped
 scripts/run_official_batch.sh --batch organisations.jsonl
 ```
 

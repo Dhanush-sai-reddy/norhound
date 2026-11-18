@@ -1,4 +1,4 @@
-Subject: Signalpost submission — NorHound Company Research Agent (commit 5a7aeed)
+Subject: Signalpost submission — NorHound Company Research Agent (commit 9c91266)
 
 Hi,
 
@@ -13,7 +13,7 @@ REPOSITORY
 https://github.com/Dhanush-sai-reddy/norhound
 
 COMMIT HASH
-5a7aeed  (branch: main, github.com/Dhanush-sai-reddy/norhound)
+9c91266  (branch: main, github.com/Dhanush-sai-reddy/norhound)
 
 This is the commit that contains the code and the shipped corpus. The only
 commits after it are documentation-only.
@@ -64,6 +64,8 @@ WHAT IS IN THE REPO
 - `out/submission/observations.jsonl` + `out/submission/labels.jsonl` — the
   31,804-row re-verified corpus (31,778 rows published)
 - `out/submission/summaries.jsonl` — 1,000/1,000 deterministic summaries
+  (what it does, financials, staff, hiring, the changes since the previous run
+  and the unknowns — 126 of them state a detected change and its source)
 - `out/submission/eval.json` — the audit report
 - `out/submission/measure.json` — the six-field recall proxy
 - `out/submission/measure-family.json` — the per-family recall report
@@ -93,7 +95,7 @@ PRECISION (the gates that matter more than volume)
   publish
 - every published fact carries source URL, retrieval time, reporting or
   effective date, content hash and extraction method
-- 587 tests pass (`uv run python -m unittest discover -s tests`)
+- 593 tests pass (`uv run python -m unittest discover -s tests`)
 
 REFRESH AND THE RUN REPORT
 The brief asks for refresh metadata and material changes since the previous

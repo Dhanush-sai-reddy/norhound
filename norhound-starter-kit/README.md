@@ -290,7 +290,7 @@ Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
   two_platforms 0.620, buzz_engagement 0.994, workforce_jobs 0.014,
   workforce_snapshot 0.575 (headcount, reported separately), ratings_reviews
   0.032, sentiment 0.032. Six-field recall proxy **22.38 / 50**.
-- 587 tests pass by default (8 skipped).
+- 593 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
@@ -340,7 +340,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest discover -s tests -p "test_*.py"
-# 587 tests pass (8 skipped)
+# 593 tests pass (8 skipped)
 ```
 
 ## The improvement loop

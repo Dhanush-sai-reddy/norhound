@@ -250,7 +250,7 @@ six-field proxy:  22.38 / 50
 ```
 
 ### Test Status
-- **587 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
+- **593 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
 - All tests in `tests/test_poc.py` and related test files
 
 ---
@@ -334,7 +334,8 @@ uv run python scripts/run_external_pipeline.py \
 - **Activates sentiment scoring** on Fagfolkguiden reviews (was 0%)
 
 ### 5. Deterministic Summaries (`build_deterministic_summaries.py`)
-- 1000/1000 summaries produced (no API key, zero cost)
+- 1000/1000 summaries produced (no API key, zero cost); rebuilt after the
+  refresh stage so 126 of them state what changed and the source that proves it
 - Answers: what_it_does, financial_health, staff, hiring
 - All answers cite evidence URLs; unknowns explicitly listed with reasons
 

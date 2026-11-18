@@ -202,7 +202,7 @@ Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
   staff, hiring; all answers cite evidence; unknowns listed with reasons).
 - The 100-company smoke test returns **100/100 complete** (10,290 claims,
   3,383 evidence records).
-- 587 tests pass by default (8 skipped).
+- 593 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
@@ -255,7 +255,7 @@ qualify a live entry.
 
 ```bash
 uv run python -m unittest discover -s tests -p 'test_*.py'
-# 587 tests pass (8 skipped)
+# 593 tests pass (8 skipped)
 ```
 
 ## The improvement loop
