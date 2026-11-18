@@ -151,7 +151,17 @@ else
     --report "$OUT_DIR/refresh-report.json"
 fi
 
-say "5. rebuild the viewer over the refreshed envelopes"
+say "5. rebuild the summaries over the refreshed envelopes"
+# The pipeline builds the summaries before this stage, so they would still say
+# "no prior version to compare against" while the envelopes carry the detected
+# changes. The rubric asks the summary to explain the company, its changes and
+# its unknowns, so the summary is rebuilt over the refreshed envelopes.
+run uv run python scripts/build_deterministic_summaries.py \
+  --envelopes "$OUT_DIR/envelopes-final.jsonl" \
+  --output "$OUT_DIR/summaries.jsonl" \
+  --report "$OUT_DIR/summaries-report.json"
+
+say "6. rebuild the viewer over the refreshed envelopes"
 # The pipeline builds the viewer before this stage, so the pages would carry
 # the old (empty) change list. The viewer is rebuilt here over the refreshed
 # envelopes, with the same inputs the pipeline used.
@@ -163,7 +173,7 @@ run uv run python scripts/build_static_site.py \
   --eval "$OUT_DIR/eval-final.json" \
   --out "$OUT_DIR/site"
 
-say "6. write the machine-readable run report"
+say "7. write the machine-readable run report"
 run uv run python scripts/build_official_run_report.py \
   --run-dir "$OUT_DIR" \
   --output "$OUT_DIR/official-run-report.json"

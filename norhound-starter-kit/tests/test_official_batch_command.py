@@ -57,6 +57,22 @@ class OfficialBatchCommandTests(unittest.TestCase):
         self.assertIn("build_official_run_report.py", text)
         self.assertIn("official-run-report.json", text)
 
+    def test_the_summary_is_rebuilt_after_the_refresh_stage(self) -> None:
+        """The summary must explain the changes, so it is built over the refreshed envelopes.
+
+        The pipeline builds the summaries before the refresh stage attaches the
+        change records. Without this stage the summary would say "no prior
+        version to compare against" while the envelope carries the changes.
+        """
+        text = SCRIPT.read_text(encoding="utf-8")
+        refresh_at = text.index("attach_refresh_changes.py")
+        summaries_at = text.index("build_deterministic_summaries.py")
+        viewer_at = text.index("build_static_site.py")
+        self.assertLess(refresh_at, summaries_at)
+        self.assertLess(summaries_at, viewer_at)
+        self.assertIn('--envelopes "$OUT_DIR/envelopes-final.jsonl"', text)
+        self.assertIn('--output "$OUT_DIR/summaries.jsonl"', text)
+
     def test_the_command_never_asks_for_a_credential(self) -> None:
         text = SCRIPT.read_text(encoding="utf-8")
         for forbidden in ("GOOGLE_PLACES_KEY", "FIRECRAWL_API_KEY", "NVIDIA_API_KEY"):

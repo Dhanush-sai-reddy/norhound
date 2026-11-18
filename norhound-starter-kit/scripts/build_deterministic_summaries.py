@@ -92,6 +92,65 @@ def _known_evidence_urls(profile: dict[str, Any]) -> set[str]:
     return urls
 
 
+def _short_value(value: Any, limit: int = 60) -> str:
+    """A value as the summary should show it: short, readable, honest."""
+    if value is None:
+        return "not available"
+    if isinstance(value, (list, tuple)):
+        return f"{len(value)} value(s)" if value else "no values"
+    text = str(value).strip()
+    if not text:
+        return "not available"
+    return text if len(text) <= limit else text[: limit - 1] + "…"
+
+
+def _as_list(value: Any) -> list[Any]:
+    """The refresh stage writes added/removed as a list, a single value or a count."""
+    if value is None:
+        return []
+    if isinstance(value, (list, tuple)):
+        return list(value)
+    return [value]
+
+
+def describe_change(change: dict[str, Any]) -> str:
+    """One line describing a change record: what changed, and what proves it.
+
+    The refresh stage writes ``old_value``/``new_value`` (plus ``added`` and
+    ``removed`` for a set of claims) and the source URL that proves the new
+    value. A summary that printed the raw record would be unreadable, and one
+    that read the wrong keys would print "None -> None".
+    """
+    field = str(change.get("field") or "field")
+    change_type = str(change.get("change_type") or "")
+    old = change.get("old_value")
+    new = change.get("new_value")
+    if change_type == "claim_value_set":
+        if isinstance(old, (int, float)) and isinstance(new, (int, float)) and not isinstance(old, bool):
+            # A counted claim (role_count 2 -> 3): the numbers are the values.
+            described = f"{field}: {old} -> {new}"
+        else:
+            added = _as_list(change.get("added"))
+            removed = _as_list(change.get("removed"))
+            bits = []
+            if added:
+                bits.append(f"{len(added)} added")
+            if removed:
+                bits.append(f"{len(removed)} removed")
+            detail = ", ".join(bits) or "values changed"
+            described = f"{field} ({detail})"
+            if added:
+                described += f"; added: {_short_value(added[0], 70)}"
+            if removed:
+                described += f"; removed: {_short_value(removed[0], 70)}"
+    else:
+        described = f"{field}: {_short_value(old)} -> {_short_value(new)}"
+    source = str(change.get("source_url") or "")
+    if source:
+        described = f"{described} [source: {source}]"
+    return described
+
+
 def validate_summary(row: dict[str, Any], summary: dict[str, Any]) -> list[str]:
     """Mulder-grade citation check: every cited evidence id must resolve to
     evidence in the same envelope. Returns a list of violations (empty = clean)."""
@@ -188,10 +247,7 @@ def summarize_row(row: dict[str, Any]) -> dict[str, Any]:
     if changes:
         described = []
         for change in changes[:5]:
-            field = str(change.get("field") or "field")
-            old = change.get("old")
-            new = change.get("new")
-            described.append(f"{field}: {old!r} -> {new!r}")
+            described.append(describe_change(change))
         more = f" (+{len(changes) - 5} more)" if len(changes) > 5 else ""
         # evidence_ids must resolve to this envelope's own evidence (validate_summary
         # rejects anything else and aborts the run), so cite the profile evidence and
