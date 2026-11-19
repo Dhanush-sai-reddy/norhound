@@ -187,7 +187,12 @@ def main() -> None:
     parser.add_argument("--profiles", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--report", required=True)
-    parser.add_argument("--per-org-limit", type=int, default=10)
+    # A probe at cap 10 emitted 2,475 dated pages over 270 companies (224 at
+    # the cap); at cap 60 it emitted 9,381 over 244, including 586 news-path
+    # URLs over 89 companies (133 over 52 at cap 10). Those extra news pages
+    # feed the news connector, where 48 companies sit in the sitemap but
+    # publish no news fact at all.
+    parser.add_argument("--per-org-limit", type=int, default=60)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--workers", type=int, default=12)
     args = parser.parse_args()
