@@ -238,17 +238,6 @@ def main() -> None:
         "--output", str(activity_out),
         "--report", str(prefix.with_suffix(prefix.suffix + ".activity-report.json")),
     ])
-    run([
-        "python", str(SCRIPTS / "extract_company_site_news.py"),
-        "--profiles", args.profiles,
-        "--output", str(news_out),
-        "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
-        # Retain a bounded body and mine the real publication date from the page
-        # itself. Without this the observation keeps only the page title, which
-        # is reproducible but not readable as a dated news fact. One extra
-        # request per company that has an activity page, no key, no new source.
-        "--fetch-dates",
-    ])
     keyless_out = prefix.with_suffix(prefix.suffix + ".keyless.jsonl")
     if args.keyless:
         keyless_steps = [
@@ -274,6 +263,24 @@ def main() -> None:
             for path in keyless_parts:
                 rows.extend(json.loads(line) for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip())
             keyless_out.write_text("".join(sanitize_line_separators(json.dumps(row, ensure_ascii=False, separators=(",", ":"))) + "\n" for row in rows), encoding="utf-8")
+    # The news stage runs after the keyless steps so it can seed candidate pages
+    # from the site's own sitemap: 586 news-path URLs over 89 companies in the
+    # shipped corpus, 48 of them companies that published no news fact at all.
+    news_argv = [
+        "python", str(SCRIPTS / "extract_company_site_news.py"),
+        "--profiles", args.profiles,
+        "--output", str(news_out),
+        "--report", str(prefix.with_suffix(prefix.suffix + ".news-report.json")),
+        # Retain a bounded body and mine the real publication date from the page
+        # itself. Without this the observation keeps only the page title, which
+        # is reproducible but not readable as a dated news fact. One extra
+        # request per company that has an activity page, no key, no new source.
+        "--fetch-dates",
+    ]
+    sitemap_news_out = prefix.with_suffix(prefix.suffix + ".sitemap.jsonl")
+    if sitemap_news_out.exists() and sitemap_news_out.stat().st_size > 0:
+        news_argv += ["--sitemap", str(sitemap_news_out)]
+    run(news_argv)
     registry_site_out = prefix.with_suffix(prefix.suffix + ".registry-site.jsonl")
     if args.registry_sites:
         run([

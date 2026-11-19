@@ -27,6 +27,7 @@ from scripts.extract_company_site_news import (
     MAX_NEWS_PAGES,
     candidate_pages,
     observations,
+    sitemap_candidates,
 )
 
 
@@ -143,6 +144,75 @@ class SiteNewsItemTests(unittest.TestCase):
         profile = _profile([_page("https://www.example.test/nyheter/2026/oktober/a", "Artikkel A")])
         profile["evidence"]["website"]["value"]["identity_assessment"] = {"publishable": False}
         self.assertEqual(observations(profile, fetched={}), [])
+
+
+def _sitemap_row(url, lastmod="2026-10-05", org="810034882"):
+    return {
+        "organisation_number": org,
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.example.test/",
+        "metrics": {"page_url": url, "lastmod": lastmod},
+    }
+
+
+class SitemapNewsTests(unittest.TestCase):
+    """The site's own sitemap lists news pages the bounded crawl never reached.
+
+    586 news-path URLs over 89 companies sit in the sitemaps of the shipped
+    corpus, and 48 of those companies publish no news fact at all. A sitemap
+    entry is the site's own statement that the page exists and when it last
+    changed, so it is a candidate page like any other.
+    """
+
+    def test_sitemap_news_page_becomes_a_dated_item(self):
+        profile = _profile([_page("https://www.example.test/nyheter", "Nyheter", "Velkommen")])
+        url = "https://www.example.test/nyheter/2026/oktober/gul-middag"
+        rows = observations(
+            profile,
+            fetched={url: MACHINE_READABLE},
+            sitemap=[_sitemap_row(url)],
+        )
+        self.assertEqual(len(rows), 2)
+        dated = [row for row in rows if row.get("observed_at") == "2026-10-05T08:00:00+02:00"]
+        self.assertEqual(len(dated), 1)
+        self.assertEqual(dated[0]["source_url"], url)
+        self.assertEqual(dated[0]["signal_type"], "public_post")
+
+    def test_sitemap_page_outside_the_verified_domain_is_ignored(self):
+        profile = _profile([_page("https://www.example.test/nyheter", "Nyheter", "Velkommen")])
+        url = "https://other.test/nyheter/2026/oktober/gul-middag"
+        rows = observations(
+            profile,
+            fetched={url: MACHINE_READABLE},
+            sitemap=[_sitemap_row(url)],
+        )
+        self.assertEqual([row["source_url"] for row in rows], ["https://www.example.test/nyheter"])
+
+    def test_candidate_cap_is_24(self):
+        pages = [_page(f"https://www.example.test/nyheter/2026/oktober/{index}", f"Artikkel {index}")
+                 for index in range(MAX_NEWS_PAGES + 5)]
+        profile = _profile(pages)
+        self.assertEqual(len(candidate_pages(profile)), MAX_NEWS_PAGES)
+        self.assertEqual(MAX_NEWS_PAGES, 24)
+
+    def test_an_additional_sitemap_page_still_needs_a_machine_readable_date(self):
+        profile = _profile([_page("https://www.example.test/nyheter", "Nyheter", "Velkommen")])
+        url = "https://www.example.test/nyheter/2026/oktober/gul-middag"
+        rows = observations(
+            profile,
+            fetched={url: MINED_ONLY},
+            sitemap=[_sitemap_row(url)],
+        )
+        self.assertEqual([row["source_url"] for row in rows], ["https://www.example.test/nyheter"])
+
+    def test_sitemap_candidates_carry_the_sitemap_date(self):
+        profile = _profile([])
+        url = "https://www.example.test/nyheter/2026/oktober/gul-middag"
+        candidates = sitemap_candidates(profile, [_sitemap_row(url, lastmod="2026-10-07")])
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]["url"], url)
+        self.assertEqual(candidates[0]["lastmod"], "2026-10-07")
 
 
 if __name__ == "__main__":

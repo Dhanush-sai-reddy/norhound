@@ -122,13 +122,67 @@ def fetch_dated_observation(profile: dict, *, body: str | None = None, url: str 
 # How many captured news pages one company may contribute, and how many dated
 # items one company may publish. A dated item is a fact; an undated navigation
 # page is not, so undated pages are never published beyond one per company.
-MAX_NEWS_PAGES = 12
-MAX_DATED_ITEMS = 8
+MAX_NEWS_PAGES = 24
+MAX_DATED_ITEMS = 16
 BODY_EXCERPT_LIMIT = 5000
 
 
-def candidate_pages(profile: dict) -> list[dict]:
-    """The captured pages under a news path, deepest first, bounded."""
+def sitemap_candidates(profile: dict, sitemap_rows: list[dict] | None) -> list[dict]:
+    """News pages the company's own sitemap lists, newest first.
+
+    A sitemap entry is the site's own statement that the page exists and when
+    it last changed. The bounded crawl never reaches every news page, so the
+    sitemap is the second source of candidate pages: 586 news-path URLs over 89
+    companies in the shipped corpus, 48 of them companies that published no
+    news fact at all.
+    """
+    if not sitemap_rows:
+        return []
+    website = (profile.get("evidence") or {}).get("website") or {}
+    value = website.get("value") or {}
+    site_url = str(value.get("final_url") or website.get("source_url") or "")
+    host = (urlparse(site_url).hostname or "").lower()
+    if not host:
+        return []
+    candidates: list[dict] = []
+    seen: set[str] = set()
+    for row in sitemap_rows:
+        metrics = row.get("metrics") or {}
+        url = str(metrics.get("page_url") or "")
+        if not url.startswith(("http://", "https://")):
+            continue
+        parsed = urlparse(url)
+        candidate_host = (parsed.hostname or "").lower()
+        if candidate_host != host and not candidate_host.endswith("." + host):
+            continue
+        if not NEWS_PATH.search(parsed.path):
+            continue
+        if url in seen:
+            continue
+        seen.add(url)
+        candidates.append({
+            "url": url,
+            "title": "",
+            "main_text_excerpt": "",
+            "content_sha256": "",
+            "lastmod": str(metrics.get("lastmod") or ""),
+        })
+    candidates.sort(key=lambda page: page["url"])
+    candidates.sort(key=lambda page: _lastmod_key(page["lastmod"]), reverse=True)
+    return candidates
+
+
+def _lastmod_key(value: str) -> str:
+    """A sortable key for a sitemap date (an undated entry sorts last)."""
+    return value if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", value or "") else ""
+
+
+def candidate_pages(profile: dict, sitemap: list[dict] | None = None) -> list[dict]:
+    """The captured pages under a news path plus the sitemap's, deepest first, bounded.
+
+    `sitemap` holds raw sitemap observation rows; they are converted to
+    candidate pages here so every caller passes the same thing.
+    """
     website = (profile.get("evidence") or {}).get("website") or {}
     value = website.get("value") or {}
     pages = [
@@ -138,7 +192,21 @@ def candidate_pages(profile: dict) -> list[dict]:
     # Prefer an individual article over an archive page when the bounded crawl
     # captured both, and keep the order stable so a rerun is byte-identical.
     pages.sort(key=lambda page: (-len([part for part in urlparse(str(page.get("url") or "")).path.split("/") if part]), str(page.get("url") or "")))
-    return pages[:MAX_NEWS_PAGES]
+    merged: list[dict] = []
+    seen: set[str] = set()
+    for page in pages:
+        url = str(page.get("url") or "")
+        if url in seen:
+            continue
+        seen.add(url)
+        merged.append(page)
+    for page in sitemap_candidates(profile, sitemap):
+        url = str(page.get("url") or "")
+        if url in seen:
+            continue
+        seen.add(url)
+        merged.append(page)
+    return merged[:MAX_NEWS_PAGES]
 
 
 def _page_observation(profile: dict, page: dict, *, captured_pages: int, published: str | None = None,
@@ -151,6 +219,10 @@ def _page_observation(profile: dict, page: dict, *, captured_pages: int, publish
     identity = value.get("identity_assessment") or {}
     url = str(page.get("url") or "")
     digest = str(page.get("content_sha256") or "")
+    if len(digest) != 64:
+        # A page the bounded crawl never captured (a sitemap-listed page) is
+        # hashed from the body this connector fetched.
+        digest = hashlib.sha256(body.encode("utf-8", "replace")).hexdigest() if body else ""
     if not url.startswith(("http://", "https://")) or len(digest) != 64:
         return None
     org = str(profile["organisation_number"])
@@ -169,6 +241,8 @@ def _page_observation(profile: dict, page: dict, *, captured_pages: int, publish
         "item_role": item_role,
         "interpretation": "Company-owned activity; not independent sentiment.",
     }
+    if page.get("lastmod"):
+        metrics["sitemap_lastmod"] = page["lastmod"]
     if body:
         metrics["body_excerpt"] = body[:BODY_EXCERPT_LIMIT]
     if body and fetched_at:
@@ -201,7 +275,7 @@ def _page_observation(profile: dict, page: dict, *, captured_pages: int, publish
 
 
 def observations(profile: dict, *, fetched: dict[str, str] | None = None,
-                 fetched_at: str | None = None) -> list[dict]:
+                 fetched_at: str | None = None, sitemap: list[dict] | None = None) -> list[dict]:
     """Every publishable activity observation for one company.
 
     The primary (deepest) captured news page is published once: undated when
@@ -216,7 +290,7 @@ def observations(profile: dict, *, fetched: dict[str, str] | None = None,
     identity = value.get("identity_assessment") or {}
     if website.get("status") != "available" or not identity.get("publishable"):
         return []
-    pages = candidate_pages(profile)
+    pages = candidate_pages(profile, sitemap)
     if not pages:
         return []
     fetched = fetched or {}
@@ -258,13 +332,15 @@ def observation(profile: dict) -> dict | None:
     return rows[0] if rows else None
 
 
-def fetch_bodies(profiles: list[dict], *, workers: int = 12, timeout: float = 15.0) -> dict[str, dict[str, str]]:
+def fetch_bodies(profiles: list[dict], *, workers: int = 12, timeout: float = 15.0,
+                 sitemap_by_org: dict[str, list[dict]] | None = None) -> dict[str, dict[str, str]]:
     """Retrieve the body of every candidate news page, keyed by organisation."""
     tasks: list[tuple[str, str]] = []
     seen: set[tuple[str, str]] = set()
     for profile in profiles:
         org = str(profile.get("organisation_number") or "")
-        for page in candidate_pages(profile):
+        sitemap = (sitemap_by_org or {}).get(org, [])
+        for page in candidate_pages(profile, sitemap):
             url = str(page.get("url") or "")
             if not url.startswith(("http://", "https://")):
                 continue
@@ -301,21 +377,35 @@ def main() -> None:
     parser.add_argument("--output", required=True)
     parser.add_argument("--report", required=True)
     parser.add_argument("--fetch-dates", action="store_true", help="Fetch the news page bodies to mine real publication dates")
+    parser.add_argument("--sitemap", default="", help="Sitemap observations (JSONL) whose news pages are candidate pages too")
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--timeout", type=float, default=15.0)
     args = parser.parse_args()
     profiles = [json.loads(line) for line in Path(args.profiles).read_text(encoding="utf-8").splitlines() if line.strip()]
 
+    sitemap_by_org: dict[str, list[dict]] = {}
+    if args.sitemap and Path(args.sitemap).exists():
+        for line in Path(args.sitemap).read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            sitemap_by_org.setdefault(str(row.get("organisation_number") or ""), []).append(row)
+
     fetched: dict[str, dict[str, str]] = {}
     fetched_at = None
     if args.fetch_dates:
         fetched_at = datetime.now(timezone.utc).isoformat()
-        fetched = fetch_bodies(profiles, workers=args.workers, timeout=args.timeout)
+        fetched = fetch_bodies(profiles, workers=args.workers, timeout=args.timeout, sitemap_by_org=sitemap_by_org)
 
     rows: list[dict] = []
     for profile in profiles:
         org = str(profile.get("organisation_number") or "")
-        rows.extend(observations(profile, fetched=fetched.get(org, {}), fetched_at=fetched_at))
+        rows.extend(observations(
+            profile,
+            fetched=fetched.get(org, {}),
+            fetched_at=fetched_at,
+            sitemap=sitemap_by_org.get(org, []),
+        ))
 
     dated = sum(1 for r in rows if r.get("observed_at"))
     datetime_dated = sum(1 for r in rows if (r.get("metrics") or {}).get("published_at"))
@@ -332,7 +422,7 @@ def main() -> None:
         "dated_observations": dated,
         "datetime_observations": datetime_dated,
         "bodies_retained": body_retained,
-        "candidate_pages": sum(len(candidate_pages(profile)) for profile in profiles),
+        "candidate_pages": sum(len(candidate_pages(profile, sitemap_by_org.get(str(profile.get("organisation_number") or ""), []))) for profile in profiles),
         "pages_fetched": sum(len(bodies) for bodies in fetched.values()),
         "per_company_dated_cap": MAX_DATED_ITEMS,
         "claim_boundary": "Company-owned activity only. A dated item needs a publication date stated by the page itself; only the primary page may carry a date mined from prose.",
