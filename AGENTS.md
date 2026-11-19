@@ -87,6 +87,12 @@ pass; 22,166 requests measured).
 100-company smoke-test result or report, one run command, models/APIs/licences,
 expected cost per official batch, agent name and contact → `submit@builderr.ai`.
 
+**Status: sent 19 Nov 2026.** The submitted revision is commit `d16266a`
+(code + corpus, pushed to `main`); the only commit after it is the docs-only
+`63f0777d` that pins the hash in `SUBMISSION_EMAIL.md`. The email body was
+read back from Gmail's Sent folder and verified. Do not re-send it; a new
+revision needs a new commit hash and a new email.
+
 ---
 
 ## 🔄 CURRENT RUBRIC (live challenge page, verified 16 Nov 2026)
