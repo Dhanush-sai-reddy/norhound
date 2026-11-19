@@ -86,6 +86,13 @@ class SoleDeclarerConnector(unittest.TestCase):
         body = "<html><body><h1>Other Company AS</h1><p>We do other things.</p></body></html>"
         self.assertIsNone(site_observation(profile, SITE, body, body.encode("utf-8"), "acme.no"))
 
+    def test_one_token_of_a_two_token_name_is_not_enough(self):
+        """A live probe matched 'media' alone for EARTHREND MEDIA AS on a page
+        titled AWESOMEZ.NET. One generic token is not identity proof."""
+        profile = _profile(website="https://earthrend.com/", org="999065902", name="Earthrend Media AS")
+        body = "<html><body><h1>AWESOMEZ.NET</h1><p>media and entertainment</p></body></html>"
+        self.assertIsNone(site_observation(profile, "https://earthrend.com/", body, body.encode("utf-8"), "earthrend.com"))
+
     def test_load_index_reads_the_gzip_jsonl(self):
         import gzip
         import json

@@ -214,7 +214,8 @@ def _sole_declarer_proof_consistent(
     if not tokens:
         return False
     hits = sum(1 for token in tokens if token in text)
-    return hits >= max(1, -(-len(tokens) // 2))
+    required = len(tokens) if len(tokens) <= 2 else max(2, -(-len(tokens) // 2))
+    return hits >= required
 
 
 def _identity_proof_kind(obs: dict) -> str:

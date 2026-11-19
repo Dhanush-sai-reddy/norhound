@@ -122,7 +122,10 @@ def _names_company(text: str, profile: dict) -> bool:
         return False
     folded = _fold(text or "")
     hits = sum(1 for token in tokens if token in folded)
-    return hits >= max(1, -(-len(tokens) // 2))
+    # One token of a two-token name is not identity proof: "media" alone on a
+    # page titled AWESOMEZ.NET matched EARTHREND MEDIA AS in the live probe.
+    required = len(tokens) if len(tokens) <= 2 else max(2, -(-len(tokens) // 2))
+    return hits >= required
 
 
 def sole_declarer_targets(profiles: list[dict], index: dict[str, str], has_site: list[str]) -> list[dict]:
