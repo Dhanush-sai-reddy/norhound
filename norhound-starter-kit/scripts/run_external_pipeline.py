@@ -139,6 +139,8 @@ def main() -> None:
     parser.add_argument("--discovery-input", default=None, help="Optional discovery candidate JSONL (for missing-website orgs)")
     parser.add_argument("--discovery-limit", type=int, default=0, help="Max discovery queries (0 = auto all missing-website)")
     parser.add_argument("--jobs", action="store_true", help="Run the jobs extractor (network) ")
+    parser.add_argument("--no-rolecards", dest="rolecards", action="store_false", help="Disable the role-card connector (role title + apply action on the verified company site)")
+    parser.set_defaults(rolecards=True)
     parser.add_argument("--no-reviews", dest="reviews", action="store_false", help="Disable Fagfolkguiden public-directory reviews connector")
     parser.add_argument("--reviews", dest="reviews", action="store_true", help="Deprecated no-op: reviews now run by default")
     parser.set_defaults(reviews=True)
@@ -382,6 +384,25 @@ def main() -> None:
             "--timeout", "20",
             "--min-interval", "0.5",
         ])
+    # Role cards: a role title and an apply action on the company's own
+    # identity-gated site. The jobs extractor above only publishes the careers
+    # section itself; this connector publishes the specific open roles, which
+    # is the only way a company-owned hiring fact can enter the corpus.
+    rolecards_out = prefix.with_suffix(prefix.suffix + ".rolecards.jsonl")
+    if args.rolecards:
+        argv = [
+            "python", str(SCRIPTS / "extract_company_site_role_cards.py"),
+            "--profiles", args.profiles,
+            "--output", str(rolecards_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".rolecards-report.json")),
+            "--workers", "10",
+        ]
+        sitemap_step_out = prefix.with_suffix(prefix.suffix + ".sitemap.jsonl")
+        if sitemap_step_out.exists() and sitemap_step_out.stat().st_size > 0:
+            argv += ["--sitemap", str(sitemap_step_out)]
+        run(argv)
+    if rolecards_out.exists() and rolecards_out.stat().st_size > 0:
+        observation_files.append(rolecards_out)
     # The ATS connector only reaches a board through a link published on the
     # company's own exact-identity site, and only publishes role cards from
     # public feeds. It is keyless: no API key, no login, no paid account.

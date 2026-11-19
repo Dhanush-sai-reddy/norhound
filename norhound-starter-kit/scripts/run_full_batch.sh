@@ -165,7 +165,7 @@ say "6. merge every connector output into one observation corpus"
 # google.com is excluded because the Places API needs a key and the Maps rows
 # were scraped against Google's Terms of Service.
 INPUTS=()
-for tag in activity news jobs ats nav nav-search registry-site purehelp \
+for tag in activity news jobs rolecards ats nav nav-search registry-site purehelp \
            workforce-registry workforce-pdf fagfolk google-news kunngjoring \
            contacts sitedesc substruct sitemap updates wikidata gleif discovery \
            linkedin reddit handles; do
