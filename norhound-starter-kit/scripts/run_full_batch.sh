@@ -137,11 +137,13 @@ run uv run python scripts/run_external_pipeline.py \
   --profiles "$OUT/profiles-promoted.jsonl" \
   --envelopes "$OUT/envelopes.jsonl" \
   --prefix "$OUT/batch" \
-  --jobs --keyless --nav --workforce --kunngjoring --google-news $SLOW_FLAGS \
+  --jobs --keyless --nav --workforce --kunngjoring --google-news --gleif $SLOW_FLAGS \
   --rescue-workers "${RESCUE_WORKERS:-16}" \
   --rescue-timeout "${RESCUE_TIMEOUT:-20}" \
   --nav-index "${NAV_INDEX:-data/nav-job-index.jsonl}" \
   --wikidata-index "${WIKIDATA_INDEX:-data/wikidata-index.jsonl}" \
+  --gleif-index "${GLEIF_INDEX:-data/gleif-index.jsonl}" \
+  --domain-index "${DOMAIN_INDEX:-data/registry-domain-unique.jsonl.gz}" \
   --workforce-workers "$WORKFORCE_WORKERS" \
   --minimum-audit "$MIN_AUDIT"
 

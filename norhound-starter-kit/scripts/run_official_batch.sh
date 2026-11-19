@@ -92,8 +92,10 @@ echo "organisations: $BATCH_COUNT (first: ${BATCH_FIRST:-none})"
 
 say "2. prepare the frozen source indexes"
 CACHE="${CACHE:-.cache/run-$RUN_ID}"
+DOMAIN_INDEX="${DOMAIN_INDEX:-data/registry-domain-unique.jsonl.gz}"
 NAV_INDEX="${NAV_INDEX:-data/nav-job-index.jsonl}"
 WIKIDATA_INDEX="${WIKIDATA_INDEX:-data/wikidata-index.jsonl}"
+GLEIF_INDEX="${GLEIF_INDEX:-data/gleif-index.jsonl}"
 if [[ "$REBUILD_INDEXES" == "1" ]]; then
   mkdir -p "$CACHE"
   run uv run python scripts/run_nav_job_feed_connector.py \
@@ -108,6 +110,9 @@ if [[ "$REBUILD_INDEXES" == "1" ]]; then
   run uv run python scripts/run_wikidata_connector.py \
     --build-index --organisations "$BATCH" --index "$CACHE/wikidata-index.jsonl"
   WIKIDATA_INDEX="$CACHE/wikidata-index.jsonl"
+  run uv run python scripts/run_gleif_connector.py \
+    --build-index --index "$CACHE/gleif-index.jsonl"
+  GLEIF_INDEX="$CACHE/gleif-index.jsonl"
 else
   echo "using the committed frozen indexes (rebuild with --rebuild-indexes)"
 fi
@@ -125,6 +130,8 @@ run env \
   CACHE="$CACHE" \
   NAV_INDEX="$NAV_INDEX" \
   WIKIDATA_INDEX="$WIKIDATA_INDEX" \
+  GLEIF_INDEX="$GLEIF_INDEX" \
+  DOMAIN_INDEX="$DOMAIN_INDEX" \
   WORKERS="$WORKERS" \
   MIN_AUDIT="$MIN_AUDIT" \
   bash scripts/run_full_batch.sh

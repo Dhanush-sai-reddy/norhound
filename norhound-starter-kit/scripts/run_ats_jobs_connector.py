@@ -146,6 +146,19 @@ ROLE_STOPWORDS = (
     # "Hopp til hovedinnhold" as a job title on the 2026-11-15 corpus.
     "hopp til", "gå til", "skip to", "hovedinnhold", "main content",
 )
+# Links to a vacancies *index* are navigation, not role cards. On the 2026-11-15
+# corpus a jobbnorge navigation link ("Ledige stillinger") was marked
+# `role_card: true` — wrong even though the row was unpublished. Exact-match so
+# a real role that happens to begin with one of these words still survives.
+GENERIC_ROLE_LABELS = frozenset({
+    "ledige stillinger", "ledig stilling", "ledige jobber", "ledige stillinger og jobber",
+    "alle stillinger", "alle jobber", "alle ledige stillinger", "alle ledige jobber",
+    "se alle stillinger", "se alle jobber", "se stillinger", "se jobber",
+    "våre stillinger", "våre ledige stillinger", "jobb hos oss", "jobber hos oss",
+    "bli en av oss", "stillinger", "jobber", "jobb", "karriere", "careers",
+    "om oss", "kontakt oss", "kontakt", "stillingsannonser", "ledige stillinger hos oss",
+    "open positions", "available positions", "job openings", "see all jobs",
+})
 ROLE_CARD_LIMIT = 20
 ROLE_TEXT_MIN = 3
 ROLE_TEXT_MAX = 140
@@ -200,6 +213,8 @@ def extract_role_cards(html: str, base: str) -> list[dict]:
         if len(text.split()) < 2:
             continue
         low = text.lower()
+        if low in GENERIC_ROLE_LABELS:
+            continue
         if any(low.startswith(w) for w in ROLE_STOPWORDS):
             continue
         if url in seen:
