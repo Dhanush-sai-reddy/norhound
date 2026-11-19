@@ -1,4 +1,4 @@
-Subject: Signalpost submission — NorHound Company Research Agent (commit 9c91266)
+Subject: Signalpost submission — NorHound Company Research Agent (commit d16266a)
 
 Hi,
 
@@ -6,14 +6,14 @@ Submitting the NorHound agent for the Signalpost challenge. This revision is
 **fully keyless**: every stage runs without an API key, a login or a paid
 account, so the external cost per official batch is **$0**.
 
-The headline is precision, not volume: 1,000 company profiles, 31,778 published
+The headline is precision, not volume: 1,000 company profiles, 31,885 published
 observations, **entity precision 1.0** and **zero wrong-company publications**.
 
 REPOSITORY
 https://github.com/Dhanush-sai-reddy/norhound
 
 COMMIT HASH
-9c91266  (branch: main, github.com/Dhanush-sai-reddy/norhound)
+d16266a  (branch: main, github.com/Dhanush-sai-reddy/norhound)
 
 This is the commit that contains the code and the shipped corpus. The only
 commits after it are documentation-only.
@@ -60,12 +60,12 @@ WHAT IS IN THE REPO
 - `out/submission/profiles-promoted.jsonl` — 1,000 frozen company profiles
 - `out/submission/manifest.jsonl` — the organisation-number manifest (1,000 rows)
 - `out/submission/envelopes.jsonl` — 1,000 terminal contract envelopes, one per
-  company: 105,164 claims backed by 35,314 evidence records
+  company: 105,266 claims backed by 35,421 evidence records
 - `out/submission/observations.jsonl` + `out/submission/labels.jsonl` — the
-  31,804-row re-verified corpus (31,778 rows published)
+  31,911-row re-verified corpus (31,885 rows published)
 - `out/submission/summaries.jsonl` — 1,000/1,000 deterministic summaries
   (what it does, financials, staff, hiring, the changes since the previous run
-  and the unknowns — 126 of them state a detected change and its source)
+  and the unknowns — 144 of them state a detected change and its source)
 - `out/submission/eval.json` — the audit report
 - `out/submission/measure.json` — the six-field recall proxy
 - `out/submission/measure-family.json` — the per-family recall report
@@ -73,7 +73,7 @@ WHAT IS IN THE REPO
   view + bulk export)
 - `out/submission/smoke-100/smoke-envelopes.jsonl` +
   `out/submission/smoke-100/smoke-report.json` — the 100-company smoke test:
-  **100 requested, 100 returned, complete**, 10,290 claims and 3,383 evidence
+  **100 requested, 100 returned, complete**, 10,306 claims and 3,399 evidence
   records, produced by `scripts/build_smoke_report.py --run-dir <run> --count
   100 --output-dir <dir>` (exit code 1 if any requested company comes back
   missing or incomplete). This is the artifact the brief asks for.
@@ -91,11 +91,11 @@ official run tests."
 PRECISION (the gates that matter more than volume)
 - entity precision **1.0**, metric precision **1.0**
 - wrong-company publications **0**, unsupported publications **0**
-- 31,778 of 31,804 re-verified observations published; unverified rows never
+- 31,885 of 31,911 re-verified observations published; unverified rows never
   publish
 - every published fact carries source URL, retrieval time, reporting or
   effective date, content hash and extraction method
-- 593 tests pass (`uv run python -m unittest discover -s tests`)
+- 601 tests pass (`uv run python -m unittest discover -s tests`)
 
 REFRESH AND THE RUN REPORT
 The brief asks for refresh metadata and material changes since the previous
@@ -173,12 +173,30 @@ WHERE THE REMAINING POINTS ARE, AND WHY THEY ARE NOT CLOSED
   service forbid it) and NAV's live search answers HTTP 429 to unauthenticated
   bulk.
 - `two_platforms` (3.2): 374 of the 380 missing companies have exactly one
-  independent source, no verified website and no Wikidata item.
+  independent source, no verified website and no Wikidata item. The directory
+  page does state a website domain for 371 of them, so I fetched those domains
+  on a 60-company random sample (robots honoured, the identity gate unchanged):
+  34 homepages answered, and only **3** passed the gate — 0 of the 34 pages
+  stated the organisation number anywhere, not even in the footer. So the
+  ceiling without widening the exact-entity rule is about 5 % of the 374, and I
+  am leaving the rule alone rather than trading the 95 % precision gate for a
+  fraction of a point on one field.
 
 The full write-up, with the probes and the arithmetic, is in
 `norhound-starter-kit/RECALL_LEVERS.md`.
 
 WHAT CHANGED IN THIS REVISION
+- **One dated news item per page, not one per company.** The news connector used
+  to publish the single deepest captured news page per company and discard the
+  rest. It now publishes every captured news page that states a
+  machine-readable publication timestamp (`article:published_time`,
+  `<time datetime=…>`, `datePublished`), keeps the bounded first-party body,
+  and never publishes a date mined from prose for an additional page (prose can
+  carry a copyright year) nor an undated navigation page as padding. Measured on
+  the shipped corpus: **194 news observations over 86 companies, 172 of them
+  dated**, up from 86 observations and 64 dated; `dated_news` claims 3,073 →
+  **3,175**, with 24 companies now carrying more than one dated item. Cost: one
+  extra fetch per candidate page (1,014 pages, 1,007 requests, 93 s).
 - **Hiring integrity fixed.** The company-site jobs connector was emitting
   `job_posting` for every link it *discovered* on a careers page without ever
   fetching the posting — "Digitalt testament" and "Marketing" were published
@@ -238,12 +256,13 @@ MODELS / APIs / LICENCES
 
 EXPECTED COST PER OFFICIAL BATCH
 - External spend: **$0**. No paid API is called and no model key is needed.
-- Requests: **21,159 measured** for the 1,000-company rehearsal
-  (`out/submission/official-run-report.json`). The count is taken at the
-  interpreter level, so every subprocess is included; only the host, method and
-  status are recorded, never a URL or a payload.
-- Runtime: measured **11.8 minutes per 100 companies** on 8 workers without the
-  opt-in OCR stage — **117.7 minutes (1 h 58 m) for a 1,000-company official
+- Requests: **22,166 measured** for the shipped 1,000-company corpus
+  (`out/submission/official-run-report.json`): 21,159 in the official run plus
+  1,007 in the news-depth pass. The count is taken at the interpreter level, so
+  every subprocess is included; only the host, method and status are recorded,
+  never a URL or a payload.
+- Runtime: measured **11.9 minutes per 100 companies** on 8 workers without the
+  opt-in OCR stage — **119.2 minutes (1 h 59 m) for a 1,000-company official
   batch**. (The OCR stage would add ≈3 h 20 m and measures 0 scored points,
   which is why it stays off; `SLOW_STAGES=1` turns it on.) The brief says each
   official run has a fixed time and resource budget that Builderr supplies —
