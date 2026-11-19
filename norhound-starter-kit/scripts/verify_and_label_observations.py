@@ -88,6 +88,11 @@ OFFICIAL_REPORT_PROOF_TYPES = (
 # the profile's own registry field and stored page, never from what the
 # observation claims about itself.
 REGISTRY_DOMAIN_PROOF_TYPE = "registry_declared_website_domain_match"
+# A stronger relative: the register's sole-declarer index states that exactly
+# one organisation number declares the domain. This one is trusted only when a
+# frozen index is supplied to the verifier (--domain-index); without it the
+# proof is not re-derivable and the row stays rejected.
+SOLE_DECLARER_PROOF_TYPE = "registry_sole_declarer_domain_match"
 LEGAL_FORM_TOKENS = {
     "as", "asa", "a/s", "ans", "ba", "da", "enk", "kf", "sa", "aps", "ab", "oy", "oyj",
     "gmbh", "ag", "bv", "nv", "sarl", "spa", "srl", "co", "corp", "plc", "lp", "llp",
@@ -164,6 +169,52 @@ def _registry_domain_proof_consistent(obs: dict, profile: dict) -> bool:
         return False
     website = ((profile.get("evidence") or {}).get("website") or {})
     return _site_corroborates(profile, website.get("value") or {})
+
+
+def _sole_declarer_proof(obs: dict) -> dict | None:
+    for proof in obs.get("identity_proof") or []:
+        if isinstance(proof, dict) and str(proof.get("type") or "") == SOLE_DECLARER_PROOF_TYPE:
+            return proof
+    return None
+
+
+def _sole_declarer_proof_consistent(
+    obs: dict, profile: dict, domain_index: dict[str, str] | None
+) -> bool:
+    """True only when the frozen index, the register field and the body agree.
+
+    * the proof names this organisation,
+    * the source host is the domain BRREG declares for this organisation,
+    * the sole-declarer index says that domain belongs to this organisation
+      alone, and
+    * the stored body excerpt names this organisation.
+    """
+    proof = _sole_declarer_proof(obs)
+    if not proof or not domain_index:
+        return False
+    org = str(profile.get("organisation_number") or "")
+    if str(proof.get("matched_organisation_number") or "") != org:
+        return False
+    if not proof.get("sole_declarer"):
+        return False
+    host = _normalise_host(proof.get("domain") or "")
+    if not host or _normalise_host(obs.get("source_url") or "") != host:
+        return False
+    if _normalise_host(profile.get("website") or "") != host:
+        return False
+    if str(domain_index.get(host) or "") != org:
+        return False
+    excerpt = str((obs.get("metrics") or {}).get("body_excerpt") or "")
+    if not excerpt:
+        return False
+    text = _fold(excerpt)
+    if org and org in re.sub(r"\D", "", excerpt):
+        return True
+    tokens = _legal_name_tokens(str(profile.get("name") or ""))
+    if not tokens:
+        return False
+    hits = sum(1 for token in tokens if token in text)
+    return hits >= max(1, -(-len(tokens) // 2))
 
 
 def _identity_proof_kind(obs: dict) -> str:
@@ -247,7 +298,7 @@ def _wikidata_proof_consistent(obs: dict, profile: dict) -> bool:
     return bool(str(obs.get("content_sha256") or "").strip())
 
 
-def verify(obs: dict, profile: dict) -> dict:
+def verify(obs: dict, profile: dict, domain_index: dict[str, str] | None = None) -> dict:
     checks = {}
     checks["organisation_match"] = str(obs.get("organisation_number")) == str(profile.get("organisation_number"))
     website = (profile.get("evidence") or {}).get("website") or {}
@@ -277,6 +328,12 @@ def verify(obs: dict, profile: dict) -> dict:
     checks["registry_domain_proof_present"] = registry_domain_proof is not None
     checks["registry_domain_proof_consistent"] = (
         _registry_domain_proof_consistent(obs, profile) if registry_domain_proof is not None else True
+    )
+    sole_declarer_proof = _sole_declarer_proof(obs)
+    checks["sole_declarer_proof_present"] = sole_declarer_proof is not None
+    checks["sole_declarer_proof_consistent"] = (
+        _sole_declarer_proof_consistent(obs, profile, domain_index)
+        if sole_declarer_proof is not None else True
     )
     checks["identity_proof_present"] = bool(obs.get("identity_proof"))
     if not identity_proof_kind:
@@ -322,6 +379,7 @@ def verify(obs: dict, profile: dict) -> dict:
         official_api_row
         or (wikidata_row and checks["wikidata_proof_consistent"])
         or (registry_domain_proof is not None and checks["registry_domain_proof_consistent"])
+        or (sole_declarer_proof is not None and checks["sole_declarer_proof_consistent"])
         or (probed_site_row and probed_score >= 0.9)
     )
     # A row proved by an official API, an official report, a directory page,
@@ -372,7 +430,25 @@ def main() -> None:
     parser.add_argument("--observations", required=True)
     parser.add_argument("--labels", required=True)
     parser.add_argument("--report", required=True)
+    parser.add_argument(
+        "--domain-index", default="",
+        help="Path to the register's sole-declarer domain index (gzip JSONL). Required to trust registry_sole_declarer_domain_match rows.",
+    )
     args = parser.parse_args()
+
+    domain_index: dict[str, str] | None = None
+    if args.domain_index and Path(args.domain_index).exists():
+        import gzip
+        domain_index = {}
+        opener = gzip.open if args.domain_index.endswith(".gz") else open
+        with opener(args.domain_index, "rt", encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                domain = str(row.get("domain") or "").lower().lstrip(".")
+                if domain:
+                    domain_index.setdefault(domain, str(row.get("organisation_number") or ""))
 
     profiles = {str(p["organisation_number"]): p for p in read_jsonl(Path(args.profiles))}
     observations = read_jsonl(Path(args.observations))
@@ -385,7 +461,7 @@ def main() -> None:
             failures["missing_profile"] += 1
             label = {"exact_entity": 0, "metric_correct": 0, "sentiment_correct": False}
         else:
-            label = verify(obs, profile)
+            label = verify(obs, profile, domain_index)
             for check, ok in label["checks"].items():
                 if not ok:
                     failures.setdefault(check, 0)

@@ -155,6 +155,9 @@ def main() -> None:
     parser.add_argument("--no-registry-sites", dest="registry_sites", action="store_false", help="Disable the registry-proved website connector (BRREG-declared domain + page corroboration)")
     parser.add_argument("--registry-sites", dest="registry_sites", action="store_true", help="Deprecated no-op: registry-proved website connector now runs by default")
     parser.set_defaults(registry_sites=True)
+    parser.add_argument("--no-sole-declarer", dest="sole_declarer", action="store_false", help="Disable the register-sole-declarer website connector (directory-only companies)")
+    parser.set_defaults(sole_declarer=True)
+    parser.add_argument("--domain-index", default="data/registry-domain-unique.jsonl.gz", help="Register sole-declarer domain index path (also passed to the verifier)")
     parser.add_argument("--no-ats", dest="ats", action="store_false", help="Disable the public ATS connector (Teamtailor/Recruitee/Easycruit/Workday/Lever/Greenhouse/SmartRecruiters feeds, no key)")
     parser.add_argument("--ats", dest="ats", action="store_true", help="Deprecated no-op: the public ATS connector now runs by default")
     parser.set_defaults(ats=True)
@@ -291,6 +294,20 @@ def main() -> None:
         ])
     if registry_site_out.exists() and registry_site_out.stat().st_size > 0:
         observation_files.append(registry_site_out)
+    # A second external platform for directory-only companies whose sole-declared
+    # domain names them. The verifier needs the same index to trust the proof.
+    sole_declarer_out = prefix.with_suffix(prefix.suffix + ".sole-declarer.jsonl")
+    if args.sole_declarer:
+        run([
+            "python", str(SCRIPTS / "extract_register_sole_declarer_sites.py"),
+            "--profiles", args.profiles,
+            "--index", args.domain_index,
+            "--output", str(sole_declarer_out),
+            "--report", str(prefix.with_suffix(prefix.suffix + ".sole-declarer-report.json")),
+            "--workers", "10",
+        ])
+    if sole_declarer_out.exists() and sole_declarer_out.stat().st_size > 0:
+        observation_files.append(sole_declarer_out)
     orgs_out = prefix.with_suffix(prefix.suffix + ".org-ids.txt")
     orgs_out.write_text(
         "".join(
@@ -558,13 +575,16 @@ def main() -> None:
     ])
     labels_path = prefix.with_suffix(prefix.suffix + ".labels.jsonl")
     label_report_path = prefix.with_suffix(prefix.suffix + ".label-report.json")
-    run([
+    verify_argv = [
         "python", str(SCRIPTS / "verify_and_label_observations.py"),
         "--profiles", args.profiles,
         "--observations", str(external_out),
         "--labels", str(labels_path),
         "--report", str(label_report_path),
-    ])
+    ]
+    if Path(args.domain_index).exists():
+        verify_argv += ["--domain-index", args.domain_index]
+    run(verify_argv)
     run([
         "python", str(SCRIPTS / "evaluate_external_footprint.py"),
         "--profiles", args.profiles,
