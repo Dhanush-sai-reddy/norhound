@@ -110,6 +110,27 @@ class SoleDeclarerConnector(unittest.TestCase):
         self.assertNotIn("shared.no", index)
 
 
+class GLEIFVerifier(unittest.TestCase):
+    """GLEIF's Brønnøysund-validated organisation number is an official proof.
+
+    The connector emitted 13 such rows and the verifier rejected all 13 because
+    it did not recognize the proof type.
+    """
+
+    def test_gleif_validated_org_number_is_an_official_api_proof(self):
+        from scripts.run_gleif_connector import observation_for
+
+        row = observation_for("916659261", {
+            "lei": "636700LNU9OML0MMGJ23",
+            "legal_name": "MALLING & CO INVESTMENT MANAGEMENT AS",
+            "registration": {"validatedAs": "916 659 261", "registrationAuthority": {"id": "RA000472"}},
+        })
+        profile = _profile(org="916659261", name="MALLING & CO INVESTMENT MANAGEMENT AS")
+        result = verify(row, profile)
+        self.assertEqual(result["exact_entity"], 1)
+        self.assertEqual(result["metric_correct"], 1)
+
+
 class SoleDeclarerVerifier(unittest.TestCase):
     def _observation(self):
         raw = GOOD_BODY.encode("utf-8")
