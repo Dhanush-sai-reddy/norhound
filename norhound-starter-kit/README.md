@@ -121,7 +121,7 @@ Each connector subprocess is bounded by `NORHOUND_STAGE_TIMEOUT_S` (default
 3600) and is killed as a process group, so a stalled site can no longer block
 the pipeline indefinitely. The brief states that each official run has a fixed
 time and resource budget supplied by Builderr; the measured runtime of the
-shipped pipeline is **11.8 minutes per 100 companies** (117.7 min per 1,000,
+shipped pipeline is **11.9 minutes per 100 companies** (119.2 min per 1,000,
 measured end-to-end on the 17 Nov 2026 rehearsal), so lower the stage timeout
 if the budget you are given is tighter.
 
@@ -267,14 +267,15 @@ profiles and observations and can be re-run on any checkout.
 
 ### Expected results (as shipped)
 
-Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
+Run `fresh-20261117T213100Z` + the news-depth pass `newsdepth-20261118T120128Z`,
+promoted to `out/submission/` by
 `scripts/promote_run.sh`.
 
-- **31,778 published observations** out of 31,804 re-verified, every one
+- **31,885 published observations** out of 31,911 re-verified, every one
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,164 claims** backed by **35,314 evidence records** across 1,000
+- **105,266 claims** backed by **35,421 evidence records** across 1,000
   terminal envelopes.
 - **50 published job-posting observations** across 14 companies merged
   into the audit (NAV's official feed, `official_api` acquisition, resolved via
@@ -290,11 +291,11 @@ Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
   two_platforms 0.620, buzz_engagement 0.994, workforce_jobs 0.014,
   workforce_snapshot 0.575 (headcount, reported separately), ratings_reviews
   0.032, sentiment 0.032. Six-field recall proxy **22.38 / 50**.
-- 593 tests pass by default (8 skipped).
+- 601 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
-(the 31,804-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+(the 31,911-row audit corpus), `out/submission/profiles-promoted.jsonl`,
 `out/submission/manifest.jsonl`, `out/submission/summaries.jsonl`,
 `out/submission/eval.json`, `out/submission/measure.json`,
 `out/submission/measure-family.json`, `out/submission/site/` (the viewer) and `out/norhound-signalpost-submission.zip`
@@ -340,7 +341,7 @@ qualify a live entry.
 
 ```bash
 uv run python3 -m unittest discover -s tests -p "test_*.py"
-# 593 tests pass (8 skipped)
+# 601 tests pass (8 skipped)
 ```
 
 ## The improvement loop

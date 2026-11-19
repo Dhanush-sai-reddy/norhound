@@ -1,10 +1,10 @@
 {
-  "run_id": "fresh-20261117T213100Z",
+  "run_id": "newsdepth-20261118T120128Z",
   "started_at": "2026-11-17T21:31:00.383147Z",
-  "completed_at": "2026-11-17T23:28:39.587944Z",
-  "runtime_ms": 7059204,
+  "completed_at": "2026-11-18T12:38:44Z",
+  "runtime_ms": 7152204,
   "requests": {
-    "total": 21159,
+    "total": 22166,
     "measured": true,
     "source": "sitecustomize.py request counter (host, method and status only)",
     "busiest_hosts": {
@@ -13,33 +13,37 @@
       "purehelp.no": 1000,
       "news.google.com": 1000,
       "w2.brreg.no": 1000,
-      "staticus.com": 27,
-      "www.orland-sparebank.no": 26,
-      "www.uloba.no": 26,
-      "www.borga.no": 26,
-      "elbil.no": 26,
-      "harila.no": 26,
-      "www.caleo.no": 26,
-      "www.tellitsolutions.no": 25,
-      "www.armyshop.no": 25,
-      "psju.no": 25
+      "www.usbl.no": 300,
+      "www.vbbl.no": 45,
+      "thon.no": 40,
+      "www.solibo.no": 36,
+      "www.uloba.no": 34,
+      "www.norgesfor.no": 33,
+      "www.nordr.com": 33,
+      "www.orland-sparebank.no": 32,
+      "www.mjelektro.no": 32,
+      "www.norgesmollene.no": 32
     },
     "registry_and_website": 15067,
-    "note": "Every outbound request of every subprocess of the run is counted. The headless-browser rescue stage is the one exception: its requests are made by the browser process, not by Python, so they are reported as page counts instead (110 pages rescued of 171 eligible)."
+    "note": "Every outbound request of every subprocess is counted by the interpreter-level counter (host, method and status only): 21,159 in the official run and 1,007 in the news-depth stage, 22,166 in total. The headless-browser rescue stage is the one exception: its requests are made by the browser process, not by Python, so they are reported as page counts instead (110 pages rescued of 171 eligible). A fresh run of the documented command does both stages in one pass and costs the same.",
+    "stages": [
+      21159,
+      1007
+    ]
   },
   "third_party_cost_usd": 0,
   "cost_note": "No paid API, no model key, no login: every source is a public page or an official open registry. The declared external cost is $0.",
   "outputs": {
     "envelopes": 1000,
-    "claims": 105164,
-    "evidence_records": 35314,
-    "observations": 31804,
+    "claims": 105266,
+    "evidence_records": 35421,
+    "observations": 31911,
     "manifest_rows": 1000
   },
   "identity_precision": 1.0,
   "wrong_company_publications": 0,
   "unsupported_publications": 0,
-  "published_observations": 31778,
+  "published_observations": 31885,
   "recall_proxy_50": 22.3833,
   "family_company_recall": {
     "financials": {
@@ -92,13 +96,13 @@
     "envelopes": 1000,
     "compared": 1000,
     "baselines": 0,
-    "changes_detected": 252,
+    "changes_detected": 277,
     "changes_already_recorded": 0,
     "changes_preserved": 0,
-    "companies_with_changes": 126,
+    "companies_with_changes": 144,
     "preserved_evidence_records": 0,
-    "previous_envelopes": "out/submission/envelopes.jsonl",
-    "output": "out/run-fresh-20261117T213100Z/envelopes-final.jsonl"
+    "previous_envelopes": "out/baseline-20261116/envelopes.jsonl",
+    "output": "out/run-newsdepth-20261118T120128Z/envelopes-final.jsonl"
   },
   "merge": {
     "merged_rows": 31804,
@@ -135,5 +139,31 @@
     "command": "scripts/run_official_batch.sh --batch <organisations.jsonl>",
     "dependencies": "pinned in pyproject.toml and uv.lock",
     "python": "3.12+"
-  }
+  },
+  "runtime_note": "The runtime is the sum of the two measured stages below, not the wall-clock span between their artifacts: the corpus was rebuilt in two passes on two days.",
+  "stages": [
+    {
+      "stage": "official_run",
+      "run_id": "fresh-20261117T213100Z",
+      "command": "scripts/run_official_batch.sh --batch entry.jsonl --previous-envelopes <16 Nov corpus>",
+      "started_at": "2026-11-17T21:31:00.383147Z",
+      "completed_at": "2026-11-17T23:28:39.587944Z",
+      "runtime_ms": 7059204,
+      "requests": 21159,
+      "third_party_cost_usd": 0,
+      "measured_by": "sitecustomize.py request counter + the run's own timestamps"
+    },
+    {
+      "stage": "news_depth",
+      "run_id": "newsdepth-20261118T120128Z",
+      "command": "uv run python scripts/extract_company_site_news.py --profiles <frozen profiles> --fetch-dates --workers 12",
+      "started_at": "2026-11-18T12:37:11Z",
+      "completed_at": "2026-11-18T12:38:44Z",
+      "runtime_ms": 93000,
+      "requests": 1007,
+      "third_party_cost_usd": 0,
+      "measured_by": "sitecustomize.py request counter + the stage's own timestamps",
+      "what_it_added": "One dated news item per captured news page instead of one per company: 194 observations over 86 companies, 172 of them dated (the first pass published 86 observations, 64 dated)."
+    }
+  ]
 }

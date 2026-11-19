@@ -79,8 +79,9 @@ companies is encouraged.
 for each official run"; no numeric limit is published on the current pages.
 The old 45 min / 2,000 requests / $10 figures belong to the superseded
 100-company Unstop listing. Our measured cost is **$0 external** and the
-measured runtime is **11.8 minutes per 100 companies** (117.7 min per 1,000,
-measured end-to-end on the 17 Nov 2026 rehearsal; 21,159 requests measured).
+measured runtime is **11.9 minutes per 100 companies** (119.2 min per 1,000,
+measured end-to-end over the 17 Nov 2026 rehearsal plus the 18 Nov news-depth
+pass; 22,166 requests measured).
 
 **Submission email (current):** repository URL, exact commit hash,
 100-company smoke-test result or report, one run command, models/APIs/licences,
@@ -112,7 +113,7 @@ repository can reproduce today with `scripts/measure_recall.py`.
 - Recall is measured here, not guessed: six fields, each worth 8.33 of 50.
 
 
-### Our field recalls — measured, 2026-11-17 run (`out/run-fresh-20261117T213100Z/`)
+### Our field recalls — measured, 2026-11-18 run (`out/run-newsdepth-20261118T120128Z/`)
 | field | recall | points | headroom |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
@@ -237,7 +238,7 @@ All code lives in `norhound-starter-kit/`. Entry points: `select_entry_batch.py`
 5. **Evaluate** — Score labeled entry (publication requires verified exact_entity)
 6. **Deterministic summaries** — Rule-based summaries (no API key)
 
-### Current Coverage (shipped run `fresh-20261117T213100Z`, measured over sources outside the register)
+### Current Coverage (shipped run `newsdepth-20261118T120128Z`, measured over sources outside the register)
 ```
 any_external:      0.994  (99.4%)
 two_platforms:     0.620  (62.0%)
@@ -250,7 +251,7 @@ six-field proxy:  22.38 / 50
 ```
 
 ### Test Status
-- **593 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
+- **601 tests pass**, 8 skipped (`uv run python -m unittest discover -s tests`)
 - All tests in `tests/test_poc.py` and related test files
 
 ---
@@ -286,7 +287,8 @@ six-field proxy:  22.38 / 50
 ## 🚀 Immediate Coverage Wins (Enable What's Built)
 
 All three of the steps below are **done** and shipped in the
-`fresh-20261117T213100Z` corpus. They are kept here as the reproduction recipe.
+`fresh-20261117T213100Z` corpus plus the `newsdepth-20261118T120128Z` news-depth
+pass. They are kept here as the reproduction recipe.
 
 ### 1. Enable `--keyless` + NAV in Pipeline
 `scripts/run_external_pipeline.py`:
@@ -398,7 +400,7 @@ From `https://builderr.ai/starter-briefs/signalpost-sources.md`:
 Everything below is **done** as of 17 Nov 2026. Kept as the recipe.
 
 1. **Patch `run_external_pipeline.py`** to include `--keyless` + NAV jobs by default — done
-2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261117T213100Z`)
+2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261117T213100Z` + `newsdepth-20261118T120128Z`)
 3. **Verify coverage improvement** — measured: 22.38/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
 4. **Implement deterministic summaries** in submission pipeline — done, 1000/1000
 5. **Finn.no job connector** — **vetoed**: no organisation numbers on the site and its terms of service forbid the use
@@ -445,4 +447,4 @@ numbers in it, re-run `scripts/promote_run.sh` and copy the new values.
 
 ---
 
-*Last updated: 18 Nov 2026 — Context compiled from official_review.md, report.md, the Builderr brief and evaluation contract retrieved 17 Nov 2026 (`docs/evidence/signalpost-requirements-2026-11-17.md`), the fresh run and repository state*
+*Last updated: 19 Nov 2026 — Context compiled from official_review.md, report.md, the Builderr brief and evaluation contract retrieved 17 Nov 2026 (`docs/evidence/signalpost-requirements-2026-11-17.md`), the fresh run, the news-depth pass and repository state*

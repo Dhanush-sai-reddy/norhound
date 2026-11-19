@@ -175,14 +175,15 @@ checkout.
 
 ### Expected results (as shipped)
 
-Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
+Run `fresh-20261117T213100Z` + the news-depth pass `newsdepth-20261118T120128Z`,
+promoted to `out/submission/` by
 `scripts/promote_run.sh`.
 
-- **31,778 published** observations out of 31,804 re-verified, every one
+- **31,885 published** observations out of 31,911 re-verified, every one
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,164 claims** backed by **35,314 evidence records** across 1,000
+- **105,266 claims** backed by **35,421 evidence records** across 1,000
   terminal envelopes.
 - Coverage, measured over sources **outside** the register:
   any_external 0.994, two_platforms 0.620, buzz_engagement 0.994,
@@ -200,13 +201,13 @@ Run `fresh-20261117T213100Z`, promoted to `out/submission/` by
   `measure-family.json` reports the split under `hiring_evidence`.
 - **1000/1000 deterministic summaries** produced (what it does, financials,
   staff, hiring; all answers cite evidence; unknowns listed with reasons).
-- The 100-company smoke test returns **100/100 complete** (10,290 claims,
-  3,383 evidence records).
-- 593 tests pass by default (8 skipped).
+- The 100-company smoke test returns **100/100 complete** (10,306 claims,
+  3,399 evidence records).
+- 601 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal
 envelopes), `out/submission/observations.jsonl` + `out/submission/labels.jsonl`
-(the 31,804-row audit corpus), `out/submission/profiles-promoted.jsonl`,
+(the 31,911-row audit corpus), `out/submission/profiles-promoted.jsonl`,
 `out/submission/manifest.jsonl` (the organisation-number manifest),
 `out/submission/summaries.jsonl`, `out/submission/eval.json`,
 `out/submission/measure.json`, `out/submission/measure-family.json`,
@@ -255,7 +256,7 @@ qualify a live entry.
 
 ```bash
 uv run python -m unittest discover -s tests -p 'test_*.py'
-# 593 tests pass (8 skipped)
+# 601 tests pass (8 skipped)
 ```
 
 ## The improvement loop

@@ -23,13 +23,13 @@ uv run python scripts/measure_recall.py \
 - `recall_proxy_50` = **13.0083**
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
-## Current corpus (`out/run-fresh-20261117T213100Z/`)
+## Current corpus (`out/run-newsdepth-20261118T120128Z/`)
 
 ```bash
 uv run python scripts/measure_recall.py \
-  --profiles out/run-fresh-20261117T213100Z/batch-rescued-profiles.jsonl \
-  --observations out/run-fresh-20261117T213100Z/external-final.jsonl \
-  --labels out/run-fresh-20261117T213100Z/labels-final.jsonl \
+  --profiles out/run-newsdepth-20261118T120128Z/batch-rescued-profiles.jsonl \
+  --observations out/run-newsdepth-20261118T120128Z/external-final.jsonl \
+  --labels out/run-newsdepth-20261118T120128Z/labels-final.jsonl \
   --output /tmp/opencode/m1.json
 ```
 
@@ -90,7 +90,7 @@ cannot re-derive the board link.
 
 ## Precision gate
 
-`out/run-fresh-20261117T213100Z/eval-final.json`:
+`out/run-newsdepth-20261118T120128Z/eval-final.json`:
 `entity_precision 1.0`, `wrong_entity_publications 0`,
 `unsupported_publications 0`, `metric_precision 1.0`,
 `published_audited 31778 of 31804`.

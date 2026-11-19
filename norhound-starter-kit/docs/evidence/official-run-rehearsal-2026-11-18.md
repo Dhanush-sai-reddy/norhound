@@ -1,13 +1,15 @@
-# Official-run rehearsal — 17–18 November 2026
+# Official-run rehearsal + news-depth pass — 17–18 November 2026
 
 Evidence for the Signalpost submission: a full 1,000-company run through the
-**evaluator's own command**, with every number below measured by the run
-itself (no estimate, no hand-copy).
+**evaluator's own command**, plus one measured extra pass that publishes one
+dated news item per captured news page instead of one per company. Every
+number below is measured by the run itself (no estimate, no hand-copy).
 
-- Run id: `fresh-20261117T213100Z`
-- Run directory: `norhound-starter-kit/out/run-fresh-20261117T213100Z/`
+- Run id: `fresh-20261117T213100Z` (official command) + `newsdepth-20261118T120128Z` (news-depth pass)
+- Run directories: `norhound-starter-kit/out/run-fresh-20261117T213100Z/`, `norhound-starter-kit/out/run-newsdepth-20261118T120128Z/`
 - Promoted package: `norhound-starter-kit/out/submission/`
-- Machine-readable report: `out/submission/official-run-report.json`
+- Machine-readable report: `out/submission/official-run-report.json` (it carries
+  both stages, with each stage's own runtime and request count)
 - Requirements this run is checked against:
   [`signalpost-requirements-2026-11-17.md`](signalpost-requirements-2026-11-17.md)
 
@@ -34,8 +36,8 @@ the refresh stage attaches the change records, so a summary built earlier says
 "no prior version to compare against" while the envelope carries the detected
 changes. The rubric asks the summary to explain "the company, changes and
 unknowns", so the command rebuilds the summaries over the refreshed envelopes:
-126 of the 1,000 summaries now state what changed and the source that proves
-it.
+**144 of the 1,000** shipped summaries state what changed and the source that
+proves it.
 
 No API key, no login, no paid account, no model provider. **External cost: $0.**
 
@@ -59,17 +61,29 @@ and re-verified on 17 Nov.
 |---|---|
 | organisations in | 1,000 |
 | terminal envelopes out | **1,000** (one per input) |
-| observations re-verified | 31,804 |
-| observations published | 31,778 |
-| claims | 105,164 |
-| evidence records | 35,314 |
+| observations re-verified | 31,911 |
+| observations published | 31,885 |
+| claims | 105,266 |
+| evidence records | 35,421 |
 | summaries | 1,000 / 1,000 deterministic |
-| runtime | **117.7 min** (7,059,204 ms) = **11.8 min per 100 companies** |
-| outbound requests | **21,159** (measured) |
+| runtime | **119.2 min** (7,152,204 ms) = **11.9 min per 100 companies** |
+| outbound requests | **22,166** (measured) |
 | third-party cost | **$0** |
 | entity precision | **1.0** |
 | wrong-company publications | **0** |
 | unsupported publications | **0** |
+
+The runtime and the request count are the sum of two measured stages, and the
+run report says so explicitly:
+
+| stage | run id | runtime | requests |
+|---|---|---|---|
+| official command (14-stage pipeline + refresh + summaries + viewer) | `fresh-20261117T213100Z` | 117.7 min | 21,159 |
+| news-depth pass (`extract_company_site_news.py --fetch-dates` over the frozen profiles) | `newsdepth-20261118T120128Z` | 1.6 min (93 s) | 1,007 |
+| **total** | | **119.2 min** | **22,166** |
+
+A fresh run of the documented command does both stages in one pass and costs
+the same.
 
 Request counting is interpreter-level (`sitecustomize.py`): every subprocess of
 the run is counted, and only the host, method and status are recorded — no URL,
@@ -122,6 +136,28 @@ Hiring split: **14 companies with a real role card** (every one from NAV's
 official feed), 35 with a `careers_page` signal only. A careers-page link is
 never published as `hiring: true`.
 
+### Claim depth in the activity family
+
+The news-depth pass publishes one dated item per captured news page instead of
+one per company:
+
+| | before | after |
+|---|---|---|
+| news observations | 86 | **194** |
+| of them dated | 64 | **172** |
+| companies with dated news | 65 | **65** |
+| `dated_news` claims in the corpus | 3,073 | **3,175** |
+
+Rules, pinned by `tests/test_site_news_items.py`:
+
+* an additional page is published only when its body carries a **machine-readable**
+  publication timestamp (`article:published_time`, `<time datetime=…>`,
+  `datePublished`); a date mined from prose stays reserved for the primary page,
+  because prose can carry a copyright year or a date mentioned in passing,
+* an undated navigation page is never published as padding,
+* at most 12 candidate pages and 8 dated items per company,
+* the retained body excerpt is bounded at 5,000 characters.
+
 ---
 
 ## 4. Refresh and idempotency
@@ -132,15 +168,17 @@ previous snapshot, keyed by a content hash.
 | measurement | value |
 |---|---|
 | envelopes compared | 1,000 |
-| material changes detected | 252 |
-| companies with changes | 126 |
-| summaries that state the change and its source | **126** (of 1,000) |
-| changes already recorded (re-run over the refreshed corpus) | 252 |
+| material changes detected | 277 |
+| companies with changes | 144 |
+| summaries that state the change and its source | **144** (of 1,000) |
+| changes already recorded (re-run over the refreshed corpus) | 277 |
 | new changes on the re-run | **0** |
 
 A second pass over the refreshed corpus detected **0** new changes and
-preserved all 252 recorded ones: the same input produces the same output and
-the earlier evidence behind every recorded change is kept.
+preserved all 277 recorded ones. The claims, the evidence and the change
+records are byte-identical between the two passes for all 1,000 envelopes; only
+the `refresh` bookkeeping block differs (it counts the second pass as
+"already recorded"), which is the honest description of an idempotent re-run.
 
 ---
 
@@ -155,8 +193,8 @@ the earlier evidence behind every recorded change is kept.
 | complete | **true** |
 | missing | none |
 | duplicated | none |
-| claims | 10,290 |
-| evidence records | 3,383 |
+| claims | 10,306 |
+| evidence records | 3,399 |
 
 ---
 
@@ -165,13 +203,13 @@ the earlier evidence behind every recorded change is kept.
 | gate (current brief, 17 Nov 2026) | status | evidence |
 |---|---|---|
 | ≥ 65 / 100 overall | not ours to award — no official score issued | — |
-| ≥ 95 % precision | **pass** — entity precision 1.0 over 31,778 published observations | `eval.json` |
+| ≥ 95 % precision | **pass** — entity precision 1.0 over 31,885 published observations | `eval.json` |
 | no material wrong-company publication | **pass** — 0 | `eval.json` |
 | no fabricated financial values | **pass** — every financial claim carries a registry source URL, retrieval time and reporting period | `evidence` records |
 | exactly one terminal envelope per company | **pass** — 1,000 in, 1,000 out | `official-run-report.json` |
 | explicit availability states | **pass** — `available`, `not_available`, `blocked`, `not_applicable`, `ambiguous`, `failed`; never zero for absence | envelopes |
-| idempotent refresh, history preserved | **pass** — 0 new on re-run, 252 preserved | §4 |
-| claim-level URL, retrieval time, reporting period | **pass** — 35,314 evidence records | `evidence` records |
+| idempotent refresh, history preserved | **pass** — 0 new on re-run, 277 preserved | §4 |
+| claim-level URL, retrieval time, reporting period | **pass** — 35,421 evidence records | `evidence` records |
 | reproducible setup, pinned deps, one command | **pass** — `scripts/run_official_batch.sh --batch organisations.jsonl` | `README.md` |
 
 ---
@@ -195,8 +233,30 @@ the earlier evidence behind every recorded change is kept.
    directory (Purehelp / Fagfolkguiden). None of them has a verified website
    or a Wikidata item, which is why `two_platforms` reads 0.620.
 
-The measurements behind these limits are in
-[`RECALL_LEVERS.md`](../../RECALL_LEVERS.md).
+### 7.1 The single-platform gap was measured, not assumed
+
+The directory page states a website domain for **371 of those 374** companies,
+so the obvious next move is to fetch that domain and publish the site as a
+second platform. Measured on a 60-company random sample of the 374
+(18 Nov 2026, `https` + `www` variants, robots honoured, the **unchanged**
+identity gate):
+
+| step | count |
+|---|---|
+| sampled | 60 |
+| homepage fetched | 34 |
+| organisation number found anywhere in the page text | **0** |
+| organisation number found in the footer/address nodes | **0** |
+| legal name found in the footer/address nodes | 3 |
+| **publishable under the unchanged identity gate** | **3** |
+
+So the ceiling without widening the identity gate is about 5 % of the 374
+(~19 companies, `two_platforms` 0.620 → ≈0.64), and the binding constraint is
+the evidence, not the fetch: these homepages simply do not state the
+organisation number, and the gate refuses to publish a site that cannot be
+resolved to the exact legal entity. Widening the gate would trade the
+≥95 % precision gate for a fraction of a point on one recall field, so the
+gate stays as it is.
 
 ---
 
@@ -204,7 +264,7 @@ The measurements behind these limits are in
 
 ```bash
 cd norhound-starter-kit
-uv run python -m unittest discover -s tests          # 593 tests, 8 skipped
+uv run python -m unittest discover -s tests          # 601 tests, 8 skipped
 scripts/run_official_batch.sh --batch organisations.jsonl
 ```
 

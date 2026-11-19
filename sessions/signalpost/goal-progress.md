@@ -5,6 +5,7 @@ cycle | value (0-50) | delta from baseline | delta from previous
 1 | 30.13 | -6.8783 | -6.8783
 2 | 22.4333 | -14.5750 | -7.6967
 3 | 22.3833 | -14.6250 | -0.0500
+4 | 22.3833 | -14.6250 | 0.0000
 
 ## Reading
 
@@ -17,6 +18,18 @@ cycle | value (0-50) | delta from baseline | delta from previous
   evaluator's own command (`scripts/run_official_batch.sh`, run
   `fresh-20261117T213100Z`). The last 0.05 is run-to-run noise: 13 role cards
   became 14 and `two_platforms` moved 0.627 -> 0.620.
+- **Cycle 4 (22.3833)** — the news-depth pass (`newsdepth-20261118T120128Z`)
+  deepened the claim count without moving the proxy: 86 news observations over
+  86 companies became 194 over the same 86 (172 dated, was 64), and the corpus
+  grew from 105,164 to 105,266 claims and from 35,314 to 35,421 evidence
+  records. The six-field proxy counts *whether* a company has a dated news
+  fact, not how many, and those 86 companies already had one, so the proxy is
+  unchanged at 22.3833 by construction. Precision held at 1.0 with 0
+  wrong-company publications. The two remaining levers were measured and
+  closed as source ceilings: the directory-domain route to a second platform
+  (~5 % ceiling on a 60-company sample) and the careers-page route to hiring
+  (46 companies, generic open-application copy, no role card with an apply
+  action).
 
 The six-field proxy is **our** measure, not the graded metric. The graded
 Recall metric is measured by the organisers against the union of what all

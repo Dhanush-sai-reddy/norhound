@@ -1,6 +1,6 @@
 # Signalpost: Project Analysis & Recall Improvement Strategy
 
-## 📊 Where We Stand (measured 18 Nov 2026, run `fresh-20261117T213100Z`)
+## 📊 Where We Stand (measured 18 Nov 2026, run `newsdepth-20261118T120128Z`)
 
 **No official score has been issued for the current revision.** The only numbers
 below are the ones this repository reproduces itself with
@@ -17,7 +17,7 @@ the graded metric.
 | sentiment | 0.032 | 0.27 | 8.07 |
 | **Six-field proxy** | | **22.38 / 50** | **27.62** |
 
-Source: `out/run-fresh-20261117T213100Z/measure-final.json`.
+Source: `out/run-newsdepth-20261118T120128Z/measure-final.json`.
 
 `workforce_snapshot` (headcount: 0.575 of companies) is reported beside these
 six fields and excluded from the proxy. Only **14 of 1,000** companies have a
@@ -105,7 +105,7 @@ Below is the complete mapping of every single requirement, diagnostic note, and 
 
 ## 📉 Field-by-Field Recall Diagnosis
 
-Measured 18 Nov 2026 (`out/run-fresh-20261117T213100Z/`), six fields, each worth
+Measured 18 Nov 2026 (`out/run-newsdepth-20261118T120128Z/`), six fields, each worth
 8.33 of 50:
 
 | Field | Recall | Points | Status | Why |
@@ -417,5 +417,5 @@ Phase 4 (If time permits):
 5. **Company-owned copy ≠ independent sentiment** — promotional text can't be sentiment evidence
 6. **Restricted platforms** — LinkedIn, Meta, Glassdoor, Indeed scraping prohibited
 7. **Cost** — the shipped pipeline is keyless: **$0 external spend** per official batch
-8. **Run budget** — the current brief states each official run has a fixed time and resource budget supplied by Builderr and publishes no numbers. The older 45 min / 2,000 requests / $10 figures belong to the superseded 100-company Unstop listing; the measured rate of the shipped pipeline is **11.8 minutes per 100 companies** (117.7 min per 1,000, measured end-to-end on the 17 Nov 2026 rehearsal, 21,159 requests measured)
+8. **Run budget** — the current brief states each official run has a fixed time and resource budget supplied by Builderr and publishes no numbers. The older 45 min / 2,000 requests / $10 figures belong to the superseded 100-company Unstop listing; the measured rate of the shipped pipeline is **11.9 minutes per 100 companies** (119.2 min per 1,000, measured end-to-end over the 17 Nov 2026 rehearsal plus the 18 Nov news-depth pass, 22,166 requests measured)
 9. **One envelope per company** in every official batch, with explicit availability states and idempotent refresh

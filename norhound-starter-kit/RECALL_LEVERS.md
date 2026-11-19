@@ -7,7 +7,7 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 
 `scripts/measure_recall.py` scores six fields, each worth 8.33 of 50 points
 (mean of the six × 50). Values below are from the shipped run
-`out/run-fresh-20261117T213100Z/measure-final.json`:
+`out/run-newsdepth-20261118T120128Z/measure-final.json`:
 
 | field | recall | points | headroom left |
 |---|---|---|---|
@@ -173,7 +173,7 @@ Both are defensible; mixing them is not. Enabling Places while still claiming
 
 ## 6. Why the six-field proxy is near-maxed but per-company depth is not
 
-Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,164
+Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,266
 claims):
 
 | family | claims | share | companies |

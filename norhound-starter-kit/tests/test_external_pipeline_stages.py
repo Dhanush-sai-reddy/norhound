@@ -247,4 +247,5 @@ class NewsBodyRetentionTests(unittest.TestCase):
         """One page per company: the body read is capped, not unbounded."""
         extractor = (ROOT / "scripts" / "extract_company_site_news.py").read_text(encoding="utf-8")
         self.assertIn("read(200000)", extractor)
-        self.assertIn("body[:5000]", extractor)
+        self.assertIn("BODY_EXCERPT_LIMIT = 5000", extractor)
+        self.assertIn("body[:BODY_EXCERPT_LIMIT]", extractor)
