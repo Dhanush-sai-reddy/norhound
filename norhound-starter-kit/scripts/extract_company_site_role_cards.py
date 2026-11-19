@@ -144,6 +144,23 @@ NEGATION = re.compile(
 # "Vi søker en BPA-assistent" — the role named in the body copy.
 ROLE_BODY = re.compile(r"vi\s+s[øo]ker\s+(?:en\s+|til\s+|deg\s+som:?\s*)?([^.!?\n]{3,80})", re.I)
 
+# A role title must name a ROLE. A live probe published "FACEBOOK",
+# "Hovedlenker topp", "Job opportunities" and "Internasjonalisering" as job
+# titles: those are navigation labels and prose, not roles. Requiring a
+# role-indicating token keeps the title claim honest.
+ROLE_TOKEN = re.compile(
+    r"(stilling|stillinger|rolle|roller|manager|leder|ledere|sjef|"
+    r"direkt[øo]r|assistent|assistenter|medarbeider|utvikler|ingeni[øo]r|"
+    r"konsulent|r[åa]dgiver|sykepleier|psykolog|sykolog|lege|l[æa]rer|"
+    r"pedagog|elektriker|operat[øo]r|mont[øo]r|sveiser|kokk|servit[øo]r|"
+    r"selger|salgs|analytiker|designer|koordinator|controller|regnskapsf[øo]rer|"
+    r"saksbehandler|innkj[øo]pssjef|prosjektleder|skrivetalent|markedsf[øo]rer|"
+    r"innholdsprodusent|grafiker|journalist|fotograf|trainee|praktikant|"
+    r"internship|engineer|developer|specialist|technician|supervisor|"
+    r"deltidsjobb|heltidsjobb|dr[øo]mmejobb|vakans|vacanc|position)",
+    re.I,
+)
+
 MAX_BODY_EXCERPT = 600
 FETCH_TIMEOUT = 15.0
 FETCH_MAX_BYTES = 1_500_000
@@ -264,6 +281,8 @@ def _clean_title(text: str, profile: dict) -> str | None:
     if len(value.split()) > 14:
         return None
     if sum(1 for character in value if character.isalpha()) < 3:
+        return None
+    if not ROLE_TOKEN.search(value):
         return None
     name = " ".join(str(profile.get("name") or "").casefold().split())
     if value.casefold() == name:

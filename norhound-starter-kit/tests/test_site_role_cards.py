@@ -159,6 +159,28 @@ class RoleCardRules(unittest.TestCase):
         url = SITE + "ledige-stillinger/senior-digital-markedsforer"
         self.assertEqual(observations(profile, {url: page.encode("utf-8")}), [])
 
+    def test_generic_navigation_and_prose_titles_are_not_role_cards(self):
+        """A live probe published 'FACEBOOK', 'Job opportunities' and
+        'Hovedlenker topp' as job titles. A real role title names a role."""
+        profile = _profile(pages=[_page(SITE + "ledige-stillinger")])
+        for title in (
+            "FACEBOOK", "Send jobbsøknad", "Jobb hos EmmaSofia", "Job opportunities",
+            "Internasjonalisering", "BLI EN DEL AV TEAMET", "Hovedlenker topp",
+            "MF International", "En av våre verdier er VERDISKAPNING",
+            "Hvem ser vi etter?", "Søke jobb", "Jobbsøker",
+        ):
+            page = (
+                "<html><body><h1>" + title + "</h1>"
+                "<p>APRIIL REKLAME AS har flere stillinger.</p>"
+                '<a href="mailto:hr@apriil.no?subject=Soknad">Søk på stillingen</a>'
+                "</body></html>"
+            )
+            url = SITE + "ledige-stillinger/" + title.replace(" ", "-").lower()
+            self.assertEqual(
+                observations(profile, {url: page.encode("utf-8")}), [],
+                f"{title!r} must not be published as a role card",
+            )
+
     def test_role_cards_are_bounded_and_sorted(self):
         pages = [_page(SITE + "ledige-stillinger")]
         profile = _profile(pages=pages)
