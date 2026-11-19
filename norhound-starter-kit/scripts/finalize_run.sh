@@ -57,7 +57,7 @@ INPUTS=()
 #                          its parts would insert every row twice
 #   batch.external.jsonl, batch.enriched.jsonl, batch.labels.jsonl
 #                        — derived from the merge, never an input to it
-for tag in activity news jobs rolecards sole-declarer ats nav nav-search registry-site purehelp \
+for tag in activity news jobs rolecards sole-declarer gleif ats nav nav-search registry-site purehelp \
            workforce-registry workforce-pdf fagfolk google-news kunngjoring \
            contacts sitedesc substruct sitemap updates wikidata; do
   f="$OUT/batch.$tag.jsonl"

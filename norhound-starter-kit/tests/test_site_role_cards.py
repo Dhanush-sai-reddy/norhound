@@ -181,6 +181,22 @@ class RoleCardRules(unittest.TestCase):
                 f"{title!r} must not be published as a role card",
             )
 
+    def test_a_group_site_naming_another_entity_is_rejected(self):
+        """A group domain declared in BRREG can host a subsidiary's vacancy.
+
+        The host-only proof must not publish that vacancy under the parent.
+        """
+        profile = _profile(pages=[_page(SITE + "ledige-stillinger")])
+        # The page is on the declared host (apriil.no) but names another entity.
+        page = """
+        <html><body><h1>Senior digital markedsfører</h1>
+        <p>Other Subsidiary AS (org. 999888777) søker en senior digital markedsfører.</p>
+        <a href="mailto:hr@apriil.no?subject=S%C3%B8knad">Søk på stillingen</a>
+        </body></html>
+        """
+        url = SITE + "ledige-stillinger/senior-digital-markedsforer"
+        self.assertEqual(observations(profile, {url: page.encode("utf-8")}), [])
+
     def test_role_cards_are_bounded_and_sorted(self):
         pages = [_page(SITE + "ledige-stillinger")]
         profile = _profile(pages=pages)

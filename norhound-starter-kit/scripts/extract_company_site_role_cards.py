@@ -367,9 +367,38 @@ def apply_actions(html: str) -> list[dict]:
     return actions
 
 
-def identity_ok(page_text: str, profile: dict, host: str) -> bool:
-    """True when the page names this organisation."""
+OTHER_ENTITY_ORG = re.compile(r"\b\d{9}\b")
+OTHER_LEGAL_NAME = re.compile(
+    r"\b([A-ZÆØÅ][\wÆØÅæøå-]{2,}(?:\s+[A-ZÆØÅ][\wÆØÅæøå-]{2,}){0,4})\s+"
+    r"(?:AS|ASA|LTD|INC|GMBH|BA|ENK|APS|SA|DA)\b"
+)
+
+
+def _names_another_entity(page_text: str, profile: dict) -> bool:
+    """True when the page names a different legal entity by number or name."""
     org = str(profile.get("organisation_number") or "")
+    for candidate in OTHER_ENTITY_ORG.findall(page_text or ""):
+        if candidate != org:
+            return True
+    own_tokens = set(_legal_name_tokens(str(profile.get("name") or "")))
+    for match in OTHER_LEGAL_NAME.finditer(page_text or ""):
+        named = set(_legal_name_tokens(match.group(1)))
+        if named and not (named & own_tokens):
+            return True
+    return False
+
+
+def identity_ok(page_text: str, profile: dict, host: str) -> bool:
+    """True when the page names this organisation — and no other one.
+
+    The BRREG-declared host is the weakest proof: a group domain can host a
+    subsidiary's vacancy. Before relying on it, reject any page that names a
+    different legal entity (by organisation number or by legal name), so a
+    group-site vacancy is never published under the parent company.
+    """
+    org = str(profile.get("organisation_number") or "")
+    if _names_another_entity(page_text, profile):
+        return False
     digits = re.sub(r"\D", "", page_text or "")
     if org and org in digits:
         return True

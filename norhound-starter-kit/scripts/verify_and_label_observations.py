@@ -69,10 +69,9 @@ def registered_domain(url: str) -> str | None:
 OFFICIAL_REPORT_PROOF_TYPES = (
     "official_report_url_organisation_number",
     "organisation_number_in_pdf",
-    # GLEIF LEI records carry the Norwegian organisation number in the
-    # `validatedAs` field, validated by Brønnøysundregistrene (RA000472). That
-    # is an official registry assertion, equivalent to an official-API proof.
-    "gleif_registration_validated_as_organisation_number",
+    # GLEIF is handled by its own consistency check below, not by the generic
+    # official-API list: the proof's validated org number must be re-derived
+    # against the profile before it is trusted.
     # Google Places API (New): official API returns the place's websiteUri; the
     # company website was independently resolved from the BRREG registry record.
     # Two authoritative sources agreeing on the exact registered domain is a
@@ -222,8 +221,41 @@ def _sole_declarer_proof_consistent(
     return hits >= required
 
 
+def _gleif_proof_consistent(obs: dict, profile: dict) -> bool:
+    """True when the GLEIF proof actually names this organisation.
+
+    The LEI record's `validatedAs` field is the company's organisation number,
+    validated by Brønnøysundregistrene. The proof's `value` must equal the
+    profile's organisation number; a copied row whose value points at another
+    entity is rejected rather than trusted on proof-type presence alone.
+    """
+    proof = None
+    for candidate in obs.get("identity_proof") or []:
+        if isinstance(candidate, dict) and str(candidate.get("type") or "") == "gleif_registration_validated_as_organisation_number":
+            proof = candidate
+            break
+    if not proof or not str(proof.get("value") or "").strip():
+        return False
+    digits = re.sub(r"\D", "", str(proof["value"]))
+    org = str(profile.get("organisation_number") or "")
+    if not org or digits != org:
+        return False
+    authority = next(
+        (p for p in obs.get("identity_proof") or []
+         if isinstance(p, dict) and str(p.get("type") or "") == "gleif_registration_authority"),
+        None,
+    )
+    if not authority or str(authority.get("value") or "") != "RA000472":
+        return False
+    return bool(str(obs.get("content_sha256") or "").strip())
+
+
 def _identity_proof_kind(obs: dict) -> str:
     """Classify the authoritative identity proof: 'directory', 'official_api', 'wikidata', 'probed_site', or '' (website-only)."""
+    for proof in (obs.get("identity_proof") or []):
+        proof_type = str(proof.get("type") or "")
+        if proof_type == "gleif_registration_validated_as_organisation_number":
+            return "gleif"
     for proof in (obs.get("identity_proof") or []):
         proof_type = str(proof.get("type") or "")
         if "organisation_number_on_official_api" in proof_type:
@@ -319,7 +351,13 @@ def verify(obs: dict, profile: dict, domain_index: dict[str, str] | None = None)
     checks["directory_identity_proof"] = identity_proof_kind == "directory"
     checks["official_api_identity_proof"] = identity_proof_kind == "official_api"
     checks["wikidata_identity_proof"] = identity_proof_kind == "wikidata"
+    checks["gleif_identity_proof"] = identity_proof_kind == "gleif"
     checks["probed_site_identity_proof"] = identity_proof_kind == "probed_site"
+    # A GLEIF LEI proof is only decisive when its validatedAs value names this
+    # organisation and the LEI record body was hashed.
+    checks["gleif_proof_consistent"] = (
+        _gleif_proof_consistent(obs, profile) if identity_proof_kind == "gleif" else True
+    )
     # A Wikidata proof is only decisive when it names this organisation number,
     # carries a valid QID consistent with the entity URL, and hashes the entity
     # JSON; anything else falls back to the ordinary rules.
@@ -380,9 +418,11 @@ def verify(obs: dict, profile: dict, domain_index: dict[str, str] | None = None)
                 except (TypeError, ValueError):
                     pass
                 break
+    gleif_row = checks.get("gleif_identity_proof", False)
     trusted_api_row = bool(
         official_api_row
         or (wikidata_row and checks["wikidata_proof_consistent"])
+        or (gleif_row and checks["gleif_proof_consistent"])
         or (registry_domain_proof is not None and checks["registry_domain_proof_consistent"])
         or (sole_declarer_proof is not None and checks["sole_declarer_proof_consistent"])
         or (probed_site_row and probed_score >= 0.9)
@@ -453,7 +493,22 @@ def main() -> None:
                 row = json.loads(line)
                 domain = str(row.get("domain") or "").lower().lstrip(".")
                 if domain:
-                    domain_index.setdefault(domain, str(row.get("organisation_number") or ""))
+                    domain_index[domain] = str(row.get("organisation_number") or "")
+        # Match the connector's default-deny rule: a domain declared by two
+        # organisations is ambiguous and must not be trusted by either.
+        counts: dict[str, int] = {}
+        opener = gzip.open if args.domain_index.endswith(".gz") else open
+        with opener(args.domain_index, "rt", encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                domain = str(row.get("domain") or "").lower().lstrip(".")
+                if domain:
+                    counts[domain] = counts.get(domain, 0) + 1
+        for domain, count in counts.items():
+            if count > 1:
+                domain_index.pop(domain, None)
 
     profiles = {str(p["organisation_number"]): p for p in read_jsonl(Path(args.profiles))}
     observations = read_jsonl(Path(args.observations))

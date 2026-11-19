@@ -117,18 +117,35 @@ class GLEIFVerifier(unittest.TestCase):
     it did not recognize the proof type.
     """
 
-    def test_gleif_validated_org_number_is_an_official_api_proof(self):
+    def _gleif_row(self, org="916659261"):
         from scripts.run_gleif_connector import observation_for
 
-        row = observation_for("916659261", {
+        return observation_for(org, {
             "lei": "636700LNU9OML0MMGJ23",
             "legal_name": "MALLING & CO INVESTMENT MANAGEMENT AS",
             "registration": {"validatedAs": "916 659 261", "registrationAuthority": {"id": "RA000472"}},
         })
+
+    def test_gleif_validated_org_number_is_an_official_api_proof(self):
+        row = self._gleif_row()
         profile = _profile(org="916659261", name="MALLING & CO INVESTMENT MANAGEMENT AS")
         result = verify(row, profile)
         self.assertEqual(result["exact_entity"], 1)
         self.assertEqual(result["metric_correct"], 1)
+
+    def test_gleif_proof_for_another_organisation_is_rejected(self):
+        row = self._gleif_row()
+        # A row copied from another company's LEI record: the proof's `value`
+        # does not match this profile, even though the row claims to be ours.
+        row["identity_proof"][0]["value"] = "999999999"
+        result = verify(row, _profile(org="916659261"))
+        self.assertEqual(result["exact_entity"], 0)
+
+    def test_gleif_proof_without_a_hashed_body_is_not_metric_correct(self):
+        row = self._gleif_row()
+        row["content_sha256"] = ""
+        result = verify(row, _profile(org="916659261"))
+        self.assertEqual(result["metric_correct"], 0)
 
 
 class SoleDeclarerVerifier(unittest.TestCase):
