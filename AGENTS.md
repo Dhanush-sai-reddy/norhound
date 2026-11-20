@@ -123,18 +123,18 @@ repository can reproduce today with `scripts/measure_recall.py`.
 | field | recall | points | headroom |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.620 | 5.17 | 3.16 |
-| workforce_jobs | 0.014 | 0.12 | 8.21 |
+| two_platforms | 0.629 | 5.24 | 3.09 |
+| workforce_jobs | 0.020 | 0.17 | 8.16 |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **six-field proxy** | | **22.38 / 50** | **27.62** |
+| **six-field proxy** | | **22.51 / 50** | **27.49** |
 
 `workforce_snapshot` (headcount, 0.575) is measured and reported **beside** the
 six fields, not inside the proxy: it is a real workforce fact but not evidence
 of hiring. Counting headcount as hiring made that field read 0.954 and the
 proxy 33.43; the reviewer's rule is that a hiring fact needs a role card, a
-job-feed item or an apply action, so the honest field value is 0.014 (14
+job-feed item or an apply action, so the honest field value is 0.020 (20
 companies with a real role card).
 
 Three field definitions were corrected on 16 Nov 2026 because the originals
@@ -247,13 +247,13 @@ All code lives in `norhound-starter-kit/`. Entry points: `select_entry_batch.py`
 ### Current Coverage (shipped run `newsdepth-20261118T120128Z`, measured over sources outside the register)
 ```
 any_external:      0.994  (99.4%)
-two_platforms:     0.620  (62.0%)
+two_platforms:     0.629  (62.9%)
 buzz_engagement:   0.994  (99.4%)
-workforce_jobs:    0.014  (1.4%)   ← role cards only; careers pages excluded
+workforce_jobs:    0.020  (2.0%)   ← role cards only; careers pages excluded
 workforce_snapshot:0.575  (57.5%)  ← headcount, reported separately
 ratings_reviews:   0.032  (3.2%)
 sentiment:         0.032  (3.2%)
-six-field proxy:  22.38 / 50
+six-field proxy:  22.51 / 50
 ```
 
 ### Test Status
@@ -407,7 +407,7 @@ Everything below is **done** as of 17 Nov 2026. Kept as the recipe.
 
 1. **Patch `run_external_pipeline.py`** to include `--keyless` + NAV jobs by default — done
 2. **Run full pipeline** with all keyless connectors + NAV + Wikidata + reviews + jobs — done (run `fresh-20261117T213100Z` + `newsdepth-20261118T120128Z`)
-3. **Verify coverage improvement** — measured: 22.38/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
+3. **Verify coverage improvement** — measured: 22.51/50 on the corrected six-field proxy; the remaining 27.6 points are all behind a source ceiling (see `norhound-starter-kit/RECALL_LEVERS.md`)
 4. **Implement deterministic summaries** in submission pipeline — done, 1000/1000
 5. **Finn.no job connector** — **vetoed**: no organisation numbers on the site and its terms of service forbid the use
 

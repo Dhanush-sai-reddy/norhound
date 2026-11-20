@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:54.639479Z",
+        "retrieved_at": "2026-11-19T20:08:18.460352Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "992898755",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T21:38:05.917533Z",
+        "retrieved_at": "2026-11-19T20:17:22.130482Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T21:38:00.632467Z",
+        "retrieved_at": "2026-11-19T20:17:20.083324Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T21:38:07.691547Z",
+        "retrieved_at": "2026-11-19T20:17:25.506350Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -202,7 +202,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T21:38:08.573355Z",
+        "retrieved_at": "2026-11-19T20:17:26.771335Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,11 +235,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "992898755",
         "source_type": "official_registry_bulk",
@@ -324,7 +324,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T21:37:59.748544Z",
+        "retrieved_at": "2026-11-19T20:17:18.655141Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -363,7 +363,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T21:38:06.821178Z",
+        "retrieved_at": "2026-11-19T20:17:24.137106Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -410,7 +410,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Hostname did not resolve",
-        "retrieved_at": "2026-11-17T21:38:10.588901Z",
+        "retrieved_at": "2026-11-19T20:17:30.031404Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -420,11 +420,73 @@
       },
       "external_observations": [
         {
+          "id": "gleif-lei-992898755-02ab06d80f84565f",
+          "organisation_number": "992898755",
+          "signal_type": "legal_entity_identifier",
+          "platform": "gleif",
+          "source_url": "https://search.gleif.org/#/record/984500EABCDQ5IR0NF92",
+          "retrieved_at": "2026-11-20T08:22:25.111237Z",
+          "content_sha256": "02ab06d80f84565fdb5e21692964c55df74cbb5ccce64455b756fc5f93f610e0",
+          "exact_entity": true,
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "evidence_span": "GLEIF LEI 984500EABCDQ5IR0NF92 registered to organisation number 992898755 by Brønnøysundregistrene (RA000472); legal name REPOS AS",
+          "identity_proof": [
+            {
+              "type": "gleif_registration_validated_as_organisation_number",
+              "value": "992898755",
+              "source": "https://api.gleif.org/api/v1/lei-records/984500EABCDQ5IR0NF92"
+            },
+            {
+              "type": "gleif_registration_authority",
+              "value": "RA000472"
+            }
+          ],
+          "metrics": {
+            "organisation_number": "992898755",
+            "lei": "984500EABCDQ5IR0NF92",
+            "legal_name": "REPOS AS",
+            "other_names": [],
+            "lei_status": null,
+            "entity_status": null,
+            "entity_status_date": null,
+            "legal_form": {
+              "id": "YI42",
+              "other": null
+            },
+            "registered_as": "992 898 755",
+            "registered_address": {
+              "address_lines": [
+                "Nedre Silkestrå 24"
+              ],
+              "city": "OSLO",
+              "country": "NO",
+              "postal_code": "0375"
+            },
+            "headquarters_address": {
+              "address_lines": [
+                "Nedre Silkestrå 24"
+              ],
+              "city": "OSLO",
+              "country": "NO",
+              "postal_code": "0375"
+            },
+            "registration_status": "ISSUED",
+            "registration_authority": "RA000472",
+            "initial_registration_date": "2026-01-08T20:30:37Z",
+            "last_update_date": "2026-01-08T20:30:37Z",
+            "next_renewal_date": "2027-01-08T20:30:39Z",
+            "corroboration_level": "FULLY_CORROBORATED"
+          },
+          "observed_at": "2026-11-20"
+        },
+        {
           "organisation_number": "992898755",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/992898755",
-          "retrieved_at": "2026-11-17T22:41:02.661083Z",
-          "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+          "retrieved_at": "2026-11-20T08:18:28.475456Z",
+          "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -449,14 +511,14 @@
             "email": "kristoffer@repos.no",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "992898755",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/992898755",
-          "retrieved_at": "2026-11-17T22:41:02.661083Z",
-          "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+          "retrieved_at": "2026-11-20T08:18:28.475456Z",
+          "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -496,14 +558,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.repos.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "992898755",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/992898755",
-          "retrieved_at": "2026-11-17T22:41:02.661083Z",
-          "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+          "retrieved_at": "2026-11-20T08:18:28.475456Z",
+          "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -530,7 +592,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "brreg-kunngjoring-46641e472bacb297e238cd89",
@@ -538,7 +600,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654352&amp;sokeverdi=992898755&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:51Z",
+          "retrieved_at": "2026-11-20T09:16:10Z",
           "content_sha256": "585de2df6223cc6b5ed6b96a85532aa82d55e57889d507535e9097db9bb82ea8",
           "exact_entity": true,
           "identity_proof": [
@@ -567,7 +629,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000019956&amp;sokeverdi=992898755&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:51Z",
+          "retrieved_at": "2026-11-20T09:16:10Z",
           "content_sha256": "69fcdfafe3c993a28256658c60b89637db364a651358c8dd613fdb3f60f765ea",
           "exact_entity": true,
           "identity_proof": [
@@ -596,7 +658,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000673909&amp;sokeverdi=992898755&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:51Z",
+          "retrieved_at": "2026-11-20T09:16:10Z",
           "content_sha256": "cad0d014813b8bcd8733fa41814dbe4b793757c8c562c644b6ed855c63f51210",
           "exact_entity": true,
           "identity_proof": [
@@ -625,8 +687,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -646,7 +708,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-8858b0efcd61ab35980770b6",
@@ -654,8 +716,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -675,13 +737,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "992898755",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=992898755&size=1000",
-          "retrieved_at": "2026-11-17T21:38:08.573355Z",
+          "retrieved_at": "2026-11-19T20:17:26.771335Z",
           "content_sha256": "578f38c2fd3306e6c9c75b237a41d392340e759eb461d4d0097467174efd7698",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -704,7 +766,7 @@
             "municipality": "BÆRUM",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-update-fd00de9e3082027bdc08fc7c",
@@ -712,7 +774,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "fd00de9e3082027bdc08fc7c72aa9967fc8c238fbd312f315c2c94a184961298",
           "observed_at": "2026-08-03",
           "exact_entity": true,
@@ -742,7 +804,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ef1813940ceffb37d39f5217c86805e3c2dcab14a0e58c5f8d7f05379fa85b5e",
           "observed_at": "2026-01-19",
           "exact_entity": true,
@@ -772,7 +834,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "8fda6dc9dee2d338e424bc56a3c84fb20e6b5292536df653029bee1174ce16b4",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -802,7 +864,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "832cee3eece00c90000c3a6b104f1ad680939c12861db5bd2694e5a27be95777",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -832,7 +894,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "8cdee2e67e02518ac0de73cac557c8e4e502cc1274867ca030857723003b6c0c",
           "observed_at": "2025-08-04",
           "exact_entity": true,
@@ -862,7 +924,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "37ec795940708ac9a2dd885f2b99e32659bdf5132469a397f19eef5861836e15",
           "observed_at": "2025-02-15",
           "exact_entity": true,
@@ -892,7 +954,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "06d9e8d6f50ed38afabe4b01fca52b27b2887371ae80453dd19e622f0ff2c5e3",
           "observed_at": "2024-08-03",
           "exact_entity": true,
@@ -922,7 +984,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "8fb990503241af424c757e5d0c6bf0844035e6e1b10c62ee06f64e8c0358f79b",
           "observed_at": "2023-07-05",
           "exact_entity": true,
@@ -952,7 +1014,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e06a2d700b4d66a43390ec1c1e8ce174b57efd5e3ce73f3e02ad11dd308d4e0a",
           "observed_at": "2022-08-02",
           "exact_entity": true,
@@ -982,7 +1044,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "97fa647c343a0416bed12f7b9a982aed332f56bde7e27b460a0120e4acef087e",
           "observed_at": "2021-10-04",
           "exact_entity": true,
@@ -1012,7 +1074,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "489e2e73a7b1e0eee1a8707a312b35bd75c215dceaed33de55d02e06c0337ab6",
           "observed_at": "2021-05-20",
           "exact_entity": true,
@@ -1042,7 +1104,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "16941bb22b5bece911cd7dc0338087c3b4759163a4855b1c1ebe1bd942a92138",
           "observed_at": "2020-10-08",
           "exact_entity": true,
@@ -1072,7 +1134,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "4446c82bde93f871a55c7b5de121d020faf9a11cfd2351ea2a9a9f6ba8e224d0",
           "observed_at": "2019-07-15",
           "exact_entity": true,
@@ -1102,7 +1164,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "5a8cf71acc8a1feda6e382a2f002822521d610aa98295136b73c1a7f1d907077",
           "observed_at": "2018-07-07",
           "exact_entity": true,
@@ -1140,12 +1202,12 @@
     "run_metrics": {
       "bytes": 9908,
       "latencies_ms": [
-        913,
-        883,
-        893,
-        903,
-        869,
-        881
+        1450,
+        1427,
+        2046,
+        2006,
+        1368,
+        1264
       ],
       "requests": 6
     },
@@ -1156,7 +1218,7 @@
     "company_name": "REPOS AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "REPOS AS is a private limited company operating in Bedriftsrådgivning og annen administrativ rådgivning. Latest accounts (2025): annual result NOK -46.6k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. No fields changed since the previous run. Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); hiring (no job sources were checked).",
+    "summary": "REPOS AS is a private limited company operating in Bedriftsrådgivning og annen administrativ rådgivning. Latest accounts (2025): annual result NOK -46.6k. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. 1 field(s) changed since run fresh-20261117T213100Z: legal_entity_identifier (1 added); added: GLEIF LEI 984500EABCDQ5IR0NF92 registered to organisation number 9928… [source: https://search.gleif.org/#/record/984500EABCDQ5IR0NF92]. Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1240,10 +1302,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "1 field(s) changed since run fresh-20261117T213100Z: legal_entity_identifier (1 added); added: GLEIF LEI 984500EABCDQ5IR0NF92 registered to organisation number 9928… [source: https://search.gleif.org/#/record/984500EABCDQ5IR0NF92].",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
           "https://data.brreg.no/enhetsregisteret/api/enheter/992898755/roller",
@@ -1280,7 +1342,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:54.639479Z",
+      "retrieved_at": "2026-11-19T20:08:18.460352Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "992898755",
       "source_type": "official_rule_interpretation",
@@ -1300,7 +1362,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T21:38:05.917533Z",
+      "retrieved_at": "2026-11-19T20:17:22.130482Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1394,7 +1456,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T21:38:00.632467Z",
+      "retrieved_at": "2026-11-19T20:17:20.083324Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1459,7 +1521,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T21:38:07.691547Z",
+      "retrieved_at": "2026-11-19T20:17:25.506350Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1473,7 +1535,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T21:38:08.573355Z",
+      "retrieved_at": "2026-11-19T20:17:26.771335Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1506,11 +1568,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "992898755",
       "source_type": "official_registry_bulk",
@@ -1595,7 +1657,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T21:37:59.748544Z",
+      "retrieved_at": "2026-11-19T20:17:18.655141Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1634,7 +1696,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T21:38:06.821178Z",
+      "retrieved_at": "2026-11-19T20:17:24.137106Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1681,7 +1743,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Hostname did not resolve",
-      "retrieved_at": "2026-11-17T21:38:10.588901Z",
+      "retrieved_at": "2026-11-19T20:17:30.031404Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -1691,11 +1753,73 @@
     },
     "external_observations": [
       {
+        "id": "gleif-lei-992898755-02ab06d80f84565f",
+        "organisation_number": "992898755",
+        "signal_type": "legal_entity_identifier",
+        "platform": "gleif",
+        "source_url": "https://search.gleif.org/#/record/984500EABCDQ5IR0NF92",
+        "retrieved_at": "2026-11-20T08:22:25.111237Z",
+        "content_sha256": "02ab06d80f84565fdb5e21692964c55df74cbb5ccce64455b756fc5f93f610e0",
+        "exact_entity": true,
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "evidence_span": "GLEIF LEI 984500EABCDQ5IR0NF92 registered to organisation number 992898755 by Brønnøysundregistrene (RA000472); legal name REPOS AS",
+        "identity_proof": [
+          {
+            "type": "gleif_registration_validated_as_organisation_number",
+            "value": "992898755",
+            "source": "https://api.gleif.org/api/v1/lei-records/984500EABCDQ5IR0NF92"
+          },
+          {
+            "type": "gleif_registration_authority",
+            "value": "RA000472"
+          }
+        ],
+        "metrics": {
+          "organisation_number": "992898755",
+          "lei": "984500EABCDQ5IR0NF92",
+          "legal_name": "REPOS AS",
+          "other_names": [],
+          "lei_status": null,
+          "entity_status": null,
+          "entity_status_date": null,
+          "legal_form": {
+            "id": "YI42",
+            "other": null
+          },
+          "registered_as": "992 898 755",
+          "registered_address": {
+            "address_lines": [
+              "Nedre Silkestrå 24"
+            ],
+            "city": "OSLO",
+            "country": "NO",
+            "postal_code": "0375"
+          },
+          "headquarters_address": {
+            "address_lines": [
+              "Nedre Silkestrå 24"
+            ],
+            "city": "OSLO",
+            "country": "NO",
+            "postal_code": "0375"
+          },
+          "registration_status": "ISSUED",
+          "registration_authority": "RA000472",
+          "initial_registration_date": "2026-01-08T20:30:37Z",
+          "last_update_date": "2026-01-08T20:30:37Z",
+          "next_renewal_date": "2027-01-08T20:30:39Z",
+          "corroboration_level": "FULLY_CORROBORATED"
+        },
+        "observed_at": "2026-11-20"
+      },
+      {
         "organisation_number": "992898755",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/992898755",
-        "retrieved_at": "2026-11-17T22:41:02.661083Z",
-        "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+        "retrieved_at": "2026-11-20T08:18:28.475456Z",
+        "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1720,14 +1844,14 @@
           "email": "kristoffer@repos.no",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "992898755",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/992898755",
-        "retrieved_at": "2026-11-17T22:41:02.661083Z",
-        "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+        "retrieved_at": "2026-11-20T08:18:28.475456Z",
+        "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1767,14 +1891,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.repos.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "992898755",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/992898755",
-        "retrieved_at": "2026-11-17T22:41:02.661083Z",
-        "content_sha256": "c41872f54cd9b15558bb5a5a0a98b1dc5c54887f389a790aff8cb2d14c7ac31c",
+        "retrieved_at": "2026-11-20T08:18:28.475456Z",
+        "content_sha256": "b6cb52b67a52246b3ff499fabde7b15c231872ccfbb96fd62fe6b547a56ef0c6",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1801,7 +1925,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "brreg-kunngjoring-46641e472bacb297e238cd89",
@@ -1809,7 +1933,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000654352&amp;sokeverdi=992898755&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:51Z",
+        "retrieved_at": "2026-11-20T09:16:10Z",
         "content_sha256": "585de2df6223cc6b5ed6b96a85532aa82d55e57889d507535e9097db9bb82ea8",
         "exact_entity": true,
         "identity_proof": [
@@ -1838,7 +1962,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000019956&amp;sokeverdi=992898755&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:51Z",
+        "retrieved_at": "2026-11-20T09:16:10Z",
         "content_sha256": "69fcdfafe3c993a28256658c60b89637db364a651358c8dd613fdb3f60f765ea",
         "exact_entity": true,
         "identity_proof": [
@@ -1867,7 +1991,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000673909&amp;sokeverdi=992898755&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:51Z",
+        "retrieved_at": "2026-11-20T09:16:10Z",
         "content_sha256": "cad0d014813b8bcd8733fa41814dbe4b793757c8c562c644b6ed855c63f51210",
         "exact_entity": true,
         "identity_proof": [
@@ -1896,8 +2020,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1917,7 +2041,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-8858b0efcd61ab35980770b6",
@@ -1925,8 +2049,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1946,13 +2070,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "992898755",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=992898755&size=1000",
-        "retrieved_at": "2026-11-17T21:38:08.573355Z",
+        "retrieved_at": "2026-11-19T20:17:26.771335Z",
         "content_sha256": "578f38c2fd3306e6c9c75b237a41d392340e759eb461d4d0097467174efd7698",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1975,7 +2099,7 @@
           "municipality": "BÆRUM",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-update-fd00de9e3082027bdc08fc7c",
@@ -1983,7 +2107,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "fd00de9e3082027bdc08fc7c72aa9967fc8c238fbd312f315c2c94a184961298",
         "observed_at": "2026-08-03",
         "exact_entity": true,
@@ -2013,7 +2137,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ef1813940ceffb37d39f5217c86805e3c2dcab14a0e58c5f8d7f05379fa85b5e",
         "observed_at": "2026-01-19",
         "exact_entity": true,
@@ -2043,7 +2167,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "8fda6dc9dee2d338e424bc56a3c84fb20e6b5292536df653029bee1174ce16b4",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2073,7 +2197,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "832cee3eece00c90000c3a6b104f1ad680939c12861db5bd2694e5a27be95777",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -2103,7 +2227,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "8cdee2e67e02518ac0de73cac557c8e4e502cc1274867ca030857723003b6c0c",
         "observed_at": "2025-08-04",
         "exact_entity": true,
@@ -2133,7 +2257,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "37ec795940708ac9a2dd885f2b99e32659bdf5132469a397f19eef5861836e15",
         "observed_at": "2025-02-15",
         "exact_entity": true,
@@ -2163,7 +2287,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "06d9e8d6f50ed38afabe4b01fca52b27b2887371ae80453dd19e622f0ff2c5e3",
         "observed_at": "2024-08-03",
         "exact_entity": true,
@@ -2193,7 +2317,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "8fb990503241af424c757e5d0c6bf0844035e6e1b10c62ee06f64e8c0358f79b",
         "observed_at": "2023-07-05",
         "exact_entity": true,
@@ -2223,7 +2347,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e06a2d700b4d66a43390ec1c1e8ce174b57efd5e3ce73f3e02ad11dd308d4e0a",
         "observed_at": "2022-08-02",
         "exact_entity": true,
@@ -2253,7 +2377,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "97fa647c343a0416bed12f7b9a982aed332f56bde7e27b460a0120e4acef087e",
         "observed_at": "2021-10-04",
         "exact_entity": true,
@@ -2283,7 +2407,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "489e2e73a7b1e0eee1a8707a312b35bd75c215dceaed33de55d02e06c0337ab6",
         "observed_at": "2021-05-20",
         "exact_entity": true,
@@ -2313,7 +2437,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "16941bb22b5bece911cd7dc0338087c3b4759163a4855b1c1ebe1bd942a92138",
         "observed_at": "2020-10-08",
         "exact_entity": true,
@@ -2343,7 +2467,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "4446c82bde93f871a55c7b5de121d020faf9a11cfd2351ea2a9a9f6ba8e224d0",
         "observed_at": "2019-07-15",
         "exact_entity": true,
@@ -2373,7 +2497,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/992898755",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "5a8cf71acc8a1feda6e382a2f002822521d610aa98295136b73c1a7f1d907077",
         "observed_at": "2018-07-07",
         "exact_entity": true,
@@ -2399,5 +2523,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:22.075776+00:00"
+  "generated_at": "2026-11-20T12:49:21.726151+00:00"
 }

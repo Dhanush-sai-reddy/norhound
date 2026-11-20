@@ -275,7 +275,7 @@ promoted to `out/submission/` by
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,266 claims** backed by **35,421 evidence records** across 1,000
+- **113,439 claims** backed by **43,756 evidence records** across 1,000
   terminal envelopes.
 - **50 published job-posting observations** across 14 companies merged
   into the audit (NAV's official feed, `official_api` acquisition, resolved via
@@ -288,9 +288,9 @@ promoted to `out/submission/` by
   evidence (answers carry confidence and citation-integrity validation); a
   static site renders the directory and per-company pages over `file://`.
 - Coverage over sources outside the register: any_external 0.994,
-  two_platforms 0.620, buzz_engagement 0.994, workforce_jobs 0.014,
+  two_platforms 0.629, buzz_engagement 0.994, workforce_jobs 0.020,
   workforce_snapshot 0.575 (headcount, reported separately), ratings_reviews
-  0.032, sentiment 0.032. Six-field recall proxy **22.38 / 50**.
+  0.032, sentiment 0.032. Six-field recall proxy **22.51 / 50**.
 - 601 tests pass by default (8 skipped).
 
 Canonical shipped artifacts: `out/submission/envelopes.jsonl` (1,000 terminal

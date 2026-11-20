@@ -12,8 +12,8 @@ All probes below were run on 16 Nov 2026 against the live sites, while the
 | field | recall | points | headroom left |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.620 | 5.17 | **3.16** |
-| workforce_jobs | 0.014 | 0.12 | **8.21** |
+| two_platforms | 0.629 | 5.24 | **3.09** |
+| workforce_jobs | 0.020 | 0.17 | **8.16** |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | **8.07** |
 | sentiment | 0.032 | 0.27 | **8.07** |
@@ -173,7 +173,7 @@ Both are defensible; mixing them is not. Enabling Places while still claiming
 
 ## 6. Why the six-field proxy is near-maxed but per-company depth is not
 
-Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 105,266
+Measured on the shipped corpus (`out/submission/`, 1,000 envelopes, 113,439
 claims):
 
 | family | claims | share | companies |
@@ -226,7 +226,7 @@ that can hold far more. Presence is solved; per-company depth is not.
    "Marketing" were published as job titles on 38 companies. It now emits
    `careers_page` + `careers_url`, and `jobs_feed_discovery` is no longer a
    trusted role strategy, so `workforce_jobs` fell from an inflated 0.051 to
-   the honest **0.014** (14 companies with a real role card, all from NAV's
+   the honest **0.020** (20 companies with a real role card, from NAV and the company-site connector)
    official feed).
    The remaining lever is the NAV index — it is the only keyless source of real
    adverts. Widening its window from 183 days, or matching adverts by

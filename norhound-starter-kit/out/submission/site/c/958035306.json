@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:52.385732Z",
+        "retrieved_at": "2026-11-19T20:08:15.481368Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "958035306",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:46.146964Z",
+        "retrieved_at": "2026-11-19T20:59:57.860452Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:39.277910Z",
+        "retrieved_at": "2026-11-19T20:59:56.610336Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T22:08:47.943600Z",
+        "retrieved_at": "2026-11-19T21:00:00.695351Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -202,7 +202,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:48.818449Z",
+        "retrieved_at": "2026-11-19T21:00:02.038522Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,11 +235,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "958035306",
         "source_type": "official_registry_bulk",
@@ -325,7 +325,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:38.401662Z",
+        "retrieved_at": "2026-11-19T20:59:55.351116Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -375,7 +375,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:47.039096Z",
+        "retrieved_at": "2026-11-19T20:59:59.157947Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -466,7 +466,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -545,7 +545,7 @@
           "organisation_number": "958035306",
           "platform": "company_site",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "exact_entity": true,
           "identity_proof": [
@@ -554,7 +554,7 @@
               "domain": "profil-lakkering.no",
               "register_field": "hjemmeside",
               "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-17",
+              "index_as_of": "2026-11-19",
               "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
             },
             {
@@ -577,7 +577,39 @@
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
+        },
+        {
+          "id": "company-site-news-97851ab2ff8acb67b1841dfd",
+          "organisation_number": "958035306",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://profil-lakkering.no/referanser",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
+          "content_sha256": "859f774c9b82a919827ab8eac97efd1ffd2158be6cb305f142749a0ee33a3b97",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Company news/activity page",
+          "metrics": {
+            "title": "Company news/activity page",
+            "captured_news_pages": 1,
+            "item_role": "primary",
+            "interpretation": "Company-owned activity; not independent sentiment.",
+            "sitemap_lastmod": "2025-12-03",
+            "body_excerpt": "<!DOCTYPE html> <html lang=\"no\" data-currency=\"EUR\" data-lang=\"no\" data-countrycode=\"nb_NO\" data-rHash=\"adf71fbb91d312f545bf94116c81c7f3\" dir=\"auto\" data-cookiebot=\"true\"> <head> <meta charset=\"UTF-8\"/> <script>window.addEventListener(\"CookiebotOnDialogInit\",function(){if (Cookiebot.getDomainUrlParam(\"autoAcceptCookies\") === \"true\")Cookiebot.setOutOfRegion();});</script><script async fetchpriority=\"high\" id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"4abfbc9f-58fd-4a0d-8f1a-f68f83b1cbf3\" data-blockingmode=\"auto\" data-culture=\"nb\" type=\"text/javascript\"></script><title>Profillakkering med moderne utstyr</title><meta name=\"keywords\" content=\"profillakkering, pulverlakkering, overflatebehandling, foliering, aluminiumprofiler, lager tjenester, logistikk tjenester\"><meta name=\"description\" content=\"Moderne overflatebehandlingstjenester der kvalitet, leveringspresisjon og miljø med nullutslipp er avgjørende.\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:url\" content=\"https://profil-lakkering.no/referanser\"><meta property=\"og:image\" content=\"https://profil-lakkering.no/uploads/Y6TN6VIq/9-c3173ddf46c2eab83a6e6417e45e392c.jpg\"><link rel='canonical' href='https://profil-lakkering.no/referanser'/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel='shortcut icon' type='image/x-icon' href='/uploads/URxUjeIn/favicon.ico'/><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/cookiebotVideoPlaceholder.css?1794394802543\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/grids.css?1794394802543\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/hcaptcha.css?1794394802543\"><link rel=\"stylesheet\" href=\"/assets/user-style.css?1764932784\"><link rel=\"stylesheet\" id=\"style_site\" href=\"/assets/sitestyle.css?1764932784\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\"><!--[if lt IE 9]><script src=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/js/html5shiv.js\"></script><script src=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/js/respond.js\"></script><![endif]--><script>if ('serviceWorker' in navigator){ navigator.serviceWorker.getRegistrations().then(function(registrations){ for(var i=0;i<registrations.length;i++){ registrations[i].unregister(); } }); if(window.caches){ caches.keys().then(function(names){ for(var i=0;i<names.length;i++){ caches.delete(names[i]); } }); } }</script><link rel=\"preconnect\" href=\"https://site-assets.cdnmns.com/\" crossorigin><link rel=\"preconnect\" href=\"https://fonts.prod.extra-cdn.com\" crossorigin> <script>window.ASSETSURL='https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61';</script></head> <body id=\"p3731\" data-dateformat='d/m/Y' data-req=\"lazyload,quicklink\"> <div id=\"r5001\" class=\"row designRow\"> <div class=\"container container-fluid\"><div class=\"col col-sm-12\"> <header><div class=\"row \"> <div class=\"container container-fixed\"><div class=\"col col-sm-12\"><div id=\"m2651\" class=\"module facebooklike\" data-req=\"fbsdk\"> <div class=\"cookie-facebook-small cookieconsent-optout-marketing\"> <div class='cookiebot-placeholder cookieconsent-optout-marketing cookie-fit-content'><div class='cookiebot-placeholder-container'><i class='fa fa-eye-slash cookie-placeholder-icon' aria-expanded='true' aria-hidden='true' role='link'></i><p class='cookie-placeholder-text'>Vennligst godta markedsføringsinformasjonskapsler for å se dette innholdet.</p><button class='cookie-placeholder-button' onclick=\"monoRobots.acceptMarketingConsent()\">Accept cookies</button></div></div> </div> <div class=\"cookieconsent-optin-marketing\"> <div class=\"fb-like\" data-href=\"\" data-layout=\"standard\" data-action=\"like\" data-show-faces=\"1\" data-share=\"1\"></div> </div> </div></div> </div> </div> <div id=\"r5000\" class=\"row \"> <div class=\"container container-fixed \"><div id=\"c5000\" class=\"col col-sm-12 col-md-3 flexCol\"><div id=\"m3554\" class=\"module autospacer\"></div> <div class=\"flexWrap\"> <div class=\"imageModuleWrap\" id=\"w_m1309\"> <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII=\" alt=\"\" data-author=\"\" width=\"221\" height=\"33\"/> <noscript data-lazyload-src=\"/uploads/dRAl1jdI/221x0_221x0/pl.jpg\" data-lazyload-id=\"m1309\" data-lazyload-class=\"module image\" data-lazyload-alt=\"\" data-req=\"\" data-settings=\"enablehover=false,showelement=none,hovertransition=slowFadeIn\"> <img id=\"m1309\" class=\"module image\" src=\"/uploads/dRAl1jdI/221x0_221x0/pl.jpg\" alt=\"\" width=\"221\" height=\"33\" data-author=\"\"/> </noscript> </div></div> <div id=\"m3175\" class=\"module autospacer\"></div> <div id=\"m4749\" class=\"module autospacer\"></div> </div> <div id=\"c4354\" class=\"col col-sm-12 col-md-9 flexCol\"><div class=\"flexWrap\"> <div class=\"module search\" id=\"m2383\" data-req=\"search\"> <a ",
+            "body_fetched_at": "2026-11-20T07:59:34.969733+00:00"
+          },
+          "strategy": "company_site_activity",
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-site-958035306-70640970ed184afa",
@@ -585,7 +617,7 @@
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "exact_entity": true,
           "identity_proof": [
@@ -595,7 +627,7 @@
               "matched_organisation_number": "958035306",
               "source": "brreg",
               "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
+              "retrieved_at": "2026-11-19T20:07:13.597411Z",
               "explanation": "BRREG declares profil-lakkering.no as the website of organisation 958035306; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
@@ -609,14 +641,14 @@
             "registry_domain": "profil-lakkering.no"
           },
           "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "958035306",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/958035306",
-          "retrieved_at": "2026-11-17T22:42:50.537039Z",
-          "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+          "retrieved_at": "2026-11-20T08:22:09.737861Z",
+          "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -641,14 +673,14 @@
             "email": "post@profil-lakkering.no",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "958035306",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/958035306",
-          "retrieved_at": "2026-11-17T22:42:50.537039Z",
-          "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+          "retrieved_at": "2026-11-20T08:22:09.737861Z",
+          "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -688,14 +720,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.profil-lakkering.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "958035306",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/958035306",
-          "retrieved_at": "2026-11-17T22:42:50.537039Z",
-          "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+          "retrieved_at": "2026-11-20T08:22:09.737861Z",
+          "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -722,7 +754,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "registry-workforce-f9a314fc5c01b69361386e89",
@@ -730,7 +762,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:08:38.401662Z",
+          "retrieved_at": "2026-11-19T20:59:55.351116Z",
           "content_sha256": "e7b0f043c88df20e43e7abe3805510c813592b5710f3431ea69b13cb638b394d",
           "exact_entity": true,
           "identity_proof": [
@@ -762,7 +794,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000389815&amp;sokeverdi=958035306&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "557a8dd959771bb6185e61c257c152c3c28c1ae7f57382f83f4f77c99fdfd792",
           "exact_entity": true,
           "identity_proof": [
@@ -791,7 +823,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000785842&amp;sokeverdi=958035306&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "c6b6266142939e1431feb1081781d17a310c7fa80db20a3e4707e2258893cb31",
           "exact_entity": true,
           "identity_proof": [
@@ -820,7 +852,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000753341&amp;sokeverdi=958035306&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "c876d46a23bbe5f49d6f4bb7b50b20c20df4fb040d3fb3fd027cdeca72f14817",
           "exact_entity": true,
           "identity_proof": [
@@ -849,8 +881,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -870,7 +902,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-7b08698957da810651a64925",
@@ -878,8 +910,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -899,13 +931,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "958035306",
           "platform": "company_site",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "exact_entity": true,
           "identity_proof": [
@@ -925,13 +957,13 @@
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "958035306",
           "platform": "company_site",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "exact_entity": true,
           "identity_proof": [
@@ -952,13 +984,13 @@
             "declared_url": "https://profil-lakkering.no",
             "interpretation": "Brand name from the site's own JSON-LD."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "958035306",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=958035306&size=1000",
-          "retrieved_at": "2026-11-17T22:08:48.818449Z",
+          "retrieved_at": "2026-11-19T21:00:02.038522Z",
           "content_sha256": "cd68c5b4f254802c8884390917adc41694b441e289716d302334986a52f44a75",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -981,7 +1013,7 @@
             "municipality": "VESTRE TOTEN",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "sitemap-page-649100dae621867de569085c",
@@ -989,7 +1021,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2025-12-05",
           "exact_entity": true,
@@ -1017,7 +1049,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2025-12-03",
           "exact_entity": true,
@@ -1045,7 +1077,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2025-12-03",
           "exact_entity": true,
@@ -1073,7 +1105,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2025-09-19",
           "exact_entity": true,
@@ -1101,7 +1133,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2023-04-17",
           "exact_entity": true,
@@ -1129,7 +1161,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2020-12-07",
           "exact_entity": true,
@@ -1157,7 +1189,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2019-02-27",
           "exact_entity": true,
@@ -1185,7 +1217,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2018-10-10",
           "exact_entity": true,
@@ -1213,7 +1245,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2018-10-09",
           "exact_entity": true,
@@ -1241,7 +1273,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://profil-lakkering.no/",
-          "retrieved_at": "2026-11-17T22:08:50.108967Z",
+          "retrieved_at": "2026-11-19T21:00:07.423527Z",
           "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
           "observed_at": "2018-09-27",
           "exact_entity": true,
@@ -1269,7 +1301,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "c8038b52ceaaaaf4233d072accc20348089a028af5b1337b17adf3c4afde5910",
           "observed_at": "2026-10-13",
           "exact_entity": true,
@@ -1299,7 +1331,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "fe4ed59111a83d4f813d605937f14ddf8b1e3afd74b1649c9492217956693827",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1329,7 +1361,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "45d3b5e036b0d541df9dd3be0c7fc0d0404af4ac92605c8081192b4508a62a40",
           "observed_at": "2026-06-16",
           "exact_entity": true,
@@ -1359,7 +1391,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "970fe5a90dc20430f51b5969f8fed48467335d7d502b1130089b9ee33cfb231d",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1389,7 +1421,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "cf2fc44bd3fb23803ca0f71ff49c52b80f77772a6e4f8ccdfc5ad5fbfa588df2",
           "observed_at": "2026-04-13",
           "exact_entity": true,
@@ -1419,7 +1451,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "49a34bad73df83e9f053911a97166409afafbc3d79eda82f50695bae15bc18aa",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1449,7 +1481,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "c0900fd46d32b30012b3d04e650a0aa355a2a39daad45fd7572bfacaa9ea5540",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1479,7 +1511,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "7fe7be4ca3df9c4716a29398d31e7bc545c93ddea073482eee62f78592da134f",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -1509,7 +1541,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6b22107ace75fd12053d3cbea89acc1e459917646b76ea75574846673a0f2b5c",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1539,7 +1571,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "2999920a02c5223f7d6ce5a01dbc8da7dccd14a29f251c59838867a09f52f5b5",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1569,7 +1601,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f10ba06db23b296cdc3ec5161a7445126df1acf0885452b6be21ad45945e47f0",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1599,7 +1631,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "19b70d0fa85da3b783813291d3abd8ddeccff4471fd5bb749e81834637b7b23c",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1629,7 +1661,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "9ddceef6d0712deee9746b7c28ed8c94d425428e310e70c920b17f89543d4047",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1659,7 +1691,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ee5d9a18fcce3f11a080153c3d82b35cdc5edcb59c67e09c36e314ce1747f485",
           "observed_at": "2025-05-15",
           "exact_entity": true,
@@ -1689,7 +1721,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "777274fa394fbf71a70c0ceef57ce1e822da45b6a9c5a28d9fd772cd49f9edd0",
           "observed_at": "2025-04-08",
           "exact_entity": true,
@@ -1727,14 +1759,14 @@
     "run_metrics": {
       "bytes": 49462,
       "latencies_ms": [
-        869,
-        875,
-        883,
-        891,
-        903,
-        874,
-        485,
-        269
+        1200,
+        1258,
+        1249,
+        1296,
+        1536,
+        1342,
+        2381,
+        1175
       ],
       "requests": 10
     },
@@ -1745,7 +1777,7 @@
     "company_name": "PROFIL-LAKKERING AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "PROFIL-LAKKERING AS is a private limited company operating in Overflatebehandling av metaller. Latest accounts (2025): revenue NOK 35.4m, annual result NOK -1.7m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-7.0% YoY). Registered employees: 21. No fields changed since the previous run. Unknowns: hiring (no job sources were checked).",
+    "summary": "PROFIL-LAKKERING AS is a private limited company operating in Overflatebehandling av metaller. Latest accounts (2025): revenue NOK 35.4m, annual result NOK -1.7m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue shrinking (-7.0% YoY). Registered employees: 21. 1 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-11-19) [source: https://profil-lakkering.no/referanser]. Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1850,10 +1882,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "1 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-11-19) [source: https://profil-lakkering.no/referanser].",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
           "https://data.brreg.no/enhetsregisteret/api/enheter/958035306/roller",
@@ -1881,7 +1913,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:52.385732Z",
+      "retrieved_at": "2026-11-19T20:08:15.481368Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "958035306",
       "source_type": "official_rule_interpretation",
@@ -1901,7 +1933,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:46.146964Z",
+      "retrieved_at": "2026-11-19T20:59:57.860452Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1995,7 +2027,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:39.277910Z",
+      "retrieved_at": "2026-11-19T20:59:56.610336Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2060,7 +2092,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T22:08:47.943600Z",
+      "retrieved_at": "2026-11-19T21:00:00.695351Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2074,7 +2106,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:48.818449Z",
+      "retrieved_at": "2026-11-19T21:00:02.038522Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2107,11 +2139,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "958035306",
       "source_type": "official_registry_bulk",
@@ -2197,7 +2229,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:38.401662Z",
+      "retrieved_at": "2026-11-19T20:59:55.351116Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2247,7 +2279,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:47.039096Z",
+      "retrieved_at": "2026-11-19T20:59:59.157947Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2338,7 +2370,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T22:08:50.108967Z",
+      "retrieved_at": "2026-11-19T21:00:07.423527Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -2417,7 +2449,7 @@
         "organisation_number": "958035306",
         "platform": "company_site",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "exact_entity": true,
         "identity_proof": [
@@ -2426,7 +2458,7 @@
             "domain": "profil-lakkering.no",
             "register_field": "hjemmeside",
             "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-17",
+            "index_as_of": "2026-11-19",
             "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
           },
           {
@@ -2449,7 +2481,39 @@
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
+      },
+      {
+        "id": "company-site-news-97851ab2ff8acb67b1841dfd",
+        "organisation_number": "958035306",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://profil-lakkering.no/referanser",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
+        "content_sha256": "859f774c9b82a919827ab8eac97efd1ffd2158be6cb305f142749a0ee33a3b97",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Company news/activity page",
+        "metrics": {
+          "title": "Company news/activity page",
+          "captured_news_pages": 1,
+          "item_role": "primary",
+          "interpretation": "Company-owned activity; not independent sentiment.",
+          "sitemap_lastmod": "2025-12-03",
+          "body_excerpt": "<!DOCTYPE html> <html lang=\"no\" data-currency=\"EUR\" data-lang=\"no\" data-countrycode=\"nb_NO\" data-rHash=\"adf71fbb91d312f545bf94116c81c7f3\" dir=\"auto\" data-cookiebot=\"true\"> <head> <meta charset=\"UTF-8\"/> <script>window.addEventListener(\"CookiebotOnDialogInit\",function(){if (Cookiebot.getDomainUrlParam(\"autoAcceptCookies\") === \"true\")Cookiebot.setOutOfRegion();});</script><script async fetchpriority=\"high\" id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"4abfbc9f-58fd-4a0d-8f1a-f68f83b1cbf3\" data-blockingmode=\"auto\" data-culture=\"nb\" type=\"text/javascript\"></script><title>Profillakkering med moderne utstyr</title><meta name=\"keywords\" content=\"profillakkering, pulverlakkering, overflatebehandling, foliering, aluminiumprofiler, lager tjenester, logistikk tjenester\"><meta name=\"description\" content=\"Moderne overflatebehandlingstjenester der kvalitet, leveringspresisjon og miljø med nullutslipp er avgjørende.\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:url\" content=\"https://profil-lakkering.no/referanser\"><meta property=\"og:image\" content=\"https://profil-lakkering.no/uploads/Y6TN6VIq/9-c3173ddf46c2eab83a6e6417e45e392c.jpg\"><link rel='canonical' href='https://profil-lakkering.no/referanser'/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel='shortcut icon' type='image/x-icon' href='/uploads/URxUjeIn/favicon.ico'/><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/cookiebotVideoPlaceholder.css?1794394802543\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/grids.css?1794394802543\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/hcaptcha.css?1794394802543\"><link rel=\"stylesheet\" href=\"/assets/user-style.css?1764932784\"><link rel=\"stylesheet\" id=\"style_site\" href=\"/assets/sitestyle.css?1764932784\"><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\"><!--[if lt IE 9]><script src=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/js/html5shiv.js\"></script><script src=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/js/respond.js\"></script><![endif]--><script>if ('serviceWorker' in navigator){ navigator.serviceWorker.getRegistrations().then(function(registrations){ for(var i=0;i<registrations.length;i++){ registrations[i].unregister(); } }); if(window.caches){ caches.keys().then(function(names){ for(var i=0;i<names.length;i++){ caches.delete(names[i]); } }); } }</script><link rel=\"preconnect\" href=\"https://site-assets.cdnmns.com/\" crossorigin><link rel=\"preconnect\" href=\"https://fonts.prod.extra-cdn.com\" crossorigin> <script>window.ASSETSURL='https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61';</script></head> <body id=\"p3731\" data-dateformat='d/m/Y' data-req=\"lazyload,quicklink\"> <div id=\"r5001\" class=\"row designRow\"> <div class=\"container container-fluid\"><div class=\"col col-sm-12\"> <header><div class=\"row \"> <div class=\"container container-fixed\"><div class=\"col col-sm-12\"><div id=\"m2651\" class=\"module facebooklike\" data-req=\"fbsdk\"> <div class=\"cookie-facebook-small cookieconsent-optout-marketing\"> <div class='cookiebot-placeholder cookieconsent-optout-marketing cookie-fit-content'><div class='cookiebot-placeholder-container'><i class='fa fa-eye-slash cookie-placeholder-icon' aria-expanded='true' aria-hidden='true' role='link'></i><p class='cookie-placeholder-text'>Vennligst godta markedsføringsinformasjonskapsler for å se dette innholdet.</p><button class='cookie-placeholder-button' onclick=\"monoRobots.acceptMarketingConsent()\">Accept cookies</button></div></div> </div> <div class=\"cookieconsent-optin-marketing\"> <div class=\"fb-like\" data-href=\"\" data-layout=\"standard\" data-action=\"like\" data-show-faces=\"1\" data-share=\"1\"></div> </div> </div></div> </div> </div> <div id=\"r5000\" class=\"row \"> <div class=\"container container-fixed \"><div id=\"c5000\" class=\"col col-sm-12 col-md-3 flexCol\"><div id=\"m3554\" class=\"module autospacer\"></div> <div class=\"flexWrap\"> <div class=\"imageModuleWrap\" id=\"w_m1309\"> <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII=\" alt=\"\" data-author=\"\" width=\"221\" height=\"33\"/> <noscript data-lazyload-src=\"/uploads/dRAl1jdI/221x0_221x0/pl.jpg\" data-lazyload-id=\"m1309\" data-lazyload-class=\"module image\" data-lazyload-alt=\"\" data-req=\"\" data-settings=\"enablehover=false,showelement=none,hovertransition=slowFadeIn\"> <img id=\"m1309\" class=\"module image\" src=\"/uploads/dRAl1jdI/221x0_221x0/pl.jpg\" alt=\"\" width=\"221\" height=\"33\" data-author=\"\"/> </noscript> </div></div> <div id=\"m3175\" class=\"module autospacer\"></div> <div id=\"m4749\" class=\"module autospacer\"></div> </div> <div id=\"c4354\" class=\"col col-sm-12 col-md-9 flexCol\"><div class=\"flexWrap\"> <div class=\"module search\" id=\"m2383\" data-req=\"search\"> <a ",
+          "body_fetched_at": "2026-11-20T07:59:34.969733+00:00"
+        },
+        "strategy": "company_site_activity",
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-site-958035306-70640970ed184afa",
@@ -2457,7 +2521,7 @@
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "exact_entity": true,
         "identity_proof": [
@@ -2467,7 +2531,7 @@
             "matched_organisation_number": "958035306",
             "source": "brreg",
             "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
+            "retrieved_at": "2026-11-19T20:07:13.597411Z",
             "explanation": "BRREG declares profil-lakkering.no as the website of organisation 958035306; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
@@ -2481,14 +2545,14 @@
           "registry_domain": "profil-lakkering.no"
         },
         "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "958035306",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/958035306",
-        "retrieved_at": "2026-11-17T22:42:50.537039Z",
-        "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+        "retrieved_at": "2026-11-20T08:22:09.737861Z",
+        "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2513,14 +2577,14 @@
           "email": "post@profil-lakkering.no",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "958035306",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/958035306",
-        "retrieved_at": "2026-11-17T22:42:50.537039Z",
-        "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+        "retrieved_at": "2026-11-20T08:22:09.737861Z",
+        "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2560,14 +2624,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.profil-lakkering.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "958035306",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/958035306",
-        "retrieved_at": "2026-11-17T22:42:50.537039Z",
-        "content_sha256": "189891850a019d94768926ec3c55dc87ef8fba5d30301602f5866b9bc9663215",
+        "retrieved_at": "2026-11-20T08:22:09.737861Z",
+        "content_sha256": "39fc4e1ba712850f4ec9ab276a589ae3bdfc586e9579207589371951f7010067",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2594,7 +2658,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "registry-workforce-f9a314fc5c01b69361386e89",
@@ -2602,7 +2666,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:08:38.401662Z",
+        "retrieved_at": "2026-11-19T20:59:55.351116Z",
         "content_sha256": "e7b0f043c88df20e43e7abe3805510c813592b5710f3431ea69b13cb638b394d",
         "exact_entity": true,
         "identity_proof": [
@@ -2634,7 +2698,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000389815&amp;sokeverdi=958035306&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "557a8dd959771bb6185e61c257c152c3c28c1ae7f57382f83f4f77c99fdfd792",
         "exact_entity": true,
         "identity_proof": [
@@ -2663,7 +2727,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000785842&amp;sokeverdi=958035306&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "c6b6266142939e1431feb1081781d17a310c7fa80db20a3e4707e2258893cb31",
         "exact_entity": true,
         "identity_proof": [
@@ -2692,7 +2756,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000753341&amp;sokeverdi=958035306&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "c876d46a23bbe5f49d6f4bb7b50b20c20df4fb040d3fb3fd027cdeca72f14817",
         "exact_entity": true,
         "identity_proof": [
@@ -2721,8 +2785,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2742,7 +2806,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-7b08698957da810651a64925",
@@ -2750,8 +2814,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2771,13 +2835,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "958035306",
         "platform": "company_site",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "exact_entity": true,
         "identity_proof": [
@@ -2797,13 +2861,13 @@
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "958035306",
         "platform": "company_site",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "exact_entity": true,
         "identity_proof": [
@@ -2824,13 +2888,13 @@
           "declared_url": "https://profil-lakkering.no",
           "interpretation": "Brand name from the site's own JSON-LD."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "958035306",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=958035306&size=1000",
-        "retrieved_at": "2026-11-17T22:08:48.818449Z",
+        "retrieved_at": "2026-11-19T21:00:02.038522Z",
         "content_sha256": "cd68c5b4f254802c8884390917adc41694b441e289716d302334986a52f44a75",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2853,7 +2917,7 @@
           "municipality": "VESTRE TOTEN",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "sitemap-page-649100dae621867de569085c",
@@ -2861,7 +2925,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2025-12-05",
         "exact_entity": true,
@@ -2889,7 +2953,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2025-12-03",
         "exact_entity": true,
@@ -2917,7 +2981,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2025-12-03",
         "exact_entity": true,
@@ -2945,7 +3009,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2025-09-19",
         "exact_entity": true,
@@ -2973,7 +3037,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2023-04-17",
         "exact_entity": true,
@@ -3001,7 +3065,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2020-12-07",
         "exact_entity": true,
@@ -3029,7 +3093,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2019-02-27",
         "exact_entity": true,
@@ -3057,7 +3121,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2018-10-10",
         "exact_entity": true,
@@ -3085,7 +3149,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2018-10-09",
         "exact_entity": true,
@@ -3113,7 +3177,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://profil-lakkering.no/",
-        "retrieved_at": "2026-11-17T22:08:50.108967Z",
+        "retrieved_at": "2026-11-19T21:00:07.423527Z",
         "content_sha256": "70640970ed184afa1e7da78e17970768abaf5df8c6e46bdd1d69272c0228f4ed",
         "observed_at": "2018-09-27",
         "exact_entity": true,
@@ -3141,7 +3205,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "c8038b52ceaaaaf4233d072accc20348089a028af5b1337b17adf3c4afde5910",
         "observed_at": "2026-10-13",
         "exact_entity": true,
@@ -3171,7 +3235,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "fe4ed59111a83d4f813d605937f14ddf8b1e3afd74b1649c9492217956693827",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -3201,7 +3265,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "45d3b5e036b0d541df9dd3be0c7fc0d0404af4ac92605c8081192b4508a62a40",
         "observed_at": "2026-06-16",
         "exact_entity": true,
@@ -3231,7 +3295,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "970fe5a90dc20430f51b5969f8fed48467335d7d502b1130089b9ee33cfb231d",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -3261,7 +3325,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "cf2fc44bd3fb23803ca0f71ff49c52b80f77772a6e4f8ccdfc5ad5fbfa588df2",
         "observed_at": "2026-04-13",
         "exact_entity": true,
@@ -3291,7 +3355,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "49a34bad73df83e9f053911a97166409afafbc3d79eda82f50695bae15bc18aa",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -3321,7 +3385,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "c0900fd46d32b30012b3d04e650a0aa355a2a39daad45fd7572bfacaa9ea5540",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -3351,7 +3415,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "7fe7be4ca3df9c4716a29398d31e7bc545c93ddea073482eee62f78592da134f",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -3381,7 +3445,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6b22107ace75fd12053d3cbea89acc1e459917646b76ea75574846673a0f2b5c",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3411,7 +3475,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "2999920a02c5223f7d6ce5a01dbc8da7dccd14a29f251c59838867a09f52f5b5",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3441,7 +3505,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f10ba06db23b296cdc3ec5161a7445126df1acf0885452b6be21ad45945e47f0",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3471,7 +3535,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "19b70d0fa85da3b783813291d3abd8ddeccff4471fd5bb749e81834637b7b23c",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3501,7 +3565,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "9ddceef6d0712deee9746b7c28ed8c94d425428e310e70c920b17f89543d4047",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3531,7 +3595,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ee5d9a18fcce3f11a080153c3d82b35cdc5edcb59c67e09c36e314ce1747f485",
         "observed_at": "2025-05-15",
         "exact_entity": true,
@@ -3561,7 +3625,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/958035306",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "777274fa394fbf71a70c0ceef57ce1e822da45b6a9c5a28d9fd772cd49f9edd0",
         "observed_at": "2025-04-08",
         "exact_entity": true,
@@ -3587,5 +3651,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:31.073700+00:00"
+  "generated_at": "2026-11-20T12:49:32.125589+00:00"
 }

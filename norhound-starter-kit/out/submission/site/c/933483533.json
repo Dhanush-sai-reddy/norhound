@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:50.494562Z",
+        "retrieved_at": "2026-11-19T20:08:13.284712Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "933483533",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:16.556012Z",
+        "retrieved_at": "2026-11-19T20:53:53.009955Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -58,7 +58,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:13.680448Z",
+        "retrieved_at": "2026-11-19T20:53:47.773256Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -107,7 +107,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T22:04:18.321266Z",
+        "retrieved_at": "2026-11-19T20:53:55.482811Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -121,7 +121,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:19.254492Z",
+        "retrieved_at": "2026-11-19T20:53:56.757210Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -155,11 +155,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "933483533",
         "source_type": "official_registry_bulk",
@@ -250,7 +250,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:12.793686Z",
+        "retrieved_at": "2026-11-19T20:53:46.541506Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -301,7 +301,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:17.416404Z",
+        "retrieved_at": "2026-11-19T20:53:54.240249Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -334,26 +334,21 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+        "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T22:04:23.635102Z",
+        "retrieved_at": "2026-11-19T20:53:59.146749Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
         "source_url": "https://www.vaivoo.com/",
         "status": "available",
         "value": {
-          "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+          "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
           "crawl_errors": [],
-          "description": "Source-backed reference on digital authentication and the cryptography behind it.",
-          "discovered_social_links": [
-            {
-              "platform": "linkedin",
-              "url": "https://linkedin.com/company/vaivoo"
-            }
-          ],
+          "description": "",
+          "discovered_social_links": [],
           "extraction_state": "static_complete",
           "final_url": "https://www.vaivoo.com/",
           "identity_assessment": {
@@ -366,55 +361,26 @@
             "method": "deterministic_name_org_evidence_v2",
             "publishable": true,
             "reasons": [
-              "single distinctive legal-name token appears in homepage identity evidence with substantive content"
+              "legal-name tokens appear in homepage identity evidence"
             ],
-            "score": 0.95,
+            "score": 0.9,
             "status": "exact"
           },
-          "main_text_excerpt": "The Vaivoo Project·Independent reference on authentication & cryptography\nAuthentication, explained with evidence.\nHow people and machines prove who they are online: the methods, standards and cryptography behind them, and the Nordic and EU identity systems built on top. Every claim is scoped, sourced and signed by its reviewer.\n- 01Factors, authenticators and signals: three different thingsA factor is a category of evidence, an authenticator is the thing you use, and a signal is context the service observes. Mixing them up leads to wrong conclusions about how strong a sign-in is.\n- 02What MFA does, and doesn't, establishMulti-factor authentication raises the bar, but it does not by itself stop phishing, replay or account-recovery attacks. Which combination you use, and how it is configured, matters more than the label.\n- 03Passkeys, security keys and WebAuthn: related but differentWebAuthn is the standard, a passkey is a kind of credential, and a security key is one kind of device that can hold credentials. Synced and device-bound passkeys share the same protocol but differ in assurance and recovery.\n- When a CI token becomes cloud authority The wfx-loot campaign used valid GitHub credentials to run code in CI, exchange workflow identity for cloud sessions and add trust relationships that survive rotation. Each step passed a verifier that checked less than it appeared to.\n- When an HSM cannot guarantee key security eMudhra's full incident report shows sixteen CA keys generated correctly inside HSMs and then read out into a Python process. The hardware boundary held; the procedure around it did not.\n- Authentication is not a string comparison CVE-2026-123158 let a musl error string match the stored field of accounts with no password. Password verification has three outcomes, and they need three representations.\n- Externally reviewedApproved by an independent specialist outside the project.\n- Internally reviewedApproved by the project editor, waiting for external review.\n- Draft · not yet reviewedResearched and sourced, not yet reviewed by a person.",
+          "main_text_excerpt": "",
           "pages": [
             {
-              "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-              "main_text_excerpt": "The Vaivoo Project·Independent reference on authentication & cryptography\nAuthentication, explained with evidence.\nHow people and machines prove who they are online: the methods, standards and cryptography behind them, and the Nordic and EU identity systems built on top. Every claim is scoped, sourced and signed by its reviewer.\n- 01Factors, authenticators and signals: three different thingsA factor is a category of evidence, an authenticator is the thing you use, and a signal is context the service observes. Mixing them up leads to wrong conclusions about how strong a sign-in is.\n- 02What MFA does, and doesn't, establishMulti-factor authentication raises the bar, but it does not by itself stop phishing, replay or account-recovery attacks. Which combination you use, and how it is configured, matters more than the label.\n- 03Passkeys, security keys and WebAuthn: related but differentWebAuthn is the standard, a passkey is a kind of credential, and a security key is one kind of device that can hold credentials. Synced and device-bound passkeys share the same protocol but differ in assurance and recovery.\n- When a CI token becomes cloud authority The wfx-loot campaign used valid GitHub credentials to run code in CI, exchange workflow identity for cloud sessions and add trust relationships that survive rotation. Each step passed a verifier that checked less than it appeared to.\n- When an HSM cannot guarantee key security eMudhra's full incident report shows sixteen CA keys generated correctly inside HSMs and then read out into a Python process. The hardware boundary held; the procedure around it did not.\n- Authentication is not a string comparison CVE-2026-123158 let a musl error string match the stored field of accounts with no password. Password verification has three outcomes, and they need three representations.\n- Externally reviewedApproved by an independent specialist outside the project.\n- Internally reviewedApproved by the project editor, waiting for external review.\n- Draft · not yet reviewedResearched and sourced, not yet reviewed by a person.",
-              "title": "The Vaivoo Project — authentication, explained with evidence",
+              "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
+              "main_text_excerpt": "",
+              "title": "",
               "url": "https://www.vaivoo.com/"
-            },
-            {
-              "content_sha256": "5b9440a5de1aa77ef823d1af29ef3b62dd1ece6db7654be50e356ea7b94f54ac",
-              "main_text_excerpt": "The Vaivoo Project·About\nAbout the project\nThe Vaivoo Project is an independent reference on digital authentication: the methods, the standards, the cryptography underneath, and the Nordic and EU identity systems built on top. It exists because most writing on the subject comes from vendors. Here, every statement is a scoped claim, tied to the exact section of a primary source and signed by the person who checked it.\nFounder & editor\nChris War\nChris War leads the project and sets its editorial method. He has been granted patents for authentication solutions worldwide, so he comes to this subject as someone who has designed authentication systems, not only written about them. That practical background shapes how the project works: claims are scoped to how a method is actually deployed, conditions are spelled out, and \"it depends\" is never left unexplained.\nAs editor he researches and approves every claim against its sources before it is published, and he decides which claims need independent review. He also writes the project's articles, on advanced cryptology, authentication and digital identity.\n- Founder and editor; approves every claim internally\n- Granted patents for authentication solutions worldwide\n- Chris War · The Vaivoo Project\n- 231Internal across 31 entries\nThe network\nThe editor works with a network of independent specialists in cryptography, identity systems and security engineering. They review claims from outside the project, and their approval is what turns a claim green: External. Security properties, assurance levels and regulatory status always need an independent technical reviewer in addition to the editor.\nReviewers are named on the claims they approve, and listed here once each has agreed to be named. The project does not show logos or titles of people who have not signed anything.\nOwnership and interests\nThe Vaivoo Project is owned and run by Chris War. Products in which the owner has a commercial interest are not included in comparisons unless they have been reviewed independently, and any such entry is labelled. The project carries no advertising and takes no payment for inclusion or placement.\nAI use\nAI assists research and drafting. It does not approve anything: every published claim is checked against its sources and approved by a named person. How the method works",
-              "title": "About · The Vaivoo Project",
-              "url": "https://www.vaivoo.com/about/"
-            },
-            {
-              "content_sha256": "ca66777786daab17ac907f800eabe9c19fe5080413b77e87cc7f86368c8faaf2",
-              "main_text_excerpt": "Security discussions often say “factor” when they mean the app, the phone or the code. This guide separates three ideas that are easy to blur: factors, authenticators and signals, and adds a fourth that is often confused with them: protocols.\nFactors are categories of evidence\nNIST SP 800-63B-4 sorts authentication evidence into categories. A password is “something you know” ↗. A one-time code generator with no unlock step, such as a TOTP app or token, is “something you have” ↗. So is a phone that receives an SMS code ↗, and so is a hardware security key used as a single-factor cryptographic authenticator ↗.\nBiometrics usually enter the picture differently. In a passkey with required user verification, a fingerprint, face or PIN activates a key that lives on the device. NIST then treats the combination of key possession and that activation factor as a multi-factor cryptographic authenticator ↗ ↗.\nAuthenticators are the things you use\nAn authenticator is the concrete thing: an app, a code device, a security key, a passkey. The same kind of authenticator can count as one factor or two depending on how it is used.\nA security key that only checks for a touch performs a test of user presence, not user verification. If the response shows that no activation factor was used, NIST says the authentication is single-factor ↗. The same family of key used with a PIN can act as a multi-factor authenticator ↗.\nNational schemes make this concrete. Denmark’s MitID operator describes its app as multi-factor in itself (a PIN plus device-bound keys), while its code display, audio code reader, chip and password are single-factor means that must be combined ↗. That is the operator’s own description, not an independent evaluation.\nSignals are context, not proof\nA signal is something the service observes about the situation. NIST tells verifiers to consider signals such as a recent SIM change, number porting or a device swap before sending a code over the phone network ↗.\nThe project’s reading: signals help a service decide how much to trust a sign-in, or whether to ask for more. They are not themselves something the user knows, has or is, so they do not add a factor.\nProtocols carry the result\nOpenID Connect is often mentioned alongside authentication methods, but it does not specify how the user is authenticated. The identity provider authenticates the user by whatever means it chooses, and OpenID Connect conveys the result in a signed ID Token ↗. Optional acr and amr values can tell the website which assurance class or methods were used, if both sides agree on their meaning ↗.\nNorwegian BankID illustrates why those labels matter. Its identity-provider documentation distinguishes the code device, the BankID app and the typed password through amr values, and warns that these are indications rather than a security mechanism ↗. The operator also rates its “BankID with biometrics” login at a lower assurance level than “BankID High” ↗.\nWhat to take away\n- Ask which factor categories are involved, not how many steps the user goes through.\n- Ask how the authenticator is configured: presence only, or user verification?\n- Treat signals as risk input, not as extra factors.\n- Remember that a protocol like OpenID Connect reports the result; the strength comes from the authenticator the identity provider actually used.",
-              "title": "Factors, authenticators and signals: three different things · The Vaivoo Project",
-              "url": "https://www.vaivoo.com/guides/factors-authenticators-signals/"
             }
           ],
           "registered_domain": "vaivoo.com",
           "requested_url": "https://www.vaivoo.com/",
-          "social_link_assessments": [
-            {
-              "identity_score": 0.98,
-              "matched_tokens": [
-                "vaivoo"
-              ],
-              "method": "deterministic_social_handle_identity_v1",
-              "platform": "linkedin",
-              "publishable": true,
-              "reason": "normalized legal-name sequence appears in the social handle",
-              "url": "https://linkedin.com/company/vaivoo"
-            }
-          ],
-          "social_links": [
-            {
-              "platform": "linkedin",
-              "url": "https://linkedin.com/company/vaivoo"
-            }
-          ],
+          "social_link_assessments": [],
+          "social_links": [],
           "structured_organisations": [],
-          "title": "The Vaivoo Project — authentication, explained with evidence"
+          "title": ""
         }
       },
       "external_observations": [
@@ -422,8 +388,8 @@
           "organisation_number": "933483533",
           "platform": "company_site",
           "source_url": "https://www.vaivoo.com/",
-          "retrieved_at": "2026-11-17T22:04:23.635102Z",
-          "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+          "retrieved_at": "2026-11-19T20:53:59.146749Z",
+          "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -431,7 +397,7 @@
               "domain": "vaivoo.com",
               "register_field": "hjemmeside",
               "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-17",
+              "index_as_of": "2026-11-19",
               "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
             },
             {
@@ -444,91 +410,24 @@
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-activity-933483533-6adf8654d482f98f",
+          "id": "company-site-activity-933483533-082e3cc1e1938bff",
           "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 3 bounded pages and 1 verified social links.",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
           "metrics": {
-            "bounded_pages_captured": 3,
-            "verified_social_links": 1,
+            "bounded_pages_captured": 1,
+            "verified_social_links": 0,
             "structured_organisation_records": 0,
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "933483533",
-          "platform": "linkedin",
-          "source_url": "https://www.vaivoo.com/",
-          "retrieved_at": "2026-11-17T22:04:23.635102Z",
-          "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_domain_unique",
-              "domain": "vaivoo.com",
-              "register_field": "hjemmeside",
-              "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-17",
-              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
-            },
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-933483533-6adf8654d482f98f-linkedin",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
-          "metrics": {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/vaivoo"
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "id": "registry-site-933483533-6adf8654d482f98f",
-          "organisation_number": "933483533",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://www.vaivoo.com/",
-          "retrieved_at": "2026-11-17T22:04:23.635102Z",
-          "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "vaivoo.com",
-              "matched_organisation_number": "933483533",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
-              "explanation": "BRREG declares vaivoo.com as the website of organisation 933483533; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "The Vaivoo Project — authentication, explained with evidence — Source-backed reference on digital authentication and the cryptography behind it.",
-          "metrics": {
-            "title": "The Vaivoo Project — authentication, explained with evidence",
-            "description": "Source-backed reference on digital authentication and the cryptography behind it.",
-            "registry_domain": "vaivoo.com"
-          },
-          "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "933483533",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/933483533",
-          "retrieved_at": "2026-11-17T22:42:35.779033Z",
-          "content_sha256": "96d7d38761cb25cf16b8220821ca3d3b39cfc4999dd33aa2505d22724a1112b6",
+          "retrieved_at": "2026-11-20T08:21:42.851262Z",
+          "content_sha256": "0e640974178ba2b50b41f946001fd8993d52b563be080cb9c080a751c3ea8fb8",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -568,7 +467,7 @@
             "bankruptcy_date": "",
             "website_domain": "www.vaivoo.com"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "brreg-kunngjoring-ac5955a84e1bc50af2218d4f",
@@ -576,7 +475,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000159566&amp;sokeverdi=933483533&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "4b37d669abd46807baf086d9d3546532507267dc13a27f3befbb61824413516d",
           "exact_entity": true,
           "identity_proof": [
@@ -605,7 +504,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000073909&amp;sokeverdi=933483533&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "964791c0e760bb9c3b13da03768e6aad9a99c2829b659c79417b49ea7d90c256",
           "exact_entity": true,
           "identity_proof": [
@@ -634,7 +533,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000048824&amp;sokeverdi=933483533&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "5c60f0030b38cc5c01d68bfd5edfb07752ea122f78e0bab06d4db367e028dbd0",
           "exact_entity": true,
           "identity_proof": [
@@ -659,35 +558,9 @@
         },
         {
           "organisation_number": "933483533",
-          "platform": "company_site",
-          "source_url": "https://www.vaivoo.com/",
-          "retrieved_at": "2026-11-17T22:04:23.635102Z",
-          "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-8e5dedad19103f936044e5bd",
-          "signal_type": "website_description",
-          "evidence_span": "The Vaivoo Project — authentication, explained with evidence — Source-backed reference on digital authentication and the cryptography behind it.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "933483533",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933483533&size=1000",
-          "retrieved_at": "2026-11-17T22:04:19.254492Z",
+          "retrieved_at": "2026-11-19T20:53:56.757210Z",
           "content_sha256": "9d4a7764a8a4e6c401f5ab92be0e752d7ae08888bb17780e53020f6372294297",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -710,7 +583,7 @@
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-update-15b2b207b37644f637899b31",
@@ -718,7 +591,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "15b2b207b37644f637899b311278d7674483de1ad47566c15572c197b28e8b1b",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -748,7 +621,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "66be468178b24d37f8dde91ea6151d0ebda46d627212037d4dc6404d6011fb05",
           "observed_at": "2026-02-23",
           "exact_entity": true,
@@ -778,7 +651,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "d0ad5684f5ce97bb40f4a3ba0e321d2e8152d85b9f871a9d0e791f617a439537",
           "observed_at": "2026-02-11",
           "exact_entity": true,
@@ -808,7 +681,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "9839ece6258990ee21a3a09d49b7e0fb25a0c6a2d6a8ff1fa59a8eb74b665f16",
           "observed_at": "2026-02-09",
           "exact_entity": true,
@@ -838,7 +711,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "29a4834acd73ff1aa03a56ed21c1a4dd7c545c16820e91b2d261345aa556babd",
           "observed_at": "2026-02-03",
           "exact_entity": true,
@@ -868,7 +741,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "b93d312cf93911ea3c19375dcfaa77435a3126df1eedf547ef005c3ee51d2fe1",
           "observed_at": "2025-12-11",
           "exact_entity": true,
@@ -898,7 +771,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "26c7810420b54aa9302bcfded0fb33e154a2c4e0664ab7ca183237c683dcd37e",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -928,7 +801,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "95895e124bb9bf0d4aad5765ce9a1e3eb773b5e39d619818b39510acdb18bcf3",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -958,7 +831,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "705dfa40b56cca078109f7cf0939f3f03523277ef9e761bfed4b788038eb08b7",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -988,7 +861,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a51f7d101d7061ade204ad5b54fa33ccb2290fb6454c2e603e6def8ac19cf892",
           "observed_at": "2025-07-21",
           "exact_entity": true,
@@ -1018,7 +891,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "cf5cba42348792ce1c4e46a5b918a1d885f8c7bb5cf741f9014079d064be41dc",
           "observed_at": "2025-07-08",
           "exact_entity": true,
@@ -1048,7 +921,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "db2acb9970afb5b98b32be9cc4235526b15a2e781afdb8a8a15406610b1e689f",
           "observed_at": "2025-01-27",
           "exact_entity": true,
@@ -1078,7 +951,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6f17cfeda39f61c9b29ad79dfe4c140b68deead552540b1749ccf8fb14e5560e",
           "observed_at": "2024-05-23",
           "exact_entity": true,
@@ -1114,19 +987,17 @@
     "name": "VAIVOO AS",
     "organisation_number": "933483533",
     "run_metrics": {
-      "bytes": 42167,
+      "bytes": 7599,
       "latencies_ms": [
-        884,
-        886,
-        878,
-        860,
-        904,
-        932,
-        998,
-        684,
-        645
+        1222,
+        1231,
+        1206,
+        1229,
+        1241,
+        1273,
+        799
       ],
-      "requests": 12
+      "requests": 8
     },
     "website": "www.vaivoo.com"
   },
@@ -1135,7 +1006,7 @@
     "company_name": "VAIVOO AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "VAIVOO AS is a private limited company operating in Dataprogrammeringstjenester. Latest accounts (2025): annual result NOK -209.6k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. No fields changed since the previous run. Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
+    "summary": "VAIVOO AS is a private limited company operating in Dataprogrammeringstjenester. Latest accounts (2025): annual result NOK -209.6k. Annual accounts available for 2024-2025 (2 years). Detailed records only available as PDFs. 5 field(s) changed since run fresh-20261117T213100Z: website.title: The Vaivoo Project — authentication, explained with evidence -> not available [source: https://www.vaivoo.com/]; website.description: Source-backed reference on digital authentication and the c… -> not available [source: https://www.vaivoo.com/]; website.social_links: 1 value(s) -> no values [source: https://www.vaivoo.com/]; business_description (2 removed); removed: Source-backed reference on digital authentication and the cryptograph…; social_profiles (1 removed); removed: linkedin.com/company/vaivoo. Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1222,10 +1093,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "5 field(s) changed since run fresh-20261117T213100Z: website.title: The Vaivoo Project — authentication, explained with evidence -> not available [source: https://www.vaivoo.com/]; website.description: Source-backed reference on digital authentication and the c… -> not available [source: https://www.vaivoo.com/]; website.social_links: 1 value(s) -> no values [source: https://www.vaivoo.com/]; business_description (2 removed); removed: Source-backed reference on digital authentication and the cryptograph…; social_profiles (1 removed); removed: linkedin.com/company/vaivoo.",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
           "https://data.brreg.no/enhetsregisteret/api/enheter/933483533/roller",
@@ -1258,7 +1129,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:50.494562Z",
+      "retrieved_at": "2026-11-19T20:08:13.284712Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "933483533",
       "source_type": "official_rule_interpretation",
@@ -1278,7 +1149,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:16.556012Z",
+      "retrieved_at": "2026-11-19T20:53:53.009955Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1307,7 +1178,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:13.680448Z",
+      "retrieved_at": "2026-11-19T20:53:47.773256Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1356,7 +1227,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T22:04:18.321266Z",
+      "retrieved_at": "2026-11-19T20:53:55.482811Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1370,7 +1241,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:19.254492Z",
+      "retrieved_at": "2026-11-19T20:53:56.757210Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1404,11 +1275,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "933483533",
       "source_type": "official_registry_bulk",
@@ -1499,7 +1370,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:12.793686Z",
+      "retrieved_at": "2026-11-19T20:53:46.541506Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1550,7 +1421,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:17.416404Z",
+      "retrieved_at": "2026-11-19T20:53:54.240249Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1583,26 +1454,21 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+      "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T22:04:23.635102Z",
+      "retrieved_at": "2026-11-19T20:53:59.146749Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
       "source_url": "https://www.vaivoo.com/",
       "status": "available",
       "value": {
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+        "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
         "crawl_errors": [],
-        "description": "Source-backed reference on digital authentication and the cryptography behind it.",
-        "discovered_social_links": [
-          {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/vaivoo"
-          }
-        ],
+        "description": "",
+        "discovered_social_links": [],
         "extraction_state": "static_complete",
         "final_url": "https://www.vaivoo.com/",
         "identity_assessment": {
@@ -1615,55 +1481,26 @@
           "method": "deterministic_name_org_evidence_v2",
           "publishable": true,
           "reasons": [
-            "single distinctive legal-name token appears in homepage identity evidence with substantive content"
+            "legal-name tokens appear in homepage identity evidence"
           ],
-          "score": 0.95,
+          "score": 0.9,
           "status": "exact"
         },
-        "main_text_excerpt": "The Vaivoo Project·Independent reference on authentication & cryptography\nAuthentication, explained with evidence.\nHow people and machines prove who they are online: the methods, standards and cryptography behind them, and the Nordic and EU identity systems built on top. Every claim is scoped, sourced and signed by its reviewer.\n- 01Factors, authenticators and signals: three different thingsA factor is a category of evidence, an authenticator is the thing you use, and a signal is context the service observes. Mixing them up leads to wrong conclusions about how strong a sign-in is.\n- 02What MFA does, and doesn't, establishMulti-factor authentication raises the bar, but it does not by itself stop phishing, replay or account-recovery attacks. Which combination you use, and how it is configured, matters more than the label.\n- 03Passkeys, security keys and WebAuthn: related but differentWebAuthn is the standard, a passkey is a kind of credential, and a security key is one kind of device that can hold credentials. Synced and device-bound passkeys share the same protocol but differ in assurance and recovery.\n- When a CI token becomes cloud authority The wfx-loot campaign used valid GitHub credentials to run code in CI, exchange workflow identity for cloud sessions and add trust relationships that survive rotation. Each step passed a verifier that checked less than it appeared to.\n- When an HSM cannot guarantee key security eMudhra's full incident report shows sixteen CA keys generated correctly inside HSMs and then read out into a Python process. The hardware boundary held; the procedure around it did not.\n- Authentication is not a string comparison CVE-2026-123158 let a musl error string match the stored field of accounts with no password. Password verification has three outcomes, and they need three representations.\n- Externally reviewedApproved by an independent specialist outside the project.\n- Internally reviewedApproved by the project editor, waiting for external review.\n- Draft · not yet reviewedResearched and sourced, not yet reviewed by a person.",
+        "main_text_excerpt": "",
         "pages": [
           {
-            "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-            "main_text_excerpt": "The Vaivoo Project·Independent reference on authentication & cryptography\nAuthentication, explained with evidence.\nHow people and machines prove who they are online: the methods, standards and cryptography behind them, and the Nordic and EU identity systems built on top. Every claim is scoped, sourced and signed by its reviewer.\n- 01Factors, authenticators and signals: three different thingsA factor is a category of evidence, an authenticator is the thing you use, and a signal is context the service observes. Mixing them up leads to wrong conclusions about how strong a sign-in is.\n- 02What MFA does, and doesn't, establishMulti-factor authentication raises the bar, but it does not by itself stop phishing, replay or account-recovery attacks. Which combination you use, and how it is configured, matters more than the label.\n- 03Passkeys, security keys and WebAuthn: related but differentWebAuthn is the standard, a passkey is a kind of credential, and a security key is one kind of device that can hold credentials. Synced and device-bound passkeys share the same protocol but differ in assurance and recovery.\n- When a CI token becomes cloud authority The wfx-loot campaign used valid GitHub credentials to run code in CI, exchange workflow identity for cloud sessions and add trust relationships that survive rotation. Each step passed a verifier that checked less than it appeared to.\n- When an HSM cannot guarantee key security eMudhra's full incident report shows sixteen CA keys generated correctly inside HSMs and then read out into a Python process. The hardware boundary held; the procedure around it did not.\n- Authentication is not a string comparison CVE-2026-123158 let a musl error string match the stored field of accounts with no password. Password verification has three outcomes, and they need three representations.\n- Externally reviewedApproved by an independent specialist outside the project.\n- Internally reviewedApproved by the project editor, waiting for external review.\n- Draft · not yet reviewedResearched and sourced, not yet reviewed by a person.",
-            "title": "The Vaivoo Project — authentication, explained with evidence",
+            "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
+            "main_text_excerpt": "",
+            "title": "",
             "url": "https://www.vaivoo.com/"
-          },
-          {
-            "content_sha256": "5b9440a5de1aa77ef823d1af29ef3b62dd1ece6db7654be50e356ea7b94f54ac",
-            "main_text_excerpt": "The Vaivoo Project·About\nAbout the project\nThe Vaivoo Project is an independent reference on digital authentication: the methods, the standards, the cryptography underneath, and the Nordic and EU identity systems built on top. It exists because most writing on the subject comes from vendors. Here, every statement is a scoped claim, tied to the exact section of a primary source and signed by the person who checked it.\nFounder & editor\nChris War\nChris War leads the project and sets its editorial method. He has been granted patents for authentication solutions worldwide, so he comes to this subject as someone who has designed authentication systems, not only written about them. That practical background shapes how the project works: claims are scoped to how a method is actually deployed, conditions are spelled out, and \"it depends\" is never left unexplained.\nAs editor he researches and approves every claim against its sources before it is published, and he decides which claims need independent review. He also writes the project's articles, on advanced cryptology, authentication and digital identity.\n- Founder and editor; approves every claim internally\n- Granted patents for authentication solutions worldwide\n- Chris War · The Vaivoo Project\n- 231Internal across 31 entries\nThe network\nThe editor works with a network of independent specialists in cryptography, identity systems and security engineering. They review claims from outside the project, and their approval is what turns a claim green: External. Security properties, assurance levels and regulatory status always need an independent technical reviewer in addition to the editor.\nReviewers are named on the claims they approve, and listed here once each has agreed to be named. The project does not show logos or titles of people who have not signed anything.\nOwnership and interests\nThe Vaivoo Project is owned and run by Chris War. Products in which the owner has a commercial interest are not included in comparisons unless they have been reviewed independently, and any such entry is labelled. The project carries no advertising and takes no payment for inclusion or placement.\nAI use\nAI assists research and drafting. It does not approve anything: every published claim is checked against its sources and approved by a named person. How the method works",
-            "title": "About · The Vaivoo Project",
-            "url": "https://www.vaivoo.com/about/"
-          },
-          {
-            "content_sha256": "ca66777786daab17ac907f800eabe9c19fe5080413b77e87cc7f86368c8faaf2",
-            "main_text_excerpt": "Security discussions often say “factor” when they mean the app, the phone or the code. This guide separates three ideas that are easy to blur: factors, authenticators and signals, and adds a fourth that is often confused with them: protocols.\nFactors are categories of evidence\nNIST SP 800-63B-4 sorts authentication evidence into categories. A password is “something you know” ↗. A one-time code generator with no unlock step, such as a TOTP app or token, is “something you have” ↗. So is a phone that receives an SMS code ↗, and so is a hardware security key used as a single-factor cryptographic authenticator ↗.\nBiometrics usually enter the picture differently. In a passkey with required user verification, a fingerprint, face or PIN activates a key that lives on the device. NIST then treats the combination of key possession and that activation factor as a multi-factor cryptographic authenticator ↗ ↗.\nAuthenticators are the things you use\nAn authenticator is the concrete thing: an app, a code device, a security key, a passkey. The same kind of authenticator can count as one factor or two depending on how it is used.\nA security key that only checks for a touch performs a test of user presence, not user verification. If the response shows that no activation factor was used, NIST says the authentication is single-factor ↗. The same family of key used with a PIN can act as a multi-factor authenticator ↗.\nNational schemes make this concrete. Denmark’s MitID operator describes its app as multi-factor in itself (a PIN plus device-bound keys), while its code display, audio code reader, chip and password are single-factor means that must be combined ↗. That is the operator’s own description, not an independent evaluation.\nSignals are context, not proof\nA signal is something the service observes about the situation. NIST tells verifiers to consider signals such as a recent SIM change, number porting or a device swap before sending a code over the phone network ↗.\nThe project’s reading: signals help a service decide how much to trust a sign-in, or whether to ask for more. They are not themselves something the user knows, has or is, so they do not add a factor.\nProtocols carry the result\nOpenID Connect is often mentioned alongside authentication methods, but it does not specify how the user is authenticated. The identity provider authenticates the user by whatever means it chooses, and OpenID Connect conveys the result in a signed ID Token ↗. Optional acr and amr values can tell the website which assurance class or methods were used, if both sides agree on their meaning ↗.\nNorwegian BankID illustrates why those labels matter. Its identity-provider documentation distinguishes the code device, the BankID app and the typed password through amr values, and warns that these are indications rather than a security mechanism ↗. The operator also rates its “BankID with biometrics” login at a lower assurance level than “BankID High” ↗.\nWhat to take away\n- Ask which factor categories are involved, not how many steps the user goes through.\n- Ask how the authenticator is configured: presence only, or user verification?\n- Treat signals as risk input, not as extra factors.\n- Remember that a protocol like OpenID Connect reports the result; the strength comes from the authenticator the identity provider actually used.",
-            "title": "Factors, authenticators and signals: three different things · The Vaivoo Project",
-            "url": "https://www.vaivoo.com/guides/factors-authenticators-signals/"
           }
         ],
         "registered_domain": "vaivoo.com",
         "requested_url": "https://www.vaivoo.com/",
-        "social_link_assessments": [
-          {
-            "identity_score": 0.98,
-            "matched_tokens": [
-              "vaivoo"
-            ],
-            "method": "deterministic_social_handle_identity_v1",
-            "platform": "linkedin",
-            "publishable": true,
-            "reason": "normalized legal-name sequence appears in the social handle",
-            "url": "https://linkedin.com/company/vaivoo"
-          }
-        ],
-        "social_links": [
-          {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/vaivoo"
-          }
-        ],
+        "social_link_assessments": [],
+        "social_links": [],
         "structured_organisations": [],
-        "title": "The Vaivoo Project — authentication, explained with evidence"
+        "title": ""
       }
     },
     "external_observations": [
@@ -1671,8 +1508,8 @@
         "organisation_number": "933483533",
         "platform": "company_site",
         "source_url": "https://www.vaivoo.com/",
-        "retrieved_at": "2026-11-17T22:04:23.635102Z",
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
+        "retrieved_at": "2026-11-19T20:53:59.146749Z",
+        "content_sha256": "082e3cc1e1938bff06dda2e578f93e6e2bfe81833183ca1cdba226ff2a387ed7",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1680,7 +1517,7 @@
             "domain": "vaivoo.com",
             "register_field": "hjemmeside",
             "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-17",
+            "index_as_of": "2026-11-19",
             "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
           },
           {
@@ -1693,91 +1530,24 @@
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-activity-933483533-6adf8654d482f98f",
+        "id": "company-site-activity-933483533-082e3cc1e1938bff",
         "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 3 bounded pages and 1 verified social links.",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
         "metrics": {
-          "bounded_pages_captured": 3,
-          "verified_social_links": 1,
+          "bounded_pages_captured": 1,
+          "verified_social_links": 0,
           "structured_organisation_records": 0,
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "933483533",
-        "platform": "linkedin",
-        "source_url": "https://www.vaivoo.com/",
-        "retrieved_at": "2026-11-17T22:04:23.635102Z",
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_domain_unique",
-            "domain": "vaivoo.com",
-            "register_field": "hjemmeside",
-            "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-17",
-            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
-          },
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-933483533-6adf8654d482f98f-linkedin",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
-        "metrics": {
-          "platform": "linkedin",
-          "url": "https://linkedin.com/company/vaivoo"
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "id": "registry-site-933483533-6adf8654d482f98f",
-        "organisation_number": "933483533",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://www.vaivoo.com/",
-        "retrieved_at": "2026-11-17T22:04:23.635102Z",
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "vaivoo.com",
-            "matched_organisation_number": "933483533",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
-            "explanation": "BRREG declares vaivoo.com as the website of organisation 933483533; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "The Vaivoo Project — authentication, explained with evidence — Source-backed reference on digital authentication and the cryptography behind it.",
-        "metrics": {
-          "title": "The Vaivoo Project — authentication, explained with evidence",
-          "description": "Source-backed reference on digital authentication and the cryptography behind it.",
-          "registry_domain": "vaivoo.com"
-        },
-        "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "933483533",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/933483533",
-        "retrieved_at": "2026-11-17T22:42:35.779033Z",
-        "content_sha256": "96d7d38761cb25cf16b8220821ca3d3b39cfc4999dd33aa2505d22724a1112b6",
+        "retrieved_at": "2026-11-20T08:21:42.851262Z",
+        "content_sha256": "0e640974178ba2b50b41f946001fd8993d52b563be080cb9c080a751c3ea8fb8",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1817,7 +1587,7 @@
           "bankruptcy_date": "",
           "website_domain": "www.vaivoo.com"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "brreg-kunngjoring-ac5955a84e1bc50af2218d4f",
@@ -1825,7 +1595,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000159566&amp;sokeverdi=933483533&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "4b37d669abd46807baf086d9d3546532507267dc13a27f3befbb61824413516d",
         "exact_entity": true,
         "identity_proof": [
@@ -1854,7 +1624,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000073909&amp;sokeverdi=933483533&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "964791c0e760bb9c3b13da03768e6aad9a99c2829b659c79417b49ea7d90c256",
         "exact_entity": true,
         "identity_proof": [
@@ -1883,7 +1653,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000048824&amp;sokeverdi=933483533&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "5c60f0030b38cc5c01d68bfd5edfb07752ea122f78e0bab06d4db367e028dbd0",
         "exact_entity": true,
         "identity_proof": [
@@ -1908,35 +1678,9 @@
       },
       {
         "organisation_number": "933483533",
-        "platform": "company_site",
-        "source_url": "https://www.vaivoo.com/",
-        "retrieved_at": "2026-11-17T22:04:23.635102Z",
-        "content_sha256": "6adf8654d482f98f63e2e6652c972bbe1111b697de9eb26c4a3168056935dbe9",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-8e5dedad19103f936044e5bd",
-        "signal_type": "website_description",
-        "evidence_span": "The Vaivoo Project — authentication, explained with evidence — Source-backed reference on digital authentication and the cryptography behind it.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "933483533",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=933483533&size=1000",
-        "retrieved_at": "2026-11-17T22:04:19.254492Z",
+        "retrieved_at": "2026-11-19T20:53:56.757210Z",
         "content_sha256": "9d4a7764a8a4e6c401f5ab92be0e752d7ae08888bb17780e53020f6372294297",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -1959,7 +1703,7 @@
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-update-15b2b207b37644f637899b31",
@@ -1967,7 +1711,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "15b2b207b37644f637899b311278d7674483de1ad47566c15572c197b28e8b1b",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -1997,7 +1741,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "66be468178b24d37f8dde91ea6151d0ebda46d627212037d4dc6404d6011fb05",
         "observed_at": "2026-02-23",
         "exact_entity": true,
@@ -2027,7 +1771,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "d0ad5684f5ce97bb40f4a3ba0e321d2e8152d85b9f871a9d0e791f617a439537",
         "observed_at": "2026-02-11",
         "exact_entity": true,
@@ -2057,7 +1801,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "9839ece6258990ee21a3a09d49b7e0fb25a0c6a2d6a8ff1fa59a8eb74b665f16",
         "observed_at": "2026-02-09",
         "exact_entity": true,
@@ -2087,7 +1831,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "29a4834acd73ff1aa03a56ed21c1a4dd7c545c16820e91b2d261345aa556babd",
         "observed_at": "2026-02-03",
         "exact_entity": true,
@@ -2117,7 +1861,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "b93d312cf93911ea3c19375dcfaa77435a3126df1eedf547ef005c3ee51d2fe1",
         "observed_at": "2025-12-11",
         "exact_entity": true,
@@ -2147,7 +1891,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "26c7810420b54aa9302bcfded0fb33e154a2c4e0664ab7ca183237c683dcd37e",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2177,7 +1921,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "95895e124bb9bf0d4aad5765ce9a1e3eb773b5e39d619818b39510acdb18bcf3",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -2207,7 +1951,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "705dfa40b56cca078109f7cf0939f3f03523277ef9e761bfed4b788038eb08b7",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -2237,7 +1981,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a51f7d101d7061ade204ad5b54fa33ccb2290fb6454c2e603e6def8ac19cf892",
         "observed_at": "2025-07-21",
         "exact_entity": true,
@@ -2267,7 +2011,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "cf5cba42348792ce1c4e46a5b918a1d885f8c7bb5cf741f9014079d064be41dc",
         "observed_at": "2025-07-08",
         "exact_entity": true,
@@ -2297,7 +2041,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "db2acb9970afb5b98b32be9cc4235526b15a2e781afdb8a8a15406610b1e689f",
         "observed_at": "2025-01-27",
         "exact_entity": true,
@@ -2327,7 +2071,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/933483533",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6f17cfeda39f61c9b29ad79dfe4c140b68deead552540b1749ccf8fb14e5560e",
         "observed_at": "2024-05-23",
         "exact_entity": true,
@@ -2353,5 +2097,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:29.860585+00:00"
+  "generated_at": "2026-11-20T12:49:30.706671+00:00"
 }

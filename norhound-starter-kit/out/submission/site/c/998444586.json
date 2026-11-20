@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:55.436300Z",
+        "retrieved_at": "2026-11-19T20:08:19.483275Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "998444586",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:39.876697Z",
+        "retrieved_at": "2026-11-19T20:59:49.754195Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -118,7 +118,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:33.087427Z",
+        "retrieved_at": "2026-11-19T20:59:45.843663Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -183,7 +183,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T22:08:41.704488Z",
+        "retrieved_at": "2026-11-19T20:59:52.220609Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -197,7 +197,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:42.611923Z",
+        "retrieved_at": "2026-11-19T20:59:53.465594Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -230,11 +230,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "998444586",
         "source_type": "official_registry_bulk",
@@ -306,7 +306,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:32.215910Z",
+        "retrieved_at": "2026-11-19T20:59:44.666142Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -345,7 +345,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T22:08:40.805776Z",
+        "retrieved_at": "2026-11-19T20:59:51.017507Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -400,25 +400,93 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": null,
+        "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
         "effective_at": null,
         "field": "website",
-        "note": "HTTP 500",
-        "retrieved_at": "2026-11-17T22:08:43.582511Z",
+        "note": "Company-controlled claim layer; not an official registry fact",
+        "retrieved_at": "2026-11-19T20:59:55.749125Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
         "source_url": "https://www.musicmanagement.no/",
-        "status": "source_error",
-        "value": null
+        "status": "available",
+        "value": {
+          "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+          "crawl_errors": [],
+          "description": "",
+          "discovered_social_links": [],
+          "extraction_state": "static_complete",
+          "final_url": "https://www.musicmanagement.no/",
+          "identity_assessment": {
+            "legal_name_tokens": [
+              "music",
+              "management"
+            ],
+            "matched_tokens": [],
+            "method": "deterministic_name_org_evidence_v2",
+            "publishable": false,
+            "reasons": [
+              "registry-linked URL lacks strong exact-entity identity evidence"
+            ],
+            "score": 0.3,
+            "status": "related_or_uncertain"
+          },
+          "main_text_excerpt": "Warning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the create_sid() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the validateId() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: session_name() [function.session-name]: Session name cannot be changed after headers have already been sent (sent from /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25) in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Storage/NativeStorage.php on line 385\nDeprecated: Function spl_object_hash() is deprecated since 8.6, consider using spl_object_id() instead in /var/www/musicmanagement.no/public_html/libraries/src/Plugin/PluginHelper.php on line 178 An Error Occurred: Whoops, looks like something went wrong.\nSorry, there was a problem we could not recover from.\nThe server returned a \"500 - Whoops, looks like something went wrong.\"",
+          "pages": [
+            {
+              "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+              "main_text_excerpt": "Warning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the create_sid() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the validateId() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: session_name() [function.session-name]: Session name cannot be changed after headers have already been sent (sent from /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25) in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Storage/NativeStorage.php on line 385\nDeprecated: Function spl_object_hash() is deprecated since 8.6, consider using spl_object_id() instead in /var/www/musicmanagement.no/public_html/libraries/src/Plugin/PluginHelper.php on line 178 An Error Occurred: Whoops, looks like something went wrong.\nSorry, there was a problem we could not recover from.\nThe server returned a \"500 - Whoops, looks like something went wrong.\"",
+              "title": "An Error Occurred: Whoops, looks like something went wrong.",
+              "url": "https://www.musicmanagement.no/"
+            }
+          ],
+          "registered_domain": "musicmanagement.no",
+          "requested_url": "https://www.musicmanagement.no/",
+          "social_link_assessments": [],
+          "social_links": [],
+          "structured_organisations": [],
+          "title": "An Error Occurred: Whoops, looks like something went wrong."
+        }
       },
       "external_observations": [
+        {
+          "id": "registry-site-998444586-2d4c5d70e4175f24",
+          "organisation_number": "998444586",
+          "platform": "company_site",
+          "signal_type": "website_description",
+          "source_url": "https://www.musicmanagement.no/",
+          "retrieved_at": "2026-11-19T20:59:55.749125Z",
+          "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "registry_declared_website_domain_match",
+              "value": "musicmanagement.no",
+              "matched_organisation_number": "998444586",
+              "source": "brreg",
+              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+              "retrieved_at": "2026-11-19T20:07:13.597411Z",
+              "explanation": "BRREG declares musicmanagement.no as the website of organisation 998444586; the crawled page on that host corroborates the organisation number or the legal name."
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "An Error Occurred: Whoops, looks like something went wrong.",
+          "metrics": {
+            "title": "An Error Occurred: Whoops, looks like something went wrong.",
+            "description": "",
+            "registry_domain": "musicmanagement.no"
+          },
+          "strategy": "registry_declared_website_description",
+          "observed_at": "2026-11-19"
+        },
         {
           "organisation_number": "998444586",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/998444586",
-          "retrieved_at": "2026-11-17T22:42:50.116607Z",
-          "content_sha256": "c50623a8af2da368ade3a3f5de4044290d7d3536e760e0aaac60bdbdb1f5f483",
+          "retrieved_at": "2026-11-20T08:22:09.405529Z",
+          "content_sha256": "ae5f2d10bd8bd94ea057d03f597d28928a243529b4f2b986401d01f9cf1892c4",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -443,14 +511,14 @@
             "email": "johnny@musicmanagement.no",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "998444586",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/998444586",
-          "retrieved_at": "2026-11-17T22:42:50.116607Z",
-          "content_sha256": "c50623a8af2da368ade3a3f5de4044290d7d3536e760e0aaac60bdbdb1f5f483",
+          "retrieved_at": "2026-11-20T08:22:09.405529Z",
+          "content_sha256": "ae5f2d10bd8bd94ea057d03f597d28928a243529b4f2b986401d01f9cf1892c4",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -490,7 +558,7 @@
             "bankruptcy_date": "",
             "website_domain": "www.musicmanagement.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "brreg-kunngjoring-eb13fb3a3527f75ecb9e007f",
@@ -498,7 +566,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000435057&amp;sokeverdi=998444586&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "b180ae69074cce5d29fccb28b47ad5d836f50cd182522b4506790b63737184e0",
           "exact_entity": true,
           "identity_proof": [
@@ -527,7 +595,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000069905&amp;sokeverdi=998444586&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "9b6f07ae6a143432b58746592760023ccf3cc06f16d5d8185ee5caf3a94407ac",
           "exact_entity": true,
           "identity_proof": [
@@ -556,7 +624,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674408&amp;sokeverdi=998444586&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:53Z",
+          "retrieved_at": "2026-11-20T09:18:31Z",
           "content_sha256": "59be00bcce76560d521ef17bcbeab3876578806d69152f89179ca14b8f165861",
           "exact_entity": true,
           "identity_proof": [
@@ -585,8 +653,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -606,7 +674,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-c230b3c80bef8d6d3062e3f8",
@@ -614,8 +682,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -635,13 +703,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "998444586",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
-          "retrieved_at": "2026-11-17T22:08:42.611923Z",
+          "retrieved_at": "2026-11-19T20:59:53.465594Z",
           "content_sha256": "6dca2bb78157a0c46e9b4ecb84dd868191cfade864111be9c531684add6a37e4",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -664,7 +732,7 @@
             "municipality": "NES",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-update-3e0c798452eba58f61963125",
@@ -672,7 +740,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "3e0c798452eba58f61963125903452f9aba259e6804a7938057570e0f60e357f",
           "observed_at": "2026-06-25",
           "exact_entity": true,
@@ -702,7 +770,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "796ebc734e9285884050630e86f94c785411c8559edefbd027b1de58f8b78acd",
           "observed_at": "2026-02-20",
           "exact_entity": true,
@@ -732,7 +800,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "3ae7d0303ef03f3855e8659ff795b1531edced649b89132d658d1809fd8fce9b",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -762,7 +830,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "773d76e15e5ecc4a251f7546629e6743a6ea839b53dc4c402e8b375e4ab3b6d4",
           "observed_at": "2025-08-04",
           "exact_entity": true,
@@ -792,7 +860,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e5407aa911b291db32792273c4ec7797d1582371dc493c1a34a8c3a737e44e37",
           "observed_at": "2024-06-20",
           "exact_entity": true,
@@ -822,7 +890,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "1782a2965874d29310bd93aef477a79517968c03bf6c9028ac4dca0ca4bc67b1",
           "observed_at": "2024-01-01",
           "exact_entity": true,
@@ -852,7 +920,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a189b4f72d90c9e590f265a7df6f3a709c61201e0c15dc2e79ec99f7300ec434",
           "observed_at": "2023-10-12",
           "exact_entity": true,
@@ -882,7 +950,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "64240032eb50ffd456ceb69df911a4425a98fcc7bd58b93291216dcfbc920ae6",
           "observed_at": "2023-03-13",
           "exact_entity": true,
@@ -912,7 +980,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6dabc030eb12d86e3670135ac78af36f464e4306f480705a16f6ed55ffb5773d",
           "observed_at": "2023-01-12",
           "exact_entity": true,
@@ -942,7 +1010,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f437db32b282b282fc46233edb16b9df337115396adc2bc671a4ca90c242eb98",
           "observed_at": "2022-10-12",
           "exact_entity": true,
@@ -972,7 +1040,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "1613c99147f1f87c143139895afc30d599e3dcc4c94616eedd1e53640758a7e9",
           "observed_at": "2022-08-16",
           "exact_entity": true,
@@ -1002,7 +1070,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "cb7bc563d08562fd0b12a4af6bfaa6a1d7193d52694f44597977c337f438416a",
           "observed_at": "2022-07-28",
           "exact_entity": true,
@@ -1032,7 +1100,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f0edb4f7d88fb03ef70f6fa8e21e99f56eb229ad0e206a0ec435796118ef819d",
           "observed_at": "2022-05-12",
           "exact_entity": true,
@@ -1062,7 +1130,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "dd3fa4fb585196023543f0df90c100eee7ef42f21563d9c696eb8562463e8cd7",
           "observed_at": "2021-08-21",
           "exact_entity": true,
@@ -1092,7 +1160,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "1e66fe79eed943ea12ce3fd7b031e3b74e1cd37a081db75113fb492e096fda7a",
           "observed_at": "2021-07-13",
           "exact_entity": true,
@@ -1122,7 +1190,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6d098bf296adb6f4d6b353bb93f25595c2af44bf8437df5f6db8a980864c8846",
           "observed_at": "2021-02-16",
           "exact_entity": true,
@@ -1152,7 +1220,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "727905c19ea2d2b2a9aba66fee6a8c0bd3a23b7c5d87db4fdc32936c79bbb008",
           "observed_at": "2020-09-14",
           "exact_entity": true,
@@ -1182,7 +1250,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "65ce7a0602512fb30841355319236cba7f25ef2ec27011f57ca6c32cc32712fd",
           "observed_at": "2020-08-03",
           "exact_entity": true,
@@ -1212,7 +1280,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "d34bc13029c7b029bb5b820f4d7fbf6a7239a9ea19b333cb2b8b28974c3786ee",
           "observed_at": "2020-03-12",
           "exact_entity": true,
@@ -1242,7 +1310,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "640532b1727f14f0e53f8ba0b77d72a634de7fa102e4b8e01850f8694a8af9ac",
           "observed_at": "2020-01-01",
           "exact_entity": true,
@@ -1278,15 +1346,15 @@
     "name": "MUSIC MANAGEMENT AS",
     "organisation_number": "998444586",
     "run_metrics": {
-      "bytes": 10124,
+      "bytes": 32566,
       "latencies_ms": [
-        855,
-        870,
-        913,
-        928,
-        898,
-        907,
-        449
+        1245,
+        1176,
+        1223,
+        1262,
+        1202,
+        1244,
+        961
       ],
       "requests": 8
     },
@@ -1297,7 +1365,7 @@
     "company_name": "MUSIC MANAGEMENT AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "MUSIC MANAGEMENT AS is a private limited company operating in Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet. Latest accounts (2025): revenue NOK 1.5m, annual result NOK 236.0k. Annual accounts available for 2012-2025 (14 years). Detailed records only available as PDFs. Revenue growing (+37.9% YoY). No fields changed since the previous run. Unknowns: official_website (no verified company website was established); employees (registry returned no employee count); hiring (no job sources were checked).",
+    "summary": "MUSIC MANAGEMENT AS is a private limited company operating in Andre tjenester tilknyttet kunstnerisk virksomhet og underholdningsvirksomhet. Latest accounts (2025): revenue NOK 1.5m, annual result NOK 236.0k. Annual accounts available for 2012-2025 (14 years). Detailed records only available as PDFs. Revenue growing (+37.9% YoY). 5 field(s) changed since run fresh-20261117T213100Z: website.title: not available -> An Error Occurred: Whoops, looks like something went wrong. [source: https://www.musicmanagement.no/]; website.description: not available -> not available [source: https://www.musicmanagement.no/]; website.social_links: not available -> no values [source: https://www.musicmanagement.no/]; business_description (1 added); added: An Error Occurred: Whoops, looks like something went wrong. [source: https://www.musicmanagement.no/]; registry_website_rescue (values changed). Unknowns: employees (registry returned no employee count); hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1312,7 +1380,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/998444586",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/998444586/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.musicmanagement.no/"
         ]
       },
       {
@@ -1328,7 +1397,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/998444586",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/998444586/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.musicmanagement.no/"
         ]
       },
       {
@@ -1344,7 +1414,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/998444586",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/998444586/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.musicmanagement.no/"
         ]
       },
       {
@@ -1360,7 +1431,8 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/998444586",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/998444586/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.musicmanagement.no/"
         ]
       },
       {
@@ -1389,10 +1461,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "5 field(s) changed since run fresh-20261117T213100Z: website.title: not available -> An Error Occurred: Whoops, looks like something went wrong. [source: https://www.musicmanagement.no/]; website.description: not available -> not available [source: https://www.musicmanagement.no/]; website.social_links: not available -> no values [source: https://www.musicmanagement.no/]; business_description (1 added); added: An Error Occurred: Whoops, looks like something went wrong. [source: https://www.musicmanagement.no/]; registry_website_rescue (values changed).",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
           "https://data.brreg.no/enhetsregisteret/api/enheter/998444586/roller",
@@ -1400,16 +1472,12 @@
           "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
           "https://data.brreg.no/regnskapsregisteret/regnskap/998444586",
           "https://data.brreg.no/regnskapsregisteret/regnskap/aarsregnskap/kopi/998444586/aar",
-          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/"
+          "https://www.brreg.no/en/submission-of-annual-accounts/reporting-obligations-to-the-register-of-company-accounts/who-has-an-accounting-obligation/",
+          "https://www.musicmanagement.no/"
         ]
       }
     ],
     "unknowns": [
-      {
-        "field": "official_website",
-        "state": "not_available",
-        "reason": "no verified company website was established"
-      },
       {
         "field": "employees",
         "state": "not_available",
@@ -1429,7 +1497,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:55.436300Z",
+      "retrieved_at": "2026-11-19T20:08:19.483275Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "998444586",
       "source_type": "official_rule_interpretation",
@@ -1449,7 +1517,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:39.876697Z",
+      "retrieved_at": "2026-11-19T20:59:49.754195Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1538,7 +1606,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:33.087427Z",
+      "retrieved_at": "2026-11-19T20:59:45.843663Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1603,7 +1671,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T22:08:41.704488Z",
+      "retrieved_at": "2026-11-19T20:59:52.220609Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -1617,7 +1685,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:42.611923Z",
+      "retrieved_at": "2026-11-19T20:59:53.465594Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -1650,11 +1718,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "998444586",
       "source_type": "official_registry_bulk",
@@ -1726,7 +1794,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:32.215910Z",
+      "retrieved_at": "2026-11-19T20:59:44.666142Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -1765,7 +1833,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T22:08:40.805776Z",
+      "retrieved_at": "2026-11-19T20:59:51.017507Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -1820,25 +1888,93 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": null,
+      "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
       "effective_at": null,
       "field": "website",
-      "note": "HTTP 500",
-      "retrieved_at": "2026-11-17T22:08:43.582511Z",
+      "note": "Company-controlled claim layer; not an official registry fact",
+      "retrieved_at": "2026-11-19T20:59:55.749125Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
       "source_url": "https://www.musicmanagement.no/",
-      "status": "source_error",
-      "value": null
+      "status": "available",
+      "value": {
+        "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+        "crawl_errors": [],
+        "description": "",
+        "discovered_social_links": [],
+        "extraction_state": "static_complete",
+        "final_url": "https://www.musicmanagement.no/",
+        "identity_assessment": {
+          "legal_name_tokens": [
+            "music",
+            "management"
+          ],
+          "matched_tokens": [],
+          "method": "deterministic_name_org_evidence_v2",
+          "publishable": false,
+          "reasons": [
+            "registry-linked URL lacks strong exact-entity identity evidence"
+          ],
+          "score": 0.3,
+          "status": "related_or_uncertain"
+        },
+        "main_text_excerpt": "Warning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the create_sid() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the validateId() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: session_name() [function.session-name]: Session name cannot be changed after headers have already been sent (sent from /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25) in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Storage/NativeStorage.php on line 385\nDeprecated: Function spl_object_hash() is deprecated since 8.6, consider using spl_object_id() instead in /var/www/musicmanagement.no/public_html/libraries/src/Plugin/PluginHelper.php on line 178 An Error Occurred: Whoops, looks like something went wrong.\nSorry, there was a problem we could not recover from.\nThe server returned a \"500 - Whoops, looks like something went wrong.\"",
+        "pages": [
+          {
+            "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+            "main_text_excerpt": "Warning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the create_sid() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: Class Joomla\\Session\\Handler\\DatabaseHandler implementing SessionHandlerInterface is missing the validateId() method which will be required in PHP 9.0 in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25\nWarning: session_name() [function.session-name]: Session name cannot be changed after headers have already been sent (sent from /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Handler/DatabaseHandler.php on line 25) in /var/www/musicmanagement.no/public_html/libraries/vendor/joomla/session/src/Storage/NativeStorage.php on line 385\nDeprecated: Function spl_object_hash() is deprecated since 8.6, consider using spl_object_id() instead in /var/www/musicmanagement.no/public_html/libraries/src/Plugin/PluginHelper.php on line 178 An Error Occurred: Whoops, looks like something went wrong.\nSorry, there was a problem we could not recover from.\nThe server returned a \"500 - Whoops, looks like something went wrong.\"",
+            "title": "An Error Occurred: Whoops, looks like something went wrong.",
+            "url": "https://www.musicmanagement.no/"
+          }
+        ],
+        "registered_domain": "musicmanagement.no",
+        "requested_url": "https://www.musicmanagement.no/",
+        "social_link_assessments": [],
+        "social_links": [],
+        "structured_organisations": [],
+        "title": "An Error Occurred: Whoops, looks like something went wrong."
+      }
     },
     "external_observations": [
+      {
+        "id": "registry-site-998444586-2d4c5d70e4175f24",
+        "organisation_number": "998444586",
+        "platform": "company_site",
+        "signal_type": "website_description",
+        "source_url": "https://www.musicmanagement.no/",
+        "retrieved_at": "2026-11-19T20:59:55.749125Z",
+        "content_sha256": "2d4c5d70e4175f24e4d5c0f9938a2268498652acc07ab0343a9a5a848b8492aa",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "registry_declared_website_domain_match",
+            "value": "musicmanagement.no",
+            "matched_organisation_number": "998444586",
+            "source": "brreg",
+            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
+            "retrieved_at": "2026-11-19T20:07:13.597411Z",
+            "explanation": "BRREG declares musicmanagement.no as the website of organisation 998444586; the crawled page on that host corroborates the organisation number or the legal name."
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "An Error Occurred: Whoops, looks like something went wrong.",
+        "metrics": {
+          "title": "An Error Occurred: Whoops, looks like something went wrong.",
+          "description": "",
+          "registry_domain": "musicmanagement.no"
+        },
+        "strategy": "registry_declared_website_description",
+        "observed_at": "2026-11-19"
+      },
       {
         "organisation_number": "998444586",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/998444586",
-        "retrieved_at": "2026-11-17T22:42:50.116607Z",
-        "content_sha256": "c50623a8af2da368ade3a3f5de4044290d7d3536e760e0aaac60bdbdb1f5f483",
+        "retrieved_at": "2026-11-20T08:22:09.405529Z",
+        "content_sha256": "ae5f2d10bd8bd94ea057d03f597d28928a243529b4f2b986401d01f9cf1892c4",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1863,14 +1999,14 @@
           "email": "johnny@musicmanagement.no",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "998444586",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/998444586",
-        "retrieved_at": "2026-11-17T22:42:50.116607Z",
-        "content_sha256": "c50623a8af2da368ade3a3f5de4044290d7d3536e760e0aaac60bdbdb1f5f483",
+        "retrieved_at": "2026-11-20T08:22:09.405529Z",
+        "content_sha256": "ae5f2d10bd8bd94ea057d03f597d28928a243529b4f2b986401d01f9cf1892c4",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -1910,7 +2046,7 @@
           "bankruptcy_date": "",
           "website_domain": "www.musicmanagement.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "brreg-kunngjoring-eb13fb3a3527f75ecb9e007f",
@@ -1918,7 +2054,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000435057&amp;sokeverdi=998444586&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "b180ae69074cce5d29fccb28b47ad5d836f50cd182522b4506790b63737184e0",
         "exact_entity": true,
         "identity_proof": [
@@ -1947,7 +2083,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000069905&amp;sokeverdi=998444586&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "9b6f07ae6a143432b58746592760023ccf3cc06f16d5d8185ee5caf3a94407ac",
         "exact_entity": true,
         "identity_proof": [
@@ -1976,7 +2112,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000674408&amp;sokeverdi=998444586&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:53Z",
+        "retrieved_at": "2026-11-20T09:18:31Z",
         "content_sha256": "59be00bcce76560d521ef17bcbeab3876578806d69152f89179ca14b8f165861",
         "exact_entity": true,
         "identity_proof": [
@@ -2005,8 +2141,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2026,7 +2162,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-c230b3c80bef8d6d3062e3f8",
@@ -2034,8 +2170,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2055,13 +2191,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "998444586",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=998444586&size=1000",
-        "retrieved_at": "2026-11-17T22:08:42.611923Z",
+        "retrieved_at": "2026-11-19T20:59:53.465594Z",
         "content_sha256": "6dca2bb78157a0c46e9b4ecb84dd868191cfade864111be9c531684add6a37e4",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2084,7 +2220,7 @@
           "municipality": "NES",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-update-3e0c798452eba58f61963125",
@@ -2092,7 +2228,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "3e0c798452eba58f61963125903452f9aba259e6804a7938057570e0f60e357f",
         "observed_at": "2026-06-25",
         "exact_entity": true,
@@ -2122,7 +2258,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "796ebc734e9285884050630e86f94c785411c8559edefbd027b1de58f8b78acd",
         "observed_at": "2026-02-20",
         "exact_entity": true,
@@ -2152,7 +2288,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "3ae7d0303ef03f3855e8659ff795b1531edced649b89132d658d1809fd8fce9b",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -2182,7 +2318,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "773d76e15e5ecc4a251f7546629e6743a6ea839b53dc4c402e8b375e4ab3b6d4",
         "observed_at": "2025-08-04",
         "exact_entity": true,
@@ -2212,7 +2348,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e5407aa911b291db32792273c4ec7797d1582371dc493c1a34a8c3a737e44e37",
         "observed_at": "2024-06-20",
         "exact_entity": true,
@@ -2242,7 +2378,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "1782a2965874d29310bd93aef477a79517968c03bf6c9028ac4dca0ca4bc67b1",
         "observed_at": "2024-01-01",
         "exact_entity": true,
@@ -2272,7 +2408,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a189b4f72d90c9e590f265a7df6f3a709c61201e0c15dc2e79ec99f7300ec434",
         "observed_at": "2023-10-12",
         "exact_entity": true,
@@ -2302,7 +2438,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "64240032eb50ffd456ceb69df911a4425a98fcc7bd58b93291216dcfbc920ae6",
         "observed_at": "2023-03-13",
         "exact_entity": true,
@@ -2332,7 +2468,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6dabc030eb12d86e3670135ac78af36f464e4306f480705a16f6ed55ffb5773d",
         "observed_at": "2023-01-12",
         "exact_entity": true,
@@ -2362,7 +2498,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f437db32b282b282fc46233edb16b9df337115396adc2bc671a4ca90c242eb98",
         "observed_at": "2022-10-12",
         "exact_entity": true,
@@ -2392,7 +2528,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "1613c99147f1f87c143139895afc30d599e3dcc4c94616eedd1e53640758a7e9",
         "observed_at": "2022-08-16",
         "exact_entity": true,
@@ -2422,7 +2558,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "cb7bc563d08562fd0b12a4af6bfaa6a1d7193d52694f44597977c337f438416a",
         "observed_at": "2022-07-28",
         "exact_entity": true,
@@ -2452,7 +2588,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f0edb4f7d88fb03ef70f6fa8e21e99f56eb229ad0e206a0ec435796118ef819d",
         "observed_at": "2022-05-12",
         "exact_entity": true,
@@ -2482,7 +2618,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "dd3fa4fb585196023543f0df90c100eee7ef42f21563d9c696eb8562463e8cd7",
         "observed_at": "2021-08-21",
         "exact_entity": true,
@@ -2512,7 +2648,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "1e66fe79eed943ea12ce3fd7b031e3b74e1cd37a081db75113fb492e096fda7a",
         "observed_at": "2021-07-13",
         "exact_entity": true,
@@ -2542,7 +2678,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6d098bf296adb6f4d6b353bb93f25595c2af44bf8437df5f6db8a980864c8846",
         "observed_at": "2021-02-16",
         "exact_entity": true,
@@ -2572,7 +2708,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "727905c19ea2d2b2a9aba66fee6a8c0bd3a23b7c5d87db4fdc32936c79bbb008",
         "observed_at": "2020-09-14",
         "exact_entity": true,
@@ -2602,7 +2738,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "65ce7a0602512fb30841355319236cba7f25ef2ec27011f57ca6c32cc32712fd",
         "observed_at": "2020-08-03",
         "exact_entity": true,
@@ -2632,7 +2768,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "d34bc13029c7b029bb5b820f4d7fbf6a7239a9ea19b333cb2b8b28974c3786ee",
         "observed_at": "2020-03-12",
         "exact_entity": true,
@@ -2662,7 +2798,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/998444586",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "640532b1727f14f0e53f8ba0b77d72a634de7fa102e4b8e01850f8694a8af9ac",
         "observed_at": "2020-01-01",
         "exact_entity": true,
@@ -2688,5 +2824,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:31.039911+00:00"
+  "generated_at": "2026-11-20T12:49:32.084235+00:00"
 }

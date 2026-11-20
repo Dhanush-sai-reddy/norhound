@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:52.836878Z",
+        "retrieved_at": "2026-11-19T20:08:16.049483Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "974989786",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:24.963457Z",
+        "retrieved_at": "2026-11-19T20:09:02.168018Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:21.880687Z",
+        "retrieved_at": "2026-11-19T20:09:00.842434Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:26.836658Z",
+        "retrieved_at": "2026-11-19T20:09:04.738705Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -351,7 +351,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:27.890444Z",
+        "retrieved_at": "2026-11-19T20:09:06.340782Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -384,11 +384,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "974989786",
         "source_type": "official_registry_bulk",
@@ -463,7 +463,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:21.017277Z",
+        "retrieved_at": "2026-11-19T20:08:59.576457Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -502,7 +502,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T21:32:25.872932Z",
+        "retrieved_at": "2026-11-19T20:09:03.408554Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -563,7 +563,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -679,7 +679,7 @@
           "organisation_number": "974989786",
           "platform": "company_site",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "exact_entity": true,
           "identity_proof": [
@@ -688,7 +688,7 @@
               "domain": "byggbelegg.no",
               "register_field": "hjemmeside",
               "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-17",
+              "index_as_of": "2026-11-19",
               "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
             },
             {
@@ -711,7 +711,39 @@
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
+        },
+        {
+          "id": "company-site-news-25a53cf4b52ee8b074bfb8c2",
+          "organisation_number": "974989786",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://www.byggbelegg.no/referanser",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
+          "content_sha256": "cc9cdcc245f185986c8027a17d7d505ba8662f23acfd78c1c24d1f4bbb490e8b",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Company news/activity page",
+          "metrics": {
+            "title": "Company news/activity page",
+            "captured_news_pages": 1,
+            "item_role": "primary",
+            "interpretation": "Company-owned activity; not independent sentiment.",
+            "sitemap_lastmod": "2022-03-04",
+            "body_excerpt": "<!DOCTYPE html> <html lang=\"no\" data-currency=\"NOK\" data-lang=\"no\" data-countrycode=\"nb_NO\" data-rHash=\"b4568df26077653eeadf29596708c94b\" dir=\"auto\" data-cookiebot=\"true\"> <head> <meta charset=\"UTF-8\"/> <script>window.addEventListener(\"CookiebotOnDialogInit\",function(){if (Cookiebot.getDomainUrlParam(\"autoAcceptCookies\") === \"true\")Cookiebot.setOutOfRegion();});</script><script async fetchpriority=\"high\" id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"5b94dcec-3020-4d5f-bcdf-26d534274faf\" data-blockingmode=\"auto\" data-culture=\"nb\" type=\"text/javascript\"></script><title>Våre referanser | Byggbelegg Elvestad AS</title><meta name=\"keywords\" content=\"Byggbelegg Elvestad AS\"><meta name=\"description\" content=\"Byggbelegg Elvestad AS har siden 1994 utført et bredt spekter oppdrag for kunder over hele Oslo og omegn. Vi vektlegger gode kundeforhold og kvalitetsarbeid.\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"Våre referanser | Byggbelegg Elvestad AS\"><meta property=\"og:url\" content=\"https://www.byggbelegg.no/referanser\"><meta property=\"og:description\" content=\"Byggbelegg Elvestad AS har siden 1994 utført et bredt spekter oppdrag for kunder over hele Oslo og omegn. Vi vektlegger gode kundeforhold og kvalitetsarbeid.\"><meta property=\"og:image\" content=\"https://www.byggbelegg.no/uploads/Q1ltEepp/AdobeStock_2091118991_635.jpg\"><link rel='canonical' href='https://www.byggbelegg.no/referanser'/><!-- Cookiebot: Google consent mode v2 defaults --> <script type='text/javascript' data-cookieconsent='ignore'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'granted', 'wait_for_update': 500, }); gtag(\"set\", \"ads_data_redaction\", true); gtag(\"set\", \"url_passthrough\", false); </script><!-- Mono global site tag (gtag.js) - Google Analytics --> <script async type='text/plain' data-cookieconsent='statistics' src='https://www.googletagmanager.com/gtag/js?id=G-9VBFD4CRWY'></script> <script type='text/plain' data-cookieconsent='statistics'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9VBFD4CRWY', { 'anonymize_ip': true, 'send_page_view': false, 'custom_map': {'dimension1': 'monoSiteId', 'dimension2': 'monoRendering'} }); gtag('event', 'monoAction', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); gtag('event', 'page_view', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); var _mtr = _mtr || []; _mtr.push(['addTracker', function (action) { gtag('event', action, { 'send_to': 'G-9VBFD4CRWY', 'event_label': 'monoAction', 'monoSiteId': '1313293', 'monoRendering': 'website' }); }]); _mtr.push(['addRawTracker', function() { gtag.apply(gtag,arguments); }]); </script><!-- Custom global site tag (gtag.js) - Google Analytics --> <script async data-cookieconsent='statistics' type='text/plain' src=\"https://www.googletagmanager.com/gtag/js?id=G-LF2ZD3WR0R\"></script> <script type='text/plain' data-cookieconsent='statistics'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LF2ZD3WR0R', { 'anonymize_ip': true, 'send_page_view': false, 'custom_map': {'dimension1': 'monoSiteId', 'dimension2': 'monoRendering'} }); gtag('event', 'monoAction', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); gtag('event', 'page_view', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); var _mtr = _mtr || []; _mtr.push(['addTracker', function (action) { gtag('event', action, { 'send_to': 'G-LF2ZD3WR0R', 'event_label': 'monoAction', 'monoSiteId': '1313293', 'monoRendering': 'website' }); }]); _mtr.push(['addRawTracker', function() { gtag.apply(gtag,arguments); }]); </script><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel='shortcut icon' type='image/x-icon' href='/uploads/3Ha6D2QJ/favicon.ico'/><link rel=\"preload\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\" as=\"style\" fetchpriority=\"high\"><link rel=\"stylesheet\" id=\"external_libs\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\" media=\"print\" onload=\"this.onload=null;this.media='all'\" onerror=\"this.onerror=null;this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\"></noscript><style>article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,b",
+            "body_fetched_at": "2026-11-20T07:59:34.969733+00:00"
+          },
+          "strategy": "company_site_activity",
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-site-974989786-881f104cd7fe4659",
@@ -719,7 +751,7 @@
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "exact_entity": true,
           "identity_proof": [
@@ -729,7 +761,7 @@
               "matched_organisation_number": "974989786",
               "source": "brreg",
               "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
+              "retrieved_at": "2026-11-19T20:07:13.597411Z",
               "explanation": "BRREG declares byggbelegg.no as the website of organisation 974989786; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
@@ -743,14 +775,14 @@
             "registry_domain": "byggbelegg.no"
           },
           "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/974989786",
-          "retrieved_at": "2026-11-17T22:40:42.858817Z",
-          "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+          "retrieved_at": "2026-11-20T08:17:17.229798Z",
+          "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -775,14 +807,14 @@
             "email": "post@byggbelegg.no",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/974989786",
-          "retrieved_at": "2026-11-17T22:40:42.858817Z",
-          "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+          "retrieved_at": "2026-11-20T08:17:17.229798Z",
+          "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -807,14 +839,14 @@
             "phone": "22 76 70 50",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/974989786",
-          "retrieved_at": "2026-11-17T22:40:42.858817Z",
-          "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+          "retrieved_at": "2026-11-20T08:17:17.229798Z",
+          "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -854,14 +886,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.byggbelegg.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/974989786",
-          "retrieved_at": "2026-11-17T22:40:42.858817Z",
-          "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+          "retrieved_at": "2026-11-20T08:17:17.229798Z",
+          "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -888,7 +920,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "registry-workforce-f97d8416214fdbe93a912e7c",
@@ -896,7 +928,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T21:32:21.017277Z",
+          "retrieved_at": "2026-11-19T20:08:59.576457Z",
           "content_sha256": "29b8f04bc7abd531e9a27fce70517b8232b30675059d4b3c7f947c0b8cd43e7c",
           "exact_entity": true,
           "identity_proof": [
@@ -926,8 +958,8 @@
           "organisation_number": "974989786",
           "platform": "company_directory",
           "source_url": "https://www.fagfolkguiden.no/bedrift/byggbelegg-elvestad-as-974989786",
-          "retrieved_at": "2026-11-17T22:38:01.985376Z",
-          "content_sha256": "b1bc66af0afba2237d2b3bbdbb42795c69035f397cc8f43ab462c5a5e9c04bcc",
+          "retrieved_at": "2026-11-20T08:13:09.922819Z",
+          "content_sha256": "1c7da1d0ca48d561908d7bef24b980d456d702f15e2a06820a936faf83d96746",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -956,7 +988,7 @@
           "strategy": "directory_profile_metrics",
           "source_class": "company_directory",
           "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"974989786\"}",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "brreg-kunngjoring-989767b0375390f1a2213225",
@@ -964,7 +996,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000641569&amp;sokeverdi=974989786&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:30Z",
+          "retrieved_at": "2026-11-20T09:15:47Z",
           "content_sha256": "874e550e12faf933a86f7f2e8f6206d3a1c8246a84933cebf0e2906e801c0af8",
           "exact_entity": true,
           "identity_proof": [
@@ -993,7 +1025,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000236500&amp;sokeverdi=974989786&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:30Z",
+          "retrieved_at": "2026-11-20T09:15:47Z",
           "content_sha256": "9d5d9c115e35dd4595d92aa2d3a00efb3a23b07196ffecc6560b4cb6f992c061",
           "exact_entity": true,
           "identity_proof": [
@@ -1022,7 +1054,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000787353&amp;sokeverdi=974989786&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:25:30Z",
+          "retrieved_at": "2026-11-20T09:15:47Z",
           "content_sha256": "36d6965ca427c73b8c4f30460db9e6eaf7e4b259155e6c5fd1eb468ee7287472",
           "exact_entity": true,
           "identity_proof": [
@@ -1051,8 +1083,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1072,7 +1104,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-46fc129fdb005ec07015fda6",
@@ -1080,8 +1112,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1101,13 +1133,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_site",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "exact_entity": true,
           "identity_proof": [
@@ -1127,13 +1159,13 @@
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "974989786",
           "platform": "company_site",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "exact_entity": true,
           "identity_proof": [
@@ -1154,13 +1186,13 @@
             "declared_url": "https://www.byggbelegg.no",
             "interpretation": "Brand name from the site's own JSON-LD."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "974989786",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=974989786&size=1000",
-          "retrieved_at": "2026-11-17T21:32:27.890444Z",
+          "retrieved_at": "2026-11-19T20:09:06.340782Z",
           "content_sha256": "68474504b9698e5b18afff2b91b38603b2bb186a4e567f17fadcad5d89fba3ff",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1183,13 +1215,13 @@
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "974989786",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/974989786",
-          "retrieved_at": "2026-11-17T21:32:26.836658Z",
+          "retrieved_at": "2026-11-19T20:09:04.738705Z",
           "content_sha256": "667cbb9fcac531c445aa7106c15b4ca628d19a71018118c370188a48deeee3e9",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1213,7 +1245,7 @@
             "relation": "Konsern datter",
             "interpretation": "Group-structure relation declared by Brønnøysund."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "sitemap-page-34cc3447db6f53c075c7328f",
@@ -1221,7 +1253,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2025-11-05",
           "exact_entity": true,
@@ -1249,7 +1281,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2025-10-14",
           "exact_entity": true,
@@ -1277,7 +1309,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2022-04-28",
           "exact_entity": true,
@@ -1305,7 +1337,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2022-03-04",
           "exact_entity": true,
@@ -1333,7 +1365,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2022-03-04",
           "exact_entity": true,
@@ -1361,7 +1393,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.byggbelegg.no/",
-          "retrieved_at": "2026-11-17T21:32:30.680890Z",
+          "retrieved_at": "2026-11-19T20:09:15.959980Z",
           "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
           "observed_at": "2022-03-04",
           "exact_entity": true,
@@ -1389,7 +1421,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ab7521a11fb48d4658d711918c0f1f956f5bb802d81f861a840f0fd9cbc5a3d7",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1419,7 +1451,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "78f03f93916ae0ead93ff1a784d313f75d4c083c23cba0d580ea684ab5392481",
           "observed_at": "2026-08-01",
           "exact_entity": true,
@@ -1449,7 +1481,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "b93ae70202ac373806b228ee097251c9c03514b2ccbd482f561322019385c861",
           "observed_at": "2026-04-13",
           "exact_entity": true,
@@ -1479,7 +1511,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f2c84e04fc51d4a2e8fa4d02f16036ca29c21d1f93adc90881124127b863fedd",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1509,7 +1541,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6f3f53fce847dc0c875f7af5189fa0e7386262fd5547ab077cced4b8ec7879d2",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1539,7 +1571,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "cbe4a158af658bfafe0dc124251068c7af783c22b094c77b41be97e9183351b1",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1569,7 +1601,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "5a03ad6a2d56e6aba389140d169d38689702223865075d8358a7f52b74a7d598",
           "observed_at": "2025-07-09",
           "exact_entity": true,
@@ -1599,7 +1631,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ad73a246a10317ca2e437568c53b2810de5350cf5f098bfeff9112c6ac2014c7",
           "observed_at": "2025-04-08",
           "exact_entity": true,
@@ -1629,7 +1661,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "c9c5314a2307b67bf20845970a1f9b2ac45e62a396a0338946f23bede2636a39",
           "observed_at": "2024-12-12",
           "exact_entity": true,
@@ -1659,7 +1691,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "41a107f5083db359da704101335300d2a1746bb6c348dbd64842cc156c29db69",
           "observed_at": "2024-07-20",
           "exact_entity": true,
@@ -1689,7 +1721,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "3c9c8dadbdd3619fe8289da6bba0c9b241f350c01be29571e95cf74d80c13e75",
           "observed_at": "2024-07-13",
           "exact_entity": true,
@@ -1719,7 +1751,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "8f5ae68a468b3dfa0bab977bbaf84a238b0ca91aaabb27f1ca26c402496fbc8e",
           "observed_at": "2024-05-14",
           "exact_entity": true,
@@ -1749,7 +1781,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ec68cb89a20fc954f8feb288b9c5ccbd4a856dbca4ab1b6c36cf1bd4e341654b",
           "observed_at": "2024-02-13",
           "exact_entity": true,
@@ -1779,7 +1811,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a2d3445d6c97f3802fcd431e725d4b7ce45f7eba52604e63dc902c09dd9fad5b",
           "observed_at": "2023-11-14",
           "exact_entity": true,
@@ -1809,7 +1841,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "4d6c6c6dc0210f19b84daa0121f8a145596a1720c61dccaa66c4beb223c71ca4",
           "observed_at": "2023-07-22",
           "exact_entity": true,
@@ -1839,7 +1871,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ea71a0f9f1e80d81df19f6de418018c4eee691c302c6b7b9b12b686bbff9c1cb",
           "observed_at": "2023-06-13",
           "exact_entity": true,
@@ -1869,7 +1901,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e1c3f576632f9a5830f6d89af85641e2131f6ee7b3dac74e9d057390f6bc5a1e",
           "observed_at": "2023-04-12",
           "exact_entity": true,
@@ -1907,15 +1939,15 @@
     "run_metrics": {
       "bytes": 254944,
       "latencies_ms": [
-        855,
-        863,
-        938,
-        909,
-        963,
-        1053,
-        819,
-        400,
-        390
+        1461,
+        1265,
+        1325,
+        1239,
+        1329,
+        1601,
+        2169,
+        2513,
+        2820
       ],
       "requests": 12
     },
@@ -1926,7 +1958,7 @@
     "company_name": "BYGGBELEGG ELVESTAD AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "BYGGBELEGG ELVESTAD AS is a private limited company operating in Gulvlegging og tapetsering. Latest accounts (2025): revenue NOK 41.3m, annual result NOK 4.0m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+22.8% YoY). Registered employees: 13. No fields changed since the previous run. Unknowns: hiring (no job sources were checked).",
+    "summary": "BYGGBELEGG ELVESTAD AS is a private limited company operating in Gulvlegging og tapetsering. Latest accounts (2025): revenue NOK 41.3m, annual result NOK 4.0m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue growing (+22.8% YoY). Registered employees: 13. 1 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-11-19) [source: https://www.byggbelegg.no/referanser]. Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2036,10 +2068,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "1 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-11-19) [source: https://www.byggbelegg.no/referanser].",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
           "https://data.brreg.no/enhetsregisteret/api/enheter/974989786/roller",
@@ -2068,7 +2100,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:52.836878Z",
+      "retrieved_at": "2026-11-19T20:08:16.049483Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "974989786",
       "source_type": "official_rule_interpretation",
@@ -2088,7 +2120,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:24.963457Z",
+      "retrieved_at": "2026-11-19T20:09:02.168018Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2182,7 +2214,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:21.880687Z",
+      "retrieved_at": "2026-11-19T20:09:00.842434Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2247,7 +2279,7 @@
       "effective_at": null,
       "field": "group",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:26.836658Z",
+      "retrieved_at": "2026-11-19T20:09:04.738705Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2410,7 +2442,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:27.890444Z",
+      "retrieved_at": "2026-11-19T20:09:06.340782Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2443,11 +2475,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "974989786",
       "source_type": "official_registry_bulk",
@@ -2522,7 +2554,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:21.017277Z",
+      "retrieved_at": "2026-11-19T20:08:59.576457Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2561,7 +2593,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T21:32:25.872932Z",
+      "retrieved_at": "2026-11-19T20:09:03.408554Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2622,7 +2654,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T21:32:30.680890Z",
+      "retrieved_at": "2026-11-19T20:09:15.959980Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -2738,7 +2770,7 @@
         "organisation_number": "974989786",
         "platform": "company_site",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "exact_entity": true,
         "identity_proof": [
@@ -2747,7 +2779,7 @@
             "domain": "byggbelegg.no",
             "register_field": "hjemmeside",
             "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-17",
+            "index_as_of": "2026-11-19",
             "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
           },
           {
@@ -2770,7 +2802,39 @@
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
+      },
+      {
+        "id": "company-site-news-25a53cf4b52ee8b074bfb8c2",
+        "organisation_number": "974989786",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://www.byggbelegg.no/referanser",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
+        "content_sha256": "cc9cdcc245f185986c8027a17d7d505ba8662f23acfd78c1c24d1f4bbb490e8b",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Company news/activity page",
+        "metrics": {
+          "title": "Company news/activity page",
+          "captured_news_pages": 1,
+          "item_role": "primary",
+          "interpretation": "Company-owned activity; not independent sentiment.",
+          "sitemap_lastmod": "2022-03-04",
+          "body_excerpt": "<!DOCTYPE html> <html lang=\"no\" data-currency=\"NOK\" data-lang=\"no\" data-countrycode=\"nb_NO\" data-rHash=\"b4568df26077653eeadf29596708c94b\" dir=\"auto\" data-cookiebot=\"true\"> <head> <meta charset=\"UTF-8\"/> <script>window.addEventListener(\"CookiebotOnDialogInit\",function(){if (Cookiebot.getDomainUrlParam(\"autoAcceptCookies\") === \"true\")Cookiebot.setOutOfRegion();});</script><script async fetchpriority=\"high\" id=\"Cookiebot\" src=\"https://consent.cookiebot.com/uc.js\" data-cbid=\"5b94dcec-3020-4d5f-bcdf-26d534274faf\" data-blockingmode=\"auto\" data-culture=\"nb\" type=\"text/javascript\"></script><title>Våre referanser | Byggbelegg Elvestad AS</title><meta name=\"keywords\" content=\"Byggbelegg Elvestad AS\"><meta name=\"description\" content=\"Byggbelegg Elvestad AS har siden 1994 utført et bredt spekter oppdrag for kunder over hele Oslo og omegn. Vi vektlegger gode kundeforhold og kvalitetsarbeid.\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"Våre referanser | Byggbelegg Elvestad AS\"><meta property=\"og:url\" content=\"https://www.byggbelegg.no/referanser\"><meta property=\"og:description\" content=\"Byggbelegg Elvestad AS har siden 1994 utført et bredt spekter oppdrag for kunder over hele Oslo og omegn. Vi vektlegger gode kundeforhold og kvalitetsarbeid.\"><meta property=\"og:image\" content=\"https://www.byggbelegg.no/uploads/Q1ltEepp/AdobeStock_2091118991_635.jpg\"><link rel='canonical' href='https://www.byggbelegg.no/referanser'/><!-- Cookiebot: Google consent mode v2 defaults --> <script type='text/javascript' data-cookieconsent='ignore'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'granted', 'wait_for_update': 500, }); gtag(\"set\", \"ads_data_redaction\", true); gtag(\"set\", \"url_passthrough\", false); </script><!-- Mono global site tag (gtag.js) - Google Analytics --> <script async type='text/plain' data-cookieconsent='statistics' src='https://www.googletagmanager.com/gtag/js?id=G-9VBFD4CRWY'></script> <script type='text/plain' data-cookieconsent='statistics'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9VBFD4CRWY', { 'anonymize_ip': true, 'send_page_view': false, 'custom_map': {'dimension1': 'monoSiteId', 'dimension2': 'monoRendering'} }); gtag('event', 'monoAction', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); gtag('event', 'page_view', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); var _mtr = _mtr || []; _mtr.push(['addTracker', function (action) { gtag('event', action, { 'send_to': 'G-9VBFD4CRWY', 'event_label': 'monoAction', 'monoSiteId': '1313293', 'monoRendering': 'website' }); }]); _mtr.push(['addRawTracker', function() { gtag.apply(gtag,arguments); }]); </script><!-- Custom global site tag (gtag.js) - Google Analytics --> <script async data-cookieconsent='statistics' type='text/plain' src=\"https://www.googletagmanager.com/gtag/js?id=G-LF2ZD3WR0R\"></script> <script type='text/plain' data-cookieconsent='statistics'> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LF2ZD3WR0R', { 'anonymize_ip': true, 'send_page_view': false, 'custom_map': {'dimension1': 'monoSiteId', 'dimension2': 'monoRendering'} }); gtag('event', 'monoAction', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); gtag('event', 'page_view', { 'monoSiteId': '1313293', 'monoRendering': 'website'}); var _mtr = _mtr || []; _mtr.push(['addTracker', function (action) { gtag('event', action, { 'send_to': 'G-LF2ZD3WR0R', 'event_label': 'monoAction', 'monoSiteId': '1313293', 'monoRendering': 'website' }); }]); _mtr.push(['addRawTracker', function() { gtag.apply(gtag,arguments); }]); </script><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel='shortcut icon' type='image/x-icon' href='/uploads/3Ha6D2QJ/favicon.ico'/><link rel=\"preload\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\" as=\"style\" fetchpriority=\"high\"><link rel=\"stylesheet\" id=\"external_libs\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\" media=\"print\" onload=\"this.onload=null;this.media='all'\" onerror=\"this.onerror=null;this.media='all'\"><noscript><link rel=\"stylesheet\" href=\"https://site-assets.cdnmns.com/4461fb153de0bd0ff5b12a5c05bd5a61/css/external-libs.css?1794394802543\"></noscript><style>article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,b",
+          "body_fetched_at": "2026-11-20T07:59:34.969733+00:00"
+        },
+        "strategy": "company_site_activity",
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-site-974989786-881f104cd7fe4659",
@@ -2778,7 +2842,7 @@
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "exact_entity": true,
         "identity_proof": [
@@ -2788,7 +2852,7 @@
             "matched_organisation_number": "974989786",
             "source": "brreg",
             "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
+            "retrieved_at": "2026-11-19T20:07:13.597411Z",
             "explanation": "BRREG declares byggbelegg.no as the website of organisation 974989786; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
@@ -2802,14 +2866,14 @@
           "registry_domain": "byggbelegg.no"
         },
         "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/974989786",
-        "retrieved_at": "2026-11-17T22:40:42.858817Z",
-        "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+        "retrieved_at": "2026-11-20T08:17:17.229798Z",
+        "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2834,14 +2898,14 @@
           "email": "post@byggbelegg.no",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/974989786",
-        "retrieved_at": "2026-11-17T22:40:42.858817Z",
-        "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+        "retrieved_at": "2026-11-20T08:17:17.229798Z",
+        "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2866,14 +2930,14 @@
           "phone": "22 76 70 50",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/974989786",
-        "retrieved_at": "2026-11-17T22:40:42.858817Z",
-        "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+        "retrieved_at": "2026-11-20T08:17:17.229798Z",
+        "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2913,14 +2977,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.byggbelegg.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/974989786",
-        "retrieved_at": "2026-11-17T22:40:42.858817Z",
-        "content_sha256": "f1f21e80415ccb368e2dc90ff123dc8f6521f1460ff192e3c01f3277a50bc8f3",
+        "retrieved_at": "2026-11-20T08:17:17.229798Z",
+        "content_sha256": "71cdfbb9b00544b8ca4cc0402a4e6904311546db9f05ec0a2b24cc535bcc2490",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2947,7 +3011,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "registry-workforce-f97d8416214fdbe93a912e7c",
@@ -2955,7 +3019,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T21:32:21.017277Z",
+        "retrieved_at": "2026-11-19T20:08:59.576457Z",
         "content_sha256": "29b8f04bc7abd531e9a27fce70517b8232b30675059d4b3c7f947c0b8cd43e7c",
         "exact_entity": true,
         "identity_proof": [
@@ -2985,8 +3049,8 @@
         "organisation_number": "974989786",
         "platform": "company_directory",
         "source_url": "https://www.fagfolkguiden.no/bedrift/byggbelegg-elvestad-as-974989786",
-        "retrieved_at": "2026-11-17T22:38:01.985376Z",
-        "content_sha256": "b1bc66af0afba2237d2b3bbdbb42795c69035f397cc8f43ab462c5a5e9c04bcc",
+        "retrieved_at": "2026-11-20T08:13:09.922819Z",
+        "content_sha256": "1c7da1d0ca48d561908d7bef24b980d456d702f15e2a06820a936faf83d96746",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3015,7 +3079,7 @@
         "strategy": "directory_profile_metrics",
         "source_class": "company_directory",
         "evidence_span": "\"identifier\":{\"@type\":\"PropertyValue\",\"name\":\"Organisasjonsnummer\",\"value\":\"974989786\"}",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "brreg-kunngjoring-989767b0375390f1a2213225",
@@ -3023,7 +3087,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000641569&amp;sokeverdi=974989786&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:30Z",
+        "retrieved_at": "2026-11-20T09:15:47Z",
         "content_sha256": "874e550e12faf933a86f7f2e8f6206d3a1c8246a84933cebf0e2906e801c0af8",
         "exact_entity": true,
         "identity_proof": [
@@ -3052,7 +3116,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000236500&amp;sokeverdi=974989786&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:30Z",
+        "retrieved_at": "2026-11-20T09:15:47Z",
         "content_sha256": "9d5d9c115e35dd4595d92aa2d3a00efb3a23b07196ffecc6560b4cb6f992c061",
         "exact_entity": true,
         "identity_proof": [
@@ -3081,7 +3145,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000787353&amp;sokeverdi=974989786&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:25:30Z",
+        "retrieved_at": "2026-11-20T09:15:47Z",
         "content_sha256": "36d6965ca427c73b8c4f30460db9e6eaf7e4b259155e6c5fd1eb468ee7287472",
         "exact_entity": true,
         "identity_proof": [
@@ -3110,8 +3174,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3131,7 +3195,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-46fc129fdb005ec07015fda6",
@@ -3139,8 +3203,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3160,13 +3224,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_site",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "exact_entity": true,
         "identity_proof": [
@@ -3186,13 +3250,13 @@
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "974989786",
         "platform": "company_site",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "exact_entity": true,
         "identity_proof": [
@@ -3213,13 +3277,13 @@
           "declared_url": "https://www.byggbelegg.no",
           "interpretation": "Brand name from the site's own JSON-LD."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "974989786",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=974989786&size=1000",
-        "retrieved_at": "2026-11-17T21:32:27.890444Z",
+        "retrieved_at": "2026-11-19T20:09:06.340782Z",
         "content_sha256": "68474504b9698e5b18afff2b91b38603b2bb186a4e567f17fadcad5d89fba3ff",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3242,13 +3306,13 @@
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "974989786",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/konsernstruktur/974989786",
-        "retrieved_at": "2026-11-17T21:32:26.836658Z",
+        "retrieved_at": "2026-11-19T20:09:04.738705Z",
         "content_sha256": "667cbb9fcac531c445aa7106c15b4ca628d19a71018118c370188a48deeee3e9",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3272,7 +3336,7 @@
           "relation": "Konsern datter",
           "interpretation": "Group-structure relation declared by Brønnøysund."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "sitemap-page-34cc3447db6f53c075c7328f",
@@ -3280,7 +3344,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2025-11-05",
         "exact_entity": true,
@@ -3308,7 +3372,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2025-10-14",
         "exact_entity": true,
@@ -3336,7 +3400,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2022-04-28",
         "exact_entity": true,
@@ -3364,7 +3428,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2022-03-04",
         "exact_entity": true,
@@ -3392,7 +3456,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2022-03-04",
         "exact_entity": true,
@@ -3420,7 +3484,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.byggbelegg.no/",
-        "retrieved_at": "2026-11-17T21:32:30.680890Z",
+        "retrieved_at": "2026-11-19T20:09:15.959980Z",
         "content_sha256": "881f104cd7fe4659c5bb30496a052ce05067f118d8df0770a069f3f32a5b4f2c",
         "observed_at": "2022-03-04",
         "exact_entity": true,
@@ -3448,7 +3512,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ab7521a11fb48d4658d711918c0f1f956f5bb802d81f861a840f0fd9cbc5a3d7",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -3478,7 +3542,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "78f03f93916ae0ead93ff1a784d313f75d4c083c23cba0d580ea684ab5392481",
         "observed_at": "2026-08-01",
         "exact_entity": true,
@@ -3508,7 +3572,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "b93ae70202ac373806b228ee097251c9c03514b2ccbd482f561322019385c861",
         "observed_at": "2026-04-13",
         "exact_entity": true,
@@ -3538,7 +3602,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f2c84e04fc51d4a2e8fa4d02f16036ca29c21d1f93adc90881124127b863fedd",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3568,7 +3632,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6f3f53fce847dc0c875f7af5189fa0e7386262fd5547ab077cced4b8ec7879d2",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3598,7 +3662,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "cbe4a158af658bfafe0dc124251068c7af783c22b094c77b41be97e9183351b1",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3628,7 +3692,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "5a03ad6a2d56e6aba389140d169d38689702223865075d8358a7f52b74a7d598",
         "observed_at": "2025-07-09",
         "exact_entity": true,
@@ -3658,7 +3722,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ad73a246a10317ca2e437568c53b2810de5350cf5f098bfeff9112c6ac2014c7",
         "observed_at": "2025-04-08",
         "exact_entity": true,
@@ -3688,7 +3752,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "c9c5314a2307b67bf20845970a1f9b2ac45e62a396a0338946f23bede2636a39",
         "observed_at": "2024-12-12",
         "exact_entity": true,
@@ -3718,7 +3782,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "41a107f5083db359da704101335300d2a1746bb6c348dbd64842cc156c29db69",
         "observed_at": "2024-07-20",
         "exact_entity": true,
@@ -3748,7 +3812,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "3c9c8dadbdd3619fe8289da6bba0c9b241f350c01be29571e95cf74d80c13e75",
         "observed_at": "2024-07-13",
         "exact_entity": true,
@@ -3778,7 +3842,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "8f5ae68a468b3dfa0bab977bbaf84a238b0ca91aaabb27f1ca26c402496fbc8e",
         "observed_at": "2024-05-14",
         "exact_entity": true,
@@ -3808,7 +3872,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ec68cb89a20fc954f8feb288b9c5ccbd4a856dbca4ab1b6c36cf1bd4e341654b",
         "observed_at": "2024-02-13",
         "exact_entity": true,
@@ -3838,7 +3902,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a2d3445d6c97f3802fcd431e725d4b7ce45f7eba52604e63dc902c09dd9fad5b",
         "observed_at": "2023-11-14",
         "exact_entity": true,
@@ -3868,7 +3932,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "4d6c6c6dc0210f19b84daa0121f8a145596a1720c61dccaa66c4beb223c71ca4",
         "observed_at": "2023-07-22",
         "exact_entity": true,
@@ -3898,7 +3962,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ea71a0f9f1e80d81df19f6de418018c4eee691c302c6b7b9b12b686bbff9c1cb",
         "observed_at": "2023-06-13",
         "exact_entity": true,
@@ -3928,7 +3992,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/974989786",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e1c3f576632f9a5830f6d89af85641e2131f6ee7b3dac74e9d057390f6bc5a1e",
         "observed_at": "2023-04-12",
         "exact_entity": true,
@@ -3954,5 +4018,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:20.537086+00:00"
+  "generated_at": "2026-11-20T12:49:19.993154+00:00"
 }

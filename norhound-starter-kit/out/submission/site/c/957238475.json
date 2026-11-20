@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:52.377526Z",
+        "retrieved_at": "2026-11-19T20:08:15.471991Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "957238475",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T22:09:30.302851Z",
+        "retrieved_at": "2026-11-19T21:00:49.579909Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -123,7 +123,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T22:09:23.042691Z",
+        "retrieved_at": "2026-11-19T21:00:45.071238Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -188,7 +188,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T22:09:32.696680Z",
+        "retrieved_at": "2026-11-19T21:00:52.035422Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -202,7 +202,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T22:09:33.603651Z",
+        "retrieved_at": "2026-11-19T21:00:53.358323Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,11 +235,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "957238475",
         "source_type": "official_registry_bulk",
@@ -331,7 +331,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T22:09:22.172075Z",
+        "retrieved_at": "2026-11-19T21:00:43.878437Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -370,7 +370,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T22:09:31.825561Z",
+        "retrieved_at": "2026-11-19T21:00:50.799231Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -503,7 +503,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -593,7 +593,7 @@
           "organisation_number": "957238475",
           "platform": "company_site",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "exact_entity": true,
           "identity_proof": [
@@ -602,7 +602,7 @@
               "domain": "vigorindustrier.no",
               "register_field": "hjemmeside",
               "sole_declarer_in_register": true,
-              "index_as_of": "2026-11-17",
+              "index_as_of": "2026-11-19",
               "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
             },
             {
@@ -625,6 +625,86 @@
             "extraction_state": "static_complete",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           },
+          "observed_at": "2026-11-19"
+        },
+        {
+          "id": "company-site-news-e9ea26d3e0cbd980bb12569d",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "public_post",
+          "source_url": "https://www.vigorindustrier.no/referanser/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "04f8251b55e0c35d3b2753241f9d4045b89826bdc2eb918dc9781872fbb87ec8",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Company news/activity page",
+          "metrics": {
+            "title": "Company news/activity page",
+            "captured_news_pages": 1,
+            "item_role": "primary",
+            "interpretation": "Company-owned activity; not independent sentiment.",
+            "sitemap_lastmod": "2026-10-28",
+            "body_excerpt": "<!-- This page is cached by the Hummingbird Performance plugin v4.0.2 - https://wordpress.org/plugins/hummingbird-performance/. --><!DOCTYPE html>\n<html lang=\"nb-NO\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<link rel=\"canonical\" href=\"http://vigorindustrier.no.dev.exigo.no/referanser/\" />\n\t<meta property=\"og:locale\" content=\"nb_NO\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"Ledende kunder velger oss - Vigor Industrier\" />\n\t<meta property=\"og:description\" content=\"Vigor Industrier har siden 1990 gjennomført oppdrag for olje- og gassindustriens ledende aktører. Vi har samarbeidet med Aker Solutions/Kværner siden 1990 og Aibel siden 2010. Vi også rammeavtale med IKM Testing, Moreld Apply og Wood Group. Vi har levert bemanning til flere norske skipsverft, produksjonsbedrifter, smelteverk, mekaniske verksteder &#8211; hvor som helst det er behov [&hellip;]\" />\n\t<meta property=\"og:url\" content=\"http://vigorindustrier.no.dev.exigo.no/referanser/\" />\n\t<meta property=\"og:site_name\" content=\"Vigor Industrier\" />\n\t<meta property=\"article:modified_time\" content=\"2026-10-28T16:33:28+00:00\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<meta name=\"twitter:label1\" content=\"Ansl. lesetid\" />\n\t<meta name=\"twitter:data1\" content=\"1 minutt\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\",\"name\":\"Ledende kunder velger oss - Vigor Industrier\",\"isPartOf\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#website\"},\"datePublished\":\"2024-02-27T07:06:46+00:00\",\"dateModified\":\"2026-10-28T16:33:28+00:00\",\"breadcrumb\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/#breadcrumb\"},\"inLanguage\":\"nb-NO\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hjem\",\"item\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Ledende kunder velger oss\"}]},{\"@type\":\"WebSite\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#website\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\",\"name\":\"Vigor Industrier\",\"description\":\"Vi har alltid motivert og kompetent personell ledig for oppdrag\",\"publisher\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nb-NO\"},{\"@type\":\"Organization\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#organization\",\"name\":\"Vigor Industrier\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nb-NO\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.vigorindustrier.no\\/wp-content\\/uploads\\/2024\\/02\\/VIGOR-logo-hoved-sort-rgb-scaled.webp\",\"contentUrl\":\"https:\\/\\/www.vigorindustrier.no\\/wp-content\\/uploads\\/2024\\/02\\/VIGOR-logo-hoved-sort-rgb-scaled.webp\",\"width\":2560,\"height\":1364,\"caption\":\"Vigor Industrier\"},\"image\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<title>Ledende kunder velger oss - Vigor Industrier</title>\n<link rel='dns-prefetch' href='//www.googletagmanager.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Vigor Industrier &raquo; strøm\" href=\"https://www.vigorindustrier.no/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Vigor Industrier &raquo; kommentarstrøm\" href=\"https://www.vigorindustrier.no/comments/feed/\" />\n<link rel=\"alternate\" title=\"oEmbed (JSON)\" type=\"application/json+oembed\" href=\"https://www.vigorindustrier.no/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vigorindustrier.no%2Freferanser%2F\" />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\" href=\"https://www.vigorindustrier.no/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vigorindustrier.no%2Freferanser%2F&#038;format=xml\" />\n<style id=\"wp-img-auto-sizes-contain-inline-css\">\nimg:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css */\n</style>\n<style id=\"wp-block-navigation-link-inline-css\">\n.wp-block-navigation .wp-block-navigation-item__label{overflow-",
+            "body_fetched_at": "2026-11-20T07:59:34.969733+00:00",
+            "published": "2026-10-28T16:33:28+00:00",
+            "date_source": "page_body",
+            "date_precision": "machine_readable",
+            "published_at": "2026-10-28T16:33:28+00:00"
+          },
+          "strategy": "company_site_activity",
+          "observed_at": "2026-10-28T16:33:28+00:00"
+        },
+        {
+          "id": "nav-job-ed8428beb6d6e5251d14402d",
+          "organisation_number": "957238475",
+          "platform": "job_board",
+          "signal_type": "job_posting",
+          "source_url": "https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112",
+          "retrieved_at": "2026-11-17T21:25:58.113784Z",
+          "content_sha256": "aef01d1b0429dcec9cf5bc7173a0ed6f46f0da0aa7c5fa804646b723fa9e0e34",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "organisation_number_on_official_api",
+              "source": "pam-stilling-feed.nav.no",
+              "source_class": "official_job_board",
+              "matched_organisation_number": "957238475",
+              "explanation": "NAV job feed detail advertises the posting under a brreg sub-unit whose resolved parent legal entity (organisation number 957238475) equals the profile organisation number."
+            }
+          ],
+          "acquisition_mode": "official_api",
+          "rights_status": "approved",
+          "source_class": "official_api",
+          "signal": {
+            "title": "Industrirørlegger",
+            "jobtitle": "Industrirørlegger",
+            "employer_name": "Vigor Industrier AS",
+            "published": "2026-11-18T23:04:35.432757+01:00",
+            "expires": "2027-01-19T01:00:00+01:00",
+            "application_url": "https://cv.webtemp.no/apply?k=290&cvpt=3000021",
+            "city_municipal": "ORKANGER, ORKLAND",
+            "engagement_type": "Fast",
+            "extent": "Heltid",
+            "sector": "Privat",
+            "position_count": "5"
+          },
+          "evidence_span": "Industrirørlegger | Vigor Industrier AS | ORKANGER, ORKLAND",
+          "metrics": {
+            "strategy": "official_nav_job_feed_orgnr_match",
+            "source": "pam-stilling-feed.nav.no",
+            "index_built_at": "2026-11-17T21:25:58.113784Z",
+            "detail_source_url": ""
+          },
+          "strategy": "official_nav_job_feed_orgnr_match",
           "observed_at": "2026-11-17"
         },
         {
@@ -633,7 +713,7 @@
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "exact_entity": true,
           "identity_proof": [
@@ -643,7 +723,7 @@
               "matched_organisation_number": "957238475",
               "source": "brreg",
               "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
+              "retrieved_at": "2026-11-19T20:07:13.597411Z",
               "explanation": "BRREG declares vigorindustrier.no as the website of organisation 957238475; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
@@ -657,14 +737,14 @@
             "registry_domain": "vigorindustrier.no"
           },
           "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/957238475",
-          "retrieved_at": "2026-11-17T22:42:53.638432Z",
-          "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+          "retrieved_at": "2026-11-20T08:22:18.045981Z",
+          "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -689,14 +769,14 @@
             "email": "post@vigorindustrier.no",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/957238475",
-          "retrieved_at": "2026-11-17T22:42:53.638432Z",
-          "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+          "retrieved_at": "2026-11-20T08:22:18.045981Z",
+          "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -721,14 +801,14 @@
             "phone": "72 47 06 50",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/957238475",
-          "retrieved_at": "2026-11-17T22:42:53.638432Z",
-          "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+          "retrieved_at": "2026-11-20T08:22:18.045981Z",
+          "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -768,14 +848,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.vigorindustrier.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/957238475",
-          "retrieved_at": "2026-11-17T22:42:53.638432Z",
-          "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+          "retrieved_at": "2026-11-20T08:22:18.045981Z",
+          "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -802,7 +882,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "registry-workforce-729a82b2c7a75a4e53fe1194",
@@ -810,7 +890,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:09:22.172075Z",
+          "retrieved_at": "2026-11-19T21:00:43.878437Z",
           "content_sha256": "38461e7a7b3cc7eb44d62317f3bd5d1d605bece3e32aa2bb351d0b87204fcc6d",
           "exact_entity": true,
           "identity_proof": [
@@ -842,7 +922,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000208428&amp;sokeverdi=957238475&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:57Z",
+          "retrieved_at": "2026-11-20T09:18:36Z",
           "content_sha256": "dade1728de37e090824a0a2120e7078be979f3bfc5f84942243a0d748675aab0",
           "exact_entity": true,
           "identity_proof": [
@@ -871,7 +951,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000056927&amp;sokeverdi=957238475&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:57Z",
+          "retrieved_at": "2026-11-20T09:18:36Z",
           "content_sha256": "b3bda0e4f3b5677b3b18f35ccdb63a93bf1c6b3447fa83d0547ae60349c84dd7",
           "exact_entity": true,
           "identity_proof": [
@@ -900,7 +980,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000757037&amp;sokeverdi=957238475&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:57Z",
+          "retrieved_at": "2026-11-20T09:18:36Z",
           "content_sha256": "6861a62773ac314522cae44cdd4448d7b14e7126175b0bd11f654ffafe982c72",
           "exact_entity": true,
           "identity_proof": [
@@ -929,8 +1009,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -950,7 +1030,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-a54f240816335a2f964bad5e",
@@ -958,8 +1038,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -979,7 +1059,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-b5a08aa5b4e51442d5723a05",
@@ -987,8 +1067,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -1008,13 +1088,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_site",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "exact_entity": true,
           "identity_proof": [
@@ -1034,13 +1114,13 @@
           "metrics": {
             "interpretation": "Company-owned description; the company's own words."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "957238475",
           "platform": "company_site",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "exact_entity": true,
           "identity_proof": [
@@ -1061,13 +1141,13 @@
             "declared_url": "http://vigorindustrier.no.dev.exigo.no/",
             "interpretation": "Brand name from the site's own JSON-LD."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "957238475",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957238475&size=1000",
-          "retrieved_at": "2026-11-17T22:09:33.603651Z",
+          "retrieved_at": "2026-11-19T21:00:53.358323Z",
           "content_sha256": "920f57ce8cb2a0993148ca4d69f9ad80aee45b5abdb20536c66e17a2c716632f",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1090,7 +1170,7 @@
             "municipality": "ORKLAND",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "sitemap-page-f5a796e35334a0aeb9710ce3",
@@ -1098,7 +1178,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -1126,7 +1206,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -1154,7 +1234,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1182,7 +1262,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1210,7 +1290,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1238,7 +1318,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1266,7 +1346,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1294,7 +1374,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1322,7 +1402,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1350,7 +1430,7 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.vigorindustrier.no/",
-          "retrieved_at": "2026-11-17T22:09:39.308455Z",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
           "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
           "observed_at": "2026-10-30",
           "exact_entity": true,
@@ -1373,12 +1453,516 @@
           "strategy": "sitemap_lastmod"
         },
         {
+          "id": "sitemap-page-74646947cd6ae12aede446ea",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/kranforere/ last modified 2026-10-30",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/fagomrader/kranforere/",
+            "lastmod": "2026-10-30",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ca0441184847b1e4522f1f47",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/barekraft/ last modified 2026-10-30",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/barekraft/",
+            "lastmod": "2026-10-30",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6deac82b998271e28df1ee81",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/gdpr-og-personvern/ last modified 2026-10-30",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/gdpr-og-personvern/",
+            "lastmod": "2026-10-30",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6714ddb2321d6c99c6354944",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/informasjonskapsler/ last modified 2026-10-30",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/informasjonskapsler/",
+            "lastmod": "2026-10-30",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-fa2f3a953df997c697d2798b",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-30",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/tilgjengelighet-pa-nett/ last modified 2026-10-30",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/tilgjengelighet-pa-nett/",
+            "lastmod": "2026-10-30",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-79db663bb532d848f21f0bc5",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-formann-irek/ last modified 2026-10-29",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/mot-formann-irek/",
+            "lastmod": "2026-10-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-54ae12fb0d351a5afcc9b613",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/ledige-stillinger/ last modified 2026-10-29",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/ledige-stillinger/",
+            "lastmod": "2026-10-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-1837cce8325c165912d47910",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/kompetanse-og-samhold-skaper-suksess/ last modified 2026-10-29",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/kompetanse-og-samhold-skaper-suksess/",
+            "lastmod": "2026-10-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-f3ae5ac162968e70a8076a00",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-sveiser-marcin/ last modified 2026-10-29",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/mot-sveiser-marcin/",
+            "lastmod": "2026-10-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-130896b714cae39288a9a8e9",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-29",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-industrirorleggeren-andrzej/ last modified 2026-10-29",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/mot-industrirorleggeren-andrzej/",
+            "lastmod": "2026-10-29",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-fc6d1f5615d1a20f793685e3",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/ledigeressurser/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/ledigeressurser/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-a0a058f05ed4c8358197681c",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/flyttet/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/flyttet/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-9c1f44e0e480dbfe90af1a68",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/v_o/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/v_o/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-abb9e7e926211361f4f64d7e",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/kvalitet/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/kvalitet/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-a276f0352b21dc033be0986d",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/referanser/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/referanser/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-c9b9cb59f933a173dcc4b9ae",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-28",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/category/uncategorized/ last modified 2026-10-28",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/category/uncategorized/",
+            "lastmod": "2026-10-28",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-c9acc4866019217b8e18783f",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-20",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/industrirorleggere/ last modified 2026-10-20",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/fagomrader/industrirorleggere/",
+            "lastmod": "2026-10-20",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-bc6d8eece30d10d1bd1511df",
+          "organisation_number": "957238475",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.vigorindustrier.no/",
+          "retrieved_at": "2026-11-19T21:01:04.060239Z",
+          "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+          "observed_at": "2026-10-20",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/industriell-produksjon/ last modified 2026-10-20",
+          "metrics": {
+            "page_url": "https://www.vigorindustrier.no/fagomrader/industriell-produksjon/",
+            "lastmod": "2026-10-20",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "id": "registry-update-e268e319a4e28607519290d9",
           "organisation_number": "957238475",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e268e319a4e28607519290d9f6aae57b8790d465eabc3a31eaf064018083d600",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -1408,7 +1992,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "8f04c30c0bbb38cefe953e7af5e58e7f76473b16567cf8dcc0459ac2d582cec4",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1438,7 +2022,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "45bfb98084b53885f5a84fc51da315fd609b82243f7f5d630f556a92dba56b01",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1468,7 +2052,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "826a331c0ea126f83a1f4879803847ebeed95c1e99dd026b5f8338ed0032d850",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1498,7 +2082,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "00f242c8ed698b3c47e4e80f9bc7847295543b5d692d81aa4cec5611d742594f",
           "observed_at": "2026-04-25",
           "exact_entity": true,
@@ -1528,7 +2112,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "43e39eda813018c163c4d1428a7ff4f66e51222dff5221e55ad3abb96fbf7238",
           "observed_at": "2026-04-13",
           "exact_entity": true,
@@ -1558,7 +2142,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "763e269a7f51ad35c41a85bba85cbdd7aefb5d325382097cdc48c4e6bc9e2016",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1588,7 +2172,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "106ebc0b6f1334b35d0f140a3a7c15476364c185d4f80f3021d646b457f39ae8",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1618,7 +2202,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a17d61e31e43669cd6a88103353461f5bffdf713fbfb8c1a221e44f628af4f93",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -1648,7 +2232,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f6a314f39c7de612c04cd51c58b4c65511bc3c0ee23681e43a41fc890fc6a9d5",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1678,7 +2262,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "812a53220813446e12462e480928e7a7970223f54ead4ef1d32412153321fd88",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1708,7 +2292,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "c76334d0b51db3435c98729c45254fd445a56198ab8b3d34bde6aacf0a3f7304",
           "observed_at": "2025-10-15",
           "exact_entity": true,
@@ -1738,7 +2322,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "0fe42779e2c6540e18fae2acdd28d4600696b1b9b9ccf7cc67a604361d95ccff",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1768,7 +2352,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "868af1686b7f6f2dd30ae4291b7a5e7aa40e762b0c546797281d6ff2443b2b0a",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1798,7 +2382,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "84b3207503d4991108236ce7986634f28bf324b9a9ee0a8087dc89da412063fc",
           "observed_at": "2025-07-14",
           "exact_entity": true,
@@ -1828,7 +2412,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "3142e007c702d64a5f0547553d866a14051f35b43c6281f8590ddc31e095fc5a",
           "observed_at": "2025-07-05",
           "exact_entity": true,
@@ -1858,7 +2442,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "bf501b6005db6e695e2e9466c89f7d0e916f390421c2f2cb733f9a3839ec6981",
           "observed_at": "2025-06-12",
           "exact_entity": true,
@@ -1888,7 +2472,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "793b0cdce22d58d3c14556407c9c1d66ec14ccb36214498f9e66f8e1ab5b9b2b",
           "observed_at": "2025-05-12",
           "exact_entity": true,
@@ -1918,7 +2502,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "171b96b9675b0a6dbd4be0bbf49b44d9211afa44ec375ca509617d7f6d8f742b",
           "observed_at": "2025-04-14",
           "exact_entity": true,
@@ -1948,7 +2532,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e6e42e4f85c34ad586c5915c54969b7d8ad4ba1450c013fc8b664a127ce1e05c",
           "observed_at": "2025-04-08",
           "exact_entity": true,
@@ -1986,16 +2570,16 @@
     "run_metrics": {
       "bytes": 553691,
       "latencies_ms": [
-        886,
-        870,
-        934,
-        1522,
-        870,
-        906,
-        928,
-        957,
-        908,
-        915
+        1224,
+        1192,
+        1217,
+        1218,
+        1235,
+        1322,
+        1637,
+        1255,
+        1326,
+        1310
       ],
       "requests": 14
     },
@@ -2006,7 +2590,7 @@
     "company_name": "VIGOR INDUSTRIER AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "VIGOR INDUSTRIER AS is a private limited company operating in Utleie av arbeidskraft og andre personaladministrative tjenester. Latest accounts (2025): revenue NOK 94.1m, annual result NOK 4.6m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (-1.3% YoY). Registered employees: 142. No fields changed since the previous run. Unknowns: hiring (no job sources were checked).",
+    "summary": "VIGOR INDUSTRIER AS is a private limited company operating in Utleie av arbeidskraft og andre personaladministrative tjenester. Latest accounts (2025): revenue NOK 94.1m, annual result NOK 4.6m. Annual accounts available for 2011-2025 (15 years). Detailed records only available as PDFs. Revenue stable (-1.3% YoY). Registered employees: 142. 12 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-10-28T16:33:28+00:00) [source: https://www.vigorindustrier.no/referanser/]; job_application_url (1 added); added: https://cv.webtemp.no/apply?k=290&cvpt=3000021 [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_deadline (1 added); added: 2027-01-19T01:00:00+01:00 [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_employer (1 added); added: Vigor Industrier AS [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_engagement_type (1 added); added: Fast [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112] (+7 more). Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -2111,10 +2695,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "12 field(s) changed since run fresh-20261117T213100Z: dated_news (1 added); added: Company news/activity page (2026-10-28T16:33:28+00:00) [source: https://www.vigorindustrier.no/referanser/]; job_application_url (1 added); added: https://cv.webtemp.no/apply?k=290&cvpt=3000021 [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_deadline (1 added); added: 2027-01-19T01:00:00+01:00 [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_employer (1 added); added: Vigor Industrier AS [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112]; job_engagement_type (1 added); added: Fast [source: https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112] (+7 more).",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
           "https://data.brreg.no/enhetsregisteret/api/enheter/957238475/roller",
@@ -2142,7 +2726,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:52.377526Z",
+      "retrieved_at": "2026-11-19T20:08:15.471991Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "957238475",
       "source_type": "official_rule_interpretation",
@@ -2162,7 +2746,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T22:09:30.302851Z",
+      "retrieved_at": "2026-11-19T21:00:49.579909Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2256,7 +2840,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T22:09:23.042691Z",
+      "retrieved_at": "2026-11-19T21:00:45.071238Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2321,7 +2905,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T22:09:32.696680Z",
+      "retrieved_at": "2026-11-19T21:00:52.035422Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2335,7 +2919,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T22:09:33.603651Z",
+      "retrieved_at": "2026-11-19T21:00:53.358323Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2368,11 +2952,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "957238475",
       "source_type": "official_registry_bulk",
@@ -2464,7 +3048,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T22:09:22.172075Z",
+      "retrieved_at": "2026-11-19T21:00:43.878437Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2503,7 +3087,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T22:09:31.825561Z",
+      "retrieved_at": "2026-11-19T21:00:50.799231Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2636,7 +3220,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T22:09:39.308455Z",
+      "retrieved_at": "2026-11-19T21:01:04.060239Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -2726,7 +3310,7 @@
         "organisation_number": "957238475",
         "platform": "company_site",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "exact_entity": true,
         "identity_proof": [
@@ -2735,7 +3319,7 @@
             "domain": "vigorindustrier.no",
             "register_field": "hjemmeside",
             "sole_declarer_in_register": true,
-            "index_as_of": "2026-11-17",
+            "index_as_of": "2026-11-19",
             "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
           },
           {
@@ -2758,6 +3342,86 @@
           "extraction_state": "static_complete",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         },
+        "observed_at": "2026-11-19"
+      },
+      {
+        "id": "company-site-news-e9ea26d3e0cbd980bb12569d",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "public_post",
+        "source_url": "https://www.vigorindustrier.no/referanser/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "04f8251b55e0c35d3b2753241f9d4045b89826bdc2eb918dc9781872fbb87ec8",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Company news/activity page",
+        "metrics": {
+          "title": "Company news/activity page",
+          "captured_news_pages": 1,
+          "item_role": "primary",
+          "interpretation": "Company-owned activity; not independent sentiment.",
+          "sitemap_lastmod": "2026-10-28",
+          "body_excerpt": "<!-- This page is cached by the Hummingbird Performance plugin v4.0.2 - https://wordpress.org/plugins/hummingbird-performance/. --><!DOCTYPE html>\n<html lang=\"nb-NO\">\n<head>\n\t<meta charset=\"UTF-8\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<link rel=\"canonical\" href=\"http://vigorindustrier.no.dev.exigo.no/referanser/\" />\n\t<meta property=\"og:locale\" content=\"nb_NO\" />\n\t<meta property=\"og:type\" content=\"article\" />\n\t<meta property=\"og:title\" content=\"Ledende kunder velger oss - Vigor Industrier\" />\n\t<meta property=\"og:description\" content=\"Vigor Industrier har siden 1990 gjennomført oppdrag for olje- og gassindustriens ledende aktører. Vi har samarbeidet med Aker Solutions/Kværner siden 1990 og Aibel siden 2010. Vi også rammeavtale med IKM Testing, Moreld Apply og Wood Group. Vi har levert bemanning til flere norske skipsverft, produksjonsbedrifter, smelteverk, mekaniske verksteder &#8211; hvor som helst det er behov [&hellip;]\" />\n\t<meta property=\"og:url\" content=\"http://vigorindustrier.no.dev.exigo.no/referanser/\" />\n\t<meta property=\"og:site_name\" content=\"Vigor Industrier\" />\n\t<meta property=\"article:modified_time\" content=\"2026-10-28T16:33:28+00:00\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<meta name=\"twitter:label1\" content=\"Ansl. lesetid\" />\n\t<meta name=\"twitter:data1\" content=\"1 minutt\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\",\"name\":\"Ledende kunder velger oss - Vigor Industrier\",\"isPartOf\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#website\"},\"datePublished\":\"2024-02-27T07:06:46+00:00\",\"dateModified\":\"2026-10-28T16:33:28+00:00\",\"breadcrumb\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/#breadcrumb\"},\"inLanguage\":\"nb-NO\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/referanser\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hjem\",\"item\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Ledende kunder velger oss\"}]},{\"@type\":\"WebSite\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#website\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\",\"name\":\"Vigor Industrier\",\"description\":\"Vi har alltid motivert og kompetent personell ledig for oppdrag\",\"publisher\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nb-NO\"},{\"@type\":\"Organization\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#organization\",\"name\":\"Vigor Industrier\",\"url\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nb-NO\",\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.vigorindustrier.no\\/wp-content\\/uploads\\/2024\\/02\\/VIGOR-logo-hoved-sort-rgb-scaled.webp\",\"contentUrl\":\"https:\\/\\/www.vigorindustrier.no\\/wp-content\\/uploads\\/2024\\/02\\/VIGOR-logo-hoved-sort-rgb-scaled.webp\",\"width\":2560,\"height\":1364,\"caption\":\"Vigor Industrier\"},\"image\":{\"@id\":\"http:\\/\\/vigorindustrier.no.dev.exigo.no\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n\t<!-- / Yoast SEO plugin. -->\n\n\n<title>Ledende kunder velger oss - Vigor Industrier</title>\n<link rel='dns-prefetch' href='//www.googletagmanager.com' />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Vigor Industrier &raquo; strøm\" href=\"https://www.vigorindustrier.no/feed/\" />\n<link rel=\"alternate\" type=\"application/rss+xml\" title=\"Vigor Industrier &raquo; kommentarstrøm\" href=\"https://www.vigorindustrier.no/comments/feed/\" />\n<link rel=\"alternate\" title=\"oEmbed (JSON)\" type=\"application/json+oembed\" href=\"https://www.vigorindustrier.no/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vigorindustrier.no%2Freferanser%2F\" />\n<link rel=\"alternate\" title=\"oEmbed (XML)\" type=\"text/xml+oembed\" href=\"https://www.vigorindustrier.no/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vigorindustrier.no%2Freferanser%2F&#038;format=xml\" />\n<style id=\"wp-img-auto-sizes-contain-inline-css\">\nimg:is([sizes=auto i],[sizes^=\"auto,\" i]){contain-intrinsic-size:3000px 1500px}\n/*# sourceURL=wp-img-auto-sizes-contain-inline-css */\n</style>\n<style id=\"wp-block-navigation-link-inline-css\">\n.wp-block-navigation .wp-block-navigation-item__label{overflow-",
+          "body_fetched_at": "2026-11-20T07:59:34.969733+00:00",
+          "published": "2026-10-28T16:33:28+00:00",
+          "date_source": "page_body",
+          "date_precision": "machine_readable",
+          "published_at": "2026-10-28T16:33:28+00:00"
+        },
+        "strategy": "company_site_activity",
+        "observed_at": "2026-10-28T16:33:28+00:00"
+      },
+      {
+        "id": "nav-job-ed8428beb6d6e5251d14402d",
+        "organisation_number": "957238475",
+        "platform": "job_board",
+        "signal_type": "job_posting",
+        "source_url": "https://arbeidsplassen.nav.no/stillinger/stilling/e7f44860-c233-4a93-b9de-bfc00454e112",
+        "retrieved_at": "2026-11-17T21:25:58.113784Z",
+        "content_sha256": "aef01d1b0429dcec9cf5bc7173a0ed6f46f0da0aa7c5fa804646b723fa9e0e34",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "organisation_number_on_official_api",
+            "source": "pam-stilling-feed.nav.no",
+            "source_class": "official_job_board",
+            "matched_organisation_number": "957238475",
+            "explanation": "NAV job feed detail advertises the posting under a brreg sub-unit whose resolved parent legal entity (organisation number 957238475) equals the profile organisation number."
+          }
+        ],
+        "acquisition_mode": "official_api",
+        "rights_status": "approved",
+        "source_class": "official_api",
+        "signal": {
+          "title": "Industrirørlegger",
+          "jobtitle": "Industrirørlegger",
+          "employer_name": "Vigor Industrier AS",
+          "published": "2026-11-18T23:04:35.432757+01:00",
+          "expires": "2027-01-19T01:00:00+01:00",
+          "application_url": "https://cv.webtemp.no/apply?k=290&cvpt=3000021",
+          "city_municipal": "ORKANGER, ORKLAND",
+          "engagement_type": "Fast",
+          "extent": "Heltid",
+          "sector": "Privat",
+          "position_count": "5"
+        },
+        "evidence_span": "Industrirørlegger | Vigor Industrier AS | ORKANGER, ORKLAND",
+        "metrics": {
+          "strategy": "official_nav_job_feed_orgnr_match",
+          "source": "pam-stilling-feed.nav.no",
+          "index_built_at": "2026-11-17T21:25:58.113784Z",
+          "detail_source_url": ""
+        },
+        "strategy": "official_nav_job_feed_orgnr_match",
         "observed_at": "2026-11-17"
       },
       {
@@ -2766,7 +3430,7 @@
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "exact_entity": true,
         "identity_proof": [
@@ -2776,7 +3440,7 @@
             "matched_organisation_number": "957238475",
             "source": "brreg",
             "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
+            "retrieved_at": "2026-11-19T20:07:13.597411Z",
             "explanation": "BRREG declares vigorindustrier.no as the website of organisation 957238475; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
@@ -2790,14 +3454,14 @@
           "registry_domain": "vigorindustrier.no"
         },
         "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/957238475",
-        "retrieved_at": "2026-11-17T22:42:53.638432Z",
-        "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+        "retrieved_at": "2026-11-20T08:22:18.045981Z",
+        "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2822,14 +3486,14 @@
           "email": "post@vigorindustrier.no",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/957238475",
-        "retrieved_at": "2026-11-17T22:42:53.638432Z",
-        "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+        "retrieved_at": "2026-11-20T08:22:18.045981Z",
+        "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2854,14 +3518,14 @@
           "phone": "72 47 06 50",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/957238475",
-        "retrieved_at": "2026-11-17T22:42:53.638432Z",
-        "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+        "retrieved_at": "2026-11-20T08:22:18.045981Z",
+        "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2901,14 +3565,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.vigorindustrier.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/957238475",
-        "retrieved_at": "2026-11-17T22:42:53.638432Z",
-        "content_sha256": "36bb9d12b6206f87a947eb891dc21d84f9b89a871fd0bb1f043ac5be2eee7cb6",
+        "retrieved_at": "2026-11-20T08:22:18.045981Z",
+        "content_sha256": "0cee71e4b737dd17e1dbdf22c0bc1799192950311eecc82e1b11521ef5d01f67",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2935,7 +3599,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "registry-workforce-729a82b2c7a75a4e53fe1194",
@@ -2943,7 +3607,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:09:22.172075Z",
+        "retrieved_at": "2026-11-19T21:00:43.878437Z",
         "content_sha256": "38461e7a7b3cc7eb44d62317f3bd5d1d605bece3e32aa2bb351d0b87204fcc6d",
         "exact_entity": true,
         "identity_proof": [
@@ -2975,7 +3639,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000208428&amp;sokeverdi=957238475&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:57Z",
+        "retrieved_at": "2026-11-20T09:18:36Z",
         "content_sha256": "dade1728de37e090824a0a2120e7078be979f3bfc5f84942243a0d748675aab0",
         "exact_entity": true,
         "identity_proof": [
@@ -3004,7 +3668,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000056927&amp;sokeverdi=957238475&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:57Z",
+        "retrieved_at": "2026-11-20T09:18:36Z",
         "content_sha256": "b3bda0e4f3b5677b3b18f35ccdb63a93bf1c6b3447fa83d0547ae60349c84dd7",
         "exact_entity": true,
         "identity_proof": [
@@ -3033,7 +3697,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000757037&amp;sokeverdi=957238475&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:57Z",
+        "retrieved_at": "2026-11-20T09:18:36Z",
         "content_sha256": "6861a62773ac314522cae44cdd4448d7b14e7126175b0bd11f654ffafe982c72",
         "exact_entity": true,
         "identity_proof": [
@@ -3062,8 +3726,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3083,7 +3747,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-a54f240816335a2f964bad5e",
@@ -3091,8 +3755,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3112,7 +3776,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-b5a08aa5b4e51442d5723a05",
@@ -3120,8 +3784,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -3141,13 +3805,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_site",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "exact_entity": true,
         "identity_proof": [
@@ -3167,13 +3831,13 @@
         "metrics": {
           "interpretation": "Company-owned description; the company's own words."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "957238475",
         "platform": "company_site",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "exact_entity": true,
         "identity_proof": [
@@ -3194,13 +3858,13 @@
           "declared_url": "http://vigorindustrier.no.dev.exigo.no/",
           "interpretation": "Brand name from the site's own JSON-LD."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "957238475",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=957238475&size=1000",
-        "retrieved_at": "2026-11-17T22:09:33.603651Z",
+        "retrieved_at": "2026-11-19T21:00:53.358323Z",
         "content_sha256": "920f57ce8cb2a0993148ca4d69f9ad80aee45b5abdb20536c66e17a2c716632f",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -3223,7 +3887,7 @@
           "municipality": "ORKLAND",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "sitemap-page-f5a796e35334a0aeb9710ce3",
@@ -3231,7 +3895,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -3259,7 +3923,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -3287,7 +3951,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3315,7 +3979,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3343,7 +4007,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3371,7 +4035,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3399,7 +4063,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3427,7 +4091,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3455,7 +4119,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3483,7 +4147,7 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.vigorindustrier.no/",
-        "retrieved_at": "2026-11-17T22:09:39.308455Z",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
         "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
         "observed_at": "2026-10-30",
         "exact_entity": true,
@@ -3506,12 +4170,516 @@
         "strategy": "sitemap_lastmod"
       },
       {
+        "id": "sitemap-page-74646947cd6ae12aede446ea",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/kranforere/ last modified 2026-10-30",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/fagomrader/kranforere/",
+          "lastmod": "2026-10-30",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ca0441184847b1e4522f1f47",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/barekraft/ last modified 2026-10-30",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/barekraft/",
+          "lastmod": "2026-10-30",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6deac82b998271e28df1ee81",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/gdpr-og-personvern/ last modified 2026-10-30",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/gdpr-og-personvern/",
+          "lastmod": "2026-10-30",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6714ddb2321d6c99c6354944",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/informasjonskapsler/ last modified 2026-10-30",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/informasjonskapsler/",
+          "lastmod": "2026-10-30",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-fa2f3a953df997c697d2798b",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-30",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/tilgjengelighet-pa-nett/ last modified 2026-10-30",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/tilgjengelighet-pa-nett/",
+          "lastmod": "2026-10-30",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-79db663bb532d848f21f0bc5",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-formann-irek/ last modified 2026-10-29",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/mot-formann-irek/",
+          "lastmod": "2026-10-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-54ae12fb0d351a5afcc9b613",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/ledige-stillinger/ last modified 2026-10-29",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/ledige-stillinger/",
+          "lastmod": "2026-10-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-1837cce8325c165912d47910",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/kompetanse-og-samhold-skaper-suksess/ last modified 2026-10-29",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/kompetanse-og-samhold-skaper-suksess/",
+          "lastmod": "2026-10-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-f3ae5ac162968e70a8076a00",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-sveiser-marcin/ last modified 2026-10-29",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/mot-sveiser-marcin/",
+          "lastmod": "2026-10-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-130896b714cae39288a9a8e9",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-29",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/mot-industrirorleggeren-andrzej/ last modified 2026-10-29",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/mot-industrirorleggeren-andrzej/",
+          "lastmod": "2026-10-29",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-fc6d1f5615d1a20f793685e3",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/ledigeressurser/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/ledigeressurser/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-a0a058f05ed4c8358197681c",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/flyttet/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/flyttet/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-9c1f44e0e480dbfe90af1a68",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/v_o/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/v_o/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-abb9e7e926211361f4f64d7e",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/kvalitet/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/kvalitet/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-a276f0352b21dc033be0986d",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/referanser/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/referanser/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-c9b9cb59f933a173dcc4b9ae",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-28",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/category/uncategorized/ last modified 2026-10-28",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/category/uncategorized/",
+          "lastmod": "2026-10-28",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-c9acc4866019217b8e18783f",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-20",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/industrirorleggere/ last modified 2026-10-20",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/fagomrader/industrirorleggere/",
+          "lastmod": "2026-10-20",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-bc6d8eece30d10d1bd1511df",
+        "organisation_number": "957238475",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.vigorindustrier.no/",
+        "retrieved_at": "2026-11-19T21:01:04.060239Z",
+        "content_sha256": "614ca3cdb0335f10c5792b3fc5a21ddf9e5e57ce44b0e3fa7b76e4e3a844f109",
+        "observed_at": "2026-10-20",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.vigorindustrier.no/fagomrader/industriell-produksjon/ last modified 2026-10-20",
+        "metrics": {
+          "page_url": "https://www.vigorindustrier.no/fagomrader/industriell-produksjon/",
+          "lastmod": "2026-10-20",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "id": "registry-update-e268e319a4e28607519290d9",
         "organisation_number": "957238475",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e268e319a4e28607519290d9f6aae57b8790d465eabc3a31eaf064018083d600",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -3541,7 +4709,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "8f04c30c0bbb38cefe953e7af5e58e7f76473b16567cf8dcc0459ac2d582cec4",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -3571,7 +4739,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "45bfb98084b53885f5a84fc51da315fd609b82243f7f5d630f556a92dba56b01",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -3601,7 +4769,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "826a331c0ea126f83a1f4879803847ebeed95c1e99dd026b5f8338ed0032d850",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -3631,7 +4799,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "00f242c8ed698b3c47e4e80f9bc7847295543b5d692d81aa4cec5611d742594f",
         "observed_at": "2026-04-25",
         "exact_entity": true,
@@ -3661,7 +4829,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "43e39eda813018c163c4d1428a7ff4f66e51222dff5221e55ad3abb96fbf7238",
         "observed_at": "2026-04-13",
         "exact_entity": true,
@@ -3691,7 +4859,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "763e269a7f51ad35c41a85bba85cbdd7aefb5d325382097cdc48c4e6bc9e2016",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -3721,7 +4889,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "106ebc0b6f1334b35d0f140a3a7c15476364c185d4f80f3021d646b457f39ae8",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -3751,7 +4919,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a17d61e31e43669cd6a88103353461f5bffdf713fbfb8c1a221e44f628af4f93",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -3781,7 +4949,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f6a314f39c7de612c04cd51c58b4c65511bc3c0ee23681e43a41fc890fc6a9d5",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3811,7 +4979,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "812a53220813446e12462e480928e7a7970223f54ead4ef1d32412153321fd88",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3841,7 +5009,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "c76334d0b51db3435c98729c45254fd445a56198ab8b3d34bde6aacf0a3f7304",
         "observed_at": "2025-10-15",
         "exact_entity": true,
@@ -3871,7 +5039,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "0fe42779e2c6540e18fae2acdd28d4600696b1b9b9ccf7cc67a604361d95ccff",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3901,7 +5069,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "868af1686b7f6f2dd30ae4291b7a5e7aa40e762b0c546797281d6ff2443b2b0a",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -3931,7 +5099,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "84b3207503d4991108236ce7986634f28bf324b9a9ee0a8087dc89da412063fc",
         "observed_at": "2025-07-14",
         "exact_entity": true,
@@ -3961,7 +5129,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "3142e007c702d64a5f0547553d866a14051f35b43c6281f8590ddc31e095fc5a",
         "observed_at": "2025-07-05",
         "exact_entity": true,
@@ -3991,7 +5159,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "bf501b6005db6e695e2e9466c89f7d0e916f390421c2f2cb733f9a3839ec6981",
         "observed_at": "2025-06-12",
         "exact_entity": true,
@@ -4021,7 +5189,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "793b0cdce22d58d3c14556407c9c1d66ec14ccb36214498f9e66f8e1ab5b9b2b",
         "observed_at": "2025-05-12",
         "exact_entity": true,
@@ -4051,7 +5219,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "171b96b9675b0a6dbd4be0bbf49b44d9211afa44ec375ca509617d7f6d8f742b",
         "observed_at": "2025-04-14",
         "exact_entity": true,
@@ -4081,7 +5249,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/957238475",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e6e42e4f85c34ad586c5915c54969b7d8ad4ba1450c013fc8b664a127ce1e05c",
         "observed_at": "2025-04-08",
         "exact_entity": true,
@@ -4107,5 +5275,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:31.294798+00:00"
+  "generated_at": "2026-11-20T12:49:32.362941+00:00"
 }

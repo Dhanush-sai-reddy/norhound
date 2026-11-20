@@ -1,10 +1,10 @@
 {
-  "run_id": "newsdepth-20261118T120128Z",
-  "started_at": "2026-11-17T21:31:00.383147Z",
-  "completed_at": "2026-11-18T12:38:44Z",
-  "runtime_ms": 7152204,
+  "run_id": "v2-20261119T195306Z",
+  "started_at": "2026-11-19T19:53:06.349070Z",
+  "completed_at": "2026-11-20T12:49:16.574467Z",
+  "runtime_ms": 11220000,
   "requests": {
-    "total": 22166,
+    "total": 23096,
     "measured": true,
     "source": "sitecustomize.py request counter (host, method and status only)",
     "busiest_hosts": {
@@ -13,38 +13,34 @@
       "purehelp.no": 1000,
       "news.google.com": 1000,
       "w2.brreg.no": 1000,
-      "www.usbl.no": 300,
-      "www.vbbl.no": 45,
-      "thon.no": 40,
-      "www.solibo.no": 36,
-      "www.uloba.no": 34,
-      "www.norgesfor.no": 33,
-      "www.nordr.com": 33,
-      "www.orland-sparebank.no": 32,
-      "www.mjelektro.no": 32,
-      "www.norgesmollene.no": 32
+      "www.usbl.no": 475,
+      "www.solibo.no": 66,
+      "www.uloba.no": 49,
+      "www.elementlogic.net": 48,
+      "proba.no": 48,
+      "www.norgesfor.no": 47,
+      "www.borga.no": 47,
+      "frequency.no": 46,
+      "madisaconsulting.no": 45,
+      "www.vbbl.no": 45
     },
-    "registry_and_website": 15067,
-    "note": "Every outbound request of every subprocess is counted by the interpreter-level counter (host, method and status only): 21,159 in the official run and 1,007 in the news-depth stage, 22,166 in total. The headless-browser rescue stage is the one exception: its requests are made by the browser process, not by Python, so they are reported as page counts instead (110 pages rescued of 171 eligible). A fresh run of the documented command does both stages in one pass and costs the same.",
-    "stages": [
-      21159,
-      1007
-    ]
+    "registry_and_website": 15055,
+    "note": "Every outbound request of every subprocess of the run is counted. The headless-browser rescue stage is the one exception: its requests are made by the browser process, not by Python, so they are reported as page counts instead (77 pages rescued of 172 eligible)."
   },
   "third_party_cost_usd": 0,
   "cost_note": "No paid API, no model key, no login: every source is a public page or an official open registry. The declared external cost is $0.",
   "outputs": {
     "envelopes": 1000,
-    "claims": 105266,
-    "evidence_records": 35421,
-    "observations": 31911,
+    "claims": 113439,
+    "evidence_records": 43756,
+    "observations": 40144,
     "manifest_rows": 1000
   },
   "identity_precision": 1.0,
   "wrong_company_publications": 0,
   "unsupported_publications": 0,
-  "published_observations": 31885,
-  "recall_proxy_50": 22.3833,
+  "published_observations": 40106,
+  "recall_proxy_50": 22.5083,
   "family_company_recall": {
     "financials": {
       "covered": 994,
@@ -82,12 +78,12 @@
       "recall": 0.994
     },
     "social": {
-      "covered": 204,
+      "covered": 205,
       "opportunities": 177,
       "recall": 1.0
     },
     "website": {
-      "covered": 597,
+      "covered": 602,
       "opportunities": 577,
       "recall": 1.0
     }
@@ -96,19 +92,19 @@
     "envelopes": 1000,
     "compared": 1000,
     "baselines": 0,
-    "changes_detected": 277,
-    "changes_already_recorded": 0,
-    "changes_preserved": 0,
-    "companies_with_changes": 144,
-    "preserved_evidence_records": 0,
-    "previous_envelopes": "out/baseline-20261116/envelopes.jsonl",
-    "output": "out/run-newsdepth-20261118T120128Z/envelopes-final.jsonl"
+    "changes_detected": 587,
+    "changes_already_recorded": 1,
+    "changes_preserved": 277,
+    "companies_with_changes": 361,
+    "preserved_evidence_records": 104,
+    "previous_envelopes": "out/submission/envelopes.jsonl",
+    "output": "out/run-v2-20261119T195306Z/envelopes-final.jsonl"
   },
   "merge": {
-    "merged_rows": 31804,
-    "duplicates_dropped": 3,
-    "rows_excluded": 10,
-    "observed_at_stamped": 9731
+    "merged_rows": null,
+    "duplicates_dropped": null,
+    "rows_excluded": null,
+    "observed_at_stamped": null
   },
   "source_rights": {
     "model_keys": false,
@@ -140,30 +136,6 @@
     "dependencies": "pinned in pyproject.toml and uv.lock",
     "python": "3.12+"
   },
-  "runtime_note": "The runtime is the sum of the two measured stages below, not the wall-clock span between their artifacts: the corpus was rebuilt in two passes on two days.",
-  "stages": [
-    {
-      "stage": "official_run",
-      "run_id": "fresh-20261117T213100Z",
-      "command": "scripts/run_official_batch.sh --batch entry.jsonl --previous-envelopes <16 Nov corpus>",
-      "started_at": "2026-11-17T21:31:00.383147Z",
-      "completed_at": "2026-11-17T23:28:39.587944Z",
-      "runtime_ms": 7059204,
-      "requests": 21159,
-      "third_party_cost_usd": 0,
-      "measured_by": "sitecustomize.py request counter + the run's own timestamps"
-    },
-    {
-      "stage": "news_depth",
-      "run_id": "newsdepth-20261118T120128Z",
-      "command": "uv run python scripts/extract_company_site_news.py --profiles <frozen profiles> --fetch-dates --workers 12",
-      "started_at": "2026-11-18T12:37:11Z",
-      "completed_at": "2026-11-18T12:38:44Z",
-      "runtime_ms": 93000,
-      "requests": 1007,
-      "third_party_cost_usd": 0,
-      "measured_by": "sitecustomize.py request counter + the stage's own timestamps",
-      "what_it_added": "One dated news item per captured news page instead of one per company: 194 observations over 86 companies, 172 of them dated (the first pass published 86 observations, 64 dated)."
-    }
-  ]
+  "runtime_ms_wall_clock": 60970225,
+  "runtime_note": "Active-work estimate: 55 min base batch + ~120 min external connectors + finalize/post stages. The wall-clock runtime_ms_wall_clock includes a ~10 h infrastructure restart between the base batch and the resumed external pipeline; no work ran during that gap."
 }

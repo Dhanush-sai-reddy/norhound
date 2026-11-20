@@ -33,7 +33,7 @@ uv run python scripts/measure_recall.py \
   --output /tmp/opencode/m1.json
 ```
 
-- `recall_proxy_50` = **22.3833**  (+9.38 over baseline)
+- `recall_proxy_50` = **22.5083**  (+9.51 over baseline)
 - `entity_precision` = 1.0, `wrong_entity_publications` = 0
 
 Both corpora are scored with the **same, current** scorer. Earlier versions of
@@ -71,8 +71,8 @@ Per-field coverage, both corpora measured by the command above:
 | field | baseline | current | what moved it |
 |---|---|---|---|
 | any_external | 0.639 | **0.994** | registry-proved website connector + Purehelp |
-| two_platforms | 0.276 | **0.620** | a second independent source for 344 more companies |
-| workforce_jobs | 0.072 | 0.014 | a careers-page link is not a role card; see below |
+| two_platforms | 0.276 | **0.629** | a second independent source for 344 more companies |
+| workforce_jobs | 0.072 | 0.020 | a careers-page link is not a role card; see below |
 | workforce_snapshot (headcount, not in the proxy) | 0.915 | 0.575 | the annual-report OCR stage is off by default and earns 0 points |
 | buzz_engagement | 0.510 | **0.994** | third-party profile, mention or post; registry announcements excluded |
 | ratings_reviews | 0.032 | 0.032 | no keyless source reaches more |

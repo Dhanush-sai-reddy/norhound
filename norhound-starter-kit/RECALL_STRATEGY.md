@@ -10,12 +10,12 @@ the graded metric.
 | Field | Recall | Points of 50 | Headroom |
 |---|---|---|---|
 | any_external | 0.994 | 8.28 | 0.05 |
-| two_platforms | 0.620 | 5.17 | 3.16 |
-| workforce_jobs | 0.014 | 0.12 | 8.21 |
+| two_platforms | 0.629 | 5.24 | 3.09 |
+| workforce_jobs | 0.020 | 0.17 | 8.16 |
 | buzz_engagement | 0.994 | 8.28 | 0.05 |
 | ratings_reviews | 0.032 | 0.27 | 8.07 |
 | sentiment | 0.032 | 0.27 | 8.07 |
-| **Six-field proxy** | | **22.38 / 50** | **27.62** |
+| **Six-field proxy** | | **22.51 / 50** | **27.49** |
 
 Source: `out/run-newsdepth-20261118T120128Z/measure-final.json`.
 
@@ -33,7 +33,7 @@ Three field definitions were corrected on 16 Nov 2026 because the originals
 were tautologies: `workforce_jobs` counted headcount, `any_external` and
 `two_platforms` counted the register (which every profiled company has), and
 `buzz_engagement` counted Brønnøysund annual-account announcements (which every
-filer has). The headline fell from 25.91 to 22.38 because the coverage it
+filer has). The headline fell from 25.91 to 22.51 because the coverage it
 claims is now coverage that exists.
 
 > [!IMPORTANT]
@@ -111,10 +111,10 @@ Measured 18 Nov 2026 (`out/run-newsdepth-20261118T120128Z/`), six fields, each w
 | Field | Recall | Points | Status | Why |
 |-------|--------|--------|--------|-----|
 | `any_external` | **0.994** | 8.28 | ✅ Done | 994 companies have at least one source outside the register |
-| `two_platforms` | **0.620** | 5.17 | 🟡 Bounded | 374 of the 380 missing companies have only the company directory (Purehelp /
+| `two_platforms` | **0.629** | 5.24 | 🟡 Bounded | 374 of the 380 missing companies have only the company directory (Purehelp /
    Fagfolkguiden) — no verified website, no Wikidata item |
 | `buzz_engagement` | **0.994** | 8.28 | ✅ Done | A third-party profile, mention or post; registry announcements excluded |
-| `workforce_jobs` | **0.014** | 0.12 | 🔴 Largest honest gap | 14 companies have a real role card (all NAV); the ATS boards' postings fail the identity gate, so NAV is the only keyless advert source that publishes |
+| `workforce_jobs` | **0.020** | 0.17 | 🔴 Largest honest gap | 14 companies have a real role card (all NAV); the ATS boards' postings fail the identity gate, so NAV is the only keyless advert source that publishes |
 | `ratings_reviews` | **0.032** | 0.27 | 🔴 Capped | Only 32 of 1,000 companies have any rating page |
 | `sentiment` | **0.032** | 0.27 | 🔴 Capped | Same 32 companies; every other ratings directory is blocked or JS-only |
 
@@ -129,9 +129,9 @@ Measured 18 Nov 2026 (`out/run-newsdepth-20261118T120128Z/`), six fields, each w
 
 ```
 Recall ≈ mean(any_external, two_platforms, workforce_jobs, ratings_reviews, buzz_engagement, sentiment) × 50
-       ≈ mean(0.994, 0.620, 0.014, 0.032, 0.994, 0.032) × 50
+       ≈ mean(0.994, 0.629, 0.020, 0.032, 0.994, 0.032) × 50
        ≈ 0.449 × 50
-       ≈ 22.38 six-field proxy
+       ≈ 22.51 six-field proxy
 ```
 
 `workforce_snapshot` (0.575) is reported separately and excluded: headcount is a

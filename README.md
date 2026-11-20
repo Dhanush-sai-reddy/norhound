@@ -183,13 +183,13 @@ promoted to `out/submission/` by
   carrying the verified `exact_entity` label (unverified rows never publish).
 - entity precision **1.0**, metric precision **1.0**, unsupported
   publications **0**, wrong-entity publications **0**.
-- **105,266 claims** backed by **35,421 evidence records** across 1,000
+- **113,439 claims** backed by **43,756 evidence records** across 1,000
   terminal envelopes.
 - Coverage, measured over sources **outside** the register:
-  any_external 0.994, two_platforms 0.620, buzz_engagement 0.994,
-  workforce_jobs 0.014, workforce_snapshot 0.575 (headcount, reported
+  any_external 0.994, two_platforms 0.629, buzz_engagement 0.994,
+  workforce_jobs 0.020, workforce_snapshot 0.575 (headcount, reported
   separately — it is not evidence of hiring), ratings_reviews 0.032,
-  sentiment 0.032. Six-field recall proxy **22.38 / 50**.
+  sentiment 0.032. Six-field recall proxy **22.51 / 50**.
 - Company recall per official fact family
   (`scripts/measure_family_recall.py`): identity **1000/1000**, financials
   **994/1000**, roles **994/1000**, other **1000/1000**, news **1000/998**,

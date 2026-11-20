@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:49.358826Z",
+        "retrieved_at": "2026-11-19T20:08:11.845332Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "929109023",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:18.653499Z",
+        "retrieved_at": "2026-11-19T20:53:55.169507Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -68,7 +68,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:14.666578Z",
+        "retrieved_at": "2026-11-19T20:53:51.821327Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -133,7 +133,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T22:04:20.440784Z",
+        "retrieved_at": "2026-11-19T20:53:57.620750Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -147,7 +147,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:21.364387Z",
+        "retrieved_at": "2026-11-19T20:53:58.869212Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -180,11 +180,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "929109023",
         "source_type": "official_registry_bulk",
@@ -269,7 +269,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:13.738127Z",
+        "retrieved_at": "2026-11-19T20:53:50.163757Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -318,7 +318,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T22:04:19.549104Z",
+        "retrieved_at": "2026-11-19T20:53:56.399363Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -419,7 +419,7 @@
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T22:04:21.901330Z",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
@@ -469,10 +469,18 @@
           "organisation_number": "929109023",
           "platform": "company_site",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "exact_entity": true,
           "identity_proof": [
+            {
+              "type": "registry_declared_domain_unique",
+              "domain": "ombygg.no",
+              "register_field": "hjemmeside",
+              "sole_declarer_in_register": true,
+              "index_as_of": "2026-11-19",
+              "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+            },
             {
               "type": "website_identity_gate",
               "status": "exact",
@@ -483,137 +491,24 @@
           "rights_status": "approved",
           "source_class": "company_site",
           "strategy": "company_site_activity",
-          "id": "company-site-activity-929109023-d94310b4f6394d09",
+          "id": "company-site-activity-929109023-f7de2510525effa3",
           "signal_type": "profile_metrics",
-          "evidence_span": "Exact company site snapshot with 1 bounded pages and 3 verified social links.",
+          "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
           "metrics": {
             "bounded_pages_captured": 1,
-            "verified_social_links": 3,
-            "structured_organisation_records": 1,
-            "extraction_state": "static_complete",
+            "verified_social_links": 0,
+            "structured_organisation_records": 0,
+            "extraction_state": "js_fallback_candidate",
             "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
           },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "929109023",
-          "platform": "facebook",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-929109023-d94310b4f6394d09-facebook",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-          "metrics": {
-            "platform": "facebook",
-            "url": "https://facebook.com/ombygg"
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "929109023",
-          "platform": "instagram",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-929109023-d94310b4f6394d09-instagram",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-          "metrics": {
-            "platform": "instagram",
-            "url": "https://instagram.com/ombygg.no"
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "929109023",
-          "platform": "linkedin",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "status": "exact",
-              "score": 0.95
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_activity",
-          "id": "company-site-handle-929109023-d94310b4f6394d09-linkedin",
-          "signal_type": "profile_handle",
-          "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
-          "metrics": {
-            "platform": "linkedin",
-            "url": "https://linkedin.com/company/ombygg"
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "id": "registry-site-929109023-d94310b4f6394d09",
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "signal_type": "website_description",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "registry_declared_website_domain_match",
-              "value": "ombygg.no",
-              "matched_organisation_number": "929109023",
-              "source": "brreg",
-              "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
-              "explanation": "BRREG declares ombygg.no as the website of organisation 929109023; the crawled page on that host corroborates the organisation number or the legal name."
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "evidence_span": "Ombruk byggematerialer i Oslo | Ombygg — Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-          "metrics": {
-            "title": "Ombruk byggematerialer i Oslo | Ombygg",
-            "description": "Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-            "registry_domain": "ombygg.no"
-          },
-          "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "929109023",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/929109023",
-          "retrieved_at": "2026-11-17T22:42:35.689777Z",
-          "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+          "retrieved_at": "2026-11-20T08:21:42.900009Z",
+          "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -638,14 +533,14 @@
             "phone": "22 12 02 84",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "929109023",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/929109023",
-          "retrieved_at": "2026-11-17T22:42:35.689777Z",
-          "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+          "retrieved_at": "2026-11-20T08:21:42.900009Z",
+          "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -685,14 +580,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.ombygg.no"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "929109023",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/929109023",
-          "retrieved_at": "2026-11-17T22:42:35.689777Z",
-          "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+          "retrieved_at": "2026-11-20T08:21:42.900009Z",
+          "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -719,7 +614,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "registry-workforce-dd3d0123bc8c224d3d7ae8a2",
@@ -727,7 +622,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:04:13.738127Z",
+          "retrieved_at": "2026-11-19T20:53:50.163757Z",
           "content_sha256": "47238b492d52e888843d9cc47271616e33d508b841ea7660ca1fd909088b19e0",
           "exact_entity": true,
           "identity_proof": [
@@ -759,7 +654,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "2c525901ee3c53cc0d0d665533bf597e8a7c003cdc165021977fdb30addcadfd",
           "exact_entity": true,
           "identity_proof": [
@@ -788,7 +683,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "6d7018adaa6f798a46efea26bd9dd46ba07c84c1d5f040bbd7b0cad963747145",
           "exact_entity": true,
           "identity_proof": [
@@ -817,7 +712,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:27:36Z",
+          "retrieved_at": "2026-11-20T09:18:11Z",
           "content_sha256": "141eda852d5b1ef2af2d3f018e7ae8275ee82f93ad6712e3885cd17925f0e0dd",
           "exact_entity": true,
           "identity_proof": [
@@ -846,8 +741,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -867,66 +762,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-description-f66ced8a1213e3820a2a5761",
-          "signal_type": "website_description",
-          "evidence_span": "Ombruk byggematerialer i Oslo | Ombygg — Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-          "metrics": {
-            "interpretation": "Company-owned description; the company's own words."
-          },
-          "observed_at": "2026-11-17"
-        },
-        {
-          "organisation_number": "929109023",
-          "platform": "company_site",
-          "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-          "exact_entity": true,
-          "identity_proof": [
-            {
-              "type": "website_identity_gate",
-              "score": 0.95,
-              "method": "deterministic_name_org_evidence_v2"
-            }
-          ],
-          "acquisition_mode": "permitted_public_page",
-          "rights_status": "approved",
-          "source_class": "company_site",
-          "strategy": "company_site_identity",
-          "id": "site-brand-3f6fcc1bf0ff7aedc619a82d",
-          "signal_type": "public_brand",
-          "evidence_span": "Ombygg AS",
-          "metrics": {
-            "declared_url": "https://www.ombygg.no",
-            "interpretation": "Brand name from the site's own JSON-LD."
-          },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "929109023",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
-          "retrieved_at": "2026-11-17T22:04:21.364387Z",
+          "retrieved_at": "2026-11-19T20:53:58.869212Z",
           "content_sha256": "813924283adbcd0442d9242303d024ec05b816d394adcd0927b58f3b5fc4e157",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -949,7 +791,7 @@
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "sitemap-page-27dc3d92e6f879187934b693",
@@ -957,8 +799,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-09",
           "exact_entity": true,
           "identity_proof": [
@@ -985,8 +827,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1013,8 +855,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1041,8 +883,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1069,8 +911,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1097,8 +939,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1125,8 +967,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1153,8 +995,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1181,8 +1023,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1209,8 +1051,8 @@
           "platform": "company_site",
           "signal_type": "sitemap_page",
           "source_url": "https://www.ombygg.no/",
-          "retrieved_at": "2026-11-17T22:19:12.958186Z",
-          "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
           "observed_at": "2026-05-08",
           "exact_entity": true,
           "identity_proof": [
@@ -1232,12 +1074,1412 @@
           "strategy": "sitemap_lastmod"
         },
         {
+          "id": "sitemap-page-5e34b793dd9d03629001c1ba",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb660b44ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb660b44ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-16b4232bed23b24badc53047",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb8b2124ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb8b2124ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-20c3d4b4770776b464216d02",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb971fe4ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb971fe4ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-700ad32b5a2c3149d72c2976",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-08",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/staldr-toflyet-branndr-s67-28x40/3ebbc02d4ae4 last modified 2026-05-08",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/innerdrer/staldr-toflyet-branndr-s67-28x40/3ebbc02d4ae4",
+            "lastmod": "2026-05-08",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-415b590d099f49c66256d46c",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/trykkimpregnert-trappetrinn/6fb8008149e5 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/impregnert/trykkimpregnert-trappetrinn/6fb8008149e5",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-633e3f1d0d8e93990681a4cc",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0c95245f last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0c95245f",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-2f0da5cc1a037dc6f1cb224d",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0cbd245f last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0cbd245f",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-654ace55f6d0ce40b1f11da4",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-granitt-buet/bf6baba4245f last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-granitt-buet/bf6baba4245f",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-ab0ca8f3256e21bd7b42099d",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-med-skranet-topp/bf6bac09245f last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-med-skranet-topp/bf6bac09245f",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-019cd0c627f67c7866f2600a",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-hvit-hev-senk-l-form-80-120x160/fee84be34a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-hvit-hev-senk-l-form-80-120x160/fee84be34a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-cd8370dea499dae3f3b65afa",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-l-formet-1540x2300/feea9ae54a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-l-formet-1540x2300/feea9ae54a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-fd1572285a98c64d6befc83d",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-1540x800/feeb45564a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-1540x800/feeb45564a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-27e48b5b6d96901d8a7e8a23",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skap/skuffeseksjon-pa-hjul-lys-tre-430x560x600/feebe54b4a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skap/skuffeseksjon-pa-hjul-lys-tre-430x560x600/feebe54b4a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-62d88129fa67e109f67d6bec",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/sitte-liggembel/kontorstol-med-hodesttte-sort/feee18a04a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/sitte-liggembel/kontorstol-med-hodesttte-sort/feee18a04a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-2c44253103184a1424cacebc",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/el-apparater/stikkontaktlist-6-stikk-2-usb/feeeb2dc4a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/el-apparater/stikkontaktlist-6-stikk-2-usb/feeeb2dc4a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6641655013313f0dabec7aba",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-07",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/vaskerenne-i-rustfritt-stal-480x1780/fef14d944a16 last modified 2026-05-07",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/vaskerenne-i-rustfritt-stal-480x1780/fef14d944a16",
+            "lastmod": "2026-05-07",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-189e43c431291ae811d35425",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-06",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/granitt-kantstein/bf6b160d245f last modified 2026-05-06",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/granitt-kantstein/bf6b160d245f",
+            "lastmod": "2026-05-06",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-edf4de3d4cf7b07a357854b3",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-06",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/impregnert-terrassebord/bf6b187c245f last modified 2026-05-06",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/impregnert/impregnert-terrassebord/bf6b187c245f",
+            "lastmod": "2026-05-06",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-aa7e5e805f7bbfacdf26b6ac",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x118/45ca54ec478e last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x118/45ca54ec478e",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e3eaee7e6f88716c1bd7adfc",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/rekkverk-i-impregnert-tre-3-meter/bf6b18bc245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/impregnert/rekkverk-i-impregnert-tre-3-meter/bf6b18bc245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-fd595e0522b4cf74ab21d871",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x88/bf6b1b7e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x88/bf6b1b7e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-1a9510af52f407f849d9a78a",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x70/bf6b1b9f245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x70/bf6b1b9f245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-003070b713cf5819fc403e20",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x87/bf6b1bbf245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x87/bf6b1bbf245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-7279ac8bab4de461ec741f82",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x45/bf6b1bdf245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x45/bf6b1bdf245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-82424476ab5c0061d01342f1",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-8x70-7/bf6b1c5e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-8x70-7/bf6b1c5e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-70d64b727b333338a16922c9",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-239x70-7/bf6b1c7e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-239x70-7/bf6b1c7e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6d9e98dc889c5ceea2377178",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-207x38-573/bf6b1c9e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-207x38-573/bf6b1c9e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-8cff94514d691dd54c94db46",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-214x39-573/bf6b1d09245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-214x39-573/bf6b1d09245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-773cc35f7c5ffe4e0655edb3",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-236-3x75-57-8/bf6b1d28245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-236-3x75-57-8/bf6b1d28245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6cbd299263c1c9853675a7c1",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-242-8x37-34db/bf6b1d47245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-242-8x37-34db/bf6b1d47245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-5192c16ce812939a81e40cf5",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-217-1x37-34db/bf6b1d67245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-217-1x37-34db/bf6b1d67245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-85b1b866a56bddaedf10146c",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x82/bf6b1d87245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x82/bf6b1d87245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-cb803e9bd761a15be2bb45ad",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-5x85/bf6b1e4e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-5x85/bf6b1e4e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-c99db1db48278801283bab5a",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-33-5/bf6b1e6e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-33-5/bf6b1e6e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-4188d3411a31cfc131ba22a3",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-40/bf6b1e8e245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-40/bf6b1e8e245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-e7df1d0f68eba163f8d99855",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-42/bf6b1eaf245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-42/bf6b1eaf245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-563e7fe2c4fe814acb431de3",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-2x45-1/bf6b1ece245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-2x45-1/bf6b1ece245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-9448f795346fad18206cb308",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-9x45-1/bf6b1f66245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-9x45-1/bf6b1f66245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-7975bd4f6078cf22383d71c0",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-222-5x45-1/bf6b1fa2245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-222-5x45-1/bf6b1fa2245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-fb67e88db1a47f567f758114",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-05",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-8x17/bf6b1fc7245f last modified 2026-05-05",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-8x17/bf6b1fc7245f",
+            "lastmod": "2026-05-05",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-5c365703f6318c68b6102248",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-258x115/45be1493478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-258x115/45be1493478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-76ba7a7d08f3e3ec7d214fca",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-269x71/45c04364478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-269x71/45c04364478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-3af70ee19119d5f314b750a0",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45c0d5e1478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45c0d5e1478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-de071b3154b0dc2d884fd3f5",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x109/45c18334478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x109/45c18334478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-7087163bf7c3c3feec7246ca",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x106/45c326d6478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x106/45c326d6478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6cf958d09bf92f3bf0e6033f",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x111/45c3dde1478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x111/45c3dde1478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-6b20b2bdc389032a29dcc05b",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x116/45c60e13478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x116/45c60e13478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-f240afd32d4b2b875ad4e96e",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x119/45c6a709478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x119/45c6a709478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-881ca8f15d42020371b40556",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x107/45c999c5478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x107/45c999c5478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
+          "id": "sitemap-page-0d913f0ae5d62eebe67ec596",
+          "organisation_number": "929109023",
+          "platform": "company_site",
+          "signal_type": "sitemap_page",
+          "source_url": "https://www.ombygg.no/",
+          "retrieved_at": "2026-11-19T20:54:00.753296Z",
+          "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+          "observed_at": "2026-05-04",
+          "exact_entity": true,
+          "identity_proof": [
+            {
+              "type": "website_identity_gate",
+              "score": 0.95,
+              "method": "deterministic_name_org_evidence_v2"
+            }
+          ],
+          "acquisition_mode": "permitted_public_page",
+          "rights_status": "approved",
+          "source_class": "company_site",
+          "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45cc4fcd478e last modified 2026-05-04",
+          "metrics": {
+            "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45cc4fcd478e",
+            "lastmod": "2026-05-04",
+            "interpretation": "Dated official-site page from the site's own sitemap."
+          },
+          "strategy": "sitemap_lastmod"
+        },
+        {
           "id": "registry-update-4e62d91b015f59df6d5dfcc3",
           "organisation_number": "929109023",
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "4e62d91b015f59df6d5dfcc3bb9646dc6b56bcd5ba6a5b946f58e926de35241e",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -1267,7 +2509,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "b3ec47b10eb8600485cbf0b5b5980e6aa9b7d1e1b90bfae9cbaff3c4f665b487",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1297,7 +2539,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "2954a18f7e14ef55a121020acac655f2aad63ff003118e82d2d98325c5e2ebf6",
           "observed_at": "2026-07-29",
           "exact_entity": true,
@@ -1327,7 +2569,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "383de79ef1329ac0716e89e24c04d3354595d551f1b8ae6f8d980e7991c6dbad",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1357,7 +2599,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "7a2f19375eb7a63f57301e1c9f1f03b8ee1b118b7063e5ee7a9d3ab328b5deb8",
           "observed_at": "2026-05-11",
           "exact_entity": true,
@@ -1387,7 +2629,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "283324e04ee057052b9620c1da0a2962170eaebc6b07674a763d9576f9951735",
           "observed_at": "2026-04-13",
           "exact_entity": true,
@@ -1417,7 +2659,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "b7c9a4178ac7190f8be3ef44f5ce5fdde880132c679ae084757058e2906d42c2",
           "observed_at": "2026-03-11",
           "exact_entity": true,
@@ -1447,7 +2689,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "d5d5da9a86e17517834dbace5ef8f432cdc5509a6d36387200e1b3ff5b54ad42",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1477,7 +2719,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "4cbf8bf3ac9ec00e4e75b4066b3068adb4cdfbfd1a7123e53725322d2ca629a2",
           "observed_at": "2026-01-15",
           "exact_entity": true,
@@ -1507,7 +2749,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "b5aae116eb7cf5859cb85d8249cba38d28ef898976402108b5c3bf9cad0d9201",
           "observed_at": "2025-12-11",
           "exact_entity": true,
@@ -1537,7 +2779,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "dd94acbb43f23c666aafc8199b58d022a5b9e5721d4b4eb0e489de15a75d28d8",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1567,7 +2809,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "db8502f893731b8077d270d528b3d3fb43c5837c76582b991c110846dec6c140",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1597,7 +2839,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "989f24c3e9296c192473217ae26b6d1fd692fea158c9bffae62251f9fbd06b50",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1627,7 +2869,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "069719dc7b57b43843ae5c8f625d4abd6a0cb047b850fecf084349e013bb6c39",
           "observed_at": "2025-08-11",
           "exact_entity": true,
@@ -1657,7 +2899,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "aaaaf14a31283cb2adb2c713e3738c7dc83f4ea5f3fdbe4eed08fc9e8c4b7f93",
           "observed_at": "2025-05-08",
           "exact_entity": true,
@@ -1687,7 +2929,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ec12e427257449983246e2686c2f10c48999fec337aa674341eef1022ef6b08e",
           "observed_at": "2025-04-12",
           "exact_entity": true,
@@ -1717,7 +2959,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "cb233b5f1977cd98304c57e329445a4bf3e40131f55978a05b77d30febe8b885",
           "observed_at": "2025-03-12",
           "exact_entity": true,
@@ -1747,7 +2989,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "7df1abeb8feedeaf7b676a7675325d9754999875a633a3132938bec9b7850b04",
           "observed_at": "2025-02-12",
           "exact_entity": true,
@@ -1777,7 +3019,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6ce9be0ad34286f1bee487c23b8a17aa31875dfa6036e5b0ccb288f171c93b70",
           "observed_at": "2025-01-14",
           "exact_entity": true,
@@ -1815,13 +3057,13 @@
     "run_metrics": {
       "bytes": 35303,
       "latencies_ms": [
-        944,
-        928,
-        876,
-        894,
-        890,
-        923,
-        454
+        1209,
+        1656,
+        1265,
+        1229,
+        1220,
+        1247,
+        601
       ],
       "requests": 8
     },
@@ -1832,7 +3074,7 @@
     "company_name": "OMBYGG AS",
     "synthesis_model": "deterministic-rules-v1",
     "synthesis_state": "available",
-    "summary": "OMBYGG AS is a private limited company operating in Detaljhandel med brukte varer. Latest accounts (2025): revenue NOK 4.2m, annual result NOK -45.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue shrinking (-45.2% YoY). Registered employees: 6. No fields changed since the previous run. Unknowns: hiring (no job sources were checked).",
+    "summary": "OMBYGG AS is a private limited company operating in Detaljhandel med brukte varer. Latest accounts (2025): revenue NOK 4.2m, annual result NOK -45.9k. Annual accounts available for 2022-2025 (4 years). Detailed records only available as PDFs. Revenue shrinking (-45.2% YoY). Registered employees: 6. 5 field(s) changed since run fresh-20261117T213100Z: business_description (2 removed); removed: Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevare…; public_brand (1 removed); removed: Ombygg AS; registry_website_rescue (values changed); sitemap_page (50 added); added: Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-h… [source: https://www.ombygg.no/]; social_profiles (3 removed); removed: facebook.com/ombygg. Unknowns: hiring (no job sources were checked).",
     "answers": [
       {
         "question": "what_it_does",
@@ -1937,10 +3179,10 @@
       },
       {
         "question": "changes",
-        "answer": "No fields changed since the previous run.",
+        "answer": "5 field(s) changed since run fresh-20261117T213100Z: business_description (2 removed); removed: Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevare…; public_brand (1 removed); removed: Ombygg AS; registry_website_rescue (values changed); sitemap_page (50 added); added: Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-h… [source: https://www.ombygg.no/]; social_profiles (3 removed); removed: facebook.com/ombygg.",
         "answerable": true,
         "status": "confirmed",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence_ids": [
           "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
           "https://data.brreg.no/enhetsregisteret/api/enheter/929109023/roller",
@@ -1968,7 +3210,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:49.358826Z",
+      "retrieved_at": "2026-11-19T20:08:11.845332Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "929109023",
       "source_type": "official_rule_interpretation",
@@ -1988,7 +3230,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:18.653499Z",
+      "retrieved_at": "2026-11-19T20:53:55.169507Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -2027,7 +3269,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:14.666578Z",
+      "retrieved_at": "2026-11-19T20:53:51.821327Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -2092,7 +3334,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T22:04:20.440784Z",
+      "retrieved_at": "2026-11-19T20:53:57.620750Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2106,7 +3348,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:21.364387Z",
+      "retrieved_at": "2026-11-19T20:53:58.869212Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2139,11 +3381,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "929109023",
       "source_type": "official_registry_bulk",
@@ -2228,7 +3470,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:13.738127Z",
+      "retrieved_at": "2026-11-19T20:53:50.163757Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2277,7 +3519,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T22:04:19.549104Z",
+      "retrieved_at": "2026-11-19T20:53:56.399363Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2378,7 +3620,7 @@
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T22:04:21.901330Z",
+      "retrieved_at": "2026-11-19T20:54:00.753296Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
@@ -2428,10 +3670,18 @@
         "organisation_number": "929109023",
         "platform": "company_site",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "exact_entity": true,
         "identity_proof": [
+          {
+            "type": "registry_declared_domain_unique",
+            "domain": "ombygg.no",
+            "register_field": "hjemmeside",
+            "sole_declarer_in_register": true,
+            "index_as_of": "2026-11-19",
+            "basis": "the organisation number filed this exact domain in the official register, no other organisation number declares it, and the page mentions the company"
+          },
           {
             "type": "website_identity_gate",
             "status": "exact",
@@ -2442,137 +3692,24 @@
         "rights_status": "approved",
         "source_class": "company_site",
         "strategy": "company_site_activity",
-        "id": "company-site-activity-929109023-d94310b4f6394d09",
+        "id": "company-site-activity-929109023-f7de2510525effa3",
         "signal_type": "profile_metrics",
-        "evidence_span": "Exact company site snapshot with 1 bounded pages and 3 verified social links.",
+        "evidence_span": "Exact company site snapshot with 1 bounded pages and 0 verified social links.",
         "metrics": {
           "bounded_pages_captured": 1,
-          "verified_social_links": 3,
-          "structured_organisation_records": 1,
-          "extraction_state": "static_complete",
+          "verified_social_links": 0,
+          "structured_organisation_records": 0,
+          "extraction_state": "js_fallback_candidate",
           "interpretation": "Observed site-surface completeness; not audience traffic or popularity."
         },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "929109023",
-        "platform": "facebook",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-929109023-d94310b4f6394d09-facebook",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated facebook handle published on the exact company site.",
-        "metrics": {
-          "platform": "facebook",
-          "url": "https://facebook.com/ombygg"
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "929109023",
-        "platform": "instagram",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-929109023-d94310b4f6394d09-instagram",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated instagram handle published on the exact company site.",
-        "metrics": {
-          "platform": "instagram",
-          "url": "https://instagram.com/ombygg.no"
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "929109023",
-        "platform": "linkedin",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "status": "exact",
-            "score": 0.95
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_activity",
-        "id": "company-site-handle-929109023-d94310b4f6394d09-linkedin",
-        "signal_type": "profile_handle",
-        "evidence_span": "Identity-gated linkedin handle published on the exact company site.",
-        "metrics": {
-          "platform": "linkedin",
-          "url": "https://linkedin.com/company/ombygg"
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "id": "registry-site-929109023-d94310b4f6394d09",
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "signal_type": "website_description",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "registry_declared_website_domain_match",
-            "value": "ombygg.no",
-            "matched_organisation_number": "929109023",
-            "source": "brreg",
-            "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
-            "explanation": "BRREG declares ombygg.no as the website of organisation 929109023; the crawled page on that host corroborates the organisation number or the legal name."
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "evidence_span": "Ombruk byggematerialer i Oslo | Ombygg — Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-        "metrics": {
-          "title": "Ombruk byggematerialer i Oslo | Ombygg",
-          "description": "Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-          "registry_domain": "ombygg.no"
-        },
-        "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "929109023",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/929109023",
-        "retrieved_at": "2026-11-17T22:42:35.689777Z",
-        "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+        "retrieved_at": "2026-11-20T08:21:42.900009Z",
+        "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2597,14 +3734,14 @@
           "phone": "22 12 02 84",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "929109023",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/929109023",
-        "retrieved_at": "2026-11-17T22:42:35.689777Z",
-        "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+        "retrieved_at": "2026-11-20T08:21:42.900009Z",
+        "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2644,14 +3781,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.ombygg.no"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "929109023",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/929109023",
-        "retrieved_at": "2026-11-17T22:42:35.689777Z",
-        "content_sha256": "50fe31a2ad7b2d56d10ab28d4e2c4faeee8187fd7ea3c9fe607e3067b17ee5a4",
+        "retrieved_at": "2026-11-20T08:21:42.900009Z",
+        "content_sha256": "a644c3d2e1f5c7de5faa293ac1c17927d5998923b9fcea8341a0941bd7297d62",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2678,7 +3815,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "registry-workforce-dd3d0123bc8c224d3d7ae8a2",
@@ -2686,7 +3823,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:04:13.738127Z",
+        "retrieved_at": "2026-11-19T20:53:50.163757Z",
         "content_sha256": "47238b492d52e888843d9cc47271616e33d508b841ea7660ca1fd909088b19e0",
         "exact_entity": true,
         "identity_proof": [
@@ -2718,7 +3855,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000624888&amp;sokeverdi=929109023&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "2c525901ee3c53cc0d0d665533bf597e8a7c003cdc165021977fdb30addcadfd",
         "exact_entity": true,
         "identity_proof": [
@@ -2747,7 +3884,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000015386&amp;sokeverdi=929109023&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "6d7018adaa6f798a46efea26bd9dd46ba07c84c1d5f040bbd7b0cad963747145",
         "exact_entity": true,
         "identity_proof": [
@@ -2776,7 +3913,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20250000738738&amp;sokeverdi=929109023&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:27:36Z",
+        "retrieved_at": "2026-11-20T09:18:11Z",
         "content_sha256": "141eda852d5b1ef2af2d3f018e7ae8275ee82f93ad6712e3885cd17925f0e0dd",
         "exact_entity": true,
         "identity_proof": [
@@ -2805,8 +3942,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2826,66 +3963,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-description-f66ced8a1213e3820a2a5761",
-        "signal_type": "website_description",
-        "evidence_span": "Ombruk byggematerialer i Oslo | Ombygg — Finn ombruk byggematerialer, brukte byggematerialer, brukte byggevarer og gjenbruksmaterialer til byggeprosjekter i Oslo gjennom Ombygg sin markedsplass.",
-        "metrics": {
-          "interpretation": "Company-owned description; the company's own words."
-        },
-        "observed_at": "2026-11-17"
-      },
-      {
-        "organisation_number": "929109023",
-        "platform": "company_site",
-        "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
-        "exact_entity": true,
-        "identity_proof": [
-          {
-            "type": "website_identity_gate",
-            "score": 0.95,
-            "method": "deterministic_name_org_evidence_v2"
-          }
-        ],
-        "acquisition_mode": "permitted_public_page",
-        "rights_status": "approved",
-        "source_class": "company_site",
-        "strategy": "company_site_identity",
-        "id": "site-brand-3f6fcc1bf0ff7aedc619a82d",
-        "signal_type": "public_brand",
-        "evidence_span": "Ombygg AS",
-        "metrics": {
-          "declared_url": "https://www.ombygg.no",
-          "interpretation": "Brand name from the site's own JSON-LD."
-        },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "929109023",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=929109023&size=1000",
-        "retrieved_at": "2026-11-17T22:04:21.364387Z",
+        "retrieved_at": "2026-11-19T20:53:58.869212Z",
         "content_sha256": "813924283adbcd0442d9242303d024ec05b816d394adcd0927b58f3b5fc4e157",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2908,7 +3992,7 @@
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "sitemap-page-27dc3d92e6f879187934b693",
@@ -2916,8 +4000,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-09",
         "exact_entity": true,
         "identity_proof": [
@@ -2944,8 +4028,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -2972,8 +4056,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3000,8 +4084,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3028,8 +4112,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3056,8 +4140,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3084,8 +4168,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3112,8 +4196,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3140,8 +4224,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3168,8 +4252,8 @@
         "platform": "company_site",
         "signal_type": "sitemap_page",
         "source_url": "https://www.ombygg.no/",
-        "retrieved_at": "2026-11-17T22:19:12.958186Z",
-        "content_sha256": "d94310b4f6394d09ae61716b871348fd45fd6b236c7846684170e39ef088d5a6",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
         "observed_at": "2026-05-08",
         "exact_entity": true,
         "identity_proof": [
@@ -3191,12 +4275,1412 @@
         "strategy": "sitemap_lastmod"
       },
       {
+        "id": "sitemap-page-5e34b793dd9d03629001c1ba",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb660b44ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb660b44ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-16b4232bed23b24badc53047",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb8b2124ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb8b2124ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-20c3d4b4770776b464216d02",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb971fe4ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/stalprofiler/stalprofil-u-bjelke/3eb971fe4ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-700ad32b5a2c3149d72c2976",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-08",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/innerdrer/staldr-toflyet-branndr-s67-28x40/3ebbc02d4ae4 last modified 2026-05-08",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/innerdrer/staldr-toflyet-branndr-s67-28x40/3ebbc02d4ae4",
+          "lastmod": "2026-05-08",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-415b590d099f49c66256d46c",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/trykkimpregnert-trappetrinn/6fb8008149e5 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/impregnert/trykkimpregnert-trappetrinn/6fb8008149e5",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-633e3f1d0d8e93990681a4cc",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0c95245f last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0c95245f",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-2f0da5cc1a037dc6f1cb224d",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0cbd245f last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kanaler-og-tilbehr/tilluftventil-tak/bf6b0cbd245f",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-654ace55f6d0ce40b1f11da4",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-granitt-buet/bf6baba4245f last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-granitt-buet/bf6baba4245f",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-ab0ca8f3256e21bd7b42099d",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-med-skranet-topp/bf6bac09245f last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/kantstein-med-skranet-topp/bf6bac09245f",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-019cd0c627f67c7866f2600a",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-hvit-hev-senk-l-form-80-120x160/fee84be34a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-hvit-hev-senk-l-form-80-120x160/fee84be34a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-cd8370dea499dae3f3b65afa",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-l-formet-1540x2300/feea9ae54a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-l-formet-1540x2300/feea9ae54a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-fd1572285a98c64d6befc83d",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-1540x800/feeb45564a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/bord-mbler/kontorpult-bk-hvit-hev-senk-1540x800/feeb45564a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-27e48b5b6d96901d8a7e8a23",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skap/skuffeseksjon-pa-hjul-lys-tre-430x560x600/feebe54b4a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skap/skuffeseksjon-pa-hjul-lys-tre-430x560x600/feebe54b4a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-62d88129fa67e109f67d6bec",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/sitte-liggembel/kontorstol-med-hodesttte-sort/feee18a04a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/sitte-liggembel/kontorstol-med-hodesttte-sort/feee18a04a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-2c44253103184a1424cacebc",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/el-apparater/stikkontaktlist-6-stikk-2-usb/feeeb2dc4a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/el-apparater/stikkontaktlist-6-stikk-2-usb/feeeb2dc4a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6641655013313f0dabec7aba",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-07",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/rr-og-tilbehr/vaskerenne-i-rustfritt-stal-480x1780/fef14d944a16 last modified 2026-05-07",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/rr-og-tilbehr/vaskerenne-i-rustfritt-stal-480x1780/fef14d944a16",
+          "lastmod": "2026-05-07",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-189e43c431291ae811d35425",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-06",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/heller-og-belegningsstein/granitt-kantstein/bf6b160d245f last modified 2026-05-06",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/heller-og-belegningsstein/granitt-kantstein/bf6b160d245f",
+          "lastmod": "2026-05-06",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-edf4de3d4cf7b07a357854b3",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-06",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/impregnert-terrassebord/bf6b187c245f last modified 2026-05-06",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/impregnert/impregnert-terrassebord/bf6b187c245f",
+          "lastmod": "2026-05-06",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-aa7e5e805f7bbfacdf26b6ac",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x118/45ca54ec478e last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x118/45ca54ec478e",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e3eaee7e6f88716c1bd7adfc",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/impregnert/rekkverk-i-impregnert-tre-3-meter/bf6b18bc245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/impregnert/rekkverk-i-impregnert-tre-3-meter/bf6b18bc245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-fd595e0522b4cf74ab21d871",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x88/bf6b1b7e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x88/bf6b1b7e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-1a9510af52f407f849d9a78a",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x70/bf6b1b9f245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x70/bf6b1b9f245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-003070b713cf5819fc403e20",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x87/bf6b1bbf245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x87/bf6b1bbf245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-7279ac8bab4de461ec741f82",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x45/bf6b1bdf245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-5x45/bf6b1bdf245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-82424476ab5c0061d01342f1",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-8x70-7/bf6b1c5e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-8x70-7/bf6b1c5e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-70d64b727b333338a16922c9",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-239x70-7/bf6b1c7e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-239x70-7/bf6b1c7e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6d9e98dc889c5ceea2377178",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-207x38-573/bf6b1c9e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-207x38-573/bf6b1c9e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-8cff94514d691dd54c94db46",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-214x39-573/bf6b1d09245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-214x39-573/bf6b1d09245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-773cc35f7c5ffe4e0655edb3",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-236-3x75-57-8/bf6b1d28245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-trapesformet-236-3x75-57-8/bf6b1d28245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6cbd299263c1c9853675a7c1",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-242-8x37-34db/bf6b1d47245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-242-8x37-34db/bf6b1d47245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-5192c16ce812939a81e40cf5",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-217-1x37-34db/bf6b1d67245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-217-1x37-34db/bf6b1d67245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-85b1b866a56bddaedf10146c",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x82/bf6b1d87245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-8x82/bf6b1d87245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-cb803e9bd761a15be2bb45ad",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-5x85/bf6b1e4e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-98-5x85/bf6b1e4e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-c99db1db48278801283bab5a",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-33-5/bf6b1e6e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-33-5/bf6b1e6e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-4188d3411a31cfc131ba22a3",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-40/bf6b1e8e245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-40/bf6b1e8e245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-e7df1d0f68eba163f8d99855",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-42/bf6b1eaf245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-234-5x-42/bf6b1eaf245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-563e7fe2c4fe814acb431de3",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-2x45-1/bf6b1ece245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-2x45-1/bf6b1ece245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-9448f795346fad18206cb308",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-9x45-1/bf6b1f66245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-268-9x45-1/bf6b1f66245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-7975bd4f6078cf22383d71c0",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-222-5x45-1/bf6b1fa2245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-222-5x45-1/bf6b1fa2245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-fb67e88db1a47f567f758114",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-05",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-8x17/bf6b1fc7245f last modified 2026-05-05",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/skillevegg/glassfelt-i-trekarm-233-8x17/bf6b1fc7245f",
+          "lastmod": "2026-05-05",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-5c365703f6318c68b6102248",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-258x115/45be1493478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-258x115/45be1493478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-76ba7a7d08f3e3ec7d214fca",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-269x71/45c04364478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-269x71/45c04364478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-3af70ee19119d5f314b750a0",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45c0d5e1478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45c0d5e1478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-de071b3154b0dc2d884fd3f5",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x109/45c18334478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x109/45c18334478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-7087163bf7c3c3feec7246ca",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x106/45c326d6478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x106/45c326d6478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6cf958d09bf92f3bf0e6033f",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x111/45c3dde1478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x111/45c3dde1478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-6b20b2bdc389032a29dcc05b",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x116/45c60e13478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x116/45c60e13478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-f240afd32d4b2b875ad4e96e",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x119/45c6a709478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x119/45c6a709478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-881ca8f15d42020371b40556",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x107/45c999c5478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x107/45c999c5478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
+        "id": "sitemap-page-0d913f0ae5d62eebe67ec596",
+        "organisation_number": "929109023",
+        "platform": "company_site",
+        "signal_type": "sitemap_page",
+        "source_url": "https://www.ombygg.no/",
+        "retrieved_at": "2026-11-19T20:54:00.753296Z",
+        "content_sha256": "f7de2510525effa3d5bd0b2d4f2b4b729e7408c659847a64b9da7bb9c514cfd8",
+        "observed_at": "2026-05-04",
+        "exact_entity": true,
+        "identity_proof": [
+          {
+            "type": "website_identity_gate",
+            "score": 0.95,
+            "method": "deterministic_name_org_evidence_v2"
+          }
+        ],
+        "acquisition_mode": "permitted_public_page",
+        "rights_status": "approved",
+        "source_class": "company_site",
+        "evidence_span": "Sitemap page https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45cc4fcd478e last modified 2026-05-04",
+        "metrics": {
+          "page_url": "https://www.ombygg.no/produkt/kryssfiner/kontorskillevegger-i-eik-med-glass-266x112/45cc4fcd478e",
+          "lastmod": "2026-05-04",
+          "interpretation": "Dated official-site page from the site's own sitemap."
+        },
+        "strategy": "sitemap_lastmod"
+      },
+      {
         "id": "registry-update-4e62d91b015f59df6d5dfcc3",
         "organisation_number": "929109023",
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "4e62d91b015f59df6d5dfcc3bb9646dc6b56bcd5ba6a5b946f58e926de35241e",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -3226,7 +5710,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "b3ec47b10eb8600485cbf0b5b5980e6aa9b7d1e1b90bfae9cbaff3c4f665b487",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -3256,7 +5740,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "2954a18f7e14ef55a121020acac655f2aad63ff003118e82d2d98325c5e2ebf6",
         "observed_at": "2026-07-29",
         "exact_entity": true,
@@ -3286,7 +5770,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "383de79ef1329ac0716e89e24c04d3354595d551f1b8ae6f8d980e7991c6dbad",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -3316,7 +5800,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "7a2f19375eb7a63f57301e1c9f1f03b8ee1b118b7063e5ee7a9d3ab328b5deb8",
         "observed_at": "2026-05-11",
         "exact_entity": true,
@@ -3346,7 +5830,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "283324e04ee057052b9620c1da0a2962170eaebc6b07674a763d9576f9951735",
         "observed_at": "2026-04-13",
         "exact_entity": true,
@@ -3376,7 +5860,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "b7c9a4178ac7190f8be3ef44f5ce5fdde880132c679ae084757058e2906d42c2",
         "observed_at": "2026-03-11",
         "exact_entity": true,
@@ -3406,7 +5890,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "d5d5da9a86e17517834dbace5ef8f432cdc5509a6d36387200e1b3ff5b54ad42",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -3436,7 +5920,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "4cbf8bf3ac9ec00e4e75b4066b3068adb4cdfbfd1a7123e53725322d2ca629a2",
         "observed_at": "2026-01-15",
         "exact_entity": true,
@@ -3466,7 +5950,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "b5aae116eb7cf5859cb85d8249cba38d28ef898976402108b5c3bf9cad0d9201",
         "observed_at": "2025-12-11",
         "exact_entity": true,
@@ -3496,7 +5980,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "dd94acbb43f23c666aafc8199b58d022a5b9e5721d4b4eb0e489de15a75d28d8",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3526,7 +6010,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "db8502f893731b8077d270d528b3d3fb43c5837c76582b991c110846dec6c140",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3556,7 +6040,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "989f24c3e9296c192473217ae26b6d1fd692fea158c9bffae62251f9fbd06b50",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3586,7 +6070,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "069719dc7b57b43843ae5c8f625d4abd6a0cb047b850fecf084349e013bb6c39",
         "observed_at": "2025-08-11",
         "exact_entity": true,
@@ -3616,7 +6100,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "aaaaf14a31283cb2adb2c713e3738c7dc83f4ea5f3fdbe4eed08fc9e8c4b7f93",
         "observed_at": "2025-05-08",
         "exact_entity": true,
@@ -3646,7 +6130,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ec12e427257449983246e2686c2f10c48999fec337aa674341eef1022ef6b08e",
         "observed_at": "2025-04-12",
         "exact_entity": true,
@@ -3676,7 +6160,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "cb233b5f1977cd98304c57e329445a4bf3e40131f55978a05b77d30febe8b885",
         "observed_at": "2025-03-12",
         "exact_entity": true,
@@ -3706,7 +6190,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "7df1abeb8feedeaf7b676a7675325d9754999875a633a3132938bec9b7850b04",
         "observed_at": "2025-02-12",
         "exact_entity": true,
@@ -3736,7 +6220,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/929109023",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6ce9be0ad34286f1bee487c23b8a17aa31875dfa6036e5b0ccb288f171c93b70",
         "observed_at": "2025-01-14",
         "exact_entity": true,
@@ -3762,5 +6246,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:29.871763+00:00"
+  "generated_at": "2026-11-20T12:49:30.719385+00:00"
 }

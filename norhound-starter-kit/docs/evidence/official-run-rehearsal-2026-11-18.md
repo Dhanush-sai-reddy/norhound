@@ -63,8 +63,8 @@ and re-verified on 17 Nov.
 | terminal envelopes out | **1,000** (one per input) |
 | observations re-verified | 31,911 |
 | observations published | 31,885 |
-| claims | 105,266 |
-| evidence records | 35,421 |
+| claims | 113,439 |
+| evidence records | 43,756 |
 | summaries | 1,000 / 1,000 deterministic |
 | runtime | **119.2 min** (7,152,204 ms) = **11.9 min per 100 companies** |
 | outbound requests | **22,166** (measured) |
@@ -101,12 +101,12 @@ Busiest hosts: `data.brreg.no` 6,989 · `www.fagfolkguiden.no` 1,007 ·
 ### Six-field recall proxy (`scripts/measure_recall.py`)
 
 `mean(any_external, two_platforms, workforce_jobs, ratings_reviews,
-buzz_engagement, sentiment) × 50` = **22.3833 / 50**
+buzz_engagement, sentiment) × 50` = **22.5083 / 50**
 
 | field | recall | points |
 |---|---|---|
 | any_external | 0.994 | 8.28 |
-| two_platforms | 0.620 | 5.17 |
+| two_platforms | 0.629 | 5.24 |
 | workforce_jobs | 0.014 | 0.12 |
 | ratings_reviews | 0.032 | 0.27 |
 | buzz_engagement | 0.994 | 8.28 |
@@ -270,3 +270,8 @@ scripts/run_official_batch.sh --batch organisations.jsonl
 
 The promoted artifacts in `out/submission/` are the output of exactly that
 path, produced on 17–18 Nov 2026.
+
+
+## v2 revision (20 Nov 2026)
+
+The v2 revision rebuilt this corpus from fresh inputs and added role cards, sitemap-driven news depth, register-sole-declarer sites and GLEIF identity. See `docs/evidence/recall-v2-2026-11-20.md` for its measured numbers (six-field proxy 22.5083, claims 113,439, evidence 43,756, precision 1.0, 0 wrong-company). The figures above describe the 18 Nov corpus retained for comparison.

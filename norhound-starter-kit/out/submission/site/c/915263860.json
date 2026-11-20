@@ -9,7 +9,7 @@
         "effective_at": null,
         "field": "accounting_obligation",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:46.487553Z",
+        "retrieved_at": "2026-11-19T20:08:07.852945Z",
         "source_class": "official_rule_interpretation",
         "source_row_key": "915263860",
         "source_type": "official_rule_interpretation",
@@ -29,7 +29,7 @@
         "effective_at": null,
         "field": "financial_history",
         "note": null,
-        "retrieved_at": "2026-11-17T21:42:57.168230Z",
+        "retrieved_at": "2026-11-19T20:25:21.136357Z",
         "source_class": "official_annual_account_copies",
         "source_row_key": null,
         "source_type": "official_annual_account_copies",
@@ -103,7 +103,7 @@
         "effective_at": null,
         "field": "financials",
         "note": null,
-        "retrieved_at": "2026-11-17T21:42:56.278880Z",
+        "retrieved_at": "2026-11-19T20:25:19.901384Z",
         "source_class": "official_annual_accounts",
         "source_row_key": null,
         "source_type": "official_annual_accounts",
@@ -168,7 +168,7 @@
         "effective_at": null,
         "field": "group",
         "note": "HTTP 404",
-        "retrieved_at": "2026-11-17T21:42:58.956584Z",
+        "retrieved_at": "2026-11-19T20:25:23.619987Z",
         "source_class": "official_group_structure",
         "source_row_key": null,
         "source_type": "official_group_structure",
@@ -182,7 +182,7 @@
         "effective_at": null,
         "field": "locations",
         "note": null,
-        "retrieved_at": "2026-11-17T21:42:59.811353Z",
+        "retrieved_at": "2026-11-19T20:25:25.454166Z",
         "source_class": "official_subunits",
         "source_row_key": null,
         "source_type": "official_subunits",
@@ -235,11 +235,11 @@
       },
       "registry": {
         "as_of": null,
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "effective_at": null,
         "field": "registry",
         "note": null,
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
         "source_class": "official_registry_bulk",
         "source_row_key": "915263860",
         "source_type": "official_registry_bulk",
@@ -334,7 +334,7 @@
         "effective_at": null,
         "field": "registry_live",
         "note": null,
-        "retrieved_at": "2026-11-17T21:42:55.388107Z",
+        "retrieved_at": "2026-11-19T20:25:18.513726Z",
         "source_class": "official_registry_live",
         "source_row_key": null,
         "source_type": "official_registry_live",
@@ -373,7 +373,7 @@
         "effective_at": null,
         "field": "roles",
         "note": null,
-        "retrieved_at": "2026-11-17T21:42:58.082207Z",
+        "retrieved_at": "2026-11-19T20:25:22.379386Z",
         "source_class": "official_roles",
         "source_row_key": null,
         "source_type": "official_roles",
@@ -464,19 +464,28 @@
       },
       "website": {
         "as_of": null,
-        "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+        "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
         "effective_at": null,
         "field": "website",
         "note": "Company-controlled claim layer; not an official registry fact",
-        "retrieved_at": "2026-11-17T21:43:24.392028Z",
+        "retrieved_at": "2026-11-19T20:26:01.241437Z",
         "source_class": "registry_linked_company_website",
         "source_row_key": null,
         "source_type": "registry_linked_company_website",
         "source_url": "https://www.cbre.no/",
         "status": "available",
         "value": {
-          "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
-          "crawl_errors": [],
+          "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
+          "crawl_errors": [
+            {
+              "error": "HTTPError: HTTP Error 403: Forbidden",
+              "url": "https://www.cbre.no/karriere/mangfold-likestilling-og-inkluering"
+            },
+            {
+              "error": "HTTPError: HTTP Error 403: Forbidden",
+              "url": "https://www.cbre.no/karriere/ting-du-lurer-pa"
+            }
+          ],
           "description": "CBRE er verdens ledende eiendomsrådgiver, megler, eiendomsforvalter og investeringsselskap innenfor næringseiendom.",
           "discovered_social_links": [
             {
@@ -515,88 +524,76 @@
           "main_text_excerpt": "Vi er verdens ledende selskap innenfor rådgivning, forvaltning og investering i eiendom. Med tjenester, innsikt og data som spenner over alle dimensjoner av eiendom, skaper vi løsninger for kunder av alle størrelser, i alle sektorer og på tvers av alle geografiske områder.\nHva vi gjør\nKunnskap\nDeler innsikt og analyse om eiendomsmarkedet\nVårt analyseteam og våre fageksperter deler rapporter, innsikt og synspunkter rundt aktuelle trender og markedsutviklingen for næringseiendom. Det bidrar til at våre kunder kan ta velinformerte og datadrevne beslutninger.\nLes mer om innsikt og analyse\nTjenester\nLeverer tjenester for eiere og brukere av næringseiendom\nVi tilbyr et bredt spekter av integrerte tjenester, herunder strategisk rådgivning, leietakerrådgivning, arbeidsplasstrategi og design, prosjektledelse, utleie av næringseiendom, verdivurdering, kjøp og salg av eiendom, eiendomsutvikling, eiendomsforvaltning, drift og vedlikehold.\nLes mer om våre tjenester\nKarriere\nBli en del av oss\nEiendomsbransjen er i endring, hvor gamle forretningsmodeller utfordres av ny teknologi, nye samarbeidsmåter, bærekraft og brukerorienterte løsninger. I CBRE er vi opptatt av å være en av frontløperne i denne utviklingen.\nLes mer",
           "pages": [
             {
-              "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+              "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
               "main_text_excerpt": "Vi er verdens ledende selskap innenfor rådgivning, forvaltning og investering i eiendom. Med tjenester, innsikt og data som spenner over alle dimensjoner av eiendom, skaper vi løsninger for kunder av alle størrelser, i alle sektorer og på tvers av alle geografiske områder.\nHva vi gjør\nKunnskap\nDeler innsikt og analyse om eiendomsmarkedet\nVårt analyseteam og våre fageksperter deler rapporter, innsikt og synspunkter rundt aktuelle trender og markedsutviklingen for næringseiendom. Det bidrar til at våre kunder kan ta velinformerte og datadrevne beslutninger.\nLes mer om innsikt og analyse\nTjenester\nLeverer tjenester for eiere og brukere av næringseiendom\nVi tilbyr et bredt spekter av integrerte tjenester, herunder strategisk rådgivning, leietakerrådgivning, arbeidsplasstrategi og design, prosjektledelse, utleie av næringseiendom, verdivurdering, kjøp og salg av eiendom, eiendomsutvikling, eiendomsforvaltning, drift og vedlikehold.\nLes mer om våre tjenester\nKarriere\nBli en del av oss\nEiendomsbransjen er i endring, hvor gamle forretningsmodeller utfordres av ny teknologi, nye samarbeidsmåter, bærekraft og brukerorienterte løsninger. I CBRE er vi opptatt av å være en av frontløperne i denne utviklingen.\nLes mer",
               "title": "Tjenester for næringseiendom | CBRE Norway",
               "url": "https://www.cbre.no/"
             },
             {
-              "content_sha256": "2272aafe3a54306967d5fda5ccac1221b95ed27e5ef93d7aa471ea13931affbf",
+              "content_sha256": "2f545f3b9ad591d7570135f67fcb591ff6462c708782e42e776030257fbc9417",
               "main_text_excerpt": "Om oss\nCBRE leverer tjenester innenfor alle aspekter av næringseiendom. Vårt nettverk og erfaringer kommer deg til nytte.\n    CBRE utvikler fremtidens eiendomsløsninger slik at våre  kunder, ansatte og samarbeidspartnere får realisert sitt potensial.\n    \nFra å bygge tillit til dagens beslutninger til å tenke nytt om morgendagens lokaler – vi trives i komplekse og stadig endrede omgivelser.\nVed hjelp av markedsinnsikt, data, teknologi og bred ekspertise bistår vi virksomheter med å skape fremtidens eiendomsløsninger.",
               "title": "Om CBRE - verdens ledende eiendomsrådgiver | CBRE Norway",
               "url": "https://www.cbre.no/om-oss"
             },
             {
-              "content_sha256": "255436e40fe32a65daa03bc39211ced521659e50db890a761414607337faa021",
+              "content_sha256": "300e768be229b646300dee41f3834935e94959951446630c812a1e8475734cbc",
               "main_text_excerpt": "Brukerbetingelser\nPlease read carefully\nBy accessing www.cbre.no (\"Site\") you confirm that you are a business user over the age of 18 years and permitted to use this Site, and you agree to be bound by all of the following terms and conditions of use (\"Terms\").\nThese Terms govern your access to the Site except where there are separate terms and conditions relevant to particular areas of this Site, which are indicated on the appropriate Site page. If you do not agree to abide by these Terms then you should not use this Site. For clarity, in these Terms, references to \"we\", \"us\", \"our\" and \"ourselves\" are references to CBRE Limited and any of its affiliates or group companies.\nThis Terms of use policy together with our Privacy Policy (\"Privacy Policy\") available at www.cbre.no/nb-no/om-cbre/personvernerklaering set out the basis on which we will collect, use and disclose certain personal information from you. Your use of this Site signifies your understanding and acceptance of the terms of this Terms of use policy.\nWe may from time to time modify these Terms and will post a copy of the amended Terms on this Site. You will be bound by such updated Terms from the time they are posted on this Site. We would advise you to periodically visit this Site and this web page to ensure that you are up to date with any changes that have been made.\n1. Access\nWe reserve the right to restrict certain areas of this Site to approved registered users. In the event that any area of the Site requires you to register with us prior to obtaining access, you agree to provide true, accurate, current and complete details, including but not limited to a member name and password as well as your name, address, telephone number and a valid email address ( \"Account Information\"). You agree to update your Account Information as necessary to keep it accurate. CBRE will use your Account Information in accordance with its Privacy Policy.\nYou agree to notify us immediately of any unauthorised use of your member name, password or account. CBRE will not be responsible for any losses arising out of the unauthorised use of your account and you agree to indemnify CBRE for any improper, unauthorised or illegal uses of your account.\n2. License to use the Site\nCBRE grants to you a limited, non-exclusive, non-transferable license to access and use the Site in accordance with these Terms. Any use of the Site not specifically permitted under these Terms is strictly prohibited.\n3. Intellectual Property\nYou acknowledge that CBRE owns or has a license to all title and copyright in and to the content provided on this Site. All title and intellectual property rights in and to any licensed content provided on this Site is the property of the respective content owners and may be protected by applicable copyright or other intellectual property laws and treaties and subject to use restrictions under such laws or treaties.\nYou may use this Site for your information and internal business purposes and you may make a copy of the pages of this Site but only for your internal business use, and provided that you keep all copyright and other proprietary notices in tact. Any modification, transmission, hiring, copying or use of the content of this Site for public or commercial purposes (other than internal business use) is prohibited. The following are registered trademarks or trademarks of CBRE: CBRE and its design logo, as well as certain other CBRE trademarks, service marks, graphics, and logos (collectively, the \"CBRE trademarks\") used in connection with CBRE's provision of products and services. The site may contain third-party trademarks, service marks, graphics, and logos. You are not granted any right or license with respect to the CBRE trademarks or the trademarks of any third party.\n4. Restrictions\nYou agree that you will not: (i) use the Site to reproduce, transmit, display or distribute copyrighted material in any medium or via any method without CBRE's express written permission; (ii) copy, store, edit, change, prepare any derivative work of or alter in any way any of the content provided on this Site; or (iii) use our Site in any way that violates these Terms.\nYou agree that you will not: (a) impersonate any person or entity or misrepresent your affiliation with any other person or entity; (b) engage in spamming, flooding, harvesting of e-mail addresses or other personal information, spidering, screen scraping, database scraping, or any other activity with the purpose of obtaining lists of users or any other information, including specifically, property listings available through the Site; (c) send chain letters or pyramid schemes via the Site; (d) attempt to gain unauthorized access to other computer systems through the Site; or (e) use the Site in any manner that could damage, disable, overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site.\n5. Privacy Policy and Submission of Information\nUnless otherwise addressed in ",
               "title": "Brukerbetingelser | CBRE Norway",
               "url": "https://www.cbre.no/om-oss/brukerbetingelser"
             },
             {
-              "content_sha256": "0bbdd48db419f7a3e71ae884ade9e224a71de861d991726354aff5d471703288",
+              "content_sha256": "b6c70b1d5e4cc4fae4c32b23dbf4ada0c483c0f7b52f2f81217a04156c64ad86",
               "main_text_excerpt": "Vi mener varig suksess kun skapes gjennom en grunnleggende ansvarlig forretningspraksis, og at alle oppnår et fortrinn ved å jobbe etter vårt verdigrunnlag ”RISE”.\nVåre RISE-verdier\n- \n\t\t\tRespectVi viser omtanke og forståelse for andres ideer. Vi deler informasjon og kunnskap for å bygge tillit og oppmuntre til samarbeid.\n- \n\t\t\tIntegrityIngen enkeltperson, ingen avtale, og ingen kunde er viktigere enn vår forpliktelse til selskapet vårt og det vi står for.\n- \n\t\t\tServiceVi oss med . Vi bygger varige ved å de , den riktig kapitalen de riktige .\n- \n\t\t\tExcellenceVårt fokus er å skape suksessfulle resultater for våre kunder, ansatte og aksjonærer.",
               "title": "Kultur og historie | CBRE Norway",
               "url": "https://www.cbre.no/om-oss/kultur-og-historie"
             },
             {
-              "content_sha256": "c957e0767ab417eab1e8c0245b58ea4a2247a356777e2c9b3975441d4fcd3d71",
+              "content_sha256": "34f195c65ba9553ab644324dae019beb3f2b6dd1da7c093131df17ad4d4a2ca6",
               "main_text_excerpt": "Siste pressemeldinger\nCBRE Norway i media\n- SLB har inngått kontrakt med Lars Berland Invest for nytt hovedkontor på Forus og samler med dette 1000 ansatte under samme tak, fra tidligere åtte lokasjoner i regionen. CBRE har vært rådgiver for SLB og Equinor i prosessen.",
               "title": "Nyheter og pressemeldinger | CBRE Norway",
               "url": "https://www.cbre.no/om-oss/nyheter-og-pressemeldinger"
             },
             {
-              "content_sha256": "5ebb2de953a261814a3de52618471c290c3230ea25aadbba02c7199ec9eff70b",
+              "content_sha256": "de52acc1f7c50623e1e1a0b7a08d336f785018fd0a0793b3a4012215a891ee1d",
               "main_text_excerpt": "I CBRE tar vi rollen som markedsleder i bransjen på alvor. Derfor jobber vi ut fra en felles praksis for ansvarlig og bærekraftig virsomhetsstyring for hele vår globale virksomhet.\nBærekraft og samfunnsansvar\nCBRE’s latest Corporate Responsibility Report was produced in accordance with the Global Reporting Initiative (GRI) Standards and the International Sustainability Standards Board’s (ISSB) disclosures’ industry-specific SASB standards and the Task Force on Climate-related Financial Disclosures (TCFD).",
               "title": "Samfunnsansvar | CBRE Norway",
               "url": "https://www.cbre.no/om-oss/samfunnsansvar"
             },
             {
-              "content_sha256": "b3b950cfa4c8f5696a864d40ed3d73c97756df6e54fb3e23e5ad840c950b3e4f",
+              "content_sha256": "4b58aadc6608310178dda7a1d9b6b2b58b2741cfc1ed732d77914f893c38a0e8",
               "main_text_excerpt": "Protecting Your Data at CBRE\nOur Commitment to Information Security\nAt CBRE, we recognise the importance of the trust placed in us and the sensitivity of the information we handle. Protecting that information is a priority for our organization, and we work to maintain a secure environment for the data we manage.\nHow We Support the Security of Your Information:\n- Continuous Improvement: We strive to continually enhance our information security practices. This includes regularly assessing and updating our technologies and processes to address evolving risks and emerging threat patterns.\n- Data Protection: Our objective is to help ensure that the information we handle remains accurate, available, and appropriately safeguarded. We implement controls designed to reduce the risk of unauthorised access, use, or disclosure, and we regularly evaluate their effectiveness.\n- Active Monitoring and Responsive Action: Our security teams monitor for potential threats and use a range of tools and processes to detect, assess, and respond to security risks. We are committed to maintaining resilient defenses and addressing issues in a timely and responsible manner.\n- A Shared Responsibility: Information security is a collective effort. CBRE employees receive training and guidance intended to support secure practices as part of their day-to-day work.\n- Responsible Partner Practices: We work with partners and suppliers to encourage security practices that align with our expectations and support the protection of information across our broader ecosystem.\nOur Commitment\nYour confidence in CBRE is important to us. We aim to provide a secure and reliable experience and are dedicated to continually strengthening our information security posture through thoughtful governance, ongoing improvement, and responsible risk management.",
               "title": "Protecting Your Data at CBRE | CBRE Norway",
               "url": "https://www.cbre.no/en-gb/about-us/protecting-your-data-at-cbre"
             },
             {
-              "content_sha256": "b624193f3800db700e34727a5609ff5b9cf95458170c0559c31f08917ec8bebd",
+              "content_sha256": "bbb65925cc77543ad136c5fd32f85338cf14b7a99bff686501f1b4d7e1fb68b2",
               "main_text_excerpt": "Responsible AI at CBRE\nOur Commitment\nAt CBRE, we are advancing the use of Artificial Intelligence (AI) to help enhance insights, improve efficiency, and provide value for our clients and teams. As we continue expanding our use of these technologies, we remain committed to responsible, ethical, and secure practices in line with our broader governance and risk management frameworks.\nWe believe AI should support human judgment, creativity, and purpose. Our approach reflects this principle:\n- Ethical Foundation & Human Oversight: We aim to develop and apply AI tools guided by ethical principles, with a focus on fairness, accountability, and positive impact. Human expertise plays a central role, including reviewing and validating AI-generated outputs to support informed decision-making.\n- Robust Data Security & Privacy: Protecting your data is paramount. Our AI initiatives are built upon the same rigorous information security systems and privacy standards that govern all of our operations. We safeguard your information, protecting its integrity and confidentiality at every step.\n- Transparency & Trust: We are committed to transparent communication about how AI supports our services. We work to provide clear and accessible information to help build trust and support effective engagement with clients and stakeholders.\n- Innovation to Support Clients: AI technologies can help us analyse large datasets, identify patterns, and generate insights that support our clients’ business objectives. We apply these tools to help navigate market complexity, surface opportunities, and improve decision-support processes.\n- Responsible Use of Third-Party Providers: We work with third-party service providers, including AI solution vendors, and seek to apply consistent expectations for data protection and responsible use across our ecosystem. This includes requiring appropriate security controls and adherence to our contractual and compliance obligations.\nOur Ongoing Commitment\nCBRE is committed to the responsible development and use of AI. We will continue to evolve our practices, strengthen our governance, and support the safe, ethical, and effective application of AI to help businesses and people thrive in a rapidly changing environment.",
               "title": "Responsible AI at CBRE | CBRE Norway",
               "url": "https://www.cbre.no/en-gb/about-us/responsible-ai-at-cbre"
             },
             {
-              "content_sha256": "cabf6f29d807fab7e3b1b87a6e9f3f00745f064df498b4eee5dcdeecbefa87be",
+              "content_sha256": "932a7ba001b7a5b860ada9c9a24e57f48e29b3523e760e39ae6c5cce83154c93",
               "main_text_excerpt": "",
               "title": "Kontaktpersoner i Norge | CBRE Norway",
               "url": "https://www.cbre.no/kontorer/kontaktpersoner-i-norge"
             },
             {
-              "content_sha256": "95e794b2a70c464ae802425a67316e05a367672fb9683ca076fd5159939a1517",
+              "content_sha256": "95ded758371dc42f9ab72592313769ff2c02c6e23c2f5e84d6232742e97253d1",
               "main_text_excerpt": "Fra idé til ferdig prosjekt. CBRE og Turner & Townsend bistår eiere, investorer og virksomheter med prosjektledelse, programstyring og kostnadsrådgivning som sikrer vellykkede gjennomføringer og langsiktig verdiskaping.\nVåre tjenester\n                        Design & Build\n                    \n                \n        \n                    Turner & Townsend\n            CBREs prosjektledertjenester leveres som før, nå organisert under Turner & Townsend – et CBRE-majoritetseid selskap. Sammen skaper vi effektive løsninger innen eiendom, infrastruktur, energi og naturressurser.",
               "title": "Prosjektledelse | CBRE Norway",
               "url": "https://www.cbre.no/tjenester/prosjektledelse"
             },
             {
-              "content_sha256": "a8325a722ff9195dfb9ac9557030be59e09fc3d155cd669f21b4790ec7b4c2af",
+              "content_sha256": "d1b98e938b6669fff83be4a9077072e7067c014279ab405ed0b34e18fc136312",
               "main_text_excerpt": "Vi hjelper deg å få realisert dine ambisjoner og ditt potensial. I CBRE får du en arbeidsplass med mulighet til å utvikle og forme din karriere. Hos oss kombinerer vi den støtten og de ressursene som et verdensledende globalt selskap gir med en en kultur som oppmuntrer til initiativ og nyskapning.\nVåre medarbeidere bidrar til å utvikle fremtidens eiendomsbransje.\nMuligheten til å skape din egen karrierevei.\nMøt noen av våre ansatte i Norge og lær mer om hvordan de får realisert sitt potensial.\nMøt noen av våre ansatte i vårt globale nettverk og lær mer om det viktige arbeidet de utfører.",
               "title": "Karriere | CBRE Norway",
               "url": "https://www.cbre.no/karriere"
             },
             {
-              "content_sha256": "384391fabf72f67a91cb784041618d66ed0fd35e571193de3def5cd62ffa34f2",
+              "content_sha256": "0684058d3a6c60d94faa61ea4a095e946e1b6c41f46d12bbdcb45b4465ab7c7c",
               "main_text_excerpt": "Bli bedre kjent med Fredrik som er Associate Director og jobber i vårt Project Management-team med prosjektledelse og implementering av nye arbeidsplasskonsepte...",
               "title": "Jobbe i CBRE | CBRE Norway",
               "url": "https://www.cbre.no/karriere/jobbe-i-cbre"
-            },
-            {
-              "content_sha256": "f5bf17a9697bec9ba8424b53108d1de5df90278729f8fc23ce660287d9537b69",
-              "main_text_excerpt": "Karriere\nMangfold og inkludering\nEn inkluderende kultur er en kultur preget av trivsel og mulighet forutvikling. Hos oss skal våre ansatte skal føle seg trygge, verdsatte og hørt.\nJo flere perspektiver vi har, desto flere muligheter har vi for å se og skape nye løsninger.\nMangfold, likestilling og inkludering er mer enn bare verdier – de kan utgjøre et reelt konkurransefortrinn. Ved å skape en kultur der våre ansatte anerkjenes for deres bidrag og får sjanser til å utvikle seg, skaper vi nye muligheter både på person- og organisasjonsnivå. \nMed et felles verdigrunnlag tuftet på respekt, integritet, service og fortreffelighet, bruker vi vår verdensledende posisjon for å påvirke: \n- Vår kultur: Sikre en inkluderende kultur slik at våre ansatte opplever seg trygge, verdsatte og hørt.\n- Våre ansatte: Bidre til økt mangfold i arbeidsstyrken vår gjennom initiativ knyttet til rekruttering, videreopplæring og å beholde talenter.\n- Vår markedsposisjon: Bidra til mangfold og inkludering gjennom våre leverandørsamarbeid og egne bidrag til veldedige formål.\nNoen av våre initiativ knyttet til mangfold og inkludering\n- \n            \n                        Studenter og nyutdannede Vi tilbyr Internships for å gi studenter mulighet til relevant arbeidserfaring og bred innsikt i eiendomsbransjen, samt et Graduate-program på halvannet år for nyutdannede som gir mulighet til å erfare flere av våre forretningsområder før fast ansettelse hos ett av våre team.\n- \n            \n                        Young Board En gruppe bestående av representanter fra ulike fagteam, hvor alle er tidlig i sin karriere. Young Board deltar på flere av selskapets ledermøter og gir input til ledelsen om saker som er av særlig betydning for de yngre arbeidstakerne. Young Board er også sentrale i vårt sosiale program for å inkludere og knytte samme ansatte i faglige og utenomfaglige aktiviteter.\n- \n            \n                        Utveksling/relokalisering Som global organisasjon jobber vi for å tilrettelegge for karrieremuligheter på tvers av landegrenser, enten for en kortere periode eller permanent flytting.\n- \n            \n                        Coaching/Mentor-program Hos oss er utvikling i jobben basert på tre parametre; praktisk erfaring (70 %), coaching (20 %) og opplæringsprogram (10 %). Gjennom praktisk erfaring og støtte fra kolleger overføres kompetanse, samtidig som både lokale og internasjonale mentorer støtter utviklingen av våre talenter.\n- \n            \n                        Nettverk I kraft av å være en internasjonal organisasjon har våre ansatte mulighet til å knytte seg til en rekke ulike nettverksgrupper regionalt og globalt, det være seg relatert til f.eks. helse/fysiske utfordringer, tro, etnisitet, seksuell identitet eller kjønnsidentitet.\n- \n            \n                        Hybridkontor Avhengig av livssituasjon forsøker vi å tilrettelegge slik at den ansatte kan utføre sitt arbeid på best mulig måte. Vi opererer med hybridkontor, hvor det gis rom for å arbeide fra hjemmet 2-3 dager i uken eller i lengre perioder ved særskilte behov.\nNettverksbygging – samarbeidspartner\n- Vi er stolt samarbeidspartner til UiN - en organisasjon med formål å skape en nøytral og faglig arena der unge personer kan møtes for å utveksle erfaring og kunnskap, og bygge seg et nettverk innen byutviklings- og næringseiendomsbransjen.",
-              "title": "Mangfold og inkludering | CBRE Norway",
-              "url": "https://www.cbre.no/karriere/mangfold-likestilling-og-inkluering"
-            },
-            {
-              "content_sha256": "57b39533081aaf3206e68d7c8a61cf33ced75fdb4443b46b4c6f8086009cf511",
-              "main_text_excerpt": "Ting du lurer på\nHer gir vi deg svar på noen vanlige spørsmål om å søke på jobb og karrieremuligheter i CBRE.\nCBRE er en global virksomhet med en rekke karrieremuligheter, både her i Norge og i de mer enn 100 landene vi er representert. \nMeld deg gjerne inn i vårt karrierenettverk, og bli varset om stillinger som er relevante i forhold til dine interesseområder.\n        Meld deg gjerne inn i vårt karrierenettverk, og bli varset om stillinger som er relevante i forhold til dine interesseområder.",
-              "title": "Ting du lurer på | CBRE Norway",
-              "url": "https://www.cbre.no/karriere/ting-du-lurer-pa"
             }
           ],
           "registered_domain": "cbre.no",
@@ -645,13 +642,13 @@
       },
       "external_observations": [
         {
-          "id": "registry-site-915263860-6714b6498337521b",
+          "id": "registry-site-915263860-f3427001b05d6906",
           "organisation_number": "915263860",
           "platform": "company_site",
           "signal_type": "website_description",
           "source_url": "https://www.cbre.no/",
-          "retrieved_at": "2026-11-17T21:43:24.392028Z",
-          "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+          "retrieved_at": "2026-11-19T20:26:01.241437Z",
+          "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -660,7 +657,7 @@
               "matched_organisation_number": "915263860",
               "source": "brreg",
               "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-              "retrieved_at": "2026-11-17T21:31:01.581479Z",
+              "retrieved_at": "2026-11-19T20:07:13.597411Z",
               "explanation": "BRREG declares cbre.no as the website of organisation 915263860; the crawled page on that host corroborates the organisation number or the legal name."
             }
           ],
@@ -674,14 +671,14 @@
             "registry_domain": "cbre.no"
           },
           "strategy": "registry_declared_website_description",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "915263860",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915263860",
-          "retrieved_at": "2026-11-17T22:41:20.296048Z",
-          "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+          "retrieved_at": "2026-11-20T08:19:04.389439Z",
+          "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -706,14 +703,14 @@
             "email": "contractsupportno@cbre.com",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "915263860",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915263860",
-          "retrieved_at": "2026-11-17T22:41:20.296048Z",
-          "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+          "retrieved_at": "2026-11-20T08:19:04.389439Z",
+          "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -738,14 +735,14 @@
             "phone": "66 82 25 10",
             "contact_as_of": "2026-10-26"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "915263860",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915263860",
-          "retrieved_at": "2026-11-17T22:41:20.296048Z",
-          "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+          "retrieved_at": "2026-11-20T08:19:04.389439Z",
+          "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -785,14 +782,14 @@
             "bankruptcy_date": "",
             "website_domain": "www.cbre.no/"
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "organisation_number": "915263860",
           "platform": "company_directory",
           "source_url": "https://purehelp.no/company/NO/915263860",
-          "retrieved_at": "2026-11-17T22:41:20.296048Z",
-          "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+          "retrieved_at": "2026-11-20T08:19:04.389439Z",
+          "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -819,7 +816,7 @@
             "employees_source": "enhetsregisteret",
             "interpretation": "Employee count published by the directory; no value is inferred."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-20"
         },
         {
           "id": "registry-workforce-638f80cd6b8d92bbca311c40",
@@ -827,7 +824,7 @@
           "platform": "brreg",
           "signal_type": "workforce_snapshot",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T21:42:55.388107Z",
+          "retrieved_at": "2026-11-19T20:25:18.513726Z",
           "content_sha256": "080935677acbdbd20cf9f3b62ce0eca0a02a080f4f73d953a95b4a4e7979acb4",
           "exact_entity": true,
           "identity_proof": [
@@ -859,7 +856,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000829990&amp;sokeverdi=915263860&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:26:10Z",
+          "retrieved_at": "2026-11-20T09:16:31Z",
           "content_sha256": "1b8b038f675e5333e4ff6d3b64a9101deecc0e3d151813b45363d3ce9a027f89",
           "exact_entity": true,
           "identity_proof": [
@@ -888,7 +885,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000485243&amp;sokeverdi=915263860&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:26:10Z",
+          "retrieved_at": "2026-11-20T09:16:31Z",
           "content_sha256": "34190042ddd0c3fba5ef46175297ea9f2a0c662b60c38d00bd6a48ea7bdab997",
           "exact_entity": true,
           "identity_proof": [
@@ -917,7 +914,7 @@
           "platform": "brreg",
           "signal_type": "public_post",
           "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000258894&amp;sokeverdi=915263860&amp;spraak=nb",
-          "retrieved_at": "2026-11-17T23:26:10Z",
+          "retrieved_at": "2026-11-20T09:16:31Z",
           "content_sha256": "3a85f11c7ca017a0720c2da214f6ca8fa94b8ddc2527fcbc875a43169a27b140",
           "exact_entity": true,
           "identity_proof": [
@@ -946,8 +943,8 @@
           "platform": "brreg",
           "signal_type": "contact_email",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -967,7 +964,7 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-contact-6e74c8cabf1155dc402d3538",
@@ -975,8 +972,8 @@
           "platform": "brreg",
           "signal_type": "contact_phone",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-          "retrieved_at": "2026-11-17T21:31:01.581479Z",
-          "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+          "retrieved_at": "2026-11-19T20:07:13.597411Z",
+          "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
           "exact_entity": true,
           "identity_proof": [
             {
@@ -996,13 +993,13 @@
             "interpretation": "Registry-recorded contact; exact by record key."
           },
           "strategy": "registry_contact_exact",
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "915263860",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915263860&size=1000",
-          "retrieved_at": "2026-11-17T21:42:59.811353Z",
+          "retrieved_at": "2026-11-19T20:25:25.454166Z",
           "content_sha256": "9ca7bc7140e4aa28847cd543ad106f67640b0688bb0222c29ba09a91900c584d",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1025,13 +1022,13 @@
             "municipality": "OSLO",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "organisation_number": "915263860",
           "platform": "brreg",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915263860&size=1000",
-          "retrieved_at": "2026-11-17T21:42:59.811353Z",
+          "retrieved_at": "2026-11-19T20:25:25.454166Z",
           "content_sha256": "9ca7bc7140e4aa28847cd543ad106f67640b0688bb0222c29ba09a91900c584d",
           "exact_entity": true,
           "acquisition_mode": "official_api",
@@ -1054,7 +1051,7 @@
             "municipality": "SOLA",
             "interpretation": "Officially registered sub-unit of this organisation."
           },
-          "observed_at": "2026-11-17"
+          "observed_at": "2026-11-19"
         },
         {
           "id": "registry-update-517de5e5d5d9e29e6fd111c3",
@@ -1062,7 +1059,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "517de5e5d5d9e29e6fd111c3d12f0baecd6e4187a17475182356990627677f40",
           "observed_at": "2026-11-12",
           "exact_entity": true,
@@ -1092,7 +1089,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "60bfd1efad51d843c7070f8dd06801e24da8e27840389ca9593083cac7c340c3",
           "observed_at": "2026-10-13",
           "exact_entity": true,
@@ -1122,7 +1119,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "321dc1579dcc82e61ee90e9c9fc2f7a084ba62e5f6b264e334a93b83ad63e2e1",
           "observed_at": "2026-09-14",
           "exact_entity": true,
@@ -1152,7 +1149,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "3bee787c60bb5d55eb37b87a7edc4fe699fbdf2ab00f017288e5211939819946",
           "observed_at": "2026-08-12",
           "exact_entity": true,
@@ -1182,7 +1179,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "f51a9dcd78a5a4278d9f97474fc0d202a1c3aabb62c2238f51efa5bc635ca8b0",
           "observed_at": "2026-07-15",
           "exact_entity": true,
@@ -1212,7 +1209,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "fa8df5e8cd1b51c6dc36dee25b29b8d7a1d71b3f10ed37b20addce07fd4e28c4",
           "observed_at": "2026-07-02",
           "exact_entity": true,
@@ -1242,7 +1239,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a2db79cfc60200fcd8fda7c08de2d15a3ea78a726c1495ca8224e7471db7bb26",
           "observed_at": "2026-06-13",
           "exact_entity": true,
@@ -1272,7 +1269,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "2778b1871a321f6b67a6dab720ce6f2872f4a252cdcfa9beaed237d48c289e90",
           "observed_at": "2026-05-12",
           "exact_entity": true,
@@ -1302,7 +1299,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6ff4833b2b4a91382ac819bb477e05312cee9a162f7642210c59d55bbaf99dfa",
           "observed_at": "2026-04-14",
           "exact_entity": true,
@@ -1332,7 +1329,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "ccf0dfc1a5ce70a29f57bb280a2f40e55a88f778b384128bfe0bb0de8cdf5037",
           "observed_at": "2026-03-12",
           "exact_entity": true,
@@ -1362,7 +1359,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "21948a41fc7974edbcb45b61e42fefefb9e8c5358d65470fa807b6e7da74527f",
           "observed_at": "2026-02-12",
           "exact_entity": true,
@@ -1392,7 +1389,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "e0d9869d4d6d16f2b1ea5c92965253d79383aa7fad063a8845d5658ddc3a931f",
           "observed_at": "2026-01-13",
           "exact_entity": true,
@@ -1422,7 +1419,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "6a42a4dd60dfe9b279eee2ed98f5ef7066e7b6e9f7cbce9c35e7110084c08b69",
           "observed_at": "2025-12-13",
           "exact_entity": true,
@@ -1452,7 +1449,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a75fa13c7e9557afcbd20be57ce4d0301f483cc2369e7f4fd42fe05ffcd505b5",
           "observed_at": "2025-11-13",
           "exact_entity": true,
@@ -1482,7 +1479,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "1e4969b833d85baba74a92976294e68c3af454952480bb3ea68eb11db33e7c78",
           "observed_at": "2025-11-12",
           "exact_entity": true,
@@ -1512,7 +1509,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "2907f13f4d6d4aa519152d846c50c756123c26a15d91fb3a64f2c537bb4f6938",
           "observed_at": "2025-11-07",
           "exact_entity": true,
@@ -1542,7 +1539,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "a817174fccd1aef1d03f35c4d6c4564463e620f3a2a08f1ae3c488e689863192",
           "observed_at": "2025-09-13",
           "exact_entity": true,
@@ -1572,7 +1569,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "7a3427242eef706a6204468f443851cedf7430b3ecb2a4e7ceca0b67de9963f0",
           "observed_at": "2025-08-12",
           "exact_entity": true,
@@ -1602,7 +1599,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "34f3c95740050d9ecc55f4bb37ba1afd8c6125e47bc804d9773de3c04d6bd048",
           "observed_at": "2025-07-12",
           "exact_entity": true,
@@ -1632,7 +1629,7 @@
           "platform": "brreg",
           "signal_type": "registry_update",
           "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-          "retrieved_at": "2026-11-17T22:22:45.921053Z",
+          "retrieved_at": "2026-11-20T07:27:47.299484Z",
           "content_sha256": "78a1a38f222816bf6fb2eddf656ef92a474f6c059328b7649bb633516e62d502",
           "observed_at": "2025-06-28",
           "exact_entity": true,
@@ -1668,28 +1665,28 @@
     "name": "CBRE GWS NORWAY AS",
     "organisation_number": "915263860",
     "run_metrics": {
-      "bytes": 3975855,
+      "bytes": 3454087,
       "latencies_ms": [
-        888,
-        890,
-        889,
-        913,
-        873,
-        854,
-        459,
-        1644,
-        1005,
-        1353,
-        1862,
-        1226,
-        4058,
-        792,
-        2309,
-        1097,
-        458,
-        1562,
-        1270,
-        950
+        1264,
+        1386,
+        1234,
+        1242,
+        1239,
+        1833,
+        753,
+        1337,
+        2810,
+        1180,
+        2733,
+        1409,
+        971,
+        1314,
+        1641,
+        1089,
+        1281,
+        1183,
+        1845,
+        799
       ],
       "requests": 34
     },
@@ -1836,7 +1833,7 @@
       "effective_at": null,
       "field": "accounting_obligation",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:46.487553Z",
+      "retrieved_at": "2026-11-19T20:08:07.852945Z",
       "source_class": "official_rule_interpretation",
       "source_row_key": "915263860",
       "source_type": "official_rule_interpretation",
@@ -1856,7 +1853,7 @@
       "effective_at": null,
       "field": "financial_history",
       "note": null,
-      "retrieved_at": "2026-11-17T21:42:57.168230Z",
+      "retrieved_at": "2026-11-19T20:25:21.136357Z",
       "source_class": "official_annual_account_copies",
       "source_row_key": null,
       "source_type": "official_annual_account_copies",
@@ -1930,7 +1927,7 @@
       "effective_at": null,
       "field": "financials",
       "note": null,
-      "retrieved_at": "2026-11-17T21:42:56.278880Z",
+      "retrieved_at": "2026-11-19T20:25:19.901384Z",
       "source_class": "official_annual_accounts",
       "source_row_key": null,
       "source_type": "official_annual_accounts",
@@ -1995,7 +1992,7 @@
       "effective_at": null,
       "field": "group",
       "note": "HTTP 404",
-      "retrieved_at": "2026-11-17T21:42:58.956584Z",
+      "retrieved_at": "2026-11-19T20:25:23.619987Z",
       "source_class": "official_group_structure",
       "source_row_key": null,
       "source_type": "official_group_structure",
@@ -2009,7 +2006,7 @@
       "effective_at": null,
       "field": "locations",
       "note": null,
-      "retrieved_at": "2026-11-17T21:42:59.811353Z",
+      "retrieved_at": "2026-11-19T20:25:25.454166Z",
       "source_class": "official_subunits",
       "source_row_key": null,
       "source_type": "official_subunits",
@@ -2062,11 +2059,11 @@
     },
     "registry": {
       "as_of": null,
-      "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+      "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
       "effective_at": null,
       "field": "registry",
       "note": null,
-      "retrieved_at": "2026-11-17T21:31:01.581479Z",
+      "retrieved_at": "2026-11-19T20:07:13.597411Z",
       "source_class": "official_registry_bulk",
       "source_row_key": "915263860",
       "source_type": "official_registry_bulk",
@@ -2161,7 +2158,7 @@
       "effective_at": null,
       "field": "registry_live",
       "note": null,
-      "retrieved_at": "2026-11-17T21:42:55.388107Z",
+      "retrieved_at": "2026-11-19T20:25:18.513726Z",
       "source_class": "official_registry_live",
       "source_row_key": null,
       "source_type": "official_registry_live",
@@ -2200,7 +2197,7 @@
       "effective_at": null,
       "field": "roles",
       "note": null,
-      "retrieved_at": "2026-11-17T21:42:58.082207Z",
+      "retrieved_at": "2026-11-19T20:25:22.379386Z",
       "source_class": "official_roles",
       "source_row_key": null,
       "source_type": "official_roles",
@@ -2291,19 +2288,28 @@
     },
     "website": {
       "as_of": null,
-      "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+      "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
       "effective_at": null,
       "field": "website",
       "note": "Company-controlled claim layer; not an official registry fact",
-      "retrieved_at": "2026-11-17T21:43:24.392028Z",
+      "retrieved_at": "2026-11-19T20:26:01.241437Z",
       "source_class": "registry_linked_company_website",
       "source_row_key": null,
       "source_type": "registry_linked_company_website",
       "source_url": "https://www.cbre.no/",
       "status": "available",
       "value": {
-        "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
-        "crawl_errors": [],
+        "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
+        "crawl_errors": [
+          {
+            "error": "HTTPError: HTTP Error 403: Forbidden",
+            "url": "https://www.cbre.no/karriere/mangfold-likestilling-og-inkluering"
+          },
+          {
+            "error": "HTTPError: HTTP Error 403: Forbidden",
+            "url": "https://www.cbre.no/karriere/ting-du-lurer-pa"
+          }
+        ],
         "description": "CBRE er verdens ledende eiendomsrådgiver, megler, eiendomsforvalter og investeringsselskap innenfor næringseiendom.",
         "discovered_social_links": [
           {
@@ -2342,88 +2348,76 @@
         "main_text_excerpt": "Vi er verdens ledende selskap innenfor rådgivning, forvaltning og investering i eiendom. Med tjenester, innsikt og data som spenner over alle dimensjoner av eiendom, skaper vi løsninger for kunder av alle størrelser, i alle sektorer og på tvers av alle geografiske områder.\nHva vi gjør\nKunnskap\nDeler innsikt og analyse om eiendomsmarkedet\nVårt analyseteam og våre fageksperter deler rapporter, innsikt og synspunkter rundt aktuelle trender og markedsutviklingen for næringseiendom. Det bidrar til at våre kunder kan ta velinformerte og datadrevne beslutninger.\nLes mer om innsikt og analyse\nTjenester\nLeverer tjenester for eiere og brukere av næringseiendom\nVi tilbyr et bredt spekter av integrerte tjenester, herunder strategisk rådgivning, leietakerrådgivning, arbeidsplasstrategi og design, prosjektledelse, utleie av næringseiendom, verdivurdering, kjøp og salg av eiendom, eiendomsutvikling, eiendomsforvaltning, drift og vedlikehold.\nLes mer om våre tjenester\nKarriere\nBli en del av oss\nEiendomsbransjen er i endring, hvor gamle forretningsmodeller utfordres av ny teknologi, nye samarbeidsmåter, bærekraft og brukerorienterte løsninger. I CBRE er vi opptatt av å være en av frontløperne i denne utviklingen.\nLes mer",
         "pages": [
           {
-            "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+            "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
             "main_text_excerpt": "Vi er verdens ledende selskap innenfor rådgivning, forvaltning og investering i eiendom. Med tjenester, innsikt og data som spenner over alle dimensjoner av eiendom, skaper vi løsninger for kunder av alle størrelser, i alle sektorer og på tvers av alle geografiske områder.\nHva vi gjør\nKunnskap\nDeler innsikt og analyse om eiendomsmarkedet\nVårt analyseteam og våre fageksperter deler rapporter, innsikt og synspunkter rundt aktuelle trender og markedsutviklingen for næringseiendom. Det bidrar til at våre kunder kan ta velinformerte og datadrevne beslutninger.\nLes mer om innsikt og analyse\nTjenester\nLeverer tjenester for eiere og brukere av næringseiendom\nVi tilbyr et bredt spekter av integrerte tjenester, herunder strategisk rådgivning, leietakerrådgivning, arbeidsplasstrategi og design, prosjektledelse, utleie av næringseiendom, verdivurdering, kjøp og salg av eiendom, eiendomsutvikling, eiendomsforvaltning, drift og vedlikehold.\nLes mer om våre tjenester\nKarriere\nBli en del av oss\nEiendomsbransjen er i endring, hvor gamle forretningsmodeller utfordres av ny teknologi, nye samarbeidsmåter, bærekraft og brukerorienterte løsninger. I CBRE er vi opptatt av å være en av frontløperne i denne utviklingen.\nLes mer",
             "title": "Tjenester for næringseiendom | CBRE Norway",
             "url": "https://www.cbre.no/"
           },
           {
-            "content_sha256": "2272aafe3a54306967d5fda5ccac1221b95ed27e5ef93d7aa471ea13931affbf",
+            "content_sha256": "2f545f3b9ad591d7570135f67fcb591ff6462c708782e42e776030257fbc9417",
             "main_text_excerpt": "Om oss\nCBRE leverer tjenester innenfor alle aspekter av næringseiendom. Vårt nettverk og erfaringer kommer deg til nytte.\n    CBRE utvikler fremtidens eiendomsløsninger slik at våre  kunder, ansatte og samarbeidspartnere får realisert sitt potensial.\n    \nFra å bygge tillit til dagens beslutninger til å tenke nytt om morgendagens lokaler – vi trives i komplekse og stadig endrede omgivelser.\nVed hjelp av markedsinnsikt, data, teknologi og bred ekspertise bistår vi virksomheter med å skape fremtidens eiendomsløsninger.",
             "title": "Om CBRE - verdens ledende eiendomsrådgiver | CBRE Norway",
             "url": "https://www.cbre.no/om-oss"
           },
           {
-            "content_sha256": "255436e40fe32a65daa03bc39211ced521659e50db890a761414607337faa021",
+            "content_sha256": "300e768be229b646300dee41f3834935e94959951446630c812a1e8475734cbc",
             "main_text_excerpt": "Brukerbetingelser\nPlease read carefully\nBy accessing www.cbre.no (\"Site\") you confirm that you are a business user over the age of 18 years and permitted to use this Site, and you agree to be bound by all of the following terms and conditions of use (\"Terms\").\nThese Terms govern your access to the Site except where there are separate terms and conditions relevant to particular areas of this Site, which are indicated on the appropriate Site page. If you do not agree to abide by these Terms then you should not use this Site. For clarity, in these Terms, references to \"we\", \"us\", \"our\" and \"ourselves\" are references to CBRE Limited and any of its affiliates or group companies.\nThis Terms of use policy together with our Privacy Policy (\"Privacy Policy\") available at www.cbre.no/nb-no/om-cbre/personvernerklaering set out the basis on which we will collect, use and disclose certain personal information from you. Your use of this Site signifies your understanding and acceptance of the terms of this Terms of use policy.\nWe may from time to time modify these Terms and will post a copy of the amended Terms on this Site. You will be bound by such updated Terms from the time they are posted on this Site. We would advise you to periodically visit this Site and this web page to ensure that you are up to date with any changes that have been made.\n1. Access\nWe reserve the right to restrict certain areas of this Site to approved registered users. In the event that any area of the Site requires you to register with us prior to obtaining access, you agree to provide true, accurate, current and complete details, including but not limited to a member name and password as well as your name, address, telephone number and a valid email address ( \"Account Information\"). You agree to update your Account Information as necessary to keep it accurate. CBRE will use your Account Information in accordance with its Privacy Policy.\nYou agree to notify us immediately of any unauthorised use of your member name, password or account. CBRE will not be responsible for any losses arising out of the unauthorised use of your account and you agree to indemnify CBRE for any improper, unauthorised or illegal uses of your account.\n2. License to use the Site\nCBRE grants to you a limited, non-exclusive, non-transferable license to access and use the Site in accordance with these Terms. Any use of the Site not specifically permitted under these Terms is strictly prohibited.\n3. Intellectual Property\nYou acknowledge that CBRE owns or has a license to all title and copyright in and to the content provided on this Site. All title and intellectual property rights in and to any licensed content provided on this Site is the property of the respective content owners and may be protected by applicable copyright or other intellectual property laws and treaties and subject to use restrictions under such laws or treaties.\nYou may use this Site for your information and internal business purposes and you may make a copy of the pages of this Site but only for your internal business use, and provided that you keep all copyright and other proprietary notices in tact. Any modification, transmission, hiring, copying or use of the content of this Site for public or commercial purposes (other than internal business use) is prohibited. The following are registered trademarks or trademarks of CBRE: CBRE and its design logo, as well as certain other CBRE trademarks, service marks, graphics, and logos (collectively, the \"CBRE trademarks\") used in connection with CBRE's provision of products and services. The site may contain third-party trademarks, service marks, graphics, and logos. You are not granted any right or license with respect to the CBRE trademarks or the trademarks of any third party.\n4. Restrictions\nYou agree that you will not: (i) use the Site to reproduce, transmit, display or distribute copyrighted material in any medium or via any method without CBRE's express written permission; (ii) copy, store, edit, change, prepare any derivative work of or alter in any way any of the content provided on this Site; or (iii) use our Site in any way that violates these Terms.\nYou agree that you will not: (a) impersonate any person or entity or misrepresent your affiliation with any other person or entity; (b) engage in spamming, flooding, harvesting of e-mail addresses or other personal information, spidering, screen scraping, database scraping, or any other activity with the purpose of obtaining lists of users or any other information, including specifically, property listings available through the Site; (c) send chain letters or pyramid schemes via the Site; (d) attempt to gain unauthorized access to other computer systems through the Site; or (e) use the Site in any manner that could damage, disable, overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site.\n5. Privacy Policy and Submission of Information\nUnless otherwise addressed in ",
             "title": "Brukerbetingelser | CBRE Norway",
             "url": "https://www.cbre.no/om-oss/brukerbetingelser"
           },
           {
-            "content_sha256": "0bbdd48db419f7a3e71ae884ade9e224a71de861d991726354aff5d471703288",
+            "content_sha256": "b6c70b1d5e4cc4fae4c32b23dbf4ada0c483c0f7b52f2f81217a04156c64ad86",
             "main_text_excerpt": "Vi mener varig suksess kun skapes gjennom en grunnleggende ansvarlig forretningspraksis, og at alle oppnår et fortrinn ved å jobbe etter vårt verdigrunnlag ”RISE”.\nVåre RISE-verdier\n- \n\t\t\tRespectVi viser omtanke og forståelse for andres ideer. Vi deler informasjon og kunnskap for å bygge tillit og oppmuntre til samarbeid.\n- \n\t\t\tIntegrityIngen enkeltperson, ingen avtale, og ingen kunde er viktigere enn vår forpliktelse til selskapet vårt og det vi står for.\n- \n\t\t\tServiceVi oss med . Vi bygger varige ved å de , den riktig kapitalen de riktige .\n- \n\t\t\tExcellenceVårt fokus er å skape suksessfulle resultater for våre kunder, ansatte og aksjonærer.",
             "title": "Kultur og historie | CBRE Norway",
             "url": "https://www.cbre.no/om-oss/kultur-og-historie"
           },
           {
-            "content_sha256": "c957e0767ab417eab1e8c0245b58ea4a2247a356777e2c9b3975441d4fcd3d71",
+            "content_sha256": "34f195c65ba9553ab644324dae019beb3f2b6dd1da7c093131df17ad4d4a2ca6",
             "main_text_excerpt": "Siste pressemeldinger\nCBRE Norway i media\n- SLB har inngått kontrakt med Lars Berland Invest for nytt hovedkontor på Forus og samler med dette 1000 ansatte under samme tak, fra tidligere åtte lokasjoner i regionen. CBRE har vært rådgiver for SLB og Equinor i prosessen.",
             "title": "Nyheter og pressemeldinger | CBRE Norway",
             "url": "https://www.cbre.no/om-oss/nyheter-og-pressemeldinger"
           },
           {
-            "content_sha256": "5ebb2de953a261814a3de52618471c290c3230ea25aadbba02c7199ec9eff70b",
+            "content_sha256": "de52acc1f7c50623e1e1a0b7a08d336f785018fd0a0793b3a4012215a891ee1d",
             "main_text_excerpt": "I CBRE tar vi rollen som markedsleder i bransjen på alvor. Derfor jobber vi ut fra en felles praksis for ansvarlig og bærekraftig virsomhetsstyring for hele vår globale virksomhet.\nBærekraft og samfunnsansvar\nCBRE’s latest Corporate Responsibility Report was produced in accordance with the Global Reporting Initiative (GRI) Standards and the International Sustainability Standards Board’s (ISSB) disclosures’ industry-specific SASB standards and the Task Force on Climate-related Financial Disclosures (TCFD).",
             "title": "Samfunnsansvar | CBRE Norway",
             "url": "https://www.cbre.no/om-oss/samfunnsansvar"
           },
           {
-            "content_sha256": "b3b950cfa4c8f5696a864d40ed3d73c97756df6e54fb3e23e5ad840c950b3e4f",
+            "content_sha256": "4b58aadc6608310178dda7a1d9b6b2b58b2741cfc1ed732d77914f893c38a0e8",
             "main_text_excerpt": "Protecting Your Data at CBRE\nOur Commitment to Information Security\nAt CBRE, we recognise the importance of the trust placed in us and the sensitivity of the information we handle. Protecting that information is a priority for our organization, and we work to maintain a secure environment for the data we manage.\nHow We Support the Security of Your Information:\n- Continuous Improvement: We strive to continually enhance our information security practices. This includes regularly assessing and updating our technologies and processes to address evolving risks and emerging threat patterns.\n- Data Protection: Our objective is to help ensure that the information we handle remains accurate, available, and appropriately safeguarded. We implement controls designed to reduce the risk of unauthorised access, use, or disclosure, and we regularly evaluate their effectiveness.\n- Active Monitoring and Responsive Action: Our security teams monitor for potential threats and use a range of tools and processes to detect, assess, and respond to security risks. We are committed to maintaining resilient defenses and addressing issues in a timely and responsible manner.\n- A Shared Responsibility: Information security is a collective effort. CBRE employees receive training and guidance intended to support secure practices as part of their day-to-day work.\n- Responsible Partner Practices: We work with partners and suppliers to encourage security practices that align with our expectations and support the protection of information across our broader ecosystem.\nOur Commitment\nYour confidence in CBRE is important to us. We aim to provide a secure and reliable experience and are dedicated to continually strengthening our information security posture through thoughtful governance, ongoing improvement, and responsible risk management.",
             "title": "Protecting Your Data at CBRE | CBRE Norway",
             "url": "https://www.cbre.no/en-gb/about-us/protecting-your-data-at-cbre"
           },
           {
-            "content_sha256": "b624193f3800db700e34727a5609ff5b9cf95458170c0559c31f08917ec8bebd",
+            "content_sha256": "bbb65925cc77543ad136c5fd32f85338cf14b7a99bff686501f1b4d7e1fb68b2",
             "main_text_excerpt": "Responsible AI at CBRE\nOur Commitment\nAt CBRE, we are advancing the use of Artificial Intelligence (AI) to help enhance insights, improve efficiency, and provide value for our clients and teams. As we continue expanding our use of these technologies, we remain committed to responsible, ethical, and secure practices in line with our broader governance and risk management frameworks.\nWe believe AI should support human judgment, creativity, and purpose. Our approach reflects this principle:\n- Ethical Foundation & Human Oversight: We aim to develop and apply AI tools guided by ethical principles, with a focus on fairness, accountability, and positive impact. Human expertise plays a central role, including reviewing and validating AI-generated outputs to support informed decision-making.\n- Robust Data Security & Privacy: Protecting your data is paramount. Our AI initiatives are built upon the same rigorous information security systems and privacy standards that govern all of our operations. We safeguard your information, protecting its integrity and confidentiality at every step.\n- Transparency & Trust: We are committed to transparent communication about how AI supports our services. We work to provide clear and accessible information to help build trust and support effective engagement with clients and stakeholders.\n- Innovation to Support Clients: AI technologies can help us analyse large datasets, identify patterns, and generate insights that support our clients’ business objectives. We apply these tools to help navigate market complexity, surface opportunities, and improve decision-support processes.\n- Responsible Use of Third-Party Providers: We work with third-party service providers, including AI solution vendors, and seek to apply consistent expectations for data protection and responsible use across our ecosystem. This includes requiring appropriate security controls and adherence to our contractual and compliance obligations.\nOur Ongoing Commitment\nCBRE is committed to the responsible development and use of AI. We will continue to evolve our practices, strengthen our governance, and support the safe, ethical, and effective application of AI to help businesses and people thrive in a rapidly changing environment.",
             "title": "Responsible AI at CBRE | CBRE Norway",
             "url": "https://www.cbre.no/en-gb/about-us/responsible-ai-at-cbre"
           },
           {
-            "content_sha256": "cabf6f29d807fab7e3b1b87a6e9f3f00745f064df498b4eee5dcdeecbefa87be",
+            "content_sha256": "932a7ba001b7a5b860ada9c9a24e57f48e29b3523e760e39ae6c5cce83154c93",
             "main_text_excerpt": "",
             "title": "Kontaktpersoner i Norge | CBRE Norway",
             "url": "https://www.cbre.no/kontorer/kontaktpersoner-i-norge"
           },
           {
-            "content_sha256": "95e794b2a70c464ae802425a67316e05a367672fb9683ca076fd5159939a1517",
+            "content_sha256": "95ded758371dc42f9ab72592313769ff2c02c6e23c2f5e84d6232742e97253d1",
             "main_text_excerpt": "Fra idé til ferdig prosjekt. CBRE og Turner & Townsend bistår eiere, investorer og virksomheter med prosjektledelse, programstyring og kostnadsrådgivning som sikrer vellykkede gjennomføringer og langsiktig verdiskaping.\nVåre tjenester\n                        Design & Build\n                    \n                \n        \n                    Turner & Townsend\n            CBREs prosjektledertjenester leveres som før, nå organisert under Turner & Townsend – et CBRE-majoritetseid selskap. Sammen skaper vi effektive løsninger innen eiendom, infrastruktur, energi og naturressurser.",
             "title": "Prosjektledelse | CBRE Norway",
             "url": "https://www.cbre.no/tjenester/prosjektledelse"
           },
           {
-            "content_sha256": "a8325a722ff9195dfb9ac9557030be59e09fc3d155cd669f21b4790ec7b4c2af",
+            "content_sha256": "d1b98e938b6669fff83be4a9077072e7067c014279ab405ed0b34e18fc136312",
             "main_text_excerpt": "Vi hjelper deg å få realisert dine ambisjoner og ditt potensial. I CBRE får du en arbeidsplass med mulighet til å utvikle og forme din karriere. Hos oss kombinerer vi den støtten og de ressursene som et verdensledende globalt selskap gir med en en kultur som oppmuntrer til initiativ og nyskapning.\nVåre medarbeidere bidrar til å utvikle fremtidens eiendomsbransje.\nMuligheten til å skape din egen karrierevei.\nMøt noen av våre ansatte i Norge og lær mer om hvordan de får realisert sitt potensial.\nMøt noen av våre ansatte i vårt globale nettverk og lær mer om det viktige arbeidet de utfører.",
             "title": "Karriere | CBRE Norway",
             "url": "https://www.cbre.no/karriere"
           },
           {
-            "content_sha256": "384391fabf72f67a91cb784041618d66ed0fd35e571193de3def5cd62ffa34f2",
+            "content_sha256": "0684058d3a6c60d94faa61ea4a095e946e1b6c41f46d12bbdcb45b4465ab7c7c",
             "main_text_excerpt": "Bli bedre kjent med Fredrik som er Associate Director og jobber i vårt Project Management-team med prosjektledelse og implementering av nye arbeidsplasskonsepte...",
             "title": "Jobbe i CBRE | CBRE Norway",
             "url": "https://www.cbre.no/karriere/jobbe-i-cbre"
-          },
-          {
-            "content_sha256": "f5bf17a9697bec9ba8424b53108d1de5df90278729f8fc23ce660287d9537b69",
-            "main_text_excerpt": "Karriere\nMangfold og inkludering\nEn inkluderende kultur er en kultur preget av trivsel og mulighet forutvikling. Hos oss skal våre ansatte skal føle seg trygge, verdsatte og hørt.\nJo flere perspektiver vi har, desto flere muligheter har vi for å se og skape nye løsninger.\nMangfold, likestilling og inkludering er mer enn bare verdier – de kan utgjøre et reelt konkurransefortrinn. Ved å skape en kultur der våre ansatte anerkjenes for deres bidrag og får sjanser til å utvikle seg, skaper vi nye muligheter både på person- og organisasjonsnivå. \nMed et felles verdigrunnlag tuftet på respekt, integritet, service og fortreffelighet, bruker vi vår verdensledende posisjon for å påvirke: \n- Vår kultur: Sikre en inkluderende kultur slik at våre ansatte opplever seg trygge, verdsatte og hørt.\n- Våre ansatte: Bidre til økt mangfold i arbeidsstyrken vår gjennom initiativ knyttet til rekruttering, videreopplæring og å beholde talenter.\n- Vår markedsposisjon: Bidra til mangfold og inkludering gjennom våre leverandørsamarbeid og egne bidrag til veldedige formål.\nNoen av våre initiativ knyttet til mangfold og inkludering\n- \n            \n                        Studenter og nyutdannede Vi tilbyr Internships for å gi studenter mulighet til relevant arbeidserfaring og bred innsikt i eiendomsbransjen, samt et Graduate-program på halvannet år for nyutdannede som gir mulighet til å erfare flere av våre forretningsområder før fast ansettelse hos ett av våre team.\n- \n            \n                        Young Board En gruppe bestående av representanter fra ulike fagteam, hvor alle er tidlig i sin karriere. Young Board deltar på flere av selskapets ledermøter og gir input til ledelsen om saker som er av særlig betydning for de yngre arbeidstakerne. Young Board er også sentrale i vårt sosiale program for å inkludere og knytte samme ansatte i faglige og utenomfaglige aktiviteter.\n- \n            \n                        Utveksling/relokalisering Som global organisasjon jobber vi for å tilrettelegge for karrieremuligheter på tvers av landegrenser, enten for en kortere periode eller permanent flytting.\n- \n            \n                        Coaching/Mentor-program Hos oss er utvikling i jobben basert på tre parametre; praktisk erfaring (70 %), coaching (20 %) og opplæringsprogram (10 %). Gjennom praktisk erfaring og støtte fra kolleger overføres kompetanse, samtidig som både lokale og internasjonale mentorer støtter utviklingen av våre talenter.\n- \n            \n                        Nettverk I kraft av å være en internasjonal organisasjon har våre ansatte mulighet til å knytte seg til en rekke ulike nettverksgrupper regionalt og globalt, det være seg relatert til f.eks. helse/fysiske utfordringer, tro, etnisitet, seksuell identitet eller kjønnsidentitet.\n- \n            \n                        Hybridkontor Avhengig av livssituasjon forsøker vi å tilrettelegge slik at den ansatte kan utføre sitt arbeid på best mulig måte. Vi opererer med hybridkontor, hvor det gis rom for å arbeide fra hjemmet 2-3 dager i uken eller i lengre perioder ved særskilte behov.\nNettverksbygging – samarbeidspartner\n- Vi er stolt samarbeidspartner til UiN - en organisasjon med formål å skape en nøytral og faglig arena der unge personer kan møtes for å utveksle erfaring og kunnskap, og bygge seg et nettverk innen byutviklings- og næringseiendomsbransjen.",
-            "title": "Mangfold og inkludering | CBRE Norway",
-            "url": "https://www.cbre.no/karriere/mangfold-likestilling-og-inkluering"
-          },
-          {
-            "content_sha256": "57b39533081aaf3206e68d7c8a61cf33ced75fdb4443b46b4c6f8086009cf511",
-            "main_text_excerpt": "Ting du lurer på\nHer gir vi deg svar på noen vanlige spørsmål om å søke på jobb og karrieremuligheter i CBRE.\nCBRE er en global virksomhet med en rekke karrieremuligheter, både her i Norge og i de mer enn 100 landene vi er representert. \nMeld deg gjerne inn i vårt karrierenettverk, og bli varset om stillinger som er relevante i forhold til dine interesseområder.\n        Meld deg gjerne inn i vårt karrierenettverk, og bli varset om stillinger som er relevante i forhold til dine interesseområder.",
-            "title": "Ting du lurer på | CBRE Norway",
-            "url": "https://www.cbre.no/karriere/ting-du-lurer-pa"
           }
         ],
         "registered_domain": "cbre.no",
@@ -2472,13 +2466,13 @@
     },
     "external_observations": [
       {
-        "id": "registry-site-915263860-6714b6498337521b",
+        "id": "registry-site-915263860-f3427001b05d6906",
         "organisation_number": "915263860",
         "platform": "company_site",
         "signal_type": "website_description",
         "source_url": "https://www.cbre.no/",
-        "retrieved_at": "2026-11-17T21:43:24.392028Z",
-        "content_sha256": "6714b6498337521b9481c4cf11fa93f704d8f60091f2790c91b506abb64d5565",
+        "retrieved_at": "2026-11-19T20:26:01.241437Z",
+        "content_sha256": "f3427001b05d690621745a48c25adb92b13d7a7254fa885c59c7b64f7bed3095",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2487,7 +2481,7 @@
             "matched_organisation_number": "915263860",
             "source": "brreg",
             "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-            "retrieved_at": "2026-11-17T21:31:01.581479Z",
+            "retrieved_at": "2026-11-19T20:07:13.597411Z",
             "explanation": "BRREG declares cbre.no as the website of organisation 915263860; the crawled page on that host corroborates the organisation number or the legal name."
           }
         ],
@@ -2501,14 +2495,14 @@
           "registry_domain": "cbre.no"
         },
         "strategy": "registry_declared_website_description",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "915263860",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915263860",
-        "retrieved_at": "2026-11-17T22:41:20.296048Z",
-        "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+        "retrieved_at": "2026-11-20T08:19:04.389439Z",
+        "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2533,14 +2527,14 @@
           "email": "contractsupportno@cbre.com",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "915263860",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915263860",
-        "retrieved_at": "2026-11-17T22:41:20.296048Z",
-        "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+        "retrieved_at": "2026-11-20T08:19:04.389439Z",
+        "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2565,14 +2559,14 @@
           "phone": "66 82 25 10",
           "contact_as_of": "2026-10-26"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "915263860",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915263860",
-        "retrieved_at": "2026-11-17T22:41:20.296048Z",
-        "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+        "retrieved_at": "2026-11-20T08:19:04.389439Z",
+        "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2612,14 +2606,14 @@
           "bankruptcy_date": "",
           "website_domain": "www.cbre.no/"
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "organisation_number": "915263860",
         "platform": "company_directory",
         "source_url": "https://purehelp.no/company/NO/915263860",
-        "retrieved_at": "2026-11-17T22:41:20.296048Z",
-        "content_sha256": "2afe5ccaafc693a6ced6805ef881c43c4dd0a47d2884ccdad5999cc209a068cc",
+        "retrieved_at": "2026-11-20T08:19:04.389439Z",
+        "content_sha256": "46f4eaeda8b87ce2492aeb649e6758d3383da53122fa0717449c0e8bc39e9e64",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2646,7 +2640,7 @@
           "employees_source": "enhetsregisteret",
           "interpretation": "Employee count published by the directory; no value is inferred."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-20"
       },
       {
         "id": "registry-workforce-638f80cd6b8d92bbca311c40",
@@ -2654,7 +2648,7 @@
         "platform": "brreg",
         "signal_type": "workforce_snapshot",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T21:42:55.388107Z",
+        "retrieved_at": "2026-11-19T20:25:18.513726Z",
         "content_sha256": "080935677acbdbd20cf9f3b62ce0eca0a02a080f4f73d953a95b4a4e7979acb4",
         "exact_entity": true,
         "identity_proof": [
@@ -2686,7 +2680,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000829990&amp;sokeverdi=915263860&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:26:10Z",
+        "retrieved_at": "2026-11-20T09:16:31Z",
         "content_sha256": "1b8b038f675e5333e4ff6d3b64a9101deecc0e3d151813b45363d3ce9a027f89",
         "exact_entity": true,
         "identity_proof": [
@@ -2715,7 +2709,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000485243&amp;sokeverdi=915263860&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:26:10Z",
+        "retrieved_at": "2026-11-20T09:16:31Z",
         "content_sha256": "34190042ddd0c3fba5ef46175297ea9f2a0c662b60c38d00bd6a48ea7bdab997",
         "exact_entity": true,
         "identity_proof": [
@@ -2744,7 +2738,7 @@
         "platform": "brreg",
         "signal_type": "public_post",
         "source_url": "https://w2.brreg.no/kunngjoring/hent_en.jsp?kid=20260000258894&amp;sokeverdi=915263860&amp;spraak=nb",
-        "retrieved_at": "2026-11-17T23:26:10Z",
+        "retrieved_at": "2026-11-20T09:16:31Z",
         "content_sha256": "3a85f11c7ca017a0720c2da214f6ca8fa94b8ddc2527fcbc875a43169a27b140",
         "exact_entity": true,
         "identity_proof": [
@@ -2773,8 +2767,8 @@
         "platform": "brreg",
         "signal_type": "contact_email",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2794,7 +2788,7 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-contact-6e74c8cabf1155dc402d3538",
@@ -2802,8 +2796,8 @@
         "platform": "brreg",
         "signal_type": "contact_phone",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/lastned/csv",
-        "retrieved_at": "2026-11-17T21:31:01.581479Z",
-        "content_sha256": "882359e208ce41865f233a8cf1efff7ea05b9a494607c69266d9370dc8ab51d1",
+        "retrieved_at": "2026-11-19T20:07:13.597411Z",
+        "content_sha256": "19b636cf1086e18ea648d3f5373ade55ad3c6491583cd2c5901d465cc548e7e9",
         "exact_entity": true,
         "identity_proof": [
           {
@@ -2823,13 +2817,13 @@
           "interpretation": "Registry-recorded contact; exact by record key."
         },
         "strategy": "registry_contact_exact",
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "915263860",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915263860&size=1000",
-        "retrieved_at": "2026-11-17T21:42:59.811353Z",
+        "retrieved_at": "2026-11-19T20:25:25.454166Z",
         "content_sha256": "9ca7bc7140e4aa28847cd543ad106f67640b0688bb0222c29ba09a91900c584d",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2852,13 +2846,13 @@
           "municipality": "OSLO",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "organisation_number": "915263860",
         "platform": "brreg",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/underenheter?overordnetEnhet=915263860&size=1000",
-        "retrieved_at": "2026-11-17T21:42:59.811353Z",
+        "retrieved_at": "2026-11-19T20:25:25.454166Z",
         "content_sha256": "9ca7bc7140e4aa28847cd543ad106f67640b0688bb0222c29ba09a91900c584d",
         "exact_entity": true,
         "acquisition_mode": "official_api",
@@ -2881,7 +2875,7 @@
           "municipality": "SOLA",
           "interpretation": "Officially registered sub-unit of this organisation."
         },
-        "observed_at": "2026-11-17"
+        "observed_at": "2026-11-19"
       },
       {
         "id": "registry-update-517de5e5d5d9e29e6fd111c3",
@@ -2889,7 +2883,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "517de5e5d5d9e29e6fd111c3d12f0baecd6e4187a17475182356990627677f40",
         "observed_at": "2026-11-12",
         "exact_entity": true,
@@ -2919,7 +2913,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "60bfd1efad51d843c7070f8dd06801e24da8e27840389ca9593083cac7c340c3",
         "observed_at": "2026-10-13",
         "exact_entity": true,
@@ -2949,7 +2943,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "321dc1579dcc82e61ee90e9c9fc2f7a084ba62e5f6b264e334a93b83ad63e2e1",
         "observed_at": "2026-09-14",
         "exact_entity": true,
@@ -2979,7 +2973,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "3bee787c60bb5d55eb37b87a7edc4fe699fbdf2ab00f017288e5211939819946",
         "observed_at": "2026-08-12",
         "exact_entity": true,
@@ -3009,7 +3003,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "f51a9dcd78a5a4278d9f97474fc0d202a1c3aabb62c2238f51efa5bc635ca8b0",
         "observed_at": "2026-07-15",
         "exact_entity": true,
@@ -3039,7 +3033,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "fa8df5e8cd1b51c6dc36dee25b29b8d7a1d71b3f10ed37b20addce07fd4e28c4",
         "observed_at": "2026-07-02",
         "exact_entity": true,
@@ -3069,7 +3063,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a2db79cfc60200fcd8fda7c08de2d15a3ea78a726c1495ca8224e7471db7bb26",
         "observed_at": "2026-06-13",
         "exact_entity": true,
@@ -3099,7 +3093,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "2778b1871a321f6b67a6dab720ce6f2872f4a252cdcfa9beaed237d48c289e90",
         "observed_at": "2026-05-12",
         "exact_entity": true,
@@ -3129,7 +3123,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6ff4833b2b4a91382ac819bb477e05312cee9a162f7642210c59d55bbaf99dfa",
         "observed_at": "2026-04-14",
         "exact_entity": true,
@@ -3159,7 +3153,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "ccf0dfc1a5ce70a29f57bb280a2f40e55a88f778b384128bfe0bb0de8cdf5037",
         "observed_at": "2026-03-12",
         "exact_entity": true,
@@ -3189,7 +3183,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "21948a41fc7974edbcb45b61e42fefefb9e8c5358d65470fa807b6e7da74527f",
         "observed_at": "2026-02-12",
         "exact_entity": true,
@@ -3219,7 +3213,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "e0d9869d4d6d16f2b1ea5c92965253d79383aa7fad063a8845d5658ddc3a931f",
         "observed_at": "2026-01-13",
         "exact_entity": true,
@@ -3249,7 +3243,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "6a42a4dd60dfe9b279eee2ed98f5ef7066e7b6e9f7cbce9c35e7110084c08b69",
         "observed_at": "2025-12-13",
         "exact_entity": true,
@@ -3279,7 +3273,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a75fa13c7e9557afcbd20be57ce4d0301f483cc2369e7f4fd42fe05ffcd505b5",
         "observed_at": "2025-11-13",
         "exact_entity": true,
@@ -3309,7 +3303,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "1e4969b833d85baba74a92976294e68c3af454952480bb3ea68eb11db33e7c78",
         "observed_at": "2025-11-12",
         "exact_entity": true,
@@ -3339,7 +3333,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "2907f13f4d6d4aa519152d846c50c756123c26a15d91fb3a64f2c537bb4f6938",
         "observed_at": "2025-11-07",
         "exact_entity": true,
@@ -3369,7 +3363,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "a817174fccd1aef1d03f35c4d6c4564463e620f3a2a08f1ae3c488e689863192",
         "observed_at": "2025-09-13",
         "exact_entity": true,
@@ -3399,7 +3393,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "7a3427242eef706a6204468f443851cedf7430b3ecb2a4e7ceca0b67de9963f0",
         "observed_at": "2025-08-12",
         "exact_entity": true,
@@ -3429,7 +3423,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "34f3c95740050d9ecc55f4bb37ba1afd8c6125e47bc804d9773de3c04d6bd048",
         "observed_at": "2025-07-12",
         "exact_entity": true,
@@ -3459,7 +3453,7 @@
         "platform": "brreg",
         "signal_type": "registry_update",
         "source_url": "https://data.brreg.no/enhetsregisteret/api/enheter/915263860",
-        "retrieved_at": "2026-11-17T22:22:45.921053Z",
+        "retrieved_at": "2026-11-20T07:27:47.299484Z",
         "content_sha256": "78a1a38f222816bf6fb2eddf656ef92a474f6c059328b7649bb633516e62d502",
         "observed_at": "2025-06-28",
         "exact_entity": true,
@@ -3485,5 +3479,5 @@
       }
     ]
   },
-  "generated_at": "2026-11-18T12:46:23.402602+00:00"
+  "generated_at": "2026-11-20T12:49:23.301715+00:00"
 }
