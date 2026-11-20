@@ -88,13 +88,17 @@ measured 119.2 min / 22,166 requests at 11.9 min per 100 companies.
 100-company smoke-test result or report, one run command, models/APIs/licences,
 expected cost per official batch, agent name and contact → `submit@builderr.ai`.
 
-**Status: v1 sent 19 Nov 2026 (`d16266a`); v2 revision ready 20 Nov 2026.**
-The v2 corpus is commit `a99b4a4` (code + corpus), with a docs-only follow-up
-that pins the hash in `SUBMISSION_EMAIL.md`. v2 adds role cards, sitemap-driven
-news depth, register-sole-declarer sites and GLEIF identity: 113,439 claims,
-43,756 evidence records, six-field proxy 22.5083, family analogue 49.60,
-precision 1.0, 0 wrong-company publications. Send the v2 email to
-`submit@builderr.ai` (a new revision, not a re-send of the v1 email).
+**Status: v2 sent 20 Nov 2026 (`a99b4a4`).** The v1 revision (`d16266a`) was sent
+19 Nov and is superseded. The v2 corpus commit `a99b4a4` (code + corpus) is on
+`main`; docs-only commits after it pin the hash in `SUBMISSION_EMAIL.md` and
+record the send. The v2 email body (16,910 chars, subject "Signalpost revision
+— NorHound Company Research Agent (commit a99b4a4)") was sent to
+`submit@builderr.ai` and read back from Gmail's Sent folder (subject and hash
+verified). v2 adds role cards, sitemap-driven news depth,
+register-sole-declarer sites and GLEIF identity: 113,439 claims, 43,756
+evidence records, six-field proxy 22.5083, family analogue 49.60, precision
+1.0, 0 wrong-company publications. Do not re-send; another revision needs a
+new commit hash and a new email.
 
 ---
 
