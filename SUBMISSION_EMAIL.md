@@ -1,4 +1,4 @@
-Subject: Signalpost submission — NorHound Company Research Agent (commit d16266a)
+Subject: Signalpost revision — NorHound Company Research Agent (commit a99b4a4)
 
 Hi,
 
@@ -6,17 +6,18 @@ Submitting the NorHound agent for the Signalpost challenge. This revision is
 **fully keyless**: every stage runs without an API key, a login or a paid
 account, so the external cost per official batch is **$0**.
 
-The headline is precision, not volume: 1,000 company profiles, 31,885 published
+The headline is precision, not volume: 1,000 company profiles, 40,106 published
 observations, **entity precision 1.0** and **zero wrong-company publications**.
 
 REPOSITORY
 https://github.com/Dhanush-sai-reddy/norhound
 
 COMMIT HASH
-d16266a  (branch: main, github.com/Dhanush-sai-reddy/norhound)
+a99b4a4  (branch: main, github.com/Dhanush-sai-reddy/norhound)
 
-This is the commit that contains the code and the shipped corpus. The only
-commits after it are documentation-only.
+This is the commit that contains the code and the shipped v2 corpus. The only
+commits after it are documentation-only. My earlier submission (commit d16266a,
+sent 19 Nov) is superseded by this revision; please score this hash.
 
 DEADLINE NOTE
 Entries and revisions are accepted through **22 November 2026**, and up to
@@ -60,12 +61,12 @@ WHAT IS IN THE REPO
 - `out/submission/profiles-promoted.jsonl` — 1,000 frozen company profiles
 - `out/submission/manifest.jsonl` — the organisation-number manifest (1,000 rows)
 - `out/submission/envelopes.jsonl` — 1,000 terminal contract envelopes, one per
-  company: 105,266 claims backed by 35,421 evidence records
+  company: 113,439 claims backed by 43,756 evidence records
 - `out/submission/observations.jsonl` + `out/submission/labels.jsonl` — the
-  31,911-row re-verified corpus (31,885 rows published)
+  40,144-row re-verified corpus (40,106 rows published)
 - `out/submission/summaries.jsonl` — 1,000/1,000 deterministic summaries
   (what it does, financials, staff, hiring, the changes since the previous run
-  and the unknowns — 144 of them state a detected change and its source)
+  and the unknowns — 361 of them state a detected change and its source)
 - `out/submission/eval.json` — the audit report
 - `out/submission/measure.json` — the six-field recall proxy
 - `out/submission/measure-family.json` — the per-family recall report
@@ -76,7 +77,8 @@ WHAT IS IN THE REPO
   **100 requested, 100 returned, complete**, 10,306 claims and 3,399 evidence
   records, produced by `scripts/build_smoke_report.py --run-dir <run> --count
   100 --output-dir <dir>` (exit code 1 if any requested company comes back
-  missing or incomplete). This is the artifact the brief asks for.
+  missing or incomplete): 100 requested, 100 returned, complete, 11,165 claims
+  and 4,297 evidence records. This is the artifact the brief asks for.
 - `scripts/promote_run.sh` also writes `out/norhound-signalpost-submission.zip`
   (the same package as one archive). `out/` is gitignored, so the archive is
   built locally rather than committed — every file inside it is committed
@@ -91,11 +93,11 @@ official run tests."
 PRECISION (the gates that matter more than volume)
 - entity precision **1.0**, metric precision **1.0**
 - wrong-company publications **0**, unsupported publications **0**
-- 31,885 of 31,911 re-verified observations published; unverified rows never
+- 40,106 of 40,144 re-verified observations published; unverified rows never
   publish
 - every published fact carries source URL, retrieval time, reporting or
   effective date, content hash and extraction method
-- 601 tests pass (`uv run python -m unittest discover -s tests`)
+- 629 tests pass (`uv run python -m unittest discover -s tests`)
 
 REFRESH AND THE RUN REPORT
 The brief asks for refresh metadata and material changes since the previous
@@ -118,13 +120,13 @@ challenge publishes no score for this revision, so nothing below is presented
 as one.
 
 Six-field external recall proxy (`scripts/measure_recall.py`, mean of six
-fields × 50): **22.38 / 50**.
+fields × 50): **22.51 / 50** (up from 22.38 in the 19 Nov revision).
 
 | field | recall | what it counts |
 |---|---|---|
 | any_external | 0.994 | ≥1 source outside the register |
-| two_platforms | 0.620 | ≥2 independent sources outside the register |
-| workforce_jobs | 0.014 | a real role card, job-feed item or apply action |
+| two_platforms | 0.629 | ≥2 independent sources outside the register |
+| workforce_jobs | 0.020 | a real role card, job-feed item or apply action |
 | ratings_reviews | 0.032 | a third-party rating |
 | buzz_engagement | 0.994 | a third-party profile, mention or post |
 | sentiment | 0.032 | a derived sentiment label from a real rating |
@@ -140,20 +142,20 @@ opportunity counts):
 | roles | 994 / 1000 | 0.994 |
 | other | 1000 / 1000 | 1.000 |
 | news | 1000 / 998 | 1.000 |
-| website | 597 / 577 | 1.000 |
-| social | 204 / 177 | 1.000 |
+| website | 602 / 577 | 1.000 |
+| social | 205 / 177 | 1.000 |
 | hiring | 49 / 84 | 0.583 |
 | reviews (not scored by the rubric) | 32 / 323 | 0.099 |
 
 Opportunity-weighted over the scored families this reads 49.60/50 for
-all-claims coverage and **13.25/50 for claims backed by a source outside the
+all-claims coverage and **13.73/50 for claims backed by a source outside the
 register**, which is the variant that tracks external recall — the all-claims
 variant counts the register's own facts, which every company has. I am
 reporting the lower one rather than the flattering one.
 
 The hiring row needs its definition: **49** companies publish a hiring-family
-claim, but only **14** of them have a real role card (a NAV job-feed item). The
-other 35 publish an explicit `careers_page` signal —
+claim, **15** of them have a real role card (NAV job-feed items and verified
+company-site role cards) and the other 34 publish an explicit `careers_page` signal —
 a careers page proves a page exists, not that a position is open. The report
 keeps the two apart (`hiring_evidence` in `measure-family.json`).
 
@@ -165,53 +167,67 @@ WHERE THE REMAINING POINTS ARE, AND WHY THEY ARE NOT CLOSED
   keyless directory that answers, and only 32 of the 323 companies with a
   rating have a page there. No Norwegian SMB site embeds a review widget
   either (0 of 17 homepages checked).
-- `workforce_jobs` (8.2): bounded by how many real adverts a keyless source
-  holds. NAV's official feed reaches 14 companies. The public ATS boards find
-  postings for 3 more companies, but the identity gate rejects them (the posting
-  pages sit on third-party boards and the frozen site evidence cannot re-derive
-  the board link). Finn.no is excluded (no organisation numbers, and its terms of
-  service forbid it) and NAV's live search answers HTTP 429 to unauthenticated
-  bulk.
-- `two_platforms` (3.2): 374 of the 380 missing companies have exactly one
-  independent source, no verified website and no Wikidata item. The directory
-  page does state a website domain for 371 of them, so I fetched those domains
-  on a 60-company random sample (robots honoured, the identity gate unchanged):
-  34 homepages answered, and only **3** passed the gate — 0 of the 34 pages
-  stated the organisation number anywhere, not even in the footer. So the
-  ceiling without widening the exact-entity rule is about 5 % of the 374, and I
-  am leaving the rule alone rather than trading the 95 % precision gate for a
-  fraction of a point on one field.
+- `workforce_jobs` (8.16): bounded by how many real adverts a keyless source
+  holds. NAV's feed reaches 14 companies, and the new company-site role-card
+  connector adds role titles with apply actions on verified sites (20 cards
+  over 8 companies, all on companies that already had a hiring claim, so the
+  **company** recall is unchanged — only claim depth grows). Finn.no is excluded
+  (no organisation numbers, terms of service forbid it) and NAV's live search
+  answers HTTP 429 to unauthenticated bulk.
+- `two_platforms` (3.09): 371 of the 374 directory-only companies state a
+  website domain, and 175 of those domains are declared by the same organisation
+  number in the register's sole-declarer index (0 mismatches). Fetching them and
+  requiring a legal-name match yields a proven second platform for a small
+  number more; the identity gate is not widened. The remaining companies have
+  no verified website, no Wikidata item and no other keyless source that states
+  their organisation number — closing it would mean trading the 95 % precision
+  gate for a fraction of a point.
 
 The full write-up, with the probes and the arithmetic, is in
 `norhound-starter-kit/RECALL_LEVERS.md`.
 
-WHAT CHANGED IN THIS REVISION
-- **One dated news item per page, not one per company.** The news connector used
-  to publish the single deepest captured news page per company and discard the
-  rest. It now publishes every captured news page that states a
-  machine-readable publication timestamp (`article:published_time`,
-  `<time datetime=…>`, `datePublished`), keeps the bounded first-party body,
-  and never publishes a date mined from prose for an additional page (prose can
-  carry a copyright year) nor an undated navigation page as padding. Measured on
-  the shipped corpus: **194 news observations over 86 companies, 172 of them
-  dated**, up from 86 observations and 64 dated; `dated_news` claims 3,073 →
-  **3,175**, with 24 companies now carrying more than one dated item. Cost: one
-  extra fetch per candidate page (1,014 pages, 1,007 requests, 93 s).
-- **Hiring integrity fixed.** The company-site jobs connector was emitting
-  `job_posting` for every link it *discovered* on a careers page without ever
-  fetching the posting — "Digitalt testament" and "Marketing" were published
-  as job titles on 38 companies, inflating `workforce_jobs` from 0.014 to
-  0.051. It now emits an explicit `careers_page` signal, and a discovered link
-  can no longer become a role title anywhere in the envelope builder. The
-  honest number is 14 companies with a real role card.
+WHAT CHANGED IN THIS REVISION (v2, commit a99b4a4)
+- **Real role cards from verified company sites.** A role title must name a role
+  and carry an apply action (link, button, mailto or a real form); a bare careers
+  page still emits only `careers_page`, and a page naming another legal entity
+  is rejected before the host-only proof. 20 role cards over 8 companies on the
+  fresh corpus (an earlier live probe over the old corpus found 28 over 11 after
+  the same precision rules). The titles are real: "Senior digital markedsfører",
+  "BPA-assistenter over hele Norge", "Operatør – sammenstilling av missiler",
+  four roles at STATICUS NORGE AS.
+- **Sitemap-driven news depth.** The site's own sitemap now seeds candidate news
+  pages (the bounded crawl never reaches them all): per-company sitemap cap 10 →
+  60, news candidates 12 → 24, dated items 8 → 16. News observations **194 over
+  86 companies → 490 over 140 companies, 447 dated**; sitemap observations
+  2,475 → **10,389**. Undated navigation pages and prose-only dates on
+  additional pages are still never published.
+- **A proven second platform for directory-only companies.** 175 of the 374
+  directory-only companies have a website domain declared by their own
+  organisation number alone in the register's sole-declarer index. Fetching
+  those domains and requiring the legal name on the page (plus a parked-domain
+  filter) yields 10 new company-site observations, with a proof the verifier
+  re-derives from the index, the registry field and the stored body.
+- **GLEIF identity actually publishes.** The LEI connector already emitted 13
+  exact-entity rows, but the verifier did not recognise its proof type and
+  rejected all 13. It now re-derives the validatedAs organisation number, the
+  Brønnøysund registration authority and the body hash before trusting the row.
+- **ATS false positives fixed** — jobbnorge navigation links are no longer
+  marked as role cards.
+- **One dated news item per page, not one per company** (v1, retained). The news
+  connector publishes every captured news page with a machine-readable
+  publication timestamp, keeps a bounded first-party body, and never publishes
+  a prose-mined date on an additional page or an undated navigation page as
+  padding.
+- **Hiring integrity fixed** (v1, retained). A discovered link can no longer
+  become a role title; a bare careers page is an explicit `careers_page` signal.
 - **Three recall fields de-tautologised.** `workforce_jobs` was counting
   headcount; `any_external` and `two_platforms` were counting the register,
   which every profiled company has; `buzz_engagement` was counting
   Brønnøysund annual-account announcements, which every filer has. Each is now
   defined over something the company actually has to earn — a source outside
   the register, a real advert, a third-party mention. The proxy fell from a
-  flattering 33.43 to an honest 22.38; the coverage it claims is now coverage
-  that exists.
+  flattering 33.43 to an honest 22.38 (22.51 in v2); the coverage it claims is
+  now coverage that exists.
 - **One scorer, not two.** The audit report and the recall report used to
   compute coverage separately and could print different numbers for the same
   corpus. `evaluate_external_footprint.py` now imports the shared definitions,
@@ -256,17 +272,19 @@ MODELS / APIs / LICENCES
 
 EXPECTED COST PER OFFICIAL BATCH
 - External spend: **$0**. No paid API is called and no model key is needed.
-- Requests: **22,166 measured** for the shipped 1,000-company corpus
-  (`out/submission/official-run-report.json`): 21,159 in the official run plus
-  1,007 in the news-depth pass. The count is taken at the interpreter level, so
-  every subprocess is included; only the host, method and status are recorded,
-  never a URL or a payload.
-- Runtime: measured **11.9 minutes per 100 companies** on 8 workers without the
-  opt-in OCR stage — **119.2 minutes (1 h 59 m) for a 1,000-company official
-  batch**. (The OCR stage would add ≈3 h 20 m and measures 0 scored points,
-  which is why it stays off; `SLOW_STAGES=1` turns it on.) The brief says each
-  official run has a fixed time and resource budget that Builderr supplies —
-  send me the limit you are given and I will fit the run to it.
+- Requests: **23,096 measured** for the shipped 1,000-company v2 corpus
+  (`out/submission/official-run-report.json`). The count is taken at the
+  interpreter level, so every subprocess is included; only the host, method and
+  status are recorded, never a URL or a payload.
+- Runtime: **~187 minutes active work** for the v2 1,000-company corpus (55 min
+  base batch + ~120 min external connectors + finalize/post). The wall-clock
+  start-to-finish figure in the report is 1,016 min because the machine
+  restarted between the base batch and the resumed external pipeline — no work
+  ran in that gap, and both numbers are recorded in `official-run-report.json`.
+  (The opt-in OCR stage would add ≈3 h 20 m and measures 0 scored points, so it
+  stays off; `SLOW_STAGES=1` turns it on.) The brief says each official run has
+  a fixed time and resource budget Builderr supplies — send me the limit and I
+  will fit the run to it.
 - Models: none. Licences: NLOD (registry), CC0 (Wikidata/GLEIF), ODbL where
   applicable; website content is quoted at claim level with source URL,
   retrieval time and content hash.

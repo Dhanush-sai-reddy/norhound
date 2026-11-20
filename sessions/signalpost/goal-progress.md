@@ -6,6 +6,7 @@ cycle | value (0-50) | delta from baseline | delta from previous
 2 | 22.4333 | -14.5750 | -7.6967
 3 | 22.3833 | -14.6250 | -0.0500
 4 | 22.3833 | -14.6250 | 0.0000
+5 | 22.5083 | -14.5000 | 0.1250
 
 ## Reading
 
@@ -60,3 +61,5 @@ third-party boards and the frozen site evidence cannot re-derive the board
 link, so the fail-safe identity gate rejects them. Finn.no is excluded (no
 organisation numbers; its terms of service forbid the use). NAV's live search
 answers HTTP 429 to unauthenticated bulk.
+
+- **Cycle 5 (22.5083)** — v2 revision. Fresh 1,000-company run (`v2-20261119T195306Z`) re-downloaded every input and re-crawled every website: 15,055 base requests, 23,096 total, $0. Four new/strengthened connectors: company-site role cards (20 cards over 8 companies, role-token + apply-action + other-entity rules), sitemap-driven news depth (news 194 obs / 86 companies → 490 / 140, 447 dated; sitemap rows 2,475 → 10,389), register-sole-declarer sites (10 directory-only companies gain a second platform), GLEIF identity (13 rows now publish — the verifier did not recognise the proof type in v1). Claims 105,266 → 113,439; evidence 35,421 → 43,756; precision 1.0 with 0 wrong-company publications. `two_platforms` 0.620 → 0.629 and `workforce_jobs` 0.014 → 0.020; the hiring **company** recall stays 49/84 because the role cards landed on companies that already had a hiring claim. Family analogue 49.60 → 49.60 (unchanged, honestly). Refresh detected 587 changes over 361 companies; a second pass found 0 new changes and claims/evidence were byte-identical.

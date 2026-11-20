@@ -78,20 +78,23 @@ companies is encouraged.
 **Run budget (current):** Builderr supplies "a fixed time and resource budget
 for each official run"; no numeric limit is published on the current pages.
 The old 45 min / 2,000 requests / $10 figures belong to the superseded
-100-company Unstop listing. Our measured cost is **$0 external** and the
-measured runtime is **11.9 minutes per 100 companies** (119.2 min per 1,000,
-measured end-to-end over the 17 Nov 2026 rehearsal plus the 18 Nov news-depth
-pass; 22,166 requests measured).
+100-company Unstop listing. Our measured cost is **$0 external**. The v2 corpus
+(`v2-20261119T195306Z`) used **23,096 requests** and ~**187 min active work**;
+the wall-clock figure includes a ~10 h infrastructure restart (recorded as
+`runtime_ms_wall_clock` in `official-run-report.json`). The 17–18 Nov rehearsal
+measured 119.2 min / 22,166 requests at 11.9 min per 100 companies.
 
 **Submission email (current):** repository URL, exact commit hash,
 100-company smoke-test result or report, one run command, models/APIs/licences,
 expected cost per official batch, agent name and contact → `submit@builderr.ai`.
 
-**Status: sent 19 Nov 2026.** The submitted revision is commit `d16266a`
-(code + corpus, pushed to `main`); the only commit after it is the docs-only
-`63f0777d` that pins the hash in `SUBMISSION_EMAIL.md`. The email body was
-read back from Gmail's Sent folder and verified. Do not re-send it; a new
-revision needs a new commit hash and a new email.
+**Status: v1 sent 19 Nov 2026 (`d16266a`); v2 revision ready 20 Nov 2026.**
+The v2 corpus is commit `a99b4a4` (code + corpus), with a docs-only follow-up
+that pins the hash in `SUBMISSION_EMAIL.md`. v2 adds role cards, sitemap-driven
+news depth, register-sole-declarer sites and GLEIF identity: 113,439 claims,
+43,756 evidence records, six-field proxy 22.5083, family analogue 49.60,
+precision 1.0, 0 wrong-company publications. Send the v2 email to
+`submit@builderr.ai` (a new revision, not a re-send of the v1 email).
 
 ---
 
